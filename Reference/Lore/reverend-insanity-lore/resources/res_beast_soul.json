@@ -1,0 +1,210 @@
+{
+  "id": "res_beast_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beast soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "souls of wild beasts"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A beast soul is the soul of a beast, the most common soul feedstock used to produce guts Gu on Dang Hun Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 707,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    707,
+    901,
+    996,
+    1199
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_guts_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_guts_gu",
+      "count": 3
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_beast_soul",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_soul",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Hei Lou Lan brings hundreds of thousands of souls, most of them souls of wild beasts. Fang Yuan places them on Dang Hun Mountain, where they are vibrated into fragments that gradually form guts Gu.",
+      "chapters": [
+        707
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wild-beast-batches",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_fang_yuan",
+        "loc_dang_hun_mountain",
+        "gu_guts_gu"
+      ]
+    },
+    {
+      "text": "When a spinefin star dragonfish’s immortal aperture is removed, the beast crumples into meat and blood and even its beast soul disperses.",
+      "chapters": [
+        901
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "disperses-with-the-body",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In a large soul batch for Dang Hun Mountain, most souls are beast souls. Rabbit, goat, and horse souls are the most common, with fewer wolf, tiger, and other fierce beast souls. Stronger life forms give higher soul quality, so a batch with few fierce beasts and no desolate beasts produces fewer guts Gu.",
+      "chapters": [
+        996
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "common-trade-goods",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Desolate beast souls are far inferior to Gu Immortal souls for guts Gu production, but quantity and a stable Tai Qiu source can offset the gap.",
+      "chapters": [
+        1199
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-beast-substitute",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_gu_immortal_soul",
+        "loc_tai_qiu"
+      ]
+    },
+    {
+      "text": "Related detail sits on Desolate beast soul.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-beast-substitute",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_desolate_beast_soul"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/beast-soul/",
+      "chapters": [
+        707,
+        901,
+        996,
+        1199
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Soul Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Beasts",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Guts Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "id": "char_chai_ming",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chai Ming",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chai ming",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чай Мин",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Fire Prodigal Chai Ming Lord Chai Ming"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fire Prodigal Chai Ming is a rank four Gu Master who fights at Yu Tian heroes assembly.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 497,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    497,
+    512
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chai_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 497,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chai_tribe",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_chai_zhang",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "gu_water_image_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Yu Tian heroes assembly has lasted half a month when Liu Wen Wu’s side and Hei Lou Lan’s side confront each other. On the stage, a righteous Gu Master and a demonic Gu Master with deep hatred fight in view of both camps. Chai Ming fights for Liu Wen Wu against Water Demon Hao Ji Liu.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yu_tian",
+        "char_liu_wen_wu",
+        "char_hei_lou_lan",
+        "sys_righteous_path",
+        "sys_demonic_path",
+        "char_hao_ji_liu"
+      ]
+    },
+    {
+      "text": "He is a middle aged Gu Master. After his explosion, he stands tall on the stage while gasping.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He stamps, jumps, and breathes out a basket-sized dark flame. Hao Ji Liu raises a thick water wall that seems to extinguish it, then the remaining spark explodes with force that evaporates the wall. Onlookers say the explosion has already neared the effect of a rank five Gu, and that this killer move has all along been concealed by Fire Prodigal Chai Ming. When the vapor clears he stands over a body and shouts that Hao Ji Liu killed his father that year.",
+      "chapters": [
+        497
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "concealed-killer-move",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A sharp water blade protrudes from his heart. The figure under his foot turns into a pool of water. Onlookers name water image Gu, a rare rank four Gu, and say Hao Ji Liu used other methods to make the image lifelike. Chai Ming understands the defeat, says one last word, and dies. Chai tribe leader cries out for him as brother. After nine matches Liu Wen Wu has won only three, and this match costs him Fire Prodigal Chai Ming.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stage-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chai_tribe"
+      ]
+    },
+    {
+      "text": "Fang Yuan later recalls that Hao Ji Liu used water image Gu in the heroes assembly to pass it off as the genuine body and kill Fire Prodigal Chai Ming.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-explained",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/chai-ming.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chai-ming/",
+      "chapters": [
+        497,
+        512
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 497",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Chai Tribe as of ch. 497",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 497,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

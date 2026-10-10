@@ -1,0 +1,134 @@
+{
+  "id": "res_dream_sand",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dream sand",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dream sand is a dream path Gu material formed when a bone dream sand farm turns soil under bone marrow nourishment.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2097,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2097
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_dream",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_dream",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_meng_qiu_zhen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "res_bone_dream_sand",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Meng Zhen immortal aperture, the north-most field holds hundreds of huge desolate bones from dream path ancient desolate beast corpses. Those bones are dream path Gu materials. Meng Qiu Zhen sets a Gu formation over them and creates a bone dream sand farm. The farm is nourished with bone marrow and gradually turns the soil into dream sand.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bone-dream-sand-farm",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_qiu_zhen",
+        "sys_gu_formation"
+      ]
+    },
+    {
+      "text": "Dream sand is listed with earth dream fetus hair, nine tune dream flower, dream river water, and tongue tip small dream fish as dream path Gu materials Fang Yuan obtained in that period. Dream path Gu materials were still rare then; after the move into Meng Zhen aperture, away from surrounding earth path dao marks, they could grow more freely and were expected to yield a stream of immortal materials.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dream-path-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "path_dream"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dream-sand/",
+      "chapters": [
+        2097
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Dream Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Bone dream sand farm",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

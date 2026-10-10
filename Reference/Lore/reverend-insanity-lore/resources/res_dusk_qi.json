@@ -1,0 +1,163 @@
+{
+  "id": "res_dusk_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dusk qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dusk qi is a qi path immortal material gathered for unlimited qi sea and related qi sea methods.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1643,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1643,
+    1934,
+    2052
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "res_sword_qi",
+      "count": 1
+    },
+    {
+      "target": "char_qi_xiang",
+      "count": 1
+    },
+    {
+      "target": "res_blade_qi",
+      "count": 1
+    },
+    {
+      "target": "res_death_qi",
+      "count": 1
+    },
+    {
+      "target": "res_life_qi",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the fight against unlimited qi sea, Bai Ning Bing sees life qi, death qi, sword qi, blade qi, dusk qi, and dawn qi gather into countless forms outside the qi sea before charging into battle.",
+      "chapters": [
+        1643
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "battlefield-qi-forms",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Unlimited qi sea grows stronger by gathering many kinds of qi. After Qi Xiang created the move, he collected all sorts of qi into the immortal aperture, including dusk qi among life qi, death qi, sword qi, blade qi, dawn qi, and others. Unused stored qi dissipates over time.",
+      "chapters": [
+        1934
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "unlimited-qi-sea-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_xiang"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s modified unlimited qi sea can expend qi path immortal materials to raise its power. It can use all kinds of qi in the world, including dusk qi; the more qi path immortal materials stored in it, the stronger the move.",
+      "chapters": [
+        2052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-material-fuel",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dusk-qi/",
+      "chapters": [
+        1643,
+        1934,
+        2052
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

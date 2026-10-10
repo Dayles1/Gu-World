@@ -1,0 +1,182 @@
+{
+  "id": "move_devour_soul",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Devour Soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "devour soul killer move"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Devour Soul is a soul path killer move Fang Yuan practises from Spectral Soul's methods, later cast with Devour Soul Immortal Gu as its core to pull a soul from the body.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1471,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1471,
+    1610,
+    1790
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_devour_soul_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1790,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_devour_soul_gu",
+      "count": 3
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After modifying sword path killer moves, Fang Yuan starts to modify soul path killer moves and practise them. Besides split soul, the set includes soul suppression, soul howl, soul explosion, devour soul, soul replacement, soul beast summoning, and others. He does not have many soul path Immortal Gu then, so he can use these moves again but their effects are greatly lowered.",
+      "chapters": [
+        1471
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan later notes that Shadow Sect once possessed devour soul Immortal Gu, and that having it would make extracting Southern Border Gu Immortals’ souls from their bodies much easier than the methods he is forced to use without it.",
+      "chapters": [
+        1610
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "extraction-without-the-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "gu_devour_soul_gu",
+        "reg_southern_border",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "After great thief ghost hand steals devour soul Gu from Yang Ku, Fang Yuan’s time path clone treats that Immortal Gu as the core that finally lets him use the killer move devour soul. He takes the refined devour soul Immortal Gu, instills immortal essence, activates other Gu worms with it, and forms the killer move devour soul. The cast is also modified and more effective than in his previous life, and it draws Yang Ku’s soul out. Fang Yuan then lists devour soul killer move among the ordered steps of stealing Gu, refining Gu, separating soul from body, and annexing the immortal aperture.",
+      "chapters": [
+        1790
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "core-gu-cast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/devour-soul/",
+      "chapters": [
+        1471,
+        1610,
+        1790
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Devour Soul Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

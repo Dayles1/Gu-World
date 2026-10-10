@@ -1,0 +1,130 @@
+{
+  "id": "fac_dark_hall",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dark Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Dark Hall is a Gu Yue clan office whose elder is ordered to formulate an external retaliation plan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 78,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    156
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ordinary Gu Masters have no right to appear at Gu Yue village’s underground cave. Only clan elders, the clan leader, and the Dark Hall’s Gu Masters in charge of protecting the place have that authority. That cave holds the primeval spring the first generation clan leader found, and from the spring center large amounts of primeval stones are produced, sustaining the clan’s Gu Master cultivation. Entry is otherwise prohibited. Even the Gu Master who guards the place is picked after careful consideration.",
+      "chapters": [
+        156
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "village-interior",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "loc_gu_yue_village",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/dark-hall/",
+      "chapters": [
+        156
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Dark Hall Elder",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

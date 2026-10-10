@@ -1,0 +1,170 @@
+{
+  "id": "move_formless_flying_sword",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Formless Flying Sword",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Formless Flying Sword is one of the sword path killer moves Sword Immortal Bo Qing created with flying sword Gu as a core.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 995,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    995,
+    1468
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_bo_qing",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1468,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_flying_sword_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bo_qing",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_flying_sword_gu",
+      "count": 3
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan is taking Immortal Gu from the sleeping immortal zombie Bo Qing when the fourth Immortal Gu appears. Flying sword Gu is rank seven, shaped like a silver-winged dragonfly, and one of the Immortal Gu Bo Qing used most often in combat. Formless flying sword is named as an example of the sword path killer moves built on that Gu, together with cloud flying sword, pursuing flying sword, and ten thousand li flying sword.",
+      "chapters": [
+        995
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu",
+        "char_bo_qing"
+      ]
+    },
+    {
+      "text": "In Lang Ya blessed land in Northern Plains, Fang Yuan cultivates his sword path killer moves and activates formless flying sword. Flying sword Immortal Gu shoots out rapidly and vanishes in an instant from the extreme speed. He can accurately sense its location. Others cannot. This is one of Bo Qing’s signature killer moves. In recent days he has finished modifying five sword path killer moves. Four came from Bo Qing, including this one. He has fewer sword path Immortal Gu than in wisdom path and far lower attainment, so the modification is limited and the power stays about the same as Bo Qing’s original version.",
+      "chapters": [
+        1468
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "lang-ya-practice",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_lang_ya_blessed_land",
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/formless-flying-sword/",
+      "chapters": [
+        995,
+        1468
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Bo Qing (creator) Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Flying Sword Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

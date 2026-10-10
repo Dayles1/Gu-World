@@ -1,0 +1,273 @@
+{
+  "id": "char_bai_zhong_shui",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Zhong Shui",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bai zhong shui",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Бай Чжун Шуй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bai Zhong Shui is a Bai clan rank two upper stage fighter with Water Boar Gu, pointed out as a white fat girl among the three clans on Qing Mao Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 124,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    124,
+    188
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_bai_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 124,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_bai_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_lin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the three-clan gathering on alliance slope, seniors point out strong people from the other villages to their juniors. One of those introductions names the white fat girl as Bai clan’s Bai Zhong Shui, a rank two upper stage fighter who has the Water Boar Gu. The same speaker warns newbies about her appetite for men.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan"
+      ]
+    },
+    {
+      "text": "Alliance-slope talk points her out as a white fat girl.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation writes the name as Bai Zhong Shui, with Bai clan as the clan prefix.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In a later opening battle, sunlight reflects on her fat face. She is a young Bai clan Gu Master. She moves her fat body, trying to finish a downed opponent and take the token. After knocking a Xiong clan Gu Master flying with a palm clash, she laughs that a Xiong clan Gu Master daring to compete in strength with her amounts to nothing. A moonblade comes at her. Her body turns and she shoots a water ball from her mouth. The water ball and moonblade collide and explode together.",
+      "chapters": [
+        188
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "opening-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "fac_xiong_clan"
+      ]
+    },
+    {
+      "text": "Fang Zheng leads three Gu Yue Gu Masters down from the branches. Bai Zhong Shui calls the fallen Xiong Master her battle reward, and she squints, her eyes showing a dangerous light. Fang Zheng answers that she is now their prey. Xiong Lin then walks out with more Xiong clan people. The two sides attack together, catch her off guard, and surround her. She coughs out some blood, her expression turning ugly, and asks whether Gu Yue clan is cooperating with Xiong clan.",
+      "chapters": [
+        188
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "opening-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "fac_gu_yue_clan",
+        "fac_gu_masters",
+        "char_xiong_lin"
+      ]
+    },
+    {
+      "text": "Xiong Lin tells her the battle concerns the three clans’ demographics for the next hundred years, that Gu Yue clan has already allied with Xiong clan, and that today is her death date. She coughs out a mouth of blood water, stares around in disdain, and says that even if she dies, ganging up only shows they are afraid of Bai Ning Bing, that this is only the initial battle, and that Bai clan is destined to be number one.",
+      "chapters": [
+        188
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "opening-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/bai-zhong-shui.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bai-zhong-shui/",
+      "chapters": [
+        124,
+        188
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 124",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Bai Clan of Qing Mao Mountain as of ch. 124",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 124,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

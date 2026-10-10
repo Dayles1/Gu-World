@@ -1,0 +1,180 @@
+{
+  "id": "loc_shi_huang_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shi Huang Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Guan tribe's blessed land in northern plains, named as stronger in productivity than Dong Fang tribe's Jade Pool blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 657,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    657,
+    795
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 1
+    },
+    {
+      "target": "char_guan_shen_zhao",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Beside a jade pool in Jade Pool blessed land, Guan Shen Zhao’s third eye picks out underworld eels in the clear water as visiting northern plains righteous path Gu Immortals gather. Tong Zu greets Dong Fang Chang Fan over their past charge into Snowy Mountain, and Chang Fan leads them into Modest Thatched Hut to seat a deduction transaction and a posthumous alliance with Dong Fang tribe.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_jade_pool_blessed_land",
+        "char_guan_shen_zhao",
+        "sys_gu_immortal",
+        "char_dong_fang_chang_fan",
+        "loc_snowy_mountain",
+        "house_modest_thatched_hut",
+        "fac_dong_fang_tribe"
+      ]
+    },
+    {
+      "text": "Most super forces keep a main camp pieced together from Gu Immortals’ contributions. Like Dong Fang tribe’s Jade Pool, Murong tribe’s Yin-Yang, and Hei tribe’s Iron Eagle, Guan tribe’s Shi Huang blessed land is that kind of camp. Such pieced camps usually sit on the ground, take in earth qi to stabilize their space, and can slow time flow to postpone heavenly tribulations and earthly calamities.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-camps",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_murong_tribe",
+        "fac_hei_tribe",
+        "fac_guan_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/shi-huang-blessed-land/",
+      "chapters": [
+        657,
+        795
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "id": "gu_vivid_recollection_immortal_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Vivid Recollection Immortal Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Vivid Recollection Immortal Gu is a time path Immortal Gu. It lets a Gu Immortal stand in the present and inspect their own past.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 746,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    746
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_time",
+      "count": 2
+    },
+    {
+      "target": "gu_extreme_past_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_looking_back_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/vivid-recollection-immortal-gu/",
+      "chapters": [
+        746
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_time"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Together with looking back Immortal Gu, both observe the past from the present. Looking Back used in the area of the old earth wood shows former glorious scenery; the two differ in that scope.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_looking_back_immortal_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan names it among time path Immortal Gu other than Spring Autumn Cicada.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "path_time",
+          "sys_immortal_gu",
+          "gu_spring_autumn_cicada"
+        ]
+      },
+      {
+        "text": "Refining looking back Immortal Gu and Vivid Recollection Immortal Gu together yields the rank eight Immortal Gu Extreme Past. Extreme Past draws out the Gu Immortal’s will to observe all that has happened in the past through the river of time.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "combining-into-extreme-past",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_extreme_past_immortal_gu",
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

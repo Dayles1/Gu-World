@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "location.schema.json",
+  "title": "location",
+  "allOf": [
+    {
+      "$ref": "common.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "attributes",
+        "claims"
+      ],
+      "properties": {
+        "entity_type": {
+          "enum": [
+            "location"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^loc_"
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Raw infobox fields from the source, kept for later typed mapping."
+        },
+        "claims": {
+          "$ref": "common.schema.json#/$defs/claims"
+        }
+      }
+    }
+  ]
+}

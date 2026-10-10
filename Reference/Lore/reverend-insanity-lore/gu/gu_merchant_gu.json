@@ -1,0 +1,194 @@
+{
+  "id": "gu_merchant_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Merchant Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Merchant Gu is named in an incomplete human path Immortal Gu recipe. Fang Yuan obtains that recipe and does not complete it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2267,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2267
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_beggar_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/merchant-gu/",
+      "chapters": [
+        2267
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "With complete recipes he would be able to refine merchant Immortal Gu and beggar Immortal Gu. After activating them he would gain manpower with no threat of betrayal.",
+        "chapters": [
+          2267
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect-if-complete",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_immortal_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "He lacks human path attainment level, and human path Immortal Gu recipes are hard to deduce. He also estimates that natural human path Immortal Gu do not appear in the wild and that such recipes must be created by humans. After weighing the cost in time and effort, he does not attempt to deduce the incomplete human path Immortal Gu recipes, including merchant Gu.",
+        "chapters": [
+          2267
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "why-he-leaves-the-recipe-incomplete",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_recipe"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "Through human path cultivation results transferred from his clone and a transaction with Shen Shang, Fang Yuan also holds the incomplete beggar Gu recipe.",
+        "chapters": [
+          2267
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_shen_shang",
+          "char_fang_yuan",
+          "gu_beggar_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

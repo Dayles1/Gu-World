@@ -1,0 +1,145 @@
+{
+  "id": "res_charcoal_stones",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Charcoal stones",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Charcoal stones are a fuel that burns for a long time, gives little heat, and produces no smoke.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 261,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    261,
+    335,
+    826
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "loc_huo_tan_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Shang clan city’s fifth inner city, illumination uses charcoal stones that burn for a long time without producing smoke, set in wall holes every hundred steps. Even though each stone emits little heat, many burning at once raise the inner city’s temperature and dry the air.",
+      "chapters": [
+        261
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-lighting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "Huo Tan mountain in southern border is a dormant volcano about three kilometers tall, and its greatest resource is charcoal stones, almost seen everywhere. This charcoal stone burns for a long time, emits little heat, gives out no smoke, and is most commonly used in Shang clan city, fifth inner city. Stepping on them feels heat from below; the air is dry, and dark red charcoal stones fill the sight.",
+      "chapters": [
+        335
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "huo-tan-mountain-resource",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_huo_tan_mountain"
+      ]
+    },
+    {
+      "text": "In the western part of Hu Immortal blessed land, Fang Yuan digs soil, arranges Gu formations, and uses charcoal stones to construct a large lake with no water. Hot air rises from charcoal stones covering the lake bed; when wind blows, the black-grey stones shine with a red light. He names it charcoal lake and uses this second-best charcoal-stone method as a breeding ground for eerie fire dragon pythons when he cannot afford Dong Fang tribe’s optimal Jade Pool arrangement.",
+      "chapters": [
+        826
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "charcoal-lake-nest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "char_fang_yuan",
+        "sys_gu_formation",
+        "fac_dong_fang_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/charcoal-stones.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/charcoal-stones/",
+      "chapters": [
+        261,
+        335,
+        826
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Huo Tan mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

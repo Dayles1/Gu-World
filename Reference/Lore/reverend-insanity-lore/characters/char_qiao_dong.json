@@ -1,0 +1,238 @@
+{
+  "id": "char_qiao_dong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qiao Dong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "qiao dong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цяо Дун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qiao Dong is Qiao tribe's Gu Immortal in Northern Plains, named by Hei tribe elders after Hei Cheng suppresses that subordinate tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 691,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    691,
+    1108,
+    1109
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_qiao_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 691,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_liu_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1108,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_qiao_tribe",
+      "count": 4
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 2
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tie_sheng",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Iron Eagle blessed land, Hei tribe’s second supreme elder says Qiao Dong became an immortal under that elder’s guidance decades earlier, and complains that his loyalty has wavered. Hei Cheng reports that he has already struck and taught Qiao Dong a lesson, and expects no further trouble for five years.",
+      "chapters": [
+        691
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_iron_eagle_blessed_land",
+        "fac_hei_tribe",
+        "char_hei_cheng"
+      ]
+    },
+    {
+      "text": "During the assault on Iron Eagle blessed land he is named a righteous path Gu Immortal and the first supreme elder of Qiao tribe. He claims the resonance eagles defending the land are fruits of Qiao tribe’s labor rather than Hei tribe creations. The same stretch records that he became an immortal because of Hei tribe’s support, that Qiao tribe was Hei tribe’s subordinate and was pressured by Hei Cheng after seeking to leave, and that he has now joined the attack under Liu tribe with Liu Zhuan Shen behind him.",
+      "chapters": [
+        1108
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "iron-eagle-assault",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_qiao_tribe",
+        "fac_liu_tribe",
+        "char_liu_zhuan_shen"
+      ]
+    },
+    {
+      "text": "Hei Tie Sheng’s life draining darkness hits him as a mountain-like shadow; he calls for Liu Zhuan Shen, who appears in front of him, then finds Qiao Dong floating behind him with no vitality left, dead.",
+      "chapters": [
+        1109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-at-iron-eagle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tie_sheng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/qiao-dong/",
+      "chapters": [
+        691,
+        1108,
+        1109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Qiao Tribe as of ch. 691 Liu Tribe as of ch. 1108",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

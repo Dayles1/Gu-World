@@ -1,0 +1,103 @@
+{
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "id": "src_sagaofgu",
+      "title": "Saga of Gu — unofficial Reverend Insanity wiki",
+      "url": "https://sagaofgu.com/",
+      "kind": "reference_wiki",
+      "language": "en",
+      "default_confidence": "B",
+      "access": {
+        "status": "used",
+        "checked": "2026-10-09",
+        "detail": "Full crawl of sitemap-0.xml (6615 URLs); robots.txt allows all."
+      },
+      "citation_style": "Per-sentence chapter chips (ch. N, 1..2334); own grading: canon / inferred / disputed / deviation / unverified.",
+      "coverage": null,
+      "audit": {
+        "novel_text_spot_check": "not performed — no licensed text reachable (Webnovel 403)"
+      },
+      "license": "not stated by the site",
+      "notes": [
+        "Claims are stored as source excerpts for internal research only; do not ship verbatim in the game.",
+        "No Chinese names for Gu; characters carry Chinese names."
+      ]
+    },
+    {
+      "id": "src_fandom_ri",
+      "title": "Reverend Insanity Wiki (Fandom)",
+      "url": "https://reverend-insanity.fandom.com/",
+      "kind": "fan_wiki",
+      "language": "en",
+      "default_confidence": "C",
+      "access": {
+        "status": "blocked",
+        "checked": "2026-10-09",
+        "detail": "HTTP 402/403 Cloudflare challenge for WebFetch and API; not bypassed."
+      },
+      "license": "CC BY-SA (Fandom default)",
+      "notes": []
+    },
+    {
+      "id": "src_novelwiki",
+      "title": "NovelWiki — Reverend Insanity locations",
+      "url": "https://www.novelwiki.net/reverend-insanity/locations/",
+      "kind": "fan_database",
+      "language": "en",
+      "default_confidence": "C",
+      "access": {
+        "status": "reachable_not_used",
+        "checked": "2026-10-09",
+        "detail": "~165 locations, no chapter citations."
+      },
+      "license": null,
+      "notes": []
+    },
+    {
+      "id": "src_webnovel_official",
+      "title": "Reverend Insanity — official English translation (Webnovel, Atlas Studios)",
+      "url": "https://www.webnovel.com/book/reverend-insanity_7996858406002505",
+      "kind": "official_translation",
+      "language": "en",
+      "default_confidence": "A",
+      "access": {
+        "status": "blocked",
+        "checked": "2026-10-09",
+        "detail": "HTTP 403 for automated fetch. Needed for A-level checks."
+      },
+      "license": "commercial",
+      "notes": []
+    },
+    {
+      "id": "src_moegirl",
+      "title": "萌娘百科 (Moegirl) — 蛊真人 entries",
+      "url": "https://zh.moegirl.org.cn/%E8%9B%8A%E7%9C%9F%E4%BA%BA",
+      "kind": "fan_wiki",
+      "language": "zh",
+      "default_confidence": "C",
+      "access": {
+        "status": "not_checked",
+        "checked": "2026-10-09",
+        "detail": "Candidate for Chinese Gu names."
+      },
+      "license": "CC BY-NC-SA",
+      "notes": []
+    },
+    {
+      "id": "src_chatgpt_notes",
+      "title": "Earlier ChatGPT conversation (preliminary notes)",
+      "url": "https://chatgpt.com/share/6ac8c681-86f4-83eb-881b-40f84e6ccd10",
+      "kind": "other",
+      "language": "ru",
+      "default_confidence": "D",
+      "access": {
+        "status": "empty",
+        "checked": "2026-10-09",
+        "detail": "Share page renders without the conversation."
+      },
+      "license": null,
+      "notes": []
+    }
+  ]
+}

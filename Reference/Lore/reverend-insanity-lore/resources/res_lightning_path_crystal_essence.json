@@ -1,0 +1,130 @@
+{
+  "id": "res_lightning_path_crystal_essence",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lightning path crystal essence",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lightning path crystal essence is a form of crystal essence found among rare immortal materials.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2076,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2076
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_lightning",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_lightning",
+      "count": 1
+    },
+    {
+      "target": "char_lady_white_rabbit",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    },
+    {
+      "target": "res_domination_copper",
+      "count": 1
+    },
+    {
+      "target": "res_earth_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_ice_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_purple_manor_soil",
+      "count": 1
+    },
+    {
+      "target": "res_white_snow_iron",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a spherical underground cave packed with immortal materials, crystal essence is first judged highest in quantity. Lightning path crystal essence is named with earth path crystal essence, water path crystal essence, and further crystal essences of other paths. Black Tigress guesses the cache is Hu Land from that abundance, then the three immortals reject the guess after more searching.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-in-underground-cache",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lady_white_rabbit",
+        "loc_hu_land"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/lightning-path-crystal-essence/",
+      "chapters": [
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Lightning Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "id": "char_hong_xuan_ji",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hong Xuan Ji",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "hong xuan ji",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хун Сюань Цзи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hong Xuan Ji is the principal of Universal Life Academy on Central Continent.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 680,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    680,
+    824
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_fan_yi",
+      "count": 2
+    },
+    {
+      "target": "char_yuan_bai",
+      "count": 2
+    },
+    {
+      "target": "loc_universal_life_academy",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_hong_yi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Two rank five Gu Masters sneaking into Universal Life Academy’s valley call him strong and judge him weak in investigative methods, which is why he has not already found the underground zhi forest.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "loc_universal_life_academy"
+      ]
+    },
+    {
+      "text": "When the clash over that forest draws academy Gu Masters in, he leads a band there, drives Valley Lord Yuan Bai and Sect Leader Fan Yi away after an intense battle, then orders elders to halt the sect competition, recall disciples and elders on missions, and hold the zhi forest as the academy’s foundation to rise up.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhi-forest-defense",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yuan_bai",
+        "char_fan_yi"
+      ]
+    },
+    {
+      "text": "At a refinement path contest, elders treat Hong Yi as the principal’s son and leader of the disciples. Lord Principal has several sons; Hong Yi is the most capable, a concubine’s son with a rebellious nature, often suppressed, and he entered that contest behind his father’s back to push a memorial tablet demand.",
+      "chapters": [
+        824
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "principal-and-sons",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hong_yi"
+      ]
+    },
+    {
+      "text": "The text implies this principal is Hong Xuan Ji, already named in that office during the zhi forest crisis.",
+      "chapters": [
+        680
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "principal-and-sons",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/hong-xuan-ji/",
+      "chapters": [
+        680,
+        824
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Universal Life Academy as of ch. 680",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

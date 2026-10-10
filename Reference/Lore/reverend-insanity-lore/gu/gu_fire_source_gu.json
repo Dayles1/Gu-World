@@ -1,0 +1,206 @@
+{
+  "id": "gu_fire_source_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fire Source Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fire Source Gu is a support Gu Wei Yang chooses for Xiao Yan's fire attack set. It reduces primeval essence expenditure of the flame methods around red fire Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 275,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    275
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_xiao_yan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 275,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xiao_yan",
+      "count": 4
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_attack_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "sys_movement_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_support_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/fire-source-gu/",
+      "chapters": [
+        275
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Fire source Gu sits among the support Gu that cover weaknesses of a core attack Gu, here by cutting the essence cost of Xiao Yan’s flame methods.",
+        "chapters": [
+          275
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "role-in-the-set",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_support_gu",
+          "sys_attack_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_xiao_yan",
+      "role": "user",
+      "recorded_chapter": 275,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "At a feast, Wei Yang explains Gu set building. For Xiao Yan, who chose red fire Gu as the main attack method, Wei Yang advises duplicate Gu to increase the number of flames, enlarge Gu to make the flame larger and stronger, fire source Gu to reduce primeval essence expenditure, and fire discharge Gu as the movement type Gu.",
+        "chapters": [
+          275
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_wei_yang",
+          "char_xiao_yan",
+          "sys_movement_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

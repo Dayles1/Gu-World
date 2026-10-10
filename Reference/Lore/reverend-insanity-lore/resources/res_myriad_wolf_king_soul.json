@@ -1,0 +1,108 @@
+{
+  "id": "res_myriad_wolf_king_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Myriad wolf king soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "soul of a myriad wolf king an intact soul of a myriad wolf king"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Myriad wolf king soul is the intact soul of a myriad wolf king, a refinement material for rank four Wolf Soul Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 501,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    501
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_wolf_soul_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_wolf_soul_gu",
+      "count": 3
+    }
+  ],
+  "claims": [
+    {
+      "text": "Refining rank four Wolf Soul Gu requires an intact soul of a myriad wolf king. Rank five Wolf Soul Gu instead requires the soul of a wolf emperor, and even a refinement master succeeds at that higher refinement only about fifty percent of the time.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-requirement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_wolf_soul_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/myriad-wolf-king-soul.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/myriad-wolf-king-soul/",
+      "chapters": [
+        501
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Myriad wolf king",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Wolf Soul Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

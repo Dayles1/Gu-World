@@ -1,0 +1,338 @@
+{
+  "id": "gu_emotion_poetry_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Emotion Poetry Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Emotion Poetry Gu is a wisdom path Gu especially used to store emotions, and it is extremely rare and very expensive.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 550,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    550,
+    570,
+    581,
+    894,
+    2023
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 550,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 2
+    },
+    {
+      "target": "gu_painting_idea_gu",
+      "count": 2
+    },
+    {
+      "target": "inh_du_min_jun_inheritance",
+      "count": 2
+    },
+    {
+      "target": "loc_xing_jiu_peak",
+      "count": 2
+    },
+    {
+      "target": "gu_estrus_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_gather_poem_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_poem_wall",
+      "count": 2
+    },
+    {
+      "target": "gu_poetic_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_poetry_gu",
+      "count": 2
+    },
+    {
+      "target": "char_du_min_jun",
+      "count": 1
+    },
+    {
+      "target": "sys_thought_will_emotion",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_li_xiao_bai",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_poem_boundary_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_profound_literature_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/emotion-poetry-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/emotion-poetry-gu/",
+      "chapters": [
+        550,
+        570,
+        581,
+        894,
+        2023
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 4,
+        "recorded_chapter": 581,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_wisdom"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "When wisdom path research is traced from thought through will into emotion, emotion poetry Gu sits with estrus Gu and gentle feelings Gu on that emotion line, from which enchantment path is later derived.",
+        "chapters": [
+          570
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "wisdom-path-emotion-line",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_estrus_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "Having spent almost all his resources on a sixth ink transformation of the owner token, Fang Yuan sells large numbers of Gu worms for funds, among them rank four emotion poetry Gu.",
+        "chapters": [
+          581
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-and-sale",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "holder",
+      "recorded_chapter": 550,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan receives one in the Poet Immortal Du Min Jun inheritance behind the starlight door on Xing Jiu Peak. Together with Painting Idea Gu, it is a wisdom path Gu.",
+        "chapters": [
+          550
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "inh_du_min_jun_inheritance",
+          "loc_xing_jiu_peak",
+          "gu_painting_idea_gu",
+          "path_wisdom"
+        ]
+      },
+      {
+        "text": "Poetic emotion sea produces this rank four wisdom path Gu, and mortal Gu Masters prize it highly.",
+        "chapters": [
+          894
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "production-site",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_masters"
+        ]
+      },
+      {
+        "text": "In Profound Literature grotto-heaven, after changing his vital Gu to Poetry Gu, Li Xiao Bai plans next to practice poetic Gu and emotion poetry Gu, to use gather poem Gu to collect poems, and to advance poem wall Gu.",
+        "chapters": [
+          2023
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "li-xiao-bais-practice-plan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_profound_literature_grotto_heaven",
+          "sys_vital_gu",
+          "gu_poetry_gu",
+          "char_li_xiao_bai",
+          "gu_poetic_gu",
+          "gu_gather_poem_gu",
+          "gu_poem_wall"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Wisdom Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

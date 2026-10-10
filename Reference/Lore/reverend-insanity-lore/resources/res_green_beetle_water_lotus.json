@@ -1,0 +1,174 @@
+{
+  "id": "res_green_beetle_water_lotus",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Green beetle water lotus",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Green beetle water lotuses"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Green beetle water lotuses are a water path immortal material used when refining star thought Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 926,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    926,
+    1479
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_water",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_star_thought_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "path_water",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A step in refining star thought Immortal Gu needs a portion of green beetle water lotuses together with a portion of pale flame white bones. Green beetle water lotuses are a water path immortal material and carry water path dao marks.",
+      "chapters": [
+        926
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "star-thought-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_star_thought_immortal_gu"
+      ]
+    },
+    {
+      "text": "The two immortal materials must be processed at the same time so water and fire fuse into a clear liquid. Fire path dao marks on the pale flame white bone and water path dao marks on the green beetle water lotus must be equal, or nearly so; if one side is too high, the liquid turns murky and cannot be used. The Immortal Gu recipe states the age of the green beetle water lotuses; even lotuses of the same age can hold different water path dao marks because of their environment.",
+      "chapters": [
+        926
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "star-thought-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_recipe"
+      ]
+    },
+    {
+      "text": "Green beetle water lotuses appear in a list of flower Gu materials that Sixth Hair processes for Fang Yuan, alongside ghost face sunflowers, wire cotton, heavenly flowers, and others. That list mixes mortal Gu materials and immortal materials.",
+      "chapters": [
+        1479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-flower-materials",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_sixth_hair",
+        "char_fang_yuan",
+        "sys_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/green-beetle-water-lotus/",
+      "chapters": [
+        926,
+        1479
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Water Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Refines into": {
+      "text": "Star Thought Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

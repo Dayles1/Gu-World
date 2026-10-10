@@ -1,0 +1,427 @@
+{
+  "id": "gu_earth_treasury_flower_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Earth Treasury Flower Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Earth Treasury Flower Gu is a storage Gu that plants into the ground and holds another Gu in golden liquid inside its flower heart.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 63,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    63,
+    71,
+    79,
+    81,
+    188,
+    378,
+    433
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_flower_wine_monk",
+      "role": "planter",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 63,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 63,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_flower_wine_monk",
+      "count": 4
+    },
+    {
+      "target": "res_upstream_grass",
+      "count": 3
+    },
+    {
+      "target": "res_zen_lion_mane",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "rcp_second_aperture_gu_recipe",
+      "count": 2
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 2
+    },
+    {
+      "target": "inh_flower_wine_monk_inheritance",
+      "count": 2
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_earth_treasury_flower_king_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 1
+    },
+    {
+      "target": "loc_golden_centipedes_cave",
+      "count": 1
+    },
+    {
+      "target": "gu_thousand_li_earthwolf_spider",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_beast",
+      "count": 1
+    },
+    {
+      "target": "sys_immemorial_desolate_beast",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "loc_bronze_main_hall",
+      "count": 1
+    },
+    {
+      "target": "res_eight_desolate_blood_powder",
+      "count": 1
+    },
+    {
+      "target": "res_green_pond_rotten_soil",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "gu_airsac_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_treasury",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/earth-treasury-flower-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/earth-treasury-flower-gu/",
+      "chapters": [
+        63,
+        71,
+        79,
+        81,
+        188,
+        378,
+        433
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 2,
+        "recorded_chapter": 433,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Earth treasury flower Gu is only rank two. After repeated advancement it becomes rank five Earth Treasury Flower King Gu. See Earth Treasury Flower King Gu for that later form and Fang Yuan’s burial use of Fixed Immortal Travel.",
+        "chapters": [
+          433
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "rank-and-king-form",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_earth_treasury_flower_king_gu",
+          "gu_fixed_immortal_travel"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is like the combination of a lotus and kale. Petals knit tightly in numerous thick pieces that feel slippery. Peeled one by one they are like thick layers of silk, then thinner paper-like layers toward the core. Buried, the bud shows a faint dark gold light, sits about two inches deep, and is around the size of a stone mill, delicate and mysterious in dark gold. The last overlapping petals form a fist-sized translucent ball holding golden liquid with a Gu worm asleep inside.",
+        "chapters": [
+          63
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is a one-time use Gu. Once implanted in the ground it cannot be moved. Its food is earth energy, so planted ground with enough earth energy keeps it alive. Its one use is to contain a Gu in the flower heart, immersing it in golden nectar that partly imitates sealing and lets the Gu hibernate. Fang Yuan peels the last petals, lets golden liquid run like soybean oil, and retrieves White Boar Gu from the first flower.",
+        "chapters": [
+          63
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "storage-effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_white_boar_gu"
+        ]
+      },
+      {
+        "text": "He later fills in the hole left from digging it out.",
+        "chapters": [
+          71
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "storage-effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Fang Yuan notes that retrieving two Gu from Earth Treasury Flowers eased his refinement cost in primeval stones.",
+        "chapters": [
+          81
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-cost-note",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_earth_earth_treasury"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_flower_wine_monk",
+      "role": "planter",
+      "recorded_chapter": 63,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 63,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "In the Flower Wine Monk’s strength inheritance on Qing Mao Mountain, Fang Yuan digs a dark gold flower bud from soft soil and names it Earth Treasury Flower Gu. The Flower Wine Monk planted it so the Gu inside would wait for the inheritor.",
+        "chapters": [
+          63
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "inh_flower_wine_monk_inheritance",
+          "loc_qing_mao_mountain",
+          "char_fang_yuan",
+          "char_flower_wine_monk"
+        ]
+      },
+      {
+        "text": "A second Earth Treasury flower before a grey rock door yields Jade Skin Gu from the same golden nectar method.",
+        "chapters": [
+          79
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "inheritance-finds",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_jade_skin_gu"
+        ]
+      },
+      {
+        "text": "He compares a hibernating Thousand Li Earthwolf Spider cocoon to White Boar Gu taken from Earth Treasury Flower Gu.",
+        "chapters": [
+          188
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "comparison",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_thousand_li_earthwolf_spider"
+        ]
+      },
+      {
+        "text": "Earth treasury flower is a storage Gu. Flower Wine Monk planted it deep in the cave to store several Gu worms Fang Yuan later obtained. In Three Kings blessed land Fang Yuan plants earth treasury flower Gu into mixed toxic soil during experimentation; several plantings fail before one survives a balance of green pool rotten soil and eight desolate blood powder.",
+        "chapters": [
+          378
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "planting",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_storage_gu",
+          "fac_three_kings"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

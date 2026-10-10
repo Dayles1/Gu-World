@@ -1,0 +1,400 @@
+{
+  "id": "char_immortal_wang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Immortal Wang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Immortal Wang is a short rank seven Gu Immortal who joins Chu Du's hired force in Northern Plains and transforms into a heaven swallowing hound.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1168,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1168,
+    1169,
+    1171,
+    1177,
+    1201,
+    1202,
+    2202
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chu_sect",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1202,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_heaven_swallowing_hound_transformation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chu_sect",
+      "count": 3
+    },
+    {
+      "target": "move_heaven_swallowing_hound_transformation",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_hao_zhen",
+      "count": 2
+    },
+    {
+      "target": "char_li_si_chun",
+      "count": 2
+    },
+    {
+      "target": "char_chou_lao_wu",
+      "count": 2
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 2
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zu_wei",
+      "count": 1
+    },
+    {
+      "target": "move_green_city_rampage",
+      "count": 1
+    },
+    {
+      "target": "move_wind_thunder_roar",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A Chu Sect guide presents him last among the hired Gu Immortals for Chu Du’s plan: short stature, red nose, and triangular little eyes, pressing Fang Yuan under the name Liu Guan Yi to introduce himself. He asks for the battle plan and hears the target is Iron Eagle blessed land.",
+      "chapters": [
+        1168
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chu_sect",
+        "sys_gu_immortal",
+        "char_chu_du",
+        "char_fang_yuan",
+        "loc_iron_eagle_blessed_land"
+      ]
+    },
+    {
+      "text": "He has a short stature, a red nose, and triangular little eyes.",
+      "chapters": [
+        1168
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same traits return as short stature, a red nose, and small triangular eyes.",
+      "chapters": [
+        2202
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He turns into a giant hound with white fur like snow, four strong limbs, a big head, and pale colorless eyes without pupils. The text names this form the immemorial desolate beast heaven swallowing hound.",
+      "chapters": [
+        1169
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He also turns into a falling star hound and runs on four legs.",
+      "chapters": [
+        1171
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the assault he transforms into a giant white hound that Li Si Chun names as the immemorial desolate beast heaven swallowing hound. Fang Yuan judges that even in that form he has only rank seven cultivation and not rank eight battle strength. The hound bites space open so the group can enter Iron Eagle blessed land, then he returns to human form pale and says he must recuperate.",
+      "chapters": [
+        1169
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heaven-swallowing-hound",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_si_chun"
+      ]
+    },
+    {
+      "text": "Inside the blessed land he also runs as a falling star hound while Bai Zu Wei chases him, and he shouts that he gained no eagle nests because Liu Guan Yi took them. Fang Yuan lures Green City Rampage toward him as cannon fodder; alliance dao marks keep Immortal Wang from striking back, and Hao Zhen with Chou Lao Wu move to save him for compensation.",
+      "chapters": [
+        1171
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "iron-eagle-fallout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_zu_wei",
+        "move_green_city_rampage",
+        "char_hao_zhen",
+        "char_chou_lao_wu"
+      ]
+    },
+    {
+      "text": "When Fang Yuan arrives with a myriad self army to reinforce him and Li Si Chun against a wolf pack, Immortal Wang snorts coldly. His impression of Fang Yuan is at rock bottom because Fang Yuan made him bait before, and he stays ungrateful even though Fang Yuan is here to help.",
+      "chapters": [
+        1177
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rock-bottom-impression",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In a later Northern Plains clash he fights Ye Lui Qun Xing as a heaven swallowing hound. The text states he is only a rank seven Gu Immortal and that this transformation path immortal killer move lacks a matching rank eight Immortal Gu, so the hound’s battle strength stays at rank seven. Star fragments beat him down until Chu Du concedes the bout; Ye Lui Qun Xing does not press the kill, and Immortal Wang is named the fourth fighter from their side that Ye Lui Qun Xing has defeated.",
+      "chapters": [
+        1201
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-defeat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_ye_lui_qun_xing",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "After Iron Eagle he hates Fang Yuan for that scapegoating, and when he sneers from behind at Fang Yuan’s refusal to fight and asks if he is afraid, Chu Du glares him silent and thinks of him among lone immortals or demonic cultivators who joined Chu Sect without much discipline.",
+      "chapters": [
+        1202
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-defeat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Much later at Chu tribe headquarters he is again short with a red nose and small triangular eyes, named a transformation path Gu Immortal skilled at dog-breed transforms, and he argues that Chu Du might avoid the Black Moon challenge for the tribe’s sake.",
+      "chapters": [
+        2202
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "chu-tribe-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/immortal-wang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/immortal-wang/",
+      "chapters": [
+        1168,
+        1169,
+        1171,
+        1177,
+        1201,
+        1202,
+        2202
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1169",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Chu Sect as of ch. 1202",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1169,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,426 @@
+{
+  "id": "fac_dong_fang_alliance",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Fang Alliance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dong Fang alliance is the wartime coalition Dong Fang tribe builds around itself to hold Cao Fu and contest the Imperial Court, fielded under Dong Fang Yu Liang's command against Hei tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 501,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    501,
+    503,
+    505,
+    506,
+    507,
+    508,
+    509,
+    512,
+    514,
+    515,
+    516,
+    518
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_dong_fang_yu_liang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 501,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_jiang_wan_shan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 506,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_wan_xin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 506,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_jiang_wan_shan",
+      "count": 4
+    },
+    {
+      "target": "char_wan_xin",
+      "count": 4
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_e_xuan_ming",
+      "count": 2
+    },
+    {
+      "target": "char_pan_ping",
+      "count": 2
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_bian_si_xuan",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sun_shi_han",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    },
+    {
+      "target": "move_three_hearts_combination_soul",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_charred_thunder_potato_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_battle_merits",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "As Hei Lou Lan marches on Cao Fu, Dong Fang tribe already holds the greatest dominance in Cao Fu’s heroes assembly, suppressing rivals and incorporating large numbers of tribes under harsh alliance conditions, with only Zhao tribe still resisting. Dong Fang Yu Liang spends a night making deductions, then loosens the terms for joining the alliance and personally travels to invite Zhao tribe to join.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-terms-and-zhao-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "loc_cao_fu_region",
+        "fac_dong_fang_tribe",
+        "fac_zhao_tribe",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "Zhao tribe tears down its camp and flees rather than accept the invitation, and Hei tribe’s Gu Masters mockingly congratulate their own alliance leader for scaring off a rival force without a fight. Talk in Hei Lou Lan’s camp names Dong Fang Yu Liang the greatest threat of the coming battle because of his wisdom path planning.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zhao-tribes-flight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Dong Fang Yu Liang, addressed by his subordinates as Dong Fang alliance leader, arranges for Shadow Sword Expert Bian Si Xuan to plant a rank five soul explosion Gu on a marked shark fin wolf and strike Wolf King Chang Shan Yin with a brain explosion Gu. Fang Yuan, playing the Wolf King, spots the trap and blocks most of the soul explosion with a shield, so the attempt only weakens rather than kills him.",
+      "chapters": [
+        505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "assassination-plot-against-the-wolf-king",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bian_si_xuan",
+        "char_chang_shan_yin",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Dong Fang Yu Liang summons enslavement path Gu Masters E Xuan Ming, Jiang Wan Shan, and Wei Xin, the most outstanding enslavement Gu Masters serving under the alliance army’s many tribes, to plan against the Wolf King. He reveals Dong Fang tribe’s Three Hearts Combination Soul, a killer move that fuses three Gu Masters’ souls into one to act as a single will in battle.",
+      "chapters": [
+        506
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "enslavement-gu-masters-and-a-killer-move",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_e_xuan_ming",
+        "char_jiang_wan_shan",
+        "char_wan_xin",
+        "move_three_hearts_combination_soul"
+      ]
+    },
+    {
+      "text": "Water Demon Hao Ji Liu leads Hei tribe’s vanguard troops into battle against Dong Fang alliance army, kills the enemy general and three sub-generals, and routs the leaderless troops before Shadow Sword Expert Bian Si Xuan ambushes and wounds him during the pursuit.",
+      "chapters": [
+        507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "vanguard-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hao_ji_liu"
+      ]
+    },
+    {
+      "text": "After days of confrontation, Dong Fang Yu Liang personally writes a war challenge to Hei Lou Lan, whose rear army is still five thousand li away; Hei Lou Lan mockingly delays the date by four days to let his own reinforcements arrive. When battle begins, Dong Fang Yu Liang opens by sending Tang tribe’s Tang Miao Ming to challenge the Wolf King directly, a move the alliance’s own Gu Masters read as part of a scheme.",
+      "chapters": [
+        508
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "war-challenge-and-delay",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tang_tribe",
+        "char_tang_miao_ming"
+      ]
+    },
+    {
+      "text": "Tang Miao Ming’s challenge is bait meant to draw the Wolf King into a beheading-the-leader tactic, but Chang Shan Yin instead sends his full five hundred thousand wolf group forward in one motion, throwing Dong Fang alliance army into chaos as countless defensive Gu worms are activated at once.",
+      "chapters": [
+        509
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-unleashed",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_defensive_gu"
+      ]
+    },
+    {
+      "text": "Three Hearts Combination Soul turns out to be bait of Dong Fang Yu Liang’s own: with Hei Lou Lan drawn into the open, Bian Si Xuan strikes what she believes is the Wolf King and appears to kill him, prompting Dong Fang Yu Liang to call the battle won, but the fallen figure is a water image Gu decoy and the real Wolf King is unharmed.",
+      "chapters": [
+        512
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "trap-for-hei-lou-lan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dong Fang Yu Liang splits his star thought cloud killer move between Hei tribe’s black banner elite troop and Ge tribe, a tribe he treats as expendable within the alliance army, buying his side the upper hand until Fang Yuan lets the wolf group loose again and forces a full retreat.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "star-thought-cloud-and-retreat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ge_tribe"
+      ]
+    },
+    {
+      "text": "As Dong Fang alliance army collapses and flees, Dong Fang Yu Liang mobilizes rank four experts and buried charred thunder potato Gu to cover the escape, while Dong Fang tribe’s own feather arrow elite troop holds a defense wall against the pursuit without losing a single member.",
+      "chapters": [
+        515
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "covered-retreat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_charred_thunder_potato_gu"
+      ]
+    },
+    {
+      "text": "Eight days after the battle, as merits are tallied, Hei Lou Lan’s entry credits him with personally pinning down Dong Fang Yu Liang, the alliance’s strongest expert, and killing Wei Xin, E Xuan Ming, and Jiang Wan Shan while they fought under Three Hearts Combination Soul.",
+      "chapters": [
+        516
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-merit-tally",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "With the alliance’s rank four experts mostly dead and morale gone, Dong Fang Yu Liang runs out of Gu Masters willing to answer Pan Ping’s challenge and orders the injured Tang tribe leader out instead, over his son’s objection. Facing Hei Lou Lan’s offer of submission, Dong Fang Yu Liang stands on the wall in silence.",
+      "chapters": [
+        518
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "final-stand",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_pan_ping"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/dong-fang-alliance/",
+      "chapters": [
+        501,
+        503,
+        505,
+        506,
+        507,
+        508,
+        509,
+        512,
+        514,
+        515,
+        516,
+        518
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "alliance",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Dong Fang Yu Liang",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

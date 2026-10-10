@@ -1,0 +1,258 @@
+{
+  "id": "fac_tang_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tang Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe under Dong Fang Yu Liang that fields Tang Miao Ming as a cultivated fox enslavement expert.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 509,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    509,
+    510,
+    518,
+    567
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tang_fang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 509,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tang_miao_ming",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 509,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_tang_fang",
+      "count": 4
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_luo_yu_feng",
+      "count": 2
+    },
+    {
+      "target": "char_pan_ping",
+      "count": 2
+    },
+    {
+      "target": "char_wang_jiang",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_pellet_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_swallow_fire_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_sole_blade_gu",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Tang Fang pours primeval essence into fire pellet Gu as night wolves press in, but a Tang tribe elder blocks his charge and pulls him back, naming him the tribe’s third young master and a rank three genius at twenty two. The elder then tells him to flee when Wang Jiang appears, recalling that Tang tribe took Wang Jiang’s fiance Luo Yu Feng.",
+      "chapters": [
+        509
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wang-jiang-on-the-field",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tang_fang",
+        "gu_fire_pellet_gu",
+        "char_wang_jiang",
+        "char_luo_yu_feng"
+      ]
+    },
+    {
+      "text": "Before Hei tribe can send Pan Ping, Dong Fang Yu Liang sends Tang Miao Ming forward to challenge Wolf King. She means to force a small fox-group duel, then loses focus when Pan Ping charges; her rotating round fox formation collapses and he captures her.",
+      "chapters": [
+        509
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fox-challenge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "char_dong_fang_yu_liang",
+        "char_tang_miao_ming",
+        "char_pan_ping"
+      ]
+    },
+    {
+      "text": "Tang tribe always prioritized fire path Gu worms, which is why Wang Jiang bought rank four swallow fire Gu to use against them.",
+      "chapters": [
+        510
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fire-path-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Tang tribe leader Tang You had been bedridden after two Hei tribe Gu Masters wounded him while he protected tribesmen. Dong Fang Yu Liang orders him to fight; Tang You accepts for the tribe’s standing and meets Pan Ping, who beheads him and raises the head as Tang You.",
+      "chapters": [
+        518
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "challenge-at-the-wall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Inside Imperial Court blessed land, Tang Miao Ming names Tang Fang Tang tribe’s tribe leader, says the tribe suffered heavily in the contest and was almost swallowed, and presses him to rebuild through Eighty-Eight True Yang Building.",
+      "chapters": [
+        567
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "true-yang-building-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "house_eighty_eight_true_yang_building"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/tang-tribe/",
+      "chapters": [
+        509,
+        510,
+        518,
+        567
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "id": "fac_wang_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wang Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe Bei Cao Sheng invites beside crescent lake into the Bei, Zheng, and Pei alliance against Ge tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 477,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    477,
+    478,
+    484
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_wang_de_dao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 478,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_wang_jiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 509,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wang_de_dao",
+      "count": 4
+    },
+    {
+      "target": "char_wang_jiang",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 2
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_pei_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_yan_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_tu_bo",
+      "count": 1
+    },
+    {
+      "target": "char_luo_yu_feng",
+      "count": 1
+    },
+    {
+      "target": "char_tang_fang",
+      "count": 1
+    },
+    {
+      "target": "move_seven_star_light",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Beside crescent lake, Wang tribe leader hears that Yan Tribe has fallen to Ge Tribe and looks at Bei tribe’s envoy with shock. The envoy is Bei Cao Sheng, an old rank three enslavement path Gu Master with wrinkled face, grey hair, and sunken dark eyes.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shock-at-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crescent_lake",
+        "fac_yan_tribe",
+        "fac_ge_tribe",
+        "fac_bei_tribe",
+        "char_bei_cao_sheng",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Wang tribe leader presses how a weaker Ge tribe could swallow Yan, and Bei Cao Sheng names Chang Shan Yin, then argues today’s Wolf King is past his prime and that Bei’s forest soldier corps, Zheng’s lightning spear battle formation, and Pei tribe leader Pei Yan Fei can answer him. Wang tribe leader stalls for up to three days while hosting Bei Cao Sheng. Alone with Wang De Dao, he says they will not join, calling Wang tribe a large scale force that must move carefully for the Imperial Court struggle; Wang De Dao plans to decline tactfully after three days and secretly letter Ge tribe with goodwill and warning so the sides fight while Wang tribe watches from the sideline.",
+      "chapters": [
+        478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hosting-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "fac_pei_tribe",
+        "char_pei_yan_fei",
+        "char_wang_de_dao",
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "Wang tribe leader reads the battle report and says he underestimated the Wolf King. Wang De Dao treats Ge tribe’s surprise strike as breaking unspoken rules among the tribes. On the third hosting day, when Bei Cao Chuan comes to meet him, Wang tribe leader refuses the meeting and has Wang De Dao claim closed cultivation instead.",
+      "chapters": [
+        484
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-report",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bei_cao_chuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/wang-tribe/",
+      "chapters": [
+        477,
+        478,
+        484
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

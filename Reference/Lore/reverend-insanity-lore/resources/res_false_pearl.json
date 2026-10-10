@@ -1,0 +1,131 @@
+{
+  "id": "res_false_pearl",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "False pearl",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "False pearl is a rank eight transformation path immortal material that can transform into any gem.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1803,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1803
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_transformation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_transformation",
+      "count": 1
+    },
+    {
+      "target": "res_prospering_spring_light",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_transformation_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "False pearl is not a pearl. It is a transformation path immortal material that can transform into any gem. It is a rank eight material, the same grade as prospering spring light.",
+      "chapters": [
+        1803
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "transformation-material",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the Long Hair refinement path formation, Fang Yuan calls for false pearl as the next immortal material after prospering spring light and names it that refinement’s main material. The false pearl integrates quickly into the fire. Prospering spring light from the same sequence is covered on prospering spring light.",
+      "chapters": [
+        1803
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "long-hair-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "res_prospering_spring_light"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/false-pearl/",
+      "chapters": [
+        1803
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Transformation Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

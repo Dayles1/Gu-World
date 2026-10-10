@@ -1,0 +1,661 @@
+{
+  "id": "char_jia_fu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jia Fu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "jia fu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цзя Фу",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Fu of the Jia clan"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jia Fu is the rank four leader of the Jia family merchant caravan that visits Gu Yue village on Qing Mao Mountain in the novel's early Southern Border stretch.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 39,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    4,
+    39,
+    44,
+    45,
+    54,
+    55,
+    56,
+    57,
+    59,
+    109,
+    113,
+    170,
+    176,
+    184,
+    232,
+    247,
+    253
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_jia_family",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 39,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_treasure_brass_toad",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 39,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_bamboo_gentleman_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 57,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_jia_family",
+      "count": 4
+    },
+    {
+      "target": "gu_treasure_brass_toad",
+      "count": 4
+    },
+    {
+      "target": "gu_bamboo_gentleman_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 2
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 2
+    },
+    {
+      "target": "char_jia_jin_sheng",
+      "count": 2
+    },
+    {
+      "target": "gu_black_boar_gu",
+      "count": 2
+    },
+    {
+      "target": "char_jia_gui",
+      "count": 2
+    },
+    {
+      "target": "char_tie_xue_leng",
+      "count": 2
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 2
+    },
+    {
+      "target": "char_jia_long",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_flower_wine_monk",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bamboo_building",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "gu_attitude_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_belief_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_rules_and_regulation_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_suspicion_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_whirlwind_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "gu_scar_rock_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_three_star_cave",
+      "count": 1
+    },
+    {
+      "target": "gu_cleansing_water_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_green_copper_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_red_steel_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_leader",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He arrives seated on a Treasure Brass Toad at the head of the caravan. The first naming line calls him Fu of the Jia clan, then the same paragraph settles on Jia Fu. Gu Yue Bo greets him in person rather than leave a rank three elder to receive the merchant line, because of his rank four status.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_treasure_brass_toad",
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "That trade route sits among the Southern Border mountains, of which Qing Mao Mountain is one stop.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "He is a middle-aged man with a circular face full of pockmarks. He is fat and has a large belly. His eyes form into slits when he smiles.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He has a muscular short body coupled with a giant belly. He wears a long-sleeved yellow robe.",
+      "chapters": [
+        44
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His face has a long scar.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "facial-scar",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Crowds and Gu Yue speakers treat him as rank four throughout the first visit, and later talk still uses him as the rare example of a rank four caravan head when most caravan leaders are only rank three.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "He presents the Jia family’s business as built on trust and honesty when he publicly apologises for Jia Jin Sheng’s fake Black Boar Gu scam and pays double compensation. Jia Jin Sheng takes that scene as another trap that makes him Jia Fu’s stepping stone again, while Fang Yuan watches and decides the Flower Wine Monk image wall can be sold through a caravan merchant.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jia_family",
+        "char_jia_jin_sheng",
+        "gu_black_boar_gu",
+        "char_flower_wine_monk"
+      ]
+    },
+    {
+      "text": "When Jia Jin Sheng goes missing, Jia Fu’s return to Gu Yue village is announced.",
+      "chapters": [
+        54
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jia-jin-sheng-and-the-interrogation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "In the clan hall he presses Fang Yuan before the clan leaders.",
+      "chapters": [
+        55
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jia-jin-sheng-and-the-interrogation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "That hall pressure continues as the witnesses and motive gaps are worked through.",
+      "chapters": [
+        56
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jia-jin-sheng-and-the-interrogation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He then tries Footprint Gu and rank four Bamboo Gentleman, a lie-detecting Gu he obtained through rock gambling when young, and the three questions he asks under elder supervision clear Fang Yuan in the hall.",
+      "chapters": [
+        57
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jia-jin-sheng-and-the-interrogation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bamboo_gentleman_gu"
+      ]
+    },
+    {
+      "text": "Leaving the village, he tells a subordinate that attitude is everything: he investigated at once, used Bamboo Gentleman, and plans to hire divine investigator Tie Xue Leng so his father sees effort whether or not the case is solved. In the same private talk he blames rival Jia Gui and vows eye for an eye.",
+      "chapters": [
+        59
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jia-jin-sheng-and-the-interrogation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_xue_leng",
+        "char_jia_gui"
+      ]
+    },
+    {
+      "text": "A year later he returns early on the Treasure Brass Toad with a facial scar, and Gu Yue Bo receives him again. Village report after that return says he squabbled with Jia Gui in public and the clash became a fight, and that the scar on his face could be from that fight; the scar link is presented as rumor, not settled fact. He brings investigators for Jia Jin Sheng’s matter and pushes harder trade goods after the asset struggle with Jia Gui intensified at home.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "second-visit-and-recruitment",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Fang Yuan’s auction bids impress him, Jia Fu invites Fang Yuan upstairs, praises the business talent, and tries to recruit him. When Fang Yuan refuses to leave the clan, Jia Fu gives a token that will prove welcome if Fang Yuan later wants help, and he also mentions that Tie Xue Leng has already been invited though the investigator’s schedule is years out.",
+      "chapters": [
+        113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "second-visit-and-recruitment",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Tie Xue Leng reaches Qing Mao Mountain,",
+      "chapters": [
+        170
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "investigation-and-succession-dispute",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Bo ties the clan’s cooperation to providing a suitable explanation for lord Jia Fu, and Tie Ruo Nan works from a letter Jia Fu compiled on the Jia Jin Sheng case, including Bamboo Gentleman, the rock-gambling Liquor worm, and the later recruitment bid.",
+      "chapters": [
+        176
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "investigation-and-succession-dispute",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_ruo_nan",
+        "gu_liquor_worm"
+      ]
+    },
+    {
+      "text": "Tie Xue Leng himself had another request at hand: Jia Fu paying a high cost to ask him to investigate Jia Jin Sheng’s death.",
+      "chapters": [
+        184
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "investigation-and-succession-dispute",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the later Southern Border road, caravan talk still treats Jia Long as Jia Fu’s subordinate while Chen clan lean toward Jia Gui,",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "investigation-and-succession-dispute",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_long",
+        "fac_chen_clan"
+      ]
+    },
+    {
+      "text": "and Fang Yuan later plans to use Jia Fu’s token to buy Jia Long’s trust for several actions.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "investigation-and-succession-dispute",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "No later chapter states a settled winner of the Jia family succession in the current timeline.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "investigation-and-succession-dispute",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/jia-fu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/jia-fu/",
+      "chapters": [
+        4,
+        39,
+        44,
+        45,
+        54,
+        55,
+        56,
+        57,
+        59,
+        109,
+        113,
+        170,
+        176,
+        184,
+        232,
+        247,
+        253
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 39",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Jia Family as of ch. 39",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 39,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_bamboo_gentleman_gu",
+      "role": "owner",
+      "recorded_chapter": 57,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_treasure_brass_toad",
+      "role": "user",
+      "recorded_chapter": 39,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

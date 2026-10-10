@@ -1,0 +1,221 @@
+{
+  "id": "gu_return_to_childhood_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Return to Childhood Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Return to Childhood Gu is the Gu Century Boy uses in place of lifespan Gu to stretch his life while keeping a child's body.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 367,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    367,
+    599
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_century_boy",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 367,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_century_boy",
+      "count": 4
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_first_gen_gu_yue",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/return-to-childhood-gu/",
+      "chapters": [
+        367,
+        599
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The Gu accumulates his lifeforce and slowly releases it.",
+        "chapters": [
+          367
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_century_boy",
+      "role": "user",
+      "recorded_chapter": 367,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "At a banquet on San Cha mountain, Century Boy sits the main seat in a black robe and greets the gathered Gu Masters as host. He is over a hundred and eighty years old.",
+        "chapters": [
+          367
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_san_cha_mountain",
+          "char_century_boy",
+          "fac_gu_masters"
+        ]
+      },
+      {
+        "text": "A later chapter names Century Boy as a demonic path Gu Master in southern border who uses return to childhood Gu on himself to maintain a child’s appearance and reduce the speed of the loss of his lifeforce. It places that method beside First Gen Gu Yue becoming a zombie, and calls both only mortal methods next to Gu Immortal lifespan arts.",
+        "chapters": [
+          599
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "lifespan-comparison",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master",
+          "char_first_gen_gu_yue",
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

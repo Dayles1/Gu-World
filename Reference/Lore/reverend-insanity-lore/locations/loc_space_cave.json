@@ -1,0 +1,240 @@
+{
+  "id": "loc_space_cave",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Space Cave",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Legends of Ren Zu forbidden ground ranked with the river of time, holding countless space path Gu worms.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 434,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    434,
+    435,
+    464,
+    879,
+    2099
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_moving_perspective_cup_gu",
+      "count": 1
+    },
+    {
+      "target": "char_desolate_ancient_moon",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "gu_cognition_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_door_of_life_and_death",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Thieving Heaven Demon Venerable sought to send Moving Perspective Cup Gu into the cave to bring out wild Gu worms, failed at that goal, yet the Gu later uses the cave’s passage so a pair of cups can swap and transport resources between two places. It connects the five regions and stays hidden; from inside, a space door can open to any place in the world, and where there is space there is a door into the cave. Very few people find it, and in human history only one person has entered and exited.",
+      "chapters": [
+        434
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_thieving_heaven_demon_venerable",
+        "gu_moving_perspective_cup_gu",
+        "sys_wild_gu"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because chapter 434’s explanation is narrated while Fang Yuan is in poison grassland. The cave connects the five regions, and the chapter gives it no known map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Cognition Gu tells Desolate Ancient Moon that one method is to enter space cave, open the space door to reach Ren Zu’s side, then use the cave to escape the Door of Life and Death, though that would only rescue his soul and not resurrect him. She already knows the cave exists but does not know how to find it.",
+      "chapters": [
+        435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ren-zu-rescue-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_cognition_gu",
+        "char_desolate_ancient_moon",
+        "char_ren_zu",
+        "loc_door_of_life_and_death"
+      ]
+    },
+    {
+      "text": "A speaker says Thieving Heaven Demon Venerable set up many inheritances and that rumor places his greatest inheritance in space cave.",
+      "chapters": [
+        464
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thieving-heaven-rumor",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration recalls that Lang Ya land spirit’s earlier condition was to solve why space escape Immortal Gu could not enter the Space Cave.",
+      "chapters": [
+        879
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lang-ya-condition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Narration lists space cave among secluded domains of heaven and earth recorded in The Legends of Ren Zu, for space path, also known as space door.",
+      "chapters": [
+        2099
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "secluded-domain-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_the_legends_of_ren_zu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/space-cave/",
+      "chapters": [
+        434,
+        435,
+        464,
+        879,
+        2099
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "cave",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

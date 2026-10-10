@@ -1,0 +1,147 @@
+{
+  "id": "move_stone_casket",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Stone Casket",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Stone Casket is Yin Liu Gong's immortal killer move. It seals immortal zombies inside stone statues that can stand as hall defenses.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 739,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    739,
+    757
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_yin_liu_gong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yin_liu_gong",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the Northern Plains Zombie Alliance headquarters, Fang Yuan reaches a large hall whose doors are flanked by tall stone statues bulkier than even his eight arm immortal zombie physique. Gu Ye names Yin Liu Gong as one of three deputy city lords who can command immortal zombies to fight.",
+      "chapters": [
+        739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "fac_zombie_alliance",
+        "char_fang_yuan",
+        "char_gu_ye",
+        "char_yin_liu_gong"
+      ]
+    },
+    {
+      "text": "Pressed by Yao Huang for immortal zombie materials, Yin Liu Gong says he holds two immortal zombie bodies of Zombie Alliance traitors, sealed with stone casket and set as defenses for the discussion hall doors, not to be mobilized under normal circumstances. He refuses to dig up past immortal zombies from the Earth Trench graveyard, and he will not release those sealed traitors for the refinement plan either.",
+      "chapters": [
+        757
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sealed-bodies",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yao_huang",
+        "reg_earth_earth_trench"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/stone-casket/",
+      "chapters": [
+        739,
+        757
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Yin Liu Gong",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "id": "gu_therapy_light_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Therapy Light Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Therapy Light Gu is a rank three healing Gu with area-of-effect properties. It can stop bleeding at once, fully recover light wounds, and heal heavy wounds by half.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 164,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    164
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_healing_gu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_thunder_crown_wolf",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/therapy-light-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/therapy-light-gu/",
+      "chapters": [
+        164
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Healing Gu Masters stand at the outer circle of the fight, using Therapy Light Gu from time to time, with defensive Gu Masters giving them care and protection.",
+        "chapters": [
+          164
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "use-in-the-wolf-tide-battle",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "During the wolf tide’s fight against the thunder crown wolf, a middle-aged female Gu Yue clan elder stretches out both hands and a pure white, warm light bubbles forth, flowing first onto Gu Yue Bo’s body and then reflecting onto each of the other clan elders. This is Therapy Light Gu, a rank three healing Gu with area-of-effect properties: it can instantly stop bleeding on Gu Masters’ wounds, fully recover light wounds, and heal heavy wounds by half.",
+        "chapters": [
+          164
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_thunder_crown_wolf",
+          "fac_gu_yue_clan",
+          "char_gu_yue_bo",
+          "sys_healing_gu",
+          "fac_gu_masters"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

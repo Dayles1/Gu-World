@@ -1,0 +1,180 @@
+{
+  "id": "char_great_scholar_shen",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Great Scholar Shen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Brother Shen"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Great Scholar Shen is a roaming scholar of Profound Literature grotto-heaven who judges a poetry contest with Teacher Jiang and once ranked among the ten great scholars.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1824,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1824,
+    1825,
+    1870
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_teacher_jiang",
+      "count": 2
+    },
+    {
+      "target": "char_li_xiao_bai",
+      "count": 2
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a poetry competition he praises the students’ scholarly aura and credits Brother Jiang’s teachings. After calling their literary battle a tie, he proposes a passing-the-flower game so three winning students can recite poems, then opens his eyes and asks who holds the red flower.",
+      "chapters": [
+        1824
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_teacher_jiang"
+      ]
+    },
+    {
+      "text": "He smiles and nods when Li Xiao Bai greets the teachers, laughs when the student takes another turn under the rules, and praises a poem’s final line. Using a method to inspect literary qi and talent qi, he finds ordinary talent and takes no suspicion, calling Li Xiao Bai very honest.",
+      "chapters": [
+        1825
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "judging-li-xiao-bai",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_xiao_bai"
+      ]
+    },
+    {
+      "text": "Li Xiao Bai later recalls that Great Scholar Shen, who competed against Teacher Jiang, was one of the ten great scholars in a past selection, yet remains at rank five peak stage for lack of outstanding political talent or a powerful background. Teacher Jiang and Great Scholar Shen are said to have wandered outside the Imperial Court rather than become officials, one opening a private school while the other roamed everywhere, with immortal ascension nearly hopeless under Imperial Court control of immortal materials.",
+      "chapters": [
+        1870
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ten-great-scholars",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/great-scholar-shen/",
+      "chapters": [
+        1824,
+        1825,
+        1870
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 1870",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 1870,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

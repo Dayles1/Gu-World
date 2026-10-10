@@ -1,0 +1,186 @@
+{
+  "id": "gu_running_corpse_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Running Corpse Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Running Corpse Gu is a rank two consumable Gu used on corpses to form zombies.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 256,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    256
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_charred_thunder_potato_mother_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_charred_thunder_potato_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_zombie_heart_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/running-corpse-gu/",
+      "chapters": [
+        256
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 2,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Over Charred Thunder Potato Gu it has an advantage: the zombies it creates can grow and advance a stage, for instance from white-hair to black-hair to green-hair and onward.",
+        "chapters": [
+          256
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_charred_thunder_potato_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "It belongs to the zombie king’s lineage of Gu.",
+        "chapters": [
+          256
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Zombie Heart Gu produces it. That production compares to how Charred Thunder Potato Mother Gu produces Charred Thunder Potato Gu.",
+        "chapters": [
+          256
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "production",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_zombie_heart_gu",
+          "gu_charred_thunder_potato_mother_gu",
+          "gu_charred_thunder_potato_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

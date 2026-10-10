@@ -1,0 +1,115 @@
+{
+  "id": "house_cloud_passing_building",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cloud Passing Building",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Cloud Passing Building is one of Wind Cloud Manor's two signature Immortal Gu Houses. It is paired with Wind Sweeping Building.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1708,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1708
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "fac_wind_cloud_manor",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 2
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 2
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Wind Sweeping Building and Cloud Passing Building can combine into the rank eight Immortal Gu House Wind Cloud Manor, which has extraordinary power. In the five hundred years of Fang Yuan’s previous life, Wind Cloud Manor was once ranked as the number one Immortal Gu House for some time.",
+      "chapters": [
+        1708
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_wind_sweeping_building",
+        "sys_immortal_gu_house",
+        "house_wind_cloud_manor",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/cloud-passing-building/",
+      "chapters": [
+        1708
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Wind Cloud Manor (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "loc_yuan_yang_city",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yuan Yang City",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Central Continent city near the periphery of True Yang mountain range, tied to Fang Yuan's prior-life blood beast missions.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 850,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    850
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "loc_true_yang_mountain_range",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_beast",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes the city’s streets or walls beyond placing it near the periphery of True Yang mountain range.",
+      "chapters": [
+        850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_true_yang_mountain_range"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s current location is at the periphery of True Yang mountain range, near Yuan Yang City. Desolate beasts do not normally come there, and because the site is near Yuan Yang City, many Gu Masters are active in the area.",
+      "chapters": [
+        850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_desolate_beast",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Song Zi Xing’s severed arm sits in a golden bell phantom left by a Gu Immortal chasing him. After one night the bell would vanish and the arm would explode into blood mist covering up to a few hundred li, harming living beings nearby. Hundreds of years later, Yuan Yang City would send missions to recruit geniuses, explore that blood mist, and kill the blood beasts growing inside, to stop a beast tide from forming and attacking the city. In his previous life, after reaching Central Continent, Fang Yuan lived in Yuan Yang City for a period and accepted those missions to kill blood beasts in order to survive.",
+      "chapters": [
+        850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-blood-mist",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_zi_xing",
+        "sys_gu_immortal",
+        "reg_central_continent"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/yuan-yang-city/",
+      "chapters": [
+        850
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "city",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

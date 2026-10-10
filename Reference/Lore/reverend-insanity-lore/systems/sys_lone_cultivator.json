@@ -1,0 +1,174 @@
+{
+  "id": "sys_lone_cultivator",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lone Cultivator",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "loner Gu Master"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A lone cultivator is a Gu Master outside a clan or force, free of its duties and shut out of its resources.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 74,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    74,
+    78,
+    280,
+    380,
+    493
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_demonic_path",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_ku_mo",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Mortals who become Gu Masters without full clan acceptance can only serve as henchmen. Dissatisfied, they become loner Gu Masters. Cultivation is extremely difficult, and competition for resources pushes them toward killing and the demonic path.",
+      "chapters": [
+        74
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Gu Yue Bo, buried in clan affairs, sometimes wants to be a lone cultivator, free and easy with no burden, so cultivation could move faster. Outside the clan system, clan resources are unavailable, and without resources cultivation stalls.",
+      "chapters": [
+        78
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-burden",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "Demonic Gu Masters are mostly lone cultivators. They receive no support, and even primeval stones and food must be acquired alone.",
+      "chapters": [
+        280
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "demonic-overlap",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Ku Mo is remembered as a great rank five expert born as a lone cultivator who slogged alone his whole life.",
+      "chapters": [
+        380
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-example",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ku_mo"
+      ]
+    },
+    {
+      "text": "Fang Yuan names himself a lone cultivator, or rather a demonic Gu Master, when Immortal Crane Sect investigates him.",
+      "chapters": [
+        493
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "self-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_immortal_crane_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/lone-cultivator/",
+      "chapters": [
+        74,
+        78,
+        280,
+        380,
+        493
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Affiliation",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

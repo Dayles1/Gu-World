@@ -1,0 +1,217 @@
+{
+  "id": "fac_lan_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lan Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Western Desert clan at Zhou Xi oasis that claims multi-generation neutrality.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 694,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    694,
+    695
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_lan_duan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 694,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_lan_xin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 694,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_lan_duan",
+      "count": 4
+    },
+    {
+      "target": "char_lan_xin",
+      "count": 4
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "loc_zhou_xi_oasis",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_womans_heart",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "res_worldly_sand_gull_dead_egg",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From high above, Zhou Xi oasis looks like a jewel set in golden desert, with a clear blue lake, trees around it, a lively marketplace, and people living there in prosperity. Lan clan Gu Masters rise from the oasis on sand gulls to challenge flight over their ground. The clan head pavilion stands at the center of the oasis as the clan’s central place.",
+      "chapters": [
+        694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Gu Masters of Lan clan rise from Zhou Xi oasis on sand gulls when Fang Yuan appears in the sky. Their leader, a rank three among mostly rank two riders, names the oasis as Lan clan ground and says the sky above it is a no-fly zone, with entry handled through Gu Masters who attend visiting outsiders. He treats flight above Lan clan as a provocation under western desert general knowledge.",
+      "chapters": [
+        694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "no-fly-zone-claim",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_zhou_xi_oasis",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Clan leadership deaths and the ruined oasis.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuans-strike",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan kills the rank three leader in the air, then crashes through Lan clan attacks into the clan head pavilion at the oasis center. The elderly clan leader says Lan clan has been neutral for many generations and has not meddled with the outside world, and he offers compensation until Fang Yuan is satisfied. Surrounding Gu Masters name elder Lan Duan among the dead and refuse that stance; Fang Yuan then kills the clan leader after demanding six thousand women’s hearts within ten minutes. He next kills elder Lan Xin while slaughtering the oasis, and Woman’s Heart feeds on qualifying hearts through the kill.",
+      "chapters": [
+        694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuans-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lan_duan",
+        "char_lan_xin",
+        "gu_womans_heart"
+      ]
+    },
+    {
+      "text": "After the long kill feeds Woman’s Heart to full, Fang Yuan returns to the ruined pavilion ground and puts Woman’s Heart away. From there he opens underground chambers of primeval stones and Gu refinement materials, then Gu worm rooms that the text names as Lan clan’s Gu worm treasury and the foundation of the entire clan. Deeper still he reaches Lan clan’s sand gull breeding ground, where the clan raises many more sand gulls than other forces of the same level, and he takes a house-sized dead egg of the ancient desolate beast worldly sand gull from the central stone table.",
+      "chapters": [
+        695
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "underground-treasuries",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/lan-clan/",
+      "chapters": [
+        694,
+        695
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

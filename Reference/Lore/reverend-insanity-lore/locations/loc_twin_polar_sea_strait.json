@@ -1,0 +1,200 @@
+{
+  "id": "loc_twin_polar_sea_strait",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Twin Polar Sea Strait",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An Eastern Sea sea strait where Song Jia Dan keeps his post for Song clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 899,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    899,
+    987,
+    1393
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "char_song_qi_yuan",
+      "count": 2
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_shark_sea",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 1
+    },
+    {
+      "target": "char_song_xia_qi",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_heavy_water_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_old_eccentric_tian_nan",
+      "count": 1
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Thick fog covers Twin Polar Sea Strait all year. Song Qi Yuan gives Song Yi Shi a token so Song Jia Dan will sense her approach; when she holds it up, the fog parts into a small tunnel that leads inside. Song Yi Shi and Song Xia Qi enter and meet Song Jia Dan on a cliff there.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_qi_yuan",
+        "char_song_yi_shi",
+        "char_song_jia_dan",
+        "char_song_xia_qi"
+      ]
+    },
+    {
+      "text": "Song Jia Dan is a wisdom path Gu Immortal Song clan nurtured for the clan. He stays on the cliff in ordinary times: his upper body is already old and weak, and his lower body has petrified so his legs seem fused with the strait. Since becoming a wisdom path Gu Immortal he has sat there, using a special wisdom path inheritance to fuse with the world, and Song clan turns to him for important deductions. Among Eastern Sea Gu Immortals he is named one of the three most capable wisdom path Gu Immortals, with the saying that Jia Dan sits in twin polar.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "song-jia-dans-post",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_song_clan",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "Wave sounds reach through the fog into the strait while Song Jia Dan rests on the cliff with his lower body in grey stone. At Song Qi Yuan’s token he opens a path through the fog for Song Yi Shi and Song Xia Qi. His method costs him his freedom: his lower body turned to stone and fused with Twin Polar Sea Strait, and when his lifespan ends he would turn to stone completely. They come for the Tian Nan inheritance in Ascending Heaven Plain and for deductions on Wisdom Star; Song Jia Dan tries and fails to deduce anything on that target.",
+      "chapters": [
+        987
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "deduction-request",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_eccentric_tian_nan",
+        "loc_ascending_heaven_plain"
+      ]
+    },
+    {
+      "text": "A later comparison lists twin polar sea strait with ice flow sea area, air bubble sea area, shark sea, elegant splendorous sea area, and other mystical Eastern Sea sea areas.",
+      "chapters": [
+        1393
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "among-eastern-sea-sea-areas",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shark_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/twin-polar-sea-strait.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/twin-polar-sea-strait/",
+      "chapters": [
+        899,
+        987,
+        1393
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

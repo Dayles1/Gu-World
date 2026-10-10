@@ -1,0 +1,187 @@
+{
+  "id": "gu_hidden_aura_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hidden Aura Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hidden Aura Gu appears in Spectral Soul Demon Venerable's childhood grey memory, when he is already a rank one Gu Master.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1013,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1013
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_spectral_soul_demon_venerable",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1013,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 3
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/hidden-aura-gu/",
+      "chapters": [
+        1013
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "He sneaks into the study, then changes course. As a rank one Gu Master facing a rank four grandfather, he judges it is very easy for his grandfather to find him, so he opens a secret door and hides in the tunnel behind it instead.",
+        "chapters": [
+          1013
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "use-plan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_spectral_soul_demon_venerable",
+      "role": "refiner",
+      "recorded_chapter": 1013,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Young Spectral Soul Demon Venerable says he has refined Hidden Aura Gu that day and means to hide in his grandfather’s study to shock him.",
+        "chapters": [
+          1013
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_spectral_soul_demon_venerable"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

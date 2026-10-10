@@ -1,0 +1,207 @@
+{
+  "id": "gu_good_deeds_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Good Deeds Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Good Deeds Gu is a rank five mortal Gu on Paradise Earth's Merit Obelisk. It costs fifty merit points and is the most expensive mortal Gu reward listed there.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1891,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1891,
+    2124
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_shang_xin_ci",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2124,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shang_xin_ci",
+      "count": 3
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/good-deeds-gu/",
+      "chapters": [
+        1891,
+        2124
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_shang_xin_ci",
+      "role": "holder",
+      "recorded_chapter": 2124,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Shen Cong Sheng sees it among the obelisk rewards and has never seen such a Gu worm before. The obelisk does not write the Gu worm’s effect, so he knows nothing about what it does, yet he judges it unique for Paradise Earth Immortal Venerable to offer it as a reward.",
+        "chapters": [
+          1891
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_shen_cong_sheng",
+          "sys_gu_worms",
+          "char_paradise_earth_immortal_venerable"
+        ]
+      },
+      {
+        "text": "A mysterious old man leaves Shang Xin Ci a Gu worm that contains a Gu Immortal true inheritance he thinks suits her cultivation path. When she inspects it, joy shows on her face and she names it good deeds Gu.",
+        "chapters": [
+          2124
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "true-inheritance-vessel",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_shang_xin_ci",
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

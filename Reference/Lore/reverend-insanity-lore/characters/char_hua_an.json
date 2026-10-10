@@ -1,0 +1,335 @@
+{
+  "id": "char_hua_an",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hua An",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "hua an",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хуа Ань",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Master Hua"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hua An of Nan Gong is an Eastern Sea wisdom path Gu Immortal named in a saying as hiding in Nan Gong.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 899,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    899,
+    903,
+    1472,
+    1476,
+    1478,
+    1495
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_hua_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1472,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_hua_clan",
+      "count": 4
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_dragon_head_tortoise",
+      "count": 2
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 2
+    },
+    {
+      "target": "fac_nan_gong_clan",
+      "count": 2
+    },
+    {
+      "target": "char_lu_tan_xin",
+      "count": 2
+    },
+    {
+      "target": "char_you_chan",
+      "count": 2
+    },
+    {
+      "target": "house_hua_qiao_pavilion",
+      "count": 2
+    },
+    {
+      "target": "char_qing_yue_zhi_cheng",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_song_xia_qi",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_adversity_sea",
+      "count": 1
+    },
+    {
+      "target": "char_gong_liang_bai",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "move_lingering_poisonous_ant_plague",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Eastern Sea he is named among the three publicly recognized most capable wisdom path Gu Immortals. The saying goes: Jia Dan sits in twin polar, Hua An hides in Nan Gong, there is also Dragon Head Tortoise, living inside adversity sea. After Song Jia Dan fails to deduce Xing Xiang Zi, Song Yi Shi and Song Xia Qi wonder whether it was Nan Gong clan’s Gu Immortal Hua An, or Dragon Head Tortoise Immortal in adversity sea, who helped the target evade the deduction.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "sys_gu_immortal",
+        "char_song_jia_dan",
+        "fac_nan_gong_clan",
+        "char_dragon_head_tortoise",
+        "char_song_yi_shi",
+        "char_song_xia_qi"
+      ]
+    },
+    {
+      "text": "Lu Tan Xin repeats the same saying to Fang Yuan as Xing Xiang Zi and names it as referring to the three best wisdom path experts in Eastern Sea, with Song Jia Dan ranked the highest.",
+      "chapters": [
+        903
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lu_tan_xin",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "You Chan meets him at Hua Qiao Pavilion. He was originally a Hua clan Gu Immortal and left Hua clan. While escaping he obtained You Chan’s help, and the two became good friends. After that he was taken in at Nan Gong, and he cultivated until he became reputed in Eastern Sea for wisdom path. The second verse of the saying is talking about him. Hua clan kept threatening him and tried assassination multiple times, so he usually stayed inside at Nan Gong and rarely went out.",
+      "chapters": [
+        1472
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hua-clan-origin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_you_chan",
+        "house_hua_qiao_pavilion",
+        "fac_hua_clan"
+      ]
+    },
+    {
+      "text": "You Chan looks at his strands of white hair as they part. She says he expended his own lifespan for her deduction.",
+      "chapters": [
+        1476
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "white-hair",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Even Hua An, one of Eastern Sea’s three wisdom path experts, cannot deduce past Fang Yuan’s wisdom path defense method, which also holds against Heavenly Court and heaven’s will.",
+      "chapters": [
+        1478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "deductions-fail-against-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Hua An deduces that Qing Yue Zhi Cheng will come looking for him and sends a Gu Immortal ahead to welcome him. He admits that Fairy You Chan had already asked him for help and that he was unable to help her. He proposes spreading rumors that the two fairies are dead, reasoning that if they are alive they will learn from the rumor that he and Qing Yue Zhi Cheng are looking for them and want to help, and that if they are being hunted the rumor will confuse the culprit and turn his attention towards the two of them.",
+      "chapters": [
+        1495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "meeting-qing-yue-zhi-cheng",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qing_yue_zhi_cheng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/hua-an/",
+      "chapters": [
+        899,
+        903,
+        1472,
+        1476,
+        1478,
+        1495
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Hua Clan as of ch. 1472",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

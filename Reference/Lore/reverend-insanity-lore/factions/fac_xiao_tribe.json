@@ -1,0 +1,140 @@
+{
+  "id": "fac_xiao_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Western Desert force that lends Tang clan the rank seven emotion Gu for a costly attempt to explore Thieving Heaven Demon Venerable's dream realm.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 775,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    775
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_tang_yang",
+      "count": 2
+    },
+    {
+      "target": "gu_emotion_gu",
+      "count": 2
+    },
+    {
+      "target": "char_tang_fang_ming",
+      "count": 1
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "path_emotion",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes Xiao tribe’s appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Western Desert, Tang clan’s first supreme elder Tang Yang tells Tang Miao that even after spending so much effort to borrow the rank seven emotion Gu from Xiao tribe, dream realm exploration still suffered a heavy loss. Tang clan, a Western Desert super force, had discovered Thieving Heaven Demon Venerable’s dream realm years earlier and poured resources into dream path research; Tang Fang Ming was lost in that dream realm, and Tang Miao’s later attempt with the borrowed emotion path Immortal Gu still fails.",
+      "chapters": [
+        775
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "fac_tang_clan",
+        "char_tang_yang",
+        "gu_emotion_gu",
+        "char_thieving_heaven_demon_venerable",
+        "char_tang_fang_ming"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/xiao-tribe/",
+      "chapters": [
+        775
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

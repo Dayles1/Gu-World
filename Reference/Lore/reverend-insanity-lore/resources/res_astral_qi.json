@@ -1,0 +1,171 @@
+{
+  "id": "res_astral_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Astral qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Astral qi is the heaven qi of the nine heavens, bought and spent as a qi path immortal material in killer moves.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 861,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    861,
+    1817,
+    2109
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "res_earthly_limit_astral_qi",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_minor_sun_qi",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_xiang_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "res_elderly_qi",
+      "count": 1
+    },
+    {
+      "target": "res_righteous_qi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Astral qi is the heaven qi found up in the nine heavens. Outside the immemorial nine heavens is a thick wall of astral qi; a Gu Immortal who wants to explore the nine heavens must break through that wall.",
+      "chapters": [
+        861
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heaven-qi-of-the-nine-heavens",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s dragonman clone buys astral qi in treasure yellow heaven among qi path immortal materials used to fuel qi path killer moves, together with profound yin qi, minor sun qi, and domination qi. Heavenly astral cloth robe needs a large amount of astral qi; every thread of the resulting grey-white robe is made of astral qi. Minor sun qi from that sweep is covered on minor sun qi.",
+      "chapters": [
+        1817
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "killer-move-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "res_minor_sun_qi"
+      ]
+    },
+    {
+      "text": "After Fang Yuan annexes Qi Xiang grotto-heaven, astral qi appears among immortal materials that form in the sovereign immortal aperture alongside profound yin qi, luck qi, blood qi, domination qi, life qi, death qi, righteous qi, orchid vitality qi, elderly qi, and other named qi materials. Elderly qi and righteous qi from that production are covered on elderly qi and righteous qi.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-qi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_xiang_grotto_heaven",
+        "res_elderly_qi",
+        "res_righteous_qi"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/astral-qi/",
+      "chapters": [
+        861,
+        1817,
+        2109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Nine heavens",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

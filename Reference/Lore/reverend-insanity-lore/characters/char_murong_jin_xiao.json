@@ -1,0 +1,291 @@
+{
+  "id": "char_murong_jin_xiao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Murong Jin Xiao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Murong Jin Xiao is a Northern Plains rank seven Gu Immortal of Murong tribe who escorts an Eastern Sea rank eight guest at Qin Bai Sheng's auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 747,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    747,
+    752,
+    753,
+    763
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_murong_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 747,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_murong_tribe",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 2
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 2
+    },
+    {
+      "target": "char_lady_wan_shou",
+      "count": 2
+    },
+    {
+      "target": "char_he_lang_zi",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_crimson_reed_marsh",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "char_xue_xiang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Crimson Reed Marsh he stands beside that Eastern Sea guest, who controls the glass sea, praises Qin Bai Sheng’s auction as a method of self-protection, and answers the guest with open respect.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crimson_reed_marsh",
+        "reg_eastern_sea",
+        "char_qin_bai_sheng"
+      ]
+    },
+    {
+      "text": "He and the Eastern Sea rank eight take the first secret room and hide their identities while they bid.",
+      "chapters": [
+        753
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-secret-room",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After He Lang Zi learns that Ascending Heaven Plain lies in Eastern Sea, Murong Jin Xiao thanks the guest for help that left He Lang Zi unable to go there.",
+      "chapters": [
+        752
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-secret-room",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_he_lang_zi",
+        "loc_ascending_heaven_plain"
+      ]
+    },
+    {
+      "text": "Asked how many refinement path grandmasters Northern Plains has, he answers at once: Yao Huang of Yao tribe, Murong Xue Xiang of Murong tribe, Lady Wan Shou of Snowy Mountain, and the lone cultivator Lady Miao Li.",
+      "chapters": [
+        753
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-secret-room",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_yao_huang",
+        "fac_yao_tribe",
+        "char_xue_xiang",
+        "fac_murong_tribe",
+        "char_lady_wan_shou",
+        "loc_snowy_mountain"
+      ]
+    },
+    {
+      "text": "During the late bidding the Eastern Sea guest urges him to let go and promises compensation, because that force has no Immortal Gu House. Murong Jin Xiao refuses: Murong tribe’s Immortal Gu House lacks a core Immortal Gu, the stake is huge for the tribe, and he will fight for it whether he succeeds or fails.",
+      "chapters": [
+        763
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "red-fiend-divine-boat-bid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/murong-jin-xiao/",
+      "chapters": [
+        747,
+        752,
+        753,
+        763
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 747",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Murong Tribe as of ch. 747",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 747,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

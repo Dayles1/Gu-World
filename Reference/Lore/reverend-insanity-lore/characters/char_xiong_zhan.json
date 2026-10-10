@@ -1,0 +1,307 @@
+{
+  "id": "char_xiong_zhan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiong Zhan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xiong zhan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сюн Чжань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiong Zhan is a Xiong clan group leader on Qing Mao Mountain who carries Plunder Gu during the wolf tide alliance stretch.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 131,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    4,
+    131,
+    132,
+    135,
+    138
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_xiong_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 131,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_plunder_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 131,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_xiong_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_plunder_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 2
+    },
+    {
+      "target": "char_xiong_jiang",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He first appears near the mountainside of Qing Mao Mountain as group leader Xiong Zhan, already injured and short on primeval essence while a bold lightning wolf closes in. He vomits bloody water and says that even thirty percent essence would have kept them from being chased like this. A cliff blocks further retreat. The scene places him in the Xiong clan during the three-clan wolf tide cooperation with Bai clan Gu Masters.",
+      "chapters": [
+        131
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "fac_xiong_clan",
+        "fac_bai_clan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Qing Mao Mountain sits in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Two mixed groups from Xiong clan and Bai clan have been reduced to three survivors. One of the others still hopes for Bai Ning Bing, rumored to be rushing into battle from Bai closed-door cultivation. Rather than wait, Xiong Zhan chooses to risk Plunder Gu. He states that a beast king’s danger comes from the Gu on its body, that Plunder Gu can forcefully steal a Gu worm from an enemy, that activation must be sustained, and that he cannot move while it is active, so the other two must protect him. Bai Ning Bing watches the fight from a cliff above and does not intervene.",
+      "chapters": [
+        131
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-and-plunder-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "gu_plunder_gu",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "He half-kneels, pours his remaining primeval essence into Plunder Gu in his right palm, and nearly completes the steal. He knows Plunder Gu’s success rate is very low, but failure means death here. Essence runs out; failed plunder brings backlash; he vomits blood; and the freed wolf’s lightning kills him at once, leaving a charred corpse. Bai Ning Bing then takes Plunder Gu from the body, calling the other Gu worms ordinary and this one slightly interesting, and keeps it against the three-clan hand-over agreement.",
+      "chapters": [
+        132
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-plunder-gu-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xiong Jiang later names Xiong Zhan as his cousin and says that on Qing Mao Mountain only Xiong Zhan has this Gu. He demands how his cousin died and why the Gu is in Bai Ning Bing’s hands, and charges that Bai Ning Bing watched the fight without helping. Bai Ning Bing admits he collected Plunder Gu because the use looked interesting.",
+      "chapters": [
+        135
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-plunder-gu-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_jiang"
+      ]
+    },
+    {
+      "text": "Days later he still fails to refine it; the Gu carries Xiong Zhan’s will and hates Bai Ning Bing more because of that death, until Fang Yuan later receives the discarded worm and refines it at once.",
+      "chapters": [
+        138
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-plunder-gu-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/xiong-zhan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xiong-zhan/",
+      "chapters": [
+        4,
+        131,
+        132,
+        135,
+        138
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Xiong Clan as of ch. 131",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_plunder_gu",
+      "role": "user",
+      "recorded_chapter": 131,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

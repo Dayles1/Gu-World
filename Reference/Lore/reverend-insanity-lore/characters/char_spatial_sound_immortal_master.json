@@ -1,0 +1,128 @@
+{
+  "id": "char_spatial_sound_immortal_master",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spatial Sound Immortal Master",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spatial Sound Immortal Master is a sound path great expert whose inheritance Feng Jiu Ge finds in a mountain valley.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1965,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1965
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_sound",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_sound",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Feng Jiu Ge recalls that after he chose sound path in youth, he found a fortuitous encounter in a mountain valley and by chance discovered the inheritance left behind by a sound path great expert, Spatial Sound Immortal Master. He then cultivated alone in that valley, immersed in music, passed his crucial tribulation there, and became a rank six Gu Immortal without causing a commotion.",
+      "chapters": [
+        1965
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/spatial-sound-immortal-master/",
+      "chapters": [
+        1965
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Sound path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_sound"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": null,
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,256 @@
+{
+  "id": "char_fei_qing",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fei Qing",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "fei qing",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Фэй Цин",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fei Qing is a Fei tribe Gu Master whom his cousin Fei Chang strikes with a poison Gu in a bid for the clan leader position, buying his son Fei Cai's escape with his own capture.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 488,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    488
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_fei_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 488,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_swift_ghost_cloud_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 488,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_fei_tribe",
+      "count": 3
+    },
+    {
+      "target": "gu_swift_ghost_cloud_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fei_cai",
+      "count": 2
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 2
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_poison_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_search_gu",
+      "count": 1
+    },
+    {
+      "target": "char_immortal_zombie_giant_sun",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fei Qing is a Fei tribe Gu Master whom his cousin Fei Chang strikes with a poison Gu in a bid for the clan leader position. Fleeing warm pond valley with his son Fei Cai, he uses swift ghost cloud Gu to escape the pursuit, then abandons the Gu on sensing it has been tampered with and hides with his son in a swamp, losing his own movement while the poison keeps spreading.",
+      "chapters": [
+        488
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fei_tribe",
+        "sys_gu_master",
+        "sys_poison_gu",
+        "char_fei_cai"
+      ]
+    },
+    {
+      "text": "Coughing green blood, he tells Fei Cai that Giant Sun Immortal Venerable’s bloodline runs thick and rare in him, qualifying him to enter Eighty-Eighth True Yang Building inside Imperial Court blessed land for the grace Ancestor Giant Sun left behind, then sends him fleeing north-west, correcting the boy’s wrong turns from where he sits.",
+      "chapters": [
+        488
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_giant_sun_immortal_venerable",
+        "house_eighty_eight_true_yang_building",
+        "loc_imperial_court_blessed_land",
+        "char_immortal_zombie_giant_sun"
+      ]
+    },
+    {
+      "text": "Fei Chang finds him, has him bound and dragged by rope, and uses soul search Gu on him to hunt down Fei Cai’s hiding place, leaving Fei Qing’s soul heavily injured. Fei Chang abandons the search when Ma tribe’s ambush on Fei tribe forces him back to the camp, and the tribe is wiped out in that invasion.",
+      "chapters": [
+        488
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/fei-qing/",
+      "chapters": [
+        488
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Fei Tribe as of ch. 488",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_swift_ghost_cloud_gu",
+      "role": "unspecified",
+      "recorded_chapter": 488,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

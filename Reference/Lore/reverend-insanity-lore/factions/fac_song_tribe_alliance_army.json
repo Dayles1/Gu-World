@@ -1,0 +1,187 @@
+{
+  "id": "fac_song_tribe_alliance_army",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Song Tribe Alliance Army",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Imperial Court contest force Ma tribe meets as an equal at mirror lake.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 520,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    520,
+    523,
+    525
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_song_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_mirror_lake",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 1
+    },
+    {
+      "target": "char_cheng_hu",
+      "count": 1
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 1
+    },
+    {
+      "target": "char_su_yi",
+      "count": 1
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 1
+    },
+    {
+      "target": "char_song_qing_yin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Ma tribe leaves Tian Chuan and marches southwest, absorbing defeated tribes along the way, that army reaches Mirror Lake and builds its first defense line opposite Song tribe alliance army. Ma Ying Jie weighs Hei tribe’s already-won first battle against the contest rule that the first fight earns foundations and losers rarely reverse the situation.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "first-defense-line",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "loc_tian_chuan",
+        "loc_mirror_lake",
+        "char_ma_ying_jie",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "Ma tribe and Song tribe erect three to four defense lines before the fight starts in earnest. From Ma tribe’s main tent, Ma Shang Feng sees Song tribe’s dense battle formation surging with intent; his force is stronger, yet victory will still take hard work. Song tribe army answers Ma tribe challenges with its own rank four experts, including Su Yi, who dies when Cheng Hu’s full tiger transformation bites through his defense.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "defense-lines-and-su-yi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_song_tribe",
+        "char_ma_shang_feng",
+        "char_su_yi",
+        "char_cheng_hu"
+      ]
+    },
+    {
+      "text": "Ma tribe breaks two Song tribe defense lines in a row. Song tribe alliance leader Song Qing Yin leads a counterattack and ambush that forces Ma tribe to give up a line, then Ma tribe enslavement master Ma Zun surrounds and kills her in the air with his pegasus group. Song tribe army becomes a headless dragon, collapses after Ma tribe stirs internal discord, and Ma tribe annexes most of the tribes while remnants flee.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "counterattack-fallout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_qing_yin",
+        "char_ma_zun"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/song-tribe-alliance-army/",
+      "chapters": [
+        520,
+        523,
+        525
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

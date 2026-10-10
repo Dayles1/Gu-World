@@ -1,0 +1,171 @@
+{
+  "id": "res_luck_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luck path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Luck path immortal materials are immortal materials of luck path, used to refine luck path Immortal Gu and often hard to gather.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1284,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1284,
+    1809,
+    2073,
+    2080
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "house_cooking_luck_pot",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Like the spring dream fruit tree, luck path immortal materials have a special trait: if the material is living, it must stay alive, and refining the luck path Immortal Gu then requires a living refinement.",
+      "chapters": [
+        1284
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "living-refinement-trait",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Luck path immortal materials are rare and hard to gather. Fang Yuan turns to Southern Border’s righteous path to obtain them, and once gathered he has hairy man Gu Immortals begin refining luck path Immortal Gu.",
+      "chapters": [
+        1809
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rare-and-hard-to-gather",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_southern_border",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "While sorting immortal materials from variant human Gu Immortals, Fang Yuan finds luck path immortal materials at an astonishing scale. He judges them highly valuable for advancing luck path Immortal Gu beyond Cooking Luck Pot.",
+      "chapters": [
+        2073
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "variant-human-haul",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_cooking_luck_pot"
+      ]
+    },
+    {
+      "text": "Because luck path is not prosperous, luck path immortal materials are difficult to gather. Fang Yuan notes that looting so many from the two heavens’ grotto-heavens is not something that happens frequently. A higher refinement success rate lowers expenditure and saves large amounts of those materials.",
+      "chapters": [
+        2080
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scarcity-of-the-path",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/luck-path-immortal-material/",
+      "chapters": [
+        1284,
+        1809,
+        2073,
+        2080
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

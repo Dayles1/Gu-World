@@ -1,0 +1,130 @@
+{
+  "id": "loc_ju_ren_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ju Ren Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain named among six great mountains crossed after Xue Lei mountain on the road toward Shang Liang mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 258,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    258
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan and Bai Ning Bing do not go to Zhao Clan because Bai Clan wants them. The four move on relentlessly and cross Ju Ren mountain. On the whole journey they only stop by remote hamlets to replenish supplies.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "fac_zhao_clan",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/ju-ren-mountain/",
+      "chapters": [
+        258
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

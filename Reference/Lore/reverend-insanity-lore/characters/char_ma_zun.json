@@ -1,0 +1,440 @@
+{
+  "id": "char_ma_zun",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ma Zun",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ma zun",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ма Цзунь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ma Zun is a Northern Plains enslavement path master of Ma tribe, named with Jiang Bao Ya and Yang Po Ying when grassland Gu Masters measure Chang Shan Yin's wolf control.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 438,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    438,
+    482,
+    489,
+    491,
+    492,
+    493,
+    525,
+    527,
+    539,
+    540,
+    541,
+    542,
+    576,
+    579
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_ma_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 489,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_dragon_horse_spirit",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 542,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_ma_tribe",
+      "count": 3
+    },
+    {
+      "target": "move_dragon_horse_spirit",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_bao_ya",
+      "count": 2
+    },
+    {
+      "target": "char_song_qing_yin",
+      "count": 2
+    },
+    {
+      "target": "char_yang_po_ying",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 2
+    },
+    {
+      "target": "fac_song_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_mirror_lake",
+      "count": 2
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 2
+    },
+    {
+      "target": "fac_yang_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_man_soul",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_tu",
+      "count": 1
+    },
+    {
+      "target": "fac_song_tribe_alliance_army",
+      "count": 1
+    },
+    {
+      "target": "char_wu_ye",
+      "count": 1
+    },
+    {
+      "target": "sys_master_attainment",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ge tribe Gu Masters watching Fang Yuan under the Chang Shan Yin name class his wolf control with Jiang Bao Ya, Yang Po Ying, and Ma Zun as first-rate Northern Plains enslavement skill, and they treat those three as holders of thousand man souls.",
+      "chapters": [
+        438
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ge_tribe",
+        "fac_gu_masters",
+        "char_fang_yuan",
+        "char_chang_shan_yin",
+        "char_jiang_bao_ya",
+        "char_yang_po_ying",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Ma Ying Jie names him uncle and one of the three great enslavement masters of that stretch, and Ma tribe Gu Masters show admiration when the name comes up.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ma-tribe-uncle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later talk still calls Ma Ying Jie Little Ma Zun.",
+      "chapters": [
+        576
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ma-tribe-uncle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration separately calls Ma Zun the teacher whose enslavement inheritance made him a regional ruler.",
+      "chapters": [
+        579
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ma-tribe-uncle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same Ma tribe stretch paints him as taciturn from childhood, a horse lover the tribesmen joked as horse maniac and horse fool, reclusive, never married, and little interested in worldly power. Ma Ying Jie fabricates quotes in his uncle’s name to raise his own standing, counting on that silence so the words will not be torn down.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ma-tribe-uncle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan weighs mature northern plains beast groups and places Ma Zun with Yang Po Ying and Jiang Bao Ya among the masters whose herds run to hundreds of thousands, at least four hundred thousand in one of his counts, with a mutated pegasus group as trump card.",
+      "chapters": [
+        482
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "horse-group-and-pegasus",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ma Ying Jie tells Ma tribesmen the uncle’s horse group already holds three hundred thousand horses, can swell toward five hundred thousand with terror claw horses taken at warm pond valley, and also holds a horse emperor, nine myriad beast kings, and five mutated horses.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "horse-group-and-pegasus",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_ying_jie"
+      ]
+    },
+    {
+      "text": "At Mirror lake Ma Zun moves Ma tribe’s pegasus group, surrounds and kills rank five initial stage Water Fairy Song Qing Yin in the air, and Song tribe then collapses after internal discord. That kill becomes a stepping stone for his fame, and talk faintly calls him northern plains number one enslavement path master. The five great enslavement masters of that contest are called the five beast kings, and Horse King Ma Zun is the one with the mutated pegasus group.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fame-in-the-imperial-court-struggle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mirror_lake",
+        "fac_ma_tribe",
+        "char_song_qing_yin",
+        "fac_song_tribe"
+      ]
+    },
+    {
+      "text": "After Ma tribe swallows Yang tribe and other forces, Ma Shang Feng’s side fields Ma Zun together with Jiang Bao Ya and Yang Po Ying as three enslavement path masters against Hei Lou Lan.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fame-in-the-imperial-court-struggle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yang_tribe",
+        "char_ma_shang_feng",
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "When Fang Yuan declares he will kill Yang Po Ying, Jiang Bao Ya, and Ma Zun, Ma Zun stays silent at first, then shouts in shock at the scale of the wolf tide and tries to wheel the horse group out of the encirclement. Fang Yuan intercepts with mutated wolves and ordinary packs until the horses are surrounded, while Ma Zun’s own pegasus numbers cannot match that mutated chase.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battlefield-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Yang Po Ying falls, Fang Yuan turns on Ma Zun across the horse lines and names him next.",
+      "chapters": [
+        541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battlefield-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ma Zun refuses to flee, calling himself a Ma tribe symbol whose flight would crush morale and saying he still has the pegasus group, then watches Fang Yuan smash through those pegasus and reach him. Ma Ying Jie spends the killer move dragon horse spirit first to cover him; Ma Zun later uses the same move himself, holds a tighter soul defense than his nephew, and still dies when Fang Yuan breaks the barrier with three punches after splitting the horse-soul line with wolf waves. The horse group collapses with him.",
+      "chapters": [
+        542
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battlefield-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation writes the name as Ma Zun and the title Horse King Ma Zun. No Chinese characters for the personal name appear in the English chapter text used here.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/ma-zun.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ma-zun/",
+      "chapters": [
+        438,
+        482,
+        489,
+        491,
+        492,
+        493,
+        525,
+        527,
+        539,
+        540,
+        541,
+        542,
+        576,
+        579
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Ma Tribe as of ch. 489",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

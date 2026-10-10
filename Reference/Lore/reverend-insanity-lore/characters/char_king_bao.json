@@ -1,0 +1,304 @@
+{
+  "id": "char_king_bao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "King Bao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "king bao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Кин Бао",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "King Bao is one of the Three Kings of Southern Border, the youngest Wang clan survivor among them, and a rank five Gu Master whose inheritance opens through the red light pillar at San Cha Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 324,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    324,
+    347,
+    356,
+    391
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 324,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_king_bao_inheritance",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wang_clan",
+      "count": 4
+    },
+    {
+      "target": "inh_king_bao_inheritance",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "gu_exploding_egg_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_king_xin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "race_eggmen",
+      "count": 1
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 1
+    },
+    {
+      "target": "gu_divulge_information_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_three_kings_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "About three hundred years before the San Cha Mountain opening, Wu clan exterminated Wang clan but missed three children. The youngest was five. Those survivors later entered an ancient rank six Gu Immortal inheritance, cultivated to rank five, and wiped out Wu clan in three days. His attacks shocked the heavens and triggered explosions of mountain rocks. After revenge they lived in seclusion until their inheritances appeared. Entering the red pillar requires at least one exploding egg Gu.",
+      "chapters": [
+        324
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "fac_wu_clan",
+        "fac_wang_clan",
+        "sys_gu_immortal",
+        "gu_exploding_egg_gu"
+      ]
+    },
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the three kings, King Bao was a fire path Gu Master, and the inheritance is built to favor that path.",
+      "chapters": [
+        347
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fire-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "When Yi Huo claims the red pillar, Yi Huo is a fire path Gu Master and King Bao is of the same path, so King Bao’s inheritance is the natural choice for him.",
+      "chapters": [
+        356
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "red-pillar-claim",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_huo",
+        "inh_king_bao_inheritance"
+      ]
+    },
+    {
+      "text": "Mo Wu Tian names King Bao as Wang Ba Dan, and says he had eight egg empresses and produced numerous eggmen.",
+      "chapters": [
+        391
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "naming-and-eggmen",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_wu_tian"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/king-bao/",
+      "chapters": [
+        324,
+        347,
+        356,
+        391
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 324",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wang Clan as of ch. 324",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 324,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

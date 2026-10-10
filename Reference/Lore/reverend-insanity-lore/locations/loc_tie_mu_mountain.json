@@ -1,0 +1,157 @@
+{
+  "id": "loc_tie_mu_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tie Mu Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain Tie Mu Bai names when recalling how he captured demonic path bandits with golden needle Gu and puppet control Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 374,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    374
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "gu_golden_needle_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_luchuan_river",
+      "count": 2
+    },
+    {
+      "target": "char_tie_mu_bai",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "gu_create_fog_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_puppet_control_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On a peak of San Cha Mountain, Tie Ruo Nan clears nearly a thousand ash-grey mountain apes with golden needle Gu pairings, then climbs to Tie Mu Bai. He praises her grasp of those tactics and shows a finer cloud of golden needle Gu that moves like golden fog with create fog Gu, perforating boulders and nearby trees. He names Luchuan River for that fog at age twenty-eight while roaming Southern Border, then names Tie Mu mountain as the place he reached at age forty-two after advancing to rank four peak stage and leaving closed cultivation to test his skills, where more than fifty demonic path mountain bandits attacked him.",
+      "chapters": [
+        374
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "char_tie_ruo_nan",
+        "gu_golden_needle_gu",
+        "char_tie_mu_bai",
+        "gu_create_fog_gu",
+        "loc_luchuan_river"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): chapter 374 does not name which of the five regions holds Tie Mu mountain. This page uses the Southern Border region field because the same speech places his earlier roaming in Southern Border, and the recall is told on San Cha mountain during that Southern Border arc.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/tie-mu-mountain/",
+      "chapters": [
+        374
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

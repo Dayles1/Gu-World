@@ -1,0 +1,208 @@
+{
+  "id": "gu_sect_token_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sect Token Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sect Token Gu is a human path organization Gu. Fang Di Chang uses one in a killer move to establish Beggar Sect in the painting world.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2065,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2065,
+    2081
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_di_chang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2065,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_di_chang",
+      "count": 3
+    },
+    {
+      "target": "fac_beggar_sect",
+      "count": 2
+    },
+    {
+      "target": "gu_beggar_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_organization_gu",
+      "count": 2
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/sect-token-gu/",
+      "chapters": [
+        2065,
+        2081
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_di_chang",
+      "role": "unspecified",
+      "recorded_chapter": 2065,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Di Chang purchases large amounts of beggar Gu with Shen Shang’s help and uses a sect token Gu to form a killer move, establishing Beggar Sect so that most beggars in the city fall under his command.",
+        "chapters": [
+          2065
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_di_chang",
+          "gu_beggar_gu",
+          "char_shen_shang",
+          "fac_beggar_sect"
+        ]
+      },
+      {
+        "text": "Organization Gu is a type of human path Gu worm that allows human Gu to form a group. Fang Di Chang’s sect token Gu is also of this type.",
+        "chapters": [
+          2081
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "organization-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_organization_gu",
+          "sys_gu_worms"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

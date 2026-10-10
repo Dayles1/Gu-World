@@ -1,0 +1,184 @@
+{
+  "id": "res_ice_heart",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ice heart",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "ordinary ice hearts"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ice heart is a blue refinement material that living treasure door yields among other rare gifts.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 274,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    274,
+    860,
+    1186
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_ice_heart_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_ice_heart_gu",
+      "count": 3
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_twin_ice_heart",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pot_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Living treasure door sneezes out blue ice heart among other items and gives them to Shang Yan Fei after clearing its breathing. Ice heart grows only at the center of a ten million year old ice mountain.",
+      "chapters": [
+        274
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "living-treasure-door-gift",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "A thumb-sized ice heart is already an immortal material. Ordinary ice hearts are rank six immortal materials and can create rank six Immortal Gu. They are far more common than the basin-sized twin form that holds two conjoined heart-shaped pieces of ice.",
+      "chapters": [
+        860
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-six-immortal-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "At Jade Pot Mountain, an ice wall holds at least a thousand blue hearts that Tai Bai Yun Sheng names as ice hearts. Naturally formed ice hearts there are not so high in quantity; Shadow Sect Gu Immortals had set a Gu formation so the place could breed ice heart Gu, and those Gu had already been taken away before one remaining ice heart Immortal Gu finished forming.",
+      "chapters": [
+        1186
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "jade-pot-mountain-wall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_jade_pot_mountain",
+        "char_tai_bai_yun_sheng",
+        "fac_shadow_sect",
+        "sys_gu_immortal",
+        "sys_gu_formation",
+        "gu_ice_heart_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/ice-heart/",
+      "chapters": [
+        274,
+        860,
+        1186
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Center of a ten million year old ice mountain",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Ice Heart Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "res_dancing_snow",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dancing snow",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dancing snow is a rank six immortal material of naturally formed snowflakes that stay afloat.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1462,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1462
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xue_er",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Dancing snow falls as large round snowflakes, pure white and about the size of an adult’s palm. It is a rank six immortal material formed naturally. It does not melt while the temperature stays at a certain level, and it always stays afloat: even after landing, it flies upward again.",
+      "chapters": [
+        1462
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "afloat-snowflakes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xue Er brings dancing snow among snowman betrothal gifts stored in Mini Northern Plains. It is the second largest share after snow lotus essence. The batch can feed a rank six wisdom path Immortal Gu four to five times, so Fang Yuan need not buy dancing snow from treasure yellow heaven for that use.",
+      "chapters": [
+        1462
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "afloat-snowflakes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xue_er",
+        "loc_mini_northern_plains",
+        "sys_immortal_gu",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/dancing-snow.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dancing-snow/",
+      "chapters": [
+        1462
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Formed naturally",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

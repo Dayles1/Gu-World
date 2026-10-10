@@ -1,0 +1,136 @@
+{
+  "id": "fac_xi_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xi Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Western Desert clan whose rank eight ancestor Xi Jian Ping takes the thousand wish tree after a Gu Immortal battle in the desert.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 673,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    673,
+    1727
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_thousand_wish_tree",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Fang Yuan’s prior life, Xi Jian Ping leaves seclusion after that chaotic battle, suppresses the experts across the great desert, and plants the tree in Xi clan’s blessed land. Fang Yuan never sees it again after that.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seized-after-the-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Western Desert sends rank six and seven Gu Immortals as well as Immortal Gu Houses but does not send rank eight Gu Immortals, many experts like Xi clan’s first supreme elder stay in Western Desert.",
+      "chapters": [
+        1727
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "western-desert-deployment",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "sys_gu_immortal",
+        "sys_immortal_gu_house"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/xi-clan/",
+      "chapters": [
+        673,
+        1727
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

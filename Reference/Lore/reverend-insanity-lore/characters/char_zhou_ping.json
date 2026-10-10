@@ -1,0 +1,191 @@
+{
+  "id": "char_zhou_ping",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhou Ping",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zhou ping",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чжоу Пин",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zhou Ping is a demonic path Gu Immortal who blocks Fang Yuan at Jade Pool while guarding literature carps, relying on movement killer moves.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 800,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    800,
+    804
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_literature_carp",
+      "count": 1
+    },
+    {
+      "target": "move_thousand_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_old_lord_can_yang",
+      "count": 1
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan reaches Jade Pool for literature carps raised there. Zhou Ping cups his fists, names himself, and stands in the way. Fang Yuan threatens that Zhou Ping’s cultivation is not fit to talk rules with him. Zhou Ping answers that he cannot defeat Fang Yuan, but that he has insights in flying and two immortal killer moves, and that even named experts cannot catch him easily. Fang Yuan watches him while considering his own weaker movement methods.",
+      "chapters": [
+        800
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Later narration lists him among the first wave of immortals tied to that Jade Pool stretch, alongside Dong Fang Chang Fan, Old Lord Can Yang, Unfettered Scholar, Fairy Li Shan, and others.",
+      "chapters": [
+        804
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jade-pool-wave",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_chang_fan",
+        "char_old_lord_can_yang",
+        "char_unfettered_scholar",
+        "char_fairy_li_shan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zhou-ping/",
+      "chapters": [
+        800,
+        804
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 800",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": "demonic path as of ch. 800",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

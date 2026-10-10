@@ -1,0 +1,149 @@
+{
+  "id": "res_human_shaped_soul_beast",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Human shaped soul beast",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A human shaped soul beast is the product of a soul path method that refines a Gu Immortal soul into a soul beast.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1397,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1397
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_cui_bo",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_soul",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Purple Mountain True Monarch’s inheritance records many soul path methods, and one of them is this refinement of a Gu Immortal soul. Fang Yuan holds Fairy Cui Bo’s Gu Immortal soul after Bai Ning Bing soul searches her, and considers the method among other uses for that soul.",
+      "chapters": [
+        1397
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "purple-mountain-method",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_purple_mountain_true_monarch",
+        "res_gu_immortal_soul",
+        "char_fang_yuan",
+        "char_fairy_cui_bo",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Fairy Cui Bo has rank seven cultivation, so refining her this way would produce an ancient soul beast. After the refinement, Fang Yuan would not need enslavement path methods; the resulting soul beast would obey with absolute loyalty. Gu Immortal souls, especially human Gu Immortal souls with higher cultivation, also yield more guts Gu when smashed on Dang Hun Mountain, so that remains an alternative use of the same soul.",
+      "chapters": [
+        1397
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-and-loyalty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_guts_gu",
+        "loc_dang_hun_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/human-shaped-soul-beast/",
+      "chapters": [
+        1397
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Soul Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Gu Immortal soul",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

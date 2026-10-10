@@ -1,0 +1,192 @@
+{
+  "id": "loc_du_jiao_region",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Du Jiao Region",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A place named Du Jiao where a fire path Gu Master forces kneeling surrender amid a blazing battlefield.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 523,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    523,
+    525,
+    536
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_ye_lui_sang",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_wu_ming",
+      "count": 1
+    },
+    {
+      "target": "fac_alliance_of_seven_armies",
+      "count": 1
+    },
+    {
+      "target": "fac_qi_lian_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After a large battlefield there has already ended, fire covers the field and a Gu Master stands in the inferno shaping fire in his hand while addressing the surrounding Gu Masters.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because chapter 523’s Du Jiao cutaway sits among northern plains Imperial Court battles. Du Jiao is named, but the chapter does not map its borders or seat it among the five regions.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "After a large battlefield ends, fire blazes toward the sky and a raging inferno covers the whole field.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ye Lui Sang, empowered by Immortal Gu and with rank five peak stage fire path strength, suppressed the heroes, swept through the last obstacle, and succeeded in dominating Du Jiao region. Just as Ye Lui army spreads outward, an alliance of seven armies pincer attacks it and puts Ye Lui army in a perilous situation.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ye-lui-sangs-sweep",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_lui_sang",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "At Du Jiao region, Ye Lui army defeated the alliance of seven armies, and on the day of the counterattack Ye Lui Sang killed three rank five Gu Masters.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ye-lui-counterattack",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/du-jiao-region/",
+      "chapters": [
+        523,
+        525,
+        536
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "region",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

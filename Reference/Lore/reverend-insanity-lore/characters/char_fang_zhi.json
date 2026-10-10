@@ -1,0 +1,188 @@
+{
+  "id": "char_fang_zhi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fang Zhi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "fang zhi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Фан Чжи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fang Zhi names the Gu Yue clan bloodline from which Fang Yuan descends.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    4
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "move_green_armor_vegetable_garden",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_qiu_san_sha",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Before the Awakening Ceremony, Gu Yue elders speak of Fang Zhi’s side when they mark Fang Yuan as a young genius already raised by uncle and aunt after his parents died early. The same hall talk treats him as one of only two descendants left from Fang Zhi’s bloodline inside the Gu Yue clan on Qing Mao Mountain.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_awakening_ceremony",
+        "char_fang_yuan",
+        "fac_gu_yue_clan",
+        "loc_qing_mao_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/fang-zhi/",
+      "chapters": [
+        1,
+        4
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 1",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

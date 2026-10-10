@@ -1,0 +1,210 @@
+{
+  "id": "char_night_wolf_king",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Night Wolf King",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Night wolf king is a beast king inside the myriad wolf king's army that Ge tribe and Fang Yuan fight during a wolf assault on Ge tribe's camp, shielded by golden bell shield Gu until Ge tribe leader's dragon head drill breaks it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 457,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    457,
+    458,
+    480
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_golden_bell_shield_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 457,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_golden_bell_shield_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_brave_fight_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_smoke_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Night wolf king is a beast king inside the myriad wolf king’s army that Ge tribe and Fang Yuan fight during a wolf assault on Ge tribe’s camp. It moves faster than a cheetah, its bare black skin shines like armor, and it spits acidic liquid and poisonous needles while a layer of golden light, later identified as golden bell shield Gu, protects its body. Cornered, it breathes eerie blue ghost fire from a rank four ghost blaze Gu, which Ge tribe leader swallows with swallow fire Gu, then tears through the vines of Ge tribe leader’s vine claw Gu, breaking his fingers with the recoil. Ge tribe leader’s dragon head drill killer move finally breaks the golden bell shield Gu; the wound leaves the beast easy to injure, but a rank four brave fight Gu then nearly doubles its battle strength despite the injury, and it pounces on the exhausted Ge tribe leader with murderous intent.",
+      "chapters": [
+        457
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ge_tribe",
+        "char_fang_yuan",
+        "gu_golden_bell_shield_gu",
+        "gu_brave_fight_gu"
+      ]
+    },
+    {
+      "text": "The old tribe leader dies from the wolf king’s attack, and Ge Guang succeeds him as Ge tribe’s leader. Once brave fight Gu’s effect fades and the wolf king is pushed off the old tribe leader’s body, Fang Yuan uses wolf enslavement Gu, which turns to smoke and covers the wolf king’s head, subduing it while its battle intent is spent and its injuries are severe. Fang Yuan then breathes out wolf smoke Gu to stabilize its critical wounds.",
+      "chapters": [
+        458
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "enslavement-after-the-tribe-leaders-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_guang",
+        "gu_wolf_enslavement_gu",
+        "gu_wolf_smoke_gu"
+      ]
+    },
+    {
+      "text": "Later deployed against Zheng tribe’s defenders, the wolf king wants to retreat, but Fang Yuan forces it to keep attacking; a Zheng tribe elder who sacrifices himself to protect his home pierces one of its eyes before dying to its bite.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zheng-tribe-siege",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zheng_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/night-wolf-king.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/night-wolf-king/",
+      "chapters": [
+        457,
+        458,
+        480
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": "reg_northern_plains",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_golden_bell_shield_gu",
+      "role": "user",
+      "recorded_chapter": 457,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "id": "fac_medicine_faction",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Medicine faction",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Gu Yue political bloc of healing Gu Masters under Gu Yue Yao Ji, tied to medicine hall authority and later clan power contests.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 152,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    152,
+    154,
+    157,
+    174,
+    175,
+    178
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_gu_yue_yao_ji",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 152,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_yao_ji",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 152,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_yao_le",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 153,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_li_chen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 160,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_gu_yue_yao_ji",
+      "count": 4
+    },
+    {
+      "target": "char_gu_yue_yao_le",
+      "count": 3
+    },
+    {
+      "target": "char_gu_yue_li_chen",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_medicine_hall",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_family",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_mo_family",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside Gu Yue clan, Gu Yue Yao Ji treats Gu Yue Yao Le as the inheritor she raised for her medicine faction. When Yao Le goes missing in the wolf packs and Fang Yuan advances to rank three, narration calls the new elder a huge hit on the medicine faction that has lost its inheritor.",
+      "chapters": [
+        152
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritor-and-hall-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "char_gu_yue_yao_ji",
+        "char_gu_yue_yao_le",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "At the elder meeting Fang Yuan argues Yao Ji wasted medicine hall healers on a private search for Yao Le and is unfit to keep the medicine hall elder seat.",
+      "chapters": [
+        154
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritor-and-hall-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_medicine_hall"
+      ]
+    },
+    {
+      "text": "After Yao Ji faints, Gu Yue Chi Zhong is ordered to lead the medicine hall temporarily. His wife is an important medicine faction member, and that appointment is Gu Yue Bo’s balance between Chi and medicine faction rivalry.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritor-and-hall-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_zhong",
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "After the wolf tide, the medicine faction is mostly healing Gu Masters who took little sacrifice and kept most of their strength while Chi and Mo declined. Narration says the medicine faction was originally the clan leader’s faction and now has the ability to be independent, with weakened Chi and Mo as targets if Yao Ji moves to snatch and merge.",
+      "chapters": [
+        174
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rising-after-the-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Gu Yue Bo later sees the medicine faction already intending to detach into its own force beyond his control, and he watches the first contest between the medicine faction and the Mo family without helping either side. The medicine faction is stronger overall in that contest, helped by Yao Ji’s reputation and Chi family inclination.",
+      "chapters": [
+        175
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rising-after-the-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_bo",
+        "fac_mo_family",
+        "fac_chi_family"
+      ]
+    },
+    {
+      "text": "Yao Ji remains the medicine faction family head after she leaves the medicine hall elder seat to Chi Zhong and loses an arm, though her former authority has almost fully vanished.",
+      "chapters": [
+        178
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rising-after-the-wolf-tide",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/medicine-faction/",
+      "chapters": [
+        152,
+        154,
+        157,
+        174,
+        175,
+        178
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Gu Yue Yao Ji",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "fac_eighteen_sons_of_wine_village",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Eighteen Sons of Wine Village",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Eighteen Lads of Wine Village"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Eighteen lone cultivator Gu Masters who contest a Southern Border mountain road until Ye Fan defeats them for Shang clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1160,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1160,
+    1531
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ye Fan fights until the leader of his enemies admits defeat for the Eighteen Sons of Wine Village. The other seventeen Gu Masters lie on the ground, unable to fight, and stare at him with hatred. Ye Fan says that by the rules they are not to take a step onto that mountain again, now Shang clan territory. The leader answers that they are lone cultivators, lost fair and square, and will keep their word. Ye Fan heals them with jade green light, then the leader cups his fists, accepts the favor while Ye Fan is in Shang clan, and warns that they are only the third hurdle on the trade route, with two stronger obstacles ahead already gathered under White Demon. Narration credits Ye Fan with chasing them away, opening a new trade route, and easing Shang Xin Ci’s political pressure.",
+      "chapters": [
+        1160
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "trade-route-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_fan",
+        "fac_gu_masters",
+        "fac_shang_clan",
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Ye Fan later recalls that when chasing away the Eighteen Lads of Wine Village he met Bai Ning Bing and was almost killed.",
+      "chapters": [
+        1531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ye-fan-recall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/eighteen-sons-of-wine-village/",
+      "chapters": [
+        1160,
+        1531
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

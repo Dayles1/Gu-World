@@ -1,0 +1,222 @@
+{
+  "id": "gu_authority_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Authority Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Authority Gu is obtained by Great Strength True Martial on the Upslope Road in The Legends of Ren Zu, named together with fortitude Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2117,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2117,
+    2176
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_great_strength_true_martial",
+      "role": "legend holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2117,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_great_strength_true_martial",
+      "count": 4
+    },
+    {
+      "target": "gu_fortitude_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_upslope_road",
+      "count": 2
+    },
+    {
+      "target": "gu_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_humility_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_effort_begets_results",
+      "count": 1
+    },
+    {
+      "target": "char_carefree_wisdom_heart",
+      "count": 1
+    },
+    {
+      "target": "gu_right_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wrong_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_finding_wisdom",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/authority-gu/",
+      "chapters": [
+        2117,
+        2176
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_great_strength_true_martial",
+      "role": "legend holder",
+      "recorded_chapter": 2117,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Great Strength True Martial keeps walking the Upslope Road and moves higher. Along that climb he obtains authority Gu and fortitude Gu.",
+        "chapters": [
+          2117
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_great_strength_true_martial",
+          "loc_upslope_road",
+          "gu_fortitude_gu"
+        ]
+      },
+      {
+        "text": "Later in the same legend telling, Carefree Wisdom Heart finds right Gu and wrong Gu born in her body. Great Strength True Martial calls those two ordinary looking and much less presentable than his authority Gu, and asks what help they can give.",
+        "chapters": [
+          2176
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "compared-to-right-and-wrong",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_carefree_wisdom_heart"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

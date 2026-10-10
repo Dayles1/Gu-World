@@ -1,0 +1,175 @@
+{
+  "id": "loc_xue_lei_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xue Lei Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain named as the caravan's stop after the Xiao Yue stretch on the road toward Shang Clan City.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 245,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    245,
+    258
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_xiao_yue_mountain",
+      "count": 2
+    },
+    {
+      "target": "fac_zhao_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_mu_bei_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_shuang_jiang_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After the most dangerous stretch of Xiao Yue mountain, the caravan’s next stop is Xue Lei mountain, followed by a few more clan villages before Shang Liang mountain’s Shang Clan City.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-on-the-planned-route",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xiao_yue_mountain",
+        "loc_shang_liang_mountain",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "After crossing Mu Bei Mountain and then Shuang Jiang mountain, the next place is Xue Lei mountain. The most dangerous part of the trade route is already over, so danger greatly decreases. Fang Yuan and Bai Ning Bing are wanted by Bai Clan, so the four move on after passing through Xue Lei mountain and continue across further mountains.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-mu-bei-and-shuang-jiang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mu_bei_mountain",
+        "loc_shuang_jiang_mountain",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "Xue Lei mountain has Zhao Clan and is not considered a wild area, since there are human inhabitants on it. Fang Yuan and Bai Ning Bing do not go to Zhao Clan on that pass.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zhao-clan-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zhao_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/xue-lei-mountain/",
+      "chapters": [
+        245,
+        258
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

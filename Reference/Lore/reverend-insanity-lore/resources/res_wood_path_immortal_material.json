@@ -1,0 +1,190 @@
+{
+  "id": "res_wood_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wood path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wood path immortal materials are immortal materials of wood path, used when refining wood path Immortal Gu and other wood path work.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1867,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1867,
+    2073,
+    2081,
+    2232
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wood",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "char_fang_gong",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "house_divine_bean_palace",
+      "count": 1
+    },
+    {
+      "target": "move_divine_bean_soldier",
+      "count": 1
+    },
+    {
+      "target": "char_green_forest_great_sage",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_he_jian",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Gong tells Fang Di Chang he can take any amount of wood path immortal materials he requires from Fang clan’s treasury for Divine Bean Palace work.",
+      "chapters": [
+        1867
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "treasury-supply",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_gong",
+        "char_fang_di_chang",
+        "fac_fang_clan",
+        "house_divine_bean_palace"
+      ]
+    },
+    {
+      "text": "Among resources taken from the variant human alliance, wood path immortal materials are most abundant, because Xiao He Jian and Green Forest Great Sage are minimen and there are also two wood path grotto-heavens.",
+      "chapters": [
+        2073
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wood-path-abundance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiao_he_jian",
+        "char_green_forest_great_sage"
+      ]
+    },
+    {
+      "text": "Fang Yuan gathers a lot of wood path immortal materials and finds them enough for refinement. The variant human alliance’s Xiao He Jian and Green Forest Great Sage are rank eight miniman Gu Immortals whose wood path grotto-heavens provide enough wood path immortal materials.",
+      "chapters": [
+        2081
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "enough-for-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "A problem in processing wood path immortal materials can doom a refinement: the materials may seem fine while tiny flaws in each step accumulate until they can destroy the whole attempt. Fang Yuan notes that raising wood path attainment would increase his ability to process those materials.",
+      "chapters": [
+        2232
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "processing-flaws",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/wood-path-immortal-material/",
+      "chapters": [
+        1867,
+        2073,
+        2081,
+        2232
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wood Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

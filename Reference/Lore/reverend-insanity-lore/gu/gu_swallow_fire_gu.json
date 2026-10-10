@@ -1,0 +1,251 @@
+{
+  "id": "gu_swallow_fire_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Swallow Fire Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Swallow Fire Gu is a rank four storage Gu made to store fire. Gu Masters also use that storage in battle.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 457,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    457,
+    510
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_wang_jiang",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 510,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wang_jiang",
+      "count": 3
+    },
+    {
+      "target": "sys_attack_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_tang_fang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_pellet_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/swallow-fire-gu/",
+      "chapters": [
+        457,
+        510
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 4,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [
+      "storage"
+    ],
+    "effect_type_raw": "Storage",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "It is not an attack Gu. It is a storage Gu, especially meant to store fire. After he swallows the ghost fire, his stomach inflates by three times, his skin turns dark-blue, and blood flows from his eyes, nose, mouth, and ears.",
+        "chapters": [
+          457
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "rank-and-type",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_attack_gu",
+          "sys_storage_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "Wang Jiang opens his mouth and swallows Tang Fang’s Fire Pellet Gu shot. Tang Fang recognizes rank four Swallow Fire Gu. The text again states it is not an offensive Gu but a storage Gu, and that a Gu Master’s wits can still put storage to battle use. Wang Jiang bought that rank four copy at a high price so he could use it against Tang tribe, which prioritizes fire path Gu worms.",
+        "chapters": [
+          510
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "wang-jiangs-copy",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_wang_jiang",
+          "char_tang_fang",
+          "gu_fire_pellet_gu",
+          "sys_gu_master",
+          "fac_tang_tribe",
+          "sys_gu_worms"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_wang_jiang",
+      "role": "user",
+      "recorded_chapter": 510,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "When a night wolf king spits eerie blue ghost fire, Ge tribe leader sucks the fire into his stomach and the text names the Gu as rank four Swallow Fire Gu.",
+        "chapters": [
+          457
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_ge_tribe"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Storage",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

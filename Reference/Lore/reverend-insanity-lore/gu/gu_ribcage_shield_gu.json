@@ -1,0 +1,317 @@
+{
+  "id": "gu_ribcage_shield_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ribcage Shield Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "rib shield Gu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ribcage Shield Gu is a rank three Gu with great defense from the Bai Gu mountain white bone inheritance. It grows two rows of ribcages that shield the user's chest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 222,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    222,
+    223
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_grey_bone_scholar",
+      "role": "source",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 222,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 223,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_grey_bone_scholar",
+      "count": 2
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_arm_bone_wings_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_carapace_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_flying_bone_shield_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/ribcage-shield-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/ribcage-shield-gu/",
+      "chapters": [
+        222,
+        223
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "The white bone inheritance lists it with Flying bone shield Gu and Arm bone wings Gu without naming a cultivation path for it.",
+        "chapters": [
+          222
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is a rank three Gu with great defense.",
+        "chapters": [
+          222
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The two Gu left on those pillars are also rank three Gu worms.",
+        "chapters": [
+          223
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "After an initial growth period that needs a lot of primeval essence, it can be sustained without further primeval essence, the same way heavenly essence treasure lotus needs no further injection once refined. Fang Yuan notes it can be used together with Carapace Gu for front and back defense, but also judges Ribcage Shield Gu alone not wide enough for him and expects Carapace Gu to be replaced anyway.",
+        "chapters": [
+          222
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_carapace_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_grey_bone_scholar",
+      "role": "source",
+      "recorded_chapter": 222,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "fac_bai_clan_bai_gu_mountain",
+      "role": "holder",
+      "recorded_chapter": 223,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "In the second white bone hall on Bai Gu mountain, Fang Yuan and Bai Ning Bing find Ribcage Shield Gu held in one of three white bone pillar hands beside Flying bone shield Gu and Arm bone wings Gu. Pillar text limits the inheritor to one choice among the three. Fang Yuan leaves it and takes Flying bone shield Gu instead.",
+        "chapters": [
+          222
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_bai_gu_mountain",
+          "char_fang_yuan",
+          "char_bai_ning_bing",
+          "gu_flying_bone_shield_gu",
+          "gu_arm_bone_wings_gu"
+        ]
+      },
+      {
+        "text": "Bai clan pursuers later recover the left arm bone wings and rib shield Gu and stow them.",
+        "chapters": [
+          223
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_bai_clan_bai_gu_mountain"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

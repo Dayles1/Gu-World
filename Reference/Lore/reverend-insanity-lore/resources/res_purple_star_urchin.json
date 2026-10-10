@@ -1,0 +1,128 @@
+{
+  "id": "res_purple_star_urchin",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Purple star urchin",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Purple star urchin is a rare immortal material shaped like a large sea urchin with purple-gold spikes and shining spots.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1480,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1480
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_spring_autumn_cicada",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During Fang Yuan’s parallel refinement of Spring Autumn Cicada, the refinement path immortal formation releases a sea urchin as large as a house, with sharp purple-gold spikes and countless shining spots on its surface. That material is the purple star urchin, a rare immortal material. Under the formation it shrinks smoothly at first, then releases dazzling starlight that bounces randomly and shakes the formation until Sixth Hair boosts himself and helps destroy the bouncing specs.",
+      "chapters": [
+        1480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "parallel-refinement-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_spring_autumn_cicada",
+        "char_sixth_hair"
+      ]
+    },
+    {
+      "text": "After later steps, cracks on the aperture walls fill with thick purple-gold rock that holds shining stars and protruding spikes resembling the purple star urchin. Those spikes later stab Spring Autumn Cicada from all directions, melting it into green jade liquid that the spikes absorb, then reforming it without heaven’s will inside.",
+      "chapters": [
+        1480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "parallel-refinement-step",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/purple-star-urchin.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/purple-star-urchin/",
+      "chapters": [
+        1480
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Spring Autumn Cicada",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

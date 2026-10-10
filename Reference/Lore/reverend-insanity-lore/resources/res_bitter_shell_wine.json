@@ -1,0 +1,181 @@
+{
+  "id": "res_bitter_shell_wine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bitter shell wine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bitter shell wine is a bitter and fragrant liquor brewed from the bitter water of black bitter shell conches.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 117,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    117,
+    120,
+    121,
+    860
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_four_flavors_liquor_worm",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 3
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 1
+    },
+    {
+      "target": "res_bitter_shell",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_river_swallowing_toad",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A Gu Yue inn shopkeeper reports that someone in Bai village has drunk bitter shell wine. The raw material is a completely black conch from deep ponds, marked with white growth-ring lines on its shell and called a bitter shell. Unlike pearl-forming conches, it swallows sand and stone, dissolves them into bitter water, and that water is used to brew the wine; the taste is bitter and fragrant. Even if Bai village has any, the shopkeeper expects little of it beside the village’s famous white grain liquid.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "brewing-lore",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "loc_bai_village"
+      ]
+    },
+    {
+      "text": "A hundred year bitter shell’s bitter water, after accumulation through time, can turn into wine; Bai clan’s clan leader loves to drink this bitter shell wine. When River Swallowing Toad empties a riverbed, Hundred year bitter shells surface among the seafood, and Fang Yuan collects the wine from them.",
+      "chapters": [
+        120
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hundred-year-shells",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan",
+        "gu_river_swallowing_toad",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "In the Four Flavors Liquor Worm fusion, bitter comes from bitter shell wine. Fang Yuan pours it after golden honey wine and before white grains liquid. Failure could use up the bitter shell wine along with damaging the Liquor worms.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bitter-fusion-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_four_flavors_liquor_worm"
+      ]
+    },
+    {
+      "text": "Later narration restates the same process: bitter shells melt sand and rock into bitter water, and brewing that water yields bitter shell wine, bitter and fragrant.",
+      "chapters": [
+        860
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recalled-method",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/bitter-shell-wine.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/bitter-shell-wine/",
+      "chapters": [
+        117,
+        120,
+        121,
+        860
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Bitter shell",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Four Flavors Liquor Worm",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

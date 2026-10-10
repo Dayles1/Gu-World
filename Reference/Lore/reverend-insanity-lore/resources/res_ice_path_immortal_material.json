@@ -1,0 +1,120 @@
+{
+  "id": "res_ice_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ice path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ice path immortal materials are immortal materials of ice path, used in Immortal Gu refinement steps that can be rewritten around other ice materials.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1441,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1441
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_ice",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_ice",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    },
+    {
+      "target": "gu_cleanse_soul",
+      "count": 1
+    },
+    {
+      "target": "res_snow_lotus_essence",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While Fang Yuan and Sixth Hair struggle with the last steps of refining cleanse soul Immortal Gu, Sixth Hair proposes modifying those steps by using snow lotus essence to replace those ice path immortal materials. Snow lotus essence is itself a rank seven immortal material that is hard to obtain and rarely seen in treasure yellow heaven, though snowman tribes produce a lot of it.",
+      "chapters": [
+        1441
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-replacement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_sixth_hair",
+        "gu_cleanse_soul",
+        "res_snow_lotus_essence"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/ice-path-immortal-material/",
+      "chapters": [
+        1441
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Ice Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

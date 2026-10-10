@@ -1,0 +1,215 @@
+{
+  "id": "res_green_bamboo_wine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Green bamboo wine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Green bamboo wine is Gu Yue Village's specialty liquor, sold only at the village inn and prized for its fragrance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 12,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    12,
+    13,
+    16,
+    23,
+    64,
+    117,
+    177
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_liquor_worm",
+      "count": 2
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Gu Yue Village only one inn sells green bamboo wine, while three taverns sell common rice wine, muddy wine, and similar cheap liquor. A jar costs two primeval stones, about two months of ordinary household expenses. When uncorked, a refreshing and mellow fragrance fills the room.",
+      "chapters": [
+        12
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "village-specialty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "Green bamboo wine is called the Gu Yue Village’s number one wine. Fang Yuan drips it through the bamboo forest at night so its aroma can draw a Liquor worm.",
+      "chapters": [
+        13
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "liquor-worm-bait",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_liquor_worm"
+      ]
+    },
+    {
+      "text": "Narration calls the wine really rich and the best on Qing Mao Mountain, and credits its aroma as the biggest reason the Liquor worm comes to Fang Yuan that night.",
+      "chapters": [
+        16
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "best-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "A jar supports a Liquor worm for about four days. The worm can live on turbid wine or rice wine, but those second-rate wines demand many jars each day, so Fang Yuan buys green bamboo wine instead as both thrift and cover. The inn’s stock is limited; caravans conventionally buy it out, which threatens long-term feeding if jars run short.",
+      "chapters": [
+        23
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "feeding-cost",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After a caravan visit the inn sells out. Fang Yuan takes rice wine for the moment and pre-orders a hundred jars of the next brew.",
+      "chapters": [
+        64
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "seasonal-stock",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Together with Bai village’s white grain liquid and Xiong village’s bear gall wine, Gu Yue green bamboo wine is named among the three wines of Qing Mao.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "three-wines-of-qing-mao",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_village",
+        "loc_xiong_village",
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Fang Zheng later calls the same specialty bamboo wine and says the sole village inn is the only place that sells it.",
+      "chapters": [
+        177
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-name",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/green-bamboo-wine.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/green-bamboo-wine/",
+      "chapters": [
+        12,
+        13,
+        16,
+        23,
+        64,
+        117,
+        177
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Gu Yue Village inn brew",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

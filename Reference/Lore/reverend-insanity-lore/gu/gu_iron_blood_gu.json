@@ -1,0 +1,312 @@
+{
+  "id": "gu_iron_blood_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Iron Blood Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Iron Blood Gu darkens and thickens the user's blood and turns pain into pleasure so the Gu Master can endure battle.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 669,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    669,
+    698
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_zheng",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 669,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_zheng",
+      "count": 3
+    },
+    {
+      "target": "path_blood",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_blade_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_demon_flower_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_merge_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_cold_blood_gu",
+      "count": 2
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/iron-blood-gu/",
+      "chapters": [
+        669,
+        698
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_blood"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "The effect is named as one of Immortal Crane Sect’s achievements from years of researching blood path. The novel does not state a rank for Iron Blood Gu in these chapters.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "path_blood"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Activation transforms the user’s blood: it darkens, grows denser, and slows, and the user’s skin darkens with it. Pain becomes intense pleasure, which helps a Gu Master adapt to battles and can turn even a weak Gu Master into a warrior addicted to battle.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "While it is held active, blood blade Gu can fire pitch black iron-blood blades from bursting skin, and molten-iron-like blood then flows from the wounds.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_blood_blade_gu"
+        ]
+      },
+      {
+        "text": "He Feng Yang added Iron Blood Gu to Fang Zheng’s drills after an earlier attempt failed at blood merge Gu. On the next try the pleasure was too strong, blood flowed out freely until Fang Zheng fainted, and he lasted three breaths of time.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "limits-in-training",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_blood_merge_gu"
+        ]
+      },
+      {
+        "text": "Failed blood demon flower Gu later produces pain so severe that Iron Blood Gu’s effect cannot resist it, and Lord Sky Crane then orders Cold Blood Gu.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "limits-in-training",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_blood_demon_flower_gu",
+          "gu_cold_blood_gu"
+        ]
+      },
+      {
+        "text": "Fang Zheng again opens with Iron Blood Gu in the blood pool, darkening blood and skin, then keeps it active while blood blade Gu fires iron-blood blades. When failed blood demon flower Gu blooms, the pain again outruns Iron Blood Gu’s effect.",
+        "chapters": [
+          698
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "hu-immortal-attack-drills",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_zheng",
+      "role": "user",
+      "recorded_chapter": 669,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Zheng activates it first in blood pool drills under Lord Sky Crane, while He Feng Yang oversees the plan for Immortal Crane Sect.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_zheng",
+          "char_lord_sky_crane",
+          "char_he_feng_yang",
+          "fac_immortal_crane_sect"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

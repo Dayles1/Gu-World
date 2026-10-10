@@ -1,0 +1,285 @@
+{
+  "id": "char_lun_fei",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lun Fei",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "lun fei",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Лунь Фэй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lun Fei is a food path Gu Immortal and a suitor of Qiao Si Liu who attends her moon festival with Luo Mu Zi.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1316,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1316,
+    1317,
+    1318,
+    1319,
+    1320,
+    1321
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_food",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "path_food",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_luo_mu_zi",
+      "count": 2
+    },
+    {
+      "target": "char_qiao_si_liu",
+      "count": 2
+    },
+    {
+      "target": "char_chi_shang",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 1
+    },
+    {
+      "target": "char_xia_fei_kuai",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Among the Gu Immortals at Qiao Si Liu’s moon festival, Luo Mu Zi and Lun Fei are pursuers of Qiao Si Liu. They rush over on her invitation, then frown when seating and tea favor Fang Yuan instead.",
+      "chapters": [
+        1316
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_qiao_si_liu",
+        "char_luo_mu_zi",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "He offers yin-yang tea. Qiao Si Liu says he reached the second brewing level, with yin and yang separate, a skill few in Southern Border match, and calls him a food path Gu Immortal. Fang Yuan notes that Lun Fei’s main cultivation is food path and considers probing the value of that inheritance. Under Wu Yi Hai’s identity Fang Yuan cannot brazenly kill him, because Lun Fei is a righteous path Gu Immortal and that identity cannot adopt demonic path methods.",
+      "chapters": [
+        1317
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "food-path-tea",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_wu_yi_hai"
+      ]
+    },
+    {
+      "text": "He wears a blue robe and has a fair appearance when he stands to recite. After Fang Yuan offers seawater as tea and Qiao Si Liu approves, Lun Fei’s fists clench under the table. He pushes the gathering toward poems, then recites his own moon-night work with coldness toward Fang Yuan that fades when Qiao Si Liu shows interest.",
+      "chapters": [
+        1318
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "poems-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "With Luo Mu Zi he presses Fang Yuan to compose on the spot, treating him as a rival for Qiao Si Liu.",
+      "chapters": [
+        1319
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rival-pressure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is not a demonic cultivator. He is a lone cultivator more inclined toward the righteous path, even while he thinks demonic path could strike directly. With Luo Mu Zi he plans to inform Chi Shang so Chi clan anger hits Wu Yi Hai without their open hand.",
+      "chapters": [
+        1320
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-festival",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chi_shang",
+        "fac_chi_clan"
+      ]
+    },
+    {
+      "text": "While he manages Qiao Si Liu and his own aperture, Fang Yuan also uses Wu clan’s channels to gather information on Luo Mu Zi and Lun Fei, and holds off his plan on their lives until he understands their details.",
+      "chapters": [
+        1321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "investigated-through-wu-clans-channels",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/lun-fei/",
+      "chapters": [
+        1316,
+        1317,
+        1318,
+        1319,
+        1320,
+        1321
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Food path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_food"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

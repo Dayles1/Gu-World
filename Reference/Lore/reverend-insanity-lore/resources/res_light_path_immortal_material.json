@@ -1,0 +1,110 @@
+{
+  "id": "res_light_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Light path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Light path immortal materials are immortal materials of light path, including flower-form rank eight materials used in refinement.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1803,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1803
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_light",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_light",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_prospering_spring_light",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a Long Hair refinement path formation, Fang Yuan adds prospering spring light as a main immortal material for a group refinement of his split soul. Prospering spring light is a rank eight immortal material and a light path immortal material condensed in the form of a flower, with pure white petals marked by bright red specks and bright green blotches, lifelike and bursting with vitality. When it enters the fire, it melts into pure white light that pours over the split soul.",
+      "chapters": [
+        1803
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "used-in-split-soul-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "res_prospering_spring_light"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/light-path-immortal-material/",
+      "chapters": [
+        1803
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Light Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

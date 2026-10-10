@@ -1,0 +1,697 @@
+{
+  "id": "char_heavenly_lord_bai_zu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly Lord Bai Zu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Heavenly Lord Bai Zu is a Northern Plains rank eight lone cultivator Gu Immortal whose Bai Zu grotto-heaven hosts the auction invitation visit.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 736,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    736,
+    749,
+    763,
+    764,
+    813,
+    814,
+    1007,
+    1105,
+    1144,
+    1190,
+    2218,
+    2251
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_bai_zu_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1105,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_blessing_in_disguise_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 761,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_unravel_mystery",
+      "role": "prior owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 762,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_centipede_scar",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_gu_house",
+      "target": "house_red_fiend_divine_boat",
+      "role": "recipe holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 764,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 5
+    },
+    {
+      "target": "gu_blessing_in_disguise_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 3
+    },
+    {
+      "target": "gu_unravel_mystery",
+      "count": 3
+    },
+    {
+      "target": "move_centipede_scar",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 2
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 2
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 2
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 2
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 2
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_sha_huang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_huang_sha",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_qing_suo",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "fac_yuan_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_hai_three_immortals",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_medicine_cottage",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_heavenly_wind_qi_wall",
+      "count": 1
+    },
+    {
+      "target": "house_sacred_feather_city",
+      "count": 1
+    },
+    {
+      "target": "char_sun_ming_lu",
+      "count": 1
+    },
+    {
+      "target": "res_ancient_desolate_plant",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_hui_feng_zi",
+      "count": 1
+    },
+    {
+      "target": "char_gong_er",
+      "count": 1
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_heavenly_court_pursuit",
+      "count": 1
+    },
+    {
+      "target": "gu_resurrection_from_the_dead",
+      "count": 1
+    },
+    {
+      "target": "move_battle_strength_transpiration",
+      "count": 1
+    },
+    {
+      "target": "move_heaven_and_earth_combined_strength",
+      "count": 1
+    },
+    {
+      "target": "fac_chu_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_become_dragon_mound",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zu_wei",
+      "count": 1
+    },
+    {
+      "target": "sys_enslavement_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_self",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_self_giant_hand",
+      "count": 1
+    },
+    {
+      "target": "sys_snow_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "char_hei_fan",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "res_heavenly_crystal",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_plain",
+      "count": 1
+    },
+    {
+      "target": "char_yao_yuan_ying",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "move_wind_thunder_roar",
+      "count": 1
+    },
+    {
+      "target": "move_perfect_pair",
+      "count": 1
+    },
+    {
+      "target": "char_yuan_rang_zun",
+      "count": 1
+    },
+    {
+      "target": "move_karma_relocation",
+      "count": 1
+    },
+    {
+      "target": "move_qi_current_scissors",
+      "count": 1
+    },
+    {
+      "target": "gu_purple_smoke_cicada",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_advance_refinement_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Bai Zu grotto-heaven he sits the main seat and serves Qin Bai Sheng and Fairy Li Shan a dish of rank five Flying Vajra Centipedes roasted over charcoal, a recipe he tested for eight days and nights. The same introduction calls him a rank eight Gu Immortal and a lone cultivator whose hobby of cooking gourmet food and creating new dishes is famous among Northern Plains Gu Immortals. He signs onto the auction visit and notes that Yao Huang, Five Elements Grandmaster, and Old Ancestor Xue Hu are already invited, with only Prince Feng Xian left.",
+      "chapters": [
+        736
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_zu_tribe",
+        "char_qin_bai_sheng",
+        "char_fairy_li_shan",
+        "sys_gu_immortal",
+        "reg_northern_plains",
+        "char_yao_huang",
+        "char_five_elements_grandmaster",
+        "char_old_ancestor_xue_hu",
+        "char_prince_feng_xian"
+      ]
+    },
+    {
+      "text": "He wears a white robe and has thick hair. He is tall and thin.",
+      "chapters": [
+        2218
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Qin Bai Sheng’s auction he appears among Northern Plains’ five rank eight Gu Immortals and is again classed with Five Elements Grandmaster as a lone cultivator in the neutral faction.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-balance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan’s assessment during that sale names him an enslavement path Gu Immortal.",
+      "chapters": [
+        763
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-balance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the auction he tells Yao Huang that his descendants fill his grotto-heaven and that he has been planning to establish a tribe, with room to collaborate with Yao tribe. Narration treats a tribe under his support as certain to thrive and as a super force even with thin foundation, and it frames him as becoming the first supreme elder of a righteous path force.",
+      "chapters": [
+        764
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "plan-to-establish-a-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yao_tribe"
+      ]
+    },
+    {
+      "text": "Fang Yuan later notes that in both lives Heavenly Lord Bai Zu creates that super force only after Imperial Court blessed land is destroyed, and that without Huang Jin bloodline he still fears the combined Huang Jin super forces.",
+      "chapters": [
+        814
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "plan-to-establish-a-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "fac_huang_jin_bloodline"
+      ]
+    },
+    {
+      "text": "With Yao Huang he presses Old Ancestor Xue Hu over Miniscule Mountain while preparing that righteous path force, then loses the white heaven fight and admits defeat.",
+      "chapters": [
+        813
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "plan-to-establish-a-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_miniscule_mountain"
+      ]
+    },
+    {
+      "text": "Fang Yuan reads the pair’s retreat as Old Ancestor Xue Hu defeating both at once.",
+      "chapters": [
+        814
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "plan-to-establish-a-tribe",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "By the time of the grand tribulation at Sacred Feather City, he remains far from the first myriad tribulation.",
+      "chapters": [
+        1007
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "plan-to-establish-a-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_sacred_feather_city"
+      ]
+    },
+    {
+      "text": "Bai Zu tribe appears as a new righteous path super force built from his bloodline descendants nurtured in his grotto-heaven, and Huang Jin righteous immortals treat the tribe as crafty outsiders under his protection.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bai-zu-tribe",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Old Ancestor Xue Hu begins refining fortune rivalling heaven Gu, Heavenly Lord Bai Zu weighs that he alone is no match for Old Ancestor Xue Hu, that wrecking the refinement would make him Xue Hu’s irreconcilable enemy, and that his newly established Bai Zu tribe took many years of planning to build. He says he cannot make a move lightly, and that unless Yao Huang and some others want to act, he should concentrate on invading Hei Fan grotto-heaven before they show any sign.",
+      "chapters": [
+        1144
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bai-zu-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hei_fan_grotto_heaven"
+      ]
+    },
+    {
+      "text": "When Longevity Heaven later unites Huang Jin tribes against Bai Zu tribe, Heavenly Lord Bai Zu is still named as that tribe’s rank eight, and the righteous path needs a matching rank eight to face him.",
+      "chapters": [
+        1190
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bai-zu-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_longevity_heaven"
+      ]
+    },
+    {
+      "text": "Giant Sun Immortal Venerable personally summons him as middle man for a blood path Immortal Gu transaction with Fang Yuan. Fang Yuan asks why an enslavement path cultivator wants blood path Gu refined, and Heavenly Lord Bai Zu answers from Northern Plains under that pressure.",
+      "chapters": [
+        2251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "middleman-for-giant-sun",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_giant_sun_immortal_venerable",
+        "sys_immortal_gu",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/heavenly-lord-bai-zu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/heavenly-lord-bai-zu/",
+      "chapters": [
+        736,
+        749,
+        763,
+        764,
+        813,
+        814,
+        1007,
+        1105,
+        1144,
+        1190,
+        2218,
+        2251
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 736",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Bai Zu tribe as of ch. 1105",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "lone cultivator as of ch. 736",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 736,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": "lone cultivator as of ch. 736",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_blessing_in_disguise_immortal_gu",
+      "role": "unspecified",
+      "recorded_chapter": 761,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_unravel_mystery",
+      "role": "prior owner",
+      "recorded_chapter": 762,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

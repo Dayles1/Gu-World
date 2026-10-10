@@ -1,0 +1,141 @@
+{
+  "id": "res_pale_flame_white_bones",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Pale flame white bones",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Pale flame white bones are a fire path immortal material used when refining star thought Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 926,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    926
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_fire",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_star_thought_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "path_fire",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A step in refining star thought Immortal Gu needs a portion of pale flame white bones together with a portion of green beetle water lotuses. Pale flame white bones are a fire path immortal material and carry fire path dao marks.",
+      "chapters": [
+        926
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "star-thought-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_star_thought_immortal_gu"
+      ]
+    },
+    {
+      "text": "The two immortal materials must be processed at the same time so water and fire fuse into a clear liquid. Fire path dao marks on the pale flame white bone and water path dao marks on the green beetle water lotus must be equal, or nearly so; if one side is too high, the liquid turns murky and cannot be used. The Immortal Gu recipe states the amount of pale flame white bones; damage to the bones reduces the dao marks on them.",
+      "chapters": [
+        926
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "star-thought-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_recipe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/pale-flame-white-bones/",
+      "chapters": [
+        926
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Fire Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Refines into": {
+      "text": "Star Thought Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

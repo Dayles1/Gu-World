@@ -1,0 +1,216 @@
+{
+  "id": "char_old_caretaker",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Nanny Wu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Old caretaker"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Nanny Wu is the Zhao tribe civilian caretaker ordered to watch Zhao Lian Yun closely.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 502,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    502,
+    529
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zhao_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 502,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zhao_tribe",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fei_cai",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Zhao Lian Yun scrapes her forehead reaching the study, Zhao tribe leader berates Nanny Wu for failing to protect the girl at all times. She kneels in fear, and the leader dismisses her as a useless thing after Yunyun asks for leniency.",
+      "chapters": [
+        502
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhao_lian_yun",
+        "fac_zhao_tribe"
+      ]
+    },
+    {
+      "text": "She has unkempt hair and a sinister gaze. After Fei Cai punches her, one eye is purple from the bruise. With that hair and gaze she looks like a hopping old hen.",
+      "chapters": [
+        529
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fei_cai"
+      ]
+    },
+    {
+      "text": "In Ma tribe’s army she pulls Zhao Lian Yun from a carriage for the stepmother now called tribe lady, takes pleasure in the girl’s misery after years of being pranked, and is punched out by Fei Cai. She screams that a slave struck a civilian, then freezes when told Fei Cai is Ma Ying Jie’s slave leader, and leaves after announcing a marriage arranged to Wei tribe’s eldest young master.",
+      "chapters": [
+        529
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-zhao-tribe-leader-dies",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "char_ma_ying_jie"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/old-caretaker.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/old-caretaker/",
+      "chapters": [
+        502,
+        529
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zhao Tribe as of ch. 502",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

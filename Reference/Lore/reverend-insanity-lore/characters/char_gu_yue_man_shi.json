@@ -1,0 +1,394 @@
+{
+  "id": "char_gu_yue_man_shi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Yue Man Shi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gu yue man shi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гу Юэ Мань Ши",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gu Yue Man Shi is a rank two Gu Master of the Gu Yue clan on Qing Mao Mountain, leader of the Man Shi group, who fights with strong defense and great strength before Fang Yuan's wine-tavern clash.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 107,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    4,
+    107,
+    108,
+    109,
+    115,
+    133,
+    134,
+    137,
+    139,
+    142,
+    144
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 107,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_monolith_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 108,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_monolith_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_dong_tu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 2
+    },
+    {
+      "target": "char_jiang_ya",
+      "count": 2
+    },
+    {
+      "target": "gu_moonglow_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_moonblade",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "count": 1
+    },
+    {
+      "target": "gu_brown_bear_innate_strength_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Jiang Ya names him when he wrecks Fang Yuan’s wine tavern, and Fang Yuan’s rank two roster memory places Gu Yue Man Shi as a slightly famous Gu Master who specializes in defense, has great strength, and leads the Man Shi group, a little higher in fame than Jiao San. The same stretch has already traced the tavern harassment to Gu Yue Dong Tu, who used relationships to send Gu Masters after Qing Shu blocked him from using Fang Zheng.",
+      "chapters": [
+        107
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jiang_ya",
+        "sys_gu_master",
+        "char_gu_yue_jiao_san",
+        "fac_gu_masters",
+        "char_gu_yue_qing_shu",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "That clan sits on Qing Mao Mountain in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "He is slightly short, with thick arms and waist, and a thick black beard that extends from his cheeks to meet at his chin. Moonblade light shows the strands of his moustache. When he calls Monolith Gu, a deep grey light covers him and his skin turns to rock skin. His limbs take on thick deep grey rock, as if arms made from a statue.",
+      "chapters": [
+        108
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_moonblade",
+        "gu_monolith_gu"
+      ]
+    },
+    {
+      "text": "Onlookers see a short, thick-armed rank two with a black beard smashing pots and demanding five hundred primeval stones, and whisper that a retired elder stands behind him. Jiang Ya warns that Man Shi is one of the few who escaped Bai Ning Bing alive. Fang Yuan answers the public apology trap with a silent Moonglow Gu moonblade. Man Shi calls Monolith Gu too late, takes a chest wound through unfinished rock skin, and falls under further cuts and stomps until Fang Yuan threatens crippling under clan rules rather than a kill. Facing Fang Yuan’s indifferent eyes, Man Shi relives a bamboo-forest beating two years earlier when Bai Ning Bing, then rank two yet able to kill rank three elders, spared him so he could refine Monolith Gu and fight again. The same terror empties his fight, and he crawls out of the tavern.",
+      "chapters": [
+        108
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wine-tavern-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "char_fang_yuan",
+        "gu_moonglow_gu"
+      ]
+    },
+    {
+      "text": "News that the newbie defeated him spreads among rank two Gu Masters, and Man Shi remains a slightly famous rank two who once escaped Bai Ning Bing. Gossip says he needs at least three days in bed. His reputation is destroyed, and he will resign as group leader once he recovers, becoming Fang Yuan’s stepping stone. When Gu Yue Dong Tu hears Man Shi ran away in defeat, he stops the proxy harassment of the tavern and bamboo assets.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "aftermath-among-rank-two",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_dong_tu"
+      ]
+    },
+    {
+      "text": "A later wolf-tide near miss has Fang Yuan measuring a crippled shoulder against what happened to Gu Yue Man Shi not long before.",
+      "chapters": [
+        115
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "aftermath-among-rank-two",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan picks the Man Shi group as prey because Man Shi’s Monolith Gu and strong defense let him hold many lightning wolves, and reclaiming that Gu would be worth about 3900 merit points. He waits for the group to be worn down. Bai Ning Bing arrives on his own from a cliff overlooking the valley.",
+      "chapters": [
+        133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "selected-as-prey",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan sprints into the valley with Bai Ning Bing in chase. Surviving Gu Masters briefly take the pair for rescue until Man Shi recognizes Fang Yuan with fear and shame from the tavern defeat, and then Bai Ning Bing. After Bai Ning Bing kills the three other grateful survivors, Man Shi charges under the three-clan alliance treaty with fully refined Monolith Gu rock skin. Bai Ning Bing bisects him through the rock, freezes the rest of his life force, and only afterward half-recalls sparing him earlier.",
+      "chapters": [
+        134
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-the-valley",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later treats Gu Yue Man Shi as the opening probe that fished Bai Ning Bing’s secrets, cites the Man Shi group murder when calling for help against Bai Ning Bing, and collects Gu from Man Shi and his groupmates’ corpses for clan merit exchange.",
+      "chapters": [
+        137
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-the-valley",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/gu-yue-man-shi.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/gu-yue-man-shi/",
+      "chapters": [
+        4,
+        107,
+        108,
+        109,
+        115,
+        133,
+        134,
+        137,
+        139,
+        142,
+        144
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 107",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 107",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 107,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_monolith_gu",
+      "role": "user",
+      "recorded_chapter": 108,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

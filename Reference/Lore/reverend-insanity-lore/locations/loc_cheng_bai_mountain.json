@@ -1,0 +1,271 @@
+{
+  "id": "loc_cheng_bai_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cheng Bai Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A low mound from the Legends of Ren Zu, made of failure Gu pebbles with one success Gu at the peak.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 435,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    435,
+    547,
+    591,
+    2099
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_desolate_ancient_moon",
+      "count": 2
+    },
+    {
+      "target": "gu_cognition_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_failure_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_love_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_success_gu",
+      "count": 2
+    },
+    {
+      "target": "char_northern_dark_ice_soul",
+      "count": 2
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_love_is_cruel",
+      "count": 1
+    },
+    {
+      "target": "race_rockmen",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_troubles_of_love",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_ancient_moon_physique",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_northern_dark_ice_soul",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_understanding_ones_purpose",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "loc_reverse_flow_river",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Cheng Bai mountain is not tall and is like a mound. It is made from millions and millions of pebbles. Those pebbles are failure Gu, and there is only one success Gu, at the peak.",
+      "chapters": [
+        435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_failure_gu",
+        "gu_success_gu"
+      ]
+    },
+    {
+      "text": "The mountain is not an ordinary mountain but a mound entirely made up of stacked rocks; when love Gu crashes into it, the entire mountain crumbles into a huge pile of rocks.",
+      "chapters": [
+        547
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_love_gu"
+      ]
+    },
+    {
+      "text": "Cognition Gu gives Desolate Ancient Moon a second rescue method: climb Cheng Bai mountain, find success Gu, and make a wish so Ren Zu can resurrect. She already knows space cave exists but cannot find it, so she walks to the mountain foot and begins to ascend. That climb wakes love Gu, which awakens a rockman to pursue her.",
+      "chapters": [
+        435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_cognition_gu",
+        "char_desolate_ancient_moon",
+        "char_ren_zu"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because chapter 435’s Ren Zu telling is narrated while Fang Yuan is in northern plains. Cited scenes do not place the mountain on a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "After Desolate Ancient Moon kills the rockman and reaches the mountain waist, love Gu appears, says it will topple Cheng Bai mountain, and crashes into it so the mound of stacked rocks crumbles. Cognition Gu then says she can only search the rocks one by one for success Gu, warns that failure Gu at the bottom is the greatest threat, and tells her to affirm the belief of “me” so disastrous situations from the sibling rocks gradually disappear.",
+      "chapters": [
+        547
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mound-collapse",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Northern Dark Ice Soul and Desolate Ancient Moon ask again how to save their father, cognition Gu says Cheng Bai mountain has disappeared and who knows when it will form again.",
+      "chapters": [
+        591
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mountain-disappearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_northern_dark_ice_soul"
+      ]
+    },
+    {
+      "text": "Narration lists Cheng Bai Mountain among secluded domains of heaven and earth in The Legends of Ren Zu, under rule path with Reverse Flow River and Miniscule Mountain.",
+      "chapters": [
+        2099
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "secluded-domain-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_the_legends_of_ren_zu",
+        "loc_reverse_flow_river",
+        "loc_miniscule_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/cheng-bai-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/cheng-bai-mountain/",
+      "chapters": [
+        435,
+        547,
+        591,
+        2099
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

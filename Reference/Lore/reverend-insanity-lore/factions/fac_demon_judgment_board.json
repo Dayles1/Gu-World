@@ -1,0 +1,181 @@
+{
+  "id": "fac_demon_judgment_board",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Demon Judgment Board",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Heavenly Court listing issued every ten years that places many blood path Gu Masters on it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 700,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    700,
+    1052,
+    1058,
+    1081
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_blood_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "house_demon_judgment_board",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He Feng Yang names Blood Sea Ancestor as having caused much harm to the world in the same rebuke of blood path cultivators.",
+      "chapters": [
+        700
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-issue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_he_feng_yang",
+        "char_blood_sea_ancestor",
+        "path_blood"
+      ]
+    },
+    {
+      "text": "Fairy Zi Wei tells Feng Jin Huang that Fang Yuan is a wanted criminal listed on the Demon Judgment Board by Heavenly Court, and sets that listing as a limit on any repayment of kindness tied to Hu Immortal blessed land.",
+      "chapters": [
+        1052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-listing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "char_feng_jin_huang",
+        "char_fang_yuan",
+        "house_demon_judgment_board",
+        "fac_heavenly_court",
+        "loc_hu_immortal_blessed_land"
+      ]
+    },
+    {
+      "text": "Fang Yuan holds that any blood path Gu Immortal would be detected by Heavenly Court and listed on the Demon Judgment Board.",
+      "chapters": [
+        1058
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blood-path-detection",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "He tells Lang Ya land spirit that even slightly high blood path cultivation adds a name to Heavenly Court’s Demon Judgment Board and would expose them, so blood path will not do for raising hairy man battle strength.",
+      "chapters": [
+        1081
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lang-ya-blood-path-risk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/demon-judgment-board/",
+      "chapters": [
+        700,
+        1052,
+        1058,
+        1081
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

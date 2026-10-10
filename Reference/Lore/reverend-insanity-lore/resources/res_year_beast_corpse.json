@@ -1,0 +1,184 @@
+{
+  "id": "res_year_beast_corpse",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Year beast corpse",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Ancient year beast corpse Immemorial year beast corpses"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Year beast corpses are immortal materials left when year beasts die, graded with the beast's rank.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1402,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1402,
+    1754,
+    2084
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xunzi",
+      "count": 1
+    },
+    {
+      "target": "char_xun_guo_zi",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While enslaving year beasts summoned against Feng Jiu Ge, Fang Yuan keeps living year beasts in his immortal aperture and also some year beast corpses. Those unlucky beasts are already injured and die when his strength path giant hands slam them with too much force. Even though they die, they are still rank six and seven immortal materials, and he does not let go of any.",
+      "chapters": [
+        1402
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-six-and-seven-materials",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "After the Four Xunzi kill an ancient year beast on the River of Time, Xun Guo Zi cheers that they obtained a huge amount of time path immortal materials. They rest and process the ancient year beast corpse before continuing their observation of the River of Time.",
+      "chapters": [
+        1754
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ancient-year-beast-processing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xunzi",
+        "loc_river_of_time",
+        "char_xun_guo_zi"
+      ]
+    },
+    {
+      "text": "After Gu Immortals fight on Sorrowful Wind Mountain Range, Heavenly Court cleans up the battlefield and takes away all those immemorial year beast corpses. Mortal Gu Masters who later search the ruins find nothing of value from that cleanup.",
+      "chapters": [
+        2084
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immemorial-corpses-taken",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_heavenly_court",
+        "sys_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/year-beast-corpse/",
+      "chapters": [
+        1402,
+        1754,
+        2084
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Year beasts",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

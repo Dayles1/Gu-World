@@ -1,0 +1,321 @@
+{
+  "id": "gu_scholar_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Scholar Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Scholar Gu is a rare rank five human path Gu that can transform into a scholar. Hong Yi buys one in the Divine Emperor City painting world.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1947,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1947,
+    2065,
+    2110,
+    2111
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_human",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_hong_yi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1947,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hong_yi",
+      "count": 4
+    },
+    {
+      "target": "path_human",
+      "count": 1
+    },
+    {
+      "target": "gu_craftsman_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_hero_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_beast_tamer_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_emperor_city",
+      "count": 1
+    },
+    {
+      "target": "gu_soldier_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_wine_drinker_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/scholar-gu/",
+      "chapters": [
+        1947,
+        2065,
+        2110,
+        2111
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": 1947,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_human"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Qin Ding Ling groups scholar Gu with hero Gu, craftsman Gu, and farmer Gu when describing a related Immortal Gu recipe that is not at the mortal level.",
+        "chapters": [
+          2110
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "profession-gu-line",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_qin_ding_ling",
+          "gu_hero_gu",
+          "gu_craftsman_gu",
+          "sys_gu_recipe"
+        ]
+      },
+      {
+        "text": "In the painting world market, scholar Gu sits with hero Gu, soldier Gu, and craftsman Gu before beast tamer Gu appears. Shen Shang’s three-type human path list names profession Gu with craftsman Gu, hero Gu, and beast tamer Gu as examples; scholar Gu remains in that same market cluster of profession Gu.",
+        "chapters": [
+          2111
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "human-path-types",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_beast_tamer_gu",
+          "char_shen_shang"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "When activated, it turns into a young handsome scholar.",
+        "chapters": [
+          1947
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Fang Di Chang cites Hong Yi’s scholar Gu transforming into a scholar as an example of human path Gu becoming human, gaining ordinary wisdom with a type-shaped disposition, and using other Gu with the cultivator’s proficiency.",
+        "chapters": [
+          2065
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "human-transform-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_di_chang"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "In a Gu store inside the painting world that resembles Emperor City, Hong Yi asks for scholar Gu. The clerk names it a rank five Gu worm, and the store manager brings one out after Hong Yi shows a rank five Gu Master aura. Hong Yi pours primeval essence into it; the Gu flies from his finger, lands, and turns into a young handsome scholar who greets him as teacher. Scholar Gu is extremely rare as a human path Gu Hong Yi had only heard of in rumors. The transformed scholar uses a wisdom path mortal Gu and an information path mortal Gu at once, with small activation habits matching Hong Yi’s. Hong Yi buys it for six hundred thousand primeval stones, a price he judges too cheap for a rare top quality rank five Gu that normally sits above one million and has no market.",
+        "chapters": [
+          1947
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_emperor_city",
+          "char_hong_yi",
+          "sys_gu_worms",
+          "sys_gu_master",
+          "sys_mortal_gu",
+          "sys_information_path_mortal_gu"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_hong_yi",
+      "role": "unspecified",
+      "recorded_chapter": 1947,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": []
+  },
+  "attributes": {
+    "Path": {
+      "text": "Human Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

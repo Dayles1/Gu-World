@@ -1,0 +1,595 @@
+{
+  "id": "fac_heavenly_lotus_sect",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly Lotus Sect",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Heavenly Lotus Sect is named among Central Continent's top ten sects when Immortal Crane elites prepare for the Hu Immortal inheritance contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 335,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    335,
+    336,
+    338,
+    811,
+    997,
+    1000,
+    1003,
+    1233,
+    1522
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fairy_bi_xia",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 336,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bu_fei_yan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 811,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_heaven_overseeing_tower_lord",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 997,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chen_yi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1508,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_genesis_lotus_immortal_venerable",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1522,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fairy_bi_xia",
+      "count": 4
+    },
+    {
+      "target": "char_bu_fei_yan",
+      "count": 4
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 4
+    },
+    {
+      "target": "char_heaven_overseeing_tower_lord",
+      "count": 4
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "house_canary_pavilion",
+      "count": 3
+    },
+    {
+      "target": "house_yue_yang_palace",
+      "count": 3
+    },
+    {
+      "target": "char_chen_yi",
+      "count": 3
+    },
+    {
+      "target": "house_illusion_garden",
+      "count": 2
+    },
+    {
+      "target": "fac_ancient_soul_sect",
+      "count": 2
+    },
+    {
+      "target": "fac_heavens_envy_sect",
+      "count": 2
+    },
+    {
+      "target": "loc_heavenly_lotus",
+      "count": 2
+    },
+    {
+      "target": "loc_spirit_butterfly_valley",
+      "count": 2
+    },
+    {
+      "target": "char_chen_zhen_chi",
+      "count": 2
+    },
+    {
+      "target": "char_yu_mu_chun",
+      "count": 2
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "fac_combat_immortal_sect",
+      "count": 2
+    },
+    {
+      "target": "loc_heavenly_pool",
+      "count": 2
+    },
+    {
+      "target": "char_bi_chen_tian",
+      "count": 2
+    },
+    {
+      "target": "char_lian_jiu_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_seven_star_child",
+      "count": 2
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 2
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 2
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 1
+    },
+    {
+      "target": "inh_hu_immortal_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "fac_four_great_obscenities",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_five_virtues_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_five_virtues_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_true_yang_mountain_range",
+      "count": 1
+    },
+    {
+      "target": "move_heart_blood_premonition",
+      "count": 1
+    },
+    {
+      "target": "move_lava_chain",
+      "count": 1
+    },
+    {
+      "target": "move_lightning_lock",
+      "count": 1
+    },
+    {
+      "target": "char_violent_blood_dragon_bat",
+      "count": 1
+    },
+    {
+      "target": "res_genesis_lotus_blood",
+      "count": 1
+    },
+    {
+      "target": "path_illusion",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "loc_ming_tang_valley",
+      "count": 1
+    },
+    {
+      "target": "sys_omni_directional_travel",
+      "count": 1
+    },
+    {
+      "target": "char_shi_ge",
+      "count": 1
+    },
+    {
+      "target": "char_shi_zheng_yi",
+      "count": 1
+    },
+    {
+      "target": "house_edge_link_camp",
+      "count": 1
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 1
+    },
+    {
+      "target": "house_divine_bean_palace",
+      "count": 1
+    },
+    {
+      "target": "move_karma_divine_tree",
+      "count": 1
+    },
+    {
+      "target": "house_chicken_dog_coop",
+      "count": 1
+    },
+    {
+      "target": "house_inquiry_dock",
+      "count": 1
+    },
+    {
+      "target": "move_peach_blossom_maze",
+      "count": 1
+    },
+    {
+      "target": "inh_genesis_lotus_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "move_giant_tree_divine_statue",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the location of Heavenly Lotus Sect a battle between rank eights completely changes the original mountainous terrain, and the profound natural dao marks of its famous mountains and rivers are what keep the landscape from being ruined even more severely. Three Immortal Gu Houses hover in the air there: Canary Pavilion, delicate and exquisite; Yue Yang Palace, shining with brilliant radiance; and rank eight Heavenly Pool at the center. From the outside Heavenly Pool is a pool of small area among the world’s smallest Immortal Gu Houses, filled with green lotuses some in full bloom and some closed, and every lotus holds a blessed land or grotto-heaven. The rank eight Immortal Gu House Heavenly Pool is the base of Heavenly Lotus Sect, created by Genesis Lotus Immortal Venerable, and its greatest use is to store immortal apertures.",
+      "chapters": [
+        1000
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_canary_pavilion",
+        "house_yue_yang_palace",
+        "loc_heavenly_pool",
+        "char_genesis_lotus_immortal_venerable"
+      ]
+    },
+    {
+      "text": "On the road toward Tian Ti, Immortal Crane Sect elites spot Fairy Bi Xia of Heavenly Lotus Sect surrounded by demonic Gu Masters, and Fang Zheng leads a crane charge that drives the attackers off.",
+      "chapters": [
+        336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "road-to-tian-ti-rescue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tian_ti",
+        "fac_immortal_crane_sect",
+        "char_fairy_bi_xia",
+        "sys_demonic_path",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Later talk at Tian Ti still treats her as Fairy Bi Xia from Heavenly Lotus Sect when she arrives beside Immortal Crane Sect people.",
+      "chapters": [
+        338
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "road-to-tian-ti-rescue",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before that road rescue, Immortal Crane elites bound for Fairy Bai Hu’s inheritance are told that Heavenly Lotus Sect, Spirit Butterfly Valley, Ancient Soul Sect, Heaven’s Envy Sect, and the other Central Continent top ten sects will also compete, so they must stay united.",
+      "chapters": [
+        335
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "place-in-the-ten-sect-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_hu_immortal_inheritance",
+        "loc_spirit_butterfly_valley",
+        "fac_ancient_soul_sect",
+        "fac_heavens_envy_sect",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "The location page for this force is Heavenly Lotus.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "place-in-the-ten-sect-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_heavenly_lotus"
+      ]
+    },
+    {
+      "text": "During the Central Continent investigation after Eighty-Eight True Yang Building collapses, Bu Fei Yan appears in Northern Plains as a female Gu Immortal of Heavenly Lotus Sect. Talk pairs her flying skill with Chen Zhen Chi under the saying “Zhen Chi of the nine heavens, followed by Fei Yan,” and she represents Heavenly Lotus Sect among the ten great ancient sects on that mission.",
+      "chapters": [
+        811
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-later-figures",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_eighty_eight_true_yang_building",
+        "char_bu_fei_yan",
+        "reg_northern_plains",
+        "sys_gu_immortal",
+        "char_chen_zhen_chi"
+      ]
+    },
+    {
+      "text": "Later talk restates that Heavenly Lotus Sect was created by Genesis Lotus Immortal Venerable and owns the highest number of Immortal Gu Houses among the compared forces, listing Canary Pavilion, Yue Yang Palace, and Heavenly Pool, plus a fourth Immortal Gu House kept secret.",
+      "chapters": [
+        1233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "founder-and-standing",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A still later stretch again states that Central Continent’s Heavenly Lotus Sect was created by Genesis Lotus Immortal Venerable, that it was the number one sect in Central Continent during his era, and that Chen Yi stands as first supreme elder of Heavenly Lotus Sect with Genesis Lotus’ true inheritance.",
+      "chapters": [
+        1522
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "founder-and-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_yi"
+      ]
+    },
+    {
+      "text": "Seven Star Child, Song Zi Xing, and Yu Mu Chun use an immortal killer move to transport the four of them, with immortal zombie Bo Qing at the lead, to attack Heavenly Lotus Sect, and Heaven Overseeing Tower Lord reaches the sect’s base with Lian Jiu Sheng and Bi Chen Tian, so a battle of rank eights erupts there. Heaven Overseeing Tower Lord cannot watch from the sidelines because he is a Gu Immortal formerly from Heavenly Lotus Sect who has large numbers of disciples and descendants in it.",
+      "chapters": [
+        997
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shadow-sect-attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_seven_star_child",
+        "char_song_zi_xing",
+        "char_yu_mu_chun",
+        "char_bo_qing",
+        "char_heaven_overseeing_tower_lord",
+        "char_lian_jiu_sheng",
+        "char_bi_chen_tian"
+      ]
+    },
+    {
+      "text": "After a round of that battle the Shadow Sect group pulls back some distance, Seven Star Child says their goal of delaying is achieved, and Bo Qing and the rest follow him away.",
+      "chapters": [
+        1000
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shadow-sect-attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s previous life Bo Qing could not attack Heavenly Lotus Sect and struck Combat Immortal Sect instead, and among this life’s divergences Vice Envoy Blue, who is Seven Star Child, does not die.",
+      "chapters": [
+        1003
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shadow-sect-attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_combat_immortal_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/heavenly-lotus-sect.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/heavenly-lotus-sect/",
+      "chapters": [
+        335,
+        336,
+        338,
+        811,
+        997,
+        1000,
+        1003,
+        1233,
+        1522
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

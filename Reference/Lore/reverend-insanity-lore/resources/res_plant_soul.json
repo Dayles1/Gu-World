@@ -1,0 +1,181 @@
+{
+  "id": "res_plant_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Plant soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "desolate plant souls"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A plant soul is the soul of a plant, used among other souls as feedstock for guts Gu on Dang Hun Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 996,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    996,
+    1199,
+    1503
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_guts_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_guts_gu",
+      "count": 3
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_soul",
+      "count": 1
+    },
+    {
+      "target": "res_soul_core",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan feeds tens of thousands of souls to Dang Hun Mountain, the batch is mostly beast souls, and there are plant souls too, while variant human and human souls are fewest. Those souls are destroyed on the mountain and turn into soul essence that produces a new batch of guts Gu.",
+      "chapters": [
+        996
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "present-in-soul-batches",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_dang_hun_mountain",
+        "gu_guts_gu"
+      ]
+    },
+    {
+      "text": "Desolate plant souls, like desolate beast souls, are far inferior to Gu Immortal souls for guts Gu, but quantity and a stable Tai Qiu source can offset the gap.",
+      "chapters": [
+        1199
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-plant-substitute",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_gu_immortal_soul",
+        "loc_tai_qiu"
+      ]
+    },
+    {
+      "text": "Soul cores fed to Dang Hun Mountain in place of souls can at best match the souls of other beasts and plants, not Gu Immortal souls.",
+      "chapters": [
+        1503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "matched-by-soul-cores",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_soul_core"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/plant-soul/",
+      "chapters": [
+        996,
+        1199,
+        1503
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Soul Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Plants",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Guts Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

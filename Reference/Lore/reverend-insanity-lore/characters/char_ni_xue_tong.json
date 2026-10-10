@@ -1,0 +1,196 @@
+{
+  "id": "char_ni_xue_tong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ni Xue Tong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ni xue tong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ни Сюэ Тун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ni Xue Tong is Chang Biao's partner and Chang Ji You's mother. She shares the secret that they framed Chang Shan Yin.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 530,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    530
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 530,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chang_tribe",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_chang_biao",
+      "count": 2
+    },
+    {
+      "target": "char_chang_ji_you",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_ha_tu_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "She speaks with a frowned expression. Alone with Chang Biao after the tent flap closes, she has weak and feeble eyes that shed tears as she jumps into his embrace.",
+      "chapters": [
+        530
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_biao"
+      ]
+    },
+    {
+      "text": "She urges Chang Ji You not to waver and not to forget their circumstances, and tells him not to worry about his father. Alone with Chang Biao and guarded outside, she sobs that You Er keeps asking about Chang Shan Yin and that she almost told the truth: Chang Ji You is not Chang Shan Yin’s flesh and blood. Narration states that if the secret is exposed, Chang Biao and Ni Xue Tong would be publicly shamed as an adulterous couple and would never raise their heads again, having harmed an expert of the tribe. Chang Biao fears that the only option then would be to escape with Ni Xue Tong and his own flesh and blood Chang Ji You as demonic Gu Masters, despised and chased by the tribe.",
+      "chapters": [
+        530
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shared-secret",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_ji_you",
+        "char_chang_shan_yin",
+        "sys_demonic_path"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ni-xue-tong/",
+      "chapters": [
+        530
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Chang Tribe as of ch. 530",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,131 @@
+{
+  "id": "res_faeces_of_remnant_heavenly_dog",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Faeces of remnant heavenly dogs",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "remnant heavenly dog's faeces"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Faeces of remnant heavenly dogs are immortal materials from that ancient desolate beast, used when Dog Shit Luck is raised past rank six.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1133,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1133,
+    1913
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_dog_shit_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1913,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 4
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Among ancient desolate beasts taken from Hei Fan grotto-heaven are three remnant heavenly dogs. At rank six, dog shit luck Immortal Gu needs faeces of dog desolate beasts, not these ancient desolate beasts. If the Gu is raised to rank seven, its food changes drastically, and remnant heavenly dog faeces become useful.",
+      "chapters": [
+        1133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-seven-food",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hei_fan_grotto_heaven",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "When advancing dog shit luck Immortal Gu to rank seven, some of the dog shit immortal materials have sharp spikes and look dangerous: the faeces of remnant heavenly dogs. Remnant heavenly dog is named as an ancient desolate beast among the sources of those materials.",
+      "chapters": [
+        1913
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-stock",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/faeces-of-remnant-heavenly-dog/",
+      "chapters": [
+        1133,
+        1913
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Remnant heavenly dog",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Dog Shit Luck",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

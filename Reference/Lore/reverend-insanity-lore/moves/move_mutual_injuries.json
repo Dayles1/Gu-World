@@ -1,0 +1,191 @@
+{
+  "id": "move_mutual_injuries",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mutual Injuries",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mutual Injuries is Shen Shang's human path immortal killer move. It covers a sensed target in wounds filled with human path dao marks that can endanger that target's life.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1907,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1907,
+    1908,
+    1915
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_shen_shang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1907,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_injury_mark_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1915,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shen_shang",
+      "count": 3
+    },
+    {
+      "target": "gu_injury_mark_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_human_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "house_myriad_year_flying_warship",
+      "count": 1
+    },
+    {
+      "target": "move_sensory_injury",
+      "count": 1
+    },
+    {
+      "target": "move_heavy_injuries",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After healing the wounds from daybreak flying swords into dao marks, Shen Shang activates the immortal killer move Mutual Injuries. Inside Myriad Year Flying Warship, Fang Yuan takes hundreds of wounds at once; blood splatters, and the wounds fill with human path dao marks that spread rapidly while staying connected as one. Those dao marks threaten his life once their numbers increase. Earlier, Sensory Injury hit him first; he realizes Myriad Year Flying Warship could not guard against that human path move. After Mutual Injuries lands, he says Shen Shang’s methods bypass the Immortal Gu House to injure him directly.",
+      "chapters": [
+        1907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_shang",
+        "sys_killer_moves",
+        "house_myriad_year_flying_warship",
+        "char_fang_yuan",
+        "move_sensory_injury",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Light injuries on Shen Shang’s body also affect Fang Yuan because of mutual injuries.",
+      "chapters": [
+        1908
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "linked-harm",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shen Shang tells Shen Cong Sheng that Injury Mark Immortal Gu is the core of his human path inheritance, and that mutual injuries is his main offensive method. The more injury marks he has, the more he can increase mutual injuries’ power; in the earlier battle he forced Fang Yuan to retreat by covering him in injury marks with this move.",
+      "chapters": [
+        1915
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-role",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_cong_sheng",
+        "gu_injury_mark_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/mutual-injuries/",
+      "chapters": [
+        1907,
+        1908,
+        1915
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Shen Shang",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Injury Mark Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

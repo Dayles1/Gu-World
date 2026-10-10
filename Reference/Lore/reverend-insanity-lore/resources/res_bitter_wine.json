@@ -1,0 +1,185 @@
+{
+  "id": "res_bitter_wine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bitter wine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "green bitter wine green Ai wine"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bitter wine is the bitter-flavored liquor required, with sour, sweet, and spicy wines, to fuse a Four Flavors Liquor Worm.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 105,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    105,
+    111,
+    117,
+    120,
+    213
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_four_flavors_liquor_worm",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_verdant_great_sun",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fusing a Four Flavors Liquor Worm needs four wines of different flavors: sour, sweet, bitter, and spicy. Spicy, sour, and even rice wines for the sweet slot are easier to find; bitter wines take more thought.",
+      "chapters": [
+        105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "four-flavor-need",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_four_flavors_liquor_worm"
+      ]
+    },
+    {
+      "text": "Fang Yuan knows a green bitter wine brewed with Ai grass, but Ai village is immeasurably far away.",
+      "chapters": [
+        105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "green-ai-brew",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "With golden honey wine already in hand as the sweet wine, and spicy and sour wines easy to buy in the caravan tents, bitter wine remains the missing piece that would let the fusion start at once. Hours of searching turn up spicy and sour jars but no bitter wine.",
+      "chapters": [
+        111
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scarcity-in-camp",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan is lacking a bitter wine for the liquor worm fusion when he asks the tavern shopkeeper about bitter shell wine. Getting bitter shell wine is more reasonable than the green Ai wine that remains immeasurably far away.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shell-wine-as-bitter",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Collecting wine from Hundred year bitter shells finally gives him the bitter wine he needs to refine the Four Flavor Liquor worm.",
+      "chapters": [
+        120
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "collected-bitter-stock",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Psychic monkeys in the west brew bitter wine. After Verdant Great Sun drinks it, his tongue takes a yellowish-brown hue and he learns that wine can also be bitter.",
+      "chapters": [
+        213
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "psychic-monkey-brew",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_verdant_great_sun"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/bitter-wine/",
+      "chapters": [
+        105,
+        111,
+        117,
+        120,
+        213
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Various bitter brews",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Four Flavors Liquor Worm",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

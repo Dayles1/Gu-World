@@ -1,0 +1,407 @@
+{
+  "id": "fac_meng_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Meng Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains super force named at Qin Bai Sheng's auction among the bidders for the Red Fiend Divine Boat recipe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 762,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    762,
+    806,
+    1105,
+    1109,
+    1193,
+    1563,
+    1565,
+    1566
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_meng_ji",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1105,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_meng_tribe_meng_tu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1563,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_meng_zhao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_meng_zi_zai",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_meng_ji",
+      "count": 4
+    },
+    {
+      "target": "char_meng_tribe_meng_tu",
+      "count": 4
+    },
+    {
+      "target": "char_meng_zhao",
+      "count": 4
+    },
+    {
+      "target": "char_meng_zi_zai",
+      "count": 4
+    },
+    {
+      "target": "house_investigation_courtyard",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 2
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_yuan_tribe",
+      "count": 2
+    },
+    {
+      "target": "gu_edge_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_tribe",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tie_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_nian_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_chou_lao_wu",
+      "count": 1
+    },
+    {
+      "target": "char_hao_zhen",
+      "count": 1
+    },
+    {
+      "target": "loc_autumn_blade_plain",
+      "count": 1
+    },
+    {
+      "target": "loc_inkman_city",
+      "count": 1
+    },
+    {
+      "target": "move_emperor_yama",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "char_sleeping_lady",
+      "count": 1
+    },
+    {
+      "target": "loc_divine_needle_valley",
+      "count": 1
+    },
+    {
+      "target": "res_front_back_divine_obstruction_needles",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The representative of Meng tribe, named as a super force, offers a wood path Immortal Gu in exchange for the Red Fiend Divine Boat recipe.",
+      "chapters": [
+        762
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wood-path-offer",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "house_red_fiend_divine_boat"
+      ]
+    },
+    {
+      "text": "Dong Fang tribe, Meng tribe, and Gong tribe gather as three super forces for a fighting competition in Dong Fang Chang Fan’s recalled past.",
+      "chapters": [
+        806
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fighting-competition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_dong_fang_tribe",
+        "fac_gong_tribe",
+        "char_dong_fang_chang_fan"
+      ]
+    },
+    {
+      "text": "Meng Ji and Meng Si appear among righteous path Gu Immortals watching Iron Eagle blessed land. They are two members of another Huang Jin clan, Meng tribe. Meng Ji has dark yellow skin and Meng Si charcoal-black skin.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "righteous-path-watch",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_ji",
+        "sys_gu_immortal",
+        "loc_iron_eagle_blessed_land",
+        "fac_huang_jin_bloodline"
+      ]
+    },
+    {
+      "text": "Meng Ji is a rank seven Gu Immortal. Hei Tie Sheng charges him as the nearest Meng tribe immortal. Meng Ji fights back, then retreats when that opponent tries to drag both into mutual injury.",
+      "chapters": [
+        1109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-seven-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tie_sheng"
+      ]
+    },
+    {
+      "text": "When Huang Jin super forces appear in turn, Meng tribe is listed with Liu tribe, Ye Lui tribe, Chanyu tribe, Yuan tribe, Nian Er tribe, Murong tribe, and Guan tribe among eleven such forces that rule territories in Northern Plains.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territorial-listing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_liu_tribe",
+        "fac_ye_lui_tribe",
+        "fac_chanyu_tribe",
+        "fac_yuan_tribe",
+        "fac_nian_er_tribe",
+        "fac_murong_tribe",
+        "fac_guan_tribe",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Autumn blade plain sits at the extreme south of Meng tribe, southeast of the northern icy plain, north of Inkman City, and northwest of poison grassland. The super force controls that ground, one of the few wild edge Gu production areas in the five regions. Meng Tu is a rank seven blade path Gu Immortal with peak rank seven battle strength, a famous Northern Plains expert and one of the tribe’s pillars, stationed there at quasi-great grandmaster.",
+      "chapters": [
+        1563
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "edge-gu-ground",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_inkman_city",
+        "gu_edge_immortal_gu"
+      ]
+    },
+    {
+      "text": "Meng tribe had specially nurtured a wisdom path Gu Immortal.",
+      "chapters": [
+        1565
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intrusion-response",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After an intrusion message, while Meng Tu is still alive, the tribe sends rank seven Meng Zi Zai and a young rank six Gu Immortal, Meng Zhao. The tribe has internal factions, and Meng Zhao had been picked as a junior for Meng Zi Zai’s side. On the way, the tribe reports that Meng Tu’s soul lantern is extinguished. Second supreme elder comes with Immortal Gu House Investigation Courtyard to the battlefield and walks out of it. Investigation Courtyard’s specialty is gathering information.",
+      "chapters": [
+        1566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intrusion-response",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_tribe_meng_tu",
+        "char_meng_zi_zai",
+        "char_meng_zhao",
+        "sys_immortal_gu_house",
+        "house_investigation_courtyard"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/meng-tribe/",
+      "chapters": [
+        762,
+        806,
+        1105,
+        1109,
+        1193,
+        1563,
+        1565,
+        1566
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

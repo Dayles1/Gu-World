@@ -1,0 +1,218 @@
+{
+  "id": "loc_yellow_spring_sea_area",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yellow Spring Sea Area",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yellow Spring Sea Area is an Eastern Sea zone of yellow seawater that holds the largest zombie farming grounds in the five regions and Eastern Sea Zombie Alliance's public headquarters.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 906,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    906,
+    1155
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 1
+    },
+    {
+      "target": "loc_undying_kingdom",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "loc_turbulent_flow",
+      "count": 1
+    },
+    {
+      "target": "res_yellow_spring_water",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The seawater is light yellow, looking like dirt and sand mixed in though no sand floats in it, and waves billow across the surface. Near the center there are no living creatures. On the seabed, grayish white decomposed corals give off stench through the water, and deathly pale seaweed drifts with the flow; skeletons and zombie sea beasts move through the depths.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shark Demon brings Fang Yuan over the sea and names it yellow spring sea area. The water looks mixed with dirt and sand, but no sand floats in it; the seawater itself is light yellow, and waves keep moving across the surface.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shark_demon",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Closer to the center there are no living creatures. Shark Demon calls it the largest zombie farming area in the five regions. Fang Yuan’s investigative methods show skeletons floating in the water, with zombie fish, cuttlefish, jellyfish, sea turtles, and other groups fighting through the depths. On the seabed, grayish white decomposed corals give off stench through the water, and deathly pale seaweed drifts with the flow.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zombie-farming-sea",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan notes that after four undercurrents and more than a day of flight past ten sea areas, they have reached the yellow spring sea area where Eastern Sea Zombie Alliance’s headquarters lies, and he treats that Eastern Sea branch as the main headquarters of the zombie alliances across the five regions.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zombie-farming-sea",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "fac_zombie_alliance"
+      ]
+    },
+    {
+      "text": "Unlike Northern Plains Zombie Alliance’s Dark Flow Giant City, Eastern Sea Zombie Alliance uses a public blessed land as headquarters. That blessed land sits in the center of the yellow spring sea area and is known among Eastern Sea Gu Immortals as Undying Kingdom. Under Shark Demon’s guidance Fang Yuan enters it and becomes a Zombie Alliance member there.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-membership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "loc_dark_flow_giant_city",
+        "sys_gu_immortal",
+        "loc_undying_kingdom"
+      ]
+    },
+    {
+      "text": "Yellow spring water comes from the yellow spring sea area, which was Zombie Alliance headquarters territory and the largest zombie farming area in the five regions, filled with zombie corpses, decomposed coral, and drifting seaweed on the bottom. The water holds dao marks and is a Gu refinement material. A huge light yellow current of it later blocks Fang Yuan inside the turbulent flow sea area.",
+      "chapters": [
+        1155
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blocks-passage-in-turbulent-flow",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_yellow_spring_water",
+        "loc_turbulent_flow"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/yellow-spring-sea-area.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/yellow-spring-sea-area/",
+      "chapters": [
+        906,
+        1155
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

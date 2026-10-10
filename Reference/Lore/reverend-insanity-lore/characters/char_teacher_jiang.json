@@ -1,0 +1,220 @@
+{
+  "id": "char_teacher_jiang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Teacher Jiang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Brother Jiang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Teacher Jiang is a scholar and teacher who hosts a poetry contest with Great Scholar Shen and worries over Li Xiao Bai's performance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1824,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1824,
+    1825,
+    2008,
+    2009
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_great_scholar_shen",
+      "count": 2
+    },
+    {
+      "target": "char_li_xiao_bai",
+      "count": 2
+    },
+    {
+      "target": "char_hua_song",
+      "count": 2
+    },
+    {
+      "target": "loc_mountain_cliff_city",
+      "count": 1
+    },
+    {
+      "target": "char_imperial_minister_su",
+      "count": 1
+    },
+    {
+      "target": "char_su_qi_han",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "loc_profound_literature_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During a poetry competition in Mountain Cliff City’s literary circle, Great Scholar Shen praises the students’ scholarly aura and credits Brother Jiang’s teachings. Teacher Jiang answers humbly that his students are still young, then agrees to a passing-the-flower game so three winning students can recite poems.",
+      "chapters": [
+        1824
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mountain_cliff_city",
+        "char_great_scholar_shen"
+      ]
+    },
+    {
+      "text": "Of this school, he asks Li Xiao Bai for poems and worries that an ordinary student will disappoint with Great Scholar Shen present. After Li Xiao Bai takes all three chances with ordinary but workable poems, Teacher Jiang reassesses him as hardworking, able to gain inspiration, and skilled in human interaction. He decides their reputations are already tied, so he must secretly nurture Li Xiao Bai and carve him into jade even if he is cheap wood.",
+      "chapters": [
+        1825
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "secret-mentorship",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_xiao_bai"
+      ]
+    },
+    {
+      "text": "Later he is named a rank five Gu Master and Hua Song’s student. He witnesses Li Xiao Bai obtain an inheritance, is selected to be nurtured toward immortality, and studies hard yet only reaches low to mid level among that elite batch. Just as the first of them is about to undergo tribulation, Dragon Palace’s attack destroys the learning palace. Teacher Jiang and the rest cannot dodge and are squashed into pulp.",
+      "chapters": [
+        2008
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_hua_song",
+        "house_dragon_palace"
+      ]
+    },
+    {
+      "text": "Profound Literature grotto-heaven’s future potentials like him perish in that ambush.",
+      "chapters": [
+        2009
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_profound_literature_grotto_heaven"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/teacher-jiang/",
+      "chapters": [
+        1824,
+        1825,
+        2008,
+        2009
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 2008",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 2008,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

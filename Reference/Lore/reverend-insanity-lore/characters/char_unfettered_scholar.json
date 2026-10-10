@@ -1,0 +1,554 @@
+{
+  "id": "char_unfettered_scholar",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Unfettered Scholar",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Unfettered Scholar is a Northern Plains lone cultivator Gu Immortal whose ruined Central Continent clan line ends in his generation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 748,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    748,
+    749,
+    782,
+    786,
+    787,
+    790,
+    801,
+    802,
+    1106,
+    1705
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_demon_ferret_skin_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 751,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_disintegrate_rule_path_immortal_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 801,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_thousand_disintegrations",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 790,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_demon_ferret_skin_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "move_thousand_disintegrations",
+      "count": 3
+    },
+    {
+      "target": "gu_disintegrate_rule_path_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_hong_xiu",
+      "count": 2
+    },
+    {
+      "target": "char_tian_xiang",
+      "count": 2
+    },
+    {
+      "target": "char_divine_lord_tian_du",
+      "count": 2
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 2
+    },
+    {
+      "target": "char_pi_shui_han",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_sheng_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "gu_demon_ferret_blood",
+      "count": 1
+    },
+    {
+      "target": "gu_demon_ferret_bone",
+      "count": 1
+    },
+    {
+      "target": "move_heart_demon_ferret_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_lu_qing_ming",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "fac_traveling_three_elites",
+      "count": 1
+    },
+    {
+      "target": "gu_thunder_shuttle",
+      "count": 1
+    },
+    {
+      "target": "char_old_lord_can_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "move_hundred_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "move_life_chasing_fire",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_star_fireflies",
+      "count": 1
+    },
+    {
+      "target": "race_minimen",
+      "count": 1
+    },
+    {
+      "target": "char_he_ruo",
+      "count": 1
+    },
+    {
+      "target": "gu_small_rule_path_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_big_to_small",
+      "count": 1
+    },
+    {
+      "target": "move_ice_dragon_lock",
+      "count": 1
+    },
+    {
+      "target": "path_rule",
+      "count": 1
+    },
+    {
+      "target": "char_zhou_ping",
+      "count": 1
+    },
+    {
+      "target": "char_gong_zi_mo",
+      "count": 1
+    },
+    {
+      "target": "res_green_jade_wind",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_gu",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 1
+    },
+    {
+      "target": "char_guan_chou",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "move_peoples_united_hearts",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A handsome scholar walks into Qin Bai Sheng’s auction with a female Gu Immortal behind him, and the main hall’s attention turns to him. Hall talk names his two Gu Immortal attendants as Tian Xiang and Hong Xiu, and judges the woman in the red dress to be Fairy Hong Xiu. Fang Yuan’s information marks him as a lone cultivator whose ancestors came from a Central Continent clan that declined, crossed into Northern Plains, and was later destroyed. By his generation he flees with those two attendants, never abandons them in the hardest years, becomes a Gu Immortal, and later spends heavily so they become immortals as well.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_bai_sheng",
+        "sys_gu_immortal",
+        "char_tian_xiang",
+        "char_hong_xiu",
+        "char_fang_yuan",
+        "reg_central_continent",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "He greets Qin Bai Sheng as Brother Qin and takes a room with Fairy Hong Xiu.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is a handsome scholar.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is dressed in a white robe, wears a tall hat, and has black hair.",
+      "chapters": [
+        786
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His face is handsome.",
+      "chapters": [
+        802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration marks him a rank seven Gu Immortal; Divine Lord Tian Du knows he is no match and falls back rather than face him alone, calling for Shi Hou’s help.",
+      "chapters": [
+        782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-among-demonic-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_divine_lord_tian_du",
+        "char_shi_hou"
+      ]
+    },
+    {
+      "text": "Among demonic path Gu Immortals contesting Dong Fang Chang Fan’s inheritance, he and another rank seven press Fang Yuan together as true rank seven Gu Immortals.",
+      "chapters": [
+        786
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-among-demonic-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_chang_fan"
+      ]
+    },
+    {
+      "text": "Old Lord Can Yang recognizes the move thousand disintegrations and states that Unfettered Scholar originated from Central Continent’s Chen clan. That clan specialized in rule path, was pushed aside under Central Continent’s sect system, moved to Northern Plains, and weakened under Huang Jin bloodline pressure until only he remained as an outstanding talent with the clan already gone. Old Lord Can Yang adds that Chen clan Gu Immortals of rank seven use thousand disintegrations, a move that can attack and defend by disintegrating nearly any mysterious element.",
+      "chapters": [
+        790
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chen-clan-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_lord_can_yang",
+        "fac_chen_clan",
+        "fac_huang_jin_bloodline"
+      ]
+    },
+    {
+      "text": "He is himself a rule path Gu Immortal who holds the rule path Immortal Gu Disintegrate and the immortal killer move thousand disintegrations. When he turns that move on Miniscule Mountain, a miniman Gu Immortal answers that Disintegrate is only rank six while the opposing Small Gu is rank seven.",
+      "chapters": [
+        801
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chen-clan-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "loc_miniscule_mountain",
+        "race_minimen"
+      ]
+    },
+    {
+      "text": "At Iron Eagle blessed land he decides a contest with Pi Shui Han when Pi Shui Han’s new immortal killer move cannot compete with thousand disintegrations, and Pi Shui Han leaves rather than spend further.",
+      "chapters": [
+        1106
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "iron-eagle-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_iron_eagle_blessed_land",
+        "char_pi_shui_han"
+      ]
+    },
+    {
+      "text": "During the Central Continent Refinement Path Convention, people’s united hearts exposes a hostile Northern Plains Gu Immortal; the crowd still asks who he is, and the narration names him Northern Plains’ rank seven demonic path Gu Immortal. He kills the Central Continent Gu Immortal who once exterminated his clan, using thousand disintegrations, then leaves injured while laughing and shedding tears of joy.",
+      "chapters": [
+        1705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-revenge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_refinement_path_convention"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/unfettered-scholar.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/unfettered-scholar/",
+      "chapters": [
+        748,
+        749,
+        782,
+        786,
+        787,
+        790,
+        801,
+        802,
+        1106,
+        1705
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 782",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "lone cultivator as of ch. 748 demonic path as of ch. 786",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 782,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": "lone cultivator as of ch. 748 demonic path as of ch. 786",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_demon_ferret_skin_immortal_gu",
+      "role": "unspecified",
+      "recorded_chapter": 751,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_disintegrate_rule_path_immortal_gu",
+      "role": "owner",
+      "recorded_chapter": 801,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

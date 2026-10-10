@@ -1,0 +1,852 @@
+{
+  "id": "gu_liquor_worm",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Liquor Worm",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Liquor worm is a rank one mortal Gu that refines a Gu Master's primeval essence up by one small realm.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 7,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    7,
+    14,
+    17,
+    20,
+    29,
+    34,
+    35,
+    44,
+    105,
+    111,
+    121,
+    326,
+    1191
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_flower_wine_monk",
+      "role": "former owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 17,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": 20,
+      "to_chapter": 121,
+      "recorded_chapter": 20,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_flower_wine_monk",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 2
+    },
+    {
+      "target": "res_green_bamboo_wine",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 2
+    },
+    {
+      "target": "sys_monkey_wine",
+      "count": 2
+    },
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 2
+    },
+    {
+      "target": "gu_seven_fragrances_liquor_worm",
+      "count": 2
+    },
+    {
+      "target": "gu_nine_eyes_liquor_worm",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_ya",
+      "count": 1
+    },
+    {
+      "target": "sys_aperture",
+      "count": 1
+    },
+    {
+      "target": "sys_green_copper_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_primeval_sea",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bamboo_grove",
+      "count": 1
+    },
+    {
+      "target": "gu_dragonpill_cricket_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_secret_cave",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "res_rice_wine",
+      "count": 1
+    },
+    {
+      "target": "sys_initial_stage",
+      "count": 1
+    },
+    {
+      "target": "sys_middle_stage",
+      "count": 1
+    },
+    {
+      "target": "gu_black_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_aperture_wall",
+      "count": 1
+    },
+    {
+      "target": "gu_bookworm",
+      "count": 1
+    },
+    {
+      "target": "gu_mudskin_toad",
+      "count": 1
+    },
+    {
+      "target": "gu_black_and_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_yellow_camel_longhorn_beetle_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_little_light_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_upper_stage",
+      "count": 1
+    },
+    {
+      "target": "sys_support_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_medicine_hall",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_fusion",
+      "count": 1
+    },
+    {
+      "target": "res_honey_wine",
+      "count": 1
+    },
+    {
+      "target": "sys_red_steel_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_yao_ji",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_yao_le",
+      "count": 1
+    },
+    {
+      "target": "gu_cleansing_water_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_flower_wine_monk_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_three_step_fragrant_grass_gu",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "gu_intuition_gu",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 1
+    },
+    {
+      "target": "gu_prodigal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_wine_emperor",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/liquor-worm.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/liquor-worm/",
+      "chapters": [
+        7,
+        14,
+        17,
+        20,
+        29,
+        34,
+        35,
+        44,
+        105,
+        111,
+        121,
+        326,
+        1191
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 1,
+        "recorded_chapter": null,
+        "confidence": "B"
+      },
+      {
+        "rank": 2,
+        "recorded_chapter": 105,
+        "confidence": "B"
+      },
+      {
+        "rank": 3,
+        "recorded_chapter": 105,
+        "confidence": "B"
+      },
+      {
+        "rank": 4,
+        "recorded_chapter": 326,
+        "confidence": "B"
+      },
+      {
+        "rank": 8,
+        "recorded_chapter": 1191,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "When Fang Yuan first catches it, it is a rank one Gu, and that rank one form is still worth more than several rank two Gu.",
+        "chapters": [
+          14
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The same rank one label appears again while he is refining it.",
+        "chapters": [
+          17
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Qing Shu later stresses that rank one Liquor worm only refines rank one green copper essence, so it is useless once Fang Yuan is rank two unless he fuses it upward.",
+        "chapters": [
+          105
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_qing_shu"
+        ]
+      },
+      {
+        "text": "No cited chapter assigns the Liquor worm to a named cultivation path.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is shaped like a silkworm, its entire body giving out pearl white light. It is a little chubby and has a cute appearance. When it flies, it curls up into a ball. Drunk, it looks like a small and white rice dumpling. Its tail is like a silkworm’s tail, chubby and rounded, and the light it emits makes people think of a pearl.",
+        "chapters": [
+          14
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Its body size is slightly bigger than the Moonlight Gu, soft and white like a silkworm. Under the light its body is shrouded in a layer of faint wavering light, just like a pearl’s mellow luster. Two little eyes resembling two black sesame seeds are mounted on its chubby white head.",
+        "chapters": [
+          17
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After refinement it returns to a fat and white state, and can twist around its chubby waist.",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The Liquor worm takes a Gu Master’s current primeval essence and raises that essence by one small realm. A rank one initial stage Gu Master who uses it holds rank one middle stage essence instead.",
+        "chapters": [
+          29
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "Fang Yuan feeds a tenth of his initial stage essence into the worm; the worm returns liquor mist; a second tenth of essence passes through that mist and comes out halved in volume but middle stage in quality.",
+        "chapters": [
+          34
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The same middle stage essence is what lets his Moonlight Gu cut deeper than an initial stage moonblade should.",
+        "chapters": [
+          35
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Even before the worm is fully refined, its own wine fragrance already produces a gleam of middle stage essence in his aperture.",
+        "chapters": [
+          17
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Once refined, the conversion is under his control.",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "It becomes the ordinary way he cultivates through the opening arcs.",
+        "chapters": [
+          29
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The worm feeds on wine. That cost is part of why holding it is both an advantage and a drain: keeping the worm alive spends wine.",
+        "chapters": [
+          14
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Every conversion also spends essence.",
+        "chapters": [
+          29
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Green bamboo wine is the early bait and feed stock.",
+        "chapters": [
+          14
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Monkey wine is a later feed wine.",
+        "chapters": [
+          44
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Honey wine is a later fusion wine.",
+        "chapters": [
+          111
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Those liquors are covered on green bamboo wine, monkey wine, and honey wine.",
+        "chapters": [
+          14
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "res_green_bamboo_wine",
+          "sys_monkey_wine",
+          "res_honey_wine"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Compared with the Liquor worm, there is not much change in its external form, except that it is slightly bigger. It also resembles a silkworm and has a tiny pair of shiny black eyes. The Liquor worm’s body is completely white, but this Four Flavours Liquor worm’s body continuously flickers with four colors: red for spicy, blue for bitter, green for sour, and yellow for sweet.",
+        "chapters": [
+          121
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fusion",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_four_flavors_liquor_worm"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_flower_wine_monk",
+      "role": "former owner",
+      "recorded_chapter": 17,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 20,
+      "from_chapter": 20,
+      "to_chapter": 121,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "After the academy retells the Flower Wine Monk story, Fang Yuan recalls the Liquor worm from prior-life memory. The class never names the worm. He already knows it as a precious Gu, better as a vital Gu than the clan’s Moonlight Gu, and he spends the next stretch hunting it with wine.",
+        "chapters": [
+          7
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_flower_wine_monk",
+          "char_fang_yuan",
+          "sys_vital_gu",
+          "gu_moonlight_gu"
+        ]
+      },
+      {
+        "text": "Nine Eyes Liquor worm is like a silkworm and is pure white like a pearl. There are no eyes on its head. It has nine colors that resemble eyes, red, orange, yellow, green, blue and so on, as if they were precious gems embedded on its body.",
+        "chapters": [
+          326
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "shang-city",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_nine_eyes_liquor_worm"
+        ]
+      },
+      {
+        "text": "Fang Yuan finds the worm by baiting it with green bamboo wine, follows it to a cave, and takes it from the Flower Wine Monk’s remains.",
+        "chapters": [
+          14
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "capture-and-early-ownership",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The worm carries the Monk’s leftover will, which is why the first refinement attempt is harder than refining an ordinary rank one Gu.",
+        "chapters": [
+          17
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "capture-and-early-ownership",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He finishes refining it days later, after using the Spring Autumn Cicada’s aura to break that will, and the worm enters his aperture as a Gu he can command.",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "capture-and-early-ownership",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_spring_autumn_cicada"
+        ]
+      },
+      {
+        "text": "From that point it is his working cultivator Gu, not a prize he is still negotiating for.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "capture-and-early-ownership",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan’s prior-life memory already names the rank two Four Flavors Liquor worm and rank three Seven Fragrances Liquor worm as the essence-refining fusion line.",
+        "chapters": [
+          105
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "four-flavours-liquor-worm",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_seven_fragrances_liquor_worm"
+        ]
+      },
+      {
+        "text": "Later he fuses two Liquor worms with four flavours of wine and produces a Four Flavours Liquor worm. That version does the same small-realm refinement at rank two: it can raise rank two primeval essence by one small realm.",
+        "chapters": [
+          121
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "four-flavours-liquor-worm",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Liquor worm at rank one purifies green copper primeval essence by a small realm. Four Flavours Liquor worm at rank two does the same for red steel essence. Seven Fragrances Liquor worm at rank three does it for white silver essence. Nine Eyes Liquor worm at rank four does it for yellow gold essence. That recipe line has no liquor-worm form at rank five.",
+        "chapters": [
+          326
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "higher-grades",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan refines a Nine Eyes Liquor worm in Shang Clan City once he has the materials and the intermediate grades in hand.",
+        "chapters": [
+          326
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "higher-grades",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_shang_clan_city"
+        ]
+      },
+      {
+        "text": "Later dialogue states a legend: combining Wine Emperor’s three sovereign five emperor wines can yield a rank eight liquor worm Immortal Gu. That Gu is said to turn rank eight white litchi immortal essence into rank nine yellow apricot immortal essence.",
+        "chapters": [
+          1191
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "immortal-form",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_wine_emperor",
+          "sys_immortal_gu"
+        ]
+      },
+      {
+        "text": "The chapter does not name a current holder of that Immortal Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "immortal-form",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "loc_fu_tai_xiang_he_restaurant",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fu Tai Xiang He Restaurant",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A restaurant in Shang clan city that Li Ran visits on a fixed ten-day cycle.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 282,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    282,
+    284
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_qin_yan_brothel",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lady_an_yu",
+      "count": 1
+    },
+    {
+      "target": "char_li_ran",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The restaurant has a window seat on an upper floor and a third storey where guests sit. Street lights from Shang clan city’s fifth inner city pass the windows and shine inside.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside Fu Tai Xiang He, Li Ran looks away from the window, calls for the bill, pays five and a half primeval stones, tips to six, and leaves downstairs into an alley. Fang Yuan takes Li Ran’s window seat; a shop assistant says Li Ran always reserves that seat for half a primeval stone and claims the view looks into Qin Yan brothel toward Lady An Yu’s top-floor room. From that seat Fang Yuan can see into the brothel, but he also spots a tofu shop across the street where Li Ran’s wife and son pack up their stall. Mapping the street, he judges that better places exist for peeking at An Yu, while this seat is the only good spot to watch that mother and son pair.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "window-seat-and-street-view",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_ran",
+        "char_fang_yuan",
+        "loc_qin_yan_brothel",
+        "char_lady_an_yu"
+      ]
+    },
+    {
+      "text": "Under Fang Yuan’s instructions Li Ran walks a busy street until he sees the restaurant he often visits, Fu Tai Xiang He, and is told to go to the third storey. A familiar shop assistant greets him upstairs; Fang Yuan then sends him out again to buy baked pancakes from the shop opposite before returning to the third floor. Around a pillar Li Ran finds Fang Yuan already sitting at Li Ran’s usual seat. Street lights from Shang Clan City’s fifth inner city pass the windows and shine on Fang Yuan’s face as they face each other.",
+      "chapters": [
+        284
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "third-storey-return",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/fu-tai-xiang-he-restaurant/",
+      "chapters": [
+        282,
+        284
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "restaurant",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

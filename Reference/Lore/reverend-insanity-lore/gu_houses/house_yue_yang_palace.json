@@ -1,0 +1,268 @@
+{
+  "id": "house_yue_yang_palace",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yue Yang Palace",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yue Yang Palace is Heavenly Lotus Sect's Immortal Gu House. After rank eight fighting at the sect it hangs in the air shining with brilliant radiance beside Canary Pavilion.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1000,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1000,
+    1233,
+    1708,
+    1931,
+    1932,
+    1937
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "fac_heavenly_lotus_sect",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 3
+    },
+    {
+      "target": "house_canary_pavilion",
+      "count": 2
+    },
+    {
+      "target": "loc_heavenly_pool",
+      "count": 2
+    },
+    {
+      "target": "house_frost_dragon_manor",
+      "count": 2
+    },
+    {
+      "target": "char_shi_zheng_yi",
+      "count": 2
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 2
+    },
+    {
+      "target": "char_seven_star_child",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_heavenly_lotus",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_emperor_city",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "house_sun_and_moon_temple",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_thousand_transformations_ancestor",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Three Immortal Gu Houses hover over the ruined field at Heavenly Lotus Sect: Canary Pavilion, Yue Yang Palace, and the rank eight Heavenly Pool. Shadow Sect’s group focuses on Heavenly Pool. Seven Star Child treats Yue Yang Palace and Canary Pavilion as also very difficult to handle. When the group pulls back, the three houses chase.",
+      "chapters": [
+        1000
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "fac_heavenly_lotus_sect",
+        "house_canary_pavilion",
+        "loc_heavenly_pool",
+        "fac_shadow_sect",
+        "char_seven_star_child"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because Yue Yang Palace is a named Immortal Gu House. It is mobile equipment of Heavenly Lotus Sect, not a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shi Zheng Yi lists Canary Pavilion, Yue Yang Palace, and Heavenly Pool when asking whether Heavenly Lotus Sect has a fourth Immortal Gu House.",
+      "chapters": [
+        1233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sect-house-listing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shi_zheng_yi"
+      ]
+    },
+    {
+      "text": "At Emperor City, the palace at the left is grand and imposing. Together with Frost Dragon Manor it charges Bai Ning Bing and the rest, and destroys their house’s killer move. Fang Yuan treats his house as not their match and orders a retreat. With Wind Sweeping Building restraining that house, Yue Yang Palace moves rapidly like a meteor and crashes into it.",
+      "chapters": [
+        1708
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-combat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_emperor_city",
+        "house_frost_dragon_manor",
+        "char_bai_ning_bing",
+        "char_fang_yuan",
+        "house_wind_sweeping_building"
+      ]
+    },
+    {
+      "text": "Ye Fan later names Yue Yang Palace among Immortal Gu Houses floating over Emperor City.",
+      "chapters": [
+        1931
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-listing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_fan"
+      ]
+    },
+    {
+      "text": "On Central Continent’s side, Yue Yang Palace shoots grand profound light that pierces the skies while Frost Dragon Manor and Wind Sweeping Building press the field.",
+      "chapters": [
+        1932
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "western-desert-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "Thousand Transformations Ancestor charges alone with transformation path killer moves and forces back Yue Yang Palace and Frost Dragon Manor.",
+      "chapters": [
+        1937
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thousand-transformations-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_thousand_transformations_ancestor"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/yue-yang-palace/",
+      "chapters": [
+        1000,
+        1233,
+        1708,
+        1931,
+        1932,
+        1937
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Heavenly Lotus Sect (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

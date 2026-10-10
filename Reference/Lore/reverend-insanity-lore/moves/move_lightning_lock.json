@@ -1,0 +1,126 @@
+{
+  "id": "move_lightning_lock",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lightning Lock",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lightning Lock is Vicious Lightning Fiend's encirclement strike used with Dan Qiao's Lava Chain to catch Song Zi Xing in a trap.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 848,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    848
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_vicious_lightning_fiend",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 848,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_vicious_lightning_fiend",
+      "count": 3
+    },
+    {
+      "target": "move_lava_chain",
+      "count": 2
+    },
+    {
+      "target": "char_blazing_demonic_immortal_dan_qiao",
+      "count": 1
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 1
+    },
+    {
+      "target": "house_illusion_garden",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Song Zi Xing realizes the fight is a trap and tries to leave, Vicious Lightning Fiend and Blazing Demonic Immortal Dan Qiao join forces. Vicious Lightning Fiend uses Lightning Lock while Dan Qiao uses Lava Chain against him together. Song Zi Xing raises blood-sea waves to block the lightning and lava, then flees with blood rainbow flash, only to find himself inside Heavenly Lotus Sect’s Illusion Garden.",
+      "chapters": [
+        848
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_zi_xing",
+        "char_vicious_lightning_fiend",
+        "char_blazing_demonic_immortal_dan_qiao",
+        "move_lava_chain",
+        "fac_heavenly_lotus_sect",
+        "house_illusion_garden"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/lightning-lock/",
+      "chapters": [
+        848
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Vicious Lightning Fiend",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "id": "char_bai_cao_shuai",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Cao Shuai",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bai cao shuai",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Бай Цао Шуай",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bai Cao Shuai is a rank three Bai clan youth who places fourth in the hunting stretch near Bai Gu Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 217,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    217
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_bai_mo_xing",
+      "count": 2
+    },
+    {
+      "target": "char_bai_lian",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The Bai clan leader organizes a banquet again and invites Fang Yuan and Bai Ning Bing. At the small banquet in the central tent, only the day’s top hunters sit among the guests. Once they are seated, Bai Mo Xing starts introductions so the young Gu Masters can meet the clan’s rising stars.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan_bai_gu_mountain",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "char_bai_mo_xing",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "She looks very careless.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Four rank three juniors sit in that tent, two male and two female. Among the girls, Bai Cao Shuai sits opposite Bai Lian. The narration treats the pair as a stark contrast: she looks very careless and is ranked fourth that day, while Bai Lian has white skin and thick eyebrows with a fresh aura.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "banquet-introduction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_lian"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bai-cao-shuai/",
+      "chapters": [
+        217
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 217",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Bai Clan of Bai Gu Mountain as of ch. 217",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 217,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

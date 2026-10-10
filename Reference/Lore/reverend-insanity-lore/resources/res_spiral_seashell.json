@@ -1,0 +1,121 @@
+{
+  "id": "res_spiral_seashell",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spiral seashell",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spiral seashells from an island beach are the core Gu material of Water Shell Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1654,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1654
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_water_shell_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_water_shell_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan gives a fishing-village Gu Masters the recipe for water shell Gu along with the Gu worms themselves. The Gu Masters recognize that the core Gu material is the spiral seashell on the shore of their island’s beach, and that the other materials in the recipe can also be found on the island. Fang Yuan says he created the recipe after inspecting the island and studying their lifestyle, so the village can refine the Gu from local materials.",
+      "chapters": [
+        1654
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "core-recipe-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_gu_masters",
+        "gu_water_shell_gu",
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/spiral-seashell.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/spiral-seashell/",
+      "chapters": [
+        1654
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Island beach",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Water Shell Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": "char_silver_dragonfish",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Silver Dragonfish",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Silver dragonfish are a modified dragonfish species with even more food path dao marks than iron dragonfish. Fang Yuan sells them in treasure yellow heaven and forces rivals into costly replication.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1483,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1483,
+    1484,
+    1495,
+    1600,
+    1615
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_food",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_food",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_he",
+      "count": 1
+    },
+    {
+      "target": "char_you_chan",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After copper and iron dragonfish, Fang Yuan places silver dragonfish into treasure yellow heaven as a third market attack. The silver dragonfish has even more food path dao marks than iron dragonfish, and the commotion is larger than before. You Chan and Qin Bai He research it and find the superiority deeply pressuring. Deduction difficulty is much higher than for iron dragonfish, and they judge that several years of hard work would be needed without outside help.",
+      "chapters": [
+        1483
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_you_chan",
+        "char_qin_bai_he"
+      ]
+    },
+    {
+      "text": "With Heavenly Court aid, You Chan and Qin Bai He work for dozens of days without sleep and create silver dragonfish of their own. Fang Yuan had expected silver dragonfish to decide the business contest, but the market enters a deadlock again.",
+      "chapters": [
+        1483
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rival-production",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Even so, You Chan’s production cannot match Fang Yuan’s scale as originator, and he sells silver dragonfish far more widely than she does. In dragon scale sea area, ordinary dragonfish, copper dragonfish, iron dragonfish, and silver dragonfish all move around an ancient golden dragonfish.",
+      "chapters": [
+        1484
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rival-production",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Silver dragonfish spur crazed sales, and individual price rises at an alarming rate as the dragonfish business grows more bustling.",
+      "chapters": [
+        1495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rival-production",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan judges silver dragonfish too hard for most rivals to create, while ordinary, iron, and copper dragonfish have expensive production methods that still cannot match his. He opens many stalls so the scene looks like many Gu Immortals replicating silver dragonfish.",
+      "chapters": [
+        1600
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "market-advantage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Heavenly Court later sells copper, iron, and silver dragonfish at heavily reduced prices in treasure yellow heaven, impacting Fang Yuan’s dragonfish business.",
+      "chapters": [
+        1615
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "market-advantage",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/silver-dragonfish/",
+      "chapters": [
+        1483,
+        1484,
+        1495,
+        1600,
+        1615
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Food path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_food"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

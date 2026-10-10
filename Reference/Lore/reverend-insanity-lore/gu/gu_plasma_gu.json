@@ -1,0 +1,257 @@
+{
+  "id": "gu_plasma_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Plasma Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Plasma Gu is a rank two Gu that shoots blue plasma. Its attack power is not high, but the plasma can hold terrain for a period of time.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 349,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    349,
+    351
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_big_lightning_symbol_dog",
+      "role": "possessor",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 349,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_big_lightning_symbol_dog",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_king_quan_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/plasma-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/plasma-gu/",
+      "chapters": [
+        349,
+        351
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 2,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The plasma lands like a sticky substance, stays shining on grass and rock, and chars what it touches with a crackling current. Dogs caught in that field have charred fur and move sluggishly after the paralysis, yet can keep some fighting power.",
+        "chapters": [
+          349
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Each activation needs a cooldown of five breaths, and the Gu itself needs rest in that window.",
+        "chapters": [
+          349
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The hundred beast king on the mound possesses the rank two Plasma Gu. Fang Yuan waits out the five-breath cooldown to plant a rank two dog enslavement Gu while the dog shoots a plasma bolt, then keeps the beast king and its Plasma Gu.",
+        "chapters": [
+          349
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "use-in-king-quan-inheritance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_dog_enslavement_gu"
+        ]
+      },
+      {
+        "text": "In a later round he uses that same Plasma Gu against steel armor dogs. Plasma Gu’s attack power is not high, but the steel that gives the dogs superior defense also leaves them unable to resist electricity, so the plasma makes their bodies vibrate, breaks their formation, and collapses the steel-like ring as Fang Yuan’s dogs overrun them.",
+        "chapters": [
+          351
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "use-in-king-quan-inheritance",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "For a period after each shot, the area is a forbidden zone for Fang Yuan’s dogs, which restricts redeployment and formation changes when his troops are already packed in the center. Lightning symbol dogs move freely through that plasma and even gain speed from the electric stimulation.",
+        "chapters": [
+          349
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_big_lightning_symbol_dog",
+      "role": "possessor",
+      "recorded_chapter": 349,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan first names the Gu when a hundred beast king big lightning symbol dog opens its mouth and shoots a lump of dark blue plasma during a King Quan Inheritance round.",
+        "chapters": [
+          349
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "inh_king_quan_inheritance"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

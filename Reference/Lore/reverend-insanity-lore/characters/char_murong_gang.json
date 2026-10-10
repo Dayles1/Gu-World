@@ -1,0 +1,215 @@
+{
+  "id": "char_murong_gang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Murong Gang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Murong Gang is a Murong tribe Gu Immortal famous across Northern Plains for defense, sent out at Blood Plain to raise righteous path morale after Ye Lui Qun Xing's death.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1207,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1207,
+    1208
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_murong_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_murong_tribe",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_hao_zhen",
+      "count": 2
+    },
+    {
+      "target": "char_chou_lao_wu",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Against Hao Zhen he has a burly stature, muscles like layers of rocks, a wide nose bridge, large chin, and small forehead that make his head look like a triangle. He lets Hao Zhen’s lapis lazuli thunderbolt land, shows only a burnt patch and white smoke on his chest, and calmly says some hair burned and it is a little more powerful than before. Spectators call him the Gu Immortal famous for defense in Northern Plains. Gong Wan Ting immediately sends Murong tribe’s strongest expert among their current group to turn the tide and raise morale after Fang Yuan kills Ye Lui Qun Xing. Narration names the burly man forged from steel as Murong Gang. He tells Domination Immortal not to send other minor characters, and that besides Chu Du the only one in his eyes is Liu Guan Yi, whose dragon breath he wants to experience. Fang Yuan later judges him a tough foe not easy to defeat, let alone kill, and ignores repeated Chu Du letters about him.",
+      "chapters": [
+        1207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hao_zhen",
+        "sys_gu_immortal",
+        "reg_northern_plains",
+        "char_gong_wan_ting",
+        "fac_murong_tribe",
+        "char_fang_yuan",
+        "char_ye_lui_qun_xing",
+        "char_chu_du"
+      ]
+    },
+    {
+      "text": "Liu tribe information Gu reports that Murong Gang defeated eight people in a row, but needs two hours to recover between battles, unlike Ye Lui Qun Xing who could fight consecutively. The same report says his defensive methods are strong while immortal essence expenditure is huge.",
+      "chapters": [
+        1208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eight-straight-wins",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_liu_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/murong-gang/",
+      "chapters": [
+        1207,
+        1208
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Murong Tribe",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

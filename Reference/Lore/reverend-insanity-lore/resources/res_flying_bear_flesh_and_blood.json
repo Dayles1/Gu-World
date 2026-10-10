@@ -1,0 +1,152 @@
+{
+  "id": "res_flying_bear_flesh_and_blood",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flying bear flesh and blood",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "flying bear's flesh and blood desolate beast flying bear's flesh and blood"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flying bear flesh and blood is the flesh and blood of the desolate beast flying bear, and the food of flying bear phantom Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 586,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    586
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_flying_bear_phantom_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_flying_bear_phantom_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "With the flying bear phantom Gu badly hurt and unable to be used, Hei Lou Lan weighs to himself that an injured Immortal Gu needs either another Immortal Gu to heal it, or must recover on its own by consuming food without pause. He recalls that this flying bear phantom Gu’s food is the desolate beast flying bear’s flesh and blood, and worries that such a thing is not easy for him to obtain. Once the Gu passes to Fang Yuan, he borrows resources from Hei Lou Lan and reaches treasure yellow heaven through Hu Immortal blessed land, exchanging for the Gu worms and food that restore it to health on the sixth day.",
+      "chapters": [
+        586
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "food-for-an-injured-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_flying_bear_phantom_immortal_gu",
+        "char_hei_lou_lan",
+        "sys_immortal_gu",
+        "char_fang_yuan",
+        "loc_hu_immortal_blessed_land",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Mo Yao’s will states that the flying bear phantom Gu was made by killing a desolate beast flying bear and refining all of its skin, bones, flesh, blood and soul.",
+      "chapters": [
+        586
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-of-flying-bear-phantom-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_yao"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/flying-bear-flesh-and-blood.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/flying-bear-flesh-and-blood/",
+      "chapters": [
+        586
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Desolate beast flying bear",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Flying Bear Phantom Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

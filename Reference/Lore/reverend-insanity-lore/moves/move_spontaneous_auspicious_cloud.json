@@ -1,0 +1,160 @@
+{
+  "id": "move_spontaneous_auspicious_cloud",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spontaneous Auspicious Cloud",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spontaneous Auspicious Cloud is Fang Yuan's luck path immortal killer move. The cloud moves on its own along the route of highest luck.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1503,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1503,
+    1505,
+    1823
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1503,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan rides an auspicious cloud whose dense Immortal Gu aura is not ordinary. It comes from a luck path true inheritance in Hei Fan grotto-heaven, and after his modifications its effect rises sharply. The cloud does not follow his will; it moves according to luck path profundity, and even he does not know when it will change direction, only that this spontaneous auspicious cloud killer move flies along the path of highest luck. In green ghost desert, soul beasts target the unconcealed cloud and neglect him under ghostly concealment.",
+      "chapters": [
+        1503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu",
+        "loc_hei_fan_grotto_heaven"
+      ]
+    },
+    {
+      "text": "The white cloud ahead of his soul beast army is that immortal killer move. With no precise goal beyond gathering soul cores, he lets spontaneous auspicious cloud lead the way and adds small soul beast groups along the route.",
+      "chapters": [
+        1505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "guiding-the-army",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He later uses the modified move as a movement killer move. The cloud still follows luck path mystery rather than his will, and with heaven form it helps him find grotto-heavens and avoid danger while patrolling immemorial white heaven.",
+      "chapters": [
+        1823
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "movement-use",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/spontaneous-auspicious-cloud/",
+      "chapters": [
+        1503,
+        1505,
+        1823
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

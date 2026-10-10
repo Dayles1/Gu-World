@@ -1,0 +1,167 @@
+{
+  "id": "loc_shang_qing_pavilion",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Qing Pavilion",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The summit hall on Fei He mountain where Immortal Crane Sect's supreme elders meet under a grim atmosphere.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 406,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    406
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 2
+    },
+    {
+      "target": "char_lei_tan",
+      "count": 2
+    },
+    {
+      "target": "gu_letter_sending_green_bird_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_fei_he_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the top of Fei He mountain, the pavilion holds a white jade stone table. A thunderous voice there shakes the windows.",
+      "chapters": [
+        406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "South of Central Continent, thirty thousand feet above the mountains, Fei He Mountain floats among a sea of clouds with trees and ten thousand cranes, the residence of Immortal Crane Sect. Inside Shang Qing pavilion the supreme first elder stares furiously at a thin letter from Feng Jiu Ge and slams it on a white jade stone table.",
+      "chapters": [
+        406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "loc_fei_he_mountain",
+        "fac_immortal_crane_sect",
+        "char_feng_jiu_ge"
+      ]
+    },
+    {
+      "text": "The letter shines azure green as the transformation of rank five letter sending green bird Gu, so the elders dare not destroy or burn it. Lei Tan’s thunderous voice then echoes there and shakes the windows as he presses He Feng Yang over defending Fang Yuan though Fang Yuan is not a sect disciple.",
+      "chapters": [
+        406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_letter_sending_green_bird_gu",
+        "char_lei_tan",
+        "char_he_feng_yang",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/shang-qing-pavilion.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/shang-qing-pavilion/",
+      "chapters": [
+        406
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "pavilion",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "loc_early_spring",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Early Spring",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Early Spring shop"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A famous breakfast shop in Shang clan city that Wei Yang takes Fang Yuan and Bai Ning Bing to on their first tour day.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 265,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    265
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Listed foods include thousand layer agate cake, crab roe bun, golden field pancake, and snow porridge. The shop sits three layers down a stone pillar from Nan Qiu Garden. From there Wei Yang continues through Shang Clan City’s culinary zone and other named zones with Fang Yuan and Bai Ning Bing the same day.",
+      "chapters": [
+        265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "menu-and-culinary-zone",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_nan_qiu_garden",
+        "char_wei_yang",
+        "loc_shang_clan_city",
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/early-spring/",
+      "chapters": [
+        265
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "shop",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

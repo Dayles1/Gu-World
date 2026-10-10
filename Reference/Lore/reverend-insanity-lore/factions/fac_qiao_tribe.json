@@ -1,0 +1,251 @@
+{
+  "id": "fac_qiao_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qiao Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A large Northern Plains tribe under Hei tribe that Hei Cheng suppresses when it tries to leave.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 691,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    691,
+    1108,
+    1109,
+    1123
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qiao_dong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 691,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_qiao_dong",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_huo_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_zhuo_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_dark_prison",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tie_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 1
+    },
+    {
+      "target": "char_chen_chi",
+      "count": 1
+    },
+    {
+      "target": "char_hei_fan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Hei Tribe members inside Imperial Court blessed land perish, Qiao tribe under them becomes tempted to leave their control. Qiao tribe is a large sized tribe. Hei Cheng reports that the trip to suppress Qiao tribe succeeded. Hei tribe’s second supreme elder says Qiao tribe Gu Immortal Qiao Dong became an immortal under his guidance and that loyalty has wavered within a few decades. Hei Cheng says he taught Qiao Dong a lesson and expects no issues within five years. Hei Cheng also names Qiao tribe with Huo Tribe and Zhuo Tribe as three vassals to handle more strictly.",
+      "chapters": [
+        691
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "suppression-under-hei-cheng",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "loc_imperial_court_blessed_land",
+        "char_hei_cheng",
+        "sys_gu_immortal",
+        "char_qiao_dong",
+        "fac_huo_tribe",
+        "fac_zhuo_tribe"
+      ]
+    },
+    {
+      "text": "Resonance eagles claimed as Qiao work, and Qiao Dong’s turn toward Liu tribe.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "claim-and-defection",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Iron Eagle blessed land, Qiao Dong names resonance eagles as the fruit of Qiao tribe labor rather than a Hei tribe creation. He is a righteous path Gu Immortal and first supreme elder of Qiao tribe. Qiao tribe was a subordinate of Hei tribe that once sought to leave and was pressured by Hei Cheng. With Hei tribe in trouble, Qiao Dong joins the attack on Iron Eagle blessed land under Liu Tribe.",
+      "chapters": [
+        1108
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "claim-and-defection",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_iron_eagle_blessed_land",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "Hei Tie Sheng kills Qiao Dong with the immortal killer move life draining darkness while Liu Zhuan Shen tries to shield him.",
+      "chapters": [
+        1109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "first-elder-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tie_sheng",
+        "char_liu_zhuan_shen"
+      ]
+    },
+    {
+      "text": "Earlier Hei Fan suppression tied to eagle methods.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "hei-fan-suppression",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_fan"
+      ]
+    },
+    {
+      "text": "Chen Chi recalls that Old Ancestor Hei Fan suppressed Qiao tribe to obtain their secret of raising eagles.",
+      "chapters": [
+        1123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-fan-suppression",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_chi"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/qiao-tribe/",
+      "chapters": [
+        691,
+        1108,
+        1109,
+        1123
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "loc_divine_needle_valley",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Divine Needle Valley",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Sleeping Lady's Divine Needle Valley"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sleeping Lady's man-made valley between Meng tribe and Murong tribe in Northern Plains, designed around her divine hedgehog.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1567,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1567,
+    1752
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_sleeping_lady",
+      "count": 2
+    },
+    {
+      "target": "house_investigation_courtyard",
+      "count": 2
+    },
+    {
+      "target": "char_meng_zi_zai",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "res_front_back_divine_obstruction_needles",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From Investigation Courtyard, Meng tribe’s immortals see a lush valley starkly different from the surrounding grassland. Such a valley would not form naturally. Meng tribe’s second supreme elder names it Sleeping Lady’s Divine Needle Valley. Sleeping Lady created the valley and controls the area between Meng tribe and Murong tribe. She designed it for the divine hedgehog. In the deepest area, an enormous pure-white hedgehog rests on the dark valley floor, curled and sleeping, covered with extremely sharp spines full of sword path dao marks. The hedgehog is as large as a hill.",
+      "chapters": [
+        1567
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_investigation_courtyard",
+        "fac_meng_tribe",
+        "char_sleeping_lady",
+        "fac_murong_tribe"
+      ]
+    },
+    {
+      "text": "Fang Yuan comes to Divine Needle Valley, does not enter at first, and sends yama children to attack. Sleeping Lady’s shocked screams name the place her Divine Needle Valley.",
+      "chapters": [
+        1752
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "raid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/divine-needle-valley.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/divine-needle-valley/",
+      "chapters": [
+        1567,
+        1752
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "valley",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

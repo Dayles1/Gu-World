@@ -1,0 +1,199 @@
+{
+  "id": "move_distracting_thoughts_generation",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Distracting Thoughts Generation",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Distracting Thoughts Generation is a wisdom path immortal killer move that makes enemies in range develop distracting thoughts that grow worse over time.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1800,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1800,
+    1801
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_distracting_thoughts_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_distracting_thoughts_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "char_wan_hao_guang",
+      "count": 1
+    },
+    {
+      "target": "char_wan_liang_han",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xiao",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan secretly activates Immortal Gu Distracting Thoughts to prepare this immortal killer move while turtling behind a soul beast army inside Wan Xiao’s immortal battlefield.",
+      "chapters": [
+        1800
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_distracting_thoughts_immortal_gu",
+        "char_wan_xiao"
+      ]
+    },
+    {
+      "text": "The move makes enemies within a certain range develop distracting thoughts. The effect is not obvious at the start. As time passes, enemies have more distracting thoughts that disturb normal thinking. Wan Hao Guang, nearest to Fang Yuan, splits attention mid-battle and is encircled. Wan Xiao develops distracting thoughts while activating an immortal killer move, so activation fails and backlash heavily injures him. Wan Liang Han, a wisdom path Gu Immortal, senses the peculiar method and orders retreat to prepare a counter later.",
+      "chapters": [
+        1800
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "effect",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wan_hao_guang",
+        "char_wan_liang_han",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Wan clan’s three immortals are affected by distracting thoughts generation and cannot use killer moves freely, because activation is likely to fail and backlash without harming the enemy. Wan Liang Han is also struck by the move: while suppressing distracting thoughts and watching Wan Hao Guang and Wan Xiao, he cannot notice anything more.",
+      "chapters": [
+        1801
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/distracting-thoughts-generation/",
+      "chapters": [
+        1800,
+        1801
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wisdom Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Distracting Thoughts Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

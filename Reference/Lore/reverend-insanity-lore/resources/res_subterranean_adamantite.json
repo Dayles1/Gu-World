@@ -1,0 +1,150 @@
+{
+  "id": "res_subterranean_adamantite",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Subterranean adamantite",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Subterranean adamantite is among the hardest rank six immortal materials and serves as a hardness benchmark in tests of strength.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1197,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1197,
+    1198,
+    1474
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_dark_inkstone",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_shi_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan claws subterranean adamantite while testing sword dragon transformation. It is among the hardest rank six immortal materials, and the claw leaves a clear marking a few inches deep. That result marks the limit of the dragon claws’ power, so he does not move on to the rank seven immortal material beside it.",
+      "chapters": [
+        1197
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "claw-hardness-test",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Dragon breath splits a boulder-sized piece of the rank six immortal material cleanly in two along a straight crack, with a smooth cut surface. The text again treats subterranean adamantite as among the hardest rank six immortal materials. Dark inkstone is even firmer: the same breath only opens marks several inches deep on dark inkstone.",
+      "chapters": [
+        1198
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dragon-breath-cut",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_dark_inkstone"
+      ]
+    },
+    {
+      "text": "In Western Desert’s myriad ore desert, under Shi clan control, subterranean adamantite is named as the hardest rank six immortal material among ores Gu Immortals must excavate themselves. Dark inkstone is listed with it as a firmer companion that even ancient sword dragon claws cannot mark.",
+      "chapters": [
+        1474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "myriad-ore-desert",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "fac_shi_clan",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/subterranean-adamantite.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/subterranean-adamantite/",
+      "chapters": [
+        1197,
+        1198,
+        1474
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Myriad ore desert",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

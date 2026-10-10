@@ -1,0 +1,226 @@
+{
+  "id": "char_shang_bi_an",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Bi An",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shang bi an",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Шан Би Ань",
+    "ru_status": "transliteration",
+    "aliases": [
+      "young master Shang Bi An twelfth son Shang Bi An"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shang Bi An is Shang Yan Fei's twelfth son who is in charge of Shang clan city's city guards.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 269,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    269
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 269,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shang_clan",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_tie_xue_leng",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_shang_fu_xi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Just before Shang Yan Fei’s courtyard banquet begins, he rushes in tall and thin, with thick eyebrows and a fierce gaze, greets Fang Yuan and Bai Ning Bing, and sits as Shang Yan Fei appears. The city guards handle disputes and keep order in Shang clan city, so the post is the busiest.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "Shang Bi An is tall and thin, with thick eyebrows and a fierce gaze.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "From Fang Yuan’s prior life, twelfth son Shang Bi An would have a marriage alliance with Tie clan and become Southern Border’s second divine detective after Tie Xue Leng.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tie_clan",
+        "reg_southern_border",
+        "char_tie_xue_leng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/shang-bi-an.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shang-bi-an/",
+      "chapters": [
+        269
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shang Clan as of ch. 269",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,185 @@
+{
+  "id": "loc_shi_tian_restaurant",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shi Tian Restaurant",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Shang clan city restaurant in the third inner city where Wei Yang hosts a long banquet for Fang Yuan and Bai Ning Bing.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 264,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    264
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "It occupies a great amount of space in the third inner city, and its decorations are elegant.",
+      "chapters": [
+        264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After a six-hour wait in a private residence with no fruit or tea, Wei Yang returns and cancels the clan leader meeting, saying Shang Yan Fei is too busy to leave. He apologizes and says the clan leader especially asked him to attend to them, and that a banquet is already arranged in Shi Tian restaurant. Fang Yuan and Bai Ning Bing agree because they are hungry.",
+      "chapters": [
+        264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-a-canceled-meeting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang",
+        "char_shang_yan_fei",
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "It is one of the best restaurants in Shang clan city, occupies a great amount of space, and has elegant decorations and sumptuous dishes. Its chefs are specialized Gu Masters who use special Gu worms to cook delicacies ordinary methods cannot match. A typical meal lasts over four hours with over a hundred types of dishes, and its top quality wine leaves a rich aftertaste.",
+      "chapters": [
+        264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-a-canceled-meeting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "fac_gu_masters",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "At the table Bai Ning Bing eats little and tries to pry answers from Wei Yang about the invitation, while he keeps his mouth closed. Fang Yuan eats with gusto, drinks heavily, and kicks up a racket until his earlier resentment seems gone. After the meal Wei Yang drops them at Nan Qiu Garden.",
+      "chapters": [
+        264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-a-canceled-meeting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_nan_qiu_garden"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/shi-tian-restaurant.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/shi-tian-restaurant/",
+      "chapters": [
+        264
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "restaurant",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

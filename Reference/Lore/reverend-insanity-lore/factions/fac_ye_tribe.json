@@ -1,0 +1,202 @@
+{
+  "id": "fac_ye_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ye Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A large Northern Plains tribe named at Yu Tian heroes assembly.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 499,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    499,
+    500,
+    508,
+    513
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 1
+    },
+    {
+      "target": "move_seven_star_light",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The two camps at Yu Tian pull apart carefully toward their main camps because other powers still sit outside the assembly.",
+      "chapters": [
+        499
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-split-at-yu-tian",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yu_tian"
+      ]
+    },
+    {
+      "text": "After Fang Yuan teams with Hei Lou Lan under the Chang Shan Yin name, undecided large tribes speak in turn. Wang tribe asks to join, Fang tribe bets on Hei Lou Lan, and Ye tribe answers that it is willing to submit to Hei Tribe. With the wolf group as vanguard, a large portion of Yu Tian heroes assembly takes Hei’s side.",
+      "chapters": [
+        499
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "choice-cascade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_hei_lou_lan",
+        "char_chang_shan_yin",
+        "fac_wang_tribe",
+        "fac_fang_tribe",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "In the alliance main tent, after Fang Yuan’s seat, the leaders of the large tribes Wang tribe, Fang tribe, and Ye tribe sit next.",
+      "chapters": [
+        500
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ye tribe leader rides with Hei Lou Lan, Fang Yuan, and other experts on the twin-headed rhino that carries the main tent.",
+      "chapters": [
+        508
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "marching-tent",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Dong Fang Yu Liang’s star thought cloud breaks Hei tribe’s blue butterfly elite troop, Ye tribe leader cries out for that elite troop as his own.",
+      "chapters": [
+        513
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elite-troop-cry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_yu_liang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/ye-tribe/",
+      "chapters": [
+        499,
+        500,
+        508,
+        513
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

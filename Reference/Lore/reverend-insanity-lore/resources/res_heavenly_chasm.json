@@ -1,0 +1,171 @@
+{
+  "id": "res_heavenly_chasm",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly chasm",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A heavenly chasm is a rank nine heaven path immortal material: formless, ethereal, and impassable.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2269,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2269,
+    2270,
+    2272
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_heaven",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "res_rank_nine_heaven_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "loc_flickering_light_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Heavenly chasm is a rank nine heaven path immortal material with an irregular form and enormous size. It is formless and ethereal: it seems like empty air, yet it cannot be passed through. It is not itself a lethal hazard, but it blocks passage as a huge wall, and investigative methods can have a smaller range than the whole chasm, so travelers may only probe directions at random. Near a heavenly chasm, a soul beast army cannot be replenished. Sensing across it can fail: Spectral Soul Demon Venerable sits on the other side while the rank nine immortal material’s interference makes the distance feel far greater. Spectral Soul Demon Venerable lands several hundred fists on the heavenly chasm until it shakes on the brink of breaking.",
+      "chapters": [
+        2269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "formless-barrier",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_spectral_soul_demon_venerable"
+      ]
+    },
+    {
+      "text": "The weakest segment of the heavenly chasm is pierced by Spectral Soul Demon Venerable’s arm, connecting both sides. The rank nine heavenly chasm can trap Fairy Zi Wei or Ying Wu Xie, yet it is only a small hurdle for the senseless Spectral Soul Demon Venerable. More arms pierce it, claws slash through it, and the heavenly chasm is broken through.",
+      "chapters": [
+        2270
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "broken-through",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "char_ying_wu_xie"
+      ]
+    },
+    {
+      "text": "Qin Ding Ling names the heavenly chasm among the pillars that hold up immemorial white heaven, listing it with the heavenly pillar and heaven vein nodes such as Flickering Light grotto-heaven.",
+      "chapters": [
+        2272
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-heaven-support",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_ding_ling",
+        "loc_flickering_light_grotto_heaven"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/heavenly-chasm/",
+      "chapters": [
+        2269,
+        2270,
+        2272
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Heaven Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Immemorial white heaven",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

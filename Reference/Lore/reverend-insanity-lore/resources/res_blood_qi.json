@@ -1,0 +1,190 @@
+{
+  "id": "res_blood_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blood qi is a dual qi and blood path Gu material that is easy to gather from beasts and, in large enough quantity, can be treated as an immortal material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1817,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1817,
+    1818,
+    2109,
+    2162
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_minor_sun_qi",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_xiang_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "res_elderly_qi",
+      "count": 1
+    },
+    {
+      "target": "res_righteous_qi",
+      "count": 1
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan’s dragonman clone buys qi path immortal materials in treasure yellow heaven to fuel qi path killer moves, taking profound yin qi, minor sun qi, astral qi, and domination qi, and also takes the market’s blood qi. Those lots are mortal materials in form, but the quantity is huge. Blood qi holds both qi path and blood path dao marks, so it is treated as a blood path mortal material; blood path’s advantage is that a high enough quantity can be treated as an immortal material. He judges the sold stock large enough to count as one and buys it all. Minor sun qi from that sweep is covered on minor sun qi.",
+      "chapters": [
+        1817
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "treasure-yellow-heaven-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "res_minor_sun_qi"
+      ]
+    },
+    {
+      "text": "Blood qi is easy to obtain by killing mortal beasts and extracting it with blood path methods. Raising desolate beasts in an immortal aperture yields an endless supply of immortal material blood qi. Because blood path resources are so easy to gather, the righteous path of the five regions prohibits blood path as a threat.",
+      "chapters": [
+        1818
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "how-it-is-obtained",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Fang Yuan annexes Qi Xiang grotto-heaven, blood qi appears among immortal materials that form in the sovereign immortal aperture alongside profound yin qi, luck qi, astral qi, domination qi, life qi, death qi, righteous qi, orchid vitality qi, elderly qi, and other named qi materials. Elderly qi and righteous qi from that production are covered on elderly qi and righteous qi.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-qi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_xiang_grotto_heaven",
+        "res_elderly_qi",
+        "res_righteous_qi"
+      ]
+    },
+    {
+      "text": "Qi monsters can be made from many kinds of qi. Shen Shang fights a group of blood qi monsters and ends the clash bathed in blood.",
+      "chapters": [
+        2162
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blood-qi-monsters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_shang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/blood-qi.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/blood-qi/",
+      "chapters": [
+        1817,
+        1818,
+        2109,
+        2162
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Extracted from beasts and blood path methods",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

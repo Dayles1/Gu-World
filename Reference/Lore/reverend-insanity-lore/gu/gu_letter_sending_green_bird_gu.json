@@ -1,0 +1,461 @@
+{
+  "id": "gu_letter_sending_green_bird_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Letter Sending Green Bird Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Letter Sending Green Bird Gu is a rank five letter Gu that appears as a green bird and can transform into a letter.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 406,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    406,
+    418,
+    420,
+    658,
+    696,
+    697,
+    730,
+    733,
+    734
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_feng_jiu_ge",
+      "role": "sender",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 406,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 418,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_qing_pavilion",
+      "count": 2
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/letter-sending-green-bird-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/letter-sending-green-bird-gu/",
+      "chapters": [
+        406,
+        418,
+        420,
+        658,
+        696,
+        697,
+        730,
+        733,
+        734
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "A green bird, looking lifelike.",
+        "chapters": [
+          418
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Its letter form shines azure green.",
+        "chapters": [
+          406
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "It is rank five. The bird form is green and looks lifelike, and that same rank five Letter Sending Green Bird Gu arrives among other letter path Gu worms that enter Hu Immortal Blessed Land through a loophole.",
+        "chapters": [
+          418
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms",
+          "loc_hu_immortal_blessed_land"
+        ]
+      },
+      {
+        "text": "Cited early chapters do not name a regular food for it.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "appearance-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The Gu transforms between bird and letter forms.",
+        "chapters": [
+          406
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Destroying the letter form alerts Feng Jiu Ge.",
+        "chapters": [
+          406
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan receives a Letter Sending Green Bird Gu reply from Spirit Affinity House, sends his consciousness into it,",
+        "chapters": [
+          733
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "spirit-affinity-house-reply",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "then wipes its details with primeval essence and fills it with words of his own.",
+        "chapters": [
+          734
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "spirit-affinity-house-reply",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_feng_jiu_ge",
+      "role": "sender",
+      "recorded_chapter": 406,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "holder",
+      "recorded_chapter": 418,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "In Immortal Crane Sect’s Shang Qing pavilion, the supreme first elder holds a thin letter that shines azure green. It is the transformation of the rank five Letter Sending Green Bird Gu, and destroying it would let Feng Jiu Ge sense the act.",
+        "chapters": [
+          406
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_immortal_crane_sect",
+          "loc_shang_qing_pavilion",
+          "char_feng_jiu_ge"
+        ]
+      },
+      {
+        "text": "Fang Yuan takes the green bird from three letter Gu that reached the blessed land and transforms it into a letter from the rank seven Gu Immortal Feng Jiu Ge. The letter praises him, then asks for a battle between Fang Yuan and Feng Jin Huang.",
+        "chapters": [
+          418
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "challenge-letter-to-fang-yuan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "sys_gu_immortal",
+          "char_feng_jin_huang"
+        ]
+      },
+      {
+        "text": "Outside on Tian Ti mountain, He Feng Yang also sees a green bird enter a loophole and names it Letter Sending Green Bird Gu.",
+        "chapters": [
+          420
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "challenge-letter-to-fang-yuan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_tian_ti",
+          "char_he_feng_yang"
+        ]
+      },
+      {
+        "text": "Fang Yuan does not answer the challenge at once. He detains the rank five Letter Sending Green Bird Gu that Feng Jin Huang used for the challenge, treats it as created by Feng Jiu Ge, and later uses that same letter Gu to contact Spirit Affinity House.",
+        "chapters": [
+          658
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "held-reply-route",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_spirit_affinity_house"
+        ]
+      },
+      {
+        "text": "Feng Jiu Ge holds a rank five Letter Sending Green Bird Gu carrying Fang Yuan’s acceptance of the challenge.",
+        "chapters": [
+          696
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "acceptance-and-sect-message",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Immortal Crane Sect’s first elder flicks out a rank five Letter Sending Green Bird Gu as a message; He Feng Yang receives it and sends his consciousness into it to read.",
+        "chapters": [
+          697
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "acceptance-and-sect-message",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fairy Bai Qing shows Feng Jin Huang a letter Gu from Feng Jiu Ge after he has crossed into Northern Plains. Feng Jin Huang names it the information path Immortal Gu Letter Sending Green Bird and cannot read it while still a mortal. Fairy Bai Qing then takes out another Letter Sending Green Bird Gu that is a rank five mortal Gu, carrying Fang Yuan’s earlier letter.",
+        "chapters": [
+          730
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "fathers-northern-plains-letter",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fairy_bai_qing",
+          "reg_northern_plains",
+          "sys_immortal_gu",
+          "sys_mortal_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

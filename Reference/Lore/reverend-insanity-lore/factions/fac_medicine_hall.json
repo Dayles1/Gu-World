@@ -1,0 +1,264 @@
+{
+  "id": "fac_medicine_hall",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Medicine Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "medical hall"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Medicine Hall is a Gu Yue clan office whose Gu Masters treat wounded clansmen after mission fights.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 96,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    96,
+    110,
+    123,
+    154,
+    157,
+    159
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_gu_yue_yao_ji",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 110,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_gu_yue_yao_ji",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_yao_le",
+      "count": 1
+    },
+    {
+      "target": "fac_medicine_faction",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan names Gu Yue Yao Ji as the medicine hall’s clan elder when she appears at the treehouse auction with her granddaughter. The same stretch calls the medicine hall the clan’s support faction and its most lucrative department, and places Yao Ji as the clan’s number one healing Gu Master, senior enough that she need not rise to answer even the clan leader.",
+      "chapters": [
+        110
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elder-and-department-weight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_gu_yue_yao_ji",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Gu Yue Qing Shu later presses Fang Yuan to sell a Liquor worm by naming Yao Le as the granddaughter of medicine hall elder Gu Yue Yao Ji, and by repeating Yao Ji’s promise of special medicine hall attention if Fang Yuan is hurt in the wolf tide.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elder-and-department-weight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_qing_shu",
+        "gu_liquor_worm",
+        "char_gu_yue_yao_le"
+      ]
+    },
+    {
+      "text": "When Gu Yue Jiao San dies on the field, a medicine hall Gu Master approaches Fang Yuan, asks to look at him, confirms Fang Yuan has no injuries despite the blood covering him, then turns to the corpse for pulse and aperture checks before stating the clan rule that a dead Gu Master’s worms return as inheritance rather than private spoil.",
+      "chapters": [
+        96
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-a-failed-group-mission",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_jiao_san"
+      ]
+    },
+    {
+      "text": "At a clan meeting Fang Yuan argues that Yao Ji has pulled medicine hall healing Gu Masters into a private search for Yao Le and is unfit to keep the medicine hall elder seat. He then proposes that her title be revoked pending assessment, and he claims Gu Yue Chi Lian supports that move. Chi Lian answers that the revoke proposal is Fang Yuan’s sole idea, that a sudden change under the wolf tide is not appropriate, and that he only agrees Yao Ji has let personal feeling pull healing Gu Masters off their proper work. After Yao Ji faints from anger and exhaustion, Chi Lian suggests Fang Yuan take over the vacant hall lead; clan leader Gu Yue Bo instead orders Gu Yue Chi Zhong to hold the medicine hall role temporarily and also confirms Fang Yuan as a rank three clan elder.",
+      "chapters": [
+        154
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hall-seat-under-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_gu_yue_chi_lian",
+        "char_gu_yue_bo",
+        "char_gu_yue_chi_zhong"
+      ]
+    },
+    {
+      "text": "Gu Yue Chi Zhong later greets Fang Yuan as the current acting medicine hall clan elder. That temporary lead is Gu Yue Bo’s balance between Chi and medicine factions after Yao Ji fainted, with Chi Zhong’s wife as an important medicine faction member.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hall-seat-under-wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During later wolf tide assaults, runners still deliver medicine hall injury reports to clan elders, and Chi Zhong is the Gu Master who took over the medicine hall and felt the rising death toll as acute pressure.",
+      "chapters": [
+        159
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hall-seat-under-wolf-tide",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/medicine-hall/",
+      "chapters": [
+        96,
+        110,
+        123,
+        154,
+        157,
+        159
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Gu Yue Yao Ji",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

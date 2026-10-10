@@ -1,0 +1,188 @@
+{
+  "id": "gu_eating_wind_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Eating Wind Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Eating Wind Gu is a Ju clan wind-type specialty sold at auction in Shang clan city.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 308,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    308
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "fac_ju_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_ju_feng_mountain",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_atmosphere_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/eating-wind-gu/",
+      "chapters": [
+        308
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 2,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "At the Shang clan city auction, right after Atmosphere Gu, thirty-eight Eating Wind Gu are grouped into one set and sold together.",
+        "chapters": [
+          308
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_shang_clan_city",
+          "gu_atmosphere_gu"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [
+      "loc_ju_feng_mountain"
+    ],
+    "factions": [
+      "fac_ju_clan"
+    ],
+    "origin": "unknown",
+    "claims": [
+      {
+        "text": "The Gu is only rank two. It lets the Gu Master consume wind and fill their stomach. Ju clan sits on Ju Feng mountain and specializes in wind type Gu; Eating Wind Gu is one of their specialties.",
+        "chapters": [
+          308
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect-and-origin",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master",
+          "fac_ju_clan",
+          "loc_ju_feng_mountain"
+        ]
+      }
+    ]
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": []
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

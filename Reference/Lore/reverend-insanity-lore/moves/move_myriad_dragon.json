@@ -1,0 +1,195 @@
+{
+  "id": "move_myriad_dragon",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Myriad Dragon",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Myriad Dragon is Fang Yuan's combination immortal killer move that joins ancient sword dragon transformation with myriad self into a sea of sword dragons.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1421,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1421,
+    1426,
+    1465
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "derived_from",
+      "target": "move_myriad_self",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "move_myriad_self",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "move_ancient_sword_dragon_transformation",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In anti-sound desert against Feng Jiu Ge, Fang Yuan deactivates reverse flow protection seal, turns into an ancient sword dragon, then uses myriad self with that transformation. Convergence of enslavement and strength path through that pairing creates Myriad Dragon. Myriad dragons appear at once, roar as sword qi bursts out, and form a sea of silver scales that submerges the four song warriors and Feng Jiu Ge. Ying Wu Xie recognizes the move as the one Fang Yuan used when destroying their sect’s immortal Gu formation in Eastern Sea.",
+      "chapters": [
+        1421
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "char_fang_yuan",
+        "char_ying_wu_xie",
+        "sys_gu_formation",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "Fang Yuan activates Myriad Dragon again. Dragons fly into a silvery sea and encircle the song warriors until they are destroyed, while Feng Jiu Ge escapes the dragons’ range with yang pass tune. Sustaining reverse flow protection seal and ancient sword dragon transformation with the move costs many myriad self clones in the sovereign immortal aperture.",
+      "chapters": [
+        1426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "feng-jiu-ge-fight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan calls reverse flow protection seal and myriad dragon his strongest methods, defense and offense, both related to strength path.",
+      "chapters": [
+        1465
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-path-judgment",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/myriad-dragon/",
+      "chapters": [
+        1421,
+        1426,
+        1465
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Derived from": {
+      "text": "Myriad Self",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

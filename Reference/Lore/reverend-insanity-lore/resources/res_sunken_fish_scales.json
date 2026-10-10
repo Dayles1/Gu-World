@@ -1,0 +1,147 @@
+{
+  "id": "res_sunken_fish_scales",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sunken fish scales",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sunken fish scales are immortal materials shed by sunken fish and used to refine beauty Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2238,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2238
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_beauty_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_beauty_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A sunken fish is at least an ancient desolate beast, and some are immemorial desolate beasts. It holds rule path and refinement path dao marks. Every few years it moves its tail to reach the surface and breathe, shedding scales while currents sweep it; after it breathes enough, scales grow again and it sinks while floating with the currents.",
+      "chapters": [
+        2238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shed-by-sunken-fish",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fallen scales seem heavy but are light and delicate. Most float to the surface and, after a long time, wash ashore, where Gu Masters pick them up as treasure. They are crucial Gu materials to refine beauty Gu and have high value, like the feathers of the falling goose. To refine beauty Immortal Gu, both immortal materials are needed: sunken fish scales and falling goose feathers.",
+      "chapters": [
+        2238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shed-by-sunken-fish",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "gu_beauty_immortal_gu",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Refinement path dao marks on the fish’s body let it digest sea soil and convert nutrients into thick immortal material scales. When Fang Yuan forcefully refines those dao marks away, the fish loses that ability.",
+      "chapters": [
+        2238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shed-by-sunken-fish",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/sunken-fish-scales/",
+      "chapters": [
+        2238
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Sunken fish",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Beauty Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

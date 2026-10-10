@@ -1,0 +1,137 @@
+{
+  "id": "char_golden_scorpion",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Golden Scorpion",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Golden scorpions are millstone sized beasts that emerge from beneath the sand in Western Desert's wolf desert, and a desert wolf struck by one's needle foams at the mouth and in the end dies.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1972,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1972
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_mo_li",
+      "count": 1
+    },
+    {
+      "target": "char_peng_da",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Golden scorpions, every one as big as a millstone, rise out of the ground to the rustle of shifting sand near Mo Li and Peng Da in Western Desert’s wolf desert. A group of golden scorpions and a group of desert wolves that had assembled nearby fight each other: a wolf struck by a golden scorpion’s needle foams at the mouth at once, drops, and in the end dies, while the scorpions, no match for wolf claws and teeth, are often torn apart. Weak in intelligence, both beast groups pay no attention to Mo Li and Peng Da nearby until the two try to break out, when several golden scorpions and desert wolves, one on each side, turn to attack them. Mo Li drives off two of the beasts with his mortal Gu before the two groups encircle him and Peng Da, and he gives up the fight.",
+      "chapters": [
+        1972
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_li",
+        "char_peng_da",
+        "reg_western_desert",
+        "sys_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/golden-scorpion.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/golden-scorpion/",
+      "chapters": [
+        1972
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

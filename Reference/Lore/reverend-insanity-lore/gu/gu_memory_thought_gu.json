@@ -1,0 +1,276 @@
+{
+  "id": "gu_memory_thought_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Memory Thought Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Memory Thought Gu is a wisdom path mortal Gu with recipes from rank one to rank five. It supports clearer recall than unaided memory alone.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 760,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    760,
+    779,
+    809,
+    817,
+    846,
+    916
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wisdom",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_airsac_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_malicious_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/memory-thought-gu/",
+      "chapters": [
+        760,
+        779,
+        809,
+        817,
+        846,
+        916
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_wisdom"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "For ordinary deduction work it shows no clear difference from Malicious Thought Gu; the split is that memory thought Gu digs memories while malicious thought Gu is better for plotting against others. In Hu Immortal blessed land he lists memory thought Gu among Gu he needs to produce in large numbers, together with airsac Gu, malicious thought Gu, and inch of time.",
+        "chapters": [
+          779
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "place-among-thought-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_malicious_thought_gu",
+          "loc_hu_immortal_blessed_land",
+          "gu_airsac_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Early wisdom path attainment leaves him unable to modify the memory thought Gu recipe at useful speed; the same wall hits star thought Gu and malicious thought Gu.",
+        "chapters": [
+          846
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "recipe-walls",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan gains an incomplete wisdom path inheritance that holds those recipes, a reminiscence Immortal Gu recipe, and several mortal killer moves. The inheritance is slightly more intact than his earlier malicious thought inheritance.",
+        "chapters": [
+          760
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "path_wisdom",
+          "sys_gu_recipe"
+        ]
+      },
+      {
+        "text": "Under the light of wisdom, memory thought Gu and malicious thought Gu both fail to bear the intense thought consumption that once forced green grape immortal essence spending on joyful will.",
+        "chapters": [
+          809
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "light-of-wisdom",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Against Star Thought Gu, star thoughts stay inferior for recollection, while memory thought Gu is the stronger tool for that use. He still has to refine memory thought Gu, star thought Gu, and malicious thought Gu and keep a huge stock of each.",
+        "chapters": [
+          817
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "star-thoughts-and-stocks",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_star_thought_gu"
+        ]
+      },
+      {
+        "text": "After his wisdom path attainment rises, he expects he can modify those recipes again and can even restore the incomplete inheritance that includes memory thought Gu, reminiscence Immortal Gu, and its mortal killer moves.",
+        "chapters": [
+          916
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "restoring-the-inheritance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_immortal_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Wisdom Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,640 @@
+{
+  "id": "fac_fang_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fang Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Western Desert super force, the nearest super clan to green ghost desert.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1504,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1504,
+    1505,
+    1507
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_di_chang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_leng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_yun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_an_lei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1513,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_chen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1519,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_hua_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1519,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_gong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1527,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_eagle_concubine",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1616,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_old_ghost_bai_jun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1616,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fang_dong_xi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2130,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_di_chang",
+      "count": 4
+    },
+    {
+      "target": "char_fang_leng",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yun",
+      "count": 4
+    },
+    {
+      "target": "char_old_ghost_bai_jun",
+      "count": 4
+    },
+    {
+      "target": "house_divine_bean_palace",
+      "count": 3
+    },
+    {
+      "target": "char_fang_an_lei",
+      "count": 3
+    },
+    {
+      "target": "char_fang_chen",
+      "count": 3
+    },
+    {
+      "target": "char_fang_hua_sheng",
+      "count": 3
+    },
+    {
+      "target": "char_eagle_concubine",
+      "count": 3
+    },
+    {
+      "target": "char_fang_gong",
+      "count": 3
+    },
+    {
+      "target": "char_fang_dong_xi",
+      "count": 3
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "house_fallen_flower_hall",
+      "count": 2
+    },
+    {
+      "target": "house_chicken_dog_coop",
+      "count": 2
+    },
+    {
+      "target": "house_inquiry_dock",
+      "count": 2
+    },
+    {
+      "target": "house_thieves_den",
+      "count": 2
+    },
+    {
+      "target": "house_earth_shuttle",
+      "count": 2
+    },
+    {
+      "target": "house_smoke_wave_building",
+      "count": 2
+    },
+    {
+      "target": "house_thought_expelling_pavilion",
+      "count": 2
+    },
+    {
+      "target": "evt_era_medieval",
+      "count": 1
+    },
+    {
+      "target": "loc_fang_zhuan_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_green_ghost_desert",
+      "count": 1
+    },
+    {
+      "target": "loc_hun_mu_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_soul_core",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_zheng_jing_shen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_qing_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_qing_clan_inheritance",
+      "count": 1
+    },
+    {
+      "target": "res_impermanence_rock",
+      "count": 1
+    },
+    {
+      "target": "move_peach_blossom_maze",
+      "count": 1
+    },
+    {
+      "target": "move_green_armor_vegetable_garden",
+      "count": 1
+    },
+    {
+      "target": "gu_great_thief",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_killer_move",
+      "count": 1
+    },
+    {
+      "target": "move_graft_wood",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_life_spring_lightning",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "move_broken_homes_and_dead_family",
+      "count": 1
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 1
+    },
+    {
+      "target": "loc_treasure_moon_oasis",
+      "count": 1
+    },
+    {
+      "target": "res_acupuncture_tree",
+      "count": 1
+    },
+    {
+      "target": "res_heavenly_dew",
+      "count": 1
+    },
+    {
+      "target": "move_steal_dao",
+      "count": 1
+    },
+    {
+      "target": "char_dong_lu_chen",
+      "count": 1
+    },
+    {
+      "target": "res_immemorial_soul_core",
+      "count": 1
+    },
+    {
+      "target": "sys_soul_expending_myriad_guts_formation",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_lie_shen",
+      "count": 1
+    },
+    {
+      "target": "char_wan_hao_guang",
+      "count": 1
+    },
+    {
+      "target": "move_wisdom_grasp",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "inh_thieving_heaven_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "res_wood_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "move_divine_bean_soldier",
+      "count": 1
+    },
+    {
+      "target": "char_nine_spiritual_fairy",
+      "count": 1
+    },
+    {
+      "target": "char_red_heart_traveler",
+      "count": 1
+    },
+    {
+      "target": "char_wan_zi_hong",
+      "count": 1
+    },
+    {
+      "target": "house_edge_link_camp",
+      "count": 1
+    },
+    {
+      "target": "move_giant_horn_rush",
+      "count": 1
+    },
+    {
+      "target": "gu_hatred_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ling_hu_xu",
+      "count": 1
+    },
+    {
+      "target": "loc_sand_heap_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_shi_clan",
+      "count": 1
+    },
+    {
+      "target": "char_golden_fur_immortal_monarch",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    },
+    {
+      "target": "char_shi_zhong",
+      "count": 1
+    },
+    {
+      "target": "char_tuoba_feng_yan",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_qiu_yan_ming",
+      "count": 1
+    },
+    {
+      "target": "fac_heaven_and_earth_great_love_alliance",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xiao",
+      "count": 1
+    },
+    {
+      "target": "house_winding_light_platform",
+      "count": 1
+    },
+    {
+      "target": "res_flying_sand",
+      "count": 1
+    },
+    {
+      "target": "move_roof_tile_breaker",
+      "count": 1
+    },
+    {
+      "target": "house_myriad_age_building",
+      "count": 1
+    },
+    {
+      "target": "fac_sun_clan",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_ye_hu",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_shi_gua_bi",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_clan",
+      "count": 1
+    },
+    {
+      "target": "house_chamber_pot",
+      "count": 1
+    },
+    {
+      "target": "fac_anti_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "char_dong_zhu",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_qiu_san_sha",
+      "count": 1
+    },
+    {
+      "target": "house_red_river_wheel",
+      "count": 1
+    },
+    {
+      "target": "move_state_of_disunity",
+      "count": 1
+    },
+    {
+      "target": "char_wan_gu_chou",
+      "count": 1
+    },
+    {
+      "target": "move_everlasting_sorrow",
+      "count": 1
+    },
+    {
+      "target": "loc_myriad_ore_desert",
+      "count": 1
+    },
+    {
+      "target": "gu_forgotten_sorrow_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_earth_roots",
+      "count": 1
+    },
+    {
+      "target": "loc_skeleton_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Old Ghost Bai Jun holds Fang Leng and Fang Yun captive in green ghost desert and treats killing them as too costly, because the clan would identify him as the culprit. Fang Di Chang is second supreme elder and a famous wisdom path expert of Western Desert. Fang Leng is a talent among rank sixes and a possible successor, a direct great-grandson of the first supreme elder. Fang Yun is that second supreme elder’s adopted son. Old Ghost Bai Jun means to demand ransom and talk terms with the first supreme elder.",
+      "chapters": [
+        1504
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "captives-in-the-desert",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_ghost_bai_jun",
+        "char_fang_leng",
+        "char_fang_yun",
+        "char_fang_di_chang",
+        "reg_western_desert"
+      ]
+    },
+    {
+      "text": "Fang Yuan judges that occupying green ghost desert still leaves this clan as a neighbor he cannot get around. The clan has a rank eight first supreme elder. Fang Yuan treats this generation’s second supreme elder, Fang Di Chang, as a wisdom path great expert renowned in Fang Yuan’s first life. He has wisdom path great grandmaster attainment, and is also marked in Shadow Sect’s information.",
+      "chapters": [
+        1505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "occupying-green-ghost",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "Clan affairs are decided by the first supreme elder and the second supreme elder. After Qing clan was exterminated, Fang clan’s ancestors began searching for that clan’s inheritance. Fang clan is famous for its Gu houses. The clues name Immortal Gu House Divine Bean Palace, created by Genesis Lotus Immortal Venerable and left in Western Desert. The resolve to obtain it has been carried generation after generation.",
+      "chapters": [
+        1507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-hunt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_qing_clan",
+        "sys_gu_house",
+        "sys_immortal_gu_house",
+        "house_divine_bean_palace",
+        "char_genesis_lotus_immortal_venerable"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/fang-clan/",
+      "chapters": [
+        1504,
+        1505,
+        1507
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

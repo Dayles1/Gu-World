@@ -1,0 +1,151 @@
+{
+  "id": "fac_zhou_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhou Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan whose former leader, Zhou Quan, survives as a shopkeeper in Shang clan city after internal strife and a demonic slaughter.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 325,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    325,
+    333,
+    1072
+  ],
+  "relations": [
+    {
+      "type": "members",
+      "target": "char_zhou_quan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 325,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_zhou_quan",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan names Zhou Quan as a shopkeeper under Shang Ya Zi and the manager Shang Xin Ci needs for an information business: rank three cultivation, able to hold his own, experienced and capable at trading. Shang Xin Ci already knows him as arrogant and proud, once Zhou clan’s clan leader at rank four. After internal strife, demonic Gu Masters slaughtered the clan; he escaped with heavy injuries and was left at rank three upper stage. He runs shops with the best performance among the shopkeepers, yet even Shang Ya Zi could not win his loyalty.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhou-quan-in-shang-clan-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_zhou_quan",
+        "char_shang_ya_zi",
+        "char_shang_xin_ci",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Zhou Quan later recalls that after the clan was wiped out he lived alone and injured, and that the desire to live kept him alive. Shang Xin Ci tells Fang Yuan that Sir Zhou had been adamant on rebuilding Zhou clan, that he could not forget his former clansmen, and that before his wife passed away she told him to rebuild their home. Zhou Quan notes he was not even at the scene when his wife died, and reads her speech as an act that gives him a way out while Fang Yuan forces the recruitment. He still names himself Zhou clan leader when he yields to these younger hands.",
+      "chapters": [
+        333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhou-quan-in-shang-clan-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration again names him Zhou clan’s leader, arrogant and proud of himself: after Zhou clan was destroyed he was a vagrant who survived by opening a shop in Shang clan inner city, then Fang Yuan forced him under Shang Xin Ci. Seeing her seated as clan leader, he thinks Zhou clan has hope to rise again, then sets rebuilding aside because her position is still unstable and she needs her subordinates.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhou-quan-under-shang-xin-ci",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zhou-clan/",
+      "chapters": [
+        325,
+        333,
+        1072
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

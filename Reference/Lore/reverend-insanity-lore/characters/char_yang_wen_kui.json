@@ -1,0 +1,191 @@
+{
+  "id": "char_yang_wen_kui",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yang Wen Kui",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yang wen kui",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ян Вэнь Куй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yang Wen Kui is a Yang clan rank seven Gu Immortal who dual cultivates wisdom path and information path, called the brain of Yang clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2078,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2078
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_chi_gui",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_yang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Yang clan encroaches on a Roar sound path inheritance near Chi clan territory, Chi Gui warns that Yang clan sent two famous rank seven experts. He names Yang Wen Kui as dual cultivating wisdom path and information path, and as the brain of Yang clan. Chi Gui also warns that Yang clan’s Immortal Gu House may be stored in one of the two Yang immortals’ apertures even if it has not been used yet.",
+      "chapters": [
+        2078
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yang_clan",
+        "fac_chi_clan",
+        "char_chi_gui",
+        "sys_immortal_gu_house"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yang-wen-kui/",
+      "chapters": [
+        2078
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 2078",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 2078,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,247 @@
+{
+  "id": "fac_ou_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ou Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ou Clan is a merchant clan group traveling with a multi-clan caravan. Ou Yang Gong holds a high elder position in the clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 251,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    251,
+    252,
+    253,
+    255
+  ],
+  "relations": [
+    {
+      "type": "members",
+      "target": "char_ou_fei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 251,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ou_fei",
+      "count": 4
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_chen_xin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_lei_gong_cheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_zhang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a clan settlement, hall, or dress.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ou Yang Gong is short and thin, with an aquiline nose. He has lived long enough to be habituated to life or death in his travels, and standing in a high position in Ou Clan is treated as proof of his ability.",
+      "chapters": [
+        251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ou Yang Gong is named as Ou Clan’s when he runs to Ou Fei’s corpse in the caravan camp. A vice leader looking at the body asks whether this is vice leader Ou’s son. Ou Yang Gong is rank three initial stage in that fight.",
+      "chapters": [
+        251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ou_fei"
+      ]
+    },
+    {
+      "text": "The caravan is a temporary mix of clans. After the camp recount, it has eleven rank three, twenty-seven rank two, and thirty-eight rank one Gu Masters.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Ou Fei lies dead in the camp after Fang Yuan kills him. Ou Yang Gong arrives, names Fang Yuan as the killer, then fights him. Jia Long interrupts when Ou Yang Gong is about to be killed. Fang Yuan bluffs a tie to Jia Long, Ou Yang Gong flees, and Bai Ning Bing’s third spiral bone spear pierces his skull from behind. Ou Yang Gong dies.",
+      "chapters": [
+        251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "father-and-son",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_jia_long",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "With Ou Yang Gong dead and no rank three Gu Master left, the remaining Ou clan Gu Masters are three people: one rank two middle stage and two rank one. They lower their heads, hold in their hatred, and carry the father and son’s corpses when ordered to clean them up.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "survivors",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Jia Long and others recast Fang Yuan and Bai Ning Bing as righteous and the Ou Clan father and son as evildoers. Fang Yuan and Bai Ning Bing’s appearance makes Zhang Clan an influential force in the caravan, while Ou Clan is thrown into the weakest position. The remaining two to three small fry are treated as nothing to worry about, and the goods held by Ou Clan seem quite substantial. Jia Long cites Ou Clan when backing a plan to offer goods to Fang Yuan and Bai Ning Bing. Chen Shuang Jin later tells his nephew that everyone saw the pair kill the Ou Clan father and son, and that witness talk is useless without strength, because the clans have different motives.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "survivors",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zhang_clan",
+        "char_chen_shuang_jin"
+      ]
+    },
+    {
+      "text": "Seven to eight days after the father and son are killed, Fang Yuan notes that Ou Fei came to find trouble first, and that without that opening he would have looked for trouble himself or shown his methods during beast group attacks.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-talk",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Chen Shuang Jin still remembers Fang Yuan killing the Ou Clan father and son, and that memory keeps him from acting on anger when Fang Yuan reprimands him.",
+      "chapters": [
+        255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "camp-talk",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/ou-clan/",
+      "chapters": [
+        251,
+        252,
+        253,
+        255
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

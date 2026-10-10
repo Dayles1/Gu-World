@@ -1,0 +1,197 @@
+{
+  "id": "char_su_yi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Su Yi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "su yi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Су И",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Su Yi is a Song tribe rank four Gu Master who answers Cheng Hu's challenge during the Ma tribe and Song tribe battle.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 523,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    523
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_song_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_song_tribe",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_cheng_hu",
+      "count": 2
+    },
+    {
+      "target": "sys_movement_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_song_tribe_alliance_army",
+      "count": 1
+    },
+    {
+      "target": "loc_mirror_lake",
+      "count": 1
+    },
+    {
+      "target": "char_xia_lin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Cheng Hu challenges Song tribe’s front line, Su Yi flies out of Song tribe’s army as a rank four expert and vows to teach him a lesson. Cheng Hu’s tiger king transformation overwhelms him. Su Yi activates a movement Gu and a defense Gu that forms a light barrier, but the tiger whip breaks the barrier, kills the defense Gu, and forces him to spit blood. The tiger king then bites apart his head, giving Ma tribe the first victory of the clash.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_cheng_hu",
+        "fac_song_tribe",
+        "sys_movement_gu",
+        "fac_ma_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/su-yi/",
+      "chapters": [
+        523
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 523",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Song Tribe as of ch. 523",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 523,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

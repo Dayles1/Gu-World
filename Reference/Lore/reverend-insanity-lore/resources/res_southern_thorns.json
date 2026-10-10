@@ -1,0 +1,124 @@
+{
+  "id": "res_southern_thorns",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Southern thorns",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Southern thorns are immortal materials that fill Imprisonment Valley in Central Continent.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1702,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1702,
+    1921
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_frost_butterfly_warrior",
+      "count": 1
+    },
+    {
+      "target": "char_steel_rush_warrior",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "More than half of Imprisonment Valley’s southern thorns are reported stolen by a mysterious Gu Immortal while Heavenly Court faces wider Central Continent resource raids.",
+      "chapters": [
+        1702
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "imprisonment-valley-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_heavenly_court",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "At Imprisonment Valley, Steel Rush Warrior and Frost Butterfly Warrior break the formation and find southern thorns throughout the valley, which is made of immortal materials. Frost Butterfly Warrior freezes the southern thorns and loots them rapidly.",
+      "chapters": [
+        1921
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "valley-of-immortal-materials",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_steel_rush_warrior",
+        "char_frost_butterfly_warrior"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/southern-thorns/",
+      "chapters": [
+        1702,
+        1921
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Imprisonment Valley",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

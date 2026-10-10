@@ -1,0 +1,551 @@
+{
+  "id": "fac_ge_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ge Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe named when Ge Yao introduces herself as its member and names her father as its tribe leader.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 426,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    426,
+    427,
+    428,
+    439,
+    469
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ge_yao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 426,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ge_guang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 437,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ge_cui",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 451,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ge_xiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 451,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ge_yao",
+      "count": 4
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_ge_cui",
+      "count": 3
+    },
+    {
+      "target": "char_ge_xiang",
+      "count": 3
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 2
+    },
+    {
+      "target": "char_man_duo",
+      "count": 2
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_yan_tribe",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_northern_plains_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_signal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_bao_ya",
+      "count": 1
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 1
+    },
+    {
+      "target": "char_poison_beard_wolf",
+      "count": 1
+    },
+    {
+      "target": "char_yang_po_ying",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_chang_sheng_dun",
+      "count": 1
+    },
+    {
+      "target": "fac_chang_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_mushroom_forest",
+      "count": 1
+    },
+    {
+      "target": "gu_house_lizard_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_mush_room_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wood_path_mind_confusion_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ha_tu_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "loc_hong_yan_valley",
+      "count": 1
+    },
+    {
+      "target": "gu_eagle_wings_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_azure_wolf_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shi_wu",
+      "count": 1
+    },
+    {
+      "target": "gu_chase_smoke_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_hints_and_clues_gu",
+      "count": 1
+    },
+    {
+      "target": "char_man_tu",
+      "count": 1
+    },
+    {
+      "target": "char_man_hao",
+      "count": 1
+    },
+    {
+      "target": "char_man_hong",
+      "count": 1
+    },
+    {
+      "target": "gu_fist_stone_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_self_ignition_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_care_gu",
+      "count": 1
+    },
+    {
+      "target": "char_night_wolf_king",
+      "count": 1
+    },
+    {
+      "target": "gu_brave_fight_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_bell_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swallow_fire_gu",
+      "count": 1
+    },
+    {
+      "target": "move_dragon_head_drill",
+      "count": 1
+    },
+    {
+      "target": "gu_impermanence_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_lizard_house_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_swallow_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "char_yan_cui_er",
+      "count": 1
+    },
+    {
+      "target": "char_yan_tian_ji",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_pei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 1
+    },
+    {
+      "target": "gu_do_or_die_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swallow_wings_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_farm_slug_gu",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_tu",
+      "count": 1
+    },
+    {
+      "target": "char_carefree_wisdom_heart",
+      "count": 1
+    },
+    {
+      "target": "loc_book_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_qian_kun_crystal_wall",
+      "count": 1
+    },
+    {
+      "target": "gu_eagle_rise_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_onion_explosion_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "gu_detection_gu",
+      "count": 1
+    },
+    {
+      "target": "move_seven_star_light",
+      "count": 1
+    },
+    {
+      "target": "loc_wang_ting_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ge tribe camp has a thick sturdy outer wall about six meters tall, green with vines and grape-like wood path mind confusion Gu fruits. Tall watchtowers stand behind the wall, and the camp gates open onto a main path through the site.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Around the outer ring, mortal tents resemble Mongolian tents. Gu Masters live inward in Gu houses, including lizard Gu houses with big stomach horses often tied at the door, then mushroom forest Gu houses for tribe elders and affluent Gu Masters. At the center, the king tent sits among over a hundred mushroom Gu, and the largest mush room Gu is where guests are hosted.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_gu_house"
+      ]
+    },
+    {
+      "text": "The naming lands on the night Fang Yuan reaches Northern Plains, when Ge Yao is cornered by poison beard wolves and treats the stranger who breaks the pack as a tribe benefactor who will be welcomed in camp.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_northern_plains",
+        "char_ge_yao"
+      ]
+    },
+    {
+      "text": "Ge Yao says Ge tribe has just migrated over with greatly reduced strength, while Man tribe is a huge force offering a grand betrothal gift and a piece of fertile grassland, and that her father tried to marry her to Man Duo for those gifts. She calls herself the flower of Ge tribe and urges marriage into the tribe by grassland custom so an outsider would not face exclusion.",
+      "chapters": [
+        427
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "migration-and-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_man_tribe",
+        "char_man_duo"
+      ]
+    },
+    {
+      "text": "On poison grassland she later invites him as a guest and says she would press her father to make him an external elder, treating that as a path to strengthen the tribe’s next generation.",
+      "chapters": [
+        428
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "external-elder-offer",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Old Ge tribe leader hosts him with northern plains toasting custom after he enters the tribe as benefactor Chang Shan Yin, and Ge Guang and the elders toast in turn.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-welcome",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "char_ge_guang"
+      ]
+    },
+    {
+      "text": "Later Yan tribe talk says Ge tribe was once a large size tribe, but after being forced to migrate it is no longer as great as before and cannot feed a huge wolf group.",
+      "chapters": [
+        469
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "former-scale-named",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yan_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/ge-tribe.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/ge-tribe/",
+      "chapters": [
+        426,
+        427,
+        428,
+        439,
+        469
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "id": "char_tie_jia_zi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tie Jia Zi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "tie jia zi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Те Цзя Цзы",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tie Jia Zi is a metal path Gu Immortal named among sellers of Gu refinement materials in treasure yellow heaven.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 468,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    468,
+    744
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_yan_shi",
+      "count": 1
+    },
+    {
+      "target": "char_wang_gan_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_divine_travel",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Lang Ya land spirit buys divine travel Gu and then purchases Gu refinement materials without restraint, Fang Yuan names him as a metal path Gu Immortal among the sellers and finds the names familiar. He places those sellers with Gu Immortals from the second wave of attacks on Lang Ya blessed land, and in the same thought he frames that group as northern plains Gu Immortals whose coordination points to Old Man Yan Shi’s wider scheme.",
+      "chapters": [
+        468
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "gu_divine_travel",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "loc_lang_ya_blessed_land",
+        "char_old_man_yan_shi"
+      ]
+    },
+    {
+      "text": "Lang Ya land spirit later shows Fang Yuan coffins of captive Gu Immortals from those attacks and introduces him again as a metal path Gu Immortal among the sleepers.",
+      "chapters": [
+        744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "captive-at-lang-ya",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/tie-jia-zi/",
+      "chapters": [
+        468,
+        744
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

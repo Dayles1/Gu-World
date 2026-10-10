@@ -1,0 +1,264 @@
+{
+  "id": "gu_spring_egg_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spring Egg Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spring Egg Gu is a rank five Gu shaped like a white goose egg. Buried deep underground, it grows a small scale spirit spring.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 421,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    421
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 421,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_bai_hu",
+      "count": 1
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/spring-egg-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/spring-egg-gu/",
+      "chapters": [
+        421
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It has the appearance of a white goose egg.",
+        "chapters": [
+          421
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is a one-time expendable Gu. Activating it demands heavy primeval essence; even a rank five upper stage Gu Master must exhaust that essence to succeed, so Fang Yuan at rank four upper stage cannot do it alone.",
+        "chapters": [
+          421
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "activation",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "With little Hu Immortal’s help, Fang Yuan buries the three Gu near the rockmen tribes in Hu Immortal Blessed Land. Each drills underground until spring water spurts and the air’s primeval energy thickens.",
+        "chapters": [
+          421
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "use-in-hu-immortal-blessed-land",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fairy_bai_hu",
+          "loc_hu_immortal_blessed_land"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "It is obtained by killing specific eggmen. Its price sits much higher than the hundred million primeval stones a small scale spirit spring can yield over its life, and Gu Immortals still buy it to plant inside a blessed land so living beings there gain spiritual essence.",
+        "chapters": [
+          421
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "source-and-cost",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "unspecified",
+      "recorded_chapter": 421,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan requests five Spring Egg Gu from Immortal Crane Sect while trading after the swamp crab calamity; He Feng Yang refuses that full count and later the deal yields three.",
+        "chapters": [
+          421
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "fac_immortal_crane_sect",
+          "char_he_feng_yang"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

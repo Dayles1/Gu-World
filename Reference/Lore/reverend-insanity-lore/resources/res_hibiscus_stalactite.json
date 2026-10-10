@@ -1,0 +1,177 @@
+{
+  "id": "res_hibiscus_stalactite",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hibiscus stalactite",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hibiscus stalactite is a rare rank seven immortal material that grows in caves and yields stone heart liquid over time.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 846,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    846,
+    887,
+    1133
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_bo_qing",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "loc_true_yang_mountain_range",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Hibiscus stalactites are a rare rank seven immortal material. A stalactite produces a drop of stone heart liquid every year, and that liquid is a rank eight immortal material. Cutting the stalactite yields only the rank seven material; leaving it alone allows stone heart liquid to accumulate, which is worth more than the cut stalactite.",
+      "chapters": [
+        846
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-and-liquid",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Central Continent’s True Yang mountain range, Mo Yao and Sword Immortal Bo Qing found a hibiscus stalactite in a cave after killing a group of desolate beasts. Mo Yao stopped Bo Qing from cutting it, and they set Gu formations to conceal the cave so stone heart liquid could gather over many years.",
+      "chapters": [
+        846
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "discovery-and-concealment",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "loc_true_yang_mountain_range",
+        "char_mo_yao",
+        "char_bo_qing",
+        "sys_gu_formation"
+      ]
+    },
+    {
+      "text": "Fang Yuan later checked the site from Mo Yao’s memory and found the main area already secretly occupied by Spirit Affinity House. He chose not to contest it.",
+      "chapters": [
+        887
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "found-occupied-by-spirit-affinity-house",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_spirit_affinity_house"
+      ]
+    },
+    {
+      "text": "Hei Fan grotto-heaven’s second forbidden ground is a huge underground cave of stalactites. Hibiscus stalactites, rare in the outside world, grow there in large numbers. Fang Yuan digs out the entire cave and transplants it into Mini Southern Border, noting that further growth will draw earth qi from the sovereign immortal aperture.",
+      "chapters": [
+        1133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "abundant-source-relocated",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hei_fan_grotto_heaven",
+        "loc_mini_southern_border"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/hibiscus-stalactite/",
+      "chapters": [
+        846,
+        887,
+        1133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Stalactite caves",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

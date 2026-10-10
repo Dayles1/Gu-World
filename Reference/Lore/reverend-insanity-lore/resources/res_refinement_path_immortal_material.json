@@ -1,0 +1,167 @@
+{
+  "id": "res_refinement_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Refinement path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Refinement path immortal materials are immortal materials of refinement path, demanded in many varieties for Gu refinement.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 753,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    753,
+    2224,
+    2247,
+    2250
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_refinement",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_refinement",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_advance_refinement_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On Fang Yuan’s list of wanted immortal materials, most are refinement path immortal materials: the varieties are huge and the types chaotic. Only refinement path Gu Immortals bother to prepare such a list to gain something from the auction.",
+      "chapters": [
+        753
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "auction-demand-list",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Refinement path Immortal Gu use a large amount of refinement path immortal materials, and as a refinement path venerable Fang Yuan’s control over those materials is a hundred percent. Refinement path immortal materials contain refinement path dao marks and are subject to his ability to refine natural refinement path dao marks of the outside world.",
+      "chapters": [
+        2224
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "perfect-control",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_refinement",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Advance refinement Gu is a refinement path Immortal Gu: even though some rule path immortal materials are needed, refinement path immortal materials are the bulk of its components. As a refinement path venerable Fang Yuan can perfectly process refinement path immortal materials, which raises the success rate.",
+      "chapters": [
+        2247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bulk-of-advance-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_advance_refinement_gu"
+      ]
+    },
+    {
+      "text": "It is much easier for Fang Yuan to process refinement path immortal materials than to handle wood path immortal materials.",
+      "chapters": [
+        2250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "easier-than-wood-path",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/refinement-path-immortal-material/",
+      "chapters": [
+        753,
+        2224,
+        2247,
+        2250
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Refinement Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

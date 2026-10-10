@@ -1,0 +1,858 @@
+{
+  "id": "char_xiao_qi_xing",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Qi Xing",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xiao qi xing",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сяо Ци Син",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiao Qi Xing is an elite disciple of Spirit Butterfly Valley on Central Continent, named as the great-grandson of Xiao Bai Hong when the ten great sects contest Hu Immortal Inheritance on Tian Ti Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 365,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    365,
+    366,
+    375,
+    388,
+    398,
+    405,
+    419,
+    1970,
+    1992,
+    2011,
+    2012,
+    2013,
+    2065,
+    2081,
+    2262,
+    2263
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1970,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_arrow_formation_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2012,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_lieutenant_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2012,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_sergeant_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2012,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_soldier_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2012,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_captain_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2081,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_commander_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2284,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_commander_of_justice",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2262,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_captain_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_lieutenant_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_sergeant_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_arrow_formation_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 3
+    },
+    {
+      "target": "gu_soldier_gu",
+      "count": 3
+    },
+    {
+      "target": "move_commander_of_justice",
+      "count": 3
+    },
+    {
+      "target": "gu_commander_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 2
+    },
+    {
+      "target": "char_xiao_bai_hong",
+      "count": 2
+    },
+    {
+      "target": "char_ying_sheng_ji",
+      "count": 2
+    },
+    {
+      "target": "inh_hu_immortal_inheritance",
+      "count": 2
+    },
+    {
+      "target": "loc_spirit_butterfly_valley",
+      "count": 2
+    },
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 2
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 2
+    },
+    {
+      "target": "char_chen_da_jiang",
+      "count": 2
+    },
+    {
+      "target": "char_sun_yao",
+      "count": 2
+    },
+    {
+      "target": "gu_justice_gu",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "char_wei_wu_shang",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "char_gu_ting",
+      "count": 1
+    },
+    {
+      "target": "char_jun_shen_guang",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_yan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "inh_genesis_lotus_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "house_divine_emperor_city",
+      "count": 1
+    },
+    {
+      "target": "sys_foundational_pillar_of_human_path",
+      "count": 1
+    },
+    {
+      "target": "move_contented_lifestyle",
+      "count": 1
+    },
+    {
+      "target": "char_tang_ru_qi",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_shu_ye",
+      "count": 1
+    },
+    {
+      "target": "char_sun_yuan_hua",
+      "count": 1
+    },
+    {
+      "target": "gu_thief_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bi_xia",
+      "count": 1
+    },
+    {
+      "target": "gu_officer_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shi_zhong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wealth_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On Tian Ti Mountain, Gu Immortals of the ten great sects discuss that generation’s elite disciples and place him among the outstanding juniors of the contest. He enters Hu Immortal Inheritance after Feng Jin Huang, before many other disciples, and Fang Zheng’s turn comes only after twenty to thirty people have already gone in.",
+      "chapters": [
+        365
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tian_ti",
+        "sys_gu_immortal",
+        "inh_hu_immortal_inheritance",
+        "char_feng_jin_huang",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "With Heavenly Court damaged and the immortal graveyard destroyed, Heavenly Court decides to nurture new Gu Immortals at high cost. Jun Shen Guang’s list of loyal Gu Immortal seeds includes Xiao Qi Xing as Spirit Butterfly Valley’s recommendation.",
+      "chapters": [
+        1970
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "char_jun_shen_guang",
+        "loc_spirit_butterfly_valley"
+      ]
+    },
+    {
+      "text": "Inside Divine Emperor City’s painting world he appears in a white robe with a jade belt; Chen Da Jiang and Sun Yao greet him as Brother Xiao of Spirit Butterfly Valley, and he speaks with open arrogance about Feng Jin Huang’s fall from favor. He explains that the sects sent them so they would cultivate human path, strive to ascend as human path Gu Immortals, and take human path Gu worms out of the painting world for use outside. He says even Spirit Butterfly Valley did not tell him that inside information, and that he learned it by asking his great grandfather, whom Chen Da Jiang names as Lord Gu Immortal Xiao Bai Hong. Xiao Bai Hong’s own instructions, recalled by Xiao Qi Xing, urge him to race for Genesis Lotus’s true inheritance and the chance to become Lord of Divine Emperor City before later rank six candidates arrive.",
+      "chapters": [
+        1992
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_divine_emperor_city",
+        "char_chen_da_jiang",
+        "char_sun_yao",
+        "char_xiao_yan",
+        "sys_gu_worms",
+        "char_xiao_bai_hong",
+        "inh_genesis_lotus_true_inheritance"
+      ]
+    },
+    {
+      "text": "He heads for the military base to join the city guards, because only that route yields soldier Gu, sergeant Gu, lieutenant Gu, captain Gu, and related human path worms for a military foundation.",
+      "chapters": [
+        1992
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_sergeant_gu",
+        "gu_lieutenant_gu",
+        "gu_captain_gu"
+      ]
+    },
+    {
+      "text": "Later the other Gu Immortal seeds treat him as the one with the best progress among them; he has risen to junior officer rank and leads troops against divine bean soldiers.",
+      "chapters": [
+        2011
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In battle he fields hundreds of human path soldier worms, activates arrow formation Gu, and wins a complete victory against one divine bean soldier group before the campaign widens. His group joins the final fight against Fang Di Chang, celebrates after Fang Di Chang self-detonates, and claims they killed an immortal as mortals, so they are still Gu Masters in that stretch.",
+      "chapters": [
+        2012
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_arrow_formation_gu",
+        "char_fang_di_chang",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Xiao Qi Xing expects Heavenly Court rewards for contribution. Qin Ding Ling reviews their performance poorly, then still decides to reward the seeds heavily because they remain important cultivation targets.",
+      "chapters": [
+        2013
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_ding_ling"
+      ]
+    },
+    {
+      "text": "Shen Shang later calls Xiao Qi Xing’s group the ten children of human path: Heavenly Court and the ten great ancient sects’ selected seeds with abundant human qi, sent specially to develop human path Gu Immortals. With Xiao Qi Xing at the front, the group becomes famous inside the painting world and takes major exploration tasks.",
+      "chapters": [
+        2065
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_shang"
+      ]
+    },
+    {
+      "text": "In the growling beast painting he commands an expanding army of soldier Gu and higher officer Gu against beast tides while camps push deeper into that world.",
+      "chapters": [
+        2081
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_officer_gu"
+      ]
+    },
+    {
+      "text": "There is no human path article on this site yet, so this page keeps that path in prose rather than as a path chip.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-human-path-seeds",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He wears a white robe with a jade belt at his waist. His posture is as straight as a sword, and an air of arrogance sits between his brows.",
+      "chapters": [
+        1992
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-robe",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His snowy-white military robe is dyed red with blood.",
+      "chapters": [
+        2012
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "military-robe",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the ten great sects’ elite disciples, the text sorts Feng Jin Huang, Ying Sheng Ji, and Xiao Qi Xing into the first tier: disciples with Gu Immortal backing, abundant resources from the start, and occasional personal guidance from Gu Immortal level existences.",
+      "chapters": [
+        366
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ying_sheng_ji"
+      ]
+    },
+    {
+      "text": "Immortal Crane Sect’s He Feng Yang later lists the same trio when he explains why his sect needed a secret chess piece, naming Myriad Dragon Dock’s Ying Sheng Ji, Spirit Affinity House’s Feng Jin Huang, and Spirit Butterfly Valley’s Xiao Qi Xing as the youngsters Immortal Crane Sect could not match openly.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_immortal_crane_sect",
+        "char_he_feng_yang",
+        "fac_myriad_dragon_dock",
+        "fac_spirit_affinity_house"
+      ]
+    },
+    {
+      "text": "Lord Sky Crane, speaking to Fang Zheng on Dang Hun Mountain, still places Fang Zheng’s tempered soul short of peers such as Feng Jin Huang and Xiao Qi Xing until the spirit incubating flea plan closes that gap.",
+      "chapters": [
+        366
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lord_sky_crane",
+        "loc_dang_hun_mountain"
+      ]
+    },
+    {
+      "text": "On Dang Hun Mountain the climb narrows to four people at the front: Xiao Qi Xing, Ying Sheng Ji, Feng Jin Huang, and then Fang Zheng.",
+      "chapters": [
+        388
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Zheng later surpasses Xiao Qi Xing. Xiao Qi Xing stares wide as Fang Zheng climbs beyond him and asks whether the great Xiao Qi Xing has been surpassed by a nobody.",
+      "chapters": [
+        398
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A following chapter restates that Fang Zheng has already surpassed Ying Sheng Ji and Xiao Qi Xing on that mountain.",
+      "chapters": [
+        405
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Outside observers later praise Fang Yuan, brother of Fang Zheng, for defeating Feng Jin Huang, Xiao Qi Xing, Ying Sheng Ji, and the others.",
+      "chapters": [
+        419
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "After that Inheritance stretch he next appears when Heavenly Court names him among Gu Immortal seeds. No intervening chapter states a cultivation rank for him.",
+      "chapters": [
+        419
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "peer-ranking",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xiao Bai Hong obtains wealth Gu and hands them to Xiao Qi Xing. This is the first numbered cultivation rank stated for him: rank five Gu Master, Xiao Bai Hong’s great-grandson, and one of the ten children of human path with huge Heavenly Court support. Xiao Qi Xing says he cultivates human path and has obtained an incomplete Gu Immortal true inheritance with about ten Immortal Gu recipes for justice Gu. The strongest recipe uses wealth Immortal Gu as a supplementary material; without that Immortal Gu he plans to modify the recipe from the mortal wealth Gu. He wants rank six justice Immortal Gu as his vital Gu so he can become a human path Gu Immortal, and under ideal conditions he hopes that vital Gu can advance to rank seven at immortal ascension. He also names a human path killer move, commander of justice, that would combine justice Gu with soldier Gu, sergeant Gu, lieutenant Gu, and similar worms. Xiao Bai Hong agrees to put the family’s resources behind that plan.",
+      "chapters": [
+        2262
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "justice-gu-plans",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_wealth_gu",
+        "sys_gu_master",
+        "sys_gu_recipe",
+        "gu_justice_gu",
+        "sys_immortal_gu",
+        "sys_vital_gu"
+      ]
+    },
+    {
+      "text": "A following chapter still describes Xiao Qi Xing as someone using his great-grandfather’s help to attempt a rank seven vital Gu before advancing to Gu Immortal, so the text has not yet shown that ascension succeed.",
+      "chapters": [
+        2263
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "justice-gu-plans",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xiao-qi-xing/",
+      "chapters": [
+        365,
+        366,
+        375,
+        388,
+        398,
+        405,
+        419,
+        1970,
+        1992,
+        2011,
+        2012,
+        2013,
+        2065,
+        2081,
+        2262,
+        2263
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 2262",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Spirit Butterfly Valley as of ch. 365 Heavenly Court as of ch. 1970",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 2262,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_arrow_formation_gu",
+      "role": "unspecified",
+      "recorded_chapter": 2012,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_captain_gu",
+      "role": "user",
+      "recorded_chapter": 2081,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_commander_gu",
+      "role": "user",
+      "recorded_chapter": 2284,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_lieutenant_gu",
+      "role": "user",
+      "recorded_chapter": 2012,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_sergeant_gu",
+      "role": "user",
+      "recorded_chapter": 2012,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_soldier_gu",
+      "role": "user",
+      "recorded_chapter": 2012,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

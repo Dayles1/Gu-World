@@ -1,0 +1,162 @@
+{
+  "id": "loc_sun_moon_sinkhole",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sun Moon Sinkhole",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Southern Border's Sun Moon Sinkhole"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sun Moon Sinkhole is an unfathomably deep Southern Border pit that even Gu Immortals cannot explore easily.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2095,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2095,
+    2123
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 2
+    },
+    {
+      "target": "char_qin_juan",
+      "count": 2
+    },
+    {
+      "target": "char_wang_xiao_er",
+      "count": 2
+    },
+    {
+      "target": "char_wei_shen_jing",
+      "count": 2
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Qin Juan corners Central Continent’s four great obscenities and Wang Xiao Er at a sinkhole and names what lies behind them as Southern Border’s Sun Moon Sinkhole. She says the pit is unfathomably deep, that not just Gu Masters but even Gu Immortals cannot explore it easily, and that jumping means certain death.",
+      "chapters": [
+        2095
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_juan",
+        "reg_central_continent",
+        "char_wang_xiao_er",
+        "fac_gu_masters",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Shang Xin Ci later says that not long ago, in Sun Moon Sinkhole, she met Wei Shen Jing and they chased after the demon Kong Ri Tian.",
+      "chapters": [
+        2123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "kong-ri-tian-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "char_wei_shen_jing",
+        "char_kong_ri_tian"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/sun-moon-sinkhole/",
+      "chapters": [
+        2095,
+        2123
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "landmark",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

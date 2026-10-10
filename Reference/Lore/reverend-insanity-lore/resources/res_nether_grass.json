@@ -1,0 +1,164 @@
+{
+  "id": "res_nether_grass",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Nether grass",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Nether grass is a desolate plant rooted in place and rich in soul path dao marks.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 909,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    909,
+    911,
+    983
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_soul_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "fac_combat_immortal_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_starry_sky_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a Starry Sky grotto-heaven fragment world, He Feng Yang’s briefing names two desolate beasts and one desolate plant: dragonfish, hidden essence turtle, and nether grass. Nether grass is rooted to the ground and cannot move. It poses little threat as long as one does not get close.",
+      "chapters": [
+        909
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-plant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_starry_sky_grotto_heaven",
+        "char_he_feng_yang"
+      ]
+    },
+    {
+      "text": "A stalk of nether grass is very useful to a soul path Gu Immortal. It contains large numbers of soul path dao marks, and over time it influences a wide surrounding range into a breeding ground for soul path Gu worms. It has an immense effect when used to modify the environment of a blessed land or grotto-heaven. Combat Immortal Sect left it in place until Starry Sky grotto-heaven shattered. One of the missions He Feng Yang gives Fang Yuan concerns the nether grass, and he says it would be best to take all three targets alive. The agreement gives Fang Yuan a one-third share of the value of what he obtains. Like the dragonfish and hidden essence turtle, it is a strong being without Immortal Gu.",
+      "chapters": [
+        909
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-plant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "sys_gu_worms",
+        "fac_combat_immortal_sect",
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Inside the fragment within the seven-day window, Fang Yuan plans to take the desolate beast dragonfish, the hidden essence turtle, and that nether grass before putting most of his time into searching the central region for the dream realm.",
+      "chapters": [
+        911
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "capture-target",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After subduing the desolate beast dragonfish, he still needs the hidden essence turtle and the desolate plant nether grass. He captures both, then sends rockmen to explore for Gu worms and materials.",
+      "chapters": [
+        983
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "captured-alive",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/nether-grass.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/nether-grass/",
+      "chapters": [
+        909,
+        911,
+        983
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Desolate plant",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

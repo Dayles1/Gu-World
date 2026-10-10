@@ -1,0 +1,217 @@
+{
+  "id": "char_fifth_hair",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fifth Hair",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Little Five"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fifth Hair is a Lang Ya Sect status rank among hairy man Gu Immortals, and the Gu Immortal who holds that place.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1082,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1082,
+    1541
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_hairy_men",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_lang_ya_sect",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1082,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 3
+    },
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "sys_heavenly_giant_solor",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Lang Ya land spirit explains that under Lang Ya Sect rules, a large enough contribution can raise a member’s status by one level, giving the example that Sixth Hair could promote to Fifth Hair. Fang Yuan is not a true hairy man Gu Immortal at that time, so he receives contribution points instead of that promotion.",
+      "chapters": [
+        1082
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "fac_lang_ya_sect",
+        "char_sixth_hair",
+        "char_fang_yuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "During the Central Continent assault on Lang Ya blessed land, Lang Ya land spirit shouts for Little Five. Gu Immortal Fifth Hair nods, says to watch, and uses an immortal killer move on Heavenly Giant Solor so the silver giant opens its mouth and fires a beam of light that reaches Feng Jiu Ge almost at once. Feng Jiu Ge vanishes from the beam’s path and later advances onto the giant.",
+      "chapters": [
+        1541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "solor-mouth-beam",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "loc_lang_ya_blessed_land",
+        "sys_heavenly_giant_solor",
+        "char_feng_jiu_ge"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/fifth-hair/",
+      "chapters": [
+        1082,
+        1541
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Hairy Men",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Lang Ya Sect as of ch. 1082",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_hairy_men",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

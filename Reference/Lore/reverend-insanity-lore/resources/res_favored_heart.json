@@ -1,0 +1,167 @@
+{
+  "id": "res_favored_heart",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Favored heart",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Favored heart is a rank nine luck path immortal material found in Earth Treasury and used to advance luck path Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2078,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2078,
+    2079
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_dog_shit_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 2
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_treasury",
+      "count": 1
+    },
+    {
+      "target": "house_four_elements_square_regret_blood_refinement_pool",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Earth Treasury is one of the ten earths, and every Earth Treasury holds abundant immortal materials. Among them, favored heart is a rank nine luck path immortal material. Fang Yuan judges a single Earth Treasury’s favored heart useful for refining luck path Immortal Gu, though far from enough to support a true rank nine luck path Immortal Gu refinement on its own. Using rank nine immortal material to refine rank eight Immortal Gu can slightly raise the success rate.",
+      "chapters": [
+        2078
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-treasury-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_treasury",
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "After Fang Yuan stores an Earth Treasury, favored heart is among the luck path immortal materials fed into Four Elements Square Regret Blood Refinement Pool. After refining dog shit luck Immortal Gu, the rank nine luck path immortal material favored heart shrinks a little as another layer of its surface is refined and merged into the pool water.",
+      "chapters": [
+        2079
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-pool-use",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_four_elements_square_regret_blood_refinement_pool"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/favored-heart/",
+      "chapters": [
+        2078,
+        2079
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Earth Treasury",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Dog Shit Luck",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

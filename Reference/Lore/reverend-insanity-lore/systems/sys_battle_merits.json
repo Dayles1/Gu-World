@@ -1,0 +1,226 @@
+{
+  "id": "sys_battle_merits",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Battle Merits",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Battle Merit Board battle merit list merit points"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The battle merit board ranks small groups during the wolf tide. Merit points can be exchanged for Gu worms, primeval stones, and other resources.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 127,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    127,
+    130,
+    516,
+    517,
+    546
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_swimword_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_self_reliance_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Gu Yue clan, Bai clan, and Xiong clan set the board up as part of their alliance against the wolf tide. Rankings update at every moment. A lightning wolf’s eyeball exchanges for ten merit points. In the village square, rank one Gu Masters handle the administration. Gu Masters turn in bloodstained wolf eyes for points. A large banner in the square carries over a dozen Swimword Gu, so the written rankings change as the controllers update them.",
+      "chapters": [
+        127
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "fac_bai_clan",
+        "fac_xiong_clan",
+        "fac_gu_masters",
+        "gu_swimword_gu"
+      ]
+    },
+    {
+      "text": "The same wolf-tide stretch also calls those points battle merits.",
+      "chapters": [
+        130
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Hei tribe’s battle with the Dong Fang alliance army, the army spends days cleaning the battlefield, tallying battle merits, and healing the injured. Gu Masters who were not among the army’s higher-ups check that their merits have not been embezzled, heal, and exchange merits for new Gu worms while preparing for war. Supply camps open fifteen large tents, packed with people exchanging merits for goods.",
+      "chapters": [
+        516
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "supply-camp-tally",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "fac_dong_fang_alliance",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Battle merits are easy to calculate because tribes record each large battle with monitoring and image-capture Gu, both to tally merits and to study the fight. Gu Masters also record their own fighting. Those records are checked again and again until the statistic is agreed. A scroll lists the highest achievers: Chang Shan Yin stands first with over a hundred thousand, Hei Lou Lan over eighty thousand, then others in the tens of thousands, with most of one hundred and six names around three thousand. The complete list stands in the fifteen tents, as large as defense walls, with Swimword Gu so the characters flicker as merits change. Statistics start when the battle starts and keep running. Exchanging for Gu worms lowers the number; some merits, especially for healing Gu Masters after the fight, keep rising.",
+      "chapters": [
+        516
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "supply-camp-tally",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "Primeval stones are the currency in ordinary times. During battles they become scarce, because Gu Masters spend them to restore primeval essence and to refine Gu, and battle merits are used as currency instead. That wartime use is not only Northern Plains practice; Southern Border and other regions do the same. Hei tribe’s list of goods has one self-reliance Gu, and it is only rank two. Self-reliance Gu at rank three could reach a price of forty-five thousand primeval stones, corresponding to forty-five hundred battle merits.",
+      "chapters": [
+        517
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wartime-currency",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "reg_southern_border",
+        "gu_self_reliance_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan uses a huge pool of battle merits to exchange for dragon horse spirit, three hearts combination soul, all sorts of killer moves, and dozens of small strength path inheritances. He also takes the recorded journal of four enslavement masters, among them the killer moves rat epidemic, thunder explosion, leopard rush, and horse barrage.",
+      "chapters": [
+        546
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "large-purchases",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/battle-merits/",
+      "chapters": [
+        127,
+        130,
+        516,
+        517,
+        546
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Battle merits",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

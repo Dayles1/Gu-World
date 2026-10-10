@@ -1,0 +1,141 @@
+{
+  "id": "house_medicine_cottage",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Medicine Cottage",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Medicine Cottage is Yao Huang's Immortal Gu House. After Qin Bai Sheng's auction he opens it and invites the Gu Immortals present to join a gathering.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 764,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    764
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "char_yao_huang",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yao_huang",
+      "count": 4
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 1
+    },
+    {
+      "target": "char_swordmaster_you_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 1
+    },
+    {
+      "target": "loc_crimson_reed_marsh",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the sky above Crimson Reed Marsh, Yao Huang asks Heavenly Lord Bai Zu whether he will sell the Red Fiend Divine Boat recipe to Yao tribe. Heavenly Lord Bai Zu refuses, saying such a treasure cannot be sold easily, and that he plans to establish a tribe with room to collaborate with Yao tribe. Yao Huang then proposes they talk while so many of them are gathered, and Heavenly Lord Bai Zu agrees. Most super forces enter, including Five Elements Grandmaster as the lone cultivators’ representative. Old Ancestor Xue Hu refuses, and so does Feng Jiu Ge, who is there in Swordmaster You Lan’s guise for Prince Feng Xian.",
+      "chapters": [
+        764
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crimson_reed_marsh",
+        "char_yao_huang",
+        "char_heavenly_lord_bai_zu",
+        "house_red_fiend_divine_boat",
+        "fac_yao_tribe",
+        "char_five_elements_grandmaster",
+        "char_old_ancestor_xue_hu",
+        "char_feng_jiu_ge",
+        "char_swordmaster_you_lan",
+        "char_prince_feng_xian"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/medicine-cottage/",
+      "chapters": [
+        764
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Yao Huang (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "id": "gu_fish_scale_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fish Scale Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fish Scale Gu is a Gu worm valued only slightly below Jade Skin Gu. Bai clan produces it, Gu Yue clan holds fewer copies, and Qing Shu names a rank two Scale Armor Gu fusion from it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 123,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    123,
+    127
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 127,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_stealth_scales_gu",
+      "count": 3
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 2
+    },
+    {
+      "target": "char_jiang_ya",
+      "count": 2
+    },
+    {
+      "target": "gu_black_boar_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_stealth_rock_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_bear_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_steel_mane_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_stream_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/fish-scale-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/fish-scale-gu/",
+      "chapters": [
+        123,
+        127
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Qing Mao Mountain chapters describe value, supply, and fusion talk without naming a cultivation path for this Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_qing_mao_mountain"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "These chapters do not describe the worm’s appearance, and they do not name Fish Scale Gu’s own rank. Gu Yue Qing Shu says it can be fused into the rank two Scale Armor Gu for good defense.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_qing_shu"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Qing Shu treats Fish Scale Gu as a defensive Gu worm Fang Yuan still lacks, and points to the Scale Armor Gu line as the known use.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      },
+      {
+        "text": "The text does not spell out a standalone activation effect for Fish Scale Gu itself in these chapters.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Bai clan produces Fish Scale Gu. Gu Yue clan also has them, though fewer. Fang Yuan expects the three-clan battle merit board after the formal alliance to list Fish Scale Gu among exchangeable resources, unlike clan signature Gu such as Moonlight Gu, Bear Strength Gu, or Stream Gu.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "availability-on-qing-mao-mountain",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_bai_clan",
+          "gu_moonlight_gu",
+          "gu_bear_strength_gu",
+          "gu_stream_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Fish Scale Gu is used with Stealth Rock Gu to create Stealth Scales Gu. Fang Yuan needs the Fish Scale Gu for that refine, and that recipe would only be discovered two hundred years later, so Qing Shu has no clue why Fang Yuan wants it.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fusion-lines",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_stealth_rock_gu",
+          "gu_stealth_scales_gu"
+        ]
+      },
+      {
+        "text": "Qing Shu instead names the common line into rank two Scale Armor Gu.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fusion-lines",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After the refine, the finished Stealth Scales Gu is a fossilised carp, grey throughout, with realistic fish scales in Fang Yuan’s primeval sea.",
+        "chapters": [
+          127
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fusion-lines",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "That form belongs to Stealth Scales Gu, not to Fish Scale Gu as a separate worm.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "fusion-lines",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He obtained the Fish Scale Gu that way, then refined Stealth Scales Gu from it before the Gu battle tournament. It is written once as Fish Scales Gu when he notes he no longer needs to exchange merit for one.",
+        "chapters": [
+          127
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuan-obtains-and-fuses-it",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_stealth_scales_gu"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "He offers to trade his Black Boar Gu for a Fish Scale Gu, and says Black Boar Gu is more valuable, so Qing Shu must pay the price difference.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuan-obtains-and-fuses-it",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_black_boar_gu"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "holder",
+      "recorded_chapter": 127,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "The name first appears when Jiang Ya fails to buy one for Fang Yuan under Gu Yue clan resource control as the wolf tide nears. Jiang Ya says Fish Scale Gu is only slightly less valuable than the Jade Skin Gu.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_jiang_ya",
+          "char_fang_yuan",
+          "fac_gu_yue_clan",
+          "gu_jade_skin_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

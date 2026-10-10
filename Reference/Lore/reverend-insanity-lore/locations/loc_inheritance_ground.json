@@ -1,0 +1,180 @@
+{
+  "id": "loc_inheritance_ground",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Inheritance Ground",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flower Wine Monk's underground strength inheritance path inside Qing Mao Mountain, cleared past a round boulder into a second secret room, then an underground stone forest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 79,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    79,
+    80
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_flower_wine_monk",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_rock_forest",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A giant round boulder blocks a walled path on an inclined slope. Past it, a second secret room has strange red soil that glows red and a simple grey rock door. Beyond the door lies an underground stone forest of over thirty mu, with stone walls over sixteen meters tall and a stone ceiling. Large dark red pillars droop from above like inverted stems full of dark holes, each emitting a faint red glow with the walls.",
+      "chapters": [
+        79
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan returns to the walled path before a giant round boulder that Flower Wine Monk set as a strength gate. Once White Boar Gu has given him one boar’s strength, he pushes the boulder up the slope until it reaches a flat stretch and opens a second secret room of red glowing soil with a grey rock door beyond. Under damp ground before that door he digs up a second Earth Treasury flower and refines the Jade Skin Gu inside, his sixth Gu and first defensive Gu in that stretch.",
+      "chapters": [
+        79
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "boulder-trial-and-second-room",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_flower_wine_monk",
+        "gu_white_boar_gu",
+        "gu_jade_skin_gu",
+        "sys_defensive_gu"
+      ]
+    },
+    {
+      "text": "Past the rock door the path opens into an underground stone forest of over thirty mu inside Qing Mao Mountain. Dark red pillars droop from a stone ceiling, full of holes that house jade eye stone monkeys, and Fang Yuan reads the Jade Skin Gu as preparation for that ground. He treats the next inheritance clue as hidden among those pillars.",
+      "chapters": [
+        79
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "opening-into-the-stone-forest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_rock_forest",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "Every few days he kills jade eye stone monkeys to feed Jade Skin Gu while searching the stone forest for the next Flower Wine Monk clue. After checking the surrounding walls, he concludes the next clue of the strength inheritance should sit somewhere in the forest itself.",
+      "chapters": [
+        80
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "forest-search",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/inheritance-ground.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/inheritance-ground/",
+      "chapters": [
+        79,
+        80
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "inheritance",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

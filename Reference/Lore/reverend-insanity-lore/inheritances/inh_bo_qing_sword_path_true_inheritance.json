@@ -1,0 +1,153 @@
+{
+  "id": "inh_bo_qing_sword_path_true_inheritance",
+  "entity_type": "inheritance",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bo Qing sword path true inheritance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Bo Qing's sword path true inheritance Bo Qing's true inheritance"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bo Qing sword path true inheritance is the sword path legacy whose appearance is signaled by sword lights from Falling Heavenly River's source after Bo Qing perished.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 957,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    957,
+    1386
+  ],
+  "relations": [
+    {
+      "type": "creator",
+      "target": "char_bo_qing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1386,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "char_tian_xia_xin",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "path_sword",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A rumor spreads that the lights are arrangements left to select a suitable inheritor rather than let the wrong person take it. Righteous path forces of the ten great ancient sects, demonic path, and lone cultivators all start to move, and even hidden old monsters head toward the river.",
+      "chapters": [
+        957
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_righteous_path"
+      ]
+    },
+    {
+      "text": "Fang Yuan, listing what would raise his battle strength if an attainment rose, notes that he has several sword path Immortal Gu and also has Bo Qing’s true inheritance, so sword path grandmaster would make that strength soar.",
+      "chapters": [
+        1386
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-holder",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/inheritances/bo-qing-sword-path-true-inheritance/",
+      "chapters": [
+        957,
+        1386
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Creator": {
+      "text": "Bo Qing",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Holders": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

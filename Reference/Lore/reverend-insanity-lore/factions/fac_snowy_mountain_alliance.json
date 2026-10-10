@@ -1,0 +1,286 @@
+{
+  "id": "fac_snowy_mountain_alliance",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Snowy Mountain Alliance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Mountain Pledge oath on Snowy Mountain that binds Fang Yuan, Tai Bai Yun Sheng, Hei Lou Lan, and Fairy Li Shan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 660,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    660,
+    661,
+    664,
+    678,
+    679,
+    692,
+    802,
+    827
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_li_peng_wang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 772,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_li_peng_wang",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_alliance_agreement",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_mountain_pledge_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sea_oath_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_beast_corpse",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fairy Li Shan receives Tai Bai Yun Sheng, Hei Lou Lan, and Fang Yuan and brings out Mountain Pledge Gu, a rank six information path Immortal Gu as famous as sea oath Gu. An oath pledged to a mountain cannot be violated while that mountain exists. Fang Yuan chooses the mountain outside, which Fairy Li Shan names Snowy Mountain, the nest of Northern Plains demonic path Gu Immortals and Snowy Mountain blessed land. She owns its third branch peak and is called the third leader.",
+      "chapters": [
+        660
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "oath-on-snowy-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_li_shan",
+        "char_tai_bai_yun_sheng",
+        "char_hei_lou_lan",
+        "char_fang_yuan",
+        "gu_mountain_pledge_gu",
+        "sys_immortal_gu",
+        "gu_sea_oath_gu",
+        "reg_northern_plains",
+        "sys_gu_immortal",
+        "loc_snowy_mountain"
+      ]
+    },
+    {
+      "text": "Killing Ma Hong Yun is one of the agreements in the Snowy Mountain Alliance.",
+      "chapters": [
+        661
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-terms",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_hong_yun"
+      ]
+    },
+    {
+      "text": "Allies may keep personal secrets, but if they speak they cannot lie, or the oath kills them.",
+      "chapters": [
+        678
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-terms",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The alliance writes that allies cannot intentionally inflict harm on each other.",
+      "chapters": [
+        679
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-terms",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When one side helps another, the price paid is doubly compensated, and the alliance is quite lenient, with no clause that forces a fight to the death.",
+      "chapters": [
+        692
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-terms",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Even though Fang Yuan, Hei Lou Lan, and Fairy Li Shan signed, nobody has command over others in the alliance.",
+      "chapters": [
+        802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-terms",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan treats the formed alliance with Hei Lou Lan and Fairy Li Shan as one of his major gains after Fixed Immortal Travel returns.",
+      "chapters": [
+        664
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "signatory-outcomes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fixed_immortal_travel"
+      ]
+    },
+    {
+      "text": "Among the four who signed, Tai Bai Yun Sheng is later the richest.",
+      "chapters": [
+        827
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "signatory-outcomes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/snowy-mountain-alliance/",
+      "chapters": [
+        660,
+        661,
+        664,
+        678,
+        679,
+        692,
+        802,
+        827
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "alliance",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

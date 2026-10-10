@@ -1,0 +1,148 @@
+{
+  "id": "move_blood_trace_travel",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Trace Travel",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blood Trace Travel is Fang Yuan's blood refinement killer move. Blood traces leave his wounds, fuse into a pot of poisonous blood, and draw that blood back into his body.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 861,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    861,
+    970
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_star_form_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Star Form blessed land, while processing earthly limit astral qi for Gu refinement, Fang Yuan jumps into a turtle shell of dark purple poisonous blood, cuts openings on his six monstrous arms, chest, back, and other skin, and activates this blood refinement killer move. Traces of blood appear from the injuries, fuse into the poisonous blood, and draw that blood into his wounds. His blood and the turtle-shell pot then circulate in and out of his body. Once that process stabilizes, he swallows the earthly limit astral qi so the circulating blood can melt it, which is part of his flesh body blood refinement technique from his previous life. He forces himself to feel pain with Gu worm methods, because an immortal zombie otherwise has no sense of pain, and he needs that pain to know what step the immortal materials have reached.",
+      "chapters": [
+        861
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_star_form_blessed_land",
+        "char_fang_yuan",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "When Fang Yuan’s will returns to this same refinement after Spring Autumn Cicada fails, he is again in the turtle shell using the move to process earthly limit astral qi.",
+      "chapters": [
+        970
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-return",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_spring_autumn_cicada"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/blood-trace-travel/",
+      "chapters": [
+        861,
+        970
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

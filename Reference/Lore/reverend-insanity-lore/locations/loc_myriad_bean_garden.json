@@ -1,0 +1,171 @@
+{
+  "id": "loc_myriad_bean_garden",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Myriad Bean Garden",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Myriad Bean Garden is Tian Xia Xin's Northern Plains home, a large garden worked largely by inkman labor.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1100,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1100,
+    1101
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_tian_xia_xin",
+      "count": 2
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_liu_chang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter gives a full visual inventory of the garden beyond naming it as a farming home large enough for inkman labor.",
+      "chapters": [
+        1100
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "More than ten days after Hei tribe chaos rises, Chu Du comes to Northern Plains Myriad Bean Garden and finds Tian Xia Xin still farming peacefully while the outside world is in a mess. Tian Xia Xin once left Myriad Bean Garden after losing to Dong Fang Chang Fan, then returned as owner when Dong Fang tribe collapsed. The garden is huge; most labor is done by inkmen, and Tian Xia Xin is famous in the Northern Plains Gu Immortal world for raising inkman slaves. Chu Du asks him to deduce Fang Yuan’s location from a flying sword Immortal Gu clue.",
+      "chapters": [
+        1100
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "char_chu_du",
+        "reg_northern_plains",
+        "char_tian_xia_xin",
+        "char_dong_fang_chang_fan",
+        "fac_dong_fang_tribe",
+        "sys_gu_immortal",
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Chu Du continues that Myriad Bean Garden visit as the place where Tian Xia Xin works the flying sword clue toward Fang Yuan.",
+      "chapters": [
+        1101
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "deduction-seat",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/myriad-bean-garden/",
+      "chapters": [
+        1100,
+        1101
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "garden",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "loc_qun_xing_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qun Xing Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Ye Lui Qun Xing's blessed land"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qun Xing blessed land is Ye Lui Qun Xing's rank seven star path immortal aperture.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1206,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1206
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_plain",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_blue_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The sky is a scene of darkness, while the ground emits dim blue light and is covered with countless star fragments, large as shells or small as pebbles, which rustle when stepped on. The surface is vast and level. An azure star core like a dark blue crystal ball floats up as the land spirit.",
+      "chapters": [
+        1206
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After killing Ye Lui Qun Xing, Fang Yuan preserves the headless corpse so the immortal aperture still exists, then places it on ordinary grassland far from Blood Plain. The entrance opens. Despite having the upper extreme heavenly eagle, he enters Qun Xing blessed land through that entrance.",
+      "chapters": [
+        1206
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_lui_qun_xing",
+        "char_fang_yuan",
+        "loc_blood_plain"
+      ]
+    },
+    {
+      "text": "The sky is dark. The ground emits dim blue light and is covered with countless star fragments, large as shells or small as pebbles, which rustle when stepped on. The surface is vast and level. A powerful magnetic force holds Fang Yuan to the ground when he tries to fly. An azure star core, the land spirit, floats up like a dark blue crystal ball and slowly revolves, emitting many kinds of light.",
+      "chapters": [
+        1206
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The land spirit’s ownership condition is to show the true, complete immortal killer move myriad star fireflies. Ye Lui Qun Xing’s living obsession had been that move; after death it combined with heavenly power in the aperture to form this land spirit. Fang Yuan already holds the complete contents from Dong Fang Chang Fan and becomes master. He then annexes Qun Xing blessed land with the land spirit’s help. The process meets no obstacle. The sovereign immortal aperture gains an enormous star fragment plain, many of Fang Yuan’s calamities and tribulations are passed, and he officially ascends from rank six to rank seven. The sovereign immortal aperture begins to produce red date immortal essence.",
+      "chapters": [
+        1206
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_chang_fan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/qun-xing-blessed-land.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/qun-xing-blessed-land/",
+      "chapters": [
+        1206
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

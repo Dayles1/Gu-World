@@ -1,0 +1,220 @@
+{
+  "id": "fac_blue_phoenix_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blue Phoenix Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blue Phoenix Tribe is a tribe inside Myriad Beast Fusion Color Heaven led by Desolate Extremity Lu Tong Lan, who presents Hei Lou Lan as her illegitimate daughter and Sacred Child.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2112,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2112,
+    2113,
+    2114,
+    2115
+  ],
+  "relations": [
+    {
+      "type": "leader",
+      "target": "char_lu_tong_lan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2112,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_hei_lou_lan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2115,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hei_lou_lan",
+      "count": 4
+    },
+    {
+      "target": "char_lu_tong_lan",
+      "count": 2
+    },
+    {
+      "target": "char_jiao_huo",
+      "count": 2
+    },
+    {
+      "target": "sys_myriad_tribes_ceremony",
+      "count": 2
+    },
+    {
+      "target": "fac_fire_blend_tribe",
+      "count": 2
+    },
+    {
+      "target": "move_blue_phoenix_totem",
+      "count": 1
+    },
+    {
+      "target": "sys_great_strength_true_martial_physique",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_corpse",
+      "count": 1
+    },
+    {
+      "target": "move_dark_capital_strength_tiger",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Hei Lou Lan wakes in a large skin tent on a stone bed, with a huge pot at the center. Lu Tong Lan wears a beast skin top and skirt and bears a vivid blue phoenix tattoo on her chest and back that emits faint blue light. She tells Hei Lou Lan to call her Blue Phoenix Tribe Leader and that Hei Lou Lan’s identity here is her illegitimate daughter, found while relocating the tribe.",
+      "chapters": [
+        2112
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_lu_tong_lan"
+      ]
+    },
+    {
+      "text": "The tribe camps in a lush valley with a river nearby. Tents of various sizes form the settlement. The central tent is the largest and safest, where Hei Lou Lan stays for a month while building her first totem. Tribe elders confront Lu Tong Lan for draining inventory on her daughter. She brings Hei Lou Lan out and shows the dark capital strength tiger totem, naming it proof of the sacred physique. Elders then accept the spending and plan to protect Hei Lou Lan so the tribe can become a back-up sacred tribe if she survives the Myriad Tribes Ceremony, or the Sacred King if she reaches rank eight. The whole tribe chips in to raise her totem after that acceptance.",
+      "chapters": [
+        2113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sacred-child-cover",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_myriad_tribes_ceremony"
+      ]
+    },
+    {
+      "text": "Several days later, mortal enemy Fire Blend Tribe attacks. Blue Phoenix Tribe suffers huge losses and is forced from the valley, then retakes it when Lu Tong Lan retaliates. Fire Blend Tribe stays outside in a stalemate. Late that night Lu Tong Lan and Hei Lou Lan meet Fire Blend Tribe Leader Jiao Huo in a valley cave; the clash was their staged performance, and both leaders bring Gu Immortal corpses from the fight as materials.",
+      "chapters": [
+        2113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fire-blend-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fire_blend_tribe",
+        "char_jiao_huo",
+        "res_gu_immortal_corpse"
+      ]
+    },
+    {
+      "text": "Half a year later at Moon Field Slope, narration says that fight cost Blue Phoenix Tribe many Gu Immortal elders while giving Lu Tong Lan deeper control of the tribe.",
+      "chapters": [
+        2114
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fire-blend-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "During the Myriad Tribes Ceremony, almost nobody provokes Blue Phoenix Tribe while Hei Lou Lan lives as Sacred Child, because if she reaches rank eight the tribe would rise to Sacred Tribe. Jealousy still builds, including among people normally friendly to Lu Tong Lan. Anyone targeting Blue Phoenix Tribe might contact Fire Blend Tribe, and the reverse is also true.",
+      "chapters": [
+        2115
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ceremony-status",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/blue-phoenix-tribe.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/blue-phoenix-tribe/",
+      "chapters": [
+        2112,
+        2113,
+        2114,
+        2115
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Leader": {
+      "text": "Lu Tong Lan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

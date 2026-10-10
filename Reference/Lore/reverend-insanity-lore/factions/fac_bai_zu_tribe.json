@@ -1,0 +1,356 @@
+{
+  "id": "fac_bai_zu_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Zu tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains righteous path super force founded on Heavenly Lord Bai Zu's bloodline, newly risen beside the Huang Jin tribes.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1105,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1105,
+    1106,
+    1146,
+    1171
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_heavenly_lord_bai_zu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_heavenly_lord_bai_zu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1105,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_zu_wei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1170,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 5
+    },
+    {
+      "target": "char_bai_zu_wei",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 2
+    },
+    {
+      "target": "char_gong_er",
+      "count": 2
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 2
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 2
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 1
+    },
+    {
+      "target": "gu_unravel_mystery",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_nian_er_ping_zhi",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_heavenly_court_pursuit",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "loc_become_dragon_mound",
+      "count": 1
+    },
+    {
+      "target": "fac_chu_sect",
+      "count": 1
+    },
+    {
+      "target": "char_hao_zhen",
+      "count": 1
+    },
+    {
+      "target": "char_li_si_chun",
+      "count": 1
+    },
+    {
+      "target": "res_soft_jade",
+      "count": 1
+    },
+    {
+      "target": "char_chou_lao_wu",
+      "count": 1
+    },
+    {
+      "target": "move_green_city_rampage",
+      "count": 1
+    },
+    {
+      "target": "move_wind_thunder_roar",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_extremity",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 1
+    },
+    {
+      "target": "char_immortal_zombie_giant_sun",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a tribe banner or uniform. Three Bai Zu tribe Gu Immortals fly to Gong Er and enter Golden Dawn Hall when invited.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_gong_er",
+        "house_golden_dawn_hall"
+      ]
+    },
+    {
+      "text": "Bai Zu tribe is not of the Huang Jin bloodline. It has just become a righteous path super force because of the rank eight Gu Immortal Heavenly Lord Bai Zu, who created the tribe with his bloodline descendants after gaining Yao Huang’s friendship and Yao tribe’s recognition. Its Gu Immortals were nurtured inside Heavenly Lord Bai Zu’s grotto-heaven; though few, he sends three to the chaotic Northern Plains battles. Huang Jin righteous path Gu Immortals resist outsiders like Bai Zu tribe and discuss how to deal with them, yet cannot touch the tribe while Heavenly Lord Bai Zu protects it.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline",
+        "char_heavenly_lord_bai_zu",
+        "char_yao_huang",
+        "fac_yao_tribe",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Bai Zu tribe Gu Immortals talk with Gong tribe inside the hall and stay calm while Iron Eagle blessed land resources hang in the sky and Hei tribe has not yet appeared. Even as a righteous path force under Heavenly Lord Bai Zu, its foundation cannot compare to the Huang Jin tribes.",
+      "chapters": [
+        1106
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "iron-eagle-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gong_tribe",
+        "loc_iron_eagle_blessed_land",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "After Hei tribe collapses and Bai Zu tribe takes over, that storm has yet to settle while Old Ancestor Xue Hu begins refining fortune rivalling heaven Gu.",
+      "chapters": [
+        1146
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-hei-tribe-falls",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_ancestor_xue_hu"
+      ]
+    },
+    {
+      "text": "After Heavenly Lord Bai Zu recruits Hei tribe’s four supreme elders, he obtains ancient battle formation Green City Rampage and gives it to Bai Zu tribe’s Gu Immortals to learn.",
+      "chapters": [
+        1171
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "formation-gained-from-hei-elders",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_green_city_rampage"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/bai-zu-tribe/",
+      "chapters": [
+        1105,
+        1106,
+        1146,
+        1171
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Heavenly Lord Bai Zu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

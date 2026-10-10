@@ -1,0 +1,280 @@
+{
+  "id": "rcp_cleanse_soul_immortal_gu_recipe",
+  "entity_type": "recipe",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cleanse Soul Immortal Gu recipe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The refinement recipe for cleanse soul Immortal Gu, modified with Sixth Hair's help to replace flowing fire core with snow lotus essence after Fang Yuan loses his first copy of the Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1424,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1424,
+    1439,
+    1440,
+    1441,
+    1443,
+    1444
+  ],
+  "relations": [
+    {
+      "type": "produces",
+      "target": "gu_cleanse_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refinement_materials",
+      "target": "res_thousand_li_soul_thread",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1424,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refinement_materials",
+      "target": "res_flowing_fire_core",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1443,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refinement_materials",
+      "target": "res_snow_lotus_essence",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1441,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1424,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_sixth_hair",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1424,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "res_snow_lotus_essence",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 2
+    },
+    {
+      "target": "gu_cleanse_soul",
+      "count": 2
+    },
+    {
+      "target": "res_thousand_li_soul_thread",
+      "count": 1
+    },
+    {
+      "target": "res_flowing_fire_core",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan no longer seeks cleanse soul Immortal Gu for the killer move myriad self after losing his first copy; he wants it as the core of a method that removes the soul path trap Ying Wu Xie left in his immortal zombie body, and that method needs a rank seven cleanse soul Immortal Gu. Refining the Gu again needs only a small part of a soul thread, and hundred li soul thread would have sufficed; Fang Yuan paid a huge price for Lang Ya Sect’s thousand li soul thread to raise the success rate and save time. Sixth Hair, already at the final few steps, cuts one section from it and tosses that into the flames. The attempt fails, the backlash is heavy enough that Sixth Hair has to rest, and Fang Yuan counts the refinement as having failed about ten times including this one.",
+      "chapters": [
+        1424
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_cleanse_soul",
+        "char_ying_wu_xie",
+        "fac_lang_ya_sect",
+        "char_sixth_hair"
+      ]
+    },
+    {
+      "text": "Sixth Hair reports that the refinement has reached its crucial stage after his own repeated failures and asks Fang Yuan to take the last steps himself, judging Fang Yuan’s luck better suited to them. He then explains the refinement’s steps, key points, and his own insights in detail, and Fang Yuan listens without missing a word. Narration names cleanse soul Immortal Gu the crucial key to Fang Yuan’s next cultivation plan.",
+      "chapters": [
+        1439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "final-steps-handed-off",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan takes over using the historical rank eight refinement path expert Bei Luo’s ice refinement killer move, a specialization later generations could only look up to, and closes to within a single step of completing the Gu.",
+      "chapters": [
+        1440
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "final-steps-handed-off",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Cleanse soul Immortal Gu’s recipe is a closely held secret with only a small circulation, so Fang Yuan judges the odds still good that no rival has completed a replacement before him. Sixth Hair proposes replacing several ice path immortal materials in the recipe’s last steps with snow lotus essence, a change that lengthens the process but lowers its difficulty, and Fang Yuan agrees to try it.",
+      "chapters": [
+        1441
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "modifying-the-recipe",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The recipe’s original final material is flowing fire core, but Fang Yuan judges snow lotus essence the stronger match because he refines using the ice refinement method. He reasons that one Immortal Gu can have many different recipes, and a refinement path expert may swap in a better material once one appears. Over half a month Fang Yuan and Sixth Hair separately rework the recipe’s steps, then combine their results into what they judge its most optimal form, the task falling mainly to Sixth Hair’s higher refinement path attainment. Three attempts fail outright, wasting large amounts of immortal material, though each failure lets the two of them adjust the recipe further. A fourth attempt reaches the final juncture after Fang Yuan activates burning soul bursting luck to raise his fortune, then fails anyway, and attempts five through fourteen fail in turn. The fifteenth attempt succeeds, bringing the combined tally between Fang Yuan and Sixth Hair to close to thirty attempts on this one Immortal Gu.",
+      "chapters": [
+        1443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "modified-recipe-completed",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "The modified recipe turns out much more suited to Fang Yuan’s own refinement method than the original, though the result is only rank six rather than the rank seven his soul path trap method needs.",
+      "chapters": [
+        1444
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "modified-recipe-completed",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/recipes/cleanse-soul-immortal-gu-recipe/",
+      "chapters": [
+        1424,
+        1439,
+        1440,
+        1441,
+        1443,
+        1444
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Produces": {
+      "text": "Cleanse Soul",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Ranks": {
+      "text": "VI as of ch. 1444",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refinement materials": {
+      "text": "Thousand li soul thread Flowing fire core Snow lotus essence",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Holders": {
+      "text": "Fang Yuan (refiner) Sixth Hair (refiner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

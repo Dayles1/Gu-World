@@ -1,0 +1,307 @@
+{
+  "id": "gu_fierce_wind_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fierce Wind Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fierce Wind Gu is one of the three Gu Bai Ning Bing uses to form iceblade storm on Qing Mao Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 167,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    167,
+    299
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_bai_ning_bing",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 167,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_ning_bing",
+      "count": 3
+    },
+    {
+      "target": "gu_swirl_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_whirlwind_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_ice_blade_gu",
+      "count": 2
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_second_battle",
+      "count": 1
+    },
+    {
+      "target": "gu_revolving_gu",
+      "count": 1
+    },
+    {
+      "target": "move_ice_blade_storm",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [
+    {
+      "topic": "Storm recipe naming",
+      "positions": [
+        {
+          "position": "Iceblade storm is formed by Iceblade Gu, Swirl Gu, and Fierce Wind Gu.",
+          "support": "Chapter 167, narration during the Qing Mao Mountain chase.",
+          "chapters": [
+            167
+          ]
+        },
+        {
+          "position": "Ice blade storm was created using revolving Gu paired with whirlwind Gu and ice blade Gu.",
+          "support": "Chapter 299, Bai Ning Bing recalling the killer move in Shang Clan City.",
+          "chapters": [
+            299
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/fierce-wind-gu/",
+      "chapters": [
+        167,
+        299
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Cited chapters do not describe Fierce Wind Gu’s appearance, rank, food, or a named cultivation path.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Bai Ning Bing later recalls her self created ice blade storm as revolving Gu paired with Whirlwind Gu and ice blade Gu, forming an icy tornado.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "storm-recipe-naming",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "move_ice_blade_storm",
+          "gu_revolving_gu",
+          "gu_whirlwind_gu"
+        ]
+      },
+      {
+        "text": "Sources conflict:",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "storm-recipe-naming",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The question is open.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "storm-recipe-naming",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_bai_ning_bing",
+      "role": "user",
+      "recorded_chapter": 167,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Bai Ning Bing activates Fierce Wind Gu with Swirl Gu while forming an iceblade, and the white iceblade storm appears again.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing",
+          "gu_swirl_gu"
+        ]
+      },
+      {
+        "text": "Iceblade storm is formed by Iceblade Gu, Swirl Gu, and Fierce Wind Gu. Used together, the three create a move that can attack and defend; without two or more defense Gu working together, a target cannot resist it.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "iceblade-storm",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_ice_blade_gu"
+        ]
+      },
+      {
+        "text": "The storm starts as a small gust, then expands into roaring icy winds and a blizzard that coats the floor in hard ice. Fierce winds and ice blades freeze what they hit, and the white storm presses on like a huge beast. The same stretch calls the move hard to display or stop cleanly.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "iceblade-storm",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Cited chapters that name Fierce Wind Gu do not describe a solo activation effect apart from that joint use.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "iceblade-storm",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

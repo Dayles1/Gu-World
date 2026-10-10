@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "faction.schema.json",
+  "title": "faction",
+  "allOf": [
+    {
+      "$ref": "common.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "attributes",
+        "claims"
+      ],
+      "properties": {
+        "entity_type": {
+          "enum": [
+            "faction"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^fac_"
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Raw infobox fields from the source, kept for later typed mapping."
+        },
+        "claims": {
+          "$ref": "common.schema.json#/$defs/claims"
+        }
+      }
+    }
+  ]
+}

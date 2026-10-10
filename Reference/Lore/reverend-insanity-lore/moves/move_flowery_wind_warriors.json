@@ -1,0 +1,186 @@
+{
+  "id": "move_flowery_wind_warriors",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flowery Wind Warriors",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flowery Wind Warriors is a peach blossom maze variation. Flower-petal human figures store killer moves and unleash them on self-detonation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1523,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1523,
+    1524,
+    1526,
+    1528
+  ],
+  "relations": [
+    {
+      "type": "derived_from",
+      "target": "move_peach_blossom_maze",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_di_chang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_di_chang",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "move_peach_blossom_maze",
+      "count": 1
+    },
+    {
+      "target": "house_divine_bean_palace",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the fight at Divine Bean Palace, peach blossom maze transforms into blooming peach blossoms whose petals gather into human figures. Fang Di Chang names the killer move flowery wind warriors and asks Fang Yuan to control a part of them. On the first attempt Fang Yuan controls twelve. Each flowery wind warrior can be instilled with a killer move unleashed when the warrior self-detonates. Fang Yuan uses that to fire ignited thought flying rock and hundred and eighty slaves, enslaving an immemorial soul beast despite Divine Bean Palace’s tough defense.",
+      "chapters": [
+        1523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_divine_bean_palace",
+        "char_fang_di_chang",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan notes that without flowery wind warriors’ ability to store killer moves and use multiple at once, he could not have obtained the immemorial soul beasts so readily.",
+      "chapters": [
+        1524
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "storage-value",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When remaining flowery wind warriors self-detonate, the peach forest’s petals disintegrate and the maze can no longer summon flowery wind warriors.",
+      "chapters": [
+        1526
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "peach-forest-end",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Di Chang later offers to use peach blossom maze’s variation move and summon flowery wind warriors again so Fang Yuan can unleash methods without going outside.",
+      "chapters": [
+        1528
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "variation-offer",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/flowery-wind-warriors/",
+      "chapters": [
+        1523,
+        1524,
+        1526,
+        1528
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Derived from": {
+      "text": "Peach Blossom Maze",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Di Chang Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "res_fan_door_wind",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fan door wind",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fan door wind is a rank seven immortal material that grows on the doors of mortal homes and forces those doors to stay open.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1403,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1403,
+    1489,
+    1546
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_self_love_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_self_love_immortal_gu",
+      "count": 4
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fan door wind is a rank seven immortal material. It does not grow in deep forests, mountains, or the sky; it grows in the doors of mortal homes. When it forms, the mortal’s door cannot close and can only stay open. That phenomenon draws Gu Masters and Gu Immortals to collect it. At first nobody understood its use, but later methods and plans make it usable.",
+      "chapters": [
+        1403
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-doorway-growth",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Lang Ya land spirit calls for five traces of fan door wind from inventory while refining Self Love Immortal Gu. Sixth Hair sends them into the center of ice fire, where they circle melting profound ice like five delicate hands until the attempt fails and the traces vanish with the broken profound ice.",
+      "chapters": [
+        1403
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "self-love-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "gu_self_love_immortal_gu",
+        "char_sixth_hair"
+      ]
+    },
+    {
+      "text": "Fan door wind is named as a special immortal material produced by humans and variant humans rather than wilderness nature. The rank seven material only grows on doors of mortal houses, and such material cannot be found in the wilderness.",
+      "chapters": [
+        1489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "human-linked-specialty",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan lists fan door wind among named winds when identifying what another wind is not.",
+      "chapters": [
+        1546
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-winds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/fan-door-wind/",
+      "chapters": [
+        1403,
+        1489,
+        1546
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Doors of mortal homes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Self Love Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

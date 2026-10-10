@@ -1,0 +1,241 @@
+{
+  "id": "gu_transfer_luck_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Transfer Luck",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Transfer Luck is a luck path Immortal Gu that appears among consecutive luck path Immortal Gu at Qin Bai Sheng's Immortal Gu auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 758,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    758,
+    760
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_leave_luck_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_seal_luck_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_break_luck",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_inspection_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/transfer-luck-gu/",
+      "chapters": [
+        758,
+        760
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_luck"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Transfer luck Gu transfers luck.",
+        "chapters": [
+          758
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "It shows up with Leave Luck, Seal Luck, and Break Luck. Sellers of those Gu ask for metal, wood, water, fire, earth, and other Immortal Gu of mainstream paths. Fang Yuan cannot meet that requirement, so he cannot join the bidding and has no chance at them.",
+        "chapters": [
+          758
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "auction",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_leave_luck_gu",
+          "gu_seal_luck_gu",
+          "gu_break_luck",
+          "sys_immortal_gu",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Later in the same auction, luck inspection Gu recipes are said to be even more useful to Gu Immortals who have already bought luck path Immortal Gu such as leave luck Gu, seal luck Gu, transfer luck Gu, and break luck Gu.",
+        "chapters": [
+          760
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "luck-inspection",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "See also Luck Inspection Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "luck-inspection",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_luck_inspection_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "id": "fac_sun_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sun Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sun clan is a Western Desert super force present in Fang Di Chang's regional assembly that peels away when trouble hits its base.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1923,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1923,
+    2251,
+    2255,
+    2259
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "fac_shi_clan",
+      "count": 2
+    },
+    {
+      "target": "house_thought_expelling_pavilion",
+      "count": 2
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "fac_mo_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_wan_hao_guang",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xiao",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Di Chang gathers Western Desert super forces toward Central Continent, Sun clan reports that a blood path demonic immortal is causing chaos in the clan. A portion of Sun clan and Mo clan leave the assembly to return to their base, and Fang Di Chang fears Heavenly Court involvement with those two clans.",
+      "chapters": [
+        1923
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "western-desert-assembly",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_di_chang",
+        "reg_western_desert",
+        "reg_central_continent",
+        "fac_mo_clan",
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Wan Hao Guang and Wan Xiao visit Sun clan headquarters and ask its first supreme elder to act against Fang clan. The elder vows to maintain righteousness, cites present difficulty, and promises to join only if Wan clan gathers other super forces. Wan Hao Guang calls him an old fox. Wan Xiao says Sun clan is the most timid among Western Desert’s super forces, and that expressing that stance is already the elder’s greatest sincerity.",
+      "chapters": [
+        2251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "most-timid-super-force",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wan_hao_guang",
+        "char_wan_xiao",
+        "fac_fang_clan",
+        "fac_wan_clan"
+      ]
+    },
+    {
+      "text": "Fang clan intelligence later places Sun clan in the Wan clan expedition alliance with Xiao clan, Qin clan, Shi clan, Gong clan, and Tang clan. Sun clan’s representative is Sun Wang, who does not have high battle strength but is extremely proficient in investigative killer moves. Western Desert’s super forces are listed as fourteen clans including Sun clan.",
+      "chapters": [
+        2255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wan-clan-expedition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xiao_clan",
+        "fac_shi_clan",
+        "fac_gong_clan",
+        "fac_tang_clan"
+      ]
+    },
+    {
+      "text": "In battle, narration says Sun clan Gu Immortals are most conservative. When Thought Expelling Pavilion shows movement toward Sun Wang, he immediately runs away with astonishing speed.",
+      "chapters": [
+        2259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conservative-flight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "house_thought_expelling_pavilion"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/sun-clan/",
+      "chapters": [
+        1923,
+        2251,
+        2255,
+        2259
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

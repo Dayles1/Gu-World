@@ -1,0 +1,205 @@
+{
+  "id": "move_self_strength_phantom",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Self Strength Phantom",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Self Strength Phantom is Hei Lou Lan's mortal killer move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 736,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    736,
+    769,
+    777,
+    1058
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_hei_lou_lan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 736,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_self_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 777,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hei_lou_lan",
+      "count": 3
+    },
+    {
+      "target": "gu_self_strength",
+      "count": 3
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "She tries to advance it to an immortal killer move. Even with that mortal foundation and her strength path attainment level, she would need at least years to reach the target. Fang Yuan, using Wisdom Gu, judges he could probably accomplish the same elevation in half a month.",
+      "chapters": [
+        736
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_wisdom_gu"
+      ]
+    },
+    {
+      "text": "She already has this mortal killer move, and even with that foundation, making it an immortal killer move is difficult. She has been trying hard at it and still has little success.",
+      "chapters": [
+        769
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-conversion",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Self Strength Immortal Gu is her vital Immortal Gu and the most important core in the killer move. Fang Yuan asks for that Gu as compensation after saving her. Without it her battle strength would fall drastically.",
+      "chapters": [
+        777
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "core-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_self_strength",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan finds it easy to modify blood path mortal killer moves into immortal killer moves. That process is unlike Hei Lou Lan in the past, who faced so much difficulty in elevating self strength phantom to immortal level.",
+      "chapters": [
+        1058
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blood-path-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/self-strength-phantom.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/self-strength-phantom/",
+      "chapters": [
+        736,
+        769,
+        777,
+        1058
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Hei Lou Lan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Self Strength",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

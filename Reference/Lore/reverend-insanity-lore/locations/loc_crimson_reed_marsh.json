@@ -1,0 +1,229 @@
+{
+  "id": "loc_crimson_reed_marsh",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Crimson Reed Marsh",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains marsh of crimson reeds that holds Qin Bai Sheng's Bai Sheng blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 678,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    678,
+    744,
+    747,
+    756
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_he_lang_zi",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_sheng_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_murong_jin_xiao",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_gong",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "house_medicine_cottage",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From the air, reeds grow with water pathways that are complex and interwoven, resembling a maze. The most eye-catching feature is the crimson red reed, not the water ducks, gulls, or fish. Countless reeds surface from the water vigorously, imposing and expanding without restraint.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hei Lou Lan tells Fang Yuan she went after Ma Hong Yun on little aunt’s information and was detected the moment she stepped into crimson reed marsh, where Hei Cheng was nearby. She names Qin Bai Sheng as the Northern Plains Gu Immortal who took Ma Hong Yun. Fang Yuan answers that if the capture is true, Gu Immortals will soon attack the marsh.",
+      "chapters": [
+        678
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_fang_yuan",
+        "char_ma_hong_yun",
+        "char_hei_cheng",
+        "char_qin_bai_sheng",
+        "reg_northern_plains",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Later the agreed auction site is Qin Bai Sheng’s Bai Sheng blessed land, situated inside the marsh.",
+      "chapters": [
+        744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_sheng_blessed_land"
+      ]
+    },
+    {
+      "text": "From the air a rank eight guest sees reeds and complex interwoven water pathways like a maze, and notes that the most eye catching feature is the crimson red reed itself. He Lang Zi also flies toward the marsh after testing Immortal Gu Heavenly Gong.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_he_lang_zi",
+        "sys_immortal_gu",
+        "gu_heavenly_gong"
+      ]
+    },
+    {
+      "text": "Nine Central Continent Gu Immortals secretly lurk near the marsh, waiting to reinforce Feng Jiu Ge.",
+      "chapters": [
+        756
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "auction-reinforcement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "char_feng_jiu_ge"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/crimson-reed-marsh.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/crimson-reed-marsh/",
+      "chapters": [
+        678,
+        744,
+        747,
+        756
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

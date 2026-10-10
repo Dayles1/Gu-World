@@ -1,0 +1,897 @@
+{
+  "id": "char_red_lotus_demon_venerable",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Red Lotus Demon Venerable",
+    "zh": "红莲魔尊",
+    "zh_source": "src_sagaofgu",
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Demon Venerable Hong Lian"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Red Lotus Demon Venerable is a Demon Venerable of the Gu World first named as Demon Venerable Hong Lian during the three kings inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 383,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    383,
+    399,
+    752,
+    830,
+    920,
+    937,
+    970,
+    1005,
+    1076,
+    1368,
+    1373,
+    1406,
+    1427,
+    1442,
+    1619,
+    1675,
+    1679,
+    1694,
+    1696,
+    1867,
+    1918,
+    1963,
+    1964,
+    2085
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_spring_autumn_cicada",
+      "role": "master",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 383,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_regret_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1649,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_future_self",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1679,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_spring_autumn_target",
+      "role": "inheritance",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1750,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_call_of_the_ancient",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_spring_autumn_success",
+      "role": "inheritance",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_red_lotus_true_inheritance",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 4
+    },
+    {
+      "target": "inh_red_lotus_true_inheritance",
+      "count": 4
+    },
+    {
+      "target": "gu_regret_gu",
+      "count": 3
+    },
+    {
+      "target": "move_future_self",
+      "count": 3
+    },
+    {
+      "target": "move_call_of_the_ancient",
+      "count": 3
+    },
+    {
+      "target": "path_time",
+      "count": 2
+    },
+    {
+      "target": "move_spring_autumn_success",
+      "count": 2
+    },
+    {
+      "target": "move_spring_autumn_target",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "house_heaven_overseeing_tower",
+      "count": 2
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 2
+    },
+    {
+      "target": "evt_era_olden",
+      "count": 2
+    },
+    {
+      "target": "char_huang_shi",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_red_lotus_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "sys_dao_guardian",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_ba_gui",
+      "count": 1
+    },
+    {
+      "target": "char_primordial_origin_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "sys_ten_extreme_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_destiny_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_door_of_life_and_death",
+      "count": 1
+    },
+    {
+      "target": "loc_old_earth_wood",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_overseeing_tower_lord",
+      "count": 1
+    },
+    {
+      "target": "loc_stone_lotus_islands",
+      "count": 1
+    },
+    {
+      "target": "char_green",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "char_da_li",
+      "count": 1
+    },
+    {
+      "target": "sys_soul_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "sys_man_soul",
+      "count": 1
+    },
+    {
+      "target": "move_life_and_death_retrieval",
+      "count": 1
+    },
+    {
+      "target": "res_time_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "loc_bright_moon_treasure_light_hall",
+      "count": 1
+    },
+    {
+      "target": "loc_central_great_hall",
+      "count": 1
+    },
+    {
+      "target": "loc_lotus_fairy_pond",
+      "count": 1
+    },
+    {
+      "target": "loc_magnetic_star_hill",
+      "count": 1
+    },
+    {
+      "target": "loc_separation_flame_pavilion",
+      "count": 1
+    },
+    {
+      "target": "loc_twelve_spiritual_pass",
+      "count": 1
+    },
+    {
+      "target": "loc_water_wood_clarity_court",
+      "count": 1
+    },
+    {
+      "target": "move_dragonman_extermination",
+      "count": 1
+    },
+    {
+      "target": "sys_ink_effect",
+      "count": 1
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "house_moment_stage",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "move_destiny_song",
+      "count": 1
+    },
+    {
+      "target": "path_human",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He is a youngster with a glossy forehead, a handsome appearance, and bright eyes. He has long black hair that reaches his waist. There is a lifelike red lotus birthmark on his forehead. He smiles and shows dazzling teeth.",
+      "chapters": [
+        1619
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As a baby his eyes shine brightly like stars. His skin is white and tender and his cheeks are chubby. A nine petaled red lotus condenses on his forehead as a birthmark.",
+      "chapters": [
+        1675
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "newborn",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He stands on the spot, lowering his arms. He is young but his back is hunched, like an old man about to die.",
+      "chapters": [
+        1964
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lowered-arms",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His name reaches a chapter title at 383 in the three kings inheritance stretch. The title pairs him with a phrase about the profound concept of the universe and gives his name in romanised Chinese as Hong Lian.",
+      "chapters": [
+        383
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-he-enters-the-story",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_arc_three_kings_inheritance"
+      ]
+    },
+    {
+      "text": "Sixteen chapters later the Spring Autumn Cicada gets a chapter under its own name.",
+      "chapters": [
+        399
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-he-enters-the-story",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_spring_autumn_cicada"
+      ]
+    },
+    {
+      "text": "When Fang Yuan exposes the Spring Autumn Cicada’s aura, Ba Gui identifies it as a time path Gu whose historical master was Demon Venerable Hong Lian, who resisted the Immortal Court and broke the chains that bound fate. Fang Yuan names him the most mysterious Demon Venerable in history, with the least records among the rank nine Venerables. In the Gu world, rank nine is Venerable. A Demon Venerable is a rank nine demonic path Gu Master; an Immortal Venerable is a rank nine righteous Gu Master.",
+      "chapters": [
+        383
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-he-enters-the-story",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_ba_gui",
+        "sys_gu_master",
+        "sys_righteous_path"
+      ]
+    },
+    {
+      "text": "Spring Autumn Cicada was Red Lotus Demon Venerable’s vital Gu.",
+      "chapters": [
+        752
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "vital-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_vital_gu"
+      ]
+    },
+    {
+      "text": "His inheritance is a time path inheritance set in the river of time, and the first condition for taking it is to hold the Spring Autumn Cicada.",
+      "chapters": [
+        830
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-clues",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan thinks again of Red Lotus Demon Venerable’s inheritance, that he must move deep into the river of time to obtain it, and wonders whether the rare one finger flow shark’s ability to swim the river of time could carry him there.",
+      "chapters": [
+        920
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "weighing-a-way-into-the-river",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Thoughts stored inside a decaying wisdom path Gu formation, left by an immortal zombie who writes under the codename Green, record that fate still exists because Red Lotus Demon Venerable did not manage to destroy it thoroughly.",
+      "chapters": [
+        937
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-record-of-undestroyed-fate",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_green"
+      ]
+    },
+    {
+      "text": "Chapter 970 is titled “Rebirth, Ghost Face, Red Lotus!”, which is the first title to put his name next to rebirth.",
+      "chapters": [
+        970
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rebirth",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shadow Sect’s success against Heavenly Court is stated to rest on Shadow Sect exploiting Red Lotus Demon Venerable’s achievement, since a fully intact fate Immortal Gu would have let Heaven Overseeing Tower halt its own strongest attack and avoid the backlash it suffers.",
+      "chapters": [
+        1005
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fate-gus-incompleteness",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "fac_heavenly_court",
+        "sys_immortal_gu",
+        "house_heaven_overseeing_tower"
+      ]
+    },
+    {
+      "text": "Sixth Hair later says Red Lotus Demon Venerable tried all his life but only broke fate Gu, unable even to destroy it or harm heaven’s will.",
+      "chapters": [
+        1076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fate-gus-incompleteness",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_sixth_hair",
+        "gu_fate_gu"
+      ]
+    },
+    {
+      "text": "While trapping Spectral Soul’s main body in a cage of air currents, Duke Long taunts him with the claim that in the past he stopped even Red Lotus Demon Venerable. The chapter gives that as Duke Long’s own boast and nothing more.",
+      "chapters": [
+        1368
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "duke-longs-claim-of-an-old-victory",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_duke_long"
+      ]
+    },
+    {
+      "text": "Narration states that only after Red Lotus Demon Venerable damaged fate Gu did souls gain the ability to remain in the outside world.",
+      "chapters": [
+        1373
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "souls-loosed-into-the-outside-world",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lord Huang Shi later calls him the absolute peak of time path, unmatched by other specialists, while seeking that inheritance.",
+      "chapters": [
+        1406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stone-lotus",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_huang_shi"
+      ]
+    },
+    {
+      "text": "Fang Yuan plans to obtain what a chapter title calls Red Lotus’ true meaning.",
+      "chapters": [
+        1427
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "stone-lotus",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Feng Jin Huang, taken as Duke Long’s second disciple, asks who the first is. Fairy Bai Qing warns her before any name is given that the matter is a taboo she must never raise at Heavenly Court, least of all in front of her master, and only when Feng Jin Huang asks why does Feng Jiu Ge answer that her senior brother was the most mysterious Red Lotus Demon Venerable in history.",
+      "chapters": [
+        1442
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "duke-longs-first-disciple-a-taboo-name",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jin_huang",
+        "char_fairy_bai_qing",
+        "char_feng_jiu_ge"
+      ]
+    },
+    {
+      "text": "At the Demon Venerable’s birth, Heavenly Court names Duke Long as his Dao Guardian. Duke Long tells the parents he will take the child as his disciple, but will bring him away only when the child is ten years old.",
+      "chapters": [
+        1675
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "birth",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_dao_guardian"
+      ]
+    },
+    {
+      "text": "The Red Lotus’ True Inheritance arc is named for the object itself.",
+      "chapters": [
+        1679
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "true-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_arc_red_lotus_true_inheritance"
+      ]
+    },
+    {
+      "text": "A chapter title frames contesting for Red Lotus’ true inheritance.",
+      "chapters": [
+        1694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "contesting-the-true-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A chapter titled “Feng Destroys Red Lotus” shows Feng Jiu Ge’s winds of assimilation devour a stone lotus island.",
+      "chapters": [
+        1696
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "feng-destroys-red-lotus",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A chapter states the succession in the Olden Antiquity Era: Limitless, then Reckless Savage and Red Lotus.",
+      "chapters": [
+        1867
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "era-succession",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_era_olden",
+        "char_reckless_savage_demon_venerable"
+      ]
+    },
+    {
+      "text": "Spring Autumn Cicada was refined by Duke Long’s disciple, Red Lotus Demon Venerable.",
+      "chapters": [
+        1918
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "duke-long-and-the-cicada",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A chapter names Feng Jiu Ge’s Red Lotus true inheritance.",
+      "chapters": [
+        1963
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "feng-jiu-ge-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_red_lotus_true_inheritance"
+      ]
+    },
+    {
+      "text": "A chapter is titled “Red Lotus’ Death”.",
+      "chapters": [
+        1964
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "red-lotus-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A late roster of the Ten Venerables places Red Lotus in the Olden Antiquity Era, one million years before the present, after Limitless and Reckless Savage.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "era-roster",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/red-lotus-demon-venerable.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/red-lotus-demon-venerable/",
+      "chapters": [
+        383,
+        399,
+        752,
+        830,
+        920,
+        937,
+        970,
+        1005,
+        1076,
+        1368,
+        1373,
+        1406,
+        1427,
+        1442,
+        1619,
+        1675,
+        1679,
+        1694,
+        1696,
+        1867,
+        1918,
+        1963,
+        1964,
+        2085
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Time path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Venerable": {
+      "text": "Number 5 of ten",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 9,
+        "as_of_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_time"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_regret_gu",
+      "role": "holder",
+      "recorded_chapter": 1649,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_spring_autumn_cicada",
+      "role": "master",
+      "recorded_chapter": 383,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "id": "fac_black_banner_troops",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Black banner troops",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "black banner elite troops"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hei tribe's elite trump card troop in the Northern Plains Imperial Court contest, led by three commanders and reinforced by battle will Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 498,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    498,
+    532,
+    533
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "gu_battle_will_gu",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_xiu_yi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_grand_white_troops",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When deployed they move like a black blade across the battlefield and ride battle horses.",
+      "chapters": [
+        532
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The text does not draw a banner design beyond the troop name.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hei Xiu Yi is named one of the three commanders of the black banner troops, a rank four upper stage defense Gu Master of Hei Lou Lan’s direct family line; without him, black banner troop battle strength would fall by at least a third.",
+      "chapters": [
+        498
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_xiu_yi",
+        "sys_gu_master",
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "Hei Lou Lan mobilizes the black banner troops when the Imperial Court field turns against him. The troop was nurtured by Hei tribe for a long time as a trump card made from huge resources. Once deployed it cuts the battlefield like a black blade through tofu. The entire troop is reinforced by battle will Gu, brave and peerless, and can display one hundred twenty percent of its original strength. Liu Wen Wu calls Hei tribe’s black banner troops renowned in northern plains, calls Liu tribe’s grand white troops a match in fame, and sets the two forces against each other.",
+      "chapters": [
+        532
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elite-trump-card",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court",
+        "fac_hei_tribe",
+        "gu_battle_will_gu",
+        "char_liu_wen_wu",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "Black banner troops and grand white troops fight as opposing forces that have contested for hundreds of years with victories and losses on both sides, unleashing killer moves without a clear advantage until Fang Yuan’s wolf group strikes the grand white from behind.",
+      "chapters": [
+        533
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rivalry-with-grand-white",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/black-banner-troops.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/black-banner-troops/",
+      "chapters": [
+        498,
+        532,
+        533
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "id": "char_sky_crown_marquis",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sky Crown Marquis",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sky Crown Marquis is a rank five righteous path Gu Master who opened the Fei Hou Mountain trade route by agreement with the monkey emperor.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 239,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    239,
+    240
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_monkey_language_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 239,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_monkey_language_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "loc_fei_hou_mountain",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Monkey groups block the caravan path on fog-covered Fei Hou Mountain, and experienced merchants treat the robbery as no surprise. Early caravans had fought wave after wave of bandit monkeys and either died or retreated, because the mountain held only those monkeys and they united against outsiders. That deadlock held until Sky Crown Marquis appeared: a rank five Gu Master of the righteous path who travelled to the peak, used a monkey language Gu, and reached an agreement with the monkey emperor. A trade route opened through the mountain for the first time and later stood among the Southern Border’s three most important east-west routes.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fei_hou_mountain",
+        "sys_gu_master",
+        "gu_monkey_language_gu",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "The text adds that as only rank five he could not slaughter the mountain. He used the bandit monkeys’ arm wrestling custom to reach the peak, beat the monkey emperor, win the groups’ approval, and open the route. From then on, caravans that pass follow that agreement: win and cross without toll, lose and yield a portion of goods.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "arm-wrestling-custom",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/sky-crown-marquis/",
+      "chapters": [
+        239,
+        240
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 239",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 239",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 239,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": "righteous path as of ch. 239",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_monkey_language_gu",
+      "role": "user",
+      "recorded_chapter": 239,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

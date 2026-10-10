@@ -1,0 +1,408 @@
+{
+  "id": "gu_time_anchor_immortal_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Time Anchor Immortal Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Time Anchor Immortal Gu is a time path Immortal Gu. It leaves a mark in the river of time, and that mark is useless alone until other time path Immortal Gu pair with it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 746,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    746,
+    819,
+    938,
+    1810
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_su_bai_man",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 746,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1810,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_su_bai_man",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "path_time",
+      "count": 2
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_landscape_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_man_as_before_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "move_spring_autumn_success",
+      "count": 1
+    },
+    {
+      "target": "move_man_as_before",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/time-anchor-immortal-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/time-anchor-immortal-gu/",
+      "chapters": [
+        746,
+        819,
+        938,
+        1810
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 6,
+        "recorded_chapter": 1810,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_time"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It resembles a water droplet that flickers with dazzling lights like a blue diamond, and it is smooth and cold to the touch.",
+        "chapters": [
+          1810
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Any useful pairing needs the marking already placed in the river of time beforehand.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Su Bai Man once held rank six Time Anchor Immortal Gu; it can anchor onto a certain period in time. After she died, Shadow Sect acquired it, and it was destroyed in the Battle of Yi Tian Mountain. Fang Yuan’s hairy man Gu Immortals refine rank six Time Anchor Immortal Gu. It can coordinate with Spring Autumn Cicada into a killer move that returns Fang Yuan to a specific marked time. Because fate Gu is injured and not destroyed, it can restrict the effectiveness of merging Time Anchor into spring autumn success; only fate Gu’s complete destruction would let that merge work fully.",
+        "chapters": [
+          1810
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "destruction-and-re-refinement",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_shadow_sect",
+          "loc_yi_tian_mountain",
+          "gu_fate_gu"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_su_bai_man",
+      "role": "unspecified",
+      "recorded_chapter": 746,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "refiner",
+      "recorded_chapter": 1810,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Tai Bai Yun Sheng brings news of it from Eastern Sea: Shark Demon’s wife Su Bai Man obtained this time path Immortal Gu after defeating strong foes.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_tai_bai_yun_sheng",
+          "reg_eastern_sea",
+          "char_shark_demon",
+          "char_su_bai_man",
+          "path_time"
+        ]
+      },
+      {
+        "text": "With Landscape as Before Gu, a mountain or river can be restored to a chosen earlier period. With Man as Before Immortal Gu, a target can theoretically be returned to that target’s body condition at a marked time, and Man as Before’s single-instant limit can be exceeded. Forming that coordination still needs many mortal Gu, and may need further Immortal Gu, as an immortal killer move rather than a bare two-Gu pairing.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pairings",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_landscape_as_before_gu",
+          "gu_man_as_before_immortal_gu",
+          "move_man_as_before",
+          "sys_mortal_gu",
+          "sys_immortal_gu"
+        ]
+      },
+      {
+        "text": "Su Bai Man obtained the Gu without knowing its use, became an immortal zombie from her injuries, and only years later learned what Time Anchor did. Shark Demon became an immortal zombie to accompany her. By then neither had left a mark before zombification.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pairings",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Later, Shark Demon’s side holds Time Anchor for use with Man as Before as a revival hope.",
+        "chapters": [
+          819
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pairings",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan lists that Man as Before plus Time Anchor pairing as the first time path revival method he collected, while calling it a conjecture that would need Shark Demon’s cooperation and heavy investment.",
+        "chapters": [
+          938
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pairings",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Shark Demon’s group also floats a workaround that uses an Immortal Gu like Spring Autumn Cicada to bring a Gu Immortal before the river of time, leave a mark upstream with Time Anchor, then use Man as Before.",
+        "chapters": [
+          746
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pairings",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_spring_autumn_cicada",
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "id": "loc_wine_pool",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wine Pool",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wine Pool is a pool that Giant Sun Immortal Venerable moved into floating scent yard in the Imperial Court sacred palace, where it produces fragrant wine at night.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 553,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    553,
+    1103,
+    2077,
+    2110
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "house_regret_pool",
+      "count": 2
+    },
+    {
+      "target": "loc_heavenly_pool",
+      "count": 2
+    },
+    {
+      "target": "char_zui_xian_weng",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "loc_wang_ting_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "An escort Gu Master shows Fang Yuan floating scent yard while touring the sacred palace in Imperial Court blessed land, and names the wine pool beside a meat forest that Giant Sun also moved there. Every morning the meat forest produces meat fruits.",
+      "chapters": [
+        553
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_fang_yuan",
+        "loc_wang_ting_blessed_land"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because chapter 553 places the moved wine pool inside the sacred palace during the Imperial Court sequence. Later cites name Wine Pool among world-famous pools without seating it as a fixed five-region map landmark.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "Tai Bai Yun Sheng names three great pools famous in the history of the five regions: Heavenly Pool, Regret Pool, and Wine Pool.",
+      "chapters": [
+        1103
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-great-pools",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng",
+        "loc_heavenly_pool",
+        "house_regret_pool"
+      ]
+    },
+    {
+      "text": "Later narration again calls Wine Pool, Heavenly Pool, and Regret Pool the three legendary pools of the world, all famous in history.",
+      "chapters": [
+        2077
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "three-great-pools",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qin Ding Ling describes Zui Xian Weng as possessing one of the three pools in the world, Wine Pool, and as a food path expert.",
+      "chapters": [
+        2110
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "current-possession",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_ding_ling",
+        "char_zui_xian_weng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/wine-pool/",
+      "chapters": [
+        553,
+        1103,
+        2077,
+        2110
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "pool",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

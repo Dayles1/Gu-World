@@ -1,0 +1,238 @@
+{
+  "id": "char_sun_cu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sun Cu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "sun cu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сунь Цу",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sun Cu is a Western Desert rank six righteous path Gu Immortal who holds earth path turn rock Gu and uses it to turn desert sand into rock for building.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 425,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    425,
+    545
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_turn_rock_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 425,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_turn_rock_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_hai_shi_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan lists him when sorting Immortal Gu that could answer gruel mud Immortal Gu damage on Dang Hun Mountain: the earth path rank six Turn Rock Gu sits in the Western Desert in this rank six Gu Immortal’s hands.",
+      "chapters": [
+        425
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu",
+        "loc_dang_hun_mountain",
+        "gu_turn_rock_gu",
+        "reg_western_desert",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "His use of Turn Rock Gu for desert building makes him popular, and he receives gratitude from the people. He is kind hearted but not resolute, loves his family, and dotes on his granddaughter the most; Fang Yuan judges that holding that granddaughter hostage would make him comply.",
+      "chapters": [
+        425
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "temperament-and-risk",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He has already been a Gu Immortal for over a dozen years. Fang Yuan treats him as a veteran opponent compared with a greenhorn Tai Bai Yun Sheng.",
+      "chapters": [
+        545
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-tenure-and-opponents",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/sun-cu/",
+      "chapters": [
+        425,
+        545
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 425",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 425",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 425,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": "righteous path as of ch. 425",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_turn_rock_gu",
+      "role": "unspecified",
+      "recorded_chapter": 425,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

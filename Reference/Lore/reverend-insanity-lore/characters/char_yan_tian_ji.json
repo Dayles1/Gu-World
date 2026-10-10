@@ -1,0 +1,356 @@
+{
+  "id": "char_yan_tian_ji",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yan Tian Ji",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yan tian ji",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Янь Тянь Цзи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yan Tian Ji is Yan tribe's leader who visits Ge tribe camp near crescent lake to seek help against Water Demon Hao Ji Liu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 470,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    470,
+    472,
+    473
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_yan_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 470,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_backwater_battle_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 470,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_immobilization_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 470,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_yan_tribe",
+      "count": 4
+    },
+    {
+      "target": "gu_backwater_battle_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_immobilization_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 2
+    },
+    {
+      "target": "char_yan_cui_er",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "gu_location_swap_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He arrives at Ge tribe camp as Yan tribe leader Lord Yan Tian Ji, riding with elders after Ge tribe has just set up near crescent lake. He reads the wolf footprints into that camp as proof that an enslavement path Gu Master is there, and he treats that Gu Master as the aid he needs against Water Demon Hao Ji Liu. His daughter Yan Cui Er is Liu Wen Wu’s fiancée, and he plans to use Liu Tribe’s name so that Ge Guang’s Ge tribe cannot refuse reinforcements for the heroes assembly.",
+      "chapters": [
+        470
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ge_tribe",
+        "fac_yan_tribe",
+        "loc_crescent_lake",
+        "sys_gu_master",
+        "char_hao_ji_liu",
+        "char_yan_cui_er",
+        "char_liu_wen_wu",
+        "fac_liu_tribe",
+        "char_ge_guang"
+      ]
+    },
+    {
+      "text": "Yan tribe’s elder states that Hao Ji Liu kidnapped Yan Cui Er, hides in crescent lake, and extorts the tribe, and that Yan tribe’s own rescue attempts failed. After Ge Guang refuses for lack of strength, Yan Tian Ji presses again with the Liu Wen Wu tie, then follows Ge Guang to ask Chang Shan Yin for help once that name is revealed. At the lake edge he brings a rank five storage Gu and rank five backwater battle Gu, demands to see his daughter first, cooperates so Hao Ji Liu can refine those Gu, then signals the strike once an immobilization Gu flies from the storage Gu.",
+      "chapters": [
+        470
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "help-against-water-demon",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "sys_storage_gu"
+      ]
+    },
+    {
+      "text": "Narration classes him with Hao Ji Liu as two rank four Gu Masters among Yan tribe’s higher-ups and a dozen or so rank three Gu Masters. Fang Yuan’s past-life memory calls Yan Tian Ji extremely conservative and lacking initiative when Yan tribe stalls inside a defensive shell instead of breaking out early. As Ge tribe closes the encirclement and the wolf pressure mounts, Yan Tian Ji shouts for the charge to continue while his primeval essence is already less than half.",
+      "chapters": [
+        472
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-and-the-lakeside-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When elders die around him he curses Chang Shan Yin and names Liu Wen Wu as the hope of revenge. Fang Yuan has a night wolf myriad beast king strike him; with his primeval essence already spent, the blow breaks almost all his bones and he lands smashed, no longer breathing. Ge tribe’s battle hall elder then reports Yan tribe’s higher-ups exterminated, Yan Tian Ji’s letter Gu blocked, and the camp still unaware, so the assault on camp can begin.",
+      "chapters": [
+        473
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-beside-the-lake",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation body text writes Yan Tian Ji and Yan tribe leader Yan Tian Ji.",
+      "chapters": [
+        470
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation does not print Chinese characters for the personal name.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/yan-tian-ji.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yan-tian-ji/",
+      "chapters": [
+        470,
+        472,
+        473
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 472",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Yan Tribe as of ch. 470",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 472,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_backwater_battle_gu",
+      "role": "unspecified",
+      "recorded_chapter": 470,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_immobilization_gu",
+      "role": "unspecified",
+      "recorded_chapter": 470,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

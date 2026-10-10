@@ -1,0 +1,129 @@
+{
+  "id": "char_barbarian_jiu_lie",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Barbarian Jiu Lie",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Barbarian Jiu Lie is a rank eight Gu Immortal named in a food path inheritance trap as the one who imprisoned its keeper for food path instead of killing him.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1014,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1014
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "inh_food_path_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside a food path inheritance, the trapped inheritor tells Spectral Soul the inheritance is real. He says that when he cultivated to rank eight, Barbarian Jiu Lie tried to trap him instead of killing him, after his food path. He could not beat Barbarian Jiu Lie, and Barbarian Jiu Lie could not take what he wanted easily either, so they made an agreement: the food path inheritance would pass to future humans, not to Barbarian Jiu Lie, and the inheritor must endure an eating test. After that agreement he remained trapped, and many humans came for the test, but even Barbarian Jiu Lie could not understand his true ability.",
+      "chapters": [
+        1014
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/barbarian-jiu-lie/",
+      "chapters": [
+        1014
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1014",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1014,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

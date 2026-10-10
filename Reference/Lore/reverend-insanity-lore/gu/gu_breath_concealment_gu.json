@@ -1,0 +1,488 @@
+{
+  "id": "gu_breath_concealment_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Breath Concealment Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Breath Concealment Gu is a grass Gu worn in the ear that conceals a Gu Master's aura and cultivation. Fang Yuan and Bai Ning Bing first take a pair from dark leopards near Zi You mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 229,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    228,
+    229,
+    232,
+    273,
+    280,
+    316,
+    345,
+    469,
+    477
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 229,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_bai_ning_bing",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 232,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_ning_bing",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_sun_gan",
+      "count": 2
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_tang_qing",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_demonic_path_rise",
+      "count": 1
+    },
+    {
+      "target": "fac_black_and_white_twin_demons",
+      "count": 1
+    },
+    {
+      "target": "sys_cross_region_rank_suppression",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_howl_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [
+    {
+      "topic": "Form and early rank",
+      "positions": [
+        {
+          "position": "Breath Concealment Gu taken at Zi You mountain is rank three.",
+          "support": "Chapter 229, the first naming of the Gu as rank three grass Gu.",
+          "chapters": [
+            229
+          ]
+        },
+        {
+          "position": "Fang Yuan obtained rank two breath concealment Gu at Zi You mountain and later ranked it up.",
+          "support": "Chapter 477, while he finishes refining rank five breath concealment Gu.",
+          "chapters": [
+            477
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/breath-concealment-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/breath-concealment-gu/",
+      "chapters": [
+        228,
+        229,
+        232,
+        273,
+        280,
+        316,
+        345,
+        469,
+        477
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      },
+      {
+        "rank": 5,
+        "recorded_chapter": 477,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "At rank five it is still like a purple exquisite tree leaf, only deeper purple with a slight metallic luster.",
+        "chapters": [
+          477
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-five-form",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Cited chapters describe the aura-hiding effect without naming a cultivation path for this Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is an exquisite purple leaf, a rank three grass Gu.",
+        "chapters": [
+          229
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Gu Masters can use it to conceal their aura and cultivation level, a camouflage ability to some degree.",
+        "chapters": [
+          229
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_masters"
+        ]
+      },
+      {
+        "text": "With the Gu in their ears, Fang Yuan and Bai Ning Bing hide their Gu Master aura so a village head cannot sense them, and they can disguise as mortals.",
+        "chapters": [
+          232
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing",
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "Fang Yuan’s Breath Concealment Gu sits on his left ear among his carried Gu.",
+        "chapters": [
+          273
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "When he attacks, the concealment drops and his true aura shows. He first uses Breath Concealment Gu, then loses the rank three hide once he strikes.",
+        "chapters": [
+          280
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The same overwrite recurs while he is rank three peak stage showing as middle stage until he attacks.",
+        "chapters": [
+          316
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Before the finish, he buys large numbers of low rank Gu and refinement materials while preparing to refine rank five breath concealment Gu and other Gu.",
+        "chapters": [
+          469
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-five-refinement",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "At Crescent Lake, after returning from Hu Immortal blessed land, he finishes refining and obtains rank five breath concealment Gu. He refines it in northern plains so the new Gu is born with that region’s recognition and avoids regional suppression. At rank five the Gu is still like a purple exquisite tree leaf, only deeper purple with a slight metallic luster. He uses it to hide his cultivation back to rank four middle stage while his true realm is higher. Later narration also restates the Zi You mountain find as rank two; ranking up that worm produces the rank five Gu.",
+        "chapters": [
+          477
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-five-refinement",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_crescent_lake",
+          "loc_hu_immortal_blessed_land"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 229,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_bai_ning_bing",
+      "role": "user",
+      "recorded_chapter": 232,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Near Zi You mountain, a female dark leopard dies to black-feather pythons and the male dies afterward. Fang Yuan then loots the corpses and pulls two exquisite purple leaves from the male’s left ear and the female’s right ear. The text names them Breath Concealment Gu.",
+        "chapters": [
+          228
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_zi_you_mountain",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Breath Concealment Gu is a rank three grass Gu; those finds are exquisite purple leaves. Almost all dark leopards there carry one in an ear, but the beasts move in pairs at least at thousand beast king level, so capturing them is hard, and that source is not yet widely known. In Fang Yuan’s previous life, a righteous path figure nicknamed Hunting King, Sun Gan, later hunted dark leopards for these Gu and sold them.",
+        "chapters": [
+          229
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-early-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_sun_gan"
+        ]
+      },
+      {
+        "text": "Sources conflict:",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-early-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The question is open.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-early-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Chapter 345, still before that refinement, says the Breath Concealment Gu used to hide cultivation is at rank three and could be advanced, though Fang Yuan sets that aside for a time.",
+        "chapters": [
+          345
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-early-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "No cited chapter names a rank four Breath Concealment Gu as a separate intermediate step between those statements and the later rank five product.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-early-rank",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

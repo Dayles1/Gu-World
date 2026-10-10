@@ -1,0 +1,172 @@
+{
+  "id": "loc_rotting_swamp",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rotting Swamp",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "rotten swamp"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A poison-heavy swamp Fang Yuan and Bai Ning Bing find southwest of a lava crocodile valley while scouting on the road toward Bai Gu mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 207,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    207,
+    208
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A rotting swamp whose smell is overbearing, the world of the poison. Poisonous snakes lie under tree roots, fist-sized poisonous bees fly in groups, and face-sized black spiders sit on large webs.",
+      "chapters": [
+        207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After they leave a lava crocodile king’s valley, Fang Yuan and Bai Ning Bing scout the surrounding territories for beasts they might set against each other. The southwest stretch is a rotting swamp whose smell is overbearing; it is the world of the poison. Poisonous snakes lie under tree roots, fist-sized poisonous bees fly in groups, and face-sized black spiders sit on large webs.",
+      "chapters": [
+        207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southwest-of-the-valley",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "From the swamp’s center frogs screech. Fang Yuan takes the lord of the swamp to be a rank four poison swallowing toad, a small healing Gu that feeds on poison and can absorb poison from a Gu Master. Its speed is poor, but entering the deep swamp to lure it out is hard, and without a healing Gu of their own a poisonous bite would be costly, so they do not press the search. With no suitable lure targets left, Fang Yuan plans to set off the next day and continue toward Bai Gu mountain.",
+      "chapters": [
+        207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southwest-of-the-valley",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_healing_gu",
+        "sys_gu_master",
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "When they return toward the southwest after the Xuan Yuan Divine Pheasant’s night attack, the rotten swamp is ravaged: the living environment destroyed, major forces redistributed, and poisonous beings killing each other in chaos. From the fringe they watch several short fights among snakes, moths, toads, spiders, and ants, then leave at once.",
+      "chapters": [
+        208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-pheasant-raid",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/rotting-swamp.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/rotting-swamp/",
+      "chapters": [
+        207,
+        208
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "swamp",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

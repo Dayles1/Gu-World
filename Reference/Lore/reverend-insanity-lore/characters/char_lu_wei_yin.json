@@ -1,0 +1,746 @@
+{
+  "id": "char_lu_wei_yin",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lu Wei Yin",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "lu wei yin",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Лу Вэй Инь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lu Wei Yin is Ye Fan's master, a Gu Immortal in a grey hemp garment and wide conical hat who names himself when they part in black heaven.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1409,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1409,
+    1423,
+    1537,
+    1538,
+    1548,
+    1599,
+    2153
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_benevolence_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1693,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_dreaming_gu",
+      "role": "prior owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2087,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_illusory_sand_shifting_shadow",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2048,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_all_life_is_bitter",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2055,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_suffering_loss_is_a_blessing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2055,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_fetus_earth_maze",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_paradise_earth_true_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1548,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "inh_paradise_earth_true_inheritance",
+      "count": 4
+    },
+    {
+      "target": "move_fetus_earth_maze",
+      "count": 3
+    },
+    {
+      "target": "gu_benevolence_gu",
+      "count": 3
+    },
+    {
+      "target": "move_illusory_sand_shifting_shadow",
+      "count": 3
+    },
+    {
+      "target": "move_all_life_is_bitter",
+      "count": 3
+    },
+    {
+      "target": "move_suffering_loss_is_a_blessing",
+      "count": 3
+    },
+    {
+      "target": "gu_dreaming_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 2
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 2
+    },
+    {
+      "target": "char_xia_cha",
+      "count": 2
+    },
+    {
+      "target": "race_mushroommen",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "char_yi_nan_men",
+      "count": 1
+    },
+    {
+      "target": "char_yi_yu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_tie_mian_shen",
+      "count": 1
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 1
+    },
+    {
+      "target": "move_descending_sand",
+      "count": 1
+    },
+    {
+      "target": "move_mud_piled_into_a_wall",
+      "count": 1
+    },
+    {
+      "target": "move_six_directional_maze",
+      "count": 1
+    },
+    {
+      "target": "move_three_breaths_future_vision",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_virtue_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_accumulate_virtue_gu",
+      "count": 1
+    },
+    {
+      "target": "move_virtuous_submission",
+      "count": 1
+    },
+    {
+      "target": "inh_virtue_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_luo_po_seal",
+      "count": 1
+    },
+    {
+      "target": "char_shang_hu_zhang",
+      "count": 1
+    },
+    {
+      "target": "sys_years_flow_execution_formation",
+      "count": 1
+    },
+    {
+      "target": "move_purple_star_broken_life",
+      "count": 1
+    },
+    {
+      "target": "move_yama_battlefield",
+      "count": 1
+    },
+    {
+      "target": "char_jun_shen_guang",
+      "count": 1
+    },
+    {
+      "target": "loc_blue_dragon_whale",
+      "count": 1
+    },
+    {
+      "target": "fac_southern_alliance",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "move_benevolent_equality",
+      "count": 1
+    },
+    {
+      "target": "house_divine_emperor_palace",
+      "count": 1
+    },
+    {
+      "target": "gu_hero_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_genesis_lotus_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_contented_lifestyle",
+      "count": 1
+    },
+    {
+      "target": "house_divine_emperor_city",
+      "count": 1
+    },
+    {
+      "target": "move_soul_shattering_hand",
+      "count": 1
+    },
+    {
+      "target": "move_unrestrained_heavenly_mark",
+      "count": 1
+    },
+    {
+      "target": "move_bitter_taste",
+      "count": 1
+    },
+    {
+      "target": "move_swallow_loss",
+      "count": 1
+    },
+    {
+      "target": "move_xi_xi",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_flying_earth",
+      "count": 1
+    },
+    {
+      "target": "inh_seven_ghosts_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_wu_zhen",
+      "count": 1
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_hatred_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_mushroomman_paradise",
+      "count": 1
+    },
+    {
+      "target": "res_earth_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "res_extreme_serene_mind_tea",
+      "count": 1
+    },
+    {
+      "target": "sys_four_conditions_to_become_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_ranks_and_realms",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_lord",
+      "count": 1
+    },
+    {
+      "target": "sys_pseudo_venerable",
+      "count": 1
+    },
+    {
+      "target": "loc_savage_wilderness_great_world",
+      "count": 1
+    },
+    {
+      "target": "loc_yellow_earth_great_world",
+      "count": 1
+    },
+    {
+      "target": "move_reincarnation_battlefield",
+      "count": 1
+    },
+    {
+      "target": "char_ke_xin_hong",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "move_heaven_and_earth_travel",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_battle_of_crazed_demon_cave",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_tomb_earth",
+      "count": 1
+    },
+    {
+      "target": "loc_green_lotus_great_world",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_extremity",
+      "count": 1
+    },
+    {
+      "target": "char_carefree_wisdom_heart",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ming_hao",
+      "count": 1
+    },
+    {
+      "target": "sys_carefree_wisdom_heart_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_humility_gu",
+      "count": 1
+    },
+    {
+      "target": "move_humble_reciprocation",
+      "count": 1
+    },
+    {
+      "target": "gu_pride_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_learning_gu",
+      "count": 1
+    },
+    {
+      "target": "move_endless_learning",
+      "count": 1
+    },
+    {
+      "target": "move_lingering_poisonous_ant_plague",
+      "count": 1
+    },
+    {
+      "target": "move_divine_bean_soldier",
+      "count": 1
+    },
+    {
+      "target": "move_graft_wood",
+      "count": 1
+    },
+    {
+      "target": "loc_primordial_domain",
+      "count": 1
+    },
+    {
+      "target": "sys_unification_of_three_worlds",
+      "count": 1
+    },
+    {
+      "target": "move_hu_elevation",
+      "count": 1
+    },
+    {
+      "target": "char_che_wei",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_purple_rosewood_myriad_sparrow_island",
+      "count": 1
+    },
+    {
+      "target": "res_autumn_wood_sound",
+      "count": 1
+    },
+    {
+      "target": "fac_heaven_and_earth_great_love_alliance",
+      "count": 1
+    },
+    {
+      "target": "char_shi_gua_bi",
+      "count": 1
+    },
+    {
+      "target": "move_everlasting_sorrow",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On heaven attached fungi in black heaven, Ye Fan succeeds in an aurora bird killer move built from transformation path and light path understanding. His master comments plainly. Ye Fan sees only a wide, thick chin under the hat.",
+      "chapters": [
+        1409
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_fan"
+      ]
+    },
+    {
+      "text": "The master brought Ye Fan to black heaven both because black heaven restricts Ye Fan’s light path and because he deduced karma there. When an injured upper extreme heavenly eagle arrives, he shrinks it into his palm, heals it into sleep, and tells Ye Fan to keep it by his side. When the eagle wakes, it will bring Ye Fan out of black heaven and back to Southern Border. He flies away. Ye Fan asks his name, and the voice answers that his name is Lu Wei Yin.",
+      "chapters": [
+        1409
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "He wears a grey hemp garment, simple and plain, that cannot conceal his muscular body. He wears a large, wide conical hat that covers his face in shadow and conceals his appearance. Ye Fan sees only his chin, which is wide and thick.",
+      "chapters": [
+        1409
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When he takes off the hat, he stares with wide eyes.",
+      "chapters": [
+        2153
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Fang Yuan’s group uses burning soul bursting luck to boost its luck so it escapes two pursuing Heavenly Court Gu Immortals, Lu Wei Yin saves the upper extreme heavenly eagle and strips away every investigative killer move Heavenly Court had placed on it.",
+      "chapters": [
+        1423
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "saving-the-upper-extreme-heavenly-eagle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_heavenly_court",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When Fang Yuan is about to succeed against the mortal Gu Masters, the world turns orange-yellow. He is inside an immortal battlefield killer move. A rank eight Gu Immortal shows himself, standing in front of Fang Yuan and protecting the mortals behind him. Ye Fan calls him master. Asked who he is, he names himself Lu Wei Yin and asks Fang Yuan why living beings must kill each other, and why Fang Yuan does not stop here.",
+      "chapters": [
+        1537
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shielding-the-mortals-from-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Ye Fan sees him again: grey hemp, conical hat, hidden face, wide chin. Two Yi clan Gu Immortals forced out of a lake take him for a rank eight Gu Immortal. Tie Mian Shen, grim, asks who he is: he has Southern Border aura, but is definitely not a member of the righteous path. Fang Yuan also treats him as rank eight, and notes that three breaths future vision did not warn him.",
+      "chapters": [
+        1538
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "trapping-fang-yuan-in-a-maze",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yi_clan",
+        "char_tie_mian_shen"
+      ]
+    },
+    {
+      "text": "He uses descending sand, mud piled into a wall, and six directional maze. The three rank eight killer moves fuse into fetus earth maze, a hollow-mountain maze of yellow walls that weakens attacks and steals Fang Yuan’s sense of direction.",
+      "chapters": [
+        1538
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "trapping-fang-yuan-in-a-maze",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After three lifetimes, he sighs that Fang Yuan cannot be reformed: what drives him is a goal too ingrained to eradicate. He tells everyone he failed, that this demon cannot be stopped and is about to break out, and that they should leave. Tie Mian Shen asks directly whether, with the surname Lu and skill in earth path, he is the inheritor of Paradise Earth’s true inheritance. He nods and confirms that he is. Yi clan’s Gu Immortals pay their respects. Paradise Earth Immortal Venerable had no offensive methods, and that true inheritance is the same. He is skilled at trapping and reforming enemies, which matches that specialty.",
+      "chapters": [
+        1548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lineage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_paradise_earth_true_inheritance",
+        "char_paradise_earth_immortal_venerable"
+      ]
+    },
+    {
+      "text": "A day after Fang Yuan underwent a tribulation, Lu Wei Yin half-kneels and places his palm on the ground, sensing changes in the earth qi. Next, several figures descend and land behind him, led by Xia Cha. He says with certainty that Fang Yuan placed an aperture there, absorbed heaven and earth qi, and went through a tribulation. Xia Cha’s eyes flash: she treats him as Paradise Earth’s inheritor, with earth path methods profound to that extent. The immortals behind them say that with him they will be able to find Fang Yuan.",
+      "chapters": [
+        1599
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "locating-fang-yuans-tribulation-site",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xia_cha"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/lu-wei-yin.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/lu-wei-yin/",
+      "chapters": [
+        1409,
+        1423,
+        1537,
+        1538,
+        1548,
+        1599,
+        2153
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1537",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1537,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_benevolence_gu",
+      "role": "owner",
+      "recorded_chapter": 1693,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_dreaming_gu",
+      "role": "prior owner",
+      "recorded_chapter": 2087,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

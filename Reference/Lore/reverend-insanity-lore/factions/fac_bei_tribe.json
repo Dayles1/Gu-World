@@ -1,0 +1,298 @@
+{
+  "id": "fac_bei_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bei Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mid scale Northern Plains tribe whose envoy recruits Wang tribe into an alliance with Zheng tribe and Pei tribe near crescent lake.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 477,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    477,
+    478,
+    479,
+    480,
+    481
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bei_cao_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 477,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bei_cao_chuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 481,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 4
+    },
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_pei_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_yan_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_grass_puppet_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_do_or_die_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_liu_wen_wus_gu_worm",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Bei Cao Sheng tells Wang tribe that Ge tribe has exterminated Yan Tribe.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bei_cao_sheng",
+        "fac_wang_tribe",
+        "fac_ge_tribe",
+        "fac_yan_tribe"
+      ]
+    },
+    {
+      "text": "Survivors who escaped Yan tribe go to Bei tribe for protection, so Bei tribe learns how the larger force was swallowed.",
+      "chapters": [
+        478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bei Cao Sheng is Bei tribe’s political advisor in that talk. He also names Bei tribe’s forest soldier corps as a known enslavement-path force that can face Chang Shan Yin. Wang De Dao classes Bei, Pei, and Zheng tribe as three mid scale tribes.",
+      "chapters": [
+        478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "char_wang_de_dao",
+        "fac_zheng_tribe"
+      ]
+    },
+    {
+      "text": "Ge tribe elders later call Bei tribe middle-sized with two enslavement path Gu Masters.",
+      "chapters": [
+        479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Night assault on Bei tribe camp and Ge tribe’s onward move.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "camp-assault",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan chooses Bei tribe first because its camp is closest, then means to strike Zheng tribe and Pei tribe after. Bei tribe camp sits on a cleared mound behind a tall wall with lit observation towers and wooden spikes.",
+      "chapters": [
+        479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-assault",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_pei_tribe"
+      ]
+    },
+    {
+      "text": "Ge tribe crushes Bei tribe and keeps moving toward Zheng tribe without stopping.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-assault",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Remnant Bei tribe higher-ups escape and watch Zheng tribe fall. Their leader is Bei Cao Chuan, a rank four Gu Master who had expanded Bei tribe after becoming tribe leader. He refuses a quick raid to reclaim the camp or burn Ge tribe rations, arguing that only killing Chang Shan Yin can overturn the situation while captives still live under Ge tribe.",
+      "chapters": [
+        481
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "remaining-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bei_cao_chuan",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/bei-tribe/",
+      "chapters": [
+        477,
+        478,
+        479,
+        480,
+        481
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

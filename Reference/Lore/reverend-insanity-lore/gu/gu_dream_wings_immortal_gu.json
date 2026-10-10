@@ -1,0 +1,326 @@
+{
+  "id": "gu_dream_wings_immortal_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dream Wings Immortal Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dream Wings is an Immortal Gu. It appears only in dreams, and activating it costs spirit and soul rather than immortal essence.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 398,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    398,
+    399,
+    696,
+    723,
+    730,
+    911,
+    913,
+    1685
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_feng_jin_huang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 398,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_pure_dream_reality_seeker_transformation",
+      "count": 4
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 3
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_hu_immortal_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_dream_travel",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/dream-wings-immortal-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/dream-wings-immortal-gu/",
+      "chapters": [
+        398,
+        399,
+        696,
+        723,
+        730,
+        911,
+        913,
+        1685
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 6,
+        "recorded_chapter": 913,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "When Feng Jin Huang’s soul leaves her body in a dream realm, a pair of rainbow colored feather wings unfolds on her soul’s back as dream wings Immortal Gu’s manifestation. Fang Yuan’s thought in the same stretch calls it rank six.",
+        "chapters": [
+          913
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "rank-six-soul-wing-form",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "In Spirit Affinity House tests, the observed effect expends the soul to create beautiful wings. Fairy Bai Qing later judges that this is not the Gu’s true effect.",
+        "chapters": [
+          696
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "false-observed-effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_spirit_affinity_house",
+          "char_fairy_bai_qing"
+        ]
+      },
+      {
+        "text": "Fairy Bai Qing calls it a movement Immortal Gu that lets her enter dream realms at will and prevents dream realms from influencing her.",
+        "chapters": [
+          730
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "movement-immortal-gu-judgment",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Dream wings Immortal Gu can put the user into a deep sleep at any time, attach dream wings to the soul, and let that soul roam dream realms with freedom to advance or retreat while keeping safety. Unlike Dream Travel, it does not need immortal essence to activate, so it suits cultivators who are not yet Gu Immortals.",
+        "chapters": [
+          911
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "activation-without-immortal-essence",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_dream_travel",
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_feng_jin_huang",
+      "role": "unspecified",
+      "recorded_chapter": 398,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Feng Jin Huang obtains dream wings Immortal Gu at age three while sleeping; the Gu comes to her in her dreams.",
+        "chapters": [
+          399
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_feng_jin_huang",
+          "sys_immortal_gu"
+        ]
+      },
+      {
+        "text": "During the Hu Immortal Inheritance contest she activates it and grows a beautiful pair of wings; observers name the legendary Immortal Gu Dream Wings.",
+        "chapters": [
+          398
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "inh_hu_immortal_inheritance"
+        ]
+      },
+      {
+        "text": "After a long coma tied to the Gu, Feng Jin Huang wakes and states that it can bring her into dream realms.",
+        "chapters": [
+          723
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "entry-into-dream-realms",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Pure Dream Reality Seeker Transformation is only a rank six killer move, with limited might because its core Immortal Gu, Dream Wings, is only at rank six.",
+        "chapters": [
+          1685
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pure-dream-reality-seeker-core",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "move_pure_dream_reality_seeker_transformation"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

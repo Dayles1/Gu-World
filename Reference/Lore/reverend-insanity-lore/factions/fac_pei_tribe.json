@@ -1,0 +1,283 @@
+{
+  "id": "fac_pei_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Pei Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mid scale Northern Plains tribe under Pei Yan Fei during the conflict with Ge tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 477,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    477,
+    478,
+    479,
+    482,
+    483,
+    484
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_pei_yan_fei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 478,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_pei_yan_fei",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 2
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_smoke_gu",
+      "count": 1
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_do_or_die_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_ghost_fire_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_rainbow_transformation_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swallow_wings_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_howl_gu",
+      "count": 1
+    },
+    {
+      "target": "move_golden_rainbow_strike",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Bei Cao Sheng invites Wang Tribe into an alliance of Bei, Zheng, and Pei tribe to punish Ge Tribe.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bei_cao_sheng",
+        "fac_wang_tribe",
+        "fac_ge_tribe"
+      ]
+    },
+    {
+      "text": "Wang De Dao classes Bei, Pei, and Zheng as three mid scale tribes. Bei Cao Sheng names Pei tribe leader Pei Yan Fei as a famous northern plains expert already at rank four peak stage who can bypass troops and kill an enslavement path leader.",
+      "chapters": [
+        478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wang_de_dao",
+        "char_pei_yan_fei"
+      ]
+    },
+    {
+      "text": "A Ge tribe elder later lists Pei tribe with Bei tribe and Zheng tribe in that alliance, and again names Pei Yan Fei’s rank four peak stage fame. When Ge Guang ranks the three camps, Pei tribe is the furthest after Bei tribe and Zheng tribe.",
+      "chapters": [
+        479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "three-tribe-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bei_tribe",
+        "fac_zheng_tribe",
+        "char_ge_guang"
+      ]
+    },
+    {
+      "text": "Ge tribe’s night campaign reaches Pei tribe after Bei and Zheng fall.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "night-campaign",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan plans Bei tribe first, then Zheng tribe, then Pei tribe last as the furthest of the three.",
+      "chapters": [
+        479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "night-campaign",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Ge tribe attacks Pei tribe camp, the defenders are already prepared because news leaked after Bei and Zheng fell. Pei Yan Fei fights as tribe leader on that field and forces Fang Yuan to hold one myriad wolf king back for protection.",
+      "chapters": [
+        482
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "night-campaign",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Pei tribe’s defenses break and wolves pour in. Pei Yan Fei spends heavy primeval essence holding the wall, then later stops a chase rather than risk Pei tribe again.",
+      "chapters": [
+        483
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-pullback",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Talk after the night says Bei and Zheng camps fell, Pei tribe took huge losses, and Pei Yan Fei lost a small realm of cultivation.",
+      "chapters": [
+        484
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-pullback",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/pei-tribe/",
+      "chapters": [
+        477,
+        478,
+        479,
+        482,
+        483,
+        484
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "id": "res_rule_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rule path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Rule path immortal materials are immortal materials of rule path, used in some Immortal Gu refinements alongside materials of other paths.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2247,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2247
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_rule",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_rule",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_advance_refinement_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Advance refinement Gu is a refinement path Immortal Gu. Some rule path immortal materials are needed in the process, but refinement path immortal materials remain the bulk of its components, so the recipe stays purer than Heavenly Essence Treasure Imperial Lotus.",
+      "chapters": [
+        2247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "advance-refinement-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_advance_refinement_gu",
+        "sys_immortal_gu",
+        "gu_heavenly_essence_treasure_lotus"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/rule-path-immortal-material/",
+      "chapters": [
+        2247
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Rule Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

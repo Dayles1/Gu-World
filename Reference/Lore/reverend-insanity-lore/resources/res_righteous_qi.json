@@ -1,0 +1,189 @@
+{
+  "id": "res_righteous_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Righteous qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Righteous qi is a qi path immortal material that can also form qi monsters such as a white elephant.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2109,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2109,
+    2162,
+    2182
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "res_death_qi",
+      "count": 2
+    },
+    {
+      "target": "res_life_qi",
+      "count": 2
+    },
+    {
+      "target": "res_luck_qi",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_earth_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_heaven_qi",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_xiang_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "res_astral_qi",
+      "count": 1
+    },
+    {
+      "target": "res_blood_qi",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    },
+    {
+      "target": "move_hu_elevation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Fang Yuan annexes Qi Xiang grotto-heaven, the sovereign immortal aperture first gains the largest quantity of heaven and earth qi among its new qi currents. Righteous qi then appears among immortal materials that form alongside profound yin qi, luck qi, blood qi, astral qi, domination qi, life qi, death qi, orchid vitality qi, elderly qi, and other named qi materials. Heaven and earth qi, life qi, death qi, and luck qi from that production are covered on heaven qi, earth qi, life qi, death qi, and luck qi.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-qi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_qi_xiang_grotto_heaven",
+        "sys_heaven_qi",
+        "sys_earth_qi",
+        "res_life_qi",
+        "res_death_qi",
+        "res_luck_qi"
+      ]
+    },
+    {
+      "text": "Qi monsters can be made from many kinds of qi, with temperament and strength that vary by type. Fang Di Chang faces a huge pure white elephant made from righteous qi and judges that the longer the fight lasts, the worse the position becomes. The righteous qi white elephant does not rampage at first and only stares at the beggars, then later screeches in fear and flees when charging bull qi monsters stampede nearby.",
+      "chapters": [
+        2162
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "righteous-qi-monsters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_di_chang"
+      ]
+    },
+    {
+      "text": "When Hu Land shakes, qi currents surge out in a mixed force that includes righteous qi together with evil qi, blood qi, strange qi, and others, tightly connected under Hu Land’s effect.",
+      "chapters": [
+        2182
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hu-land-surge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_land"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/righteous-qi/",
+      "chapters": [
+        2109,
+        2162,
+        2182
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

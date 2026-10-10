@@ -1,0 +1,177 @@
+{
+  "id": "loc_wu_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wu Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The mountain named as Wang Xiao's holding when that rank five demonic Gu Master reaches San Cha mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 375,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    375,
+    382
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_wang_xiao",
+      "count": 2
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_eating_ones_words_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_san_san",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Wu mountain is mysterious and illusionary, hidden in a deep layer of fog, with many small paths and only one that leads inside.",
+      "chapters": [
+        382
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A month after more established Gu Masters thicken the crowd on San Cha Mountain, Wang Xiao arrives as that mountain’s fourth rank five Gu Master. He is a demonic Gu Master and rank five poison cultivator, a true overlord of his area, and owns Wu mountain.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wang-xiao-at-san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "loc_san_cha_mountain",
+        "char_wang_xiao",
+        "sys_gu_master",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Wu mountain is a slightly famous mountain among the hundred thousand mountains of Southern Border. It is mysterious and illusionary, hidden in a deep layer of fog, with many small paths and only one that leads inside. Wang Xiao knew that path, entered, and made the mountain’s resources his alone. Like Qing Mao mountain, a famous mountain like Wu mountain has at least three to four spirit springs, plus large numbers of wild beasts and wild Gu, resources that could sustain three to four middle-size clans. Narration calls it a natural danger zone that is easy to defend, and says Wang Xiao used that defense to live as a regional emperor.",
+      "chapters": [
+        382
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mountain-hold",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "loc_qing_mao_mountain",
+        "sys_wild_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/wu-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/wu-mountain/",
+      "chapters": [
+        375,
+        382
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

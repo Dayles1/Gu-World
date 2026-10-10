@@ -1,0 +1,155 @@
+{
+  "id": "loc_fang_zhuan_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fang Zhuan Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain of cube-shaped rock where the caravan arrives after leaving Ju Yu mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 245,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    245
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_hun_mu_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xiao_yue_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_ju_yu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The rocks on the mountain are peculiar cube shapes of varying size and thickness. Da Fang clan residences use tiles, with tall walls around the village, defense towers inside the walls, and pillboxes outside.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan"
+      ]
+    },
+    {
+      "text": "Da Fang clan is a large scale clan that has lived on Fang Zhuan mountain for over a thousand years. Its residences use tiles, with tall walls around the village, defense towers inside the walls, and pillboxes outside.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "da-fang-clan-stay",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan recalls an eccentric Da Fang elder who likes wood carvings, contacts him, and sells the strange soul wood gathered earlier on Hun Mu mountain. After that stay and four more villages, the caravan draws near Xiao Yue mountain, where Fang Yuan notes talk that the southern border’s wolves live.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "da-fang-clan-stay",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_hun_mu_mountain",
+        "loc_xiao_yue_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/fang-zhuan-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/fang-zhuan-mountain/",
+      "chapters": [
+        245
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,327 @@
+{
+  "id": "move_qi_luck_sensation",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qi Luck Sensation",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qi Luck Sensation is Fang Yuan's luck path immortal investigative killer move. With qi luck Immortal Gu as the core, it senses people who are closely connected to him by luck, with clearer results at shorter range.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1150,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1150,
+    1153,
+    1160,
+    1238,
+    1239,
+    1248,
+    1253
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_qi_luck_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1150,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_unravel_mystery",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1239,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_qi_luck_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_unravel_mystery",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jun",
+      "count": 1
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 1
+    },
+    {
+      "target": "loc_turbulent_flow",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_yu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_han_li",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_hong_yi",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the turbulent flow sea area, Fang Yuan activates the immortal investigative killer move and immediately reads that his luck-linked targets are nearby inside that sea area. He obtained the move from Feng Jun’s inheritance.",
+      "chapters": [
+        1150
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_turbulent_flow",
+        "char_fang_yuan",
+        "char_feng_jun"
+      ]
+    },
+    {
+      "text": "After leaving Qing Yu blessed land, a cast as a luck path investigative killer move returns several locations across Eastern Sea, Western Desert, and Southern Border, with Eastern Sea clearest and most numerous. The investigative range is huge, but the effect is not outstanding unless Connect Luck lets him investigate across regions.",
+      "chapters": [
+        1153
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "range-and-connect-luck",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_yu_blessed_land",
+        "reg_eastern_sea",
+        "reg_western_desert",
+        "reg_southern_border",
+        "gu_connect_luck"
+      ]
+    },
+    {
+      "text": "Because of Connect Luck, he can sense and differentiate Hong Yi, Ye Fan, and Han Li across the five regions, yet Hei Lou Lan and Ying Wu Xie do not appear, so he concludes Ying Wu Xie can conceal the luck connection. Each cast still spends green grape immortal essence, so frequent use is hard to sustain.",
+      "chapters": [
+        1160
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "concealment-and-cost",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hong_yi",
+        "char_ye_fan",
+        "char_han_li",
+        "char_hei_lou_lan",
+        "char_ying_wu_xie"
+      ]
+    },
+    {
+      "text": "He later judges that, with his luck path attainment, he can pair unravel mystery Immortal Gu and dog shit luck Immortal Gu to greatly boost the move.",
+      "chapters": [
+        1238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dual-core-upgrade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_unravel_mystery",
+        "gu_dog_shit_luck"
+      ]
+    },
+    {
+      "text": "Hei Fan grotto-heaven is named as the inheritance source, and Ying Wu Xie can negate part of the effect or hide inside an immortal aperture to cut detection. Fang Yuan adds Unravel Mystery so the killer move has two cores, triples the Gu count, and after days of deduction produces a relatively perfect version whose first successful cast gives clearer locations, including Ye Fan on Shang Liang Mountain.",
+      "chapters": [
+        1239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dual-core-upgrade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hei_fan_grotto_heaven",
+        "loc_shang_liang_mountain"
+      ]
+    },
+    {
+      "text": "Later, when he prepares to strike, a fresh cast shows Ying Wu Xie and the rest have left Southern Border for Eastern Sea.",
+      "chapters": [
+        1248
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dual-core-upgrade",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ying Wu Xie’s plan misleads the move. To Fang Yuan it seems that qi luck sensation can detect a target but can also be misled.",
+      "chapters": [
+        1253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "misled-by-a-decoy-formation",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/qi-luck-sensation/",
+      "chapters": [
+        1150,
+        1153,
+        1160,
+        1238,
+        1239,
+        1248,
+        1253
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Qi Luck Immortal Gu Unravel Mystery",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

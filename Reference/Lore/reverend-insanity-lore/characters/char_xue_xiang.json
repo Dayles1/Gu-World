@@ -1,0 +1,307 @@
+{
+  "id": "char_xue_xiang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xue Xiang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xue xiang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сюэ Сян",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xue Xiang is one of the Heaven Surveying Five Xiangs. Xue clan descends from that line and cultivates blood path.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1035,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1035,
+    1636,
+    1637,
+    1814
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_xue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1035,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_xue_clan",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_chi_xiang",
+      "count": 2
+    },
+    {
+      "target": "char_ni_xiang",
+      "count": 2
+    },
+    {
+      "target": "char_qi_xiang",
+      "count": 2
+    },
+    {
+      "target": "fac_heaven_surveying_five_xiangs",
+      "count": 2
+    },
+    {
+      "target": "char_murong_jin_xiao",
+      "count": 1
+    },
+    {
+      "target": "char_qi_zai",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "inh_qi_xiang_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_qi_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Qi Zai lists Qi Xiang, Ni Xiang, Bai Xiang, Xue Xiang, and Chi Xiang as the Heaven Surveying Five Xiangs, five publicly recognized Southern Border Gu Immortal experts who had rank eight cultivation, often collaborated, and explored white heaven and black heaven together.",
+      "chapters": [
+        1035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_zai",
+        "char_qi_xiang",
+        "char_ni_xiang",
+        "char_chi_xiang",
+        "fac_heaven_surveying_five_xiangs",
+        "reg_southern_border",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Qi Zai says that among the Five Xiangs’ descendants over the last few thousand years, Xue Xiang’s descendants cultivate blood path and are almost wiped out. By then the five ancestors have already died long ago, while their thousand year bet among descendants continues.",
+      "chapters": [
+        1035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blood-path-descendants",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the Five Xiangs gatehouse shines in five colors, red light is Xue Xiang’s Xue clan. Because that line cultivated blood path and had been wiped out, the red light fades after shining around the place.",
+      "chapters": [
+        1636
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gatehouse-and-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xue_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan later restates the Five Xiangs as Qi Xiang, Bai Xiang, Xue Xiang, Ni Xiang, and Chi Xiang, in qi path, ice path, blood path, earth path, and food path respectively, and says the gatehouse into their public grotto-heaven was created by all five with fused power.",
+      "chapters": [
+        1637
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gatehouse-and-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Hei Lou Lan approaches the gatehouse, red light surrounds her and fades rapidly, acknowledging her identity. Qi clan Gu Immortals ask whether she is really a descendant of Xue Xiang’s Xue clan.",
+      "chapters": [
+        1814
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bloodline-recognition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "fac_qi_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xue-xiang/",
+      "chapters": [
+        1035,
+        1636,
+        1637,
+        1814
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1035",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Blood path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Xue Clan as of ch. 1035",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1035,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_blood"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,245 @@
+{
+  "id": "char_yi_bu_hui",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yi Bu Hui",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yi bu hui",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "И Бу Хуй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yi Bu Hui is a Yi clan elder named among the notables who arrive at a large Shang Clan City auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 306,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    307,
+    308
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_yi_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 306,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_chasing_wind_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 307,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_yi_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_chasing_wind_gu",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fei_luan_feng",
+      "count": 2
+    },
+    {
+      "target": "fac_fei_clan",
+      "count": 2
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "gu_atmosphere_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When chasing wind Gu’s price rises to three hundred and fifty thousand, only two Gu Masters remain competing. One is Yi clan elder Yi Bu Hui, and the other is Fei clan elder Fei Luan Feng. The text notes Yi clan and Fei clan did not have a good relationship, and the two compete as sparks arise. Yi Bu Hui eventually buys the Gu for four hundred and forty thousand.",
+      "chapters": [
+        307
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-rivalry-and-purchase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_chasing_wind_gu",
+        "fac_gu_masters",
+        "fac_yi_clan",
+        "fac_fei_clan",
+        "char_fei_luan_feng"
+      ]
+    },
+    {
+      "text": "When Atmosphere Gu opens at a base bid of two hundred and sixty thousand primeval stones, Yi clan elder Yi Bu Hui bids three hundred thousand first. Fei clan elder Yan Luan Feng answers with three hundred and fifty thousand.",
+      "chapters": [
+        308
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "atmosphere-gu-bid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_atmosphere_gu"
+      ]
+    },
+    {
+      "text": "Shang Xin Ci later weighs that Yi clan and Fei clan elders might compete and push that Gu’s price higher if the bid stayed lower.",
+      "chapters": [
+        308
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "atmosphere-gu-bid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yi-bu-hui/",
+      "chapters": [
+        307,
+        308
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Yi Clan as of ch. 306",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_chasing_wind_gu",
+      "role": "holder",
+      "recorded_chapter": 307,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,319 @@
+{
+  "id": "fac_guan_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Guan Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe first named when Dong Fang Yi Kong ranks its Shi Huang blessed land above Jade Pool in productivity.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 657,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    657,
+    795,
+    1084,
+    1103,
+    1193
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_guan_shen_zhao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1103,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_guan_chou",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1107,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_guan_shen_zhao",
+      "count": 4
+    },
+    {
+      "target": "char_guan_chou",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 2
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_shi_huang_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_yuan_tribe",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_yin_yang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "char_lu_qing_ming",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_traveling_three_elites",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_red_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_nu_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 1
+    },
+    {
+      "target": "fac_nian_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Jade Pool blessed land, Dong Fang Yi Kong welcomes visiting righteous path Gu Immortals, and Guan Shen Zhao is among those guests, addressed as Lord Guan Shen Zhao in that welcome.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-at-jade-pool",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_jade_pool_blessed_land",
+        "char_dong_fang_yi_kong",
+        "sys_gu_immortal",
+        "char_guan_shen_zhao"
+      ]
+    },
+    {
+      "text": "Most super forces keep a main camp pieced together from Gu Immortals’ contributions. Guan tribe’s Shi Huang blessed land is named with Dong Fang tribe’s Jade Pool, Murong tribe’s Yin-Yang, and Hei Tribe’s Iron Eagle as that kind of camp.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-among-peer-forces",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shi_huang_blessed_land",
+        "fac_dong_fang_tribe",
+        "fac_murong_tribe",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "Lang Ya land spirit picks one of the ten great fierce areas of Northern Plains for a plan of Fang Yuan’s, southeast of Guan tribe and northwest of Liu tribe.",
+      "chapters": [
+        1084
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fierce-area-to-the-southeast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "reg_northern_plains",
+        "char_fang_yuan",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "Guan Shen Zhao claims a Hei tribe wheat field for Guan tribe and is identified as a Guan tribe Gu Immortal of a Huang Jin family super force. Nearby talk places Liu tribe, Guan tribe, and Yao tribe as the closest super forces to Hei tribe. Later on an ordinary plain, Guan tribe fields three Gu Immortals opposite Liu tribe’s two while competing over a fragment of immemorial red heaven, and Guan tribe’s third supreme elder holds Guan Shen Zhao back from a rash attack after an earlier golden wheat field loss.",
+      "chapters": [
+        1103
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline",
+        "fac_yao_tribe"
+      ]
+    },
+    {
+      "text": "When Huang Jin tribes appear in turn, Guan tribe is listed with Liu tribe, Ye Lui tribe, Chanyu tribe, Meng tribe, Yuan tribe, Nian Er tribe, and Murong tribe as Huang Jin super forces that rule territories in Northern Plains.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "huang-jin-gathering",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ye_lui_tribe",
+        "fac_chanyu_tribe",
+        "fac_meng_tribe",
+        "fac_yuan_tribe",
+        "fac_nian_er_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/guan-tribe/",
+      "chapters": [
+        657,
+        795,
+        1084,
+        1103,
+        1193
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

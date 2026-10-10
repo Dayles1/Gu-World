@@ -1,0 +1,124 @@
+{
+  "id": "res_mirror_willow_leaves",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mirror willow leaves",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "mirror willow leaf"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mirror willow leaves, shaped like pieces of mirror, are the food of Beggar Moth.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 654,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    654,
+    827
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_beggar_moth",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Mirror willows are ordinary plants, about the size of ordinary willow trees, but their leaves are like pieces of mirrors. These leaves are the food of Beggar Moth. Fang Yuan purchases a batch of mirror willows from Immortal Crane Sect during the rockmen transactions and plants them in Hu Immortal blessed land. He picks one of them for Mo Yao’s will, who says the death energy of his dead immortal aperture will corrode it into a dead tree in under three days.",
+      "chapters": [
+        654
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "food-of-beggar-moth",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_beggar_moth",
+        "char_fang_yuan",
+        "fac_immortal_crane_sect",
+        "loc_hu_immortal_blessed_land",
+        "char_mo_yao"
+      ]
+    },
+    {
+      "text": "The small batch of mirror willows is already dead, and the Beggar Moth that had been eating mirror willow leaves as food have no further use, so the moths are sold off.",
+      "chapters": [
+        827
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "a-dead-stock-sold-off",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/mirror-willow-leaves.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/mirror-willow-leaves/",
+      "chapters": [
+        654,
+        827
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Mirror willow, an ordinary plant about the size of an ordinary willow tree",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

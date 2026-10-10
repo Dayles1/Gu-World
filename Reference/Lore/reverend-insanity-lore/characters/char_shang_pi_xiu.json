@@ -1,0 +1,242 @@
+{
+  "id": "char_shang_pi_xiu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Pi Xiu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shang pi xiu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Шан Пи Сю",
+    "ru_status": "transliteration",
+    "aliases": [
+      "twenty-first son Shang Pi Xiu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shang Pi Xiu is Shang Yan Fei's twenty-first son and a contesting Shang clan young master who manages the rock gambling dens of Shang clan city.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 269,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    269,
+    305,
+    326
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 269,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shang_clan",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He arrives at Shang Yan Fei’s clan banquet in Shang clan city among the young masters who appear after Wei Yang’s first round of introductions. He is the youngest among those present and a late bloomer.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "loc_shang_clan_city",
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan’s private count of the ten contesting young masters places him outside the three main factions, with great talent but as too scheming.",
+      "chapters": [
+        305
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When advising Shang Xin Ci on invitations, Fang Yuan again keeps him outside those three blocs and calls him too playful.",
+      "chapters": [
+        326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "In that memory, many years later, when Shang clan falls into ruins, Shang Pi Xiu throws himself into the demonic path and becomes a devil whose evil reputation spreads far over the southern border.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "post-fall-reputation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shang-pi-xiu/",
+      "chapters": [
+        269,
+        305,
+        326
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shang Clan as of ch. 269",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

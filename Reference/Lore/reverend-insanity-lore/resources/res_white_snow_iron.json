@@ -1,0 +1,168 @@
+{
+  "id": "res_white_snow_iron",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "White snow iron",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Heavenly white snow iron"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "White snow iron is a rank eight metal path immortal material that forms in rooster iron mines.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1890,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1890,
+    2076
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_metal",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_metal",
+      "count": 1
+    },
+    {
+      "target": "res_rooster_iron",
+      "count": 2
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_lady_white_rabbit",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    },
+    {
+      "target": "res_black_yellow_heart",
+      "count": 1
+    },
+    {
+      "target": "res_earth_blood_veins",
+      "count": 1
+    },
+    {
+      "target": "res_lightning_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_water_path_crystal_essence",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Rooster iron only exists in mines exposed to open air. Across a wide span of that iron, wind resonance produces the rank eight immortal material heavenly white snow iron. On an Eastern Sea island, explorers find a huge open pit tens of li wide and hundreds of feet deep that once held rank seven rooster iron, with only fragments left behind.",
+      "chapters": [
+        1890
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rooster-iron-resonance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_rooster_iron",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "White snow iron appears as a pure white iron lump whose aura is stronger than rank seven domination copper, and it is recognized as a rank eight immortal material. It normally only appears in rooster iron mines, so lone white snow iron outside that setting is strange. It is named among metal path immortal materials. In the same underground cache, crystal essence is first judged highest in quantity, with water path and lightning path crystal essences named when Black Tigress guesses at Hu Land; those essences are covered on water path crystal essence and lightning path crystal essence. Further search finds earth blood veins and a black-yellow heart in that vault; those finds are covered on earth blood veins and black-yellow heart.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "metal-path-lump",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lady_white_rabbit",
+        "loc_hu_land",
+        "res_water_path_crystal_essence",
+        "res_lightning_path_crystal_essence",
+        "res_earth_blood_veins",
+        "res_black_yellow_heart"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/white-snow-iron/",
+      "chapters": [
+        1890,
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Metal Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Rooster iron mines",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "id": "res_wind_path_qi_current",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wind path qi current",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "wind path qi current immortal materials"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wind path qi current is a wind path qi current immortal material that would strongly favor Clear Jade Dripping Wind Tiny Bamboo Building.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1999,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1999
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wind",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wind",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "house_clear_jade_dripping_wind_tiny_bamboo_building",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_jue_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside the berserk Qi Jue grotto-heaven, qi currents strike at rank eight Immortal Gu Houses with dense dao marks, making the environment dangerous. Wu Yong notes that if wind path qi current immortal materials were present there, Clear Jade Dripping Wind Tiny Bamboo Building would face far less danger. The surrounding currents include lightning qi, sharp blade qi, black hard qi, and dark death qi at rank eight level; this wind path stock is named separately from those other qi currents.",
+      "chapters": [
+        1999
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-qi-currents",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_jue_grotto_heaven",
+        "sys_immortal_gu_house",
+        "char_wu_yong",
+        "house_clear_jade_dripping_wind_tiny_bamboo_building"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/wind-path-qi-current/",
+      "chapters": [
+        1999
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wind Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

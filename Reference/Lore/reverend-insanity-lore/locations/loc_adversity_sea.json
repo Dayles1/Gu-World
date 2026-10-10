@@ -1,0 +1,159 @@
+{
+  "id": "loc_adversity_sea",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Adversity Sea",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Adversity sea is the Eastern Sea place named in a wisdom path saying as the dwelling of Dragon Head Tortoise Immortal.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 899,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    899,
+    903,
+    1296
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "char_dragon_head_tortoise",
+      "count": 1
+    },
+    {
+      "target": "char_hua_an",
+      "count": 1
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_nan_gong_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Eastern Sea names three top wisdom path Gu Immortals in a saying: Jia Dan sits in twin polar, Hua An hides in Nan Gong, there is also Dragon Head Tortoise, living inside adversity sea. Song Yi Shi’s party treats Dragon Head Tortoise Immortal in adversity sea as one possible equal to Song Jia Dan who could help someone evade his deductions.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "sys_gu_immortal",
+        "char_song_jia_dan",
+        "char_hua_an",
+        "fac_nan_gong_clan",
+        "char_dragon_head_tortoise",
+        "char_song_yi_shi"
+      ]
+    },
+    {
+      "text": "A golden-robed Gu Immortal repeats the same saying as referring to the three best wisdom path experts in Eastern Sea, with Song Jia Dan ranked highest.",
+      "chapters": [
+        903
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "among-eastern-sea-experts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration repeats the saying and adds that Dragon Head Tortoise was always inside adversity sea, his traces hard to find, so people find it hard to seek help from him.",
+      "chapters": [
+        1296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hard-to-seek",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/adversity-sea/",
+      "chapters": [
+        899,
+        903,
+        1296
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "sea",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

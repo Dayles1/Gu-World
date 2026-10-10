@@ -1,0 +1,226 @@
+{
+  "id": "char_yun_liang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yun Liang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yun liang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Юнь Лян",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Cloud Gentleman Cloud Gentleman Yun Liang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yun Liang is a Northern Plains lone cultivator nicknamed Cloud Gentleman who contests affinity wood with Murong Qing Si.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1106,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1106,
+    1444,
+    1445,
+    1446
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_murong_qing_si",
+      "count": 2
+    },
+    {
+      "target": "gu_soul_lantern_gu",
+      "count": 2
+    },
+    {
+      "target": "res_affinity_wood",
+      "count": 1
+    },
+    {
+      "target": "gu_life_tablet_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He is named Yun Liang, known as Cloud Gentleman. He arrives before Murong Qing Si at affinity wood, concentrates on collecting it, then spars with her on terms that let her take half; both leave satisfied.",
+      "chapters": [
+        1106
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_murong_qing_si"
+      ]
+    },
+    {
+      "text": "He is a famous Northern Plains lone cultivator with the nickname Cloud Gentleman. Longevity Heaven approves his marriage to Murong Qing Si.",
+      "chapters": [
+        1444
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "marriage-approval",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "fac_longevity_heaven"
+      ]
+    },
+    {
+      "text": "On the day he is to propose at Murong tribe, Murong Qing Si’s life tablet Gu and soul lantern Gu for him shatter. She follows his route and finds a ruined battlefield with signs of a huge fight, and calling his name brings no answer.",
+      "chapters": [
+        1445
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_murong_tribe",
+        "gu_soul_lantern_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan reads the killing as Heavenly Court wrecking Longevity Heaven’s preparation: Longevity Heaven had agreed to the marriage of this lone immortal and Murong Qing Si and shown joy at it, and Heavenly Court moved to wreck that plan.",
+      "chapters": [
+        1446
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "plot-against-the-marriage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_heavenly_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yun-liang/",
+      "chapters": [
+        1106,
+        1444,
+        1445,
+        1446
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

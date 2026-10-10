@@ -1,0 +1,504 @@
+{
+  "id": "fac_yi_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yi Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border overlord first seen when its flying blue whale caravan arrives over Shang Liang mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 260,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    260,
+    307,
+    308,
+    345,
+    353,
+    1093,
+    1321,
+    1377,
+    1533
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yi_bu_hui",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 306,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yi_chong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 345,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yi_nan_men",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1533,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yi_yu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1533,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yi_bu_hui",
+      "count": 4
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 4
+    },
+    {
+      "target": "char_yi_nan_men",
+      "count": 4
+    },
+    {
+      "target": "house_bay_pavilion",
+      "count": 3
+    },
+    {
+      "target": "char_yi_yu",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_fei_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_whale_enslavement_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fei_luan_feng",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_tian_jing_island",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "gu_chasing_wind_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_li_xian",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_sky_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_sky_well_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sky_well_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_luo_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xia_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_hou_clan",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 1
+    },
+    {
+      "target": "move_boundless_sea_and_sky",
+      "count": 1
+    },
+    {
+      "target": "move_water_life_resurrection",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "loc_smoky_warm_jade_field",
+      "count": 1
+    },
+    {
+      "target": "char_lu_wei_yin",
+      "count": 1
+    },
+    {
+      "target": "path_space",
+      "count": 1
+    },
+    {
+      "target": "char_fang_dong_xi",
+      "count": 1
+    },
+    {
+      "target": "char_mo_li",
+      "count": 1
+    },
+    {
+      "target": "loc_sand_heap_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Yi clan’s caravan arrives as a giant flying blue whale, huge like a small mountain, that swims through the air and holds the caravan inside its body; in the southern border only Yi clan owns flying blue whales.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yi clan’s Immortal Gu House Bay Pavilion is not tall, with only two stories and a flat look. It has ocean blue tiles and looks like a hawk spreading its wings, with golden islands portrayed on white walls and blue waves painted on the exposed columns, in Eastern Sea style.",
+      "chapters": [
+        1377
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_bay_pavilion",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "Yi clan is one of the overlords of the southern border, almost the same status as Shang clan, with a close relationship to forces in the eastern seas. Flying blue whales live above the nine heavens of the eastern seas; Gu Masters often control them with whale enslavement Gu for caravan travel, and in the entire southern border only Yi clan owned them. A flying blue whale consumes up to five hundred kilograms of food a day, so only a large clan can keep them. Street talk expects the market to fluctuate, claims Yi clan brought a rank five Gu to auction on Shang Liang mountain, and ties the caravan to eastern seas specialties.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-ties",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "fac_gu_masters",
+        "gu_whale_enslavement_gu",
+        "loc_shang_liang_mountain"
+      ]
+    },
+    {
+      "text": "At a later Shang auction, Yi clan elder Yi Bu Hui and Fei clan elder Fei Luan Feng are the two Gu Masters left competing on one lot, and Yi clan and Fei clan did not have a good relationship as the two competed.",
+      "chapters": [
+        307
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "elders-at-shang-auctions",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_bu_hui",
+        "fac_fei_clan",
+        "char_fei_luan_feng"
+      ]
+    },
+    {
+      "text": "Yi Bu Hui opens bidding on one lot at three hundred thousand, and Shang Xin Ci later weighs Yi clan and Fei clan elders as rivals who might push a price higher.",
+      "chapters": [
+        308
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elders-at-shang-auctions",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "At San Cha mountain, Yi clan elder Yi Chong is one of four rank four peak stage Gu Masters holding the top caves near the inheritance entrances.",
+      "chapters": [
+        345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "elders-at-shang-auctions",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "char_yi_chong"
+      ]
+    },
+    {
+      "text": "Fang Yuan tells Li Xian that in Southern Border only Yi clan might hold sky well Gu, a natural Gu found only on Eastern Sea’s Tian Jing island. He ranks Yi clan with Shang clan, Wu clan, and Tie clan as a top clan with a very close relation to Eastern Sea’s forces, says Yi clan’s businesses are very prosperous and second only to Shang clan, and notes that their flying blue whale caravan could move through the sky when even Shang clan did not have that method.",
+      "chapters": [
+        353
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "trade-reach-and-eastern-sea-goods",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_li_xian",
+        "reg_southern_border",
+        "loc_tian_jing_island",
+        "fac_wu_clan",
+        "fac_tie_clan"
+      ]
+    },
+    {
+      "text": "Southern Border sells blue sea cloud tea bricks that come from Eastern Sea. Yi clan, named as one of the super forces of Southern Border with a close Eastern Sea relationship, imports huge numbers of those bricks each year and sells them for great profits.",
+      "chapters": [
+        1093
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blue-sea-cloud-tea-bricks",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yi clan headquarters are in Lin Chi Mountain, in the north-east corner of Southern Border and the closest to Eastern Sea, with all sorts of close Eastern Sea connections. Wu clan sits toward the southwest of Southern Border; those locations keep Yi and Wu on good terms, Yi clan does not join other clans in creating difficulties for Wu, and Wu still sends a Gu Immortal to Yi clan second supreme elder’s birthday banquet to preserve that relation.",
+      "chapters": [
+        1321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-long-range-travel",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Bay Pavilion is one of Yi clan’s Immortal Gu Houses, ocean-blue in style, and its strongest ability is long-range travel that can shoot through over seventy thousand li.",
+      "chapters": [
+        1377
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-long-range-travel",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yi clan is again placed in Southern Border’s north-east corner with a close Eastern Sea relation when that house appears.",
+      "chapters": [
+        1377
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-long-range-travel",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yi Nan Men states that Yi clan is most skilled at water path.",
+      "chapters": [
+        1533
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "water-path-skill",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_nan_men"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/yi-clan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yi-clan/",
+      "chapters": [
+        260,
+        307,
+        308,
+        345,
+        353,
+        1093,
+        1321,
+        1377,
+        1533
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

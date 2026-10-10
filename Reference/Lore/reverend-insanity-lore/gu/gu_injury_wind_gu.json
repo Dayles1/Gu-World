@@ -1,0 +1,213 @@
+{
+  "id": "gu_injury_wind_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Injury Wind Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Injury Wind Gu whips up injury wind that looks light and harmless but is extremely terrifying in a fight.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 341,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    341
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_wei_wu_shang",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 341,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wei_wu_shang",
+      "count": 4
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "fac_heavens_envy_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/injury-wind-gu/",
+      "chapters": [
+        341
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "When activated, the Gu creates a colorless breeze that revolves around the user. Lord Sky Crane names that breeze injury wind: it looks light and harmless, but it is extremely terrifying, and he tells Fang Zheng to defend with all his might.",
+        "chapters": [
+          341
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_lord_sky_crane"
+        ]
+      },
+      {
+        "text": "Wherever injury wind blows, ironbeak flying cranes cry out in pain and crash down as if their wings are broken. When it blows on Fang Zheng, the defensive light around his body flickers while he abandons attack and pours primeval essence into defense. Wei Wu Shang stops activating the Gu when his aperture is close to drying up, then concedes the spar.",
+        "chapters": [
+          341
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_wei_wu_shang",
+      "role": "user",
+      "recorded_chapter": 341,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "At Tian Ti mountain, Wei Wu Shang keeps Injury Wind Gu hidden and brings it out as a trump card while sparring with Fang Zheng.",
+        "chapters": [
+          341
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_tian_ti",
+          "char_wei_wu_shang",
+          "char_fang_zheng"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "id": "sys_rank_one",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rank One",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "rank 1"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The nine-rank cultivation ladder starts at rank one, conferred when the aperture opens. Its primeval essence is green copper.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 7,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    4,
+    7,
+    22,
+    26,
+    230,
+    275
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_d_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "sys_rank_one_through_rank_five",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "With the coagulation of the primeval sea after the Awakening Ceremony, new students are rank one Gu Masters, starting at initial stage.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_awakening_ceremony",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Gu Masters are divided into nine ranks of great realms, and each great realm has four small realms: initial, middle, upper, and peak stage.",
+      "chapters": [
+        230
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Masters at rank one produce green copper primeval essence.",
+      "chapters": [
+        22
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A D grade talent raised for three years can become a rank one senior Gu Master and form family foundation.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_d_grade",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Among the five mortal ranks, rank one and two are beginners.",
+      "chapters": [
+        275
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Initial stage has light membrane aperture walls. Middle stage has water membrane walls. Upper stage has stone membrane walls. Peak stage has crystal membrane walls.",
+      "chapters": [
+        230
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "aperture-wall-stages",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The mortal stretch through rank five is covered on Rank One through Rank Five. The wider ladder is covered on ranks and realms.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "aperture-wall-stages",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_rank_one_through_rank_five"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/rank-one/",
+      "chapters": [
+        4,
+        7,
+        22,
+        26,
+        230,
+        275
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Cultivation ranks",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

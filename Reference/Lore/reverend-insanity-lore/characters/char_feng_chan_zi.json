@@ -1,0 +1,345 @@
+{
+  "id": "char_feng_chan_zi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Feng Chan Zi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "feng chan zi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Фэн Чань Цзы",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Feng Chan Zi is a young Wind Cloud Manor Gu Immortal, grandson of Old Man Bei Feng, whose sale of manor treasure draws Heavenly Court punishment at Hidden Dragon Cave.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1052,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1052,
+    1060,
+    1069,
+    1301,
+    1707
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wind_cloud_manor",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1069,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_bei_feng",
+      "count": 2
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 2
+    },
+    {
+      "target": "loc_pot_river",
+      "count": 2
+    },
+    {
+      "target": "char_lang_zi_qiu",
+      "count": 2
+    },
+    {
+      "target": "char_di_zang_sheng",
+      "count": 2
+    },
+    {
+      "target": "loc_hidden_dragon_cave",
+      "count": 2
+    },
+    {
+      "target": "char_gong_sun_liang",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_grass_puppet_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "move_broken_mirror_shard_light",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ying Wu Xie’s group waits at Wind Cloud Manor for the light of the immemorial era. A grass puppet avatar of rank six battle strength meets them instead. Ying Wu Xie says that when Feng Chan Zi ascended to immortal, his grandfather Old Man Bei Feng gave him grass puppet Immortal Gu as a gift. Hei Lou Lan calls Feng Chan Zi wildly arrogant for not coming in person.",
+      "chapters": [
+        1052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ying_wu_xie",
+        "house_wind_cloud_manor",
+        "char_old_man_bei_feng",
+        "sys_immortal_gu",
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "At Hidden Dragon Cave he is a young looking rank six Gu Immortal beside Old Man Bei Feng.",
+      "chapters": [
+        1707
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hidden_dragon_cave",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Ying Wu Xie waits on Pot River for him. The grass puppet avatar raises the price another thirty percent for the light of the immemorial era. Shadow Sect still pays and obtains the material. Ying Wu Xie later deduces Feng Chan Zi suddenly lost a bet to Lang Zi Qiu and needed capital, which is why the sale went through.",
+      "chapters": [
+        1060
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sale-at-pot-river",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_pot_river",
+        "fac_shadow_sect",
+        "char_lang_zi_qiu"
+      ]
+    },
+    {
+      "text": "Fairy Zi Wei says Feng Chan Zi almost made a great blunder through selfish use of public assets, and punishes him to guard Hidden Dragon Cave and Di Zang Sheng for twenty years.",
+      "chapters": [
+        1069
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sentenced-to-guard-duty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "char_di_zang_sheng"
+      ]
+    },
+    {
+      "text": "At the cave, he and Old Man Bei Feng of Wind Cloud Manor stand as the guardians. He sold immortal materials for his own profits.",
+      "chapters": [
+        1301
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sentenced-to-guard-duty",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His grandfather gave up a Heavenly Court seat to watch the Evil Dragon with him.",
+      "chapters": [
+        1301
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sentenced-to-guard-duty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "When Eastern Sea immortals are trapped he cheers that they can atone and leave, then panics as Di Zang Sheng struggles and reinforcements fail to arrive.",
+      "chapters": [
+        1707
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sentenced-to-guard-duty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/feng-chan-zi/",
+      "chapters": [
+        1052,
+        1060,
+        1069,
+        1301,
+        1707
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 1052",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wind Cloud Manor as of ch. 1069",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 1052,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

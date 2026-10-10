@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "character.schema.json",
+  "title": "character",
+  "allOf": [
+    {
+      "$ref": "common.schema.json#/$defs/envelope"
+    },
+    {
+      "type": "object",
+      "required": [
+        "attributes",
+        "claims",
+        "cultivation",
+        "biography",
+        "gu_held"
+      ],
+      "properties": {
+        "entity_type": {
+          "enum": [
+            "character"
+          ]
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^char_"
+        },
+        "attributes": {
+          "type": "object",
+          "description": "Raw infobox fields from the source, kept for later typed mapping."
+        },
+        "claims": {
+          "$ref": "common.schema.json#/$defs/claims"
+        },
+        "cultivation": {
+          "type": "object",
+          "required": [
+            "rank_timeline",
+            "paths"
+          ],
+          "properties": {
+            "rank_timeline": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "rank",
+                  "as_of_chapter"
+                ],
+                "properties": {
+                  "rank": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 9
+                  },
+                  "as_of_chapter": {
+                    "$ref": "common.schema.json#/$defs/nullable_chapter"
+                  }
+                }
+              }
+            },
+            "paths": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^path_"
+              }
+            }
+          }
+        },
+        "biography": {
+          "type": "object"
+        },
+        "gu_held": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "gu",
+              "role"
+            ],
+            "properties": {
+              "gu": {
+                "type": "string",
+                "pattern": "^gu_"
+              },
+              "role": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

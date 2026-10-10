@@ -1,0 +1,190 @@
+{
+  "id": "char_qing_heng",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qing Heng",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "qing heng",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цин Хэн",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qing Heng is a rank seven expert of Western Desert's Qing clan, sent to hunt the Southern Border Gu Immortal Ming You.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2035,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2035
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_qing_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2035,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_qing_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_qing_hua_lan",
+      "count": 2
+    },
+    {
+      "target": "loc_qing_oasis",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Qing oasis, Qing clan Gu Immortals gather around shattered Gu worm fragments and learn that Qing Heng’s life tablet Gu has shattered. He is a rank seven expert of Qing clan. The clan had sent him to kill Ming You and had been confident in him. Accurate information then reports that Ming You killed Qing Heng and that Ming You has great strength and acts ruthlessly. Clan discussion later treats Ming You as only rank seven and proposes sending Qing Jing and Qing Hua Lan, then Qing Chen as well, rather than first supreme elder, so the clan will not be rumored to bully the weak.",
+      "chapters": [
+        2035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_oasis",
+        "fac_qing_clan",
+        "sys_gu_immortal",
+        "sys_gu_worms",
+        "char_qing_hua_lan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/qing-heng/",
+      "chapters": [
+        2035
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 2035",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Qing Clan as of ch. 2035",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 2035,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

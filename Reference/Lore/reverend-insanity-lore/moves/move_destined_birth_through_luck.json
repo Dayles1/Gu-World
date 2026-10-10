@@ -1,0 +1,185 @@
+{
+  "id": "move_destined_birth_through_luck",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Destined Birth Through Luck",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Destined Birth Through Luck is an immortal killer move named when Giant Sun Immortal Venerable uses it over Blood Sea.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2274,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_final_war"
+  },
+  "chapters_cited": [
+    2274,
+    2296,
+    2297
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_giant_sun_immortal_venerable",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2274,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 2
+    },
+    {
+      "target": "char_light_emperor",
+      "count": 2
+    },
+    {
+      "target": "loc_blood_sea",
+      "count": 2
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "fac_fei_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Giant Sun Immortal Venerable’s gaze reaches Blood Sea under Longevity Heaven. The sea rumbles with huge waves, and a huge whirlpool sits at the center. Immortal killer move Destined Birth Through Luck is named. Combining destined birth through luck with Blood Sea, Giant Sun Immortal Venerable can revive Gu Immortals. Under Longevity Heaven’s luck path dao marks, golden light dyes every droplet of blood water. Blood waves rise and crash. The central whirlpool grows more rapid. After the waves fill the whirlpool, the sea turns tranquil and clear as a mirror. Light pillars shoot up, then a huge lump of light rises like a miniature sun. As the light fades, a Gu Immortal floats in the air with no hair, his body emitting intense light. Yao Huang names him Giant Sun Immortal Venerable’s eldest son, the light path cultivator Light Emperor.",
+      "chapters": [
+        2274
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_giant_sun_immortal_venerable",
+        "loc_blood_sea",
+        "fac_longevity_heaven",
+        "sys_gu_immortal",
+        "char_yao_huang",
+        "char_light_emperor"
+      ]
+    },
+    {
+      "text": "Giant Sun Immortal Venerable feels an intense luck path intuition. The last time he had that feeling, he revived Light Emperor, and that revival caused him to gain rank nine light Gu. Although reviving another person would expend the incomplete Blood Sea, he uses destined birth through luck. Blood Sea surges, a huge whirlpool forms, and a rank seven water path Gu Immortal emerges. The revival expends more immortal essence and more of Blood Sea than Light Emperor’s did. Yao Huang names him Fei Wu. Giant Sun Immortal Venerable names him Fei tribe’s final first supreme elder.",
+      "chapters": [
+        2296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-path-intuition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fei_tribe"
+      ]
+    },
+    {
+      "text": "Giant Sun Immortal Venerable understands that destined birth through luck revived Fei Wu. That would give him a way to replenish immortal essence, more useful to him than rank nine light Gu. Luck path itself is an uncertainty. He can ensure that positive variables happen to benefit him, but he cannot control the exact situation, because that would mean controlling certainty.",
+      "chapters": [
+        2297
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-path-uncertainty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_luck"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/destined-birth-through-luck/",
+      "chapters": [
+        2274,
+        2296,
+        2297
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Giant Sun Immortal Venerable",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

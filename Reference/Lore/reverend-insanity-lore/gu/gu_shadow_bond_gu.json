@@ -1,0 +1,358 @@
+{
+  "id": "gu_shadow_bond_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shadow Bond Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shadow Bond Gu links two Gu Masters through their shadows. When the bond user is hurt, the linked target takes ten percent of that damage, but only within a short range.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 125,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    125,
+    127,
+    137
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_xiong_jiang",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 125,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xiong_jiang",
+      "count": 4
+    },
+    {
+      "target": "char_bai_bing_yi",
+      "count": 2
+    },
+    {
+      "target": "gu_water_drill_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_water_shield_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_roaming_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_li",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_lin",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/shadow-bond-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/shadow-bond-gu/",
+      "chapters": [
+        125,
+        127,
+        137
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Alliance slope and early wolf-tide chapters describe the shared-damage link without naming a cultivation path for this Gu. Cited chapters also never give a Chinese-character name for it.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Cited chapters never describe the Gu worm itself in an aperture or by insect shape, never state a rank for it, and never state what it eats. In use, the user’s shadow twists at a creepy angle and pastes itself onto the ground, joining the user’s shadow to the target’s.",
+        "chapters": [
+          125
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "When the Shadow Bond Gu Master sustains an injury, the chain-linked Gu Master takes ten percent of that damage.",
+        "chapters": [
+          125
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "Xiong Jiang uses that share against Bai Bing Yi: Xiong Jiang specializes in defense, Bai Bing Yi is a pure attacker with poor health, so even ten percent is dangerous to him, and Bai Bing Yi admits defeat.",
+        "chapters": [
+          125
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "That transmitted injury is a direct effect. Even if Bai Ning Bing had Water Shield Gu, the narration says it cannot block against it.",
+        "chapters": [
+          137
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing",
+          "gu_water_shield_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_xiong_jiang",
+      "role": "user",
+      "recorded_chapter": 125,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "The name first appears on the alliance slope during the three-clan Gu battle tournament. Xiong Jiang of the Xiong clan challenges Bai Bing Yi, then reveals Shadow Bond Gu after taking a Water Drill Gu blow.",
+        "chapters": [
+          125
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_xiong_jiang",
+          "fac_xiong_clan",
+          "char_bai_bing_yi",
+          "gu_water_drill_gu"
+        ]
+      },
+      {
+        "text": "The bond’s range is limited. Xiong Jiang says it can only bully close-ranged Gu Masters.",
+        "chapters": [
+          125
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "range-and-weakness",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_masters"
+        ]
+      },
+      {
+        "text": "Later narration pins the effective range at ten meters.",
+        "chapters": [
+          127
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "range-and-weakness",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "If the linked foe pulls enough distance, the shadow splits and the bond fails.",
+        "chapters": [
+          137
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "range-and-weakness",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After Xiong Li dies, Xiong Jiang activates Shadow Bond Gu and joins his shadow to Bai Ning Bing’s, hoping shared damage will stop a killing blow while Xiong Lin flees. Bai Ning Bing treats the Gu as a cheap method and shows no fear of the link. Fang Yuan then kills Xiong Jiang with a moonblade while the bond is still up. Xiong Jiang’s death injury transmits through the shadow, and Bai Ning Bing suffers the shared damage, bleeding from ears, nose, and eyes.",
+        "chapters": [
+          137
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "against-bai-ning-bing",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_xiong_li",
+          "char_xiong_lin",
+          "char_fang_yuan"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

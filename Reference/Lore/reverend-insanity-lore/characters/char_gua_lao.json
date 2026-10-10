@@ -1,0 +1,242 @@
+{
+  "id": "char_gua_lao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gua Lao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gua lao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гуа Лао",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gua Lao is a Southern Border demonic path rank six Gu Immortal who tries to borrow immortal materials from Fang Yuan before the Yi Tian Mountain gambling contest and later remains the sole surviving wager participant.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 964,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    964,
+    967,
+    1072
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He visits Fang Yuan under the Sheng Ying identity, offers melon wine, and steers talk toward the Southern Border grand contest so he can raise his bet. He asks to borrow immortal materials and promises to return double after the contest, then agrees a vow is needed.",
+      "chapters": [
+        964
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "He is short but has a large head. He is an old man. When he grins he reveals yellow teeth.",
+      "chapters": [
+        964
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan demands an Immortal Gu as collateral. Gua Lao stiffens and asks whether that is a joke, saying that if he had an Immortal Gu he would not need the Immortal Gu House. Fang Yuan then reveals Immortal Gu aura; Gua Lao’s heart sinks, he fears Sheng Ying’s battle strength, and he leaves at once.",
+      "chapters": [
+        964
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "collateral-demand-and-retreat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "After a tribulation he is heavily injured and tries to retreat as a ray of light, but is sent back to the center among other rank six Gu Immortals who imitate him.",
+      "chapters": [
+        967
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tribulation-and-wager-remnant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Shang clan later names him the sole still-living participant of Yi Tian Mountain’s gambling contest and the only person to inherit the leftover cultivation resources in treasure yellow heaven, so they want to take control of him.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tribulation-and-wager-remnant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "loc_yi_tian_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/gua-lao.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/gua-lao/",
+      "chapters": [
+        964,
+        967,
+        1072
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 964",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 964,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

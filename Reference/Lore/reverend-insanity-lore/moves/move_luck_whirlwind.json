@@ -1,0 +1,237 @@
+{
+  "id": "move_luck_whirlwind",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luck Whirlwind",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Luck Whirlwind is a luck path immortal killer move tied to qi luck Immortal Gu. When the target advances it can fling them away; when they retreat it can drag them back.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1126,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1126,
+    1127,
+    1138,
+    1139
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1138,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_qi_luck_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1126,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_qi_luck_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "char_chen_le",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jun",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_immortal_succession_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Hei Fan grotto-heaven, Feng Jun meets a closing Fang Yuan with his most familiar defensive method and casts the immortal killer move Luck Whirlwind. Huge winds rise, but the decisive effect is a formless force that Fang Yuan cannot see; it hits him and widens the gap again. Feng Jun holds this move from a qi luck Immortal Gu lineage that passed through Eighty-Eight True Yang Building and Immortal Succession Mountain, and it is the move he has practiced the most.",
+      "chapters": [
+        1126
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hei_fan_grotto_heaven",
+        "char_feng_jun",
+        "char_fang_yuan",
+        "sys_killer_moves",
+        "gu_qi_luck_immortal_gu",
+        "house_eighty_eight_true_yang_building",
+        "loc_immortal_succession_mountain"
+      ]
+    },
+    {
+      "text": "Chen Le’s account puts a hard daily ceiling near one hundred uses, and each cast still spends immortal essence with a real chance of failure and backlash.",
+      "chapters": [
+        1126
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_le"
+      ]
+    },
+    {
+      "text": "Fang Yuan keeps closing with Sword Escape; Feng Jun burns the trump card again and again, and the whirlwind keeps ruining the approach until other immortals join them.",
+      "chapters": [
+        1127
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Against a fleeing ancient eagle hound at Tai Qiu, Fang Yuan activates luck whirlwind twice and pulls the beast back into close fight both times; a third cast fails, he spurts blood, and the hound escapes to the horizon.",
+      "chapters": [
+        1138
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tai_qiu"
+      ]
+    },
+    {
+      "text": "Solo practice can reach about eighty to ninety percent success, but in real battle he is already holding other immortal killer moves, so two successes under that load already count as strong luck. In quieter days that follow he still trains new killer moves such as luck whirlwind while managing soul cultivation and the hounds he captured.",
+      "chapters": [
+        1139
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-chase",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/luck-whirlwind/",
+      "chapters": [
+        1126,
+        1127,
+        1138,
+        1139
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Qi Luck Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

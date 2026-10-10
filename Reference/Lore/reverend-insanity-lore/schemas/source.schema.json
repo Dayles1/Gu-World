@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source.schema.json",
+  "title": "Source catalogue",
+  "type": "object",
+  "required": ["schema_version", "sources"],
+  "properties": {
+    "schema_version": { "$ref": "common.schema.json#/$defs/schema_version" },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "url", "kind", "default_confidence", "access", "license", "notes"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^src_[a-z0-9_]+$" },
+          "title": { "type": "string" },
+          "url": { "type": ["string", "null"] },
+          "kind": { "enum": ["novel_text", "official_translation", "reference_wiki", "fan_wiki", "fan_database", "forum", "other"] },
+          "language": { "type": ["string", "null"] },
+          "default_confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+          "access": {
+            "type": "object",
+            "required": ["status", "checked"],
+            "properties": {
+              "status": { "enum": ["used", "reachable_not_used", "blocked", "empty", "not_checked"] },
+              "checked": { "type": "string" },
+              "detail": { "type": ["string", "null"] }
+            }
+          },
+          "citation_style": { "type": ["string", "null"] },
+          "coverage": { "type": ["object", "null"] },
+          "audit": { "type": ["object", "null"] },
+          "license": { "type": ["string", "null"] },
+          "notes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

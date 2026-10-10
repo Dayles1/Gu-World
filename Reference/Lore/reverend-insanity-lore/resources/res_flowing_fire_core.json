@@ -1,0 +1,119 @@
+{
+  "id": "res_flowing_fire_core",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flowing fire core",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flowing fire core is a material named in the original cleanse soul Immortal Gu recipe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1443,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1443
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_cleanse_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_cleanse_soul",
+      "count": 2
+    },
+    {
+      "target": "rcp_cleanse_soul_immortal_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "res_snow_lotus_essence",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Snow lotus essence is ice-cold yet holds warm life force within, and it is an extremely good replacement for flowing fire core in the original Gu recipe. Fang Yuan uses the ice refinement method, and snow lotus essence suits that method more than flowing fire core. An Immortal Gu can have many different Immortal Gu recipes, and a refinement path expert may replace materials when a better match appears.",
+      "chapters": [
+        1443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "original-recipe-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_snow_lotus_essence",
+        "char_fang_yuan",
+        "sys_immortal_gu",
+        "sys_gu_recipe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/flowing-fire-core/",
+      "chapters": [
+        1443
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Refines into": {
+      "text": "Cleanse Soul",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

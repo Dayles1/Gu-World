@@ -1,0 +1,285 @@
+{
+  "id": "move_year_beast_army",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Year Beast Army",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Year Beast Army is the mass of year beasts Fang Yuan fields after Year Beast Summoning with Years Flow Like Water as core. The force later appears as a tide and as a will-directed army.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1400,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1400,
+    1401,
+    1603,
+    1812,
+    1943
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "derived_from",
+      "target": "move_year_beast_summoning",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_years_flow_like_water",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1401,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_years_flow_like_water",
+      "count": 3
+    },
+    {
+      "target": "move_year_beast_summoning",
+      "count": 2
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_tributary_of_the_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_gu_liu_ru",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_year_hunting",
+      "count": 1
+    },
+    {
+      "target": "house_myriad_year_flying_warship",
+      "count": 1
+    },
+    {
+      "target": "loc_immortal_graveyard",
+      "count": 1
+    },
+    {
+      "target": "move_twelve_zodiac_battle_formation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Feng Jiu Ge presses into a Shadow Sect tributary of the River of Time, year beasts gather against him, and that gathering is named Year Beast Army.",
+      "chapters": [
+        1400
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "fac_shadow_sect",
+        "loc_tributary_of_the_river_of_time"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s Year Beast Summoning with Years Flow Like Water as core summons an army of year beasts rather than a single beast, and narration then calls that force the year beast army as Feng Jiu Ge’s submission song throws it into chaos.",
+      "chapters": [
+        1401
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "move_year_beast_summoning",
+        "gu_years_flow_like_water"
+      ]
+    },
+    {
+      "text": "During years flow execution formation fighting in Southern Border, Fang Yuan is described as enslaving immemorial year beasts and arranging the year beast army while also running formation cores and other methods.",
+      "chapters": [
+        1603
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "formation-control",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "In the River of Time, Myriad Year Hunting draws a year beast army that charges from all directions. Gu Liu Ru reads Fang Yuan as delaying so that army can surround Heavenly Court, and narration separates time path attraction of the tide from enslavement path control, which Fang Yuan lacks in that fight.",
+      "chapters": [
+        1812
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lured-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_river_of_time",
+        "move_myriad_year_hunting",
+        "char_gu_liu_ru",
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "After Myriad Year Flying Warship merges with Twelve Zodiac battle formation, Myriad Year Hunting releases a sky covering year beast army against Heavenly Court’s immortal graveyard, with ancient and immemorial year beasts among them. That army moves to Fang Yuan’s will, keeps being summoned without end, and scatters across Heavenly Court so the defenders cannot cover every point.",
+      "chapters": [
+        1943
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "will-directed-swarm",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_myriad_year_flying_warship",
+        "move_twelve_zodiac_battle_formation",
+        "loc_immortal_graveyard"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/year-beast-army/",
+      "chapters": [
+        1400,
+        1401,
+        1603,
+        1812,
+        1943
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Derived from": {
+      "text": "Year Beast Summoning",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Years Flow Like Water",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

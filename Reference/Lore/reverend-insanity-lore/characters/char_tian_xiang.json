@@ -1,0 +1,175 @@
+{
+  "id": "char_tian_xiang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tian Xiang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "tian xiang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Тянь Сян",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Fairy Tian Xiang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tian Xiang is named when a scholar prepares for Qin Bai Sheng's auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 747,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    747,
+    748
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_hong_xiu",
+      "count": 2
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 2
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Before Qin Bai Sheng’s auction, a scholar tells Hong Xiu to travel with him and orders Tian Xiang to stay and guard the blessed land.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_bai_sheng",
+        "char_hong_xiu"
+      ]
+    },
+    {
+      "text": "Gu Immortals in the main hall name her and Hong Xiu as Unfettered Scholar’s two Gu Immortal attendants. When he enters with a woman in a red dress, they identify that companion as Fairy Hong Xiu and say that if Fairy Tian Xiang had come, her inborn fragrance would already have filled the hall. After Unfettered Scholar became an immortal, he spent heavily to raise both attendants to Gu Immortal as well.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_unfettered_scholar"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/tian-xiang/",
+      "chapters": [
+        747,
+        748
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

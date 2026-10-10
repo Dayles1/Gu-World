@@ -1,0 +1,613 @@
+{
+  "id": "move_myriad_self",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Myriad Self",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Myriad Self is Fang Yuan's killer move that joins strength path and enslavement path. It raises a huge army of strength path phantoms.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 649,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    649,
+    650,
+    662,
+    664,
+    687,
+    777,
+    817,
+    870,
+    1086,
+    1177,
+    1259,
+    1422,
+    1423
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_all_out_effort_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 650,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_bitter_strength_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 650,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_cleanse_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 664,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_pulling_mountain",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 817,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "seen_in",
+      "target": "evt_fight_fang_yuan_against_hei_cheng_second_battle",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 688,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_bitter_strength_gu",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_cleanse_soul",
+      "count": 3
+    },
+    {
+      "target": "gu_pulling_mountain",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_hei_cheng_second_battle",
+      "count": 2
+    },
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "move_myriad_self_giant_hand",
+      "count": 2
+    },
+    {
+      "target": "move_myriad_self_second_style",
+      "count": 2
+    },
+    {
+      "target": "move_myriad_dragon",
+      "count": 1
+    },
+    {
+      "target": "gu_borrow_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "gu_self_reliance_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_killer_move",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "move_dark_veil",
+      "count": 1
+    },
+    {
+      "target": "move_drifting_snow",
+      "count": 1
+    },
+    {
+      "target": "move_ice_mountain_awl",
+      "count": 1
+    },
+    {
+      "target": "move_snow_sparrow_crisis",
+      "count": 1
+    },
+    {
+      "target": "move_black_wind_break",
+      "count": 1
+    },
+    {
+      "target": "move_dark_fire",
+      "count": 1
+    },
+    {
+      "target": "move_thousand_demon_rampage",
+      "count": 1
+    },
+    {
+      "target": "gu_pulling_water",
+      "count": 1
+    },
+    {
+      "target": "gu_self_strength",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_star_fireflies",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_dragon_centipede_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 1
+    },
+    {
+      "target": "char_shi_nu",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "move_reverse_flow_protection_seal",
+      "count": 1
+    },
+    {
+      "target": "move_divination_tortoise_transformation",
+      "count": 1
+    },
+    {
+      "target": "move_ancient_sword_dragon_transformation",
+      "count": 1
+    },
+    {
+      "target": "gu_affection_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_self_love_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_central_continent",
+      "count": 1
+    },
+    {
+      "target": "move_horse_barrage",
+      "count": 1
+    },
+    {
+      "target": "move_leopard_dash",
+      "count": 1
+    },
+    {
+      "target": "move_rat_epidemic",
+      "count": 1
+    },
+    {
+      "target": "move_three_head_six_arms",
+      "count": 1
+    },
+    {
+      "target": "move_thunder_explosion",
+      "count": 1
+    },
+    {
+      "target": "move_emperor_yama",
+      "count": 1
+    },
+    {
+      "target": "gu_myriad_self_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_time_cutting_edge",
+      "count": 1
+    },
+    {
+      "target": "res_front_back_divine_obstruction_needles",
+      "count": 1
+    },
+    {
+      "target": "res_floating_life_fire",
+      "count": 1
+    },
+    {
+      "target": "move_self_moving_dragon_qi_wall",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside collapsing Imperial Court blessed land, Hei Lou Lan asks the name of Fang Yuan’s killer move; he answers Myriad Self.",
+      "chapters": [
+        649
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "char_hei_lou_lan",
+        "char_fang_yuan",
+        "sys_killer_moves"
+      ]
+    },
+    {
+      "text": "After he returns to Hu Immortal blessed land, backlash from the move leaves his soul greatly depleted, so moving his heavenly zombie body feels heavy and resistant. Mortal Gu that form its foundation include rank four All-out Effort Gu as a vital Gu, Bitter Strength Gu, borrow strength Gu, and other strength Gu that helped him clinch victory inside the wind veil of assimilation.",
+      "chapters": [
+        650
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "sys_mortal_gu",
+        "gu_all_out_effort_gu",
+        "sys_vital_gu",
+        "gu_bitter_strength_gu",
+        "gu_borrow_strength_gu",
+        "gu_strength_gu"
+      ]
+    },
+    {
+      "text": "Cleanse Soul is the core Gu of Myriad Self. Without the move, Fang Yuan rates his battle strength below ordinary rank six Gu Immortals; with it, he reaches first-rate rank six.",
+      "chapters": [
+        664
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "core-and-battle-strength",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_cleanse_soul",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Myriad Self is the convergence of enslavement path and strength path.",
+      "chapters": [
+        662
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "path-mix-and-northern-plains-cast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_strength"
+      ]
+    },
+    {
+      "text": "Fang Yuan built it from his potential with natural inspiration and Wisdom Gu. In one northern plains fight he activates it nonstop, floods the field with hundreds of thousands of strength path phantoms, and accepts heavy mortal Gu losses as long as Cleanse Soul holds.",
+      "chapters": [
+        687
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "path-mix-and-northern-plains-cast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_wisdom_gu"
+      ]
+    },
+    {
+      "text": "Myriad self is Fang Yuan’s trump card, and Self Strength Immortal Gu is extremely compatible with it. Unlike Pulling Mountain or Pulling Water, it needs no deduction or modification from him to work with the killer move.",
+      "chapters": [
+        777
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "self-strength-immortal-gus-fit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_self_strength",
+        "gu_pulling_mountain",
+        "gu_pulling_water"
+      ]
+    },
+    {
+      "text": "Fang Yuan finishes fusing Pulling Mountain Immortal Gu into myriad self, raising its power by ten percent. Against earth path Gu Immortals, or against mountains and rocks, the effect is at least twenty percent higher.",
+      "chapters": [
+        817
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "pulling-mountain-fused-in",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After gaining wisdom path attainment from Dong Fang Chang Fan’s inheritance, Fang Yuan improves myriad self by adding several core Immortal Gu as well as soul path mortal Gu. This coordination lets Fang Yuan capture an enemy’s injured soul when the giant hand kills it.",
+      "chapters": [
+        870
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soul-path-addition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_chang_fan",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Lacking cleanse soul Immortal Gu against a dragon centipede and a fleeing horned six-winged pegasus, Fang Yuan casts myriad self with other mortal Gu in its place. The killer move’s power falls, but the phantoms confuse the dragon centipede enough that its speed drops for a moment. The centipede’s body lashes out like a whip and destroys countless phantoms, the pegasus crushes many more as it escapes, and the centipede’s attention then turns to the pegasus, the two passing out of his sight as they chase.",
+      "chapters": [
+        1086
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "cast-without-cleanse-soul",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Against Heavenly Lord Bai Zu’s cloned wolf pack, the myriad self army tangles with the wolves and is almost completely destroyed within two breaths. Where the army could once fight, it has become Fang Yuan’s method of concealing his true body instead.",
+      "chapters": [
+        1177
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "concealment-over-combat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heavenly_lord_bai_zu"
+      ]
+    },
+    {
+      "text": "Fighting Ying Wu Xie, Shi Nu and the rest alone, Fang Yuan activates myriad self and tens of thousands of Fang Yuans converge into a vast human tide that charges them.",
+      "chapters": [
+        1259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "human-tide-against-ying-wu-xie",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ying_wu_xie",
+        "char_shi_nu"
+      ]
+    },
+    {
+      "text": "Layered on top of ancient sword dragon transformation, myriad self stops being high in quantity and low in quality and becomes Fang Yuan’s strongest attacking method. The clones this combination produces are not comparable to ordinary myriad self clones at all.",
+      "chapters": [
+        1422
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "combination-with-ancient-sword-dragon-transformation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_ancient_sword_dragon_transformation"
+      ]
+    },
+    {
+      "text": "Using Self Love Immortal Gu and Affection Immortal Gu together, Fang Yuan raises a giant of self will over a hundred feet tall, then activates myriad self on top of it. The giant vanishes and ten thousand myriad self clones appear inside Mini Central Continent, elevating the killer move to a new level and raising his battle strength along with it.",
+      "chapters": [
+        1423
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elevated-cast-ten-thousand-clones",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_self_love_immortal_gu",
+        "gu_affection_immortal_gu",
+        "loc_mini_central_continent"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/myriad-self/",
+      "chapters": [
+        649,
+        650,
+        662,
+        664,
+        687,
+        777,
+        817,
+        870,
+        1086,
+        1177,
+        1259,
+        1422,
+        1423
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Mortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan (creator)",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "All-out Effort Gu Bitter Strength Gu Cleanse Soul Pulling Mountain",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

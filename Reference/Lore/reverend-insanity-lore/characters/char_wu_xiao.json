@@ -1,0 +1,249 @@
+{
+  "id": "char_wu_xiao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wu Xiao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wu xiao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "У Сяо",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Master Wu Xiao Doctor Wu Xiao Master Wu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wu Xiao is a famous Southern Border soul path doctor, tall and thin with a grim face, counted among the six great doctors of Southern Border.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2149,
+    "volume": null,
+    "arc": "evt_arc_dao_veins_famous_mountains"
+  },
+  "chapters_cited": [
+    2149,
+    2150
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2149,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_huang_wan",
+      "count": 2
+    },
+    {
+      "target": "char_le_tu",
+      "count": 2
+    },
+    {
+      "target": "char_meng_qiu_zhen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_tu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Meng Qiu Zhen’s dream realm, Tu clan village head claps and calls Master Wu Xiao out. A Gu Master with a grim expression and a tall, thin body appears. The village head names him a famous doctor of Southern Border and says he came prepared.",
+      "chapters": [
+        2149
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_qiu_zhen",
+        "fac_tu_clan",
+        "sys_gu_master",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Wu Xiao investigates the captive with Gu worms and reports that abrupt soul search would dissipate her soul at once and badly poison the attacker through backlash. The village head says he asked for Wu Xiao because Wu cultivates soul path, can use soul healing methods, and is one of the six great doctors of Southern Border, and that only he can resist mushroomman poison path methods while preserving their souls.",
+      "chapters": [
+        2149
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Wu Xiao smiles proudly and begins a killer move on the captive. He later spits purple blood, takes several steps back, and pants. He reports that a poison within a poison hit him, then names a final forceful soul search that drives the target insane while leaving their insane words as truthful thoughts. At the village head’s order he uses that method, and Huang Wan loses her mind completely.",
+      "chapters": [
+        2149
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_huang_wan"
+      ]
+    },
+    {
+      "text": "After the captive’s insane answers stay nonsensical, Doctor Wu Xiao tells the village head that the mushroomman’s will is too strong, that even in insanity she became purer, and that she will not betray her tribe. He says there is nothing else he can do. The village head dismisses Master Wu Xiao to rest and says that if he cannot get an answer he will capture more mushroomman higher-ups and ask Wu Xiao again.",
+      "chapters": [
+        2150
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "failed-interrogation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Le Tu confronts the village head over Huang Wan’s insanity, the village head names Doctor Wu Xiao as a direct culprit. Wu Xiao then shouts that her mind can still recover if her wishes are not opposed, and Le Tu throws him to the ground after hearing the method.",
+      "chapters": [
+        2150
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "failed-interrogation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_le_tu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wu-xiao/",
+      "chapters": [
+        2149,
+        2150
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Soul path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_soul"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

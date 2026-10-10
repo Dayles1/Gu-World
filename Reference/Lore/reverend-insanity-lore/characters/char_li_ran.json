@@ -1,0 +1,629 @@
+{
+  "id": "char_li_ran",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Li Ran",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "li ran",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ли Жань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Li Ran is a middle-aged Gu Master who complains when rock dissection at a Shang Clan City gambling den interrupts his own stones.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 280,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    292,
+    293,
+    296,
+    301,
+    325,
+    336
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wu_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 283,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_flowerbud_gu",
+      "role": "master",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 283,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_heart_sound_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 284,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_all_out_effort_gu",
+      "role": "carrier",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 285,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_flowerbud_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_heart_sound_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_wei_shen_jing",
+      "count": 2
+    },
+    {
+      "target": "gu_poison_vow_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_flash_of_inspiration_gu",
+      "count": 2
+    },
+    {
+      "target": "char_lady_an_yu",
+      "count": 2
+    },
+    {
+      "target": "gu_vertical_crash_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_stellar_stone",
+      "count": 1
+    },
+    {
+      "target": "gu_eating_ones_words_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sword_shadow_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_vine_information_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "loc_fu_tai_xiang_he_restaurant",
+      "count": 1
+    },
+    {
+      "target": "loc_qin_yan_brothel",
+      "count": 1
+    },
+    {
+      "target": "char_empress_wu_ji",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_clan_ancient_strength_path_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_lan_chao_gambling_den",
+      "count": 1
+    },
+    {
+      "target": "gu_reputation_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The shopkeeper calls his name and promises to return his primeval stones after the interruption. Fang Yuan hears the name and recalls a previous-life figure who obtained a legendary Gu, then wonders if it might only be a shared name. After Fang Yuan opens a sword shadow Gu, Li Ran pouts that Fang Yuan was only lucky.",
+      "chapters": [
+        280
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_sword_shadow_gu"
+      ]
+    },
+    {
+      "text": "He is a middle-aged Gu Master.",
+      "chapters": [
+        280
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He is a middle-aged man, over fifty years old.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Days of secret searching leave Fang Yuan with Li Ran as the last remaining clue, the previous-life protagonist of that legendary Gu rumor.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "investigation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among three battle stage sign-ups named Li Ran, Fang Yuan keeps the middle-aged rank two man who has lived in Shang Clan City about ten years, stays on the fifth inner city stage, loves gambling, and matches the gambling den face. He wins more than he loses, yet spends without restraint on food, gambling, and brothels, sometimes borrowing after emptying his stones. Fang Yuan judges him the previous-life owner of the legendary Gu and feels a baseless strangeness in the orderly mess of that life. A flash of inspiration Gu reveals a fixed rhythm of restaurants, gambling dens, and brothel visits, including Fu Tai Xiang He every ten days. From that window seat Fang Yuan sees Li Ran’s wife and son packing a tofu stall, and reads the seat as a place to watch them rather than Lady An Yu.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "investigation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "gu_flash_of_inspiration_gu",
+        "char_lady_an_yu"
+      ]
+    },
+    {
+      "text": "Narration states that Li Ran is a fake name and that his real name is Wu Ran. Eleven years earlier Empress Wu Ji assigned him to infiltrate Shang clan’s higher levels. He wandered three years, then laid low eight years in Shang Clan City as a libertine mask, contacting Wu clan only one-sided every half year. A year before this stretch, Wu clan activated him. Empress Wu Ji personally chose a near-extinct ancient strength path Gu sealed in a stellar stone, with Wei Shen Jing’s fake scrap fossil and a rock-gambling cover story so he could rise naturally, reclaim wife and child, and become an external clan elder. He keeps that stellar stone in a flowerbud Gu under his bed, plans a battle then a gambling show, and during the fight loses connection to flowerbud Gu while Fang Yuan refines it at the house and takes the stone.",
+      "chapters": [
+        283
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "undercover-identity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_empress_wu_ji",
+        "fac_shang_clan",
+        "fac_wu_clan",
+        "char_wei_shen_jing",
+        "gu_flowerbud_gu"
+      ]
+    },
+    {
+      "text": "He admits defeat on purpose to leave the stage, races home, and finds a rank two heart sound Gu left behind. Paired heart sound Gu let two Gu Masters speak within about a hundred steps. Fang Yuan’s voice in his head calls Li Ran a fake name, refuses ordinary questions, and directs him through the streets to Fu Tai Xiang He under threat of exposure.",
+      "chapters": [
+        284
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "undercover-identity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_heart_sound_gu",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "They sit opposite each other while still using heart sound Gu. Fang Yuan shows the stellar stone, names the all-out effort Gu inside, and demands cooperation rather than open enmity with Wu clan. Fang Yuan plays the fellow spy who also has people to protect, presses the risk to Li Ran’s wife and five-year-old son, and offers a private alliance against Shang clan pressure. Li Ran eventually asks how he can believe that, and Fang Yuan produces a poison vow Gu. Public rumor later claims Li Ran chose the fossils and lost the all-out effort Gu to Fang Yuan after a street quarrel.",
+      "chapters": [
+        285
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "undercover-identity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_all_out_effort_gu",
+        "gu_poison_vow_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan already holds a copy of the all-out effort Gu recipe from him. On the battle stage Li Ran plays the wronged party, pounces, and is broken in one charge when Fang Yuan scratches his arm and snaps the forearm bone.",
+      "chapters": [
+        286
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "undercover-identity",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He admits defeat, then publicly demands compensation for kindness repaid with injury, and after bargaining Fang Yuan agrees to two hundred thousand primeval stones while the crowd watches.",
+      "chapters": [
+        287
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "undercover-identity",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later pays large public installments to stabilize him and Wu clan, treats him as a hard-to-use chess piece, and notes that killing him would leave traces Shang clan might question. Li Ran contacts a Wu clan emissary and reports that Fang Yuan can be used. Narration also says the vertical crash Gu and boar phantom combination in that battle inflicted heavy injuries on him.",
+      "chapters": [
+        288
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "public-payments",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_vertical_crash_gu"
+      ]
+    },
+    {
+      "text": "Under watchful eyes Fang Yuan passes him fifty thousand primeval stones in public so Li Ran cannot later defame him.",
+      "chapters": [
+        289
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "public-payments",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the alliance, Fang Yuan draws battle stage participant information from him, and narration says eight years undercover as an information gatherer leave his battle stage knowledge even past Wei Yang’s.",
+      "chapters": [
+        290
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "public-payments",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "Shang Yan Fei later asks how much of the two hundred thousand still remains owed.",
+      "chapters": [
+        292
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "public-payments",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "Fang Yuan keeps paying him in public to protect reputation and, with Li Ran’s response, keeps Wu clan from moving for a time.",
+      "chapters": [
+        293
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "public-payments",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Li Ran later confirms Bai clan’s group has left Shang Clan City.",
+      "chapters": [
+        296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "continued-cooperation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "Fang Yuan still uses Wei Yang’s authority and Li Ran’s underground network to prepare before fights.",
+      "chapters": [
+        301
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "continued-cooperation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan finds him inside third inner city battle stage, still a secret Wu clan spy known only to Fang Yuan, and offers three kings inheritance information for Wu clan.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "continued-cooperation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After leaving Shang Liang mountain, Fang Yuan notes that knowing Li Ran’s identity means Wu clan might move against him.",
+      "chapters": [
+        336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "continued-cooperation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_liang_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/li-ran/",
+      "chapters": [
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        292,
+        293,
+        296,
+        301,
+        325,
+        336
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 282",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wu Clan as of ch. 283",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 282,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_all_out_effort_gu",
+      "role": "carrier",
+      "recorded_chapter": 285,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_flowerbud_gu",
+      "role": "master",
+      "recorded_chapter": 283,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_heart_sound_gu",
+      "role": "user",
+      "recorded_chapter": 284,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

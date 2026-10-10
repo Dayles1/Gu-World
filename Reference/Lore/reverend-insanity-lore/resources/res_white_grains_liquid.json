@@ -1,0 +1,142 @@
+{
+  "id": "res_white_grains_liquid",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "White grains liquid",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "White grains liquid is a spicy Bai village wine counted among Qing Mao Mountain's three famous wines and used in Four Flavors Liquor Worm fusion.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 117,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    117,
+    121
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_four_flavors_liquor_worm",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 3
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Bai village is famous for white grain liquid. Together with Gu Yue green bamboo wine and Xiong village bear gall wine, it is called one of the three wines of Qing Mao.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qing-mao-three-wines",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_village",
+        "fac_gu_yue_clan",
+        "loc_xiong_village"
+      ]
+    },
+    {
+      "text": "In the Four Flavors Liquor Worm fusion, spicy is white grains liquid. After bitter shell wine, Fang Yuan pours the white grains liquid; once all four wines are spent, the light in the jar flourishes and then vanishes as the worm forms.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "spicy-fusion-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_four_flavors_liquor_worm",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/white-grains-liquid.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/white-grains-liquid/",
+      "chapters": [
+        117,
+        121
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Bai village",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Four Flavors Liquor Worm",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

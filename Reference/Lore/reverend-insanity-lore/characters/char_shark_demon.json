@@ -1,0 +1,618 @@
+{
+  "id": "char_shark_demon",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shark Demon",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shark Demon is an Eastern Sea immortal zombie who trades deepsea lightning eels for help restoring Yu Lu blessed land's broken entrance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 683,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    683,
+    746,
+    818,
+    819,
+    891,
+    892,
+    893,
+    917,
+    918,
+    920,
+    987,
+    1374
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zombie_alliance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 683,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_death_sentence_awaits_immortal_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 683,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_melt_ice_immortal_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 897,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_lower_controls_higher",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 920,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_death_sentence_awaits_immortal_gu",
+      "count": 4
+    },
+    {
+      "target": "move_lower_controls_higher",
+      "count": 4
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 3
+    },
+    {
+      "target": "gu_melt_ice_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 2
+    },
+    {
+      "target": "loc_hai_shi_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "loc_yu_lu_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_su_bai_man",
+      "count": 2
+    },
+    {
+      "target": "char_bo_dan",
+      "count": 2
+    },
+    {
+      "target": "house_profound_ice_house",
+      "count": 2
+    },
+    {
+      "target": "loc_shark_sea",
+      "count": 2
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_yu_lu",
+      "count": 1
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_deepsea_lightning_eels",
+      "count": 1
+    },
+    {
+      "target": "gu_time_anchor_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_man_as_before_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_vanishing_immortal_essence_dissipation_rain",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "move_freezing_rain_frozen_earth",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_poetic_emotion_sea_area",
+      "count": 1
+    },
+    {
+      "target": "race_mermen",
+      "count": 1
+    },
+    {
+      "target": "gu_landscape_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "res_medicine_ice",
+      "count": 1
+    },
+    {
+      "target": "move_fighting_soul_battlefield",
+      "count": 1
+    },
+    {
+      "target": "char_lu_tan_xin",
+      "count": 1
+    },
+    {
+      "target": "char_ninth_ghost_finger",
+      "count": 1
+    },
+    {
+      "target": "char_xie_shu_fang",
+      "count": 1
+    },
+    {
+      "target": "move_distinct_map",
+      "count": 1
+    },
+    {
+      "target": "move_eight_doors_labyrinth",
+      "count": 1
+    },
+    {
+      "target": "loc_undying_kingdom",
+      "count": 1
+    },
+    {
+      "target": "loc_yellow_spring_sea_area",
+      "count": 1
+    },
+    {
+      "target": "loc_bee_sea",
+      "count": 1
+    },
+    {
+      "target": "move_unmoving_troops",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "move_angry_bird",
+      "count": 1
+    },
+    {
+      "target": "char_one_finger_flow_shark",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_star_soul_battlefield",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "gu_sovereign_immortal_fetus_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_hundred_and_eighty_slaves_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_hundred_and_eighty_slaves",
+      "count": 1
+    },
+    {
+      "target": "move_man_as_before",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Tai Bai Yun Sheng meets him as a Zombie Alliance member bringing large amounts of goods to sell at Hai Shi blessed land. Shark Demon first refuses the sale, then agrees after learning the buyer is Tai Bai Yun Sheng. Trust is sealed with Death Sentence Awaits, a rank seven rule path Immortal Gu that can set a person’s time of death. Tai Bai Yun Sheng names him a rank seven immortal zombie.",
+      "chapters": [
+        683
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng",
+        "fac_zombie_alliance",
+        "loc_hai_shi_blessed_land",
+        "gu_death_sentence_awaits_immortal_gu",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "The secret land is not Shark Demon’s own. It is Yu Lu blessed land.",
+      "chapters": [
+        683
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yu_lu_blessed_land"
+      ]
+    },
+    {
+      "text": "Shark Demon has a wife named Su Bai Man, also an immortal zombie; after she took that state he followed her into it despite still having ample lifespan. After Man as Before is exposed during an attack on Yu Lu blessed land, he invites Tai Bai Yun Sheng to Eastern Sea Zombie Alliance as a guest; Tai Bai Yun Sheng refuses, and Shark Demon with two other immortal zombies hosts him instead at Hai Shi blessed land.",
+      "chapters": [
+        746
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wife-and-eastern-sea-zombie-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_su_bai_man",
+        "move_man_as_before",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "During that push, Shark Demon leads the group, reacts first when drizzle begins to consume immortal essence, and borrows Profound Ice House for the trip after paying a large price under Su Bai Man’s urging. He is again a rank seven expert on Zombie Alliance’s mission to attack Yu Lu blessed land, and he has entered it multiple times.",
+      "chapters": [
+        818
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yu-lu-invasion-lead",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_profound_ice_house"
+      ]
+    },
+    {
+      "text": "When Su Bai Man urges that they trail Tai Bai Yun Sheng to learn his route through the earth tide, Shark Demon firmly refuses, since routes are not fixed and lose their value once a few earth tides have changed the formless tidal forces. Their main goal, he says, is to cooperate with him and use Man as Before for their revival, a long-term plan they will not harm for short-term profit.",
+      "chapters": [
+        819
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "man-as-before-over-short-term-profit",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As leader among them, and because Tai Bai Yun Sheng had introduced Xing Xiang Zi as his friend, Shark Demon returns Xing Xiang Zi’s bow of apology. He asks Xing Xiang Zi to give it a try rather than withdraw, but after the fifth wave of attacks he sees no progress being made, his evaluation of this trip’s gains and losses turns over completely, and he squeezes out the order to retreat.",
+      "chapters": [
+        891
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "returning-the-bow-then-calling-the-retreat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shark Demon hosts the shark fishing banquet at his palace in Shark Sea and sets its rule himself: guests have seven minutes and must stay inside the palace.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hosting-the-shark-fishing-banquet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shark_sea"
+      ]
+    },
+    {
+      "text": "Alone with Su Bai Man, Shark Demon calls Xing Xiang Zi arrogant, saying there is ruthlessness behind his gentle appearance and that he is no kind person. He decides to keep Bo Dan for the next attempt regardless of his uselessness, reasoning that since their own side does not understand wisdom path methods, Bo Dan is what keeps Xing Xiang Zi in check.",
+      "chapters": [
+        893
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "private-view-of-xing-xiang-zi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bo_dan"
+      ]
+    },
+    {
+      "text": "Taking down Yu Lu blessed land, Shark Demon expects the biggest reward, at least one or two Immortal Gu, plus a huge sum of contribution points from Zombie Alliance, and hopes for one that could free him and his wife from zombie status.",
+      "chapters": [
+        917
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hoped-for-rewards-from-yu-lu-blessed-land",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shark Demon and Su Bai Man agree to fund Fang Yuan’s refining of a wisdom path Immortal Gu without forcing an oath or probing his thoughts with Gu worms, partly because a friendship with a wisdom path Gu Immortal is precious.",
+      "chapters": [
+        918
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "funding-fang-yuan-without-oath-or-probe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_worms",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Shark Demon tells Fang Yuan and Tai Bai Yun Sheng that the two of them found the one finger flow shark’s tracks by chance, then deliberately requested this sea area from Zombie Alliance and built shark sea over it. When Blazing Heaven Demoness guesses that they spared no expense to exchange with Zombie Alliance for Lower Controls Higher, an immortal killer move of the enslavement path grandmaster Hundred and Eighty Slaves, in order to subdue the shark, he admits it frankly: he has been managing the sea area’s shark groups for that purpose and has not succeeded, since his enslavement path attainment is insufficient and he does not hold the Immortal Gu that form the killer move.",
+      "chapters": [
+        920
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "plan-to-subdue-the-one-finger-flow-shark",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_blazing_heaven_demoness",
+        "move_lower_controls_higher",
+        "move_hundred_and_eighty_slaves"
+      ]
+    },
+    {
+      "text": "Blazing Heaven Demoness settles the relationships within Eastern Sea Zombie Alliance and uses Bo Dan as an excuse to oust Shark Demon and Su Bai Man.",
+      "chapters": [
+        987
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ousted-from-eastern-sea-zombie-alliance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "With Eastern Sea Zombie Alliance’s headquarters schemed against by Shadow Sect, Shark Demon and his wife Su Bai Man are both turned into Gu materials to refine sovereign immortal fetus Gu.",
+      "chapters": [
+        1374
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "turned-into-gu-materials",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "gu_sovereign_immortal_fetus_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shark-demon/",
+      "chapters": [
+        683,
+        746,
+        818,
+        819,
+        891,
+        892,
+        893,
+        917,
+        918,
+        920,
+        987,
+        1374
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 683",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zombie Alliance as of ch. 683",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 683,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_death_sentence_awaits_immortal_gu",
+      "role": "owner",
+      "recorded_chapter": 683,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_melt_ice_immortal_gu",
+      "role": "user",
+      "recorded_chapter": 897,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

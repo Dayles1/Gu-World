@@ -1,0 +1,111 @@
+{
+  "id": "move_cleanse_sky",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cleanse Sky",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Cleanse Sky is a rule path immortal killer move Lang Ya land spirit uses against Qin Bai Sheng's golden hammer.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 880,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    880
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_lang_ya_land_spirit",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 880,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 3
+    },
+    {
+      "target": "move_city_crushing_hammer",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Lang Ya land spirit does not dodge City Crushing Hammer. When his thick and strong arms interact with the hammer, dozens of Gu worms fly out and circle him. In an instant the giant golden hammer vanishes without a trace, as if it had never existed. Only the air currents that the hammer created remain, and they blow as strong winds.",
+      "chapters": [
+        880
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "move_city_crushing_hammer",
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/cleanse-sky/",
+      "chapters": [
+        880
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Lang Ya Land Spirit",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

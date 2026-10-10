@@ -1,0 +1,249 @@
+{
+  "id": "char_old_man_lie_shen",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Old Man Lie Shen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Old Man Lie Shen was a Wan clan rank seven wisdom path Gu Immortal of Western Desert who went mad in cultivation, slaughtered righteous path Gu Immortals, then vanished and became a rumor label pinned on Suan Bu Jin.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1799,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1799,
+    1802
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wan_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1799,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wan_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_zheng_jing_shen",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wan_liang_han",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Rumors say Suan Bu Jin is Old Man Lie Shen’s inheritor, a demonic descendant recruited by Fang clan, and that Wan clan will investigate that identity.",
+      "chapters": [
+        1799
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan",
+        "fac_wan_clan"
+      ]
+    },
+    {
+      "text": "He had been a Wan clan wisdom path Gu Immortal, but an accident while cultivating made him lose himself and become a lunatic. He had rank seven cultivation, and his strength rose further after he went crazy. He caused huge losses to Wan clan and slaughtered Gu Immortals of other righteous path forces. Several righteous path forces allied to besiege and kill him, but they found no traces. He disappeared completely and the matter was left unresolved.",
+      "chapters": [
+        1799
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "madness-and-disappearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "After Wan Liang Han’s death, Wan clan’s first supreme elder says they can be certain Suan Bu Jin is Old Man Lie Shen’s inheritor and that the bloody debt Old Man Lie Shen owes will be paid by him. Placing that crime on Fang Yuan gives Western Desert righteous path forces an excuse to move against Fang clan. Fang clan answers by declaring they will protect Fang Yuan and prove his origin relates to Zheng Jing Shen instead.",
+      "chapters": [
+        1802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "crime-pinned-on-suan-bu-jin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wan_liang_han",
+        "char_fang_yuan",
+        "reg_western_desert",
+        "char_zheng_jing_shen"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/old-man-lie-shen/",
+      "chapters": [
+        1799,
+        1802
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1799",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wan Clan as of ch. 1799",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1799,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

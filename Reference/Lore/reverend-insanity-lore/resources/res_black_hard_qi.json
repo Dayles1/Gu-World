@@ -1,0 +1,144 @@
+{
+  "id": "res_black_hard_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Black hard qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Black hard qi is rank eight qi gathered as lumps when an immemorial hard-qi monster is broken apart.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1998,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1998,
+    1999
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_he_jian",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_jue_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Qi Jue grotto-heaven, Xiao He Jian warns of an immemorial qi monster created from hard qi: a pitch-black whale-like body, sleeping at that moment. Dragon Palace crashes through it until the monster breaks apart into lumps of black hard qi. Wu Shuai stores the hard qi in the palace and keeps most of the gains while sharing the rest as spoils.",
+      "chapters": [
+        1998
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hard-qi-monster",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_jue_grotto_heaven",
+        "char_xiao_he_jian",
+        "house_dragon_palace",
+        "char_wu_shuai"
+      ]
+    },
+    {
+      "text": "While Dragon Palace presses toward the grotto-heaven’s center, sharp blade qi, black hard qi, dark death qi, and other qi currents stand in the way, all at rank eight level.",
+      "chapters": [
+        1999
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-currents",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/black-hard-qi.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/black-hard-qi/",
+      "chapters": [
+        1998,
+        1999
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Immemorial qi monster of hard qi",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

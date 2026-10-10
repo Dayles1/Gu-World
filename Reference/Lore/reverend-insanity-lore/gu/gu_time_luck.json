@@ -1,0 +1,411 @@
+{
+  "id": "gu_time_luck",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Time Luck",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Time Luck is a luck path and time path Immortal Gu. It consumes immortal essence and time to boost the user's luck.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 767,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    767,
+    778,
+    815,
+    822,
+    1482,
+    1683,
+    1823,
+    1824
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fairy_li_shan",
+      "role": "prior owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 767,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 767,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fairy_li_shan",
+      "count": 3
+    },
+    {
+      "target": "move_time_assist_luck",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "house_cooking_luck_pot",
+      "count": 3
+    },
+    {
+      "target": "gu_qi_luck_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_inch_of_time_gu",
+      "count": 1
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_inspection_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/time-luck.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/time-luck/",
+      "chapters": [
+        767,
+        778,
+        815,
+        822,
+        1482,
+        1683,
+        1823,
+        1824
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 6,
+        "recorded_chapter": 1482,
+        "confidence": "B"
+      },
+      {
+        "rank": 7,
+        "recorded_chapter": 1683,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_luck"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is like a jade centipede, pale green, and gives off a watery sheen while swimming and coiling.",
+        "chapters": [
+          778
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Time Luck looks like a pale green jade centipede. It swims above Fang Yuan’s head with a watery sheen while he feeds it green grape immortal essence. Activating it expends immortal essence and the Gu Immortal’s lifespan for a luck boost. Using inch of time instead of lifespan works only briefly: a mountain of inch of time vanishes in a few breaths, and the Gu stops when that support ends, with almost no lasting luck gain.",
+        "chapters": [
+          778
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-activation",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan later forces Fairy Li Shan to hand over that killer move. Its name is time assist luck. It uses Time Luck as the core, steals other people’s lifespan, and temporarily boosts the user’s own luck. He had already failed to make inch of time a cheap substitute, and his time path attainment was too low to deduce a better pairing himself.",
+        "chapters": [
+          815
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "lifespan-stealing-killer-move",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "When he activates time assist luck, Time Luck is the core while surrounding mortal Gu support a white-gold mist of light.",
+        "chapters": [
+          822
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "lifespan-stealing-killer-move",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_mortal_gu"
+        ]
+      },
+      {
+        "text": "When he assembles the Immortal Gu House Cooking Luck Pot, he adds Time Luck with his other luck path Immortal Gu into the construction.",
+        "chapters": [
+          1823
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "immortal-gu-house",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_immortal_gu_house",
+          "house_cooking_luck_pot"
+        ]
+      },
+      {
+        "text": "Cooking Luck Pot then carries Time Luck, Luck Inspection, Dog Shit Luck, Qi Luck, Connect Luck, and other Immortal Gu as basic functions of the House.",
+        "chapters": [
+          1824
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "immortal-gu-house",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_luck_inspection_immortal_gu",
+          "gu_dog_shit_luck",
+          "gu_qi_luck_immortal_gu",
+          "gu_connect_luck"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "A later inventory lists Time Luck among Fang Yuan’s rank six luck path Immortal Gu, already poorly matched to his rank seven cultivation.",
+        "chapters": [
+          1482
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-listing-and-advancement",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He later advances Time Luck to rank seven with other Immortal Gu.",
+        "chapters": [
+          1683
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "rank-listing-and-advancement",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fairy_li_shan",
+      "role": "prior owner",
+      "recorded_chapter": 767,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "owner",
+      "recorded_chapter": 767,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fairy Li Shan offers several Immortal Gu as compensation; Fang Yuan chooses Time Luck. She obtained it as payment from Qin Bai Sheng. Ordinary Gu Immortals who activate it expend their own lifespan, and as an immortal zombie Fang Yuan cannot spend lifespan the same way, so she warns him against picking it. She also has an immortal killer move with Time Luck as the core that draws on another person’s lifespan to amplify the user’s luck. Fang Yuan takes the Gu anyway, planning to try inch of time in place of lifespan, and Fairy Li Shan lets him have it.",
+        "chapters": [
+          767
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fairy_li_shan",
+          "sys_immortal_gu",
+          "char_fang_yuan",
+          "char_qin_bai_sheng",
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

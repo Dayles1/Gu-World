@@ -1,0 +1,310 @@
+{
+  "id": "char_mi_lan_guang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mi Lan Guang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "mi lan guang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ми Лань Гуан",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Brother Mi"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mi Lan Guang is a Central Continent information path Gu Immortal who founded Lightning Information Sect after leaving Wind Cloud Manor.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 838,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    838,
+    1744,
+    1746,
+    1884
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_lightning",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "path",
+      "target": "path_information",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wind_cloud_manor",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 838,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 3
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "path_lightning",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_great_treasury_immortal",
+      "count": 2
+    },
+    {
+      "target": "char_jian_yi_sheng",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "res_electrolytic_iron_starflower",
+      "count": 1
+    },
+    {
+      "target": "res_lightning_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "move_everybodys_vision",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Lightning Information Sect is a super force created by a Gu Immortal. Its creator, Mi Lan Guang, was originally a lightning path Gu Immortal from Wind Cloud Manor. Because he broke sect rules, his cultivation was crippled and he was expelled. To sustain a living he cultivated information path, combined that with his lightning path experience, and created a set of unique information path Gu worms. He then developed faster than before and founded Lightning Information Sect, which after more than a hundred years became a first-rate Central Continent sect skilled in information path; even the ten great ancient sects bought information from them at times.",
+      "chapters": [
+        838
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "house_wind_cloud_manor",
+        "sys_gu_worms",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "In Thunder Peak Mountain Range he shouts for Great Treasury Immortal and Jian Yi Sheng to leave the electrolytic iron starflower, a rank seven information path and lightning path immortal material he grew himself. Great Treasury Immortal knows he was originally a lightning path Gu Immortal of Wind Cloud Manor, a subsidiary force of Heavenly Court, then broke sect rules, was crippled and kicked out, cultivated information path, and advanced to rank seven again. After Jian Yi Sheng’s deceit is exposed, Mi Lan Guang allies with Great Treasury Immortal to chase Jian Yi Sheng. He uses everybody’s vision, a human path killer move arranged by Genesis Lotus Immortal Venerable on the foundation of people’s united hearts, to share vision across Central Continent and track Jian Yi Sheng. The chase is bait: Central Continent lone immortals trap Great Treasury Immortal in a formation.",
+      "chapters": [
+        1744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "electrolytic-iron-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_great_treasury_immortal",
+        "char_jian_yi_sheng",
+        "fac_heavenly_court",
+        "char_genesis_lotus_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Duke Long’s view of Central Continent’s unity lists lone immortal Jian Yi Sheng and Mi Lan Guang, who was expelled from his sect, taking the initiative to ally and ambush Great Treasury Immortal.",
+      "chapters": [
+        1746
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ambush-note",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_duke_long"
+      ]
+    },
+    {
+      "text": "Narration of the qi sea banquet notes that in the previous life Great Treasury Immortal invaded Central Continent and stole Mi Lan Guang’s rank seven immortal material electrolytic iron starflower.",
+      "chapters": [
+        1884
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-theft",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/mi-lan-guang/",
+      "chapters": [
+        838,
+        1744,
+        1746,
+        1884
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1744",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Lightning path Information path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wind Cloud Manor as of ch. 838",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1744,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_lightning",
+      "path_information"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

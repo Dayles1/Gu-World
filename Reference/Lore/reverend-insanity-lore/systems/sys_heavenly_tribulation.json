@@ -1,0 +1,183 @@
+{
+  "id": "sys_heavenly_tribulation",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly Tribulation",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A heavenly tribulation is the stronger periodic trial paired with earthly calamities. Blessed lands face one every hundred years at the base schedule.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 374,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    374,
+    740,
+    819,
+    826,
+    850,
+    1007
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_calamities_and_tribulations",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_earth_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_heaven_and_earth_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_heaven_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_earthly_calamity",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Every blessed land faces an earthly calamity every ten years and a heavenly tribulation every hundred years.",
+      "chapters": [
+        374
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When assessing a Gu Immortal’s cultivation level, Gu Immortals often use the heavenly tribulation as the standard. After a rank six Gu Immortal goes through three heavenly tribulations, the blessed land expands and the cultivator becomes rank seven.",
+      "chapters": [
+        740
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Besides rare unique methods, the most common and orthodox way to obtain dao marks is to pass heavenly tribulations and earthly calamities. Every tribulation and calamity passed can add dao marks to the Gu Immortal’s body. The amount depends on the strength of the tribulation or calamity: the stronger it is, the more dao marks follow.",
+      "chapters": [
+        819
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dao-marks-from-survival",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dao marks are hard to obtain. Each heavenly tribulation or earthly calamity risks the Gu Immortal’s life, and damage to the immortal aperture can destroy the resources inside.",
+      "chapters": [
+        850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dao-marks-from-survival",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_dao_marks"
+      ]
+    },
+    {
+      "text": "Gu Immortals at rank six experience an earthly calamity every ten years and a heavenly tribulation every one hundred years. After three hundred years, thirty earthly calamities and three heavenly tribulations, they can advance to rank seven. Earthly calamities are weaker than heavenly tribulations. Each is a difficult test from heaven, filled with danger and opportunity.",
+      "chapters": [
+        826
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-six-cadence",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_earthly_calamity"
+      ]
+    },
+    {
+      "text": "Gu Immortals at rank seven face an earthly calamity every ten years, a heavenly tribulation every fifty years, and a grand tribulation every one hundred years. Gu Immortals at rank eight face a heavenly tribulation every ten years, a grand tribulation every fifty years, and a myriad tribulation every one hundred years. Earthly calamities, heavenly tribulations, grand tribulations, and myriad tribulations are ranked by increasing strength.",
+      "chapters": [
+        1007
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "faster-intervals-at-higher-ranks",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/heavenly-tribulation/",
+      "chapters": [
+        374,
+        740,
+        819,
+        826,
+        850,
+        1007
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Tribulation",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

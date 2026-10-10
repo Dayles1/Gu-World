@@ -1,0 +1,339 @@
+{
+  "id": "char_liu_hao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Liu Hao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "liu hao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Лю Хао",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Wu clan's Liu Hao"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Liu Hao is a Heavenly Court spy planted among Southern Border forces through Wu clan, holding fixed space Immortal Gu to counter Fixed Immortal Travel.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1600,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1600,
+    1603,
+    1604,
+    1610,
+    1611,
+    1615
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1600,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wu_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1604,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_fixed_space_immortal_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1600,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_fixed_space_immortal_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 3
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_jun_shen_guang",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xia_cha",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_yuan_qiong_du",
+      "count": 1
+    },
+    {
+      "target": "move_soul_search",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_as_before_formation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the Southern Border encirclement of Fang Yuan he stands ready with fixed space Immortal Gu in his immortal aperture, a Gu that can counter Fixed Immortal Travel and block its use in a certain area.",
+      "chapters": [
+        1600
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_fang_yuan",
+        "gu_fixed_space_immortal_gu",
+        "gu_fixed_immortal_travel"
+      ]
+    },
+    {
+      "text": "When years flow execution formation is breaking he shouts that it is time for Fang Yuan to die and activates fixed space Immortal Gu, instantly stopping Fixed Immortal Travel in the area.",
+      "chapters": [
+        1603
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fixed-space-use",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Jun Shen Guang identifies him as a spy of Heavenly Court put into Southern Border’s forces with Wu clan’s help, holding fixed space Immortal Gu aimed at Fang Yuan’s Fixed Immortal Travel.",
+      "chapters": [
+        1604
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-spy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jun_shen_guang",
+        "fac_heavenly_court",
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan later lists him as Wu clan’s Liu Hao among captives whose Gu are inspected. Fang Yuan’s side steals from his aperture but finds Immortal Gu and mortal Gu already self-detonated by a refinement path tamper so that when one Gu leaves, every Gu detonates together.",
+      "chapters": [
+        1610
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "captivity-and-self-detonation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "sys_mortal_gu"
+      ]
+    },
+    {
+      "text": "Fairy Zi Wei later notes that fixed space Immortal Gu has self-detonated, and treats Liu Hao’s capture as a signal that other Southern Border immortals may also be captive. Narration places him as a mere rank seven whose sacrifice Heavenly Court weighs lightly against the wider scheme.",
+      "chapters": [
+        1611
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "captivity-and-self-detonation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei"
+      ]
+    },
+    {
+      "text": "Fang Yuan cannot obtain the tampered Gu, finds strong defenses on the soul, and learns Liu Hao’s true Heavenly Court identity from soul search.",
+      "chapters": [
+        1615
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "captivity-and-self-detonation",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/liu-hao/",
+      "chapters": [
+        1600,
+        1603,
+        1604,
+        1610,
+        1611,
+        1615
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1611",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Heavenly Court as of ch. 1600 Wu Clan as of ch. 1604",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1611,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_fixed_space_immortal_gu",
+      "role": "holder",
+      "recorded_chapter": 1600,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

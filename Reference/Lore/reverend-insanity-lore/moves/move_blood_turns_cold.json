@@ -1,0 +1,191 @@
+{
+  "id": "move_blood_turns_cold",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Turns Cold",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blood Turns Cold is an immortal killer move that Fang Zheng uses to freeze a living target until heated blood goes cold and the body cannot move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1685,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1685,
+    1818,
+    1831,
+    2091
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_zheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_zheng",
+      "count": 3
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a Central Continent Earth Trench, Gu Yue Fang Zheng uses Blood Turns Cold on a giant desolate beast monkey. The monkey’s body freezes; the coldness seems to penetrate the soul itself and freeze its heated blood. Zhao Lian Yun congratulates him on freely utilizing the move after days of combat, and he thanks her for protecting him while he practised. Fairy Zi Wei had arranged this move and other immortal killer moves for him, and he is already proficient in battle.",
+      "chapters": [
+        1685
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "reg_earth_earth_trench",
+        "char_fang_zheng",
+        "char_zhao_lian_yun",
+        "char_fairy_zi_wei"
+      ]
+    },
+    {
+      "text": "On an Immortal Crane Sect mission, after baiting, poisoning, and fighting a golden mountain ox in a valley, Fang Zheng uses blood turns cold to freeze the ox and capture it alive.",
+      "chapters": [
+        1818
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ox-capture",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_immortal_crane_sect"
+      ]
+    },
+    {
+      "text": "He later freezes three desolate beasts until they slow, fall, and grunt. They do not die. After familiarizing himself with the move, he can use it to capture enemies, and Zhao Lian Yun calls blood path killer moves truly powerful as they fight together.",
+      "chapters": [
+        1831
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "three-beast-capture",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Zhao Lian Yun later lists helping Fang Zheng train blood turns cold among the steps she took after his immortal ascension.",
+      "chapters": [
+        2091
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "training-recollection",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/blood-turns-cold/",
+      "chapters": [
+        1685,
+        1818,
+        1831,
+        2091
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Zheng",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

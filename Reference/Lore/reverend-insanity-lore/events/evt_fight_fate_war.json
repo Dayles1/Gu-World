@@ -1,0 +1,278 @@
+{
+  "id": "evt_fight_fate_war",
+  "entity_type": "event",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fate War",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "the fate war"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The fate war is the conflict the whole Gu Immortal world knows of, fought at the peak of that world's battle strength between Heavenly Court and Fang Yuan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1971,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1971,
+    1976,
+    1979,
+    1989
+  ],
+  "relations": [
+    {
+      "type": "in_arc",
+      "target": "evt_arc_great_era_spectral_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fang_yuan",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1971,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "heavenly_court",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1976,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_great_era_spectral_soul",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "evt_era_great",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_ice_crystal_immortal_monarch",
+      "count": 1
+    },
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_bai_cang_shui",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "house_demon_judgment_board",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fairy Bai Qing tells Feng Jin Huang that Feng Jiu Ge played demonic immortal unification song during the fate war, a song he had kept as a love symbol, to say that righteous immortals and demons are the same and that leaving the righteous path would not end their family ties.",
+      "chapters": [
+        1971
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_bai_qing",
+        "char_feng_jin_huang",
+        "char_feng_jiu_ge"
+      ]
+    },
+    {
+      "text": "Feng Jin Huang states that Fang Yuan destroyed fate Gu and refined it into countless heaven path dao marks dispersed to people in the world.",
+      "chapters": [
+        1971
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "outcome",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_fate_gu"
+      ]
+    },
+    {
+      "text": "During the fate war, Central Continent’s Heavenly Court used multiple human path killer moves with shocking power, and the entire world knew about it. Narration states that human path became renowned afterward.",
+      "chapters": [
+        1976
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "human-path-renown",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Ice Crystal Immortal Monarch tells the Merman Imperial Court that everyone has already seen the fate war: fate has been destroyed, the five regions have merged, and the world is changing with disasters and long conflict ahead. At that time, the fate war is known to everyone.",
+      "chapters": [
+        1979
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "known-to-everyone",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ice_crystal_immortal_monarch",
+        "fac_merman_imperial_court"
+      ]
+    },
+    {
+      "text": "After the fate war, Heavenly Court has lost: Duke Long is dead, Feng Jiu Ge has betrayed them, the immortal graveyard is destroyed, and Star Constellation’s will has no response, leaving Heavenly Court at its weakest for the last million years. Demon Judgment Board showed solid performance during the fate war, fought directly, and survived, marking it among the top rank eight Immortal Gu Houses. Bai Cang Shui contrasts ordinary fighting with the fate war, where intense fighting persists for months. The fate war is at the peak of the world in battle strength; after Fang Zheng takes part personally, his impression of Gu Immortal fights rises sharply.",
+      "chapters": [
+        1989
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "peak-battle-strength",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_duke_long",
+        "house_demon_judgment_board",
+        "sys_immortal_gu_house",
+        "char_bai_cang_shui",
+        "char_fang_zheng",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/fights/fate-war/",
+      "chapters": [
+        1971,
+        1976,
+        1979,
+        1989
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Arc": {
+      "text": "Great Era and Spectral Soul",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Fang Yuan": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Heavenly Court": {
+      "text": "Heavenly Court",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Outcome": {
+      "text": "Fang Yuan destroys fate Gu and refines it into countless heaven path dao marks dispersed to people in the world.",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "event_kind": "fights"
+}

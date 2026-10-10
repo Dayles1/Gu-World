@@ -1,0 +1,303 @@
+{
+  "id": "gu_beggar_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beggar Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Beggar Gu is a human path Gu that can take a beggar's human form. Fang Di Chang's remnant will uses Shen Shang's beggar Gu as a body in the painting world.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2013,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2013,
+    2065,
+    2082,
+    2267
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_shen_shang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2013,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_di_chang",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2013,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_di_chang",
+      "count": 3
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 3
+    },
+    {
+      "target": "fac_beggar_sect",
+      "count": 2
+    },
+    {
+      "target": "gu_sect_token_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_human_will_gu",
+      "count": 1
+    },
+    {
+      "target": "path_human",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_merchant_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/beggar-gu/",
+      "chapters": [
+        2013,
+        2065,
+        2082,
+        2267
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "When used as a body, it presents a beggar’s appearance with ragged clothes and foul odor.",
+        "chapters": [
+          2082
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "No chapter describes the Gu worm’s body itself.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "He judges beggar Gu the cheapest human path Gu worms, with very low battle strength, disadvantaged against merchants and guards unless they unite for numbers. He can keep beggar Gu maintained continuously because he uses Shen Shang’s immortal essence rather than limited primeval essence. The body formed from a beggar Gu has no soul, only a will that expends itself when thinking.",
+        "chapters": [
+          2082
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "battle-limits",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Fang Yuan later obtains the incomplete Immortal Gu recipes of beggar Gu and merchant Gu.",
+        "chapters": [
+          2267
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "incomplete-recipe",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_recipe"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_shen_shang",
+      "role": "unspecified",
+      "recorded_chapter": 2013,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_di_chang",
+      "role": "user",
+      "recorded_chapter": 2013,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "After Fang Di Chang’s body and soul are destroyed, Fang Yuan’s remnant will possesses a body created from Shen Shang’s beggar Gu while hiding as a beggar in the painting world.",
+        "chapters": [
+          2013
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_di_chang",
+          "char_fang_yuan",
+          "char_shen_shang"
+        ]
+      },
+      {
+        "text": "Fang Di Chang’s current body is formed from a beggar Gu, and he is already a rank five five bags beggar. With Shen Shang’s help he purchases large amounts of beggar Gu and uses a sect token Gu killer move to establish Beggar Sect.",
+        "chapters": [
+          2065
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "beggar-sect-stock",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_sect_token_gu",
+          "fac_beggar_sect"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

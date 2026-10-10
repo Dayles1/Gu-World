@@ -1,0 +1,313 @@
+{
+  "id": "char_ou_fei",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ou Fei",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ou fei",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Оу Фэй",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Lord Ou Fei"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ou Fei is a rank two initial stage Gu Master on the Southern Border merchant caravan who forces his way toward Shang Xin Ci.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 250,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    250,
+    251,
+    252,
+    253
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_ou_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 251,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_ou_clan",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_zhu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_lei_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He arrives outside Shang Xin Ci’s tent with an arrogant youthful voice, knocks Xiao Die aside, and shouts that a lowly slave dare not block Ou Fei’s path. The text presents him as a young Gu Master whose gaze on Shang Xin Ci does not hide lust.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "char_xiao_die",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He is a young Gu Master with a devious look. Under his Gu, his palms increase in size by over three times.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He had yearned for her and wooed her several times, always rejected, and had held back from force while Zhang Zhu still lived. With Zhang Zhu dead he treats the mortal woman as unprotected prey. Shang Xin Ci reads him as only the most impatient of many wolves among Gu Masters who had worn righteous faces and now tear those masks.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pressing-shang-xin-ci",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhang_zhu",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "He laughs that her protector is dead, calls her to rely on him for safety, and moves to grab her. Xiao Die blocks him and he slaps her down, then raises another strike until Fang Yuan, still dressed as a servant, seizes his arm.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pressing-shang-xin-ci",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan kicks him out of the tent. Ou Fei rises in rage, jumps high, and dives with palms enlarged more than threefold under his Gu. The narration places him as no more than rank two initial stage trash against Fang Yuan’s rank two upper stage body carrying snow silver primeval essence. A spiral bone spear skewers his shoulder; Fang Yuan’s fist then caves in his face and leaves him dead on the ground.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-camp",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Camp talk gathers around the corpse. Witnesses name the white spear and the killing punch, and Ou Yang Gong runs to the smashed body as Ou clan’s grieving father before Fang Yuan turns on him as well.",
+      "chapters": [
+        251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "father-at-the-corpse",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ou_clan"
+      ]
+    },
+    {
+      "text": "After both father and son fall, the caravan recount lists eleven rank three Gu Masters among the survivors. Ou Yang Gong had been Ou clan’s rank three; without him the remaining Ou clan Gu Masters have no rank three left, and the public scene notes that gap as the corpses are cleared. Back in the tent, the leaders turn to how they can use Fang Yuan and Bai Ning Bing for their own benefit.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-tally-after-ou-clans-losses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Fang Yuan notes that Ou Fei came looking for trouble first, which suited him.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "looking-for-trouble",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ou-fei/",
+      "chapters": [
+        250,
+        251,
+        252,
+        253
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 250",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Ou Clan as of ch. 251",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 250,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

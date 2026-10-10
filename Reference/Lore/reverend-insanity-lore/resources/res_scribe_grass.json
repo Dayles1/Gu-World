@@ -1,0 +1,105 @@
+{
+  "id": "res_scribe_grass",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Scribe grass",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Scribe grass is an immortal material plant named among dense stocks inside a space-path Gu formation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 934,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    934
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside a giant space-path Gu formation with yellow sky and purple sand ground, Fang Yuan names scribe grass among dozens of immortal materials at a glance, together with nutrient peaches, immortal beans, and blood tide flowers.",
+      "chapters": [
+        934
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-stocks",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan picks up a strand of scribe grass from the purple sand. While it sits on the sand it looks sound, but the moment he lifts it, it withers and turns into fine purple sand identical to the ground underfoot. Other immortal materials in the field do the same once taken from the sand, leaving the whole display unusable.",
+      "chapters": [
+        934
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "purple-sand-test",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/scribe-grass/",
+      "chapters": [
+        934
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Grass",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "id": "res_concealing_heaven_dust",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Concealing heaven dust",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Concealing heaven dust is a precious rank eight immortal material found only in yellow heaven.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 871,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    871,
+    2133
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "res_rock_dragon_eye",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Old Ancestor Xue Hu orders Fairy Li Shan to gather concealing heaven dust together with rock dragon eye and elephant tusk flame. Rock dragon eye and elephant tusk flame are rank seven immortal materials; concealing heaven dust is a rank eight immortal material and very precious. It is found only in yellow heaven of the immemorial nine heavens. Because yellow heaven was destroyed by Ren Zu’s children, a collector must find a yellow heaven fragment world large enough, with enough dao marks to enter, then use special methods and face trouble while gathering the dust. Fairy Li Shan would rather pay a huge price to buy it in treasure yellow heaven than spend that time and effort. Even so, rank seven rock dragon eye is harder to obtain than this rank eight dust, because rockman tribes and rock dragons are scarce and she cannot defeat a rock dragon alone.",
+      "chapters": [
+        871
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-dust",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_ancestor_xue_hu",
+        "char_fairy_li_shan",
+        "res_rock_dragon_eye",
+        "char_ren_zu"
+      ]
+    },
+    {
+      "text": "Concealing heaven dust is named among a large stock of earth path immortal materials packed into an immortal aperture when preparing for tribulation.",
+      "chapters": [
+        2133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-stock",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/concealing-heaven-dust.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/concealing-heaven-dust/",
+      "chapters": [
+        871,
+        2133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Earth Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Yellow heaven of the immemorial nine heavens",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

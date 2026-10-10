@@ -1,0 +1,573 @@
+{
+  "id": "fac_chi_family",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chi Family",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Chi family branch Chi faction"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Chi family is a Gu Yue clan branch on Qing Mao Mountain, headed by elder Gu Yue Chi Lian.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 6,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    4,
+    6,
+    21,
+    29,
+    50,
+    78,
+    81,
+    82,
+    83,
+    87,
+    93,
+    133,
+    155,
+    157,
+    171,
+    174,
+    189
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_gu_yue_chi_lian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 6,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chi_shan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 81,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_chi_cheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 83,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_chi_lian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 83,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_chi_zhong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 155,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 5
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 4
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 4
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_mo_bei",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_mo_chen",
+      "count": 2
+    },
+    {
+      "target": "fac_mo_family",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_mo_yan",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_yao_ji",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_b_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_c_grade",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_chi_she",
+      "count": 1
+    },
+    {
+      "target": "gu_cleansing_water_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_snake_communication_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_man_beast_burial_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_medicine_faction",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_jiao_man",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_lin",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Fang Zheng shows A grade talent at the Awakening Ceremony, Gu Yue Chi Lian claims the Fang bloodline came from the Chi bloodline and announces that the Chi family will adopt him. Gu Yue Mo Chen contests that claim on the spot, and the clan head Gu Yue Bo takes the boy instead.",
+      "chapters": [
+        6
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "branch-inside-gu-yue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "sys_a_grade",
+        "sys_awakening_ceremony",
+        "char_gu_yue_chi_lian",
+        "char_gu_yue_mo_chen",
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "Later narration places Gu Yue Chi Lian’s Chi family as one of the three political fields inside the Gu Yue clan, beside the clan leader faction and Gu Yue Mo Chen’s Mo family.",
+      "chapters": [
+        78
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "branch-inside-gu-yue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "fac_mo_family"
+      ]
+    },
+    {
+      "text": "At the Awakening Ceremony the academy elder calls the Chi heir Gu Yue Chi Chen, and Fang Yuan’s memory already states that the public B grade result covers a true C grade talent kept up by Gu Yue Chi Lian.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_cheng",
+        "char_fang_yuan",
+        "sys_c_grade"
+      ]
+    },
+    {
+      "text": "Later academy, family, and wolf-tide chapters print that same heir as Gu Yue Chi Cheng or Chi Cheng.",
+      "chapters": [
+        21
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Outside the chapter 4 call, later prose uses Chi Cheng.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Chi family branch home is named when Chi Lian summons his grandson after Fang Yuan takes first place in vital Gu refinement. Chi Lian tells that grandson the real rivals are A grade Fang Zheng and the Mo family’s Mo Bei, not Fang Yuan.",
+      "chapters": [
+        21
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_vital_gu",
+        "char_gu_yue_mo_bei"
+      ]
+    },
+    {
+      "text": "At night in the Chi family branch home, Chi Lian frames Gu Yue Chi Cheng as the image of the Chi family branch in its long confrontation with the Mo family branch. Elders who support the family, he says, will leave if they see no future hope. He also states that he helped Chi Cheng cheat so the boy could impersonate a B grade talent, because the Chi family needs a strong successor to hold its supporters.",
+      "chapters": [
+        29
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_b_grade"
+      ]
+    },
+    {
+      "text": "Chi Cheng answers that for the future of the Chi family he is willing to sacrifice his prospects.",
+      "chapters": [
+        50
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the year-end exam, observers name Mo Bei and Chi Cheng as the Mo faction and Chi faction future leaders, and treat Fang Zheng as the clan leader faction’s rising junior. Chi Lian watches that stage hoping his grandson will win honour for the Chi faction.",
+      "chapters": [
+        83
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heir-name-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Chi Shan is named a representative of the Chi faction with rank two upper stage cultivation when Fang Yuan first meets him on Qing Mao Mountain.",
+      "chapters": [
+        81
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chi_shan",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "At the academy year-end crowd he stands as Gu Yue Chi Shan from the Chi faction, watching Chi Cheng among the graduates.",
+      "chapters": [
+        82
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later intake talk lists the Chi faction’s Chi Shan group beside Qing Shu’s clan-leader group and Mo Yan’s Mo faction group as the three best-performing teams.",
+      "chapters": [
+        87
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_qing_shu",
+        "char_gu_yue_mo_yan"
+      ]
+    },
+    {
+      "text": "When Fang Yuan is forced under Chi Shan for a beast-tide sortie, Chi Cheng is already in that group,",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and Gu Yue Chi She runs investigative work for it with Snake Communication Gu heat sense.",
+      "chapters": [
+        133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chi_she",
+        "gu_snake_communication_gu"
+      ]
+    },
+    {
+      "text": "Gu Yue Chi Zhong appears as the acting medicine hall clan elder after Gu Yue Yao Ji falls.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_zhong",
+        "char_gu_yue_yao_ji"
+      ]
+    },
+    {
+      "text": "Chi Lian names him a Chi faction member whose wife is of the Yao faction, and says Gu Yue Bo appointed him temporary medicine hall elder to balance Chi and Yao rivalry.",
+      "chapters": [
+        155
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-chi-figures-beyond-the-heir",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the wolf tide, Gu Yue Chi Lian joins the clan leader in assaulting the thunder crown wolf and is killed by the lightning lycan.",
+      "chapters": [
+        171
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-losses",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After that stretch, the text still counts the Chi faction as unfinished: inheritor Chi Cheng is alive, and Gu Yue Chi Zhong remains an elder of the same faction, even though Chi Lian is dead.",
+      "chapters": [
+        174
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-losses",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "With Fang Zheng, Xiong Jiao Man, Xiong Lin, and Chi Cheng as leaders, the young Gu Masters try to break Bai Ning Bing’s spirits, and Chi Cheng asks who should attack first. In the collapse that follows, Bai Ning Bing turns Gu Yue Chi Cheng into an ice sculpture caught in a dodging pose right before death, the face still showing shock and fear inside the ice coffin.",
+      "chapters": [
+        189
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "chi-cheng-against-bai-ning-bing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_jiao_man",
+        "char_xiong_lin",
+        "fac_gu_masters",
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/chi-family/",
+      "chapters": [
+        4,
+        6,
+        21,
+        29,
+        50,
+        78,
+        81,
+        82,
+        83,
+        87,
+        93,
+        133,
+        155,
+        157,
+        171,
+        174,
+        189
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Gu Yue Chi Lian",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

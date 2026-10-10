@@ -1,0 +1,240 @@
+{
+  "id": "char_huo_zheng_jun",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huo Zheng Jun",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "huo zheng jun",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хо Чжэн Цзюнь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Huo Zheng Jun is a righteous rank four fire path Gu Master named on a stele as the maker of an inheritance in Imperial Court blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 548,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    548
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_fire_pupil_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 548,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_huo_zheng_jun_inheritance",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_fire_pupil_gu",
+      "count": 4
+    },
+    {
+      "target": "inh_huo_zheng_jun_inheritance",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_eye_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan finds a bright red rock like a fire lotus in a valley after killing an eerie fire dragon python. The rock opens in layers and shows Gu worms and a stele written in northern plains words. The stele names Huo Zheng Jun as the fire path Gu Master who left the inheritance.",
+      "chapters": [
+        548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_worms",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He entered the valley by accident and was attacked by the eerie fire dragon python. Before dying from his injuries, he left his Gu worms and made the inheritance for a fated individual. He left seven Gu worms. After years, four have died and three remain. His core Gu worm was the rank four fire pupil Gu: fire burns wherever the user looks. Used for a long time, it damages the user’s eyes unless healing Gu and complementing Gu weaken that side effect. The stele also records Gu recipes, including advancing rank four fire pupil Gu from rank three fire eye Gu with sight blow Gu and associated materials. Fang Yuan keeps the three remaining Gu, stores the recipes, and smashes the stele.",
+      "chapters": [
+        548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "valley-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fire_pupil_gu",
+        "sys_healing_gu",
+        "sys_gu_recipe",
+        "gu_fire_eye_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/huo-zheng-jun/",
+      "chapters": [
+        548
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 548",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 548",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 548,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": "righteous path as of ch. 548",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_fire_pupil_gu",
+      "role": "holder",
+      "recorded_chapter": 548,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

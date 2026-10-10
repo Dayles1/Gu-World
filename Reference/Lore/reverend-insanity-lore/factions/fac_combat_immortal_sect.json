@@ -1,0 +1,406 @@
+{
+  "id": "fac_combat_immortal_sect",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Combat Immortal Sect",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Central Continent sect first named when Immortal Crane elders recall Shi Lei's rejected immortal slaughtering proposal.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 705,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    705,
+    712,
+    911,
+    955,
+    957,
+    962,
+    1003,
+    1227
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shi_lei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 712,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_divine_mother_jue_kong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 740,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shi_lei",
+      "count": 4
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "char_divine_mother_jue_kong",
+      "count": 2
+    },
+    {
+      "target": "house_edge_link_camp",
+      "count": 2
+    },
+    {
+      "target": "char_lord_tiger_demon",
+      "count": 2
+    },
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 2
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 2
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 2
+    },
+    {
+      "target": "char_seven_star_child",
+      "count": 2
+    },
+    {
+      "target": "char_yu_mu_chun",
+      "count": 2
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "move_earths_root",
+      "count": 1
+    },
+    {
+      "target": "move_steal_dream",
+      "count": 1
+    },
+    {
+      "target": "char_old_oracle",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_plant",
+      "count": 1
+    },
+    {
+      "target": "res_nether_grass",
+      "count": 1
+    },
+    {
+      "target": "loc_starry_sky_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "move_star_premonition",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "loc_falling_heavenly_river",
+      "count": 1
+    },
+    {
+      "target": "char_bi_chen_tian",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_overseeing_tower_lord",
+      "count": 1
+    },
+    {
+      "target": "char_lian_jiu_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_ancient_soul_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "house_canary_pavilion",
+      "count": 1
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 1
+    },
+    {
+      "target": "char_sleeping_lady",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the same Immortal Crane Sect exchange, Tiger Demon names Shi Lei Immortal Monkey King. Heavenly Court warns the ten great ancient sects not to specially target smaller sects and lone cultivator Gu Immortals for massacre.",
+      "chapters": [
+        705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "small-sects-protected",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_immortal_crane_sect",
+        "char_lord_tiger_demon",
+        "char_shi_lei",
+        "fac_heavenly_court",
+        "fac_ten_great_sects",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan later places Shi Lei as a higher-up of Combat Immortal Sect, one of Central Continent’s ten great ancient sects, an earth path expert who also cultivates transformation path, and someone who has secretly obtained several inheritances of Reckless Savage Demon Venerable.",
+      "chapters": [
+        712
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shi-lei-affiliation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_ten_great_ancient_sects",
+        "char_reckless_savage_demon_venerable"
+      ]
+    },
+    {
+      "text": "When Starry Sky grotto-heaven was intact, Combat Immortal Sect had already looted it repeatedly.",
+      "chapters": [
+        911
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "starry-sky-raids",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_starry_sky_grotto_heaven"
+      ]
+    },
+    {
+      "text": "Fairy Bai Qing later steps from Myriad Dragon Dock territory into Combat Immortal Sect territory on the way toward Falling Heavenly River.",
+      "chapters": [
+        955
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "territory-crossing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_bai_qing",
+        "fac_myriad_dragon_dock",
+        "loc_falling_heavenly_river"
+      ]
+    },
+    {
+      "text": "At Combat Immortal Sect, the first supreme elder’s will orders Jin Lie Yang to investigate the river’s source change and names Shi Lei’s prior contributions in exploring Starry Sky grotto-heaven.",
+      "chapters": [
+        957
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-investigation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Heaven Overseeing Tower Lord sees Yu Mu Chun cooperating with immortal zombie Bo Qing against Combat Immortal Sect, one of Central Continent’s ten great ancient sects, and states that Combat Immortal Sect is still a sect underneath Heavenly Court. He summons Lian Jiu Sheng and Bi Chen Tian; the three use Heavenly Court’s teleportation Gu formation and appear at Combat Immortal Sect’s base.",
+      "chapters": [
+        962
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "court-reinforcement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heaven_overseeing_tower_lord",
+        "char_yu_mu_chun",
+        "char_bo_qing",
+        "char_lian_jiu_sheng",
+        "char_bi_chen_tian",
+        "sys_gu_formation"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s previous life, Bo Qing could not attack Heavenly Lotus Sect and struck Combat Immortal Sect instead, leaving Shadow Sect’s earlier arrangements useless, and among this life’s divergences Vice Envoy Blue, who is Seven Star Child, does not die and joins Yu Mu Chun and Song Zi Xing in transporting the group to Heavenly Lotus Sect instead.",
+      "chapters": [
+        1003
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "court-reinforcement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_lotus_sect",
+        "fac_shadow_sect",
+        "char_seven_star_child",
+        "char_song_zi_xing"
+      ]
+    },
+    {
+      "text": "In a dream realm, a Combat Immortal Sect Gu Master states that the sect is one of the ten great ancient sects and that official discipleship depends on combat results: one of ten people left out of a hundred must fight well enough to qualify.",
+      "chapters": [
+        1227
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "combat-entry-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/combat-immortal-sect/",
+      "chapters": [
+        705,
+        712,
+        911,
+        955,
+        957,
+        962,
+        1003,
+        1227
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

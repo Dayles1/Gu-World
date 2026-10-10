@@ -1,0 +1,107 @@
+{
+  "id": "res_dark_thread_algae",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dark thread algae",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dark thread algae is a rank seven dark path immortal material named beside black hole wood as a preferred exchange for ghostly wail.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1885,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1885
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_dark",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_dark",
+      "count": 1
+    },
+    {
+      "target": "res_dark_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the qi sea banquet, Wu Ma Yang offers rank seven immortal material ghostly wail for any rank seven dark path immortal material of equal value, preferring black hole wood or dark thread algae. One immortal offers dark thread algae for that exchange before another offers black hole wood.",
+      "chapters": [
+        1885
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-exchange-choice",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dark-thread-algae/",
+      "chapters": [
+        1885
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Dark Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

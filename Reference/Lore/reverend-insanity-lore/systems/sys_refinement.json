@@ -1,0 +1,813 @@
+{
+  "id": "sys_refinement",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Refinement",
+    "zh": "炼蛊",
+    "zh_source": "src_sagaofgu",
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Refinement is the craft of claiming or making a Gu instead of depending on luck alone. Materials and methods decide the attempt, recipes guide fusion and similar work, and failure wastes what went in.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 10,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    10,
+    98,
+    121,
+    212,
+    320,
+    377,
+    460,
+    655,
+    665,
+    682,
+    706,
+    770,
+    820,
+    829,
+    834,
+    838,
+    860,
+    861,
+    926,
+    1066,
+    1500,
+    1552,
+    1560,
+    1645,
+    1680,
+    1797,
+    2211,
+    2212,
+    2224,
+    2226
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_gu_recipe",
+      "count": 2
+    },
+    {
+      "target": "path_refinement",
+      "count": 2
+    },
+    {
+      "target": "char_long_hair_ancestor",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_fusion",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "sys_blessed_lands_and_grotto_heavens",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_lurking_soul_coat_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_chief_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "gu_group_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "gu_resurrection_from_the_dead",
+      "count": 1
+    },
+    {
+      "target": "sys_dream_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_long_hair_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_star_constellation_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 1
+    },
+    {
+      "target": "gu_man_as_before_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A cultivator who depends on finding Gu is limited by luck, while a cultivator who can refine is limited by materials and knowledge. That is why refinement is both a skill every Gu Master picks up a little of and a specialisation a few pursue to the exclusion of everything else.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "A refinement attempt needs materials and a method. Fusion and other recipe-guided work also need a recipe, because not every Gu can be joined. Recipes, materials, and methods are all scarce, and the novel builds plot out of each one separately.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Recipes. A recipe is knowledge, and knowledge can be reasoned out rather than only inherited. The novel gives a chapter to deducing a Gu recipe rather than obtaining one,",
+      "chapters": [
+        655
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "which establishes that recipes are derivable in principle. Recipes also survive in damaged form, and a remnant recipe is valuable enough to extort someone over.",
+      "chapters": [
+        706
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Materials. Gu materials and immortal materials are ranked. A rank five Gu material can refine rank five Gu,",
+      "chapters": [
+        2226
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "ordinary rank six immortal materials can create rank six Immortal Gu, and a rarer form can refine rank seven.",
+      "chapters": [
+        860
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Immortal materials exist at rank nine as well; raging wave rising dragon fire is an extremely rare rank nine immortal material.",
+      "chapters": [
+        1797
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_material"
+      ]
+    },
+    {
+      "text": "Once the story reaches Gu Immortal scale, gathering materials becomes an activity everyone is doing at once,",
+      "chapters": [
+        1066
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "and simply lacking the wealth to buy them is enough to stop a refinement outright.",
+      "chapters": [
+        820
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Method. Refinement techniques differ, and the novel names them. At a Refinement Path Convention signup, Gu Masters use fire, smoke, and ice refinement methods side by side.",
+      "chapters": [
+        829
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_refinement_path_convention",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Elsewhere the novel names a nature Gu refinement technique.",
+      "chapters": [
+        860
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Success itself is reported as its own event.",
+      "chapters": [
+        861
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-three-inputs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Masters refine, nurture, and use Gu. On the refine side, the novel first teaches claiming a wild Gu, then treats fusion as the next and more important craft.",
+      "chapters": [
+        98
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "procedure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_wild_gu"
+      ]
+    },
+    {
+      "text": "Single refinement. Claiming a wild Gu is a war of attrition. The Gu Master pours primeval essence into the Gu while the Gu resists and tries to push that essence back out. Progress sticks only if the Gu Master keeps refining and replenishes the primeval sea, consolidating each gain instead of letting the Gu erase it. Skill in moving essence and patience for a long fight decide the result.",
+      "chapters": [
+        10
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "procedure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Clan teaching later names this kind of ownership work as single refinement, and sets fusion beside it as the harder craft.",
+      "chapters": [
+        98
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "procedure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fusion. Fusion needs a recipe, because not every Gu can be joined. Once the component Gu already belong to the refiner, their wild wills are gone and the refiner’s own consciousness sits on each. The core act is parallel thinking: fusing those two consciousnesses into one. In the academy demonstration, primeval essence envelops the two Gu in midair; as the thoughts fuse, the Gu circle closer; when the join holds, both erupt into linked light; the refiner must keep that fused state and throw primeval stones into the light until the higher Gu is complete. Drop the fused consciousness and the light dies, the Gu fly apart, and the attempt fails.",
+      "chapters": [
+        98
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "procedure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fusion and reverse refinement. Later narration splits refining Gu into fusion and reverse refinement. Fusion turns lower rank Gu into higher rank Gu. Reverse refinement runs the other way, and different reverse recipes yield different products from the same starting Gu.",
+      "chapters": [
+        212
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "procedure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A conversion reverse recipe can demand more than twenty ingredients and more than thirty steps, with heat and timing held exact, and still report a high success rate when those controls hold.",
+      "chapters": [
+        320
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "procedure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Refinement can fail, and incomplete recipes are a separate problem from a failed attempt. Chapter 665 is titled for three Immortal Gu recipes at one hundred percent,",
+      "chapters": [
+        665
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-completeness-and-failure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_recipe"
+      ]
+    },
+    {
+      "text": "and the body is about Fang Yuan perfecting remnant recipes to full completion, not about a guaranteed success rate when refining. Remnant recipes are paid for by how close they are to completion, and a finished recipe is knowledge, not an automatic win at the cauldron.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-completeness-and-failure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Failure wastes what went into the attempt. Early fusion practice warns that too many failures can make the component Gu perish,",
+      "chapters": [
+        98
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-completeness-and-failure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and ordinary fusion talk states that when fusion fails the materials are used up.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-completeness-and-failure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later Immortal Gu work treats replacement material sets as the cost of failed runs.",
+      "chapters": [
+        926
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-completeness-and-failure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Mortal Gu refinement is ordinary work, done at scale and rarely dramatised. The novel shows it when the specific Gu matters, for example refining a group strength Gu,",
+      "chapters": [
+        682
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mortal_gu",
+        "gu_group_strength_gu"
+      ]
+    },
+    {
+      "text": "or refining a mortal Gu of the dream path.",
+      "chapters": [
+        770
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-refinement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Refining an Immortal Gu is a different order of undertaking, and the first time the novel shows one it is the point of the chapter.",
+      "chapters": [
+        377
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-refinement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "What separates immortal refinement from mortal refinement in the novel’s own wording is immortal essence. When Fang Yuan first faces refining a rank six Immortal Gu, he states that the most basic condition is immortal essence,",
+      "chapters": [
+        377
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-refinement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and the blessed land’s remaining immortal essence is the limiting resource for that attempt. Blessed lands and their immortal essence stocks are covered on blessed lands and grotto-heavens.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_blessed_lands_and_grotto_heavens"
+      ]
+    },
+    {
+      "text": "Refinement is also one of the novel’s paths, meaning a cultivator can build an entire identity on it rather than treating it as support. The novel establishes the path has a history and a culture of its own, including a convention with a stated origin,",
+      "chapters": [
+        838
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-refinement-path-as-a-specialisation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and a figure remembered as the greatest refinement path immortal of all time.",
+      "chapters": [
+        460
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-refinement-path-as-a-specialisation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Path specialists also fight with their speciality. Refinement supplies killer moves like the spinning golden bell,",
+      "chapters": [
+        834
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-refinement-path-as-a-specialisation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "which is a useful corrective to the idea that a crafting path is a non-combat path. How killer moves are built is on killer moves.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "the-refinement-path-as-a-specialisation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_killer_moves"
+      ]
+    },
+    {
+      "text": "How good a refiner is at any of this is measured by attainment level, which is the subject of dao marks and attainment.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "the-refinement-path-as-a-specialisation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_dao_marks"
+      ]
+    },
+    {
+      "text": "Fang Yuan already holds refinement path quasi-grandmaster attainment.",
+      "chapters": [
+        1500
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan treats refinement the way he treats everything else, as leverage. He bargains for Lang Ya Sect’s refinement path true meaning, the Long Hair Ancestor inheritance stored as a special will that can raise refinement path attainment in a single absorb.",
+      "chapters": [
+        1552
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_lang_ya_sect",
+        "char_long_hair_ancestor"
+      ]
+    },
+    {
+      "text": "After Lang Ya yields it, he absorbs the true meaning over several hours and his refinement path attainment soars to quasi-supreme grandmaster. At that height he can read mortal recipes at a glance, improve Immortal Gu recipes with far less labour, and still notes that practice, refinement path Immortal Gu, and refinement path killer moves remain to be built out afterward.",
+      "chapters": [
+        1560
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The final arcs carry that thread to its end. In Crazed Demon Cave he becomes a Venerable,",
+      "chapters": [
+        2211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crazed_demon_cave"
+      ]
+    },
+    {
+      "text": "and on the battlefield he announces refine Gu, refine human, and refine heaven as the line his fight is aiming at.",
+      "chapters": [
+        2212
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Refinement path power at rank nine lets him refine foreign dao marks into his own, and he uses a prepared refinement path killer move that breaks Star Constellation Immortal Venerable’s flying star consecutive method.",
+      "chapters": [
+        2211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_refinement",
+        "char_star_constellation_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Shortly after, while personally refining Immortal Gu, his refinement path attainment is supreme grandmaster: recipes and methods hide nothing from him, he feels control deep into a run, and he can sense success or coming failure early. Even a refinement path Venerable can fail an Immortal Gu refinement through method error or weak control over another path’s materials, but over refinement path materials his control is complete because he can refine the world’s natural refinement path dao marks, so refinement path Immortal Gu success approaches certainty when the method holds.",
+      "chapters": [
+        2224
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He remains a demonic path cultivator aiming at eternal life; refinement is the path attainment that stretch names, not a rewrite of that aim.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-and-the-refinement-path",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Refinement also covers improvement, not only creation. An Immortal Gu that already exists can be advanced to a higher rank,",
+      "chapters": [
+        1680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "advancing-immortal-gu",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and the Spring Autumn Cicada is raised from rank six to rank seven.",
+      "chapters": [
+        1645
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "advancing-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_spring_autumn_cicada"
+      ]
+    },
+    {
+      "text": "Man as before Immortal Gu is likewise advanced from rank six to rank seven.",
+      "chapters": [
+        1680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "advancing-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_man_as_before_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/refinement/",
+      "chapters": [
+        10,
+        98,
+        121,
+        212,
+        320,
+        377,
+        460,
+        655,
+        665,
+        682,
+        706,
+        770,
+        820,
+        829,
+        834,
+        838,
+        860,
+        861,
+        926,
+        1066,
+        1500,
+        1552,
+        1560,
+        1645,
+        1680,
+        1797,
+        2211,
+        2212,
+        2224,
+        2226
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Refinement",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

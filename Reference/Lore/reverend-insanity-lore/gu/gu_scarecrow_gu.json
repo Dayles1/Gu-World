@@ -1,0 +1,379 @@
+{
+  "id": "gu_scarecrow_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Scarecrow Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Scarecrow Gu is a rank one Gu used as a grass puppet practice target. It has a nature-type self-recovery ability, and academy students buy those grass puppets for moonblade practice.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 22,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    22,
+    23,
+    360,
+    428
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_jiang_ya",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "gu_grass_puppet_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [
+    {
+      "topic": "Naming conflict",
+      "positions": [
+        {
+          "position": "The academy grass puppet targets on Qing Mao Mountain are rank one Scarecrow Gu.",
+          "support": "Chapter 22, narration during the moonblade lesson.",
+          "chapters": [
+            22
+          ]
+        },
+        {
+          "position": "Fang Yuan had seen rank one grass puppet Gu at Qing Mao mountain, used as a target for practicing moonblades.",
+          "support": "Chapter 360, Fang Yuan's recollection while Tie Ruo Nan uses rank three grass puppet Gu.",
+          "chapters": [
+            360
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/scarecrow-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/scarecrow-gu/",
+      "chapters": [
+        22,
+        23,
+        360,
+        428
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 1,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Its recovery is a nature-type ability.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "No cited chapter assigns Scarecrow Gu to a named cultivation path that this wiki has a page for.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fighting Tie Ruo Nan’s group, Fang Yuan recalls the rank one grass puppet Gu he saw used as a moonblade practice target at Qing Mao mountain, and notes that a rank two grass puppet Gu could already kill an ordinary hunter, against the rank three grass puppet Gu Tie Ruo Nan is using in that fight.",
+        "chapters": [
+          360
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "naming-conflict",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_tie_ruo_nan"
+        ]
+      },
+      {
+        "text": "Sources conflict:",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "naming-conflict",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The question is open.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "naming-conflict",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Later, Grass Puppet Gu is named as enslavement path when Fang Yuan uses a rank three copy.",
+        "chapters": [
+          428
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "naming-conflict",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_grass_puppet_gu"
+        ]
+      },
+      {
+        "text": "No cited chapter applies that enslavement-path label to Scarecrow Gu by that name, and no cited chapter states in its own words that the two names are one Gu line.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "naming-conflict",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is a grass puppet rather than an ordinary scarecrow. In the academy demonstration its neck is about thirty centimeters thick.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The grass puppet is a rank one Scarecrow Gu. In academy practice it stands as a grass figure with a neck about thirty centimeters thick, set about ten meters from the thrower in the elder’s demonstration.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Beside the academy Gu room, Jiang Ya sells grass puppets made with Scarecrow Gu. He asks three primeval stones each while stock is low. Fang Yuan privately judges that even after including the primeval essence put in, the true cost should not exceed one and a half primeval stones.",
+        "chapters": [
+          23
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_jiang_ya",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Cited chapters never state what Scarecrow Gu eats, and they never give a Chinese-character name for it.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Scarecrow Gu has a nature-type ability of self-recovery. When a moonblade cuts deeply into the grassy body, the cut area can regrow, tangle together, and heal in a short while. Unless the puppet is cut into half at once, it recovers to normal.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The academy elder uses a grass puppet as the live target while teaching moonblade form, then has each Moonlight Gu student take a grass puppet and practice the same throw.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "academy-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After class, students buy grass puppets from the store beside the Gu room so they can practice at home for the three-day moonblade check. Fang Yuan has no interest in buying one.",
+        "chapters": [
+          23
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "academy-use",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "On Qing Mao Mountain, the Gu Yue clan academy lines grass puppets opposite students learning Moonlight Gu moonblade attacks. The narration names those targets as rank one Scarecrow Gu rather than ordinary scarecrows.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_qing_mao_mountain",
+          "fac_gu_yue_clan",
+          "gu_moonlight_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

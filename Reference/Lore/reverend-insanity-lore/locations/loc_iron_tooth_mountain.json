@@ -1,0 +1,111 @@
+{
+  "id": "loc_iron_tooth_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Iron Tooth Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Iron Tooth Mountain is a Southern Border mountain where Forgotten Daoist lives in a nameless cave, and where Wu Yong visits three times to recruit him.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2263,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2263
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Southern Border, at Iron Tooth Mountain, Wu Yong cups his fists in a nameless cave and greets with a smile that he brought good wine. Wu clan specializes in wind path and has no advantages in wisdom path. Wu Yong has been looking for reliable talents. When he learned that Forgotten Daoist was living on Iron Tooth Mountain, he personally visited three times to recruit him. Wu Yong says grimly that the two heavens are merging and the war of the five regions is almost before them, so no one can stay out of it.",
+      "chapters": [
+        2263
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_wu_yong",
+        "fac_wu_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/iron-tooth-mountain/",
+      "chapters": [
+        2263
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

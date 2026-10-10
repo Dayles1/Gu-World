@@ -1,0 +1,353 @@
+{
+  "id": "fac_su_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Su Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Su clan is an Eastern Sea righteous path super force named among Tang clan's regional rivals and later seated near icy sea and Zombie Alliance ground.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1046,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1046,
+    1648,
+    1882,
+    1885,
+    2105,
+    2120,
+    2230,
+    2282
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_su_chen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1648,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_imperial_minister_su",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1870,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_su_chen",
+      "count": 4
+    },
+    {
+      "target": "char_imperial_minister_su",
+      "count": 4
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 2
+    },
+    {
+      "target": "char_li_xiao_bai",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tang_song",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_qing_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_su_qi_han",
+      "count": 1
+    },
+    {
+      "target": "fac_righteous_qi_alliance",
+      "count": 1
+    },
+    {
+      "target": "inh_big_belly_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "loc_profound_literature_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_heaven_and_earth_great_love_alliance",
+      "count": 1
+    },
+    {
+      "target": "loc_icy_sea_area",
+      "count": 1
+    },
+    {
+      "target": "res_thousand_year_profound_ice",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Eastern Sea Gu Immortals watching Fang Yuan fight Tang Song name Tang clan as an overlord with enemies like Shen clan and Su clan.",
+      "chapters": [
+        1046
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "sys_gu_immortal",
+        "char_fang_yuan",
+        "char_tang_song",
+        "fac_tang_clan",
+        "fac_shen_clan"
+      ]
+    },
+    {
+      "text": "Su Lun comes from Su clan, an Eastern Sea super force, as a righteous path member at Qi Sea Ancestor’s banquet. Looking at location, Su clan is one of the closest forces to Eastern Sea’s Zombie Alliance headquarters, along with Qing Yue clan, Song clan, and Hua clan.",
+      "chapters": [
+        1885
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_sea_ancestor",
+        "fac_zombie_alliance",
+        "fac_qing_yue_clan",
+        "fac_song_clan",
+        "fac_hua_clan"
+      ]
+    },
+    {
+      "text": "Song clan, Su clan, and Cai clan also arrive among Eastern Sea super forces at that qi sea banquet.",
+      "chapters": [
+        1882
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-standing",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Profound Literature grotto-heaven, Imperial Minister Su is a Su clan Gu Immortal of the Imperial Court. He wanted Li Xiao Bai to marry into Su clan, receive Su inheritance, ascend, and become a court official as a support pillar of Su clan.",
+      "chapters": [
+        2120
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "profound-literature-minister",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_profound_literature_grotto_heaven",
+        "loc_imperial_court",
+        "char_li_xiao_bai"
+      ]
+    },
+    {
+      "text": "Related character detail sits on Imperial Minister Su.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "profound-literature-minister",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_imperial_minister_su"
+      ]
+    },
+    {
+      "text": "Su Chen is a member of the super force Su clan, specializes in healing, is famous in Eastern Sea, and is described as quite a kind person.",
+      "chapters": [
+        1648
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-healers-and-inheritances",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_su_chen"
+      ]
+    },
+    {
+      "text": "When Eastern Sea super forces hand over true inheritances, Su clan takes out big belly true inheritance.",
+      "chapters": [
+        2105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-healers-and-inheritances",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As an Eastern Sea righteous path super force after joining the Heaven and Earth Great Love Alliance, Su clan is extorted by Fang Yuan and must contribute water path resources usable as water vein nodes. The clan does not want to give up its own resource points. It is situated close to icy sea area, where ice and snow immortal materials are abundant, so it plans to collect thousand year profound ice and hand that to Fang Yuan instead. Su Chen and Su Ming Wan, Gu Immortals at rank seven, work Moving Frame Pavilion, a rank seven strength path Immortal Gu House that can rival rank eight Gu Immortals, to crack and store that ice under high risk from ice poison starfish and sharks.",
+      "chapters": [
+        2230
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "icy-sea-levy-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_eastern_sea_righteous_path",
+        "fac_heaven_and_earth_great_love_alliance",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "After the sun’s destruction, Su clan’s light ripple sea falls greatly in value, and the entirety of Su clan is busy trying to salvage it.",
+      "chapters": [
+        2282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "light-ripple-sea",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/su-clan/",
+      "chapters": [
+        1046,
+        1648,
+        1882,
+        1885,
+        2105,
+        2120,
+        2230,
+        2282
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

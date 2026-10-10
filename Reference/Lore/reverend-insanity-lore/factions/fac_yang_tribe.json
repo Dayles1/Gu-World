@@ -1,0 +1,244 @@
+{
+  "id": "fac_yang_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yang Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains underdog tribe that recruits Rat King Jiang Bao Ya and fields Eagle King Yang Po Ying in the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 529,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    529,
+    536,
+    539,
+    543
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yang_po_ying",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 529,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yang_po_ying",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_bao_ya",
+      "count": 2
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 2
+    },
+    {
+      "target": "char_nu_er_tu",
+      "count": 2
+    },
+    {
+      "target": "char_ye_lui_sang",
+      "count": 2
+    },
+    {
+      "target": "fac_nu_er_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_qi_lian_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_tao_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "An investigative report tells Ma Ying Jie that Jiang Bao Ya has accepted Yang tribe’s invitation and entered its alliance. Ma Ying Jie sets little threat on that side: he judges Yang tribe’s foundations far inferior to Ma tribe, and he already counts Jiang Bao Ya as crippled even beside Yang Po Ying.",
+      "chapters": [
+        529
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-report-to-ma",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_ying_jie",
+        "char_jiang_bao_ya",
+        "fac_ma_tribe",
+        "char_yang_po_ying"
+      ]
+    },
+    {
+      "text": "After Yang tribe recruits enslavement master Jiang Bao Ya, its strength surges through many victories and it becomes one of the new popular Imperial Court competitors. By September it stands among the five armies with the highest hopes, named for Rat King and Eagle King together. In the first half of September, Nu Er tribe army fights Yang tribe army; the leopard group cannot match eagles and rats, and after half a month Nu Er Tu loses.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "contender-stretch",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court",
+        "fac_nu_er_tribe",
+        "char_nu_er_tu"
+      ]
+    },
+    {
+      "text": "At the start of October, while Yang tribe digests battle reparations, Ye Lui Sang targets it. Parts of Yang tribe army want to fight, defend, or retreat; differing opinions keep orders from landing, and Ye Lui Sang takes the army down.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "contender-stretch",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_lui_sang"
+      ]
+    },
+    {
+      "text": "Nu Er Tu annexed Tao tribe, then lost to Yang tribe, then faced Ye Lui tribe; Ma tribe defeated Ye Lui tribe and became the final winner. From that fight Ma tribe gains many large tribes, including Yang tribe, and also gains Jiang Bao Ya and Yang Po Ying beside Ma Zun.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "among-mas-gains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tao_tribe",
+        "fac_ye_lui_tribe",
+        "char_ma_zun"
+      ]
+    },
+    {
+      "text": "After Ma tribe leader Ma Shang Feng dies and Ma tribesmen lose the will to battle, Tao tribe, Yang tribe, and Qi Lian tribe surrender one after another, and the surrender process draws most of Hei tribe’s attention.",
+      "chapters": [
+        543
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "among-mas-gains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_shang_feng",
+        "fac_qi_lian_tribe",
+        "fac_hei_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yang-tribe/",
+      "chapters": [
+        529,
+        536,
+        539,
+        543
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "id": "loc_thousand_wish_tree",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Thousand Wish Tree",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The thousand wish tree is an ancient desolate tree in Western Desert whose ripe fruits grant wishes, including Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 673,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    673
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_han_li",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_xi_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_phantom_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Its shadow of light reaches five or six hundred feet. The tree is flourishing with many branches and leaves. The branches are white as snow, the flowers pink like cherries, and clusters of small fruits sit among the floral leaves.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "It is an ancient desolate tree named thousand wish. It finishes growing in three hundred years, flowers at its six hundredth year, and bears fruit at the nine hundredth year.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the day the fruits ripen and fall, forces of all sizes break through the super forces’ blockade. In Fang Yuan’s previous life a lone rank five Gu Master named Han Li arrives first under the tree, and his wish gives him a space path Immortal Gu named Phantom Heaven. Fang Yuan, then rank four, also reaches the tree after great danger and obtains a Gu worm when only fifty or sixty fruits remain.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fruits-and-defense",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_master",
+        "char_han_li",
+        "sys_immortal_gu",
+        "gu_phantom_heaven",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "The desolate tree has astonishing defense and does not budge when Fang Yuan smacks it; it can stand against Immortal Gu attacks. After that chaotic battle, Xi clan’s rank eight ancestor Xi Jian Ping takes the tree and plants it at Xi clan’s headquarters.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fruits-and-defense",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xi_clan"
+      ]
+    },
+    {
+      "text": "The tree needs an extreme desert environment. Moving it impulsively would make the floral leaves and thousand wish fruits wither and fall, wasting a millennium of growth. Hu Immortal blessed land’s grassland terrain cannot sustain it.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "terrain-and-illusion",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land"
+      ]
+    },
+    {
+      "text": "It shrouds a huge radius in illusion. Leaving that illusion must be done on foot, and approaching is troublesome because the illusion can make people circle the same spot without realizing. After Fang Yuan walks half a day and countless li away, he looks back and sees only flat desert with no sand dunes or the five-to-six-hundred-foot shadow of light.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "terrain-and-illusion",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/thousand-wish-tree.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/thousand-wish-tree/",
+      "chapters": [
+        673
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "tree",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

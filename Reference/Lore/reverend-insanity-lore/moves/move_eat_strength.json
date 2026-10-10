@@ -1,0 +1,198 @@
+{
+  "id": "move_eat_strength",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Eat Strength",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "immortal killer move eat strength"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Eat Strength is a rank six immortal killer move that spends strength path immortal materials to raise strength path dao marks, using snack Immortal Gu as its core.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1465,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1465,
+    1467
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_snack_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_snack_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "gu_eat_strength_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_mark_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_shoot_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_strength_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "gu_big_snack_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Eat Strength Immortal Gu is destroyed, Fang Yuan spends six days with the light of wisdom and succeeds in creating this move to replace that Gu’s use. One cultivation session raises strength path dao marks better than rank six Eat Strength Immortal Gu alone, but costs more immortal essence and is less convenient because many Gu worms are involved, with snack Immortal Gu as the core and other strength path Immortal Gu as supplementary Gu. For the following days he uses it to increase his strength path dao marks, which he has few of, having undergone no strength path tribulations and annexed no strength path immortal apertures. He chose strength path deliberately: his strongest methods are reverse flow protection seal for defense and myriad dragon for offense, both are related to strength path, and raising strength path dao marks would very evidently raise the upper limit of his battle strength.",
+      "chapters": [
+        1465
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_eat_strength_immortal_gu",
+        "char_fang_yuan",
+        "sys_gu_worms",
+        "gu_snack_immortal_gu",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "After using eat strength on strength path immortal material, the rise in strength path dao marks is only small. Fang Yuan notes that refining snack Immortal Gu into rank seven Big Snack would let him modify eat strength so the gain becomes more evident. He uses the move again in that stretch of cultivation.",
+      "chapters": [
+        1467
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "big-snack-note",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_big_snack_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/eat-strength/",
+      "chapters": [
+        1465,
+        1467
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan (creator)",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Snack Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

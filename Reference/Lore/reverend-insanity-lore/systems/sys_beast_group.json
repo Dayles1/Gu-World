@@ -1,0 +1,142 @@
+{
+  "id": "sys_beast_group",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beast Group",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "wild beast groups"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A beast group is a body of wild beasts sharing living space. Large groups produce beast kings, and pressure between groups can stack into beast tides.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 93,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    93,
+    94,
+    96,
+    114
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_beast_king",
+      "count": 1
+    },
+    {
+      "target": "sys_beast_emperor",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shen_tong",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When a wolf group grows stronger and larger, neighbouring beast groups lose living space. Migrations influence other beast groups in turn, and the tangled pressure can widen until mixed beast tides form.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Clansmen on Qing Mao Mountain speak of many wild beast groups ahead that need support during such a small beast tide.",
+      "chapters": [
+        94
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "Old or injured lightning wolves expelled from a pack may rush surrounding beast groups; under mutual influence those rushes help form a small beast horde.",
+      "chapters": [
+        96
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As long as a beast group is large enough, a Beast King forms within it. A wild boar group has a wild boar king; a monkey group has a monkey king. The bigger the group, the stronger the king that can rule it.",
+      "chapters": [
+        114
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_beast_king"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/beast-group/",
+      "chapters": [
+        93,
+        94,
+        96,
+        114
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Beast tier",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

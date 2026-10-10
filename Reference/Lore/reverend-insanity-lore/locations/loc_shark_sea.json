@@ -1,0 +1,301 @@
+{
+  "id": "loc_shark_sea",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shark Sea",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shark Demon's Eastern Sea sea area, with an underwater palace at its center and a famous shark fishing banquet.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 892,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    892,
+    893,
+    906,
+    907,
+    918,
+    919,
+    920,
+    922,
+    1393
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 2
+    },
+    {
+      "target": "loc_twin_polar_sea_strait",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_su_bai_man",
+      "count": 1
+    },
+    {
+      "target": "loc_poetic_emotion_sea_area",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_lu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A huge sea area over three million square kilometers, with seaweed, seabed rock, and seawater. Shark Demon’s majestic and beautiful palace sits at the bottom at the center; underwater it shines in bright lights like a huge oddly shaped jewel emitting warm light, while the seawater outside is dark and dim.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The sea area spans over three million square kilometers. Everything inside (sharks, seaweed, seabed rock, and seawater) is treated as Shark Demon’s possession. Shark Demon says this sea area is only ranked forty-sixth among the list of Eastern Sea sea areas, below places such as elegant splendorous sea area, flourishing bumpy sea area, and Song Yi Shi’s poetic emotion sea area.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shark_demon",
+        "reg_eastern_sea",
+        "loc_poetic_emotion_sea_area"
+      ]
+    },
+    {
+      "text": "When Shark Demon hosts guests, he gifts sharks they must catch themselves from inside the palace within a set time, and Fang Yuan recognizes the game as the famous shark fishing banquet from his earlier life.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shark-fishing-banquet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "In that earlier life Shark Demon and Su Bai Man were already dead when Fang Yuan reached Eastern Sea, and Zhu Xing Bo later held the same sea area and copied the banquet.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_su_bai_man"
+      ]
+    },
+    {
+      "text": "Fang Yuan later recalls that in his earlier life Shark Demon and Su Bai Man died while shark sea was invaded by others.",
+      "chapters": [
+        922
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After a retreat from Yu Lu blessed land, Fang Yuan and Tai Bai Yun Sheng follow Shark Demon and Su Bai Man to shark sea for another banquet.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "return-visit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yu_lu_blessed_land",
+        "char_tai_bai_yun_sheng"
+      ]
+    },
+    {
+      "text": "Shark Demon invites them again after settling Song Yi Shi’s grievance, and Fang Yuan refuses that later visit.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "return-visit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_yi_shi"
+      ]
+    },
+    {
+      "text": "A later banquet at the underwater palace is already Fang Yuan’s third shark fishing banquet there. During talks about unraveling unmoving troops, the sea shakes, a fire pillar tears the palace defense, and the palace falls into ruins as seawater floods in. Shark Demon names the site his sea area when he shouts at the attacker.",
+      "chapters": [
+        918
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "banquet-and-assault",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Blazing Heaven Demoness’s fire bird is judged able to wipe not only the underwater palace but the rest of shark sea and countless living beings in a huge surrounding span of water.",
+      "chapters": [
+        919
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "banquet-and-assault",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_blazing_heaven_demoness"
+      ]
+    },
+    {
+      "text": "Shark Demon tells Fang Yuan and Tai Bai Yun Sheng that he and Su Bai Man found tracks of a one finger flow shark by chance, then requested this sea area from Zombie Alliance and built shark sea there. He manages shark groups in the sea area to support an enslavement path plan against that immemorial desolate beast.",
+      "chapters": [
+        920
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "why-this-sea-area",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance"
+      ]
+    },
+    {
+      "text": "A later comparison lists shark sea with ice flow sea area, Twin Polar Sea Strait, air bubble sea area, elegant splendorous sea area, and other mystical Eastern Sea sea areas.",
+      "chapters": [
+        1393
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "among-eastern-sea-sea-areas",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_twin_polar_sea_strait"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/shark-sea.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/shark-sea/",
+      "chapters": [
+        892,
+        893,
+        906,
+        907,
+        918,
+        919,
+        920,
+        922,
+        1393
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

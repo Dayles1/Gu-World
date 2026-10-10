@@ -1,0 +1,121 @@
+{
+  "id": "res_excrement_of_jade_statue_white_hound",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Excrement of the jade statue white hound",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Excrement of the jade statue white hound is an immortal material from that ancient desolate beast.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1913,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1913
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_dog_shit_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1913,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 4
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside a Long Hair refinement path formation, lumps of dog shit immortal materials are released into the fire to advance a rank six Immortal Gu. Some are pure and clean and resemble white jade: the excrement of the jade statue white hound. Jade statue white hound is named as an ancient desolate beast. Hairy man Gu Immortals process these materials until the Gu becomes rank seven Dog Shit Luck.",
+      "chapters": [
+        1913
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dog-shit-luck-advance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "race_hairy_men",
+        "sys_gu_immortal",
+        "gu_dog_shit_luck"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/excrement-of-jade-statue-white-hound/",
+      "chapters": [
+        1913
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Jade statue white hound",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Dog Shit Luck",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

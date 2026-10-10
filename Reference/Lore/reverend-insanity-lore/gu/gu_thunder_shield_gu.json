@@ -1,0 +1,264 @@
+{
+  "id": "gu_thunder_shield_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Thunder Shield Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Lightning Shield Gu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Thunder Shield Gu is a defensive Gu that forms a semicircle lightning shield. Fang Yuan takes one from a dying thunder crown wolf on Qing Mao Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 167,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    167,
+    168
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 167,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_thunderwings_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_sky_canopy_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_lightning_lycan",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/thunder-shield-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/thunder-shield-gu/",
+      "chapters": [
+        167,
+        168
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": 168,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Against a lightning lycan’s rank four strike, Fang Yuan raises Thunder Shield Gu with Sky Canopy Gu. A round lightning shield forms in front of him, then lasts less than a second before the lycan’s lightning breaks it. A rank four Gu attack needs at least two rank three Gu to defend against it, and Lightning Shield Gu, the same Gu under another name, died because earlier fighting had already injured it. After the hit, Thunder Shield Gu is already dead, while Thunderwings Gu barely holds onto life and Sky Canopy Gu is heavily injured.",
+        "chapters": [
+          168
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-and-loss",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_sky_canopy_gu",
+          "gu_thunderwings_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Its body seems made of light blue glass. It flies with a semicircle shell that has turtle shell markings.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The worm has a body like light blue glass and flies with a semicircle shell marked like a turtle shell. When it resists a grab, eerie blue lightning sparks from the shield.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-effect",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "refiner",
+      "recorded_chapter": 167,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "During the clash of Gu Yue clan and Bai clan on Qing Mao Mountain, Fang Yuan first passes it up while hunting for a healing Gu among the escaping worms, then grabs it when Bai Ning Bing closes in and he needs the best alternative at hand. The Gu raises its lightning shield against his hand. He releases Spring Autumn Cicada’s aura, the shield drops, and he refines it at once.",
+        "chapters": [
+          167
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "acquisition",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_yue_clan",
+          "fac_bai_clan",
+          "loc_qing_mao_mountain",
+          "char_fang_yuan",
+          "sys_healing_gu",
+          "char_bai_ning_bing",
+          "gu_spring_autumn_cicada"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

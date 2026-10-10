@@ -1,0 +1,869 @@
+{
+  "id": "char_shang_xin_ci",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Xin Ci",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shang xin ci",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Шан Синь Цы",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Lady Zhang Zhang Xin Ci Fairy Zhang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shang Xin Ci is a Southern Border figure Fang Yuan recognises on the merchant caravan road toward Shang Liang mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 235,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    235,
+    236,
+    238,
+    250,
+    257,
+    258,
+    259,
+    269,
+    270,
+    274,
+    305,
+    309,
+    329,
+    333,
+    1059,
+    1072,
+    1531,
+    2122,
+    2124,
+    2125,
+    2126
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 235,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_good_deeds_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2124,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shang_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_good_deeds_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_lan",
+      "count": 3
+    },
+    {
+      "target": "fac_zhang_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 2
+    },
+    {
+      "target": "char_ding_hao",
+      "count": 2
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 2
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 2
+    },
+    {
+      "target": "gu_man_triumphing_heaven_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_shang_yi_fan",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_quan",
+      "count": 2
+    },
+    {
+      "target": "char_wei_de_xin",
+      "count": 2
+    },
+    {
+      "target": "char_shang_qing_qing",
+      "count": 2
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 2
+    },
+    {
+      "target": "char_xiao_yan",
+      "count": 2
+    },
+    {
+      "target": "char_feng_tian_yu",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "inh_fur_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_fei_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_zhu",
+      "count": 1
+    },
+    {
+      "target": "char_chen_xin",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "char_ou_fei",
+      "count": 1
+    },
+    {
+      "target": "fac_lei_clan",
+      "count": 1
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "char_tian_lan",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 1
+    },
+    {
+      "target": "char_shang_chao_feng",
+      "count": 1
+    },
+    {
+      "target": "char_shang_fu_xi",
+      "count": 1
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 1
+    },
+    {
+      "target": "char_shang_qiu_niu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_tuo_hai",
+      "count": 1
+    },
+    {
+      "target": "char_shang_chi_wen",
+      "count": 1
+    },
+    {
+      "target": "char_shang_pi_xiu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_suan_ni",
+      "count": 1
+    },
+    {
+      "target": "sys_purple_thorn_token",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_handprint_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_primeval_elder_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 1
+    },
+    {
+      "target": "char_fei_luan_feng",
+      "count": 1
+    },
+    {
+      "target": "char_yi_bu_hui",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "fac_zhou_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_feng_yu_manor",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_feng",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_huo",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_tu",
+      "count": 1
+    },
+    {
+      "target": "fac_wei_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_scorpion_faeces_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_demonic_path_rise",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bu_li",
+      "count": 1
+    },
+    {
+      "target": "char_shang_tan_mo",
+      "count": 1
+    },
+    {
+      "target": "char_wei_shen_jing",
+      "count": 1
+    },
+    {
+      "target": "fac_eighteen_sons_of_wine_village",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_hou_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_smoky_warm_jade_field",
+      "count": 1
+    },
+    {
+      "target": "move_mud_piled_into_a_wall",
+      "count": 1
+    },
+    {
+      "target": "move_fetus_earth_maze",
+      "count": 1
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 1
+    },
+    {
+      "target": "char_kong_sheng_tian",
+      "count": 1
+    },
+    {
+      "target": "inh_sheng_tian_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "loc_sun_moon_sinkhole",
+      "count": 1
+    },
+    {
+      "target": "char_fur_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_chai_ke_qing",
+      "count": 1
+    },
+    {
+      "target": "res_tap_fire",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan locks onto a green clothed girl feeding starved servants in a caravan bazaar and matches her to Shang Xin Ci from earlier life memory.",
+      "chapters": [
+        235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ding Hao’s zombies devour that caravan this life.",
+      "chapters": [
+        257
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ding_hao"
+      ]
+    },
+    {
+      "text": "The four then cross the mountains without caravan cover and reach Shang Clan City on Shang Liang mountain, seat of Shang clan.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "loc_shang_liang_mountain",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "She is a green clothed girl with silky jet black hair draping over her shoulders, eyebrows thin like smoke, eyes as clear as the moon, snow-white skin, and pink tender lips. She wears no makeup.",
+      "chapters": [
+        235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Servants cheer “Lady Zhang” and “Fairy Zhang” when she arrives with steamed buns, and a stall owner names Lady Zhang Xin Ci as a deputy caravan leader who is mortal, without cultivation aptitude, with a Gu Master bodyguard and a strong Zhang clan background. Fang Yuan’s memory still places Shang Xin Ci among Shang clan young masters: soft, trusting, often cheated in business, yet kept for the clan leader’s bloodline.",
+      "chapters": [
+        235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "lady-zhang-and-fairy-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "fac_zhang_clan"
+      ]
+    },
+    {
+      "text": "He then asks why she is called Zhang Xin Ci when memory held a Gu Master: she is Shang Yan Fei’s illegitimate child from a Zhang clan mother, took the Zhang surname, and was forced into merchant life after her mother died, with public Shang acknowledgment waiting until Shang clan city. Kindness is the trait both the caravan and that memory stress; she buys Fang Yuan’s goods under the Lady Zhang address.",
+      "chapters": [
+        236
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "lady-zhang-and-fairy-zhang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She later takes in the wounded pair when he presses that only she can save them.",
+      "chapters": [
+        238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "lady-zhang-and-fairy-zhang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the road she asks him to call her Xin Ci.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "lady-zhang-and-fairy-zhang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Yan Fei follows a sudden bloodline sense into the city, meets her on the street, and reads her as the daughter of the Zhang clan lady he once left.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "At a clan banquet he tells the young masters that the Lady Zhang they escorted is his daughter and is no longer Zhang but Shang, and he thanks Fang Yuan and Bai Ning Bing as benefactors.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "After the reunion he exchanges blood handprint Gu for rank five man triumphing heaven Gu in Living Treasure’s treasure realm, refining it on the spot and planning to awaken Ci Er’s aperture with it.",
+      "chapters": [
+        274
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_blood_handprint_gu",
+        "gu_man_triumphing_heaven_gu"
+      ]
+    },
+    {
+      "text": "Auction-stretch narration later states that he used that Gu to force her aperture open and spent costly Gu to raise aptitude from D grade toward the edge of B.",
+      "chapters": [
+        305
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "By then she is already cultivating, and narration pins her at rank one upper stage with aptitude still short of B.",
+      "chapters": [
+        309
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Outsiders still call her an inexperienced rank one with poor aptitude when Fang Yuan binds helpers to her cause.",
+      "chapters": [
+        329
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the intel business and months of struggle against Shang Yi Fan’s side, she becomes one of the ten young masters in Shang Ya Zi’s place, then parts with Fang Yuan as he leaves for San Cha mountain while she only prays the danger in silence.",
+      "chapters": [
+        333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reunion-and-young-master-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yi_fan",
+        "char_shang_ya_zi",
+        "loc_san_cha_mountain"
+      ]
+    },
+    {
+      "text": "On a nameless Southern Border mountain in a night rainstorm, Shang Bi Xi walks up to the peak and tells Shang Xin Ci that her life ends there, while she, Ye Fan, and her heavily injured servant Xiao Lan defend themselves. She shuts her eyes and gives up resisting, and before that expected death the figure of a man appears in her mind, making her wish she could see him once more. Shang Bi Xi freezes stiff as a statue with fear on his face before any attack lands, and a female immortal then appears, names herself Shang Qing Qing, an ancestor of Shang clan, and tells her that from now on she will assume the role of Shang clan leader.",
+      "chapters": [
+        1059
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-bi-xis-assassination-attempt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_shang_bi_xi",
+        "char_ye_fan",
+        "char_xiao_lan",
+        "char_shang_qing_qing"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s earlier life memory already ends with her heading Shang clan.",
+      "chapters": [
+        235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-leader",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the succession ceremony she walks the clear rainbow road and takes the cloud throne as Shang clan’s new clan leader, with Shang Qing Qing supporting her from behind and long time subordinates such as Xiao Die and Zhou Quan present for the transfer. Guests note the surprise of an illegitimate daughter with low aptitude and cultivation rising to that seat.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiao_die",
+        "char_zhou_quan"
+      ]
+    },
+    {
+      "text": "To contest a smoky warm jade field against Hou clan and Tie clan, Shang clan Gu Immortals use their methods to raise her to rank five regardless of cost, after she had low aptitude and cultivation. She leads that field contest with Wei De Xin, the Xiong brothers, Xiao Yan, and Ye Fan nearby, while Zhou Quan holds Shang Liang Mountain in her absence.",
+      "chapters": [
+        1531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-southern-border-contests",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hou_clan",
+        "fac_tie_clan",
+        "sys_gu_immortal",
+        "char_wei_de_xin",
+        "char_xiao_yan"
+      ]
+    },
+    {
+      "text": "Much later, after Shang Yan Fei’s immortal ascension gathering, siblings complain that as clan leader she will be nurtured into a Gu Immortal seed.",
+      "chapters": [
+        2122
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-southern-border-contests",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the fake Gu flood of the Shang Liang Mountain market she keeps the clan leader seat, recruits Feng Tian Yu, and has the same rank five cultivation level the text assigns to him when he is named a refinement path master popular in Southern Border.",
+      "chapters": [
+        2124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-southern-border-contests",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_tian_yu"
+      ]
+    },
+    {
+      "text": "After the crisis she handles clan affairs in the first inner city with information path mortal Gu, still described as only a rank five Gu Master with deep understanding of Gu Immortal world affairs.",
+      "chapters": [
+        2126
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-southern-border-contests",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_information_path_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/shang-xin-ci.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shang-xin-ci/",
+      "chapters": [
+        235,
+        236,
+        238,
+        250,
+        257,
+        258,
+        259,
+        269,
+        270,
+        274,
+        305,
+        309,
+        329,
+        333,
+        1059,
+        1072,
+        1531,
+        2122,
+        2124,
+        2125,
+        2126
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "I as of ch. 309 V as of ch. 1531",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shang Clan as of ch. 235",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 1,
+        "as_of_chapter": 309,
+        "confidence": "B"
+      },
+      {
+        "rank": 5,
+        "as_of_chapter": 1531,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_good_deeds_gu",
+      "role": "holder",
+      "recorded_chapter": 2124,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

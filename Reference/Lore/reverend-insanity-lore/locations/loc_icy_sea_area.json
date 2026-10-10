@@ -1,0 +1,185 @@
+{
+  "id": "loc_icy_sea_area",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Icy Sea Area",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Icy sea area is a western Eastern Sea stretch whose depths hold abundant ice and snow immortal materials such as thousand year profound ice.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2230,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2230,
+    2231,
+    2232
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_star_constellation_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Narration places Su clan Gu Immortals deep within icy sea area in Eastern Sea, where a huge underwater mountain of thousand year profound ice fills their vision and cold chill permeates even their Immortal Gu House. Su clan sits close to icy sea area, and deep within this sea area there are abundant ice and snow immortal materials, which the clan plans to collect as profound ice for Fang Yuan’s water path resource demand.",
+      "chapters": [
+        2230
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_su_clan",
+        "sys_gu_immortal",
+        "reg_eastern_sea",
+        "sys_immortal_gu_house",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Star Constellation Immortal Venerable judges that icy sea area is at the western-most part of Eastern Sea and closest to Central Continent. Giant Sun Immortal Venerable stops above icy sea area and spreads his rank nine aura across sky and sea while refining Eastern Sea’s natural luck path dao marks there.",
+      "chapters": [
+        2230
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "western-most-eastern-sea",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_star_constellation_immortal_venerable",
+        "reg_central_continent",
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Giant Sun Immortal Venerable who was in icy sea area grits his teeth as the situation turns against his plans.",
+      "chapters": [
+        2231
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refining-dao-marks",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration places Giant Sun Immortal Venerable in icy sea area while Star Constellation Immortal Venerable goes deep into Northern Plains, both focused on refining natural dao marks.",
+      "chapters": [
+        2232
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "two-venerables",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/icy-sea-area/",
+      "chapters": [
+        2230,
+        2231,
+        2232
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "sea",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

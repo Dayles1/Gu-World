@@ -1,0 +1,130 @@
+{
+  "id": "res_elderly_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Elderly qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Elderly qi is a qi path immortal material that forms from qi path dao marks in an immortal aperture.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2109,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2109
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_xiang_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "res_astral_qi",
+      "count": 1
+    },
+    {
+      "target": "res_blood_qi",
+      "count": 1
+    },
+    {
+      "target": "res_death_qi",
+      "count": 1
+    },
+    {
+      "target": "res_life_qi",
+      "count": 1
+    },
+    {
+      "target": "res_luck_qi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Fang Yuan annexes Qi Xiang grotto-heaven, elderly qi appears among immortal materials that form in the sovereign immortal aperture alongside profound yin qi, luck qi, blood qi, astral qi, domination qi, life qi, death qi, righteous qi, orchid vitality qi, and other named qi materials.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-qi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_qi_xiang_grotto_heaven"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/elderly-qi/",
+      "chapters": [
+        2109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

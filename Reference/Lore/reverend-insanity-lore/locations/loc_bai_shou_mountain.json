@@ -1,0 +1,158 @@
+{
+  "id": "loc_bai_shou_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Shou Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mountain named when city talk contrasts Fang Yuan's Little Beast King title with a rank five demonic Gu Master.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 321,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    321,
+    1531
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_little_beast_king",
+      "count": 1
+    },
+    {
+      "target": "sys_beast_king",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_yellow",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Beast King occupied Bai Shou mountain, used a hundred beasts as his army, and was a rank five Gu Master, unreasonable, ruthless and evil, and a troublesome person for both the righteous and demonic factions.",
+      "chapters": [
+        321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_beast_king",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Southern Border region field only because the schema requires a region chip. Bai Shou mountain is named in Shang Clan City talk without a five-region seat. The chapter 1531 Southern Border pin stays in the gated section below.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "In Southern Border’s southeast, Yellow dragon river lies to the north while Bai Shou Mountain lies to the south of a split mountain range where an Earth Trench has opened.",
+      "chapters": [
+        1531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-map-pin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yellow",
+        "reg_earth_earth_trench"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bai-shou-mountain/",
+      "chapters": [
+        321,
+        1531
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

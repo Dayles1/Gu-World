@@ -1,0 +1,110 @@
+{
+  "id": "res_metal_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Metal path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Metal path immortal materials are immortal materials of metal path, including named metals such as domination copper and white snow iron.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2076,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2076
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_metal",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_metal",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_miao_yin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a spherical underground cave packed with immortal materials, Bai Ning Bing first recognizes rank seven immortal material domination copper, then rank eight immortal material white snow iron nearby. Fairy Miao Yin says the place seems to be a storage for immortal materials, holding not only metal path immortal materials but also materials of other paths. The metal path immortal materials there include domination copper, white snow iron, and others, alongside finds such as red snake iron.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-treasury-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "char_fairy_miao_yin"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/metal-path-immortal-material/",
+      "chapters": [
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Metal Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

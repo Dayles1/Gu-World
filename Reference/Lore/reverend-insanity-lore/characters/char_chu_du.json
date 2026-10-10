@@ -1,0 +1,843 @@
+{
+  "id": "char_chu_du",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chu Du",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chu du",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чу Ду",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Domination Immortal Domination Immortal Chu Du"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chu Du is Domination Immortal, a famous rank seven strength path Gu Immortal of Northern Plains who invents the jin and jun strength Gu line.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 442,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    442,
+    443,
+    1056,
+    1057,
+    1060,
+    1115,
+    1133,
+    1152,
+    1181,
+    2214
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_strength_of_a_thousand_jun",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 442,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_strength_of_ten_jin_gu",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1057,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_calamity_beckoning_gu",
+      "role": "borrower",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1113,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_heaven_and_earth_combined_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1164,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_battle_strength_transpiration",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_hundred_years_harmony",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_strength_of_a_thousand_jun",
+      "count": 4
+    },
+    {
+      "target": "gu_calamity_beckoning_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_strength_of_ten_jin_gu",
+      "count": 3
+    },
+    {
+      "target": "move_hundred_years_harmony",
+      "count": 3
+    },
+    {
+      "target": "move_battle_strength_transpiration",
+      "count": 3
+    },
+    {
+      "target": "move_heaven_and_earth_combined_strength",
+      "count": 3
+    },
+    {
+      "target": "fac_chu_sect",
+      "count": 3
+    },
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 2
+    },
+    {
+      "target": "gu_beast_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_jin_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_jun_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 2
+    },
+    {
+      "target": "gu_strength_of_ten_jun_gu",
+      "count": 2
+    },
+    {
+      "target": "inh_eastern_sea_information_path_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "inh_hei_fan_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_icy_plain",
+      "count": 1
+    },
+    {
+      "target": "res_heaven_pillar_wind",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_white_heaven",
+      "count": 1
+    },
+    {
+      "target": "res_true_heaven_silver",
+      "count": 1
+    },
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_sword_gu",
+      "count": 1
+    },
+    {
+      "target": "move_immortal_tribulation_tempering_aperture",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_northern_icy_plain",
+      "count": 1
+    },
+    {
+      "target": "move_sword_marks_targeting_death",
+      "count": 1
+    },
+    {
+      "target": "gu_sword_escape_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_strength_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "move_blood_torrent",
+      "count": 1
+    },
+    {
+      "target": "char_old_immortal_tian_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tian_xia_xin",
+      "count": 1
+    },
+    {
+      "target": "loc_myriad_bean_garden",
+      "count": 1
+    },
+    {
+      "target": "char_hui_feng_zi",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tie_sheng",
+      "count": 1
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 1
+    },
+    {
+      "target": "loc_thirteenth_eagle_nest",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 1
+    },
+    {
+      "target": "sys_human_calamity",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_self_will_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_heavenly_crystal_eagle_nest",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_heavenly_court_pursuit",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_yu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "res_multicolored_guts",
+      "count": 1
+    },
+    {
+      "target": "char_chou_lao_wu",
+      "count": 1
+    },
+    {
+      "target": "char_hao_zhen",
+      "count": 1
+    },
+    {
+      "target": "char_immortal_wang",
+      "count": 1
+    },
+    {
+      "target": "char_li_si_chun",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zu_wei",
+      "count": 1
+    },
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 1
+    },
+    {
+      "target": "char_not_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_pang_shan",
+      "count": 1
+    },
+    {
+      "target": "fac_three_crazed_demon_eccentrics",
+      "count": 1
+    },
+    {
+      "target": "gu_care_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_no_gu",
+      "count": 1
+    },
+    {
+      "target": "char_limitless_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_crazed_demon_agreement",
+      "count": 1
+    },
+    {
+      "target": "gu_derivation_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_secret_schemer",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_plain",
+      "count": 1
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 1
+    },
+    {
+      "target": "house_loud_thunder_hall",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "char_granny_yin",
+      "count": 1
+    },
+    {
+      "target": "char_nian_er_ping_zhi",
+      "count": 1
+    },
+    {
+      "target": "inh_sword_saint_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_nian_er_yi_fang",
+      "count": 1
+    },
+    {
+      "target": "char_sword_saint_nian_er",
+      "count": 1
+    },
+    {
+      "target": "gu_bewitching_soul_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_bewitching_soul_art",
+      "count": 1
+    },
+    {
+      "target": "move_one_sword_life",
+      "count": 1
+    },
+    {
+      "target": "move_sword_heart_clarity",
+      "count": 1
+    },
+    {
+      "target": "char_liu_hui",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 1
+    },
+    {
+      "target": "move_heaven_swallowing_hound_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_gu",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a Northern Plains Gu shop, Fang Yuan hears that a famous rank seven Gu Immortal named Chu Du, titled Domination Immortal, invented Jin Strength Gu and Jun Strength Gu and refined the rank six Immortal Gu Strength of a Thousand Jun. The same talk places his rise to Gu Immortal about three hundred years earlier, and states that his recipes use easy materials, low cost, and a higher success rate than beast strength Gu, so they become the main strength path branch in Northern Plains. He remains a strength path Gu Immortal who still borrows other paths for defense, investigation, and storage.",
+      "chapters": [
+        442
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "gu_jin_strength_gu",
+        "gu_jun_strength_gu",
+        "sys_immortal_gu",
+        "gu_strength_of_a_thousand_jun",
+        "gu_beast_strength_gu",
+        "path_strength"
+      ]
+    },
+    {
+      "text": "Later shop talk still uses him as the name behind the twilight of strength path label tied to jun strength Gu’s shared limits.",
+      "chapters": [
+        443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_strength_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s market recollection states that Domination Immortal later dies in battle to Feng Jiu Ge, who descends from Heavenly Court, and that after the death is announced, future generations crown him twilight of strength path while countless Northern Plains Gu Masters weep.",
+      "chapters": [
+        442
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "fac_heavenly_court",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "That death sits in prior-life memory of a later era, not in the present timeline that still meets him alive.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the northern icy plain he stands as master while a disciple undergoes immortal ascension, blocking flying frost jumping lightning and explaining that strength path ascension there mingles with Reckless Savage’s true meaning instead of heaven’s will, so a stronger tribulation yields more true meaning for his own strength path attainment. He nurtures disciples for that harvest.",
+      "chapters": [
+        1056
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "failed-true-meaning-seizure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_reckless_savage_demon_venerable"
+      ]
+    },
+    {
+      "text": "A later stretch names him a legendary Northern Plains Gu Immortal born outside Huang Jin bloodline, who awakens by chance, cultivates alone, invents jin strength Gu, strength of ten jin Gu, jun strength Gu, strength of ten jun Gu and related worms, rises from mortal to immortal, then founds the human jun strength branch that revitalizes strength path. As rank six he beats a lone immortal and kills three reinforcements; after a Liu tribe conflict and decades of seclusion he returns at rank seven, wrecks eighteen Liu tribe resource points, and forces Liu tribe’s first supreme elder into a fight that cannot stop him. In recent years he stays in the northern icy plain excavating Reckless Savage’s true meaning, and when he sees Fang Yuan’s tribulation drawing that true meaning through ancient ruin bats, he attacks to seize the method. Fang Yuan seals his aperture gap and finishes the calamity while Chu Du remains outside without a way in.",
+      "chapters": [
+        1057
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "failed-true-meaning-seizure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline",
+        "gu_strength_of_ten_jun_gu",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "One of his disciples, newly advanced to rank six in the strength path, asks how long they must stay on the icy plain, and Chu Du gives him no answer. He privately regrets attacking Fang Yuan without thinking it through, considers that killing him risks a soul self-detonation that would waste the opportunity, and reasons that he still holds Fang Yuan’s sword path Immortal Gu as a negotiation chip.",
+      "chapters": [
+        1060
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "failed-true-meaning-seizure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After they collaborate, he seizes Hei tribe’s thirteenth eagle nest at the end of that battle; Hei tribe’s first supreme elder then announces that the nest holds clues to Hei Fan’s true inheritance, and Chu Du renegotiates. The new bargain has him use Calamity Beckoning to take Reckless Savage’s true meaning from Fang Yuan, while claiming thirty percent of Fang Yuan’s later gains from the Eastern Sea information path true inheritance and Hei Fan’s true inheritance. Fang Yuan treats the tie as a benefits alliance and stays wary, reading Chu Du as still hungry for immortal tribulation tempering aperture and possibly tipped to Fang Yuan’s identity.",
+      "chapters": [
+        1115
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "territory-bargain-and-settlement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "inh_hei_fan_true_inheritance",
+        "gu_calamity_beckoning_gu",
+        "inh_eastern_sea_information_path_true_inheritance"
+      ]
+    },
+    {
+      "text": "Fang Yuan tells him that, per their alliance agreement, he will pay him thirty percent of his gains and hands him the now-emptied grotto-heaven. He agrees, judging that a grotto-heaven without calamities and tribulations can hold the resources his own blessed land cannot keep safe. He also sees that as the grotto-heaven’s visible holder he carries whatever trouble follows, and counts an attack by Heavenly Lord Bai Zu a small risk worth taking.",
+      "chapters": [
+        1133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "territory-bargain-and-settlement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heavenly_lord_bai_zu"
+      ]
+    },
+    {
+      "text": "Fang Yuan finds Qing Yu blessed land ransacked into a state like the one Hei Fan grotto-heaven was in when he took that grotto-heaven over, and feels he can somewhat understand what Chu Du had gone through.",
+      "chapters": [
+        1152
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territory-bargain-and-settlement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_yu_blessed_land",
+        "loc_hei_fan_grotto_heaven"
+      ]
+    },
+    {
+      "text": "He settles with Heavenly Lord Bai Zu, cedes a portion of the grotto-heaven, and forms an alliance that lets Bai Zu’s main body enter.",
+      "chapters": [
+        1181
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "territory-bargain-and-settlement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_zu_tribe"
+      ]
+    },
+    {
+      "text": "In a strength path contest against Fairy Black Moon he first seals his cultivation to fight as rank seven, then erupts with rank eight aura to save her and win the bout. The reveal lifts both his standing and Chu tribe’s reputation among Northern Plains Gu Immortals.",
+      "chapters": [
+        2214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "reveals-rank-eight-against-black-moon",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "fac_chu_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chu-du/",
+      "chapters": [
+        442,
+        443,
+        1056,
+        1057,
+        1060,
+        1115,
+        1133,
+        1152,
+        1181,
+        2214
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 442 VIII as of ch. 2214",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Strength path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 442,
+        "confidence": "B"
+      },
+      {
+        "rank": 8,
+        "as_of_chapter": 2214,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_strength"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_calamity_beckoning_gu",
+      "role": "borrower",
+      "recorded_chapter": 1113,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_strength_of_a_thousand_jun",
+      "role": "refiner",
+      "recorded_chapter": 442,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_strength_of_ten_jin_gu",
+      "role": "creator",
+      "recorded_chapter": 1057,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "res_intimate_grass",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Intimate grass",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Intimate grass is a pastel green herb sold as cheap Gu supplementary food and later named as a refinement Gu material in an Immortal Gu recipe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 39,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    39,
+    44,
+    665
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_moon_orchid",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Qing Mao Mountain’s temporary market, vendors sell Intimate Grass at two primeval stones per catty, hawking it as fresh and high quality. Each blade is about a meter long and slender, roughly a fingernail wide, with red heart-shaped flower buds on some pointed tips. It is a Gu worm’s supplementary food type, used to pair with other feeds. Mixed with Moonlight Gu’s meal, one blade of Intimate Grass lets the Gu be full from a single moon orchid petal instead of two, which is cheaper than feeding petals alone. Fang Yuan has stones enough to buy it but no time, as the stall is crowded with Gu Masters and students.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-stalls",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "sys_gu_worms",
+        "gu_moonlight_gu",
+        "char_fang_yuan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "The next day the Intimate Grass cart is empty. Fang Yuan regrets missing a few catty that would have saved primeval stones.",
+      "chapters": [
+        44
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sold-out",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lang Ya land spirit praises a completed Immortal Gu recipe that uses an unexpected Gu together with refinement Gu material intimate grass.",
+      "chapters": [
+        665
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "sys_gu_recipe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/intimate-grass.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/intimate-grass/",
+      "chapters": [
+        39,
+        44,
+        665
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Grass",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

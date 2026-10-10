@@ -1,0 +1,235 @@
+/* GU World — everything is scoped under #gu-world-root or gw- classes. */
+
+:root {
+    /* Near-black basalt, dim bone for text, ash for the quiet, old blood. */
+    --gw-basalt: #0c0d0f;
+    --gw-window: #101114;
+    --gw-plate: rgb(12 13 15 / 0.8);
+    --gw-bone: #e2d8c4;
+    --gw-ash: #8e8778;
+    --gw-blood: #a8261f;
+    --gw-good: #8fbf7a;
+    --gw-font:
+        'Golos Text', system-ui, -apple-system, 'Segoe UI', Roboto, Arial,
+        sans-serif;
+    --gw-display: 'Unbounded', 'Golos Text', system-ui, sans-serif;
+    --gw-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background: var(--gw-basalt);
+    font-family: var(--gw-font);
+    color: var(--gw-bone);
+}
+
+#gu-world-root {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gw-canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.gw-card {
+    display: grid;
+    gap: 12px;
+    width: min(520px, calc(100% - 32px));
+    padding: 28px 26px 22px;
+    box-sizing: border-box;
+    border-left: 2px solid var(--gw-blood);
+    background: var(--gw-window);
+}
+
+.gw-card h1 {
+    margin: 0;
+    font-family: var(--gw-display);
+    font-size: 28px;
+}
+
+.gw-card p {
+    margin: 0;
+    color: var(--gw-ash);
+    line-height: 1.5;
+}
+
+.gw-back {
+    justify-self: start;
+    color: var(--gw-bone);
+}
+
+.gw-button {
+    justify-self: start;
+    padding: 10px 22px;
+    border: 0;
+    background: var(--gw-blood);
+    color: var(--gw-bone);
+    font: 600 15px var(--gw-font);
+    cursor: pointer;
+}
+
+.gw-button:hover {
+    filter: brightness(1.15);
+}
+
+/* Over the world. */
+.gw-hud {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.gw-plate {
+    padding: 8px 12px;
+    background: var(--gw-plate);
+    box-shadow: inset 0 0 0 1px rgb(226 216 196 / 0.08);
+}
+
+.gw-place {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: grid;
+    gap: 2px;
+}
+
+.gw-place__name {
+    font-family: var(--gw-display);
+    font-size: 14px;
+}
+
+.gw-place__time {
+    color: var(--gw-ash);
+    font-size: 13px;
+}
+
+.gw-status {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: var(--gw-ash);
+    font-size: 13px;
+}
+
+.gw-status:empty {
+    display: none;
+}
+
+.gw-status[data-tone='good'] {
+    color: var(--gw-good);
+}
+
+.gw-status[data-tone='bad'] {
+    color: #e0675f;
+}
+
+.gw-notices {
+    position: absolute;
+    top: 80px;
+    left: 16px;
+    display: grid;
+    gap: 6px;
+    max-width: min(520px, calc(100% - 32px));
+}
+
+.gw-notice {
+    margin: 0;
+    border-left: 2px solid var(--gw-blood);
+    font-size: 13px;
+}
+
+.gw-debug {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    margin: 0;
+}
+
+.gw-overlay {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    background: rgb(4 4 6 / 0.55);
+    pointer-events: auto;
+}
+
+.gw-overlay[hidden],
+.gw-debug[hidden],
+.gw-loading[hidden] {
+    display: none;
+}
+
+.gw-debug {
+    display: grid;
+    gap: 8px;
+    justify-items: end;
+}
+
+.gw-debug__text {
+    margin: 0;
+    font: 12px/1.5 var(--gw-mono);
+}
+
+.gw-debug__map {
+    width: 220px;
+    height: 220px;
+}
+
+/* While the chunks around the hero load. */
+.gw-loading {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-content: center;
+    gap: 10px;
+    background: rgb(12 13 15 / 0.75);
+    font-size: 14px;
+}
+
+.gw-loading p {
+    margin: 0;
+}
+
+.gw-loading__track {
+    display: block;
+    width: 260px;
+    height: 4px;
+    background: rgb(226 216 196 / 0.15);
+}
+
+.gw-loading__bar {
+    display: block;
+    width: 0;
+    height: 100%;
+    background: var(--gw-blood);
+    transition: width 0.15s;
+}
+
+.gw-controls {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 14px;
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.gw-controls dt {
+    font: 700 12px var(--gw-mono);
+}
+
+.gw-controls dd {
+    margin: 0;
+    color: var(--gw-ash);
+}

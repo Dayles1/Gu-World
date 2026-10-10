@@ -1,0 +1,203 @@
+{
+  "id": "char_wan_zhui_qing",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wan Zhui Qing",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wan zhui qing",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Вань Чжуй Цин",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wan Zhui Qing is a Wan clan rank six Gu Immortal of Western Desert, the son of Wan Liang Han, who kneels and weeps after his father's death and receives clan help to refine replacement Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1802,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1802
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wan_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1802,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wan_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_wan_liang_han",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_flying_sand",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Suan Bu Jin kills Wan Liang Han, Wan Zhui Qing kneels on the ground and bawls, and no one can persuade him to stop.",
+      "chapters": [
+        1802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wan_liang_han"
+      ]
+    },
+    {
+      "text": "Wan clan’s first supreme elder asks whether his father left him the inheritance. He holds back tears and says his father taught him everything about the inheritance, killer moves, and Gu recipes, but not even one Immortal Gu was left behind. The first supreme elder says Wan Liang Han will be honored and that any Gu materials required to refine his Immortal Gu will be provided for free from the clan treasury, hoping those Immortal Gu were destroyed rather than taken. Wan Zhui Qing kowtows multiple times in thanks.",
+      "chapters": [
+        1802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-and-clan-aid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan",
+        "sys_gu_recipe",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wan-zhui-qing/",
+      "chapters": [
+        1802
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 1802",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wan Clan as of ch. 1802",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 1802,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

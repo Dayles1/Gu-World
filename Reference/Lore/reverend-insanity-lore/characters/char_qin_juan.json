@@ -1,0 +1,243 @@
+{
+  "id": "char_qin_juan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qin Juan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "qin juan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цинь Цзюань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qin Juan is a Spirit Affinity House disciple who watches Feng Jin Huang's refinement duels and later pursues targets on a sect mission.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 854,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    854,
+    1191,
+    1192,
+    2095
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_spirit_affinity_house",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 854,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 2
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_sun_yao",
+      "count": 2
+    },
+    {
+      "target": "char_wang_xiao_er",
+      "count": 2
+    },
+    {
+      "target": "loc_sun_moon_sinkhole",
+      "count": 2
+    },
+    {
+      "target": "move_small_wishful_hand",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_heaven_path_dao_marks",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Outside a martial refinement duel she sighs in relief as senior sister Qin Juan while junior sister Sun Yao asks what was close. Qin Juan explains that martial duels let refiners attack to disturb refinement, and that resisting disturbance matters because sneak attacks during refinement are common outside the sect.",
+      "chapters": [
+        854
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_sun_yao"
+      ]
+    },
+    {
+      "text": "In Feng Jin Huang’s rooms she excitedly holds a Gu her senior sister refined. When Sun Yao panics over Zhao Lian Yun’s approach, Qin Juan rebukes the panic and worries that Zhao Lian Yun is competing for the next generation fairy seat.",
+      "chapters": [
+        1191
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhao-lian-yun-visit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jin_huang",
+        "char_zhao_lian_yun"
+      ]
+    },
+    {
+      "text": "Qin Juan calls Zhao Lian Yun shameless for demanding that the contest for the position of fairy be given up, and is furious that she kneels and refuses to get up. When Sun Yao says Zhao Lian Yun is kind too, Qin Juan asks Sun Yao whether she has forgotten that senior sister Feng Jin Huang has been taking care of them all along, and whether she is repaying kindness with enmity.",
+      "chapters": [
+        1192
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "on-the-road-to-lake-heart-mountain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She corners Central Continent’s four great obscenities and Wang Xiao Er at Sun Moon Sinkhole on a sect mission to kill them, smiles coldly, and tells them jumping means certain death in the unfathomably deep pit.",
+      "chapters": [
+        2095
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sinkhole-pursuit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "char_wang_xiao_er",
+        "loc_sun_moon_sinkhole"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/qin-juan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/qin-juan/",
+      "chapters": [
+        854,
+        1191,
+        1192,
+        2095
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Spirit Affinity House as of ch. 854",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

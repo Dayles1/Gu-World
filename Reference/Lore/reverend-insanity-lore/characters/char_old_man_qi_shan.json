@@ -1,0 +1,201 @@
+{
+  "id": "char_old_man_qi_shan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Old Man Qi Shan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Old Man Qi Shan is a Central Continent lone cultivator refinement path Gu Master, master of Zheng Shan Chuan, and holder of the careful Gu recipe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 833,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    833,
+    834,
+    835
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_zheng_shan_chuan",
+      "count": 2
+    },
+    {
+      "target": "loc_flying_frost_sect",
+      "count": 2
+    },
+    {
+      "target": "char_an_han",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "move_spinning_golden_bell",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan identifies the old master beside Zheng Shan Chuan as Old Man Qi Shan after watching An Han’s schemes at Flying Frost Sect. Prior-life memory holds that he was secretly poisoned and tormented, and that his disciple tried every way to heal him, including pursuit of green shine Gu.",
+      "chapters": [
+        833
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_zheng_shan_chuan",
+        "char_an_han",
+        "loc_flying_frost_sect"
+      ]
+    },
+    {
+      "text": "No early chapter describes his ordinary look. After pleading on the floor his face is covered in blood.",
+      "chapters": [
+        835
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Zheng Shan Chuan insists on the duel, Old Man Qi Shan sighs inwardly that the youth does not see how dangerous an opponent who yields so far must be, then outwardly grabs his disciple’s shoulder, accepts the filial intent, and supports him. Careful Gu is his sole secret inheritance, not circulated outside. To back the duel he takes out that precious Gu recipe and lets Fang Yuan receive it.",
+      "chapters": [
+        834
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "careful-gu-support",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He cries out for his disciple when the refinement fails, then knocks his head on the floor until his face bleeds, begging Fang Yuan to spare the youth and offering to replace him with all his savings.",
+      "chapters": [
+        835
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-loss",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/old-man-qi-shan/",
+      "chapters": [
+        833,
+        834,
+        835
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,234 @@
+{
+  "id": "loc_bone_burial_field",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bone Burial Field",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bone Burial Field is a Northern Plains field of skeletons controlled by Liu tribe and developed as a bone path Gu production site.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1208,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1208,
+    1209,
+    1291
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_liu_yong",
+      "count": 2
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "evt_era_olden",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_light_pit",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_beast_bone",
+      "count": 1
+    },
+    {
+      "target": "gu_borrow_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_colored_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_reflect_light_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The place is filled with white bones and countless piles of skeletons. Some huge skeletons resemble hills, and small skeletons sit unassumingly beside them. Some bones have special colors: yellow and shining brightly, or purple and alluring while emitting poisonous gas.",
+      "chapters": [
+        1208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Liu tribe controls Bone Burial Field and develops it as a production base for bone path Gu worms. Rumored origins include an Olden Antiquity enslavement path battle, a bone monster graveyard, or an ancient refinement path Gu refinement ground, but the field holds large numbers of desolate beast and ancient desolate beast corpses either way. Liu Yong, a rank six enslavement path Gu Immortal, travels there with six desolate beast bone armor hounds to pick suitable bones.",
+      "chapters": [
+        1208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_liu_tribe",
+        "sys_gu_worms",
+        "evt_era_olden",
+        "char_liu_yong",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan, as Liu Guan Yi in ancient sword dragon form, attacks the defensive Gu formation, kills Liu Yong with dragon breath, takes the six bone armor hounds and many corpses, and leaves the field empty with a tattered formation.",
+      "chapters": [
+        1208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_formation"
+      ]
+    },
+    {
+      "text": "He later notes that destroying Bone Burial Field and killing Liu Yong will draw Liu tribe pursuit while he moves on to jade light pit.",
+      "chapters": [
+        1209
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "attack",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After killing Liu Yong, Fang Yuan moves Bone Burial Field itself directly into his immortal aperture rather than only stripping it of bones. Inside the aperture it sits in Mini Northern Plains, on the side nearer Western Desert. It holds a mountain of skeletons of every type, many of them valuable immortal materials, and gives him a resource point that can generate bone path Gu worms. He keeps eighty percent of the field, the bones that make it valuable, and leaves Liu tribe only the remaining twenty percent, the soil terrain. His own copy still falls short of the original: even the surrounding soil of the true Bone Burial Field carried bone path dao marks that his portion lacks.",
+      "chapters": [
+        1291
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "moved-into-the-immortal-aperture",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mini_northern_plains",
+        "reg_western_desert"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/bone-burial-field.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bone-burial-field/",
+      "chapters": [
+        1208,
+        1209,
+        1291
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "resource point",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

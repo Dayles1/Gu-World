@@ -1,0 +1,164 @@
+{
+  "id": "res_extreme_time_pole",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Extreme time pole",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Extreme time pole is an extremely rare rank eight time path immortal material, valued enough to trade one-for-one for other rank eight goods.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1648,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1648,
+    1887
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "char_miao_ming_shen",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "res_time_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Extreme time pole is a rank eight time path immortal material, extremely rare. Miao Ming Shen obtained it long ago at great cost and could not bear to sell it. Immortal materials at rank eight are usually exclusively traded with each other.",
+      "chapters": [
+        1648
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-time-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_miao_ming_shen",
+        "sys_immortal_material"
+      ]
+    },
+    {
+      "text": "When Heavenly Court and Southern Border buy out time path immortal materials, those materials rise sharply in price. Offering the extreme time pole draws Heavenly Court’s notice and can secure underworld yellow water in trade.",
+      "chapters": [
+        1648
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-time-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Miao Ming Shen uses the extreme time pole in treasure yellow heaven to exchange for underworld yellow water to cleanse ice poison starfish poison. The trade succeeds more readily than in the previous life because Heavenly Court buys time path immortal materials frantically after losses in the River of Time.",
+      "chapters": [
+        1887
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-life-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_river_of_time"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/extreme-time-pole/",
+      "chapters": [
+        1648,
+        1887
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

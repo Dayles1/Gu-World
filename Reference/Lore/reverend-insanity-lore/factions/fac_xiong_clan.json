@@ -1,0 +1,723 @@
+{
+  "id": "fac_xiong_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiong Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Xiong family Xiong village"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Xiong clan is one of the three clans that share Qing Mao Mountain in the Southern Border, with its village on the fore mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    45,
+    65,
+    74,
+    78,
+    121,
+    123,
+    124,
+    135,
+    137,
+    146,
+    147,
+    165,
+    168,
+    175,
+    178,
+    179,
+    186,
+    189,
+    194,
+    199
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiong_jiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 121,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiong_li",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 121,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiong_lin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 121,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiong_jiao_man",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 124,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiong_zhan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 131,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xiong_jiang",
+      "count": 4
+    },
+    {
+      "target": "char_xiong_jiao_man",
+      "count": 4
+    },
+    {
+      "target": "char_xiong_lin",
+      "count": 4
+    },
+    {
+      "target": "char_xiong_zhan",
+      "count": 4
+    },
+    {
+      "target": "char_xiong_li",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 2
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_bear_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_stream_gu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "gu_shadow_follower_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_brown_bear_innate_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_grand_bear_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_alliance_slope",
+      "count": 1
+    },
+    {
+      "target": "char_bai_bing_yi",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_leader",
+      "count": 1
+    },
+    {
+      "target": "gu_roaming_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_shadow_bond_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_battle_merits",
+      "count": 1
+    },
+    {
+      "target": "gu_plunder_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "count": 1
+    },
+    {
+      "target": "char_lightning_lycan",
+      "count": 1
+    },
+    {
+      "target": "sys_wolf_tide",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_mo_chen",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zhong_shui",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_third_battle",
+      "count": 1
+    },
+    {
+      "target": "char_first_gen_gu_yue",
+      "count": 1
+    },
+    {
+      "target": "gu_demonic_blood_skull_gu",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Xiong clan Gu Masters are strong and robust, with strength showing in their build.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Qing Mao Mountain has three mountain villages. Gu Yue Village sits at the mountain waist, the Xiong family village on the fore mountain, and the Bai family village at the back mountain waterfall.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "loc_gu_yue_village",
+        "loc_xiong_village",
+        "loc_bai_village"
+      ]
+    },
+    {
+      "text": "The opening chapter already names Xiong Village beside Bai Village as another mountain power producing talented juniors.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Merchants name the Bai and Xiong families as the other two clan families on the mountain while a caravan is still in Gu Yue Village.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xiong Gu Masters on alliance ground are described as strong and robust, strength showing in their build.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The clan’s signature Gu in three-clan exchange talk is Bear Strength Gu, kept off the battle-merit board the same way Gu Yue keeps Moonlight Gu and Bai keeps Stream Gu.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bear_strength_gu",
+        "fac_gu_yue_clan",
+        "gu_moonlight_gu",
+        "gu_stream_gu"
+      ]
+    },
+    {
+      "text": "Honey is Bear Strength Gu’s food, so the Xiong family has strong demand for it.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qing Mao Mountain does not hold only Gu Yue.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-three-clans",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Bai clan and Xiong clan are named as the other two forces that would not welcome Gu Yue successfully nurturing an A grade talent.",
+      "chapters": [
+        74
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-three-clans",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan",
+        "sys_a_grade"
+      ]
+    },
+    {
+      "text": "Gu Yue Bo’s outside work includes dealing with an arrogant and rude Xiong clan village and a gradually rising Bai clan village.",
+      "chapters": [
+        78
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-three-clans",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "During the wolf tide stretch the text ranks Xiong as the weakest of the three, still resisting with difficulty while Bai clan’s cumulative strength has already exceeded Gu Yue’s.",
+      "chapters": [
+        165
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-three-clans",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xiong Li is Qing Mao Mountain’s top strongman in the alliance stretch, carrying Brown Bear Innate Strength Gu and Grand Bear Gu for two bears’ strength, and his challenge is political leverage in three-clan alliance talks rather than a private duel.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "place-among-the-three-clans",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_li",
+        "gu_brown_bear_innate_strength_gu",
+        "gu_grand_bear_gu"
+      ]
+    },
+    {
+      "text": "Xiong Li’s group includes Xiong Lin and Xiong Jiang.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_li",
+        "char_xiong_lin",
+        "char_xiong_jiang"
+      ]
+    },
+    {
+      "text": "Xiong Jiang names cousin Xiong Zhan as the only Plunder Gu holder on Qing Mao Mountain when that Gu appears in Bai Ning Bing’s hands.",
+      "chapters": [
+        135
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_zhan",
+        "gu_plunder_gu",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "After Xiong Li dies, Xiong Jiang dies blocking Bai Ning Bing so Xiong Lin can flee,",
+      "chapters": [
+        137
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and Gu Yue talk later treats Fang Yuan as Xiong Jiang’s murderer from the Xiong village side.",
+      "chapters": [
+        147
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Xiong Jiao Man leads a relief group toward Gu Yue during the wolf tide. Xiong Yuan Zhen dies of wounds on that relief trip while she is still leading the group.",
+      "chapters": [
+        146
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_jiao_man",
+        "char_xiong_yuan"
+      ]
+    },
+    {
+      "text": "Her name is also printed as Xiong Jian Man in places, including when she curses the wolves and when Bai Ning Bing beheads her later; both strings refer to the same group leader.",
+      "chapters": [
+        146
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Xiong Li dies, Gu Yue talk treats her as the number one contender in Xiong clan among the younger generation named in that stretch.",
+      "chapters": [
+        189
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The office of Xiong clan leader appears through the three-clan tournament stretch and the Bai Ning Bing fight, but the English chapter text used here does not pin a personal name to that office.",
+      "chapters": [
+        186
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-clansmen-around-the-wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the wolf tide, elders first guess a thunder crown wolf wiped Xiong village; the narration corrects that a lightning lycan led the pack that did so.",
+      "chapters": [
+        168
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-and-tournament",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later Gu Yue talk still treats Xiong village as eliminated by the wolf tide, then has to reverse that when an Xiong envoy arrives: Xiong clan still has a large number of survivors. Gu Yue elders read the retreat as a scheme to borrow the wolf tide and weaken the other two clans, and they treat Xiong as having ranked behind Gu Yue and Bai before that turn.",
+      "chapters": [
+        175
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-and-tournament",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Compensation talks fail. The three clans decide on a three-clan tournament for Gu Masters aged thirty or below to settle compensation and the future strength of each clan.",
+      "chapters": [
+        178
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-and-tournament",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Bo states the deadlock among Gu Yue, Bai, and Xiong, and names Xiong village’s evasion of the wolf tide as the act that broke the old balance into that tournament decision.",
+      "chapters": [
+        179
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-and-tournament",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside First gen Gu Yue’s blood shield massacre, Bai clan and Xiong clan Gu Masters are the exception: he kills every Gu Yue clansman he can reach for Blood Skull Gu, and does not kill those Bai and Xiong Gu Masters in that same sweep.",
+      "chapters": [
+        194
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "end-of-the-qing-mao-stretch",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_first_gen_gu_yue",
+        "gu_demonic_blood_skull_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan later states that Qing Mao Mountain has already turned into a desolate ice mountain, and that the three great clans along with countless living beings have all been frozen and will die within three to five days.",
+      "chapters": [
+        199
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "end-of-the-qing-mao-stretch",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The English chapter text used here does not later reopen a surviving Qing Mao Xiong clan government after that freeze.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "end-of-the-qing-mao-stretch",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/xiong-clan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/xiong-clan/",
+      "chapters": [
+        1,
+        45,
+        65,
+        74,
+        78,
+        121,
+        123,
+        124,
+        135,
+        137,
+        146,
+        147,
+        165,
+        168,
+        175,
+        178,
+        179,
+        186,
+        189,
+        194,
+        199
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

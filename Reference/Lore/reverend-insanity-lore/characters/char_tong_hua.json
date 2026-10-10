@@ -1,0 +1,273 @@
+{
+  "id": "char_tong_hua",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tong Hua",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "tong hua",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Тун Хуа",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Fairy Tong Hua"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tong Hua is a rank seven light path Gu Immortal of northern Eastern Sea who discovers light shine fungi and later joins the blue dragon whale expedition.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1296,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1296,
+    1297,
+    1300,
+    1458,
+    1650
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_ren_xiu_ping",
+      "count": 2
+    },
+    {
+      "target": "char_miao_ming_shen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_light_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "res_light_shine_fungi",
+      "count": 1
+    },
+    {
+      "target": "move_light_fungus_radiance",
+      "count": 1
+    },
+    {
+      "target": "char_zeng_luo_zi",
+      "count": 1
+    },
+    {
+      "target": "char_shen_qi",
+      "count": 1
+    },
+    {
+      "target": "char_shen_tan",
+      "count": 1
+    },
+    {
+      "target": "move_aerial_sound_blades",
+      "count": 1
+    },
+    {
+      "target": "char_shen_xiao",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Miao Ming Shen’s Eastern Sea trading convention she arrives as a girl who looks like a child with two ponytail braids, round watery eyes, and deep maturity in her gaze. Narration names her a rank seven light path Gu Immortal famous in the north of Eastern Sea.",
+      "chapters": [
+        1296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_miao_ming_shen",
+        "reg_eastern_sea",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "She looks like a child with two ponytail braids. Her eyes are round and watery, but there is deep maturity in them.",
+      "chapters": [
+        1296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She presents a green desolate plant fungus she found in a deep sea paradise of light, names it light shine fungus, and offers it for trade. At the time she alone holds this desolate plant in the world.",
+      "chapters": [
+        1296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fungus-discovery-and-offer",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Miao Ming Shen notes she has just passed a tribulation and is restocking her immortal aperture. He adds that she is affluent, manages her aperture well, and holds a personal sea area called rainbow aurora sea where aurora light weaves with the sky at dawn and dusk.",
+      "chapters": [
+        1300
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rainbow-aurora-sea",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After selling her light shine fungi she repays most of a high interest loan from Ren Xiu Ping, then buys an incomplete Kui Wu Zi wood path true inheritance from him while trying to modify the fungi. She cultivates light path and lacks wood path foundation for that modification.",
+      "chapters": [
+        1458
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "debt-to-ren-xiu-ping",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ren_xiu_ping"
+      ]
+    },
+    {
+      "text": "Miao Ming Shen lists her among the eight exploring the blue dragon whale and treats her as a rare Eastern Sea rank seven expert whose background he already knows.",
+      "chapters": [
+        1650
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blue-dragon-whale-expedition",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/tong-hua.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/tong-hua/",
+      "chapters": [
+        1296,
+        1297,
+        1300,
+        1458,
+        1650
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1296",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1296,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

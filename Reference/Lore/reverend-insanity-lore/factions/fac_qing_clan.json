@@ -1,0 +1,213 @@
+{
+  "id": "fac_qing_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qing Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An exterminated super force. Spectral Soul slaughtered the clan before becoming venerable, and the headquarters battlefield became green ghost desert.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1507,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1507,
+    1516
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qing_heng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2035,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qing_hua_lan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2035,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "house_divine_bean_palace",
+      "count": 3
+    },
+    {
+      "target": "char_qing_heng",
+      "count": 3
+    },
+    {
+      "target": "char_qing_hua_lan",
+      "count": 3
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_qing_clan_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_green_ghost_desert",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_corpse",
+      "count": 1
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_qing_chou",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_oasis",
+      "count": 1
+    },
+    {
+      "target": "move_qing_mouth",
+      "count": 1
+    },
+    {
+      "target": "gu_hatred_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "It was rumored that Qing clan’s first supreme elder, before his death, sealed all the clan resources and buried them in a certain location in green ghost desert, leaving an inheritance. The inheritor must take revenge for Qing clan by killing Spectral Soul, or if he is already dead, his family, friends, and disciples. After Spectral Soul became a Demon Venerable, the inheritance became a joke.",
+      "chapters": [
+        1507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sealed-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before becoming venerable, Spectral Soul Demon Venerable fought the whole clan alone over an irreconcilable conflict. Qing clan belittled him for numbers and assets. He grew stronger through repeated battles and arrived at the headquarters. Dao marks from his killer moves, Gu Immortal corpses, and destroyed immortal apertures engraved that battlefield. The desert’s name references Qing clan.",
+      "chapters": [
+        1507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sealed-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_spectral_soul_demon_venerable",
+        "sys_dao_marks",
+        "res_gu_immortal_corpse"
+      ]
+    },
+    {
+      "text": "Divine Bean Palace ended up in Qing clan’s hands after a village was buried by a sandstorm and the house passed among mortals. Qing clan recognized it as Genesis Lotus Immortal Venerable’s possession. That angered Spectral Soul, who had yet to become venerable, and he slaughtered the clan. At the brink of destruction, Qing clan’s first supreme elder sent the clan’s inheritance into Divine Bean Palace and set up a revival method.",
+      "chapters": [
+        1516
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cause-of-the-slaughter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_divine_bean_palace",
+        "char_genesis_lotus_immortal_venerable"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/qing-clan/",
+      "chapters": [
+        1507,
+        1516
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": "char_zuo_wu_sheng",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zuo Wu Sheng",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zuo wu sheng",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цзо У Шэн",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zuo Wu Sheng is a Zuo clan elder and rank three Gu Master who stands wounded before Zuo Chan Yu during a San Cha mountain fight with Che clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 323,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    323
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zuo_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 323,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zuo_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_che_you_yin",
+      "count": 2
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 2
+    },
+    {
+      "target": "char_zuo_chan_yu",
+      "count": 2
+    },
+    {
+      "target": "char_che_qiao_xiang",
+      "count": 1
+    },
+    {
+      "target": "fac_che_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_fei_lai_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_leng_zhan_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Che You Yin mocks him as old man Wu Sheng and vows that all three Zuo fighters will die without a proper burial. Che Qiao Xiang treats him as her father’s rival for tens of years and about the same strength, and fears that even wounded his dying counterattack would be terrifying.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_che_you_yin",
+        "char_che_qiao_xiang"
+      ]
+    },
+    {
+      "text": "When Kong Ri Tian appears, Zuo Wu Sheng and Che You Yin show intense fear and name him. Narration places the two as the main fighters, both injured and only rank three. After the petal assault they sigh in relief when he seems to retreat, then their faces change. Zuo Wu Sheng cries out for Chan Yu as Kong Ri Tian holds the unconscious Zuo Chan Yu and Che Qiao Xiang. The three kings inheritance pillars then erupt.",
+      "chapters": [
+        323
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "overwhelming-ambush",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_kong_ri_tian",
+        "char_zuo_chan_yu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zuo-wu-sheng/",
+      "chapters": [
+        323
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 323",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zuo Clan as of ch. 323",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 323,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

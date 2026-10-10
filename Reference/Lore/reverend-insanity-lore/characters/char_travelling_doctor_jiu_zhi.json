@@ -1,0 +1,225 @@
+{
+  "id": "char_travelling_doctor_jiu_zhi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Travelling Doctor Jiu Zhi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Roaming Doctor Jiu Zhi"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Travelling Doctor Jiu Zhi is one of Southern Border's four great doctors, named with Doctor Su Shou among the region's famous healers.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 271,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    271,
+    375,
+    385
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_divine_doctor_sheng_shou",
+      "count": 2
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_four_great_doctors",
+      "count": 1
+    },
+    {
+      "target": "gu_yin_yang_rotation_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While bathing before Doctor Su Shou restores his burnt face in Shang clan city, Fang Yuan names Roaming Doctor Jiu Zhi to Bai Ning Bing and tells her she can ask Su Shou later about the Yin Yang rotation Gu.",
+      "chapters": [
+        271
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_doctor_su_shou",
+        "loc_shang_clan_city",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "gu_yin_yang_rotation_gu"
+      ]
+    },
+    {
+      "text": "A later list names the four as killer ghost doctor Chou Jiu, doctor Su Shou, travelling doctor Jiu Zhi, and divine doctor Sheng Shou.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "four-great-doctors-roster",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chou_jiu",
+        "char_divine_doctor_sheng_shou"
+      ]
+    },
+    {
+      "text": "Fang Yuan notes that Travelling Doctor Jiu Zhi likes to disguise himself as an old beggar and wander around aimlessly.",
+      "chapters": [
+        385
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "disguise-habit",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation prints Roaming Doctor Jiu Zhi in chapter 271 and Travelling Doctor Jiu Zhi in chapters 375 and 385.",
+      "chapters": [
+        271
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation does not print Chinese characters for the personal name.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/travelling-doctor-jiu-zhi/",
+      "chapters": [
+        271,
+        375,
+        385
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

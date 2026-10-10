@@ -1,0 +1,535 @@
+{
+  "id": "race_inkmen",
+  "entity_type": "race",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Inkmen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Inkman ink man inkman tribe"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A variant human race with white hair and black skin, first named when Mo Shi Kuang appears at Yu Tian heroes assembly.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 497,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    497,
+    498,
+    499,
+    566,
+    662,
+    735,
+    799,
+    901,
+    1082,
+    1489,
+    1981,
+    1989,
+    2136,
+    2160,
+    2161,
+    2176
+  ],
+  "relations": [
+    {
+      "type": "home_regions",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 662,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "notable_members",
+      "target": "char_mo_shi_kuang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 497,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "notable_members",
+      "target": "char_mo_yao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "notable_members",
+      "target": "char_mo_tan_sang",
+      "role": "king",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 662,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "notable_members",
+      "target": "char_immortal_yi_yan",
+      "role": "wisdom path",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 901,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "notable_members",
+      "target": "char_great_wisdom_immortal_mother",
+      "role": "rank eight",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1981,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_mo_yao",
+      "count": 4
+    },
+    {
+      "target": "char_mo_tan_sang",
+      "count": 4
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 3
+    },
+    {
+      "target": "char_great_wisdom_immortal_mother",
+      "count": 3
+    },
+    {
+      "target": "char_immortal_yi_yan",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "sys_variant_human",
+      "count": 1
+    },
+    {
+      "target": "loc_book_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "race_rockmen",
+      "count": 1
+    },
+    {
+      "target": "race_variant_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "house_water_pavilion",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qian_kun_crystal_wall",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_inkman_city",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_great_wisdom_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Rockman, eggman, hairy man, and inkman are not Ren Zu’s descendants but variant men. Inkman was recorded in the Legends of Ren Zu. Their homeland was Book Mountain. On that mountain an Ink Waterfall crashed down on the Literature Spring, and the raging ink fell on the rocks, forming inkmen.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-origin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "race_rockmen",
+        "char_ren_zu",
+        "sys_the_legends_of_ren_zu",
+        "loc_book_mountain"
+      ]
+    },
+    {
+      "text": "The person the crowd names is tall and heavy-built, with a fierce mouth, a wide nose, skin as dark as ink, and snowy white hair and beard like a lion’s mane.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-origin",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ordinary inkmen are not addicted to fighting. Mo Shi Kuang is an exception, and a rare successful variant man cultivator.",
+      "chapters": [
+        498
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-origin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_shi_kuang"
+      ]
+    },
+    {
+      "text": "In the Imperial Court competition he stands as a nine feet tall ink man with a black body and white hair.",
+      "chapters": [
+        499
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-origin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "Fang Yuan reads inkman characters in Water Pavilion. Legend says splashes of literature water on Book Mountain in Qian Kun Crystal Wall created the first written characters in this world. Those characters had been lost long ago, and even inkmen barely knew them after being chased out of Book Mountain. The same stretch names Mo Yao, thirty-sixth generation fairy of Spirit Affinity House, as an inkman who broke the limits of her race and became a rank seven Gu Immortal.",
+      "chapters": [
+        566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "book-mountain-legend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "house_water_pavilion",
+        "loc_qian_kun_crystal_wall",
+        "char_mo_yao",
+        "fac_spirit_affinity_house",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "In the Legends of Ren Zu, Ren Zu finds a village of inkmen at the foot of Book Mountain inside Qian Kun Crystal Wall. The inkman elder says inkmen can live there because of ink text, taken from an Ink Waterfall landing on Literature Spring.",
+      "chapters": [
+        2160
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "book-mountain-legend",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The inkman elder tells Ren Zu that wisdom Gu often stays within Qian Kun Crystal Wall, hidden very deeply. There are many bookworms on Book Mountain that record knowledge inkman seniors left behind.",
+      "chapters": [
+        2161
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "book-mountain-legend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_wisdom_gu"
+      ]
+    },
+    {
+      "text": "The inkman elder says that sometimes, when inkmen explore the place, they encounter wisdom Gu.",
+      "chapters": [
+        2176
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "book-mountain-legend",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In northern plains, inkmen had the most favorable status among the variant humans. Many variant humans had no fixed residence and wandered. Inkmen had established a city that possessed three inkman Gu Immortals. Mo Tan Sang lives in Inkman City and is the king of northern plains’ inkmen. Under his leadership they resist pressure from various forces. Huang Jin tribes jointly suppress the city. Giant Sun Immortal Venerable once demanded inkman cities offer countless female inkmen as tribute. Inkman City has long had close relations with Lang Ya blessed land. Inkman City has some attainment in qi path.",
+      "chapters": [
+        662
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_tan_sang",
+        "loc_inkman_city",
+        "fac_huang_jin_bloodline",
+        "char_giant_sun_immortal_venerable",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "The friendship between Mo Tan Sang and Lang Ya land spirit did not start in this generation. It began with a former city lord of Inkman City, and after countless generations the city has kept that secret relationship. Mo Tan Sang has Inkman City to take care of, and as a variant human he has many restraints.",
+      "chapters": [
+        735
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "city-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit"
+      ]
+    },
+    {
+      "text": "Yi Yan is an inkman wisdom path Gu Immortal.",
+      "chapters": [
+        901
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "city-leadership",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inkman City only had one inkman Gu Immortal publicly. Its founder, Immortal Yi Yan, paid a heavy price to reach an agreement with Giant Sun Immortal Venerable. These two factors allowed Inkman City to survive among powerful human forces.",
+      "chapters": [
+        1082
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "city-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_immortal_yi_yan"
+      ]
+    },
+    {
+      "text": "Every variant human has a special ability stronger than humans. Hairy men are proficient in Gu refinement, rockmen live underground and mine, snowmen are cold-resistant, and inkmen had rich knowledge.",
+      "chapters": [
+        799
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "variant-human-classification",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "There were ten variant human races in the Gu world: hairy men, rockmen, snowmen, feathermen, mermen, inkmen, eggmen, beastmen, miniman, and mushroommen. Each had their own specialty.",
+      "chapters": [
+        1489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "variant-human-classification",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Great Wisdom Immortal Mother is an old female inkman among rank eight variant human Gu Immortals.",
+      "chapters": [
+        1981
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-inkmen",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_great_wisdom_immortal_mother"
+      ]
+    },
+    {
+      "text": "Inkmen lived in Great Wisdom grotto-heaven in a flourishing habitat with many people and cities. The biggest city sat at the center and held the largest number of inkman Gu Immortals.",
+      "chapters": [
+        1989
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-inkmen",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_great_wisdom_grotto_heaven"
+      ]
+    },
+    {
+      "text": "Great Wisdom Immortal Mother’s grey-white stone slabs came from the inkman race’s true inheritance. Those slabs were all genuine, unlike many fakes circulated in the market.",
+      "chapters": [
+        2136
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-inkmen",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/races/inkmen.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/races/inkmen/",
+      "chapters": [
+        497,
+        498,
+        499,
+        566,
+        662,
+        735,
+        799,
+        901,
+        1082,
+        1489,
+        1981,
+        1989,
+        2136,
+        2160,
+        2161,
+        2176
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "Variant human",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Home regions": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Homeland": {
+      "text": "Book Mountain",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Notable members": {
+      "text": "Mo Shi Kuang Mo Yao Mo Tan Sang (king) Immortal Yi Yan (wisdom path) Great Wisdom Immortal Mother (rank eight)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

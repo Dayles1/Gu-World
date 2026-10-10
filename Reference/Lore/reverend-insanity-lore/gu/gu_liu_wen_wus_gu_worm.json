@@ -1,0 +1,238 @@
+{
+  "id": "gu_liu_wen_wus_gu_worm",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Liu Wen Wu's Gu worm",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Liu Wen Wu supplies an unnamed Gu worm that lets Bei Cao Chuan absorb Bei Cao Sheng's soul and briefly reach enslavement path master attainment.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 532,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    532
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_liu_wen_wu",
+      "role": "provider",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 532,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_bei_cao_chuan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 532,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 4
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 3
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/liu-wen-wus-gu-worm/",
+      "chapters": [
+        532
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The merge leaves two souls in one body. The soul becomes impure and memory lapses follow, so specialized soul path Gu worms are later needed to nourish and heal that damage. Bei Cao Chuan can only last seven minutes in that state when Liu Wen Wu sends him out.",
+        "chapters": [
+          532
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "cost",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms",
+          "char_liu_wen_wu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_liu_wen_wu",
+      "role": "provider",
+      "recorded_chapter": 532,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_bei_cao_chuan",
+      "role": "user",
+      "recorded_chapter": 532,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "During the Liu tribe and Hei tribe battle, Bei tribe elder Bei Cao Sheng sacrifices himself and entrusts his soul to Bei Cao Chuan so they can contest Wolf King Chang Shan Yin. Using Liu Wen Wu’s Gu worm, Bei Cao Chuan absorbs the power of Bei Cao Sheng’s soul and gains enslavement path master attainment for a short period.",
+        "chapters": [
+          532
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_liu_tribe",
+          "fac_hei_tribe",
+          "fac_bei_tribe",
+          "char_bei_cao_sheng",
+          "char_bei_cao_chuan",
+          "char_chang_shan_yin"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

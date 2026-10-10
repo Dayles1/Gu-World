@@ -1,0 +1,101 @@
+{
+  "id": "move_thunder_bird",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Thunder Bird",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Thunder Bird is Zheng tribe leader's killer move. He activates three Gu at once, and an enormous lightning bird forms in the air.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 480,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    480
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "move_gold_and_silver_lightning_dragon",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When three myriad wolf kings charge Zheng tribe camp, Zheng tribe leader’s expression pales and he furiously attacks, shouting Thunder Bird. The primeval sea in his aperture violently drops. Thunder Bird flies toward turtleback myriad wolf king and obstructs it. He uses all his strength to pin that wolf king down, and cannot leave to stop the night wolf myriad beast king.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zheng_tribe"
+      ]
+    },
+    {
+      "text": "Gold and Silver Lightning Dragon, used in the same battle, needs hundreds of Gu Masters working together. He activates this one alone.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_gold_and_silver_lightning_dragon",
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/thunder-bird/",
+      "chapters": [
+        480
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {}
+}

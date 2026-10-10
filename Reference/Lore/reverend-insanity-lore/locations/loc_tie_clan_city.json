@@ -1,0 +1,156 @@
+{
+  "id": "loc_tie_clan_city",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tie Clan City",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The mountain city of Tie clan on Wan Cheng mountain, with blackrock walls and steel towers rising toward the peak.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 211,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    211
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_wan_cheng_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_demon_suppression_tower",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Tall thick blackrock walls extend thousands of li. The city sits on the upper half of Wan Cheng mountain, with rock houses and steel towers lined up toward the peak. On the peak stands a majestic steel tower more than three hundred metres tall with almost a hundred floors, rustic and ancient, with white clouds around it like mist.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sunlight shows carriages, horses, and crowds moving through a prosperous city. The clan leader pavilion stands at the mountain peak, heavily defended, with little ordinary traffic and vigilant patrols of Gu Masters. There Tie Ruo Nan speaks with the sitting Tie Clan leader, her uncle, days after returning from her father’s death.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "upper-half-of-wan-cheng-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_tie_ruo_nan",
+        "fac_tie_clan"
+      ]
+    },
+    {
+      "text": "Tall thick blackrock walls extend thousands of li. The city sits on the upper half of Wan Cheng mountain, with rock houses and steel towers lined up toward the peak. On that peak stands the Demon Suppression Tower, a steel tower more than three hundred metres tall with almost a hundred floors, famous in the southern borders and all over the world, including middle continent.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "upper-half-of-wan-cheng-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_wan_cheng_mountain",
+        "loc_demon_suppression_tower"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/tie-clan-city.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/tie-clan-city/",
+      "chapters": [
+        211
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "city",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

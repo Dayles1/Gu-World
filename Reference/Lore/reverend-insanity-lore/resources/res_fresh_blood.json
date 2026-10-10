@@ -1,0 +1,124 @@
+{
+  "id": "res_fresh_blood",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fresh blood",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fresh blood is what Blood Moon Gu feeds on, drawn from any wild beast rather than one fixed source.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 157,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    157,
+    205
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_blood_moon_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_frost_moon_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "gu_demonic_blood_skull_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Blood Moon Gu is easy to feed, much easier than Golden Moon, Frost Moon and Illusionary Moon: its food is no longer moon orchid flower petals but fresh blood. The blood needed is a lot, but it is not limited to one type of creature: that amount might be a problem in the Western Desert, while the Southern Border’s forested and mountainous areas hold all sorts of wild beasts, so killing them puts the Gu’s food everywhere.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blood-moon-gus-food",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_blood_moon_gu",
+        "gu_frost_moon_gu",
+        "reg_western_desert",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Fresh crocodile blood, gathered from six legged crocodiles killed on a river beach, can be used to feed Blood Skull Gu and Blood Moon Gu.",
+      "chapters": [
+        205
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "crocodile-blood-feeds-it-too",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_demonic_blood_skull_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/fresh-blood.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/fresh-blood/",
+      "chapters": [
+        157,
+        205
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Wild beasts",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

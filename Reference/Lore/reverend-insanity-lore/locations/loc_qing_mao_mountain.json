@@ -1,0 +1,896 @@
+{
+  "id": "loc_qing_mao_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qing Mao Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qing Mao Mountain is the Southern Border peak where Gu Yue Village sits, and where Reverend Insanity opens.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    4,
+    7,
+    16,
+    45,
+    46,
+    60,
+    65,
+    93,
+    109,
+    123,
+    140,
+    192,
+    195,
+    196,
+    199,
+    737,
+    846,
+    1260,
+    1653
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 138,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_gu_yue_qing_shu_and_gu_yue_yao_hong_against_bai_ning_bing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 140,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_second_battle",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 165,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_third_battle",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 191,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 4
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_second_battle",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_third_battle",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_gu_yue_qing_shu_and_gu_yue_yao_hong_against_bai_ning_bing",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 2
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 2
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 2
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 2
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 2
+    },
+    {
+      "target": "char_first_gen_gu_yue",
+      "count": 2
+    },
+    {
+      "target": "char_flower_wine_monk",
+      "count": 2
+    },
+    {
+      "target": "char_fourth_generation_clan_leader",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 2
+    },
+    {
+      "target": "gu_photo_audio_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 2
+    },
+    {
+      "target": "inh_blood_sea_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 2
+    },
+    {
+      "target": "sys_northern_dark_ice_soul_physique",
+      "count": 2
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zhi",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_uncle_and_aunt",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_ten_big_mystical_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_era_current",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_c_grade",
+      "count": 1
+    },
+    {
+      "target": "char_mother_shen",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cui",
+      "count": 1
+    },
+    {
+      "target": "loc_bamboo_building",
+      "count": 1
+    },
+    {
+      "target": "char_gao_wan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_dong_tu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jin_zhu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_man_shi",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_mo_bei",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_mo_chen",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_yao_hong",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_he",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_ya",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_wang",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "char_wang_er",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_jiang",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_jiao_man",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_lin",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_zhan",
+      "count": 1
+    },
+    {
+      "target": "sys_aptitude",
+      "count": 1
+    },
+    {
+      "target": "sys_b_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_d_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_primeval_stones",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "gu_hope_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bamboo_grove",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "gu_dragonpill_cricket_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_moonshadow_gu",
+      "count": 1
+    },
+    {
+      "target": "res_green_bamboo_wine",
+      "count": 1
+    },
+    {
+      "target": "gu_scarecrow_gu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_mo_yan",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_li",
+      "count": 1
+    },
+    {
+      "target": "sys_wolf_tide",
+      "count": 1
+    },
+    {
+      "target": "gu_rules_and_regulation_gu",
+      "count": 1
+    },
+    {
+      "target": "char_jia_jin_sheng",
+      "count": 1
+    },
+    {
+      "target": "gu_brute_force_longhorn_beetle_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_mudskin_toad",
+      "count": 1
+    },
+    {
+      "target": "gu_treasure_brass_toad",
+      "count": 1
+    },
+    {
+      "target": "res_intimate_grass",
+      "count": 1
+    },
+    {
+      "target": "loc_gambling_den",
+      "count": 1
+    },
+    {
+      "target": "res_purple_gold_rock",
+      "count": 1
+    },
+    {
+      "target": "sys_monkey_wine",
+      "count": 1
+    },
+    {
+      "target": "char_jia_gui",
+      "count": 1
+    },
+    {
+      "target": "gu_thousand_li_earthwolf_spider",
+      "count": 1
+    },
+    {
+      "target": "inh_flower_wine_monk_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_black_mane_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_green_silk_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_steel_mane_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_flower_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_treasury_flower_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_jade_gu",
+      "count": 1
+    },
+    {
+      "target": "char_wild_boar",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The novel’s first rain falls on this mountain, with lights from Gu Yue Village running down its slope in a bright band.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "Under a blue sky and white clouds, verdant mountains stretch into the distance. In the vicinity is a bamboo grove of Qing Mao Mountain’s unique spear bamboo, each stick straight as a line with a tip as sharp as a spear.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The mountain’s soil is green-coloured.",
+      "chapters": [
+        60
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A spring approach shows green as far as the eye can see, wild flowers on the sunny hills forming a colorful sea, and a river that surges like flame and tangles with the sunshine.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At night, spring rain falls, and lights from the side down to the foot of the mountain shine like a bright band.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In his final days, First gen Gu Yue stood on Qing Mao Mountain in the Southern Border, changed his appearance, took the name Gu Yue, and established Gu Yue Village.",
+      "chapters": [
+        192
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "crisis-and-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_first_gen_gu_yue",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "During the later clan conflict, Bai Ning Bing’s Northern Dark Ice Soul physique spreads a glacier that covers the whole mountain from peak to foot, turning the green mountain into a land of ice and snow.",
+      "chapters": [
+        195
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "crisis-and-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_northern_dark_ice_soul_physique"
+      ]
+    },
+    {
+      "text": "Driven into a position he cannot win from, Fang Yuan uses the Spring Autumn Cicada again and lands mid-crisis still on Qing Mao Mountain.",
+      "chapters": [
+        196
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "crisis-and-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_spring_autumn_cicada"
+      ]
+    },
+    {
+      "text": "After the ice has made the mountain desolate and the three great clans are frozen, he and Bai Ning Bing leave for Bai Gu Mountain rather than stay.",
+      "chapters": [
+        199
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "crisis-and-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "A glacier spreads from the peak to the foot and turns the lush, thriving mountain into a land of ice and snow.",
+      "chapters": [
+        195
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ice-cover",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After that crisis the mountain is a desolate ice mountain.",
+      "chapters": [
+        199
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ice-cover",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hundreds of years before the opening, the Gu Yue clan migrated from the central lands to the South Border and settled on Qing Mao Mountain after finding a spirit spring in an underground cave. That spring produces primeval stones and is the foundation of Gu Yue Village.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "geography-and-villages",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Three mountain villages share the peak. Gu Yue Village sits at the mountain waist, the Xiong family village on the fore mountain, and the Bai family village at the back mountain waterfall. Tens of tiny mortal villages sit at the foot of the mountain under those three powers. The three mountain villages split those foot villages among themselves and draw family servants from them, while Gu Master nurture stays among clansmen.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "geography-and-villages",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xiong_village",
+        "loc_bai_village",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "A much later comparison says Gu Yue clan once held about ten such villages under it.",
+      "chapters": [
+        1653
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "geography-and-villages",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Bai and Xiong families are named as the other two clan families while a caravan is still in Gu Yue Village.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "geography-and-villages",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The mountain itself is green country. Spear bamboo unique to Qing Mao Mountain grows in straight stands with sharp tips,",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "geography-and-villages",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and a later caravan approach describes green hills, flower seas on the sunny slopes, and a river in the sun.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "geography-and-villages",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The three clans carry old grudges and treat one another as rivals, not kin. Under a wolf tide, non-alliance means destruction, so they negotiate and fight over how to share the alliance’s profits.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "clans-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A large-scale wolf tide hits the big mountain villages every three years.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clans-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Bai rivalry reaches the page when Gu Yue Qing Shu faces Bai Ning Bing in a rank three fight after Bai Ning Bing kills Gu Yue Gu Masters and breaks the three-clan alliance.",
+      "chapters": [
+        140
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clans-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_qing_shu",
+        "char_bai_ning_bing",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Clan teaching names the Flower Wine Monk as a rank five demonic Gu Master who came to Qing Mao Mountain a few hundred years earlier, fought the fourth generation clan leader, and died there.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "monk-legend-and-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_flower_wine_monk",
+        "sys_demonic_path",
+        "char_fourth_generation_clan_leader"
+      ]
+    },
+    {
+      "text": "Fang Yuan finds the Monk’s secret cave in the mountain wall, with a Photo-audio Gu image wall that reverses the clan story: the fourth generation head plotted first, lost, then landed a sneak attack that only repelled the Monk; the clan head later died because of that fight, and the Monk was dragged to death by Moonshadow Gu afterward.",
+      "chapters": [
+        16
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "monk-legend-and-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_photo_audio_gu",
+        "gu_moonshadow_gu"
+      ]
+    },
+    {
+      "text": "The image wall later opens a strength inheritance behind the broken wall, meant to raise an avenger against the Gu Yue clan.",
+      "chapters": [
+        46
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "monk-legend-and-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In a previous-life recollection, Qing Mao mountain is destroyed by Bai Ning Bing’s self-detonation, after which Fang Yuan joins a caravan as a lone demonic cultivator.",
+      "chapters": [
+        737
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-peak-lore",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan later shows Fang Zheng combined memories, he states that if Lord Sky Crane had not come for the blood path true inheritance, the three tribes on Qing Mao mountain would not have been destroyed.",
+      "chapters": [
+        846
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-peak-lore",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "char_lord_sky_crane",
+        "inh_blood_sea_true_inheritance"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/qing-mao-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/qing-mao-mountain/",
+      "chapters": [
+        1,
+        4,
+        7,
+        16,
+        45,
+        46,
+        60,
+        65,
+        93,
+        109,
+        123,
+        140,
+        192,
+        195,
+        196,
+        199,
+        737,
+        846,
+        1260,
+        1653
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

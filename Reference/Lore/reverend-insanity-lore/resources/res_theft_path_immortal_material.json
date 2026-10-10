@@ -1,0 +1,126 @@
+{
+  "id": "res_theft_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Theft path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Theft path immortal materials are immortal materials of theft path, used as catalysts when theft path methods steal dao marks from the outside world.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1865,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1865,
+    2133
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_theft",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_theft",
+      "count": 1
+    },
+    {
+      "target": "house_thieves_den",
+      "count": 1
+    },
+    {
+      "target": "move_steal_dao",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Thieves Den’s remaining ability uses a theft path immortal material as catalyst: the theft path dao marks in the material are consumed at once, and dao marks from the outside world are stolen. The stolen dao marks attach to those theft path immortal materials. The materials end filled with disorderly dao marks from every path and lose their value.",
+      "chapters": [
+        1865
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thieves-den-catalyst",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_thieves_den"
+      ]
+    },
+    {
+      "text": "Steal Dao works the same way: theft path immortal materials are the catalyst, their theft path dao marks are consumed instantly, and stolen outside dao marks must attach to those materials. If the stolen dao marks are disorderly, the materials have no value.",
+      "chapters": [
+        2133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "steal-dao-principle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_steal_dao"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/theft-path-immortal-material/",
+      "chapters": [
+        1865,
+        2133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Theft Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

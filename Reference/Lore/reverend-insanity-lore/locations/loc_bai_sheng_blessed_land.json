@@ -1,0 +1,231 @@
+{
+  "id": "loc_bai_sheng_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Sheng Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qin Bai Sheng's blessed land inside Crimson Reed Marsh, chosen as the venue for a Northern Plains Gu Immortal auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 744,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    744,
+    747,
+    748
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_crimson_reed_marsh",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_hole_earth_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_mountain_pledge_gu",
+      "count": 1
+    },
+    {
+      "target": "move_sleeping_cloud_coffin",
+      "count": 1
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 1
+    },
+    {
+      "target": "char_yuan_rang_zun",
+      "count": 1
+    },
+    {
+      "target": "fac_yuan_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Half a month after Fairy Li Shan and Qin Bai Sheng finish inviting rank eight powers, the agreed auction date arrives.",
+      "chapters": [
+        744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_li_shan",
+        "char_qin_bai_sheng"
+      ]
+    },
+    {
+      "text": "Qin Bai Sheng alters the blessed land into a huge auction hall that Fang Yuan praises for a magnificent aura.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Secret rooms are larger than a garden and work like a small world: mortal Gu change the room’s illusory environment into mountain and pavilion, river and boat, ocean or lake, or terrace settings.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan and Tai Bai Yun Sheng reach the land from Fairy Li Shan’s blessed land through a pair of hole earth Gu set under mountain pledge Gu, rather than traveling the outside Northern Plains. Qin Bai Sheng has altered the blessed land into a huge auction hall for the many Northern Plains forces and experts invited. He offers a main hall for free interaction, single rooms for those who prefer solitude, and secret rooms that hide a Gu Immortal’s identity, with free swapping during the auction unless a secret room’s occupant refuses entry. Fang Yuan and Tai Bai Yun Sheng take the tenth and eleventh secret rooms. After they enter, the blessed land opens its entrance and invites many Gu Immortals in.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-hall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_tai_bai_yun_sheng",
+        "gu_hole_earth_gu",
+        "gu_mountain_pledge_gu",
+        "reg_northern_plains",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Qin Bai Sheng stands at the entrance inviting guests and greets Yuan tribe’s first supreme elder, saying it is Bai Sheng blessed land’s fortune that Lord Yuan attends. Yuan Rang Zun chooses a single room. Unfettered Scholar and other Northern Plains Gu Immortals also arrive as the hall fills before the auction begins.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "guests-at-the-gate",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yuan_tribe",
+        "char_yuan_rang_zun",
+        "char_unfettered_scholar"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/bai-sheng-blessed-land.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bai-sheng-blessed-land/",
+      "chapters": [
+        744,
+        747,
+        748
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

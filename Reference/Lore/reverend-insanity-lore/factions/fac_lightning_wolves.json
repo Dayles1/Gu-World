@@ -1,0 +1,216 @@
+{
+  "id": "fac_lightning_wolves",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lightning wolves",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "lightning wolf lightning wolf pack"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Pack predators on Qing Mao Mountain whose early pack assault foreshadows the larger wolf tide against Gu Yue village.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 95,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    95,
+    96,
+    97,
+    149,
+    171
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the dark, pairs of blue eyes glow before the pack appears.",
+      "chapters": [
+        95
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Their bites carry electric currents strong enough to stop a Gu Master’s heart.",
+      "chapters": [
+        96
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Bold lightning wolves, hundred beast kings, are as large as a calf and strong like bulls, and a bold lightning wolf can send a thin long blue lightning current that punches a hole through a village wall. Frenzy lightning wolves, thousand beast kings, are each as large as an elephant.",
+      "chapters": [
+        149
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On Qing Mao Mountain, during a small beast tide sortie around a wild boar king, Gu Masters name a lightning wolf pack when blue eyes gather in the dark and the wolves appear early for the expected wolf tide season. One lightning wolf is not treated as decisive, but a pack is. Lightning wolves have high durability and endurance, and they are most proficient at chasing.",
+      "chapters": [
+        95
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "small-beast-tide-attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Clan reinforcements later clear the scene. The wolves that formed that small horde are old or injured animals expelled from a growing pack so the wolf king can protect young and healthy lightning wolves and allocate resources. Their bites carry electric current strong enough to stop a Gu Master’s heart.",
+      "chapters": [
+        96
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "small-beast-tide-attack",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The small beast tide is only a prelude. A year later, tens of thousands of lightning wolves are expected to charge the village under a lightning wolf king.",
+      "chapters": [
+        97
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "small-beast-tide-attack",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Besides ordinary lightning wolves, the packs include bold lightning wolves, hundred beast kings that stay well fed while ordinary lightning wolves may go hungry. Behind them stand frenzy lightning wolves, thousand beast kings each as large as an elephant.",
+      "chapters": [
+        149
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "pack-hierarchy-on-the-walls",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the wolf tide’s harshest stretch, later recovery years still raise the same ladder: hundred beast kings as bold lightning wolves, thousand beast kings as frenzy lightning wolves, and myriad beast kings as thunder crown wolves.",
+      "chapters": [
+        171
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "post-tide-recovery",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/lightning-wolves.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/lightning-wolves/",
+      "chapters": [
+        95,
+        96,
+        97,
+        149,
+        171
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

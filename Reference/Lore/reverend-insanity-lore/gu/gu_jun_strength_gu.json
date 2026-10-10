@@ -1,0 +1,301 @@
+{
+  "id": "gu_jun_strength_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jun Strength Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jun Strength Gu is a rank three strength path Gu. One jun equals thirty jin of raised strength.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 442,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    442,
+    443,
+    500,
+    754
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 443,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_strength",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_jin_strength_gu",
+      "count": 3
+    },
+    {
+      "target": "char_chu_du",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_beast_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_of_ten_jun_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/jun-strength-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/jun-strength-gu/",
+      "chapters": [
+        442,
+        443,
+        500,
+        754
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_strength"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is rank three, and one jun is thirty jin.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Unlike a single beast strength Gu such as kunlun bull strength Gu, Jun Strength Gu can be stacked until the body’s limit is reached. It still has the common weaknesses of strength path. When Fang Yuan injects primeval essence into it, the Gu flies above his head, gives off a strange light, and steadily modifies his body.",
+        "chapters": [
+          443
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_strength_gu",
+          "path_strength"
+        ]
+      },
+      {
+        "text": "Jin Strength Gu and Jun Strength Gu recipes were the invention of a rank seven Gu Immortal. Compared with traditional beast strength Gu they were easier to refine and cost less, and they were widespread in the north. Fang Yuan abandons beast phantom Gu for Jun Strength Gu to keep up with that development and to disguise his identity, but Jun Strength Gu still cannot solve the fundamental problem of strength path.",
+        "chapters": [
+          500
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "line-choice-and-limits",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "unspecified",
+      "recorded_chapter": 443,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "A Man tribe market shopkeeper sells it for four thousand five hundred and fifty primeval stones. Domination Immortal Chu Du invents Jin Strength Gu and Jun Strength Gu as popular alternatives to beast strength Gu. Fang Yuan already has Chang Shan Yin’s appearance; he picks this jun strength line to merge into northern plains practice and to support enslavement path with physical strength.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_man_tribe",
+          "char_chu_du",
+          "gu_beast_strength_gu",
+          "char_fang_yuan",
+          "char_chang_shan_yin"
+        ]
+      },
+      {
+        "text": "The human strength jun strength branch refers to Jin Strength Gu, strength of ten jin Gu, Jun Strength Gu, strength of ten jun Gu, strength of hundred jun Gu, and others, and it is then the mainstream strength path cultivation in Northern Plains.",
+        "chapters": [
+          754
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "human-jun-strength-branch",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_jin_strength_gu",
+          "gu_strength_of_ten_jun_gu",
+          "reg_northern_plains"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

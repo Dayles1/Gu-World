@@ -1,0 +1,195 @@
+{
+  "id": "res_star_night_mucus",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Star night mucus",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "earth shell snail star night mucus"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Star night mucus is a rank six immortal material made by processing earth shell snail mucus on the spot.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 930,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    930,
+    931,
+    932,
+    940
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_star_thought_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "res_earth_shell_snail_mucus",
+      "count": 1
+    },
+    {
+      "target": "res_ordinary_mucus",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ordinary earth shell snail mucus is fluid left behind as the desolate beast crawls, and warehouse stock of that mucus is not the same substance. Star night mucus is produced by processing ordinary mucus on the spot: the processing takes seven breaths, and sealing must finish within three breaths after that. Unprocessed mucus must itself be sealed within ten breaths or it dries and loses effect.",
+      "chapters": [
+        930
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "on-site-processing",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Star night mucus is a personal innovation Fang Yuan gains while modifying the star thought Immortal Gu recipe. It is an easy-to-gather rank six immortal material with many uses: it serves star thought Immortal Gu and can also support refinement of other star path Immortal Gu. Collection means entering deep Earth Trench, finding an earth shell snail, trailing it, and processing mucus on the spot under a short collection window. Fang Yuan judges that a suitable snail habitat could yield continuous production and a temporary treasure yellow heaven monopoly, though refinement and wisdom path Gu Immortals would eventually decipher the method.",
+      "chapters": [
+        931
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "innovation-and-uses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_star_thought_immortal_gu",
+        "sys_immortal_gu",
+        "reg_earth_earth_trench",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "While collecting, Fang Yuan keeps escorting immortal zombies from using investigative methods on his technique. Processing releases starlight that disturbs the snail, which may curl into its thick shell and refuse to move for a long time. On that trip he processes mucus from two earth shell snails and gathers a large amount of star night mucus.",
+      "chapters": [
+        932
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "harvest-under-escort",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After returning to Dark Flow Giant City, Fang Yuan re-enters Earth Trench for more star night mucus and uses it to refine star thought Immortal Gu, but the refinement fails again.",
+      "chapters": [
+        940
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "failed-star-thought-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dark_flow_giant_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/star-night-mucus.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/star-night-mucus/",
+      "chapters": [
+        930,
+        931,
+        932,
+        940
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Earth shell snail mucus in Earth Trench",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Star Thought Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "id": "sys_ranks_and_realms",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ranks and Realms",
+    "zh": "境界",
+    "zh_source": "src_sagaofgu",
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Cultivation ranks Gu Master ranks"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Cultivation in Reverend Insanity is measured on a scale of one to nine. Each rank has four stages, and becoming a Gu Immortal begins at rank six.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 5,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    4,
+    5,
+    7,
+    50,
+    81,
+    91,
+    115,
+    152,
+    196,
+    211,
+    245,
+    273,
+    312,
+    331,
+    373,
+    374,
+    539,
+    604,
+    609,
+    622,
+    626,
+    633,
+    634,
+    786,
+    812,
+    939,
+    1007,
+    1110,
+    1206,
+    1502,
+    1815,
+    1817,
+    2085,
+    2111
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_gu_worms",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 2
+    },
+    {
+      "target": "sys_immortal_ascension",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_venerable",
+      "count": 2
+    },
+    {
+      "target": "sys_rank_one_through_rank_five",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_flower_wine_monk",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_aperture_and_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_aptitude",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_b_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_c_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_d_grade",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_clan_ancient_strength_path_inheritance",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_middle_stage",
+      "count": 1
+    },
+    {
+      "target": "sys_upper_stage",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_initial_stage",
+      "count": 1
+    },
+    {
+      "target": "sys_peak_stage",
+      "count": 1
+    },
+    {
+      "target": "sys_blessed_lands_and_grotto_heavens",
+      "count": 1
+    },
+    {
+      "target": "gu_lifespan_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "sys_red_date_immortal_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_green_grape_immortal_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_white_litchi_immortal_essence",
+      "count": 1
+    },
+    {
+      "target": "char_lu_wei_yin",
+      "count": 1
+    },
+    {
+      "target": "sys_heavenly_dao",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_yellow_apricot_immortal_essence",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The Gu Yue academy lesson that opens training places every new student at rank one initial stage once the aperture is open, then uses clan history to show how steep the climb is. Gu Yue Village can name only two rank five masters across its past, and the fourth clan head is remembered as someone who might have reached rank six if not for Flower Wine Monk’s sneak attack.",
+      "chapters": [
+        7
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "loc_gu_yue_village",
+        "char_flower_wine_monk"
+      ]
+    },
+    {
+      "text": "After that framing, a character described as rank four is being placed exactly, and the reader is expected to know what that placement means for who can kill whom.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A Gu Master begins at rank one, which is conferred by opening the aperture. In the Gu Yue clan that happens at the Awakening Ceremony: the ceremony itself is staged in chapter 4,",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "sys_awakening_ceremony"
+      ]
+    },
+    {
+      "text": "and Fang Yuan’s aperture forms when the walk succeeds in chapter 5, at which point the ceremony is called a success.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "The mechanics of the aperture itself are on aperture and primeval essence.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_aperture_and_primeval_essence"
+      ]
+    },
+    {
+      "text": "Stage labels then track the climb in chapter titles and announcements. Initial stage at rank two is announced for Gu Yue Fang Zheng.",
+      "chapters": [
+        81
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Middle stage is announced twice in the early arcs.",
+      "chapters": [
+        50
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Upper stage at rank two is announced.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Peak stage is announced at rank three.",
+      "chapters": [
+        312
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "It is announced again at rank five.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Advancing a full rank is a larger event than advancing a stage, and the novel usually gives it a chapter of its own.",
+      "chapters": [
+        152
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Talent sets the ordinary pace. At the Gu Yue Awakening Ceremony the academy elder states expected timelines by grade: a D grade talent raised for three years can become a rank one senior Gu Master; a C grade talent usually reaches rank two in two years; a B grade talent reaches rank three in six to seven years; an A grade talent can reach rank four in about ten years.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_aptitude",
+        "sys_d_grade",
+        "sys_c_grade",
+        "sys_b_grade",
+        "sys_a_grade"
+      ]
+    },
+    {
+      "text": "Resources matter as much as talent. Primeval stones are the driving force behind a Gu Master’s advancement; without them a Gu Master falls back on natural primeval essence recovery, which greatly slows cultivation, and Gu worms still need food.",
+      "chapters": [
+        91
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "One warning about reading those chapter numbers as a straight line. Fang Yuan is reborn during the Gu Yue clan arc, which resets his cultivation while leaving his memory intact, so the same advancements appear twice.",
+      "chapters": [
+        196
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He advances to rank three once.",
+      "chapters": [
+        152
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He advances to rank three again after the rebirth.",
+      "chapters": [
+        273
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The chapter title where he reaches rank three peak stage says as much by calling it a repeat.",
+      "chapters": [
+        312
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The ladder is consistent; the timeline is not.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "where-a-gu-master-starts",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Early Southern Border set pieces treat a fight among rank five peak stage Gu Masters as a rarely seen event that weaker observers cannot even endure the ripples of. For many Gu Masters in that stretch, the stated goal is to break away from mortal and charge through to rank six, thereby gaining a longer life. Gu Masters at rank five peak stage sit at the peak of the mortal world, an emperor among Gu Masters. Gu below the immortal threshold are ordinary tools of that climb: rank five Gu are already rare and barely circulate, while rank six Immortal Gu are each one of a kind,",
+      "chapters": [
+        373
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-as-the-mortal-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "fac_gu_masters",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "and the text also names rank five mortal Gu as a distinct category from Immortal Gu.",
+      "chapters": [
+        604
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-as-the-mortal-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mortal_gu"
+      ]
+    },
+    {
+      "text": "In Gu Yue clan history, that same rung is rare enough that the academy can list only two clan members who reached it.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-as-the-mortal-peak",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At rank six, the scale stops being a scale and becomes two different kinds of being. Reaching it is not an advancement in the ordinary sense but an ascension, which is a discrete and survivable or not event covered on immortal ascension.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "the-divide-at-rank-six",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_ascension"
+      ]
+    },
+    {
+      "text": "Early Central Continent material states that a rank five facing rank six is a world apart, heaven and earth, because rank five are mortals and rank six are immortals.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-divide-at-rank-six",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "A gap of one rank across the divide is not comparable to a gap of one rank below it.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "the-divide-at-rank-six",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Mortal Gu Masters reach their finishing line at rank five peak stage; rank six Gu Immortals are beyond mortal, and becoming a Gu Immortal is only a new starting point.",
+      "chapters": [
+        609
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "across-the-immortal-divide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan reaches that crossing in the Northern Plains stretch of the novel.",
+      "chapters": [
+        626
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "across-the-immortal-divide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "A later chapter is titled for finally becoming a Gu Immortal.",
+      "chapters": [
+        633
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "across-the-immortal-divide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "What changes at the divide:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "across-the-immortal-divide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Rank sevens are strong enough that being faced by two of them at once is a crisis worth a chapter title.",
+      "chapters": [
+        786
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-seven-and-rank-eight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Immortals at rank eight change the political shape of the story, not only its combat. A battle between rank eights is treated as an event with regional consequences.",
+      "chapters": [
+        812
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-seven-and-rank-eight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Schemes aimed at a rank eight are framed as not succeeding easily, a difficulty of information and control rather than an absolute ban on schemes.",
+      "chapters": [
+        1110
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-seven-and-rank-eight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "For a protagonist whose entire method is scheming, that difficulty is the wall the middle of the novel is built against. Fang Yuan himself reaches rank seven by annexing a rank seven Gu Immortal’s blessed land, breaking through heaven’s will’s deliberate suppression of his cultivation level.",
+      "chapters": [
+        1206
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-seven-and-rank-eight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The novel treats the historical Venerables as the rank nine Gu Immortals of each era. The association between rank nine and the Venerable title appears in a chapter title that pairs a rank nine Demon Venerable with an extreme physique.",
+      "chapters": [
+        939
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-nine-and-the-venerables",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_venerable"
+      ]
+    },
+    {
+      "text": "The Venerables themselves are covered on the eras pages, since the novel organises them by the age each belonged to.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "rank-nine-and-the-venerables",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Venerable is the rank nine cultivation level, not a step past it. A rank nine is rare enough to be a named historical figure rather than a class of person: over three million years there are ten rank nine Gu Immortals, each named as one of the ten great venerables, and “rank nine venerable” is the cultivation level those figures occupy. In the same chapter Lu Wei Yin states four conditions that must all be satisfied to become a Venerable.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lu_wei_yin"
+      ]
+    },
+    {
+      "text": "First, the Gu Immortal’s immortal aperture origin core must produce white litchi immortal essence.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Earlier exposition already ties that essence to rank eight: rank eight Gu Immortals’ immortal apertures create white litchi immortal essence.",
+      "chapters": [
+        1007
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Second, the Gu Immortal’s main cultivation path needs at least three hundred thousand dao marks.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Separate reasoning in the novel treats three hundred thousand dao marks as the theoretical floor after three myriad tribulations, and as the starting point each Venerable would have at minimum in a purely theoretical count.",
+      "chapters": [
+        1817
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Third, the Gu Immortal’s main cultivation path needs at least supreme grandmaster attainment level.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "That bar is not unique to Lu Wei Yin’s list. Earlier text states that the ten Venerables were all supreme grandmasters,",
+      "chapters": [
+        1502
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and that every Venerable had supreme grandmaster attainment level as a publicly recognized fact.",
+      "chapters": [
+        1815
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fourth, after the first three conditions are met, the Gu Immortal must break through the Heavenly Dao blockade. When that succeeds, the immortal aperture origin core undergoes a qualitative change and produces rank nine yellow apricot immortal essence.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_heavenly_dao"
+      ]
+    },
+    {
+      "text": "Later planning restates the same fourth condition as one of the four venerable ascension conditions.",
+      "chapters": [
+        2111
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lu Wei Yin explains the blockade itself: calamities and tribulations are part of it, and before becoming a Venerable the Heavenly Dao sends a tribulation far greater than any myriad tribulation; lifespan Gu is another blockade, because natural production of lifespan Gu falls while a Venerable exists; fate Gu is named as a third blockade, already destroyed by the point of that conversation. Fang Yuan’s own summary in that chapter is that the first two conditions are basically those of a rank eight Gu Immortal who has passed three myriad tribulations, while attainment level and the Heavenly Dao blockade are the remaining hurdles for him.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conditions-to-become-a-venerable",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fate_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/ranks-and-realms/",
+      "chapters": [
+        4,
+        5,
+        7,
+        50,
+        81,
+        91,
+        115,
+        152,
+        196,
+        211,
+        245,
+        273,
+        312,
+        331,
+        373,
+        374,
+        539,
+        604,
+        609,
+        622,
+        626,
+        633,
+        634,
+        786,
+        812,
+        939,
+        1007,
+        1110,
+        1206,
+        1502,
+        1815,
+        1817,
+        2085,
+        2111
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Ranks",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

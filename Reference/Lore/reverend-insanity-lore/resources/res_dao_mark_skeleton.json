@@ -1,0 +1,129 @@
+{
+  "id": "res_dao_mark_skeleton",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dao mark skeleton",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A dao mark skeleton is a Gu Immortal skeleton kept as immortal material because the enemy's dao marks were sealed into the bones.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1156,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1156
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_bone",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_bone",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a bubble inheritance opened by flying sword Immortal Gu, a skeleton falls from a stone pillar space about the size of a vat. The skeleton is full of bone path dao marks and is a quasi rank eight immortal material.",
+      "chapters": [
+        1156
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "quasi-rank-eight-bones",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Sealed thoughts in the skull explain that the skeleton is not the inheritance’s creator but an enemy killed by the information path Gu Immortal who left the site. That Gu Immortal says the skeleton can be used as immortal material directly because the enemy’s dao marks were all left inside it. After a Gu Immortal dies, dao marks usually return to the immortal aperture; gathering them into the skeleton and preserving them is treated as an unusual information path method.",
+      "chapters": [
+        1156
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "preserved-dao-marks",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dao-mark-skeleton/",
+      "chapters": [
+        1156
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Bone Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Gu Immortal enemy killed by an information path Gu Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

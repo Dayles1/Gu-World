@@ -1,0 +1,274 @@
+{
+  "id": "fac_jia_family",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jia Family",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Jia clan"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Southern Border clan of Jia Fu, known on Qing Mao Mountain through the yearly merchant caravan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 39,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    39,
+    55,
+    56
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_jia_fu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 39,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_jia_jin_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 42,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_jia_gui",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 45,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_jia_long",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 239,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_jia_fu",
+      "count": 4
+    },
+    {
+      "target": "char_jia_jin_sheng",
+      "count": 4
+    },
+    {
+      "target": "char_jia_gui",
+      "count": 4
+    },
+    {
+      "target": "char_jia_long",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_mudskin_toad",
+      "count": 1
+    },
+    {
+      "target": "gu_treasure_brass_toad",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "gu_red_steel_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_silver_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_lin_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_xiao_yue_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the merchant caravan reaches Gu Yue Village, its present leader is Fu of the Jia clan, a rank four Gu Master riding a Treasure Brass Toad. Between the Southern Border mountains, deep forest, cliffs, beasts, and Gu worms block mortal travel, so only a large organized caravan of Gu Masters can move goods from mountain to mountain.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-arrival",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village",
+        "sys_gu_master",
+        "gu_treasure_brass_toad",
+        "reg_southern_border",
+        "sys_gu_worms",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Jia Jin Sheng is the Jia family head’s son and brother to the rank four Gu Master Jia Fu. The Jia family head is rank five. Under him the Jia family becomes a large sized clan that holds the resources of an entire mountain and a large number of clansmen, while Gu Yue clan is only middle sized beside it.",
+      "chapters": [
+        55
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "family-head-and-scale",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_jin_sheng",
+        "char_jia_fu",
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "The Jia family’s clan leader means to split the assets and hand on the clan leader role, so his children compete hard for years. Jia Fu and Jia Gui are both rank four Gu Masters with their own supporters, and that internal dispute is already somewhat known among nearby mountain villages.",
+      "chapters": [
+        56
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "asset-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_gui"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/jia-family/",
+      "chapters": [
+        39,
+        55,
+        56
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "id": "char_demon_lord_long_dan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Demon Lord Long Dan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Demon Lord Long Dan is a Northern Plains demonic path Gu Immortal who owns Snowy Mountain's fifth peak and Ice Lake Palace.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 588,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    588,
+    812
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "gu_hundred_year_lifespan_gu",
+      "count": 2
+    },
+    {
+      "target": "char_li_peng_wang",
+      "count": 2
+    },
+    {
+      "target": "char_gong_zi_mo",
+      "count": 2
+    },
+    {
+      "target": "char_xue_song_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Ice Lake Palace, Xue Song Zi presses him for help against Hei tribe’s snowman slave market pressure, reminding him who lent immortal essence stones in an emergency. Long Dan sips tea, recalls the friendship, and refuses because helping would offend Hei tribe Gu Immortals while his treasure yellow heaven business has only just improved. He then asks for Xue Song Zi’s hundred year lifespan Gu as the price of acting. Xue Song Zi points at him in anger, backs down when threatened, and leaves. Long Dan had disliked Xue Song Zi’s arrogant wealth and still resented the exorbitant interest on that earlier loan.",
+      "chapters": [
+        588
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xue_song_zi",
+        "fac_hei_tribe",
+        "sys_gu_immortal",
+        "gu_hundred_year_lifespan_gu"
+      ]
+    },
+    {
+      "text": "He is shorter than Li Peng Wang beside him, but more robust and stocky, radiating dominance and an icy dragon’s prestige.",
+      "chapters": [
+        812
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_peng_wang"
+      ]
+    },
+    {
+      "text": "Narration also notes his bright eyes when he stares at Xue Song Zi.",
+      "chapters": [
+        588
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He appears with Li Peng Wang and Gong Zi Mo at the place where Dong Fang Chang Fan was killed. He is named owner of the fifth peak of Northern Plains’ Snowy Mountain blessed land and controller of Ice Lake Palace.",
+      "chapters": [
+        812
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "snowy-mountain-fifth-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gong_zi_mo",
+        "char_dong_fang_chang_fan",
+        "reg_northern_plains",
+        "loc_snowy_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/demon-lord-long-dan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/demon-lord-long-dan/",
+      "chapters": [
+        588,
+        812
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Snowy Mountain as of ch. 812",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

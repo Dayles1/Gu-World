@@ -1,0 +1,197 @@
+{
+  "id": "char_red_dragonfish",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Red Dragonfish",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "ordinary red dragonfish ordinary dragonfish"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Red dragonfish are the ordinary baseline dragonfish stock. They look like large red carps and make up most of Fang Yuan's dragon scale sea area population before copper and iron breeds rise.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1477,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1477,
+    1478,
+    1482
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_food",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_food",
+      "count": 1
+    },
+    {
+      "target": "char_copper_dragonfish",
+      "count": 1
+    },
+    {
+      "target": "char_you_chan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_iron_dragonfish",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Dragonfish look like red carps, but much larger. Their battle strength is bottom tier. They are not a natural life form; a food path Gu Immortal created them. Market dragonfish carry food path dao marks mixed with dao marks from other paths.",
+      "chapters": [
+        1477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Copper dragonfish are a superior modified species with a higher proportion of food path dao marks than ordinary dragonfish.",
+      "chapters": [
+        1477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "You Chan treats ordinary dragonfish as unable to keep her in competition once copper stock appears.",
+      "chapters": [
+        1478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_you_chan"
+      ]
+    },
+    {
+      "text": "In dragon scale sea area, most of Fang Yuan’s swimming dragonfish are ordinary red dragonfish, about thirty percent are copper dragonfish, and the rest are black iron dragonfish.",
+      "chapters": [
+        1482
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "stock-mix",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "The copper, iron, gold, and silver breeds are modified stock, distinct from this ordinary red baseline.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "stock-mix",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/red-dragonfish/",
+      "chapters": [
+        1477,
+        1478,
+        1482
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Food path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_food"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

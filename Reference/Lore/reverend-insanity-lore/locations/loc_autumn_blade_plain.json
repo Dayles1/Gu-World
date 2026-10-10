@@ -1,0 +1,188 @@
+{
+  "id": "loc_autumn_blade_plain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Autumn Blade Plain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A naturally formed blade path plain under Meng tribe in Northern Plains, flat silver soil that grows wild edge Gu and drinking blade wine.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1563,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1563,
+    1565,
+    1566
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_meng_tribe_meng_tu",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "sys_blade_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_edge_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_inkman_city",
+      "count": 1
+    },
+    {
+      "target": "char_meng_zhao",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Southeast of the northern icy plain, north of Inkman City, northwest of poison grassland, and at the extreme south of Meng tribe, autumn blade plain is a special land created naturally: flat, with no grass growing on it. The ground is silver soil sharp as knives. Walking barefoot leaves a trail of blood, like walking on a mountain of blades. Blade path dao marks fill the plain and form countless edge Gu naturally. It is one of the few edge Gu production areas in the five regions and is controlled by Meng tribe.",
+      "chapters": [
+        1563
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_inkman_city",
+        "fac_meng_tribe",
+        "gu_edge_immortal_gu"
+      ]
+    },
+    {
+      "text": "Meng Tu stays here for years to guard the resource point and to imitate Ren Zu’s walking on edge Gu, seeking a blade path breakthrough. Deep under the plain sits the rank seven immortal material drinking blade wine, formed from Meng Tu’s bloodstains seeping into the blade path dao marks. A Gu formation can cover the whole plain; when it is destroyed, clear blue sky shows through.",
+      "chapters": [
+        1563
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_tribe_meng_tu",
+        "char_ren_zu",
+        "sys_gu_formation"
+      ]
+    },
+    {
+      "text": "After a loud explosion, the quasi-immortal battlefield covering the plain disintegrates and the surface sinks by five to six feet. Almost all the edge Gu are destroyed in the fight, but Meng Tu’s self-detonation engraves his blade path dao marks into the land and raises its growth potential.",
+      "chapters": [
+        1565
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "battle-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before reaching the plain, Meng Zhao senses surging blade path dao marks in the air. The original layout is completely destroyed, replaced by countless blade marks that cut the land into pits and trenches.",
+      "chapters": [
+        1566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ruined-layout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_zhao"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/autumn-blade-plain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/autumn-blade-plain/",
+      "chapters": [
+        1563,
+        1565,
+        1566
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "plain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

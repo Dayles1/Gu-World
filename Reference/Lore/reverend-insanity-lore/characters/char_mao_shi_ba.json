@@ -1,0 +1,155 @@
+{
+  "id": "char_mao_shi_ba",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mao Shi Ba",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "mao shi ba",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Мао Ши Ба",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mao Shi Ba is Hua Feng City's strongest hairy man Gu Master. He fights Fang Zheng in a Gu refinement contest meant to decide martial competition seats.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1050,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1050
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_hairy_men",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    },
+    {
+      "target": "loc_hua_feng_city",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_steel_thread_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Hua Feng City’s final hairy man Gu Master steps onto the stage against Fang Zheng, puffs out his chest, and names himself Mao Shi Ba. He is furious when Fang Zheng does not respond, taking the silence as humiliation.",
+      "chapters": [
+        1050
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hua_feng_city",
+        "sys_gu_master",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "He is the strongest Gu Master in Hua Feng City, skilled in both the pen and the sword: good at fighting and at refining Gu. The contest starts with him in the lead, and by the middle he has left Fang Zheng in the dust. Even hairy men from both Steel Thread City and Hua Feng City do not think Fang Zheng can win. Following Fang Yuan’s will, Fang Zheng still surpasses him and wins. Mao Shi Ba cannot accept the result and stares blankly.",
+      "chapters": [
+        1050
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_steel_thread_city",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/mao-shi-ba/",
+      "chapters": [
+        1050
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Hairy Men",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_hairy_men",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

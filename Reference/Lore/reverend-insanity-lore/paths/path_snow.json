@@ -1,0 +1,149 @@
+{
+  "id": "path_snow",
+  "entity_type": "path",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Snow Path",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The snow path is the Gu path of wild snow path Gu worms, snow path Gu Immortals, and a twin relationship with ice path.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 587,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    587,
+    874
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_gu",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_xue_song_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_ice_heart_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_ice_path_dao_marks",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The novel treats snow path as a named cultivation path with wild Gu on snowmen, Immortal cultivators, and a twin link to ice path, not as a generic word for snowfall.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_wild_gu"
+      ]
+    },
+    {
+      "text": "During northern plains’ ten-year blizzard, snowmen hunt and large numbers of wild snow path, ice path, and water path Gu worms start to live on their bodies while snowmen tribes expand.",
+      "chapters": [
+        587
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Xue Song Zi was originally a snow path Gu Immortal. Snow path and ice path are twins, almost indistinguishable and closely related, so the ice path Immortal Gu ice heart and its killer moves suit him well when Qin Bai Sheng lends them for the Lang Ya invasion.",
+      "chapters": [
+        874
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "twin-path-with-ice",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xue_song_zi",
+        "sys_gu_immortal",
+        "sys_immortal_gu",
+        "char_qin_bai_sheng",
+        "fac_lang_ya_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/paths/snow/",
+      "chapters": [
+        587,
+        874
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Roundel": {
+      "text": "Snow path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

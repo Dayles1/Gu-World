@@ -1,0 +1,402 @@
+{
+  "id": "rcp_blood_deity_immortal_gu_recipe",
+  "entity_type": "recipe",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Deity Immortal Gu recipe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Blood Deity remnant recipe"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The remnant recipe for rank six Blood Deity, extorted from Vicious Lightning Fiend of Myriad Dragon Dock and never brought to a finished refinement, whose completed steps show that using the Gu it produces demands killing a blood relation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 463,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    463,
+    464,
+    469,
+    706,
+    710,
+    711,
+    736,
+    817,
+    846,
+    2246
+  ],
+  "relations": [
+    {
+      "type": "produces",
+      "target": "gu_blood_deity",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refinement_materials",
+      "target": "gu_relic_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 469,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_vicious_lightning_fiend",
+      "role": "prior holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 706,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 463,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "fac_myriad_dragon_dock",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2246,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_blood_deity",
+      "count": 3
+    },
+    {
+      "target": "char_vicious_lightning_fiend",
+      "count": 3
+    },
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_relic_gu",
+      "count": 2
+    },
+    {
+      "target": "move_lightning_deity",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "gu_second_aperture_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    },
+    {
+      "target": "char_bee_immortal_liao_mao",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "house_demon_judgment_board",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan already holds a copy of the recipe for rank six Blood Deity, a remnant piece he repaired through research and other Gu Immortals’ help and still judges inaccurate. Among the Immortal Gu recipes he knows, most are remnants, and Blood Deity’s is already the best of them.",
+      "chapters": [
+        463
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_blood_deity",
+        "sys_gu_immortal",
+        "sys_gu_recipe"
+      ]
+    },
+    {
+      "text": "When Lang Ya land spirit urges him to gamble one of his three refinement chances on Blood Deity instead of stargate Gu, calling the recipe’s collection value alone worth the risk, Fang Yuan refuses and has stargate Gu refined instead.",
+      "chapters": [
+        464
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "kept-back-from-a-wager",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit"
+      ]
+    },
+    {
+      "text": "Relic Gu are a common catalyst in Immortal Gu recipes, and Blood Deity’s remnant recipe is stated to need large amounts of them. After selling off other remnant recipes in treasure yellow heaven, Fang Yuan names Spring Autumn Cicada, Second Aperture Gu, and the Blood Deity remnant recipe as the most precious recipes he still holds back from sale.",
+      "chapters": [
+        469
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ranked-among-his-most-guarded-recipes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_relic_gu",
+        "gu_spring_autumn_cicada",
+        "gu_second_aperture_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan identifies the blue charm lightning shadow harassing Hu Immortal blessed land as a puppet of Myriad Dragon Dock’s Vicious Lightning Fiend, and offers to let the exposure drop in exchange for the Blood Deity remnant recipe rather than the puppet-making killer move. When Vicious Lightning Fiend first hands over only a forty percent copy, Fang Yuan calls the scam by name and holds the puppet’s exposure over him until the genuine seventy percent remnant recipe is surrendered. In his previous life Fang Yuan had targeted this same remnant recipe in Vicious Lightning Fiend’s hands and failed, escaping only after taking heavy injuries; this life he wins it in a single negotiation.",
+      "chapters": [
+        706
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "extorted-from-vicious-lightning-fiend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "fac_myriad_dragon_dock",
+        "char_vicious_lightning_fiend"
+      ]
+    },
+    {
+      "text": "With the seventy percent remnant enough, combined with his previous-life accumulations and Wisdom Gu, to deduce the complete Blood Deity Immortal Gu recipe, Fang Yuan judges his wealth still short of what refining an Immortal Gu demands, and stops short of refining it. He also weighs the risk of a public blood path Immortal Gu this early, since even the ten great ancient sects keep blood path research secret and Heavenly Court’s Demon Judgment Board exists precisely for it.",
+      "chapters": [
+        710
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "weighing-whether-to-refine-it",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_wisdom_gu",
+        "sys_immortal_gu",
+        "fac_heavenly_court",
+        "house_demon_judgment_board"
+      ]
+    },
+    {
+      "text": "His previous-life blood path inheritance has also not matured enough in this timeline for him to retrieve it yet, a further reason to leave the recipe unfinished for now.",
+      "chapters": [
+        711
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "weighing-whether-to-refine-it",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Vicious Lightning Fiend spends several years in closed cultivation studying a Blood Deity remnant recipe of his own and comprehends the immortal killer move Lightning Deity from it. Fang Yuan judges that with matching lightning path attainment and the help of Wisdom Gu, he could deduce the same move in at most a month.",
+      "chapters": [
+        736
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "a-killer-move-drawn-from-the-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_lightning_deity"
+      ]
+    },
+    {
+      "text": "Among the goals Fang Yuan tracks after the Refinement Path Convention, completing the Immortal Gu recipe of Blood Deity is one he does not reach; he manages only a small attempt at it.",
+      "chapters": [
+        817
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "a-small-attempt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_refinement_path_convention"
+      ]
+    },
+    {
+      "text": "Fang Yuan slowly completes the Blood Deity recipe and works out a further detail from it: using the finished Gu requires killing a blood relation, and how that relative dies decides the result. A relative who does not resist and gives up their life willingly produces a blood deity closely connected to the Gu Immortal and easy to manipulate; a relative who dies carrying hatred and anger risks a backlash on the owner instead. This is the reason Fang Yuan works to win over his half-brother Fang Zheng rather than discard him.",
+      "chapters": [
+        846
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "the-blood-relation-requirement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Central Continent’s own copy of the blood deity Immortal Gu true inheritance is fought over by the ten great ancient sects, who destroy over half of it in the process; the surviving incomplete recipe ends up with Myriad Dragon Dock.",
+      "chapters": [
+        2246
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-central-continent-copys-fate",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/recipes/blood-deity-immortal-gu-recipe/",
+      "chapters": [
+        463,
+        464,
+        469,
+        706,
+        710,
+        711,
+        736,
+        817,
+        846,
+        2246
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Produces": {
+      "text": "Blood Deity",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Ranks": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refinement materials": {
+      "text": "Relic Gu",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Holders": {
+      "text": "Vicious Lightning Fiend (prior holder) Fang Yuan (holder) Myriad Dragon Dock (holder)",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Source": {
+      "text": "extorted from Vicious Lightning Fiend of Myriad Dragon Dock, traded for silence about his blue charm lightning shadow puppet",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

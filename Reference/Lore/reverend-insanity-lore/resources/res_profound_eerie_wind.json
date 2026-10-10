@@ -1,0 +1,182 @@
+{
+  "id": "res_profound_eerie_wind",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Profound eerie wind",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Profound eerie wind is a rank eight wind path immortal material that appears deep underground.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 845,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    845,
+    1546,
+    2076,
+    2109
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wind",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wind",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "res_wind_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_eastern_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A Heavenly Court will offers help on the grounds that this awakening might find several portions of profound eerie wind in the underground depths.",
+      "chapters": [
+        845
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "underground-portions",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Profound eerie wind is named among other named winds when Fang Yuan rules out what a given wind is not.",
+      "chapters": [
+        1546
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-winds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Profound eerie wind appears as a condensed lump of wind the size of a woolen ball, dark green, with low and deep sounds. It is a rank eight wind path immortal material that only appears deep underground, and even Heavenly Court’s Gu Immortals have a huge desire for it.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-wind-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "In Mini Eastern Sea, profound eerie winds sweep an area and form small islands on the sea surface. Earth path dao marks in the wind zone obstruct waves, while soul path dao marks kill weak life forms and create soul beasts. Fang Yuan finds the winds are not sourced from the two neighboring sea areas at their core, but from two far away sea areas whose dao marks influence each other like magnetic repulsion and create profound eerie winds between them.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-winds",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mini_eastern_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/profound-eerie-wind/",
+      "chapters": [
+        845,
+        1546,
+        2076,
+        2109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wind Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Deep underground",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

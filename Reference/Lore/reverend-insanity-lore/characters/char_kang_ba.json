@@ -1,0 +1,164 @@
+{
+  "id": "char_kang_ba",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Kang Ba",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "kang ba",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Кан Ба",
+    "ru_status": "transliteration",
+    "aliases": [
+      "hairy man Kang Ba"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Kang Ba is a hairy man slave merchant of Steel Thread City on Black Hair Continent. He sells Fang Zheng on the market stage.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1049,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1049
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_hairy_men",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_steel_thread_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the trading market of Steel Thread City, a fat and muscular hairy man walks onto a stage ringed by other hairy men. Someone asks loudly what goods he has this time. The hairy man Kang Ba specializes in selling slaves, has a huge business, and has a certain amount of fame.",
+      "chapters": [
+        1049
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_steel_thread_city"
+      ]
+    },
+    {
+      "text": "He is a fat and muscular hairy man.",
+      "chapters": [
+        1049
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He laughs and says he brought many yellow haired slaves, including quasi-masters in refinement path. He raises his hands for quiet, then brings out the first slave. When Fang Zheng is thrown onto the stage nearly fainting, Kang Ba scolds the handler, then changes from angry to joyous and points at Fang Zheng as a rare breed obtained with great difficulty. The audience notices Fang Zheng’s faint Gu Master aura and rank five cultivation level.",
+      "chapters": [
+        1049
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-zheng-sale",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/kang-ba.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/kang-ba/",
+      "chapters": [
+        1049
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Hairy Men",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_hairy_men",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

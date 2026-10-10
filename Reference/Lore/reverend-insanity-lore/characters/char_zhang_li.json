@@ -1,0 +1,206 @@
+{
+  "id": "char_zhang_li",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhang Li",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zhang li",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чжан Ли",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zhang Li is a female Gu Immortal Fang Yuan meets inside a realistic dream realm, an enchantment emotion path cultivator who murdered her husband and turned his soul into a killer move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1340,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1340
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_emotion",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_emotion",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_emotion_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_wisdom_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_soul",
+      "count": 1
+    },
+    {
+      "target": "move_ghost_summoning",
+      "count": 1
+    },
+    {
+      "target": "move_vajra_shell",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan enters a realistic dream realm and becomes a female Gu Immortal who cultivates enchantment emotion path, a minor path derived from wisdom path that uses emotions to fight and enchantment to allure enemies. A young rank seven Gu Immortal shouts that Zhang Li murdered her own husband after he treated her well, and swears to cut her into pieces.",
+      "chapters": [
+        1340
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "In the dream she wears a pink dress that is risque and seductive when she smiles. Fang Yuan notes two large treasures on the upper body and open skirt corners exposing to the upper thigh.",
+      "chapters": [
+        1340
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The dream body holds many Immortal Gu. One produces an alluring cry that makes the young Gu Immortal go limp and lose killing intent. Another turns her skirt into pink fog that carries her away at high speed until the fog thins. Under unravel dream, an unknown immortal killer move activates as she whispers ghost summoning; a rank seven Gu Immortal soul flies out. Narration states Zhang Li had killed her husband and refined his soul into that immortal killer move. Fang Yuan notes the move belongs to soul path, and that clearing the dream raises his wisdom path and soul path attainment because enchantment emotion path has no unique dao marks, only wisdom path dao marks.",
+      "chapters": [
+        1340
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-and-ghost-summoning",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "res_gu_immortal_soul"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/zhang-li.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zhang-li/",
+      "chapters": [
+        1340
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Emotion path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_emotion"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

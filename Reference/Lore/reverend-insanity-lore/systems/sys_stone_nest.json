@@ -1,0 +1,187 @@
+{
+  "id": "sys_stone_nest",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Stone Nest",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Fang Yuan stone nest"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A stone nest is a built facility where many hairy men refine mortal Gu in parallel through split steps.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 707,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    707,
+    713,
+    735,
+    736
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_airsac_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "gu_starlight_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_floating_refinement_hive",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan orders rockmen to build a stone nest near Dang Hun Mountain. It spans tens of acres and sinks hundreds of meters deep: an outer circular sinkhole frames a central stone pillar riddled with rooms. Each room holds an elderly hairy man with basic refinement materials and tools. Linked Gu arrangements let strength qi gather between pillar and sinkhole so refiners can draw it as material.",
+      "chapters": [
+        707
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_dang_hun_mountain"
+      ]
+    },
+    {
+      "text": "He names it the Fang Yuan stone nest, a place for mass-producing mortal Gu. The airsac Gu recipe is split into over a dozen steps. Hairy men on higher floors finish one step and pass the partly-done product down, so each worker specializes, success rate rises, and the full recipe stays harder to leak.",
+      "chapters": [
+        707
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mortal_gu",
+        "gu_airsac_gu"
+      ]
+    },
+    {
+      "text": "The stone nest form was invented during the five regions chaotic war in Fang Yuan’s previous life, when forces needed mass refinement to replace spent Gu. He takes that invention as his own naming.",
+      "chapters": [
+        707
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-design",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the stone nest, Hei Lou Lan and Fang Yuan refine an eighth batch of airsac Gu with thousands of hairy men.",
+      "chapters": [
+        713
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ongoing-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "Fang Yuan builds another Fang Yuan stone nest and fills both nests’ rooms with skilled hairy men bought through treasure yellow heaven. The second nest is meant to refine malicious thought Gu while airsac Gu production can rise with the added capacity.",
+      "chapters": [
+        735
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-nest",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Without the second nest, rank five malicious thought Gu targets would take the first nest’s spare time for at least ten years. With the second nest and large numbers of hairy men, that estimate falls to about sixteen months, then further after a shortened recipe.",
+      "chapters": [
+        736
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "time-saved",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/stone-nest/",
+      "chapters": [
+        707,
+        713,
+        735,
+        736
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Refinement path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

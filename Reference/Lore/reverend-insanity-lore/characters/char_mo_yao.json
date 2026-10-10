@@ -1,0 +1,714 @@
+{
+  "id": "char_mo_yao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mo Yao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "mo yao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Мо Яо",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mo Yao is the thirty-sixth generation fairy of Spirit Affinity House, an inkman who reached rank seven as a refinement grandmaster, and the Gu Immortal whose Water Pavilion inheritance Fang Yuan uncovers in Northern Plains.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 566,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    566,
+    567,
+    568,
+    569,
+    602,
+    620,
+    854,
+    1011
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_inkmen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_spirit_affinity_house",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_calamity_beckoning_gu",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 567,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_water_harmony_gu",
+      "role": "wielder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 568,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_change_soul_immortal_gu",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1019,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_ink_transformation",
+      "role": "teacher",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_six_arm_heavenly_zombie_king",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 4
+    },
+    {
+      "target": "gu_calamity_beckoning_gu",
+      "count": 4
+    },
+    {
+      "target": "race_inkmen",
+      "count": 4
+    },
+    {
+      "target": "gu_water_harmony_gu",
+      "count": 3
+    },
+    {
+      "target": "move_ink_transformation",
+      "count": 3
+    },
+    {
+      "target": "move_six_arm_heavenly_zombie_king",
+      "count": 3
+    },
+    {
+      "target": "gu_change_soul_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 2
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 2
+    },
+    {
+      "target": "house_water_pavilion",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_chief_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_six_flying_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_divert_disaster_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_di_qiu_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "gu_worldly_wave_trace",
+      "count": 1
+    },
+    {
+      "target": "gu_borrow_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_space_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_thought_will_emotion",
+      "count": 1
+    },
+    {
+      "target": "gu_old_earth_chief_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_life_force_boosting_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_glass_owner_token",
+      "count": 1
+    },
+    {
+      "target": "inh_giant_sun_immortal_venerable_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_di_qiu_inheritance_site",
+      "count": 1
+    },
+    {
+      "target": "gu_sharp_intent_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_intention_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_five_element_bear_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_grand_chaotic_dance_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_bear_phantom_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_turn_phantom_gu",
+      "count": 1
+    },
+    {
+      "target": "res_flying_bear_flesh_and_blood",
+      "count": 1
+    },
+    {
+      "target": "path_phantom",
+      "count": 1
+    },
+    {
+      "target": "gu_demonic_blood_skull_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_secluded_domain_of_heaven_and_earth",
+      "count": 1
+    },
+    {
+      "target": "move_grey_meltdown",
+      "count": 1
+    },
+    {
+      "target": "sys_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "sys_true_inheritance_grades",
+      "count": 1
+    },
+    {
+      "target": "loc_true_inheritance_secluded_domain",
+      "count": 1
+    },
+    {
+      "target": "move_primordial_ash_owl_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_old_immortal_kong_jue",
+      "count": 1
+    },
+    {
+      "target": "sys_ten_extreme_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_deliberate_will_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_play_will_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_special_will_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_kong_jue_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_possession_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_man_qi_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fortune_rivalling_heaven_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_luck_path_supreme_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_frost_jade_peacock",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_net",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_prison",
+      "count": 1
+    },
+    {
+      "target": "gu_gruel_mud",
+      "count": 1
+    },
+    {
+      "target": "loc_white_jade_hall",
+      "count": 1
+    },
+    {
+      "target": "sys_special_will",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "move_four_arm_earth_king",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_will",
+      "count": 1
+    },
+    {
+      "target": "sys_red_date_immortal_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_zombie",
+      "count": 1
+    },
+    {
+      "target": "gu_delight_in_water_and_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_mirror_willow_leaves",
+      "count": 1
+    },
+    {
+      "target": "loc_stone_lotus_islands",
+      "count": 1
+    },
+    {
+      "target": "res_hibiscus_stalactite",
+      "count": 1
+    },
+    {
+      "target": "res_stone_heart_liquid",
+      "count": 1
+    },
+    {
+      "target": "res_spring_dream_fruit",
+      "count": 1
+    },
+    {
+      "target": "char_yu_mu_chun",
+      "count": 1
+    },
+    {
+      "target": "char_bi_chen_tian",
+      "count": 1
+    },
+    {
+      "target": "sys_dream_realm",
+      "count": 1
+    },
+    {
+      "target": "gu_unravel_mystery",
+      "count": 1
+    },
+    {
+      "target": "gu_womans_heart",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_sword_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_attitude_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_grey_memory",
+      "count": 1
+    },
+    {
+      "target": "char_green",
+      "count": 1
+    },
+    {
+      "target": "sys_wisdom_refinement_formation",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_prison",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inkman characters on the bowl holding early-stage calamity beckoning Gu inside Water Pavilion name her as the writer of that inheritance text. She broke her race’s limits to reach Gu Immortal cultivation, contributed heavily to the righteous path, and used love to reform Sword Demon Bo Qing. Through Spirit Affinity House’s old concubine ties to Giant Sun Immortal Venerable, she had deep access to secrets of Eighty-Eight True Yang Building.",
+      "chapters": [
+        566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "race_inkmen",
+        "gu_calamity_beckoning_gu",
+        "house_water_pavilion",
+        "sys_gu_immortal",
+        "char_bo_qing",
+        "fac_spirit_affinity_house",
+        "char_giant_sun_immortal_venerable",
+        "house_eighty_eight_true_yang_building"
+      ]
+    },
+    {
+      "text": "She refined calamity beckoning Gu, a rank seven Immortal Gu that can draw earthly calamities and heavenly tribulations onto its user, to help Bo Qing endure the rank nine breakthrough trial. To do that she secretly betrayed her sect, entered Imperial Court blessed land through the divert-disaster crack, and used grandmaster refinement path attainment to foster the Gu, then left Water Pavilion and the unfinished arrangements in Northern Plains. Bo Qing’s second rank nine attempt failed; she perished with him while drawing tribulation onto herself with that Gu.",
+      "chapters": [
+        567
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "calamity-beckoning-and-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "loc_imperial_court_blessed_land",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "She had researched Eighty-Eight True Yang Building for fortune rivalling heaven Gu to help Bo Qing reach rank nine, failed to take that Gu, and settled for refining calamity beckoning Gu from her inheritance information and refinement grandmaster foundation.",
+      "chapters": [
+        602
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "calamity-beckoning-and-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A graceful figure of a woman appears: slim body, shining dark eyes, and a veil covering her face. Her dark as night eyes fill with tears.",
+      "chapters": [
+        568
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The will floats in the air, moving up and down. She laughs as she covers her mouth, her eyes watery and her posture alluring. Her dark pupils contain some craftiness. She creates an illusory robe that covers her body while showing the contours. She has beautiful lips, a plump chest, and long eyelashes.",
+      "chapters": [
+        569
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She scratches at her head, causing her long hair to become messy, resembling a crazed woman.",
+      "chapters": [
+        620
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "true-inheritance-shock",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Love with Fairy Mo Yao reforms the murderous demonic Sword Immortal Bo Qing, and Spirit Affinity House recruits him.",
+      "chapters": [
+        854
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bo-qing-recruitment",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the Yi Tian Mountain battle her remnant soul, not Bo Qing’s own soul, is what inhabits immortal zombie Bo Qing’s body. Her remnant soul would add nothing to the ten extreme immortal zombie lifeless formation and would only end up refined as immortal material, so she stays behind while Shadow Sect’s split souls sacrifice themselves to it.",
+      "chapters": [
+        1011
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "remnant-soul-in-bo-qings-zombie",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yi_tian_mountain",
+        "fac_shadow_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/mo-yao.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/mo-yao/",
+      "chapters": [
+        566,
+        567,
+        568,
+        569,
+        602,
+        620,
+        854,
+        1011
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 566",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Inkmen",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Spirit Affinity House as of ch. 566",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 566",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 566,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_inkmen",
+    "region": "reg_central_continent",
+    "status": "Dead",
+    "alignment": "righteous path as of ch. 566",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_calamity_beckoning_gu",
+      "role": "refiner",
+      "recorded_chapter": 567,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_change_soul_immortal_gu",
+      "role": "refiner",
+      "recorded_chapter": 1019,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_water_harmony_gu",
+      "role": "wielder",
+      "recorded_chapter": 568,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

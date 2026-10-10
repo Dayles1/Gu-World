@@ -1,0 +1,125 @@
+{
+  "id": "res_trash_talk_petal_flower",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Trash talk petal flower",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Trash talk petal flower is a rank six information path immortal material used to refine Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2228,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2228
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_information",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "char_shi_zheng_yi",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Zhao Lian Yun lands an information path immortal material on Shi Zheng Yi after their Central Continent work against beasts from the two heavens. Shi Zheng Yi recognises trash talk petal flower and takes the rank six immortal material, saying he needs it to refine his Immortal Gu.",
+      "chapters": [
+        2228
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gift-for-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhao_lian_yun",
+        "char_shi_zheng_yi",
+        "reg_central_continent",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/trash-talk-petal-flower/",
+      "chapters": [
+        2228
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Information Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "id": "char_gu_ming_xu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Ming Xu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gu ming xu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гу Мин Сюй",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Warm Sun Immortal Lord"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gu Ming Xu is an Eastern Sea lone immortal also called Warm Sun Immortal Lord. He tries to stop variant human Gu Immortals who attack his homeland.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2136,
+    "volume": null,
+    "arc": "evt_arc_dao_veins_famous_mountains"
+  },
+  "chapters_cited": [
+    2136,
+    2137
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On an Eastern Sea island with an enormous city, two variant human Gu Immortals raise a tens of feet high tsunami. At the juncture of life and death he walks out, blocks the tsunami, names himself Gu Ming Xu, calls the place his homeland, and asks why they implicate innocent people.",
+      "chapters": [
+        2136
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "The attackers recognize him as Warm Sun Immortal Lord. A hairy man side claims the place was once hairy man homeland and that the tribe survived in the two heavens under a supreme elder’s protection. He calls them audacious, says the place is near Tang clan, claims he has already requested reinforcements, and orders them to leave. They answer that their master is Gu Yue Fang Yuan, laugh that even all of Eastern Sea’s righteous path would be helpless, and say they came to kill humans so he can taste the pain they felt. He laments inwardly that Fang Yuan sent variant humans to attack his own race.",
+      "chapters": [
+        2136
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "variant-human-raid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tang_clan",
+        "char_fang_yuan",
+        "fac_eastern_sea_righteous_path"
+      ]
+    },
+    {
+      "text": "Tang Tang receives his request for reinforcements. Narration calls Warm Sun Immortal Lord a lawful lone immortal whom Tang clan had always wanted to recruit and who had rejected them. In the letter he offers to join Tang clan if they help, after offending the variant human alliance. Tang Tang refuses to offend Fang Yuan, crushes the information path mortal Gu, and pretends not to have seen it.",
+      "chapters": [
+        2137
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "tang-clan-plea",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_information_path_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/gu-ming-xu/",
+      "chapters": [
+        2136,
+        2137
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

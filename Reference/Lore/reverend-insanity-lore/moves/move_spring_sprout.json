@@ -1,0 +1,171 @@
+{
+  "id": "move_spring_sprout",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spring Sprout",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spring Sprout is Fang Yuan's modified time path immortal killer move that sprouts birds weaving grass on cloud soil using Spring Gu and wood sprout Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1794,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1794
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_spring_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1794,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_wood_sprout_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1794,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_spring_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_wood_sprout_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_summer_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After refining Spring Gu and summer Gu for aperture work, Fang Yuan stations a Gu Immortal in the mini nine heavens and activates this modified killer move among others for a food chain. Immortal Gu Spring at rank eight is the core and wood sprout Immortal Gu is the supplementary Gu. It sprouts the birds weaving grass planted in cloud soil and quickly dyes a large patch of cloud soil green. Switching the surroundings between spring and summer with this move and summer days stimulates the eagles and raises expenditure of cloud soil and rank eight immortal essence.",
+      "chapters": [
+        1794
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_spring_gu",
+        "gu_summer_gu",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "gu_wood_sprout_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/spring-sprout/",
+      "chapters": [
+        1794
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Spring Gu Wood Sprout Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

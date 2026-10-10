@@ -1,0 +1,536 @@
+{
+  "id": "char_jiang_ya",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jiang Ya",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "jiang ya",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цзян Я",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Gu Yue Jiang Ya"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jiang Ya is a rank one Gu Yue clan Gu Master on Qing Mao Mountain who keeps a shop by the academy Gu room and later sells Fang Yuan's vitality leaves as middleman.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 12,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    4,
+    12,
+    15,
+    17,
+    23,
+    69,
+    78,
+    107,
+    108,
+    121,
+    123,
+    145,
+    146,
+    676
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 12,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_man_shi",
+      "count": 2
+    },
+    {
+      "target": "char_jiang_he",
+      "count": 2
+    },
+    {
+      "target": "gu_scarecrow_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_fish_scale_gu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_ye",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_d_grade",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "gu_mudskin_toad",
+      "count": 1
+    },
+    {
+      "target": "res_moon_orchid",
+      "count": 1
+    },
+    {
+      "target": "gu_stealth_rock_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He first appears in a Gu Yue village inn as a young formal Gu Master who smashes the hunters’ green bamboo wine and stops only when his female companion checks him, then warms at once when he feels Fang Yuan’s primeval aura and calls him junior brother. The belt mark and narration name him rank one in that scene, and a later recall again calls him the rank one Gu Master from the inn.",
+      "chapters": [
+        12
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village",
+        "sys_gu_master",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan reads his primeval aura as rank one upper stage at about twenty years of age, takes that pace from age fifteen as D grade talent, and judges him likely a logistics Gu Master rather than a battle Gu Master.",
+      "chapters": [
+        12
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_d_grade"
+      ]
+    },
+    {
+      "text": "The same evening’s outburst over the hunters’ wine spending shows how tightly primeval stones squeeze a low-rank Gu Master of his means.",
+      "chapters": [
+        17
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "That stage sits on Qing Mao Mountain in the Southern Border among the Gu Yue clan.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "reg_southern_border",
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "He is a young Gu Master, already around twenty years of age. He wears the uniform that only formal Gu Masters can wear, with the word One on a copper piece on his belt. He has a hawk-like gaze.",
+      "chapters": [
+        12
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "By the next spring he still carries a green coloured belt.",
+      "chapters": [
+        107
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan next finds him as the rank one storekeeper beside the academy Gu room, selling grass puppets and moon orchid petals, kind to Gu Masters and arrogant to mortals, and running sales pitches such as the hidden eighth puppet under the chest. Fang Yuan notes that those grass puppets are made with Scarecrow Gu and that Jiang Ya’s asking price leaves a clear profit over cost. Fang Yuan buys moon orchid petals there as a regular,",
+      "chapters": [
+        23
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shop-by-the-academy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_scarecrow_gu"
+      ]
+    },
+    {
+      "text": "and Jiang He’s talk later confirms that the same shop is where those purchases happened.",
+      "chapters": [
+        69
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shop-by-the-academy",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Wang Da’s death and the hunters’ cover-up, Jiang He bribes Fang Yuan with a fifty percent discount at Jiang Ya’s shop.",
+      "chapters": [
+        78
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "kinship-with-jiang-he",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jiang_he"
+      ]
+    },
+    {
+      "text": "When Fang Yuan later needs a vitality-leaf outlet, the text picks Jiang Ya as shop owner because of that kinship and because Jiang He was already Fang Yuan’s half-alliance mate on the Liquor worm search.",
+      "chapters": [
+        107
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "kinship-with-jiang-he",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_liquor_worm"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "kinship-with-jiang-he",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "kinship-with-jiang-he",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "By the next spring Jiang Ya still wears a rank one belt while Fang Yuan has reached rank two, and he buys nine vitality leaves a day to resell to clansmen at fifty stones against the clan list price of fifty-five, earning the difference while nursing jealousy he does not dare show. Fang Yuan contrasts their aims directly: he treats primeval stones as a cultivation tool, while Jiang Ya treats them as a life goal and cultivates in order to earn more stones.",
+      "chapters": [
+        107
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He warns Fang Yuan against Gu Yue Man Shi, then watches Man Shi beaten until that jealousy vanishes and he tells himself Fang Yuan was never his kind of person.",
+      "chapters": [
+        107
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_man_shi"
+      ]
+    },
+    {
+      "text": "Fang Yuan also uses him to gather Stealth Scales materials,",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and to purchase a Fish Scale Gu, though clan resource control in the wolf tide leaves that purchase unfinished.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fish_scale_gu"
+      ]
+    },
+    {
+      "text": "Knocking as Gu Yue Jiang Ya, he grows pushy for more leaves,",
+      "chapters": [
+        145
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "until Fang Yuan sets hard visit rules, keeps him on as seller on account of his brother, and orders the price raised to seventy stones. The same stretch again states rank one cultivation when Gu Yue Ye forces him to lead the way.",
+      "chapters": [
+        146
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_ye"
+      ]
+    },
+    {
+      "text": "A much later comparison still remembers Gu Yue Jiang Ya on Qing Mao Mountain as the type of stationed Gu Master.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "vitality-leaf-middleman",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Kinship with Jiang He",
+      "positions": [
+        {
+          "position": "Jiang Ya is Jiang He's little brother.",
+          "support": "Chapter 69, Jiang He naming Jiang Ya as the little brother who reports Fang Yuan's academy extortion and Liquor worm luck out of jealousy.",
+          "chapters": [
+            69
+          ]
+        },
+        {
+          "position": "Jiang Ya is Jiang He's cousin brother.",
+          "support": "Chapter 78, Jiang He offering the shop discount and calling Jiang Ya his cousin brother.",
+          "chapters": [
+            78
+          ]
+        },
+        {
+          "position": "Jiang Ya is Jiang He's brother.",
+          "support": "Chapter 107, narration choosing Jiang Ya as middleman because he is Jiang He's brother.",
+          "chapters": [
+            107
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/jiang-ya.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/jiang-ya/",
+      "chapters": [
+        4,
+        12,
+        15,
+        17,
+        23,
+        69,
+        78,
+        107,
+        108,
+        121,
+        123,
+        145,
+        146,
+        676
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "I as of ch. 12",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 12",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 1,
+        "as_of_chapter": 12,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

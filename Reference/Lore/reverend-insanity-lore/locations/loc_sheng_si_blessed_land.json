@@ -1,0 +1,155 @@
+{
+  "id": "loc_sheng_si_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sheng Si Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border blessed land where Old Man Yan Shi watches connecting heaven Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 467,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    467
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 2
+    },
+    {
+      "target": "char_old_man_yan_shi",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "gu_divine_travel",
+      "count": 1
+    },
+    {
+      "target": "gu_slavery_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan refuses divine travel Gu bait sold through connecting heaven Gu, Chou Jiu kneels as killer ghost doctor before a black-robed rank seven Gu Immortal in Sheng Si blessed land and reports that Fang Yuan did not take the bait. He credits the immortal’s return for freeing him from slavery. Narration names the immortal Old Man Yan Shi. Old Man Yan Shi says Fang Yuan turned Chou Jiu into a slave and messed with Shadow Sect, alters the slavery Gu, and orders Chou Jiu to wait as a spy beside Fang Yuan at the righteous demonic battle of Yi Tian mountain, then to call junior sister Bai Ning Bing.",
+      "chapters": [
+        467
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_divine_travel",
+        "char_chou_jiu",
+        "sys_gu_immortal",
+        "char_old_man_yan_shi",
+        "fac_shadow_sect",
+        "gu_slavery_gu",
+        "loc_yi_tian_mountain",
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/sheng-si-blessed-land/",
+      "chapters": [
+        467
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

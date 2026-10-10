@@ -1,0 +1,169 @@
+{
+  "id": "fac_zhao_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhao Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan village named as a planned multi-day rest stop on a Southern Border caravan route.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 247,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    247,
+    258
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_mu_bei_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_shuang_jiang_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xue_lei_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xiang_ya_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_ju_ren_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_lu_zao_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the caravan enters Xiang Ya Mountain, travelers name the next stretches as Mu Bei mountain and Shuang Jiang mountain before Zhao clan village.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-xiang-ya-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xiang_ya_mountain",
+        "loc_shuang_jiang_mountain"
+      ]
+    },
+    {
+      "text": "After crossing Mu Bei Mountain and then Shuang Jiang mountain, the next place is Xue Lei Mountain. Xue Lei mountain has Zhao Clan and is not treated as a wild area, because humans live there. Fang Yuan and Bai Ning Bing are wanted by Bai Clan, so the four do not go to Zhao Clan and press on through further mountains.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-shuang-jiang-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mu_bei_mountain",
+        "loc_xue_lei_mountain",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zhao-clan/",
+      "chapters": [
+        247,
+        258
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

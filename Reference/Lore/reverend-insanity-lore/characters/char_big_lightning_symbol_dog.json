@@ -1,0 +1,180 @@
+{
+  "id": "char_big_lightning_symbol_dog",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Big Lightning Symbol Dog",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Big Lightning Symbol Dog is a hundred beast king Fang Yuan enslaves during a King Quan Inheritance round on San Cha Mountain, twice the size of an ordinary lightning symbol dog and armed with a plasma-shooting Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 349,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    349,
+    350,
+    351
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_plasma_gu",
+      "role": "possessor",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 349,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_plasma_gu",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_king_quan_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Big Lightning Symbol Dog is a hundred beast king Fang Yuan meets in a King Quan Inheritance round, twice the size of an ordinary lightning symbol dog with deep blue fur bristling with static. Cornered inside Fang Yuan’s encirclement of chrysanthemum akita dogs, hedgedogs, and lightning symbol dogs, it repeatedly shoots bolts of blue plasma from its mouth. Fang Yuan risks a rank two dog enslavement Gu on it, since subduing a hundred beast king with that copy can fail outright, and the Gu plants into its soul against the beast king’s own mental resistance; once that resistance breaks, it wags its tail at him.",
+      "chapters": [
+        349
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "inh_king_quan_inheritance",
+        "gu_dog_enslavement_gu"
+      ]
+    },
+    {
+      "text": "In the following round Fang Yuan brings the now-enslaved Big Lightning Symbol Dog into his dog group against a steel armor dog pack whose own beast king, big steel armor dog, matches it in size.",
+      "chapters": [
+        350
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "steel-armor-dog-duel",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sent to the front as vanguard, it is still weakened from its earlier battle and outmatched in defense against the armored beast king, until it shoots continuous plasma that weakens the steel armor dogs; fifteen minutes later it tears out big steel armor dog’s throat and wins Fang Yuan the round.",
+      "chapters": [
+        351
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "steel-armor-dog-duel",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/big-lightning-symbol-dog/",
+      "chapters": [
+        349,
+        350,
+        351
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": "reg_southern_border",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_plasma_gu",
+      "role": "possessor",
+      "recorded_chapter": 349,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

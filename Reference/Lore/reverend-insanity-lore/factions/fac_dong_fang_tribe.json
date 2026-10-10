@@ -1,0 +1,627 @@
+{
+  "id": "fac_dong_fang_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Fang Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe named while Ma tribe higher-ups prepare to watch Cao Fu before Imperial Court.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 489,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    489,
+    501,
+    502,
+    503,
+    508,
+    519,
+    1193,
+    1314
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_fang_qing_yu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 501,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_fang_yu_liang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 501,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_fang_she",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 510,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tan_wu_feng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 510,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_po_kong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 511,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_fang_chang_fan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 514,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_fang_yi_kong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 657,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_fang_wan_xiu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 784,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 4
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 4
+    },
+    {
+      "target": "char_dong_fang_qing_yu",
+      "count": 3
+    },
+    {
+      "target": "char_tan_wu_feng",
+      "count": 3
+    },
+    {
+      "target": "char_dong_po_kong",
+      "count": 3
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 3
+    },
+    {
+      "target": "char_dong_fang_wan_xiu",
+      "count": 3
+    },
+    {
+      "target": "char_dong_fang_she",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_sheng_ling_er",
+      "count": 1
+    },
+    {
+      "target": "gu_refine_essence_spirit_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_nauseous_crying_baby_gu",
+      "count": 1
+    },
+    {
+      "target": "move_three_hearts_combination_soul",
+      "count": 1
+    },
+    {
+      "target": "gu_heart_sound_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_chain_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_combination_gu",
+      "count": 1
+    },
+    {
+      "target": "move_cloud_whirlpool",
+      "count": 1
+    },
+    {
+      "target": "move_dark_vortex",
+      "count": 1
+    },
+    {
+      "target": "char_tan_bi_ya",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_hei_bai",
+      "count": 1
+    },
+    {
+      "target": "loc_ni_yu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_wu_ye",
+      "count": 1
+    },
+    {
+      "target": "sys_super_force",
+      "count": 1
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 1
+    },
+    {
+      "target": "move_winged_blade",
+      "count": 1
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_huang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_yin_yang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "inh_dong_fang_wisdom_path_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_star_fireflies",
+      "count": 1
+    },
+    {
+      "target": "char_half_moon_brutemaster",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "char_qie_shi_min",
+      "count": 1
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "res_oil_water",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_air_bubble_fish",
+      "count": 1
+    },
+    {
+      "target": "char_literature_carp",
+      "count": 1
+    },
+    {
+      "target": "move_big_to_small",
+      "count": 1
+    },
+    {
+      "target": "race_minimen",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_hong_chi_ming",
+      "count": 1
+    },
+    {
+      "target": "char_three_thatch_demon_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "move_time_assist_luck",
+      "count": 1
+    },
+    {
+      "target": "char_eerie_fire_dragon_python",
+      "count": 1
+    },
+    {
+      "target": "loc_charcoal_lake",
+      "count": 1
+    },
+    {
+      "target": "res_charcoal_stones",
+      "count": 1
+    },
+    {
+      "target": "char_tian_xia_xin",
+      "count": 1
+    },
+    {
+      "target": "loc_myriad_bean_garden",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_dark_soft_silk",
+      "count": 1
+    },
+    {
+      "target": "res_regret_water_rock",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From courtyard walls one can see countless banners and the densely packed tents of Dong Fang tribe, with people moving through a clamorous camp preparing for battle.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The text does not describe those banners’ color or mark.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the battlefield opposite Hei tribe, Dong Fang tribe holds a tight and disciplined formation, with its main tent resting on a white cloud floating in mid-air.",
+      "chapters": [
+        508
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ma Tribe higher-ups say Yu Tian, Meng Qiu, and Cao Fu heroes assemblies all need close watch if they mean to enter Imperial Court blessed land. A messenger rushes in with the newest intel; after Ma Ying Jie reads it with a gloomy face and passes it around, the room answers with gasps, and the readers say Dong Fang tribe has already subjugated Zhao tribe and thereby rules Cao Fu’s heroes assembly.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "newest-intel-pass",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "loc_yu_tian",
+        "loc_cao_fu_region",
+        "loc_imperial_court_blessed_land",
+        "char_ma_ying_jie",
+        "fac_zhao_tribe"
+      ]
+    },
+    {
+      "text": "Dong Fang tribe holds the greatest dominance in Cao Fu’s heroes assembly, suppressing heroes and incorporating large numbers of tribes, with only Zhao tribe still resisting harsh alliance conditions. This generation’s tribe leader is the rank five wisdom path Gu Master Dong Fang Yu Liang.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tribe-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_wisdom",
+        "sys_gu_master",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "Zhao tribe leader places Hei Tribe and Dong Fang tribe as long lasting super tribes with Gu Immortal ancestors and blessed land support.",
+      "chapters": [
+        502
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "scale-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Hei tribe discussion classes Dong Fang tribe with Hei tribe as a super tribe with deep foundations and a huge force in Cao Fu. Dong Fang Yu Liang is again named this generation’s tribe leader.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-discussion",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the final defense falls, Dong Fang Yu Liang surrenders. The battle between Hei tribe and Dong Fang tribe ends in Hei Lou Lan’s victory. Dong Fang tribe becomes Hei tribe’s captive and, under Giant Sun Immortal Venerable’s rules, can redeem itself by paying listed resources. Both sides are super tribes with more than one Gu Immortal.",
+      "chapters": [
+        519
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-campaign",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Eleven Huang Jin tribes remain, and Dong Fang tribe is one of the two that are no longer counted among them. Dong Fang Chang Fan made Dong Fang tribe flourish, and it was destroyed because his plan to resurrect failed.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "downfall-under-dong-fang-chang-fan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline",
+        "char_dong_fang_chang_fan"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s success raising dragonfish is not the fruit of casual attempts but rests on the accumulated insight and experience of a super tribe, Dong Fang tribe, which is why his dragonfish reach top quality with smooth, more profitable production on slightly lower capital.",
+      "chapters": [
+        1314
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "legacy-behind-fang-yuans-dragonfish",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/dong-fang-tribe.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/dong-fang-tribe/",
+      "chapters": [
+        489,
+        501,
+        502,
+        503,
+        508,
+        519,
+        1193,
+        1314
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

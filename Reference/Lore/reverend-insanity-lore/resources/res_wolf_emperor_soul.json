@@ -1,0 +1,128 @@
+{
+  "id": "res_wolf_emperor_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wolf emperor soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "soul of a wolf emperor"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wolf emperor soul is the soul of a wolf emperor, a refinement material for rank five Wolf Soul Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 501,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    501
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_wolf_soul_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_wolf_soul_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_little_hu_immortal",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Refining rank five Wolf Soul Gu requires the soul of a wolf emperor, and even a refinement master only has about a fifty percent chance to succeed at it. Rank four Wolf Soul Gu needs an intact soul of a myriad wolf king instead. Fang Yuan drops the idea of buying rank five Wolf Soul Gu in treasure yellow heaven and asks Hei Lou Lan instead. Hei Lou Lan tells him the supreme elders would rather give a live wolf emperor than the Gu, and would have it exchanged for battle merits. Fang Yuan also has Little Hu Immortal watch treasure yellow heaven for a wolf emperor native to Northern Plains, but beast emperors are rarely sold, and the one beast emperor put up in those days is a boar emperor.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-requirement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_wolf_soul_gu",
+        "char_fang_yuan",
+        "char_hei_lou_lan",
+        "char_little_hu_immortal",
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/wolf-emperor-soul.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/wolf-emperor-soul/",
+      "chapters": [
+        501
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Wolf emperor",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Wolf Soul Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

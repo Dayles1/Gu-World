@@ -1,0 +1,296 @@
+{
+  "id": "char_mother_shen",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mother Shen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mother Shen is the trusted caretaker of Fang Yuan's aunt and uncle's entire household on Qing Mao Mountain, and the mother of the servant girl Shen Cui.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 3,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    3,
+    4,
+    9,
+    89,
+    90,
+    112,
+    158
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 3,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cui",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_dong_tu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Zheng does not dare underestimate Shen Cui while she waits on Fang Yuan, because Mother Shen stands beside his aunt and uncle with not-small household authority.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "char_shen_cui",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "That clan sits on Qing Mao Mountain in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "No chapter describes her appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the Awakening Ceremony, she greets Fang Zheng in a newly prepared room with a flattering smile and says the old master personally had her tidy it for him. The same chapter names her aunt and uncle’s most highly valued person and the housekeeper in charge of all the slaves in the house.",
+      "chapters": [
+        9
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "housekeeper-under-aunt-and-uncle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_awakening_ceremony"
+      ]
+    },
+    {
+      "text": "When Fang Yuan leaves the academy hostel, she finds him at once, invites him home to a banquet aunt and uncle have prepared, and urges that staying at home is better than renting outside. Fang Yuan reads the timing as their design and judges that someone notified her.",
+      "chapters": [
+        89
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-invitation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After he rejects the invitation, she is kneeling before uncle and aunt while they discuss trapping him over the family fortune; uncle waves her away before they continue.",
+      "chapters": [
+        90
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-invitation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As housekeeper she arrives at the first moment when Fang Yuan reenters Gu Yue Dong Tu’s estate, kneeling and bowing to invite him into the living room and serving tea by hand.",
+      "chapters": [
+        112
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "return-as-rank-two",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_dong_tu"
+      ]
+    },
+    {
+      "text": "She and Shen Cui watch him leave with Gu Yue Chi Zhong. Mother Shen tells Shen Cui not to keep looking, then says she had not expected Fang Yuan to reach that stage with only C grade aptitude and pivots her hope to Fang Zheng’s A grade aptitude.",
+      "chapters": [
+        158
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "elder-visit-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_zhong"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/mother-shen/",
+      "chapters": [
+        3,
+        4,
+        9,
+        89,
+        90,
+        112,
+        158
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 3",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,280 @@
+{
+  "id": "char_chen_li_zhi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chen Li Zhi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chen li zhi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чэнь Ли Чжи",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Little Zhi"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chen Li Zhi is a male Gu Immortal sealed in Hei Fan grotto-heaven under Old Immortal Chen Chi, called Little Zhi by his ancestor.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1122,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1122,
+    1123,
+    1124,
+    1127
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_enslavement",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_hei_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1122,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_hei_tribe",
+      "count": 2
+    },
+    {
+      "target": "path_enslavement",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_chen_wan_yun",
+      "count": 2
+    },
+    {
+      "target": "char_chen_chi",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_zheng_tuo",
+      "count": 1
+    },
+    {
+      "target": "gu_lifespan_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chen_le",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On the night Chen Chi’s group discusses Fang Yuan as Hei Cheng, the male Gu Immortal Chen Li Zhi says they have to talk to Hei Cheng properly.",
+      "chapters": [
+        1122
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_chi",
+        "char_fang_yuan",
+        "char_hei_cheng",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "He worries that delaying will annoy Hei Cheng and push him toward Zheng Tuo, then backs Chen Chi’s analysis that their four votes nearly give half the grotto-heaven’s support. Chen Chi tells Fang Yuan that his nephew Chen Li Zhi is an enslavement path Gu Immortal who envies the upper extreme heavenly eagle. Chen Li Zhi presses lifespan Gu as a condition for their support.",
+      "chapters": [
+        1123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "succession-talks",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zheng_tuo",
+        "gu_lifespan_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan, still posing as Chen Chi, summons him, praises him as Little Zhi, draws him close with talk of Hei Cheng’s offers, then kills him as he sits and stores the corpse in his immortal aperture.",
+      "chapters": [
+        1124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "assassination-in-the-palace",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later tells Chen Le that Chen Chi, Chen Wan Yun, and Chen Li Zhi died in his hands, and that the rank seven Gu Immortals of their side are dead.",
+      "chapters": [
+        1127
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-the-dead",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_le",
+        "char_chen_wan_yun"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chen-li-zhi/",
+      "chapters": [
+        1122,
+        1123,
+        1124,
+        1127
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1127",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Enslavement path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Hei Tribe as of ch. 1122",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1127,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_enslavement"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

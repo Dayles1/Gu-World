@@ -1,0 +1,240 @@
+{
+  "id": "fac_huang_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huang Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan seated on the southern side of Huang Jin mountain, sharing the peak with Jin clan under a strict one-clan caravan rule.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 241,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    241,
+    243,
+    244,
+    674
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "fac_jin_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_huang_jin_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_golden_silkworm_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "res_jinzan_grass",
+      "count": 1
+    },
+    {
+      "target": "char_han_li",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_clan_western_desert",
+      "count": 1
+    },
+    {
+      "target": "loc_sha_jing_oasis",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Huang Jin Mountain is rich in gold mines, and gold there is a refinement material rather than currency. The text compares the local rivalry to Qing Mao Mountain and treats Huang and Jin as not harmonious.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rival-on-a-gold-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_huang_jin_mountain",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "During the caravan stop the story stays with Jin Clan rather than with Huang speakers. Huang still exists at that visit; Fang Yuan uses that fact when judging Jin clan’s golden silkworm work.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rival-on-a-gold-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jin_clan",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s memories, Jin clan’s large numbers of rank three golden silkworm Gu raise battle strength rapidly, eliminate Huang clan, and let Jin control the area. In that memory the attack comes a year later and leaves Jin dominating Huang Jin mountain.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jinzan-grass-and-later-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_golden_silkworm_gu"
+      ]
+    },
+    {
+      "text": "At the present visit Jin higher-ups already keep the true purpose of their Jinzan grass planting among themselves so Huang will not notice.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jinzan-grass-and-later-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_jinzan_grass"
+      ]
+    },
+    {
+      "text": "After the caravan’s Jinzan grass buyback closes, the Jin clan leader orders Gu Masters to watch until the group leaves the mountain’s region and to kill anyone who tries to go secretly to Huang clan.",
+      "chapters": [
+        244
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jinzan-grass-and-later-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "A different Huang clan, an upper tier force in the Western Desert, holds the center of Sha Jing oasis.",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-namesake-clan-at-sha-jing-oasis",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_clan_western_desert",
+        "reg_western_desert",
+        "loc_sha_jing_oasis"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/huang-clan/",
+      "chapters": [
+        241,
+        243,
+        244,
+        674
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

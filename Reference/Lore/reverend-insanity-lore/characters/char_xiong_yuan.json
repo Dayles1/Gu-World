@@ -1,0 +1,204 @@
+{
+  "id": "char_xiong_yuan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiong Yuan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xiong yuan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сюн Юань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiong Yuan is a sound path Gu Immortal who accuses He Lang Zi of snatching Heavenly Gong Immortal Gu from him at the Northern Plains Immortal Gu auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 751,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    751
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_sound",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 751,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_heavenly_gong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 751,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_heavenly_gong",
+      "count": 4
+    },
+    {
+      "target": "path_sound",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_he_lang_zi",
+      "count": 1
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_jiao_man",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the Northern Plains Immortal Gu auction, Xiong Yuan sees Heavenly Gong Immortal Gu go up for bidding and shouts that the Gu was his, that He Lang Zi snatched it, and calls him out of his secret room. Gu Immortals in the hall recognize He Lang Zi as a demonic path loner of Northern Plains, rumored to hold an inheritance of Thieving Heaven Demon Venerable that lets him snatch other people’s Immortal Gu. Xiong Yuan points at He Lang Zi, trembling with anger and unable to answer him. When bidding opens on a transformation path Immortal Gu that could help He Lang Zi reach Ascending Heaven Plain, He Lang Zi mockingly tells old man Xiong Yuan, a sound path Gu Immortal, to bid now if he ever will. Xiong Yuan does bid, becoming one of five Gu Immortals competing for that Immortal Gu, but He Lang Zi ultimately accepts a different secret room’s offer instead.",
+      "chapters": [
+        751
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "sys_immortal_gu",
+        "gu_heavenly_gong",
+        "char_he_lang_zi",
+        "sys_gu_immortal",
+        "char_thieving_heaven_demon_venerable",
+        "loc_ascending_heaven_plain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xiong-yuan/",
+      "chapters": [
+        751
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Sound path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_sound"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_heavenly_gong",
+      "role": "unspecified",
+      "recorded_chapter": 751,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

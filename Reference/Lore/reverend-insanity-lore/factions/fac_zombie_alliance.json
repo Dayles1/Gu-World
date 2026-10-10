@@ -1,0 +1,1024 @@
+{
+  "id": "fac_zombie_alliance",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zombie Alliance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An alliance of zombies with main headquarters in Eastern Sea and a branch in each of the other four regions.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 653,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    653,
+    654,
+    679,
+    739,
+    743,
+    757,
+    776,
+    818,
+    893,
+    906,
+    950,
+    961,
+    1008,
+    1017,
+    1077,
+    1084,
+    1155,
+    1256,
+    1345
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shark_demon",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 683,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_ye",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 738,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yin_liu_gong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 739,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dragon_commander_ye_cha",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 740,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_huang_quan_weng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 740,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_sha_huang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 740,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_craftsman_huo_de",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 741,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_doctor_yin_xuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 741,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_landlord_lei_yu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 741,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_granny_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 742,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_blazing_heaven_demoness",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 743,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bo_dan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 818,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_su_bai_man",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 819,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_lu_tan_xin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 903,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_corpse_detonation_king",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 929,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_pu_wan_dao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 929,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_old_monster_corpse_poison",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1108,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shark_demon",
+      "count": 3
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 3
+    },
+    {
+      "target": "char_yin_liu_gong",
+      "count": 3
+    },
+    {
+      "target": "char_dragon_commander_ye_cha",
+      "count": 3
+    },
+    {
+      "target": "char_huang_quan_weng",
+      "count": 3
+    },
+    {
+      "target": "char_sha_huang",
+      "count": 3
+    },
+    {
+      "target": "char_granny_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 3
+    },
+    {
+      "target": "char_su_bai_man",
+      "count": 3
+    },
+    {
+      "target": "char_bo_dan",
+      "count": 3
+    },
+    {
+      "target": "char_corpse_detonation_king",
+      "count": 3
+    },
+    {
+      "target": "char_pu_wan_dao",
+      "count": 3
+    },
+    {
+      "target": "char_old_monster_corpse_poison",
+      "count": 3
+    },
+    {
+      "target": "char_craftsman_huo_de",
+      "count": 2
+    },
+    {
+      "target": "char_doctor_yin_xuan",
+      "count": 2
+    },
+    {
+      "target": "char_landlord_lei_yu",
+      "count": 2
+    },
+    {
+      "target": "char_lu_tan_xin",
+      "count": 2
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "evt_era_medieval",
+      "count": 2
+    },
+    {
+      "target": "gu_worldly_wave_trace",
+      "count": 2
+    },
+    {
+      "target": "res_deepsea_lightning_eels",
+      "count": 2
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 2
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 2
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 2
+    },
+    {
+      "target": "res_black_oil",
+      "count": 2
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 2
+    },
+    {
+      "target": "loc_undying_kingdom",
+      "count": 2
+    },
+    {
+      "target": "loc_yellow_spring_sea_area",
+      "count": 2
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_zombie",
+      "count": 1
+    },
+    {
+      "target": "path_fire",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "loc_ku_mu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_divine_lord_tian_du",
+      "count": 1
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 1
+    },
+    {
+      "target": "loc_old_earth_city",
+      "count": 1
+    },
+    {
+      "target": "loc_old_earth_wood",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "move_green_crystal_heros_path",
+      "count": 1
+    },
+    {
+      "target": "move_stone_casket",
+      "count": 1
+    },
+    {
+      "target": "path_dark",
+      "count": 1
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_yuan_tribe",
+      "count": 1
+    },
+    {
+      "target": "res_ruyi_fungus",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "move_hundred_li_eye",
+      "count": 1
+    },
+    {
+      "target": "loc_hai_shi_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "gu_resurrection_from_the_dead",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "path_refinement",
+      "count": 1
+    },
+    {
+      "target": "res_wilted_essence",
+      "count": 1
+    },
+    {
+      "target": "house_profound_ice_house",
+      "count": 1
+    },
+    {
+      "target": "move_raindrop_equity",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "move_star_fire_escape",
+      "count": 1
+    },
+    {
+      "target": "gu_melt_ice_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_freezing_rain_frozen_earth",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "char_one_finger_flow_shark",
+      "count": 1
+    },
+    {
+      "target": "loc_shark_sea",
+      "count": 1
+    },
+    {
+      "target": "move_lower_controls_higher",
+      "count": 1
+    },
+    {
+      "target": "res_purple_gold_rock",
+      "count": 1
+    },
+    {
+      "target": "sys_blazing_glory_lightning_brilliance_physique",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "res_immortal_zombie_corpse",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_second_zombie_king",
+      "count": 1
+    },
+    {
+      "target": "inh_second_zombie_king_inheritance",
+      "count": 1
+    },
+    {
+      "target": "res_half_moon_qilin_scales",
+      "count": 1
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 1
+    },
+    {
+      "target": "char_seven_star_child",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_yan_shi",
+      "count": 1
+    },
+    {
+      "target": "rcp_sovereign_immortal_fetus_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_feng_bo_cliff",
+      "count": 1
+    },
+    {
+      "target": "gu_sovereign_immortal_fetus_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_yellow_spring_water",
+      "count": 1
+    },
+    {
+      "target": "sys_super_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "loc_hidden_dragon_cave",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "move_hundred_and_eighty_slaves",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Dark Flow Giant City, Northern Plains Zombie Alliance headquarters, is pitch black and resembles a giant beast sprawled on the ground; every tile and brick emits dense darkness that grows denser toward the center. Street lamps stand every few hundred steps and cast weak dusky yellow light over only some dozens of steps. The city is almost as large as a mountain and is divided into seven floors.",
+      "chapters": [
+        739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dark_flow_giant_city",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Fang Yuan places the force’s reported appearance in the Medieval Antiquity Era, about three hundred thousand years ago. Almost all members are zombies, and the higher ups are immortal zombies. Most of those immortal zombies were Gu Immortals who turned into zombies at the end of their lifespan; their immortal apertures are dead, they cannot produce immortal essence or absorb heaven and earth qi, and over time their blessed lands shrink and crumble, so their battle strength often cannot match ordinary Gu Immortals. Branches are weaker than each region’s super forces, while the Eastern Sea headquarters is a level stronger than the native super forces there. One founding purpose was mutual research into regaining a living body, and joining is simple for someone who can prove immortal zombie status, because the alliance is suppressed by super forces and eager for members. Fang Yuan intends to join the Northern Plains branch.",
+      "chapters": [
+        653
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spread-and-membership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "evt_era_medieval",
+        "sys_gu_immortal",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "When Tai Bai Yun Sheng suggests using Zombie Alliance to threaten Immortal Crane Sect, Fang Yuan refuses: the structure is loose with little binding force, and Central Continent’s branch is far inferior to Immortal Crane Sect.",
+      "chapters": [
+        654
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "central-continent-branch",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng",
+        "fac_immortal_crane_sect",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "Eastern Sea Zombie Alliance houses the headquarters of Zombie Alliance within all five regions. That branch is very powerful, a level stronger than even the super forces of eastern sea. It is domineering in action: it blockades several large sea regions and keeps the large numbers of resources inside for itself.",
+      "chapters": [
+        679
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-headquarters",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Deepsea lightning eel grounds sit among those controlled seas. Capture requires entering the deep sea, which is dangerous, and the abundant areas are already held by that headquarters branch. Tai Bai Yun Sheng suggests joining Eastern Sea Zombie Alliance to buy the eels internally at a cheaper price. Fang Yuan refuses rather than abandon his major plan through Northern Plains Zombie Alliance, even though joining Eastern Sea with northern plains immortal zombie status is possible. He judges that with time Tai Bai Yun Sheng can still purchase the eels outside, only at a higher price, and that Worldly Wave Trace can hold for a while without free activation.",
+      "chapters": [
+        679
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_deepsea_lightning_eels",
+        "gu_worldly_wave_trace"
+      ]
+    },
+    {
+      "text": "Dark Flow Giant City is the main headquarters of Zombie Alliance in Northern Plains, nearly mountain sized, with lower floors for mortal Gu Masters, a floor for immortal zombies and related people, and a highest conference hall where three rank seven immortal zombies stay year round. The alliance covers mortal Gu Masters as well as immortal members.",
+      "chapters": [
+        739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "northern-plains-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Northern Plains Zombie Alliance’s main headquarters sits above the entrance of Earth Trench and commits much of the alliance’s strength to guarding it. Black oil from that trench is sold in fixed yearly quantities through the alliance, with demand higher than supply. In Northern Plains the alliance stands only slightly below super forces; righteous path super forces suppress it in practice, while it cooperates more readily with demonic path Gu Immortals, especially Snowy Mountain blessed land. Higher ups are immortal zombies gathered around revival, the structure is loose despite more than twenty immortal zombie level members, and entry is low enough that Fang Yuan’s own admission shows how open it is.",
+      "chapters": [
+        743
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_trench",
+        "res_black_oil",
+        "loc_snowy_mountain"
+      ]
+    },
+    {
+      "text": "Northern Plains Zombie Alliance refuses refinement path Gu Immortal Yao Huang’s request for ten immortal zombie corpses from its graveyard, since letting the dead rest in peace matters greatly to a membership in this physical state, and using even its own members’ bodies would ruin its reputation and its appeal to would-be members.",
+      "chapters": [
+        757
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "its-dead-stay-buried",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yao_huang"
+      ]
+    },
+    {
+      "text": "Refinement path Gu Immortal Yao Huang deepens his collaboration with Zombie Alliance, and that collaboration causes its standing in Northern Plains to rise up rapidly.",
+      "chapters": [
+        776
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rising-status-in-northern-plains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_refinement"
+      ]
+    },
+    {
+      "text": "Eastern Sea Zombie Alliance’s headquarters holds three Immortal Gu Houses, only one of them complete and the other two extremely incomplete.",
+      "chapters": [
+        818
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-seas-immortal-gu-houses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Unlike the other Zombie Alliance branches, Eastern Sea Zombie Alliance recruits living Gu Immortals.",
+      "chapters": [
+        893
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "only-branch-open-to-the-living",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Eastern Sea Zombie Alliance’s headquarters, Undying Kingdom, is a public blessed land grown mainly from pieces offered by Gu Immortals whose lifespan is ending, never forcibly demanded of a Gu Immortal who joins. The branch has gained partial success at keeping an immortal aperture alive inside an immortal zombie body, and trades that research result for a member’s contribution points.",
+      "chapters": [
+        906
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "undying-kingdom",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_undying_kingdom"
+      ]
+    },
+    {
+      "text": "Zombie Alliance headquarters orders a mandatory mission to build a giant Gu formation protecting the immortal zombie graveyard, all four branches and the headquarters contributing; Northern Plains alone spends thirteen Immortal Gu and countless supplementary mortal Gu on it.",
+      "chapters": [
+        950
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mandatory-graveyard-formation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "sys_immortal_gu",
+        "sys_mortal_gu"
+      ]
+    },
+    {
+      "text": "Southern Border holds a branch of Zombie Alliance as well.",
+      "chapters": [
+        961
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "branch-in-southern-border",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "The Zombie Alliance branches spread across the five regions are subordinate forces of Shadow Sect, hidden so deeply that many of the alliance’s own higher ups do not know it. When the ten extreme immortal zombie lifeless formation nears breaking under grand tribulation pressure, Shadow Sect’s Seven Star Child decides to sacrifice Zombie Alliance, and immortal zombies from every branch appear inside the formation without clear consciousness and merge into it as immortal material. With that sacrifice, Zombie Alliance, the super force with the most Gu Immortals across the five regions, is completely destroyed.",
+      "chapters": [
+        1008
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "true-allegiance-and-destruction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "char_seven_star_child"
+      ]
+    },
+    {
+      "text": "Shadow Sect’s advisor Old Man Yan Shi counts Zombie Alliance’s arrangements as already set, kept in reserve as a backup he hopes will not need to be used.",
+      "chapters": [
+        1017
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "held-in-reserve",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_man_yan_shi"
+      ]
+    },
+    {
+      "text": "Its resources become ownerless afterward, and many Gu Immortal experts and super forces fight over them in bloody clashes.",
+      "chapters": [
+        1077
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "held-in-reserve",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the battle on Yi Tian Mountain, every region’s Zombie Alliance branch becomes an empty shell, Northern Plains’ own vanishing without a trace.",
+      "chapters": [
+        1084
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "empty-shells-after-yi-tian-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yi_tian_mountain"
+      ]
+    },
+    {
+      "text": "A huge current of yellow spring water blocks Fang Yuan’s path in the turbulent flow sea area, and that water comes from Yellow Spring Sea Area, which was the territory of the alliance’s headquarters.",
+      "chapters": [
+        1155
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yellow-spring-sea-area",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yellow_spring_sea_area"
+      ]
+    },
+    {
+      "text": "Zombie Alliance’s super Gu formations, built to protect immortal zombie corpses, were in truth a pretext to keep the immortal zombies in captivity; using that chance, Shadow Sect assassinated the immortal zombies of every branch, safely storing away the Immortal Gu from their dead apertures rather than losing them.",
+      "chapters": [
+        1256
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-pretext-to-hold-them",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_super_gu_formation"
+      ]
+    },
+    {
+      "text": "Before its Southern Border headquarters is exposed, Zombie Alliance targets Corpse Emperor Yu Ding Tian and offers Wu clan a high price to buy it as a headquarters site, but Wu clan rejects them.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "corpse-emperor-yu-ding-tian-rejected",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zombie-alliance/",
+      "chapters": [
+        653,
+        654,
+        679,
+        739,
+        743,
+        757,
+        776,
+        818,
+        893,
+        906,
+        950,
+        961,
+        1008,
+        1017,
+        1077,
+        1084,
+        1155,
+        1256,
+        1345
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "alliance",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

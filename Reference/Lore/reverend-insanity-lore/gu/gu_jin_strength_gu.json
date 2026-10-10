@@ -1,0 +1,265 @@
+{
+  "id": "gu_jin_strength_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jin Strength Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jin Strength Gu is a rank one strength path Gu that raises a Gu Master's strength by one jin.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 442,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    442,
+    500,
+    754
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "gu_jun_strength_gu",
+      "count": 3
+    },
+    {
+      "target": "char_chu_du",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_beast_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_of_ten_jun_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/jin-strength-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/jin-strength-gu/",
+      "chapters": [
+        442,
+        500,
+        754
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 1,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_strength"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is rank one and can raise a Gu Master’s strength by one jin. The same shop lists it beside strength of ten jin Gu and Jun Strength Gu, and states that one jun is thirty jin. Among strength path Gu, jin strength Gu, jun strength Gu, and beast strength Gu make up most of what is on offer, and most of them are for attacking.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master",
+          "gu_jun_strength_gu",
+          "path_strength",
+          "gu_strength_gu",
+          "gu_beast_strength_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Jin Strength Gu and Jun Strength Gu recipes were the invention of a rank seven Gu Immortal. Compared with traditional beast strength Gu they were easier to refine and cost less, and they were widespread in the north.",
+        "chapters": [
+          500
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "recipe-origin-and-spread",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "A Man tribe market shopkeeper sells it for two hundred and twenty primeval stones per Gu. Domination Immortal Chu Du, a famous rank seven Gu Immortal of northern plains, invents Jin Strength Gu and Jun Strength Gu.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_man_tribe",
+          "char_chu_du",
+          "sys_gu_immortal",
+          "gu_jun_strength_gu"
+        ]
+      },
+      {
+        "text": "The human strength jun strength branch refers to Jin Strength Gu, strength of ten jin Gu, Jun Strength Gu, strength of ten jun Gu, strength of hundred jun Gu, and others. In Northern Plains that branch is already the mainstream strength path cultivation, and Gu Masters there are said to have used Jin Strength Gu and the rest of that line.",
+        "chapters": [
+          754
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "human-jun-strength-branch",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_strength_of_ten_jun_gu",
+          "reg_northern_plains",
+          "fac_gu_masters"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

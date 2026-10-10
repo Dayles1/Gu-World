@@ -1,0 +1,168 @@
+{
+  "id": "loc_hua_hai_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hua Hai Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A blessed land the Hua Hai three immortals name while facing Lang Ya's earthly calamity.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 460,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    460
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_fairy_fen_meng",
+      "count": 2
+    },
+    {
+      "target": "fac_hua_hai_three_immortals",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_huang_sha",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_qing_suo",
+      "count": 1
+    },
+    {
+      "target": "char_gui_wang",
+      "count": 1
+    },
+    {
+      "target": "char_loner_hong_yu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Above Crescent Lake, Fairy Qing Suo, Fairy Huang Sha, and Fairy Fen Meng stand with Gui Wang and Loner Hong Yu as the earthly calamity Endless Thunder and Lightning Rain opens holes into Lang Ya Blessed Land. Narration calls the three women the Hua Hai three immortals and places them on the righteous path opposite the two demonic path Gu Immortals. Watching the calamity’s might, they say that if the same struck their Hua Hai blessed land, even the three sisters joining forces might not resist it.",
+      "chapters": [
+        460
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crescent_lake",
+        "char_fairy_qing_suo",
+        "char_fairy_huang_sha",
+        "char_fairy_fen_meng",
+        "char_gui_wang",
+        "char_loner_hong_yu",
+        "loc_lang_ya_blessed_land",
+        "fac_hua_hai_three_immortals",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because the sisters name the land while attacking Lang Ya blessed land above Crescent Lake. Chapter 460 does not seat Hua Hai blessed land on a five-region map.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/hua-hai-blessed-land/",
+      "chapters": [
+        460
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

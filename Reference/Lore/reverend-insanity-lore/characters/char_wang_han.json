@@ -1,0 +1,195 @@
+{
+  "id": "char_wang_han",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wang Han",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wang han",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ван Хань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wang Han is a Gu Master on Shang clan city's fifth inner city battle stage who buys Water Prison Gu on a high interest loan for a chance at killing Fang Yuan and claiming All-out Effort Gu, then dies in the match himself.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 288,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    288,
+    289
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_water_prison_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 289,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_water_prison_gu",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Facing Fang Yuan on the battle stage and unable to win a prolonged fight against All-out Effort Gu’s phantoms, a blue shirt burly man brings out Water Prison Gu, saying he took a high interest loan to buy the rank three Gu on purpose, to deal with Fang Yuan and claim All-out Effort Gu for himself. He argues that beast strength is hard while the flow of water is soft, so softness subdues hardness, but Fang Yuan’s crocodile strength phantom kick smashes the water prison to pieces.",
+      "chapters": [
+        288
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_all_out_effort_gu",
+        "gu_water_prison_gu"
+      ]
+    },
+    {
+      "text": "That kick’s impact carries Fang Yuan forward and kills the man, ending the match; the hosting Gu Master declares Fang Yuan the winner. Spectators outside the stage name the dead fighter Wang Han and say that even he lost and died in the battle stage, crediting the strength of All-out Effort Gu.",
+      "chapters": [
+        289
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-on-the-battle-stage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wang-han/",
+      "chapters": [
+        288,
+        289
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_water_prison_gu",
+      "role": "user",
+      "recorded_chapter": 289,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

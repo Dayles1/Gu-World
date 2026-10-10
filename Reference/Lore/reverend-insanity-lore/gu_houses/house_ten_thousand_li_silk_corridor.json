@@ -1,0 +1,191 @@
+{
+  "id": "house_ten_thousand_li_silk_corridor",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ten Thousand Li Silk Corridor",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ten Thousand Li Silk Corridor is Western Desert Xiao clan's Immortal Gu House. Anything placed on its silk-smooth floor can be transported at extreme speed.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 837,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    837,
+    1594
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "fac_xiao_clan_western_desert",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_xiao_clan_western_desert",
+      "count": 3
+    },
+    {
+      "target": "fac_dong_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_impassable_dunes",
+      "count": 2
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "house_beacon_tower",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_hu_chi",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_shi_rang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ten thousand li is only a general name; the house is far longer than that. With enough mortal spider Gu, Xiao clan can spread and build it everywhere. From a bird’s eye view it resembles a giant spider web over Western Desert. Xiao clan is one of the richest Western Desert super forces because it holds this house, spreads it to transport goods, and treats it as the clan’s economic lifeline. Use consumes large numbers of mortal spider Gu each year, and a larger number and greater variety of those Gu helps the corridor run.",
+      "chapters": [
+        837
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xiao_clan_western_desert",
+        "reg_western_desert"
+      ]
+    },
+    {
+      "text": "At the impassable dunes, Xiao clan Gu Immortals capture hidden sand spider queens to raise at headquarters so clan Gu Masters can refine mortal spider Gu from their blood and flesh. Fang Yuan opens a long-term regretful spider trade there, completes a first transaction on the spot, and obtains a node token for a nearby corridor node. He proposes to arrive at that node each month on the thirtieth, place the goods, and take the payment. Xiao clan ‘s first supreme elder names a contest with Dong clan to occupy the northwest market by spreading the corridor as fast as possible.",
+      "chapters": [
+        837
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_impassable_dunes",
+        "sys_gu_immortal",
+        "fac_gu_masters",
+        "char_fang_yuan",
+        "fac_dong_clan"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because Ten Thousand Li Silk Corridor is a named Immortal Gu House. It is a spread transport network across Western Desert, not one fixed map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Tie clan’s Beacon Tower is later said to have a greatest use similar to Western Desert Xiao clan ‘s Ten Thousand Li Silk Corridor.",
+      "chapters": [
+        1594
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "beacon-tower-comparison",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tie_clan",
+        "house_beacon_tower"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/ten-thousand-li-silk-corridor/",
+      "chapters": [
+        837,
+        1594
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Xiao Clan (Western Desert) (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

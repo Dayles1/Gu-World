@@ -1,0 +1,265 @@
+{
+  "id": "char_tao_zi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tao Zi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "tao zi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Тао Цзы",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tao Zi is a Southern Border righteous path healing expert who arrives at San Cha Mountain for the three kings inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 375,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    375,
+    387,
+    393
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_spirit_peach_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 375,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_spirit_peach_gu",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hu_mei_er",
+      "count": 1
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "char_li_fei_le",
+      "count": 1
+    },
+    {
+      "target": "char_li_xian",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 1
+    },
+    {
+      "target": "gu_slavery_gu",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_mang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "As more established Gu Masters thicken the crowd, he is listed among arrivals and is noted for spirit peach Gu, a famous rank five Gu.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "gu_spirit_peach_gu"
+      ]
+    },
+    {
+      "text": "Inside the blessed land, Fang Yuan weighs whom to subdue with rank five slavery Gu and lists Tao Zi among rank four Gu Masters still present, grouping him with figures such as Yi Huo, Kong Ri Tian, Li Xian, and Hu Mei Er. Fang Yuan’s first thought for a kill is not the strongest Yi Huo and is also not the influential Hu Mei Er and Tao Zi, but rather Tie Ruo Nan.",
+      "chapters": [
+        387
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "slavery-gu-shortlist",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_slavery_gu",
+        "char_yi_huo",
+        "char_kong_ri_tian",
+        "char_li_xian",
+        "char_hu_mei_er",
+        "char_tie_ruo_nan"
+      ]
+    },
+    {
+      "text": "When the righteous side stalls before the dog fog, the famous healer Tao Zi asks Xiao Mang what to do while the demonic faction watches. Later in the great clash he shouts for others to work together under his healing, and many Gu Masters gather to him.",
+      "chapters": [
+        393
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dog-fog-healer",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiao_mang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/tao-zi/",
+      "chapters": [
+        375,
+        387,
+        393
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 387",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 375",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 387,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "righteous path as of ch. 375",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_spirit_peach_gu",
+      "role": "holder",
+      "recorded_chapter": 375,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

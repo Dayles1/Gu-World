@@ -1,0 +1,136 @@
+{
+  "id": "res_rank_nine_heaven_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rank nine heaven path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A rank nine heaven path immortal material is a heaven path immortal material of rank nine, including named forms such as heavenly pillar and heavenly chasm.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2267,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2267,
+    2269
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_heaven",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "res_heavenly_chasm",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the fused black and white heaven, a huge transparent pillar falls and kills most of the soul beasts under it. Fairy Zi Wei identifies it as a heavenly pillar and states that each heavenly pillar is a rank nine heaven path immortal material. Ying Wu Xie notes that losing soul-beast concealment still leaves them with a rank nine immortal material.",
+      "chapters": [
+        2267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fatal-fall-over-soul-beasts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "char_ying_wu_xie"
+      ]
+    },
+    {
+      "text": "Heavenly chasm is a rank nine heaven path immortal material of irregular, huge form: formless and ethereal, seeming like empty air yet impassable. It is not overtly lethal, but it blocks passage and forces detours when its shape cannot be mapped.",
+      "chapters": [
+        2269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-chasm",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_heavenly_chasm"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/rank-nine-heaven-path-immortal-material/",
+      "chapters": [
+        2267,
+        2269
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Heaven Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

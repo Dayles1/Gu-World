@@ -1,0 +1,196 @@
+{
+  "id": "loc_qin_yan_brothel",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qin Yan Brothel",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Shang clan city brothel whose number one lady is Lady An Yu on the top floor.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 282,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    282,
+    307,
+    310
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_lady_an_yu",
+      "count": 2
+    },
+    {
+      "target": "loc_fu_tai_xiang_he_restaurant",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_li_ran",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Qin Yan brothel has eight storeys, with the number one lady’s room on the top floor.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A shop assistant at Fu Tai Xiang He Restaurant tells Fang Yuan that Li Ran’s reserved window seat looks into Qin Yan brothel toward Lady An Yu’s room. From that seat Fang Yuan can see into the brothel.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "view-into-an-yus-room",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fu_tai_xiang_he_restaurant",
+        "char_fang_yuan",
+        "char_li_ran",
+        "char_lady_an_yu"
+      ]
+    },
+    {
+      "text": "Qin Yan brothel has eight storeys, and narration names An Yu as a rank two Gu Master whose Gu Master identity can invoke men’s conquering desires; rumors say it takes almost ten thousand primeval stones to have her for a night. Many restaurants sit around the brothel; Fang Yuan judges that at Fu Tai Xiang He’s distance he would only see a blur if An Yu were present, and that better peek spots exist.",
+      "chapters": [
+        282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "view-into-an-yus-room",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "At the auction house someone claims Shang Ya Zi and Fang Zheng went to Qin Yan brothel, competed for the number one lady, and that Fang Zheng got her. Lady An Yu is pointed out in the crowd; after her pimp winks she blushes without answering, and most doubters take that as proof.",
+      "chapters": [
+        307
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-house-rumor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_ya_zi",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "A servant reports a citywide rumor that Shang Ya Zi lost Lady An Yu to Fang Zheng. Shang Ya Zi calls her that Qin Yan brothel’s prostitute and laughs the claim off as rubbish.",
+      "chapters": [
+        310
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-rumor-to-shang-ya-zi",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/qin-yan-brothel.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/qin-yan-brothel/",
+      "chapters": [
+        282,
+        307,
+        310
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "brothel",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "id": "char_dong_fang_yi_kong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Fang Yi Kong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "dong fang yi kong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дун Фан И Кун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dong Fang Yi Kong is a Dong Fang tribe Gu Immortal who hosts Northern Plains guests at Jade Pool blessed land beside Dong Fang Chang Fan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 657,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    657,
+    788,
+    789,
+    794,
+    795,
+    802
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_dong_fang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 657,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_yin_yang_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_wan_xiu",
+      "count": 2
+    },
+    {
+      "target": "char_guan_shen_zhao",
+      "count": 1
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_huang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_old_lord_can_yang",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_murong_qing_si",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He compares the land’s age, landscape, and productivity to Murong tribe’s Yin-Yang blessed land and Guan tribe’s Shi Huang blessed land when Chanyu tribe’s Tong Zu and the other guests speak. Jade Pool blessed land is headquarters of Huang Jin family’s Dong Fang tribe in Northern Plains.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_murong_tribe",
+        "loc_yin_yang_blessed_land",
+        "fac_guan_tribe",
+        "loc_shi_huang_blessed_land",
+        "fac_chanyu_tribe",
+        "loc_jade_pool_blessed_land",
+        "fac_huang_jin_bloodline",
+        "fac_dong_fang_tribe",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "When a guest asks how an oath can be sworn with no mountains or rivers in the blessed land, he opens his palm and shows a miniature mountain peak that Murong Qing Si names Miniscule Mountain. He confirms the name with a modest smile that cannot hide pride.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "miniature-peak-revealed",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_murong_qing_si",
+        "loc_miniscule_mountain"
+      ]
+    },
+    {
+      "text": "Inside the ruin bat corpse hall he shouts that the tribe still has a traitor and that vigilance alone cannot stop an internal threat. After Dong Fang Wan Xiu offers to sacrifice for the tribe, he stands as well and says he will accompany Wan Xiu. When Old Lord Can Yang names Chang Fan as the true traitor and the possession scheme comes into the open, he first denies the claim as illusion, then calls on Chang Fan to speak.",
+      "chapters": [
+        788
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "formation-hall-sacrifice",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_wan_xiu",
+        "char_old_lord_can_yang",
+        "char_dong_fang_chang_fan"
+      ]
+    },
+    {
+      "text": "The eight Gu Immortals’ bodies and souls were already turned to nothingness before the heaven-shaking tribulation, with hatred retained in their wills. During the chaotic fight that follows possession, Dong Fang Yu Liang’s voice shifts into Dong Fang Yi Kong’s while shouting that Chang Fan schemed against the tribe’s Gu Immortals for rebirth.",
+      "chapters": [
+        794
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "residual-will",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "Fang Yuan later recalls that in his previous life Dong Fang tribe Gu Immortals such as Dong Fang Yi Kong and Dong Fang Wan Xiu were still alive, while in the present timeline they have been sacrificed.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "previous-life-contrast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Fang Yuan takes the literature carps, that same will bursts through suppression again, shows Yi Kong’s face and voice, and charges Fang Yuan over the stolen fish group before Chang Fan regains control.",
+      "chapters": [
+        802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wills-second-outburst",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/dong-fang-yi-kong/",
+      "chapters": [
+        657,
+        788,
+        789,
+        794,
+        795,
+        802
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Dong Fang Tribe as of ch. 657",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

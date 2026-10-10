@@ -1,0 +1,175 @@
+{
+  "id": "loc_earth_grade_room_c_gu_refinement_hall",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Earth-grade Room C Gu Refinement Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "One of Lang Ya land spirit's many Gu refinement halls, a vast workshop where he refines Immortal Gu with thousands of hairy men.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 486,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    486
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_divine_travel",
+      "count": 1
+    },
+    {
+      "target": "gu_second_aperture_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because chapter 486 shows the hall inside Lang Ya Blessed Land during Fang Yuan’s visit, concurrent with northern plains events. The novel does not seat Earth-grade Room C on a five-region map.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "A huge hall at least ten li across holds green copper cauldrons, red steel furnaces, rainbow water tanks, and cave houses used as refinement equipment.",
+      "chapters": [
+        486
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lang Ya land spirit teleports Fang Yuan into a huge hall at least ten li across, packed with green copper cauldrons, red steel furnaces, rainbow water tanks, and cave houses used as refinement equipment. He names it his Earth-grade Room C Gu refinement hall. Fang Yuan wonders how many such halls Lang Ya Blessed Land holds.",
+      "chapters": [
+        486
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hall-and-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "char_fang_yuan",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "A wave of the land spirit’s hand brings a few thousand hairy men into the hall to work a given Immortal Gu recipe, with older hairy men inspecting half-done products and even suggesting recipe tweaks before the land spirit finishes the work himself. In that session he completes Second Aperture Gu while Divine Travel reforms for Fang Yuan through a wine-linked scheme during the same refinement.",
+      "chapters": [
+        486
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hall-and-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_recipe",
+        "gu_second_aperture_gu",
+        "gu_divine_travel"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/earth-grade-room-c-gu-refinement-hall.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/earth-grade-room-c-gu-refinement-hall/",
+      "chapters": [
+        486
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "hall",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

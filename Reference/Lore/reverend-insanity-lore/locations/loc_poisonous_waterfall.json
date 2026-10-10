@@ -1,0 +1,144 @@
+{
+  "id": "loc_poisonous_waterfall",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Poisonous Waterfall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Poisonous Waterfall is a Wu clan mortal poison-path resource point on the Yang clan border, where mortal settlers Yang clan planted overrun the Wu clan village and give Yang clan an open pretext to invade toward Corpse Mountain beyond it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1345,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1345
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_yang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A purple waterfall a hundred and eighty feet tall descends here like a mist; on a mountain close to it stands a mortal village Wu clan specially arranged. It is only an ordinary mortal resource point, producing some mortal poison path Gu, of no importance to Gu Immortals.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "This is the area where Yang clan and Wu clan border each other, and Yang clan had long since planted a group of its own mortals here to live and to cause conflict with Wu clan. A large group of Yang clan mortal Gu Masters charges into the mountain, their young leader raging that his parents, who only wanted a Gu worm to cure their poison, instead died there, and that Yang clan has endured Wu clan’s overbearing hold on the place long enough. Wu clan’s mortal Gu Masters, led by a rank four Gu Master, hold their final line of defense but are outnumbered and forced to flee through a secret cave, while the Yang clan Gu Immortals watching from above the clouds are pleased. Because these are only mortal conflicts, righteous path rules impose no consequence unless Gu Immortal seeds are killed, so the manufactured conflict gives Yang clan an open excuse to invade and occupy Wu clan’s territory here. Once this opening is made, Yang clan need only move forward to reach their destination beyond the waterfall, the truly valuable Corpse Mountain.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yang-clans-opening-raid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yang_clan",
+        "fac_gu_masters",
+        "sys_gu_worms",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/poisonous-waterfall/",
+      "chapters": [
+        1345
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "resource-point",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

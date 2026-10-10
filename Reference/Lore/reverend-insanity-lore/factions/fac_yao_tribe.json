@@ -1,0 +1,229 @@
+{
+  "id": "fac_yao_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yao Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains super force that pays Zombie Alliance for immortal zombies used in Yao Huang's healing Immortal Gu research.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 742,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    742,
+    749
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yao_huang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 749,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yao_yuan_ying",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yao_huang",
+      "count": 4
+    },
+    {
+      "target": "char_yao_yuan_ying",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_yin_liu_gong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "char_murong_jin_xiao",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 1
+    },
+    {
+      "target": "house_medicine_cottage",
+      "count": 1
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_meng_ji",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a Zombie Alliance mission meeting, Yin Liu Gong notes that the remuneration for the request is quite a sum. Yao Huang is one of the five great rank eight Gu Immortals in Northern Plains.",
+      "chapters": [
+        742
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mission-meeting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance",
+        "char_yin_liu_gong",
+        "char_yao_huang",
+        "sys_gu_immortal",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Yao Huang is a healing Gu Immortal of the righteous path with pure Huang Jin bloodline, first supreme elder of the super force Yao tribe, and holds the highest reputation among Northern Plains’ five rank eight Gu Immortals. Among those five he is a rank eight of the righteous path; Old Ancestor Xue Hu is the demonic path leader of Snowy Mountain; Prince Feng Xian is also righteous, so two of the five are righteous, one demonic, and two neutral. At the auction he thanks Yin Liu Gong that an immortal zombie has come to Yao tribe.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-supreme-elder",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline",
+        "char_old_ancestor_xue_hu",
+        "loc_snowy_mountain",
+        "char_prince_feng_xian"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yao-tribe/",
+      "chapters": [
+        742,
+        749
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

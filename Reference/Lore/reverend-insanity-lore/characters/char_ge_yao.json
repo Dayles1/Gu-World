@@ -1,0 +1,781 @@
+{
+  "id": "char_ge_yao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ge Yao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ge yao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гэ Яо",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ge Yao is the Ge tribe leader's daughter in Northern Plains, a water path rank three Gu Master who flees a Man tribe marriage into poison grassland and meets Fang Yuan under the Chang Shan Yin name.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 426,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    426,
+    427,
+    428,
+    429,
+    430,
+    434,
+    435,
+    436,
+    439,
+    442,
+    443,
+    447,
+    448,
+    449,
+    450,
+    458
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_ge_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 426,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_return_heart_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 427,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_spiral_water_arrow_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 427,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_water_dragon_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 427,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_fog_sparrow_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 428,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_water_armor_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 428,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_water_trace_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 428,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_ge_tribe",
+      "count": 4
+    },
+    {
+      "target": "gu_water_armor_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_water_dragon_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "gu_return_heart_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_spiral_water_arrow_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_fog_sparrow_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_water_trace_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_man_duo",
+      "count": 3
+    },
+    {
+      "target": "evt_arc_northern_plains_imperial_court",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 2
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_ha_tu_gu",
+      "count": 2
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 2
+    },
+    {
+      "target": "loc_hong_yan_valley",
+      "count": 2
+    },
+    {
+      "target": "char_man_tu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_poison_beard_wolf",
+      "count": 1
+    },
+    {
+      "target": "sys_cross_region_rank_suppression",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_chang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_burial_toad",
+      "count": 1
+    },
+    {
+      "target": "loc_poison_grassland",
+      "count": 1
+    },
+    {
+      "target": "gu_ghost_cry_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_ghost_face_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_worldly_wave_trace",
+      "count": 1
+    },
+    {
+      "target": "gu_eagle_wings_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_cloud_gu",
+      "count": 1
+    },
+    {
+      "target": "char_dong_po_kong",
+      "count": 1
+    },
+    {
+      "target": "char_song_qing_yin",
+      "count": 1
+    },
+    {
+      "target": "char_wu_ye",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_chang_shan_yin_against_ha_tu_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_battle_bone_wheel_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_soul_seizure",
+      "count": 1
+    },
+    {
+      "target": "gu_snow_wash_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_shi_wu",
+      "count": 1
+    },
+    {
+      "target": "gu_chase_smoke_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_hints_and_clues_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "She first appears in poison grassland on the night Fang Yuan steps into Northern Plains, running from a poison beard wolf pack with her last white silver primeval essence already spent. She names herself a Ge tribe member, daughter of the Ge tribe leader, and welcomes the stranger who saved her as a tribe benefactor.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_northern_plains",
+        "fac_ge_tribe"
+      ]
+    },
+    {
+      "text": "That opening stretch is the start of the Northern Plains and Imperial Court arc.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_arc_northern_plains_imperial_court"
+      ]
+    },
+    {
+      "text": "She is a young girl with a beautiful face. She runs in small red shoes after her horse dies.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Her dark pupils dart around, and her body is delicate.",
+      "chapters": [
+        427
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "By the fire her beautiful face shines with a long robe exclusive to northern plains and beautiful accessories.",
+      "chapters": [
+        434
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ge Yao tells Fang Yuan she fled because Man Duo, third son of Man tribe’s leader, sought to marry her. She calls him weak and sickly, only rank two, and without heroic spirit, while Man tribe’s betrothal gifts and a promised fertile grassland pushed her father to accept. She calls herself the flower of Ge tribe and invites the stranger to snatch her as a bride or marry into Ge tribe by grassland custom.",
+      "chapters": [
+        427
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origins-and-the-man-tribe-marriage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_man_duo",
+        "fac_man_tribe"
+      ]
+    },
+    {
+      "text": "Later scenes name Ge Guang as her brother, a northern plains native who is angry that she fled the wedding.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "origins-and-the-man-tribe-marriage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_guang"
+      ]
+    },
+    {
+      "text": "Fang Yuan uses the cover name Chang Shan Yin. Ge Yao insists on going deeper into poison grassland with him, offering detoxification Gu and return heart Gu to find the way back.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "poison-grassland-with-chang-shan-yin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin"
+      ]
+    },
+    {
+      "text": "The text states she is a water path Gu Master at rank three middle stage, and lists her kit as fog sparrow Gu for investigation, three claw water dragon Gu and spiral water arrow Gu for attack, water armor Gu for defense, water trace Gu for movement, spring rain Gu for healing, plus cleansing Gu and return heart Gu.",
+      "chapters": [
+        428
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "poison-grassland-with-chang-shan-yin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "gu_water_dragon_gu",
+        "gu_spiral_water_arrow_gu",
+        "gu_water_armor_gu"
+      ]
+    },
+    {
+      "text": "She crosses a sea of ghost face sunflowers with him, then helps shoot shadow crows while he carries her over earth spike rat ground, and later fights Ha Tu Gu’s battle bone wheel on the old poison grassland battlefield.",
+      "chapters": [
+        429
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "poison-grassland-with-chang-shan-yin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ha_tu_gu"
+      ]
+    },
+    {
+      "text": "Along the way she grows attached to the man she believes is Wolf King Chang Shan Yin. Near the edge of poison grassland she asks him to take her as wife, and he sets a condition that she kill a thousand beast wolf king alone.",
+      "chapters": [
+        435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "poison-grassland-with-chang-shan-yin",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She kills the thousand beast wolf king while gravely injured, then embraces Fang Yuan when he pretends to accept her. He stabs her through the chest, answers her with the Ren Zu rockman story, and waits until she dies. She leaves her Gu for him and asks for a final hug; he does not move.",
+      "chapters": [
+        435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ren_zu"
+      ]
+    },
+    {
+      "text": "Three days later the text confirms the killing was planned from the moment she saw Fixed Immortal Travel, that wolves ate her corpse, and that burial soul toad sent her soul to be crushed on Dang Hun Mountain.",
+      "chapters": [
+        436
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fixed_immortal_travel",
+        "loc_dang_hun_mountain"
+      ]
+    },
+    {
+      "text": "Fang Yuan never takes the Gu from her aperture, because the water path set had been marked by Ge tribe’s rank five hints and clues Gu and would have exposed him.",
+      "chapters": [
+        448
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A Ge tribe search team later finds torn clothes in poison grassland and reports that poison beard wolves killed her.",
+      "chapters": [
+        442
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A month after the discovery, Ge tribesmen mourn her as kind-hearted and the tribe beauty despite a troublesome personality, the old Ge tribe leader falls ill with grief, and Man Duo still demands she be handed over, refusing to believe she is dead.",
+      "chapters": [
+        443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At a later moonlight banquet Man Duo activates chase smoke Gu, which he says he used on Ge Yao when he first saw her. The smoke stains Fang Yuan and several of his poison beard wolves, and he claims he never met her while offering the wolves as the trail. Ge Guang then presses for hints and clues Gu as a further test. The marked Gu show no holder within range, Ge Guang kneels to apologize, and Ge tribe leader gifts that rank five Gu to Fang Yuan as apology.",
+      "chapters": [
+        447
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Man Tu then treats her death as settled, while Man Duo privately mourns the lost marriage as a lost path to Ge tribe power.",
+      "chapters": [
+        448
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_man_tu"
+      ]
+    },
+    {
+      "text": "Ge tribe had meant the marriage as a trade for Hong Yan valley survival through the ten year blizzard; after she escaped, Man tribe used her as an excuse to pressure the tribe, and her death removes that excuse while leaving Man tribe still the strongest of the three nearby forces. Fang Yuan’s own reading treats her as a sacrifice in that tribal contest, and guesses her escape from a tightly secured camp may have been arranged as a probe that then went wrong.",
+      "chapters": [
+        449
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hong_yan_valley"
+      ]
+    },
+    {
+      "text": "Ge tribe later still counts her death among the costs of the Man tribe struggle, alongside an elder Man Duo killed in challenge.",
+      "chapters": [
+        450
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Man tribe’s later failure against Ge tribe, Man Tu names the lost “excuse called Ge Yao” among the reasons he will not keep escalating.",
+      "chapters": [
+        458
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation writes the name as Ge Yao. No Chinese characters for her personal name appear in the English chapter text used here.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/ge-yao.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ge-yao/",
+      "chapters": [
+        426,
+        427,
+        428,
+        429,
+        430,
+        434,
+        435,
+        436,
+        439,
+        442,
+        443,
+        447,
+        448,
+        449,
+        450,
+        458
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 427",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Ge Tribe as of ch. 426",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 427,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_fog_sparrow_gu",
+      "role": "unspecified",
+      "recorded_chapter": 428,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_return_heart_gu",
+      "role": "unspecified",
+      "recorded_chapter": 427,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_spiral_water_arrow_gu",
+      "role": "user",
+      "recorded_chapter": 427,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_water_armor_gu",
+      "role": "user",
+      "recorded_chapter": 428,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_water_dragon_gu",
+      "role": "user",
+      "recorded_chapter": 427,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_water_trace_gu",
+      "role": "user",
+      "recorded_chapter": 428,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

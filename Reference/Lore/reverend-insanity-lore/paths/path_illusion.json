@@ -1,0 +1,139 @@
+{
+  "id": "path_illusion",
+  "entity_type": "path",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Illusion Path",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The illusion path is a minor Gu path whose foundation supports illusion-based Immortal Gu Houses and scenery.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 963,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    963,
+    1323
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_yu_mu_chun",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 1
+    },
+    {
+      "target": "house_illusion_garden",
+      "count": 1
+    },
+    {
+      "target": "char_tu_shi_cheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The novel names illusion path as a cultivation path, though it is treated as minor beside the mainstream paths.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Heavenly Lotus Sect’s Immortal Gu House Illusion Garden is built on the foundation of illusion path. Yu Mu Chun says Illusion Demon Immortal Huang Xiao created it over three hundred years earlier. Sword light shatters layers of illusions to reveal the true scene, then the illusions cover the scenery again.",
+      "chapters": [
+        963
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gu-house-example",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_lotus_sect",
+        "sys_immortal_gu_house",
+        "house_illusion_garden",
+        "char_yu_mu_chun"
+      ]
+    },
+    {
+      "text": "Tu Shi Cheng lists mainstream Gu Master paths of the present era, then sets aside minor paths such as enchantment path and illusion path.",
+      "chapters": [
+        1323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "minor-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tu_shi_cheng",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/paths/illusion.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/paths/illusion/",
+      "chapters": [
+        963,
+        1323
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Roundel": {
+      "text": "Illusion path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

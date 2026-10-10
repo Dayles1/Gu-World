@@ -1,0 +1,115 @@
+{
+  "id": "move_thousand_li_eye",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Thousand Li Eye",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Thousand Li Eye is an immortal killer move Fang Yuan names while testing hundred li eye.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 733,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    733
+  ],
+  "relations": [
+    {
+      "type": "derived_from",
+      "target": "move_hundred_li_eye",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_hundred_li_eye",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On Dang Hun Mountain, after he activates hundred li eye, Fang Yuan notes that hundred li eye is the base for thousand li eye, and that it requires corresponding Immortal Gu to be used.",
+      "chapters": [
+        733
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dang_hun_mountain",
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/thousand-li-eye/",
+      "chapters": [
+        733
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Derived from": {
+      "text": "Hundred Li Eye",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

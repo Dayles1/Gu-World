@@ -1,0 +1,164 @@
+{
+  "id": "house_book_house",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Book House",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An exceptional mortal Gu House shaped as a pine tree, left with a peak-level Gu Master inheritance that Li Xiao Bai stores and later erects as a tree house.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2008,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2008,
+    2023
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "char_li_xiao_bai",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2008,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_li_xiao_bai",
+      "count": 4
+    },
+    {
+      "target": "char_su_qi_han",
+      "count": 2
+    },
+    {
+      "target": "char_hua_song",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "gu_poem_wall",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The pine tree itself is the Gu House. Later, erected in a courtyard, the book house is a mortal Gu House in the form of a tree house covered with green leaves and branches.",
+      "chapters": [
+        2008
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_house",
+        "sys_mortal_gu_house"
+      ]
+    },
+    {
+      "text": "Information reaches Li Xiao Bai’s mind that the book house inheritance shall be left to the fated. The inheritance is a peak level Gu Master inheritance with many Gu worms, and the pine tree itself is an exceptional mortal Gu House named Book House. He stores Book House and returns to the capital city.",
+      "chapters": [
+        2008
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_xiao_bai",
+        "sys_gu_master",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "A book house stands in a guest room courtyard. Li Xiao Bai sits cross-legged inside it. After obtaining the Book House inheritance he shares it with Su Qi Han, and the two spend almost every day in the book house cultivating, researching, and communicating.",
+      "chapters": [
+        2023
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "courtyard-study",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_su_qi_han"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu-houses/book-house.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/book-house/",
+      "chapters": [
+        2008,
+        2023
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Li Xiao Bai (holder)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

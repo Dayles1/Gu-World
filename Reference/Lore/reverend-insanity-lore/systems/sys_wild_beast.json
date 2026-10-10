@@ -1,0 +1,170 @@
+{
+  "id": "sys_wild_beast",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wild Beast",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wild beasts are ordinary fierce animals of the Gu world. They share living space and danger with humans long before higher beast tiers are named.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 5,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    5,
+    7,
+    29,
+    47
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_mutated_beast",
+      "count": 2
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_hope_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_beast",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the Hope Gu legend, when the world is still savage wilderness, wild beasts walk the earth among which Ren Zu first appears. Predicament is a group of wild beasts that hunt him; he lacks rock-hard flesh and a wild beast’s teeth and claws, so he sits at the bottom of nature’s food chain until Gu aid him.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_hope_gu",
+        "char_ren_zu"
+      ]
+    },
+    {
+      "text": "Academy teaching places Gu everywhere around people, including on the bodies of wild beasts.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Masters and mortals alike fight to survive, sometimes against a scary wild beast, sometimes against weather or other Gu Masters over resources.",
+      "chapters": [
+        29
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "On mountain trails, wild beasts and Gu worm attacks can kill travelers who slip or are caught off guard.",
+      "chapters": [
+        47
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Higher steps on the fierce-beast ladder, including Mutated Beast and Desolate Beast, are covered on those pages.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mutated_beast",
+        "sys_desolate_beast"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/wild-beast/",
+      "chapters": [
+        5,
+        7,
+        29,
+        47
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Beast tier",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

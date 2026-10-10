@@ -1,0 +1,151 @@
+{
+  "id": "loc_poetic_emotion_sea_area",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Poetic Emotion Sea Area",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Song Yi Shi's poetic emotion sea area"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An Eastern Sea special sea area owned by Song clan Gu Immortal Song Yi Shi, named above Shark Demon's sea area on the regional ranking.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 892,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    892
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shark_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes the sea area’s look beyond Shark Demon’s ranking praise.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shark_demon"
+      ]
+    },
+    {
+      "text": "Shark Demon tells Fang Yuan and Tai Bai Yun Sheng that his own sea area ranks only forty-sixth among Eastern Sea’s sea areas. Above it he names the elegant splendorous sea area, the flourishing bumpy sea area, and Song clan Gu Immortal Song Yi Shi’s poetic emotion sea area.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_tai_bai_yun_sheng",
+        "reg_eastern_sea",
+        "fac_song_clan",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/poetic-emotion-sea-area.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/poetic-emotion-sea-area/",
+      "chapters": [
+        892
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "sea-area",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

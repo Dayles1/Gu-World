@@ -1,0 +1,202 @@
+{
+  "id": "char_tang_yang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tang Yang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "tang yang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Тан Ян",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tang Yang is Tang clan's first supreme elder during the crisis over Tang Fang Ming's dream realm exploration.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 775,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    775
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_tang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 775,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_tang_clan",
+      "count": 5
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_tribe",
+      "count": 2
+    },
+    {
+      "target": "gu_emotion_gu",
+      "count": 2
+    },
+    {
+      "target": "char_tang_fang_ming",
+      "count": 1
+    },
+    {
+      "target": "char_white_sea_shatuo",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "As Tang clan’s first supreme elder, he enters the secret room with the clan Gu Immortals and speaks heavily to Tang Miao about the heavy loss after they borrowed rank seven emotion Gu from Xiao tribe for dream realm exploration.",
+      "chapters": [
+        775
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tang_clan",
+        "sys_gu_immortal",
+        "gu_emotion_gu",
+        "fac_xiao_tribe"
+      ]
+    },
+    {
+      "text": "He tells the room that Tang clan contacted the guts Gu seller and promised huge profits with no response, and that the guts Gu still preserving Tang Fang Ming’s life are the last of the market stock bought at great cost, with supply now dried out. He later sighs deeply while gazing at Tang Miao when she refuses to accept watching her brother die.",
+      "chapters": [
+        775
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "guts-gu-shortage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_guts_gu",
+        "char_tang_fang_ming"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/tang-yang/",
+      "chapters": [
+        775
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Tang Clan as of ch. 775",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

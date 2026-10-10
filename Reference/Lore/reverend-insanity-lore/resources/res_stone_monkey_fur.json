@@ -1,0 +1,130 @@
+{
+  "id": "res_stone_monkey_fur",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Stone monkey fur",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An ancient Gu refinement material, long extinct, and the rarest ingredient in the group strength Gu recipe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 679,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    679,
+    682
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_group_strength_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_group_strength_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shi_lei",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the group strength Gu recipe, the rarest material is stone monkey fur. Fairy Li Shan sells Fang Yuan the ancient recipe because that material has recently reappeared in treasure yellow heaven, produced in Immortal Monkey King Shi Lei’s blessed land after being extinct for countless years.",
+      "chapters": [
+        679
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_group_strength_gu",
+        "char_fairy_li_shan",
+        "char_fang_yuan",
+        "char_shi_lei"
+      ]
+    },
+    {
+      "text": "Fang Yuan buys five hundred stone monkey fur from Shi Lei’s store in treasure yellow heaven and uses them to refine group strength Gu. After spending the full batch with other refinement materials, he obtains forty-five rank five group strength Gu.",
+      "chapters": [
+        682
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-spend",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/stone-monkey-fur.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/stone-monkey-fur/",
+      "chapters": [
+        679,
+        682
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Refines into": {
+      "text": "Group Strength Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

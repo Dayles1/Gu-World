@@ -1,0 +1,103 @@
+{
+  "id": "res_ruyi_fungus",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ruyi fungus",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ruyi fungus is a resource Northern Plains Zombie Alliance gathers on contested ground shared with Liu tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 742,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    742
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_granny_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a Northern Plains Zombie Alliance meeting, a mission is issued to gather ruyi fungus. The collection area lies between Zombie Alliance and Liu tribe. Each year when the fungus ripens, the two forces split the harvest, but Liu tribe’s greater power lets it take advantage, so the mission needs an immortal zombie of high cultivation who can hold the ground without becoming too overbearing. Granny Yuan takes the mission.",
+      "chapters": [
+        742
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yearly-collection",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "fac_zombie_alliance",
+        "fac_liu_tribe",
+        "char_granny_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/ruyi-fungus.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/ruyi-fungus/",
+      "chapters": [
+        742
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Between Zombie Alliance and Liu tribe",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

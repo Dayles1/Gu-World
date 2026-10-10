@@ -1,0 +1,203 @@
+{
+  "id": "loc_mirror_lake",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mirror Lake",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A named lake in Northern Plains where Ma tribe met Song tribe alliance army during the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 520,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    520,
+    523,
+    525
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 2
+    },
+    {
+      "target": "fac_song_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_song_tribe_alliance_army",
+      "count": 2
+    },
+    {
+      "target": "char_cheng_hu",
+      "count": 2
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 2
+    },
+    {
+      "target": "char_song_qing_yin",
+      "count": 2
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_fei_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_su_yi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Ma tribe leaves Tian Chuan and ventures west, it arrives at mirror lake opposite Song tribe alliance army.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "loc_tian_chuan",
+        "fac_song_tribe_alliance_army"
+      ]
+    },
+    {
+      "text": "When Ma tribe arrives, it finds Song tribe alliance army as an equal force and begins building its first line of defense.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "armies-at-the-lake",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Both sides erect three to four defense lines before the confrontation starts in earnest. From Ma tribe’s main tent, Ma Shang Feng watches Song tribe’s dense battle formation while his own force is stronger, yet victory still does not come easily. Opening challenges send rank four experts such as Cheng Hu and Fei Sheng into single combat rings between the lines, with Cheng Hu’s tiger transformation killing Song tribe’s Su Yi and giving Ma tribe the first win of that day.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "armies-at-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_shang_feng",
+        "fac_song_tribe",
+        "char_cheng_hu",
+        "char_fei_sheng",
+        "char_su_yi"
+      ]
+    },
+    {
+      "text": "Ma tribe breaks through two of Song tribe’s defense lines in a row. Song tribe alliance leader Song Qing Yin leads a counterattack and ambush that forces Ma tribe to give up a defense line, then Ma tribe enslavement master Ma Zun surrounds and kills Song Qing Yin with his pegasus group. Song tribe army collapses after internal discord, and Ma tribe annexes most of the tribes while some remnants flee. Song Qing Yin is a rank five initial stage Water Fairy, one of the few flying masters of northern plains, and her death becomes a stepping stone for Ma Zun’s fame among northern plains enslavement path masters.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outcome-of-the-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_qing_yin",
+        "char_ma_zun"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/mirror-lake/",
+      "chapters": [
+        520,
+        523,
+        525
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

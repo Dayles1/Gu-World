@@ -1,0 +1,241 @@
+{
+  "id": "gu_remnant_life_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Remnant Life Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Remnant Life Gu is a rank five expendable Gu. After death, if the Gu Master's body stays intact, it can slowly recover and resurrect the master.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 385,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    385,
+    966
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_chou_jiu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 385,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_chou_jiu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_yan_jun",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/remnant-life-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/remnant-life-gu/",
+      "chapters": [
+        385,
+        966
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [
+      "expenditure"
+    ],
+    "effect_type_raw": "Expenditure",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is rank five and expendable. Resurrection needs the master’s body intact after death, then slow recovery over time.",
+        "chapters": [
+          385
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Chou Jiu had Remnant Life Gu, and as long as his body was mostly intact he could resurrect. After Yan Jun killed him, he secretly resurrected while pretending to be dead and drew the righteous path into a trap.",
+        "chapters": [
+          966
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "yi-tian-mountain-battle",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_yan_jun"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_chou_jiu",
+      "role": "unspecified",
+      "recorded_chapter": 385,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan names it when he reviews Chou Jiu’s corpse after the killer ghost doctor’s staged suicide in the blessed land.",
+        "chapters": [
+          385
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "char_chou_jiu"
+        ]
+      },
+      {
+        "text": "Chou Jiu relies on it as a hidden resurrection. Fang Yuan’s previous-life memory already places a return from death after Chou Jiu’s throat was cut during the Yi Tian Mountain battle, startling both righteous and demonic path. In the blessed land, heavenly power suppresses the Gu’s law fragment in Chou Jiu’s body, so it cannot activate until that suppression weakens as the blessed land crumbles. Fang Yuan then destroys the corpse into minced meat and ashes so that path is closed.",
+        "chapters": [
+          385
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "prevented-resurrection",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_yi_tian_mountain"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Expenditure",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

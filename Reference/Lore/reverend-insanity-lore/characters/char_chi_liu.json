@@ -1,0 +1,226 @@
+{
+  "id": "char_chi_liu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chi Liu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chi liu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чи Лю",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chi Liu is a rank six Chi clan Gu Immortal who carries Chi Shang's formation path answer to Wu Yi Hai.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1328,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1328,
+    1329
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chi_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1328,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chi_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shang",
+      "count": 2
+    },
+    {
+      "target": "char_chi_qu_you",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_luo_clan",
+      "count": 1
+    },
+    {
+      "target": "char_chi_gui",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Chi Liu, a rank six Gu Immortal of Chi clan, reminds Chi Shang that the evening banquet Luo clan invited him to is about to start, only for Chi Shang to refuse and keep working on Fang Yuan’s formation path problem. Chi Shang later summons him to carry the solved problem to Wu Yi Hai, and Chi Liu, who knows first supreme elder Chi Qu You has said more than once that Chi Shang will inherit his legacy, agrees at once.",
+      "chapters": [
+        1328
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_chi_clan",
+        "char_chi_shang",
+        "fac_luo_clan",
+        "char_fang_yuan",
+        "char_wu_yi_hai",
+        "char_chi_qu_you"
+      ]
+    },
+    {
+      "text": "When Chi Shang wants to fall out publicly with Fang Yuan, Chi Liu objects that Chi clan has stayed neutral and is closely collaborating with Wu clan on the dream realm business, so a sudden falling out would hurt that arrangement. Unable to talk him down and unwilling to act on the order himself, he proposes handing the decision to Lord Chi Gui, the leader stationed there, and Chi Shang agrees.",
+      "chapters": [
+        1329
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dream-realm-business-warning",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan",
+        "char_chi_gui"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chi-liu/",
+      "chapters": [
+        1328,
+        1329
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 1328",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Chi Clan as of ch. 1328",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 1328,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

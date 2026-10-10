@@ -1,0 +1,153 @@
+{
+  "id": "res_blade_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blade qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blade qi is a qi path immortal material stored to power unlimited qi sea and related qi sea methods.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1934,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1934,
+    2052
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "char_qi_xiang",
+      "count": 1
+    },
+    {
+      "target": "res_dawn_qi",
+      "count": 1
+    },
+    {
+      "target": "res_death_qi",
+      "count": 1
+    },
+    {
+      "target": "res_dusk_qi",
+      "count": 1
+    },
+    {
+      "target": "res_life_qi",
+      "count": 1
+    },
+    {
+      "target": "res_sword_qi",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Unlimited qi sea grows stronger by gathering many kinds of qi. After Qi Xiang created the move, he collected all sorts of qi into the immortal aperture, including blade qi among life qi, death qi, sword qi, dusk qi, dawn qi, and others. Unused stored qi dissipates over time. Dusk qi and dawn qi from that stock are covered on dusk qi and dawn qi.",
+      "chapters": [
+        1934
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "unlimited-qi-sea-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_xiang",
+        "res_dusk_qi",
+        "res_dawn_qi"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s modified unlimited qi sea can expend qi path immortal materials to raise its power. It can use all kinds of qi in the world, including blade qi; the more qi path immortal materials stored in it, the stronger the move.",
+      "chapters": [
+        2052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-material-fuel",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/blade-qi.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/blade-qi/",
+      "chapters": [
+        1934,
+        2052
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

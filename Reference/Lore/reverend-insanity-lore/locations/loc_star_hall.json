@@ -1,0 +1,168 @@
+{
+  "id": "loc_star_hall",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Star Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A resplendent hall formed from converging starlight on a mountain peak inside Starry Sky grotto-heaven.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 716,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    716,
+    718
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "loc_starry_sky_grotto_heaven",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_shi_lei",
+      "count": 1
+    },
+    {
+      "target": "char_star_lord_wan_xiang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When starlight converges on a mountain peak, a dazzling blue radiance gives way to a resplendent giant hall, exquisite and gorgeous. Inside are six large wells of red, brown, yellow, blue, purple, and white water that glitter and emit slight radiance.",
+      "chapters": [
+        716
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "An eighth star hall later forms floating in the air, exquisite, with majestic beauty above the mountain halls.",
+      "chapters": [
+        718
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan and Hei Lou Lan enter Starry Sky grotto-heaven’s star hall and find six large wells of red, brown, yellow, blue, purple, and white water matching six star shadows in the sky. Fang Yuan finds the layout familiar from prior-life grotto-heaven ruins after an astronomical change fills the green sky with starlight. Star Lord Wan Xiang tells Immortal Monkey King Shi Lei that seven star halls have already appeared and that enough desolate-beast blood must seep into the ground before an eighth opens.",
+      "chapters": [
+        716
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_hei_lou_lan",
+        "loc_starry_sky_grotto_heaven",
+        "char_star_lord_wan_xiang",
+        "char_shi_lei"
+      ]
+    },
+    {
+      "text": "A floating eighth star hall appears after the other seven form; Wan Xiang says the seven exist only about fifteen minutes and the eighth vanishes with them. Fang Yuan and Hei Lou Lan confirm the six wells are passages between seven isolated spaces of the grotto-heaven.",
+      "chapters": [
+        718
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "eighth-hall-and-wells",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/star-hall.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/star-hall/",
+      "chapters": [
+        716,
+        718
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "hall",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

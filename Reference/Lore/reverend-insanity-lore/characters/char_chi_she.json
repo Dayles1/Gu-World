@@ -1,0 +1,352 @@
+{
+  "id": "char_chi_she",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Yue Chi She",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gu yue chi she",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гу Юэ Чи Шэ",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chi She is the male reconnaissance Gu Master at the front of Chi Shan's group on Qing Mao Mountain, using a forked snake tongue to sense heat during a small beast tide.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 93,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    93,
+    94,
+    133
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 93,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_snake_communication_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 133,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_snake_communication_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 2
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_mo_yan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_family",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Chi Shan’s group changes formation for a beast tide in the mountain forest, Fang Yuan and Gu Yue Chi Cheng are placed in the middle. In front of them is a male Gu Master called Chi She. He is the reconnaissance Gu Master of the group. He gives out hissing noises and from time to time sticks his tongue out into the air.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chi_shan",
+        "char_fang_yuan",
+        "char_gu_yue_chi_cheng",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He reports three medium-sized animals suspected to be wild deer, then a group suspected to be turtleback apes, then urgently a middle-sized creature suspected to be a white tiger that has found them and is approaching. Without that warning the group might have been caught unprepared. After Chi Shan kills the tiger, Chi She takes the lead again. He later finds the sickly snake group.",
+      "chapters": [
+        93
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Half a second after that, he reports that the sickly snake group is contesting a large-sized wild beast, then that Jiao San’s red lava python is fighting a wild boar king, his snake tongue continuing to stretch and shrink as he speaks.",
+      "chapters": [
+        94
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_jiao_san"
+      ]
+    },
+    {
+      "text": "Fang Yuan, watching, treats the other group members as rank two Gu Masters like himself.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "He is a male Gu Master. He hisses and sticks his tongue out into the air. That tongue has a small divide, becoming the bright red forked tongue of a snake.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His snake tongue stretches and shrinks again while he scouts.",
+      "chapters": [
+        94
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan thinks Chi She is probably using Snake Tongue Gu, a rank two Gu worm that can sense heat temperatures. Fang Yuan lists three flaws: the perception radius is small, it is easily interfered with, and it cannot detect cold-blooded creatures. Even so, Fang Yuan judges it better than having no detection.",
+      "chapters": [
+        93
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heat-sensing-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "During the wolf tide, Fang Yuan avoids luring Chi Shan’s group because it has Gu Yue Chi She, who possesses Snake Communication Gu and can rely on heat to detect living beings, so stealth has no use against him.",
+      "chapters": [
+        133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-scout",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "First sight names him Chi She. The fan translation writes him as Gu Yue Chi She. Snake Tongue Gu is Fang Yuan’s own label for the heat-sensing worm. The fan translation writes Snake Communication Gu for the same heat detection. Both labels sit on Chi She’s scout work. No Chinese characters for the name appear in the English chapter files used here.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_snake_communication_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/chi-she.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chi-she/",
+      "chapters": [
+        93,
+        94,
+        133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 93",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 93",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 93,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_snake_communication_gu",
+      "role": "user",
+      "recorded_chapter": 133,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

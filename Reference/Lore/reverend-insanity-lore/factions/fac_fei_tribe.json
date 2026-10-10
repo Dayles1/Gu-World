@@ -1,0 +1,225 @@
+{
+  "id": "fac_fei_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fei Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A large scale Northern Plains Huang Jin family tribe occupying warm pond valley.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 488,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    488,
+    489,
+    520
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fei_qing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 488,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fei_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fei_qing",
+      "count": 3
+    },
+    {
+      "target": "char_fei_sheng",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 2
+    },
+    {
+      "target": "loc_warm_pond_valley",
+      "count": 2
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 2
+    },
+    {
+      "target": "char_fei_cai",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_search_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swift_ghost_cloud_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_cheng_hu",
+      "count": 1
+    },
+    {
+      "target": "move_destined_birth_through_luck",
+      "count": 1
+    },
+    {
+      "target": "char_yi_qi_zi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During Fei tribe’s internal disorder at warm pond valley, Ma tribe brings a huge army and starts war without notice. The invasion was planned in advance and takes advantage of that disorder as an ambush. Fei tribe holds the valley’s easy-to-defend ground but cannot resist Ma tribe’s soldiers, and the large scale Huang Jin family force occupying the valley is exterminated. On a slope afterward, Ma higher-ups watch the ruined Fei tribe camp while goods and captives are taken away; an elder congratulates young tribe leader Ma Ying Jie for driving discord inside Fei tribe so Ma tribe could capture the valley and swallow Fei tribe.",
+      "chapters": [
+        488
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ambush-and-destruction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_warm_pond_valley",
+        "fac_ma_tribe",
+        "fac_huang_jin_bloodline",
+        "char_ma_ying_jie"
+      ]
+    },
+    {
+      "text": "Ma Ying Jie tells Ma higher-ups that annihilating Fei tribe will help their progress in Tian Chuan’s heroes assembly. He later frames swallowing Fei tribe as only the first step before stronger opponents on the road to Imperial Court.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heroes-assembly-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tian_chuan",
+        "loc_heroes_assembly",
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "Since Ma tribe unleashed a sneak attack and exterminated Fei tribe, their largest obstacle in the heroes assembly had been removed.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heroes-assembly-obstacle",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/fei-tribe/",
+      "chapters": [
+        488,
+        489,
+        520
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

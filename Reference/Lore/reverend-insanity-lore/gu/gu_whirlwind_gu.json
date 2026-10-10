@@ -1,0 +1,333 @@
+{
+  "id": "gu_whirlwind_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Whirlwind Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Whirlwind Gu is a fusion material for Moonwhirl Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 106,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    106,
+    109,
+    167,
+    299
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_bai_ning_bing",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 299,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_ning_bing",
+      "count": 3
+    },
+    {
+      "target": "gu_moonwhirl_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_fierce_wind_gu",
+      "count": 3
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 2
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_ice_blade_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_revolving_gu",
+      "count": 2
+    },
+    {
+      "target": "move_ice_blade_storm",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "sys_moonblade",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_scar_rock_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swirl_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [
+    {
+      "topic": "Ice blade storm naming",
+      "positions": [
+        {
+          "position": "Iceblade storm is formed by Iceblade Gu, Swirl Gu, and Fierce Wind Gu.",
+          "support": "Chapter 167, narration during the Qing Mao Mountain chase.",
+          "chapters": [
+            167
+          ]
+        },
+        {
+          "position": "Ice blade storm was created using revolving Gu paired with whirlwind Gu and ice blade Gu.",
+          "support": "Chapter 299, Bai Ning Bing recalling the killer move in Shang Clan City.",
+          "chapters": [
+            299
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/whirlwind-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/whirlwind-gu/",
+      "chapters": [
+        106,
+        109,
+        167,
+        299
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Bai Ning Bing’s self created ice blade storm uses revolving Gu paired with whirlwind Gu and ice blade Gu, forming an icy tornado. That version can bully rank two, but is substandard in the rank three realm.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ice-blade-storm-naming",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing",
+          "move_ice_blade_storm",
+          "gu_revolving_gu"
+        ]
+      },
+      {
+        "text": "Sources conflict:",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "ice-blade-storm-naming",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The question is open.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "ice-blade-storm-naming",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "The stated common route uses Moonlight Gu with Whirlwind Gu. The product is Moonwhirl Gu: the moonblade turns from blue to green, and its attack trajectory becomes curved. Gu Yue Qing Shu took that path.",
+        "chapters": [
+          106
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "moonline-fusion",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_qing_shu"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_bai_ning_bing",
+      "role": "user",
+      "recorded_chapter": 299,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan names Whirlwind Gu while listing common advancement routes for Moonlight Gu: fuse Moonlight Gu with Whirlwind Gu to create Moonwhirl Gu.",
+        "chapters": [
+          106
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "gu_moonlight_gu",
+          "gu_moonwhirl_gu"
+        ]
+      },
+      {
+        "text": "When Jia Fu’s caravan sells Gu inside the three star cave tree, Fang Yuan sees Whirlwind Gu on a counter with Jade Skin Gu, Scar Stone Gu, and other worms. Those Gu are ones compatible with Moonlight Gu and able to fuse into higher rank Gu.",
+        "chapters": [
+          109
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "caravan-stock",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_jia_fu",
+          "gu_jade_skin_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

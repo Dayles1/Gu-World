@@ -1,0 +1,120 @@
+{
+  "id": "res_tooth_gap_water",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tooth gap water",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tooth gap water is a luck path immortal material that looks like spring water and sharply reduces luck when drunk.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2073,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2073
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "house_cooking_luck_pot",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While sorting immortal materials from variant human Gu Immortals, Fang Yuan finds luck path immortal materials at an astonishing scale. Tooth gap water is another luck path material among that haul. It looks no different from ordinary spring water, but if drunk it sticks in the gaps between teeth, is extremely unpleasant, and sharply reduces the Gu Immortal’s luck. He judges such luck path immortal materials highly valuable for advancing luck path Immortal Gu beyond Cooking Luck Pot.",
+      "chapters": [
+        2073
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "variant-human-haul",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_fang_yuan",
+        "sys_immortal_gu",
+        "house_cooking_luck_pot"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/tooth-gap-water/",
+      "chapters": [
+        2073
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "id": "res_regret_water_rock",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Regret water rock",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Regret water rock is a rank seven immortal material used with dark soft silk when building coiling thread caves.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1316,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1316,
+    1327,
+    1330,
+    2133
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Constructing coiling thread caves requires a Gu formation, rank six immortal material dark soft silk, and rank seven immortal material regret water rocks. Fang Yuan names both materials among what he must gather once he has funds for a large expansion of that resource.",
+      "chapters": [
+        1316
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "coiling-thread-caves",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "By Dong Fang tribe’s method, coiling thread caves need a Gu formation plus dark soft silk and regret water rock so ordinary spiders can transform into regretful spiders. Fang Yuan gathers dark soft silk and regret water rocks, paying a large amount of immortal essence stones and other immortal materials for them, before he attempts the Gu formation itself.",
+      "chapters": [
+        1327
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dong-fang-method",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_dong_fang_tribe"
+      ]
+    },
+    {
+      "text": "Working from the same coiling thread cave formation, the one that needs dark soft silk and regret water rock together,",
+      "chapters": [
+        1327
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "eightfold-modification-fails",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan has Chi Shang attempt a modification meant to multiply the regretful spider yield eightfold, but the deduction proves unsolvable and the plan is abandoned.",
+      "chapters": [
+        1330
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "eightfold-modification-fails",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chi_shang"
+      ]
+    },
+    {
+      "text": "Regret water rock is named among a large stock of earth path immortal materials packed into an immortal aperture when preparing for tribulation.",
+      "chapters": [
+        2133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-stock",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/regret-water-rock/",
+      "chapters": [
+        1316,
+        1327,
+        1330,
+        2133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Earth Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

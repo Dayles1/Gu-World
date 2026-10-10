@@ -1,0 +1,483 @@
+{
+  "id": "char_uncle_and_aunt",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Uncle and Aunt",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Uncle and Aunt are the Gu Yue couple who raise Fang Yuan and Fang Zheng on Qing Mao Mountain after their parents die, while holding the brothers' parental inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    2,
+    4,
+    8,
+    9,
+    30,
+    89,
+    90,
+    98,
+    101,
+    102,
+    112,
+    158,
+    198
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_dong_tu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 1
+    },
+    {
+      "target": "gu_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "gu_demonic_blood_skull_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Clan elders before the Awakening Ceremony already name Fang Yuan as raised by his uncle and aunt after his parents’ early deaths.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_awakening_ceremony",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s own memory places that death on a clan mission when the brothers were three, and says the couple took the parental fortune in the name of upbringing while treating the boys harshly, then softened into investment as the twins grew useful.",
+      "chapters": [
+        2
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "That household sits in the Gu Yue clan on Qing Mao Mountain in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "loc_qing_mao_mountain",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Uncle Gu Yue Dong Tu wears a Gu Master’s uniform with leg wrappings and a red belt around his waist, neat and clean. He is a middle-aged man. His hair is already turning white.",
+      "chapters": [
+        101
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_dong_tu",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Later his originally well-maintained face has shrunk, and there is much more white hair on his head.",
+      "chapters": [
+        112
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His face is no longer ruddy, the hair near his temples has gone white, and the wrinkles on his face have increased.",
+      "chapters": [
+        158
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Aunt has a yellow face that cannot hide her haggardness. She wears a simple hemp garment, the accessories on her head have reduced, and without makeup her mouth looks sharp and her face small, like a monkey.",
+      "chapters": [
+        112
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the brothers awaken as Gu Masters, Gu Yue Fang Zheng brings Fang Yuan home because aunt and uncle want to see him.",
+      "chapters": [
+        8
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-uncle-and-unnamed-aunt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "In the hall the uncle is first written as Uncle Gu Yue Dong Tu; Aunt appears only as Aunt, wife, or Dong Tu’s wife, with no personal name given.",
+      "chapters": [
+        9
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-uncle-and-unnamed-aunt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_dong_tu"
+      ]
+    },
+    {
+      "text": "The same scene states the boys are not their children by birth, and the couple push an adoption that would cut Fang Yuan off from the fortune they already manage. Fang Zheng accepts and stops calling them Aunt and Uncle; Fang Yuan refuses and walks out. Alone afterward, Dong Tu and Aunt plan to frame Fang Yuan into a huge mistake and strip his inheritance rights before he can claim them at sixteen.",
+      "chapters": [
+        9
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-uncle-and-unnamed-aunt",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "They sit the main hall together when Fang Yuan’s academy cases reach the house, favoring Fang Zheng while hoping Fang Yuan will be expelled.",
+      "chapters": [
+        30
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the year-end examination, Fang Yuan reads Gu Yue Jiao San as the chain uncle and aunt built to bind him,",
+      "chapters": [
+        89
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_jiao_san"
+      ]
+    },
+    {
+      "text": "and Aunt confirms Dong Tu arranged that recruitment so asset-splitting would depend on a hostile group. Fang Yuan classes uncle and aunt with Jiao San as rank two Gu Masters while weighing whether killing them over the inheritance is worth the risk.",
+      "chapters": [
+        90
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan reaches rank two and applies to split the assets, Dong Tu bribes an internal affairs contact to stall the mission and assign the hardest task.",
+      "chapters": [
+        98
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan still completes it; the hall retrieves the fortune from uncle and aunt,",
+      "chapters": [
+        102
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and he later sells the tavern and bamboo assets back to them for Relic Gu funds.",
+      "chapters": [
+        112
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_relic_gu"
+      ]
+    },
+    {
+      "text": "After he becomes an elder, the couple receive him in fear and accept a gift of primeval stones under Gu Yue Chi Zhong’s eyes.",
+      "chapters": [
+        158
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-trap",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_zhong"
+      ]
+    },
+    {
+      "text": "When Fang Yuan and Bai Ning Bing slaughter Gu Yue clansmen for Blood Skull Gu, Dong Tu and his wife kneel and beg as uncle and aunt. Fang Yuan answers with a blood colored moonblade and beheads both.",
+      "chapters": [
+        198
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inside-the-blood-barrier",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "gu_demonic_blood_skull_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/uncle-and-aunt.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/uncle-and-aunt/",
+      "chapters": [
+        1,
+        2,
+        4,
+        8,
+        9,
+        30,
+        89,
+        90,
+        98,
+        101,
+        102,
+        112,
+        158,
+        198
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 90",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 1",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 90,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

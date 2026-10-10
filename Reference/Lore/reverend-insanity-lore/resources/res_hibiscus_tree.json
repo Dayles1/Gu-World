@@ -1,0 +1,128 @@
+{
+  "id": "res_hibiscus_tree",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hibiscus tree",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A hibiscus tree is planted as a resource whose every branch counts as an immortal material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1615,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1615,
+    1790,
+    2204
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "loc_mini_western_desert",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_inkman_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Mini Western Desert, a dozen hibiscus trees are planted, and every branch of this tree is an immortal material.",
+      "chapters": [
+        1615
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "every-branch-a-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mini_western_desert"
+      ]
+    },
+    {
+      "text": "The same planting is listed among Mini Western Desert resources taken into the sovereign immortal aperture: a dozen hibiscus trees, every branch an immortal material.",
+      "chapters": [
+        1790
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-planting",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Four Gu Immortals are sent from Inkman City to watch white steel bowl valley, rotten swamp, hibiscus trees, and other resource points, ready to retrieve what they can into city storage if the situation turns urgent.",
+      "chapters": [
+        2204
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inkman-city-resource-point",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "loc_inkman_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/hibiscus-tree/",
+      "chapters": [
+        1615,
+        1790,
+        2204
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Planted hibiscus trees",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

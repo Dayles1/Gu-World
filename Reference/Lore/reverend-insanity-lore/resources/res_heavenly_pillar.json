@@ -1,0 +1,161 @@
+{
+  "id": "res_heavenly_pillar",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly pillar",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A heavenly pillar is a rank nine heaven path immortal material that appears as a huge transparent pillar.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2267,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2267,
+    2272
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_heaven",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "loc_flickering_light_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the fused black and white heaven, a huge transparent pillar slams down and kills most of the soul beasts under it. Fairy Zi Wei identifies it as a heavenly pillar: each heavenly pillar is a rank nine heaven path immortal material. Central Continent’s Tian Ti Mountain could connect to Heavenly Court because it had a heavenly pillar. Ying Wu Xie notes that losing the concealment of soul beasts still leaves them with a rank nine immortal material.",
+      "chapters": [
+        2267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-nine-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "reg_central_continent",
+        "loc_tian_ti",
+        "fac_heavenly_court",
+        "char_ying_wu_xie"
+      ]
+    },
+    {
+      "text": "Qin Ding Ling names the heavenly pillar among the pillars that hold up immemorial white heaven, listing it with the heavenly chasm and heaven vein nodes such as Flickering Light grotto-heaven.",
+      "chapters": [
+        2272
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-heaven-support",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_ding_ling",
+        "loc_flickering_light_grotto_heaven"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/heavenly-pillar/",
+      "chapters": [
+        2267,
+        2272
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Heaven Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Immemorial white heaven",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

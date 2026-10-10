@@ -1,0 +1,286 @@
+{
+  "id": "gu_reverse_misfortune",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Reverse Misfortune",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Reverse Misfortune is a rank seven luck path Immortal Gu. It changes a person's bad luck into good luck.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 760,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    760,
+    761
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_five_elements_grandmaster",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 761,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 4
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_calamity_beckoning_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_delight_in_water_and_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_worldly_wave_trace",
+      "count": 1
+    },
+    {
+      "target": "gu_blessing_in_disguise_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_deduction_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_suppression_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/reverse-misfortune.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/reverse-misfortune/",
+      "chapters": [
+        760,
+        761
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 7,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_luck"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "Qin Bai Sheng auctions it as the second item from the essence of the luck path true inheritance. The starting bid is a metal path rank seven Immortal Gu, so Fang Yuan can only watch from the sidelines.",
+        "chapters": [
+          760
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_qin_bai_sheng",
+          "sys_immortal_gu",
+          "char_fang_yuan"
+        ],
+        "needs_review": true
+      },
+      {
+        "text": "Bidding is fierce among rank seven and rank eight Gu Immortals, and the price surpasses earlier highs set by Worldly Wave Trace and Delight in Water and Mountain.",
+        "chapters": [
+          760
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "auction",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal",
+          "gu_worldly_wave_trace",
+          "gu_delight_in_water_and_mountain"
+        ]
+      },
+      {
+        "text": "Five Elements Grandmaster wins with a rank seven metal path Immortal Gu, a rank six metal path Immortal Gu, and many immortal materials. Fang Yuan judges it a strong match for Spring Autumn Cicada: that Gu’s weakness is bad luck for the user, and Reverse Misfortune can remove that weakness and improve the user’s luck further into good luck. He also finds its effect more convenient than Connect Luck.",
+        "chapters": [
+          761
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "after-the-sale",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_five_elements_grandmaster",
+          "gu_spring_autumn_cicada",
+          "gu_connect_luck"
+        ]
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_five_elements_grandmaster",
+      "role": "unspecified",
+      "recorded_chapter": 761,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": []
+  },
+  "attributes": {
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

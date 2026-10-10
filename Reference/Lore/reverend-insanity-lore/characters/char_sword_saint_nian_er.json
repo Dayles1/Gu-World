@@ -1,0 +1,273 @@
+{
+  "id": "char_sword_saint_nian_er",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sword Saint Nian Er",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sword Saint Nian Er was a rank eight Gu Immortal of Nian Er tribe who left the Sword Saint true inheritance after his death.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1106,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1106,
+    1132,
+    1195,
+    1196
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_nian_er_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1106,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_nian_er_tribe",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_nian_er_ping_zhi",
+      "count": 2
+    },
+    {
+      "target": "sys_sword_child",
+      "count": 2
+    },
+    {
+      "target": "inh_sword_saint_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_hei_fan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "inh_hei_fan_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "char_granny_yin",
+      "count": 1
+    },
+    {
+      "target": "move_sword_heart_clarity",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Righteous path Gu Immortals at Iron Eagle blessed land discuss him as they watch Nian Er Ping Zhi. In history he was like Hei Fan, leading Nian Er tribe to the forefront of the Northern Plains righteous path. He was a prodigy who had cultivated light path, then switched to sword path. The Sword Saint true inheritance has an extremely difficult and deadly test, so actual inheritors are rare. Talk splits that inheritance into three portions. After the first round, the inheritor of the first portion is known as the Sword Child. If that inheritor reaches rank seven and passes the second round, the title becomes Swordmaster true inheritor.",
+      "chapters": [
+        1106
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_righteous_path",
+        "sys_gu_immortal",
+        "loc_iron_eagle_blessed_land",
+        "char_nian_er_ping_zhi",
+        "char_hei_fan",
+        "fac_nian_er_tribe",
+        "reg_northern_plains",
+        "inh_sword_saint_true_inheritance",
+        "sys_sword_child"
+      ]
+    },
+    {
+      "text": "Fang Yuan, weighing Hei Fan’s true inheritance, groups this line with it. An inheritor would only appear every few hundred years. Hei Fan and Nian Er Sword Saint left their names in history, set difficult requirements, and were unwilling to have useless people tarnish their reputations.",
+      "chapters": [
+        1132
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "historical-comparison",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "inh_hei_fan_true_inheritance"
+      ]
+    },
+    {
+      "text": "Nian Er Ping Zhi is named the current inheritor of Sword Saint Nian Er’s true inheritance. Sword heart clarity sits in that inheritance and restricts wisdom path and similar methods. Chu Du judges that the move which killed Granny Yin should be one sword life, an immortal killer move used by Sword Saint Nian Er in his younger days.",
+      "chapters": [
+        1195
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "younger-days-moves",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chu_du",
+        "char_granny_yin"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/sword-saint-nian-er/",
+      "chapters": [
+        1106,
+        1132,
+        1195,
+        1196
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1106",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Nian Er Tribe as of ch. 1106",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 1106",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1106,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": "righteous path as of ch. 1106",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

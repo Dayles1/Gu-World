@@ -1,0 +1,140 @@
+{
+  "id": "loc_black_demon_pit",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Black Demon Pit",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Black demon pit is a small, unremarkable Southern Border pit where Purple Mountain True Monarch calls in a favor owed him by Zuo Ye Hui, who answers from inside it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1336,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1336
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_ye_hui",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Narration places black demon pit among Southern Border’s many mountains and pits, unremarkable there, small, and carrying few dao marks. It yields some dark path resources, but excavating it does not repay a super force and is too difficult for an ordinary one, so nobody visits.",
+      "chapters": [
+        1336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Purple Mountain True Monarch brings Bai Ning Bing, Ying Wu Xie, and others to black demon pit and speaks as though to empty air, saying he has come by their agreement to collect the favor owed for the true inheritance he once passed on. A voice answers from within the pit and an aura bursts out from weak to strong, changing the expressions of everyone but Purple Mountain True Monarch, who addresses it as Zuo Ye Hui, asks whether it has always wanted to be human, and says it owes him for help he once gave. Zuo Ye Hui answers that it wants to be human and must return the favor, and asks what help he needs. Purple Mountain True Monarch asks Zuo Ye Hui for what it is most skilled at, eating humans, and when it answers that it is sick of eating normal humans, he says the targets are immortals and may include rank eight Gu Immortals.",
+      "chapters": [
+        1336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zuo-ye-huis-favor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_purple_mountain_true_monarch",
+        "char_bai_ning_bing",
+        "char_ying_wu_xie",
+        "char_zuo_ye_hui",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/black-demon-pit/",
+      "chapters": [
+        1336
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "pit",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

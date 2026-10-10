@@ -1,0 +1,163 @@
+{
+  "id": "char_gao_ming",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gao Ming",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gao ming",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гао Мин",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gao Ming is a famous rank seven sound path Gu Immortal whom Paradise Earth Immortal Venerable subdued with Unmoving Troops before ascending to rank nine.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 917,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    917
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_sound",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_sound",
+      "count": 1
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 2
+    },
+    {
+      "target": "move_unmoving_troops",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_venerable",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Before Paradise Earth Immortal Venerable became a rank nine Gu Immortal, he used the battlefield immortal killer move Unmoving Troops to subdue Gao Ming, a famous rank seven sound path Gu Immortal. In that battle Paradise Earth did not move. No matter what methods Gao Ming used, he could not take one step closer.",
+      "chapters": [
+        917
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_paradise_earth_immortal_venerable",
+        "sys_gu_venerable",
+        "move_unmoving_troops",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "The defeat made the arrogant Gao Ming lose his temper. He then followed Paradise Earth Immortal Venerable and became his guard thereafter. Later Gu Immortals facing an unmanned Unmoving Troops formation recall that Gu Immortal Gao Ming became dejected and willingly submitted while Paradise Earth was still rank seven. Fang Yuan notes that Gao Ming lost because Paradise Earth Immortal Venerable controlled the battlefield killer move, unlike an abandoned unmanned formation.",
+      "chapters": [
+        917
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "guard-after-defeat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/gao-ming/",
+      "chapters": [
+        917
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 917",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Sound path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 917,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_sound"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": null,
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

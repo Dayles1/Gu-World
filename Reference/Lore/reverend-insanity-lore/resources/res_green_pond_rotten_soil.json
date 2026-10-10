@@ -1,0 +1,150 @@
+{
+  "id": "res_green_pond_rotten_soil",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Green pond rotten soil",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Green pool rotten soil"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Green pond rotten soil is extremely toxic soil from deep under a rotten poisonous marsh, used in refining Second Aperture Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 378,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    378,
+    2133
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_second_aperture_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_second_aperture_gu",
+      "count": 2
+    },
+    {
+      "target": "rcp_second_aperture_gu_recipe",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_treasury_flower_gu",
+      "count": 1
+    },
+    {
+      "target": "res_eight_desolate_blood_powder",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Green pond rotten soil originates ten thousand feet deep under a rotten and poisonous marsh and is extremely toxic. Even Fang Yuan’s arm would rot within a few breaths if he touched it.",
+      "chapters": [
+        378
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "toxic-marsh-soil",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "As the first materials of the Second Aperture Gu recipe, Fang Yuan mixes green pond rotten soil with eight desolate blood powder into evenly distributed soil and plants earth treasury flower in it. The flower decays and dies under the soil’s toxicity and the powder’s violence until several attempts finally succeed. Once planted, green pool rotten soil’s toxicity and the blood power of the eight desolate blood powder form a subtle balance that transforms the earth treasury flower Gu, completing the recipe’s first step of rotten soil blood powder, treasure flower in the earth. That powder is covered on eight desolate blood powder.",
+      "chapters": [
+        378
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-aperture-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "rcp_second_aperture_gu_recipe",
+        "gu_earth_treasury_flower_gu",
+        "res_eight_desolate_blood_powder"
+      ]
+    },
+    {
+      "text": "Green pond rotten soil is named among a large stock of earth path immortal materials packed into an immortal aperture when preparing for tribulation.",
+      "chapters": [
+        2133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-stock",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/green-pond-rotten-soil/",
+      "chapters": [
+        378,
+        2133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Rotten and poisonous marsh",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Second Aperture Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

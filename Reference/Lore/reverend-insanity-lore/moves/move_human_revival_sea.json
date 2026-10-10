@@ -1,0 +1,118 @@
+{
+  "id": "move_human_revival_sea",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Human Revival Sea",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Human Revival Sea is a killer move Fang Yuan uses.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2168,
+    "volume": null,
+    "arc": "evt_arc_battle_of_crazed_demon_cave"
+  },
+  "chapters_cited": [
+    2168
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2168,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "sys_unifying_human_and_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_human_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After using the killer move human revival sea on the completed Human Sea, Fang Yuan’s heart shook as inspiration flashed in his mind. The so-called Human Sea revival method is in essence refining the human body and soul with Gu. That is a human path method, and it is also using Gu to refine a human.",
+      "chapters": [
+        2168
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Related domain detail sits on Human Sea. Related refinement insight sits on Unifying Human and Gu.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_human_sea",
+        "sys_unifying_human_and_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/human-revival-sea/",
+      "chapters": [
+        2168
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

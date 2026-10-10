@@ -1,0 +1,272 @@
+{
+  "id": "path_emotion",
+  "entity_type": "path",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Emotion Path",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The emotion path is the Gu path that influences emotions, judgment, and related Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 703,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    703,
+    704,
+    775,
+    1042,
+    1156,
+    1340,
+    1649,
+    1787
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_emotion_gu",
+      "count": 2
+    },
+    {
+      "target": "char_zhang_li",
+      "count": 2
+    },
+    {
+      "target": "gu_doting_mother_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_traveling_son_gu",
+      "count": 2
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_lord_tiger_demon",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_tribe",
+      "count": 1
+    },
+    {
+      "target": "path_restriction",
+      "count": 1
+    },
+    {
+      "target": "sys_thought_will_emotion",
+      "count": 1
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_regret_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The novel treats emotion path as a named cultivation path with Gu Immortals, Immortal Gu, and killer moves that work on emotion.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "During an ambush on He Feng Yang, Tiger Demon’s anger will warns that the enemy is an emotion path Gu Immortal who can interfere with judgment by influencing emotions.",
+      "chapters": [
+        703
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_he_feng_yang",
+        "char_lord_tiger_demon"
+      ]
+    },
+    {
+      "text": "That Gu Immortal activates several emotion path killer moves to disturb He Feng Yang heavily, and later keeps using emotion path killer moves while pressing the attack. Narration continues to name him an emotion path Gu Immortal as the ambush breaks off.",
+      "chapters": [
+        704
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Tang clan borrows rank seven emotion Gu, named as an emotion path Immortal Gu, from Xiao tribe to explore a dream realm.",
+      "chapters": [
+        775
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tang_clan",
+        "gu_emotion_gu",
+        "fac_xiao_tribe"
+      ]
+    },
+    {
+      "text": "Restriction path is a branch of rule path, just as emotion path is a branch of wisdom path.",
+      "chapters": [
+        1042
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "branch-of-wisdom-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_restriction"
+      ]
+    },
+    {
+      "text": "Emotion path originates from wisdom path. Wisdom path has three elements: thoughts, wills, and emotions. Traveling son Gu and doting mother Gu are a famous set of emotion path Immortal Gu. When the turbulent flow sea area formed, emotion path had not been created yet, so traveling son Gu could be used there without the usual danger of space path Immortal Gu in that place.",
+      "chapters": [
+        1156
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-from-wisdom-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_wisdom",
+        "gu_traveling_son_gu",
+        "gu_doting_mother_gu"
+      ]
+    },
+    {
+      "text": "Enchantment emotion path never left wisdom path. There are no enchantment emotion path dao marks in this world, only wisdom path dao marks, so clearing Zhang Li’s enchantment emotion dream raises Fang Yuan’s wisdom path attainment rather than a separate emotion mark count.",
+      "chapters": [
+        1340
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "enchantment-emotion-dao-marks",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhang_li",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Immortal Gu Regret sits in wisdom path’s emotion branch. After later Gu Immortals create the small path called emotion path, Immortal Gu Regret is also part of emotion path.",
+      "chapters": [
+        1649
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-gu-regret",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_regret_gu"
+      ]
+    },
+    {
+      "text": "Narration again calls emotion path a path derived from wisdom path that specializes in charm and emotion to influence others.",
+      "chapters": [
+        1787
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "charm-and-influence",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/paths/emotion/",
+      "chapters": [
+        703,
+        704,
+        775,
+        1042,
+        1156,
+        1340,
+        1649,
+        1787
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Roundel": {
+      "text": "Emotion path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

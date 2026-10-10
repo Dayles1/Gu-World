@@ -1,0 +1,752 @@
+{
+  "id": "char_bi_chen_tian",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bi Chen Tian",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bi chen tian",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Би Чэнь Тянь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bi Chen Tian is a rank eight Gu Immortal of Heavenly Court who helps open Hairy Foot Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 845,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    845,
+    948,
+    956,
+    966,
+    996,
+    997,
+    1005,
+    1007,
+    1010,
+    1268,
+    1269,
+    1272,
+    1273,
+    1274,
+    1275,
+    1277,
+    1278,
+    1283,
+    1285,
+    1335
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1274,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 845,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_grass_python_immortal_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1274,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_heavenly_court",
+      "count": 4
+    },
+    {
+      "target": "gu_grass_python_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "path_wood",
+      "count": 1
+    },
+    {
+      "target": "gu_failure_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_hairy_foot_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_bai_cang_shui",
+      "count": 2
+    },
+    {
+      "target": "char_lian_jiu_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_yu_mu_chun",
+      "count": 2
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 2
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 2
+    },
+    {
+      "target": "char_myriad_tidal_dragon",
+      "count": 2
+    },
+    {
+      "target": "char_wei_ling_yang",
+      "count": 2
+    },
+    {
+      "target": "house_edge_link_camp",
+      "count": 2
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 2
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 2
+    },
+    {
+      "target": "gu_affection_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_perseverance_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "loc_infallible_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_overseeing_tower_lord",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "house_heaven_overseeing_tower",
+      "count": 1
+    },
+    {
+      "target": "fac_combat_immortal_sect",
+      "count": 1
+    },
+    {
+      "target": "house_illusion_garden",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "loc_falling_heavenly_river",
+      "count": 1
+    },
+    {
+      "target": "char_seven_star_child",
+      "count": 1
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "loc_black_lanterns",
+      "count": 1
+    },
+    {
+      "target": "loc_heaven_attached_fungi_field",
+      "count": 1
+    },
+    {
+      "target": "loc_star_cloud_storm",
+      "count": 1
+    },
+    {
+      "target": "res_heaven_attached_fungi",
+      "count": 1
+    },
+    {
+      "target": "sys_star_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 1
+    },
+    {
+      "target": "move_spaceless_tunnel",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_reverse_flow_river",
+      "count": 1
+    },
+    {
+      "target": "move_wood_armor",
+      "count": 1
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_yu_yi_ye_zi",
+      "count": 1
+    },
+    {
+      "target": "char_granny_sha",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He is one of four rank eight Gu Immortals who appear above Hairy Foot Mountain in Central Continent and conceal their auras. He urges the others to start quickly, saying he is pressed for time during this period of awakening. He opens his eyes and emits two bright pillars of light that shoot straight at Hairy Foot Mountain. The mountain shines under his immortal killer move. After six rounds of attacks the mountain disappears and Infallible blessed land opens. He notes that there are more mortal failure Gu than the previous time.",
+      "chapters": [
+        845
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "loc_hairy_foot_mountain",
+        "reg_central_continent",
+        "loc_infallible_blessed_land",
+        "gu_failure_gu"
+      ]
+    },
+    {
+      "text": "He has red eyebrows and green pupils.",
+      "chapters": [
+        845
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is one of four rank eight Gu Immortals, with Heaven Overseeing Tower Lord, Bai Cang Shui, and Lian Jiu Sheng, holding the cores of Heaven Overseeing Tower’s Gu formation through hundreds of days of enduring heaven’s will to repair the rank nine Immortal Gu Fate, and is pale with exhaustion when the repair finally succeeds.",
+      "chapters": [
+        948
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "repairing-fate-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heaven_overseeing_tower_lord",
+        "char_bai_cang_shui",
+        "char_lian_jiu_sheng",
+        "house_heaven_overseeing_tower",
+        "sys_gu_formation",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "After the repair, he leaves Heavenly Court for the mortal world along with Bai Cang Shui and Lian Jiu Sheng.",
+      "chapters": [
+        956
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "return-to-the-mortal-world",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Once the battle that kills Yu Mu Chun and extinguishes Mo Yao’s remnant soul inside immortal zombie Bo Qing ends, Heaven Overseeing Tower Lord gives him the task of cleaning up the battlefield, and persuades Lian Jiu Sheng to go and search the riverbed of Falling Heavenly River again.",
+      "chapters": [
+        966
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "cleanup-after-bo-qings-fall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yu_mu_chun",
+        "char_mo_yao",
+        "char_bo_qing",
+        "loc_falling_heavenly_river"
+      ]
+    },
+    {
+      "text": "At Heavenly Court, when Heaven Overseeing Tower Lord risks a dangerous wisdom path method to save a rank six Immortal Gu nearly cut in half by a sword light that split Heaven Overseeing Tower itself, Bi Chen Tian urges him to give it up as beyond saving. Bi Chen Tian shares Tower Lord’s sense of brewing danger but says his own feeling began only once Heavenly Court had repaired fate Gu.",
+      "chapters": [
+        996
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "warning-signs-at-heavenly-court",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fate_gu"
+      ]
+    },
+    {
+      "text": "In this life, when immortal zombie Bo Qing rises from Falling Heavenly River to attack Heavenly Lotus Sect with Yu Mu Chun and with Seven Star Child and Song Zi Xing, who both died at Bo Qing’s hands in the previous life, Heaven Overseeing Tower Lord summons him and Lian Jiu Sheng, and the three use Heavenly Court’s teleportation Gu formation to reach Heavenly Lotus Sect’s base at once. The attack is carried by an immortal killer move that Seven Star Child, Song Zi Xing and Yu Mu Chun activate together, which in the previous life Yu Mu Chun could not use alone once the other two had died.",
+      "chapters": [
+        997
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reinforcing-heavenly-lotus-sect",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_lotus_sect",
+        "char_seven_star_child",
+        "char_song_zi_xing"
+      ]
+    },
+    {
+      "text": "After sword light from Sword Immortal Bo Qing’s awakening cuts Heaven Overseeing Tower, and Heaven Overseeing Tower Lord repairs it with Bi Chen Tian and Lian Jiu Sheng, the attack the tower had gathered against Shadow Sect’s ten extreme formation explodes before it can be released and backlashes the immortals inside, and Heaven Overseeing Tower Lord declares one of the two repairers a traitor, so Heavenly Court’s Gu Immortals encircle them both. Bi Chen Tian denies it, pointing to Heavenly Court’s three million years without a single traitor and urging them to focus on the enemy formation instead, and Lian Jiu Sheng then reveals himself the impostor and self-destructs. The immortals apologize and end the encirclement when Bi Chen Tian asks why they are still holding him, and some of them keep looking at him with suspicion until Heaven Overseeing Tower Lord tells them all not to doubt one another.",
+      "chapters": [
+        1005
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "accused-as-the-traitor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "Watching the relic vajra tribulation weaken Shadow Sect’s formation, Bi Chen Tian laughs that Heavenly Court may not even need to act for the other side to lose.",
+      "chapters": [
+        1007
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "reading-the-grand-tribulation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Spectral Soul Demon Venerable’s ghostly hand reaches out of the door of life and death, Bi Chen Tian calls out that the ten extreme formation is Spectral Soul’s weakness and that they must stop the hand first before they can gather their strength to break the formation.",
+      "chapters": [
+        1010
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "naming-spectral-souls-weakness",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_spectral_soul_demon_venerable"
+      ]
+    },
+    {
+      "text": "Trading blows with Old Ancestor Xue Hu, Bi Chen Tian needs only a few exchanges to know he is not the old ancestor’s match. With Edge Link Camp shaking under the assault, Wei Ling Yang tells him he will leave the Immortal Gu House to him and slips out alone to try each snowy peak, and Bi Chen Tian answers that he can hold on and will call him back if anything goes wrong.",
+      "chapters": [
+        1268
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "holding-edge-link-camp",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_ancestor_xue_hu",
+        "house_edge_link_camp",
+        "char_wei_ling_yang",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Inside Snowy Mountain blessed land, with Edge Link Camp losing ground, Bi Chen Tian leaves the injured Wei Ling Yang to hold the Immortal Gu House and goes out to draw Old Ancestor Xue Hu away, becoming a green ray of light that drops towards the snowy peaks. What he means to break is the fate reversing sacrificial refinement formation itself, since once it falls nothing stops Edge Link Camp from reaching Zhao Lian Yun and perhaps Ma Hong Yun.",
+      "chapters": [
+        1269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "snowy-mountain-expedition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_snowy_mountain",
+        "char_zhao_lian_yun",
+        "char_ma_hong_yun"
+      ]
+    },
+    {
+      "text": "Swept away when Snowy Mountain blessed land’s main formation collapses, Bi Chen Tian cannot use his Gu worms to heal in Reverse Flow River and drifts injured on a wild turtle’s back until Fang Yuan, wearing his sovereign immortal body’s face, finds him; Bi Chen Tian does not recognize him. Bi Chen Tian tells him only that Old Ancestor Xue Hu is his enemy too and that all his injuries came from fighting Xue Hu in Snowy Mountain blessed land, giving little else away.",
+      "chapters": [
+        1272
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "adrift-in-reverse-flow-river",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "loc_reverse_flow_river",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When a scrap of Edge Link Camp’s wreckage, affection Immortal Gu, washes up on Fang Yuan, Bi Chen Tian cups his fists and asks him to hand it over for the friendship of Central Continent, since it is a wisdom path Immortal Gu that belongs there. When Fang Yuan keeps it instead, Bi Chen Tian grows anxious and presses him again to take it out and strike a transaction.",
+      "chapters": [
+        1273
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bargaining-over-affection-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_affection_immortal_gu"
+      ]
+    },
+    {
+      "text": "Unable to trade for the Gu, Bi Chen Tian, confident his dao mark foundation as a rank eight Gu Immortal cannot lose to a rank seven, attacks Fang Yuan in the water. He is a wood path Gu Immortal: grass python Immortal Gu gave him great strength, the killer move wood armor carved defensive dao marks into his body, and he turned his heart into a wood heart and his blood green for superior healing. Fighting evenly with Fang Yuan leaves him shocked that a rank seven can match his rank eight foundation, and when Fang Yuan tries to retreat, Bi Chen Tian, unable to defeat him but unwilling to let him escape with the Gu, blocks his path instead.",
+      "chapters": [
+        1274
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fighting-fang-yuan-in-the-river",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Grabbing Bi Chen Tian’s leg leaves Fang Yuan free to kick with both legs against Bi Chen Tian’s one, and repeated kicks to a crotch Bi Chen Tian had reinforced with wood path dao marks finally drive him off to the surface for air, letting Fang Yuan escape.",
+      "chapters": [
+        1275
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "driven-off",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gathering with eight other Central Continent Gu Immortals in Reverse Flow River, Bi Chen Tian describes Fang Yuan to them and warns that he is a strong foe, admitting he is merely on par with him in physical brawling. When the river’s currents suddenly calm and grow harder to swim against, he orders the group to push forward into the turbulent water instead, since swimming on in the calm would leave them spent by the time they meet the enemies the river washes down.",
+      "chapters": [
+        1277
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rallying-nine-against-a-strong-foe",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bi Chen Tian finds Fang Yuan again and tells him their fight can be set aside if he simply hands over affection Immortal Gu; Fang Yuan ignores him.",
+      "chapters": [
+        1278
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-second-offer-over-the-gu",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As Ma Hong Yun and Zhao Lian Yun near the edge of Reverse Flow River with Fang Yuan closing on them, Bi Chen Tian, remembering his own fight with Fang Yuan and hoping he will exhaust himself first, calls out to them to walk slowly and not rush, since holding their current pace is enough to keep them inside the river.",
+      "chapters": [
+        1283
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "coaching-a-slow-pace",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sensing Gu worm activity from Fang Yuan even though no Gu can be used inside Reverse Flow River, and hearing Yu Yi Ye Zi guess that Fang Yuan is refining Gu, Bi Chen Tian confirms that perseverance Immortal Gu is real and not only a legend, since he is a Heavenly Court Gu Immortal who knows many ancient secrets, though he admits Genesis Lotus Immortal Venerable, its former owner, never mentioned how it was refined. Watching Fang Yuan press on expressionless where every other Gu Immortal broke down, Bi Chen Tian wonders to himself what kind of willpower lets him persevere like this.",
+      "chapters": [
+        1285
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "confirming-perseverance-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yu_yi_ye_zi",
+        "gu_perseverance_gu",
+        "char_genesis_lotus_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s account names Wei Ling Yang and Bi Chen Tian as the two who died, with Myriad Tidal Dragon the one who escaped.",
+      "chapters": [
+        1335
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_myriad_tidal_dragon"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/bi-chen-tian.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bi-chen-tian/",
+      "chapters": [
+        845,
+        948,
+        956,
+        966,
+        996,
+        997,
+        1005,
+        1007,
+        1010,
+        1268,
+        1269,
+        1272,
+        1273,
+        1274,
+        1275,
+        1277,
+        1278,
+        1283,
+        1285,
+        1335
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 845",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Wood path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Heavenly Court as of ch. 845",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 845,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wood"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_grass_python_immortal_gu",
+      "role": "user",
+      "recorded_chapter": 1274,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

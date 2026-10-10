@@ -1,0 +1,168 @@
+{
+  "id": "move_death_wind_flying_blade",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Death Wind Flying Blade",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Death Wind Flying Blade is Hui Feng Zi's immortal killer move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 779,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    779,
+    877,
+    886
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_hui_feng_zi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 779,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hui_feng_zi",
+      "count": 3
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "move_wind_escape",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ao_xue",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ling_mei",
+      "count": 1
+    },
+    {
+      "target": "char_he_lang_zi",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Luo Po Valley he opens his mouth, flicks his tongue, and a huge wind blade shoots at Qin Bai Sheng. Qin Bai Sheng does not move. The blade hits him and golden light bursts out. When the light fades he is unharmed. Hui Feng Zi asks what defensive killer move that was, and says his death wind flying blade did not even cut a single strand of hair.",
+      "chapters": [
+        779
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_luo_po_valley",
+        "char_qin_bai_sheng",
+        "char_hui_feng_zi"
+      ]
+    },
+    {
+      "text": "After using Wind Escape to leave a cloud building, he appears outside, opens his mouth wide, and sends a wind blade at the top floor. The cloud building lasts one breath, then the blade cuts it into two.",
+      "chapters": [
+        877
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-blade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_wind_escape"
+      ]
+    },
+    {
+      "text": "The narration names it a wind path killer move. He Lang Zi and Hui Feng Zi grasp a pause in the Central Continent assault on Luo Po Valley and counterattack. Fairy Ling Mei and Fairy Ao Xue cannot match the intense attacks and can only retreat.",
+      "chapters": [
+        886
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "counterattack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_he_lang_zi",
+        "reg_central_continent",
+        "char_fairy_ling_mei",
+        "char_fairy_ao_xue"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/death-wind-flying-blade/",
+      "chapters": [
+        779,
+        877,
+        886
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Hui Feng Zi",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

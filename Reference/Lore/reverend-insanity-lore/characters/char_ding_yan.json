@@ -1,0 +1,281 @@
+{
+  "id": "char_ding_yan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ding Yan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ding yan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дин Янь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ding Yan is an Eastern Sea blood path demonic Gu Immortal, younger brother of Ding Qi, who held clues to an information path inheritance before dying to Liu Qing Yu's group.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1154,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1154,
+    1157,
+    2252
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_blood_oath_immortal_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1154,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_blood_trace_immortal_gu",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1157,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_blood_oath_immortal_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_blood_trace_immortal_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_ding_qi",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_li",
+      "count": 2
+    },
+    {
+      "target": "char_immortal_hua_die",
+      "count": 1
+    },
+    {
+      "target": "char_liu_qing_yu",
+      "count": 1
+    },
+    {
+      "target": "char_tang_song",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Immortal Hua Die tells Chu Ying that Ding Yan once held clues to an information path inheritance, was attacked by Liu Qing Yu, Zhou Li, and Tang Song, and is dead. Ding Qi comes to the turbulent flow sea area for revenge when Liu Qing Yu appears to seek that inheritance.",
+      "chapters": [
+        1154
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_immortal_hua_die",
+        "char_liu_qing_yu",
+        "char_zhou_li",
+        "char_tang_song",
+        "char_ding_qi"
+      ]
+    },
+    {
+      "text": "Ding Qi says he and his brother created blood trace Immortal Gu and Immortal Gu Blood Oath together. Narration ranks Ding Qi and Ding Yan among present blood path experts for that research and refinement. Ding Qi also treats Fang Yuan as his brother’s murderer when the inheritance clue surfaces.",
+      "chapters": [
+        1157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blood-path-creations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_blood_trace_immortal_gu",
+        "gu_blood_oath_immortal_gu",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan later lists blood trace Gu and blood oath Gu among his blood path Immortal Gu and states that Eastern Sea blood path demonic immortals Ding Yan and Ding Qi created them, one for investigation and the other with an information path effect, that the two Immortal Gu were destroyed, and that he refined them through natural inspiration and his own deductions without obtaining the recipes from the brothers.",
+      "chapters": [
+        2252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "reg_eastern_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ding-yan/",
+      "chapters": [
+        1154,
+        1157,
+        2252
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Blood path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_blood"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_blood_oath_immortal_gu",
+      "role": "holder",
+      "recorded_chapter": 1154,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_blood_trace_immortal_gu",
+      "role": "creator",
+      "recorded_chapter": 1157,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

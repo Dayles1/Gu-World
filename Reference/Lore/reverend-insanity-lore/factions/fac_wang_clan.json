@@ -1,0 +1,189 @@
+{
+  "id": "fac_wang_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wang Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wang clan is the Southern Border clan Wu clan exterminated three hundred years before the present, leaving three orphaned children who became the Three Kings.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 324,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    324
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_king_bao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 324,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_king_quan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 324,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_king_bao",
+      "count": 4
+    },
+    {
+      "target": "char_king_quan",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_king_xin",
+      "count": 2
+    },
+    {
+      "target": "inh_three_kings_inheritance",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "About three hundred years before news of the Three Kings inheritance spreads through Southern Border, Wu clan exterminates Wang clan, its mortal enemy, absorbing its remnant forces and rising into a large clan that owns three mountains. The attack misses three children: an eight year old boy who becomes King Quan, a five year old boy who becomes King Bao, and a six year old girl who becomes King Xin. Wu clan sends a lazy assassin to finish them, and he fakes their deaths rather than complete the task, unintentionally sparing them.",
+      "chapters": [
+        324
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_three_kings_inheritance",
+        "reg_southern_border",
+        "fac_wu_clan",
+        "char_king_quan",
+        "char_king_bao",
+        "char_king_xin"
+      ]
+    },
+    {
+      "text": "The three survive on their own, grow close through hardship, and are eventually thrown into an ancient inheritance ground left by a rank six Gu Immortal, where each inherits a portion of the legacy and cultivates for nearly a hundred years until all three reach rank five. They then return and wipe out Wu clan in three days: King Quan’s hound army engulfs Wu clan’s village, King Xin kills the higher-ups and leaves them leaderless, and King Bao’s violent attacks shatter the mountain rock.",
+      "chapters": [
+        324
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "After their revenge, the three kings choose not to rebuild Wang clan, reasoning that a clan, however strong, could not defend against true experts, and instead live in seclusion until their inheritance ground reopens generations later.",
+      "chapters": [
+        324
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/wang-clan/",
+      "chapters": [
+        324
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "move_clear_wind_blades",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Clear Wind Blades",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Clear Wind Blades is one of four variations of Wu Yong's immortal battlefield killer move Four Clear Transforming Winds. Fierce wind condenses into regenerating blades with rank eight piercing power.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1390,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1390,
+    1391
+  ],
+  "relations": [
+    {
+      "type": "derived_from",
+      "target": "move_four_clear_transforming_winds",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_wu_yong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1390,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wu_yong",
+      "count": 3
+    },
+    {
+      "target": "move_four_clear_transforming_winds",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "move_separation_song",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Wu Yong hides inside the battlefield, fierce wind rises like formless pythons and forms wind blades, each carrying the piercing power of a rank eight killer move. The blades chase Feng Jiu Ge first, turn back into fierce wind when destroyed, and condense again in growing numbers. When Fang Yuan stays beside Feng Jiu Ge, reverse flow protection seal reflects blades into the battlefield rather than at Wu Yong, because Wu Yong is the hidden controller and not the direct attacker. Four Clear Transforming Winds has four variations: clear wind blades, clear jade lightning, clear jade dripping wind, and profound immortal sound.",
+      "chapters": [
+        1390
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_yong",
+        "char_feng_jiu_ge",
+        "char_fang_yuan",
+        "move_four_clear_transforming_winds"
+      ]
+    },
+    {
+      "text": "Whether clear wind blades, clear jade lightning, clear jade dripping wind, or profound immortal sound, the essence of those variation moves is wind path; the Wu clan ancestor who created the battlefield could imitate other paths with wind, touching sword, lightning, water, and sound path. When Feng Jiu Ge sings Separation Song, the battlefield answers with all four variations at once, including clear wind blades, layered over him.",
+      "chapters": [
+        1391
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wind-path-essence",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan",
+        "move_separation_song"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/clear-wind-blades/",
+      "chapters": [
+        1390,
+        1391
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Derived from": {
+      "text": "Four Clear Transforming Winds",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Wu Yong",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

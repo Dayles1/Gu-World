@@ -1,0 +1,278 @@
+{
+  "id": "fac_gu_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains earth path tribe stationed at Guan Xi during the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 523,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    523,
+    524,
+    525
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_guo_long",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_gu_guo_long",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "gu_river_as_before_gu",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "gu_mountain_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_gu_liang",
+      "count": 1
+    },
+    {
+      "target": "char_army_ant",
+      "count": 1
+    },
+    {
+      "target": "char_long_ling",
+      "count": 1
+    },
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "gu_ant_nest_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_letter_seal_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_shuai_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_chicken_dinner",
+      "count": 1
+    },
+    {
+      "target": "char_lian_ke_xin",
+      "count": 1
+    },
+    {
+      "target": "char_yu_zi",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_he_jian",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Facing Hei tribe at Guan Xi, Gu tribe army piles stones into a trap-ringed mountain, garrisons the height, and keeps adding stone so the mountain grows taller while attackers stall at the foot.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "That stone mountain forms in about ten days on foundations built by the tribe’s earth path Gu Masters, and it stands five hundred to six hundred feet high before mountain as before returns the land to flat grassland.",
+      "chapters": [
+        524
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Seven days after Hei Lou Lan picks Guan Xi for weak military strength, Hei tribe confronts Gu tribe army there. Gu tribe loses the first battle, and alliance leader Gu Guo Long abandons three unused defense lines and pulls back to the main camp. The army then piles stones into a trap-ringed mountain, holds the height, and keeps adding stone while Hei attacks stall.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-clash-and-stone-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_gu_guo_long"
+      ]
+    },
+    {
+      "text": "Gu tribe is specialized in earth path and long famous for it in Northern Plains; the piled mountain forms in about ten days on foundations built by the tribe’s earth path Gu Masters. Tai Bai Yun Sheng uses mountain as before, the stones vanish, and Gu tribe army falls from five hundred to six hundred feet as the mountain returns to flat grassland. Earlier, when Gu tribe’s spirit spring dried up and large tribes pushed them aside, Tai Bai Yun Sheng restored that spring with river as before Gu and became a tribe benefactor; under his persuasion Gu Guo Long lowers his head, and Gu tribe army pledges to Hei Lou Lan.",
+      "chapters": [
+        524
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_tai_bai_yun_sheng",
+        "gu_river_as_before_gu"
+      ]
+    },
+    {
+      "text": "Liu Wen Wu had agreed to reinforce after Gu Guo Long sought refuge with Liu tribe, but Liu tribe army is only halfway when Gu tribe submits to Hei tribe through Tai Bai Yun Sheng.",
+      "chapters": [
+        524
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "liu-wen-wus-letter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_liu_wen_wu",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "After Hei takes in Gu tribe army, that force holds three rank five Gu Masters: Hei Lou Lan, Tai Bai Yun Sheng, and the recently subdued Gu Guo Long.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "liu-wen-wus-letter",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/gu-tribe.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/gu-tribe/",
+      "chapters": [
+        523,
+        524,
+        525
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "id": "fac_song_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Song Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains force Ma tribe meets as an equal at Mirror Lake during the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 520,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    520,
+    523,
+    525
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_su_yi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_song_qing_yin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 525,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_su_yi",
+      "count": 4
+    },
+    {
+      "target": "char_song_qing_yin",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 2
+    },
+    {
+      "target": "fac_song_tribe_alliance_army",
+      "count": 2
+    },
+    {
+      "target": "loc_mirror_lake",
+      "count": 2
+    },
+    {
+      "target": "char_cheng_hu",
+      "count": 2
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_fei_sheng",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While Ma Ying Jie settles alliance-army paperwork in camp, Ma tribe builds its first defense line at Mirror Lake opposite Song tribe alliance army. He weighs Hei tribe’s already-won first battle against the contest rule that the first fight earns foundations and losers rarely reverse the situation.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-defense-line",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_ying_jie",
+        "fac_ma_tribe",
+        "loc_mirror_lake",
+        "fac_song_tribe_alliance_army",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "Open fighting at Mirror Lake and the first named Song tribe expert.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "defense-lines-and-su-yi",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ma tribe and Song tribe officially start their battle after both sides erect three to four defense lines. From Ma tribe’s main tent, Ma Shang Feng sees Song tribe’s dense formation surging with battle intent and judges Ma tribe stronger, but not an easy win. When Cheng Hu challenges, rank four Su Yi flies out of Song tribe army and fights him; Cheng Hu’s full tiger transformation later bites Su Yi’s head apart for Ma tribe’s first victory, and Song tribe’s higher-ups are moved while Ma troops rejoice.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "defense-lines-and-su-yi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_shang_feng",
+        "char_cheng_hu",
+        "char_su_yi"
+      ]
+    },
+    {
+      "text": "Song Qing Yin’s death and the end of Song tribe’s Mirror Lake army.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "counterattack-fallout",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ma tribe breaks two Song tribe defense lines in a row. Alliance leader Song Qing Yin leads a counterattack ambush that forces Ma tribe to give up a line, then Ma tribe enslavement master Ma Zun surrounds and kills her in the air with his pegasus group. Song tribe army becomes a headless dragon, crumbles after Ma tribe stirs internal discord, and Ma tribe annexes most of the tribes while remnants flee.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "counterattack-fallout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_qing_yin",
+        "char_ma_zun"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/song-tribe/",
+      "chapters": [
+        520,
+        523,
+        525
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

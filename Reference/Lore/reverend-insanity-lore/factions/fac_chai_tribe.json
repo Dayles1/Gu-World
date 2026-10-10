@@ -1,0 +1,206 @@
+{
+  "id": "fac_chai_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chai Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A small scale Northern Plains tribe led by Chai Zhang, first shown disputing goods with Zhong tribe beside crescent lake.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 494,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    494,
+    495
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chai_zhang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 494,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chai_ming",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 497,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_chai_zhang",
+      "count": 4
+    },
+    {
+      "target": "char_chai_ming",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_zhong_fei_you",
+      "count": 2
+    },
+    {
+      "target": "fac_zhong_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "char_carefree_wisdom_heart",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "loc_qian_kun_crystal_wall",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Beside crescent lake, Chai Zhang’s face flushes as he calls Zhong Tribe shameless for holding five black skin fat beetles on the road to the heroes assembly. Chai tribe is a small scale tribe; Zhong tribe had expanded into a mid-scale tribe two years earlier. Three of the beetles hold goods Chai tribe gathered to side with Liu Wen Wu.",
+      "chapters": [
+        494
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "beetles-on-the-road",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crescent_lake",
+        "char_chai_zhang",
+        "fac_zhong_tribe",
+        "char_liu_wen_wu"
+      ]
+    },
+    {
+      "text": "When Fang Yuan’s wolf army arrives under the Chang Shan Yin name, Chai Zhang and Zhong Fei You shift from near fighting to a shared urge to cooperate under the encirclement.",
+      "chapters": [
+        494
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-king-at-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_chang_shan_yin",
+        "char_zhong_fei_you"
+      ]
+    },
+    {
+      "text": "From a distance Chai Zhang refuses elders who hope to reclaim leftovers, says staying risks Chang Shan Yin’s slaughter, and orders the tribe to leave at once. A tribe of that size is too weak to ride the Imperial Court fight alone and needs a stronger force to cling to.",
+      "chapters": [
+        495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "leaving-crescent-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/chai-tribe/",
+      "chapters": [
+        494,
+        495
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

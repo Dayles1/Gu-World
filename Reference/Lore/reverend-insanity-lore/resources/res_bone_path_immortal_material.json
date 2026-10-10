@@ -1,0 +1,110 @@
+{
+  "id": "res_bone_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bone path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bone path immortal materials are immortal materials of bone path, graded by the dao marks they hold.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1915,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1915
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_bone",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_bone",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_dragon_whale_paradise",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside Dragon Whale Paradise, Fang Yuan evaluates the heavenly spine as a rank nine bone path immortal material. The giant milky white bones form a main trunk with branching ribs that reinforce the paradise, while black fire corrodes them.",
+      "chapters": [
+        1915
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-spine-grade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dragon_whale_paradise",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/bone-path-immortal-material/",
+      "chapters": [
+        1915
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Bone Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

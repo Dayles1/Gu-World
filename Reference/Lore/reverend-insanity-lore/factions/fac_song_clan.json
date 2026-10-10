@@ -1,0 +1,412 @@
+{
+  "id": "fac_song_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Song Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Song clan is an Eastern Sea clan first named when Shark Demon lists Song Yi Shi's poetic emotion sea area among seas ranked above his own.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 892,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    892,
+    893,
+    898,
+    899,
+    907,
+    986
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_song_qi_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 893,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_song_yi_shi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 892,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_song_qi_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 893,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_song_jia_dan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 899,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_song_xia_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 899,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_song_qi_yuan",
+      "count": 5
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 4
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 4
+    },
+    {
+      "target": "char_song_xia_qi",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "inh_tian_nan_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 2
+    },
+    {
+      "target": "loc_heavy_water_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "loc_twin_polar_sea_strait",
+      "count": 2
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_poetic_emotion_sea_area",
+      "count": 1
+    },
+    {
+      "target": "char_su_bai_man",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_old_eccentric_tian_nan",
+      "count": 1
+    },
+    {
+      "target": "char_xie_shu_fang",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "loc_bee_sea",
+      "count": 1
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_qing_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "house_pine_crane_pavilion",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xie_clan",
+      "count": 1
+    },
+    {
+      "target": "move_lingering_poisonous_ant_plague",
+      "count": 1
+    },
+    {
+      "target": "sys_contribution_board",
+      "count": 1
+    },
+    {
+      "target": "inh_molten_casting_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_myriad_fusion_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_emotionless_flowing_water",
+      "count": 1
+    },
+    {
+      "target": "move_noncorroding_flowing_water",
+      "count": 1
+    },
+    {
+      "target": "path_water",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At a banquet, Shark Demon names Song Yi Shi as a Song clan Gu Immortal while speaking to Fang Yuan and Tai Bai Yun Sheng about Eastern Sea sea areas.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shark_demon",
+        "char_song_yi_shi",
+        "sys_gu_immortal",
+        "char_fang_yuan",
+        "char_tai_bai_yun_sheng"
+      ]
+    },
+    {
+      "text": "Song clan is a colossus that has occupied Eastern Sea for hundreds of years, and it sits in the top ten among that region’s super forces. The publicly known number of clan Gu Immortals is eighteen. First supreme elder Song Qi Yuan has been rank eight for many years, with unfathomable battle strength. His son Song Diao Ling was a rank seven Gu Immortal publicly recognized as successor until, over ten years before this stretch, he was schemed against and died, leaving a daughter, Song Yi Shi, as the only descendant of Song Qi Yuan’s bloodline. After her immortal ascension, Song Qi Yuan gave her the poetic emotion sea area, four million square kilometers and ranked above Shark Demon’s shark sea.",
+      "chapters": [
+        893
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "char_song_qi_yuan"
+      ]
+    },
+    {
+      "text": "After Xing Xiang Zi refuses Shark Demon’s command token, Su Bai Man argues that Song clan pressure will drive him to seek their help.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "reputation-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_su_bai_man"
+      ]
+    },
+    {
+      "text": "Fang Yuan treats Song clan as a huge force that still cannot control the whole of Eastern Sea. Su Bai Man states that Song clan is a righteous path super force whose reputation was affected after Song Yi Shi was offended, and that rising pressure will push Xing Xiang Zi to ask them for help. Shark Demon affirms her analysis.",
+      "chapters": [
+        898
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "reputation-pressure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Clan headquarters are Heavy Water blessed land in Eastern Sea. Song Yi Shi barges in on Song Qi Yuan and rank seven elders; Song Qi Yuan is preparing to lead clan Gu Immortals against Cai clan and Ruo Lai clan for Old Eccentric Tian Nan’s inheritance at Ascending Heaven Plain, and he sends her with a token to Twin Polar Sea Strait to seek Song Jia Dan. Song Jia Dan is a wisdom path Gu Immortal the clan specially nurtured. He sits fused into twin polar sea strait, and the clan asks him to deduce upcoming fortunes on important matters. In Eastern Sea he is one of the three publicly recognized most capable wisdom path Gu Immortals.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "clan-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_heavy_water_blessed_land",
+        "inh_tian_nan_true_inheritance",
+        "loc_ascending_heaven_plain",
+        "loc_twin_polar_sea_strait",
+        "char_song_jia_dan"
+      ]
+    },
+    {
+      "text": "Fang Yuan, Shark Demon, and others negotiate with Song clan Gu Immortals over bee sea. Song Yi Shi stops pursuing Xing Xiang Zi’s wrongdoing after an apology and six hundred immortal essence stones. The offense is costly because Song clan is a super force with a large foundation and Song Yi Shi is backed by Song Qi Yuan. The settlement at six hundred holds because Shark Demon negotiates on behalf of Eastern Sea Zombie Alliance and because that alliance is stronger than Song clan.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "xing-xiang-zi-settlement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance"
+      ]
+    },
+    {
+      "text": "Song clan camps at Ascending Heaven Plain with Cai clan and Ruo Lai clan. Song Yi Shi is named the prized jewel of the clan and one of the beauties of Eastern Sea. Song Jia Dan is the pride of the clan among those three Eastern Sea wisdom path Gu Immortals. The three clans treat the plain as theirs; against them, Blazing Heaven Demoness is too weak to seize the inheritance, and rank eight Gu Immortals from all three clans later face her.",
+      "chapters": [
+        986
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_blazing_heaven_demoness"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/song-clan/",
+      "chapters": [
+        892,
+        893,
+        898,
+        899,
+        907,
+        986
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Song Qi Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

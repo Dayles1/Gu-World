@@ -1,0 +1,411 @@
+{
+  "id": "gu_ghost_fire_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ghost Fire Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Ghost Flame Gu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ghost Fire Gu is needed together with Bone Bamboo Gu to repair a damaged white bone wheel.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 431,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    431,
+    441,
+    442,
+    445,
+    457,
+    459,
+    482,
+    831,
+    855,
+    856
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 445,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "res_human_soul",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_bone_bamboo_gu",
+      "count": 2
+    },
+    {
+      "target": "char_shen_jie_ao",
+      "count": 1
+    },
+    {
+      "target": "sys_mental_energy",
+      "count": 1
+    },
+    {
+      "target": "gu_battle_bone_wheel_gu",
+      "count": 1
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "gu_ghost_cry_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_ghost_face_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_pei_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_flying_frost_sect",
+      "count": 1
+    },
+    {
+      "target": "char_an_han",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_ball_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/ghost-fire-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/ghost-fire-gu/",
+      "chapters": [
+        431,
+        441,
+        442,
+        445,
+        457,
+        459,
+        482,
+        831,
+        855,
+        856
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 1,
+        "recorded_chapter": 855,
+        "confidence": "B"
+      },
+      {
+        "rank": 2,
+        "recorded_chapter": 441,
+        "confidence": "B"
+      },
+      {
+        "rank": 3,
+        "recorded_chapter": 856,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Residing under the tongue, it forms into a blue lump of fire.",
+        "chapters": [
+          445
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "When activated, it transforms into a small lump of eerie ghost fire.",
+        "chapters": [
+          855
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "During an assault on Pei tribe walls, Ge tribesmen shout Ghost flame Gu and send two or three balls of eerie blue ghost fire into defending Gu Masters. The fire covers their bodies, does not injure flesh, and burns souls directly, drawing tragic shouts from the pain.",
+        "chapters": [
+          482
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "siege-use-against-pei-tribe",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_pei_tribe",
+          "fac_gu_masters"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Ghost Fire Gu is both a fire path and soul path Gu, with tricky refinement that drains mental energy and can weaken the soul over repeated work.",
+        "chapters": [
+          831
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-traits",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "Northern plains shops stock many rank two Ghost Fire Gu.",
+        "chapters": [
+          441
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "market-stock-and-classification",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_northern_plains"
+        ]
+      },
+      {
+        "text": "Soul path shop lists place Ghost Fire Gu among attacking Gu.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "market-stock-and-classification",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "path_soul"
+        ]
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "unspecified",
+      "recorded_chapter": 445,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan seeks it while the white bone wheel in his aperture is near destruction.",
+        "chapters": [
+          431
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Fang Yuan keeps the Gu under his tongue as a blue lump of fire.",
+        "chapters": [
+          445
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "repair-burn",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He breathes out eerie blue ghost fire that lands on Bone Bamboo Gu and burns it into white bone smoke for the battle bone wheel’s cracks. The fire feels chilling to the bone as it burns.",
+        "chapters": [
+          445
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "repair-burn",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_bone_bamboo_gu"
+        ]
+      },
+      {
+        "text": "Ghost Fire Gu is a rank two soul path Gu. Once it advances, it becomes rank three ghost flame Gu. Night wolf king ghost fire in that scene comes from rank four ghost blaze Gu, not from Ghost Fire Gu itself.",
+        "chapters": [
+          457
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "ghost-flame-advance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In a later duel Fang Yuan uses a rank one Ghost Fire Gu, then a rank two copy whose ghost fire is double the size, and then a rank three Ghost Fire Gu.",
+        "chapters": [
+          855
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ghost-flame-advance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Ghost fires can injure the soul.",
+        "chapters": [
+          855
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ghost-flame-advance",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

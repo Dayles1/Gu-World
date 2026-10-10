@@ -1,0 +1,193 @@
+{
+  "id": "char_steel_thread_city_lord",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Steel Thread City Lord",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Steel Thread City Lord is the female hairy man ruler of Steel Thread City on Black Hair Continent, hard-hearted in pursuit of authority and power.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1050,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1050,
+    2244,
+    2245
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_hairy_men",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 2
+    },
+    {
+      "target": "char_hua_feng_city_lord",
+      "count": 2
+    },
+    {
+      "target": "loc_hua_feng_city",
+      "count": 2
+    },
+    {
+      "target": "loc_steel_thread_city",
+      "count": 2
+    },
+    {
+      "target": "char_black_hair_king",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_fang_xiang",
+      "count": 1
+    },
+    {
+      "target": "char_lian_ke_xin",
+      "count": 1
+    },
+    {
+      "target": "char_twelfth_hair",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "She personally receives Hua Feng City Lord at a banquet and agrees to a preliminary contest to choose who will fill their region’s three slots in Black Hair King’s martial competition. After Hua Feng City wins the early rounds she is reluctant to send a recently bought human slave of rank five, then swaps in Fang Zheng under threat of death if he loses, valuing city reputation over lust. An elder notes she has visited that slave almost every night since the purchase.",
+      "chapters": [
+        1050
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hua_feng_city_lord",
+        "char_black_hair_king",
+        "loc_hua_feng_city",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Gu Yue Fang Xiang recalls that even his birth mother, Steel Thread City Lord, disliked him at first for mixed human and hairy man blood and weak Gu refinement aptitude. She later accepted him, then escaped with him when Steel Thread City was attacked and nearly wiped out. In his recollection, before what he takes as her death she names his father Gu Yue Fang Zheng, gives him the human name Gu Yue Fang Xiang, and tells him to find that father and take revenge.",
+      "chapters": [
+        2244
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mother-of-fang-xiang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_fang_xiang",
+        "loc_steel_thread_city"
+      ]
+    },
+    {
+      "text": "Twelfth Hair tells Lian Ke Xin that Steel Thread City Lord is not dead, only in a comatose state of near death that only a Gu Immortal’s method can save, and plans to use that fact to harden Gu Yue Fang Xiang’s will to pass tribulation.",
+      "chapters": [
+        2245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "near-death-coma",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_twelfth_hair",
+        "char_lian_ke_xin",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/steel-thread-city-lord/",
+      "chapters": [
+        1050,
+        2244,
+        2245
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Hairy Men",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_hairy_men",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

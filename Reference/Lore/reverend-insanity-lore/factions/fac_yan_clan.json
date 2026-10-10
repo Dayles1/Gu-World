@@ -1,0 +1,194 @@
+{
+  "id": "fac_yan_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yan Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border clan whose young master Yan Jun first appears after years of closed cultivation on an Immemorial Era phantom path inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 364,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    364,
+    395,
+    966
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yan_jun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 364,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yan_jun",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ba_xiu",
+      "count": 1
+    },
+    {
+      "target": "evt_era_immemorial",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yan Jun is Yan clan’s young master. When he hears that little beast king killed Tie Ba Xiu, he almost does not believe the report. A subordinate reports that he entered an Immemorial Era phantom path inheritance and stayed in closed cultivation for five years.",
+      "chapters": [
+        364
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "young-master-and-phantom-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yan_jun",
+        "char_tie_ba_xiu",
+        "evt_era_immemorial"
+      ]
+    },
+    {
+      "text": "Fang Yuan names the young clan leader of Yan clan, Yan Jun, as the rank four Gu Master able to charge the bronze hall once the two rank five experts are held by the dog emperors. Yan Jun obtained the ancient phantom path inheritance and specializes in hiding and attacking. Fang Yuan recalls that in his previous life phantom path Yan Jun showed great brilliance at the battle of Yi Tian Mountain until Mo Wu Tian beat him into retreating.",
+      "chapters": [
+        395
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "at-san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_master",
+        "loc_yi_tian_mountain",
+        "char_mo_wu_tian"
+      ]
+    },
+    {
+      "text": "A phantom path inheritor and Yan clan’s young clan leader, Yan Jun, sneaks into Yi Tian Mountain, kills Chou Jiu, and leaves openly. After Chou Jiu secretly resurrects, Mo Wu Tian later defeats Yan Jun into heavy injuries in the sixth battle.",
+      "chapters": [
+        966
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yi-tian-mountain-war",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chou_jiu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yan-clan/",
+      "chapters": [
+        364,
+        395,
+        966
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "inh_huo_zheng_jun_inheritance",
+  "entity_type": "inheritance",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huo Zheng Jun inheritance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Huo Zheng Jun's inheritance"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A small fire path inheritance left by righteous rank four Gu Master Huo Zheng Jun in an eerie fire dragon python valley inside Imperial Court blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 548,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    548
+  ],
+  "relations": [
+    {
+      "type": "creator",
+      "target": "char_huo_zheng_jun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 548,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_huo_zheng_jun",
+      "count": 3
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_pupil_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan finds a bright red rock like a fire lotus in a valley after killing an eerie fire dragon python. The rock opens in layers and shows Gu worms and a stele written in northern plains words.",
+      "chapters": [
+        548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "The fire path Gu Master who left the inheritance was called Huo Zheng Jun, a righteous rank four fire path Gu Master. He entered the valley by accident, was attacked by the eerie fire dragon python, and before dying from his injuries left his Gu worms and made the inheritance. He left seven Gu worms. After years, four have died and three remain. His core Gu worm was the rank four fire pupil Gu. Fang Yuan keeps the three remaining Gu, stores the recipes, and smashes the stele.",
+      "chapters": [
+        548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_huo_zheng_jun",
+        "gu_fire_pupil_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/inheritances/huo-zheng-jun-inheritance.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/inheritances/huo-zheng-jun-inheritance/",
+      "chapters": [
+        548
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Creator": {
+      "text": "Huo Zheng Jun",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Holders": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Location": {
+      "text": "Imperial Court blessed land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

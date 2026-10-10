@@ -1,0 +1,290 @@
+{
+  "id": "char_landlord_lei_yu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Landlord Lei Yu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Landlord Lei Yu is a Northern Plains Zombie Alliance immortal zombie named in the Dark Flow Giant City meeting as one of two injured by a yaksha octopus in Earth Trench.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 741,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    741,
+    930,
+    931,
+    932,
+    933,
+    938
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zombie_alliance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 741,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zombie_alliance",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_yin_xuan",
+      "count": 2
+    },
+    {
+      "target": "char_granny_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_yin_liu_gong",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 1
+    },
+    {
+      "target": "char_dragon_commander_ye_cha",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Yin Liu Gong offers a thousand contribution points to chase the yaksha octopus wrecking black oil extraction in Earth Trench, or two thousand to kill it.",
+      "chapters": [
+        741
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yin_liu_gong",
+        "reg_earth_earth_trench"
+      ]
+    },
+    {
+      "text": "As a rank six immortal zombie he stands guard outside Fang Yuan’s secret room with Doctor Yin Xuan, and looks on with ominous light when Fang Yuan walks away after a curt dismissal. At the immortal material warehouse with Doctor Yin Xuan he keeps distance while Fang Yuan rants about failed refinement, then refuses the sudden demand to enter Earth Trench and offers to gather any immortal materials needed instead.",
+      "chapters": [
+        930
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "monitoring-xing-xiang-zi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_doctor_yin_xuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan orders them to follow him into Earth Trench under Blazing Heaven Demoness’s protection order; Landlord Lei Yu and Doctor Yin Xuan grit their teeth but cannot refuse, and Landlord Lei Yu is the one sent to transmit the report to Blazing Heaven Demoness through an information path Gu formation in Dark Flow Giant City. He later joins the five immortal zombies sent as escort, listed among the three rank sixes, and is named as skilled in attacking with grand and powerful attacks.",
+      "chapters": [
+        931
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "monitoring-xing-xiang-zi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_blazing_heaven_demoness",
+        "sys_gu_formation",
+        "loc_dark_flow_giant_city"
+      ]
+    },
+    {
+      "text": "When Fang Yuan says processing snail mucus will need starlight that alerts nearby yaksha octopuses, Landlord Lei Yu asks unhappily why that was not said earlier. Dragon Commander Ye Cha assigns him and Ye Cha to attack the octopuses while Granny Yuan distracts them. After Fang Yuan shows star path battle strength as an expert among rank sixes, Landlord Lei Yu, who was unhappy toward him, falls silent and judges that a solo fight might not go his way.",
+      "chapters": [
+        932
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-escort",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dragon_commander_ye_cha",
+        "char_granny_yuan"
+      ]
+    },
+    {
+      "text": "In the later chaotic battle he shouts for Xing Xiang Zi to survive, cold sweat rising at the thought that Fang Yuan could die under their watch.",
+      "chapters": [
+        933
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-escort",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan reappears as Xing Xiang Zi, even Landlord Lei Yu finds the sight pleasing.",
+      "chapters": [
+        938
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-escort",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/landlord-lei-yu/",
+      "chapters": [
+        741,
+        930,
+        931,
+        932,
+        933,
+        938
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 930",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zombie Alliance as of ch. 741",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 930,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

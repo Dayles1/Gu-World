@@ -1,0 +1,442 @@
+{
+  "id": "evt_arc_gu_yue_village",
+  "entity_type": "event",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Yue Village",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The novel opens in Gu Yue Village on Qing Mao Mountain as the Gu Yue clan prepares its annual Awakening Ceremony.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    14,
+    16,
+    20,
+    39,
+    42,
+    45,
+    46,
+    57,
+    59
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "evt_arc_qing_mao_mountain",
+      "count": 3
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 2
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 2
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 2
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_c_grade",
+      "count": 1
+    },
+    {
+      "target": "char_flower_wine_monk",
+      "count": 1
+    },
+    {
+      "target": "sys_aptitude",
+      "count": 1
+    },
+    {
+      "target": "sys_ranks_and_realms",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "gu_photo_audio_gu",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "char_jia_jin_sheng",
+      "count": 1
+    },
+    {
+      "target": "gu_treasure_brass_toad",
+      "count": 1
+    },
+    {
+      "target": "char_tie_xue_leng",
+      "count": 1
+    },
+    {
+      "target": "gu_bamboo_gentleman_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan returns to his youth by the Spring Autumn Cicada after a first life of about five hundred years. He means to remain a demon if reborn.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_spring_autumn_cicada"
+      ]
+    },
+    {
+      "text": "He carries into this life a heart set on immortality. His twin brother is Gu Yue Fang Zheng.",
+      "chapters": [
+        2
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "The Gu Yue clan migrated from the central lands to the South Border. Talent grades from A to D by how far a fifteen-year-old walks into the moon orchid sea.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_aptitude"
+      ]
+    },
+    {
+      "text": "Pressure on that walk comes from a spirit spring deep in the flower sea.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan opens as a rank one Gu Master with C grade talent; Fang Zheng is A grade, and the clan head names himself Gu Yue Bo.",
+      "chapters": [
+        6
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "sys_c_grade",
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "A week later the academy teaches the nine Gu Master ranks, retells the Flower Wine Monk’s fight with the fourth clan head, and Fang Yuan begins hunting a Liquor worm he remembers from that inheritance.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_ranks_and_realms",
+        "char_flower_wine_monk"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s memory, a heartbroken clan Gu Master’s wine draws a Liquor worm, and following it into a hole he finds the Flower Wine Monk’s bones and inheritance.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "liquor-worm-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan follows a Liquor worm into a cliff chamber and finds the Flower Wine Monk’s bones.",
+      "chapters": [
+        14
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "liquor-worm-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In that chamber a Photo-audio Gu projects a looping motion picture with sound on the stone wall: the Flower Wine Monk’s fight with the fourth generation clan head, recorded once and left to feed on light and sound while it repeats.",
+      "chapters": [
+        16
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "liquor-worm-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_photo_audio_gu"
+      ]
+    },
+    {
+      "text": "He finishes refining the Liquor worm by pressing it with the Spring Autumn Cicada’s aura, then refines a Moonlight Gu the same way and reports to the academy as the first finisher under his own name.",
+      "chapters": [
+        20
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "liquor-worm-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_moonlight_gu"
+      ]
+    },
+    {
+      "text": "Jia Fu, rank four leader of the Jia merchant caravan, reaches Gu Yue Village on a Treasure Brass Toad.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "merchant-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_fu",
+        "gu_treasure_brass_toad"
+      ]
+    },
+    {
+      "text": "Jia Jin Sheng names himself when he barges into the rock gambling den and tries to buy Fang Yuan’s unfinished mudball.",
+      "chapters": [
+        42
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "merchant-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_jin_sheng"
+      ]
+    },
+    {
+      "text": "Before that night Fang Yuan still weighs selling the image wall, noting that the Flower Wine Monk slapped the Photo-audio Gu onto the wall so the recording would loop and show the truth.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "image-wall-night",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the image wall cave, after Jia Jin Sheng presses him about what he gained from the Flower Wine Monk, Fang Yuan kills him with moonblades.",
+      "chapters": [
+        46
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "image-wall-night",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later Jia Fu interrogates him with the rank four Bamboo Gentleman; under the Spring Autumn Cicada’s aura the Gu fails to mark his answers as lies. Jia Fu leaves Gu Yue Village planning to hire Tie Xue Leng.",
+      "chapters": [
+        57
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "merchant-investigation-close",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bamboo_gentleman_gu",
+        "char_tie_xue_leng"
+      ]
+    },
+    {
+      "text": "The same hire is also called Tie Leng Xue, and Fang Yuan treats the murder trouble as settled.",
+      "chapters": [
+        59
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "merchant-investigation-close",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qing Mao Mountain continues from chapter 60.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "merchant-investigation-close",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_arc_qing_mao_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/arcs/gu-yue-village.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/arcs/gu-yue-village/",
+      "chapters": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        14,
+        16,
+        20,
+        39,
+        42,
+        45,
+        46,
+        57,
+        59
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Chapters": {
+      "text": "1 to 59",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Length": {
+      "text": "59 chapters",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Volume": {
+      "text": "No volume boundaries exist in the source table of contents",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Boundaries": {
+      "text": "Anchored to chapter titles that name a region transition.",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "event_kind": "arcs"
+}

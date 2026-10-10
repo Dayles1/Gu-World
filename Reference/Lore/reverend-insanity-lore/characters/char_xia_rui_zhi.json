@@ -1,0 +1,245 @@
+{
+  "id": "char_xia_rui_zhi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xia Rui Zhi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xia rui zhi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ся Жуй Чжи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xia Rui Zhi is Xia clan's rank seven first supreme elder who leads the clan when rank eight foes press Eastern Sea.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1982,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1982,
+    2069,
+    2070
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_xia_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1982,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_xia_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "house_whale_fishing_boat",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "house_golden_star_tower",
+      "count": 1
+    },
+    {
+      "target": "loc_human_sea",
+      "count": 1
+    },
+    {
+      "target": "char_ice_crystal_immortal_monarch",
+      "count": 1
+    },
+    {
+      "target": "race_snowmen",
+      "count": 1
+    },
+    {
+      "target": "move_sword_feather_bladewing",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "As Xia clan’s first supreme elder he hears Gu Immortals urge a fight and keeps a dark face. Though only rank seven, he has high reputation, argues they should withdraw into Immortal Gu Houses, and despairs that so many rank eight Gu Immortals are attacking a Xia clan blessed land that is not Heavenly Court.",
+      "chapters": [
+        1982
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xia_clan",
+        "sys_gu_immortal",
+        "sys_immortal_gu_house",
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "He walks out of the Eastern Sea alliance army to challenge the variant human force, fights a rank seven snowman Gu Immortal, and lands a fatal killer move before Ice Crystal Immortal Monarch interferes.",
+      "chapters": [
+        2069
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "race_snowmen",
+        "char_ice_crystal_immortal_monarch"
+      ]
+    },
+    {
+      "text": "When bladewings penetrate Xia clan’s Immortal Gu House Whale Fishing Boat, he is killed inside that House with a mournful howl.",
+      "chapters": [
+        2070
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_whale_fishing_boat"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xia-rui-zhi/",
+      "chapters": [
+        1982,
+        2069,
+        2070
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1982",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Xia Clan as of ch. 1982",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1982,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

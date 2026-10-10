@@ -1,0 +1,158 @@
+{
+  "id": "loc_shuang_jiang_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shuang Jiang Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain named on the caravan's planned route after Mu Bei mountain toward Zhao clan village.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 247,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    247,
+    258
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_zhao_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_mu_bei_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xue_lei_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xiang_ya_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Several days after the caravan enters Xiang Ya mountain, a caravan member says that after Xiang Ya mountain the group has to get by Mu Bei mountain and then Shuang Jiang mountain before it reaches Zhao clan village.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-on-the-planned-route",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xiang_ya_mountain",
+        "fac_zhao_clan"
+      ]
+    },
+    {
+      "text": "The mountain has two peaks separated by a deep ravine. The peaks look similar and give off a majestic aura.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After crossing Mu Bei Mountain, Fang Yuan’s group arrives at Shuang Jiang mountain. Without the caravan’s protection, the four find the crossing takes more effort. After they cross, the next place is Xue Lei Mountain.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "arrival-at-twin-peaks",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mu_bei_mountain",
+        "char_fang_yuan",
+        "loc_xue_lei_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/shuang-jiang-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/shuang-jiang-mountain/",
+      "chapters": [
+        247,
+        258
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

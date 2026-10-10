@@ -1,0 +1,171 @@
+{
+  "id": "loc_old_earth_city",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Old Earth City",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A carved wooden city on the branches of old earth wood at Ku Mu mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 738,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    738,
+    739
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 2
+    },
+    {
+      "target": "loc_ku_mu_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 2
+    },
+    {
+      "target": "char_divine_lord_tian_du",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "loc_old_earth_wood",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Built on the branches of old earth wood, it resembles a carved wooden city. Wooden houses line up tall and short, with squares, towers, city walls, and interconnected streets along the branches, plus vine ladders drooping or hanging between branches. Much of it is half destroyed: houses collapsed, yellow vines unable to bear weight, cold wind breaking them onto the wood.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Ye leads Fang Yuan past rotten leaves into a deep part of the wood at Ku Mu Mountain. Fang Yuan names the place and recalls that it was once popular, that famous characters gathered there, and that it was once the heart of Northern Plains. Much of it is already half destroyed: houses collapsed, yellow vines unable to bear weight, cold wind breaking them onto the wood. Gu Ye calls the title Old Earth City Lord hollow and says the city is dead, kept relevant mainly because it still produces the wood path resource wilted essence. He is on a Zombie Alliance mission to guard old earth wood and warns against taking that mission.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_ye",
+        "char_fang_yuan",
+        "loc_ku_mu_mountain",
+        "reg_northern_plains",
+        "fac_zombie_alliance"
+      ]
+    },
+    {
+      "text": "In a ruined central plaza, Gu Ye activates a Zombie Alliance top tier mortal killer move, green crystal hero’s path, which spans hundreds of thousands of li and links old earth wood to the alliance garrison at Dark Flow Giant City. Ordinary transport fails for immortal zombies because their bodies are filled with dao marks.",
+      "chapters": [
+        739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "transport-to-alliance-garrison",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dark_flow_giant_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/old-earth-city.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/old-earth-city/",
+      "chapters": [
+        738,
+        739
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "city",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

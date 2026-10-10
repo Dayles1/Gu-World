@@ -1,0 +1,143 @@
+{
+  "id": "loc_zhi_forest",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhi Forest",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A zhi forest is an underground lingzhi grove, often dozens of li across, sold as a common resource and home to earth horses.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 680,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    680
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_universal_life_academy",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Zhi forests grow underground, usually for dozens of li. The lingzhi inside are as large as trees, with plump and juicy meat that can feed Gu worms, serve as refinement materials, or be sold.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Under a valley near Universal Life Academy, Fang Yuan enters an ordinary zhi forest about ten li in size. At its center the lingzhi king is six meters tall, reaching the cave ceiling, with flesh like a huge umbrella spreading in a circle. Beside that king live three earth horses as a family, metal-consuming ant groups with wild metal path Gu, and wild wood path Gu on the lingzhi king.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_universal_life_academy",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Many people sell zhi forests in treasure yellow heaven as a common good that does not even require immortal essence stones. For Universal Life Academy an underground zhi forest is a huge benefit and important resource stockpile.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "resource-and-trade",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan pulls the lingzhi king’s heart: soft, hot, milky white on the surface, made of lingzhi flesh with a meaty fragrance. Planting that heart can form a new forest. After the heart is taken the lingzhi king does not die, but the forest stops growing and must recuperate for over a decade. Hu Immortal blessed land soil is not suited to large zhi forests; a small area can be sustained with little benefit.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "resource-and-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/zhi-forest.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/zhi-forest/",
+      "chapters": [
+        680
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "forest",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

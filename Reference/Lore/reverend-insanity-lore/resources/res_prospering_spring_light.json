@@ -1,0 +1,136 @@
+{
+  "id": "res_prospering_spring_light",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Prospering spring light",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Prospering spring light is a rank eight light path immortal material condensed as a living flower of white petals with red and green marks.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1803,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1803
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_light",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_light",
+      "count": 1
+    },
+    {
+      "target": "res_false_pearl",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_light_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Prospering spring light is a rank eight immortal material. Although it is light path, it is condensed as a flower: pure white petals with bright red specks and blotches of bright green, lifelike, delicate, and bursting with vitality.",
+      "chapters": [
+        1803
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "flower-form",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the Long Hair refinement path formation, prospering spring light is the main immortal material added first to the fire. It melts into pure white light that pours over Fang Yuan’s split soul and fully covers it. False pearl follows as the next main material and is covered on false pearl.",
+      "chapters": [
+        1803
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "long-hair-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "res_false_pearl"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/prospering-spring-light.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/prospering-spring-light/",
+      "chapters": [
+        1803
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Light Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

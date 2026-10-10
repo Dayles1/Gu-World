@@ -1,0 +1,419 @@
+{
+  "id": "evt_arc_bai_gu_mountain",
+  "entity_type": "event",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Gu Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fang Yuan and Bai Ning Bing ride the Yellow Dragon river to Bai Gu mountain, where Bai clan watches their movements from camp.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 200,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    200,
+    219,
+    221,
+    226,
+    232,
+    235,
+    247,
+    249,
+    260
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "evt_arc_gu_yue_clan_conflict",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_bai_hua",
+      "count": 1
+    },
+    {
+      "target": "char_bai_lian",
+      "count": 1
+    },
+    {
+      "target": "char_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zhan_lie",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_swimming_dragon_butterfly_gu",
+      "count": 1
+    },
+    {
+      "target": "char_grey_bone_scholar",
+      "count": 1
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_flesh_unity_gu",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "gu_breath_concealment_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_xiang_ya_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Five days after the battle at Qing Mao Mountain, Fang Yuan and Bai Ning Bing drift down the Yellow Dragon river on a raft cut from Qing Mao bamboo, neither of them left holding a transportation Gu. A shoal of Shuttle Swordfish breaks the raft apart under them, and they beach the wreck on open sand still short of Bai Gu mountain.",
+      "chapters": [
+        200
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "After Bai Zhan Lie takes a clear hunting lead with a rank three swimming dragon butterfly Gu, Bai Lian pushes a risky hunt for bone beasts and wild bone Gu and plans to coax Bai Sheng and Bai Hua along so their hidden Gu Master escorts will cover the group. Fang Yuan already knows from her talk that the righteous inheritance sits at the back mountain, and he filters her exaggerations down to a half-year trek if he and Bai Ning Bing work together.",
+      "chapters": [
+        219
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bai-clan-hunting-camp",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_zhan_lie",
+        "gu_swimming_dragon_butterfly_gu",
+        "char_bai_lian",
+        "char_bai_sheng",
+        "char_bai_hua",
+        "sys_gu_master",
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "The spiral bone cave and Grey Bone Scholar’s inheritance site.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "grey-bone-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_white_bone_inheritance"
+      ]
+    },
+    {
+      "text": "The spiral bone cave is the entrance to Grey Bone Scholar’s inheritance.",
+      "chapters": [
+        221
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "grey-bone-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_grey_bone_scholar"
+      ]
+    },
+    {
+      "text": "The bone flesh unity refinement fire and who completes it.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "bone-flesh-refinement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan places Bai Sheng and Bai Hua’s palms on the red gem pupils of the skull sculpture that Grey Bone Scholar left for bone flesh unity Gu; the gems light and the skull opens. The twins are not yet Gu Masters. Fang Yuan throws the twins into the refinement fire; the fire shifts from blue toward scarlet blood and then stalls short of the reddish-purple success color the scroll requires. Fang Yuan and Bai Ning Bing then cut their own flesh into the fire, the color turns reddish-purple, and they pour primeval essence together to finish the step. Fang Yuan refines the resulting bone flesh unity Gu.",
+      "chapters": [
+        226
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bone-flesh-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "gu_bone_flesh_unity_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s plan to join an east-to-west caravan after leaving Bai Gu mountain.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-plan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan plans to join a caravan travelling east to west, aiming at least as far as Shang Clan City. Bai clan is chasing them without rest, so the caravan covers their tracks, and with breath concealment Gu they can disguise as mortals while caravans stay far more wary of foreign Gu Masters. Caravan heads are normally rank three; rank four leaders like Jia Fu are rare.",
+      "chapters": [
+        232
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-plan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "fac_bai_clan_bai_gu_mountain",
+        "gu_breath_concealment_gu",
+        "fac_caravan",
+        "char_jia_fu"
+      ]
+    },
+    {
+      "text": "Fang Yuan recognizes the caravan deputy known as Lady Zhang Xin Ci.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "shang-xin-ci",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside that caravan he recognizes the deputy leader known as Lady Zhang Xin Ci as Shang Xin Ci, a Shang clan young master with no cultivation aptitude who is a mortal, travelling under the Zhang name.",
+      "chapters": [
+        235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-xin-ci",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing’s reading of Fang Yuan’s goods sacrifice, and the white feather flying elephant charge on Xiang Ya mountain.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-scheme",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xiang_ya_mountain"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing works out that Fang Yuan sacrificed goods during the first beast-group attack to clear suspicion, while keeping his truly valuable stock, so his real losses were smaller than they looked. A white feather flying elephant charge then smashes through the moving caravan on Xiang Ya mountain.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-scheme",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Surviving Gu Master counts after the beast-group losses.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-remnants",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After heavy beast-group losses, the surviving leaders count seventy-eight Gu Masters left in a force that once held over a thousand people: twelve rank three, twenty-eight rank two, and thirty-eight rank one.",
+      "chapters": [
+        249
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-remnants",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan and Shang Xin Ci enter Shang clan city by different gates.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-gate",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Chapter 260 places Fang Yuan at Shang clan city’s eastern gate while Shang Xin Ci enters from the south.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-gate",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/arcs/bai-gu-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/arcs/bai-gu-mountain/",
+      "chapters": [
+        200,
+        219,
+        221,
+        226,
+        232,
+        235,
+        247,
+        249,
+        260
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Chapters": {
+      "text": "200 to 260",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Length": {
+      "text": "61 chapters",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Volume": {
+      "text": "No volume boundaries exist in the source table of contents",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Boundaries": {
+      "text": "Anchored to chapter titles that name a region transition.",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "event_kind": "arcs"
+}

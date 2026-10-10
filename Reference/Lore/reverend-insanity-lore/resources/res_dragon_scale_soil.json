@@ -1,0 +1,132 @@
+{
+  "id": "res_dragon_scale_soil",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dragon scale soil",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dragon scale soil is grainy, tough soil that looks like layered dragon scales and is used as a Gu refinement material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 825,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    825,
+    826,
+    1313
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dragon_scale_sea_area",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Hu Immortal blessed land, Fang Yuan fills the dragonfish lake with dragon scale soil. The soil is grainy and tough; from afar it resembles layers of dragon scales. It is the soil that dragon type desolate beasts, ancient desolate dragons, or even immemorial desolate dragons lived on, and it carries the aura of dragons. Dragonfish living in a lake made with it have a greater urge to procreate. Because of that soil, the lake is called dragon scale lake.",
+      "chapters": [
+        825
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lake-for-dragonfish",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Dragon scale soil is a Gu refinement material. It is not an immortal material, yet filling a large lake takes a large purchase.",
+      "chapters": [
+        826
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-refinement-material",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later exchanges rewards for dragon scale soil as a mortal Gu material. The description matches the earlier soil: grainy and tough, overlapping like dragon scales from afar, taken from the ground dragon-type desolate beasts and desolate dragons live on, and used because it gives dragonfish a greater impulse to propagate. He lays out the soil, builds a mortal Gu formation to isolate a special sea area, and leads his dragonfish there, where mating increases.",
+      "chapters": [
+        1313
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ordinary-gu-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mortal_gu",
+        "sys_gu_formation"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dragon-scale-soil/",
+      "chapters": [
+        825,
+        826,
+        1313
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Habitat of dragon-type desolate beasts, ancient desolate dragons, and immemorial desolate dragons",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "res_blue_smoke_fox_child",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blue smoke fox child",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blue smoke fox child is a small fox that turns into blue smoke when used as a refinement material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 357,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    357,
+    2076
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_transformation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_transformation",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "res_transformation_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the Legends of Ren Zu stretch, hairy men refining in a cauldron call for blue smoke fox child and throw a small fox into the liquid. The fox is hairy and cute, with eyes like black diamonds, and the moment it touches the liquid it turns into blue smoke and blends into the water.",
+      "chapters": [
+        357
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ren-zu-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_the_legends_of_ren_zu"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing’s group finds a small fox trapped in soil by its hairy tail and limbs; when discovered it curls into a ball and whimpers. The three female immortals name it blue smoke fox child at once. It is a rank eight transformation path immortal material recorded in The Legends of Ren Zu, and they treat the species as already extinct even though this place still holds one.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "extinct-rank-eight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/blue-smoke-fox-child.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/blue-smoke-fox-child/",
+      "chapters": [
+        357,
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Transformation Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Small fox",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

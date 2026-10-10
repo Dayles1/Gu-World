@@ -1,0 +1,186 @@
+{
+  "id": "loc_pear_orchard",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Pear Orchard",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fairy Li Shan's battlefield killer move: a forest of pear trees and roots raised on the icy plain during Hei Lou Lan's tribulation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 688,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    688,
+    689
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "gu_dark_arrow",
+      "count": 1
+    },
+    {
+      "target": "gu_mountain_pledge_gu",
+      "count": 1
+    },
+    {
+      "target": "move_dark_vortex",
+      "count": 1
+    },
+    {
+      "target": "house_dark_prison",
+      "count": 1
+    },
+    {
+      "target": "move_fading_heavenly_flower",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Trees grow rapidly into a forested area; in a few breaths pear blossoms open and the fragrant smell spreads for several li. Inside the orchard the vegetation is dense, pear blossoms fall from the trees, and roots tangle and grow together.",
+      "chapters": [
+        688
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hei Cheng pushes dark arrow Immortal Gu to its limit and shoots three dark arrows through dense trees, falling pear blossoms, and tangled roots while hundreds of sunflower king lotus open and fire burning light beams at him. Dark liquid oozes from his black robe into dark veil; black balls rain down as Dark Vortex and corrode huge pitch black holes through the trees and flowers, while the heated beams tear gaps in the veil, and he gains the upper hand.",
+      "chapters": [
+        688
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_cheng",
+        "gu_dark_arrow",
+        "move_dark_vortex"
+      ]
+    },
+    {
+      "text": "Hei Cheng fires three dark arrows into the pear orchard hunting for Fairy Li Shan’s hiding place.",
+      "chapters": [
+        688
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fight-inside-the-orchard",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_li_shan"
+      ]
+    },
+    {
+      "text": "Roots coil like dragons to block three dark arrows; Fairy Li Shan answers with earth flower lotus burial, fading heavenly flower, and tree flower sheds tears to seal the arrows, because she has only mountain pledge Gu and cannot face Dark Arrow head on. Earth flower lotus burial summons man eating flowers that swallow one arrow in layered gulps until his connection drops by at least thirty percent; fading heavenly flower stains another with pear blossom light specks that spark and slow it; when two arrows fuse to shed the light, tree flower sheds tears seals the hit wooden puppet in amber nectar. He then shows Dark Prison, a rank six Immortal Gu House holding an ancient desolate beast sharp tusk boar, to draw her attention while a third dark arrow slips past her defenses.",
+      "chapters": [
+        689
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fight-inside-the-orchard",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_mountain_pledge_gu",
+        "house_dark_prison",
+        "sys_immortal_gu_house"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/pear-orchard.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/pear-orchard/",
+      "chapters": [
+        688,
+        689
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "battlefield",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

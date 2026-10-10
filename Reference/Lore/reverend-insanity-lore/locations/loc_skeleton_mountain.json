@@ -1,0 +1,156 @@
+{
+  "id": "loc_skeleton_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Skeleton Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Skeleton Mountain is a Lin clan bone path resource point in Western Desert, later stripped to ruins during Fang clan's assault.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2303,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_final_war"
+  },
+  "chapters_cited": [
+    2303
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_anti_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_lin_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Lin Lun Zhou, a rank seven bone path Gu Immortal, defends Lin clan’s Skeleton Mountain and treats an attack on it as an invasion of that resource point where he holds territorial advantage.",
+      "chapters": [
+        2303
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_lin_clan"
+      ]
+    },
+    {
+      "text": "The rocks are dark and let out soul smoke from time to time. Once in a while the mountain rocks produce a skeleton, some human-shaped and some animal-shaped, with countless possibilities. Dark mist crows fly above and feed on the soul smoke.",
+      "chapters": [
+        2303
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang clan’s Immortal Gu House attack shakes the whole mountain, and news of the strike on this peripheral resource point reaches Lin clan headquarters. Lin Lun Zhou enters the depths and calls for reinforcements that rely on formation transport, but transport is already sealed. By the time the anti-Fang alliance arrives, only ruins remain and the whole Skeleton Mountain is gone. Later talk groups Skeleton Mountain with Dragon Roar Volcano and clear water grassland as sites marking Fang clan’s rising strength and next likely targets.",
+      "chapters": [
+        2303
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "assault-and-ruin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan",
+        "sys_immortal_gu_house",
+        "fac_anti_fang_alliance"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/skeleton-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/skeleton-mountain/",
+      "chapters": [
+        2303
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "resource-point",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

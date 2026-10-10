@@ -1,0 +1,349 @@
+{
+  "id": "fac_zhang_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhang Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border clan first named when caravan servants hail the kind-hearted lady of Zhang clan in a little bazaar.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 235,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    235,
+    236,
+    240,
+    241,
+    247,
+    252,
+    259,
+    262,
+    263,
+    270,
+    305
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_zhang_zhu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 236,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_die",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_zhang_zhu",
+      "count": 4
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "fac_lei_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_ou_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan’s recalled background states that years earlier, when Shang Yan Fei was still a Shang young master, he left his seed in Zhang clan, that Shang and Zhang had been at odds since ancient times, and that Shang Xin Ci took her mother’s surname as an illegitimate child before being forced onto the merchant road after her mother died.",
+      "chapters": [
+        236
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seed-surname-and-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_shang_yan_fei",
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Servants in a little bazaar hail her as the kind-hearted lady of Zhang clan.",
+      "chapters": [
+        235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "seed-surname-and-caravan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The caravan around her is Zhang clan’s, and Fang Yuan later stays with that Zhang clan caravan after winning contests that let its wagons pass a monkey checkpoint with lighter losses than other groups.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seed-surname-and-caravan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bai Ning Bing understands that Shang Xin Ci was ostracised by Zhang clan and was only a mortal without cultivating talent.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seed-surname-and-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "At the monkey checkpoint that caravan has no Gu Master besides Zhang Zhu, a rank three healing Gu Master, and is the weakest group in the convoy. After her mother died of illness, most of Zhang clan looked forward to that illegitimate child dying on the road and sent no Gu Masters to reinforce her.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seed-surname-and-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_zhang_zhu",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "When Shang Xin Ci introduces Fang Yuan and Bai Ning Bing as Zhang Clan hidden elders, caravan leaders praise Zhang Clan as well known and worthy of being one of the top clans of the Southern Border. In private those same leaders doubt the hidden-elder story, saying Zhang Clan’s proud personality and strengths are already known to them and that such elders are unlikely.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "standing-and-enmity-with-shang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Shang Yan Fei’s memory of meeting Shang Xin Ci’s mother names her a young lady of Zhang Clan, and states that Zhang Clan and Shang Clan had been enemies for generations, so after he became Shang clan leader he could no longer look for her.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "standing-and-enmity-with-shang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "External elder Wei Yang later reports that he contacted Zhang clan and clarified Shang Xin Ci’s identity.",
+      "chapters": [
+        262
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "standing-and-enmity-with-shang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "Shang Yan Fei also names the journey from Zhang clan to Shang as a huge distance.",
+      "chapters": [
+        263
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "standing-and-enmity-with-shang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang young masters tell themselves there is little to fear because Zhang clan is a subsidiary of Wu clan and has enmity with Shang clan, leaving Shang Xin Ci without foundation in Shang.",
+      "chapters": [
+        270
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wu-clan-tie",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan weighs that her mother was from Zhang clan, that Zhang clan and Wu clan were very close, and that both had many grudges with Shang clan, calling that her political weakness.",
+      "chapters": [
+        305
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "political-weakness-with-wu",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zhang-clan/",
+      "chapters": [
+        235,
+        236,
+        240,
+        241,
+        247,
+        252,
+        259,
+        262,
+        263,
+        270,
+        305
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

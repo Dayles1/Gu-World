@@ -1,0 +1,206 @@
+{
+  "id": "fac_xie_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xie Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xie clan is an Eastern Sea super force Shen Cong Sheng names among equivalent regional rivals such as Cai clan, Hua clan, and Tang clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1910,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1910,
+    1985,
+    2069,
+    2105
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "fac_xia_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "fac_righteous_qi_alliance",
+      "count": 1
+    },
+    {
+      "target": "inh_remnant_leaves_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Shen Cong Sheng weighs whether to cooperate with Fang Yuan against the risk of facing an equivalent Eastern Sea super force, naming Xie clan with Cai clan, Hua clan, Tang clan, and even Song clan as examples of such neighbors.",
+      "chapters": [
+        1910
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shen-clan-rival-list",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_cong_sheng",
+        "char_fang_yuan",
+        "reg_eastern_sea",
+        "fac_hua_clan",
+        "fac_tang_clan",
+        "fac_song_clan"
+      ]
+    },
+    {
+      "text": "Xia clan sits at the easternmost area of Eastern Sea. Toward its northeast is Xie clan. Xia clan treats Xie clan and Tang clan as poor targets for help because those two clans have conflict with Xia clan in ordinary times, and Xia clan Gu Immortals do not want to face their mockery.",
+      "chapters": [
+        1985
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "seat-beside-xia-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xia_clan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When an Eastern Sea alliance army moves against the variant human alliance, Xie clan’s first supreme elder personally takes part in the battle alongside Shen clan’s first supreme elder Shen Cong Sheng and Tang clan’s first supreme elder.",
+      "chapters": [
+        2069
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-army-elder",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shen_clan"
+      ]
+    },
+    {
+      "text": "To resolve an ant plague under Qi Sea Ancestor, Eastern Sea clans contribute true inheritances. Xie clan takes out remnant leaves true inheritance.",
+      "chapters": [
+        2105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "contributes-a-true-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_sea_ancestor"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/xie-clan/",
+      "chapters": [
+        1910,
+        1985,
+        2069,
+        2105
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

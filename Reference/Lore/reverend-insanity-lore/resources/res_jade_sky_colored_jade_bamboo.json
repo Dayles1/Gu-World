@@ -1,0 +1,144 @@
+{
+  "id": "res_jade_sky_colored_jade_bamboo",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jade sky colored jade bamboo",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "jade-green jade bamboo jade bamboo that is jade sky in color"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jade sky colored jade bamboo is the azure heaven bamboo used with an eight-sided diamond star fragment and the light of glory to turn Divine Travel into Fixed Immortal Travel.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 371,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    371,
+    405
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_fixed_immortal_travel",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 3
+    },
+    {
+      "target": "char_verdant_great_sun",
+      "count": 1
+    },
+    {
+      "target": "gu_divine_travel",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_sky_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Divine Travel tells Verdant Great Sun to pluck a jade bamboo that is jade sky in color from a bamboo forest in azure heaven among the nine heavens, then gather eight-sided diamonds from blue heaven star fragments and use the rising sun’s light of glory to become Fixed Immortal Travel. At the limits of azure heaven, jade bamboos grow in the air with lustrous green leaves, rooted in the void so that only their thin stems show from outside. Verdant Great Sun takes one segment: a dark green bamboo stem like jade, palm-sized, hollow in the middle, and cold to the touch. Under the light of glory, Divine Travel swallows the star fragment, enters the jade bamboo, and metamorphoses into Fixed Immortal Travel.",
+      "chapters": [
+        371
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "legend-of-ren-zu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_divine_travel",
+        "char_verdant_great_sun",
+        "gu_fixed_immortal_travel"
+      ]
+    },
+    {
+      "text": "Fang Yuan needs jade sky colored jade bamboo from azure heaven together with an eight-sided diamond star fragment from blue heaven and the light of glory of the immemorial era. Jade sky Gu at rank five, originating from the immemorial era, is a dark green bamboo stem, palm size and hollow, with a jade surface, and stands in for azure heaven’s jade bamboo in his refinement.",
+      "chapters": [
+        405
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fixed-immortal-travel-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_jade_sky_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/jade-sky-colored-jade-bamboo.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/jade-sky-colored-jade-bamboo/",
+      "chapters": [
+        371,
+        405
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Azure heaven bamboo forest",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Fixed Immortal Travel",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

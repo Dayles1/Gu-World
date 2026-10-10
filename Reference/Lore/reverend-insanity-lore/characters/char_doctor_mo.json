@@ -1,0 +1,230 @@
+{
+  "id": "char_doctor_mo",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Doctor Mo",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Doctor Mo is the rank two Gu Master stationed in Han village who presents himself as the healer who revived Han Li after a choking death.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 676,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    674,
+    676
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_han_li",
+      "count": 2
+    },
+    {
+      "target": "gu_human_medicine_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_han_village",
+      "count": 1
+    },
+    {
+      "target": "loc_sha_jing_oasis",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Han village on the fringe of Sha Jing oasis,",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_han_village",
+        "loc_sha_jing_oasis"
+      ]
+    },
+    {
+      "text": "Han Li’s parents kneel and thank Doctor Mo for saving their son after the boy choked. Doctor Mo says he is the Gu Master stationed in the village, that saving Han Li was natural, and that he met the crisis while patrolling, then leaves while the parents keep thanking him.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_han_li",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He is an elderly Gu Master.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan watches from nearby and sees a rank two Gu Master jump from a large village house, straighten his clothes, pretend to arrive by chance, then revive Han Li after the parents plead. From the talk, Fang Yuan places him as a healing Gu Master stationed in the village and notes a secret connection with Han Li. After inspecting Gu worms and flesh modifications on Han Li’s body, Fang Yuan concludes that Doctor Mo is refining rank three human medicine Gu, using a human child as the main material over years for a single-use lifespan increase with large drawbacks. Fang Yuan judges Doctor Mo no longer young, that he chose Han Li for that refinement, that a monitoring Gu explains the fast arrival, and that the refinement’s vitality boost is why revival after choking was easy. Fang Yuan does not kill him, because a mysterious death would draw investigation on Han village, while leaving him alive keeps Han Li cared for through the three to four years still needed to finish the Gu. Fang Yuan also judges that his own planted Gu worms outclass rank two Doctor Mo’s methods, and that any later attempt to harm Han Li would rebound hard.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stationed-healer-and-human-medicine-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_worms",
+        "gu_human_medicine_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/doctor-mo.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/doctor-mo/",
+      "chapters": [
+        674,
+        676
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 676",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 676,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

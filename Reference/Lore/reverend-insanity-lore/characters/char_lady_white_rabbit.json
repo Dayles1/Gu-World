@@ -1,0 +1,823 @@
+{
+  "id": "char_lady_white_rabbit",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lady White Rabbit",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Fairy White Rabbit Black Tigress"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lady White Rabbit is a Southern Border female Gu Immortal who brokers paid entry into the dream realm, selling immortal opportunity access while righteous path control of that business is still loose.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1213,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1213,
+    1214,
+    1217,
+    1224,
+    1225,
+    1226,
+    1326,
+    1342,
+    1349,
+    1351,
+    1352,
+    1376,
+    1396,
+    1444,
+    1464,
+    1805,
+    2061,
+    2076,
+    2178
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shadow_sect",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1376,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_tiger_lick",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1353,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_cornered_tiger",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_white_rabbit_true_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1342,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_black_tigress_true_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1376,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_gu_house",
+      "target": "house_dragon_soul_dark_castle",
+      "role": "controller",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2179,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "inh_white_rabbit_true_inheritance",
+      "count": 4
+    },
+    {
+      "target": "inh_black_tigress_true_inheritance",
+      "count": 4
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 3
+    },
+    {
+      "target": "move_cornered_tiger",
+      "count": 3
+    },
+    {
+      "target": "move_tiger_lick",
+      "count": 3
+    },
+    {
+      "target": "house_dragon_soul_dark_castle",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_miao_yin",
+      "count": 2
+    },
+    {
+      "target": "char_wu_an",
+      "count": 2
+    },
+    {
+      "target": "char_wu_liao",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_southern_border_war",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_great_dream_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_prophecy_of_three_venerables",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_ba_de",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_opportunity_business",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_super_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "char_qiao_si_liu",
+      "count": 1
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "move_reverse_flow_protection_seal",
+      "count": 1
+    },
+    {
+      "target": "move_divination_tortoise_transformation",
+      "count": 1
+    },
+    {
+      "target": "move_vajra_shell",
+      "count": 1
+    },
+    {
+      "target": "inh_food_path_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_omni_directional_travel",
+      "count": 1
+    },
+    {
+      "target": "sys_years_flow_execution_formation",
+      "count": 1
+    },
+    {
+      "target": "move_summer_fan",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_yellow_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    },
+    {
+      "target": "res_black_yellow_heart",
+      "count": 1
+    },
+    {
+      "target": "res_domination_copper",
+      "count": 1
+    },
+    {
+      "target": "res_earth_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_lightning_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_purple_manor_soil",
+      "count": 1
+    },
+    {
+      "target": "res_water_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_white_snow_iron",
+      "count": 1
+    },
+    {
+      "target": "loc_fire_plain_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "house_blood_river_chariot",
+      "count": 1
+    },
+    {
+      "target": "house_golden_altar",
+      "count": 1
+    },
+    {
+      "target": "house_green_wave_pavilion",
+      "count": 1
+    },
+    {
+      "target": "house_nightmare_castle",
+      "count": 1
+    },
+    {
+      "target": "house_profound_frost_house",
+      "count": 1
+    },
+    {
+      "target": "house_red_heavenly_altar",
+      "count": 1
+    },
+    {
+      "target": "house_red_river_pavilion",
+      "count": 1
+    },
+    {
+      "target": "house_rising_cloud_city",
+      "count": 1
+    },
+    {
+      "target": "house_scarlet_palace",
+      "count": 1
+    },
+    {
+      "target": "house_unbreakable_golden_fortress",
+      "count": 1
+    },
+    {
+      "target": "char_duke_tong",
+      "count": 1
+    },
+    {
+      "target": "char_tang_qiong",
+      "count": 1
+    },
+    {
+      "target": "char_lian_ke_xin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan meets her after Jiao Lei Zi brings him to a mortal Gu House on a mountain peak, where demonic path and lone immortals come and go for dream realm business. She appears as a woman in her twenties with red eyes and a round face, speaks quickly, and runs the counter while Jiao Lei Zi only guides customers to her.",
+      "chapters": [
+        1213
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_mortal_gu_house"
+      ]
+    },
+    {
+      "text": "She has the appearance of a woman in her twenties. Her eyes are red like rubies. She has a cute round face and shiny big eyes. Her lips are lush. When she smiles she shows pearly white teeth.",
+      "chapters": [
+        1213
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She wears a white fur coat that wraps only her chest and lower body, leaving a large portion of snow white skin exposed. Her ears are like rabbit ears. Her nose is small and delicate. Her skin is white like a boiled egg. Her lips are pink and delicate. She has an exquisite and busty figure, and her height only reaches Fang Yuan’s chest.",
+      "chapters": [
+        1224
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She has a delicate body and fluffy rabbit ears that droop.",
+      "chapters": [
+        1342
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Her long eyebrows flutter, and her eyes glisten brightly like shiny crystals.",
+      "chapters": [
+        1805
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She tells customers that the house only does dream realm business, that price decides how fast one can enter, and that the Prophecy of Three Venerables frames the dream realm as an opportunity tied to Great Dream Immortal Venerable. She also says the righteous path is not very strict yet, and that the business will not last long.",
+      "chapters": [
+        1213
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dream-realm-broker",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_prophecy_of_three_venerables",
+        "char_great_dream_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Fang Yuan later buys Southern Border intelligence from her with a rank six immortal material, and the text calls her Fairy White Rabbit in that exchange.",
+      "chapters": [
+        1214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dream-realm-broker",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "He returns to her for more intelligence while preparing his Wu Yi Hai identity play.",
+      "chapters": [
+        1217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dream-realm-broker",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_yi_hai"
+      ]
+    },
+    {
+      "text": "The narration treats her as a pure lone cultivator with good connections among demonic path and lone immortals who trust her as middleman, and she takes a cut after each transaction. When Gu Immortals surround her mortal Gu House and demand answers, Wu An convinces her to approach the Wu clan person-in-charge of the super Gu formation, using beauty to keep that immortal opportunity business alive.",
+      "chapters": [
+        1224
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wu-clan-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_wu_an",
+        "fac_wu_clan",
+        "sys_super_gu_formation"
+      ]
+    },
+    {
+      "text": "Fang Yuan, already wearing Wu Yi Hai’s face, recruits her, gives her jade pearl earrings that Southern Border custom reads as concubine status, and shifts the business profits that would have gone to him onto her so she can serve as a public face and a later scapegoat if needed.",
+      "chapters": [
+        1225
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wu-clan-pressure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Wu An brings her before Fang Yuan, and she reports the dream realm business’s situation and hands over concrete accounts for his inspection; though he pays the business little attention, he remains its leader and she must answer to him as his subordinate.",
+      "chapters": [
+        1326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "business-report",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "While she still reports under that Wu Yi Hai cover, the text states she inherited the White Rabbit true inheritance: the inheritor must stay pure hearted, or most of its methods cannot be used and forced use brings backlash, which is why lone immortals and demonic cultivators trust her as intermediary. She keeps entering the super Gu formation to report the immortal opportunity business to him through that stretch.",
+      "chapters": [
+        1342
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "business-report",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_white_rabbit_true_inheritance"
+      ]
+    },
+    {
+      "text": "Wu An tells her to leave and says she will meet Wu Yi Hai in the future, and at that her eyes suddenly turn black and she tells him not to call her White Rabbit, naming herself Black Tigress for the first time. She kills Wu An with a killer move, telling him it was meant for Wu Yi Hai, and he melts into a puddle of black water.",
+      "chapters": [
+        1349
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the chaotic battle at the damaged Gu formation, Black Tigress shows rank seven cultivation while Wu Liao is only rank six.",
+      "chapters": [
+        1351
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_wu_liao"
+      ]
+    },
+    {
+      "text": "Fang Yuan names the White Rabbit true inheritance in that fight, and after her personality changes she uses dark path methods.",
+      "chapters": [
+        1352
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After she recovers, her cultivation falls from rank seven to rank six; Fang Yuan, holding Purple Mountain True Monarch’s inheritance, understands the Black Tigress true inheritance as a dual personality system in which the pure side is weaker in ordinary life and the dark side surges when life is threatened. He also states that Lady White Rabbit already admired Wu Yi Hai, while Black Tigress was recruited by Purple Mountain True Monarch into Shadow Sect, so both sides stay loyal to him once he reveals the name Fang Yuan.",
+      "chapters": [
+        1376
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_purple_mountain_true_monarch",
+        "inh_black_tigress_true_inheritance",
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "Later he treats her as following him because she likes him and because of that true inheritance, not because he holds a hard control agreement over her.",
+      "chapters": [
+        1444
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A Tai Qiu stretch restates ordinary rank six cultivation and a Black Tigress rise to rank seven that cannot last long.",
+      "chapters": [
+        1464
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tai_qiu"
+      ]
+    },
+    {
+      "text": "Fairy Miao Yin later states the inheritance as a top tier dual path method: Lady White Rabbit cultivates light and dark path together, so when she is rank six Black Tigress is rank seven, and when she is rank seven Black Tigress is rank eight.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_miao_yin"
+      ]
+    },
+    {
+      "text": "With Fang Yuan’s help she later becomes a genuine rank eight Gu Immortal and calls him master while leading Immortal Gu Houses into battle.",
+      "chapters": [
+        2178
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-reveal-and-later-allegiance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Her beautiful appearance looks twisted. Her clear innocent eyes fill with sinister light. She has deep bags under her eyes, and thick eyeshadow like the wings of a black butterfly, extending from her eyes to her brows. Her lips are black like ink. Her tongue is cute and pinkish.",
+      "chapters": [
+        1352
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-form",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Her eyes are pure black, with no pupils visible, only a dark and cold light moving around. The area around her eyes is dyed black.",
+      "chapters": [
+        2061
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "black-tigress-form",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The four immortals use the ancient battle formation Omni-directional Travel and arrive above a sand dune far from translocation desert; Fang Yuan calls a rest, opens his immortal aperture’s entrance and lets her out, and she guards the surroundings with Bai Ning Bing, Hei Lou Lan, and Fairy Miao Yin while he goes deep underground into a cave in the sand. He now leads Shadow Sect, and its scattered members, wandering other regions, obey him.",
+      "chapters": [
+        1396
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "guarding-while-fang-yuan-works",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_omni_directional_travel",
+        "char_bai_ning_bing",
+        "char_hei_lou_lan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/lady-white-rabbit.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/lady-white-rabbit/",
+      "chapters": [
+        1213,
+        1214,
+        1217,
+        1224,
+        1225,
+        1226,
+        1326,
+        1342,
+        1349,
+        1351,
+        1352,
+        1376,
+        1396,
+        1444,
+        1464,
+        1805,
+        2061,
+        2076,
+        2178
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1351 VI as of ch. 1376 VIII as of ch. 2178",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shadow Sect as of ch. 1376",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "lone cultivator as of ch. 1224",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1351,
+        "confidence": "B"
+      },
+      {
+        "rank": 6,
+        "as_of_chapter": 1376,
+        "confidence": "B"
+      },
+      {
+        "rank": 8,
+        "as_of_chapter": 2178,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "lone cultivator as of ch. 1224",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

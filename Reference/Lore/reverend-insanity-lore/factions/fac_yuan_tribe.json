@@ -1,0 +1,344 @@
+{
+  "id": "fac_yuan_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yuan Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains super force first named when Zombie Alliance posts a mission to recover a loaned Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 742,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    742,
+    744,
+    747,
+    748,
+    762,
+    763,
+    1193
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yuan_rang_zun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 747,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yuan_rang_zun",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 2
+    },
+    {
+      "target": "loc_zhen_wu_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 2
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 2
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_yin_liu_gong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "gu_human_language",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_sheng_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_nian_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_chou_lao_wu",
+      "count": 1
+    },
+    {
+      "target": "char_hao_zhen",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Zhen Wu blessed land, Yuan tribe headquarters, is a mountain that stands high above the clouds, with a mirror-like pond on the peak that reflects traces of clouds in the sky.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_zhen_wu_blessed_land"
+      ]
+    },
+    {
+      "text": "The surname Yuan is ordinary in Southern Border, Eastern Sea, and Western Desert, but in Northern Plains it marks a super force and supreme authority. Yuan Chi addresses a white robed first supreme elder there, a rank seven Gu Immortal with peak battle strength, who is practicing martial arts above a peak pond of true martial carps when reminded of an auction.",
+      "chapters": [
+        747
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "reg_eastern_sea",
+        "reg_western_desert",
+        "reg_northern_plains",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Zombie Alliance’s leader had loaned an Immortal Gu to Yuan tribe before going to Eastern Sea, and left orders to urge its return. The tribe had long exceeded the loan period and still refused. Members sent every year came back empty. Yuan tribe found excuses and, when talks escalated, chased those members away with force. No immortal zombie wanted the recovery mission until Yin Liu Gong raised the contribution points.",
+      "chapters": [
+        742
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "recovery-mission",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance",
+        "sys_immortal_gu",
+        "char_yin_liu_gong"
+      ]
+    },
+    {
+      "text": "Northern Plains Zombie Alliance’s leader is named as Blazing Heaven Demoness in that same loan. She was out in Eastern Sea, so Yuan tribe kept holding the Immortal Gu while Zombie Alliance asked every year.",
+      "chapters": [
+        744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "recovery-mission",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_blazing_heaven_demoness"
+      ]
+    },
+    {
+      "text": "That first supreme elder enters Qin Bai Sheng’s auction as leader of the Northern Plains super force, with battle strength and financial power that mark him as a strong contender. He tells Qin Bai Sheng to use the name Yuan Rang Zun, recalls an earlier fight, and asks for another spar after recent spear practice.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_bai_sheng",
+        "char_yuan_rang_zun"
+      ]
+    },
+    {
+      "text": "Yuan Rang Zun offers a wood path Immortal Gu and three hundred true martial carps for the Red Fiend Divine Boat recipe.",
+      "chapters": [
+        762
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_red_fiend_divine_boat"
+      ]
+    },
+    {
+      "text": "Yuan Rang Zun wants to sell all the true martial carps but cannot make up his mind, because Yuan tribe already has its own Immortal Gu House. After Chanyu tribe leaves, only Murong tribe, the Eastern Sea Gu Immortal, and Heavenly Lord Bai Zu remain in that contest.",
+      "chapters": [
+        763
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "fac_chanyu_tribe",
+        "fac_murong_tribe",
+        "char_heavenly_lord_bai_zu"
+      ]
+    },
+    {
+      "text": "When Huang Jin super forces appear in turn, Yuan tribe is listed with Liu tribe, Ye Lui tribe, Chanyu tribe, Meng tribe, Nian Er tribe, Murong tribe, and Guan tribe among eleven such forces that rule territories in Northern Plains.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territorial-listing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_liu_tribe",
+        "fac_ye_lui_tribe",
+        "fac_meng_tribe",
+        "fac_nian_er_tribe",
+        "fac_guan_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yuan-tribe/",
+      "chapters": [
+        742,
+        744,
+        747,
+        748,
+        762,
+        763,
+        1193
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

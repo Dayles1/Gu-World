@@ -1,0 +1,166 @@
+{
+  "id": "move_cloud_whirlpool",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cloud Whirlpool",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Cloud Whirlpool is Dong Fang Yu Liang's killer move, designed over three years to swallow Hei Lou Lan's dark vortex.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 511,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    511,
+    512,
+    513
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_dong_fang_yu_liang",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 3
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "move_dark_vortex",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "move_three_hearts_combination_soul",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the Imperial Court contest, Hei Lou Lan casts dark vortex and a hill-sized black sphere presses toward Dong Fang tribe’s main tent. Dong Fang Yu Liang has been waiting for that move. He presses the white cloud under his feet. The tranquil cloud surges, boils into mist, and forms an enormous whirlpool that rises like an opened mouth and swallows the dark sphere. Hei Lou Lan tries to pull back and cannot: the whirlpool firmly sucks in the vortex.",
+      "chapters": [
+        511
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_arc_imperial_court_contest",
+        "char_hei_lou_lan",
+        "move_dark_vortex",
+        "fac_dong_fang_tribe",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "Three Hearts Combination Soul was bait to lure Hei Lou Lan into attacking, so Dong Fang Yu Liang could unfold this trump card, restrict dark vortex, and trap him away from Fang Yuan. While the two still compete over the whirlpool, Dong Fang Yu Liang tells Hei Lou Lan to admit defeat after a false Wolf King death.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ongoing-trap",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_three_hearts_combination_soul",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "The whirlpool restricts dark vortex and restrains Hei Lou Lan, yet the vortex also restricts the whirlpool. The hill-sized sphere is being swallowed bit by bit when it suddenly shrinks. The cloud contracts with that flow, then the vortex expands in a soundless explosion. The whirlpool holds for three breaths before it bursts. The dark sphere enlarges and swallows humans and beasts. Only when it covered a radius of ten li does the semi-circular dark sphere disappear. Hei Lou Lan answers that because Dong Fang Yu Liang designed this whirlpool to restrict dark vortex, he had also improved dark vortex.",
+      "chapters": [
+        513
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "whirlpool-burst",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/cloud-whirlpool.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/cloud-whirlpool/",
+      "chapters": [
+        511,
+        512,
+        513
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Mortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Dong Fang Yu Liang (creator)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

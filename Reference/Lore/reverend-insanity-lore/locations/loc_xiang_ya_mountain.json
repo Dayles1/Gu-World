@@ -1,0 +1,179 @@
+{
+  "id": "loc_xiang_ya_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiang Ya Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain the depleted caravan reaches on the Southern Border road before Mu Bei mountain and Zhao clan village.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 247,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    247,
+    248,
+    253
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_mu_bei_mountain",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shuang_jiang_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Xiang Ya mountain reaches into the clouds. From the foot to the mountain belt the climate is moist and tropical with many rainforests; from the belt to the peak it is snowy, dry, and cold, with cedar trees. Large groups of elephants live on it.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "For a few days after the caravan enters, there are no beast group attacks, then white particles fall at the foot and prove to be feathers, not snow. Hundreds of white feather flying elephants charge from the air; their bodies are covered in white feathers, and each has two three-meter curved tusks. One attack kills hundreds, stomps servants into meat paste, and pierces carriages; Jia Long first tries to gather Gu Masters, then tells people to flee into the surrounding rainforests. The elephants look sacred and elegant but are bloodthirsty, and their rainforest charge fells trees as they stomp. Gu Masters in the caravan had expected those elephants to live above the mountain belt.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "white-feather-elephant-assault",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_long",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "After the attack, Jia Long gathers survivors and finds less than a tenth of the caravan left, about a hundred people, mostly Gu Masters. Many who escape the elephants still die to wild beasts and poisonous worms in the rainforest. Jia Long warns that the smell will attract other beast groups and orders a thirty-minute salvage before leaving the area.",
+      "chapters": [
+        248
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "losses-after-rampage",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A crocodile-elephant group charges the caravan; people disperse into the rainforests. Those beasts are about yak-sized, covered in crocodile-like scales with defense beyond white feather flying elephants, and they drag crocodile-like tails on the ground. About two hours later the group leaves and the caravan walks out of the rainforest with only one Gu Master and a dozen servants lost in that clash. Several days afterward they leave Xiang Ya mountain region and begin the journey to Mu Bei Mountain.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "leaving-the-region",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "loc_mu_bei_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/xiang-ya-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/xiang-ya-mountain/",
+      "chapters": [
+        247,
+        248,
+        253
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

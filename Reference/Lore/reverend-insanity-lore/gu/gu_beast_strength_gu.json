@@ -1,0 +1,313 @@
+{
+  "id": "gu_beast_strength_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beast Strength Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Beast Strength Gu names the ancient strength path Gu that grant the strength of specific beasts. Northern Plains later favors cheaper jin and jun strength Gu over them.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 442,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    442,
+    443,
+    500,
+    758
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "prior user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 442,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "char_chu_du",
+      "count": 2
+    },
+    {
+      "target": "gu_biao_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_dragon_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_strength_of_ten_jun_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_wolf_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_jin_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jun_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_of_a_thousand_jun",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/beast-strength-gu/",
+      "chapters": [
+        442,
+        443,
+        500,
+        758
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_strength"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "A rank four strength of ten jun Gu is weaker than a rank four beast strength Gu, but jun strength can stack. Similar beast strength Gu can also stack if an additional beast fetus Gu is used.",
+        "chapters": [
+          443
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "stacking-and-later-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_strength_of_ten_jun_gu"
+        ]
+      },
+      {
+        "text": "Jin strength Gu and jun strength Gu recipes are easier and cheaper than traditional beast strength Gu, which is why they become widespread in the north.",
+        "chapters": [
+          500
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "stacking-and-later-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan later still recalls experience using beast strength Gu worms.",
+        "chapters": [
+          758
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "stacking-and-later-use",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "prior user",
+      "recorded_chapter": 442,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "In a Northern Plains Gu shop, the shopkeeper offers beast strength Gu after listing jin strength Gu and jun strength Gu, and names wolf strength Gu and horse strength Gu as examples a customer can buy. Fang Yuan had been using beast strength Gu to walk the ancient strength path before those newer recipes spread.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_northern_plains",
+          "gu_strength_gu",
+          "gu_wolf_strength_gu",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "The name covers several distinct Gu, such as wolf strength Gu and horse strength Gu, rather than one shared worm.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "a-family-of-named-gu",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Ancient strength path used beast strength Gu such as green bull strength Gu, Biao strength Gu, and dragon strength Gu. By Fang Yuan’s time in Northern Plains, materials from those ancient recipes are already extremely rare, so the cost of refining them is huge. Domination Immortal Chu Du’s jin and jun recipes are easier to find materials for, cost less, and have a higher success rate than beast strength Gu. Strength path Gu worms in that market mainly consist of jin strength Gu, jun strength Gu, and beast strength Gu, mostly for attacking.",
+        "chapters": [
+          442
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "ancient-strength-path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_biao_strength_gu",
+          "gu_dragon_strength_gu",
+          "char_chu_du",
+          "path_strength",
+          "sys_gu_worms"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

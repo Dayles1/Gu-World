@@ -1,0 +1,398 @@
+{
+  "id": "gu_grand_bear_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Grand Bear Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Grand Bear Gu grants a temporary boost of one bear's strength when activated. That boost can sit on top of permanent bear strength from other Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 121,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    121,
+    123,
+    126,
+    135,
+    280,
+    281
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_xiong_li",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 121,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_tang_xiong",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xiong_li",
+      "count": 4
+    },
+    {
+      "target": "char_tang_xiong",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 2
+    },
+    {
+      "target": "gu_brown_bear_innate_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/grand-bear-gu/",
+      "chapters": [
+        121,
+        123,
+        126,
+        135,
+        280,
+        281
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Early chapters describe the temporary strength effect without naming a cultivation path for this Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Early chapters place Grand Bear Gu in a Gu Master’s aperture when it is used, but they do not describe the worm’s appearance or state its rank.",
+        "chapters": [
+          126
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Chi Shan explains the stack on Qing Mao Mountain: Xiong Li already has one bear’s strength from Brown Bear Innate Strength Gu, and Grand Bear Gu can raise that by another bear, for two bears’ strength in total.",
+        "chapters": [
+          123
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_chi_shan",
+          "gu_brown_bear_innate_strength_gu"
+        ]
+      },
+      {
+        "text": "When Xiong Li activates it, his hair stiffens like steel needles, his muscles enlarge, and he grows taller and bulkier, reaching the strength of two bears. He can later release that supporting strength.",
+        "chapters": [
+          126
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In a later fight against Bai Ning Bing he again uses Grand Bear Gu at two bears’ strength, and his fists smash through a water barrier.",
+        "chapters": [
+          135
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing"
+        ]
+      },
+      {
+        "text": "Besides the strength contests around the three-clan alliance, Xiong Li relies on Grand Bear Gu in the Qing Shu vine contest and in the wolf-tide clash with Bai Ning Bing noted above.",
+        "chapters": [
+          126
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "xiong-lis-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_qing_shu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [
+      "loc_shang_clan_city"
+    ],
+    "factions": [],
+    "origin": "unknown",
+    "claims": [
+      {
+        "text": "Wei Yang warns Fang Yuan that Tang Xiong is coming for revenge, capable of the strength of three bears.",
+        "chapters": [
+          280
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "shang-clan-battle-stage",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_wei_yang",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "On the Shang clan city battle stage, Tang Xiong already holds the strength of two bears before he activates grand bear Gu. His muscles expand, his body grows larger, and he temporarily gains the strength of a third bear on top of that base. Onlookers say grand bear Gu has a time limit, and that once the effect ends he will be disadvantaged. After Fang Yuan’s third victory, the stage rules let him take that grand bear Gu. It is called the most valuable Gu in Tang Xiong’s possession. Without it Tang Xiong is left with the strength of two bears, and his battle strength falls by about thirty percent.",
+        "chapters": [
+          281
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "shang-clan-battle-stage",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_shang_clan_city",
+          "char_tang_xiong"
+        ]
+      },
+      {
+        "text": "The novel does not later show Fang Yuan activating or selling that copy.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "shang-clan-battle-stage",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "ownership_history": [
+    {
+      "character": "char_xiong_li",
+      "role": "user",
+      "recorded_chapter": 121,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_tang_xiong",
+      "role": "user",
+      "recorded_chapter": 281,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "holder",
+      "recorded_chapter": 281,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Xiong Li, the top rank two Gu Master of Xiong village, holds Grand Bear Gu among his early kit on Qing Mao Mountain, and the mountain names him its strongest person for that strength showing.",
+        "chapters": [
+          121
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_xiong_li",
+          "sys_gu_master",
+          "loc_xiong_village",
+          "loc_qing_mao_mountain"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

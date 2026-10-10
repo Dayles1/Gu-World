@@ -1,0 +1,192 @@
+{
+  "id": "move_mirror_flower",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mirror Flower",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mirror Flower is a wood path immortal killer move fired from Fallen Flower Hall. Mirrored petals on the roof absorb attacks and can shoot them back.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1517,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1517,
+    1519,
+    2258
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_fang_an_lei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1517,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_hua_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2258,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_an_lei",
+      "count": 3
+    },
+    {
+      "target": "char_fang_hua_sheng",
+      "count": 3
+    },
+    {
+      "target": "char_eagle_concubine",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "house_divine_bean_palace",
+      "count": 1
+    },
+    {
+      "target": "house_fallen_flower_hall",
+      "count": 1
+    },
+    {
+      "target": "move_fleeting_bloom",
+      "count": 1
+    },
+    {
+      "target": "char_wan_hao_guang",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xiao",
+      "count": 1
+    },
+    {
+      "target": "house_chicken_dog_coop",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On the roof of Fallen Flower Hall, Fang An Lei forms a huge flower whose petals are like mirrors. The immortal killer move pulls Eagle Concubine’s claw marks into the flower; some petals shatter, the rest close, then bloom again and shoot the claw marks into Divine Bean Palace. Fang Yuan judges it a wood path killer move with rule path power that reflects attacks, and notes that used through Fallen Flower Hall the rank seven move carries a trace of rank eight power at high cost to the caster.",
+      "chapters": [
+        1517
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_fallen_flower_hall",
+        "char_fang_an_lei",
+        "sys_killer_moves",
+        "char_eagle_concubine",
+        "house_divine_bean_palace",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fallen Flower Hall’s mirror flower sits among the house’s named killer moves with fleeting bloom and empty valley orchid.",
+      "chapters": [
+        1519
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Hua Sheng rushes Fallen Flower Hall to reinforce Chicken Dog Coop and activates Mirror Flower on the hall’s surface. Pure white light becomes a huge flower bud on the roof, blooms into mirrored petals larger than the roof, and pulls in most of Wan Hao Guang, Wan Xiao, and Sun Wang’s killer moves. Remaining strikes still shake the hall and shatter petals; the rest close into a bud, bloom again, and release the absorbed killer moves back, forcing those three to retreat and defend.",
+      "chapters": [
+        2258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "defensive-recast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_hua_sheng",
+        "house_chicken_dog_coop",
+        "char_wan_hao_guang",
+        "char_wan_xiao"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/mirror-flower/",
+      "chapters": [
+        1517,
+        1519,
+        2258
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Fang An Lei Fang Hua Sheng",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

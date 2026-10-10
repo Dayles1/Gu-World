@@ -1,0 +1,336 @@
+{
+  "id": "fac_hua_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hua Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A righteous path super force. Hua An was originally a Hua clan Gu Immortal and left it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1472,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1472,
+    1690,
+    1881,
+    1910,
+    2069,
+    2105,
+    2282
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_hua_an",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1472,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_hua_cai_yun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1690,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hua_an",
+      "count": 4
+    },
+    {
+      "target": "char_hua_cai_yun",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "fac_nan_gong_clan",
+      "count": 2
+    },
+    {
+      "target": "house_hua_qiao_pavilion",
+      "count": 2
+    },
+    {
+      "target": "fac_xie_clan",
+      "count": 2
+    },
+    {
+      "target": "house_green_cloud_spark_warship",
+      "count": 2
+    },
+    {
+      "target": "fac_righteous_qi_alliance",
+      "count": 2
+    },
+    {
+      "target": "char_you_chan",
+      "count": 1
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 1
+    },
+    {
+      "target": "char_qing_yue_an",
+      "count": 1
+    },
+    {
+      "target": "char_song_qi_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_qing_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_snake_poison_qi_thread_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Hua Qiao Pavilion in Nan Gong clan sea territory, You Chan meets Hua An. After Nan Gong clan took him in, Hua clan kept threatening him and tried assassination multiple times, so he usually stayed in Nan Gong clan headquarters and rarely went out. While he escaped, You Chan helped him, and they became good friends.",
+      "chapters": [
+        1472
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_hua_qiao_pavilion",
+        "fac_nan_gong_clan",
+        "char_you_chan",
+        "char_hua_an"
+      ]
+    },
+    {
+      "text": "When Eastern Sea’s righteous path moves on Dragon Palace, Hua clan’s first supreme elder Hua Cai Yun appears with Song Qi Yuan and Qing Yue An. She looks to be a young girl with bright eyes, and exquisite rainbow clouds coil around her body.",
+      "chapters": [
+        1690
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "first-supreme-elder",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_eastern_sea_righteous_path",
+        "house_dragon_palace",
+        "char_hua_cai_yun",
+        "char_song_qi_yuan",
+        "char_qing_yue_an"
+      ]
+    },
+    {
+      "text": "Hua clan first supreme elder Hua Cai Yun arrives early to Qi Sea Ancestor’s Eastern Sea banquet, greets Qi Sea Ancestor, and has rank eight cultivation level. Several Hua clan Gu Immortals walk out of Hua clan’s Immortal Gu House and pay respects. The gift she presents is a lump of rank nine heaven qi. That gift shows Hua clan’s foundation: the clan is most proficient in cloud path and is expert in exploring black heaven and white heaven.",
+      "chapters": [
+        1881
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "banquet-gift-of-heaven-qi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_sea_ancestor",
+        "reg_eastern_sea",
+        "sys_gu_immortal",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Shen Cong Sheng, thinking of Shen clan as a super force in Eastern Sea, names Hua clan among equivalent super forces he might have to deal with, together with Xie clan, Cai clan, Tang clan, and Song clan. Shen clan sits near the center of Eastern Sea and is surrounded by many super forces.",
+      "chapters": [
+        1910
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-list",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_cong_sheng",
+        "fac_shen_clan",
+        "fac_xie_clan",
+        "fac_tang_clan",
+        "fac_song_clan"
+      ]
+    },
+    {
+      "text": "When the Eastern Sea alliance army arrives with over ten Immortal Gu Houses, the only rank eight Immortal Gu House among those present is Green Cloud Spark Warship, which belongs to Eastern Sea’s Hua clan. Houses at rank six are most numerous in that force, then rank seven.",
+      "chapters": [
+        2069
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "flagship-immortal-gu-house",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_green_cloud_spark_warship"
+      ]
+    },
+    {
+      "text": "To resolve the ant plague, the clans of the Righteous Qi Alliance contribute true inheritances. Hua clan takes out its snake poison qi thread true inheritance.",
+      "chapters": [
+        2105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "true-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_righteous_qi_alliance"
+      ]
+    },
+    {
+      "text": "Eastern Sea’s Hua clan is named as a super force that takes the chance to gain a huge profit. Hua clan’s rank eight Immortal Gu House Green Cloud Spark Warship enters the two heavens and collects a vast amount of cloud path resources. Other Eastern Sea righteous path forces feel deep envy.",
+      "chapters": [
+        2282
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "two-heavens",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/hua-clan/",
+      "chapters": [
+        1472,
+        1690,
+        1881,
+        1910,
+        2069,
+        2105,
+        2282
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

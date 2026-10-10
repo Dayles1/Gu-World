@@ -1,0 +1,124 @@
+{
+  "id": "res_divine_strength_water",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Divine strength water",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Divine strength water is a rank six strength path immortal material that carries strength path dao marks.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1779,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1779
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "res_strength_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Divine strength water appears among the rarer waters of heavenly dew oasis. Though it is a type of water, it contains strength path dao marks and is a rank six strength path immortal material in the market. Mortal fables give it many names and often have heroes drink it to gain divine strength against Gu Masters. Because it is an immortal material, drinking it without food path methods can kill even a Gu Immortal from those strength path dao marks alone.",
+      "chapters": [
+        1779
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-path-water",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/divine-strength-water/",
+      "chapters": [
+        1779
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VI",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Heavenly dew oasis",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

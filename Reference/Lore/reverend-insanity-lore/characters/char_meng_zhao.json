@@ -1,0 +1,251 @@
+{
+  "id": "char_meng_zhao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Meng Zhao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "meng zhao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Мэн Чжао",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Meng Zhao is a young rank six Meng tribe Gu Immortal sent with Meng Zi Zai when Meng Tu reports an intruder on autumn blade plain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1566,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1566,
+    1752
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_meng_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_meng_tribe",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_meng_tribe_meng_tu",
+      "count": 2
+    },
+    {
+      "target": "char_meng_zi_zai",
+      "count": 2
+    },
+    {
+      "target": "house_investigation_courtyard",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_autumn_blade_plain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sleeping_lady",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Meng tribe carefully picked him as a Gu Immortal junior for Meng Zi Zai to nurture. He calls Meng Zi Zai uncle, guesses the intruder is a lone demonic Gu Immortal, and is excited that the trip can introduce him to Lord Meng Tu for their shared faction. His cultivation and status are low enough that the tribe has not yet told him of Meng Tu’s death when Meng Zi Zai learns the soul lantern is out.",
+      "chapters": [
+        1566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_meng_tribe",
+        "sys_gu_immortal",
+        "char_meng_zi_zai",
+        "char_meng_tribe_meng_tu"
+      ]
+    },
+    {
+      "text": "He has a rough appearance and is tall and well-built.",
+      "chapters": [
+        1566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He cannot match Meng Zi Zai’s rank seven speed and arrives later. Dense blade path dao marks stab his skin with pain. He finds Meng Zi Zai kneeling in tears, hears that Brother Meng Tu has died in battle, and is ordered to return, cultivate, and keep the news sealed. Investigation Courtyard soon arrives with Meng tribe’s second supreme elder; Meng Zhao puts his heart at rest and leaves the chase to them.",
+      "chapters": [
+        1566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "death-news-and-dismissal",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_investigation_courtyard"
+      ]
+    },
+    {
+      "text": "After rebirth Fang Yuan recalls that Meng Zi Zai and Meng Zhao from Meng tribe investigated Meng Tu’s death and had actually suspected Sleeping Lady.",
+      "chapters": [
+        1752
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rebirth-investigation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_sleeping_lady"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/meng-zhao.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/meng-zhao/",
+      "chapters": [
+        1566,
+        1752
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 1566",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Meng Tribe as of ch. 1566",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 1566,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,215 @@
+{
+  "id": "loc_hei_tribe_main_camp",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hei Tribe Main Camp",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hei tribe camp during the Northern Plains Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 500,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    500,
+    501,
+    522,
+    540
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_brain_explosion_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Two Gu Masters salute Fang Yuan as Lord Wolf King and report that Hei Lou Lan has invited the other lords to a banquet for important business. After returning to Hei tribe’s compound, Hei Lou Lan holds feasts for days; Fang Yuan rejects several invitations while busy cultivating. Once the covenant is in place, Gu Masters from tribes large and small dedicate themselves to expanding Fang Yuan’s wolf pack.",
+      "chapters": [
+        500
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_fang_yuan",
+        "char_hei_lou_lan",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "At Cao Fu, all sorts of tents and Gu houses cover the wide grassland, tribe flags flutter in the wind, and large numbers of Gu Masters enter and exit.",
+      "chapters": [
+        522
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_cao_fu_region",
+        "sys_gu_house"
+      ]
+    },
+    {
+      "text": "Fang Yuan leads the wolf group back to Hei tribe camp at dawn. After Hei Lou Lan establishes the alliance, five enormous camps are stationed nearby for safety in numbers, and Fang Yuan’s wolf group is divided among those camps to be fed. The next day Hei tribe completely pulls out the camp and begins a majestic expedition toward Cao Fu.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "nearby-alliance-camps",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "A scene heading places the setting at Cao Fu, Hei tribe camp, where tents and Gu houses cover the wide grassland and Fang Yuan checks resources in the supply camp.",
+      "chapters": [
+        522
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cao-fu-supply-camp",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Large numbers of Gu Master experts charge toward Hei tribe main camp as Ma tribe and flying experts try to kill Wolf King Chang Shan Yin.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "battle-charge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "fac_ma_tribe",
+        "char_chang_shan_yin"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/hei-tribe-main-camp.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/hei-tribe-main-camp/",
+      "chapters": [
+        500,
+        501,
+        522,
+        540
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "camp",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

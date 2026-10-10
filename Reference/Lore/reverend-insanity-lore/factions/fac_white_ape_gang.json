@@ -1,0 +1,174 @@
+{
+  "id": "fac_white_ape_gang",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "White Ape Gang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "white ape group"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A thousand-beast white ape force Fang Yuan and Bai Ning Bing find southeast of a lava crocodile valley while scouting the land on the road toward Bai Gu mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 207,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    207,
+    208
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The white ape gang is a thousand beast white ape group whose leader is an old white ape thousand beast king.",
+      "chapters": [
+        207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Their territory is a dense forest where white ape groups play and swing; after the Xuan Yuan Divine Pheasant raid, broken trees and white ape limbs litter that ground.",
+      "chapters": [
+        208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "While using a lava crocodile king as a focal point, Fang Yuan and Bai Ning Bing spend days searching nearby territories for other beast kings they might lure into a fight. Southeast of that valley they find the white ape gang; its leader is an old white ape, a thousand beast king, and white ape speed is high enough that a lure would let the group catch and surround the two, so they abandon that plan.",
+      "chapters": [
+        207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scouting-the-valley-rim",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "With no suitable lure targets left, Fang Yuan plans to set off the next day and continue toward Bai Gu mountain.",
+      "chapters": [
+        207
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scouting-the-valley-rim",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "After the night raid they wait until the Xuan Yuan Divine Pheasant departs at evening, then cut remaining lava crocodile meat through the afternoon before entering the white apes’ territory. There they find a dense forest ruined overnight: broken trees, mixed ape limbs, and survivors crying over kin. The Xuan Yuan Divine Pheasant had wrecked that thousand beast group; only two or three hundred apes remain, and the last few hundred beast king white apes are all injured. Bai Ning Bing wants to attack while they are weak. Fang Yuan stops her, warning that rage would drive a relentless assault and that those injured hundred beast kings are still beyond what one of them can handle alone.",
+      "chapters": [
+        208
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-pheasant-passes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/white-ape-gang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/white-ape-gang/",
+      "chapters": [
+        207,
+        208
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

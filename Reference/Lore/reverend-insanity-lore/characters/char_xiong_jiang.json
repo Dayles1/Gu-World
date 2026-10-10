@@ -1,0 +1,559 @@
+{
+  "id": "char_xiong_jiang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiong Jiang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xiong jiang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сюн Цзян",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiong Jiang is a thin rank two Xiong clan Gu Master on Qing Mao Mountain, a newly rising defense expert in Xiong Li's envoy group during the wolf-tide alliance stretch.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 121,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    4,
+    121,
+    125,
+    126,
+    127,
+    135,
+    136,
+    137,
+    142,
+    147,
+    157
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_xiong_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 121,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_roaming_zombie_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 125,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_shadow_bond_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 125,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_xiong_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_roaming_zombie_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_shadow_bond_gu",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_lin",
+      "count": 2
+    },
+    {
+      "target": "char_xiong_li",
+      "count": 2
+    },
+    {
+      "target": "char_bai_bing_yi",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_essence_gu",
+      "count": 2
+    },
+    {
+      "target": "char_xiong_zhan",
+      "count": 2
+    },
+    {
+      "target": "gu_plunder_gu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 1
+    },
+    {
+      "target": "gu_water_drill_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_first_battle",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Xiong Jiang first appears in Xiong Li’s five-person envoy group overlooking Gu Yue village, speaking in disdain when the scouts meet Chi Shan, then sneering that Chi Shan should not dream of the strongest title on Qing Mao Mountain.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_li",
+        "fac_gu_yue_clan",
+        "char_chi_shan",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "Xiong, Gu Yue, and Bai share that mountain in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The English chapters disagree on gender, so this page does not pick one. Body prose below uses the name where practical; dialogue and other characters’ pronouns stay as those chapters print.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xiong Jiang has a thin body, striking among Xiong clan’s burly ranks.",
+      "chapters": [
+        125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xiong_clan"
+      ]
+    },
+    {
+      "text": "The body becomes dry and green like a dead block of wood. The teeth turn sharp and long, with four fangs exposed out of the lips. The iris turns green.",
+      "chapters": [
+        125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zombie-gu-activation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the three-clan alliance gathering Xiong Jiang stands out from Xiong clan’s burly ranks with a thin body, cups a fist, and challenges Bai Bing Yi as a rank two Gu Master who specialises in defense. Bai Bing Yi and the fight scenes call that cultivation rank two without naming an initial, middle, or peak stage, and Xiong Jiang names defense specialization against Bai Bing Yi’s attack role rather than a path label. Roaming Zombie Gu activates at rank two, turning the body dry and green with zombie fangs and green irises, then links Bai Bing Yi through Shadow Bond Gu so that Bai Bing Yi takes 10% of any injury Xiong Jiang suffers. Bai Bing Yi admits defeat after vomiting blood, and Xiong Jiang notes that Shadow Bond Gu’s range is limited and that it mainly bullies close-ranged Gu Masters.",
+      "chapters": [
+        125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-slope-and-gu-worms",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_bing_yi",
+        "sys_gu_master",
+        "gu_roaming_zombie_gu",
+        "gu_shadow_bond_gu",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Later narration restates that range as ten meters when comparing sparring results to real combat.",
+      "chapters": [
+        127
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-slope-and-gu-worms",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration adds that Roaming Zombie Gu is best paired with Bloodline Gu, or else prolonged use drains the user’s blood and risks a true zombie transformation. The same stretch still counts Xiong Li’s group as having won against Bai Bing Yi before losing to Gu Yue Qing Shu.",
+      "chapters": [
+        126
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-slope-and-gu-worms",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_qing_shu"
+      ]
+    },
+    {
+      "text": "When Bai Ning Bing holds Plunder Gu, Xiong Jiang names cousin Xiong Zhan as the only Qing Mao Mountain user of that worm, presses for how that cousin died, and charges in rage. In the fight Roaming Zombie Gu is used again; zombie defense resists water and ice, and the text calls Xiong Jiang a newly rising defense expert beside Xiong Li and Xiong Lin. Fang Yuan’s appraisal groups Xiong Li, Xiong Lin, and Xiong Jiang as B grade aptitudes still suppressed by Bai Ning Bing.",
+      "chapters": [
+        135
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "gu_plunder_gu",
+        "char_xiong_zhan",
+        "char_xiong_lin"
+      ]
+    },
+    {
+      "text": "When Fang Yuan finally joins, Xiong Jiang cheers him and charges Bai Ning Bing again.",
+      "chapters": [
+        136
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Bai Ning Bing kills Xiong Li, Xiong Jiang restrains the grieving Xiong Lin, steps forward with Shadow Bond Gu, and tells him to flee because his talent is better than theirs. Primeval essence is already short, and Roaming Zombie Gu has stopped working. Fang Yuan’s moonblade then beheads Xiong Jiang while attention is locked on Bai Ning Bing; with Shadow Bond Gu still linked, Bai Ning Bing takes a share of the fatal injury and vomits blood.",
+      "chapters": [
+        137
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan later recalls leaving Xiong Lin alive after killing Xiong Jiang, and Xiong village members treat Fang Yuan as Xiong Jiang’s murderer.",
+      "chapters": [
+        142
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xiong_village"
+      ]
+    },
+    {
+      "text": "A later recipe scene notes that Xiong Jiang once wanted a Blood Essence Gu to ease Roaming Zombie Gu’s side effects, held a rather high rank two position, and died without getting that wish.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_blood_essence_gu"
+      ]
+    },
+    {
+      "text": "The text names Bloodline Gu and Blood Essence Gu in those two places for the same Roaming Zombie Gu blood drain problem. It does not say they are the same Gu.",
+      "chapters": [
+        126
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "No later chapter revisits Xiong Jiang by name after that recollection.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-fight",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": null,
+      "positions": [
+        {
+          "position": "Female pronouns: narration has Xiong Jiang twist her lips in disdain.",
+          "support": "Chapter 121, envoy-group scene with Xiong Li and Chi Shan.",
+          "chapters": [
+            121
+          ]
+        },
+        {
+          "position": "Male pronouns: later text uses he, his, him, and Brother Xiong Jiang.",
+          "support": "Chapters 125 to 137 for the alliance and wolf-tide fight; chapters 142, 147, and 157 for later recalls.",
+          "chapters": [
+            125,
+            137,
+            142,
+            147,
+            157
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/xiong-jiang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xiong-jiang/",
+      "chapters": [
+        4,
+        121,
+        125,
+        126,
+        127,
+        135,
+        136,
+        137,
+        142,
+        147,
+        157
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 125",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Xiong Clan as of ch. 121",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 125,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_roaming_zombie_gu",
+      "role": "user",
+      "recorded_chapter": 125,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_shadow_bond_gu",
+      "role": "user",
+      "recorded_chapter": 125,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

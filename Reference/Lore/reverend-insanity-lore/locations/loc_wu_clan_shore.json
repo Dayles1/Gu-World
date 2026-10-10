@@ -1,0 +1,185 @@
+{
+  "id": "loc_wu_clan_shore",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wu Clan Shore",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wu clan territory in the Southern Border, at the meeting of red dragon river and yellow dragon river.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1345,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1345,
+    1347,
+    2067
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "char_yellow",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_wu_yi_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Where red dragon river and yellow dragon river merge, a huge whirlpool creates great dangerous waves. From the peak of Corpse Emperor Yu Ding Tian, looking away from the river toward the shore is Wu clan ground.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Toward the northeast shore of that huge whirlpool stands Corpse Emperor Yu Ding Tian.",
+      "chapters": [
+        1347
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Not far from Corpse Emperor Yu Ding Tian, red dragon river and yellow dragon river merge into a huge whirlpool with dangerous waves. Looking from that corpse mountain away from the river toward the shore is Wu clan land. Taking Corpse Emperor Yu Ding Tian would leave the clan’s holdings east of red dragon river and north of yellow dragon river completely lost.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "corpse-mountain-and-lost-ground",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "Toward the northeast shore of the huge whirlpool at that intersection stands Corpse Emperor Yu Ding Tian.",
+      "chapters": [
+        1347
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "corpse-mountain-and-lost-ground",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Deviation (recorded): the world-map landmark shortens this river-junction Wu clan ground under the label Wu Clan Shore. Chapters 1345 and 1347 name the territory and the northeast shore of the whirlpool without that shore title.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "corpse-mountain-and-lost-ground",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Wu clan’s headquarters sit on Wu Yi Mountain at the extreme southwest of Southern Border. From high above, the intersection of yellow dragon river and red dragon river forms an X, and Wu clan’s territory occupies the lower part of that X, with Shang clan on the right side. Yellow dragon river and red dragon river isolate the surroundings of Wu clan’s territories.",
+      "chapters": [
+        2067
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-river-x",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_wu_yi_mountain",
+        "reg_southern_border",
+        "fac_shang_clan",
+        "char_yellow"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/wu-clan-shore.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/wu-clan-shore/",
+      "chapters": [
+        1345,
+        1347,
+        2067
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

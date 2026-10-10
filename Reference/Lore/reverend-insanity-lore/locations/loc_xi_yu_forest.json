@@ -1,0 +1,163 @@
+{
+  "id": "loc_xi_yu_forest",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xi Yu Forest",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A forest named in the Legends of Ren Zu while Verdant Great Sun is trapped beside ordinary abyss.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 287,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    287
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "gu_reputation_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "char_verdant_great_sun",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_reputation_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A strange forest whose black soil is like a swamp and smells pungent. The trees have no leaves, and the branches look like claws, yet wind still sounds like leaves moving.",
+      "chapters": [
+        287
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hungry on a lone hill, Verdant Great Sun enters a strange forest looking for fruit: the black soil is like a swamp and smells pungent, the trees have no leaves, and the branches look like claws, yet wind still sounds like leaves moving. He finds no food, grows too weak to move, and falls unconscious against a trunk. In that sleep he hears voices saying reputation Gu lies at the forest center under a rock, and that the black soil will bury him as nutrients for the trees. He jolts awake and learns this forest is Xi Yu forest; the leaf-like sound was the trees whispering. He walks to the center, lifts the rock, and obtains reputation Gu, which later helps him leave ordinary abyss.",
+      "chapters": [
+        287
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_verdant_great_sun",
+        "gu_reputation_gu"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Southern Border region field only because the schema requires a region chip and Fang Yuan tells the legend while in Shang Clan City. The Ren Zu telling does not give Xi Yu forest a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_fang_yuan",
+        "loc_shang_clan_city",
+        "char_ren_zu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/xi-yu-forest.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/xi-yu-forest/",
+      "chapters": [
+        287
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "forest",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

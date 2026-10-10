@@ -1,0 +1,207 @@
+{
+  "id": "move_heart_blood_premonition",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heart Blood Premonition",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Heart Blood Premonition is Song Zi Xing's immortal killer move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 848,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    848,
+    1885
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_song_zi_xing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 848,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_song_zi_xing",
+      "count": 3
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "char_vicious_lightning_fiend",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_ancient_soul_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_heavens_envy_sect",
+      "count": 1
+    },
+    {
+      "target": "house_illusion_garden",
+      "count": 1
+    },
+    {
+      "target": "loc_spirit_butterfly_valley",
+      "count": 1
+    },
+    {
+      "target": "move_blood_tu_su",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_heart_blood_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside Blood Tu Su, Song Zi Xing’s heart pounds. The blood in his heart surges and crashes against the inner walls of his heart. It is a blood path technique, yet it can mimic wisdom path and deduce dangerous or favorable circumstances for him. An intense feeling of danger hits. He growls that this is a trap and tries to leave.",
+      "chapters": [
+        848
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_blood_tu_su",
+        "char_song_zi_xing"
+      ]
+    },
+    {
+      "text": "Gu Immortals from Ancient Soul Sect, Heaven’s Envy Manor, and Spirit Butterfly Valley say three wisdom path Gu Immortals collaborated to interfere with heart blood premonition, so he would not sense the danger in advance. He reads a flaw in Vicious Lightning Fiend’s act, and the move fires after that. After he flees as a bloody rainbow, he finds himself in Heavenly Lotus Sect’s Illusion Garden.",
+      "chapters": [
+        848
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_ancient_soul_sect",
+        "fac_heavens_envy_sect",
+        "loc_spirit_butterfly_valley",
+        "char_vicious_lightning_fiend",
+        "fac_heavenly_lotus_sect",
+        "house_illusion_garden"
+      ]
+    },
+    {
+      "text": "At the qi sea banquet, Fang Yuan sees rank seven heart blood Immortal Gu offered in trade. He thinks Song Zi Xing’s inheritance had a heart blood premonition killer move, and that this Immortal Gu is the most appropriate core for it.",
+      "chapters": [
+        1885
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qi-sea-banquet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_heart_blood_immortal_gu",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/heart-blood-premonition/",
+      "chapters": [
+        848,
+        1885
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Song Zi Xing",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

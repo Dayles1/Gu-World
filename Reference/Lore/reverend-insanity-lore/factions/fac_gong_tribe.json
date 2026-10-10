@@ -1,0 +1,264 @@
+{
+  "id": "fac_gong_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gong tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains Huang Jin super tribe that fields Immortal Gu House Golden Dawn Hall and keeps external supreme elders without Huang Jin bloodline.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 749,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    749,
+    951,
+    1105
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_prince_feng_xian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 749,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gong_er",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1105,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_prince_feng_xian",
+      "count": 4
+    },
+    {
+      "target": "char_gong_er",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_feng_xian_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_extremity",
+      "count": 1
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "house_loud_thunder_hall",
+      "count": 1
+    },
+    {
+      "target": "char_south_desolation_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a tribe banner or uniform. When Gong tribe arrives at a righteous path gathering it brings its Immortal Gu House Golden Dawn Hall, and observers call that show of force determined and extravagant.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_golden_dawn_hall"
+      ]
+    },
+    {
+      "text": "Prince Feng Xian is a righteous path Gu Immortal and only an external supreme elder of the super force Gong tribe. He does not have the Huang Jin bloodline in him, and that lower status is named when the Northern Plains rank eights gather.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_prince_feng_xian",
+        "sys_gu_immortal",
+        "fac_huang_jin_bloodline",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Prince Feng Xian is again named as an external supreme elder of Gong tribe without Huang Jin bloodline. Because of grievances with Gong tribe, he has been living outside for many years.",
+      "chapters": [
+        951
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "external-elder-grievance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the surface he is that Northern Plains righteous path elder. The truth is he is a Spirit Affinity House disciple sent into Northern Plains as a highest level spy, mainly regarding Eighty-Eight True Yang Building, his secret status hidden for hundreds of years.",
+      "chapters": [
+        951
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hidden-central-continent-role",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_spirit_affinity_house",
+        "house_eighty_eight_true_yang_building"
+      ]
+    },
+    {
+      "text": "Gong Er invites others to attack Hei tribe from outside Golden Dawn Hall. Gong tribe emphasizes extravagance, brought its Immortal Gu House, and has the strongest power among the righteous path members present. As a Huang Jin tribe and super force, its supreme elders want Gong tribe to lead the righteous path, but among Huang Jin tribes none will submit to each other.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bid-for-righteous-path-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gong_er",
+        "fac_hei_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/gong-tribe/",
+      "chapters": [
+        749,
+        951,
+        1105
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

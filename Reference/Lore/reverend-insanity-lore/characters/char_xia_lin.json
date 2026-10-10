@@ -1,0 +1,424 @@
+{
+  "id": "char_xia_lin",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xia Lin",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xia lin",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ся Линь",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Lady Xia Lin Mermaid Xia Lin"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xia Lin is a young mermaid girl with blue scales whom Fang Yuan saves from black oil at a fishing village.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1656,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1656,
+    1657,
+    1659,
+    1661,
+    1662,
+    1664,
+    1669,
+    1672,
+    1674,
+    1893,
+    1894,
+    1899
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_mermen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_merman_sacred_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1674,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_gather_oil_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1659,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_gather_oil_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_merman_sacred_court",
+      "count": 2
+    },
+    {
+      "target": "race_mermen",
+      "count": 2
+    },
+    {
+      "target": "char_xie_han_mo",
+      "count": 2
+    },
+    {
+      "target": "loc_demon_suppression_regret_crying_sea",
+      "count": 2
+    },
+    {
+      "target": "loc_merman_sacred_city",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "res_black_oil",
+      "count": 1
+    },
+    {
+      "target": "char_su_yi",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan returns from the deep sea to a house in the fishing village. The mermaid he pulled from the black oil is still unconscious. He has already soul searched her and the village head. He tells them not to trouble her when she wakes, and to let her leave.",
+      "chapters": [
+        1656
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "She opens her eyes and names herself Xia Lin. A middle aged Gu Master tells her Master Chu saved her and healed injuries the greatest healing Gu Master in her tribe could not. She forces herself up, uses a Gu worm to create a wave that carries her, and kneels to repay him even if she has to break all the bones in her body. Fang Yuan says it was a simple matter.",
+      "chapters": [
+        1657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "She is a young woman, still unconscious when Fang Yuan first looks at her. After he saves her, her pale face starts to become rosy again. She has thick eyelashes that cast shadows on her face. She does not look like Xie Han Mo. Their appearances are very different, even though both are equally beautiful. They are similar in disposition. She has blue scales.",
+      "chapters": [
+        1656
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xie_han_mo"
+      ]
+    },
+    {
+      "text": "Several months later her grandfather, her only family, has died. Merman sea funerals are expensive. She borrowed primeval stones for the burial, then collected black oil to repay the debt and nearly died. Fang Yuan gave her gather oil Gu, a rank five Gu that spends bone marrow instead of primeval essence, and she sold oil until she had a huge amount of primeval stones.",
+      "chapters": [
+        1659
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "funeral-debt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "race_mermen",
+        "gu_gather_oil_gu"
+      ]
+    },
+    {
+      "text": "At Golden Jade House the scarred merman changes the written interest from ten percent to sixty percent. She is a rank two Gu Master. She attacks him in the shop. A yellow scaled merman then tries to take gather oil Gu as repayment. She refuses, even if she dies.",
+      "chapters": [
+        1659
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "funeral-debt",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan guides her through a rock gamble. She wins the house, then returns it on the condition that the yellow scaled merman commit acts of kindness. She says she is not the saintess and has no qualification to be one.",
+      "chapters": [
+        1661
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "funeral-debt",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the Sea God Ceremony she stays at an inn through Su Yi. She is only rank two, but she has gather oil Gu. Su Yi wants that Gu for one round of the saintess test, and Xia Lin agrees to support her.",
+      "chapters": [
+        1662
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ceremony-follower",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_su_yi"
+      ]
+    },
+    {
+      "text": "In the first test she floats to a water vat and uses the rank five Gu to draw out the black oil. Su Yi’s reputation rises on that performance.",
+      "chapters": [
+        1664
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ceremony-follower",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Nanny Rong targets her as a mermaid with no background. Rumors spread through the city that she betrayed Su Yi. An investigator arrests her for corruption and for trying to manipulate the saintess competition. She says she is innocent and that she was framed. The investigator already knows she was framed and still presses her to accept a proposition that would free a follower quota. She rejects the offer.",
+      "chapters": [
+        1669
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sacred-city-charge",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan forges a fake identity for her as a competitor’s younger sister, separated for many years. The evidence is treated as ironclad. She sings against Su Yi. In the first round she is slightly better. In the second she wins by a little. He trained her with time path methods, chose the songs, prepared sound path Gu worms, and secretly influenced both performances.",
+      "chapters": [
+        1672
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "stage-songs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Sea God Ceremony ends with a result nobody expected: she becomes the saintess. She changes into saintess attire, a white garment, and her tail rests on a lump of clouds. Zhao Lu, called her elder sister after Fang Yuan tampered with Zhao Lu’s memories, comes to Saintess Palace to rope her in for a political force. Fang Yuan had told her not to side with any force. She refuses, even after Zhao Lu says a saintess who enters Demon Suppression Regret Crying Sea alone is almost seeking death. She stands on a giant tortoise advancing toward that sea. The mournful cries make her face pale.",
+      "chapters": [
+        1674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "saintess-palace",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_demon_suppression_regret_crying_sea"
+      ]
+    },
+    {
+      "text": "After rebirth Fang Yuan dives the Earth Trench again and finds the blue scaled mermaid among the black oil, fainted. Her face is not the same as Xie Han Mo, but their disposition is very alike. A bubble surrounds her. When she wakes in a waterhole, her blue scaled fish tail shines with the reflection of the light in the water. She can barely raise her upper body. He heals the black oil corrosion. She is an ordinary poor mermaid girl whose only kin, her grandfather, has died, and whose goal is to complete his water burial. A white cloud supports her lower body, three feet from the ground, when she floats out of the forest. He gives the name Chu Ying, Master Chu, and takes her to the fishing village. In the previous life he used her as a pawn to become saintess of the Merman City and reach regret sea. In this life he means to use her again to control Merman Sacred City.",
+      "chapters": [
+        1893
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-rescue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_trench",
+        "loc_merman_sacred_city"
+      ]
+    },
+    {
+      "text": "He teaches her in the village, then leaves. She wants to follow. He says their connection is not over. She watches tearfully as he disappears.",
+      "chapters": [
+        1894
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-rescue",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Masters gather in Golden Jade House and stare at the blue scaled mermaid girl. She looks around with a slight smile and tells them the island is her territory: they may trade if they pay taxes and do not stay long, or they may join her. She is still rank two. She keeps smiling while Fang Yuan repairs an immortal formation under the sea, then gives her a small formation that merges into her body. She has no formation path attainment, but she can move the island’s land and the surrounding seawater by thought. She smiles and says she is a disciple of an immortal master ordered to guard the place. In the previous life Fang Yuan helped her become the mermaid saintess. In this life he supports the growth of her forces first and leaves her to establish that force on his instructions.",
+      "chapters": [
+        1899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "island-territory",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/xia-lin.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xia-lin/",
+      "chapters": [
+        1656,
+        1657,
+        1659,
+        1661,
+        1662,
+        1664,
+        1669,
+        1672,
+        1674,
+        1893,
+        1894,
+        1899
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 1659",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Mermen",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Merman Sacred Court as of ch. 1674",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 1659,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_mermen",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_gather_oil_gu",
+      "role": "owner",
+      "recorded_chapter": 1659,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

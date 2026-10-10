@@ -1,0 +1,344 @@
+{
+  "id": "char_zhang_zhu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhang Zhu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zhang zhu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чжан Чжу",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Uncle Zhang Zhu Lord Zhang Zhu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zhang Zhu is the Zhang clan Gu Master Xin Ci calls Uncle Zhang Zhu on the merchant caravan road.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 236,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    236,
+    238,
+    240,
+    241,
+    242,
+    247,
+    248,
+    250,
+    253
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zhang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 236,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zhang_clan",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 2
+    },
+    {
+      "target": "char_chen_xin",
+      "count": 2
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_fei_hou_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ou_fei",
+      "count": 1
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Shang Xin Ci softens and buys purple maple leaves from the scarred peddler, she tells Uncle Zhang Zhu to pay three primeval stones. He argues the cart is worth two at most and warns that three would draw thieves onto a mere servant, so she settles on two.",
+      "chapters": [
+        236
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "He is a tall and sturdy old Gu Master.",
+      "chapters": [
+        236
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Later that night he comes out as her bodyguard Gu Master, shouts the crying peddler away, then heals him under Xin Ci’s order with a white ball of light that stops the bleeding and closes the wounds.",
+      "chapters": [
+        238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bodyguard-and-healing-work",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On Fei Hou Mountain the text places him as the only Gu Master Zhang clan brought on this caravan, a rank three healing Gu Master weak at strength contests, forced to face bandit monkey arm wrestling without cheating Gu.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bodyguard-and-healing-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fei_hou_mountain",
+        "fac_zhang_clan"
+      ]
+    },
+    {
+      "text": "He privately tells Xin Ci that Hei Tu and Bai Yun are suspicious after days of investigation and urges eviction.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bodyguard-and-healing-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tu",
+        "char_bai_yun"
+      ]
+    },
+    {
+      "text": "When she still hands goods to Hei Tu, he scoffs that the man is a boor, praises Xin Ci’s past management of Zhang clan properties, and answers without hesitation that she could rebuild from scratch even if the goods are squandered.",
+      "chapters": [
+        242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bodyguard-and-healing-work",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before the elephant disaster, narration says that without the loyal rank three Gu Master serving her, the mortal lady would long have been seized on the road.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bodyguard-and-healing-work",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the elephant chase he splits from Chen Xin at a cliff, sprawls free for a moment, then takes a spiral white bone spear through the back and a second through the brain. Fang Yuan watches from hiding, having judged Zhang Zhu an obstacle that had to be removed, and a flying elephant stomps the corpse into paste.",
+      "chapters": [
+        248
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-on-xiang-ya-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_xin",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Afterward the caravan still treats him as the only Zhang clan Gu Master who had been on the road, and later comparison notes he lacked great physical strength as a healing Gu Master who relied on dodging and assisting.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-on-xiang-ya-mountain",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/zhang-zhu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zhang-zhu/",
+      "chapters": [
+        236,
+        238,
+        240,
+        241,
+        242,
+        247,
+        248,
+        250,
+        253
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 240",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zhang Clan as of ch. 236",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 240,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

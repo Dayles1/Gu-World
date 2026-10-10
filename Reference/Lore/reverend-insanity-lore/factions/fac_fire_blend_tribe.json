@@ -1,0 +1,185 @@
+{
+  "id": "fac_fire_blend_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fire Blend Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fire Blend Tribe is Blue Phoenix Tribe's mortal enemy inside Myriad Beast Fusion Color Heaven. Yellow Extremity Jiao Huo poses as its tribe leader.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2113,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2113,
+    2114,
+    2115
+  ],
+  "relations": [
+    {
+      "type": "leader",
+      "target": "char_jiao_huo",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2113,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_jiao_huo",
+      "count": 3
+    },
+    {
+      "target": "fac_blue_phoenix_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_yellow_bell_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_lu_tong_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_myriad_tribes_ceremony",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a tribe banner or uniform.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fire Blend Tribe suddenly attacks Blue Phoenix Tribe. Blue Phoenix suffers huge losses and is forced from its valley, then retakes the valley when Lu Tong Lan retaliates. Fire Blend Tribe is not resigned, stays outside, and enters a stalemate.",
+      "chapters": [
+        2113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_blue_phoenix_tribe",
+        "char_lu_tong_lan"
+      ]
+    },
+    {
+      "text": "Late at night, Lu Tong Lan brings Hei Lou Lan to a cave to meet Fire Blend Tribe Leader, who smiles and names himself Yellow Extremity Jiao Huo. The clash was their performance. He hands Lu Tong Lan immortal materials suited for Hei Lou Lan and cuts corpses of Fire Blend Tribe Gu Immortal elders who died in the staged battle, while Lu Tong Lan also brings Blue Phoenix corpses. Jiao Huo says he was the first of them to arrive, was exposed as an outsider, ate people to raise his totem, survived, changed identity, and became Fire Blend Tribe Leader.",
+      "chapters": [
+        2113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yellow-extremity-cover",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_jiao_huo",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "At Moon Field Slope before the Myriad Tribes Ceremony, Jiao Huo stares at Blue Phoenix Tribe with a furious gaze and taunts Lu Tong Lan, then leaves when an elder summons him to a Yellow Bell Tribe banquet. Nearby leaders warn that although he lost to Lu Tong Lan half a year ago and his strength fell greatly, he has gone over to Yellow Bell Tribe, a super tribe with rank eight tribe leader and first elder. Hei Lou Lan judges that Jiao Huo used his tribe’s weakness as an excuse to get close to Yellow Bell Tribe, while the two leaders remain the closest allies in secret.",
+      "chapters": [
+        2114
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yellow-bell-subsidiary",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_myriad_tribes_ceremony",
+        "fac_yellow_bell_tribe"
+      ]
+    },
+    {
+      "text": "During the ceremony, Fire Blend Tribe does not have a good time either. It lost a good number of elders half a year ago, became weaker, and had to join Yellow Bell Tribe as a subsidiary force. Anyone who wants to target Blue Phoenix Tribe might contact Fire Blend Tribe, and the opposite is also true.",
+      "chapters": [
+        2115
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ceremony-losses",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/fire-blend-tribe/",
+      "chapters": [
+        2113,
+        2114,
+        2115
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Leader": {
+      "text": "Jiao Huo",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "id": "char_granny_yuan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Granny Yuan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Granny Yuan is a rank seven Northern Plains Zombie Alliance immortal zombie who takes the ruyi fungus gathering mission at the Dark Flow Giant City meeting.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 742,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    742,
+    931,
+    932
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zombie_alliance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 742,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zombie_alliance",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_landlord_lei_yu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 1
+    },
+    {
+      "target": "res_ruyi_fungus",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_yin_xuan",
+      "count": 1
+    },
+    {
+      "target": "char_dragon_commander_ye_cha",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the immortal zombie meeting in Dark Flow Giant City, Gu Ye explains that the collection area sits between Zombie Alliance and Liu tribe, and that each year the two forces split the yield, with Liu tribe taking advantage unless someone can hold the ground without going too far. The narration adds that this immortal zombie old lady is closely related to Liu tribe, so her presence keeps Liu tribe from going overboard.",
+      "chapters": [
+        742
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dark_flow_giant_city",
+        "char_gu_ye",
+        "fac_zombie_alliance",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "She is an immortal zombie old lady.",
+      "chapters": [
+        742
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the five immortal zombies escorting Fang Yuan into Earth Trench, the two rank sevens are Dragon Commander Ye Cha and Granny Yuan. She is skilled in defense, and the narration notes that Blazing Heaven Demoness arranged the escort so Granny Yuan could provide defense while Doctor Yin Xuan handled healing if they were hurt.",
+      "chapters": [
+        931
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-escort",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_earth_earth_trench",
+        "char_dragon_commander_ye_cha",
+        "char_blazing_heaven_demoness",
+        "char_doctor_yin_xuan"
+      ]
+    },
+    {
+      "text": "When the group plans to clear yaksha octopuses before processing snail mucus, Dragon Commander Ye Cha assigns Granny Yuan to draw their attention and distract them while Landlord Lei Yu and Ye Cha attack.",
+      "chapters": [
+        932
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-escort",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_landlord_lei_yu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/granny-yuan/",
+      "chapters": [
+        742,
+        931,
+        932
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 742",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zombie Alliance as of ch. 742",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 742,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

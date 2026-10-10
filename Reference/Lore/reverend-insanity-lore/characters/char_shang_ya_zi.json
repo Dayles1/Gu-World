@@ -1,0 +1,646 @@
+{
+  "id": "char_shang_ya_zi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Ya Zi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shang ya zi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Шан Я Цзы",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shang Ya Zi is a Shang clan young master who controls the clan's Gu shops in Shang Clan City and first meets Fang Yuan through a blocked bone spear Gu sale and white bone recipe talk.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 262,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    262,
+    263,
+    267,
+    268,
+    269,
+    270,
+    304,
+    307,
+    308,
+    311,
+    321,
+    322,
+    325,
+    333,
+    336,
+    2122,
+    2124,
+    2125
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 262,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_bone_spike_gu",
+      "role": "buyer",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 268,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_poison_vow_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 268,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_bitter_strength_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 307,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shang_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_bitter_strength_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_bone_spike_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_poison_vow_gu",
+      "count": 3
+    },
+    {
+      "target": "rcp_white_bone_recipe",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "gu_bone_spear_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 2
+    },
+    {
+      "target": "gu_primeval_elder_gu",
+      "count": 2
+    },
+    {
+      "target": "char_shang_yi_fan",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_quan",
+      "count": 2
+    },
+    {
+      "target": "char_feng_tian_yu",
+      "count": 2
+    },
+    {
+      "target": "char_wei_de_xin",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_feng_yu_manor",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 1
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 1
+    },
+    {
+      "target": "char_shang_qiu_niu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_tuo_hai",
+      "count": 1
+    },
+    {
+      "target": "gu_eating_ones_words_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_paper_crane_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ju_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_frost_arrow_gu",
+      "count": 1
+    },
+    {
+      "target": "char_lady_an_yu",
+      "count": 1
+    },
+    {
+      "target": "loc_qin_yan_brothel",
+      "count": 1
+    },
+    {
+      "target": "fac_zhou_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He is eighteen, pale and skinny from drink, and already anxious to keep his seat through a strong evaluation deal when Tong Ou shop reports Fang Yuan’s Gu package and recipe talk by bronze mirror. Other stores in Shang Clan City refuse Fang Yuan’s Gu and push him back toward Tong Ou under that young master’s instructions.",
+      "chapters": [
+        262
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "He is Shang Yan Fei’s second son among the young masters of Shang clan.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Shang Ya Zi is a young man of eighteen. He is an alcoholic, causing his face to be skinny and his skin to be pale, and giving off a dazed expression.",
+      "chapters": [
+        262
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "With yearly evaluation near and his standing last among the ten young masters, he needs a cheap inheritance purchase to survive the cut. He visits Nan Qiu garden himself, repeats the five hundred thousand Tong Ou ceiling, and threatens to tip Tie clan searchers to Fang Yuan and Bai Ning Bing, until Wei Yang arrives with Shang Yan Fei’s invitation and the threat collapses.",
+      "chapters": [
+        263
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-shops-and-the-inheritance-deal",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_nan_qiu_garden",
+        "fac_tie_clan",
+        "char_bai_ning_bing",
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "Fang Yuan then squeezes the recipe price day by day until Shang Ya Zi faces buying at a loss or falsifying the account, and he finally seals a poison vow deal: nine hundred thousand primeval stones for the recipe set, plus the earlier bone spear Gu package at forty thousand six hundred and twenty.",
+      "chapters": [
+        267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-shops-and-the-inheritance-deal",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bone_spear_gu"
+      ]
+    },
+    {
+      "text": "He pays eight hundred and seventy thousand through a rank three primeval elder Gu that mixes Shang clan trade credit with his own savings, and says he still owes thirty thousand that he will gather and hand over later. Fang Yuan pays him six thousand six hundred for that elder Gu, and Shang Ya Zi keeps those stones in an ordinary storage Gu. He had held the young master seat and managed those shops for only about a year.",
+      "chapters": [
+        268
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-shops-and-the-inheritance-deal",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_primeval_elder_gu",
+        "sys_storage_gu"
+      ]
+    },
+    {
+      "text": "Shang Yan Fei already suspects the fake books, yet leaves the matter alone while it stays unexposed.",
+      "chapters": [
+        270
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-shops-and-the-inheritance-deal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "For more than a year afterward he uses shop control to block Fang Yuan from buying bitter strength Gu through ordinary stores.",
+      "chapters": [
+        304
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bitter_strength_gu"
+      ]
+    },
+    {
+      "text": "At the Ju clan auction he still has the wealth to contest the lot, and he drives Fang Yuan’s bid until Shang Ya Zi himself takes the Gu for eight hundred and ten thousand primeval stones, far above market talk of about three hundred and eighty thousand.",
+      "chapters": [
+        307
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ju_clan"
+      ]
+    },
+    {
+      "text": "When the earlier fake accounting is exposed, he begs at Nan Qiu garden with the bitter strength Gu as apology and offers shop goods as further pay, but Shang Yan Fei revokes his young master status and sends him to the slave capturing group for three years.",
+      "chapters": [
+        311
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before leaving he hands secret assets, spies, and aides to Shang Yi Fan to hold until his return, while the vacant young master seat opens the succession scramble that later puts Shang Xin Ci among the ten.",
+      "chapters": [
+        321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yi_fan",
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "With him gone and the shops unmanaged, Fang Yuan names that vacancy as the opening that let Shang Xin Ci’s side earn Gu bulk-purchase profit. He contrasts that strike with a planned battle-stage information business that still needs loyal staff, and he tells her he has already found a manager candidate: Zhou Quan, a former shopkeeper under Shang Ya Zi.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhou_quan"
+      ]
+    },
+    {
+      "text": "Zhou Quan’s loyalty only lands later, when he greets Shang Xin Ci as lord after Fang Yuan’s recruitment ruse.",
+      "chapters": [
+        333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later still lists Shang Ya Zi among Shang clansmen he has offended when weighing risks outside the city.",
+      "chapters": [
+        336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fall-from-young-master",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Much later he is present again when Shang Yan Fei distributes nine children dragon drawings and other inheritances among his children, and Shang Ya Zi receives a drawing with a warning to stop dwelling on petty matters. He joins siblings plotting against Shang Xin Ci and boasts of an expert who can wreck her market reputation.",
+      "chapters": [
+        2122
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-liang-mountain-contest",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "That expert is Feng Tian Yu, hired with huge benefits to flood the market with fake Gu.",
+      "chapters": [
+        2124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-liang-mountain-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_tian_yu"
+      ]
+    },
+    {
+      "text": "When Zhou Quan and Wei De Xin encircle the plotters and Feng Tian Yu admits the hire, Shang Ya Zi’s side breaks out during Shang Yi Fan’s mud-monster chaos, flees Shang Liang mountain, and becomes demonic path Gu Masters.",
+      "chapters": [
+        2125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-liang-mountain-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_de_xin",
+        "loc_shang_liang_mountain",
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/shang-ya-zi.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shang-ya-zi/",
+      "chapters": [
+        262,
+        263,
+        267,
+        268,
+        269,
+        270,
+        304,
+        307,
+        308,
+        311,
+        321,
+        322,
+        325,
+        333,
+        336,
+        2122,
+        2124,
+        2125
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shang Clan as of ch. 262",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 2125",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "demonic path as of ch. 2125",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_bitter_strength_gu",
+      "role": "holder",
+      "recorded_chapter": 307,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_bone_spike_gu",
+      "role": "buyer",
+      "recorded_chapter": 268,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_poison_vow_gu",
+      "role": "user",
+      "recorded_chapter": 268,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

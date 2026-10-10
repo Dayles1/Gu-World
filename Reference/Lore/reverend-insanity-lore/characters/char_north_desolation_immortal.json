@@ -1,0 +1,254 @@
+{
+  "id": "char_north_desolation_immortal",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "North Desolation Immortal",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Northern Desolation Immortal"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "North Desolation Immortal is one of Longevity Heaven's Four Desolation Immortals, a rank eight seat with East, South, and West Desolation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1238,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1238,
+    1692,
+    1711
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_longevity_heaven",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_longevity_heaven",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_east_desolation_immortal",
+      "count": 2
+    },
+    {
+      "target": "char_south_desolation_immortal",
+      "count": 2
+    },
+    {
+      "target": "char_west_desolation",
+      "count": 2
+    },
+    {
+      "target": "fac_four_desolations",
+      "count": 2
+    },
+    {
+      "target": "char_bing_sai_chuan",
+      "count": 2
+    },
+    {
+      "target": "char_bull_demon",
+      "count": 2
+    },
+    {
+      "target": "char_flower_lady",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_eight_extremities",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Longevity Heaven has twelve positions split into Eight Extremities and Four Desolations. The Four Desolation Immortals are East Desolation, South Desolation, West Desolation, and North Desolation, four rank eight immortals. The seats are meant only for rank eight Gu Immortals, while the Eight Extremities need at least elite rank seven cultivation.",
+      "chapters": [
+        1238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_longevity_heaven",
+        "fac_eight_extremities",
+        "fac_four_desolations",
+        "char_east_desolation_immortal",
+        "char_south_desolation_immortal",
+        "char_west_desolation",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Bull Demon and Flower Lady take the role of North Desolation Immortal together. Bull Demon is a muscular brute with a thick beard and a thunderous voice, extremely tall and strong, with a powerful aura. Flower Lady is a little girl with a flower on her head who sits on his shoulder, giggling, with crystal-like eyes that flicker with innocence. When West Desolation Immortal Bing Sai Chuan awakens, they greet him as Senior West Desolation.",
+      "chapters": [
+        1692
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bull-demon-and-flower-lady",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bull_demon",
+        "char_flower_lady",
+        "char_bing_sai_chuan"
+      ]
+    },
+    {
+      "text": "Inside Heavenly Court, narration names Bull Demon and Flower Lady together as the Northern Desolation Immortals, usually extremely close and never leaving each other’s side.",
+      "chapters": [
+        1711
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "northern-desolation-immortals",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/north-desolation-immortal/",
+      "chapters": [
+        1238,
+        1692,
+        1711
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1238",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Longevity Heaven as of ch. 1238",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1238,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

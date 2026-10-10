@@ -1,0 +1,199 @@
+{
+  "id": "fac_anti_fang_alliance",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Anti-Fang Alliance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A coalition Wan clan organizes among Western Desert righteous path super forces against Fang clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2256,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2256,
+    2258,
+    2261
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_wan_gu_chou",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    },
+    {
+      "target": "char_wan_hao_guang",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xiao",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "move_state_of_disunity",
+      "count": 1
+    },
+    {
+      "target": "loc_skeleton_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang clan sells Wan clan’s black-yellow earth pool in an open treasure yellow heaven transaction. That pool was Wan clan’s number one resource point and the payment meant for Xiao clan. Xiao clan still sends several Gu Immortal experts, then forces Wan clan to replace that pool with several giant resource points. Wan clan’s immortals treat the outlay as the price they must pay. Among the forces involved, they single out Tang clan as asking the lowest price.",
+      "chapters": [
+        2256
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan",
+        "fac_wan_clan",
+        "fac_xiao_clan",
+        "sys_gu_immortal",
+        "fac_tang_clan"
+      ]
+    },
+    {
+      "text": "Fang clan attacks while the alliance is still in an ordinary desert, not yet stationed at a resource point, because payment talks have delayed the planned expedition. Alliance Gu Immortals fly in the open while Fang clan stays inside Immortal Gu Houses. Wan clan has used the delay to train group combat, and Tian Da Ji turns Fang clan’s released ancient desolate beast chickens against their dogs, which lets Wan Xiao, Wan Hao Guang, Sun Wang, and others strike back.",
+      "chapters": [
+        2258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "desert-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "char_wan_xiao",
+        "char_wan_hao_guang"
+      ]
+    },
+    {
+      "text": "After the first campaign, the alliance recaptures the blessed land of Wan clan’s headquarters. Wan Gu Chou tells the gathered immortals that Wan clan cannot pay the agreed price, then argues they should chase Fang clan for spoils. She is the alliance leader. That same day she announces the establishment of a new anti-Fang alliance.",
+      "chapters": [
+        2261
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-leadership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wan_gu_chou"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/anti-fang-alliance/",
+      "chapters": [
+        2256,
+        2258,
+        2261
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "alliance",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

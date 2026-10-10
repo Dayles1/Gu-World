@@ -1,0 +1,360 @@
+{
+  "id": "gu_malicious_thought_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Malicious Thought Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Malicious Thought Gu is a wisdom path mortal Gu that produces malicious thoughts for scheming and deduction. Fang Yuan holds its recipe and refines a rank five specimen.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 735,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    735,
+    736,
+    760,
+    779,
+    780,
+    817
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 735,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "gu_delight_in_water_and_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_malicious_will_gu",
+      "count": 1
+    },
+    {
+      "target": "move_harboring_malicious_heart",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "gu_airsac_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_memory_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_pulling_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_pulling_water",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/malicious-thought-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/malicious-thought-gu/",
+      "chapters": [
+        735,
+        736,
+        760,
+        779,
+        780,
+        817
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_wisdom"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "In Hu Immortal blessed land he puts the second stone nest on malicious thought Gu while other nests refine airsac Gu. Malicious thought Gu is good for plotting against others; memory thought Gu is useful for digging information from memories; for ordinary deduction the two show no clear difference.",
+        "chapters": [
+          779
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "place-among-thought-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_hu_immortal_blessed_land",
+          "gu_airsac_gu"
+        ]
+      },
+      {
+        "text": "Under the light of wisdom he burns through large stocks on killer move work, including attempts to fold Pulling Mountain and Pulling Water into myriad self and to advance vaguely familiar face.",
+        "chapters": [
+          780
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "place-among-thought-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_pulling_mountain",
+          "gu_pulling_water"
+        ]
+      },
+      {
+        "text": "After he gains Dong Fang Chang Fan’s star thought line, one star thought can substitute for three to four malicious thoughts or memory thoughts in deduction. Star thoughts stay weak for plotting and for digging memories; for harmful schemes, malicious thought Gu remains the better tool. He keeps Star Thought Gu, memory thought Gu, and malicious thought Gu as stocks that all need ongoing refinement.",
+        "chapters": [
+          817
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "place-among-thought-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_dong_fang_chang_fan",
+          "gu_star_thought_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It has a huge body, around the size of a washing basin. It is like a spider, but the eight legs are like needles with extremely sharp tips. On the spider body there are tough and long prickly hairs; ordinary flesh and blood would bleed on touch.",
+        "chapters": [
+          735
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Injecting primeval essence raises malicious thoughts in the mind. Those thoughts look like spiked bubbles that hook into one another, then destroy each other or fuse into larger thoughts. When used to scheme or plot against others, one malicious thought can match tens of joyful thoughts, star thoughts, or empty thoughts. The Gu is not a consumable, but heavy activation can damage it over time.",
+        "chapters": [
+          735
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The same incomplete inheritance also gives him recipes for malicious will Gu and the wisdom path killer move harboring malicious heart. He treats mass-produced malicious thought Gu as a cheaper substitute for spending green grape immortal essence on Delight in Water and Mountain.",
+        "chapters": [
+          735
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_malicious_will_gu",
+          "gu_delight_in_water_and_mountain"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Across ranks one through five, producing malicious thoughts stays similar; the differences are how many thoughts one activation yields and how much primeval essence it costs. To feed the light of wisdom he plans for at least two thousand rank five specimens activated together. The original rank five recipe had to climb step by step from rank one upward. With the light of wisdom he shortens that into a two-step recipe: a half-finished Gu, then completion.",
+        "chapters": [
+          736
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "rank-and-refinement",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "refiner",
+      "recorded_chapter": 735,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan refines a rank five specimen from a wisdom path inheritance bought with an astral wind flying heavenly boar corpse. The Gu is about the size of a washing basin, spider-shaped, with needle-like legs and tough prickly hairs that would cut ordinary flesh.",
+        "chapters": [
+          735
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "A later memory thought inheritance is slightly more intact than this malicious thought inheritance.",
+        "chapters": [
+          760
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "memory-thought-inheritance",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Wisdom Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

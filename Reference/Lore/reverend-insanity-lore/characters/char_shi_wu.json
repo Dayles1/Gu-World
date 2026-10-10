@@ -1,0 +1,375 @@
+{
+  "id": "char_shi_wu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shi Wu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shi wu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ши У",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shi Wu is a rank three bone path Gu Master from Shi tribe who becomes Man tribe's external elder after Man tribe absorbs his tribe in Northern Plains.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 442,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    442,
+    443,
+    444,
+    445,
+    455,
+    554,
+    555
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shi_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 442,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_man_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 442,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_flying_bone_shield_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 444,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_man_tribe",
+      "count": 4
+    },
+    {
+      "target": "fac_shi_tribe",
+      "count": 4
+    },
+    {
+      "target": "gu_flying_bone_shield_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_man_duo",
+      "count": 2
+    },
+    {
+      "target": "gu_continuing_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_lasting_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "path_bone",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_man_tu",
+      "count": 1
+    },
+    {
+      "target": "loc_hong_yan_valley",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a Northern Plains market stretch, Fang Yuan learns that Man tribe absorbed Shi tribe and that elder Shi Wu now serves Man tribe as an external elder. The same talk names him a bone path Gu Master who bought all the bone bamboo Gu in the market while claiming to research a new Gu path recipe, and Fang Yuan memorizes him.",
+      "chapters": [
+        442
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_fang_yuan",
+        "fac_man_tribe",
+        "fac_shi_tribe",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He is huge and bald, with bulging muscles. He walks onto the stage with a cruel smile.",
+      "chapters": [
+        443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Man Duo orders him to keep challenging Ge tribe over Ge Yao. Huge, bald, and bulging with muscle, he walks onto the stage with a cruel smile as rank three peak stage and has already beaten a Ge tribe elder to death on the spot. He mocks Ge tribe when no one answers, then stops laughing when Fang Yuan steps out as a rank four Gu Master.",
+      "chapters": [
+        443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "challenge-at-ge-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_man_duo",
+        "fac_ge_tribe",
+        "char_ge_yao"
+      ]
+    },
+    {
+      "text": "Newly submitted to Man tribe and eager to contribute, he enters the stage rather than avoid a rank four and lose standing on the grassland. With less than thirty percent primeval essence left after earlier matches, he summons flying bone shields and iron bone broad axes, but Fang Yuan breaks the shields, toys with him, and knocks him flat without killing him. Spared as a Man tribe external elder, he thanks Fang Yuan and leaves with Man Duo.",
+      "chapters": [
+        444
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fight-with-chang-shan-yin",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Man tribe later treats the matter as a misunderstanding among children and sends an apology gift for his offending a hero.",
+      "chapters": [
+        445
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fight-with-chang-shan-yin",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Leading Man tribe Gu Masters in the dark, he looks at two corpses and calls killing those ants as easy as flipping his palm. He credits Ge tribe’s earlier win to scouting, says the tribe leader has dispatched almost all elders, and looks forward to ten thousand night wolves hitting Ge tribe at once.",
+      "chapters": [
+        455
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "night-wolf-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "At Hong Yan valley he kneels as rank three external elder when spirit spring D freezes and dries, and Man Tu refuses to blame him for the ten year disaster. Half an outsider by the Shi surname even after marrying into Man tribe, he is then put in charge of planting a new spirit spring D with a rank five spring egg Gu, using lasting Gu and continuing Gu because his rank three cultivation cannot activate it in one try.",
+      "chapters": [
+        554
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-spring-d",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hong_yan_valley",
+        "char_man_tu",
+        "gu_lasting_gu",
+        "gu_continuing_gu"
+      ]
+    },
+    {
+      "text": "Over the next eighteen days he sleeps three hours a day while refining; Man Duo inspects the nearly cracked spring egg Gu, hides bad news about the valley growing colder, and then flying hand snow forces them to protect the Gu.",
+      "chapters": [
+        555
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-spring-d",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/shi-wu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shi-wu/",
+      "chapters": [
+        442,
+        443,
+        444,
+        445,
+        455,
+        554,
+        555
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 443",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shi Tribe as of ch. 442 Man Tribe as of ch. 442",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 443,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_flying_bone_shield_gu",
+      "role": "user",
+      "recorded_chapter": 444,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

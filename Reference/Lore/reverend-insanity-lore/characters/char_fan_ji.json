@@ -1,0 +1,170 @@
+{
+  "id": "char_fan_ji",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fan Ji",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "fan ji",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Фань Цзи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fan Ji is a Gu Immortal of Black Heaven Temple, the last and most beloved disciple of first supreme elder Kong Yi Hen, who refuses to marry Shu Jiu Ling after impregnating her.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1833,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1833,
+    1835
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_shu_jiu_ling",
+      "count": 2
+    },
+    {
+      "target": "house_calligraphy_pavilion",
+      "count": 2
+    },
+    {
+      "target": "char_calligraphy_pavilion_lady",
+      "count": 1
+    },
+    {
+      "target": "loc_black_heaven_temple",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Shu Jiu Ling originally loved him, was impregnated with his child, and heard constant excuses instead of marriage. He is the last disciple of Black Heaven Temple’s first supreme elder Kong Yi Hen, who has no children but many disciples and treats this final youngest disciple like a son. Kong Yi Hen brings him to Calligraphy Pavilion to negotiate. The talks fail and the two rank eights fight for a few rounds. Fan Ji and Shu Jiu Ling become complete enemies. When she threatens him, he smiles coldly and asks who has the guts to interfere and who has the passion to be with her while the child is in her womb.",
+      "chapters": [
+        1833
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shu_jiu_ling",
+        "loc_black_heaven_temple",
+        "house_calligraphy_pavilion"
+      ]
+    },
+    {
+      "text": "After Shu Jiu Ling gives birth to her son she still cannot stop thinking of Fan Ji. After some time Fan Ji also reminisces about her and approaches again. She cannot control herself, keeps contact, and they meet countless times until it is almost an open secret.",
+      "chapters": [
+        1835
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "affair-after-the-marriage",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/fan-ji/",
+      "chapters": [
+        1833,
+        1835
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

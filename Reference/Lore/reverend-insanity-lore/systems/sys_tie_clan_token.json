@@ -1,0 +1,122 @@
+{
+  "id": "sys_tie_clan_token",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tie Clan Token",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Tie clan token is a metal badge used as proof of Tie clan identity. Bai clan treats a recovered token as evidence that a captive may be a Tie clansman.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 220,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    220
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_tie_dao_ku",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When an investigative Gu Master hands over a metal token taken from a captive, Bai clan leader feels a cold sensation from the object, and the report also notes characteristic Gu worms on that captive.",
+      "chapters": [
+        220
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "fac_bai_clan_bai_gu_mountain",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "She weighs a rival reading: the captive might have killed a Tie clan Gu Master and kept the token as loot, or might be a demonic Gu Master misleading them. The captive is Tie Dao Ku, who answers her interrogation by insisting on that Tie clan name and surname.",
+      "chapters": [
+        220
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "limits-as-proof",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tie_clan",
+        "sys_demonic_path",
+        "char_tie_dao_ku"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/tie-clan-token/",
+      "chapters": [
+        220
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Identity token",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

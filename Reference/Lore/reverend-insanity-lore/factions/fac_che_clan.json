@@ -1,0 +1,293 @@
+{
+  "id": "fac_che_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Che Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan seated on Fei Lai mountain beside San Cha mountain, locked in a centuries-long feud with Zuo clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 323,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    323,
+    340,
+    389,
+    401,
+    1414
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_che_qiao_xiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 323,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_che_you_yin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 323,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_che_qiao_xiang",
+      "count": 3
+    },
+    {
+      "target": "char_che_you_yin",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_zuo_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_fei_lai_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_chan_yu",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_wu_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_leng_zhan_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_bronze_main_hall",
+      "count": 1
+    },
+    {
+      "target": "char_thousand_transformations_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_zhen_yuan_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "inh_formation_path_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "San Cha Mountain sits between Zuo clan’s neighboring mountain and Che clan’s Fei Lai mountain. Che clan has five hundred and eighty years of history. For centuries Che and Zuo Clan have been mortal enemies, and for the past hundred years both have expanded and fought to occupy San Cha mountain.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "loc_fei_lai_mountain",
+        "fac_zuo_clan"
+      ]
+    },
+    {
+      "text": "On the mountain waist, an ending battle leaves four Che Gu Masters still standing against three from Zuo. Che clan elder Che You Yin presses the attack while telling his daughter Che Qiao Xiang to stay back with her injury; she is his daughter and wants to fight beside him. Che You Yin and Zuo Wu Sheng are named as main fighters of about equal strength and decades of rivalry, both injured and only at rank three when the demonic Gu Master Kong Ri Tian arrives. Kong Ri Tian captures Che Qiao Xiang and Zuo Chan Yu during the chaos, then the three kings inheritance opens on the peaks.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_che_you_yin",
+        "char_che_qiao_xiang",
+        "char_zuo_wu_sheng",
+        "sys_gu_master",
+        "char_kong_ri_tian",
+        "char_zuo_chan_yu"
+      ]
+    },
+    {
+      "text": "Before that opening, San Cha mountain drew little outside interest and was mainly a place of Che and Zuo interactions.",
+      "chapters": [
+        340
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain-battle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the blessed land’s center comes into play, Fang Yuan sees Che clan and Zuo clan arrive with dozens of rank three Gu Masters led by rank four clan leaders, and he judges that most of the elders have come. The two clans are nearby expanders who had competed on San Cha mountain to occupy it; the sudden three kings inheritance thoroughly ruins that plan. Other forces can send only elites across Southern Border’s hard ground, while these neighbors finally commit most of their troops once the inheritance turns strange. Fang Yuan counts those Che and Zuo troops among the enemies who will attack the central main hall.",
+      "chapters": [
+        389
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "troops-into-the-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "As time goes on, Che clan moves out onto San Cha mountain.",
+      "chapters": [
+        401
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "troops-into-the-blessed-land",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Thousand Transformations’ will names Zhen Yuan Zi as a Gu Immortal from the super force Che clan, and says he left a formation path true inheritance away from his clan after being pushed aside by their Gu Immortals.",
+      "chapters": [
+        1414
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_thousand_transformations_ancestor",
+        "char_zhen_yuan_zi",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Earlier San Cha mountain chapters place Che clan on Fei Lai mountain with five hundred and eighty years of history.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-naming",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/che-clan/",
+      "chapters": [
+        323,
+        340,
+        389,
+        401,
+        1414
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "id": "fac_xiao_clan_western_desert",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Clan (Western Desert)",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiao clan is a super force of Western Desert whose Gu Masters fight hidden sand spiders in battle formation at the impassable dunes.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 836,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    836,
+    837,
+    907,
+    1327,
+    1470,
+    2253,
+    2255
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_hu_chi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 837,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_shi_rang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 837,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_ye_hu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2253,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xiao_shi_rang",
+      "count": 4
+    },
+    {
+      "target": "char_xiao_ye_hu",
+      "count": 4
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 3
+    },
+    {
+      "target": "char_xiao_hu_chi",
+      "count": 3
+    },
+    {
+      "target": "house_ten_thousand_li_silk_corridor",
+      "count": 3
+    },
+    {
+      "target": "house_chamber_pot",
+      "count": 3
+    },
+    {
+      "target": "loc_impassable_dunes",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Xiao clan is a super force of Western Desert; its Gu Masters fight in battle formation at the impassable dunes against hidden sand spiders that Fang Yuan, watching from the sky, estimates at no fewer than thirty thousand, and their rich experience against the beasts tilts the fight in their favor.",
+      "chapters": [
+        836
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "impassable-dunes-campaign",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "fac_gu_masters",
+        "loc_impassable_dunes",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "At the impassable dunes, Xiao clan Gu Immortals led by Xiao Hu Chi, with Xiao Shi Rang as deputy, work the dunes’ periphery to train Gu Masters and capture hidden sand spider queens. Xiao clan holds the Immortal Gu House Ten Thousand Li Silk Corridor, spreads it to transport goods, and ranks among the richest Western Desert super forces because of that house; keeping the corridor running consumes large numbers of mortal spider Gu each year. From a bird’s eye view the corridor resembles a giant spider web over Western Desert, and goods on its silk-smooth floor move at extreme speed. Captured hidden sand spider queens are meant to be raised at clan headquarters so that Gu Masters can refine mortal spider Gu from their blood and flesh; after Fang Yuan offers a long term trade in regretful spiders, Xiao clan ‘s first supreme elder agrees to cooperate for now, allows a transaction token if the cooperation goes well, and also names a contest with Dong clan to occupy the northwest market by spreading the corridor faster.",
+      "chapters": [
+        837
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "doing-business-in-western-desert",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_xiao_hu_chi",
+        "char_xiao_shi_rang",
+        "sys_immortal_gu_house",
+        "house_ten_thousand_li_silk_corridor",
+        "fac_dong_clan"
+      ]
+    },
+    {
+      "text": "On a later delivery, Xiao Shi Rang meets Fang Yuan and is known together with Xiao Hu Chi as Xiao clan ‘s brains and brawn duo; he hands over Xiao clan ‘s transaction token together with an information path mortal Gu.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "brains-and-brawn-at-the-corridor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_information_path_mortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan weighs that Western Desert’s Xiao clan can take in all the regretful spiders even at much higher supply, and that he already has a collaborative relationship with Xiao clan.",
+      "chapters": [
+        1327
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "main-buyer-of-regretful-spiders",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Once his dragonfish business stops, regretful spiders become Fang Yuan’s biggest source of revenue, with Western Desert’s Xiao clan as their main buyers and the relationship growing firmer.",
+      "chapters": [
+        1470
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "main-buyer-of-regretful-spiders",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Wan clan and Heavenly Court envoys arrive at Xiao clan ‘s headquarters blessed land in Western Desert, Xiao Ye Hu states that Fang clan has fallen into the demonic path and that Xiao clan is willing to help Wan clan recover its lost territory; Wan clan cedes resource points and Xiao clan dispatches Xiao Ye Hu and several other experts.",
+      "chapters": [
+        2253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "xiao-ye-hu-joins-the-anti-fang-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan",
+        "fac_heavenly_court",
+        "char_xiao_ye_hu",
+        "fac_fang_clan"
+      ]
+    },
+    {
+      "text": "Western Desert’s super forces are listed as fourteen clans, and Xiao clan is one of them. In the Western Desert Gu Immortal world, Xiao clan and Tian clan are normally thought of highly because, in the past peaceful era, those two had the largest businesses, many Gu Immortals, and even rank eight Gu Immortals leading them. When Wan clan gathers an expedition against Fang clan, Xiao clan is named among the allied forces and is called the strongest support, sending Xiao Ye Hu, who holds the dark path Immortal Gu House Chamber Pot after Xiao clan helped repair a damaged house he obtained young.",
+      "chapters": [
+        2255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "anti-fang-alliance-and-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_chamber_pot"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/xiao-clan-western-desert/",
+      "chapters": [
+        836,
+        837,
+        907,
+        1327,
+        1470,
+        2253,
+        2255
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

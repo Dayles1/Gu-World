@@ -1,0 +1,963 @@
+{
+  "id": "fac_tie_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tie Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Tie family"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Tie clan is a first-class Southern Border super clan whose Demon Suppression Tower stands as a righteous-path symbol against demonic Gu Masters.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 170,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_clan_conflict"
+  },
+  "chapters_cited": [
+    170,
+    171,
+    172,
+    182,
+    211,
+    214,
+    220,
+    229,
+    293,
+    294,
+    359,
+    998,
+    1341,
+    1620,
+    1621
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_ruo_nan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 170,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_clan_leader",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 182,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_xue_leng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 182,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_ao_tian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 214,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_dao_ku",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 214,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_mu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 302,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_ba_xiu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 358,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_ao_kai",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 359,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_xian_hua",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 359,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_mu_bai",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 369,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_xuan_zhi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 369,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_bai_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 396,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_mian_shen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1339,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tie_qu_zhong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1600,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 4
+    },
+    {
+      "target": "char_tie_xue_leng",
+      "count": 4
+    },
+    {
+      "target": "char_tie_ao_tian",
+      "count": 4
+    },
+    {
+      "target": "char_tie_dao_ku",
+      "count": 4
+    },
+    {
+      "target": "char_tie_mu",
+      "count": 4
+    },
+    {
+      "target": "char_tie_ba_xiu",
+      "count": 4
+    },
+    {
+      "target": "char_tie_ao_kai",
+      "count": 4
+    },
+    {
+      "target": "char_tie_xian_hua",
+      "count": 4
+    },
+    {
+      "target": "char_tie_qu_zhong",
+      "count": 4
+    },
+    {
+      "target": "char_tie_clan_leader",
+      "count": 3
+    },
+    {
+      "target": "char_tie_mu_bai",
+      "count": 3
+    },
+    {
+      "target": "char_tie_xuan_zhi",
+      "count": 3
+    },
+    {
+      "target": "char_tie_bai_qi",
+      "count": 3
+    },
+    {
+      "target": "char_tie_mian_shen",
+      "count": 3
+    },
+    {
+      "target": "house_beacon_tower",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "gu_iron_cabinet_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_rust_flower_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_qi_flow_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_golden_needle_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_demon_suppression_tower",
+      "count": 2
+    },
+    {
+      "target": "loc_tie_clan_city",
+      "count": 2
+    },
+    {
+      "target": "loc_wan_cheng_mountain",
+      "count": 2
+    },
+    {
+      "target": "fac_fei_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_large_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_super_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_tie_clan_mountain_fort",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_third_battle",
+      "count": 1
+    },
+    {
+      "target": "gu_demon_suppression_iron_chain_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 1
+    },
+    {
+      "target": "sys_tie_clan_token",
+      "count": 1
+    },
+    {
+      "target": "char_empress_wu_ji",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 1
+    },
+    {
+      "target": "rcp_white_bone_recipe",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bi_an",
+      "count": 1
+    },
+    {
+      "target": "sys_purple_thorn_token",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_bitter_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dan_huo_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_gui_ku_cave",
+      "count": 1
+    },
+    {
+      "target": "char_jiao_huang",
+      "count": 1
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_gold_eating_flying_ant_gu",
+      "count": 1
+    },
+    {
+      "target": "char_meng_tu",
+      "count": 1
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 1
+    },
+    {
+      "target": "gu_invisibility_gu",
+      "count": 1
+    },
+    {
+      "target": "char_little_beast_king",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_needle_mosquito_gu",
+      "count": 1
+    },
+    {
+      "target": "move_beast_phantom_retract",
+      "count": 1
+    },
+    {
+      "target": "gu_stone_turtle_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "char_hong_fei_yu",
+      "count": 1
+    },
+    {
+      "target": "gu_blade_qi_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_wings_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_snowball_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_arrow_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_one_vs_seven",
+      "count": 1
+    },
+    {
+      "target": "char_lu_zuan_feng",
+      "count": 1
+    },
+    {
+      "target": "char_ku_mo",
+      "count": 1
+    },
+    {
+      "target": "char_li_fei_le",
+      "count": 1
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_mang",
+      "count": 1
+    },
+    {
+      "target": "char_ying_ming",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_star_gu",
+      "count": 1
+    },
+    {
+      "target": "move_torrential_light_stream",
+      "count": 1
+    },
+    {
+      "target": "move_infinite_search_and_lock",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_hou_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_southern_border_war",
+      "count": 1
+    },
+    {
+      "target": "fac_ba_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_opportunity_business",
+      "count": 1
+    },
+    {
+      "target": "move_wooden_statue_murder",
+      "count": 1
+    },
+    {
+      "target": "inh_seven_illusions_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "fac_luo_clan",
+      "count": 1
+    },
+    {
+      "target": "house_flying_sand_pavilion",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "loc_smoky_warm_jade_field",
+      "count": 1
+    },
+    {
+      "target": "char_hou_yao",
+      "count": 1
+    },
+    {
+      "target": "inh_iron_mask_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "house_ten_thousand_li_silk_corridor",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Tie clan city sits on the upper half of Wan Cheng mountain behind tall thick blackrock walls that stretch for thousands of li, with rock houses and steel towers lined up toward the peak, and the clan leader pavilion at the mountain peak.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tie_clan_city"
+      ]
+    },
+    {
+      "text": "On Wan Cheng mountain peak stands the Demon Suppression Tower, a majestic steel tower over three hundred metres tall with almost a hundred floors, rustic and ancient in design, with white clouds around it like mist.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_demon_suppression_tower"
+      ]
+    },
+    {
+      "text": "The novel first brings Tie Xue Leng and Tie Ruo Nan onto Qing Mao Mountain during the wolf tide, when the rank five Divine Investigator and his daughter arrive at Jia Fu’s request to investigate a murder.",
+      "chapters": [
+        170
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_xue_leng",
+        "char_tie_ruo_nan",
+        "loc_qing_mao_mountain",
+        "char_jia_fu"
+      ]
+    },
+    {
+      "text": "Through the Gu Yue banquet stretch the text keeps calling them Tie family as the father and daughter press the investigation.",
+      "chapters": [
+        171
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Later, Tie Ruo Nan warns Gu Yue Bo that her uncle is the current Tie clan leader, and the text frames Tie as a super clan with thousands of years of legacy. Even in the entire Southern Border, Tie clan is a first-class powerhouse with strong foundations, far above an average clan like Gu Yue.",
+      "chapters": [
+        182
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_bo",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Later ranking talk places Shang clan among top Southern Border forces and says Shang is not weaker than Tie clan or Fei clan, with only Wu clan above Shang.",
+      "chapters": [
+        229
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "fac_fei_clan",
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "In Shang Clan City, observers treat Tie clan as one of the lords of the Southern Border and as no weaker than Shang.",
+      "chapters": [
+        294
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "Standing tall in the Tie clan mountain fort is the Demon Suppression Tower, imprisoning countless demonic Gu Masters and treated as a symbol of the righteous faction.",
+      "chapters": [
+        182
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demon-suppression-tower-and-investigation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Bai clan talk treats Tie clan as a huge powerhouse that not even ten Bai clans could match.",
+      "chapters": [
+        220
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demon-suppression-tower-and-investigation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "Tie clan is also named the number one investigator in the Southern Border.",
+      "chapters": [
+        293
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demon-suppression-tower-and-investigation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Shang Clan City, people say Tie clan has captured demonic Gu Masters from everywhere and that its Demon Suppression Tower is the nemesis of the demonic path.",
+      "chapters": [
+        294
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demon-suppression-tower-and-investigation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Tie clan Gu Masters defeated the pair known as the Bai Sha Twin Generals, who were also known for assaulting Tie clan’s merchant ships, and Bai Jiang died in that defeat while Huang Sha escaped.",
+      "chapters": [
+        998
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demon-suppression-tower-and-investigation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Among Southern Border’s super forces, Tie clan has targeted the demonic path most fiercely, and especially after it built the Demon Suppression Tower it has been the pillar of the righteous path pursuing demonic Gu Immortals.",
+      "chapters": [
+        1341
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demon-suppression-tower-and-investigation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "At Wan Cheng mountain Tie Ruo Nan’s uncle stands with her after Tie Xue Leng’s death and treats her as his niece. Tie Xue Leng is remembered there as the man who swore to lock demonic Gu Masters in the Demon Suppression Tower.",
+      "chapters": [
+        211
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-tie-xue-lengs-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_wan_cheng_mountain"
+      ]
+    },
+    {
+      "text": "Tie Ao Tian is Tie clan’s fourth young master, raised with expectations for a clan leader bid, and he leads a depleted pursuit after Qing Mao Mountain with Tie Dao Ku.",
+      "chapters": [
+        214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_ao_tian",
+        "char_tie_dao_ku"
+      ]
+    },
+    {
+      "text": "He dies in that pursuit, caught in an explosion before he can activate a defensive Gu, and Tie Dao Ku had seen the clan’s future in his hands.",
+      "chapters": [
+        220
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_defensive_gu"
+      ]
+    },
+    {
+      "text": "After Tie Ruo Nan returns to the clan she becomes one of Tie clan’s eight young masters, already called little divine investigator, and each of those eight has a chance to contend for clan leader. When the clan sends reinforcements toward San Cha Mountain, it appoints her as group leader over Tie Ba Xiu, a rank four upper stage strength path Gu Master famous across Southern Border. That crew also gathers Tie Mu, investigative expert Tie Ao Kai, offense Gu Master Tie Dao Ku, and defensive Gu Master Tie Xian Hua.",
+      "chapters": [
+        359
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "char_tie_ba_xiu",
+        "sys_gu_master",
+        "char_tie_mu",
+        "char_tie_ao_kai",
+        "char_tie_xian_hua"
+      ]
+    },
+    {
+      "text": "A Tie clan Gu Immortal proposes resolving part of the Fang Yuan problem through Tie clan’s Immortal Gu House Beacon Tower, and Wu Yong agrees to Tie clan building Beacon Towers as Southern Border righteous path forces begin true close cooperation.",
+      "chapters": [
+        1620
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "beacon-towers",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu_house",
+        "house_beacon_tower",
+        "char_wu_yong"
+      ]
+    },
+    {
+      "text": "Tie Yi, a rank six Gu Immortal of Tie clan and son of Tie Qu Zhong, does the building in one of more than a dozen small groups that spread out to raise the towers, and when an old Gu Immortal beside him calls Beacon Tower the clan’s signature Immortal Gu House, Tie Yi states that over one thousand towers already stand in Southern Border and can transport rank seven Gu Immortals, and that transporting rank eights would need at least ten thousand.",
+      "chapters": [
+        1621
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "beacon-towers",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_qu_zhong"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/tie-clan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/tie-clan/",
+      "chapters": [
+        170,
+        171,
+        172,
+        182,
+        211,
+        214,
+        220,
+        229,
+        293,
+        294,
+        359,
+        998,
+        1341,
+        1620,
+        1621
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "id": "fac_combat_beast_guild",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Combat Beast Guild",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The largest and sole super force inside Beast Calamity grotto-heaven, ranked from Combat Beast Disciple up to a single Combat Beast King.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1824,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1824,
+    1878
+  ],
+  "relations": [
+    {
+      "type": "members",
+      "target": "char_eagle_warrior",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1686,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_combat_beast_king",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1688,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_frost_butterfly_warrior",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1689,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_mountain_cliff_city_lord",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1854,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_zhan_bu_du",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1854,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_combat_beast_king",
+      "count": 3
+    },
+    {
+      "target": "char_zhan_bu_du",
+      "count": 3
+    },
+    {
+      "target": "char_eagle_warrior",
+      "count": 2
+    },
+    {
+      "target": "char_frost_butterfly_warrior",
+      "count": 2
+    },
+    {
+      "target": "char_mountain_cliff_city_lord",
+      "count": 2
+    },
+    {
+      "target": "char_beast_calamity_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_beast_calamity_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_yuan_qiong_du",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a guild hall or uniform. Membership is bought by registration after a Gu Master fuses with a wild beast or plant and becomes a Combat Beast Envoy candidate.",
+      "chapters": [
+        1824
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Inside Beast Calamity grotto-heaven, the Combat Beast Guild is the largest and sole super force. The lowest ranking membership is Combat Beast Disciple. Above that are Combat Beast Envoys, the guild’s main forces. Above Envoy is Combat Beast Warrior, which needs Gu Immortal cultivation and is mostly held by city lords. Above Warrior is the one and only Combat Beast King. The structure is simple and crude. Zhan Bu Du plans to join it to receive missions and raise strength rapidly.",
+      "chapters": [
+        1824
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_beast_calamity_grotto_heaven",
+        "sys_gu_immortal",
+        "char_combat_beast_king",
+        "char_zhan_bu_du"
+      ]
+    },
+    {
+      "text": "Little Du has just become a Gu Immortal and is a new Combat Beast Warrior, the youngest one in the Combat Beast Guild.",
+      "chapters": [
+        1878
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "warrior-promotion",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yuan_qiong_du"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/combat-beast-guild/",
+      "chapters": [
+        1824,
+        1878
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

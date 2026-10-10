@@ -1,0 +1,546 @@
+{
+  "id": "char_xiao_die",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Die",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xiao die",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сяо Де",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiao Die is Shang Xin Ci's servant girl on the merchant caravan road, first named when Xin Ci asks whether she heard a cry for help.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 238,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    238,
+    239,
+    240,
+    243,
+    250,
+    257,
+    258,
+    263,
+    270,
+    305,
+    309,
+    325,
+    331,
+    1072,
+    1113,
+    1532,
+    1534,
+    1535,
+    2122,
+    2123
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zhang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 270,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zhang_clan",
+      "count": 3
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "char_ou_fei",
+      "count": 2
+    },
+    {
+      "target": "char_xiao_lan",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_quan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "char_tian_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "char_wei_de_xin",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_feng",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_huo",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_tu",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bu_li",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "She is dozing when Shang Xin Ci calls her name over a book, then rolls her eyes at Fang Yuan and argues that they should not get involved after he sold goods at a high price.",
+      "chapters": [
+        238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Xin Ci shelters the wounded pair, Xiao Die unwillingly arranges a tent and leads Fang Yuan without hospitality.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the road she objects when he volunteers to wrestle for Xin Ci’s debt, telling him he is not a Gu Master and should not add trouble.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "After Fang Yuan exchanges caravan goods under the Hei Tu name, Xiao Die storms over, stomps in anger, and threatens to tell Missy until his cold stare chills her into backing off.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tu"
+      ]
+    },
+    {
+      "text": "She blocks a Gu Master from Xin Ci’s tent, is slapped down by Ou Fei when she bars the way with her arms, then stands again swollen and ringing and swears she will not let him take Missy even if she dies.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ou_fei"
+      ]
+    },
+    {
+      "text": "During the zombie crisis she retreats with Xin Ci under Fang Yuan’s pull, cries out at the fighting, and worries aloud that black blood means Lord Hei Tu is poisoned.",
+      "chapters": [
+        257
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Near Shang Clan City she laughs and shakes Xin Ci’s arm at the approach, then falls silent when Fang Yuan announces he will leave them at the gate.",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "At the first meeting with Shang Yan Fei she pays respects, pours tea, blurts Zhang clan mistreatment and the caravan’s near wipeout, then vows to stay by Xin Ci no matter where she goes.",
+      "chapters": [
+        263
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "fac_zhang_clan"
+      ]
+    },
+    {
+      "text": "At Shang Yan Fei’s banquet courtyard she feels nervous in the crowd, and later walks close behind Xin Ci with Xiao Lan after Xin Ci is named Shang.",
+      "chapters": [
+        270
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiao_lan"
+      ]
+    },
+    {
+      "text": "Auction and young master scenes still place her as one of Xin Ci’s personal servants, proud enough to interrupt that her missy is a genius in business.",
+      "chapters": [
+        305
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-servant-under-lady-zhang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Caravan and early city scenes name her as Xin Ci’s servant without stating cultivation. The first summary that she has already been nurtured as a Gu Master with decent B grade aptitude comes when Xin Ci has been only a few years in Shang clan city; Xiao Die was the servant brought from Zhang clan, loyal, and Xin Ci nurtured her.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-master-assistant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_caravan"
+      ]
+    },
+    {
+      "text": "Fang Yuan later lists Xiao Die and Xiao Lan among Xin Ci’s trustworthy assistants while building the young master framework beside Wei De Xin and the Xiong brothers. She stands in Fang Yuan’s group when they press Zhou Quan, angry that Missy was given the cold shoulder on earlier visits.",
+      "chapters": [
+        331
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-master-assistant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_de_xin",
+        "char_zhou_quan"
+      ]
+    },
+    {
+      "text": "At the succession she weeps that Missy has become Shang clan leader, remembered as the trusted servant who followed from Zhang clan through the caravan and city years with unmatched loyalty. She is named among the long time subordinates present for the transfer.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-succession",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Later, Zhou Quan asks her why the clan leader stays in a daze after higher ups meet her.",
+      "chapters": [
+        1113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-succession",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "While Ye Fan fights, she remains Shang Xin Ci’s confidant, still addresses her as Missy when others use clan leader titles, and still holds B grade aptitude as a mortal Gu Master who has not interacted with Gu Immortals. She still thinks Fang Yuan is that earlier mortal demonic path Gu Master.",
+      "chapters": [
+        1532
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ye-fans-eagle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_fan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When the upper extreme heavenly eagle drives off an ancient water monster, she is tongue-tied at its strength, calls the bird arrogant in a way that suits it, and screeches when Ye Fan says his master captured it.",
+      "chapters": [
+        1534
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ye-fans-eagle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan arrives as the eagle’s owner, she shivers with teeth clattering, cannot recognize him, and only feels fear that he has come to find trouble.",
+      "chapters": [
+        1535
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ye-fans-eagle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She stands beside Shang Xin Ci during Shang Bu Li’s market resignation fight, scolds him for holding back the fake Gu report, and later goes with Xin Ci to take control of the scene as a ready striker.",
+      "chapters": [
+        2122
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-liang-mountain-market-crisis",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_bu_li"
+      ]
+    },
+    {
+      "text": "On the market floor she scolds merchants who chase cheap gains and vents that if Lord Fang Yuan were there no one would dare bully them.",
+      "chapters": [
+        2123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-liang-mountain-market-crisis",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xiao-die/",
+      "chapters": [
+        238,
+        239,
+        240,
+        243,
+        250,
+        257,
+        258,
+        263,
+        270,
+        305,
+        309,
+        325,
+        331,
+        1072,
+        1113,
+        1532,
+        1534,
+        1535,
+        2122,
+        2123
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zhang Clan as of ch. 238 Shang Clan as of ch. 270",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

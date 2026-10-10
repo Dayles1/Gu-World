@@ -1,0 +1,175 @@
+{
+  "id": "loc_purple_rosewood_myriad_sparrow_island",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Purple Rosewood Myriad Sparrow Island",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Purple rosewood myriad sparrow island is Shen clan headquarters in Eastern Sea. The island itself is the crown of an immemorial desolate plant, sea suppressing purple rosewood.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1850,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1850,
+    2216
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "char_lu_wei_yin",
+      "count": 1
+    },
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Shen Cong Sheng hosts Fang Yuan there under the Qi Sea Ancestor identity and serves six sound tea before touring the island. Narration names it Shen clan headquarters and a giant resource point.",
+      "chapters": [
+        1850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_cong_sheng",
+        "char_fang_yuan",
+        "char_qi_sea_ancestor",
+        "fac_shen_clan"
+      ]
+    },
+    {
+      "text": "The island is not soil or rock. It is an immemorial desolate plant, sea suppressing purple rosewood, rooted at the seabed with its crown above water and branches intertwined into the island. Countless sparrow species live on it. When the sparrows cry, the purple rosewood branches shake and emit wonderful sounds that calm the surrounding seas into a mirror with no wind.",
+      "chapters": [
+        1850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shen clan’s sea suppressing purple rosewood can produce a special branch every eight hundred years. Grafting that branch grows an ancient level sea suppressing purple rosewood, while other branches cannot be grafted for that purpose. Shen Cong Sheng gifts Fang Yuan two stalks of ancient desolate plant sea suppressing purple rosewood as large resource points.",
+      "chapters": [
+        1850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sea-suppressing-purple-rosewood",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A later outdoor banquet is held at the peak of rosewood myriad sparrow island. Lu Wei Yin praises Eastern Sea Shen clan’s island for calming his heart after Crazed Demon Cave. Shen Cong Sheng speaks of the island and clansmen facing extermination crisis under his generation.",
+      "chapters": [
+        2216
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "banquet-after-crazed-demon-cave",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lu_wei_yin",
+        "loc_crazed_demon_cave"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/purple-rosewood-myriad-sparrow-island.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/purple-rosewood-myriad-sparrow-island/",
+      "chapters": [
+        1850,
+        2216
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "resource-point",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

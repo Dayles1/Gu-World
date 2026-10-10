@@ -1,0 +1,391 @@
+{
+  "id": "gu_flower_boar_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flower Boar Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Flower Boar Gu is a common rank one Gu that temporarily adds one boar's strength. It lasts longer than Brute Force Longhorn Beetle Gu at the same primeval essence cost.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 62,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    62,
+    64,
+    77,
+    82,
+    85,
+    357
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_beast_skin_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_black_boar_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_brute_force_longhorn_beetle_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_black_and_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "char_wild_boar",
+      "count": 1
+    },
+    {
+      "target": "gu_boar_cage_gu",
+      "count": 1
+    },
+    {
+      "target": "res_dragon_side_tooth",
+      "count": 1
+    },
+    {
+      "target": "res_grand_white_moon_gold",
+      "count": 1
+    },
+    {
+      "target": "res_skull_stones",
+      "count": 1
+    },
+    {
+      "target": "res_young_autumn_grass",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/flower-boar-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/flower-boar-gu/",
+      "chapters": [
+        62,
+        64,
+        77,
+        82,
+        85,
+        357
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 1,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Early Qing Mao Mountain chapters do not name a cultivation path for this Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_qing_mao_mountain"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "These Gu worms have flower patterns on the surface, either white and black, black and pink, or white and pink. Some have all three colours.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      },
+      {
+        "text": "Flower Boar Gu sits in the Boar Gu series with Pink Boar Gu, Black Boar Gu, and White Boar Gu. The storage room stock is all rank one.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_black_boar_gu",
+          "gu_white_boar_gu"
+        ]
+      },
+      {
+        "text": "The storage room holds at least a dozen in a row.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Its use is like Brute Force Longhorn Beetle Gu: it temporarily adds strength. Brute Force Longhorn Beetle Gu gives one bull’s strength for five breaths. Flower Boar Gu gives one boar’s strength for ten breaths, twice as long, at the same primeval essence cost, with lesser side effects because the strength gain is smaller.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_brute_force_longhorn_beetle_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": true,
+    "food_raw": null,
+    "foods": [],
+    "claims": [
+      {
+        "text": "The Boar Gu series eats pork. Black and White Boar Gu need about one fully grown pig’s worth of meat every five days; the text names that appetite for those two and states pork as food for the whole series.",
+        "chapters": [
+          64
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "feeding",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "In that trial he receives grand white moon gold, skull stones, dragon-side tooth, young autumn grass, fifty primeval stones, a flower boar Gu, and a boar cage Gu as materials for Gu refinement. The inheritance does not name which Gu he must refine. He sees three possible recipes and watches a hairy man begin a refinement, then distracts that hairy man until the attempt fails under heavenly power. Fang Yuan collects the materials afterward and moves on without finishing a refinement from that bundle in the chapter.",
+        "chapters": [
+          357
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-material",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "Fang Yuan calls it the most common Gu worm, sold most abundantly in the market, at half the price of Brute Force Longhorn Beetle Gu. Among the Boar Gu series he ranks Black and White Boar Gu far above it in value. A Black Boar Gu or a White Boar Gu could sell for six hundred primeval stones; that figure is never given for Flower Boar Gu itself.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_black_and_white_boar_gu"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": [
+      {
+        "text": "Wild boar kings often carry Boar Gu such as Pink Boar Gu or Flower Boar Gu, and may also host Beast Skin Gu or Spike Fur worm.",
+        "chapters": [
+          77
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "habitat-and-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_beast_skin_gu"
+        ]
+      },
+      {
+        "text": "In the academy year-end fights, Chi Cheng’s opponent has only a Flower Boar Gu. Temporary one-boar strength does not help when Chi Cheng refuses close combat and wins with mobility and moonblades.",
+        "chapters": [
+          82
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "habitat-and-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_chi_cheng"
+        ]
+      },
+      {
+        "text": "Fang Zheng later treats Flower Boar Gu or Brute Force Longhorn Beetle Gu as the kind of strength raiser needed to break a jade barrier by force, still needing a defensive Gu as well.",
+        "chapters": [
+          85
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "habitat-and-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_zheng",
+          "sys_defensive_gu"
+        ]
+      }
+    ]
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan first inspects Flower Boar Gu in the academy Gu storage room while choosing a second Gu. The room holds only rank one Gu, and Flower Boar Gu is the most abundant type on the Boar Gu wall.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

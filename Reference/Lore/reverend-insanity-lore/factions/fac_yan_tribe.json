@@ -1,0 +1,343 @@
+{
+  "id": "fac_yan_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yan Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe whose Gu Masters reach Ge tribe camp near crescent lake seeking help against Water Demon Hao Ji Liu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 469,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    469,
+    470,
+    472,
+    473,
+    474,
+    477
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yan_cui_er",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 470,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yan_tian_ji",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 470,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yan_cui_er",
+      "count": 4
+    },
+    {
+      "target": "char_yan_tian_ji",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 2
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 2
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 2
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_poison_beard_wolf",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_burial_toad",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_smoke_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "gu_backwater_battle_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_immobilization_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_location_swap_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sight_blow_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_frost_breath_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_silkworm_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_pill_fire_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_tornado_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wind_barrier_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Their leader is Yan Tian Ji. Nine Gu Masters ride hump wolves and note mixed wolf footprints on the way.",
+      "chapters": [
+        469
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "visit-to-ge-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yan_tian_ji",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Water Demon Hao Ji Liu has kidnapped the tribe’s big missy Yan Cui Er and is extorting them from crescent lake.",
+      "chapters": [
+        470
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "visit-to-ge-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hao_ji_liu",
+        "char_yan_cui_er",
+        "loc_crescent_lake"
+      ]
+    },
+    {
+      "text": "Yan Cui Er is engaged to Liu Wen Wu. Yan Tian Ji and the elders press Ge tribe with that tie and with Liu Tribe’s name when seeking reinforcements.",
+      "chapters": [
+        470
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "visit-to-ge-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_liu_wen_wu",
+        "fac_ge_tribe",
+        "fac_liu_tribe"
+      ]
+    },
+    {
+      "text": "Yan tribe Gu Masters are experts in defense and famous for it in northern plains; they hold a rank five wind barrier Gu as a hard shell around their group. Fang Yuan, acting as Chang Shan Yin, turns on Yan tribe after agreeing to help on the surface. He and Ge tribe encircle Yan tribe’s higher-ups.",
+      "chapters": [
+        472
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ambush-beside-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_chang_shan_yin"
+      ]
+    },
+    {
+      "text": "Yan Tian Ji and the elders with him die, leaving the camp without leadership. Ge tribe’s side reports Yan tribe’s higher-ups exterminated, with only one rank three elder left in camp.",
+      "chapters": [
+        473
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "higher-ups-fall",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ge tribe then assaults the camp. Yan tribe Gu Masters resist without a leader, then surrender, and Ge tribe annexes the tribe.",
+      "chapters": [
+        474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-surrender",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ge Guang later reports the haul from devouring Yan tribe: over six hundred and thirty four thousand primeval stones, one rank five Gu, twenty-seven rank four Gu, many lower-rank Gu, over two thousand Gu refinement recipes, three hundred hump wolves, many big stomach horses, thousands of lizard house Gu, hundreds of mush room Gu, and over seven thousand captives. Yan tribe has no Gu Immortal, so there are no immortal essence stones among those spoils.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spoils-counted",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_guang",
+        "sys_gu_recipe",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yan-tribe/",
+      "chapters": [
+        469,
+        470,
+        472,
+        473,
+        474,
+        477
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "id": "char_bian_si_xuan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bian Si Xuan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bian si xuan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Бянь Сы Сюань",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Shadow Sword Expert Junior Shadowless Sword"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bian Si Xuan is a northern plains demonic path assassin titled Shadow Sword Expert, who first appears during a supply-camp attack on Wolf King Chang Shan Yin.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 504,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    504,
+    505,
+    507,
+    511,
+    512,
+    522,
+    525,
+    526,
+    540,
+    541,
+    583,
+    625,
+    628
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_hei_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 522,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_brain_explosion_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_multiple_sword_shadow_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_soul_explosion_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_sword_shadow_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 504,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_overlapping_shadow_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 512,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_overlapping_shadow_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 526,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_overlapping_shadow_gu",
+      "count": 6
+    },
+    {
+      "target": "gu_brain_explosion_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_multiple_sword_shadow_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_soul_explosion_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 3
+    },
+    {
+      "target": "gu_sword_shadow_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 2
+    },
+    {
+      "target": "char_dong_po_kong",
+      "count": 2
+    },
+    {
+      "target": "char_wu_ming",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_hei_xiu_yi",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_attack_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_fei_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_ouyang_bi_sang",
+      "count": 1
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 1
+    },
+    {
+      "target": "gu_asura_zombie_gu",
+      "count": 1
+    },
+    {
+      "target": "move_asura_transformation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "She greets Fang Yuan as Junior Shadowless Sword Bian Si Xuan after striking in the Hei tribe supply camp, wearing black clothes and a black gauze that leaves only narrow red phoenix eyes visible. Camp voices name her shadow sword expert as she flees through building shadows.",
+      "chapters": [
+        504
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "Bian Si Xuan looks exquisite. She wears black clothing. Her face is covered with a black gauze, only revealing a pair of narrow red phoenix eyes. From top to bottom her body lets out a gloomy and solitary aura. She can turn into a black shadow.",
+      "chapters": [
+        504
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In that memory she is an important character, one of Ma Hong Yun’s wives, and she becomes a rank six Gu Immortal; brain explosion Gu is the clue that lets Ma Hong Yun reach a Thieving Heaven Demon Venerable inheritance whose details he never fully told.",
+      "chapters": [
+        504
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-memory",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_hong_yun",
+        "sys_gu_immortal",
+        "char_thieving_heaven_demon_venerable"
+      ]
+    },
+    {
+      "text": "Dong Fang Yu Liang hires her for a trap built around a captured shark fin wolf and a rank five soul explosion Gu.",
+      "chapters": [
+        505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_yu_liang",
+        "gu_soul_explosion_gu"
+      ]
+    },
+    {
+      "text": "When Fang Yuan forces another Gu Master to activate wolf enslavement Gu on the beast, she triggers the soul explosion, then binds him with rank four multiple sword shadow Gu and slips a thin snake that carries brain explosion Gu into his ear.",
+      "chapters": [
+        504
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "gu_wolf_enslavement_gu",
+        "gu_multiple_sword_shadow_gu",
+        "gu_brain_explosion_gu"
+      ]
+    },
+    {
+      "text": "She later reports that he stayed inside the blast range and took that Gu, then refuses immediate payment of rank four overlapping shadow Gu until the Wolf King dies.",
+      "chapters": [
+        505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_overlapping_shadow_gu"
+      ]
+    },
+    {
+      "text": "Dong Fang Yu Liang classes her as a famous northern plains demonic path assassin whom righteous path Gu Masters also hire at heavy cost, and he notes her word-keeping when she leaves the reward Gu with him.",
+      "chapters": [
+        505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "During later pursuit she heavily injures Water Demon Hao Ji Liu.",
+      "chapters": [
+        507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hao_ji_liu"
+      ]
+    },
+    {
+      "text": "Dong Fang Yu Liang summons her with Dong Po Kong.",
+      "chapters": [
+        511
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "second-camp-attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_po_kong"
+      ]
+    },
+    {
+      "text": "She charges the main tent again while he strikes as lightning. She moves through rank three guards as a shadow, throws torrents of shadow swords, and uses overlapping shadow Gu that Dong Fang Yu Liang lends after the first failure; the fused sword pierces the body she takes for Chang Shan Yin, then both assassins find they struck a decoy.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "second-camp-attack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin"
+      ]
+    },
+    {
+      "text": "Her body turns into a shadow and moves like a poisonous snake. Those she passes see a seductive back figure.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "main-tent",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After she and others join Hei tribe army, she still cannot shake Fang Yuan’s place as second only to Hei Lou Lan.",
+      "chapters": [
+        522
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-side",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "Hei Lou Lan later lists her among his rank four Gu Masters and sends her against Ouyang Bi Sang; she has taken the poison vow but will only promise to keep her life, not to win.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-side",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ouyang_bi_sang"
+      ]
+    },
+    {
+      "text": "Narration places her at rank four upper stage with well matched Gu and strong movement, weaker in open challenge than in infiltration. She had spent battle merits for overlapping shadow Gu from Hei supply camp; the merged shadows can match a rank five attack Gu, yet asura zombie defense and recovery force her to break off and return to camp.",
+      "chapters": [
+        526
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-side",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_attack_gu"
+      ]
+    },
+    {
+      "text": "Wu Ming’s reputation as number one assassin is said to surpass hers. During a Ma tribe clash she stands in the tight defense around Fang Yuan.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-side",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_ming",
+        "fac_ma_tribe"
+      ]
+    },
+    {
+      "text": "Then she draws Fei Sheng Cheng away rather than die as a shield, and she is not a defensive Gu Master.",
+      "chapters": [
+        541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-side",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fei_sheng"
+      ]
+    },
+    {
+      "text": "At Hei tribe’s camp her face is covered with a black veil, revealing a cold and clear gaze.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-change",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She is one of the experts Hei Lou Lan sends against a flying bear phantom, calling overlapping shadow as a dark sword wound opens on the bear’s leg.",
+      "chapters": [
+        583
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "phantom-battle-and-kill-proposal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later she is among the familiar faces transported into the true inheritance secluded domain with Hei Lou Lan.",
+      "chapters": [
+        625
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "phantom-battle-and-kill-proposal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan finishes taking in heaven and earth qi, she suggests killing him at once but does not move first.",
+      "chapters": [
+        628
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "phantom-battle-and-kill-proposal",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/bian-si-xuan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bian-si-xuan/",
+      "chapters": [
+        504,
+        505,
+        507,
+        511,
+        512,
+        522,
+        525,
+        526,
+        540,
+        541,
+        583,
+        625,
+        628
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 526",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Hei Tribe as of ch. 522",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 526,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_brain_explosion_gu",
+      "role": "unspecified",
+      "recorded_chapter": 504,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_multiple_sword_shadow_gu",
+      "role": "unspecified",
+      "recorded_chapter": 504,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_overlapping_shadow_gu",
+      "role": "user",
+      "recorded_chapter": 512,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_overlapping_shadow_gu",
+      "role": "owner",
+      "recorded_chapter": 526,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_soul_explosion_gu",
+      "role": "user",
+      "recorded_chapter": 504,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_sword_shadow_gu",
+      "role": "user",
+      "recorded_chapter": 504,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "id": "char_qing_xuan_zi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qing Xuan Zi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "qing xuan zi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цин Сюань Цзы",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qing Xuan Zi is a Northern Plains Gu Immortal who appears among the guests at Qin Bai Sheng's auction.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 748,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    748,
+    1101,
+    1105,
+    1106
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_nian_er_ping_zhi",
+      "count": 2
+    },
+    {
+      "target": "char_nian_er_fu",
+      "count": 2
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_zhuo_zhan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_nian_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_old_monster_corpse_poison",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_corpse",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Old Lu greets him in the main hall and asks whether he has already passed the second heavenly tribulation. He answers that his foundation is weak, that fear kept him placing his blessed land in the outside world of Northern Plains for recent years, and that after spending resources and borrowing a time path Immortal Gu to slow that blessed land’s time flow he still has one heavenly tribulation of cultivation left.",
+      "chapters": [
+        748
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan lists him as an ordinary rank six Gu Immortal active in that chaotic battle, above bottom tier figures such as Old Lu and below named experts such as Zhuo Zhan.",
+      "chapters": [
+        1101
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-raid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "char_zhuo_zhan"
+      ]
+    },
+    {
+      "text": "Inside Iron Eagle Blessed Land he senses an intrusion, looks up, and is beheaded by sword light. The killer names himself Nian Er Ping Zhi.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-iron-eagle-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_iron_eagle_blessed_land",
+        "char_nian_er_ping_zhi"
+      ]
+    },
+    {
+      "text": "He holds only rank six cultivation and has undergone a heavenly tribulation, yet he cannot resist that strike. Nian Er Fu later lifts his corpse and head into an immortal aperture for the dao marks.",
+      "chapters": [
+        1106
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-iron-eagle-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_nian_er_fu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/qing-xuan-zi/",
+      "chapters": [
+        748,
+        1101,
+        1105,
+        1106
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 1101",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 1101,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

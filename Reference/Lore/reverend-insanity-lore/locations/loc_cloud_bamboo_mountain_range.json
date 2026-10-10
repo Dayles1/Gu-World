@@ -1,0 +1,182 @@
+{
+  "id": "loc_cloud_bamboo_mountain_range",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cloud Bamboo Mountain Range",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A large Chi clan resource point in Southern Border: a bamboo-covered mountain range dense with cloud path lifeforms and spear tip bamboo.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1590,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1590,
+    1591,
+    1771
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 1
+    },
+    {
+      "target": "res_cloud_soil",
+      "count": 1
+    },
+    {
+      "target": "gu_mature_bamboo",
+      "count": 1
+    },
+    {
+      "target": "sys_myriad_destruction_lightning_forest",
+      "count": 1
+    },
+    {
+      "target": "res_cloud_qi_root",
+      "count": 1
+    },
+    {
+      "target": "res_spear_tip_bamboo",
+      "count": 1
+    },
+    {
+      "target": "res_white_hair_root",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The mountain range is majestic and huge with curved contours. There are no trees on it, only bamboos. The bamboos are very thick, each the size of giant trees. Their leaves are triangular with a long base and sharp tip, thin and tough. Mortals pluck these leaves and tie them to wooden rods as wooden spears, which is why the bamboo is called spear tip bamboo. The spear tip bamboo forest covers the entire mountain range. Many lifeforms live in it. Most have cloud path dao marks; the most numerous group is the cloud fox, with snow white skin, able to float in the air temporarily.",
+      "chapters": [
+        1590
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan names it cloud bamboo mountain range, a large resource point under Chi clan’s control.",
+      "chapters": [
+        1590
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_chi_clan"
+      ]
+    },
+    {
+      "text": "It holds a large number of cloud path lifeforms.",
+      "chapters": [
+        1591
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Mature bamboo Immortal Gu is the greatest treasure on this range. As a huge large sized resource point filled with dense dao marks, desolate beasts and plants grow here, and even ancient desolate beasts can grow.",
+      "chapters": [
+        1771
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_mature_bamboo"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/cloud-bamboo-mountain-range.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/cloud-bamboo-mountain-range/",
+      "chapters": [
+        1590,
+        1591,
+        1771
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain-range",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,364 @@
+{
+  "id": "char_gao_yang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gao Yang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gao yang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гао Ян",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Twin Demons"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gao Yang is one of northern plains' demonic path twin demons with Zhu Zai, named when Tai Bai Yun Sheng offers to call them for Hei tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 527,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    527,
+    531,
+    534,
+    538,
+    591,
+    593
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_hei_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 531,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_treacherous_cloud_wave_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 531,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_treacherous_cloud_wave_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_zhu_zai",
+      "count": 2
+    },
+    {
+      "target": "gu_man_as_before_gu",
+      "count": 2
+    },
+    {
+      "target": "move_three_head_six_arms",
+      "count": 2
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 1
+    },
+    {
+      "target": "char_ouyang_bi_sang",
+      "count": 1
+    },
+    {
+      "target": "move_asura_transformation",
+      "count": 1
+    },
+    {
+      "target": "move_world_devouring_qi",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_hall",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Tai Bai Yun Sheng tells Hei Lou Lan he once rescued Gao Yang and Zhu Zai and can write them a letter. Talk names the pair northern plains demonic path twin demons who always work together, both rank four peak stage, and says their combined strength once killed a rank five expert.",
+      "chapters": [
+        527
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng",
+        "char_hei_lou_lan",
+        "char_zhu_zai"
+      ]
+    },
+    {
+      "text": "They side with Hei tribe a few days after the letter. Gao Yang specializes in defense and pinning while Zhu Zai specializes in attack and investigation. Gao Yang uses cloud rope Gu and the rank five treacherous cloud wave Gu when reinforcing Zhu Zai against Mo Shi Kuang and Ouyang Bi Sang.",
+      "chapters": [
+        531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-battles",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "gu_treacherous_cloud_wave_gu",
+        "char_mo_shi_kuang",
+        "char_ouyang_bi_sang"
+      ]
+    },
+    {
+      "text": "Liu Wen Wu, Ouyang Bi Sang, and Mo Shi Kuang fuse into Three Head Six Arms and smash Gao Yang’s head; Zhu Zai dies next. Tai Bai Yun Sheng then activates man as before Gu, and silver light restores both to their previous state.",
+      "chapters": [
+        534
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "revival-after-defeat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_liu_wen_wu",
+        "move_three_head_six_arms",
+        "char_tai_bai_yun_sheng",
+        "gu_man_as_before_gu"
+      ]
+    },
+    {
+      "text": "Later talk restates that revival and notes they lost their Gu worms, including Gao Yang’s treacherous cloud wave Gu, because man as before targets human bodies and not Gu worms. They borrow battle merits to rebuild sets and keep fighting for Hei Lou Lan.",
+      "chapters": [
+        538
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "revival-after-defeat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "By the blood hall attempt Gao Yang and Zhu Zai are named rank five Gu Master experts and take turns as front vanguard while Tai Bai Yun Sheng supports the group with man as before Gu. When primeval essence runs out and Zhu Zai falls, a python-like blood beast swallows Gao Yang in one bite.",
+      "chapters": [
+        591
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blood-hall-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Hei Lou Lan’s later tally counts Gao Yang among five rank five experts already dead from that period’s losses.",
+      "chapters": [
+        593
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blood-hall-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation writes Gao Yang and pairs him with Zhu Zai as the twin demons. No Chinese characters for the personal name appear in the English chapter text used here.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/gao-yang/",
+      "chapters": [
+        527,
+        531,
+        534,
+        538,
+        591,
+        593
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 527 V as of ch. 591",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Hei Tribe as of ch. 531",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 527",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 527,
+        "confidence": "B"
+      },
+      {
+        "rank": 5,
+        "as_of_chapter": 591,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": "demonic path as of ch. 527",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_treacherous_cloud_wave_gu",
+      "role": "user",
+      "recorded_chapter": 531,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

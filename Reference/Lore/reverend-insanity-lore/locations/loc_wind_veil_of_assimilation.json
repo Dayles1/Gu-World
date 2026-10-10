@@ -1,0 +1,228 @@
+{
+  "id": "loc_wind_veil_of_assimilation",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wind Veil of Assimilation",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The circular winds of assimilation that enclose Imperial Court blessed land as it nears destruction and cut it off from northern plains.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 634,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    634,
+    635,
+    636,
+    638,
+    642,
+    649
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 1
+    },
+    {
+      "target": "move_winged_blade",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Winds of assimilation at the outer fringe form a huge circular wind veil.",
+      "chapters": [
+        634
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Once formed, Imperial Court blessed land is surrounded like a sphere whose walls are at least hundreds of meters thick. From above, the grand winds look like a giant dark green bowl inverted on the ground; the veil surface looks tranquil.",
+      "chapters": [
+        635
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan sees Imperial Court blessed land on the brink of destruction, with winds of assimilation at the outer fringe forming a huge circular wind veil whose force even a Gu Immortal cannot push through.",
+      "chapters": [
+        634
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_imperial_court_blessed_land",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Outside Gu Immortals call it the wind veil of assimilation. With the wind veil formed, Imperial Court blessed land is surrounded like a sphere whose walls are at least hundreds of meters thick, and formless hands that reach it are crushed and assimilated, strengthening the winds. Chanyu tribe’s immortal killer move Winged Blade can force a break, but an elderly wisdom path Gu Immortal calculates the injury recovers in only eight breaths.",
+      "chapters": [
+        635
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-veil-and-thickness",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chanyu_tribe",
+        "move_winged_blade"
+      ]
+    },
+    {
+      "text": "The formed wind veil of assimilation contracts and isolates those inside from the outside world, and with it formed there is no more heaven and earth qi.",
+      "chapters": [
+        636
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "isolation-and-shrink",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "It separates the ruins of Imperial Court blessed land from the outside world of northern plains.",
+      "chapters": [
+        638
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "isolation-and-shrink",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As it creeps closer it makes no sound, yet it devours everything in its path and assimilates everything.",
+      "chapters": [
+        642
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "isolation-and-shrink",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the shrink nears its extreme, Gu worms crowd the narrow space and many are already devoured into the veil; for Fang Yuan only a cabin-sized space remains.",
+      "chapters": [
+        649
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "isolation-and-shrink",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/wind-veil-of-assimilation.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/wind-veil-of-assimilation/",
+      "chapters": [
+        634,
+        635,
+        636,
+        638,
+        642,
+        649
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

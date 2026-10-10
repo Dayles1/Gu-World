@@ -1,0 +1,137 @@
+{
+  "id": "move_human_come_human_go",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Human Come Human Go",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Human Come Human Go is an immortal killer move that uses rank seven Fixed Immortal Travel as the core. Liang Liang created it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1548,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1548
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_feng_jiu_ge",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1548,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_fixed_immortal_travel",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1548,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 3
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 2
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "char_liang_liang",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Feng Jiu Ge is not familiar with this move, but it has an incredible effect. Once activated, it can transport people to anywhere in the world, and they can also return the same way back. The first half is hard, but the second half is extremely easy. Liang Liang had already activated this; Feng Jiu Ge only completes the second half with ease, then vanishes from Lang Ya blessed land. After a few breaths of time, Lang Ya land spirit mobilizes the silver giant and arrives to find him gone.",
+      "chapters": [
+        1548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "char_liang_liang",
+        "loc_lang_ya_blessed_land",
+        "char_lang_ya_land_spirit"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/human-come-human-go/",
+      "chapters": [
+        1548
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Feng Jiu Ge",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Fixed Immortal Travel",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

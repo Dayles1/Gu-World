@@ -1,0 +1,234 @@
+{
+  "id": "char_li_xiao_yao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Li Xiao Yao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "li xiao yao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ли Сяо Яо",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Li Xiao Yao is named in Fang Yuan's prior-life memory as an Eastern Sea figure whose biography records a meeting with Song Yi Shi.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 895,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    895,
+    908,
+    926,
+    988
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_change_form_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_seven_seas_snake_woman",
+      "count": 1
+    },
+    {
+      "target": "fac_li_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Fang Yuan’s prior-life memory, the Biography of Li Xiao Yao records that Li Xiao Yao fell to the bottom of a cliff, entered an undercurrent to an underwater volcano, and at the peak unexpectedly met Song Yi Shi while she was bathing. Song Yi Shi captured him, then grew pleased after interrogation because the undercurrent offered a hidden escape while the sea was besieged, used that undercurrent to leave the predicament, and took him under her wing to guide his Gu Master cultivation. Fang Yuan contrasts that prior-life treatment with the chase he receives after the same volcano meeting, noting that Li Xiao Yao was a handsome young boy while Fang Yuan’s chosen appearance is that of a man already in his seventies and eighties.",
+      "chapters": [
+        895
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_song_yi_shi",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Fang Yuan recalls him as a handsome young boy.",
+      "chapters": [
+        895
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Song Yi Shi flattens the nameless island where Li clan villagers lived, Fang Yuan asks what happens to Li Xiao Yao, saying that in his previous life Song Yi Shi and Li Xiao Yao were a famous couple, and that massacring Li Xiao Yao’s ancestors is like killing Li Xiao Yao. He judges that the prominent Li Xiao Yao from his previous life has no chance to take the limelight in this history, and that he had intended to connect luck with Li Xiao Yao later because Li Xiao Yao was rather lucky.",
+      "chapters": [
+        908
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ancestors-massacred",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_li_clan"
+      ]
+    },
+    {
+      "text": "He later calculates that Song Yi Shi has already killed Li Xiao Yao’s ancestor on the nameless island, so Li Xiao Yao cannot be born now.",
+      "chapters": [
+        926
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ancestors-massacred",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Fang Yuan’s previous life, Seven Seas Snake Woman’s mockery drives Song Yi Shi to destroy a village by the sea during the unrest at Ascending Heaven Plain, killing Li Xiao Yao’s ancestor there.",
+      "chapters": [
+        988
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ancestors-massacred",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_seven_seas_snake_woman",
+        "loc_ascending_heaven_plain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/li-xiao-yao.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/li-xiao-yao/",
+      "chapters": [
+        895,
+        908,
+        926,
+        988
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

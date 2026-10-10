@@ -1,0 +1,780 @@
+{
+  "id": "char_chi_shan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Yue Chi Shan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "gu yue chi shan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Гу Юэ Чи Шань",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Lord Chi Shan"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gu Yue Chi Shan is a rank two upper stage Gu Master of the Gu Yue clan's Chi faction on Qing Mao Mountain, with inborn strength and B grade aptitude, leader of the Chi Shan group and one of the clan's early rising rank two figures beside Gu Yue Qing Shu and Gu Yue Mo Yan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 81,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    81,
+    82,
+    87,
+    93,
+    94,
+    104,
+    113,
+    117,
+    118,
+    119,
+    121,
+    123,
+    125,
+    132,
+    137,
+    138,
+    145,
+    147,
+    161
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 81,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chi_family",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 81,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chi_family",
+      "count": 4
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_li",
+      "count": 3
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 2
+    },
+    {
+      "target": "char_xiong_jiao_man",
+      "count": 2
+    },
+    {
+      "target": "gu_brute_force_longhorn_beetle_gu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_mo_yan",
+      "count": 2
+    },
+    {
+      "target": "gu_river_swallowing_toad",
+      "count": 2
+    },
+    {
+      "target": "gu_brown_bear_innate_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_grand_bear_gu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_he",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_jiang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_dragonpill_cricket_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 1
+    },
+    {
+      "target": "fac_mo_family",
+      "count": 1
+    },
+    {
+      "target": "gu_gentle_silk_spider",
+      "count": 1
+    },
+    {
+      "target": "char_chi_she",
+      "count": 1
+    },
+    {
+      "target": "gu_red_steel_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_black_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_leader",
+      "count": 1
+    },
+    {
+      "target": "char_bai_bing_yi",
+      "count": 1
+    },
+    {
+      "target": "gu_snake_communication_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_b_grade",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 1
+    },
+    {
+      "target": "gu_monolith_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_signal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He enters when Fang Yuan meets a tall, bare-chested Gu Master with bright red muscle on a mountain slope near Qing Mao Mountain, and Fang Yuan names him Gu Yue Chi Shan. He is a representative of the Chi faction with rank two upper stage cultivation, B grade aptitude after an awakening that dashed hopes of A grade, and inborn strength so great that as a child he beat a servant to death and later threw a heavy stone grinder like a frisbee.",
+      "chapters": [
+        81
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "loc_qing_mao_mountain",
+        "fac_chi_family"
+      ]
+    },
+    {
+      "text": "He is a tall man with black short hair, each strand standing straight up. The upper half of his body is naked. He has a large and thick body, and the muscles of his whole body are bright red. He is almost two meters tall, and in cold autumn he gives off the feeling of a mobile cauldron, his every breath able to raise the surrounding temperature.",
+      "chapters": [
+        81
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His huge figure stands out like a giant red tower.",
+      "chapters": [
+        82
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is big-sized.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Even in winter he continues to be topless, his red skin emitting a warmth like a heater, and white snow that lands on his body instantly melts.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside the Gu Yue clan, students at the academy year-end examination treat him with Gu Yue Qing Shu and Gu Yue Mo Yan as rising-star Gu Masters, and the text places him as Gu Yue Chi Shan from the Chi faction, a huge red tower of a figure watching Gu Yue Chi Cheng among the graduates.",
+      "chapters": [
+        82
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chi-faction-group-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "char_gu_yue_qing_shu",
+        "char_gu_yue_mo_yan",
+        "char_gu_yue_chi_cheng"
+      ]
+    },
+    {
+      "text": "Later wording lists the Chi faction’s Chi Shan group beside Qing Shu’s clan-leader group and Mo Yan’s Mo faction group as the three best-performing teams at the intake.",
+      "chapters": [
+        87
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chi-faction-group-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_mo_family"
+      ]
+    },
+    {
+      "text": "When Fang Yuan is forced under Chi Shan for a beast-tide sortie, Chi Cheng is already in the group and stays quiet under Chi Shan’s authority, and the narration treats that unit as one of the clan’s three strongest groups. Chi Shan leads from the front, keeps Chi Cheng and Fang Yuan mid-formation once the beast tide nears, and smashes a white tiger’s head with a fist that flashes golden luster.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chi-faction-group-leader",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the River Swallowing Toad blocks a river channel near the village, Gu Yue Chi Lian offers to send a member of his Chi family for the first wake attempt, and the hall assigns the work to the Chi Shan group, with everyone present already knowing whom Chi Lian means. That line places Chi Shan inside Chi Lian’s Chi family circle as the strength specialist the elders approve, without naming a closer kinship such as son, grandson, or nephew of Chi Lian, and without stating a blood tie to Chi Cheng beyond shared faction and group command.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chi-faction-group-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_lian"
+      ]
+    },
+    {
+      "text": "At first appearance he is already rank two upper stage, an elite among the clan’s rank two Gu Masters after graduating and fighting his way up.",
+      "chapters": [
+        81
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Qing Shu at rank two peak stage overpowers the rank two upper stage Chi Shan and Mo Yan, which is why the clan treats Qing Shu as its number one rank two.",
+      "chapters": [
+        104
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Crowd talk at the red steel Relic Gu bidding names Chi Shan and Mo Yan as the favorites who could match Qing Shu if they obtained the Relic, and Chi Shan’s face is ashen when Fang Yuan leaves with the win.",
+      "chapters": [
+        113
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_red_steel_relic_gu"
+      ]
+    },
+    {
+      "text": "The clan treats him as the Gu Master with the greatest strength in the village when it first assigns the River Swallowing Toad wake attempt to him, and he has inborn strength he hopes to pair with a Brute Force Longhorn Beetle Gu before the elders forbid Gu-aided pushing.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_river_swallowing_toad",
+        "gu_brute_force_longhorn_beetle_gu"
+      ]
+    },
+    {
+      "text": "His aperture holds a Double Orifice Stove Gu, a rank two worm that stores internal heat for attack; in winter his bare skin radiates warmth like a heater, and subduing the cold is only a side effect.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later measures ordinary Gu Masters as holding three to five Gu worms and names Qing Shu and Chi Shan as fitting that range,",
+      "chapters": [
+        137
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "but the English chapters used here still name only Double Orifice Stove Gu for him, leaving the golden-luster fist effect without a Gu title.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-standing-among-rank-two",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After his group fails to wake the sleeping toad, Chi Shan reports to the elder hall, refuses to leave the problem there, and recommends Fang Yuan as someone with greater strength than himself.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-swallowing-toad-and-xiong-li",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Gu Yue Chi Lian asks him whether Fang Yuan’s power can match his, and Chi Shan answers that Fang Yuan’s Black Boar Gu work has brought Fang Yuan’s strength to a level that does not lose to his own. He then fetches Fang Yuan from a tavern under a compulsory clan order and escorts him to the foot of the mountain for the attempt.",
+      "chapters": [
+        119
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-swallowing-toad-and-xiong-li",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_black_boar_gu"
+      ]
+    },
+    {
+      "text": "When Xiong clan envoy Xiong Li arrives, Chi Shan meets the party at the warning line and later loses a public strength contest to him at the village gate.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-swallowing-toad-and-xiong-li",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xiong_clan",
+        "char_xiong_li"
+      ]
+    },
+    {
+      "text": "Chi Shan admits Xiong Li holds two bears’ strength through Brown Bear Innate Strength Gu and Grand Bear Gu, yields the Qing Mao Mountain strongest-person title, and redirects the challenge toward Fang Yuan rather than keep taking the clan’s loss alone.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-swallowing-toad-and-xiong-li",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_brown_bear_innate_strength_gu",
+        "gu_grand_bear_gu"
+      ]
+    },
+    {
+      "text": "On clan orders he then pays Fang Yuan two hundred primeval stones to avoid that contest for alliance interest reasons, and states plainly that the order comes from the higher-ups.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-swallowing-toad-and-xiong-li",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Alliance-slope talk still recalls that public loss when naming Xiong Li Qing Mao Mountain’s strongest man.",
+      "chapters": [
+        125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "river-swallowing-toad-and-xiong-li",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Crowd talk during the wolf tide says Bai Ning Bing injured Chi Shan while suppressing cultivation to rank two and picking fights with rank two elites.",
+      "chapters": [
+        132
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-rank-two-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Qing Shu later warns his group that Bai Ning Bing has been challenging people while sealed to rank two red steel essence and has already troubled Xiong Li, Chi Shan, and others.",
+      "chapters": [
+        138
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-rank-two-peak",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Under wolf-tide pressure after Qing Shu’s death, Chi Shan and Mo Yan advance from rank two upper stage to peak stage, and the text treats that rise as a morale lift for the clan.",
+      "chapters": [
+        145
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-rank-two-peak",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is still leading the Chi Shan group when he receives Xiong Jiao Man’s request for reinforcements after Xiong village is surrounded, and he brings the envoys into Gu Yue village to report to the clan leader.",
+      "chapters": [
+        147
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-rank-two-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_jiao_man",
+        "loc_xiong_village",
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "After the Qing Mao Mountain climax the English text used here does not show him alive again. Fang Yuan later recalls Gu Yue Qing Shu, Mo Yan, and Chi Shan together when measuring how B grade talent can still stall at rank two under clan politics, which is a recollection rather than a later appearance.",
+      "chapters": [
+        161
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-rank-two-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_b_grade"
+      ]
+    },
+    {
+      "text": "The fan translation writes the full name as Gu Yue Chi Shan and the short form Chi Shan,",
+      "chapters": [
+        81
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "with Kong Jing also addressing him as Lord Chi Shan.",
+      "chapters": [
+        94
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "One elder-hall line in chapter 119 mistypes the reply name as Chi San while the surrounding speakers stay on Chi Shan; that string is the same person. A later unrelated Chi clan Gu Immortal is named Chi Shang and is not this Gu Yue rank two. No Chinese characters for his personal name appear in the English chapter text used here.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chi_clan",
+        "sys_gu_immortal",
+        "char_chi_shang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/chi-shan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chi-shan/",
+      "chapters": [
+        81,
+        82,
+        87,
+        93,
+        94,
+        104,
+        113,
+        117,
+        118,
+        119,
+        121,
+        123,
+        125,
+        132,
+        137,
+        138,
+        145,
+        147,
+        161
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 81",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 81 Chi Family as of ch. 81",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 81,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

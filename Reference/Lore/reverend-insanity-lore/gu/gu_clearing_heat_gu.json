@@ -1,0 +1,331 @@
+{
+  "id": "gu_clearing_heat_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Clearing Heat Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Clearing Heat Gu is a rank two healing Gu that cures poison, shaped like a half transparent jade armored worm fossil.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 217,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    217,
+    218,
+    228,
+    257,
+    273
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_bai_lian",
+      "role": "borrow",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 218,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_lian",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_bai_sheng_jing",
+      "count": 2
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zhan_lie",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/clearing-heat-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/clearing-heat-gu/",
+      "chapters": [
+        217,
+        218,
+        228,
+        257,
+        273
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 2,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [
+      "healing"
+    ],
+    "effect_type_raw": "Healing",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is like an armored worm fossil with a half transparent jade rock texture, and cool air passes into the hand that holds it.",
+        "chapters": [
+          217
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In the aperture it appears again as a jade pendant-like beetle fossil, half transparent and jade green, giving off cooling air.",
+        "chapters": [
+          273
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is a rank two healing Gu used to cure poison.",
+        "chapters": [
+          217
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_healing_gu"
+        ]
+      },
+      {
+        "text": "Bai Lian visits Fang Yuan at night to borrow the Gu for her poisoned friend. It is rare and would be very effective on a poisoned friend of Bai Lian. Fang Yuan lends it without objection, and Bai Sheng Jing recovers quickly after that cure. She later cites the loan when quarreling with Bai Zhan Lie, and Bai Sheng Jing joins Fang Yuan’s hunting group already grateful for the cure.",
+        "chapters": [
+          218
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_lian",
+          "char_bai_sheng_jing",
+          "char_bai_zhan_lie"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "owner",
+      "recorded_chapter": 217,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_bai_lian",
+      "role": "borrow",
+      "recorded_chapter": 218,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Bai clan leader rewards Fang Yuan with it after he brings back an earth horn rhino horn on the second day of the hunting competition. Holding it, he feels a cool air pass into his hand. He treats the gift as fixing his greatest weakness at that time.",
+        "chapters": [
+          217
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_bai_clan_bai_gu_mountain",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "After the Bai Gu mountain inheritance, Fang Yuan and Bai Ning Bing still count clearing heat Gu among gains taken from Bai clan.",
+        "chapters": [
+          228
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "continued-possession",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_bai_gu_mountain",
+          "char_bai_ning_bing"
+        ]
+      },
+      {
+        "text": "After a zombie fight wound, Fang Yuan tells companions the corpse poison is troublesome but that he can detoxify it with clearing heat Gu.",
+        "chapters": [
+          257
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "continued-possession",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Healing",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

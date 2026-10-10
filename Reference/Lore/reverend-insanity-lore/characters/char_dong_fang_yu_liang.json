@@ -1,0 +1,915 @@
+{
+  "id": "char_dong_fang_yu_liang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Fang Yu Liang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "dong fang yu liang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дун Фан Юй Лян",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dong Fang Yu Liang is Dong Fang tribe's rank five wisdom path tribe leader during Hei Lou Lan's Cao Fu campaign.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 501,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    501,
+    502,
+    503,
+    505,
+    510,
+    513,
+    514,
+    518,
+    519,
+    788,
+    792,
+    793,
+    806
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_dong_fang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 501,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_earth_bacteria_king_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 505,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_overlapping_shadow_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 505,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_refine_essence_spirit_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 505,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_soul_explosion_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 505,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_star_thought_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 505,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_coptis_rhizome_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 506,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_detection_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 514,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_charred_thunder_potato_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 515,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_muffled_thunder_potato_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 515,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_thunderclap_potato_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 515,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_cloud_whirlpool",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_seven_star_light",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 4
+    },
+    {
+      "target": "move_seven_star_light",
+      "count": 4
+    },
+    {
+      "target": "gu_earth_bacteria_king_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_overlapping_shadow_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_refine_essence_spirit_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_soul_explosion_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_star_thought_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_coptis_rhizome_gu",
+      "count": 3
+    },
+    {
+      "target": "move_cloud_whirlpool",
+      "count": 3
+    },
+    {
+      "target": "gu_detection_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_charred_thunder_potato_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_muffled_thunder_potato_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_thunderclap_potato_gu",
+      "count": 3
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_qing_yu",
+      "count": 2
+    },
+    {
+      "target": "char_bian_si_xuan",
+      "count": 2
+    },
+    {
+      "target": "char_tan_wu_feng",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 2
+    },
+    {
+      "target": "sys_man_soul",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "char_e_xuan_ming",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_wan_shan",
+      "count": 1
+    },
+    {
+      "target": "char_sun_shi_han",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xin",
+      "count": 1
+    },
+    {
+      "target": "gu_bladewing_blood_bat_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_space_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "move_three_hearts_combination_soul",
+      "count": 1
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_she",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_dong_po_kong",
+      "count": 1
+    },
+    {
+      "target": "gu_djinn_heart_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_soul_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_harmony_gu",
+      "count": 1
+    },
+    {
+      "target": "move_dark_vortex",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_hei_lou_lans_movement_gu",
+      "count": 1
+    },
+    {
+      "target": "char_tan_bi_ya",
+      "count": 1
+    },
+    {
+      "target": "gu_battle_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_ni_yu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "inh_dong_fang_wisdom_path_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_lu_qing_ming",
+      "count": 1
+    },
+    {
+      "target": "char_su_guang",
+      "count": 1
+    },
+    {
+      "target": "char_divine_lord_tian_du",
+      "count": 1
+    },
+    {
+      "target": "fac_traveling_three_elites",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_wan_xiu",
+      "count": 1
+    },
+    {
+      "target": "res_ruin_bat_corpse",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "move_final_afterglow",
+      "count": 1
+    },
+    {
+      "target": "char_zhuo_zhan",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_star_fireflies",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 1
+    },
+    {
+      "target": "move_thousand_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_will",
+      "count": 1
+    },
+    {
+      "target": "gu_self_gu",
+      "count": 1
+    },
+    {
+      "target": "move_entangled_wind",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Hei Lou Lan marches on Cao Fu, he softens Dong Fang tribe’s alliance terms after a night of deductions and personally invites Zhao tribe.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "loc_cao_fu_region",
+        "fac_dong_fang_tribe",
+        "fac_zhao_tribe"
+      ]
+    },
+    {
+      "text": "Zhao tribe leader treats him as a cunning schemer whose prior plots killed that leader’s sons.",
+      "chapters": [
+        502
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He wears white clothing. He has a jade-like face, deep eyes, and a handsome face, carrying gracefulness and calmness.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His hair is bluish-black.",
+      "chapters": [
+        513
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hei tribe talk names him this generation’s Dong Fang tribe leader, young and promising, and the greatest threat in the coming battle because of wisdom path planning. The same stretch states he lost his parents at eleven, cared for his then six year old sister Dong Fang Qing Yu, gave most of a large inheritance to an authoritative elder to keep a remnant safe, rose as that elder’s aide, and later gained pointers from the tribe’s Gu Immortal ancestor. He tells Qing Yu that Zhao tribe’s flight was anticipated, that he once punished Hei Lou Lan over designs on her, and that he has a plan for Wolf King Chang Shan Yin; privately he needs victory so the old ancestor will cure her illness, and he aims to become master of Imperial Court and enter Eighty-Eight True Yang Building.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "background-and-family",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "path_wisdom",
+        "char_dong_fang_qing_yu",
+        "sys_gu_immortal",
+        "char_chang_shan_yin",
+        "loc_imperial_court",
+        "house_eighty_eight_true_yang_building"
+      ]
+    },
+    {
+      "text": "He plants a marked shark fin wolf with a rank five soul explosion Gu and hires Shadow Sword Expert Bian Si Xuan, but Fang Yuan as Wolf King spots the trap and escapes most of the blast. In an earth bacteria king Gu house he uses star thought Gu for multi-hour deductions on how to handle an enslavement path master, then restores soul fatigue with Dong Fang tribe’s refine essence spirit Gu.",
+      "chapters": [
+        505
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "trap-for-wolf-king",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bian_si_xuan",
+        "char_fang_yuan",
+        "sys_gu_house"
+      ]
+    },
+    {
+      "text": "He fields six elite troop divisions against Hei Lou Lan’s five, opens with hundred blossoms elite troop as bait, and holds Wind Demon Tan Wu Feng as a subordinate after subduing him with the three escapements scheme.",
+      "chapters": [
+        510
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-war",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tan_wu_feng"
+      ]
+    },
+    {
+      "text": "Dong Fang Chang Fan later states that if Yu Liang becomes Lord of the Imperial Court he will heal Qing Yu and nurture Yu Liang as a successor, while treating her illness as the hold that binds Yu Liang’s loyalty.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-war",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_chang_fan"
+      ]
+    },
+    {
+      "text": "On the walls he is still only a rank five wisdom path Gu Master with a self created killer move Seven Star Light that costs too much primeval essence to sustain against Hei tribe’s numbers.",
+      "chapters": [
+        518
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-war",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "move_seven_star_light"
+      ]
+    },
+    {
+      "text": "After night wolves break the final line he surrenders, bids Hei Lou Lan farewell, and leads his tribesmen into the light door that takes Dong Fang tribe away.",
+      "chapters": [
+        519
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-war",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the Tai Qiu scheme, Dong Fang Chang Fan’s soul charges into the phantom formation center and enters Dong Fang Yu Liang’s body.",
+      "chapters": [
+        788
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "possession-and-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tai_qiu"
+      ]
+    },
+    {
+      "text": "Later narration states that Yu Liang had a rank five peak stage aperture and that Dong Fang Chang Fan had already eliminated his soul, leaving Chang Fan in control of the young body.",
+      "chapters": [
+        792
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "possession-and-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan later smashes that body into meat paste, Dong Fang Yu Liang’s will briefly resurfaces over his sister before the body is destroyed.",
+      "chapters": [
+        806
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "possession-and-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "There are no pupils or whites in the eyes. They shine with many different colored crystalline lights, flickering continuously.",
+      "chapters": [
+        793
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "controlled-body",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/dong-fang-yu-liang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/dong-fang-yu-liang/",
+      "chapters": [
+        501,
+        502,
+        503,
+        505,
+        510,
+        513,
+        514,
+        518,
+        519,
+        788,
+        792,
+        793,
+        806
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 501",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Dong Fang Tribe as of ch. 501",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 501,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_charred_thunder_potato_gu",
+      "role": "user",
+      "recorded_chapter": 515,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_coptis_rhizome_gu",
+      "role": "user",
+      "recorded_chapter": 506,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_detection_gu",
+      "role": "user",
+      "recorded_chapter": 514,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_earth_bacteria_king_gu",
+      "role": "unspecified",
+      "recorded_chapter": 505,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_muffled_thunder_potato_gu",
+      "role": "user",
+      "recorded_chapter": 515,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_overlapping_shadow_gu",
+      "role": "owner",
+      "recorded_chapter": 505,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_refine_essence_spirit_gu",
+      "role": "user",
+      "recorded_chapter": 505,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_soul_explosion_gu",
+      "role": "owner",
+      "recorded_chapter": 505,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_star_thought_gu",
+      "role": "user",
+      "recorded_chapter": 505,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_thunderclap_potato_gu",
+      "role": "user",
+      "recorded_chapter": 515,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

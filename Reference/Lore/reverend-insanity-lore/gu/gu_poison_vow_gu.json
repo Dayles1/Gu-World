@@ -1,0 +1,621 @@
+{
+  "id": "gu_poison_vow_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Poison Vow Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Poison Vow Gu is a rank three consumable Gu that seals a sworn contract with heart blood. Parties who break the vow die as a puddle of blood.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 233,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    233,
+    260,
+    268,
+    272,
+    278,
+    285,
+    292,
+    310,
+    384,
+    396,
+    401,
+    500,
+    562
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_shang_ya_zi",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 268,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "bound party",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 268,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_bai_ning_bing",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 272,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_ning_bing",
+      "count": 3
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_eating_ones_words_gu",
+      "count": 2
+    },
+    {
+      "target": "char_li_ran",
+      "count": 2
+    },
+    {
+      "target": "gu_mountain_pledge_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_sea_oath_gu",
+      "count": 2
+    },
+    {
+      "target": "char_hei_pei",
+      "count": 2
+    },
+    {
+      "target": "gu_plunder_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_seize_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_yang_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "rcp_white_bone_recipe",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_wang_xiao",
+      "count": 1
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shadow_sect_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/poison-vow-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/poison-vow-gu/",
+      "chapters": [
+        233,
+        260,
+        268,
+        272,
+        278,
+        285,
+        292,
+        310,
+        384,
+        396,
+        401,
+        500,
+        562
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Shang clan city chapters describe restriction and contract use without naming a cultivation path for this Gu.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is a purple red worm, only finger size, with a dangerous looking mouth.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Poison Vow Gu is a purple red worm, only finger size, with a dangerous looking mouth, and a rank three consumable Gu.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "It stays rank three; almost every shop in the third inner city sells it, priced at forty-five hundred primeval stones with at least a yellow pear token, cut to three thousand when Fang Yuan shows a purple thorn token.",
+        "chapters": [
+          272
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Cited chapters never print a Chinese name for it.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "In the vow rite the Gu bites a finger, burns with heart pain, and grows as it drinks heart blood while each side reads the written terms. After both sides finish, the blood-stuffed Gu explodes into red light spots that fuse into their bodies, which shows the vow has taken effect. If the spoken terms do not match true inner intent, the Gu becomes a puddle of stale blood instead and the vow fails. Once bound, a violator turns into a puddle of blood and dies. Fang Yuan later notes that its restriction is very strong, otherwise Gu Masters would not use it.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_masters"
+        ]
+      },
+      {
+        "text": "Poison Vow Gu contains the law of restriction and stays in a Gu Master’s body to restrict them. Eating One’s Words Gu carries the opposite law and can overwrite it when stronger.",
+        "chapters": [
+          292
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master",
+          "gu_eating_ones_words_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": true,
+    "food_raw": null,
+    "foods": [],
+    "claims": [
+      {
+        "text": "Cited Shang clan city chapters never name a regular food for Poison Vow Gu. The Gu is a consumable used once in the vow rite, after which that copy is gone.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "feeding",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Shang Ya Zi refuses a paper agreement for the nine hundred thousand primeval stone recipe sale and insists on Poison Vow Gu. Fang Yuan reads first, then Shang Ya Zi, and the Gu takes effect; Shang Ya Zi warns that changing mind or breaking the deal means death as a blood puddle.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "shang-ya-zis-recipe-vow",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The terms include secrecy from unknowing third parties. Fang Yuan later exploits wording around a “knowing third party” without violating his own side of that vow.",
+        "chapters": [
+          310
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "shang-ya-zis-recipe-vow",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_shang_ya_zi",
+      "role": "user",
+      "recorded_chapter": 268,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "bound party",
+      "recorded_chapter": 268,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_bai_ning_bing",
+      "role": "user",
+      "recorded_chapter": 272,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Bai Ning Bing first names Poison Vow Gu while traveling toward Shang clan city, planning to buy one there to bind Fang Yuan over the Yang Gu.",
+        "chapters": [
+          233
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing",
+          "loc_shang_clan_city",
+          "char_fang_yuan",
+          "gu_yang_gu"
+        ]
+      },
+      {
+        "text": "Once already in Shang clan city, she thinks again of forcing an unbreakable agreement with it.",
+        "chapters": [
+          260
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The first fully shown use is when Shang Ya Zi and Fang Yuan swear their recipe sale on it.",
+        "chapters": [
+          268
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_shang_ya_zi"
+        ]
+      },
+      {
+        "text": "Bai Ning Bing refuses a casual promise and demands Poison Vow Gu for their split of gains and help with cultivation. They buy one in the third inner city; she refines it herself in about fifteen minutes so Fang Yuan cannot tamper, then they use it at Nan Qiu garden.",
+        "chapters": [
+          272
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "bai-ning-bings-alliance-vow",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_nan_qiu_garden"
+        ]
+      },
+      {
+        "text": "Fang Yuan later removes only his own side of the vows with a temporary Eating One’s Words Gu, leaving Shang Ya Zi and Bai Ning Bing still bound. From previous-life knowledge he also names the later replacement chain: black and white paper Gu replaces Poison Vow Gu and cannot be broken by Eating One’s Words Gu, then distorting black and white Gu overrules that paper Gu. Poison Vow Gu, Eating One’s Words Gu, black and white paper Gu, and distorting black and white Gu form one stretch of the longer struggle between agreements and breaking them.",
+        "chapters": [
+          278
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "bai-ning-bings-alliance-vow",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He also produces a Poison Vow Gu when Li Ran asks how to trust him.",
+        "chapters": [
+          285
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "bai-ning-bings-alliance-vow",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_li_ran"
+        ]
+      },
+      {
+        "text": "Mountain pledge Gu and sea oath Gu worked like Poison Vow Gu, but Poison Vow Gu is an expenditure Gu while those two Immortal Gu can be used repeatedly.",
+        "chapters": [
+          384
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "mountain-pledge-and-sea-oath",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_mountain_pledge_gu",
+          "gu_sea_oath_gu",
+          "sys_immortal_gu"
+        ]
+      },
+      {
+        "text": "Chou Jiu later calls Poison Vow Gu mountain pledge and sea oath Gu’s replacement when he explains how Doctor Su Shou escaped a vow: she lacks the ability to negate it, so she lets the vow kill her, then revives herself after the host-bound strength vanishes.",
+        "chapters": [
+          401
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "mountain-pledge-and-sea-oath",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_chou_jiu",
+          "char_doctor_su_shou"
+        ]
+      },
+      {
+        "text": "Doctor Su Shou cannot dispel a poison vow outright. She instead lets the vow kill the bound Gu Master, clearing the poison, then revives that person; Bai Ning Bing uses that method to escape the bond with Fang Yuan.",
+        "chapters": [
+          396
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "mountain-pledge-and-sea-oath",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "When Hei Lou Lan’s alliance seals its covenant, the leaders, including Fang Yuan, use Poison Vow Gu; the narration calls it the foundation of building mutual trust.",
+        "chapters": [
+          500
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "mountain-pledge-and-sea-oath",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_hei_lou_lan"
+        ]
+      },
+      {
+        "text": "Later, when Eighty-Eight True Yang Building opens outward, Hei Pei requires entrants to use Poison Vow Gu and agree to give fifty percent of gains to Hei tribe.",
+        "chapters": [
+          562
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "mountain-pledge-and-sea-oath",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "house_eighty_eight_true_yang_building",
+          "char_hei_pei",
+          "fac_hei_tribe"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

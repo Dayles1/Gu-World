@@ -1,0 +1,165 @@
+{
+  "id": "res_rank_nine_wood_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rank nine wood path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A rank nine wood path immortal material is an unnamed wood path immortal material of rank nine spent to advance Heavenly Essence Treasure Imperial Lotus.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2231,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2231,
+    2233,
+    2235
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 3
+    },
+    {
+      "target": "path_wood",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "house_four_elements_square_regret_blood_refinement_pool",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan begins advancing Heavenly Essence Treasure Imperial Lotus in Four Elements Square Regret Blood Refinement Pool, the first step alone expends a small mountain of rank nine wood path immortal materials.",
+      "chapters": [
+        2231
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "imperial-lotus-first-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_heavenly_essence_treasure_lotus",
+        "house_four_elements_square_regret_blood_refinement_pool"
+      ]
+    },
+    {
+      "text": "After failed attempts, he still has no lack of rank nine wood path immortal materials, but pressing time forces more aggressive refinement methods and heavier immortal essence cost.",
+      "chapters": [
+        2233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "aggressive-expenditure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Counting earlier failures, Fang Yuan uses up thirty percent of his rank nine wood path immortal materials to finish advancing Heavenly Essence Treasure Imperial Lotus to rank nine.",
+      "chapters": [
+        2235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thirty-percent-spent",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/rank-nine-wood-path-immortal-material/",
+      "chapters": [
+        2231,
+        2233,
+        2235
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Refines into": {
+      "text": "Heavenly Essence Treasure Lotus",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

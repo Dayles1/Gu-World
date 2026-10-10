@@ -1,0 +1,394 @@
+{
+  "id": "race_feathermen",
+  "entity_type": "race",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Feathermen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Featherman"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A people first seen among the twelve cloud buildings of Lang Ya blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 460,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    460,
+    661,
+    861,
+    864,
+    865,
+    866,
+    867,
+    869,
+    870
+  ],
+  "relations": [
+    {
+      "type": "home_regions",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 870,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yu_fei",
+      "count": 2
+    },
+    {
+      "target": "char_zheng_ling",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_zhong",
+      "count": 2
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "sys_variant_human",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_white_sea_shatuo",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "house_sacred_feather_city",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_cloud_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_super_force",
+      "count": 1
+    },
+    {
+      "target": "evt_era_late",
+      "count": 1
+    },
+    {
+      "target": "gu_cognition_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_freedom_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Invaders who break into Lang Ya blessed land find twelve grand buildings on cloud soil. Immortal cranes fly around them, feathermen hover in the air, colorful clouds move, and sandalwood fragrance fills the area.",
+      "chapters": [
+        460
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "When Fang Yuan reaches those buildings, some still have immortal cranes around them and some still have feathermen living in them, though battle has left holes in the cloud soil.",
+      "chapters": [
+        661
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "building-condition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Star Form land spirit throws large numbers of variant humans into a pot of poisonous blood. The list includes hairy men, rockmen, snowmen, inkmen, eggmen, feathermen, and mermen.",
+      "chapters": [
+        861
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thrown-into-poisonous-blood",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In a small world under a slightly green sky, a huge city floats. Outsiders call it the city in the sky. The feathermen who live there call it Sacred Feather City. After the featherman king dies, candidates fight in a battle arena to become the new king. Prince Dan Yu fights in the air at rank five, and he breaks Yu Fei’s wings during that match. Three featherman supreme elders in Sacred Feather City were Gu Immortals who could control the situation if a cruel king is chosen.",
+      "chapters": [
+        864
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-in-the-sky",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_sacred_feather_city",
+        "char_yu_fei",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "A crack opens in the green sky. Figures descend, led by White Sea Shatuo, and battle the three featherman Gu Immortals: one rank seven and two rank six. After three days and two nights, one featherman Gu Immortal is dead and the other two are injured. They fall back on Sacred Feather City itself, which is a huge Immortal Gu House, and use its power to resist.",
+      "chapters": [
+        864
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-in-the-sky",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_white_sea_shatuo",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Zhou Zhong names the small world a fragment world of green heaven among the immemorial nine heavens, isolated from the outside world and a paradise, at a time when humans already rule the world and variant humans have no place to live. Sacred Feather City is immobilized. The remaining feathermen gather and use the immortal killer move heavenly wish. Tens of thousands shout wishes for the clan to survive, gain freedom, and have a place to live. White light rises, a force teleports the feathermen away, and White Sea Shatuo obtains the empty Immortal Gu House. The same wishes precede their arrival in Tai Bai Yun Sheng’s blessed land, where they appear as an earthly calamity.",
+      "chapters": [
+        865
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "siege-outcome",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhou_zhong",
+        "char_tai_bai_yun_sheng"
+      ]
+    },
+    {
+      "text": "Fang Yuan tells Tai Bai Yun Sheng that these tens of thousands can be turned into slaves: feathermen are born with cloud path dao marks, they are skilled at flying, and the elites are flying masters. Tai Bai Yun Sheng names them variant humans, not humans. Variant human groups stay more united than humans. Humans rule the five regions, variant humans are the weaker side, and variant human slaves are sold in the market in every region. Losing freedom is spoken of among the mortal feathermen as like losing their wings.",
+      "chapters": [
+        866
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "flight-and-markets",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "race_humans"
+      ]
+    },
+    {
+      "text": "In a flying-speed duel, Zhou Zhong has wings and also an immortal killer move used for movement. Zheng Ling’s speed is twice Zhou Zhong’s.",
+      "chapters": [
+        867
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-movement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zheng_ling"
+      ]
+    },
+    {
+      "text": "The wings of feathermen are not wide like eagle wings or thick like vulture wings. They are slender and exquisite.",
+      "chapters": [
+        869
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wing-appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In The Legends of Ren Zu, feathermen have wings on their backs.",
+      "chapters": [
+        870
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wing-appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_the_legends_of_ren_zu"
+      ]
+    },
+    {
+      "text": "Zhou Zhong spreads his wings, says he is a featherman and will not become a slave, and dies by violating an agreement rather than accept bondage. Yu Fei follows, and the rest of this group choose death the same way. Fang Yuan later recalls a featherman assassin from his previous life who cut off his own wings and killed his village, and who said feathermen believe in freedom.",
+      "chapters": [
+        869
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bondage-refused",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In The Legends of Ren Zu, Ren Zu meets feathermen in green heaven. They can understand his words, and call themselves the most free living beings in the world, refusing to be ordered or bound. After they die, small shining creatures of many colors fly from the corpses. Cognition Gu names them wild freedom Gu, uncatchable, and says these feathermen chased freedom from birth and found it only in death.",
+      "chapters": [
+        870
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "green-heaven-legend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ren_zu",
+        "gu_cognition_gu",
+        "gu_freedom_gu"
+      ]
+    },
+    {
+      "text": "From Zheng Ling’s soul, Fang Yuan learns this group is a featherman clan in Western Desert, living for generations in a fragment world of green heaven. Sacred Feather City’s origins trace to the Late Antiquity Era, the era of Spectral Soul Demon Venerable. The isolated fragment is a major remaining featherman settlement, with Gu Immortal methods that keep Late Antiquity traits. Feathermen are high quality slaves in Western Desert. Super forces and large forces keep featherman-based caravans.",
+      "chapters": [
+        870
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "green-heaven-legend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "evt_era_late",
+        "char_spectral_soul_demon_venerable",
+        "sys_super_force"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/races/feathermen.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/races/feathermen/",
+      "chapters": [
+        460,
+        661,
+        861,
+        864,
+        865,
+        866,
+        867,
+        869,
+        870
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "Variant human",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Specialty": {
+      "text": "flying",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Standing": {
+      "text": "Enslaved",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Home regions": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

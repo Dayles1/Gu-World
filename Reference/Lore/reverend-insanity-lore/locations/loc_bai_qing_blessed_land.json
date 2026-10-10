@@ -1,0 +1,147 @@
+{
+  "id": "loc_bai_qing_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Qing Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fairy Bai Qing's blessed land at Spirit Affinity House in Central Continent, where Feng Jin Huang wakes from a long dream-wings coma.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 723,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    723,
+    730
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Sunlight pierces a window onto a small building on a mountain inside the blessed land. Inside that building a warm, comfortable bed sits in the room.",
+      "chapters": [
+        723
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bright sunlight shines down on the small world. A mountain stream flows slowly. Tall ancient trees spread huge green leaves, and sunlight through gaps among the leaves sways in beams on the ground when the breeze moves. Grassy ground holds clear air mixed with the fragrance of the grass, and a small building holds rooms within that scenery.",
+      "chapters": [
+        730
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bright sunlight falls on a small world of mountain streams and tall ancient trees. Feng Jin Huang asks why Fairy Bai Qing is free instead of blending earth qi; Bai Qing has already spent three days and three nights assimilating Central Continent earth qi after the blessed land grew unstable from long management. Bai Qing warns that dream wings Immortal Gu lets her enter dream realms at will yet resist their influence, and that a venerable’s dream means she must retreat at once.",
+      "chapters": [
+        730
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-qi-intake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jin_huang",
+        "char_fairy_bai_qing",
+        "reg_central_continent",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/bai-qing-blessed-land.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bai-qing-blessed-land/",
+      "chapters": [
+        723,
+        730
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

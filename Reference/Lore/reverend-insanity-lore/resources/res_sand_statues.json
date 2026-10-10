@@ -1,0 +1,159 @@
+{
+  "id": "res_sand_statues",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sand statues",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sand statues fill Western Desert's myriad statue desert; those at least sixty feet tall are transformation path immortal materials.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1398,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1398
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_transformation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_thousand_transformations_ancestor",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_era_olden",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Myriad statue desert holds countless sand statues shaped as humans or beasts, some fighting and some lying as if near death. The smallest stand tens of feet tall, and the statues form a forest across a desert known throughout Western Desert’s Gu Immortal world. The desert dates to the Olden Antiquity Era and to a battle in Reckless Savage Demon Venerable’s time, when human and variant human Gu Immortals died in great numbers, immortal fetuses became blessed lands, and dao marks remade the land. Sand then moved on its own and grew like trees each year into huge statues.",
+      "chapters": [
+        1398
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-formation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "sys_gu_immortal",
+        "evt_era_olden",
+        "char_reckless_savage_demon_venerable"
+      ]
+    },
+    {
+      "text": "Every sand statue at least sixty feet tall is an immortal material filled with transformation path dao marks. Blessed lands from that battle are gone after a million years, yet wild Gu worms and even wild Immortal Gu remain. Dense dao marks make the desert dangerous for mortals, and Western Desert Gu Immortals often detour because Thousand Transformations Ancestor holds the desert as territory.",
+      "chapters": [
+        1398
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-material-grade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_wild_gu",
+        "sys_wild_immortal_gu",
+        "char_thousand_transformations_ancestor"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/sand-statues.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/sand-statues/",
+      "chapters": [
+        1398
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Transformation Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Myriad statue desert",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "id": "char_dong_po_kong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Po Kong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "dong po kong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дун По Кун",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Flying Lightning Lightning Dong Po Kong Dong Po Kuang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dong Po Kong is a Northern Plains flying master nicknamed Lightning, first named when Ge Yao ranks Fang Yuan's flight against first-rate grassland flyers.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 430,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    430,
+    503,
+    511,
+    512,
+    514,
+    540,
+    781,
+    787
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_lightning",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_dong_fang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 511,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 3
+    },
+    {
+      "target": "path_lightning",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_song_qing_yin",
+      "count": 2
+    },
+    {
+      "target": "char_wu_ye",
+      "count": 2
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_bian_si_xuan",
+      "count": 2
+    },
+    {
+      "target": "char_tan_wu_feng",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_hei_xiu_yi",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "move_seven_star_light",
+      "count": 1
+    },
+    {
+      "target": "char_old_lord_can_yang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After escaping shadow crows and earth spike rats, Ge Yao judges Fang Yuan’s flying against Lightning Dong Po Kong, Water Immortal Song Qing Yin, and Green Bat Wu Ye as first-rate technique in northern plains.",
+      "chapters": [
+        430
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_yao",
+        "char_fang_yuan",
+        "char_song_qing_yin",
+        "char_wu_ye"
+      ]
+    },
+    {
+      "text": "A flash of lightning crosses the field and disperses into a valiant man.",
+      "chapters": [
+        511
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lightning crackles around him in that fight.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Zhao tribe leader is rank five initial stage, yet Dong Po Kong defeated him three years earlier while at rank four peak stage, which left that leader with weak prestige.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-and-zhao-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zhao_tribe"
+      ]
+    },
+    {
+      "text": "Dong Fang Yu Liang summons him with Shadow Sword Expert Bian Si Xuan, and he is Flying Lightning Dong Po Kong as he crosses the field as lightning and strikes at Fang Yuan on the twin-headed rhino.",
+      "chapters": [
+        511
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_yu_liang",
+        "char_bian_si_xuan"
+      ]
+    },
+    {
+      "text": "He is one of the few flying masters of northern plains and a lightning path Gu Master, held back until that strike.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "With Bian Si Xuan he later moves through rank four rings hunting Fang Yuan without finding him.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hei-tribe-battle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dong Fang Yu Liang summons Dong Po Kong.",
+      "chapters": [
+        511
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "name-spelling",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the same field strike he is also named Dong Po Kuang as Flying Lightning.",
+      "chapters": [
+        512
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "name-spelling",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the three original flying masters, Flying Lightning Dong Po Kong belongs to Dong Fang tribe and has returned to the blessed land.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ma-tribe-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_dong_fang_tribe"
+      ]
+    },
+    {
+      "text": "In Tai Qiu, Tan Wu Feng calls him a flying master and tells him to escape with Dong Fang Yu Liang while Tan Wu Feng stalls a goat group; only Dong Po Kong leaves. After Dong Fang Yu Liang uses seven star light, Tan Wu Feng and Dong Po Kong come up and hold him. He later urges retreat after three days of beast waves leave only the three of them, then meditates with them to recover.",
+      "chapters": [
+        781
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-escort",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tai_qiu",
+        "char_tan_wu_feng"
+      ]
+    },
+    {
+      "text": "Old Lord Can Yang burns him and Tan Wu Feng to charcoal; both are rank fives at the peak of the mortal world.",
+      "chapters": [
+        787
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_lord_can_yang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/dong-po-kong/",
+      "chapters": [
+        430,
+        503,
+        511,
+        512,
+        514,
+        540,
+        781,
+        787
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 503 V as of ch. 787",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Lightning path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Dong Fang Tribe as of ch. 511",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 503,
+        "confidence": "B"
+      },
+      {
+        "rank": 5,
+        "as_of_chapter": 787,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_lightning"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,183 @@
+{
+  "id": "move_force_intrusion",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Force Intrusion",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Force Intrusion is an Immortal Crane Sect immortal killer move. Expand Space Immortal Gu is its core, and it breaks space open into a blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 699,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    699,
+    703
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_he_feng_yang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_expand_space_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 699,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_he_feng_yang",
+      "count": 3
+    },
+    {
+      "target": "gu_expand_space_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fairy_cang_yu",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "move_force_closure",
+      "count": 1
+    },
+    {
+      "target": "char_lord_tiger_demon",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On Tian Ti mountain, when He Feng Yang judges the time ripe, Fairy Cang Yu names the Gu he draws as Expand Space Immortal Gu, property of Immortal Crane Sect’s second supreme elder and normally used to enlarge a blessed land’s space; he has borrowed it for this immortal killer move. Over ten beads of green grape immortal essence are spent at once, translucent ripples rise, space cracks like glass, and the terrain of Hu Immortal blessed land shows through so he can invite her to enter.",
+      "chapters": [
+        699
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tian_ti",
+        "char_he_feng_yang",
+        "char_fairy_cang_yu",
+        "gu_expand_space_immortal_gu",
+        "fac_immortal_crane_sect",
+        "sys_killer_moves",
+        "loc_hu_immortal_blessed_land"
+      ]
+    },
+    {
+      "text": "Trapped later in soul taker battlefield fog, He Feng Yang asks Lord Tiger Demon’s anger will to use force intrusion again; the will warns that each cast costs the main body two red date immortal essence beads, and He Feng Yang promises compensation. After the will feeds those two beads and many mortal Gu into Expand Space, He Feng Yang brings the yellow-lit Immortal Gu out, pats it, and the light breaks a hole in the battlefield so his nine palace crane can carry him into clear sky.",
+      "chapters": [
+        703
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "escape-cast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lord_tiger_demon",
+        "sys_mortal_gu",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/force-intrusion/",
+      "chapters": [
+        699,
+        703
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "He Feng Yang",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Expand Space Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

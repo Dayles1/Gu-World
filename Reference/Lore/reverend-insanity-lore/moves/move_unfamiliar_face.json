@@ -1,0 +1,191 @@
+{
+  "id": "move_unfamiliar_face",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Unfamiliar Face",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Unfamiliar face is Thieving Heaven Demon Venerable's mortal disguise killer move. Lang Ya land spirit offers it to Fang Yuan as a former version related to the immortal killer move familiar face.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 709,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    709,
+    731
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_thieving_heaven_demon_venerable",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 731,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 3
+    },
+    {
+      "target": "move_vaguely_familiar_face",
+      "count": 2
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "gu_attitude_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "move_familiar_face",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan asks Lang Ya land spirit whether a related offer is the legendary familiar face, Lang Ya refuses that immortal move and names Attitude Gu as its core Gu, saying Fang Yuan could not use familiar face even if he received it. Lang Ya will pay immortal essence stones at market rates and hand over unfamiliar face if Fang Yuan enslaves a strong desolate beast for Lang Ya blessed land.",
+      "chapters": [
+        709
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_lang_ya_land_spirit",
+        "move_familiar_face",
+        "fac_lang_ya_sect",
+        "gu_attitude_gu",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "How killer moves are built in general is on killer moves.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_killer_moves"
+      ]
+    },
+    {
+      "text": "After Fang Yuan delivers a live yellow jade lion, Lang Ya hands over unfamiliar face’s details and pays eighty-eight immortal essence stones. The move comes from Thieving Heaven Demon Venerable. Fang Yuan notes about three hundred Gu worms spanning six paths, including transformation path, strength path, and wisdom path, with some rare Gu that would take time to gather. Lang Ya states the series outright: unfamiliar face, vaguely familiar face, and familiar face. Unfamiliar face can transform the user into someone others do not know; if the target knows that person, the disguise fails. The latter two are immortal killer moves that can hold even when the user takes a familiar person’s form. Lang Ya cannot use the move himself and later urges Fang Yuan to rely on it so other Gu Immortals cannot identify his true form.",
+      "chapters": [
+        731
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "composition-and-limit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_thieving_heaven_demon_venerable",
+        "sys_gu_worms",
+        "move_vaguely_familiar_face",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/unfamiliar-face/",
+      "chapters": [
+        709,
+        731
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Mortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Thieving Heaven Demon Venerable (creator) Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

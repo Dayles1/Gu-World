@@ -1,0 +1,407 @@
+{
+  "id": "fac_shen_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shen Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Eastern Sea Shen clan"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shen clan is named as an Eastern Sea enemy of Tang clan when Gu Immortals wonder who dares challenge Tang Song.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1046,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1046,
+    1850,
+    1903,
+    1985,
+    2216,
+    2217
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_shen_cong_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1850,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shen_cong_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1700,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shen_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1889,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shen_tan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1889,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shen_xiao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1892,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shen_shang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1905,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 5
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 4
+    },
+    {
+      "target": "char_shen_qi",
+      "count": 3
+    },
+    {
+      "target": "char_shen_tan",
+      "count": 3
+    },
+    {
+      "target": "char_shen_xiao",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_qiao_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_dragon_whale_paradise",
+      "count": 2
+    },
+    {
+      "target": "gu_response_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tang_song",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_fate_destruction",
+      "count": 1
+    },
+    {
+      "target": "house_pine_crane_pavilion",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "loc_purple_rosewood_myriad_sparrow_island",
+      "count": 1
+    },
+    {
+      "target": "res_autumn_wood_sound",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "res_constant_wave_sound",
+      "count": 1
+    },
+    {
+      "target": "res_sound_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "fac_xia_clan",
+      "count": 1
+    },
+    {
+      "target": "house_whale_fishing_boat",
+      "count": 1
+    },
+    {
+      "target": "fac_xie_clan",
+      "count": 1
+    },
+    {
+      "target": "char_lu_wei_yin",
+      "count": 1
+    },
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 1
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan attacks Tang Song, Eastern Sea Gu Immortals guess that anyone unafraid of Tang clan might come from Shen clan or Su clan, Tang clan’s Eastern Sea enemies. Tang clan itself is treated as an Eastern Sea super force equivalent to Central Continent’s ten great ancient sects in the same stretch.",
+      "chapters": [
+        1046
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-against-tang-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_tang_song",
+        "reg_eastern_sea",
+        "sys_gu_immortal",
+        "fac_tang_clan",
+        "fac_su_clan",
+        "fac_ten_great_ancient_sects"
+      ]
+    },
+    {
+      "text": "Shen clan headquarters sit on purple rosewood myriad sparrow island. First supreme elder Shen Cong Sheng hosts with six sound tea, Shen clan’s signature tea, famous across the five regions and ranked above Spirit Affinity House’s qingpu tea, Myriad Dragon Dock’s dragon shadow tea, Southern Border Qiao clan’s bewitching tea, and Fang clan’s seven li fragrant tea. Six sound tea is made of immortal materials; refining a full set needs Gu refinement experts among Gu Immortals, and Shen Cong Sheng takes part himself. The island is a giant resource point built from the immemorial desolate plant sea suppressing purple rosewood, rooted on the seabed with its crown above water, and sparrow cries shake the branches into sounds that calm the surrounding seas.",
+      "chapters": [
+        1850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-six-sound-tea",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shen_cong_sheng",
+        "fac_spirit_affinity_house",
+        "fac_myriad_dragon_dock",
+        "reg_southern_border",
+        "fac_qiao_clan",
+        "fac_fang_clan"
+      ]
+    },
+    {
+      "text": "Inside Dragon Whale Paradise, Shen Cong Sheng leads Shen clan’s Gu Immortals and seeks a rank eight response Immortal Gu that matters to Shen clan, offering clan reputation, a recorded process, and immortal materials when formal agreements cannot be set inside the paradise.",
+      "chapters": [
+        1903
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dragon-whale-paradise-cooperation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dragon_whale_paradise",
+        "gu_response_gu"
+      ]
+    },
+    {
+      "text": "After the fate war, Xia clan asks Shen clan for help reclaiming territory. Shen Cong Sheng calls the Gu Immortals to decide, and talk notes that Ancestor Shen Shang went missing after going insane and that Shen clan failed to find him. Shen clan remains a super force yet stays wary of the Two Heavens allied forces.",
+      "chapters": [
+        1985
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "xia-clan-aid-request",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xia_clan",
+        "char_shen_shang"
+      ]
+    },
+    {
+      "text": "Shen Cong Sheng still holds first supreme elder authority as a rank eight at purple rosewood myriad sparrow island when Shen Shang and Lu Wei Yin return from Crazed Demon Cave. Lu Wei Yin praises Eastern Sea Shen clan’s rosewood myriad sparrow island reputation after tasting six sound tea there. Shen Cong Sheng later cries that Shen clan has stood for a thousand years and now faces extermination in his generation, with the island and countless clansmen at risk.",
+      "chapters": [
+        2216
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rosewood-island-after-crazed-demon-cave",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lu_wei_yin",
+        "loc_crazed_demon_cave"
+      ]
+    },
+    {
+      "text": "Shen clan is an Eastern Sea super force with huge businesses and seven seas under its control. After Fang Yuan becomes a venerable, Shen Cong Sheng decides Shen clan must be first among Eastern Sea righteous path forces to join him, hoping to work with Lu Wei Yin and leave a better impression. Shen Shang says Shen clan’s foundation is in Eastern Sea, so moving away would be too risky, and that earlier secret work with Fang Yuan in the blue dragon whale, fate war, and Crazed Demon Cave never left them let down once.",
+      "chapters": [
+        2217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "first-to-join-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_eastern_sea_righteous_path"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/shen-clan/",
+      "chapters": [
+        1046,
+        1850,
+        1903,
+        1985,
+        2216,
+        2217
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Shen Cong Sheng",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

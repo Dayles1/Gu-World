@@ -1,0 +1,186 @@
+{
+  "id": "fac_zhong_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhong Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains mid-scale tribe led by Zhong Fei You, first shown seizing goods from Chai tribe beside crescent lake.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 494,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    494,
+    495
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_zhong_fei_you",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 494,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_zhong_fei_you",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_chai_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_chai_zhang",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Beside crescent lake, Zhong Fei You claims a water wolf nest as the agreed boundary and says beetles that reach Zhong tribe ground belong to Zhong tribe. The camp sits on the main road toward the heroes assembly, so Chai tribe must pass it or take a longer detour past myriad beast groups. Chai tribe is a small scale tribe; Zhong tribe expanded into a mid-scale tribe two years earlier.",
+      "chapters": [
+        494
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "boundary-at-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crescent_lake",
+        "char_zhong_fei_you",
+        "fac_chai_tribe"
+      ]
+    },
+    {
+      "text": "When Fang Yuan’s wolf army arrives and surrounds Zhong tribe and Chai tribe, Zhong Fei You sees the force as enough to wipe Zhong tribe two or three times over in the open. He bows as Lord Chang Shan Yin, then orders a retreat after being told to get lost and not block the path. Both tribes had meant to side with Liu Wen Wu using Chai tribe’s gathered goods.",
+      "chapters": [
+        494
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-king-at-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_chang_shan_yin",
+        "char_liu_wen_wu"
+      ]
+    },
+    {
+      "text": "A Zhong tribe investigative Gu Master reports that Wolf King cleared the nearby water wolf den and took the black skin fat armor beetles. Zhong Fei You and the higher-ups shudder at the loss ratio, then he says the tribe cannot match Chang Shan Yin alone and will note the fight for later revenge after going to Lord Liu Wen Wu. Zhong tribe and Chai tribe are in-laws who had camped close for mutual watch, yet the Imperial Court contest makes survival the priority for both. Soon after, Zhong tribe sets off from the lake.",
+      "chapters": [
+        495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "leaving-crescent-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "evt_arc_imperial_court_contest"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zhong-tribe/",
+      "chapters": [
+        494,
+        495
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

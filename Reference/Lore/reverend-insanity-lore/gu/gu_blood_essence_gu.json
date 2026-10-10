@@ -1,0 +1,301 @@
+{
+  "id": "gu_blood_essence_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Essence Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Blood Essence Gu is a precious Gu that replenishes a Gu Master's blood. It is also a material used with Moonglow Gu to form Blood Moon Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 157,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    126,
+    157,
+    159
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_xiong_jiang",
+      "count": 2
+    },
+    {
+      "target": "gu_moonglow_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_roaming_zombie_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_moon_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/blood-essence-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/blood-essence-gu/",
+      "chapters": [
+        126,
+        157,
+        159
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Blood Essence Gu replenishes blood and serves in the Blood Moon Gu recipe. No cited chapter names a cultivation path for this Gu.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Blood Essence Gu appears in the Blood Moon Gu recipe with a blood-replenishing use. No cited chapter states a rank for Blood Essence Gu, and none describes the Gu worm’s appearance.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The Gu is precious because it can replenish a Gu Master’s blood. Holders stay energetic, and even after heavy blood loss from injury they can replenish blood easily, so their survivability in battle is much higher than others without it.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "The recipe uses rank two Moonglow Gu and Blood Essence Gu to combine into the rank three Blood Moon Gu. When Fang Yuan memorizes that recipe he already holds Moonglow Gu, and he notes that Blood Essence Gu is slightly harder to get a hold of.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "blood-moon-gu-material",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_moonglow_gu"
+        ]
+      },
+      {
+        "text": "He later refines Blood Moon Gu during the wolf tide, failing once and succeeding on the second try. He takes the refinement ingredients from Gu Yue Chi Lian. The recipe’s only named materials are Moonglow Gu, which he already holds, and Blood Essence Gu.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "blood-moon-gu-material",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_chi_lian"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "The name first appears in the Gu Yue clan secret room on the Blood Moon Gu recipe plate that Fang Yuan memorizes.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_yue_clan",
+          "gu_blood_moon_gu",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Paired with Roaming Zombie Gu, Blood Essence Gu would greatly reduce that Gu’s side effects and let the user stay a zombie longer without backlash worries. Xiong Jiang once desired a Blood Essence Gu badly. He was already a well-to-do rank two Gu Master with a rather high position, but until he died he never obtained one.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "pairing-with-roaming-zombie-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_roaming_zombie_gu",
+          "char_xiong_jiang"
+        ]
+      },
+      {
+        "text": "An earlier chapter says Roaming Zombie Gu is best used with Bloodline Gu, and that without that pairing long use drains the body’s blood and can turn the user into a true zombie.",
+        "chapters": [
+          126
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "pairing-with-roaming-zombie-gu",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Bloodline Gu is named for that pairing at chapter 126, and Blood Essence Gu is named for the same pairing purpose at chapter 157. The text never states that those two names are one Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "pairing-with-roaming-zombie-gu",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

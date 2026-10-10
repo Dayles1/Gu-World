@@ -1,0 +1,124 @@
+{
+  "id": "res_region_sand",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Region sand",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Region sand is an earth path immortal material named when Gu Immortals bid rare refinement stocks.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 753,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    753,
+    2133
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Feng Jiu Ge names region sand among immortal materials he adds to a competing bid for worldly wave trace Immortal Gu, alongside sun salt, star galaxy wind, plain fire, and three further immortal materials. The amount of each does not fill the seller’s list, but the variety is enough to shock the hall.",
+      "chapters": [
+        753
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "auction-variety",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Region sand is named among a large stock of earth path immortal materials packed into an immortal aperture when preparing for tribulation.",
+      "chapters": [
+        2133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-stock",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/region-sand/",
+      "chapters": [
+        753,
+        2133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Earth Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

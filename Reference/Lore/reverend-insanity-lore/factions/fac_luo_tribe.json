@@ -1,0 +1,185 @@
+{
+  "id": "fac_luo_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luo Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Luo tribe is a Northern Plains tribe whose army, commanded by Luo Bo Jun, loses its last defense line to Liu Wen Wu during the Imperial Court struggle.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 523,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    523
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_luo_bo_jun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_luo_bo_jun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_luo_bo_jun",
+      "count": 5
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "sys_super_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "loc_giant_dream_realm",
+      "count": 1
+    },
+    {
+      "target": "loc_super_dream_realm",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On a collapsing battlefield, Luo tribe’s higher ranked Gu Masters beg alliance leader Luo Bo Jun to retreat, but he answers that there is nowhere left to withdraw because this is already the tribe’s last defense line. Since the fight with Liu Wen Wu began, none of Luo tribe’s defense lines had held for more than three days, and Luo Bo Jun himself remained heavily injured from an earlier clash with Liu Wen Wu, Mo Shi Kuang, and others.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_luo_bo_jun",
+        "char_liu_wen_wu",
+        "char_mo_shi_kuang"
+      ]
+    },
+    {
+      "text": "Luo tribe’s army keeps losing until Luo Bo Jun loses the will to keep fighting and orders surrender himself, since a poison vow stops his subordinates from raising the idea first. The surrender gives Liu tribe alliance its first win of that stretch of the Imperial Court contest.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_liu_tribe",
+        "evt_arc_imperial_court_contest"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/luo-tribe/",
+      "chapters": [
+        523
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Luo Bo Jun",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

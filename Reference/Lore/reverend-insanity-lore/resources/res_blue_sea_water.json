@@ -1,0 +1,176 @@
+{
+  "id": "res_blue_sea_water",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blue sea water",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blue sea water is water taken from the blue sea of life and named in *The Legends of Ren Zu* as a material for Wealth Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1473,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1473,
+    1474
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_wealth_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_wealth_gu",
+      "count": 3
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "gu_life_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_ordinary_abyss",
+      "count": 1
+    },
+    {
+      "target": "char_shi_zhong",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "fac_shi_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_worry_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ren Zu leaves Ordinary Abyss and goes to the blue sea that formed Life Gu, the source of all life in the world. Thirsty, he scoops up blue sea water and drinks a few mouthfuls; he grows thirstier as he drinks, and is satisfied. He wants to use the blue sea water to refine Gu so that whoever obtains the result will never be satisfied and will want more. He takes away a lot of blue sea water.",
+      "chapters": [
+        1473
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ren-zu-at-the-blue-sea",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ren_zu",
+        "loc_ordinary_abyss",
+        "gu_life_gu"
+      ]
+    },
+    {
+      "text": "According to Ren Zu’s biography in The Legends of Ren Zu, Wealth Gu is made from blue sea water, Ren Zu’s hands, Worry Gu, Difficulty Gu, Sadness Gu, Wisdom Gu, and Stupidity Gu. Following that recipe in the present world is basically impossible: many details are not literal, and these materials are already extinct. The blue sea is already missing, so blue sea water cannot be found.",
+      "chapters": [
+        1474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wealth-gu-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_the_legends_of_ren_zu",
+        "gu_wealth_gu",
+        "gu_worry_gu",
+        "gu_wisdom_gu"
+      ]
+    },
+    {
+      "text": "Shi Zhong of Western Desert’s Shi clan tries to refine Wealth Gu from an incomplete recipe and substitutes humans for blue sea water as well as for Ren Zu’s hands.",
+      "chapters": [
+        1474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wealth-gu-recipe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shi_zhong",
+        "reg_western_desert",
+        "fac_shi_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/blue-sea-water/",
+      "chapters": [
+        1473,
+        1474
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Blue sea",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Wealth Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

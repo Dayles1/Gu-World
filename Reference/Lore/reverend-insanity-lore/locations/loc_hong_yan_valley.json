@@ -1,0 +1,246 @@
+{
+  "id": "loc_hong_yan_valley",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hong Yan Valley",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains valley near Ge tribe where underground fire burns, held by Man tribe as a blizzard shelter.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 440,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    440,
+    442,
+    449,
+    554,
+    555
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 2
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 2
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_man_tu",
+      "count": 2
+    },
+    {
+      "target": "char_man_duo",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_shi_wu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan urges Ge tribe to migrate north for the heroes assembly and rely on Huang Jin tribe. Ge tribe leader refuses that imperial court path, names Hong Yan valley in reply, and says entry would require terms with Man tribe, the local overlord.",
+      "chapters": [
+        440
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_ge_tribe",
+        "fac_huang_jin_bloodline",
+        "fac_man_tribe"
+      ]
+    },
+    {
+      "text": "Narration later states Man tribe owned Hong Yan valley and had expanded after winning battles.",
+      "chapters": [
+        442
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Underground fire burns in the valley, used as shelter during the blizzard.",
+      "chapters": [
+        440
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later the valley grows colder, surrounding vegetation and beasts freeze to death, and the underground magma that supports it is reduced.",
+      "chapters": [
+        555
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ge tribe leader says he agreed to Ge Yao’s wedding so the tribe could stay inside Hong Yan valley and protect its people when the great blizzard comes. After her death he says they have no excuse left to use the valley, and that staying would mean being swallowed by Man tribe. Narration states Ge tribe wanted the marriage in exchange for Hong Yan valley to survive the once-in-ten-years great blizzard.",
+      "chapters": [
+        449
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "marriage-bargain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_yao"
+      ]
+    },
+    {
+      "text": "Man Duo reports that Hong Yan valley still has seven spirit springs marked A, B, C, E, F, G, and H, with G and H close to drying up within a month. Speakers say the valley’s eight spirit springs were accumulated over ten years by the tribe. Man Tu says spirit springs matter for Gu Master cultivation and primeval stones, that snow monsters will soon roam, and that defense of the valley will still rely on Gu Masters. Narration calls Man tribe, occupying Hong Yan valley, a ruler of a region.",
+      "chapters": [
+        554
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-springs-defense",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_man_duo",
+        "char_man_tu",
+        "sys_gu_master",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "A subordinate tells Man Duo that Hong Yan valley has been getting colder and that surrounding vegetation and beasts have been freezing to death. Man Duo knows the underground magma supporting the valley has been reduced for unknown reasons. He is shocked to see flying hand snow inside the valley.",
+      "chapters": [
+        555
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "cooling-valley",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/hong-yan-valley.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/hong-yan-valley/",
+      "chapters": [
+        440,
+        442,
+        449,
+        554,
+        555
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "valley",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

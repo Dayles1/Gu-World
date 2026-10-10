@@ -1,0 +1,243 @@
+{
+  "id": "fac_qing_yue_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qing Yue Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qing Yue clan is an Eastern Sea righteous path super force. Its first supreme elder is Qing Yue An, and Qing Yue Zhi Cheng is a bloodline descendant who investigates Qin Bai He's disappearance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1488,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1488,
+    1495,
+    1690,
+    1885
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_qing_yue_an",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1488,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_qing_yue_an",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "char_qing_yue_zhi_cheng",
+      "count": 2
+    },
+    {
+      "target": "char_qin_bai_he",
+      "count": 1
+    },
+    {
+      "target": "char_you_chan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_nan_gong_clan",
+      "count": 1
+    },
+    {
+      "target": "char_hua_cai_yun",
+      "count": 1
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_mountain_ranges",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a clan compound or banner.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qing Yue Zhi Cheng is a Gu Immortal of the Eastern Sea super force Qing Yue clan and the bloodline descendant of first supreme elder Qing Yue An. Qin Bai He replies to his letters half-heartedly so as not to be on bad terms with Qing Yue clan. With Qing Yue clan’s strength the clan quickly unveils a portion of the truth about the murders of Qin Bai He and You Chan.",
+      "chapters": [
+        1488
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qing_yue_zhi_cheng",
+        "sys_gu_immortal",
+        "reg_eastern_sea",
+        "char_qing_yue_an",
+        "char_qin_bai_he",
+        "char_you_chan"
+      ]
+    },
+    {
+      "text": "Qing Yue Zhi Cheng meets Qing Yue clan’s first supreme elder to request help, then flies out of the clan’s headquarter toward Nan Gong clan territory after being told to find a wisdom path Gu Immortal to investigate what happened to Qin Bai He and You Chan.",
+      "chapters": [
+        1495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seeking-wisdom-help",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_nan_gong_clan"
+      ]
+    },
+    {
+      "text": "When Eastern Sea’s righteous path moves against Dragon Palace, a middle aged man in blue robe appears as Qing Yue clan’s first supreme elder Qing Yue An.",
+      "chapters": [
+        1690
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-presence",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_eastern_sea_righteous_path",
+        "house_dragon_palace"
+      ]
+    },
+    {
+      "text": "Later narration places Qing Yue clan among Eastern Sea forces closest to Eastern Sea’s Zombie Alliance headquarters, with Song clan and Hua clan.",
+      "chapters": [
+        1885
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-eight-presence",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance",
+        "fac_song_clan",
+        "fac_hua_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/qing-yue-clan/",
+      "chapters": [
+        1488,
+        1495,
+        1690,
+        1885
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Qing Yue An",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "id": "loc_yin_yang_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yin-Yang Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yin-Yang blessed land is Murong tribe's Northern Plains blessed land, praised for landscape against Jade Pool.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 657,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    657,
+    795
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 2
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_murong_qing_si",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the administration hall of Modest Thatched Hut inside Jade Pool blessed land, Dong Fang Chang Fan seats northern plains righteous path Gu Immortals for a deduction transaction and a posthumous alliance with Dong Fang tribe. When Dong Fang Yi Kong reveals a miniature mountain peak for the oath, Murong Qing Si names it Miniscule Mountain first among the guests.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_modest_thatched_hut",
+        "loc_jade_pool_blessed_land",
+        "char_dong_fang_chang_fan",
+        "sys_gu_immortal",
+        "fac_dong_fang_tribe",
+        "char_dong_fang_yi_kong",
+        "char_murong_qing_si",
+        "loc_miniscule_mountain"
+      ]
+    },
+    {
+      "text": "Like Dong Fang tribe’s Jade Pool, Guan tribe’s Shi Huang, and Hei tribe’s Iron Eagle, Murong tribe’s Yin-Yang blessed land is a main camp pieced together from contributions by various Gu Immortals. Most super forces in the five regions build headquarters that way, with stricter rules when one blessed land swallows another.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "pieced-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_guan_tribe",
+        "fac_hei_tribe",
+        "fac_murong_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/yin-yang-blessed-land/",
+      "chapters": [
+        657,
+        795
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

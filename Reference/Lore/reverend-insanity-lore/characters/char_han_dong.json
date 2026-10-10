@@ -1,0 +1,358 @@
+{
+  "id": "char_han_dong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Han Dong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "han dong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хань Дун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Han Dong is a Northern Plains Gu Immortal of the Traveling Three Elites who watches Dong Fang Yu Liang from the outskirts of Tai Qiu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 781,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    781,
+    782,
+    785,
+    790,
+    811,
+    1184,
+    1185,
+    1291
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_transformation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1184,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_traveling_three_elites",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 782,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_traveling_three_elites",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "path_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_lu_qing_ming",
+      "count": 2
+    },
+    {
+      "target": "char_su_guang",
+      "count": 2
+    },
+    {
+      "target": "loc_mini_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "move_entangled_wind",
+      "count": 1
+    },
+    {
+      "target": "char_guan_shen_zhao",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "loc_han_dong_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "move_sword_dragon_transformation",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_beast_bone",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Tai Qiu’s outskirts he snorts that even Gu Immortals dare not charge deep into that fierce area of desolate and ancient desolate beasts. When three black-robed masked Gu Immortals approach, his eyes shine ominously as he treats them as more people wanting a share of the profits.",
+      "chapters": [
+        781
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tai_qiu",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When Lu Qing Ming shouts to move, Han Dong and Su Guang follow. Onlookers treat the three as able to match rank seven when they join forces.",
+      "chapters": [
+        782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "joins-the-charge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lu_qing_ming",
+        "char_su_guang"
+      ]
+    },
+    {
+      "text": "A desolate level phantom beast turns phantom, engulfs him, then turns solid so he is inside its stomach and carried away, leaving Lu Qing Ming and Su Guang behind. Lu Qing Ming, Han Dong, and Su Guang are the Traveling Three Elites. Together they can match a rank seven Gu Immortal, but not as strongly as individuals.",
+      "chapters": [
+        785
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "phantom-beast-capture",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_traveling_three_elites"
+      ]
+    },
+    {
+      "text": "After he is gone, Lu Qing Ming and Su Guang are only at rank six.",
+      "chapters": [
+        790
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "phantom-beast-capture",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later talk states Gu Immortal Han Dong is long since dead. After the phantom beast dragged him into the corpse mountain he was supposed to be a captive, but he died in the heavenly tribulation and earthly calamity.",
+      "chapters": [
+        811
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His transformation path blessed land is a rank six shallow beach whose pinkish red spirit snake land spirit will acknowledge only Lu Qing Ming or Su Guang, because his dying obsession was to leave everything to those two friends.",
+      "chapters": [
+        1184
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "annexed-blessed-land",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan takes it by trickery and annexes it into the sovereign immortal aperture, where it becomes a shallow rock beach in Mini Northern Plains and the land spirit survives to keep managing that beach.",
+      "chapters": [
+        1185
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "annexed-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_mini_northern_plains"
+      ]
+    },
+    {
+      "text": "The beach sits closer to Eastern Sea inside Mini Northern Plains.",
+      "chapters": [
+        1291
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "annexed-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/han-dong/",
+      "chapters": [
+        781,
+        782,
+        785,
+        790,
+        811,
+        1184,
+        1185,
+        1291
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 1184",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Transformation path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Traveling Three Elites as of ch. 782",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 1184,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_transformation"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

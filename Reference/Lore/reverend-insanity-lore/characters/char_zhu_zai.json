@@ -1,0 +1,359 @@
+{
+  "id": "char_zhu_zai",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhu Zai",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zhu zai",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чжу Цзай",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zhu Zai is one of Northern Plains' demonic path twin demons, a strength path fighter who works with Gao Yang.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 527,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    527,
+    531,
+    533,
+    534,
+    550,
+    591,
+    592
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_gao_yang",
+      "count": 2
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 2
+    },
+    {
+      "target": "gu_man_as_before_gu",
+      "count": 2
+    },
+    {
+      "target": "move_world_devouring_qi",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "gu_treacherous_cloud_wave_gu",
+      "count": 1
+    },
+    {
+      "target": "move_asura_transformation",
+      "count": 1
+    },
+    {
+      "target": "move_three_head_six_arms",
+      "count": 1
+    },
+    {
+      "target": "loc_xing_jiu_peak",
+      "count": 1
+    },
+    {
+      "target": "inh_du_min_jun_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_lifespan_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_hall",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Tai Bai Yun Sheng once rescued Gao Yang and Zhu Zai, and they vowed to repay him. He names them as help Hei Lou Lan can call for against Liu tribe. Northern Plains calls the pair the twin demons of demonic path. They work together with strong teamwork, and at that naming both are rank four peak stage experts who once killed a rank five by combining force.",
+      "chapters": [
+        527
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng",
+        "char_gao_yang",
+        "char_hei_lou_lan",
+        "fac_liu_tribe",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "They take Tai Bai Yun Sheng’s letter and side with Hei tribe. On the field Liu Wen Wu names Zhu Zai a strength path cultivator among the twin demons.",
+      "chapters": [
+        531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "with-hei-tribe-army",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "char_liu_wen_wu",
+        "path_strength"
+      ]
+    },
+    {
+      "text": "Inside Imperial Court blessed land he stands as a strength path rank five Gu Master skilled in close combat, separated from Gao Yang on the way to the sacred palace.",
+      "chapters": [
+        550
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "with-hei-tribe-army",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Mo Shi Kuang’s World Devouring Qi squeezes Zhu Zai into meat paste after Zhu Zai throws Gao Yang clear. Tai Bai Yun Sheng then fires rank five Man as Before Gu onto the remains, and Zhu Zai returns without injury with his primeval sea at peak, restored to his state just before the battle.",
+      "chapters": [
+        533
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-revival",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_shi_kuang",
+        "move_world_devouring_qi",
+        "gu_man_as_before_gu"
+      ]
+    },
+    {
+      "text": "In the next clash the three-head six-arms form kills Gao Yang and explodes Zhu Zai again; two silver lights restore both to their previous state.",
+      "chapters": [
+        534
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-and-revival",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As front vanguard with Gao Yang he reaches the blood-beast siege before the great hall.",
+      "chapters": [
+        591
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-true-yang-building",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the final moment Tai Bai Yun Sheng keeps primeval essence for himself instead of saving them, and Gao Yang and Zhu Zai die so he can charge the hall for the lifespan Gu reward.",
+      "chapters": [
+        592
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-in-true-yang-building",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_lifespan_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zhu-zai/",
+      "chapters": [
+        527,
+        531,
+        533,
+        534,
+        550,
+        591,
+        592
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 527 V as of ch. 550",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Strength path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 527",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 527,
+        "confidence": "B"
+      },
+      {
+        "rank": 5,
+        "as_of_chapter": 550,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_strength"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": "demonic path as of ch. 527",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

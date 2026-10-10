@@ -1,0 +1,263 @@
+{
+  "id": "char_fairy_maiden_soul",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fairy Maiden Soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fairy Maiden Soul is a Heavenly Court soul path great expert from Spectral Soul's era, skilled at healing and named as on par with Thunder Ghost True Monarch.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2181,
+    "volume": null,
+    "arc": "evt_arc_battle_of_crazed_demon_cave"
+  },
+  "chapters_cited": [
+    2181,
+    2182,
+    2198
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2181,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_heavenly_court",
+      "count": 3
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_seven_fiendish_primeval_monarch",
+      "count": 2
+    },
+    {
+      "target": "house_dragon_soul_dark_castle",
+      "count": 2
+    },
+    {
+      "target": "house_red_heavenly_altar",
+      "count": 2
+    },
+    {
+      "target": "char_thunder_ghost_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_immortal_graveyard",
+      "count": 1
+    },
+    {
+      "target": "char_zhan_bu_du",
+      "count": 1
+    },
+    {
+      "target": "char_zhou_xiong_xin",
+      "count": 1
+    },
+    {
+      "target": "loc_book_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_ruan_dan",
+      "count": 1
+    },
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 1
+    },
+    {
+      "target": "loc_door_of_life_and_death",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the fight at Heavenly Court’s immortal graveyard, a newly awakened Gu Immortal flies out as a soul with no body. She blows a blue-gray breath that fuses into Uncle Feng’s soul and rapidly heals his soul injury. Gu Immortals in Dragon Soul Dark Castle name her Heavenly Court’s soul path great expert from Spectral Soul’s era, Fairy Maiden Soul who is on par with Thunder Ghost True Monarch, and say she is most skilled at healing methods. Red Heavenly Altar and Dragon Soul Dark Castle then focus their attacks on her. She and Uncle Feng are surprised when Seven Fiendish Primeval Monarch joins and helps hold the graveyard.",
+      "chapters": [
+        2181
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_immortal_graveyard",
+        "sys_gu_immortal",
+        "house_dragon_soul_dark_castle",
+        "fac_heavenly_court",
+        "char_thunder_ghost_true_monarch",
+        "house_red_heavenly_altar",
+        "char_seven_fiendish_primeval_monarch"
+      ]
+    },
+    {
+      "text": "At Book Mountain, after killing Zhou Xiong Xin, Zhan Bu Du meets the awakened Gu Immortal Fairy Maiden Soul next. He obliterates her; her soul is completely destroyed.",
+      "chapters": [
+        2182
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soul-destroyed",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_book_mountain",
+        "char_zhou_xiong_xin",
+        "char_zhan_bu_du"
+      ]
+    },
+    {
+      "text": "Later, at Crazed Demon Cave, Hu Land above Qi Sea Ancestor forms a qi wall that blocks Ruan Dan and Fairy Maiden Soul among Heavenly Court’s delaying line. The same stretch of fighting notes that Heavenly Court has the Door of Life and Death and the immortal graveyard, so dead Gu Immortals can revive soon without loss to battle strength.",
+      "chapters": [
+        2198
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blocked-in-the-delaying-line",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crazed_demon_cave",
+        "loc_hu_land",
+        "char_qi_sea_ancestor",
+        "char_ruan_dan",
+        "loc_door_of_life_and_death"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/fairy-maiden-soul/",
+      "chapters": [
+        2181,
+        2182,
+        2198
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Soul path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Heavenly Court as of ch. 2181",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_soul"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

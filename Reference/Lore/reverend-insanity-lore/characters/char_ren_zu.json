@@ -1,0 +1,990 @@
+{
+  "id": "char_ren_zu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ren Zu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ren zu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Жэнь Цзу",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ren Zu is the first man named in one of the oldest legends of the Gu world, and later chapters treat The Legends of Ren Zu as the first classic that carries his story.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 5,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    5,
+    38,
+    58,
+    59,
+    131,
+    135,
+    181,
+    371,
+    378,
+    404,
+    410,
+    495,
+    522,
+    567,
+    730,
+    807,
+    1039,
+    1229,
+    1276,
+    1473,
+    1481,
+    1954,
+    2036,
+    2053,
+    2098,
+    2117,
+    2176
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_humility_gu",
+      "role": "legend holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2161,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_humility_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 2
+    },
+    {
+      "target": "gu_hope_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_rules_and_regulation_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_attitude_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_belief_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_suspicion_gu",
+      "count": 2
+    },
+    {
+      "target": "char_desolate_ancient_moon",
+      "count": 2
+    },
+    {
+      "target": "char_verdant_great_sun",
+      "count": 2
+    },
+    {
+      "target": "char_northern_dark_ice_soul",
+      "count": 2
+    },
+    {
+      "target": "gu_derivation_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 2
+    },
+    {
+      "target": "evt_era_immemorial",
+      "count": 2
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 2
+    },
+    {
+      "target": "loc_reverse_flow_river",
+      "count": 2
+    },
+    {
+      "target": "gu_cognition_gu",
+      "count": 2
+    },
+    {
+      "target": "char_carefree_wisdom_heart",
+      "count": 2
+    },
+    {
+      "target": "loc_ordinary_abyss",
+      "count": 2
+    },
+    {
+      "target": "char_boundless_forest_samsara",
+      "count": 2
+    },
+    {
+      "target": "gu_freedom_gu",
+      "count": 2
+    },
+    {
+      "target": "char_blazing_glory_lightning_brilliance",
+      "count": 2
+    },
+    {
+      "target": "sys_myriad_gold_wondrous_essence_physique",
+      "count": 2
+    },
+    {
+      "target": "gu_wealth_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 2
+    },
+    {
+      "target": "char_great_strength_true_martial",
+      "count": 2
+    },
+    {
+      "target": "char_predicaments",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_beast",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_strength_wisdom_and_hope",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_rules_and_regulations",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_wisdom_against_restrictions",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_attitude",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_heart_of_loneliness",
+      "count": 1
+    },
+    {
+      "target": "sys_ten_extreme_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_faith_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_light_of_faith",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_leader",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_monkey_wine",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_the_origin_of_wine",
+      "count": 1
+    },
+    {
+      "target": "loc_xi_yu_forest",
+      "count": 1
+    },
+    {
+      "target": "gu_eternal_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_not_knowing_ones_limits",
+      "count": 1
+    },
+    {
+      "target": "sys_variant_human",
+      "count": 1
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "loc_door_of_life_and_death",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_courage_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_destiny_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fairness_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_suffering_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_road_of_life_and_death",
+      "count": 1
+    },
+    {
+      "target": "res_gutstones",
+      "count": 1
+    },
+    {
+      "target": "gu_reputation_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bewitching_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_obsession_death_domain",
+      "count": 1
+    },
+    {
+      "target": "race_rockmen",
+      "count": 1
+    },
+    {
+      "target": "race_variant_humans",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "sys_space_door",
+      "count": 1
+    },
+    {
+      "target": "gu_love_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_success_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_love_is_cruel",
+      "count": 1
+    },
+    {
+      "target": "loc_cheng_bai_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_space_cave",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_azure_heaven",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_blue_heaven",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_green_heaven",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_orange_heaven",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_purple_heaven",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_red_heaven",
+      "count": 1
+    },
+    {
+      "target": "reg_heaven_yellow_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_immemorial_nine_heavens",
+      "count": 1
+    },
+    {
+      "target": "loc_qian_kun_crystal_wall",
+      "count": 1
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 1
+    },
+    {
+      "target": "race_inkmen",
+      "count": 1
+    },
+    {
+      "target": "gu_failure_gu",
+      "count": 1
+    },
+    {
+      "target": "char_tang_fang",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_northern_dark_ice_soul",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_understanding_ones_purpose",
+      "count": 1
+    },
+    {
+      "target": "gu_self_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_taking_the_first_step",
+      "count": 1
+    },
+    {
+      "target": "res_walking_meat_tree",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_walking_meat_tree",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The text first names him inside a Hope Gu legend told during the Gu Yue clan Awakening Ceremony on Qing Mao Mountain. In that telling, when the world was just formed as savage wilderness, the first man appears among the wild beasts and is called Ren Zu.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "sys_awakening_ceremony",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "Early chapters present him as legend told inside the living world, not as a dated biography.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is the first man among the wild beasts. He does not have a body as strong as mountain rock, nor the sharp teeth and claws of a wild beast.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He grows old. His muscles deteriorate. He cannot run, and his teeth have fallen out.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "aged-body",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The wrinkles on his face vanish and his frail limbs become muscular again. He has the body of a twenty year old.",
+      "chapters": [
+        38
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "twenty-year-body",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He digs out his eyes. Tears flow from his empty sockets.",
+      "chapters": [
+        131
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "empty-sockets",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same legend says Predicaments hunt him, and three Gu offer help if he spends his life to keep them. He gives youth for strength and his middle years for wisdom, then ages alone when Strength Gu and Wisdom Gu leave him. The third Gu asks only for his heart. After he gives it, Predicaments name that Gu Hope Gu and flee, and from then on he meets predicament by giving his heart to hope.",
+      "chapters": [
+        5
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hope-strength-and-wisdom",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_strength_gu",
+        "gu_wisdom_gu",
+        "gu_hope_gu"
+      ]
+    },
+    {
+      "text": "A later popular telling continues after hope saves him. Hope Gu points him to a mountain cave where a round Gu and a square Gu can subdue any Gu, including Longevity Gu. Ren Zu guesses names in the dark, refuses to abandon hope, and finally names Regulation and Rule, so the pair serve as Rules and Regulations and catch an eighty-year Longevity Gu that restores him to a twenty-year-old body. The text states that Ren Zu’s story is the most popular and widespread tale in that world, and the most ancient legend, known to almost everyone.",
+      "chapters": [
+        38
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "longevity-rules-and-attitude",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Bo retells the next stretch as clan analogy. After Rules and Regulation Gu restore Ren Zu’s youth,",
+      "chapters": [
+        38
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "longevity-rules-and-attitude",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_bo",
+        "gu_rules_and_regulation_gu"
+      ]
+    },
+    {
+      "text": "new rules limit their help. Ren Zu orders them to catch every Gu but Longevity Gu, then fails to hold most of them. He deals again with Strength Gu, refuses Wisdom Gu’s matching price, and loses Wisdom Gu after naming Rules and Regulation aloud.",
+      "chapters": [
+        58
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "longevity-rules-and-attitude",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Jia Fu later cites a related beat in which Attitude Gu, Belief Gu, and Suspicion Gu remain in the net, and Ren Zu subdues Attitude Gu.",
+      "chapters": [
+        59
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "longevity-rules-and-attitude",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_fu",
+        "gu_attitude_gu",
+        "gu_belief_gu",
+        "gu_suspicion_gu"
+      ]
+    },
+    {
+      "text": "A further legend stretch says Ren Zu already holds Hope Gu, Strength Gu, Rules and Regulation Gu, and Attitude Gu, yet still feels alone as the only human. Attitude Gu directs him to watch a starry night until dawn and gain the heart of loneliness. From that loneliness his left eye becomes his eldest son Verdant Great Sun and his right eye becomes his second daughter Desolate Ancient Moon, and he asks them to observe the world for him.",
+      "chapters": [
+        131
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "loneliness-and-the-first-children",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_verdant_great_sun",
+        "char_desolate_ancient_moon"
+      ]
+    },
+    {
+      "text": "Fang Yuan later recalls that before Ren Zu died he gave birth to ten children, naming eldest son Verdant Great Sun, second daughter Desolate Ancient Moon, and Northern Dark Ice Soul among them, and that those ten kids individually represented ten ultimate aptitudes.",
+      "chapters": [
+        135
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "loneliness-and-the-first-children",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_northern_dark_ice_soul"
+      ]
+    },
+    {
+      "text": "A Legends of Ren Zu excerpt then states Ren Zu’s third son is born from soul fragments in Luo Po Valley and is Northern Dark Ice Soul.",
+      "chapters": [
+        567
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "loneliness-and-the-first-children",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_the_legends_of_ren_zu",
+        "loc_luo_po_valley"
+      ]
+    },
+    {
+      "text": "Lean first-revelation cites for named children of Ren Zu are:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "named-children-roster",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ordinal claims for Carefree Wisdom Heart conflict across chapters.",
+      "chapters": [
+        495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-children-roster",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "named-children-roster",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "named-children-roster",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Tie Ruo Nan asks whether Gu Yue Bo knows Ren Zu’s ten children, names the eldest son Verdant Great Sun and the second daughter Desolate Ancient Moon, and states that the ten children also stand for the ten extreme physiques. She then retells the myth ending: the ten children die one by one, Ren Zu nears death by old age, gathers their corpses, and sacrifices himself with them into Derivation Gu, whose burst creates the first batch of mortals. She labels that account a mythological story, then argues that every person carries diluted bloodline from Ren Zu and those ten children.",
+      "chapters": [
+        181
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_ruo_nan",
+        "gu_derivation_gu"
+      ]
+    },
+    {
+      "text": "Later text names a book, The Legends of Ren Zu, and inserts titled excerpts from it. An early excerpt opens in the immemorial antiquity era and follows Verdant Great Sun.",
+      "chapters": [
+        371
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same stretch of chapters calls that book the first classic of Gu, a story on the surface that records ancient secrets and Gu.",
+      "chapters": [
+        378
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A later reading of the book’s end restates Ren Zu’s sacrifice with his ten children’s corpses into derivation Gu, and the burst of life that creates the first mortals.",
+      "chapters": [
+        730
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Outside pure storytelling voice, narrative exposition also says the way of Gu began in the Immemorial Era and that Ren Zu was the first Gu Master who used Gu worms.",
+      "chapters": [
+        522
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_era_immemorial",
+        "sys_gu_master",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Lang Ya land spirit places that era as the time when Ren Zu was alive, and says that then the only humans in the world were Ren Zu and his ten children.",
+      "chapters": [
+        1039
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit"
+      ]
+    },
+    {
+      "text": "Elsewhere the book is simply too widely known in the world for Gu Immortals to need an introduction when a secluded domain from it appears.",
+      "chapters": [
+        2098
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan, facing a wisdom Gu that does not match the clever scammer of the book, asks whether that is because The Legends of Ren Zu is a story or for some other reason.",
+      "chapters": [
+        1481
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ten-children-and-the-myth-ending",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His body turns whiter as it turns hollow, gradually turning into a ghost.",
+      "chapters": [
+        410
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hollow-body",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A Legends of Ren Zu excerpt, chapter four section twenty-six, has a miniman climb out of Ordinary Abyss into the outside world, where time runs at a different rate than inside, and the first person he sees there is Ren Zu. Ren Zu sees the miniman, who has just given life to perseverance Gu, and calls it a pity, since with that Immortal Gu he could have conquered Reverse Flow River.",
+      "chapters": [
+        1276
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "meeting-perseverance-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_ordinary_abyss",
+        "gu_perseverance_gu",
+        "sys_immortal_gu",
+        "loc_reverse_flow_river"
+      ]
+    },
+    {
+      "text": "A Legends of Ren Zu excerpt, chapter four, has Ren Zu gone mad after fate Gu’s manipulation separates him from his children and after he loses wealth Gu, meeting birds, beasts, and fish who each warn him to cherish freedom Gu if he ever holds it, for they let theirs go. Freedom Gu then flies to him of its own accord, drawn by the cognition Gu on him rather than for his sake, and Ren Zu holds on to it as fate Gu’s spider silk binds him again, tearing into his bones. Once the silk eases and cognition Gu withdraws, Ren Zu asks after freedom Gu, and the moment he opens his hands in panic to look for it, it flies free and leaves him behind.",
+      "chapters": [
+        1954
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "losing-freedom-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fate_gu",
+        "gu_wealth_gu",
+        "gu_freedom_gu",
+        "gu_cognition_gu"
+      ]
+    },
+    {
+      "text": "A Legends of Ren Zu excerpt, chapter five section thirty-one, continues after the loss of freedom Gu: Ren Zu asks cognition Gu how to win it back, is reminded that he already swore to rely on his own strength and wisdom, and sets off to find wisdom Gu. Along the road he finds a small Gu worm fleeing a larger, armored Gu that means to eat it, and seeing it unable to fend for itself he feels he is seeing himself; at that instant a new heart grows in his chest, the heart of sympathy, and only then does he step in to stop the larger Gu.",
+      "chapters": [
+        2036
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heart-of-sympathy",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Named children roster",
+      "positions": [
+        {
+          "position": "Carefree Wisdom Heart is Ren Zu's ninth daughter.",
+          "support": "Chapter 495, narration tracing stone slabs to Ren Zu's ninth daughter, Carefree Wisdom Heart.",
+          "chapters": [
+            495
+          ]
+        },
+        {
+          "position": "Carefree Wisdom Heart is Ren Zu's eighth child.",
+          "support": "Chapter 2176, a Legends of Ren Zu excerpt stating Ren Zu liked his eighth child, Carefree Wisdom Heart, a lot.",
+          "chapters": [
+            2176
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ren-zu/",
+      "chapters": [
+        5,
+        38,
+        58,
+        59,
+        131,
+        135,
+        181,
+        371,
+        378,
+        404,
+        410,
+        495,
+        522,
+        567,
+        730,
+        807,
+        1039,
+        1229,
+        1276,
+        1473,
+        1481,
+        1954,
+        2036,
+        2053,
+        2098,
+        2117,
+        2176
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_humility_gu",
+      "role": "legend holder",
+      "recorded_chapter": 2161,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

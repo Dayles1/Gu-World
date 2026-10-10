@@ -1,0 +1,499 @@
+{
+  "id": "char_empress_wu_ji",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Empress Wu Ji",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Empress Wu Ji is a great figure of the righteous path named in an anecdote about enduring disfigurement, reclaiming Wu clan authority, and leaving Wu clan as Southern Border's top clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 228,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    228,
+    265,
+    281,
+    283,
+    292,
+    554,
+    1531,
+    1987,
+    2125
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wu_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 228,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_dragon_strength_gu",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 265,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_wu_clan_ancient_strength_path_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wu_clan",
+      "count": 5
+    },
+    {
+      "target": "gu_dragon_strength_gu",
+      "count": 4
+    },
+    {
+      "target": "inh_wu_clan_ancient_strength_path_inheritance",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_wei_shen_jing",
+      "count": 2
+    },
+    {
+      "target": "fac_fei_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "char_li_ran",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "char_wu_ba_chong",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 1
+    },
+    {
+      "target": "inh_sheng_tian_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_kong_sheng_tian",
+      "count": 1
+    },
+    {
+      "target": "char_wu_zhan_ping",
+      "count": 1
+    },
+    {
+      "target": "char_wu_zhen_zhu",
+      "count": 1
+    },
+    {
+      "target": "sys_dead_sea_life_retrieval_formation",
+      "count": 1
+    },
+    {
+      "target": "inh_corpse_emperor_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_seven_seven_profound_soul_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "res_white_king_head_flower_herb",
+      "count": 1
+    },
+    {
+      "target": "char_wu_zhen",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When she was young, her elder sister seized her rights to the throne, and she hid the grievance. Her sister was jealous of her beauty, so she cut off the bridge of her nose, disfigured herself, and gained space to survive and grow. After over ten years she overthrew her sister’s regime, reestablished her authority, and ordered her sister’s five sensory organs cut off so the sister could not choose life or death.",
+      "chapters": [
+        228
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After she took control she did not heal her nose even though she had healing means, keeping the wound as a warning to herself. Narration says Wu clan under her suppressed Tie clan, Shang Clan, and Fei Clan, with dominance that could not be challenged. The same stretch groups her with historical figures who bided their time and were not attached to fleshly appearance.",
+      "chapters": [
+        228
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan",
+        "fac_tie_clan",
+        "fac_shang_clan",
+        "fac_fei_clan"
+      ]
+    },
+    {
+      "text": "Wei Yang tells Fang Yuan and his companion that Empress Wu Ji spent eleven years refining a rank five dragon strength Gu, and uses that as proof that substitute refinement stays necessary in the market.",
+      "chapters": [
+        265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-feat-and-clan-renown",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang",
+        "char_fang_yuan",
+        "gu_dragon_strength_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan recalls that Empress Wu Ji of Wu Clan walked the strength path, and that because of an ancient Southern Border strength path inheritance occupied and exploited by Wu Clan for several years, Wu Clan sat on the throne of Southern Border’s number one force in the mortal realm.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-feat-and-clan-renown",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Narration says that in the entire Southern Border only Empress Wu Ji was a successful strength path story at the peak, and that even she relied on the ancient strength path inheritance to do so.",
+      "chapters": [
+        292
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-feat-and-clan-renown",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Eleven years before that stretch, Wu clan leader Empress Wu Ji gave an audience to Wu Ran and assigned him a secret mission to make his way into Shang clan’s higher ups. She chose a Gu worm for him personally so he could later dominate the battle stage, a worm obtained from an ancient strength path inheritance and almost extinct in the current world, and narration calls it a Gu that possessed a legendary tale. Narration also names the demonic Gu Master Wei Shen Jing as her subordinate, able to create a fake scrap grade fossil for the rock gambling cover.",
+      "chapters": [
+        283
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wu-ran-mission",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "sys_gu_master",
+        "char_wei_shen_jing"
+      ]
+    },
+    {
+      "text": "Fang Yuan judges that if compared to Southern Border, his mortal peak strength sits at the same level as Shang clan’s genius clan leader Shang Yan Fei and Wu clan leader Empress Wu Ji.",
+      "chapters": [
+        554
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "Ye Fan recalls that during the Battle of Yi Tian Mountain, Wu clan’s leader Empress Wu Ji and other champions faced the same mortal fate as Shang Yan Fei.",
+      "chapters": [
+        1531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southern-border-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_fan",
+        "loc_yi_tian_mountain"
+      ]
+    },
+    {
+      "text": "Wu Ba Chong reports that Empress Wu Ji and the others have revived. Narration says that after fate Gu was destroyed, revival methods became very easy to use, that Gu Immortal seeds like Empress Wu Ji had died on Yi Tian Mountain, and that Wu clan’s Gu Immortals revived them all. Wu Yong orders that they be imparted the method of immortal ascension, with resources prepared so Wu clan can gain more than ten Gu Immortals in the next few years.",
+      "chapters": [
+        1987
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "revival",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_ba_chong",
+        "gu_fate_gu",
+        "sys_gu_immortal",
+        "char_wu_yong"
+      ]
+    },
+    {
+      "text": "Onlookers say Empress Wu Ji had also tried to recruit Master Feng with a high price in the past, sincere but ignored.",
+      "chapters": [
+        2125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "master-feng-recruitment-talk",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/empress-wu-ji.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/empress-wu-ji/",
+      "chapters": [
+        228,
+        265,
+        281,
+        283,
+        292,
+        554,
+        1531,
+        1987,
+        2125
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Strength path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wu Clan as of ch. 228",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 228",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_strength"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "righteous path as of ch. 228",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_dragon_strength_gu",
+      "role": "refiner",
+      "recorded_chapter": 265,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

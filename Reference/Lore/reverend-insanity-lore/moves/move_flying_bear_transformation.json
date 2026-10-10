@@ -1,0 +1,233 @@
+{
+  "id": "move_flying_bear_transformation",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flying Bear Transformation",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flying Bear Transformation is Fang Yuan's transformation path immortal killer move. With change form Immortal Gu as the core, it turns him into a desolate beast flying bear.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1080,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1080,
+    1099,
+    1177,
+    1197
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_change_form_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1080,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_flying_bear_strength_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1177,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_change_form_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_flying_bear_strength_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_twelfth_hair",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "move_sword_dragon_transformation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While sparring Twelfth Hair’s chestnut yak in Lang Ya blessed land, Fang Yuan raises change form Immortal Gu with revolving supplementary mortal Gu and casts the transformation path immortal killer move Flying Bear Transformation. After bright radiance, he becomes a giant white bear with dense short fur, sharp claws, and a short curled tail, larger than the yak, and he can still dodge and slam with speed that does not match the bulk. One paw strike drives the chestnut yak into the ground and leaves it trembling in a crater.",
+      "chapters": [
+        1080
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_twelfth_hair",
+        "loc_lang_ya_blessed_land",
+        "char_fang_yuan",
+        "gu_change_form_immortal_gu",
+        "sys_mortal_gu",
+        "sys_killer_moves"
+      ]
+    },
+    {
+      "text": "Inside the sovereign immortal aperture he practices the flying bear form against a shark fin wolf while using a strength path immortal zombie body; strength path dao marks resist change form, so appearance change is difficult, while flying bear strength Immortal Gu gains amplification from those same dao marks. He judges that training only through strength path immortal zombies cannot show the true extent of his transformation path abilities.",
+      "chapters": [
+        1099
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "practice-limits",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_flying_bear_strength_immortal_gu"
+      ]
+    },
+    {
+      "text": "Adding flying bear strength Gu for true flying bear power, and a later judgment that the form is weak.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "strength-addition",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Defending multicolored guts in Hei Fan grotto-heaven, he casts flying bear transformation again, blocks a charging desolate beast horse with his chest, then pins and beats it down. He is glad he added flying bear strength Gu into the killer move so he has the strength of an actual flying bear; without that addition he could not suppress the horse.",
+      "chapters": [
+        1177
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-addition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hei_fan_grotto_heaven"
+      ]
+    },
+    {
+      "text": "Before choosing Sword Dragon Transformation, he still says the power of the flying bear transformation is quite poor despite holding flying bear strength Immortal Gu.",
+      "chapters": [
+        1197
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-addition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_sword_dragon_transformation"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/flying-bear-transformation.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/flying-bear-transformation/",
+      "chapters": [
+        1080,
+        1099,
+        1177,
+        1197
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Change Form Immortal Gu Flying Bear Strength Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

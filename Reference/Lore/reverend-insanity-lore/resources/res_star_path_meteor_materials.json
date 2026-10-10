@@ -1,0 +1,125 @@
+{
+  "id": "res_star_path_meteor_materials",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Star path meteor materials",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Star path meteor materials are star path immortal materials gathered where meteor rain falls.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1588,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1588
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_star",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_star",
+      "count": 1
+    },
+    {
+      "target": "char_yang_san_mu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_yang_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Yang San Mu once investigated turbulence in black heaven and reported it so that Yang clan moved early to the accurate spot for a meteor rain. Southern Border Gu Immortals recall that Yang clan obtained three hills worth of star path immortal materials from that fall.",
+      "chapters": [
+        1588
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "meteor-rain-haul",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yang_san_mu",
+        "fac_yang_clan",
+        "reg_southern_border",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/star-path-meteor-materials/",
+      "chapters": [
+        1588
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Star Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Meteor rain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

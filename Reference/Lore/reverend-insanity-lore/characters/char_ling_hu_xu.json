@@ -1,0 +1,270 @@
+{
+  "id": "char_ling_hu_xu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ling Hu Xu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ling hu xu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Лин Ху Сюй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ling Hu Xu is the thief Mo clan's Plump Lady was chasing when she mistook Fang Yuan for him.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 675,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    675,
+    2129,
+    2130,
+    2131
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_dong_xi",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_plump_lady",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_investigative_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_mo_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_sha_jing_oasis",
+      "count": 1
+    },
+    {
+      "target": "move_light_sand_escape",
+      "count": 1
+    },
+    {
+      "target": "path_theft",
+      "count": 1
+    },
+    {
+      "target": "loc_green_ghost_desert",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_sand_heap_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Far from Sha Jing oasis, Ling Hu Xu hides deep in a sand dune, suppresses his aura, and watches Plump Lady of Mo clan lose to Fang Yuan until she uses light sand escape and flees.",
+      "chapters": [
+        675
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_sha_jing_oasis",
+        "char_plump_lady",
+        "fac_mo_clan",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "While Fang Yuan searches the crater with investigative Gu, Ling Hu Xu stays silent in the dune and does not dare breathe loudly. After Fang Yuan leaves, he nearly surfaces, then holds back when his heart shakes with unrest. Fang Yuan later returns from the clouds to inspect the ground again; Ling Hu Xu stays buried, cold with sweat, and decides not to trail a fighter he judges ruthless and crafty. He already holds the immortal essence stones he wanted, drills underground in the opposite direction from Fang Yuan, and leaves with movement methods that keep his underground speed close to ordinary Gu Immortal flight even though he lacks much battle strength.",
+      "chapters": [
+        675
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hiding-from-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_investigative_gu",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "During a chaotic Gu Immortal fight at a sand heap, he sneak attacks a Fang clan immortal, laughs that the nearest carrier held many soul cores, and reads those cores as proof of Fang clan success in green ghost desert before vanishing.",
+      "chapters": [
+        2129
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "theft-path-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan"
+      ]
+    },
+    {
+      "text": "He is a Western Desert demonic immortal who cultivates theft path. His cultivation had recently advanced to rank seven, and his speed is extremely fast while Fang Dong Xi chases the stolen soul cores.",
+      "chapters": [
+        2130
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "theft-path-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "char_fang_dong_xi"
+      ]
+    },
+    {
+      "text": "Fang clan immortals later discuss killing him, say they cannot handle a theft path escape expert themselves, and weigh whether to ask Fang Yuan to act.",
+      "chapters": [
+        2131
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "theft-path-chase",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ling-hu-xu/",
+      "chapters": [
+        675,
+        2129,
+        2130,
+        2131
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 2130",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 2130",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 2130,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": "demonic path as of ch. 2130",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

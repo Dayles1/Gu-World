@@ -1,0 +1,201 @@
+{
+  "id": "res_honey_wine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Honey wine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "golden honey wine golden bee's honey wine golden bee honey wine"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Honey wine is a precious liquor made when golden bees accumulate honey in medium or large hives.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 98,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    98,
+    100,
+    101,
+    102,
+    111,
+    121
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_four_flavors_liquor_worm",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan’s family asset mission is to collect five Liang of golden bee’s honey wine. Golden bees are fist-sized with gold and black stripes and a sharp stinger. Small hives hold only honey; only large or medium hives produce precious honey wine from a large accumulation of honey. Gathering it needs a defensive Gu to withstand the stings.",
+      "chapters": [
+        98
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "golden-bee-hives",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_defensive_gu"
+      ]
+    },
+    {
+      "text": "Using Jade Skin Gu, Fang Yuan endures the bees’ attacks and fills a bullskin water sack with golden honey wine.",
+      "chapters": [
+        100
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gathered-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_jade_skin_gu"
+      ]
+    },
+    {
+      "text": "Opening the sack releases a fragrance specific to honey wine, which proves the mission stock when he presents it at the internal affairs hall.",
+      "chapters": [
+        101
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mission-hand-in",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan arrives at the internal affairs hall and turns in the golden honey wine.",
+      "chapters": [
+        102
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mission-turn-in",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Leftover golden honey wine from the inheritance mission serves as the sweet wine among the four flavors needed to fuse a Four Flavors Liquor Worm.",
+      "chapters": [
+        111
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sweet-fusion-wine",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_four_flavors_liquor_worm"
+      ]
+    },
+    {
+      "text": "In the fusion, sweet belongs to golden honey wine. After the redberry wine is spent, Fang Yuan pours golden honey wine into the jar; the white light ball swells again as the honey wine immerses it.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "four-flavors-recipe",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/honey-wine.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/honey-wine/",
+      "chapters": [
+        98,
+        100,
+        101,
+        102,
+        111,
+        121
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Golden bees",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Four Flavors Liquor Worm",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

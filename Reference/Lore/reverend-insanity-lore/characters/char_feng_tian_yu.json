@@ -1,0 +1,452 @@
+{
+  "id": "char_feng_tian_yu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Feng Tian Yu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "feng tian yu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Фэн Тянь Юй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Feng Tian Yu is a famous Southern Border refinement path Gu Master, first named when news of Little Beast King's San Cha Mountain rise reaches him in a forest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 364,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    364,
+    367,
+    387,
+    390,
+    394,
+    405,
+    2124,
+    2125,
+    2126
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_king_xin_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 389,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "inh_king_xin_inheritance",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 2
+    },
+    {
+      "target": "gu_third_watch_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_undefeated_hundred_battles_gu",
+      "count": 2
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "char_ni_jian",
+      "count": 2
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_little_beast_king",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_king_xin",
+      "count": 1
+    },
+    {
+      "target": "char_li_fei_le",
+      "count": 1
+    },
+    {
+      "target": "sys_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "gu_second_aperture_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_false_second_aperture_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_king_quan_inheritance",
+      "count": 1
+    },
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    },
+    {
+      "target": "loc_bronze_main_hall",
+      "count": 1
+    },
+    {
+      "target": "inh_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_yan_jun",
+      "count": 1
+    },
+    {
+      "target": "gu_five_hundred_year_lifespan_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_ni_clan_village",
+      "count": 1
+    },
+    {
+      "target": "char_shang_qiu_niu",
+      "count": 1
+    },
+    {
+      "target": "char_zhou_quan",
+      "count": 1
+    },
+    {
+      "target": "fac_ni_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yi_fan",
+      "count": 1
+    },
+    {
+      "target": "inh_fur_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a forest he walks while turning over news of Little Beast King Fang Yuan, mixed with fiery passion. He has heard that Little Beast King’s flying methods and growth came from benefits in the three kings inheritance, and he wants to rush to San Cha Mountain. The same stretch says King Xin Inheritance matches him perfectly.",
+      "chapters": [
+        364
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_little_beast_king",
+        "char_fang_yuan",
+        "loc_san_cha_mountain",
+        "inh_king_xin_inheritance"
+      ]
+    },
+    {
+      "text": "Banquet talk on the mountain later reports that he has arrived and has agreed to refine Gu for Yi Huo.",
+      "chapters": [
+        367
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_huo"
+      ]
+    },
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan chooses him among the rank four Gu Masters in the blessed land. Kneeling, Feng Tian Yu greets him as master. Fang Yuan recalls that he could refine a rank five Gu while only rank three, that the Gu died after half a day, that the feat made his reputation, and that his clan is now dwindling toward extinction so he is no longer the young clan leader with infinite prospects. Under enslavement Gu he becomes a loyal slave and is sent to charge King Xin Inheritance for undefeated hundred battles Gu. Fang Yuan also keeps him for innate refinement path talent when refining second aperture Gu.",
+      "chapters": [
+        387
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_enslavement_gu",
+        "gu_undefeated_hundred_battles_gu",
+        "gu_second_aperture_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan later brings him into the bronze hall to help with Gu refinement. Feng Tian Yu’s breathing turns rough with excitement at the chance to refine an Immortal Gu.",
+      "chapters": [
+        390
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Inside that hall he collapses unconscious under the pressure of the work; Fang Yuan judges that enslaving him was necessary because a mortal alone could not endure the mind demand of the crucial step, and that the refinement finished with land spirit and refinement path grandmaster Feng Tian Yu helping.",
+      "chapters": [
+        394
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fixed Immortal Travel’s aura appears, Feng Tian Yu kneels in tears at seeing an Immortal Gu born. He screams in grief when the light stream cuts off, then lights up again when Fang Yuan accelerates the cocoon with two third watch Gu, then despairs that rushed birth will self-detonate, and finally shouts in joy when undefeated hundred battles Gu stabilizes the refinement.",
+      "chapters": [
+        405
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fixed_immortal_travel",
+        "gu_third_watch_gu"
+      ]
+    },
+    {
+      "text": "A mysterious old man names him to Shang Xin Ci as the forger behind the fake Gu and as the man Shang Ya Zi hired. Shang Xin Ci already knows the public record: righteous path, once young clan leader of a village, refinement path master, shown as rank four, and famous for refining a rank five Gu at rank three that lived half a day before dying; after his clan’s extermination he became a lone cultivator. The old man adds that he has already reached rank five while still showing only rank four.",
+      "chapters": [
+        2124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-years",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "char_shang_ya_zi"
+      ]
+    },
+    {
+      "text": "Shang Xin Ci recruits him by offering life and the hope of an audience with Fang Yuan. He is a fanatical admirer of Fang Yuan’s refinement path, and he recalls watching Fang Yuan refine Fixed Immortal Travel on Three Kings Mountain.",
+      "chapters": [
+        2124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-years",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_three_kings"
+      ]
+    },
+    {
+      "text": "In the confrontation that follows he admits refining the fake Gu on Shang Ya Zi’s instructions, turns on that faction, and ends as Shang Xin Ci’s subordinate after she keeps her clan leader seat.",
+      "chapters": [
+        2125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-years",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Xin Ci later considers letting him head an urgent Shang clan matter because he is a refinement path master with rank five cultivation, then summons him. He instead reports research on the mudman Ni Jian and Ni clan bloodline secrets, asks leave to investigate other Ni branches, and refuses escorts. Seeing how resolute he is, she lets him go so he can hunt that contribution toward a future meeting with Fang Yuan.",
+      "chapters": [
+        2126
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-years",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "char_ni_jian",
+        "fac_ni_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/feng-tian-yu/",
+      "chapters": [
+        364,
+        367,
+        387,
+        390,
+        394,
+        405,
+        2124,
+        2125,
+        2126
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 2124",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "righteous path as of ch. 2124",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

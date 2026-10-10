@@ -1,0 +1,120 @@
+{
+  "id": "res_cactus_honey",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cactus honey",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Cactus honey is a rank eight time path immortal material used to activate a time path immortal formation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2073,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2073
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_central_continent",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Mini Central Continent, Fang Yuan sends a large lump of cactus honey into a new time path immortal formation at a crucial activation point. The material is a rank eight time path immortal material. Profound light then erupts into silver-white light specks that seem to fail, yet an investigative killer move shows a phantom pool like a year essence pool at about one tenth the size. Fang Yuan judges the formation arrangement a success and opens the rank eight year essence pool so River of Time water fills the sub-pool and irrigates flower mist extreme marsh below.",
+      "chapters": [
+        2073
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "formation-feed",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mini_central_continent",
+        "char_fang_yuan",
+        "loc_river_of_time"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/cactus-honey/",
+      "chapters": [
+        2073
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "move_endless_trouble",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Endless Trouble",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Endless Trouble is a time path immortal killer move from Hei Fan true inheritance. It delays the current calamity or tribulation to the next one so both are faced together.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1130,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1130,
+    1599
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_hei_fan",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1130,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1599,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_hei_fan",
+      "count": 3
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "gu_after_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "inh_hei_fan_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Reading Hei Fan true inheritance, Fang Yuan finds this immortal killer move near the end of the list. Its core is after Immortal Gu. Once activated, the Gu Immortal can delay the current calamity or tribulation to the time of the next one and face them together. Hei Fan’s advice warns that it cannot be used excessively: delaying angers heaven’s will, and the following calamities or tribulations increase greatly in strength. Hei Fan created it, used it only once, and never again. To warn his descendants he intentionally gave the name Endless Trouble. Fang Yuan plans to use it only in emergencies and does not care about angering heaven’s will, which already seeks to kill him.",
+      "chapters": [
+        1130
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_hei_fan_true_inheritance",
+        "char_fang_yuan",
+        "gu_after_immortal_gu",
+        "sys_gu_immortal",
+        "char_hei_fan"
+      ]
+    },
+    {
+      "text": "Fang Yuan uses the immortal killer move endless trouble to delay a previous earthly calamity, so a later calamity that should have held only yellow spring ghost martial statues also brings green lightning divine martial statues. The move is among Hei Fan’s true inheritance contents. Its weakness of strengthening later tribulations is advantageous while heaven’s will tries to keep Fang Yuan’s calamities weak to limit dao marks.",
+      "chapters": [
+        1599
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "delayed-earthly-calamity",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/endless-trouble/",
+      "chapters": [
+        1130,
+        1599
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Hei Fan (creator) Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

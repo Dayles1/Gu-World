@@ -1,0 +1,117 @@
+{
+  "id": "res_moon_fangs",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Moon fangs",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Moon fangs are an immortal material created under moonlight in a canine pool.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 808,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    808
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Jade Pool blessed land cycles three days of bright sky and then one day of dark night. When night falls, some areas crack and split, revealing two deep pools that had been underground. One is canine pool, whose walls and bottom are formed from the polished teeth of an immemorial desolate beast qilin. Under moonlight it creates moon fangs.",
+      "chapters": [
+        808
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "canine-pool-moonlight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_jade_pool_blessed_land"
+      ]
+    },
+    {
+      "text": "The material is like teeth but soft as water, moonlight shines from its surface constantly, and it is extremely precious. Fang Yuan learns of canine pool while soul searching Dong Fang Chang Fan for the distribution of Jade Pool resources.",
+      "chapters": [
+        808
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "canine-pool-moonlight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_dong_fang_chang_fan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/moon-fangs.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/moon-fangs/",
+      "chapters": [
+        808
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Canine pool under moonlight",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

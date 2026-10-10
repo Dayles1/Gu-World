@@ -1,0 +1,368 @@
+{
+  "id": "char_bai_hua",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Hua",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bai hua",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Бай Хуа",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bai Hua is Bai Sheng's twin sister named in Fang Yuan's prior-life memory of Bai Gu Mountain, remembered there as the twin who receives Flesh White Bones Gu and rises as a righteous twin star.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 214,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    214,
+    217,
+    219,
+    220,
+    221,
+    222,
+    226,
+    227
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "gu_flesh_bone_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 2
+    },
+    {
+      "target": "char_bai_lian",
+      "count": 2
+    },
+    {
+      "target": "char_bai_sheng",
+      "count": 2
+    },
+    {
+      "target": "gu_bone_flesh_unity_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_grey_bone_scholar",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_smoke_image",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_footless_bird_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_iron_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_flesh_sac_secret_chamber",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a Bai clan campfire banquet the clan leader presents her son and daughter and has them toast Fang Yuan as Gu Yue young master. They stand, raise cups like adults, and speak with solemn upbringing, still not even students yet.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan_bai_gu_mountain",
+        "char_bai_clan_female_leader",
+        "char_fang_yuan",
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Bai Lian later coaxed the pair into a hunt so their hidden Gu Master escorts would cover a push into Bai Gu Mountain. Fang Yuan then kidnaps both children and grips their throats in a threat image. Bai Ning Bing then knocks them unconscious and carries them into the inheritance cave.",
+      "chapters": [
+        219
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_lian",
+        "sys_gu_master",
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "She and Bai Sheng are a pair of twins. They are still too young, not even students yet. Fang Yuan sizes them up as two kids.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A viewing image of the hunt still shows them as two children.",
+      "chapters": [
+        219
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She has a tender arm and two big eyes, and both twins have small hands.",
+      "chapters": [
+        221
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan recalls a sibling pair who, at eighteen, accidentally open a cave on Bai Gu Mountain’s back area and activate a complete rank four righteous inheritance titled under Flesh Bone Lord. A hundred years later both stand at rank five and take over Bai village. He also recalls that the inheritance’s famous rank three healing Gu, Flesh-bone Gu, went to Bai Hua and made her a famous healing Gu Master.",
+      "chapters": [
+        214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-memory",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_grey_bone_scholar",
+        "sys_healing_gu",
+        "gu_flesh_bone_gu"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s prior-life account of the Grey Bone Scholar hall, both siblings kowtow, but Bai Hua fears pain and does not give a loud knock, so she does not trigger the loud first path; Bai Sheng does. Bai Sheng then wants to take the Gu from the corpse, and Bai Hua stops him so they leave the senior in peace, which opens the second path.",
+      "chapters": [
+        222
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "grey-bone-paths",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_sheng"
+      ]
+    },
+    {
+      "text": "When Fang Yuan and Bai Ning Bing force the final refinement step, Bai Sheng charges and grabs Fang Yuan’s leg. Fang Yuan knocks Bai Sheng unconscious, then knocks Bai Hua unconscious as well, strips both, and throws them into the fire. They burn to death before the fire finishes changing color.",
+      "chapters": [
+        226
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "forced-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Fang Yuan thinks he should thank the dead siblings for the information that drew him there and for the sacrifice that lets him obtain Bone Flesh Unity Gu.",
+      "chapters": [
+        227
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "forced-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bone_flesh_unity_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/bai-hua.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bai-hua/",
+      "chapters": [
+        214,
+        217,
+        219,
+        220,
+        221,
+        222,
+        226,
+        227
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Bai Clan of Bai Gu Mountain as of ch. 217",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

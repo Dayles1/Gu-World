@@ -1,0 +1,188 @@
+{
+  "id": "loc_han_village",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Han Village",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mortal village on the fringe of Sha Jing oasis in Western Desert.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 674,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    674,
+    676
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_doctor_mo",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_investigative_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_clan_western_desert",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_inspection_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_sha_jing_oasis",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "gu_human_medicine_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Near the village a small natural grassland is more desolate than Northern Plains ground: sand everywhere and sharp red dagger grass blades that stab deep for meager water.",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Near Han village, a small natural grassland holds sand and sharp red dagger grass that local children cut with sickles for family pay. The blades stab deep for meager water; the children wear leather gloves, and one bare handed child grinds cut grass at a quern-stone into paste for fat sand scorpions kept as the household’s main assets.",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dagger-grass-work",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Only one rank two Gu Master is stationed there to look after the village.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dagger-grass-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "From a graveyard several li away, Fang Yuan watches Han village at night with up to a thousand investigative Gu and puts the whole village under his supervision. Luck inspection Gu shows a thin grey-white luck cloud above the village from the villagers’ collective belonging.",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "watch-from-the-graveyard",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_investigative_gu",
+        "gu_luck_inspection_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/han-village.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/han-village/",
+      "chapters": [
+        674,
+        676
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "village",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

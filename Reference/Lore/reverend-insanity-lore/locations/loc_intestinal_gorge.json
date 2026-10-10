@@ -1,0 +1,163 @@
+{
+  "id": "loc_intestinal_gorge",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Intestinal Gorge",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The northern entrance of Sorrowful Wind Mountain Range in Central Continent, controlled by Black Heaven Temple.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2039,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2039,
+    2044
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "loc_black_heaven_temple",
+      "count": 2
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "evt_era_olden",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Intestinal Gorge is the northern entrance of Sorrowful Wind Mountain Range. It was created during the Olden Antiquity Era when a beastman expert died and fused with the surrounding mountains. It is under the control of one of Central Continent’s ten great ancient sects, Black Heaven Temple.",
+      "chapters": [
+        2039
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_era_olden",
+        "fac_ten_great_ancient_sects",
+        "loc_black_heaven_temple"
+      ]
+    },
+    {
+      "text": "Qin Ding Ling expects Dragon Palace’s path to reach Intestinal Gorge and asks Black Heaven Temple to move Immortal Gu Houses along the gorge, striking if the chance is good or abandoning the gorge to preserve strength if enemies are too strong.",
+      "chapters": [
+        2039
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_ding_ling",
+        "house_dragon_palace",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Black Heaven Temple immortals later hide in Intestinal Gorge, with several Immortal Gu Houses concealed around it and leaking no aura.",
+      "chapters": [
+        2044
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/intestinal-gorge.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/intestinal-gorge/",
+      "chapters": [
+        2039,
+        2044
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "gorge",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

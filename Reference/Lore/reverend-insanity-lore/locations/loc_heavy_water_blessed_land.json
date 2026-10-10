@@ -1,0 +1,144 @@
+{
+  "id": "loc_heavy_water_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavy Water Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Song clan's headquarters in Eastern Sea.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 899,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    899
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "char_song_qi_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 2
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "inh_tian_nan_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 1
+    },
+    {
+      "target": "loc_twin_polar_sea_strait",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Song Yi Shi charges into the study there and demands that the rank eight Gu Immortal Song Qi Yuan avenge her, while Song Qi Yuan and rank seven elders are already discussing clan matters. Song Qi Yuan is preparing to lead Song clan Gu Immortals against Cai clan and Ruo Lai clan for Old Eccentric Tian Nan’s inheritance at Ascending Heaven Plain, and he sends her with a token to Twin Polar Sea Strait to seek Song Jia Dan’s help instead.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_yi_shi",
+        "sys_gu_immortal",
+        "char_song_qi_yuan",
+        "fac_song_clan",
+        "inh_tian_nan_true_inheritance",
+        "loc_ascending_heaven_plain",
+        "loc_twin_polar_sea_strait",
+        "char_song_jia_dan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/heavy-water-blessed-land/",
+      "chapters": [
+        899
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

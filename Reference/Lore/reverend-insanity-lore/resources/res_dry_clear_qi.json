@@ -1,0 +1,127 @@
+{
+  "id": "res_dry_clear_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dry clear qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An immortal material named as the main missing ingredient for refining eight-faced prestige wind Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1218,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1218,
+    2079
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_eight_faced_prestige_wind_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2079,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_eight_faced_prestige_wind_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_wu_du_xiu",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On her deathbed, Wu Du Xiu names three regrets. The second is that she did not find enough dry clear qi to refine eight-faced prestige wind Gu.",
+      "chapters": [
+        1218
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "deathbed-regret",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_du_xiu",
+        "gu_eight_faced_prestige_wind_immortal_gu"
+      ]
+    },
+    {
+      "text": "Wu clan has been gathering immortal materials for eight-faced prestige wind Immortal Gu for many years, and only lacked one main material: dry clear qi. Wu Bei finds a large amount of dry clear qi while exploring Space Comprehension Pit, enough for the clan to refine eight-faced prestige wind Gu.",
+      "chapters": [
+        2079
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "main-material-found",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dry-clear-qi/",
+      "chapters": [
+        1218,
+        2079
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Eight-Faced Prestige Wind Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

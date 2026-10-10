@@ -1,0 +1,272 @@
+{
+  "id": "char_zhong_fei_you",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhong Fei You",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zhong fei you",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чжун Фэй Ю",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zhong Fei You is Zhong tribe leader in Northern Plains, first named when he tries to seize Chai tribe goods beside crescent lake and then bows before Wolf King Chang Shan Yin.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 494,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    494,
+    495,
+    499,
+    541
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zhong_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 494,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zhong_tribe",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_chai_zhang",
+      "count": 2
+    },
+    {
+      "target": "fac_chai_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At crescent lake in Northern Plains, Chai tribe leader Chai Zhang names him while accusing Zhong tribe of seizing five black skin fat beetles in the open. The text calls him Zhong tribe leader Zhong Fei You, and he answers that the water wolf nest is the agreed boundary and that beetles on Zhong tribe ground belong to Zhong tribe. He places Zhong tribe camp on the main road so Chai tribe must pass it while hurrying to the heroes assembly, shrugs off the charge that the act is unsightly, and offers to fight it out. Narration states Zhong tribe had expanded into a mid-scale tribe two years earlier while Chai tribe remained small.",
+      "chapters": [
+        494
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crescent_lake",
+        "reg_northern_plains",
+        "fac_chai_tribe",
+        "char_chai_zhang",
+        "fac_zhong_tribe"
+      ]
+    },
+    {
+      "text": "When Fang Yuan’s wolf group surrounds both tribes, Zhong Fei You and Chai Zhang glance at each other with the intent to cooperate. Zhong Fei You bows deeply and begins to greet Lord Chang Shan Yin by name, then stops when Fang Yuan tells them all to get lost and not block him. He bows again, orders Zhong tribe to retreat, and leaves the lakeside to the wolves.",
+      "chapters": [
+        494
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_chang_shan_yin"
+      ]
+    },
+    {
+      "text": "A Zhong tribe investigative Gu Master reports that Wolf King wiped the water wolf den, recruited three thousand of four thousand wolves, and took the black skin fat armor beetles. Zhong Fei You tries to downplay the feat, then turns ugly when he hears the beetles are gone. He later sighs that Zhong tribe cannot compete with Chang Shan Yin alone, names three stronger enslavement masters in northern plains, and says they will note the battle and take revenge after going to Lord Liu Wen Wu.",
+      "chapters": [
+        495
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_liu_wen_wu"
+      ]
+    },
+    {
+      "text": "At Yu Tian heroes assembly he is among the crowd when the wolf army arrives, and he points and shouts that the largest night wolf looks like a wolf emperor.",
+      "chapters": [
+        499
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-lake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yu_tian"
+      ]
+    },
+    {
+      "text": "During a chaotic Ma tribe fight around Wolf King, a call goes out for Pei Yan Fei, Zhong Fei You, and Tang Miao Ming to come over and protect Wolf King.",
+      "chapters": [
+        541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "protecting-wolf-king",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "char_pei_yan_fei",
+        "char_tang_miao_ming"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zhong-fei-you/",
+      "chapters": [
+        494,
+        495,
+        499,
+        541
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zhong Tribe as of ch. 494",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

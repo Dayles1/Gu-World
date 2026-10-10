@@ -1,0 +1,161 @@
+{
+  "id": "house_loud_thunder_hall",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Loud Thunder Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Loud Thunder Hall is Nu Er tribe's Immortal Gu House. It is a broad, magnificent hall with lightning snakes coiling around it and thunderbolts raining beside it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1193,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1193,
+    1194
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "fac_nu_er_tribe",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_nu_er_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_nu_er_gu",
+      "count": 2
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 2
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 2
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_tribe",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "An enormous hall moves through the clouds and descends above grassland as Nu Er tribe arrives for the blood battle competition. Inside, Nu Er Gu controls Loud Thunder Hall, treats its strength as overflowing, and laughs that the tribe has the hall to suppress the situation. Under the house’s amplification, Nu Er Qian’s gaze pierces an enormous distance and picks out Gong tribe’s Golden Dawn Hall. Nu Er tribe does not stint on mobilizing this tribe Immortal Gu House, and seating puts Nu Er tribe first from the right because they brought it.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_nu_er_tribe",
+        "char_nu_er_gu",
+        "char_nu_er_qian",
+        "fac_gong_tribe",
+        "house_golden_dawn_hall",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "When Chu Du’s side arrives, Loud Thunder Hall stands to the right, Golden Dawn Hall at the center, and Divine Light Hall to the left.",
+      "chapters": [
+        1194
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hall-placement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chu_du"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because Loud Thunder Hall is a named Immortal Gu House. It is mobile equipment of Nu Er tribe, not a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "hall-placement",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu-houses/loud-thunder-hall.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/loud-thunder-hall/",
+      "chapters": [
+        1193,
+        1194
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Nu Er Tribe (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

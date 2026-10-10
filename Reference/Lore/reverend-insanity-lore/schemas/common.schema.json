@@ -1,0 +1,214 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "Shared definitions for the Reverend Insanity lore database",
+  "$defs": {
+    "schema_version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^(gu|char|rcp|fac|loc|reg|res|move|sys|inh|house|path|race|evt|ch|term|src)_[a-z0-9_]+$"
+    },
+    "entity_type": {
+      "enum": ["gu", "character", "recipe", "faction", "location", "region", "resource", "move", "system", "inheritance", "gu_house", "path", "race", "event", "chapter", "term", "source"]
+    },
+    "confidence": {
+      "description": "A = checked against the novel text; B = chapter-cited by an audited reference source; C = reference source without an adequate citation, or inferred; D = unverified pipeline data, disputed translation or speculation.",
+      "enum": ["A", "B", "C", "D"]
+    },
+    "certainty": {
+      "description": "How the source itself grades the claim (sagaofgu editorial levels) plus our own levels.",
+      "enum": ["canon", "inferred", "disputed", "deviation", "unverified", "speculation"]
+    },
+    "verification": {
+      "description": "text_checked = read in the novel text by this project; cross_checked_chapter_summary = the cited chapter's summary page names this entity; citation_unchecked = chapter cited by the source, not re-checked; no_citation = no chapter given.",
+      "enum": ["text_checked", "cross_checked_chapter_summary", "citation_unchecked", "no_citation"]
+    },
+    "canon_status": {
+      "enum": ["confirmed", "partially_confirmed", "unverified", "speculative", "duplicate"]
+    },
+    "chapter": { "type": "integer", "minimum": 1, "maximum": 2334 },
+    "chapter_list": { "type": "array", "items": { "$ref": "#/$defs/chapter" }, "uniqueItems": true },
+    "nullable_chapter": { "anyOf": [{ "$ref": "#/$defs/chapter" }, { "type": "null" }] },
+    "nullable_string": { "type": ["string", "null"] },
+    "names": {
+      "type": "object",
+      "required": ["en", "zh", "pinyin", "ru", "ru_status", "aliases"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "zh": { "type": ["string", "null"] },
+        "zh_source": { "type": ["string", "null"] },
+        "pinyin": { "type": ["string", "null"] },
+        "pinyin_status": { "enum": ["from_source", "derived_from_en_romanization", null] },
+        "ru": { "type": ["string", "null"] },
+        "ru_status": {
+          "description": "official = from a published Russian edition; working_translation = our own rendering, not canon; transliteration = Palladius transliteration of a Chinese name.",
+          "enum": ["official", "working_translation", "transliteration", "unknown"]
+        },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "translation_variants": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "lang"],
+            "properties": {
+              "name": { "type": "string" },
+              "lang": { "type": "string" },
+              "source_id": { "type": ["string", "null"] },
+              "note": { "type": ["string", "null"] }
+            }
+          }
+        }
+      }
+    },
+    "source_ref": {
+      "type": "object",
+      "required": ["source_id", "url"],
+      "properties": {
+        "source_id": { "type": "string", "pattern": "^src_[a-z0-9_]+$" },
+        "url": { "type": ["string", "null"] },
+        "chapters": { "$ref": "#/$defs/chapter_list" },
+        "accessed": { "type": ["string", "null"] },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "claim": {
+      "type": "object",
+      "required": ["text", "chapters", "certainty", "source_id"],
+      "properties": {
+        "text": { "type": "string", "minLength": 1 },
+        "chapters": { "$ref": "#/$defs/chapter_list" },
+        "certainty": { "$ref": "#/$defs/certainty" },
+        "source_id": { "type": "string", "pattern": "^src_[a-z0-9_]+$" },
+        "section": { "type": ["string", "null"] },
+        "text_origin": {
+          "description": "source_excerpt = wording of the reference source, kept for research only; own_words = written by this project.",
+          "enum": ["source_excerpt", "own_words"]
+        },
+        "mentions": { "type": "array", "items": { "$ref": "#/$defs/entity_id" } },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "verification": { "$ref": "#/$defs/verification" },
+        "needs_review": { "type": "boolean" }
+      }
+    },
+    "claims": { "type": "array", "items": { "$ref": "#/$defs/claim" } },
+    "conflict": {
+      "type": "object",
+      "required": ["positions"],
+      "properties": {
+        "topic": { "type": ["string", "null"] },
+        "positions": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["position", "support"],
+            "properties": {
+              "position": { "type": "string" },
+              "support": { "type": "string" },
+              "chapters": { "$ref": "#/$defs/chapter_list" }
+            }
+          }
+        },
+        "status": { "type": ["string", "null"] },
+        "preferred": { "type": ["integer", "null"] },
+        "source_id": { "type": "string" }
+      }
+    },
+    "relation": {
+      "type": "object",
+      "required": ["type", "target"],
+      "properties": {
+        "type": { "type": "string", "pattern": "^[a-z_]+$" },
+        "target": { "$ref": "#/$defs/entity_id" },
+        "role": { "type": ["string", "null"] },
+        "from_chapter": { "$ref": "#/$defs/nullable_chapter" },
+        "to_chapter": { "$ref": "#/$defs/nullable_chapter" },
+        "recorded_chapter": { "$ref": "#/$defs/nullable_chapter" },
+        "count": { "type": ["integer", "null"], "minimum": 1 },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "source_id": { "type": "string" },
+        "note": { "type": ["string", "null"] }
+      }
+    },
+    "game_proposal": {
+      "description": "A value invented for game balance. Never canon.",
+      "type": "object",
+      "required": ["tag", "field", "value"],
+      "properties": {
+        "tag": { "const": "GAME_PROPOSAL" },
+        "field": { "type": "string" },
+        "value": {},
+        "rationale": { "type": ["string", "null"] }
+      }
+    },
+    "first_appearance": {
+      "type": "object",
+      "required": ["chapter"],
+      "properties": {
+        "chapter": { "$ref": "#/$defs/nullable_chapter" },
+        "volume": { "type": ["integer", "null"], "minimum": 1, "maximum": 6 },
+        "arc": { "anyOf": [{ "$ref": "#/$defs/entity_id" }, { "type": "null" }] }
+      }
+    },
+    "image": {
+      "type": ["object", "null"],
+      "required": ["url", "kind", "canonical"],
+      "properties": {
+        "url": { "type": "string" },
+        "kind": { "enum": ["reference_site_art", "official_art", "fan_art", "unknown"] },
+        "canonical": { "type": "boolean" },
+        "source_id": { "type": "string" }
+      }
+    },
+    "research": {
+      "type": "object",
+      "required": ["status"],
+      "properties": {
+        "status": { "enum": ["extracted", "reviewed", "verified", "stub"] },
+        "is_stub_at_source": { "type": "boolean" },
+        "unresolved": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "last_updated": { "type": "string" }
+      }
+    },
+    "envelope": {
+      "type": "object",
+      "required": ["id", "entity_type", "schema_version", "names", "summary", "canon_status", "confidence", "first_appearance", "chapters_cited", "relations", "conflicts", "sources", "research"],
+      "properties": {
+        "id": { "$ref": "#/$defs/entity_id" },
+        "entity_type": { "$ref": "#/$defs/entity_type" },
+        "schema_version": { "$ref": "#/$defs/schema_version" },
+        "names": { "$ref": "#/$defs/names" },
+        "summary": {
+          "type": ["object", "null"],
+          "required": ["text", "text_origin", "source_id"],
+          "properties": {
+            "text": { "type": "string" },
+            "text_origin": { "enum": ["source_excerpt", "own_words"] },
+            "source_id": { "type": "string" }
+          }
+        },
+        "canon_status": { "$ref": "#/$defs/canon_status" },
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "first_appearance": { "$ref": "#/$defs/first_appearance" },
+        "chapters_cited": { "$ref": "#/$defs/chapter_list" },
+        "relations": { "type": "array", "items": { "$ref": "#/$defs/relation" } },
+        "co_mentions": {
+          "description": "Entities cited together with this one by the reference source. Weak signal, not a typed relation.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["target", "count"],
+            "properties": { "target": { "$ref": "#/$defs/entity_id" }, "count": { "type": "integer", "minimum": 1 } }
+          }
+        },
+        "claims": { "$ref": "#/$defs/claims" },
+        "conflicts": { "type": "array", "items": { "$ref": "#/$defs/conflict" } },
+        "image": { "$ref": "#/$defs/image" },
+        "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source_ref" } },
+        "research": { "$ref": "#/$defs/research" },
+        "game_proposals": { "type": "array", "items": { "$ref": "#/$defs/game_proposal" } }
+      }
+    }
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "id": "fac_chen_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chen Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Chen family"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A merchant clan whose caravan vice leader takes Fang Yuan and Bai Ning Bing on as laborers near Zi You mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 234,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    234,
+    237,
+    239,
+    241,
+    247,
+    248,
+    249,
+    252,
+    257
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chen_xin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 234,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chen_shuang_jin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 247,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_chen_xin",
+      "count": 4
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 2
+    },
+    {
+      "target": "char_jia_gui",
+      "count": 2
+    },
+    {
+      "target": "char_jia_long",
+      "count": 2
+    },
+    {
+      "target": "fac_lin_clan",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "fac_jia_family",
+      "count": 1
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "fac_zhang_clan",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_zhu",
+      "count": 1
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 1
+    },
+    {
+      "target": "move_hundred_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "move_thousand_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "gu_disintegrate_rule_path_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_justice_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Near Zi You mountain, an old village head begs a Chen Gu Master who serves as one of the caravan’s vice leaders to let two juniors join the wagons. That Gu Master is addressed as clan elder in the village and as vice leader in the caravan, and he orders Chen Xin, a young Chen Gu Master, to feed winged snakes. He later jokes that Bai clan’s arrest warrant is no concern so long as it is not his Chen family, then sends the newcomers to report to Chen Xin.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-vice-leader-and-laborers",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_zi_you_mountain",
+        "sys_gu_master",
+        "char_chen_xin",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "Fang Yuan and Bai Ning Bing enter the caravan as laborers under Chen Clan. Chen servants scheme against the newcomers, and one argues that even if the two died, the village head would not dare settle it with Chen Clan. Fang Yuan thrashes those servants and goes to the horse carriage where Chen Clan’s old steward sleeps.",
+      "chapters": [
+        237
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-vice-leader-and-laborers",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "When Shang Xin Ci detains the two, Fang Yuan notes he is only a hired hand of Chen family and that Chen clan will not offend her over two mortals. Zhang Zhu finds Chen clan’s head in the caravan; the vice leader weighs that handing them over too readily could hurt Chen Clan’s prestige, then stages a manpower shortage so the handover looks reluctant rather than fearful of Zhang Clan.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prestige-against-zhang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "char_zhang_zhu",
+        "fac_zhang_clan"
+      ]
+    },
+    {
+      "text": "After Fang Yuan wins at the monkey checkpoint, Chen Clan’s old steward looks ugly and the vice leader doubts Zhang Clan’s earlier demand was a trap.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prestige-against-zhang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the road after heavy losses, Jia Long assigns Chen clan to the first line of defense and claims Chen has the greatest strength left; Chen vice leader Chen Shuang Jin rejects that claim and the two argue until Lin Clan’s vice leader breaks it up. Caravan talk recalls Jia and Chen as close, then reports that Chen clan seems to have gone to rely on Jia Gui, while Jia Long serves Jia Fu. Chen Xin is named as Chen clan’s young Gu Master when he flees white feather flying elephants.",
+      "chapters": [
+        247
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "convoy-strength-and-jia-ties",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_long",
+        "char_chen_shuang_jin",
+        "fac_lin_clan",
+        "fac_caravan",
+        "char_jia_gui",
+        "char_jia_fu"
+      ]
+    },
+    {
+      "text": "After that attack, Jia clan and Chen clan are called the strongest groups in the convoy and both are deep in losses.",
+      "chapters": [
+        248
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "convoy-strength-and-jia-ties",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jia_family"
+      ]
+    },
+    {
+      "text": "Chen Shuang Jin later demands at least thirty percent of ownerless goods, saying Chen Clan sacrificed the most and killed the most white feather flying elephants.",
+      "chapters": [
+        249
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "convoy-strength-and-jia-ties",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Chen Xin later reminds Chen Shuang Jin that he had reported Zhang Zhu’s murder; Chen Shuang Jin answers that Zhang Zhu was killed with bone spears and that Hei Tu and Bai Yun also used bone spears that day. Chen Xin urges that they make the crime known and kill the danger early, but Chen Shuang Jin refuses, arguing that evidence without strength is useless among rival clans.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "convoy-strength-and-jia-ties",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tu",
+        "char_bai_yun"
+      ]
+    },
+    {
+      "text": "During the later zombie assault on the caravan, Fang Yuan weighs whether survivors who knew of Zhang Zhu’s murder might shout it out, then notes that Chen Xin and Chen Shuang Jin, who knew of that matter, had already died in battle.",
+      "chapters": [
+        257
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-leaders-fall",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/chen-clan/",
+      "chapters": [
+        234,
+        237,
+        239,
+        241,
+        247,
+        248,
+        249,
+        252,
+        257
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

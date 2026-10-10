@@ -1,0 +1,158 @@
+{
+  "id": "loc_vast_ancient_rainforest",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Vast Ancient Rainforest",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hot, damp jungle terrain used as a second-round course inside Eighty-Eight True Yang Building.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 595,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    595
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "char_green",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The weather is hot and damp, and the terrain is a dense jungle. Green vines coil around tall trees and pile up on the damp ground. Common green snake vines have snake scales on their surface, thickness of a king-sized bowl, and length of seventy to eighty feet at minimum.",
+      "chapters": [
+        595
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_green"
+      ]
+    },
+    {
+      "text": "In Eighty-Eight True Yang Building, Hei Lou Lan watches his force crawl through dense jungle on the second round. Crossing the round means traversing the whole jungle to a stone palace on the far side. Beasts are absent, but green vines fill the trees and damp ground, including green snake vines that coil and crush Gu Masters who come near, with wood path Gu living on them. Hei Lou Lan treats the course as a prolonged fight and an investigative test, because green dragon vine groups also hold territory and must be avoided where possible.",
+      "chapters": [
+        595
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "round-ground",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_eighty_eight_true_yang_building",
+        "char_hei_lou_lan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "The sudden vine riot is not a building trap. Fang Yuan controls the floor, gathers green vines in secret, stalls the army’s pace, then orders a surprise attack that seals exits and forces retreat under green snake and green dragon vines.",
+      "chapters": [
+        595
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "floor-control",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/vast-ancient-rainforest.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/vast-ancient-rainforest/",
+      "chapters": [
+        595
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "forest",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

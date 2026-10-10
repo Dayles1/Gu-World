@@ -1,0 +1,930 @@
+{
+  "id": "fac_longevity_heaven",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Longevity Heaven",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Giant Sun Immortal Venerable's place of residence.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 426,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    426,
+    552,
+    553,
+    602,
+    1022,
+    1181,
+    1190,
+    1276,
+    1278,
+    1312,
+    1435,
+    1438,
+    2087
+  ],
+  "relations": [
+    {
+      "type": "members",
+      "target": "char_heaven_extremity",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1180,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_earth_extremity",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_east_desolation_immortal",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_flood_extremity",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_north_desolation_immortal",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_south_desolation_immortal",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_space_extremity",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_time_extremity",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_west_desolation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1238,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_sun_ming_lu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1270,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_mao_li_qiu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1280,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_five_elements_grandmaster",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1583,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bing_sai_chuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1692,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_immortal_zombie_giant_sun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2075,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_lu_tong_lan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2112,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_jiao_huo",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2113,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_light_emperor",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2274,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_flood_extremity",
+      "count": 4
+    },
+    {
+      "target": "char_south_desolation_immortal",
+      "count": 4
+    },
+    {
+      "target": "char_sun_ming_lu",
+      "count": 4
+    },
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 3
+    },
+    {
+      "target": "char_heaven_extremity",
+      "count": 3
+    },
+    {
+      "target": "char_earth_extremity",
+      "count": 3
+    },
+    {
+      "target": "char_east_desolation_immortal",
+      "count": 3
+    },
+    {
+      "target": "char_north_desolation_immortal",
+      "count": 3
+    },
+    {
+      "target": "char_space_extremity",
+      "count": 3
+    },
+    {
+      "target": "char_time_extremity",
+      "count": 3
+    },
+    {
+      "target": "char_west_desolation",
+      "count": 3
+    },
+    {
+      "target": "char_mao_li_qiu",
+      "count": 3
+    },
+    {
+      "target": "char_bing_sai_chuan",
+      "count": 3
+    },
+    {
+      "target": "char_immortal_zombie_giant_sun",
+      "count": 3
+    },
+    {
+      "target": "char_lu_tong_lan",
+      "count": 3
+    },
+    {
+      "target": "char_light_emperor",
+      "count": 3
+    },
+    {
+      "target": "char_jiao_huo",
+      "count": 2
+    },
+    {
+      "target": "house_calamity_luck_altar",
+      "count": 2
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 2
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 2
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 2
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 2
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 2
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 2
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_northern_plains_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_tu_bo",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "inh_luck_path_supreme_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_giant_sun_luck_path_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_self_luck_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_resurrection_from_the_dead",
+      "count": 1
+    },
+    {
+      "target": "sys_human_calamity",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "fac_eight_extremities",
+      "count": 1
+    },
+    {
+      "target": "fac_four_desolations",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_yao_yuan_ying",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "move_perfect_pair",
+      "count": 1
+    },
+    {
+      "target": "move_ringing_alarm_bell",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "loc_reverse_flow_river",
+      "count": 1
+    },
+    {
+      "target": "gu_love_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_all_living_beings_luck_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "inh_heaven_and_earth_luck_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_murong_qing_si",
+      "count": 1
+    },
+    {
+      "target": "char_yun_liang",
+      "count": 1
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 1
+    },
+    {
+      "target": "char_le_yao",
+      "count": 1
+    },
+    {
+      "target": "char_meng_zi_zai",
+      "count": 1
+    },
+    {
+      "target": "char_bull_demon",
+      "count": 1
+    },
+    {
+      "target": "char_flower_lady",
+      "count": 1
+    },
+    {
+      "target": "inh_star_constellation_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "fac_southern_alliance",
+      "count": 1
+    },
+    {
+      "target": "house_three_autumn_yellow_crane_platform",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_red_lotus_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "house_shark_flow_lever",
+      "count": 1
+    },
+    {
+      "target": "house_year_end_gatehouse",
+      "count": 1
+    },
+    {
+      "target": "inh_red_lotus_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "loc_central_great_hall",
+      "count": 1
+    },
+    {
+      "target": "loc_forgotten_dao_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_imperfection_regret_pavilion",
+      "count": 1
+    },
+    {
+      "target": "loc_name_plaque_palace",
+      "count": 1
+    },
+    {
+      "target": "loc_star_zone_mountain",
+      "count": 1
+    },
+    {
+      "target": "move_qi_wall",
+      "count": 1
+    },
+    {
+      "target": "house_central_heaven_gate",
+      "count": 1
+    },
+    {
+      "target": "loc_sun_palace",
+      "count": 1
+    },
+    {
+      "target": "char_cang_xuan_zi",
+      "count": 1
+    },
+    {
+      "target": "loc_eternal_sand_cave",
+      "count": 1
+    },
+    {
+      "target": "char_wan_zi_hong",
+      "count": 1
+    },
+    {
+      "target": "gu_destiny_gu",
+      "count": 1
+    },
+    {
+      "target": "char_cong_yan",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_fei_xiong",
+      "count": 1
+    },
+    {
+      "target": "char_liu_liu_liu",
+      "count": 1
+    },
+    {
+      "target": "move_qi_engulfing_mountains_and_rivers",
+      "count": 1
+    },
+    {
+      "target": "move_seven_extreme_desolation",
+      "count": 1
+    },
+    {
+      "target": "move_nine_dragons_protection",
+      "count": 1
+    },
+    {
+      "target": "res_refinement_water",
+      "count": 1
+    },
+    {
+      "target": "char_gu_liu_ru",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_bao_xiong",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_fate_destruction",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan meets Ge Yao in Northern Plains, she asks whether he was sent from Longevity Heaven as the hero tasked to save her. Under the name Chang Shan Yin he answers that he is only a Gu Master and could not have come from there, tying the name to Giant Sun Immortal Venerable.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_ge_yao",
+        "reg_northern_plains",
+        "char_chang_shan_yin",
+        "sys_gu_master",
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "The sacred palace in Imperial Court blessed land is one of four resting chambers of Giant Sun Immortal Venerable, and his most important. The other three sit in eastern sea, western desert, and southern border.",
+      "chapters": [
+        552
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "four-resting-chambers",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land"
+      ]
+    },
+    {
+      "text": "In central continent, Giant Sun Immortal Venerable has an even larger and grander resting chamber in the sky, and that chamber is situated within Longevity Heaven.",
+      "chapters": [
+        552
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "four-resting-chambers",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In his final years he rarely goes to the mortal realm to stay in the sacred palace, and instead remains in Longevity Heaven in a reclusive manner.",
+      "chapters": [
+        553
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "final-years",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Giant Sun Immortal Venerable becomes rank nine and is invincible in the world, he has the superior grotto-heaven Longevity Heaven, and Imperial Court blessed land becomes one of his multiple residences within the world.",
+      "chapters": [
+        602
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-nine-grotto-heaven",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A later stretch names Northern Plains’ Longevity Heaven.",
+      "chapters": [
+        1022
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "northern-plains-naming",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "northern-plains-naming",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "northern-plains-naming",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the Huang Jin tribes, Longevity Heaven represents supreme authority. Longevity Heaven sends out the Longevity Edict, ordering the Huang Jin tribes to work together and deal with Bai Zu tribe. The Longevity Edict is golden in color and resembles a token, but is in essence an information path Immortal Gu, and it goes on from one Huang Jin tribe to the next. Liu tribe’s first supreme elder kneels to receive it, and though Liu tribe had been content to watch Heavenly Lord Bai Zu and Chu Du wear each other down, he accepts that with the edict out they have to follow it. Northern Plains’ Gu Immortal world is arranged much like Central Continent’s. The ten great ancient sects are the lower level sects of Heavenly Court, and Longevity Heaven likewise has great influence on the Northern Plains Huang Jin tribes. Perhaps in the past Giant Sun Immortal Venerable had imitated Central Continent, purposely creating this situation.",
+      "chapters": [
+        1181
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "huang-jin-tribes-authority",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline",
+        "gu_longevity_edict",
+        "fac_bai_zu_tribe",
+        "sys_immortal_gu",
+        "fac_liu_tribe",
+        "char_heavenly_lord_bai_zu",
+        "char_chu_du",
+        "sys_gu_immortal",
+        "reg_central_continent",
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "Prince Feng Xian tells Le Yao that Longevity Heaven, unfathomably deep, is simply like Central Continent’s Heavenly Court within Northern Plains.",
+      "chapters": [
+        1190
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "comparison-to-heavenly-court",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_prince_feng_xian",
+        "char_le_yao"
+      ]
+    },
+    {
+      "text": "Watching Black Extremity’s Gu formation direct Reverse Flow River, Flood Extremity anticipates that once they retrieve the river, Longevity Heaven will gain it as another secluded domain of heaven and earth.",
+      "chapters": [
+        1276
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-new-secluded-domain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_sun_ming_lu",
+        "sys_gu_formation",
+        "loc_reverse_flow_river",
+        "char_flood_extremity"
+      ]
+    },
+    {
+      "text": "A message from South Desolation Immortal reaches Flood Extremity saying the giant beast was sent to help and would deal with any enemy who dares to obstruct Longevity Heaven. The beast gives its own name as Mao Li Qiu, breaks the fate reversing refinement sub formation, and carries Black Extremity and Flood Extremity towards Reverse Flow River to retrieve Ma Hong Yun and the love Gu.",
+      "chapters": [
+        1278
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sending-aid-to-reverse-flow-river",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_south_desolation_immortal",
+        "char_mao_li_qiu",
+        "char_ma_hong_yun",
+        "gu_love_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan assumes that after the Northern Plains battle, Longevity Heaven is among those already analyzing his reverse flow protection seal.",
+      "chapters": [
+        1312
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "assumed-to-be-studying-reverse-flow-protection-seal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Spectral Soul’s will judges that Longevity Heaven leaves Northern Plains slightly better placed than the other three disunited regions, though still significantly lacking beside Central Continent’s Heavenly Court.",
+      "chapters": [
+        1435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "northern-plains-left-better-placed",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A later chapter opens on Northern Plains, Longevity Heaven.",
+      "chapters": [
+        1438
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "northern-plains-scene",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "While weighing Crazed Demon Cave and Northern Plains arrangements, Fang Yuan frames Giant Sun Immortal Venerable as having chosen to create Longevity Heaven in Northern Plains.",
+      "chapters": [
+        2087
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "creation-in-northern-plains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_crazed_demon_cave"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Northern Plains naming",
+      "positions": [
+        {
+          "position": "In central continent, Giant Sun Immortal Venerable has an even larger and grander resting chamber in the sky, and that chamber is situated within Longevity Heaven.",
+          "support": "Chapter 552.",
+          "chapters": [
+            552
+          ]
+        },
+        {
+          "position": "Longevity Heaven is named as Northern Plains' Longevity Heaven.",
+          "support": "Chapter 1022.",
+          "chapters": [
+            1022
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/longevity-heaven/",
+      "chapters": [
+        426,
+        552,
+        553,
+        602,
+        1022,
+        1181,
+        1190,
+        1276,
+        1278,
+        1312,
+        1435,
+        1438,
+        2087
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

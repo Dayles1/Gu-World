@@ -1,0 +1,268 @@
+{
+  "id": "fac_zheng_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zheng Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe drawn into the fight against Ge tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 477,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    477,
+    478,
+    479,
+    480,
+    481
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 2
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_pei_tribe",
+      "count": 2
+    },
+    {
+      "target": "sys_battle_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_hong_yan_valley",
+      "count": 1
+    },
+    {
+      "target": "char_night_wolf_king",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_lightning_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "move_gold_and_silver_lightning_dragon",
+      "count": 1
+    },
+    {
+      "target": "move_thunder_bird",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_do_or_die_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_farm_slug_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Bei Cao Sheng presses Wang Tribe to join, he already counts Zheng with Bei Tribe and Pei Tribe against Ge Tribe.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bei_cao_sheng",
+        "fac_wang_tribe",
+        "fac_bei_tribe",
+        "fac_pei_tribe",
+        "fac_ge_tribe"
+      ]
+    },
+    {
+      "text": "Alliance talk against Ge tribe treats Zheng tribe’s lightning spear battle formation as a trump card. Wang De Dao classes Zheng as mid scale.",
+      "chapters": [
+        478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wang_de_dao"
+      ]
+    },
+    {
+      "text": "Fang Yuan judges Zheng tribe as equal to Ge tribe back in Hong Yan valley.",
+      "chapters": [
+        479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "field-judgment",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_hong_yan_valley"
+      ]
+    },
+    {
+      "text": "After crushing Bei tribe, Fang Yuan leads the army straight to Zheng tribe camp. The lightning spear corps, rank two Gu Masters with lightning spear Gu imprints, stop the first push with a mass volley of five hundred and eighty spears, and Zheng tribe leader fights at the front. With three myriad wolf kings committed, the corps is driven under ten percent and wolves pour into the camp.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "The leader dies as a rank four upper stage Gu Master, the lightning spear corps is almost wiped out, and Ge tribe takes the camp with large spoils from a mid-sized tribe of deep foundation.",
+      "chapters": [
+        481
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "night-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zheng-tribe/",
+      "chapters": [
+        477,
+        478,
+        479,
+        480,
+        481
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "id": "fac_wei_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wei Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Wei family"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A first-class Southern Border clan whose defeated faction is sold as slaves in Shang clan city's slave market.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 329,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    329,
+    330,
+    331,
+    1072,
+    2123
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_wei_de_xin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 330,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wei_de_xin",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 2
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wei_shen_jing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "gu_scorpion_faeces_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zu_wei",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_lan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Shang Clan City’s slave market, a Gu Master warns Shang Xin Ci against buying the people in one cage: they are from Wei clan after a political uprising in which the clan leader was overthrown by his younger brother, and the current leader is selling the previous leader’s faction. Wei clan is smaller than Shang Clan but still famous in the southern border. Talk holds that Shang Yan Fei backed the turbulence, that the new leader sent clansmen to Shang as hostages, and that many elders secretly moved assets to Shang, so Wei clan could already be called Shang clan’s puppet.",
+      "chapters": [
+        329
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "slave-market-and-shang-puppet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "sys_gu_master",
+        "char_shang_xin_ci",
+        "fac_shang_clan",
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "Fang Yuan buys those slaves anyway.",
+      "chapters": [
+        329
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "slave-market-and-shang-puppet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Shang Pu Lao later fumes that he had meant to acquire them himself, calling the captives former operators of Wei clan with high cultivation and management experience, and naming first lady Wei De Xin as the one most skilled at nurturing guards. He recalls Wei clan leader’s guard troops as once famous for blocking many assassinations, including an attack by five rank three Gu Masters at once.",
+      "chapters": [
+        330
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "slave-market-and-shang-puppet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_pu_lao",
+        "char_wei_de_xin",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Over thirty Wei clan members stand in Nan Qiu garden when Fang Yuan has them greet Shang Xin Ci as their new master. He orders Wei De Xin to raise loyal female guards for Shang Xin Ci and to push the Wei clansmen into steady work. He also names her pregnancy and her intent to preserve her husband’s bloodline while contacting her younger brother Wei Shen Jing for revenge.",
+      "chapters": [
+        330
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "guard-duty-assignment",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_nan_qiu_garden",
+        "char_wei_shen_jing"
+      ]
+    },
+    {
+      "text": "Fang Yuan frames Wei clansmen as Shang Xin Ci’s middle and lower foundation, with Wei De Xin able to organize female guards as a stable armed force beside other recruits. He also warns Wei De Xin that Wei Shen Jing has already been recruited by Wu Clan and is under watch.",
+      "chapters": [
+        331
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "foundation-and-prior-life",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s previous life, Wei De Xin helped Shang Pu Lao rise in the young master contest, then later contacted Wei Shen Jing and aided Wu clan against Shang, eradicating Wei clan in one stroke as revenge for her husband’s murder. After that plot was revealed, she was remembered as the first person to make Shang Yan Fei suffer a loss.",
+      "chapters": [
+        331
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "foundation-and-prior-life",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later narration again names Wei De Xin as the wife of Wei clan leader, and says that after she gave birth and carried on her husband’s bloodline, Wei Shen Jing learned of it and sent a letter urging her to serve Wu clan with him.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wei-de-xin-continuity",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xiao Lan says Lord Wei Shen Jing is known as the Counterfeit Master for creating counterfeit goods in Southern Border. Wei De Xin later says Shang clan was the mastermind when Wei clan was plotted against, and that her brother had to join Wu clan to preserve his life.",
+      "chapters": [
+        2123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "counterfeit-master-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiao_lan",
+        "char_bai_zu_wei",
+        "reg_southern_border"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/wei-clan/",
+      "chapters": [
+        329,
+        330,
+        331,
+        1072,
+        2123
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

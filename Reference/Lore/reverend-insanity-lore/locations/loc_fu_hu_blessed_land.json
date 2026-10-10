@@ -1,0 +1,222 @@
+{
+  "id": "loc_fu_hu_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fu Hu Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Immortal Crane Sect blessed land where Fang Zheng trains under a steep time flow.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 656,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    656,
+    668,
+    704
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "loc_fei_he_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_lord_tiger_demon",
+      "count": 2
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 2
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_treasure_yellow_heaven",
+      "count": 1
+    },
+    {
+      "target": "race_rockmen",
+      "count": 1
+    },
+    {
+      "target": "gu_anger_will_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside, a huge and wide tunnel holds elite rockman guards every hundred steps. Every thousand steps stands a huge rockman at least three times a normal rockman’s size, so large that even in that wide tunnel they can only squat on the ground.",
+      "chapters": [
+        668
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Elsewhere Lord Tiger Demon stands beside an enormous stone pit while tens of thousands of rockmen work inside it.",
+      "chapters": [
+        704
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lord_tiger_demon"
+      ]
+    },
+    {
+      "text": "Lord Sky Crane reminds Fang Zheng that he trained in Fu Hu blessed land, where one year outside is eight years inside, to become a rank five Gu Master for Immortal Crane Sect’s plan to take back Hu Immortal Blessed Land.",
+      "chapters": [
+        656
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lord_sky_crane",
+        "char_fang_zheng",
+        "sys_gu_master",
+        "fac_immortal_crane_sect",
+        "loc_hu_immortal_blessed_land"
+      ]
+    },
+    {
+      "text": "In Central Continent under Immortal Crane Sect, Fang Zheng enters a wide tunnel lined with elite rockman guards. The rockmen are trained by the land’s owner, have at least rank four battle strength, and use earth path Gu worms; every thousand steps stands a huge rockman with rank five aura. Lord Sky Crane says the current owner is the sect’s third supreme elder, Lord Tiger Demon, whose rockman slaves are the best in Central Continent and who holds large influence even in treasure yellow heaven.",
+      "chapters": [
+        668
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rockman-tunnels",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "sys_gu_worms",
+        "loc_treasure_yellow_heaven"
+      ]
+    },
+    {
+      "text": "He Feng Yang flies to Fei He Mountain and enters Fu Hu blessed land without stopping. Lord Tiger Demon stands beside an enormous stone pit watching tens of thousands of rockmen work inside it. Anger will from the land flies out toward the conference hall at Fei He Mountain’s peak.",
+      "chapters": [
+        704
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fei-he-return",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_he_feng_yang",
+        "loc_fei_he_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/fu-hu-blessed-land.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/fu-hu-blessed-land/",
+      "chapters": [
+        656,
+        668,
+        704
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

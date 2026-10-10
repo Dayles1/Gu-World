@@ -1,0 +1,135 @@
+{
+  "id": "loc_land_of_bu_bai",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Land of Bu Bai",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Bu Bai Inheritance"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A central continent site Fang Yuan names as the Bu Bai inheritance and the sacred land for refinement masters.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 286,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    286
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_green_mountain_remains",
+      "count": 1
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 1
+    },
+    {
+      "target": "gu_undefeated_hundred_battles_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_bu_bai_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan weighs how to keep all-out effort Gu alive if refinement fails while Spring Autumn Cicada stays his vital Gu, he names three methods that can protect a core Gu that is not his vital Gu. The first is to head to the Land of Bu Bai. He then sets the option aside: the land of Bu Bai is too far away, and getting there is impossible for him at that time. After ruling that route out, he weighs undefeated hundred battles Gu and green mountain remains instead.",
+      "chapters": [
+        286
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-of-three-methods",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_all_out_effort_gu",
+        "gu_spring_autumn_cicada",
+        "sys_vital_gu",
+        "gu_undefeated_hundred_battles_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/land-of-bu-bai/",
+      "chapters": [
+        286
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "inheritance",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

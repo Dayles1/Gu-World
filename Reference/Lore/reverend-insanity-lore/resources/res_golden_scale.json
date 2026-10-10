@@ -1,0 +1,120 @@
+{
+  "id": "res_golden_scale",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Golden scale",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Golden scale is an immortal material pulled from a desolate beast golden dragonfish and used with black oil to refine gather oil Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1657,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1657
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_gather_oil_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_gather_oil_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gold_dragonfish",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan takes a shiny golden scale from his immortal aperture and feeds it into black oil essence during Gu refinement. The golden scale is an immortal material pulled from a desolate beast golden dragonfish; together with black oil it makes the refinement immortal level. After deductions, he finds the golden dragonfish and black oil have a high level of compatibility. One scale is not enough, so he tosses in more golden scales while refining gather oil Gu.",
+      "chapters": [
+        1657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gather-oil-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_gather_oil_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/golden-scale.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/golden-scale/",
+      "chapters": [
+        1657
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Desolate beast golden dragonfish",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Gather Oil Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

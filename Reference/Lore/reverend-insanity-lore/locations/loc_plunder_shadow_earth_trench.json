@@ -1,0 +1,201 @@
+{
+  "id": "loc_plunder_shadow_earth_trench",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Plunder Shadow Earth Trench",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border Earth Trench where the rank eight Purple Mountain True Monarch hid with Ying Wu Xie while they weighed recruiting new Gu Immortals.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1333,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1333,
+    1379
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 2
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_reverse_flow_river",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_dark_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_chi_qu_you",
+      "count": 1
+    },
+    {
+      "target": "char_qiao_zhi_cai",
+      "count": 1
+    },
+    {
+      "target": "char_tie_mian_shen",
+      "count": 1
+    },
+    {
+      "target": "gu_water_refinement_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes the trench’s full landscape beyond naming caves deep within it and placing Shadow Sect’s party there after Reverse Flow River.",
+      "chapters": [
+        1333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "loc_reverse_flow_river"
+      ]
+    },
+    {
+      "text": "Southern Border’s Plunder Shadow Earth Trench holds countless fierce dark path beasts and shadow monsters, and the text names it one of the most dangerous places in Southern Border. Deep within the trench, inside a certain cave, Purple Mountain True Monarch wakes from madness while Ying Wu Xie appears, after Shadow Sect’s party of four returns to Southern Border and enters that trench.",
+      "chapters": [
+        1333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_purple_mountain_true_monarch",
+        "char_ying_wu_xie"
+      ]
+    },
+    {
+      "text": "Arriving above the trench, Fang Yuan identifies it by name: after the battle of Reverse Flow River, Purple Mountain True Monarch led Shadow Sect’s remnant forces from Northern Plains through Eastern Sea and into Southern Border, and Plunder Shadow Earth Trench became their temporary headquarters. Its Gu formation uses only mortal Gu, drawing on the trench’s dense dark path dao marks for the power of an immortal Gu formation, and its best effect is preventing the deductions of others; even Fang Yuan’s grandmaster formation path attainment lets him see through it only roughly.",
+      "chapters": [
+        1379
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shadow-sects-temporary-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_northern_plains",
+        "reg_eastern_sea",
+        "sys_gu_formation",
+        "sys_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/plunder-shadow-earth-trench.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/plunder-shadow-earth-trench/",
+      "chapters": [
+        1333,
+        1379
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "earth-trench",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "id": "loc_qing_oasis",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qing oasis",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qing oasis is Western Desert Qing clan's named oasis base.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2035,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2035,
+    2055,
+    2056
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 3
+    },
+    {
+      "target": "char_qing_heng",
+      "count": 2
+    },
+    {
+      "target": "char_qing_hua_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_qing_clan",
+      "count": 1
+    },
+    {
+      "target": "char_qing_chou",
+      "count": 1
+    },
+    {
+      "target": "house_divine_bean_palace",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Rough winds howl in the desert while the oasis carries a warm breeze. Sandstones pile into a mountain with rising hot steam, a calm lake lies beneath, and green trees rustle in the evening wind. Western Desert Qing clan’s base sits at this oasis called Qing oasis. Qing clan Gu Immortals gather there when Qing Heng’s life tablet Gu shatters and they plan revenge on Ming You.",
+      "chapters": [
+        2035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "fac_qing_clan",
+        "sys_gu_immortal",
+        "char_qing_heng"
+      ]
+    },
+    {
+      "text": "In Qing Chou’s restored memory, screams fill the entire Qing oasis. Narration calls it Western Desert Qing clan’s blessed land headquarters in a beautiful oasis: sandstones like mountains, a still lake like the sea, and lush trees, turned into living hell as young Spectral Soul, Ming You, stands in the sky and kills thousands with each attack while Qing clan Gu Immortals hide in the deepest part of the blessed land headquarters.",
+      "chapters": [
+        2055
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ming-you-slaughter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qing_chou"
+      ]
+    },
+    {
+      "text": "When Qing clan’s killer move Qing Chou resonates with Divine Bean Palace, mysterious jade green light digests the entire Qing clan headquarters, including Qing oasis, covering the surrounding ten thousand li. After the light fades, Western Desert Gu Immortals find Qing clan territory reduced to a vast ruin.",
+      "chapters": [
+        2056
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-digested",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_divine_bean_palace"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/qing-oasis/",
+      "chapters": [
+        2035,
+        2055,
+        2056
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "oasis",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

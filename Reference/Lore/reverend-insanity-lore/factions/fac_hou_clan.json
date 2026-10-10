@@ -1,0 +1,258 @@
+{
+  "id": "fac_hou_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hou Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border super force named among the clans that send representatives to Shang clan's succession ceremony on Shang Liang Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1072,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1072,
+    1345,
+    1346,
+    1610
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_hou_yao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1532,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hou_yao",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "house_flying_sand_pavilion",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_yang_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_yao_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_wu_jie",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_zhou_quan",
+      "count": 1
+    },
+    {
+      "target": "loc_smoky_warm_jade_field",
+      "count": 1
+    },
+    {
+      "target": "sys_year_essence_pool",
+      "count": 1
+    },
+    {
+      "target": "fac_southern_alliance",
+      "count": 1
+    },
+    {
+      "target": "house_beacon_tower",
+      "count": 1
+    },
+    {
+      "target": "sys_five_regional_limit_formation",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_vein_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Shang Clan’s succession ceremony on Shang Liang Mountain, Hou clan is listed with Tie Clan, Yi Clan, Wu Clan, and other Southern Border super force representatives among the guests.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-at-shang-succession",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "loc_shang_liang_mountain",
+        "fac_tie_clan",
+        "fac_yi_clan",
+        "fac_wu_clan",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Two Hou clan Gu Immortals stand above Golden Cloud Canyon, a mist-filled canyon that produces metal path and cloud path resources. One states that Wu clan took the canyon from Hou clan long ago by force, and that they mean to take the asset back. As a righteous path force bound by righteous path rules, they cannot attack openly, so one immortal changes appearance into a known demonic path expert while the other pretends to pursue him, and they charge into the canyon on that excuse. The Wu clan Gu Immortal who had defended the site has already been recalled to Wu clan headquarters, leaving a mortal Gu formation; Hou clan uses blade qi Immortal Gu to break that formation and seize the canyon. Holding the ground first lets them later claim they helped defend it and demand compensation, unless Wu clan has the battle strength to force them out.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "golden-cloud-canyon",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "sys_gu_formation",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "In the same stretch, Yao clan, Yang clan, and Hou clan are three of the super forces that move against Wu clan after news that Wu Yong is dead.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "golden-cloud-canyon",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yao_clan",
+        "fac_yang_clan",
+        "char_wu_yong"
+      ]
+    },
+    {
+      "text": "Southern Border’s righteous path has thirteen super clans, and Hou clan is named in that list with Wu, Ba, Shang, Tie, Luo, Qiao, Chai, Xia, Yi, Chi, Yang, and Yao.",
+      "chapters": [
+        1610
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "golden-cloud-canyon",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/hou-clan/",
+      "chapters": [
+        1072,
+        1345,
+        1346,
+        1610
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

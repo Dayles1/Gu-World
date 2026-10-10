@@ -1,0 +1,246 @@
+{
+  "id": "loc_heroes_assembly",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heroes Assembly",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Northern Plains gatherings where tribes migrate, attach to stronger houses, and seek refuge before the ten-year blizzard.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 440,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    440,
+    449,
+    485,
+    489,
+    496
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_hong_yan_valley",
+      "count": 1
+    },
+    {
+      "target": "loc_wang_ting_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "fac_cheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_fei_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "loc_onion_valley",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan urges Ge tribe to migrate north, take part in the heroes assembly, and rely on Huang Jin tribe so they can hide in Wang Ting Blessed Land when the great blizzard comes. Ge tribe leader refuses that imperial court path for a small clan and prefers shelter in Hong Yan Valley under Man tribe terms. The assembly is Fang Yuan’s next target destination, and the old clan leader warns that his current wolf group would not be enough for the journey.",
+      "chapters": [
+        440
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_ge_tribe",
+        "fac_huang_jin_bloodline",
+        "loc_wang_ting_blessed_land",
+        "loc_hong_yan_valley",
+        "fac_man_tribe"
+      ]
+    },
+    {
+      "text": "After Ge Yao’s death, Ge tribe leader says they have no excuse left to use Hong Yan valley and that staying would mean being swallowed by Man tribe. A few days later, he says, they will depart for the heroes assembly.",
+      "chapters": [
+        449
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ge-tribe-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_yao"
+      ]
+    },
+    {
+      "text": "Over eight days, large numbers of small to mid-sized tribes start for the heroes assembly, leaving only several large-sized tribes at crescent lake. Fang Yuan says large tribes usually attend the second half because they have more enterprises to settle.",
+      "chapters": [
+        485
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "tribes-leaving-crescent-lake",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "For the struggle toward Imperial Court blessed land, the heroes assembly comes into existence and becomes a firm tradition of northern plains people. As the great blizzard approaches, all famous regions of northern plains hold a heroes assembly at the same time. Speakers name Tian Chuan, Yu Tian, Meng Qiu, and Cao Fu among those seats, and say that winning attracts experts and attached tribes as the first step of the great battle of Northern Plains.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "tradition-and-regional-seats",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "loc_tian_chuan",
+        "loc_yu_tian",
+        "loc_cao_fu_region",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "The heroes assembly is a place where forces probe each other and create powerful alliances. Ge Guang reports that Yu Tian’s assembly is already fierce, with Liu Wen Wu and Hei Lou Lan as the two strongest tribes, and that even large-sized tribes have left crescent lake for Yu Tian. Fang Yuan says Yu Tian’s contest has entered its climax and sends Ge tribe to onion valley first rather than rushing straight there.",
+      "chapters": [
+        496
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliances-at-yu-tian",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_guang",
+        "char_liu_wen_wu",
+        "char_hei_lou_lan",
+        "loc_onion_valley"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/heroes-assembly/",
+      "chapters": [
+        440,
+        449,
+        485,
+        489,
+        496
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "gathering",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

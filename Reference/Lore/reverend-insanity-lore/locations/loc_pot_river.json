@@ -1,0 +1,191 @@
+{
+  "id": "loc_pot_river",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Pot River",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Pot River is a Central Continent river under Wind Cloud Manor where pot grass grows and an annual flood festival draws Gu Masters.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1052,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1052,
+    1060,
+    1069
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "char_feng_chan_zi",
+      "count": 2
+    },
+    {
+      "target": "char_gong_sun_liang",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_heavenly_court_pursuit",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The water in pot river flows smooth and graceful. Much pot grass grows in the river.",
+      "chapters": [
+        1060
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ying Wu Xie waits on the banks of Pot River in eastern Central Continent under Wind Cloud Manor’s jurisdiction, risking a stay of days while hunted by Heavenly Court and the ten great ancient sects. He stays because refining Fixed Immortal Travel requires the light of the immemorial era, a rare material counted among Wind Cloud Manor’s treasures, and Feng Chan Zi controls access through a grass puppet avatar.",
+      "chapters": [
+        1052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ying_wu_xie",
+        "reg_central_continent",
+        "house_wind_cloud_manor",
+        "fac_heavenly_court",
+        "gu_fixed_immortal_travel",
+        "char_feng_chan_zi"
+      ]
+    },
+    {
+      "text": "Each year before the flood season, pot river stays calm, then water runs rapidly and sweeps brown pot grass fruits away from their origins. Wind Cloud Manor holds a festival around pot river during that season that draws disciples and surrounding forces of all ages. Ying Wu Xie waits on the bank for Feng Chan Zi while seeking the light of the immemorial era.",
+      "chapters": [
+        1060
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "flood-season-festival",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fairy Zi Wei later says capturing Gong Sun Liang helped Heavenly Court learn about the boss who borrowed Gu from him, which pointed toward Pot River and Feng Chan Zi’s sale of the light of the immemorial era.",
+      "chapters": [
+        1069
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "trace-after-capture",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "char_gong_sun_liang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/pot-river.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/pot-river/",
+      "chapters": [
+        1052,
+        1060,
+        1069
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "river",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

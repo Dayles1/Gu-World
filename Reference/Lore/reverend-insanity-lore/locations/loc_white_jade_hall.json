@@ -1,0 +1,168 @@
+{
+  "id": "loc_white_jade_hall",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "White Jade Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A pure white jade chamber where Fang Yuan finds Imperial Court blessed land's land spirit sealed as a green copper divine bird.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 602,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    602,
+    603
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_frost_jade_peacock",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "gu_gruel_mud",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A grand and elegant white jade hall. Walls, pillars, and roof are pure white as snow, all made of white jade stone. An elevated platform of twenty-three steps holds a green copper divine bird statue bound in huge black chains. Melting green paste falls as mud on the white jade floor, contrasting the white tiles.",
+      "chapters": [
+        602
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan stands in a grand white jade hall whose walls, pillars, and roof are white jade stone, with an elevated platform of twenty-three steps holding a green copper divine bird statue bound in huge black chains. Mo Yao names the statue Frost Jade Peacock, Imperial Court blessed land’s land spirit. After Gruel Mud begins melting the green paste seal, tremors fade and the hall goes quiet again; melting paste falls as mud on the white jade floor.",
+      "chapters": [
+        602
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_mo_yao",
+        "char_frost_jade_peacock",
+        "loc_imperial_court_blessed_land",
+        "gu_gruel_mud"
+      ]
+    },
+    {
+      "text": "Right after leaving the white jade hall, Fang Yuan is vexed about subduing the Imperial Court land spirit. His plan, if he became owner, was to order the land spirit to stay inside the white jade hall while cooperating with Eighty-Eight True Yang Building’s operations.",
+      "chapters": [
+        603
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "plan-after-exit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court",
+        "house_eighty_eight_true_yang_building"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/white-jade-hall.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/white-jade-hall/",
+      "chapters": [
+        602,
+        603
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "hall",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

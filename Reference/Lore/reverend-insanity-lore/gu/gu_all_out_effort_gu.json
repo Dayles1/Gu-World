@@ -1,0 +1,902 @@
+{
+  "id": "gu_all_out_effort_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "All-out Effort Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "All-out Effort Gu is a near-extinct rank three strength path Gu. It is the core of a strength path set: when used, it summons a beast phantom that the Gu Master can direct.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 285,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    285,
+    286,
+    287,
+    288,
+    291,
+    296,
+    297,
+    316,
+    318,
+    494,
+    500,
+    516,
+    628,
+    758,
+    863,
+    988,
+    997,
+    1570
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "fac_wu_clan",
+      "role": "prior holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 285,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_li_ran",
+      "role": "carrier",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 285,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 285,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_li_ran",
+      "count": 4
+    },
+    {
+      "target": "path_strength",
+      "count": 3
+    },
+    {
+      "target": "move_myriad_self",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "sys_support_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_self_reliance_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_bitter_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_vertical_crash_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_habitual_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 2
+    },
+    {
+      "target": "char_third_hair",
+      "count": 2
+    },
+    {
+      "target": "gu_myriad_self_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_attack_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_beast_phantom",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_stellar_stone",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_paper_crane_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_lan_chao_gambling_den",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "gu_green_mountain_remains",
+      "count": 1
+    },
+    {
+      "target": "gu_undefeated_hundred_battles_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_bu_bai_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_clan_ancient_strength_path_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_land_of_bu_bai",
+      "count": 1
+    },
+    {
+      "target": "gu_reputation_gu",
+      "count": 1
+    },
+    {
+      "target": "char_wang_han",
+      "count": 1
+    },
+    {
+      "target": "gu_water_prison_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_li_hao",
+      "count": 1
+    },
+    {
+      "target": "char_li_hao",
+      "count": 1
+    },
+    {
+      "target": "gu_green_bull_labor_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_stone_turtle_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "char_zhu_ba",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_zhu_ba",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_qi_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_black_python_coiling_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "move_eight_beast_phantoms",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_ju_kai_bei",
+      "count": 1
+    },
+    {
+      "target": "gu_violent_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_tusita_lantern_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_crocodile_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "move_beast_phantom_retract",
+      "count": 1
+    },
+    {
+      "target": "evt_era_olden",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "gu_amplify_effect_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_aura_concealment_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_borrow_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_water_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wind_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_star_form_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "gu_iron_crown_eagle_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "res_poisonous_flower_petals",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "move_blood_refinement_snake",
+      "count": 1
+    },
+    {
+      "target": "res_floating_life_fire",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/all-out-effort-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/all-out-effort-gu/",
+      "chapters": [
+        285,
+        286,
+        287,
+        288,
+        291,
+        296,
+        297,
+        316,
+        318,
+        494,
+        500,
+        516,
+        628,
+        758,
+        863,
+        988,
+        997,
+        1570
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      },
+      {
+        "rank": 4,
+        "recorded_chapter": 516,
+        "confidence": "B"
+      },
+      {
+        "rank": 5,
+        "recorded_chapter": 863,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_strength"
+    ],
+    "path_unverified": false,
+    "functional_types": [
+      "support"
+    ],
+    "effect_type_raw": "Support",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Wei Yang and Fang Yuan both place it on the strength path as the core Gu of a strength path set.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "path_strength"
+        ]
+      },
+      {
+        "text": "Fang Yuan later restates that it is his core while he still lacks bitter strength Gu.",
+        "chapters": [
+          296
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In Northern Plains, Fang Yuan still treats All-out Effort Gu as the most ideal strength path core and plans to make it his second aperture’s vital Gu so refinement failure cannot strip it from him.",
+        "chapters": [
+          494
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_northern_plains"
+        ]
+      },
+      {
+        "text": "Its core role in jun-strength terms is that the Gu lets a Gu Master use the whole body’s strength with full liberty to exert it.",
+        "chapters": [
+          500
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After three failed advances he succeeds on the fourth try and raises it to rank four in Northern Plains. The rank four form has four pairs of legs, is more than twice as large as the rank three form, and no longer suffers Southern Border regional suppression.",
+        "chapters": [
+          516
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_southern_border"
+        ]
+      },
+      {
+        "text": "During immortal ascension he shatters the second aperture that held rank four All-out Effort Gu as its vital Gu. The text states that Gu is of the strength path and that putting it in first during the third step would help him become a strength path Gu Immortal.",
+        "chapters": [
+          628
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal"
+        ]
+      },
+      {
+        "text": "Later narration gives a deeper account of the true effect: complete resonance of strength path dao marks carved on the body, with full on-demand use of mismatched beast strengths such as iron crown eagle strength needing All-out Effort Immortal Gu. At that point his copy is still only rank four, and the Immortal Gu recipe is described as lost over the river of time.",
+        "chapters": [
+          758
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_immortal_gu",
+          "sys_gu_recipe"
+        ]
+      },
+      {
+        "text": "Using strength path grandmaster attainment he later deduces the rank five recipe, fails once, then raises the Gu to rank five; he still cannot raise it to rank six himself.",
+        "chapters": [
+          863
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Refining all-out effort Immortal Gu in Star Form blessed land, he turns a lump of immortal materials into a golden muddy ball through blood refinement and repeated roasting, then attacks it with a special Gu worm, but the ball explodes into gold powder scattered around the surrounding three li and the refinement fails with no half-completed Immortal Gu formed.",
+        "chapters": [
+          988
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_star_form_blessed_land",
+          "sys_gu_worms"
+        ]
+      },
+      {
+        "text": "He later tries to refine all-out effort Immortal Gu several times and has yet to succeed, then resolutely gives up that refinement rather than keep investing in the sunk cost.",
+        "chapters": [
+          997
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "During myriad self Immortal Gu refinement at Lang Ya, Third Hair takes out a number of all-out effort Gu shaped like rhinoceros beetles, and the text states Fang Yuan had not refined all-out effort Immortal Gu yet for now; those were all mortal Gu from rank one to five used as materials in the fuse step.",
+        "chapters": [
+          1570
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "ranks-and-immortal-gu-attempts",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_myriad_self_immortal_gu",
+          "fac_lang_ya_sect",
+          "char_third_hair",
+          "sys_mortal_gu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is shaped like a rhinoceros beetle. Sitting in a palm, its body is almost the size of that palm, and quite heavy. It is oval, with a strong armor exoskeleton. There is a strong horn on its head, looking heavy and powerful. It has three pairs of legs, all strong and thick. Its body is dark brown, and glistens with a metallic surface.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In Wei Yang’s hand it looks like a rhinoceros beetle: oval, palm-sized and heavy, with strong armored exoskeleton, a heavy horn on its head, three pairs of thick legs, and a dark brown body with a metallic sheen. Fang Yuan states it is rank three.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_wei_yang"
+        ]
+      },
+      {
+        "text": "Li Ran prices that rank three copy as unique now because it comes from the Olden Antiquity Era.",
+        "chapters": [
+          287
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "evt_era_olden"
+        ]
+      },
+      {
+        "text": "The English chapter text used here does not print Chinese characters or a glyph for the name.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "It has a long oval body with a dark brown carapace. A majestic horn is on its head, thick and powerful. It has four pairs of long strong legs, and its whole body emits a glossy metallic luster. It is larger in size, over two times bigger than the rank three counterpart.",
+        "chapters": [
+          516
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-four-appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Once used, it summons a beast phantom that moves according to the Gu Master’s will.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "It is a support Gu, not an attack Gu, yet using it can still produce a devastating blow by bringing out the user’s stored beast strength as a phantom behind the strike. At rank three it can activate only one beast phantom at a time.",
+        "chapters": [
+          288
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_support_gu",
+          "sys_attack_gu"
+        ]
+      },
+      {
+        "text": "The activation can be started or stopped at will, so phantoms appear when the Gu is on and vanish when it is revoked.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Its primeval essence cost is very small; the phantoms themselves do not spend essence.",
+        "chapters": [
+          291
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Current strength path Gu Masters treat it as long extinct and built habitual strength Gu as a later substitute.",
+        "chapters": [
+          316
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_masters",
+          "gu_habitual_strength_gu"
+        ]
+      },
+      {
+        "text": "Wu clan had given Li Ran both the sealed Gu and a recipe that only covers raising it from rank three to rank four. After Fang Yuan keeps the Gu, Wei Yang names it the undoubted core for assembling a strength path set and urges him to make it a vital Gu before later refinement. Fang Yuan already plans that set with All-out Effort Gu as core and self-reliance Gu plus bitter strength Gu as support.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_vital_gu",
+          "gu_self_reliance_gu",
+          "gu_bitter_strength_gu"
+        ]
+      },
+      {
+        "text": "His first public test is a staged battle against Li Ran: vertical crash Gu plus a wild boar phantom from All-out Effort Gu breaks Li Ran in one pass.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_vertical_crash_gu"
+        ]
+      },
+      {
+        "text": "In training he confirms the gap between ordinary blows and the same blow with a brown bear phantom active, and that he still cannot stack two different phantoms at once at rank three.",
+        "chapters": [
+          288
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "fac_wu_clan",
+      "role": "prior holder",
+      "recorded_chapter": 285,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_li_ran",
+      "role": "carrier",
+      "recorded_chapter": 285,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 285,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan forces the secret of a stellar stone out of Wu clan spy Li Ran in Shang clan city, then opens All-out Effort Gu from that fossil at Lan Chao gambling den three days later. It is a near extinct ancient Gu that can summon a beast phantom every time it is used. Li Ran had received the sealed Gu from Wu clan, and Fang Yuan takes it through that staged fossil dispute rather than by open clan purchase.",
+        "chapters": [
+          285
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "fac_wu_clan",
+          "char_li_ran",
+          "loc_shang_clan_city"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Support",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

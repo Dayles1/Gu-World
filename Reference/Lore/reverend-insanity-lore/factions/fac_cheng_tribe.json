@@ -1,0 +1,216 @@
+{
+  "id": "fac_cheng_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cheng Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe Ma Ying Jie names as the next target after Ma tribe annihilates Fei tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 489,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    489,
+    520,
+    523,
+    539
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_cheng_hu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 523,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_cheng_hu",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "path_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_gu_guo_long",
+      "count": 1
+    },
+    {
+      "target": "char_cheng_long",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a Ma tribe higher-ups discussion for Tian Chuan’s heroes assembly, Ma Ying Jie argues that subjugating Cheng tribe would give Ma tribe a strong lead. The same talk turns to surveying Yu Tian, Meng Qiu, and Cao Fu assemblies as well.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heroes-assembly-council",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "loc_tian_chuan",
+        "loc_heroes_assembly",
+        "char_ma_ying_jie",
+        "loc_yu_tian",
+        "loc_cao_fu_region"
+      ]
+    },
+    {
+      "text": "At Tian Chuan heroes assembly, Ma tribe suppresses Cheng tribe to become the alliance leader.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-army",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Cheng tribe is subjugated by Ma tribe during heroes assembly and becomes the second most influential force in Ma tribe’s army; Cheng Hu is named as a rank four transformation path Gu Master from Cheng tribe.",
+      "chapters": [
+        523
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-army",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_cheng_hu",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "When the opposing army first fields a rank five expert, Ma tribe answers by sending Cheng tribe leader Cheng Long, a rank five transformation path expert and Cheng Hu’s big brother. Ma tribe gains from defeating Ye Lui tribe include Cheng tribe among other large tribes.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-fielding",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_cheng_long",
+        "fac_ye_lui_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/cheng-tribe/",
+      "chapters": [
+        489,
+        520,
+        523,
+        539
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

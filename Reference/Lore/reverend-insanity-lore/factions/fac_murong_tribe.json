@@ -1,0 +1,332 @@
+{
+  "id": "fac_murong_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Murong Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains righteous path tribe named when Dong Fang Yi Kong ranks its Yin-Yang blessed land against Jade Pool.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 657,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    657,
+    752,
+    763,
+    795,
+    1193
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_murong_jin_xiao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 747,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_murong_gang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_murong_jin_xiao",
+      "count": 4
+    },
+    {
+      "target": "char_murong_gang",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_yuan_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_yin_yang_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "house_investigation_courtyard",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_he_lang_zi",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_huang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_murong_qing_si",
+      "count": 1
+    },
+    {
+      "target": "char_yun_liang",
+      "count": 1
+    },
+    {
+      "target": "char_meng_zi_zai",
+      "count": 1
+    },
+    {
+      "target": "char_sleeping_lady",
+      "count": 1
+    },
+    {
+      "target": "loc_divine_needle_valley",
+      "count": 1
+    },
+    {
+      "target": "res_front_back_divine_obstruction_needles",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Dong Fang Chang Fan offers deduction deals for a posthumous alliance at Jade Pool blessed land, Tong Zu of Chanyu Tribe accepts first, then Hei Tribe, Murong tribe, and the other tribe representatives also accept.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-at-jade-pool",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_chang_fan",
+        "loc_jade_pool_blessed_land",
+        "fac_chanyu_tribe",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "At Qin Bai Sheng’s auction, Murong Jin Xiao thanks an Eastern Sea rank eight guest for help that left He Lang Zi unable to reach Ascending Heaven Plain in Eastern Sea. Fang Yuan recalls that a Northern Plains super force with Eastern Sea connections was Murong tribe.",
+      "chapters": [
+        752
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-connections",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_bai_sheng",
+        "char_murong_jin_xiao",
+        "char_he_lang_zi",
+        "loc_ascending_heaven_plain",
+        "reg_eastern_sea",
+        "char_fang_yuan",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Late in the auction, Murong tribe remains among three super forces bidding with Yuan tribe and Chanyu tribe. Murong Jin Xiao refuses to yield the Red Fiend Divine Boat recipe fight, saying Murong tribe’s Immortal Gu House lacks a core Immortal Gu and that everyone in Northern Plains knows it.",
+      "chapters": [
+        763
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-bid",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yuan_tribe",
+        "house_red_fiend_divine_boat",
+        "sys_immortal_gu_house",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Murong tribe’s Yin-Yang blessed land is listed with Dong Fang tribe’s Jade Pool, Guan tribe’s Shi Huang, and Hei tribe’s Iron Eagle as a main camp pieced together from Gu Immortal contributions.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yin-yang-camp",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yin_yang_blessed_land",
+        "fac_dong_fang_tribe",
+        "fac_guan_tribe",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When Huang Jin tribes appear in turn, Murong tribe is listed with Liu, Ye Lui, Chanyu, Meng, Yuan, Nian Er, and Guan among eleven Huang Jin tribes that are super forces with territorial rule.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "huang-jin-listing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_huang_jin_bloodline"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/murong-tribe/",
+      "chapters": [
+        657,
+        752,
+        763,
+        795,
+        1193
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

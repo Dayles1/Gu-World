@@ -1,0 +1,196 @@
+{
+  "id": "fac_jin_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jin Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan named with Huang clan when the caravan reaches Huang Jin mountain and must choose a single host.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 241,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    241,
+    242,
+    243
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_huang_jin_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_golden_silkworm_gu",
+      "count": 2
+    },
+    {
+      "target": "res_jinzan_grass",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Jin clan Gu Masters wear uniforms like Qing Mao mountain attire: short sleeves, long pants, belts, leg wrappings, and green bamboo shoes. Some use golden rope as leg wrappings, and belts, cloth cuffs, or pants are rimmed in gold as Huang Jin mountain’s characteristic mark. In the temporary market, Jin clansmen also sell golden statues and tools, and people on the mountain even poor slaves wear golden rings and necklaces, with girls’ hairpins, earrings, and bracelets shining with golden luster.",
+      "chapters": [
+        242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "Two clans sit on Huang Jin Mountain: Huang village on the southern side and Jin village on the northern side.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "seat-on-huang-jin-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_huang_jin_mountain"
+      ]
+    },
+    {
+      "text": "The caravan arrives at Jin clan, and Jin clansmen also sell in the temporary market beside the merchants.",
+      "chapters": [
+        242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seat-on-huang-jin-mountain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Jin clan Gu Masters wear uniforms like Qing Mao mountain attire: short sleeves, long pants, belts, leg wrappings, and green bamboo shoes. Some use golden rope as leg wrappings, and belts, cloth cuffs, or pants are rimmed in gold as Huang Jin mountain’s characteristic mark.",
+      "chapters": [
+        242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seat-on-huang-jin-mountain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Jinzan grass is an irreplaceable war resource for Jin clan, used as a refinement material so the clan can produce large numbers of golden silkworm Gu. At this visit the clan is still fixing that recipe, yet already grows three acres of Jinzan grass. In Fang Yuan’s prior-life memory, Jin clan later uses rank three golden silkworm Gu to eliminate Huang Clan and dominate Huang Jin mountain.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jinzan-grass-and-golden-silkworm",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_jinzan_grass",
+        "gu_golden_silkworm_gu",
+        "char_fang_yuan",
+        "fac_huang_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/jin-clan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/jin-clan/",
+      "chapters": [
+        241,
+        242,
+        243
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

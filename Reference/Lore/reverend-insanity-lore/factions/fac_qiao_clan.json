@@ -1,0 +1,458 @@
+{
+  "id": "fac_qiao_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qiao Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qiao clan is a Southern Border righteous path force backed by Wu clan through long alliance marriages.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1214,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1214,
+    1218,
+    1313,
+    1316,
+    1317,
+    1320,
+    1321,
+    1339,
+    1348,
+    1610,
+    1850
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_qiao_zhi_cai",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1339,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qiao_si_liu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1218,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_wu_qiao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1219,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_qiao_si_liu",
+      "count": 4
+    },
+    {
+      "target": "char_wu_qiao",
+      "count": 3
+    },
+    {
+      "target": "char_qiao_zhi_cai",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_ba_de",
+      "count": 2
+    },
+    {
+      "target": "char_ba_quan_feng",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_miao_yin",
+      "count": 2
+    },
+    {
+      "target": "fac_ba_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "char_wu_du_xiu",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 2
+    },
+    {
+      "target": "fac_xia_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_luo_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_southern_border_war",
+      "count": 1
+    },
+    {
+      "target": "char_wu_fa",
+      "count": 1
+    },
+    {
+      "target": "char_chi_bang",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "char_tie_mian_shen",
+      "count": 1
+    },
+    {
+      "target": "inh_seven_illusions_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_wooden_statue_murder",
+      "count": 1
+    },
+    {
+      "target": "loc_wedding_dress_lake",
+      "count": 1
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_yang_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_tao_zhu_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the Southern Border super dream realm Gu formation, a Qiao clan Gu Immortal leads Fairy Miao Yin inside, and Ba Quan Feng calls Qiao clan greedy for admitting a demonic path immortal who once wrecked Ba clan resource points. Ba De answers that Qiao clan is weak and at the bottom of the righteous path forces, yet backed by Wu clan, and that Qiao clan and Wu clan have been linked by alliance marriages for tens of thousands of years. Ba Quan Feng still calls Qiao clan a dog raised by Wu clan for the last few thousand years.",
+      "chapters": [
+        1214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wu-clan-client-reputation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "sys_gu_formation",
+        "sys_gu_immortal",
+        "char_fairy_miao_yin",
+        "char_ba_quan_feng",
+        "fac_ba_clan",
+        "char_ba_de",
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "After Wu Du Xiu dies, Qiao clan’s first supreme elder treats Wu clan unrest as a chance, saying outsiders think Qiao clan is Wu clan’s lackey while the clan was only trying to survive, and that long term marriage alliances give Qiao clan better reasons to act than other clans. He keeps the marriage alliance line going and points Qiao Si Liu, one of Southern Border’s three great fairies, at Wu Yi Hai rather than Wu Yong. At Wu Du Xiu’s funeral he announces that Wu Yi Hai survived and arrived with Qiao clan’s help.",
+      "chapters": [
+        1218
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-marriage-plan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_du_xiu",
+        "char_qiao_si_liu",
+        "char_wu_yi_hai",
+        "char_wu_yong"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-marriage-plan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-and-marriage-plan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration lists Qiao clan among the super forces holding close relations with Wu clan.",
+      "chapters": [
+        1313
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-among-wu-clans-allies",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Qiao Si Liu’s moon festival, narration also calls Qiao clan a righteous path super force.",
+      "chapters": [
+        1316
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-among-wu-clans-allies",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Qiao Si Liu’s moon festival she brings out bewitching tea for her guests, and narration states that bewitching tea is Qiao clan’s signature tea, multiple grades higher than the willow spiral tea that is only Qiao Si Liu’s own creation.",
+      "chapters": [
+        1317
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bewitching-tea-named-the-clans-signature",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After a moon appreciation festival, Qiao clan’s first supreme elder drinks bewitching tea and tells Qiao Si Liu that Qiao clan has long been allies with Wu clan without penetrating Wu clan’s core, and that Wu Yi Hai is a huge opportunity for that deeper tie.",
+      "chapters": [
+        1320
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bewitching-tea-and-deeper-alliance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Rumors spread that Wu clan’s Wu Yi Hai and Qiao Si Liu are very close and often travel to scenic spots together. Qiao Si Liu’s other pursuers are indignant and still grant that Wu clan’s and Qiao clan’s relations alone give Wu Yi Hai an enormous advantage.",
+      "chapters": [
+        1321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rumors-of-a-match-with-wu-yi-hai",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qiao Zhi Cai is named as Qiao clan’s first supreme elder when wooden statue murders at blood tide pit are linked to his signature immortal killer move wooden statue murder. He denies the killings, cites the long Qiao and Wu relationship, and Wu Yong answers that marriage connections and alliance make him willing to trust Qiao clan while he invites Tie Mian Shen to investigate the frame.",
+      "chapters": [
+        1339
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "first-supreme-elder-qiao-zhi-cai",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qiao_zhi_cai",
+        "char_tie_mian_shen"
+      ]
+    },
+    {
+      "text": "Qiao clan sits in the central area of Southern Border, bordering Ba clan, Xia clan, and Chi clan, and can restrain southwest Yang clan. A Wu clan first supreme elder of an earlier generation heavily supported Qiao clan, and other clans treat Qiao clan as Wu clan’s guard dog. Chi clan borders Qiao clan directly.",
+      "chapters": [
+        1348
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "central-southern-border-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xia_clan",
+        "fac_chi_clan",
+        "fac_yang_clan"
+      ]
+    },
+    {
+      "text": "Southern Border’s righteous path has thirteen super clans, and Qiao clan is named among them with Wu, Ba, Shang, Tie, Hou, Luo, Chai, Xia, Yi, Chi, Yang, and Yao.",
+      "chapters": [
+        1610
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thirteen-super-clans-list",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration counts Qiao clan’s bewitching tea among four named teas that Shen clan’s six sound tea surpasses.",
+      "chapters": [
+        1850
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "specialty-tea-ranking",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shen_clan"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Headquarters and marriage plan",
+      "positions": [
+        {
+          "position": "Qiao clan's headquarters are on Qing Yang Mountain.",
+          "support": "Chapter 1218, narration opening the scene on the clan's peak.",
+          "chapters": [
+            1218
+          ]
+        },
+        {
+          "position": "Da Peng Mountain, in the north-west, is Qiao clan's main headquarters.",
+          "support": "Chapter 1321, narration calling it common knowledge as Elder Wu Fa looks north-west.",
+          "chapters": [
+            1321
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/qiao-clan/",
+      "chapters": [
+        1214,
+        1218,
+        1313,
+        1316,
+        1317,
+        1320,
+        1321,
+        1339,
+        1348,
+        1610,
+        1850
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Qiao Zhi Cai",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

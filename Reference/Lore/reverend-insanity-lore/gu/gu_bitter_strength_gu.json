@@ -1,0 +1,886 @@
+{
+  "id": "gu_bitter_strength_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bitter Strength Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bitter Strength Gu is a rare rank four strength path Gu. The more injuries and pain its user suffers, the more strength that user can bring out, within the limit of their own foundation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 286,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    286,
+    296,
+    306,
+    307,
+    308,
+    311,
+    318,
+    319,
+    321,
+    340,
+    343,
+    345,
+    360,
+    368,
+    504,
+    516,
+    517,
+    650,
+    782,
+    1561,
+    1774
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_shang_ya_zi",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 307,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 311,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shang_ya_zi",
+      "count": 4
+    },
+    {
+      "target": "move_myriad_self",
+      "count": 4
+    },
+    {
+      "target": "path_strength",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 2
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_self_reliance_gu",
+      "count": 2
+    },
+    {
+      "target": "char_ju_kai_bei",
+      "count": 2
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 1
+    },
+    {
+      "target": "char_shang_suan_ni",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "sys_support_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "gu_stone_turtle_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_brown_bear_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_galloping_horse_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_turtle_tire_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_chasing_wind_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_qi_gu",
+      "count": 1
+    },
+    {
+      "target": "move_eight_beast_phantoms",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_ju_kai_bei",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_tyrant_heng_mei",
+      "count": 1
+    },
+    {
+      "target": "char_xue_san_si",
+      "count": 1
+    },
+    {
+      "target": "char_century_boy",
+      "count": 1
+    },
+    {
+      "target": "gu_nine_eyes_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ba_xiu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_expend_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "gu_borrow_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_self_strength",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_self_giant_hand",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_cleanse_soul",
+      "count": 1
+    },
+    {
+      "target": "gu_pulling_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_pulling_water",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/bitter-strength-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/bitter-strength-gu/",
+      "chapters": [
+        286,
+        296,
+        306,
+        307,
+        308,
+        311,
+        318,
+        319,
+        321,
+        340,
+        343,
+        345,
+        360,
+        368,
+        504,
+        516,
+        517,
+        650,
+        782,
+        1561,
+        1774
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 4,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_strength"
+    ],
+    "path_unverified": false,
+    "functional_types": [
+      "support"
+    ],
+    "effect_type_raw": "Support",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Fang Yuan places it on the strength path as a support Gu in the set whose core is All-out Effort Gu.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "path_strength",
+          "sys_support_gu"
+        ]
+      },
+      {
+        "text": "It is the perfect companion for strength path Gu Masters.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_masters"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is like a beetle. It has a small body and a large body, oval and palm-sized. Its body is yellow brown, with an uneven surface, as lumps grow on its back.",
+        "chapters": [
+          311
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The auction copy is rank four. Strength path Gu have low primeval essence demands, so a rank three Gu Master can barely activate one. Its market price sits around three hundred and eighty thousand primeval stones.",
+        "chapters": [
+          307
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "In Bai Ning Bing’s view it looks like a beetle: oval, palm-sized, yellow brown, with an uneven surface and lumps on its back.",
+        "chapters": [
+          311
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is a treasure for strength path Gu Masters.",
+        "chapters": [
+          306
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The more injuries the Gu Master suffers, and the greater the pain, the more strength they can bring out. That boost still has a ceiling set by the Gu Master’s own foundation.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "With All-out Effort Gu alone, Fang Yuan can open only one beast phantom outlet at a time. Under injury plus Bitter Strength Gu, more outlets open, so the same All-out Effort Gu can summon several phantoms at once.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The Gu cannot raise strength without limit; Fang Yuan’s release still caps at the beast phantoms his body already holds.",
+        "chapters": [
+          319
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Together with All-out Effort Gu and self-reliance Gu it forms a tight strength path combination: injuries raise output while healing keeps that injured state usable in a fight.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After the battle stage win over Ju Kai Bei, onlookers state the same set again: Bitter Strength Gu lets him grow stronger as the fight continues, and with self-reliance Gu the pairing is treated as near perfect.",
+        "chapters": [
+          321
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_ju_kai_bei"
+        ]
+      },
+      {
+        "text": "He first shows the Gu in public while fighting Ju Kai Bei on the battle stage: as wounds pile up, he moves from one beast phantom to three.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He then moves up to five.",
+        "chapters": [
+          319
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Later, against Century Boy, he again drops defense on purpose so Bitter Strength Gu can raise his output as injuries mount.",
+        "chapters": [
+          368
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_century_boy"
+        ]
+      },
+      {
+        "text": "On San Cha Mountain he presses Tyrant Heng Mei while the Gu raises fighting strength with each wound, and six beast phantoms at once force Tyrant Heng Mei toward retreat.",
+        "chapters": [
+          340
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_san_cha_mountain",
+          "char_tyrant_heng_mei"
+        ]
+      },
+      {
+        "text": "Against Xue San Si he stacks Bitter Strength Gu with All-out Effort Gu and brings out eight phantoms in one burst.",
+        "chapters": [
+          343
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_xue_san_si"
+        ]
+      },
+      {
+        "text": "By then he lists Bitter Strength Gu among his six rank four Gu.",
+        "chapters": [
+          345
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "When Tie clan Gu Masters wound him, the same Gu turns those injuries into more phantoms and stronger charges; Tie Ba Xiu has to step in to block him.",
+        "chapters": [
+          360
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_tie_clan",
+          "char_tie_ba_xiu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "Fusion success rate for this Gu is extremely low, so few people use it and supply stays thin. Fang Yuan plans to buy one at Shang clan city’s large auction, or refine it himself if buying fails.",
+        "chapters": [
+          296
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "seeking-and-obtaining",
+        "text_origin": "source_excerpt",
+        "needs_review": true
+      },
+      {
+        "text": "At the auction Fang Yuan bids hard, then stops and leaves Shang Ya Zi holding the winning bid at eight hundred and ten thousand primeval stones.",
+        "chapters": [
+          307
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "seeking-and-obtaining",
+        "text_origin": "source_excerpt",
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_shang_ya_zi",
+      "role": "holder",
+      "recorded_chapter": 307,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 311,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan already plans Bitter Strength Gu as support beside All-out Effort Gu and self-reliance Gu when he locks his Shang clan city strength path set around All-out Effort Gu.",
+        "chapters": [
+          286
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "gu_self_reliance_gu",
+          "loc_shang_clan_city",
+          "gu_all_out_effort_gu"
+        ]
+      },
+      {
+        "text": "He still lacks a copy then, and treats the Gu as expensive and rarely seen even in Shang clan city.",
+        "chapters": [
+          296
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Wei Yang warns that Shang Ya Zi, Shang Bi Xi, and Ju Kai Bei are the main rivals for that lot.",
+        "chapters": [
+          306
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "seeking-and-obtaining",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_wei_yang",
+          "char_shang_ya_zi",
+          "char_shang_bi_xi"
+        ]
+      },
+      {
+        "text": "Shang Ya Zi later hands that same Gu to Fang Yuan as an apology while trying to salvage his young master position. Fang Yuan keeps it.",
+        "chapters": [
+          311
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "seeking-and-obtaining",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In Northern Plains his second aperture still holds rank four Bitter Strength Gu, described again as increasing strength the more he is injured.",
+        "chapters": [
+          504
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "possession-and-myriad-self",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_northern_plains"
+        ]
+      },
+      {
+        "text": "That Southern Border copy remains under Northern Plains region suppression, unlike his already advanced All-out Effort Gu.",
+        "chapters": [
+          516
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "possession-and-myriad-self",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "reg_southern_border"
+        ]
+      },
+      {
+        "text": "Raising Bitter Strength Gu to rank five would be a huge project in materials and Gu worms; among Hei tribe goods he also finds further rank four Bitter Strength Gu for purchase rather than only refining his own upward.",
+        "chapters": [
+          517
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "possession-and-myriad-self",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms",
+          "fac_hei_tribe"
+        ]
+      },
+      {
+        "text": "These chapters do not state that he completes that rank five advance.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "possession-and-myriad-self",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After he becomes a Gu Immortal, Bitter Strength Gu remains among the second aperture mortal Gu that form Myriad Self’s foundation beside rank four All-out Effort Gu and other strength Gu.",
+        "chapters": [
+          650
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "possession-and-myriad-self",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal",
+          "sys_mortal_gu",
+          "move_myriad_self",
+          "gu_strength_gu"
+        ]
+      },
+      {
+        "text": "When he uses immortal killer move Myriad Self, First Style, Giant Hand, the aperture again lists Bitter Strength Gu among the circling mortal Gu around Self Strength Immortal Gu.",
+        "chapters": [
+          782
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "possession-and-myriad-self",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "move_myriad_self_giant_hand",
+          "gu_self_strength"
+        ]
+      },
+      {
+        "text": "Even when Myriad Self’s core Immortal Gu are Self Strength, Pulling Mountain, Pulling Water, and Cleanse Soul, Bitter Strength Gu is still named among the supplementary mortal Gu for the full killer move.",
+        "chapters": [
+          1561
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "myriad-self-after-immortal-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_immortal_gu",
+          "gu_pulling_mountain",
+          "gu_pulling_water",
+          "gu_cleanse_soul"
+        ]
+      },
+      {
+        "text": "Much later, when Fang Yuan recreates the original mortal Myriad Self for comparison, he again lists rank four All-out Effort Gu as core with Bitter Strength Gu among the supplements.",
+        "chapters": [
+          1774
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "myriad-self-after-immortal-gu",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Support",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

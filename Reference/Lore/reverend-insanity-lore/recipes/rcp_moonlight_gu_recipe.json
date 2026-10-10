@@ -1,0 +1,167 @@
+{
+  "id": "rcp_moonlight_gu_recipe",
+  "entity_type": "recipe",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Moonlight Gu recipe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The reverse-fusion recipe behind Moonlight Gu, the method that turns a higher Gu worm back into the Gu Yue clan's rank one signature, kept by the clan leader and one trusted elder each generation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 157,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    157
+  ],
+  "relations": [
+    {
+      "type": "produces",
+      "target": "gu_moonlight_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "fac_gu_yue_clan",
+      "role": "clan leader and one elder per generation",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 157,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 2
+    },
+    {
+      "target": "fac_secret_hall",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_fusion",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_digital_shade_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan is studying clan recipes in the Secret Hall’s secret room. He singles out one as worth more than the rank four and rank five recipes stored around him: the method to reverse fuse Moonlight Gu. Gu fusion turns low Gu into higher ones; reverse fusion runs the other way, turning a high Gu back into a lower form. The first generation Gu Yue clan leader used it to produce Moonlight Gu from a higher Gu worm.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_secret_hall",
+        "gu_moonlight_gu",
+        "sys_gu_fusion",
+        "fac_gu_yue_clan",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Custody sits with the clan leader, not the wider clan. Each generation he lets in exactly one elder, the one he trusts most, and no one beyond those two, Fang Yuan included, holds the secret. Fang Yuan ranks its worth above the ordinary rank four and rank five recipes, which he cannot browse that day either. The recipe’s own Digital Shade Gu is hidden apart from the yellow and purple Digital Shade Gu that store those ranks, and Fang Yuan cannot reach it from the secret room.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "kept-by-the-clan-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_digital_shade_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/recipes/moonlight-gu-recipe/",
+      "chapters": [
+        157
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Produces": {
+      "text": "Moonlight Gu",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Ranks": {
+      "text": "I",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Holders": {
+      "text": "Gu Yue Clan (clan leader and one elder per generation)",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Source": {
+      "text": "the first generation Gu Yue clan leader, who obtained Moonlight Gu by reverse fusion of a higher Gu worm",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

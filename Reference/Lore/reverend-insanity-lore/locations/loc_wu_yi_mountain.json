@@ -1,0 +1,255 @@
+{
+  "id": "loc_wu_yi_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wu Yi Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wu Yi Mountain is the mountain that holds Wu clan headquarters in Southern Border.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1321,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1321,
+    1342,
+    1406,
+    2067,
+    2134,
+    2151
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_wu_fa",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "char_wu_ba_chong",
+      "count": 2
+    },
+    {
+      "target": "char_ke_xin_hong",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "sys_super_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_lantern_gu",
+      "count": 1
+    },
+    {
+      "target": "char_qiao_si_liu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_wu_clan_shore",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Elder Wu Fa returns to Wu clan’s Wu Yi Mountain and reports to Wu Yong that Lord Wu Yi Hai is already moving toward the super Gu formation.",
+      "chapters": [
+        1321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_fa",
+        "fac_wu_clan",
+        "char_wu_yong",
+        "char_wu_yi_hai",
+        "sys_super_gu_formation"
+      ]
+    },
+    {
+      "text": "The ancestral hall on top of Wu Yi Mountain is a mortal Gu House built from a large number of rank five mortal Gu. It is inferior to Immortal Gu Houses yet extremely significant to Wu clan, holding life tablet Gu and soul lantern Gu for the clan’s higher-ups.",
+      "chapters": [
+        1342
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ancestral-hall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_mortal_gu_house",
+        "sys_mortal_gu",
+        "sys_immortal_gu_house",
+        "gu_soul_lantern_gu"
+      ]
+    },
+    {
+      "text": "When Wu Yong prepares a Gu formation against Fang Yuan, the entirety of Wu Yi Mountain shakes. Wu clan Gu Immortals first guess a tribulation, then realize the earth vein is shaking and that the whole of Southern Border is implicated.",
+      "chapters": [
+        1406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-vein-quake",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Narration states that Wu clan’s headquarters is located on Wu Yi Mountain and that Wu Yi Mountain sits at the extreme southwest of Southern Border. From high above, the intersection of yellow dragon river and red dragon river forms an X, and Wu clan territory lies at the lower part of that X.",
+      "chapters": [
+        2067
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-site",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ke Xin Hong sees Wu Yi Mountain below him when Wu Ba Chong and another Gu Immortal fly up to welcome the embassy.",
+      "chapters": [
+        2134
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-site",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ke_xin_hong",
+        "char_wu_ba_chong"
+      ]
+    },
+    {
+      "text": "Later text again names Wu Yi Mountain as Wu clan’s headquarters.",
+      "chapters": [
+        2151
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "headquarters-site",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/wu-yi-mountain/",
+      "chapters": [
+        1321,
+        1342,
+        1406,
+        2067,
+        2134,
+        2151
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

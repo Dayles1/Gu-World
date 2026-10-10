@@ -1,0 +1,180 @@
+{
+  "id": "loc_northern_plains_sacred_palace",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Northern Plains Sacred Palace",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Imperial Court Sacred Palace"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Northern Plains Sacred Palace is Giant Sun Immortal Venerable's former residence at the center of Imperial Court blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 548,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    548,
+    549,
+    553
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A glorious palace rises from the plain horizon. It has eight levels, each about two kilometers tall, the bottom level widest. Snow-white walls nine meters thick form hollow tubes, with rainbow-colored towers at intervals in red, orange, yellow, green, azure, blue, and purple. Stacked together it looks like a tall mountain piercing the heavens. Inside are pavilions, terraces, palaces, and courtyards; roof edges curve outward in silver and gold.",
+      "chapters": [
+        553
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan enters Imperial Court blessed land, he is transported alone to a random stretch of that land. By earlier agreement he must travel toward the center, where Giant Sun Immortal Venerable’s former place of residence stands: Northern Plains Sacred Palace.",
+      "chapters": [
+        548
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_imperial_court_blessed_land",
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "After three days of flight he still cannot see even a glimpse of the sacred palace. Hei tribe alliance members who have ability gather there after entering the blessed land. Those who do not choose a place and settle down.",
+      "chapters": [
+        549
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-gathering",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "A glorious palace appears from the plain horizon. It has eight levels, each about two kilometers tall, the bottom level widest, walls nine meters thick, and rainbow-colored towers at intervals. Stacked together it looks like a tall mountain. Inside are pavilions, terraces, palaces, and courtyards. Gu Masters may not ride steeds inside, out of respect to Giant Sun Immortal Venerable. An escort places Fang Yuan’s residence on the eighth level. At that arrival almost ten thousand people are already in the sacred palace.",
+      "chapters": [
+        553
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "palace-appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/northern-plains-sacred-palace.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/northern-plains-sacred-palace/",
+      "chapters": [
+        548,
+        549,
+        553
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "palace",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

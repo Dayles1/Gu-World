@@ -1,0 +1,192 @@
+{
+  "id": "sys_ordinary_attainment",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ordinary Attainment",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "ordinary realm"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ordinary is the first of the five main attainment levels from ordinary to supreme grandmaster. Most Gu Masters stay at this step for life.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 687,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    687,
+    810,
+    863,
+    1326
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_attainment",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Realm on a path climbs a fixed ladder from ordinary to supreme grandmaster. Ordinary sits at the bottom of that ladder, below quasi-master.",
+      "chapters": [
+        687
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_attainment"
+      ]
+    },
+    {
+      "text": "Among the five main levels (ordinary, master, grandmaster, great grandmaster, and supreme grandmaster), it is the first step.",
+      "chapters": [
+        810
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Most Gu Masters have only ordinary realm for their whole lives.",
+      "chapters": [
+        687
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "common-lifetime-height",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Ordinary attainment is the level most Gu Masters reach in their lifetimes.",
+      "chapters": [
+        1326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "common-lifetime-height",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ordinary sits below quasi-master. Fang Yuan’s qi path attainment at ordinary level is described as not even quasi-master.",
+      "chapters": [
+        863
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "below-quasi-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Most Gu Masters find it difficult to reach quasi-master in their lifetimes, no matter how much effort they put in.",
+      "chapters": [
+        1326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hard-ceiling-for-effort",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ordinary is therefore the lasting height for the great majority of cultivators on a given path.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "hard-ceiling-for-effort",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The full ladder is on Attainment. Neighboring steps include quasi-master attainment and master attainment. Dao marks and how they relate to attainment are on Dao Marks and Attainment.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "hard-ceiling-for-effort",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_dao_marks"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/ordinary-attainment/",
+      "chapters": [
+        687,
+        810,
+        863,
+        1326
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Path comprehension",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "res_chakra_melons",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chakra melons",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chakra melons are rank seven immortal materials that hold refinement path dao marks and can be used in any Gu refinement.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1338,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1338
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_refinement",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_refinement",
+      "count": 1
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_super_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "loc_mushroomman_paradise",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A mushroomman Gu Immortal guards a melon cave in Mushroomman Paradise and names the chakra melons that the tribe grows there. Chakra melons are rank seven immortal materials that contain refinement path dao marks and can be used in any Gu refinement, so the material is widely used.",
+      "chapters": [
+        1338
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "melon-cave-crop",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "loc_mushroomman_paradise"
+      ]
+    },
+    {
+      "text": "Purple Mountain True Monarch says that plantation is the largest chakra melon production area in treasure yellow heaven, with almost sixty percent of the market share. He brings companions there for the super Gu formation in the cave rather than for the melons themselves.",
+      "chapters": [
+        1338
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "melon-cave-crop",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_purple_mountain_true_monarch",
+        "sys_super_gu_formation"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/chakra-melons/",
+      "chapters": [
+        1338
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Refinement Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Mushroomman tribe melon caves",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

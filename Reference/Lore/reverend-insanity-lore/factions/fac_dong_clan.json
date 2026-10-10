@@ -1,0 +1,276 @@
+{
+  "id": "fac_dong_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Western Desert righteous path super clan that fields the rank seven Immortal Gu House Red River Wheel and specializes in earth path.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 837,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    837,
+    1395,
+    1708,
+    1780,
+    1925
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_lu_chen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_dong_zhu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "house_red_river_wheel",
+      "count": 3
+    },
+    {
+      "target": "char_dong_lu_chen",
+      "count": 3
+    },
+    {
+      "target": "char_dong_zhu",
+      "count": 3
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "house_ten_thousand_li_silk_corridor",
+      "count": 2
+    },
+    {
+      "target": "char_wan_zi_hong",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "loc_treasure_moon_oasis",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "char_flesh_whip_immortal",
+      "count": 1
+    },
+    {
+      "target": "house_jade_toad_castle",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_old_ghost_bai_jun",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a clan banner or uniform. In later battles the clan’s Gu Immortals fight from inside Red River Wheel.",
+      "chapters": [
+        1925
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "house_red_river_wheel"
+      ]
+    },
+    {
+      "text": "Xiao clan’s first supreme elder names a contest with Dong clan over the market on the northwest side while planning to spread Ten Thousand Li Silk Corridor.",
+      "chapters": [
+        837
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_xiao_clan",
+        "house_ten_thousand_li_silk_corridor"
+      ]
+    },
+    {
+      "text": "Dong clan is a super clan of Western Desert.",
+      "chapters": [
+        1395
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert"
+      ]
+    },
+    {
+      "text": "Fang Yuan recognizes Dong clan’s Red River Wheel. The Immortal Gu House came from a mysterious inheritance, and in his previous life it displayed great power and gained huge fame. Dong clan Gu Immortals take molten flame birds that would strengthen Red River Wheel’s speed.",
+      "chapters": [
+        1708
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "house-origin-and-upgrade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Fang Di Chang thinks of earth path methods and notes that Dong clan specializes in earth path when considering whether an attack is Dong clan’s revenge.",
+      "chapters": [
+        1780
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-specialty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_di_chang"
+      ]
+    },
+    {
+      "text": "When Central Continent conflict pulls Western Desert forces in, Dong clan still mobilizes rank seven Immortal Gu House Red River Wheel. Dong clan is a Western Desert righteous path force and hates Western Desert’s demons the most, so its Gu Immortals inside Red River Wheel gnash their teeth at Wan Zi Hong.",
+      "chapters": [
+        1925
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "against-western-desert-demons",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "char_wan_zi_hong"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/dong-clan/",
+      "chapters": [
+        837,
+        1395,
+        1708,
+        1780,
+        1925
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

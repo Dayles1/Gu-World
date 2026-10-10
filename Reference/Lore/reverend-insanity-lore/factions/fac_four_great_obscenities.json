@@ -1,0 +1,199 @@
+{
+  "id": "fac_four_great_obscenities",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Four Great Obscenities",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Central Continent four great obscenities"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Four Central Continent demonic Gu Masters named when Immortal Crane Sect disciples spot them surrounding Fairy Bi Xia on the ground below their crane flight.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 336,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    336,
+    2084
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chen_yin_dao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 336,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_chen_yin_dao",
+      "count": 4
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_bi_xia",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_kong_sheng_tian",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Four demonic Gu Masters surround three female Gu Masters while Immortal Crane Sect disciples descend to feed ironbeak flying cranes. An elite disciple names them the four great obscenities: Eastern Obscenity Chen Yi Dao, Western Thief Yu Ba Guang, Southern Disturbance Shi Bao, and Northern Squandering Fan Chun Yao. They travel all over Central Continent as rank four Gu Masters, and together they can contend against rank five.",
+      "chapters": [
+        336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-on-the-crane-route",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_demonic_path",
+        "fac_gu_masters",
+        "fac_immortal_crane_sect",
+        "char_chen_yin_dao",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "They press toward Fairy Bi Xia of Heavenly Lotus Sect, who is seriously injured and cannot break through. Fang Zheng leads the crane group down; the four size up Immortal Crane Sect’s elite disciples and the ten thousand cranes, then flee while injured.",
+      "chapters": [
+        336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-on-the-crane-route",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_bi_xia",
+        "fac_heavenly_lotus_sect",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Later text again names the Four Great Obscenities as Eastern Obscenity Chen Yin Dao, Western Thief Yu Ba Guang, Southern Disturbance Shi Bao, and Northern Squandering Fan Chun Yao, still rank four Gu Masters who together can resist rank five, and famous demonic path experts in Central Continent’s Gu Master world. Chen Yin Dao is their leader; Fan Chun Yao keeps the Gu House and handles healing and support; Yu Ba Guang has the most effective investigative methods among them. They enter Sorrowful Wind Mountain Range seeking leftovers from a Gu Immortal fight that might let them ascend to immortal, hide from sorrowful winds inside the Gu House, search the ruins for seven days, and then find a still living person with a strange bloom and wilt cycle around him.",
+      "chapters": [
+        2084
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sorrowful-wind-search",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "sys_gu_house",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/four-great-obscenities/",
+      "chapters": [
+        336,
+        2084
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

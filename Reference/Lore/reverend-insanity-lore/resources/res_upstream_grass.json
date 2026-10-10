@@ -1,0 +1,123 @@
+{
+  "id": "res_upstream_grass",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Upstream grass",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Upstream grass is a stalk material woven with zen lion's mane when refining earth treasury flower Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 828,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    828
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_earth_treasury_flower_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_earth_treasury_flower_gu",
+      "count": 3
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "One of the four entry tasks for a Refinement Path Convention requires refining earth treasury flower Gu. The third last step uses upstream grass matched with zen lion’s mane, together with the Gu refinement method.",
+      "chapters": [
+        828
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-treasury-flower-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_refinement_path_convention",
+        "gu_earth_treasury_flower_gu"
+      ]
+    },
+    {
+      "text": "The needed technique is called one after another. Its purpose is to entwine every stalk of upstream grass with every strand of zen lion’s mane. For earth treasury flower Gu, a hundred stalks and strands must be woven together within thirty breaths; beyond that time, the Gu refinement fire burns the stalks and strands to ashes.",
+      "chapters": [
+        828
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "one-after-another",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/upstream-grass.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/upstream-grass/",
+      "chapters": [
+        828
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Grass",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Earth Treasury Flower Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

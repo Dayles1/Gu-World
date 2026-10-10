@@ -1,0 +1,669 @@
+{
+  "id": "house_dragon_palace",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dragon Palace",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dragon Palace is a powerful Immortal Gu House that Heavenly Court discovers while Duke Long is still searching for it. When found, a dream realm surrounds the house and blocks entry.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1680,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1680,
+    1684,
+    1688,
+    1689,
+    1690,
+    1697,
+    1831,
+    1847,
+    1848,
+    2046
+  ],
+  "relations": [
+    {
+      "type": "core_gu",
+      "target": "gu_dream_token",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1847,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "owners",
+      "target": "char_wu_shuai",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1831,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "owners",
+      "target": "char_duke_long",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1697,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "owners",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1847,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wu_shuai",
+      "count": 4
+    },
+    {
+      "target": "char_duke_long",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_dream_token",
+      "count": 3
+    },
+    {
+      "target": "sys_pure_dream_reality_seeker_physique",
+      "count": 2
+    },
+    {
+      "target": "char_yang_jun",
+      "count": 2
+    },
+    {
+      "target": "char_bing_sai_chuan",
+      "count": 2
+    },
+    {
+      "target": "house_myriad_year_flying_warship",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "sys_humans_alike_dragons",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "race_dragonmen",
+      "count": 1
+    },
+    {
+      "target": "move_shatter_dream",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "move_pure_dream_reality_seeker_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_chen_yi",
+      "count": 1
+    },
+    {
+      "target": "char_granny_rong",
+      "count": 1
+    },
+    {
+      "target": "char_shi_miao",
+      "count": 1
+    },
+    {
+      "target": "char_yang_zi_he",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_yin",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "char_hua_cai_yun",
+      "count": 1
+    },
+    {
+      "target": "char_qing_yue_an",
+      "count": 1
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_qing_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "house_fragrant_treasure_horse_chariot",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_mountain_ranges",
+      "count": 1
+    },
+    {
+      "target": "move_dragon_roaring_wave",
+      "count": 1
+    },
+    {
+      "target": "move_qi_engulfing_mountains_and_rivers",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_hidden_dragon_cave",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_court",
+      "count": 1
+    },
+    {
+      "target": "move_invincible_phantom_tower",
+      "count": 1
+    },
+    {
+      "target": "move_dragonman_extermination",
+      "count": 1
+    },
+    {
+      "target": "move_spring_autumn_success",
+      "count": 1
+    },
+    {
+      "target": "inh_beast_calamity_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_commanding_leader_gu",
+      "count": 1
+    },
+    {
+      "target": "char_green_ant_ascetic",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_fate_destruction",
+      "count": 1
+    },
+    {
+      "target": "house_central_heaven_gate",
+      "count": 1
+    },
+    {
+      "target": "res_dream_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "char_long_ling",
+      "count": 1
+    },
+    {
+      "target": "char_tai_qin",
+      "count": 1
+    },
+    {
+      "target": "char_army_ant",
+      "count": 1
+    },
+    {
+      "target": "house_calligraphy_pavilion",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_shuai_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_dream_within_dream",
+      "count": 1
+    },
+    {
+      "target": "move_dreamy_light_smoke",
+      "count": 1
+    },
+    {
+      "target": "path_dream",
+      "count": 1
+    },
+    {
+      "target": "inh_primordial_origin_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_qi_path_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_qi_wall",
+      "count": 1
+    },
+    {
+      "target": "char_tang_qiong",
+      "count": 1
+    },
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_vortex_space_boy",
+      "count": 1
+    },
+    {
+      "target": "move_song_warrior",
+      "count": 1
+    },
+    {
+      "target": "char_lian_ke_xin",
+      "count": 1
+    },
+    {
+      "target": "loc_human_sea",
+      "count": 1
+    },
+    {
+      "target": "res_black_hard_qi",
+      "count": 1
+    },
+    {
+      "target": "res_qi_pillar",
+      "count": 1
+    },
+    {
+      "target": "fac_two_heavens_alliance",
+      "count": 1
+    },
+    {
+      "target": "char_teacher_jiang",
+      "count": 1
+    },
+    {
+      "target": "char_old_immortal_hua_yu",
+      "count": 1
+    },
+    {
+      "target": "move_cold_words",
+      "count": 1
+    },
+    {
+      "target": "move_quick_words",
+      "count": 1
+    },
+    {
+      "target": "move_vicious_words",
+      "count": 1
+    },
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "loc_night_wolf_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_great_era_spectral_soul",
+      "count": 1
+    },
+    {
+      "target": "move_heaven_human_sensation",
+      "count": 1
+    },
+    {
+      "target": "move_human_executing_heavens_work",
+      "count": 1
+    },
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 1
+    },
+    {
+      "target": "gu_heaven_qi_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_unrestrained_heavenly_mark",
+      "count": 1
+    },
+    {
+      "target": "loc_intestinal_gorge",
+      "count": 1
+    },
+    {
+      "target": "move_great_qi_hand_explosion",
+      "count": 1
+    },
+    {
+      "target": "move_soul_taker_battlefield",
+      "count": 1
+    },
+    {
+      "target": "char_demon_immortal_qi_jue",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "house_peaceful_soil_heavy_mountain_fortress",
+      "count": 1
+    },
+    {
+      "target": "house_green_cloud_spark_warship",
+      "count": 1
+    },
+    {
+      "target": "gu_dream_armor_gu",
+      "count": 1
+    },
+    {
+      "target": "move_golden_bottle_drunken_wine",
+      "count": 1
+    },
+    {
+      "target": "house_unbreakable_golden_fortress",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fairy Zi Wei takes the report first and plans to tell Duke Long, citing his deep relationship with the house. He brings Feng Jin Huang to Heavenly Court and leaves her with Fairy Zi Wei before going out; several days later he returns empty-handed. Fairy Zi Wei consoles him that Heavenly Court’s formation is already ready to suppress Spectral Soul and obtain his dream path research results, so they can condense Pure Dream Reality Seeker Physique bodies.",
+      "chapters": [
+        1680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "char_duke_long",
+        "char_feng_jin_huang",
+        "fac_heavenly_court",
+        "sys_pure_dream_reality_seeker_physique"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because Dragon Palace is a named Immortal Gu House. It is mobile once active, not a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Later he brings Feng Jin Huang to the bottom of the sea in Eastern Sea and finds the rank eight Immortal Gu House itself. The palace shines with slight orange-gold light, richly decorated with grand pavilions and terraces, but a large dream realm still surrounds it, moving quickly and obscuring the house from time to time.",
+      "chapters": [
+        1684
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "location-and-rank",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jin_huang",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "After days of work, Feng Jin Huang reports that no more dream realms are coming out. Duke Long judges that the dream realm cover has stopped the house from working and that this is the chance to take it, then moves to seize Dragon Palace.",
+      "chapters": [
+        1688
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "contest-for-the-house",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dragon Palace suddenly lets out extraordinary splendor and flies into the sky. Duke Long cannot stop it in time; blood appears at his lips as he realizes the house is completely intact and that one of its cores is a dream path Immortal Gu.",
+      "chapters": [
+        1689
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "contest-for-the-house",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "The rank eight Immortal Gu House flies in Eastern Sea’s skies without hiding its aura and draws attention from countless forces. Fang Yuan already knows of Dragon Palace from superficial Shadow Sect clues; the most valuable recorded point is that its inheritor must be a dragonman. He also marks it as a rank eight Immortal Gu House holding an unknown dream path Immortal Gu, and he leaves for Eastern Sea so Heavenly Court cannot take it unopposed. Duke Long slams the house into the sea, but Eastern Sea rank eights keep blocking him while Dragon Palace acts on its own and dives deeper.",
+      "chapters": [
+        1690
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "contest-for-the-house",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "Fang Yuan later hears that the Eastern Sea commotion is over and that Duke Long is the eventual victor. Duke Long suppresses the Eastern Sea rank eights; Heavenly Court’s new rank eight member Chen Yi arrives with an Immortal Gu House; at the crucial moment Eastern Sea lone immortal Yang Jun turns to help Duke Long, letting him suppress and keep the rank eight Immortal Gu House before leaving at once under heavy injuries.",
+      "chapters": [
+        1697
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "contest-for-the-house",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_yi",
+        "char_yang_jun"
+      ]
+    },
+    {
+      "text": "Fairy Zi Wei later ties a blessed land to Duke Long’s grandson Wu Shuai and treats it as holding clues toward Immortal Gu House Dragon Palace, because one of the creators of Dragon Palace was Wu Shuai. Heavenly Court had been looking for Dragon Palace with slow progress; with that clue she expects they can deduce its location.",
+      "chapters": [
+        1831
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "creator-identity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_shuai"
+      ]
+    },
+    {
+      "text": "After the dragonman clone’s dream realm exploration, Fang Yuan inspects Dragon Palace and names its core dream token Immortal Gu, a rank eight dream path Gu shaped like a dragonfly with pink ruby eyes and transparent wings edged in a faint rainbow halo. Dragon Palace can enslave rank eights and create a new owner through the power of that dream realm; the clone uses unravel dream on himself to keep from being turned against the main body. After the inspection, Fang Yuan keeps the clone and Dragon Palace in his immortal aperture.",
+      "chapters": [
+        1847
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "core-inspection",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_dream_token"
+      ]
+    },
+    {
+      "text": "Dragon Palace is an enslavement path Immortal Gu House even with rank eight Dream Token among its cores. House killer moves include dreamy light smoke for capture ahead of enslavement, dream revelation, and dream within dream; the dream realm that once shrouded the palace is Dream Token’s own power.",
+      "chapters": [
+        1848
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "path-and-killer-moves",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Under stacked attacks from Spectral Soul and Demon Immortal Qi Jue, Dragon Palace’s exterior is blown apart until only the main hall remains, then a hole opens in that roof. Cooperation among the pursuers pushes the house beyond the brink; when Fairy Zi Wei, Qin Ding Ling, and Bing Sai Chuan arrive, they see Dragon Palace shatter into fragments. Fang Yuan and Wu Shuai, who were inside, move into Myriad Year Flying Warship, which picks them up. When they sacrificed Dragon Palace they took back its core Immortal Gu Dream Token.",
+      "chapters": [
+        2046
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "house-destruction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_demon_immortal_qi_jue",
+        "char_qin_ding_ling",
+        "char_bing_sai_chuan",
+        "house_myriad_year_flying_warship"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu-houses/dragon-palace.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/dragon-palace/",
+      "chapters": [
+        1680,
+        1684,
+        1688,
+        1689,
+        1690,
+        1697,
+        1831,
+        1847,
+        1848,
+        2046
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII as of ch. 1684",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Core Gu": {
+      "text": "Dream Token",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Owners": {
+      "text": "Wu Shuai (creator) Duke Long Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

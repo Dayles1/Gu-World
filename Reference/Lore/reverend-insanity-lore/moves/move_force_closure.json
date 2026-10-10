@@ -1,0 +1,158 @@
+{
+  "id": "move_force_closure",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Force Closure",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Force Closure is an Immortal Crane Sect immortal killer move that seals a forced opening into a blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 700,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    700
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_he_feng_yang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_expand_space_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 700,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_he_feng_yang",
+      "count": 3
+    },
+    {
+      "target": "gu_expand_space_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fairy_cang_yu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "move_force_intrusion",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside Hu Immortal blessed land, after He Feng Yang and Fairy Cang Yu enter through the breach made by Force Intrusion, he activates Expand Space Immortal Gu again and this immortal killer move closes the hole behind them. Outside on Tian Ti mountain, Gu Immortals of the other nine great ancient sects notice the door shut and call Immortal Crane Sect petty for not letting them watch the fight.",
+      "chapters": [
+        700
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "char_he_feng_yang",
+        "char_fairy_cang_yu",
+        "move_force_intrusion",
+        "gu_expand_space_immortal_gu",
+        "sys_killer_moves",
+        "loc_tian_ti",
+        "sys_gu_immortal",
+        "fac_immortal_crane_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/force-closure/",
+      "chapters": [
+        700
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "He Feng Yang",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Expand Space Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

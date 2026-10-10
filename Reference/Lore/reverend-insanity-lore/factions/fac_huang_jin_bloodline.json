@@ -1,0 +1,607 @@
+{
+  "id": "fac_huang_jin_bloodline",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huang Jin Bloodline",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Huang Jin Tribes Huang Jin clan Huang Jin family"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains Huang Jin tribe and clan first named during Fang Yuan's stay with Ge tribe before the great blizzard.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 440,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    440,
+    441,
+    497,
+    539,
+    552,
+    562,
+    764,
+    814,
+    1193,
+    1568,
+    1723
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_liu_liu_liu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1717,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_liu_liu_liu",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 2
+    },
+    {
+      "target": "house_year_end_gatehouse",
+      "count": 2
+    },
+    {
+      "target": "loc_hong_yan_valley",
+      "count": 2
+    },
+    {
+      "target": "loc_wang_ting_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 2
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_chanyu_zhong_er",
+      "count": 2
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 2
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "char_fei_cai",
+      "count": 1
+    },
+    {
+      "target": "fac_fei_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_northern_plains_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_lai",
+      "count": 1
+    },
+    {
+      "target": "sys_super_force",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_ma_you_liang",
+      "count": 1
+    },
+    {
+      "target": "sys_guest_token",
+      "count": 1
+    },
+    {
+      "target": "char_hei_pei",
+      "count": 1
+    },
+    {
+      "target": "char_song_qie_xing",
+      "count": 1
+    },
+    {
+      "target": "sys_owner_token",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_dong",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 1
+    },
+    {
+      "target": "char_guan_shen_zhao",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_mo_tan_sang",
+      "count": 1
+    },
+    {
+      "target": "race_inkmen",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 1
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_nu_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_extremity",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 1
+    },
+    {
+      "target": "fac_chu_sect",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_nian_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_yong",
+      "count": 1
+    },
+    {
+      "target": "char_south_desolation_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_flood_extremity",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_bao_xiong",
+      "count": 1
+    },
+    {
+      "target": "move_seven_extreme_desolation",
+      "count": 1
+    },
+    {
+      "target": "move_winged_blade",
+      "count": 1
+    },
+    {
+      "target": "loc_inkman_city",
+      "count": 1
+    },
+    {
+      "target": "char_wu_guang",
+      "count": 1
+    },
+    {
+      "target": "move_decaying_wooden_death",
+      "count": 1
+    },
+    {
+      "target": "char_yin_wu_que",
+      "count": 1
+    },
+    {
+      "target": "char_liu_luo",
+      "count": 1
+    },
+    {
+      "target": "inh_reckless_savage_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    },
+    {
+      "target": "gu_permanence_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_flower_forest_forbidden_land",
+      "count": 1
+    },
+    {
+      "target": "gu_kill_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan urges Ge tribe to migrate north, join the heroes assembly, and rely on Huang Jin tribe so they can hide in Wang Ting blessed land when the great blizzard comes. Ge tribe leader refuses seeking refuge with Huang Jin clan. He says Ge tribe would be dragged into a whirlpool of conflicts; success would help, but failure would cost more than the tribe can endure. He adds that the struggle in the imperial court is not something small clans can join, and prefers shelter in Hong Yan valley under Man tribe terms.",
+      "chapters": [
+        440
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refuge-and-imperial-court",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_ge_tribe",
+        "loc_wang_ting_blessed_land",
+        "loc_hong_yan_valley",
+        "fac_man_tribe"
+      ]
+    },
+    {
+      "text": "Fang Yuan recalls that Ma tribe is part of the Huang Jin bloodline left behind by Giant Sun Immortal Venerable, and that Ma tribe has been expanding by absorbing members of many tribes to vie for the imperial court.",
+      "chapters": [
+        441
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bloodline-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "The bloodlines Giant Sun Immortal Venerable passed on are collectively called Huang Jin family. Huang Jin family holds supreme authority in Northern Plains and follows that ancestor’s tradition.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "family-name-and-authority",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "The Imperial Court struggle is a field of purging at every stage, with Huang Jin tribes swallowing other tribes and strengthening themselves, and a survival-of-the-fittest filter that forces Gu Masters toward Gu Immortal seeds for those tribes.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "multi-tribe-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court",
+        "fac_gu_masters",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Inside Imperial Court blessed land, besides Hei tribe there are other Huang Jin tribes such as Ye Lui tribe and Ma tribe.",
+      "chapters": [
+        562
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "multi-tribe-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "fac_hei_tribe",
+        "fac_ye_lui_tribe"
+      ]
+    },
+    {
+      "text": "Gu Masters with Giant Sun Immortal Venerable’s bloodline are collectively the Huang Jin family, and in Northern Plains the family controls nearly the entire region.",
+      "chapters": [
+        552
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "multi-tribe-rule",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "For a long stretch Northern Plains super forces are almost all of Huang Jin bloodline, because the region is Giant Sun Immortal Venerable’s homeland and the base of his hereditary monarchy. Chanyu Zhong Er addresses Hei Cheng as a Hei tribe Gu Immortal of Huang Jin bloodline, like Chanyu tribe.",
+      "chapters": [
+        764
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "super-forces",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chanyu_zhong_er",
+        "char_hei_cheng",
+        "fac_chanyu_tribe"
+      ]
+    },
+    {
+      "text": "Fang Yuan states that the righteous path of Northern Plains is also the Huang Jin bloodline, and that those forces suppress the demonic path and lone cultivators. He adds that Heavenly Lord Bai Zu lacks Huang Jin bloodline and still fears the combined pressure of the Huang Jin bloodline super forces.",
+      "chapters": [
+        814
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "righteous-path-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heavenly_lord_bai_zu"
+      ]
+    },
+    {
+      "text": "One Northern Plains muster brings a total of eleven Huang Jin tribes, super forces who rule territories and hold undisputed influence in that region’s Gu Immortal world.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-tribes-and-unity",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Longevity Heaven appears openly and works to unite all the Huang Jin tribes while integrating Northern Plains’ Gu Immortal world; righteous path forces are basically all Huang Jin tribes.",
+      "chapters": [
+        1568
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-tribes-and-unity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_longevity_heaven"
+      ]
+    },
+    {
+      "text": "Elites of the Huang Jin tribes use tribal trump cards in battle, for example Chanyu tribe’s winged blade and Ye Lui tribe’s immortal binding rope.",
+      "chapters": [
+        1723
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-tribes-and-unity",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/huang-jin-bloodline/",
+      "chapters": [
+        440,
+        441,
+        497,
+        539,
+        552,
+        562,
+        764,
+        814,
+        1193,
+        1568,
+        1723
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

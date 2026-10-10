@@ -1,0 +1,208 @@
+{
+  "id": "loc_ku_mu_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ku Mu Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains landmark that reads as a giant dead wooden tree of old earth wood rising into the clouds.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 737,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    737,
+    738
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 2
+    },
+    {
+      "target": "loc_old_earth_city",
+      "count": 2
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sha_huang",
+      "count": 1
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 1
+    },
+    {
+      "target": "loc_old_earth_wood",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Rather than an ordinary mountain, it looks more like a giant dead wooden tree that extends into the clouds: old earth wood whose lush years are gone, with wilted leaves, a mostly dead main trunk, and barren branches that shade only a small area.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Under the name Sha Huang, Fang Yuan is at Ku Mu mountain.",
+      "chapters": [
+        737
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_sha_huang",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "He calls for Old Earth City Lord and seeks a Zombie Alliance recommendation. Immortal zombie Gu Ye emerges from deep in the wood; Fang Yuan is there for that immortal zombie, not to admire the tree.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "This specimen of old earth wood has more than a million years of history, spanning from Reckless Savage Demon Venerable’s era through later Venerables, and it was still alive after Paradise Earth Immortal Venerable died. In its green years its canopy covered the sky, it bore fruit, and strong branches held unique tree farms; the strongest Gu Immortals or forces in Northern Plains usually owned it then. Forces once fought and died over it; later it sits lonely with few visitors.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-ye-and-the-wood",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_reckless_savage_demon_venerable",
+        "char_paradise_earth_immortal_venerable",
+        "sys_gu_immortal",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Gu Ye lives on the wood and holds a Zombie Alliance mission to guard it. Old Earth City stands in the deep branches of the same tree.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-ye-and-the-wood",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_ye",
+        "fac_zombie_alliance",
+        "loc_old_earth_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/ku-mu-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/ku-mu-mountain/",
+      "chapters": [
+        737,
+        738
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

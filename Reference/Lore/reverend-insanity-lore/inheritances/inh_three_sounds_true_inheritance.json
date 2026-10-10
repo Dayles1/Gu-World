@@ -1,0 +1,151 @@
+{
+  "id": "inh_three_sounds_true_inheritance",
+  "entity_type": "inheritance",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Three Sounds true inheritance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Three Sounds true inheritance is Spirit Affinity House's true inheritance. It lists drum fist, bell palm, and whistle finger among its contents.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1400,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1400,
+    1541
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_feng_jiu_ge",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1400,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 3
+    },
+    {
+      "target": "move_triple_extreme_sound",
+      "count": 2
+    },
+    {
+      "target": "loc_tributary_of_the_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "move_silence_surpasses_sound",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a Western Desert sand tunnel near a tributary of the River of Time, Feng Jiu Ge fights under silence surpasses sound. He has practised only two of the three methods so far, using them to cover battle shortages outside his seven songs; the third remains unlearned.",
+      "chapters": [
+        1400
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "loc_tributary_of_the_river_of_time",
+        "char_feng_jiu_ge"
+      ]
+    },
+    {
+      "text": "During the assault on Lang Ya blessed land, Feng Jiu Ge answers the silver giant with immortal killer move Triple Extreme Sound: fist for drumming, palm for bell chimes, and finger for a sharp whistle, the signature methods of Three Sounds true inheritance. After Fang Yuan escaped an earlier pursuit, Feng Jiu Ge returned to Central Continent, cultivated the missing whistle finger, and formed Triple Extreme Sound from all three methods.",
+      "chapters": [
+        1541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "full-set-in-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_lang_ya_blessed_land",
+        "move_triple_extreme_sound",
+        "char_fang_yuan",
+        "reg_central_continent"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/inheritances/three-sounds-true-inheritance/",
+      "chapters": [
+        1400,
+        1541
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Holders": {
+      "text": "Feng Jiu Ge",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Location": {
+      "text": "Spirit Affinity House, Central Continent",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

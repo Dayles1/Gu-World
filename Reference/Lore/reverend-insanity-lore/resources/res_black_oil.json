@@ -1,0 +1,477 @@
+{
+  "id": "res_black_oil",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Black oil",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Earth Trench black oil"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Black oil is a sticky Earth Trench substance used as a Gu refinement material and prized by immortal zombies.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 741,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    741,
+    742,
+    743,
+    746,
+    933,
+    934,
+    1652,
+    1653,
+    1654,
+    1655,
+    1656,
+    1657,
+    1659,
+    1660,
+    1664,
+    1701,
+    1893,
+    1894
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_food",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_gather_oil_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1657,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_gather_oil_gu",
+      "count": 3
+    },
+    {
+      "target": "path_food",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 2
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 2
+    },
+    {
+      "target": "char_xie_han_mo",
+      "count": 2
+    },
+    {
+      "target": "loc_blood_lake",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_zombie",
+      "count": 1
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "house_merit_obelisk",
+      "count": 1
+    },
+    {
+      "target": "res_food_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "char_seashell_shark",
+      "count": 1
+    },
+    {
+      "target": "sys_food_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_xia_lin",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Black oil from Earth Trench is Zombie Alliance’s most important trading item, larger in scale than guts Gu trade. Spreading it in a dead aperture slows the disintegration of a blessed land, which makes it especially valuable to immortal zombies. Outside that use, other Gu Immortals treat it as a widely used Gu refinement material with a huge market. Immortal zombies who extract it keep what remains after the mission quota, so the extraction mission is among their best profits.",
+      "chapters": [
+        742
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_trench",
+        "fac_zombie_alliance",
+        "gu_guts_gu",
+        "sys_gu_immortal",
+        "sys_immortal_zombie"
+      ]
+    },
+    {
+      "text": "A yaksha octopus wrecking Earth Trench extraction is issued as an alliance mission for that reason.",
+      "chapters": [
+        741
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-trade",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan also covets it to slow the shrinking of his own blessed land.",
+      "chapters": [
+        743
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Tai Bai Yun Sheng later names Zombie Alliance black oil as a way to slow blessed land destruction while revival methods take time.",
+      "chapters": [
+        746
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-trench-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tai_bai_yun_sheng"
+      ]
+    },
+    {
+      "text": "Yaksha octopuses hunt in Earth Trench black oil and leave sticky oil on cave walls when they enter and exit. The oil is thick and glue-like, holding rotting vegetation and insects, and it can feed weeds and needle wood rooted into the walls.",
+      "chapters": [
+        933
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sticky-cave-residue",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "An ancient desolate beast yaksha octopus king moves through such cave oil as if swimming.",
+      "chapters": [
+        934
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sticky-cave-residue",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Earth Trenches produce black oil, whether ordinary or deep sea. It is an immortal material belonging to food path: quality is high, production is abundant, and excavation is easy for Gu Immortals. Mortal oil collecting Gu Masters need specialized Gu worms and methods to gather limited amounts, and they earn wealth and status by excavating the immortal material.",
+      "chapters": [
+        1653
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "food-path-immortal-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Fang Yuan takes a Merit Obelisk mission to collect Earth Trench black oil from the deep sea near a poor unnamed island.",
+      "chapters": [
+        1652
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "food-path-immortal-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_merit_obelisk"
+      ]
+    },
+    {
+      "text": "On that island, Earth Trench black oil suppresses resources of other cultivation paths, so almost nothing else can exist there. The fishing village stays small for centuries with only single digits of Gu Masters, precisely because of that immortal material.",
+      "chapters": [
+        1654
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "island-resource-suppression",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Black oil contains food path dao marks. Seashell sharks stuck in it slow, struggle, and are slowly devoured until flesh, bone, and blood turn into new black oil. If black oil sticks to a Gu Master, those food path dao marks are carved onto the body; conflicting dao marks alone can be fatal, and mortal bodies cannot endure the corrosion.",
+      "chapters": [
+        1655
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "corrosion-and-dao-marks",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_seashell_shark",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "In the deep sea the black oil tangles like huge pythons and barely moves. Fang Yuan draws droplets and lumps into his palms with a Gu worm’s blue light beams, then is pushed into the oil when his primeval essence runs out and nearly covered by it. Local mermen treat the sea area’s black oil as theirs and call oil collecting Gu Masters thieves; Xie Han Mo still heals him and leaves a Gu worm for the corrosion injury. Village Gu Masters later say they cannot finish extracting all the underwater black oil and often turn a blind eye to mermen who take some.",
+      "chapters": [
+        1656
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "deep-sea-gathering",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xie_han_mo"
+      ]
+    },
+    {
+      "text": "Fang Yuan uses black oil as material when refining gather oil Gu together with golden scale from a desolate beast golden dragonfish.",
+      "chapters": [
+        1657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gather-oil-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_gather_oil_gu"
+      ]
+    },
+    {
+      "text": "Rumors then call gather oil Gu a rank five worm with superb efficiency at gathering black oil, spending bone marrow rather than primeval essence so even rank one Gu Masters can use it.",
+      "chapters": [
+        1659
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gather-oil-refinement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gather oil Gu generates immense profits by collecting black oil, enough that Xia Lin stakes the worm against a large share of Golden Jade House and wins both the Gu and twenty percent of the house.",
+      "chapters": [
+        1660
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "gather-oil-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xia_lin"
+      ]
+    },
+    {
+      "text": "A merman tribe’s first saintess test is named golden needle in black oil: huge vats of thick black oil hold a tiny golden needle that must be found in time. Xia Lin uses gather oil Gu to draw the black oil out of the vat into her hands during that test.",
+      "chapters": [
+        1664
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "saintess-oil-test",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "You Xian Zi is named the Gu Immortal most skilled at collecting Earth Trench black oil in Eastern Sea.",
+      "chapters": [
+        1701
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "eastern-sea-collectors",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "On a later Merit Obelisk return to the same island sea, Fang Yuan again takes the Earth Trench black oil mission. Contact still carves food path dao marks into a Gu Master’s body, and mortal bodies cannot endure that corrosion over time. The trench oil tangles like huge pythons and barely moves, yet holds sea beast corpses and ores inside; he parts the oil and finds Xia Lin fainted among those remains. He heals her black oil corrosion without lingering after-effects and warns her to stay away from the oil.",
+      "chapters": [
+        1893
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mission-return-and-healing",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Completely healing black oil corrosion needs at least rank four Gu worms; weaker village Gu Masters can only use lesser alleviation methods. On that mission he also collects black oil, teaches villagers to sustain a livelihood, keeps excess black oil in the sovereign immortal aperture, and by reducing food path dao marks near the island allows other natural resources to grow.",
+      "chapters": [
+        1894
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mission-return-and-healing",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/black-oil.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/black-oil/",
+      "chapters": [
+        741,
+        742,
+        743,
+        746,
+        933,
+        934,
+        1652,
+        1653,
+        1654,
+        1655,
+        1656,
+        1657,
+        1659,
+        1660,
+        1664,
+        1701,
+        1893,
+        1894
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Food Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Earth Trench",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Gather Oil Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

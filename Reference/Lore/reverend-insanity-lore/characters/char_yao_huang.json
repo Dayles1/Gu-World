@@ -1,0 +1,744 @@
+{
+  "id": "char_yao_huang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yao Huang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yao huang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Яо Хуан",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yao Huang is a Northern Plains rank eight Gu Immortal named among the few rank eight seniors already invited when Heavenly Lord Bai Zu speaks with the auction hosts.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 736,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    736,
+    740,
+    749,
+    753,
+    757,
+    764,
+    776,
+    813,
+    1007,
+    1144,
+    1252,
+    1267,
+    1446,
+    1727
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_yao_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 749,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_cauldron_strength_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 757,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_kindness_thought_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 757,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_longevity_edict",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1190,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_gu_house",
+      "target": "house_medicine_cottage",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_yao_tribe",
+      "count": 4
+    },
+    {
+      "target": "gu_cauldron_strength_immortal_gu",
+      "count": 4
+    },
+    {
+      "target": "house_medicine_cottage",
+      "count": 4
+    },
+    {
+      "target": "gu_kindness_thought_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "house_luck_suppression_heavenly_palace",
+      "count": 3
+    },
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 2
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 2
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 2
+    },
+    {
+      "target": "char_huang_quan_weng",
+      "count": 2
+    },
+    {
+      "target": "char_murong_jin_xiao",
+      "count": 2
+    },
+    {
+      "target": "char_yin_liu_gong",
+      "count": 2
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 2
+    },
+    {
+      "target": "house_red_fiend_divine_boat",
+      "count": 2
+    },
+    {
+      "target": "gu_resurrection_from_the_dead",
+      "count": 2
+    },
+    {
+      "target": "fac_bai_zu_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_south_desolation_immortal",
+      "count": 2
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_sha_huang",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_si",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_healing_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    },
+    {
+      "target": "move_stone_casket",
+      "count": 1
+    },
+    {
+      "target": "gu_fortuitous_encounter_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_deduction_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_suppression_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_hui_feng_zi",
+      "count": 1
+    },
+    {
+      "target": "move_wind_escape",
+      "count": 1
+    },
+    {
+      "target": "sys_heavenly_wind_qi_wall",
+      "count": 1
+    },
+    {
+      "target": "gu_fortune_rivalling_heaven_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "house_sacred_feather_city",
+      "count": 1
+    },
+    {
+      "target": "char_sun_ming_lu",
+      "count": 1
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_plain",
+      "count": 1
+    },
+    {
+      "target": "char_yao_yuan_ying",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "move_perfect_pair",
+      "count": 1
+    },
+    {
+      "target": "char_dark_venomous_snake",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "inh_heaven_and_earth_luck_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_spaceless_tunnel",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_yuan_rang_zun",
+      "count": 1
+    },
+    {
+      "target": "gu_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "char_light_emperor",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_sea",
+      "count": 1
+    },
+    {
+      "target": "move_destined_birth_through_luck",
+      "count": 1
+    },
+    {
+      "target": "char_yi_qi_zi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Heavenly Lord Bai Zu names him among the few rank eight seniors already invited to Qin Bai Sheng’s auction, with Five Elements Grandmaster and Old Ancestor Xue Hu.",
+      "chapters": [
+        736
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heavenly_lord_bai_zu",
+        "char_qin_bai_sheng",
+        "char_five_elements_grandmaster",
+        "char_old_ancestor_xue_hu"
+      ]
+    },
+    {
+      "text": "He stretches out a wrinkled arm.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When he walks into the auction hall, Gu Immortals rise to greet him, and Qin Bai Sheng pays respects at once. The same stretch places him as a healing Gu Immortal of the righteous path with pure Huang Jin bloodline, first supreme elder of the super force Yao tribe, and the highest reputation among Northern Plains’ five rank eight Gu Immortals. Among that five, two are righteous including him, one is demonic with Old Ancestor Xue Hu as Snowy Mountain’s leader, and two are neutral.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-and-reputation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_huang_jin_bloodline",
+        "fac_yao_tribe",
+        "reg_northern_plains",
+        "loc_snowy_mountain"
+      ]
+    },
+    {
+      "text": "For about a hundred years he asks Zombie Alliance for immortal zombies while researching a new healing Immortal Gu. He later disguises himself as an immortal zombie and tries to join, but cannot push open the discussion hall door at Dark Flow Giant City; Huang Quan Weng later recalls that failure when Fang Yuan opens the same door.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-and-reputation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance",
+        "sys_immortal_gu",
+        "loc_dark_flow_giant_city",
+        "char_huang_quan_weng",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "He then drops the disguise, explains the truth, and leaves without the alliance daring to offend him.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-and-reputation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Murong Jin Xiao names him the greatest of four major refinement path grandmasters in Northern Plains, with rumors that his refinement path attainment has gone past grandmaster and perhaps to quasi-great grandmaster.",
+      "chapters": [
+        753
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_murong_jin_xiao"
+      ]
+    },
+    {
+      "text": "At the auction he is treated as a refinement path Gu Immortal and buys Cauldron Strength Immortal Gu while telling Yin Liu Gong he wants to refine Resurrection From The Dead. He walks refinement path, is most skilled at refining healing Gu worms, and claims thirty percent confidence after years of life and death research on immortal zombies.",
+      "chapters": [
+        757
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_cauldron_strength_immortal_gu",
+        "char_yin_liu_gong",
+        "gu_resurrection_from_the_dead",
+        "sys_healing_gu"
+      ]
+    },
+    {
+      "text": "He later opens his Immortal Gu House, Medicine Cottage, and invites Gu Immortals present to join after pressing Heavenly Lord Bai Zu about the Red Fiend Divine Boat recipe for Yao tribe.",
+      "chapters": [
+        764
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_medicine_cottage",
+        "house_red_fiend_divine_boat"
+      ]
+    },
+    {
+      "text": "By the time of the grand tribulation at Sacred Feather City, he remains far from the first myriad tribulation.",
+      "chapters": [
+        1007
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_sacred_feather_city"
+      ]
+    },
+    {
+      "text": "When Old Ancestor Xue Hu begins refining fortune rivalling heaven Gu, Yao Huang judges that fighting him is not wise, and says he will instead concentrate on refining Resurrection From The Dead Immortal Gu, which he expects will also give him a rank eight Immortal Gu and solve the problem of his lifespan.",
+      "chapters": [
+        1144
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-work",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As the number one righteous refinement path Gu Immortal in Northern Plains, Yao Huang deepens his collaboration with Zombie Alliance, raising the alliance’s standing in the region.",
+      "chapters": [
+        776
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "deepening-ties-with-zombie-alliance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fighting Old Ancestor Xue Hu in white heaven alongside Heavenly Lord Bai Zu, Yao Huang has his orange radiance suppressed until Bai Zu concedes the loss for both of them. Yao Huang says this is not the time to settle who wins, and withdraws his earlier claim on Miniscule Mountain now that Xue Hu has set his sights on it. Snowy Mountain’s Gu Immortals celebrate that both rank eights had to retreat, and Xue Hu states that he defeated the two of them, who had been coveting Fortune Rivalling Heaven and did not want him to refine it.",
+      "chapters": [
+        813
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "defeat-by-old-ancestor-xue-hu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_zu_tribe",
+        "loc_miniscule_mountain",
+        "gu_fortune_rivalling_heaven_immortal_gu"
+      ]
+    },
+    {
+      "text": "Yao Huang privately guesses that Lord South Desolation’s awareness of the situation inside Snowy Mountain blessed land is not Luck Suppression Heavenly Palace’s ability, and wonders whether their side has an insider in Snowy Mountain blessed land.",
+      "chapters": [
+        1252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "suspecting-an-insider",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_south_desolation_immortal",
+        "house_luck_suppression_heavenly_palace"
+      ]
+    },
+    {
+      "text": "When South Desolation Immortal calls for help against a Central Continent pincer attack, Yao Huang joins him in controlling Luck Suppression Heavenly Palace, and the battle stabilizes at once.",
+      "chapters": [
+        1267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "called-to-steady-luck-suppression-heavenly-palace",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "house_luck_suppression_heavenly_palace"
+      ]
+    },
+    {
+      "text": "Longevity Heaven’s newly appointed South Desolation Immortal, Yao Huang declares he will capture Fang Yuan and bring him to justice.",
+      "chapters": [
+        1446
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "marked-to-capture-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_longevity_heaven"
+      ]
+    },
+    {
+      "text": "He is an old man carrying a walking cane, with a kind aura.",
+      "chapters": [
+        1727
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cane-and-aura",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/yao-huang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yao-huang/",
+      "chapters": [
+        736,
+        740,
+        749,
+        753,
+        757,
+        764,
+        776,
+        813,
+        1007,
+        1144,
+        1252,
+        1267,
+        1446,
+        1727
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 736",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Yao Tribe as of ch. 749",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "righteous path as of ch. 749",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 736,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": "righteous path as of ch. 749",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_cauldron_strength_immortal_gu",
+      "role": "unspecified",
+      "recorded_chapter": 757,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_kindness_thought_gu",
+      "role": "unspecified",
+      "recorded_chapter": 757,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_longevity_edict",
+      "role": "holder",
+      "recorded_chapter": 1190,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

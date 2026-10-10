@@ -1,0 +1,201 @@
+{
+  "id": "loc_rolling_rock_battlefield",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rolling Rock Battlefield",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shi Lei's immortal battlefield killer move that turns the sky into a grey rock domain and isolates those inside.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 723,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    723,
+    725,
+    726
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_star_lord_wan_xiang",
+      "count": 1
+    },
+    {
+      "target": "sys_battlefield_killer_move",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_battlefield",
+      "count": 1
+    },
+    {
+      "target": "loc_starry_sky_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_seven_star_child",
+      "count": 1
+    },
+    {
+      "target": "char_shi_lei",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The sky turns into a grey rock battlefield that expands to cover those inside. From outside it looks like a huge grey rock cloud hanging in the sky, blocking vision.",
+      "chapters": [
+        723
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "High in the air it is massive, like a poisonous tumor attached to Starry Sky grotto-heaven.",
+      "chapters": [
+        725
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_starry_sky_grotto_heaven"
+      ]
+    },
+    {
+      "text": "Star Lord Wan Xiang turns into a shooting star and flies into the eighth star hall; Fang Yuan and Hei Lou Lan bet the defenses are no longer a threat and follow him in.",
+      "chapters": [
+        723
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_star_lord_wan_xiang",
+        "char_fang_yuan",
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "When Seven Star Child’s immortal zombie flies out of the eighth star hall, its attention locks on the rolling rock battlefield high in the air. The field is massive, like a poisonous tumor attached to Starry Sky grotto-heaven. An immortal star path killer move, star billow pillar, crashes into it; the battlefield shakes but does not break.",
+      "chapters": [
+        725
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "pressure-on-the-field",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_seven_star_child"
+      ]
+    },
+    {
+      "text": "Under further immortal killer moves, including a huge starlight hand, the battlefield cracks open and still holds for a time, then finally breaks. When it does, the wounded zombie dragon falls, and Shi Lei emerges heavily injured.",
+      "chapters": [
+        726
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "pressure-on-the-field",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shi_lei"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/rolling-rock-battlefield.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/rolling-rock-battlefield/",
+      "chapters": [
+        723,
+        725,
+        726
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "battlefield",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

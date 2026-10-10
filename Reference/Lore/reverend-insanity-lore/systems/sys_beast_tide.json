@@ -1,0 +1,165 @@
+{
+  "id": "sys_beast_tide",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beast Tide",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "small scale beast tide small beast tide big scale beast tide"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A beast tide is a mass migration or assault of wild beasts that contests living space with humans. Small tides can grow into large ones if left alone.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 93,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    93,
+    97,
+    103,
+    117
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 2
+    },
+    {
+      "target": "sys_wolf_tide",
+      "count": 2
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "gu_river_swallowing_toad",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Every few years a beast tide happens. Humans, wild beasts, and insects all need resources and living space, so a beast tide can be read as a war between wild beasts and humanity. A small scale beast tide near a village can slowly become a big scale beast tide that crushes foot-of-mountain villages if it is not broken early. Growing wolf groups squeeze other beasts out of living space; migrations stack until mixed beast tides form and keep expanding unless controlled in time.",
+      "chapters": [
+        93
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "race_humans"
+      ]
+    },
+    {
+      "text": "A small beast tide is still only a prelude. The real terror on Qing Mao Mountain is the later large wolf tide, when tens of thousands of lightning wolves charge with a powerful lightning wolf king. Losses in past small beast tides were lighter than when a lightning wolf pack arrives early, before the usual three waves of small beast tide.",
+      "chapters": [
+        97
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prelude-and-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "The Qing Mao instance of that larger cycle is covered on Wolf Tide.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "prelude-and-wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_wolf_tide"
+      ]
+    },
+    {
+      "text": "Houses outside the village are unsafe: wild beasts and snakes can intrude, and every beast tide destroys those outer houses. Extending the village widens the area that must be held against beast tide attacks and makes infiltration harder to guard. Gu Yue village has extended several times in history and been devastated by beast tides, so its current size is already the largest it dares hold.",
+      "chapters": [
+        103
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "village-defense",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "If River Swallowing Toad floods Qing Mao Mountain, wolf lairs submerge and wolf hordes move uphill, so the wolf tide can break out before its time and humans must fight countless wild beasts for mountaintop space. Even after withstanding beast tides at the peak, a subsided flood can leave a wasteland short of cultivation resources.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "flood-and-early-outburst",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_river_swallowing_toad"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/beast-tide/",
+      "chapters": [
+        93,
+        97,
+        103,
+        117
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Beast tide",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "id": "loc_ming_tang_valley",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ming Tang Valley",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ming Tang Valley is a Central Continent light path treasure land jointly controlled by Wind Cloud Manor and Heavenly Lotus Sect.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1030,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1030,
+    1052,
+    1066
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "char_gong_sun_liang",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_light_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "fac_defy",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter draws a full landscape of the valley beyond naming it as a deep treasure land rich in light path dao marks.",
+      "chapters": [
+        1030
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ming Tang valley sits under Wind Cloud Manor and Heavenly Lotus Sect, two of the ten great ancient sects. It is famous in Central Continent among the best places to produce light path Gu worms, and almost every twenty years a wild light path Immortal Gu forms there. Deep in the valley hides the demonic path Gu Immortal Unmoving Mountain, Gong Sun Liang.",
+      "chapters": [
+        1030
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_wind_cloud_manor",
+        "fac_heavenly_lotus_sect",
+        "reg_central_continent",
+        "sys_gu_worms",
+        "sys_immortal_gu",
+        "sys_gu_immortal",
+        "char_gong_sun_liang"
+      ]
+    },
+    {
+      "text": "Fairy Zi Wei tells Heavenly Court they shall go to Ming Tang valley to capture Gong Sun Liang.",
+      "chapters": [
+        1052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-target",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "A Defy member, demonic Gu Immortal Gong Sun Liang who had been hiding in Ming Tang valley, is ambushed and captured by Heavenly Court Gu Immortals. He sends a request for help and Defy falls into turbulence.",
+      "chapters": [
+        1066
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "capture-of-gong-sun-liang",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/ming-tang-valley/",
+      "chapters": [
+        1030,
+        1052,
+        1066
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "valley",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

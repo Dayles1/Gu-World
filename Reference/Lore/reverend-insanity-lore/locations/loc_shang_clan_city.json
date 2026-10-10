@@ -1,0 +1,989 @@
+{
+  "id": "loc_shang_clan_city",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Clan City",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shang Clan City is the Southern Border's great mountain trade city. The Shang clan built it through Shang Liang mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 229,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    229,
+    258,
+    259,
+    260,
+    261,
+    263,
+    265,
+    267,
+    268,
+    269,
+    305,
+    306,
+    321,
+    326,
+    327,
+    333,
+    355,
+    356,
+    1072
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_and_bai_ning_bing_against_wei_yang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 265,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_against_li_hao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 289,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_bai_ning_bing_against_tie_dao_ku",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 298,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_against_zhu_ba",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 299,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_bai_ning_bing_against_yan_tu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 312,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_fang_yuan_against_ju_kai_bei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 317,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_and_bai_ning_bing_against_wei_yang",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_li_hao",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_bai_ning_bing_against_tie_dao_ku",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_bai_ning_bing_against_yan_tu",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_zhu_ba",
+      "count": 2
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_ju_kai_bei",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 2
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 2
+    },
+    {
+      "target": "fac_feng_yu_manor",
+      "count": 2
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 2
+    },
+    {
+      "target": "char_shang_chao_feng",
+      "count": 2
+    },
+    {
+      "target": "char_shang_fu_xi",
+      "count": 2
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 2
+    },
+    {
+      "target": "char_shang_qiu_niu",
+      "count": 2
+    },
+    {
+      "target": "char_shang_tuo_hai",
+      "count": 2
+    },
+    {
+      "target": "char_shang_chi_wen",
+      "count": 2
+    },
+    {
+      "target": "char_shang_pi_xiu",
+      "count": 2
+    },
+    {
+      "target": "char_shang_suan_ni",
+      "count": 2
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_shang_bu_li",
+      "count": 2
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 2
+    },
+    {
+      "target": "char_little_beast_king",
+      "count": 2
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_ju_feng_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_tie_dao_ku",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_fei_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_black_and_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_moon_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spike_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_demonic_blood_skull_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flesh_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_bone_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_footless_bird_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 1
+    },
+    {
+      "target": "gu_jumping_grass_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_plunder_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_silver_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_bird_ice_coffin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_flesh_unity_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_ice_blade_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_water_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_creative_thinking_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_intelligent_heart_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_tactful_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_poison_vow_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_seize_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_steel_tendon_gu",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 1
+    },
+    {
+      "target": "loc_xiao_yue_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_xue_lei_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_four_seasons_restaurant",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_whale_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "gu_moonlight_crawling_mountain_tiger_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_fourth_inner_city",
+      "count": 1
+    },
+    {
+      "target": "res_charcoal_stones",
+      "count": 1
+    },
+    {
+      "target": "res_star_stones",
+      "count": 1
+    },
+    {
+      "target": "gu_bookworm",
+      "count": 1
+    },
+    {
+      "target": "loc_flesh_sac_secret_chamber",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_tian_restaurant",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_yan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_broadsword_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_dragon_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sword_shadow_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_early_spring",
+      "count": 1
+    },
+    {
+      "target": "gu_light_source_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_lightning_thoughts_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_rainbow_light_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bi_an",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "char_divine_doctor_sheng_shou",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The city covers the whole of Shang Liang mountain. The outer city mixes bamboo buildings, dried mud houses, brick houses, shacks, treehouses, mushroom houses, caves, towers, castles, and more across the mountain in assorted colors.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_liang_mountain"
+      ]
+    },
+    {
+      "text": "Fang Yuan names it as the next destination after the Bai Gu stretch: Shang Liang mountain, seat of Shang clan. Shang is a top Southern Border force, below only Wu clan in that ranking, and narration calls it the region’s business and trading center. The city is flourishing, open enough that demonic Gu Masters dispose of goods there, and wealthy enough that even Wu clan falls short of Shang on riches.",
+      "chapters": [
+        229
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_shang_clan",
+        "fac_wu_clan",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Travellers arrive at a huge city gate at the mountain’s foot,",
+      "chapters": [
+        258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scale-and-history",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and arrest warrants are posted on the city walls.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scale-and-history",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The city covers the whole of Shang Liang mountain rather than a village slice of a peak. What a newcomer first sees is the outer city: bamboo buildings, dried mud houses, brick houses, shacks, treehouses, mushroom houses, caves, towers, castles, and more, mixed together across the mountain. As the Southern Border’s trading hub it occupies more space than any other force, and even Wu clan, called the region’s number one clan, does not field a mountain city of that scale.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "scale-and-history",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang clan remodelled the mountain for thousands of years. The surface is only the outer layer; deeper work dug an inner city into the mountain itself.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "scale-and-history",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Entry from outer city into the inner city costs a hundred primeval stones per person when Fang Yuan first goes in, a fee the guard frames as keeping space and order.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outer-city-and-inner-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The inner city has wide paths that can take ten horse carts abreast, fewer crowds than the outer city, Gu Masters everywhere, and almost no mortals, because the fee screens them out.",
+      "chapters": [
+        261
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outer-city-and-inner-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "From inner to outer the mountain is cut into five inner regions plus the outer city.",
+      "chapters": [
+        261
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outer-city-and-inner-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "First inner city is the central inner city, Shang clan’s political heart and military base. Second is the clan city, for Shang clansmen only. Third is the high-class zone, fourth the middle-class zone, and fifth the low-class zone. Beyond fifth lies the outer city, busy with traffic and goods and more chaotic than the layers above. Passing deeper without the right Shang token means paying again at each gate: two hundred primeval stones into fourth, six hundred into third, and second inner city is closed to fee alone. Shang clan issues tokens of varied authority for different statuses.",
+      "chapters": [
+        261
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outer-city-and-inner-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The clan is the Southern Border’s most wealthy clan, and its trade reaches across the region. The city is literally a mountain of wealth as well as stone.",
+      "chapters": [
+        261
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outer-city-and-inner-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Wei Yang’s tour states that Shang clan city is first in the Southern Border by size, that Shang has operated on Shang Liang mountain for thousands of years, and that the city holds over ten thousand shops and hundreds of thousands of people. Besides the five-plus-outer layering, the city is also split into working zones: food, rock gambling, caretaking, red-light, Gu fighting, substitute refinement, auction, and battle among them. Auctions run on a fixed ladder of small, mid, and large sales through the month.",
+      "chapters": [
+        265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "size-zones-and-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "Demonic Gu Masters sell loot and restock Gu here; that traffic is one pillar of the city’s growth, even while the city still presents itself as righteous path ground.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "size-zones-and-trade",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The battle zone is the most popular place in the city, with over eighty stages for single, dual, and multi fights, and terrain fields that change the match. Shang uses the stage to recruit outside talent. A Gu Master who climbs the stages and holds eighteen consecutive rounds can draw the clan leader’s eye; Wei Yang himself rose that way and later became an external clan elder under Shang Yan Fei. Young masters also recruit demonic Gu Masters for their own factions, and those retainers can rise to external elder status if their patron takes the clan leader seat.",
+      "chapters": [
+        265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-stage-and-external-elders",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "Shang Yan Fei is clan leader during the arc on the mountain. He hosts a clan banquet for the young masters and for Fang Yuan and Bai Ning Bing after Shang Xin Ci is acknowledged.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leadership-and-young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "The young master seats are a standing contest: only Shang clan young masters may compete for young clan leader,",
+      "chapters": [
+        267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leadership-and-young-masters",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and each year one young master can be eliminated from the slate.",
+      "chapters": [
+        268
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leadership-and-young-masters",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Yan Fei reduced the young master seats from fifteen to ten.",
+      "chapters": [
+        263
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leadership-and-young-masters",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the banquet Wei Yang names zone control for several of Shang Yan Fei’s children: eldest son Shang Qiu Niu manages the caretaking zone; fourth son Shang Chao Feng manages the Gu fighting arenas; Shang Pu Lao manages the brothels of the red light zone. The same gathering also places Shang Pi Xiu over rock gambling dens, Shang Suan Ni over restaurants and silk stores, Shang Fu Xi over auctions, Shang Bi Xi over the substitute refinement zone, and Shang Ya Zi among the young masters already known to Fang Yuan. Shang Chi Wen, sixteenth daughter, holds the battle arenas. Birth-order labels in that stretch include Ya Zi as second son, Pu Lao as eighth, Suan Ni as ninth, Bi Xi as tenth, Fu Xi as thirteenth, and Pi Xiu as twenty-first.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leadership-and-young-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_qiu_niu",
+        "char_shang_chao_feng",
+        "char_shang_pu_lao",
+        "char_shang_pi_xiu",
+        "char_shang_suan_ni",
+        "char_shang_fu_xi",
+        "char_shang_bi_xi",
+        "char_shang_ya_zi",
+        "char_shang_chi_wen"
+      ]
+    },
+    {
+      "text": "On auction day the contesting young masters stand in three factions plus loners. Shang Qiu Niu stands first with elder and clansman support. Shang Pu Lao, Shang Suan Ni, and Shang Bi Xi form a second bloc. Shang Chao Feng and Shang Fu Xi form a third, holding the Gu battle zone and the auction zone. Shang Ya Zi is a loner with little influence; Shang Chi Wen holds the battle stage without ambition for the higher contest; Shang Pi Xiu is among the remaining contesting young masters.",
+      "chapters": [
+        305
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leadership-and-young-masters",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Chao Feng states that among five great elders, three are external elders, and that Shang clan city’s battle stage alone lets demonic Gu Masters become Shang external elders.",
+      "chapters": [
+        327
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "five-elders-and-generals",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Named figures tied to that five-elder or five-general circle include Wei Yang, who controls the intelligence agency Feng Yu Manor;",
+      "chapters": [
+        306
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "five-elders-and-generals",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_feng_yu_manor"
+      ]
+    },
+    {
+      "text": "Yi Huo, Blazing Inferno, ranked above Wei Yang among Shang Yan Fei’s experts;",
+      "chapters": [
+        355
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "five-elders-and-generals",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_huo"
+      ]
+    },
+    {
+      "text": "and Shang Bu Li, titled Two faced man, who controls the slave trade market and is called the number one general under Shang Yan Fei.",
+      "chapters": [
+        306
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "five-elders-and-generals",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_bu_li"
+      ]
+    },
+    {
+      "text": "After Fang Yuan defeats Ju Kai Bei on the stage, tea houses, restaurants, and streets fill with talk. People call him Little Beast King; he and Bai Ning Bing are also called the Black and White Demons. That Gu set alone is enough for him to spread his name across the Southern Border and gain his own title. He then retires from the stage instead of pressing for external elder. That retirement briefly looks like the end of Shang’s external-elder path, until Shang Yan Fei clarifies that the policy still stands. Fang Yuan then announces in public that he will help Shang Xin Ci take a young master seat, and the city’s attention swings from the stage to that succession fight.",
+      "chapters": [
+        321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-uproar-festival-and-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ju_kai_bei",
+        "char_little_beast_king",
+        "fac_black_and_white_twin_demons"
+      ]
+    },
+    {
+      "text": "Shang Chao Feng later states the rule in clan terms: Shang clan city’s battle stage alone lets demonic Gu Masters become Shang external elders, a policy unique to Shang, and that among five great elders three are external.",
+      "chapters": [
+        327
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-uproar-festival-and-departure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same policy is why many demonic Gu Masters leave Shang caravans alone when trading outside. They want a backup path into the clan. Other Southern Border clans keep battle stages mostly for their own people; Wu clan’s is the largest and most popular of those, but Shang’s external elder door is what pulls outsiders in.",
+      "chapters": [
+        321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-uproar-festival-and-departure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Auspicious Festival commemorates the Shang ancestor who founded the clan thousands of years earlier. On that day the founding story is told: a poor mortal trader obtained a Gu Master inheritance token, rose step by step, and finally founded Shang clan city. On festival day the inner city is hung with lanterns, large businesses close, and people set up stalls as a living game of buying and selling. Sitting young masters send banquet invitations that force a newcomer to pick a faction. Shang Qiu Niu is also named the eldest son of the first wife.",
+      "chapters": [
+        326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-uproar-festival-and-departure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Xin Ci later wins a young master seat. Fang Yuan and Bai Ning Bing leave the city afterward, with Shang Xin Ci seeing them off outside the city as they head toward San Cha Mountain. Before parting, Fang Yuan reminds her of the ranks above the ten young masters: young clan leader Shang Tuo Hai, the five elders, Shang Yan Fei, and the Shang supreme elder.",
+      "chapters": [
+        333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "city-uproar-festival-and-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "char_shang_tuo_hai"
+      ]
+    },
+    {
+      "text": "Shang Liang mountain remains Shang clan’s main base and trading connector for righteous path, demonic path, and lone cultivators. At the succession ceremony Shang Bu Li stands at the mountain peak before guests from Tie, Yi, Wu, Hou, and other Southern Border super forces, plus demonic and lone experts. A clear rainbow road extends from the mountain’s interior, Shang Xin Ci walks it to a cloud throne, and she becomes Shang clan leader. Of Shang Yan Fei’s five great generals, only Shang Bu Li and Wan Qian Shan remain after Yi Tian mountain; Shang Bu Li still controls slave trade, and Wan Qian Shan handles resource gathering such as mining, herb gathering, and hunting as an external elder for outside Gu Masters’ interests.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "clan-leader-succession",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yi_tian_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/shang-clan-city.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/shang-clan-city/",
+      "chapters": [
+        229,
+        258,
+        259,
+        260,
+        261,
+        263,
+        265,
+        267,
+        268,
+        269,
+        305,
+        306,
+        321,
+        326,
+        327,
+        333,
+        355,
+        356,
+        1072
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

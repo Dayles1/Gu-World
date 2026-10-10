@@ -1,0 +1,177 @@
+{
+  "id": "house_secluded_residence",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Secluded Residence",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Immortal Gu House Secluded Residence"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A planned Immortal Gu House centered on wisdom Gu. Lang Ya land spirit wants it to defend Lang Ya blessed land and block almost all outside deductions.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1063,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1063,
+    1551,
+    1628
+  ],
+  "relations": [
+    {
+      "type": "core_gu",
+      "target": "gu_wisdom_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1063,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_wisdom_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "house_graceful_chaotic_duel_stage",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a finished Secluded Residence. The house is spoken of as a plan, not a completed structure.",
+      "chapters": [
+        1063
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lang Ya land spirit tells Fang Yuan that if they can use wisdom Gu as the core to create Immortal Gu House Secluded Residence, they can not only defend themselves but also defend against deductions from almost everyone in the world.",
+      "chapters": [
+        1063
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "char_fang_yuan",
+        "gu_wisdom_gu"
+      ]
+    },
+    {
+      "text": "Lang Ya land spirit repeats the same plan when wisdom Gu is under pressure. Fang Yuan answers that Secluded Residence is a good idea but extremely hard to materialize quickly, while Heavenly Court’s attack is immediate. He adds that making Lang Ya blessed land an absolute refuge under Secluded Residence would strip hairy man Gu Immortals of the danger that drives cultivation. At that time Secluded Residence remains only a fantasy.",
+      "chapters": [
+        1551
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "still-a-fantasy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "loc_lang_ya_blessed_land",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When Fang Yuan later designs his own Immortal Gu House, he takes reference from Secluded Residence among many other Immortal Gu Houses, while basing the skeleton on Graceful Chaotic Duel Stage.",
+      "chapters": [
+        1628
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "design-reference",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_graceful_chaotic_duel_stage"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/secluded-residence/",
+      "chapters": [
+        1063,
+        1551,
+        1628
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Core Gu": {
+      "text": "Wisdom Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

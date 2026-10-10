@@ -1,0 +1,312 @@
+{
+  "id": "gu_soft_bones_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Soft Bones Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Soft Bones Gu is a rank five Gu used by Ku Mo at San Cha Mountain. It softens bones across a wide area into bone paste.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 373,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    373,
+    380,
+    417
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_ku_mo",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 373,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 380,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ku_mo",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_pitch_black_gu",
+      "count": 2
+    },
+    {
+      "target": "evt_fight_tie_mu_bai_against_wu_gui_and_ku_mo",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_essence_iron_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "path_bone",
+      "count": 1
+    },
+    {
+      "target": "gu_turn_gold_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [
+    {
+      "topic": "Appearance",
+      "positions": [
+        {
+          "position": "Bones within fifty miles of soft bones Gu turn soft and become bone paste.",
+          "support": "Chapter 373, during the San Cha mountain rank five clash.",
+          "chapters": [
+            373
+          ]
+        },
+        {
+          "position": "Soft bones Gu turns the bones of any lifeforms soft within a radius of twenty-five kilometres.",
+          "support": "Chapter 380, when Fang Yuan assesses the Gu after looting Ku Mo.",
+          "chapters": [
+            380
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/soft-bones-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/soft-bones-gu/",
+      "chapters": [
+        373,
+        380,
+        417
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "No chapter describes its appearance.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Sources conflict:",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The question is open.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_ku_mo",
+      "role": "owner",
+      "recorded_chapter": 373,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "owner",
+      "recorded_chapter": 380,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Any bones within soft bones Gu’s reach turn soft and become a puddle of bone paste.",
+        "chapters": [
+          373
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Ku Mo had eight Gu worms and only one rank five Gu, soft bones Gu. Even if Fang Yuan turned his bones into essence iron bones, he would still be affected and his bones would turn soft eventually, leaving him unable to fight back. Without a skeleton for support he would lie paralyzed, with organs and vessels clogging, and die before long even without further attacks. Fang Yuan takes the Gu and keeps it for now, noting he does not know much about bone path.",
+        "chapters": [
+          380
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "loot-and-bodily-collapse",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_ku_mo",
+          "sys_gu_worms",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Against a swamp crab desolate beast, Fang Yuan still holds soft bones Gu among other rank five Gu such as turn gold Gu and Pitch Black Gu, yet using them would be like throwing pebbles in a lake and would only create slight ripples without continuous attack.",
+        "chapters": [
+          417
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "against-swamp-crab",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_pitch_black_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

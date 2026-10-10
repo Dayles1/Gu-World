@@ -1,0 +1,171 @@
+{
+  "id": "loc_onion_valley",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Onion Valley",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A wide Northern Plains valley overgrown with green onions, denser in beasts than crescent lake and home to onion explosion Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 496,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    496,
+    499
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "gu_onion_explosion_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A wide valley overgrown with green onions, a unique habitat like crescent lake.",
+      "chapters": [
+        496
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan tells Ge Guang they will go there before rushing Yu Tian heroes assembly. Narration calls it a unique habitat like crescent lake, then describes a famous rank two Gu that looks like an onion but is red like fire; when activated it emits an intense odor that makes wild beasts irascible and more likely to attack people, so the place is much more dangerous than crescent lake. Fang Yuan says that very long ago he bred some wolves there, and that after years of growth they should have matured and expanded.",
+      "chapters": [
+        496
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_ge_guang",
+        "loc_yu_tian",
+        "loc_crescent_lake"
+      ]
+    },
+    {
+      "text": "Speaking to Hei Lou Lan, Fang Yuan says that back then at onion valley he left some wolves behind, and that after these years they expanded to a great extent. Ge Guang adds that when Fang Yuan came out of onion valley, the endless number of wolves stunned them all. Narration states that after Fang Yuan went into onion valley alone, he opened the stargate and connected it to Hu Immortal Blessed Land, bringing out most of the wolves inside, and that he covered up his tracks on onion valley.",
+      "chapters": [
+        499
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolves-after-hei-lou-lan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "loc_hu_immortal_blessed_land"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/onion-valley.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/onion-valley/",
+      "chapters": [
+        496,
+        499
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "valley",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

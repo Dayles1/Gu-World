@@ -1,0 +1,193 @@
+{
+  "id": "char_huang_di",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huang Di",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "huang di",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хуан Ди",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Huang Di is a Northern Plains rank seven demonic path Gu Immortal who obtains Di Lao's earth path true inheritance and leads demonic and lone immortals into Iron Eagle blessed land first.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1105,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1105,
+    1109
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "sys_public_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "inh_di_lao_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tie_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During Hei tribe chaos, narration names a rank seven demonic path expert called Huang Di who interferes with high cultivation and has obtained the true inheritance of Northern Plains earth path great expert Di Lao. He goes out first, bringing demonic cultivators and lone immortals to attack, and righteous path talk later credits him with giving those demonic scoundrels the initiative. He has methods to attack the public Iron Eagle blessed land, which lacks a normal blessed land’s defense.",
+      "chapters": [
+        1105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "reg_northern_plains",
+        "loc_iron_eagle_blessed_land"
+      ]
+    },
+    {
+      "text": "Inside Iron Eagle blessed land he appears behind Hei Tie Sheng, named again as the rank seven demonic path Gu Immortal who entered first and cost the righteous path the initiative. He tries to kill Hei Tie Sheng after gaining much, but Hei Tie Sheng’s dark light waves send him far away. Shocked, with seven orifices spewing black blood, he drills into the ground and vanishes.",
+      "chapters": [
+        1109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strike-on-hei-tie-sheng",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tie_sheng",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/huang-di/",
+      "chapters": [
+        1105,
+        1109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1105",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1105,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,944 @@
+{
+  "id": "path_luck",
+  "entity_type": "path",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luck Path",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Qi luck"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The luck path treats fortune as a substance that can be inspected, moved, spent, and suppressed.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 546,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    568,
+    601,
+    604,
+    674,
+    681,
+    760,
+    767,
+    815,
+    823,
+    928,
+    1029,
+    1059,
+    1060,
+    1064,
+    1160,
+    1180,
+    1234,
+    1238,
+    1242,
+    1415,
+    1782,
+    1823,
+    2078,
+    2080,
+    2085,
+    2200,
+    2201,
+    2279
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 3
+    },
+    {
+      "target": "gu_luck_inspection_gu",
+      "count": 3
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 3
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 3
+    },
+    {
+      "target": "gu_time_luck",
+      "count": 2
+    },
+    {
+      "target": "move_qi_luck_sensation",
+      "count": 2
+    },
+    {
+      "target": "move_fixed_luck",
+      "count": 2
+    },
+    {
+      "target": "gu_calamity_beckoning_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_divert_disaster_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_conceal_luck_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_luck_inspection_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_peach_blossom_luck",
+      "count": 2
+    },
+    {
+      "target": "gu_qi_luck_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "move_destined_birth_through_luck",
+      "count": 2
+    },
+    {
+      "target": "gu_fortune_rivalling_heaven_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_break_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_leave_luck_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_seal_luck_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_transfer_luck_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_reverse_misfortune",
+      "count": 1
+    },
+    {
+      "target": "gu_blessing_in_disguise_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_deduction_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_time_assist_luck",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jun",
+      "count": 1
+    },
+    {
+      "target": "move_luck_whirlwind",
+      "count": 1
+    },
+    {
+      "target": "res_living_luck_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "res_luck_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "gu_main_luck_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sub_luck_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_spontaneous_auspicious_cloud",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_plan_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_luck_plan_strategy",
+      "count": 1
+    },
+    {
+      "target": "char_qin_ding_ling",
+      "count": 1
+    },
+    {
+      "target": "gu_responsive_luck",
+      "count": 1
+    },
+    {
+      "target": "char_qi_ci_lang",
+      "count": 1
+    },
+    {
+      "target": "res_lucky_jade",
+      "count": 1
+    },
+    {
+      "target": "res_tooth_gap_water",
+      "count": 1
+    },
+    {
+      "target": "res_black_yellow_heart",
+      "count": 1
+    },
+    {
+      "target": "res_favored_heart",
+      "count": 1
+    },
+    {
+      "target": "res_rank_nine_luck_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "char_immortal_zombie_giant_sun",
+      "count": 1
+    },
+    {
+      "target": "move_poor_luck_silver_hook",
+      "count": 1
+    },
+    {
+      "target": "move_i_reside_in_all_living_beings",
+      "count": 1
+    },
+    {
+      "target": "move_nothing_is_certain_except_success",
+      "count": 1
+    },
+    {
+      "target": "move_luck_slicing_golden_blade",
+      "count": 1
+    },
+    {
+      "target": "path_time",
+      "count": 2
+    },
+    {
+      "target": "inh_heaven_and_earth_luck_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "inh_giant_sun_immortal_venerable_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "char_lady_wan_shou",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 1
+    },
+    {
+      "target": "inh_long_hair_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_self_luck_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_extremity",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "inh_all_living_beings_luck_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "house_luck_suppression_heavenly_palace",
+      "count": 1
+    },
+    {
+      "target": "evt_era_medieval",
+      "count": 1
+    },
+    {
+      "target": "move_destiny_song",
+      "count": 1
+    },
+    {
+      "target": "char_red_lotus_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "move_soul_replacement",
+      "count": 1
+    },
+    {
+      "target": "house_cooking_luck_pot",
+      "count": 1
+    },
+    {
+      "target": "gu_suppression_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_blood_kin_heart_revenge",
+      "count": 1
+    },
+    {
+      "target": "char_lu_wei_yin",
+      "count": 1
+    },
+    {
+      "target": "house_four_elements_square_regret_blood_refinement_pool",
+      "count": 1
+    },
+    {
+      "target": "move_luck_changing_golden_light_path",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Luck is a cultivation path with its own chapter titles, Immortal Gu, inheritances, and killer moves, rather than a metaphor for plot convenience.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "A Luck Inspection Gu carries a chapter title at 604,",
+      "chapters": [
+        604
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_luck_inspection_gu"
+      ]
+    },
+    {
+      "text": "and luck inspection recurs as an activity far later.",
+      "chapters": [
+        1060
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The quantity attaches to people and to named objects. Chapter 674 is titled for monolith luck while that luck is being inspected,",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and chapter 681 is titled for nine dragons coffin protection luck.",
+      "chapters": [
+        681
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "There is a limit on sensation. Chapter 1160 is titled “Qi Luck Sensation is Ineffective”,",
+      "chapters": [
+        1160
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_qi_luck_sensation"
+      ]
+    },
+    {
+      "text": "and qi luck sensation can be blocked or countered rather than always trusted.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Giant Sun Immortal Venerable innovated the luck path and kept that work hidden while he lived. As a complete path it has offense, defense, movement, healing, and related structure; what it targets is the incorporeal, formless luck everyone possesses.",
+      "chapters": [
+        568
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "founding-and-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "A luck path inheritance, founded by him on his unique luck path attainment, sits inside the Imperial Court material.",
+      "chapters": [
+        601
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "founding-and-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "A later chapter is titled for the essence of the luck path true inheritance.",
+      "chapters": [
+        760
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "founding-and-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Imperial Court true inheritance secluded domain the inheritances are graded ordinary, unparalleled, and supreme, and taking one means facing its test.",
+      "chapters": [
+        601
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "founding-and-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Luck is combined with time repeatedly in this stretch. An Immortal Gu named Time Luck combines time and luck.",
+      "chapters": [
+        767
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-combination",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_time_luck"
+      ]
+    },
+    {
+      "text": "Two later chapters are titled for time assisting luck.",
+      "chapters": [
+        815
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-combination",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The time path page reads the same three titles from the other side.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-combination",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_time"
+      ]
+    },
+    {
+      "text": "Giant Sun Immortal Venerable’s early vital Immortal Gu is named Dog Shit Luck.",
+      "chapters": [
+        1029
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-combination",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_dog_shit_luck"
+      ]
+    },
+    {
+      "text": "In the body, Lang Ya land spirit jokes that Giant Sun’s early vital Immortal Gu was Dog Shit Luck rather than fortune rivalling heaven Gu, which he refined in later years. The phrase is a windfall idiom and a Gu name, not a claim that the holder has very bad luck.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-combination",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit"
+      ]
+    },
+    {
+      "text": "Chapter 928 is titled “Luck Path Backlash”. In that chapter, Old Ancestor Xue Hu and Lady Wan Shou face backlash while trying to refine fortune rivalling heaven Immortal Gu with Ma Hong Yun as the main material, and that backlash is luck path interference rather than a generic cost of spending luck. Luck path is not invincible; immense strength can resist its backlash.",
+      "chapters": [
+        928
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "the-price",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_ancestor_xue_hu",
+        "char_lady_wan_shou",
+        "char_ma_hong_yun"
+      ]
+    },
+    {
+      "text": "Giant Sun Immortal Venerable’s entire life of cultivation resolves into three parts, self luck, all living beings’ luck, and heaven and earth luck, the last created during his later years. Heaven Extremity tells Five Elements Grandmaster that luck path targets the operations of the principles of heaven, with self luck replenishing its user, all living beings’ luck taking others’ surpluses to replenish the user, and heaven and earth luck taking heaven and earth’s own surpluses to replenish the user.",
+      "chapters": [
+        1180
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavens-principles-and-the-three-luck-inheritances",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heaven_extremity",
+        "char_five_elements_grandmaster"
+      ]
+    },
+    {
+      "text": "Below master, luck path attainment includes ordinary and quasi-master levels.",
+      "chapters": [
+        1064
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Chapter 1238 is titled “Luck Path Master”.",
+      "chapters": [
+        1238
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Master sits below the grandmaster steps described at dao marks and attainment.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_dao_marks"
+      ]
+    },
+    {
+      "text": "In the same stretch, Duke Long states that fate is certain while luck is uncertain: good luck is a positive uncertainty for oneself, and bad luck is a negative uncertainty for oneself.",
+      "chapters": [
+        1234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_duke_long"
+      ]
+    },
+    {
+      "text": "Chapter 1242 is titled “Luck Suppression Heavenly Palace”.",
+      "chapters": [
+        1242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_luck_suppression_heavenly_palace"
+      ]
+    },
+    {
+      "text": "Suppression means luck can be held down from outside by an installation, rather than only spent by its owner.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_suppression_immortal_gu"
+      ]
+    },
+    {
+      "text": "Chapter 1415 is titled “Fixed Luck”.",
+      "chapters": [
+        1415
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_fixed_luck"
+      ]
+    },
+    {
+      "text": "Fixed luck is an immortal killer move whose effect is to make one’s luck unwavering and not easily influenced. Fang Yuan obtains it from Ma Hong Yun’s soul as part of Giant Sun’s all living beings luck true inheritance, and uses it against the downside of Connect Luck.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "inh_all_living_beings_luck_true_inheritance",
+        "gu_connect_luck"
+      ]
+    },
+    {
+      "text": "Other chapter titles in this band name further operations on luck, including splitting luck.",
+      "chapters": [
+        1059
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "They also include cooking luck,",
+      "chapters": [
+        1823
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "and later gambles and retaliation listed below.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "attainment-and-operations",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Giant Sun Immortal Venerable opens that inheritance by asking what luck is, then answering that to discuss luck one must talk about fate. Before Red Lotus Demon Venerable damaged fate Gu, there was no luck path. People first found luck as a component of human qi, and research into luck followed from the need to balance heaven, earth, and human qi for immortal ascension.",
+      "chapters": [
+        1782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-luck-is",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_red_lotus_demon_venerable",
+        "gu_fate_gu"
+      ]
+    },
+    {
+      "text": "His formulation is that fate is constant while luck is variable. Good luck is a positive variable for oneself; bad luck is a negative variable for oneself. Both sit in human qi as probability rather than as fixed fate, and strength or wisdom can still overturn a bad-luck situation. Normally, higher cultivation and deeper foundation mean greater luck.",
+      "chapters": [
+        1782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-luck-is",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The path is a target by this point rather than only a speciality. Chapter 2078 is titled for targeting the luck path.",
+      "chapters": [
+        2078
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Chapter 2080 is titled “Fang Yuan’s Luck”.",
+      "chapters": [
+        2080
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Venerables carry immense innate luck. Lu Wei Yin names two general sources for that innate luck: the favor of heaven’s will, and the adoration of human path.",
+      "chapters": [
+        2085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lu_wei_yin"
+      ]
+    },
+    {
+      "text": "Luck divides into good luck and bad luck, luck size generally rises with cultivation, and luck is a variable that all living beings’ luck can mutually influence.",
+      "chapters": [
+        2201
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A luck gamble unfolds.",
+      "chapters": [
+        2200
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Three Venerables’ luck retaliates.",
+      "chapters": [
+        2279
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "That last title is the clearest signal of how far the path scales. Luck at the Venerable level is not only a modifier on outcomes; it is a thing that can retaliate.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "luck-in-the-endgame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan has luck of his own as a late novel subject, including a chapter titled for his luck.",
+      "chapters": [
+        2080
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "notable-practitioners",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He pursues eternal life as a demonic path cultivator; luck is a tool in that pursuit, not a substitute for it.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "notable-practitioners",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/paths/luck.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/paths/luck/",
+      "chapters": [
+        568,
+        601,
+        604,
+        674,
+        681,
+        760,
+        767,
+        815,
+        823,
+        928,
+        1029,
+        1059,
+        1060,
+        1064,
+        1160,
+        1180,
+        1234,
+        1238,
+        1242,
+        1415,
+        1782,
+        1823,
+        2078,
+        2080,
+        2085,
+        2200,
+        2201,
+        2279
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Roundel": {
+      "text": "Luck path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

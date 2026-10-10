@@ -1,0 +1,120 @@
+{
+  "id": "loc_lan_chao_gambling_den",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lan Chao Gambling Den",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Shang clan city gambling den named when crowds react to an all-out effort Gu opening.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 285,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    285
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_li_ran",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Street talk calls the lucky opener Gu Yue Fang Zheng, says he holds a purple thorn token, and claims Li Ran had chosen three fossils until Fang Zheng took them as compensation after a clash, with All-out Effort Gu inside those fossils. Hearers rush to look at Lan Chao gambling den as the story spreads through Shang Clan City.",
+      "chapters": [
+        285
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "street-rumor-after-the-opening",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "char_li_ran",
+        "gu_all_out_effort_gu",
+        "loc_shang_clan_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/lan-chao-gambling-den/",
+      "chapters": [
+        285
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "gambling-den",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

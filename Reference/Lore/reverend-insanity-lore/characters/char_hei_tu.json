@@ -1,0 +1,345 @@
+{
+  "id": "char_hei_tu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hei Tu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "hei tu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хэй Ту",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Brother Hei Tu Big Brother Hei Tu Sir Hei Tu Lord Hei Tu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hei Tu is the name Fang Yuan gives when he and Bai Ning Bing join a merchant caravan after leaving Bai Gu Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 234,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    233,
+    234,
+    252,
+    270,
+    333,
+    1111
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 2
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 2
+    },
+    {
+      "target": "char_chen_xin",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_iron_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "fac_zhang_clan",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_zhu",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 1
+    },
+    {
+      "target": "fac_lei_clan",
+      "count": 1
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 1
+    },
+    {
+      "target": "char_lei_gong_cheng",
+      "count": 1
+    },
+    {
+      "target": "char_ding_hao",
+      "count": 1
+    },
+    {
+      "target": "char_second_zombie_king",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_shang_qing_qing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Fang Yuan obtains iron bones Gu and jade bones Gu from Bai Gu Mountain, he and Bai Ning Bing wait to join a caravan.",
+      "chapters": [
+        233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_iron_bone_gu",
+        "gu_jade_bone_gu",
+        "loc_bai_gu_mountain",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Near Zi You mountain, an old attendant arranges their caravan jobs and asks for names; he stares at Bai Ning Bing, doubts that Bai Yun fits her, and thinks Hei Tu is ugly.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_zi_you_mountain",
+        "char_bai_yun"
+      ]
+    },
+    {
+      "text": "On the road, Shang Xin Ci introduces the pair to caravan leaders as Zhang Clan hidden elders, Lord Hei Tu and Lord Bai Yun. Over twenty people bow and greet them under those titles.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "fac_zhang_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan is disfigured when he gives the name. Chen Xin is disgusted by that appearance, and the old attendant who hears the name judges that this Hei Tu is really ugly.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_xin"
+      ]
+    },
+    {
+      "text": "In Shang clan city, Shang Xin Ci greets Brother Hei Tu and sister Bai Yun in a courtyard. Fang Yuan tells her he has lied too, that Hei Tu and Bai Yun are just fake names, and that his real name is Gu Yue Fang Zheng while his companion is Bai Ning Bing. She says she guessed the names were fake long ago.",
+      "chapters": [
+        270
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "name-confession",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "After Shang Xin Ci becomes one of the ten young masters, she walks outside the city and asks whether Brother Hei Tu is in such a rush. Fang Yuan tells her there is no banquet that never ends and that they will meet again. As he and Bai Ning Bing leave for San Cha mountain, she keeps the Brother Hei Tu address in her parting prayer.",
+      "chapters": [
+        333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "city-farewell",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain"
+      ]
+    },
+    {
+      "text": "At Shang Liang Mountain, Shang Qing Qing tells Shang Xin Ci that the Brother Hei Tu she knows is not Fang Zheng but Fang Yuan, a demonic path Gu Immortal hunted across the five regions. Shang Xin Ci recalls first meeting Brother Hei Tu in the merchant caravan. Shang Qing Qing orders her to keep a clear distance from him.",
+      "chapters": [
+        1111
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-liang-mountain-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_liang_mountain",
+        "char_shang_qing_qing",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/hei-tu/",
+      "chapters": [
+        233,
+        234,
+        252,
+        270,
+        333,
+        1111
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

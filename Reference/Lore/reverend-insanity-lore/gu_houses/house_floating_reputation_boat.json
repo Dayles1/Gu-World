@@ -1,0 +1,133 @@
+{
+  "id": "house_floating_reputation_boat",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Floating Reputation Boat",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Floating Reputation Boat is a rank seven Immortal Gu House of the Merman Imperial Court in Eastern Sea.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1979,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1979
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "fac_merman_imperial_court",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1979,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 3
+    },
+    {
+      "target": "char_yu_zi",
+      "count": 2
+    },
+    {
+      "target": "char_ice_crystal_immortal_monarch",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a grand banquet, Yu Zi answers Ice Crystal Immortal Monarch by naming more than ten Gu Immortals and Immortal Gu House Floating Reputation Boat among her side’s own strength. Ice Crystal Immortal Monarch says he has heard of the boat long ago and dismisses it, then presses that her side has no rank eight Gu Immortal. In a three-round bet he forces, Floating Reputation Boat is used in the second round and loses after a hundred rounds of fighting.",
+      "chapters": [
+        1979
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yu_zi",
+        "char_ice_crystal_immortal_monarch",
+        "sys_gu_immortal",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because Floating Reputation Boat is a named Immortal Gu House. It is mobile equipment of the Merman Imperial Court, not a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_merman_imperial_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/floating-reputation-boat/",
+      "chapters": [
+        1979
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Owners": {
+      "text": "Merman Imperial Court (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

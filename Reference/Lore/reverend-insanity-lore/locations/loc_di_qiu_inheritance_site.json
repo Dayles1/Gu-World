@@ -1,0 +1,214 @@
+{
+  "id": "loc_di_qiu_inheritance_site",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Di Qiu inheritance site",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The hole Fang Yuan finds on the Eighty-Eight True Yang Building sand table, matching the Di Qiu inheritance location.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 560,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    496,
+    560,
+    561,
+    575
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "inh_di_qiu_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_di_qiu",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_wang_ting_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the central control room of Eighty-Eight True Yang Building, Fang Yuan covers a model sand table of Imperial Court blessed land with black sticky liquid and watches it funnel into a hole. After staring at that hole, he recognizes it as the Di Qiu inheritance site tied to Di Qiu. Bursting the hole would destroy the inheritance, while preserving it would halt his plan against Eighty-Eight True Yang Building at that moment.",
+      "chapters": [
+        560
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_eighty_eight_true_yang_building",
+        "char_fang_yuan",
+        "loc_wang_ting_blessed_land",
+        "loc_di_qiu"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because the sand table models Imperial Court blessed land during the Imperial Court sequence. The site is a mapped hole in that Immortal Gu house model, not a separate five-region seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "loc_imperial_court_blessed_land",
+        "loc_imperial_court",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "On the inheritance map, Di Qiu is heightened land with a gentle slope and no cliffs, and an opening that resembles a tunnel. Swamps and forests surround it, with a river at the southwest corner.",
+      "chapters": [
+        496
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan concludes that the mysterious Gu Immortal who set up Di Qiu inheritance broke the small tower there and created a hole, then sealed the gap so Eighty-Eight True Yang Building did not repair it, in order to use the heavenly power that condenses into the building.",
+      "chapters": [
+        561
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "broken-small-tower",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "inh_di_qiu_inheritance"
+      ]
+    },
+    {
+      "text": "When Fang Yuan returns to the central control room, the black liquid and the hole are gone, and the Di Qiu inheritance location on the sand table is fully restored. Mo Yao’s will says that after he took Di Qiu inheritance, Eighty-Eight True Yang Building fixed that flaw, so the cave in the inheritance no longer exists and a small tower should stand there again.",
+      "chapters": [
+        575
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "after-the-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_yao"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/di-qiu-inheritance-site.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/di-qiu-inheritance-site/",
+      "chapters": [
+        496,
+        560,
+        561,
+        575
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "inheritance",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

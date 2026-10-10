@@ -1,0 +1,116 @@
+{
+  "id": "res_fresh_beast_skins",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fresh beast skins",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fresh beast skins are Gu refinement materials required in large numbers for one procedure in the Lurking Soul Coat Gu recipe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 517,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    517
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_lurking_soul_coat_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_lurking_soul_coat_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan obtains the recipe of lurking soul coat Gu from Hei Lou Lan’s supply-camp agent after spending the rest of his battle merits. Refining the Gu is not highly difficult, but the procedures are monumental in number and the cost is not low. One procedure among them requires a large number of fresh beast skins as Gu refinement materials.",
+      "chapters": [
+        517
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "recipe-procedure-cost",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_lurking_soul_coat_gu",
+        "char_hei_lou_lan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/fresh-beast-skins.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/fresh-beast-skins/",
+      "chapters": [
+        517
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Beasts",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Lurking Soul Coat Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

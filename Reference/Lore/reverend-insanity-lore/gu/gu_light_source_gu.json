@@ -1,0 +1,288 @@
+{
+  "id": "gu_light_source_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Light Source Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Light Source Gu is an assistance type Gu. Wei Yang holds it beside rainbow light Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 266,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    266,
+    267,
+    275,
+    288
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_wei_yang",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 266,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wei_yang",
+      "count": 3
+    },
+    {
+      "target": "gu_rainbow_light_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_broadsword_light_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_and_bai_ning_bing_against_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/light-source-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/light-source-gu/",
+      "chapters": [
+        266,
+        267,
+        275,
+        288
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [
+      "support"
+    ],
+    "effect_type_raw": "Assistance",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Wei Yang calls it an assistance type Gu whose only use is that halved expenditure for light type Gu.",
+        "chapters": [
+          266
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan later describes Wei Yang’s set as using rainbow light Gu as the movement core, with offensive Broadsword Light Gu as one main support and light source Gu as another support that only decreases primeval essence expenditure for light type Gu worms.",
+        "chapters": [
+          288
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "wei-yang-set-role",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_broadsword_light_gu",
+          "sys_gu_worms"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_wei_yang",
+      "role": "owner",
+      "recorded_chapter": 266,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "On the battle stage in Shang clan city, when Fang Yuan and Bai Ning Bing try to win by draining his primeval essence, Wei Yang says light source Gu halves a Gu Master’s primeval essence expenditure when using a light type Gu.",
+        "chapters": [
+          266
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_shang_clan_city",
+          "char_fang_yuan",
+          "char_bai_ning_bing",
+          "char_wei_yang",
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "When Wei Yang reports the fight, he says Gu Yue Fang Zheng conceded calmly once Wei Yang said he possessed a light source Gu.",
+        "chapters": [
+          267
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "spar-report",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_zheng"
+        ]
+      },
+      {
+        "text": "While teaching how Gu form a chained set, Wei Yang names rainbow light Gu’s heavy spending as a weakness that light source Gu reduces.",
+        "chapters": [
+          275
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "set-example",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_rainbow_light_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Assistance",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

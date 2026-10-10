@@ -1,0 +1,281 @@
+{
+  "id": "gu_gamble_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gamble Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gamble Gu is the Gu Qin Ding Ling uses as the core of luck gamble after it comes to her metal coffin in seclusion.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2200,
+    "volume": null,
+    "arc": "evt_arc_battle_of_crazed_demon_cave"
+  },
+  "chapters_cited": [
+    2200,
+    2201
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_thieving_heaven_demon_venerable",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2201,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_qin_ding_ling",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2200,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_qin_ding_ling",
+      "count": 3
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 3
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_immortal_zombie_giant_sun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "inh_thieving_heaven_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_luck_gamble",
+      "count": 1
+    },
+    {
+      "target": "sys_theft_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "path_theft",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/gamble-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/gamble-gu/",
+      "chapters": [
+        2200,
+        2201
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "A black and white Gu worm resembling a die flies out of her phantom aperture, rolls rapidly, and stops.",
+        "chapters": [
+          2200
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms"
+        ]
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Thieving Heaven Demon Venerable expended his own theft path dao marks to refine this gamble Gu. Gamble Gu gives random results that cannot be influenced by anyone. It has no offensive power by itself. The luck gamble killer move that uses it as the core is extremely dangerous. Because of that random characteristic, even Immortal Zombie Giant Sun’s luck cannot interfere with it, and the probability of winning is equal for both of them.",
+        "chapters": [
+          2201
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "theft-path-refinement",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_thieving_heaven_demon_venerable"
+        ]
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_thieving_heaven_demon_venerable",
+      "role": "refiner",
+      "recorded_chapter": 2201,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_qin_ding_ling",
+      "role": "holder",
+      "recorded_chapter": 2200,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Qin Ding Ling says that during three hundred thousand years sealed in a metal coffin while she comprehended luck path, gamble Gu was attracted to her and came to the coffin one day. She treats that arrival as both the backlash of Giant Sun Immortal Venerable forcefully taking Thieving Heaven’s true inheritance and her own fortuitous encounter.",
+        "chapters": [
+          2200
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_qin_ding_ling",
+          "char_giant_sun_immortal_venerable",
+          "inh_thieving_heaven_true_inheritance"
+        ]
+      },
+      {
+        "text": "She activates immortal killer move luck gamble with that Gu. Immortal Zombie Giant Sun shows three. The die rolls again and she shows five. His vast luck transfers to her. After she recovers she activates the move again. He shows three and she shows two, so her luck surges out and transfers back to him. The numbers determine victory or defeat, but the outcome is random. Even she cannot influence it.",
+        "chapters": [
+          2200
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "luck-gamble-core",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_immortal_zombie_giant_sun"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

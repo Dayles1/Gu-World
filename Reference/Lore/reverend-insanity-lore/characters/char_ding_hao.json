@@ -1,0 +1,375 @@
+{
+  "id": "char_ding_hao",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ding Hao",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ding hao",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дин Хао",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ding Hao is a rank three Gu Master who hides on Mu Bei mountain and sends a zombie army against a weakened Southern Border caravan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 254,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    254,
+    255,
+    256,
+    257,
+    260,
+    965
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_second_zombie_king_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 254,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "inh_second_zombie_king_inheritance",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_second_zombie_king",
+      "count": 2
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "loc_zhao_ze_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_zombie_heart_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_jumping_grass_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_mu_bei_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He watches from bushes at the mountain base, excited that killing enough people and raising a zombie army will let him leave for Zhao Ze mountain as the Second Zombie King’s formal disciple.",
+      "chapters": [
+        254
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_zhao_ze_mountain",
+        "char_second_zombie_king"
+      ]
+    },
+    {
+      "text": "Narration says he was a villager recruited as a caravan laborer, abandoned when zombies hit Mu Bei mountain, and found a cave with a demonic inheritance that only mortals could take. He awakens an aperture there, raises aptitude from C grade to B grade with a rare Gu, and after more than eight years reaches rank three and the final chamber’s stone slab naming Second Zombie King. He cultivates alone for years with zombies as companions, then spends about three more years building his army by attacking small caravans on a major Southern Border trade route.",
+      "chapters": [
+        254
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mu_bei_mountain",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "At night he sends white-hair zombies first as fodder, then black-hair zombies once the camp’s primeval essence thins, treating the damaged caravan as his final stepping stone.",
+      "chapters": [
+        254
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan reads battle tactics in the zombie advance and is certain Ding Hao is manipulating the army. From previous-life memory he recalls Second Zombie King’s Mu Bei mountain inheritance, names Ding Hao as its inheritor, and notes that Ding Hao later became that master’s eldest disciple, stayed loyal on the demonic path, and chose to die in Second Zombie King’s place at Yi Tian mountain. Fang Yuan treats him as the chess piece who can finish the caravan while Fang Yuan still must protect Shang Xin Ci.",
+      "chapters": [
+        255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "horde-discovery",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_yi_tian_mountain",
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Ding Hao watches from high ground with two green-hair zombies he raised over years on the mountain. When Fang Yuan breaks toward him and shouts his name, Ding Hao is shocked that a stranger knows it.",
+      "chapters": [
+        255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "horde-discovery",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan’s shout and talk of master and Second Zombie King stun Ding Hao in the bushes. Fang Yuan claims to be Hei Tu, Second Zombie King’s eldest disciple, and orders the green-hair zombies called back. Ding Hao is rank three middle stage against Fang Yuan’s shown rank three peak stage. After Fang Yuan scolds him over zombie heart Gu and an inspection story, Ding Hao accepts the identity, sends the green-hair zombies away, and follows orders.",
+      "chapters": [
+        256
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "forces-and-deal",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tu",
+        "gu_zombie_heart_gu"
+      ]
+    },
+    {
+      "text": "He admits he has lived on Mu Bei mountain for close to ten years, has three green-hair zombies with one left guarding his cave, over one hundred and twenty black-hair zombies, and close to four thousand white-hair zombies, but no blue-hair zombie yet. Narration says he was originally a servant, cultivated in secret for nearly a decade, and has an honest character that makes him easy to deceive.",
+      "chapters": [
+        256
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "forces-and-deal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Two hours later he steeply increases zombie pressure and breaks the thin defensive line on Fang Yuan’s instruction. His acting while the survivors flee is poor; he panics when Fang Yuan is hurt, then arranges zombies to block a path so Fang Yuan can reach him. After the fight he reports five complete rank three corpses and more Gu Master bodies for black-hair conversion, offers primeval stones, and describes his cave by a pentagram-shaped dark pond halfway up the mountain.",
+      "chapters": [
+        257
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "When Ding Hao turns at a false alarm, Fang Yuan drives a spiral bone spear through his skull. Fang Yuan burns the corpse and the Gu worms on it so that capture and interrogation cannot expose him, judging Ding Hao useful as a chess piece but not worth the risk beside Shang Xin Ci.",
+      "chapters": [
+        257
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Later, weighing whether Bai Ning Bing knows too much, Fang Yuan judges that her threat far exceeds the potential threat Ding Hao had been.",
+      "chapters": [
+        260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "threat-comparison",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Narration later calls him an enslavement path Gu Master whose rise came from Second Zombie King’s Mu Bei mountain inheritance, and states that Fang Yuan killed him in this life. Fang Yuan also recalls that in his previous life Ding Hao sacrificed himself to save Second Zombie King.",
+      "chapters": [
+        965
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "path-note",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ding-hao/",
+      "chapters": [
+        254,
+        255,
+        256,
+        257,
+        260,
+        965
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 254",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 255",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 254,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": "demonic path as of ch. 255",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

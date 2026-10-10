@@ -1,0 +1,290 @@
+{
+  "id": "gu_habitual_strength_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Habitual Strength Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Habitual Strength Gu is a rank four strength path Gu that lets a Gu Master's strength accumulate over time while they keep moving.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 316,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    316,
+    317,
+    318
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_ju_kai_bei",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 316,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ju_kai_bei",
+      "count": 4
+    },
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_ju_kai_bei",
+      "count": 1
+    },
+    {
+      "target": "gu_dragon_elephant_huge_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "move_eight_beast_phantoms",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/habitual-strength-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/habitual-strength-gu/",
+      "chapters": [
+        316,
+        317,
+        318
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 4,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_strength"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Ju Kai Bei runs Habitual Strength Gu from the start of the match, so his strength rises the longer the Gu stays active. Spectators note that opponents need to finish him quickly rather than give him time. After he bursts out dragon-elephant strength, his power falls back and Habitual Strength Gu begins to accumulate again.",
+        "chapters": [
+          317
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Spectators liken Fang Yuan’s eight beast strengths to a huge water jar with a small outlet: All-out Effort Gu can force that outlet to discharge at top speed as a continuous thin stream, while Habitual Strength Gu is like a bucket that must draw from the jar and accumulate before erupting.",
+        "chapters": [
+          317
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Ju Kai Bei must keep accumulating, then summon a beast phantom; even he does not know when the phantom will appear. If he attacks and only one dragon-elephant strength appears, he has to accumulate again, and his battle strength falls for a stretch. Ju Kai Bei’s strength is like a water jar and Habitual Strength Gu like a bucket that must draw from it each time. Habitual Strength Gu at rank four is inferior to All-out Effort Gu. His habit of fighting around that accumulate then erupt rhythm also leaves a blind spot Fang Yuan exploits when All-out Effort Gu can be revoked mid-charge.",
+        "chapters": [
+          318
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "limits-against-all-out-effort-gu",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [
+      "fac_gu_masters"
+    ],
+    "origin": "unknown",
+    "claims": [
+      {
+        "text": "Current strength path Gu Masters created Habitual Strength Gu to replace All-out Effort Gu after that Gu went extinct. Its lower rank is the rank three store strength Gu. Store strength Gu can store energy and release it slowly attack after attack, but the Gu Master cannot move while charging it, so it sees little use. Refining that Gu into rank four Habitual Strength Gu removes that immobility weakness.",
+        "chapters": [
+          316
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "origin-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "path_strength",
+          "fac_gu_masters",
+          "gu_all_out_effort_gu",
+          "gu_strength_gu",
+          "sys_gu_master"
+        ]
+      }
+    ]
+  },
+  "ownership_history": [
+    {
+      "character": "char_ju_kai_bei",
+      "role": "user",
+      "recorded_chapter": 316,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Ju Kai Bei holds a rank four Habitual Strength Gu during his battle-stage fight with Fang Yuan.",
+        "chapters": [
+          316
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_ju_kai_bei",
+          "char_fang_yuan"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Strength Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

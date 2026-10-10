@@ -1,0 +1,329 @@
+{
+  "id": "gu_blood_sense_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Sense Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blood Sense Gu is a rank five blood path investigative Gu that senses people who share the user's bloodline.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 669,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    669,
+    698,
+    699
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_zheng",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 669,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_zheng",
+      "count": 3
+    },
+    {
+      "target": "path_blood",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_demon_flower_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_mutual_sense_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_investigative_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_scar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_cold_blood_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/blood-sense-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/blood-sense-gu/",
+      "chapters": [
+        669,
+        698,
+        699
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 5,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [
+      "path_blood"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It is a blood path investigative Gu worm. In that drill Fang Zheng reports a sense underground to the southeast at five to six thousand steps.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_investigative_gu"
+        ]
+      },
+      {
+        "text": "It is a rank five blood path investigative Gu. It lets the user sense others with the same bloodline; closer range and thicker shared bloodline make the connection clearer.",
+        "chapters": [
+          698
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_zheng",
+      "role": "user",
+      "recorded_chapter": 669,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Zheng activates it as the late step in blood pool drills under Lord Sky Crane, after Cold Blood Gu has cooled his blood and failed blood demon flower Gu has raised the power of his blood path Gu worms.",
+        "chapters": [
+          669
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_zheng",
+          "char_lord_sky_crane",
+          "gu_cold_blood_gu",
+          "gu_blood_demon_flower_gu",
+          "path_blood",
+          "sys_gu_worms"
+        ]
+      },
+      {
+        "text": "During the live attempt Fang Zheng cannot form a clear sense despite the brother bloodline and failed blood demon flower Gu’s boost. Fang Yuan’s body has become an immortal zombie with cold jade green zombie blood instead of healthy red blood, which raises the difficulty.",
+        "chapters": [
+          698
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "locating-fang-yuan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "He Feng Yang had planted a trump card of blood path Gu in Fang Zheng and in the pool. If used, Fang Zheng would lose his mind, keep Blood Sense Gu active without regard for his life, burn soul and flesh, and face a high chance of dying.",
+        "chapters": [
+          698
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "locating-fang-yuan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_he_feng_yang"
+        ]
+      },
+      {
+        "text": "Lord Sky Crane triggers that trump card; Fang Zheng loses consciousness but still runs failed blood demon flower Gu and Blood Sense Gu.",
+        "chapters": [
+          699
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "locating-fang-yuan",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "With Mutual Sense Immortal Gu aiding him, Fang Zheng finally locks onto Fang Yuan’s aura, and the two sense each other’s situation through Blood Sense Gu and that Immortal Gu. Fang Yuan sees Fang Zheng’s side in detail; Fang Zheng only sees through Fang Yuan’s eyes and cannot sense Fang Yuan’s immortal aperture.",
+        "chapters": [
+          699
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "locating-fang-yuan",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_mutual_sense_immortal_gu",
+          "sys_immortal_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

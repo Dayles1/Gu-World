@@ -1,0 +1,442 @@
+{
+  "id": "char_shen_cui",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shen Cui",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shen cui",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Шэнь Цуй",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Shen Cui Er"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shen Cui is a mortal servant girl in the Gu Yue household on Qing Mao Mountain, Mother Shen's daughter, and an early academy-era figure around Fang Yuan and Fang Zheng.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 3,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    3,
+    4,
+    9,
+    11,
+    18,
+    21,
+    38,
+    65,
+    85,
+    112,
+    158,
+    339,
+    656
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 3,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_mother_shen",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_c_grade",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_dong_tu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_chi_zhong",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bi_xia",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While she dresses Fang Yuan, he already reads her as his aunt and uncle’s watcher. Mother Shen’s housekeeper standing is why Gu Yue Fang Zheng does not treat her as an ordinary maid.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_mother_shen",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "The Gu Yue clan’s early stage is Qing Mao Mountain in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "loc_qing_mao_mountain",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Her looks are only slightly above average, but she dresses well. She wears a green robe with long sleeves and trousers, embroidered shoes on her feet, and a pearl hairpin in her black hair. From head to toe she radiates youthful vitality. While she waits gently her face wears a smile and her eyes are lively as spring. Her plump breasts brush Fang Yuan as she helps him dress, and he brushes away her soft small hands when she smooths creases on his chest.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dress, youthful vitality, and deliberate closeness mark her service to Fang Yuan. Fang Zheng sees that service and feels jealousy; his own attendant is an old wet nurse rather than a young girl, and the unequal treatment is part of how aunt and uncle push a rift between the brothers. For Shen Cui, the stake is escape from servant status: if Fang Yuan proved an A grade talent, becoming his concubine would raise her into the master class.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "servant-and-household-stakes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_a_grade"
+      ]
+    },
+    {
+      "text": "After the Awakening Ceremony reveals Fang Yuan as C grade and Fang Zheng as A grade, she turns her attention to the younger brother instead.",
+      "chapters": [
+        9
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "servant-and-household-stakes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_awakening_ceremony"
+      ]
+    },
+    {
+      "text": "In his previous life Fang Yuan was deceived by her and had feelings for her; after rebirth he cuts that attachment cold.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "servant-and-household-stakes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later uses her as the example of a Gu Yue servant who tries to climb by getting close to the rich and affluent.",
+      "chapters": [
+        38
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "servant-and-household-stakes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Aunt and uncle plan to expel Fang Yuan before age-sixteen independence by sending Shen Cui to seduce him and then scream assault while they claim he acted wild while drunk.",
+      "chapters": [
+        9
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "frame-and-transfer",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She brings food and wine to his room under that arrangement; outside she smiles coldly, then enters with a gentle, meek look. Fang Yuan names the scheme aloud before terrifying her and sparing her as a long-time servant. She leaves shaken; the men hidden in the shadows look confused.",
+      "chapters": [
+        11
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "frame-and-transfer",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The next day Fang Zheng confronts Fang Yuan over what was done to her. Fang Yuan offers to “pass” her for six primeval stones as Fang Zheng’s personal maid, and Fang Zheng accepts while privately calling her Cui Cui. Uncle later tells Fang Zheng that Shen Cui was clan-assigned property, not Fang Yuan’s to trade, gives him another six stones, and still moves her to Fang Zheng as requested. Fang Yuan keeps the six stones from the trade. In private, uncle also admits he had meant to keep using her to monitor and trouble Fang Yuan after the failed frame.",
+      "chapters": [
+        18
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "frame-and-transfer",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Zheng later lists Fang Yuan bullying Shen Cui among the grievances that feed his academy rivalry.",
+      "chapters": [
+        21
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "frame-and-transfer",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Under lamp light she tells Fang Zheng she has always believed he can take number one, and Fang Zheng names her among the people whose support hardens his resolve beside classmates, uncle, aunt, and the clan leader.",
+      "chapters": [
+        85
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-zhengs-encouragement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan returns to Gu Yue Dong Tu’s estate, Shen Cui opens the door as his former servant, freezes in shock, then kneels. He is a rank two Gu Master and she is a mere mortal. Mother Shen, still housekeeper, arrives at once to bow him into the living room.",
+      "chapters": [
+        112
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "return-to-the-household",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_dong_tu",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "After Fang Yuan has become an elder, Mother Shen and Shen Cui watch him leave with Gu Yue Chi Zhong. Shen Cui asks her mother whether she made a wrong choice. In thought she weighs that an elder could take a wife and two concubines, and that loyalty from the start might have left her his concubine now. Mother Shen pivots her hope to Fang Zheng’s A grade aptitude, and Shen Cui answers with renewed light in her eyes. She has already given her body to Fang Zheng and treats that bond as a gamble she cannot reverse.",
+      "chapters": [
+        158
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "elder-status-and-regret",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_zhong"
+      ]
+    },
+    {
+      "text": "Years later, when Fairy Bi Xia’s warmth raises talk of love, Fang Zheng remembers a mortal former servant far below that fairy in station, yet central in his best memories, and she is already dead. He names her Shen Cui and folds her into the revenge list that also holds his ancestors, uncle and aunt, the clan leader, and Qing Shu.",
+      "chapters": [
+        339
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_bi_xia",
+        "char_gu_yue_qing_shu"
+      ]
+    },
+    {
+      "text": "In a later inward vow he again lists revenge for uncle and aunt and for Shen Cui Er.",
+      "chapters": [
+        656
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/shen-cui.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shen-cui/",
+      "chapters": [
+        3,
+        4,
+        9,
+        11,
+        18,
+        21,
+        38,
+        65,
+        85,
+        112,
+        158,
+        339,
+        656
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 3",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

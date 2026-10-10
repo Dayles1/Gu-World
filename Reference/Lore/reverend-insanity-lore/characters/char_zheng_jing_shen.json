@@ -1,0 +1,197 @@
+{
+  "id": "char_zheng_jing_shen",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zheng Jing Shen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "zheng jing shen",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чжэн Цзин Шэнь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zheng Jing Shen was a Western Desert lone cultivator tied in secret to Fang clan's early support.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1507,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1507,
+    1776,
+    1802
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_lie_shen",
+      "count": 2
+    },
+    {
+      "target": "char_fang_leng",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yun",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan, as Suan Bu Jin, tells Fang Leng and Fang Yun he mainly cultivates wisdom path and has inherited Zheng Jing Shen’s inheritance, then drives them off.",
+      "chapters": [
+        1507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_fang_leng",
+        "char_fang_yun"
+      ]
+    },
+    {
+      "text": "Fang clan’s first supreme elder knows him as a legendary lone cultivator from tens of thousands of years ago with quite some relation to Fang clan. In his earlier years of cultivation he received financial support from the clan and even had a love affair with a clan ancestor. The ancestor died in battle and Zheng Jing Shen did not join Fang clan. If not for that accident he would have married in, and his children would have been surnamed Fang. The matter is rather concealed; many are not even aware of him. That secrecy helps the clan trust Suan Bu Jin’s claimed background.",
+      "chapters": [
+        1507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-clan-record",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan links Suan Bu Jin’s researched background to this Western Desert lone immortal. Fang clan trusts that background to a large extent because Zheng Jing Shen lived tens of thousands of years ago and his relationship with Fang clan was a secret other forces did not know.",
+      "chapters": [
+        1776
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cover-identity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert"
+      ]
+    },
+    {
+      "text": "After conflict with Wan clan, Fang clan declares it will protect Fang Yuan and prove his origin relates to Zheng Jing Shen instead of Old Man Lie Shen.",
+      "chapters": [
+        1802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "public-claim",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan",
+        "char_old_man_lie_shen"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/zheng-jing-shen/",
+      "chapters": [
+        1507,
+        1776,
+        1802
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

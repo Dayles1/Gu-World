@@ -1,0 +1,231 @@
+{
+  "id": "char_chai_fu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chai Fu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chai fu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чай Фу",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Ancestor Chai Fu"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chai Fu is the founder of Chai clan, a rank eight lone cultivator whose human path killer move and the location of Human Smoke Mountain became the clan's founding advantage.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1347,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1347,
+    2138
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_fire",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1347,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1347,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_congregated_human_talent",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2138,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_congregated_human_talent",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "path_fire",
+      "count": 1
+    },
+    {
+      "target": "fac_chai_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_human_smoke_mountain",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "char_chai_ke_qing",
+      "count": 1
+    },
+    {
+      "target": "gu_lifespan_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Chai Fu founds Chai clan at Human Smoke Mountain in his later years. Narration ranks him as the number one person in Southern Border’s Gu Immortal world of his era. He cultivates fire path together with earth path, and reading The Legends of Ren Zu gives him the insight behind a human path killer move that he leaves to his Chai clan descendants as the clan’s founding method.",
+      "chapters": [
+        1347
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chai_clan",
+        "loc_human_smoke_mountain",
+        "reg_southern_border",
+        "sys_gu_immortal",
+        "sys_the_legends_of_ren_zu"
+      ]
+    },
+    {
+      "text": "Centuries into his life Chai Fu never finds a lifespan Gu and exhausts other lifespan extension methods; he leaves closed cultivation as a rank eight lone cultivator with his life nearing its end. Below the mountain where he had secluded himself he finds a village of his own descendants from a hundred years earlier, restrains a murderous rage at their thriving while his own life ends, and decides instead to leave behind an inheritance. He names the human path killer move he conceived during that seclusion congregated human talent, a technique that concentrates many people’s aptitude into a small group, and uses it together with Human Smoke Mountain’s location to establish Chai clan, which has transferred outsiders’ aptitude into his own bloodline’s descendants ever since.",
+      "chapters": [
+        2138
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "founding-of-chai-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_lifespan_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chai-fu/",
+      "chapters": [
+        1347,
+        2138
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 2138",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Fire path Earth path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "lone cultivator as of ch. 2138",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 2138,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_fire",
+      "path_earth"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": "reg_southern_border",
+    "status": null,
+    "alignment": "lone cultivator as of ch. 2138",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

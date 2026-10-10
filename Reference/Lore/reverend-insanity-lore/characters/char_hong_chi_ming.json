@@ -1,0 +1,284 @@
+{
+  "id": "char_hong_chi_ming",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hong Chi Ming",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "hong chi ming",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Хун Чи Мин",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hong Chi Ming is a Wind Cloud Manor Gu Immortal from Central Continent who sets up Gu formations.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 710,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    710,
+    777,
+    811,
+    923
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wind_cloud_manor",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 811,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_old_oracle",
+      "count": 2
+    },
+    {
+      "target": "char_three_thatch_demon_immortal",
+      "count": 2
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 2
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_ling_mei",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "evt_era_late",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "char_he_lang_zi",
+      "count": 1
+    },
+    {
+      "target": "house_dark_prison",
+      "count": 1
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While crossing into Northern Plains with Central Continent Gu Immortals, he recalls that as a younger man he had passed the regional wall in about five minutes, and notes that higher cultivation makes the crossing harder.",
+      "chapters": [
+        710
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "reg_central_continent",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "He is among the immortals waiting on Old Oracle after a deduction attempt tied to Eighty-Eight True Yang Building.",
+      "chapters": [
+        777
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_oracle",
+        "house_eighty_eight_true_yang_building"
+      ]
+    },
+    {
+      "text": "During the Northern Plains investigation after True Yang Building collapses, he prefers the original name Thatched Hut for Modest Thatched Hut and recounts that Late Antiquity Era’s Three Thatch Demon Immortal created it, that Dong Fang Yu later inherited it, and that Dong Fang Yu renamed it Modest Thatched Hut for reputation after returning to Dong Fang tribe. He says that before becoming an immortal he had explored Northern Plains as a mortal and lived there for some time, so he knew those details clearly.",
+      "chapters": [
+        811
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "thatched-hut-history",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_modest_thatched_hut",
+        "evt_era_late",
+        "char_three_thatch_demon_immortal",
+        "fac_dong_fang_tribe"
+      ]
+    },
+    {
+      "text": "Narration names him as coming from Wind Cloud Manor, one of the ten great ancient sects of Central Continent, skilled in Gu formations and famous in Central Continent. A Gu formation he set up lets Fairy Ling Mei vanish and reappear far away at the moment between life and death during the Luo Po Valley breakout, and a later wall of light in that fight is also his work even while he is not inside it.",
+      "chapters": [
+        923
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "breakout-formations",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_wind_cloud_manor",
+        "fac_ten_great_ancient_sects",
+        "sys_gu_formation",
+        "char_fairy_ling_mei",
+        "loc_luo_po_valley"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/hong-chi-ming/",
+      "chapters": [
+        710,
+        777,
+        811,
+        923
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wind Cloud Manor as of ch. 811",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

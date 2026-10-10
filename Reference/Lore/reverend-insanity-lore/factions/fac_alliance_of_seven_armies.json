@@ -1,0 +1,191 @@
+{
+  "id": "fac_alliance_of_seven_armies",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Alliance of Seven Armies",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A temporary Northern Plains coalition of seven armies that pincers Ye Lui army after Ye Lui Sang takes Du Jiao region.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 525,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    525,
+    529,
+    536,
+    540
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_qi_lian_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_ye_lui_sang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_an_region",
+      "count": 1
+    },
+    {
+      "target": "char_wu_ming",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_du_jiao_region",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Each of the seven armies has at least a hundred thousand troops. None are super tribes, and each fields famous Gu Master experts. Their aggressive momentum puts Ye Lui Sang’s army in a perilous situation just as that force spreads outward like a wildfire.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "aggressive-momentum",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_ye_lui_sang"
+      ]
+    },
+    {
+      "text": "Battle reports say the seven army alliance ambushes Ye Lui army at night. Ye Lui Sang defeats six rank five experts one after another but cannot save the situation, and Ye Lui remnant forces flee toward Qing An region. Gu Immortals target Ye Lui Sang because of the Immortal Gu on him, and they incite the seven armies to ambush Ye Lui army.",
+      "chapters": [
+        529
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "night-ambush",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_an_region",
+        "sys_gu_immortal",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "In mid-July at Du Jiao region, Ye Lui army defeats the alliance. On the day of the counterattack, Ye Lui Sang kills three rank five Gu Masters. Qi Lian tribe’s Wu Ming, a rank five dark path Gu Master, sneaks into enemy camps and kills two rank five experts plus thirteen rank four Gu Masters, leaving the seven alliance armies in fear and low morale.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mid-july-counterattack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_du_jiao_region",
+        "fac_gu_masters",
+        "fac_qi_lian_tribe",
+        "char_wu_ming"
+      ]
+    },
+    {
+      "text": "Those leader assassinations are what let Ye Lui Sang defeat the seven army alliance, through fear and a drop in morale on the allied side.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mid-july-counterattack",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/alliance-of-seven-armies/",
+      "chapters": [
+        525,
+        529,
+        536,
+        540
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "alliance",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

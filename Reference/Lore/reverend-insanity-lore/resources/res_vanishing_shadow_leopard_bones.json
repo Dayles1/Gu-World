@@ -1,0 +1,141 @@
+{
+  "id": "res_vanishing_shadow_leopard_bones",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Vanishing shadow leopard bones",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The bones of the vanishing shadow leopard, taken as a refinement material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 720,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    720
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_shadow_attachment_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_shadow_tracing_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_shadow_attachment_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_shadow_tracing_gu",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_star_lord_wan_xiang",
+      "count": 1
+    },
+    {
+      "target": "gu_dark_fog_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_dark_vision_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Fang Yuan and Hei Lou Lan take a vanishing shadow leopard corpse without alerting Star Lord Wan Xiang, Hei Lou Lan says the bones can be made into shadow attachment Gu, shadow tracing Gu, and others. She notes the blood is already gone, which lowers the corpse’s value, and places the body in her immortal aperture. Fang Yuan’s aperture is filled with death energy and is not good for keeping corpses fresh, so the vanishing shadow leopard stays in her hands.",
+      "chapters": [
+        720
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-use",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_hei_lou_lan",
+        "char_star_lord_wan_xiang",
+        "gu_shadow_attachment_gu",
+        "gu_shadow_tracing_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/vanishing-shadow-leopard-bones/",
+      "chapters": [
+        720
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Vanishing shadow leopard",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Shadow Attachment Gu Shadow Tracing Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

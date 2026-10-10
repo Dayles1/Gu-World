@@ -1,0 +1,128 @@
+{
+  "id": "res_rooster_iron",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rooster iron",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Rooster iron is a rank seven immortal material that forms only in open-air mines and can yield heavenly white snow iron.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1890,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1890,
+    1891,
+    2076
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "res_white_snow_iron",
+      "count": 2
+    },
+    {
+      "target": "char_tu_tou_tuo",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fragments left in a pit tens of li wide are identified as the rank seven immortal material rooster iron after the deposit itself has been taken. Rooster iron only exists in mines exposed to open air. With a wide span of it, wind resonance can produce the rank eight immortal material heavenly white snow iron.",
+      "chapters": [
+        1890
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "open-air-mines",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Rooster iron is named among immortal materials still present on the looted island, together with cloud ladder leaf hearts and clear wind grass stems. Tu Tou Tuo recalls the empty pit that had been filled with rooster iron before the theft.",
+      "chapters": [
+        1891
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "island-remains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tu_tou_tuo"
+      ]
+    },
+    {
+      "text": "White snow iron only appears in rooster iron mines, so lone white snow iron away from such a mine is treated as anomalous.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-snow-iron-link",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_white_snow_iron"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/rooster-iron/",
+      "chapters": [
+        1890,
+        1891,
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Open-air rooster iron mines",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

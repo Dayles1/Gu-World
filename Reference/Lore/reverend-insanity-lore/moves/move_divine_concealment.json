@@ -1,0 +1,188 @@
+{
+  "id": "move_divine_concealment",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Divine Concealment",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Divine Concealment is Thieving Heaven Demon Venerable's rank nine defensive immortal killer move. It blocks deduction by thoughts, wills, and emotions, and keeps heaven's will from sending calamities and tribulations.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 949,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    949,
+    1435
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_thieving_heaven_demon_venerable",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_zhao_lian_yun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 949,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 3
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 3
+    },
+    {
+      "target": "move_ghostly_concealment",
+      "count": 2
+    },
+    {
+      "target": "char_li_jun_ying",
+      "count": 1
+    },
+    {
+      "target": "char_xu_hao",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Zhao Lian Yun enters a Thieving Heaven inheritance as a mortal otherworldly demon; a will tells her to accept the rank nine immortal killer move Divine Concealment. Spirit Affinity House immortals Xu Hao and Li Jun Ying name it one of two famous defensive killer moves Thieving Heaven held, the other being Ghostly Concealment.",
+      "chapters": [
+        949
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhao_lian_yun",
+        "char_thieving_heaven_demon_venerable",
+        "sys_killer_moves",
+        "fac_spirit_affinity_house",
+        "char_xu_hao",
+        "char_li_jun_ying",
+        "move_ghostly_concealment"
+      ]
+    },
+    {
+      "text": "Divine Concealment stops thoughts, wills, and emotions from deducing the user’s state or origins, which covers nearly all wisdom path probing; only a rank nine wisdom path Gu Immortal has a chance to succeed. Because heaven’s will is a will, it also cannot probe the user, so calamities and tribulations are not sent; after Thieving Heaven created the move, no calamities and tribulations befell him. The tradeoff is that the user cannot gain dao marks through those calamities and tribulations unless other Thieving Heaven methods, such as stealing dao marks, support cultivation. The inheritance also leaves Zhao Lian Yun a clue that another Thieving Heaven inheritance about Ghostly Concealment is hidden in Luo Po Valley.",
+      "chapters": [
+        949
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "effect",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "loc_luo_po_valley"
+      ]
+    },
+    {
+      "text": "Fang Yuan later states that of Thieving Heaven’s true inheritances, he inherited only Ghostly Concealment, while Divine Concealment was taken by Zhao Lian Yun.",
+      "chapters": [
+        1435
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "true-inheritance-holder",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/divine-concealment/",
+      "chapters": [
+        949,
+        1435
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Thieving Heaven Demon Venerable (creator) Zhao Lian Yun",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

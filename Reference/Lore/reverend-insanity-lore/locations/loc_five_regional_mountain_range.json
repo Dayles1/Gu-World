@@ -1,0 +1,194 @@
+{
+  "id": "loc_five_regional_mountain_range",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Five Regional Mountain Range",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border mountain range Restriction Expert Tao Zhu built to imitate the five regional walls, split into five colored light regions.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1042,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1042,
+    1043,
+    1731
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_tao_zhu",
+      "count": 2
+    },
+    {
+      "target": "char_qi_he",
+      "count": 1
+    },
+    {
+      "target": "char_qi_zai",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_qi_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "gu_sovereign_immortal_fetus_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "inh_tao_zhu_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "sys_five_regional_limit_formation",
+      "count": 1
+    },
+    {
+      "target": "move_jade_flow_pearl",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the Five Regional Mountain Range, five different colored lights fill the skies all year round. The entire mountain range divides into five areas based on those lights. Dark purple light imitates Southern Border’s miasma regional wall. The green mountain range imitates Northern Plains’ licorice regional wall. The red portion imitates Western Desert’s raging flame regional wall. The deep blue portion imitates Eastern Sea’s blue water regional wall. The white-gold mountain range imitates Central Continent’s saint regional wall.",
+      "chapters": [
+        1043
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "reg_northern_plains",
+        "reg_western_desert",
+        "reg_eastern_sea",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "Restriction Expert Tao Zhu, a rank eight Southern Border Gu Immortal of restriction path, created the range through research on the five regional walls, hoping to find a way for Gu Immortals to travel through those walls easily. After he died, the range remained as a special area in Southern Border. Entering it, a Gu Immortal with ordinary regional aura meets a strong repulsive force.",
+      "chapters": [
+        1042
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tao_zhu",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Tao Zhu was able to create the five regional mountain range because he used the earth vein and a formation.",
+      "chapters": [
+        1731
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/five-regional-mountain-range.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/five-regional-mountain-range/",
+      "chapters": [
+        1042,
+        1043,
+        1731
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain-range",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "fac_grand_white_troops",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Grand white troops",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "grand white elite"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Liu tribe's elite trump card troop in the Northern Plains Imperial Court contest, famous opposite Hei tribe's black banner and able to outpace cavalry with a light-pillar killer move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 532,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    532,
+    533
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_black_banner_troops",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When they unleash a killer move, piercing white light explodes into a giant light pillar that pierces the heavens, then descends; the grand white troops reappear in tight formation. They are foot soldiers, yet that move gives them mobility superior to black banner cavalry.",
+      "chapters": [
+        532
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Liu Wen Wu pairs his tribe’s grand white troops with Hei tribe’s black banner as forces of similar fame whose competition has run for hundreds of years. Early in the same battle only the black banner elite troops and grand white elite are left controlling the area as each side’s remaining trump cards.",
+      "chapters": [
+        532
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_liu_wen_wu",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "Black banner troops and grand white troops engage with killer moves and no clear edge on either side until Fang Yuan’s mutated wolf group attacks the grand white from behind and inflicts heavy injuries.",
+      "chapters": [
+        533
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "deadlock-and-wolf-strike",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_black_banner_troops",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/grand-white-troops.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/grand-white-troops/",
+      "chapters": [
+        532,
+        533
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

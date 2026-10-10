@@ -1,0 +1,236 @@
+{
+  "id": "loc_fei_hou_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fei Hou Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "bandit monkey mountain"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fei Hou mountain is a foggy Southern Border range the Shang-bound caravan crosses under bandit monkey checkpoints.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 239,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    239,
+    240,
+    241
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_sky_crown_marquis",
+      "count": 2
+    },
+    {
+      "target": "gu_monkey_language_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_zhang_zhu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_lin_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The mountain forest is dark and mysterious with lingering fog. Along the narrow mountain passage the fog densifies until sight shrinks to about ten steps; Fei Hou mountain is covered with fog.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The caravan that carries Fang Yuan and Bai Ning Bing leaves Zi You mountain behind and enters Fei Hou mountain region. When monkey groups block the path, the caravan stops without surprise, and Bai Ning Bing remarks that she has read about these monkeys in books and is excited to see them in person. Along the narrow passage the fog densifies until sight shrinks to about ten steps; Fang Yuan and Bai Ning Bing would struggle alone, but the caravan has investigative Gu Masters.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-entry-and-monkey-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "loc_zi_you_mountain",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Early caravans fought the monkey groups again and again until they were annihilated or forced to retreat, and the mountain was once a forbidden, unpassable land for merchants. Unlike other ranges where wild beasts check each other, only bandit monkeys live here: groups fight among themselves, but all unite against an outside enemy. The righteous path rank five Gu Master called Sky Crown Marquis later traveled to the peak, used a monkey language Gu to reach an agreement with the monkey emperor, and opened passage for the first time. After that agreement, the passage ranked among Southern Border’s three most important trade routes and linked east and west traffic.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-entry-and-monkey-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_sky_crown_marquis",
+        "gu_monkey_language_gu",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Mature bandit monkeys reach about ten meters, with arms more than twice as thick as their legs, iron-rod tails, and golden fur striped in black; waist fur hangs like a leather skirt. At a first checkpoint, a monkey king’s howl clears the fog and shows over a thousand bandit monkeys packed along both sides of the passageway, with the king seated ahead on a stone bench beside a stone wine jar. Contests use a stone table and stool the monkeys bring out; the caravan may use only raw strength, and discovery of Gu worm cheating means the monkey groups attack and kill the cheater.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bandit-monkeys-and-arm-wrestling-tolls",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "From the Sky Crown Marquis agreement onward, caravans passing through Fei Hou mountain arm wrestle with the bandit monkeys: a win earns free passage, a loss costs a portion of goods. Sky Crown Marquis had used that same arm wrestling custom to reach the peak of bandit monkey mountain and win the monkey emperor’s approval when he could not slaughter the mountain by force alone. The caravan stretch names that tall range bandit monkey mountain while the surrounding region stays Fei Hou mountain.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bandit-monkeys-and-arm-wrestling-tolls",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "To cut losses on that crossing, great clans nurture many specific Gu Masters: those with ox strength, tiger strength, elephant strength, python strength, horse strength, and the like go out to compete.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bandit-monkeys-and-arm-wrestling-tolls",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Numerous monkey groups occupy stretches of the trade route and set checkpoints at intervals. Fang Yuan competes at those checkpoints under a deliberate mix of wins and losses, and the caravan spends over twenty days on bandit monkey mountain before leaving the tall mountain, with goods cut by almost half. On the night they officially leave Fei Hou mountain’s region, Fang Yuan advances from rank two initial stage to middle stage.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "checkpoints-along-the-trade-route",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/fei-hou-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/fei-hou-mountain/",
+      "chapters": [
+        239,
+        240,
+        241
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

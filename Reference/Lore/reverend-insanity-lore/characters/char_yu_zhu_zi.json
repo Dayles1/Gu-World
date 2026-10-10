@@ -1,0 +1,223 @@
+{
+  "id": "char_yu_zhu_zi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yu Zhu Zi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yu zhu zi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Юй Чжу Цзы",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Senior Yu Zhu Zi"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yu Zhu Zi is a Heavenly Court Gu Immortal whom Yuan Qiong Du names Senior Yu Zhu Zi after jade pearls mark him on the Heavenly Court battlefield.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1739,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1739,
+    1925
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1739,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_sitting_and_eating_the_mountain_empty",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1925,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_sitting_and_eating_the_mountain_empty",
+      "count": 4
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_liu_liu_liu",
+      "count": 2
+    },
+    {
+      "target": "char_wan_zi_hong",
+      "count": 2
+    },
+    {
+      "target": "char_zhao_shan_he",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ye_qiao_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Liu Liu Liu tries to sneak in quietly. His concealment is gone and his true body is revealed. The arriving immortal flies toward him with killing intent and calls him the culprit stained with the blood of many Heavenly Court friends. In history he was a rank eight Gu Immortal most proficient at exposing concealment. From the amount of those pearls, he has most of his Immortal Gu, and Liu Liu Liu is restrained by him.",
+      "chapters": [
+        1739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_liu_liu_liu",
+        "fac_heavenly_court",
+        "sys_gu_immortal",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Around Wan Zi Hong he sprinkles countless jade beads that smash ancient desolate beasts. He nods at Zhao Shan He and they gather, with other Heavenly Court Gu Immortals surrounding and defending them. He is earth path. With Zhao Shan He, a food path Gu Immortal, they unleash Sitting and Eating the Mountain Empty together. The killer move envelops the battlefield so Western Desert’s Immortal Gu Houses cannot dodge it. After Heavenly Court leaves, Gu worms in those houses weaken and die, and immortal essence beads inside start to disintegrate. Western Desert judges that if Heavenly Court keeps giving Zhao Shan He and Yu Zhu Zi the chance to use this move, Western Desert will lose strength and resources over time.",
+      "chapters": [
+        1925
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "combination-move",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wan_zi_hong",
+        "char_zhao_shan_he",
+        "move_sitting_and_eating_the_mountain_empty",
+        "reg_western_desert",
+        "sys_immortal_gu_house",
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yu-zhu-zi/",
+      "chapters": [
+        1739,
+        1925
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1739",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Heavenly Court as of ch. 1739",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1739,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,266 @@
+{
+  "id": "fac_great_heavenly_sword_sect",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Great Heavenly Sword Sect",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Central Continent sect under Immortal Crane Sect that seeks independence.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 696,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    696,
+    697,
+    702,
+    704,
+    745,
+    1030
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_miao_jun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_miao_yue",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_miao_jun",
+      "count": 4
+    },
+    {
+      "target": "char_miao_yue",
+      "count": 4
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 2
+    },
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 2
+    },
+    {
+      "target": "fac_defy",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_lei_tan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_lord_tiger_demon",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fairy Bai Qing lists Great Heavenly Sword Sect among Immortal Crane Sect’s concurrent burdens, beside the spirit rhino capture and reincarnation battlefield involvement, while the other nine sects obstruct a forced take of Hu Immortal blessed land.",
+      "chapters": [
+        696
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "under-immortal-crane-sect",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_bai_qing",
+        "fac_immortal_crane_sect",
+        "loc_hu_immortal_blessed_land"
+      ]
+    },
+    {
+      "text": "Immortal Crane Sect’s first supreme elder opens a discussion of Great Heavenly Sword Sect after other sect business. Gui Li states that Great Heavenly Sword Sect has been under Immortal Crane Sect for nearly a thousand years, now has a third Gu Immortal, and wants to detach; success would cut Immortal Crane Sect’s control over the northwest and damage its reputation. He suspects Myriad Dragon Dock involvement, and warns that if Great Heavenly Sword Sect leaves and joins Myriad Dragon Dock, surrounding areas would enlarge Myriad Dragon Dock’s sphere where the two territories meet.",
+      "chapters": [
+        697
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-crane-meeting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_myriad_dragon_dock"
+      ]
+    },
+    {
+      "text": "Great Heavenly Sword Sect is a large sized force unable to sustain three Gu Immortals’ cultivation needs, and as a subsidiary it hands over huge resources every month, leaving its Gu Immortals short. Gui Li argues against force because the subsidiary agreement deadline is ending and forceful interference would lack proper reason, while Myriad Dragon Dock could intervene near the border; after a vote, Immortal Crane Sect approves his plan to recruit one of those Gu Immortals with equal treatment plus about seventy five immortal essence stones worth of resources.",
+      "chapters": [
+        697
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-crane-meeting",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Outside, three Gu Immortals are enough for Great Heavenly Sword Sect to attempt leaving Immortal Crane Sect among the ten great ancient sects.",
+      "chapters": [
+        702
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "outside-assessment",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lord Tiger Demon’s anger will uses Great Heavenly Sword Sect as an example: a large sized vassal with two Gu Immortals originally that plans independence as soon as it has a third.",
+      "chapters": [
+        704
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "vassal-example",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lord_tiger_demon"
+      ]
+    },
+    {
+      "text": "Immortal Crane Sect resolves the problem by recruiting Great Heavenly Sword Sect’s newly emerged third Gu Immortal with alluring conditions. Limited resources make even two Gu Immortals hard to provide for, so after losing that third immortal the sect no longer has the foundation to detach and signs the subsidiary contract again.",
+      "chapters": [
+        745
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "independence-bid-outcome",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Great Heavenly Sword Sect, sword path Gu Immortals Miao Jun and Miao Yue discuss a request from Defy’s boss to borrow Immortal Gu. They joined Defy hoping for help leaving Immortal Crane Sect vassal status. After Immortal Crane Sect lured their third Gu Immortal away and took care of the sect, they wanted Defy’s help and did not receive it, and they refuse the loan.",
+      "chapters": [
+        1030
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "defy-contact",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_miao_jun",
+        "char_miao_yue",
+        "fac_defy",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/great-heavenly-sword-sect/",
+      "chapters": [
+        696,
+        697,
+        702,
+        704,
+        745,
+        1030
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

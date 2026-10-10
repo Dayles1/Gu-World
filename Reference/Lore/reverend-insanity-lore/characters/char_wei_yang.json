@@ -1,0 +1,826 @@
+{
+  "id": "char_wei_yang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wei Yang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wei yang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Вэй Ян",
+    "ru_status": "transliteration",
+    "aliases": [
+      "White Light Swordsman light swordsman"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wei Yang is Shang Yan Fei's external clan elder in Shang clan city, a battle-stage recruit who later runs the clan's Feng Yu Manor intel work.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 262,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    262,
+    265,
+    266,
+    267,
+    269,
+    275,
+    306,
+    325,
+    364,
+    965,
+    1000
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 262,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_broadsword_light_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 265,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_light_source_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 266,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_rainbow_light_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 266,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_primeval_elder_gu",
+      "role": "lender",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 306,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "took_part_in",
+      "target": "evt_fight_fang_yuan_and_bai_ning_bing_against_wei_yang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 265,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shang_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_broadsword_light_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_rainbow_light_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_feng_yu_manor",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_fang_yuan_and_bai_ning_bing_against_wei_yang",
+      "count": 3
+    },
+    {
+      "target": "gu_light_source_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_primeval_elder_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "rcp_heavenly_essence_treasure_monarch_lotus_recipe",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "fac_zhang_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_xiao_yan",
+      "count": 2
+    },
+    {
+      "target": "gu_sword_shadow_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 2
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 2
+    },
+    {
+      "target": "char_fei_you_wang",
+      "count": 2
+    },
+    {
+      "target": "char_hong_fei_yu",
+      "count": 2
+    },
+    {
+      "target": "char_lan_mei_he",
+      "count": 2
+    },
+    {
+      "target": "loc_ju_feng_mountain",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_black_and_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_bone_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jumping_grass_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_qiu_garden",
+      "count": 1
+    },
+    {
+      "target": "rcp_white_bone_recipe",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_tian_restaurant",
+      "count": 1
+    },
+    {
+      "target": "char_empress_wu_ji",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 1
+    },
+    {
+      "target": "char_shang_chao_feng",
+      "count": 1
+    },
+    {
+      "target": "char_shang_fu_xi",
+      "count": 1
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 1
+    },
+    {
+      "target": "char_shang_qiu_niu",
+      "count": 1
+    },
+    {
+      "target": "gu_dragon_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_early_spring",
+      "count": 1
+    },
+    {
+      "target": "gu_lightning_thoughts_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_tuo_hai",
+      "count": 1
+    },
+    {
+      "target": "gu_reform_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_pi_xiu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_suan_ni",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_set",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_source_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_frost_demon_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_ice_crystal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_snow_fairy_gu",
+      "count": 1
+    },
+    {
+      "target": "path_ice",
+      "count": 1
+    },
+    {
+      "target": "gu_raindrop_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_vine_information_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_fourth_inner_city",
+      "count": 1
+    },
+    {
+      "target": "char_tang_qing",
+      "count": 1
+    },
+    {
+      "target": "char_tang_xiong",
+      "count": 1
+    },
+    {
+      "target": "sys_beast_phantom",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "gu_black_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_brown_bear_innate_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_crocodile_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_grand_bear_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_clan_ancient_strength_path_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_li_ran",
+      "count": 1
+    },
+    {
+      "target": "char_li_hao",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_li_hao",
+      "count": 1
+    },
+    {
+      "target": "gu_position_swap_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bitter_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_icicle_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "fac_ju_clan",
+      "count": 1
+    },
+    {
+      "target": "char_ju_kai_bei",
+      "count": 1
+    },
+    {
+      "target": "gu_turtle_tire_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_bu_li",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 1
+    },
+    {
+      "target": "char_yan_tu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_bai_ning_bing_against_yan_tu",
+      "count": 1
+    },
+    {
+      "target": "loc_three_kings_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_carefree_wisdom_heart_physique",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He reports to Shang Yan Fei that Shang Xin Ci is the clan leader’s flesh and blood with an intact soul, after checking her identity with Zhang clan.",
+      "chapters": [
+        262
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "char_shang_xin_ci",
+        "fac_zhang_clan"
+      ]
+    },
+    {
+      "text": "He once fought from fifth inner city’s battle zone to third inner city, held the stage for eighteen consecutive rounds, and was recruited before Shang Yan Fei became clan leader. After Shang Yan Fei took power, Wei Yang rose to external clan elder.",
+      "chapters": [
+        265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Yan Fei later recalls that Wei Yang has only B grade aptitude yet became one of his external elders.",
+      "chapters": [
+        267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the battle stage he seals the arena, forms light armor, and wields broadsword light Gu with sword shadow Gu.",
+      "chapters": [
+        265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-stage-bout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_broadsword_light_gu",
+        "gu_sword_shadow_gu"
+      ]
+    },
+    {
+      "text": "He then escapes and strikes with rainbow light Gu. After the bout Little Xiao calls him Lord Shang Yan Fei’s third general, names him the White Light Swordsman, and places him at rank three peak stage.",
+      "chapters": [
+        266
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-stage-bout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_rainbow_light_gu",
+        "char_xiao_yan"
+      ]
+    },
+    {
+      "text": "He is one of the five great generals under Shang Yan Fei, and every young master competing for young clan leader must pass his evaluation.",
+      "chapters": [
+        269
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-stage-bout",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He describes himself as a movement type Gu Master whose core Gu is rainbow light Gu.",
+      "chapters": [
+        275
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "battle-stage-bout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "As one of Shang clan’s five great generals he controls the intelligence agency Feng Yu Manor, which lets him learn auction sequences and guest identities that are supposed to stay secret.",
+      "chapters": [
+        306
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "feng-yu-manor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "fac_feng_yu_manor"
+      ]
+    },
+    {
+      "text": "Later bargaining repeats that he is in charge of Feng Yu manor and controls intel in the city.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "feng-yu-manor",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yi Huo calls him light swordsman, a flying Gu Master whose flying speed can be called number one in Southern Border, and notes that with the clan leader’s help Wei Yang has advanced to rank four.",
+      "chapters": [
+        364
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-four",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_huo",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "At Yi Tian Mountain, White Light Swordsman Wei Yang arrives as Shang clan reinforcement, saves Hong Fei Yu at rank four initial stage after Shang Yan Fei raised his aptitude, stalls Lan Mei He and Fei You Wang, and is ranked among Southern Border’s four famous flying masters at the top.",
+      "chapters": [
+        965
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yi-tian-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yi_tian_mountain",
+        "char_hong_fei_yu",
+        "char_lan_mei_he",
+        "char_fei_you_wang"
+      ]
+    },
+    {
+      "text": "On the Yi Tian Mountain battlefield, Wei Yang encounters Fang Yuan, who is using the identity of Huang Sha, face to face. During their time in Shang clan city Wei Yang had looked after Fang Yuan and Bai Ning Bing well.",
+      "chapters": [
+        1000
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yi-tian-mountain-encounter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_shang_clan_city",
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/wei-yang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wei-yang/",
+      "chapters": [
+        262,
+        265,
+        266,
+        267,
+        269,
+        275,
+        306,
+        325,
+        364,
+        965,
+        1000
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 265 IV as of ch. 364",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shang Clan as of ch. 262",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 265",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 265,
+        "confidence": "B"
+      },
+      {
+        "rank": 4,
+        "as_of_chapter": 364,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "demonic path as of ch. 265",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_broadsword_light_gu",
+      "role": "user",
+      "recorded_chapter": 265,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_light_source_gu",
+      "role": "owner",
+      "recorded_chapter": 266,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_primeval_elder_gu",
+      "role": "lender",
+      "recorded_chapter": 306,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_rainbow_light_gu",
+      "role": "owner",
+      "recorded_chapter": 266,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "id": "evt_fight_fang_yuan_against_zhu_ba",
+  "entity_type": "event",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fang Yuan against Zhu Ba",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A battle stage match at Shang clan city between Fang Yuan and Zhu Ba, whose stalling defense turns an opponent's own force back as counter-shock.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 299,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    299,
+    300,
+    301
+  ],
+  "relations": [
+    {
+      "type": "in_arc",
+      "target": "evt_arc_shang_clan_city",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fang_yuan",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 299,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "zhu_ba",
+      "target": "char_zhu_ba",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 299,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fought_at",
+      "target": "loc_shang_clan_city",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 299,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "killer_moves",
+      "target": "move_rolling_blade_meat",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 300,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_zhu_ba",
+      "count": 3
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "move_rolling_blade_meat",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Zhu Ba, ranked eighth among fourth inner city’s experts, fights by sitting through an opponent’s punches and using a Gu to gather the force in his fat and return most of it as counter-shock, a style built around exhausting an opponent’s primeval essence and stamina rather than attacking first. Against Fang Yuan the style produces a long stalemate that the backlash alone cannot break, and the crowd reads the standoff as a mismatch Fang Yuan cannot win.",
+      "chapters": [
+        299
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhu_ba",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Zhu Ba’s killing move is rolling blade meat: his whole body curls into a blade-wrapped mass that crushes stone as it rolls, a force his own bulk amplifies beyond what an ordinary body could produce. Rolling blade meat and his counter-shock defense both need his full concentration, and holding both at once is the flaw in his defense that decides the fight.",
+      "chapters": [
+        300
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-zhu-ba-commits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Zhu Ba shouts and throws both arms around Fang Yuan, wrapping him in fat until he cannot move, and holds on while Fang Yuan breaks his bones and pulps his flesh with punches from inside the hold. Fang Yuan activates all-out effort Gu, a green bull phantom rises, and he pulls Zhu Ba’s coiled arms apart while Zhu Ba shakes and sweats and cannot stop him. Certain that letting him loose means his own death, Zhu Ba admits defeat; the battle stage separates them and the hosting Gu Master declares Fang Yuan the winner. Narration names him the number eight expert in fourth inner city, and calls his pathetic state a destruction of the reputation he spent years building.",
+      "chapters": [
+        301
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "outcome",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_all_out_effort_gu",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/fights/fang-yuan-against-zhu-ba.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/fights/fang-yuan-against-zhu-ba/",
+      "chapters": [
+        299,
+        300,
+        301
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Arc": {
+      "text": "Shang Clan City",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Fang Yuan": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Zhu Ba": {
+      "text": "Zhu Ba",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Fought at": {
+      "text": "Shang Clan City",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Killer moves": {
+      "text": "Rolling Blade Meat",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Outcome": {
+      "text": "Zhu Ba wraps both arms around Fang Yuan to pin him, but Fang Yuan calls up all-out effort Gu's green bull phantom and pries the arms open; certain that letting him loose means death, Zhu Ba admits defeat, the battle stage separates them, and the loss destroys the reputation he had built as fourth inner city's number eight expert.",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "event_kind": "fights"
+}

@@ -1,0 +1,191 @@
+{
+  "id": "res_time_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Time path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Time path immortal materials are immortal materials of time path, traded for high prices and used to refine time path Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1648,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1648,
+    1649,
+    1679,
+    1684
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "res_extreme_time_pole",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "char_red_lotus_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "house_regret_pool",
+      "count": 1
+    },
+    {
+      "target": "gu_regret_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Heavenly Court and Southern Border gather time path immortal materials and buy them out, so demand is very high and the price rises sharply. Extreme time pole is named as an extremely rare rank eight time path immortal material in that same market pressure.",
+      "chapters": [
+        1648
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "market-buyout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "reg_southern_border",
+        "res_extreme_time_pole"
+      ]
+    },
+    {
+      "text": "As long as there are time path immortal materials, Heavenly Court pays whatever sellers want, and during that stretch in treasure yellow heaven those materials are extremely popular. Fang Yuan needs a lot of time path immortal materials to refine time path Immortal Gu and raise battle strength in the River of Time.",
+      "chapters": [
+        1649
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "needed-for-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_immortal_gu",
+        "loc_river_of_time"
+      ]
+    },
+    {
+      "text": "When Red Lotus Demon Venerable arranged his true inheritance, he prepared a large amount of time path immortal materials. With regret Gu and those materials, Fang Yuan can follow the procedures to construct Regret Pool. The materials left behind are of high rank: the lowest is rank seven, and there is a large amount of rank eight immortal materials.",
+      "chapters": [
+        1679
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "red-lotus-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_red_lotus_demon_venerable",
+        "gu_regret_gu",
+        "house_regret_pool"
+      ]
+    },
+    {
+      "text": "In treasure yellow heaven the most popular business remains time path immortal materials. Heavenly Court purchases them even at high prices to suppress Fang Yuan, showing an inexhaustible strength.",
+      "chapters": [
+        1684
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "popular-business",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/time-path-immortal-material/",
+      "chapters": [
+        1648,
+        1649,
+        1679,
+        1684
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,312 @@
+{
+  "id": "char_liu_qing_yu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Liu Qing Yu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "liu qing yu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Лю Цин Юй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Liu Qing Yu is a rank seven Eastern Sea Gu Immortal who kills a blood path demonic immortal over an inheritance imprint and later dies fighting Fang Yuan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1045,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1045,
+    1046,
+    1047,
+    1048,
+    1151,
+    1152
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shadow_sect",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1151,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shadow_sect",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_tang_song",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_li",
+      "count": 2
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 2
+    },
+    {
+      "target": "loc_five_light_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_oath_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_corpse",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_omni_directional_travel",
+      "count": 1
+    },
+    {
+      "target": "sys_red_date_immortal_essence",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_yu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_ding_qi",
+      "count": 1
+    },
+    {
+      "target": "char_ding_yan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He names himself Liu Qing Yu while warning others aside and claiming an immortal killer move has already marked a fleeing demon.",
+      "chapters": [
+        1045
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After the blood path demonic immortal dies, he says the inheritance imprint is not on the corpse, then argues with Fang Yuan over who holds it.",
+      "chapters": [
+        1046
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "He is a rank seven Gu Immortal among the Eastern Sea group chasing Fang Yuan. Fang Yuan notes him as possibly already holding the imprint while still giving chase.",
+      "chapters": [
+        1046
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chase-and-imprint",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "Fang Yuan notes him as shrewd. Zhou Li later carries him and Tang Song with phantom waves during that pursuit.",
+      "chapters": [
+        1047
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chase-and-imprint",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhou_li",
+        "char_tang_song"
+      ]
+    },
+    {
+      "text": "He joins Shadow Sect under alliance pressure after Ying Wu Xie and Hei Lou Lan flee Fang Yuan. Left behind, he fights Fang Yuan, tries to escape into the turbulent flow sea area as a green rainbow, and is blocked by a snake year beast. Fang Yuan’s strike ends his life; his body self-detonates, his soul breaks, and his immortal aperture sinks and forms a blessed land.",
+      "chapters": [
+        1151
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "char_ying_wu_xie",
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "The land spirit that forms after his death is a dorky duck, and the blessed land is a light path blessed land he had developed around Five Light Mountain.",
+      "chapters": [
+        1152
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_five_light_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/liu-qing-yu/",
+      "chapters": [
+        1045,
+        1046,
+        1047,
+        1048,
+        1151,
+        1152
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1045",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shadow Sect as of ch. 1151",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1045,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

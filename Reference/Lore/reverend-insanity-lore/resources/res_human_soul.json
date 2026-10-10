@@ -1,0 +1,201 @@
+{
+  "id": "res_human_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Human soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A human soul is the soul of a human, used as Gu refinement material and as high quality feedstock for guts Gu on Dang Hun Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 831,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    831,
+    835,
+    996
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_ghost_fire_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_guts_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_ghost_fire_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 3
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "loc_flying_frost_sect",
+      "count": 1
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the Refinement Path Convention, Fang Yuan throws a boar soul, a goat soul, and a human soul into ghost fire while refining ghost fire Gu. Burning a human soul in public to refine Gu draws outrage from the righteous Flying Frost Sect, which still cannot stop him under convention rules.",
+      "chapters": [
+        831
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "burned-to-refine-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_refinement_path_convention",
+        "char_fang_yuan",
+        "gu_ghost_fire_gu",
+        "loc_flying_frost_sect"
+      ]
+    },
+    {
+      "text": "Blood path is called even more vile than using soul path techniques to burn human souls.",
+      "chapters": [
+        835
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ranked-among-vile-acts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_blood"
+      ]
+    },
+    {
+      "text": "Souls are common Gu refinement materials for soul path Gu worms. In a batch fed to Dang Hun Mountain, beast souls are most common, plant souls appear too, and variant human and human souls are fewest. Stronger life forms and higher intelligence raise soul quality. With few fierce beasts, no desolate beasts, and very few variant human and human souls, that batch yields fewer guts Gu.",
+      "chapters": [
+        996
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "guts-gu-quality",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "loc_dang_hun_mountain",
+        "gu_guts_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/human-soul/",
+      "chapters": [
+        831,
+        835,
+        996
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Soul Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Ghost Fire Gu Guts Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

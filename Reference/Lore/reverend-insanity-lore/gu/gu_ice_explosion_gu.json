@@ -1,0 +1,391 @@
+{
+  "id": "gu_ice_explosion_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ice Explosion Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ice Explosion Gu is a rank three Gu that detonates ice for a sudden burst of destructive power. Bai Ning Bing makes it a core trick in her Shang clan city ice set.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 298,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    298,
+    299,
+    312,
+    313,
+    396
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_bai_ning_bing",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 298,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_ning_bing",
+      "count": 3
+    },
+    {
+      "target": "char_tie_dao_ku",
+      "count": 2
+    },
+    {
+      "target": "gu_ice_crystal_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_ice_edge_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_icicle_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_bai_ning_bing_against_tie_dao_ku",
+      "count": 1
+    },
+    {
+      "target": "gu_hand_blade_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_snowball_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swift_shadow_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "path_ice",
+      "count": 1
+    },
+    {
+      "target": "char_yan_tu",
+      "count": 1
+    },
+    {
+      "target": "gu_fire_pellet_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fiery_claw_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_northern_dark_ice_soul_physique",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/ice-explosion-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/ice-explosion-gu/",
+      "chapters": [
+        298,
+        299,
+        312,
+        313,
+        396
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "It is a rank three Gu.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The larger, older, and colder the ice, the greater the explosion. If the blast spreads back toward Bai Ning Bing, she is injured as well, but turning the body to ice crystal with Ice Crystal Gu drops that severity to a low level.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_ice_crystal_gu"
+        ]
+      },
+      {
+        "text": "Bai Ning Bing pairs it with Icicle Gu so that lodged or flying ice can be detonated as a threat, and she treats that pairing as worth keeping even when she drops snowball Gu for primeval essence reasons.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_icicle_gu",
+          "gu_snowball_gu"
+        ]
+      },
+      {
+        "text": "Detonating icicles spends a large amount of primeval essence.",
+        "chapters": [
+          312
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Against Tie Dao Ku she activates Ice Explosion Gu so the iceblade in her right hand explodes in his face. The blast tears through his defense, blinds his left eye, and heavily injures his right, after which he admits defeat.",
+        "chapters": [
+          298
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-dominance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "She later credits that Gu with establishing her dominance in that fight, and plans to keep making full use of it.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-dominance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Her planned set lists Ice Crystal Gu, Ice Edge Gu, Icicle Gu, and Ice Explosion Gu together. A normal ice path Gu Master pursues defense or trapping, while Bai Ning Bing’s opposite focus on explosive strength draws its inspiration from Ice Explosion Gu.",
+        "chapters": [
+          299
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-dominance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_ice_edge_gu",
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "Against Yan Tu she judges that detonating icicles with Ice Explosion Gu could suppress Fire Pellet Gu, then holds back at first because of the primeval cost.",
+        "chapters": [
+          312
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-dominance",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_yan_tu",
+          "gu_fire_pellet_gu"
+        ]
+      },
+      {
+        "text": "Later she activates Icicle Gu and secretly activates Ice Explosion Gu so the icicles explode against a fiery claw and extinguish it.",
+        "chapters": [
+          313
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "battle-stage-dominance",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_bai_ning_bing",
+      "role": "user",
+      "recorded_chapter": 298,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Bai Ning Bing first shows Ice Explosion Gu on the Shang clan city battle stage by detonating an iceblade mid-strike against Tie Dao Ku.",
+        "chapters": [
+          298
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_bai_ning_bing",
+          "loc_shang_clan_city",
+          "char_tie_dao_ku"
+        ]
+      },
+      {
+        "text": "Bai Ning Bing later explains that turning into ice crystal and using Ice Explosion Gu with it can form a scene extremely similar to the self-destruction of Northern Dark Ice Soul physique, and that this is how the fake self-destruction deceived Fang Yuan.",
+        "chapters": [
+          396
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fake-self-destruction-explained",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_northern_dark_ice_soul_physique",
+          "char_fang_yuan"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

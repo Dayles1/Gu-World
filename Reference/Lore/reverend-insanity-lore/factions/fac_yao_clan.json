@@ -1,0 +1,281 @@
+{
+  "id": "fac_yao_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yao Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border super force named with Yi, Luo, and Xia when clan leaders join the Yi Tian Mountain battlefield.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 966,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    966,
+    1345,
+    1452,
+    1594,
+    1610,
+    1786
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yao_geng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1338,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yao_geng",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_luo_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_xia_clan",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 2
+    },
+    {
+      "target": "fac_hou_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_yang_clan",
+      "count": 2
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_bathing_flames_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "inh_seven_illusions_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "house_flying_sand_pavilion",
+      "count": 1
+    },
+    {
+      "target": "gu_year_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tao_zhu",
+      "count": 1
+    },
+    {
+      "target": "inh_paradise_earth_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_corpse_emperor_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Shang Yan Fei keeps the righteous path army supplied, the clan leaders of Southern Border super forces including Yi clan, Luo clan, Yao clan, and Xia clan join the seventh wave of fighting.",
+      "chapters": [
+        966
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "joining-the-war",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "reg_southern_border",
+        "fac_yi_clan",
+        "fac_luo_clan",
+        "fac_xia_clan"
+      ]
+    },
+    {
+      "text": "A Yao clan Gu Immortal stands on Corpse Emperor Yu Ding Tian after the clan takes the corpse mountain, calling it Yao clan’s and a bridgehead toward Wu clan territory east of red dragon river and north of yellow dragon river. Yao clan, Yang clan, and Hou clan are among the super forces that move after news that Wu Yong has died.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "corpse-emperor-peak",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_wu_clan",
+        "fac_yang_clan",
+        "fac_hou_clan",
+        "char_wu_yong"
+      ]
+    },
+    {
+      "text": "Wang Ming Yue, an external supreme elder of Yao clan, manages a River of Time tributary at Dragon Return Valley and captures wild year Gu there. After Southern Border righteous path forces discover the site, Yao clan wins a secret exchange, Yao Tian Ze marries her, and Yao clan openly takes the valley as territory.",
+      "chapters": [
+        1452
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "dragon-return-valley",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_river_of_time",
+        "gu_year_gu"
+      ]
+    },
+    {
+      "text": "At a righteous path gathering on Fang Yuan, Yao clan’s first supreme elder lists Fang Yuan’s stacked inheritances and pursuits and says he has the demeanor of a Demon Venerable in his youth. He also notes that Xia clan recently lost to Yao clan in earth-vein resource fights, at heavy cost to Yao clan as well.",
+      "chapters": [
+        1594
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "assessment-of-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Southern Border’s righteous path has thirteen super clans, and Yao clan is named in that list with Wu, Ba, Shang, Tie, Hou, Luo, Qiao, Chai, Xia, Yi, Chi, and Yang.",
+      "chapters": [
+        1610
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thirteen-super-clans",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yao clan’s first supreme elder once hindered a marriage between his daughter and Tao Zhu, then later admits he would have nurtured Tao Zhu for clan benefit if he had known Tao Zhu would reach rank eight. He tells Tao Zhu that Yao clan inherited a Paradise Earth true inheritance stating that the earth veins of the five regions will merge and become one and that the regional walls will disappear by themselves.",
+      "chapters": [
+        1786
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "paradise-earth-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tao_zhu",
+        "inh_paradise_earth_true_inheritance"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yao-clan/",
+      "chapters": [
+        966,
+        1345,
+        1452,
+        1594,
+        1610,
+        1786
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

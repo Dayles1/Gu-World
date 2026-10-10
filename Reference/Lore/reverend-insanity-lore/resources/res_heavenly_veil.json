@@ -1,0 +1,156 @@
+{
+  "id": "res_heavenly_veil",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly veil",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Heavenly veil is an extremely precious heaven path immortal material that can gather and hold stars.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2264,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2264,
+    2265
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_heaven",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_che_wei",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_jun_shen_guang",
+      "count": 1
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_star_constellation_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "loc_profound_literature_grotto_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Jun Shen Guang holds a heavenly veil given by Star Constellation Immortal Venerable for a mission that gathers stars in the two heavens. Spectral Soul Demon Venerable shreds that veil and destroys many of the stars inside it. Che Wei and Jun Shen Guang keep the heavenly veil and plan to bring the remaining stars to Central Continent. Shen Shang seizes some of the heavenly veil and calls it an extremely precious heaven path immortal material, intending to contribute it to Fang Yuan.",
+      "chapters": [
+        2264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heaven-path-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jun_shen_guang",
+        "char_star_constellation_immortal_venerable",
+        "char_spectral_soul_demon_venerable",
+        "char_che_wei",
+        "reg_central_continent",
+        "char_shen_shang",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When stars threaten Profound Literature grotto-heaven, Jun Shen Guang sets up the heavenly veil so the stars land on it and shake it with clear ripples. After the stars settle, he collects the veil and the stars together and leaves with a huge heavenly veil bag.",
+      "chapters": [
+        2265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "catching-falling-stars",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_profound_literature_grotto_heaven"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/heavenly-veil/",
+      "chapters": [
+        2264,
+        2265
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Heaven Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "sys_large_clan",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Large Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A large clan is a clan-scale organization with deep foundation and population, above ordinary villages and below super clans.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 182,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_clan_conflict"
+  },
+  "chapters_cited": [
+    182,
+    253,
+    267,
+    350
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "loc_mu_bei_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Southern Border, Tie clan is named a large clan with strong foundations, and also a super clan.",
+      "chapters": [
+        182
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "fac_tie_clan"
+      ]
+    },
+    {
+      "text": "Over a hundred years before the caravan reaches Mu Bei mountain, a large clan lived on that mountain until a demonic Gu Master destroyed it.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mountain-precedent",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mu_bei_mountain",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Shang Clan is a large clan with many clansmen. That scale helps explain why A grade aptitude is common there, alongside recruiting demonic Gu Masters and buying aptitude-changing Gu.",
+      "chapters": [
+        267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-scale",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Even a middle-sized clan cannot afford to feed an enslavement path Gu Master. At most, large or super clans nurture a few for war.",
+      "chapters": [
+        350
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "resource-threshold",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/large-clan/",
+      "chapters": [
+        182,
+        253,
+        267,
+        350
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Affiliation",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

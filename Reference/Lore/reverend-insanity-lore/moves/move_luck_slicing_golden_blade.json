@@ -1,0 +1,163 @@
+{
+  "id": "move_luck_slicing_golden_blade",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luck Slicing Golden Blade",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Luck Slicing Golden Blade is Qin Ding Ling's luck path immortal killer move that grows a golden blade to cut at an enemy's luck.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2333,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_final_war"
+  },
+  "chapters_cited": [
+    2333
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_qin_ding_ling",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2333,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_qin_ding_ling",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While chasing Spectral Soul Demon Venerable, Qin Ding Ling activates Luck Slicing Golden Blade and shoots out a small golden blade.",
+      "chapters": [
+        2333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_spectral_soul_demon_venerable",
+        "char_qin_ding_ling"
+      ]
+    },
+    {
+      "text": "The golden blade starts only the size of a thumb, then grows in the air until it reaches the size of a horse carriage. Against Spectral Soul Demon Venerable’s colossal black mountain-like body, that horse carriage-sized blade looks like an ant dancing above his head.",
+      "chapters": [
+        2333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The blade swings down to slice off Spectral Soul Demon Venerable’s luck. He ignores the attack and keeps forcing his way into Heavenly Court, yet his massive luck is still reduced by the luck slicing golden blade. The reduction is insignificant beside the sheer size of that luck, and Qin Ding Ling feels helplessness as rank eight methods fail to stop a rank nine body that keeps recovering.",
+      "chapters": [
+        2333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "luck-cut",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/luck-slicing-golden-blade.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/luck-slicing-golden-blade/",
+      "chapters": [
+        2333
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Qin Ding Ling",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

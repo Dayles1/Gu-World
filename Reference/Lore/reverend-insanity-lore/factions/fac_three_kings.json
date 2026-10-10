@@ -1,0 +1,328 @@
+{
+  "id": "fac_three_kings",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Three Kings",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Three Kings Inheritance"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Three Kings Inheritance is named in Fang Yuan's plans in Shang Clan City, set to begin before the righteous demonic battle at Yi Tian mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 273,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    273,
+    286,
+    323,
+    324
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ying_ming",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 391,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ying_ming",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_undefeated_hundred_battles_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_exploding_egg_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_paper_crane_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_king_bao",
+      "count": 1
+    },
+    {
+      "target": "char_king_quan",
+      "count": 1
+    },
+    {
+      "target": "char_king_xin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_king_quan_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_treasury_flower_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_treasury_flower_king_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "char_han_cai_xin",
+      "count": 1
+    },
+    {
+      "target": "loc_spirit_butterfly_valley",
+      "count": 1
+    },
+    {
+      "target": "char_yellow",
+      "count": 1
+    },
+    {
+      "target": "char_feng_tian_yu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Shang Clan City, Fang Yuan treats the stable stretch as time to build a Gu set and raise cultivation before the Three Kings Inheritance begins. He ranks the later righteous demonic battle at Yi Tian Mountain as a southern border grand event where insufficient strength leaves a Gu Master as cannon fodder.",
+      "chapters": [
+        273
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-in-shang-clan-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "char_fang_yuan",
+        "inh_three_kings_inheritance",
+        "loc_yi_tian_mountain",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He judges that his strength path Gu set reaches greater success only by relying on the three kings inheritance. He names one undefeated hundred battles Gu inside that inheritance as the prize that would ensure advancing all-out effort Gu to rank four.",
+      "chapters": [
+        286
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-path-prizes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_undefeated_hundred_battles_gu",
+        "gu_all_out_effort_gu"
+      ]
+    },
+    {
+      "text": "On San Cha Mountain, three giant light pillars of yellow, blue, and red burst from the three peaks and rise above the clouds. A voice announces that the Three Kings Inheritance opens that day for righteous and demonic alike, with fate as the only measure. Present Gu Masters recognize it as the inheritance of three rank five Gu Masters.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "opening-on-san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Fang Yuan treats the event as three collective inheritances in one place, not a single sealed legacy. He calls it a demonic inheritance with dog groups and many checkpoints, and in his previous life countless lives were spent before anyone reached the end after half a year. He knows the pillars are the entrances and that entry has requirements, then bulk purchases dog enslavement Gu, paper crane Gu, and exploding egg Gu once news cannot be hidden.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "opening-on-san-cha-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_dog_enslavement_gu",
+        "gu_paper_crane_gu",
+        "gu_exploding_egg_gu"
+      ]
+    },
+    {
+      "text": "The three kings are King Quan, King Xin, and King Bao. Yellow pillar is King Quan’s inheritance and needs rank one dog enslavement Gu; blue pillar is King Xin’s and needs paper crane Gu; red pillar is King Bao’s and needs at least one exploding egg Gu.",
+      "chapters": [
+        324
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "kings-pillars-and-entry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_king_quan",
+        "char_king_xin",
+        "char_king_bao",
+        "char_yellow",
+        "inh_king_quan_inheritance"
+      ]
+    },
+    {
+      "text": "About three hundred years earlier they came from Wang clan, which Wu Clan wiped out while missing three children who later became the kings. After inheriting portions of a rank six Gu Immortal’s legacy and reaching rank five, they destroyed Wu clan in three days, then refused to rebuild Wang clan and vanished until their inheritance appeared. Talk credits King Quan with hound armies and rank five dog enslavement Gu, King Xin with refinement skill built from paper crane Gu, and King Bao with violent explosive attacks.",
+      "chapters": [
+        324
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "kings-pillars-and-entry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wang_clan",
+        "fac_wu_clan",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/three-kings/",
+      "chapters": [
+        273,
+        286,
+        323,
+        324
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

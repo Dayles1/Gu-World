@@ -1,0 +1,706 @@
+{
+  "id": "char_ye_fan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ye Fan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "ye fan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Е Фань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ye Fan is a Southern Border Gu Master whose rise Fang Yuan knows from Biography of Ye Fan, and whom he waits for beside Jade Dragon River.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 680,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    680,
+    681,
+    682,
+    1059,
+    1166,
+    1409,
+    1531,
+    1535,
+    1536,
+    1537,
+    1538,
+    1702,
+    1727,
+    1745,
+    1931,
+    1947
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_black_yellow_mother_qi_gu",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 680,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_blue_face_gu",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 823,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_hero_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1947,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_vagrant_warrior_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2065,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_aurora_bird",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_black_yellow_mother_qi_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_hero_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_blue_face_gu",
+      "count": 3
+    },
+    {
+      "target": "move_aurora_bird",
+      "count": 3
+    },
+    {
+      "target": "gu_vagrant_warrior_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_hong_yi",
+      "count": 2
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 2
+    },
+    {
+      "target": "char_ying_ming",
+      "count": 2
+    },
+    {
+      "target": "char_shang_bi_xi",
+      "count": 2
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "char_lu_wei_yin",
+      "count": 2
+    },
+    {
+      "target": "inh_genesis_lotus_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_empress_wu_ji",
+      "count": 1
+    },
+    {
+      "target": "char_han_li",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_inspection_gu",
+      "count": 1
+    },
+    {
+      "target": "move_time_assist_luck",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_eighteen_sons_of_wine_village",
+      "count": 1
+    },
+    {
+      "target": "move_qi_luck_sensation",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "fac_wind_cloud_manor",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "res_heaven_attached_fungi",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "loc_smoky_warm_jade_field",
+      "count": 1
+    },
+    {
+      "target": "res_smoky_warm_jade",
+      "count": 1
+    },
+    {
+      "target": "char_hou_yao",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 1
+    },
+    {
+      "target": "move_iron_mask_equipment",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_upper_extreme_heavenly_eagle",
+      "count": 1
+    },
+    {
+      "target": "move_burning_soul_bursting_luck",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    },
+    {
+      "target": "loc_emperor_city",
+      "count": 1
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 1
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "house_canary_pavilion",
+      "count": 1
+    },
+    {
+      "target": "house_edge_link_camp",
+      "count": 1
+    },
+    {
+      "target": "house_frost_dragon_manor",
+      "count": 1
+    },
+    {
+      "target": "house_sun_and_moon_temple",
+      "count": 1
+    },
+    {
+      "target": "house_yue_yang_palace",
+      "count": 1
+    },
+    {
+      "target": "move_contented_lifestyle",
+      "count": 1
+    },
+    {
+      "target": "house_divine_emperor_palace",
+      "count": 1
+    },
+    {
+      "target": "loc_growling_beast_painting_world",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_howling_painting_world",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In prior-life memory he is a lone cultivator who rises from nobody to a rank seven legend in the five regions chaotic war, level with Hong Yi and Han Li, with a riverside rank four inheritance, black yellow mother qi Gu, and rock gambling dominance across Southern Border dens. Tonight is the first fortuitous encounter that starts that rise.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hong_yi",
+        "char_han_li",
+        "gu_black_yellow_mother_qi_gu",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "He is a white robed young man with heroic stature and sword-like sharp eyes and brows. A small eagle rests on his shoulder.",
+      "chapters": [
+        1531
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At a Central Continent Refinement Path Convention he is a young man, very handsome.",
+      "chapters": [
+        1702
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_refinement_path_convention"
+      ]
+    },
+    {
+      "text": "A thousand li away, freshly banished from his clan, he hides in a cave and finds the entrance sealed by a wounded, starving dog shaped beast emperor. He heals it over seven days as the village’s most famous beast doctor, and when he leaves the beast follows him. Fang Yuan, still waiting at the river, recognizes that dog emperor as Ying Ming from Three Kings blessed land, a detail absent from Biography of Ye Fan. Connect Luck succeeds: Ye Fan never notices Fang Yuan, his bronze nine dragon coffin luck shrinks by about half, and Fang Yuan lists him with Hong Yi and Han Li as equal luck shares.",
+      "chapters": [
+        681
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "banished-youth-and-connect-luck",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_ying_ming",
+        "fac_three_kings",
+        "gu_connect_luck"
+      ]
+    },
+    {
+      "text": "The southern trip that completed that link cost Fang Yuan two beads of green grape immortal essence.",
+      "chapters": [
+        682
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "southern-trip-cost",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Shang Bi Xi confronts Shang Xin Ci on a Southern Border mountain, Ye Fan refuses her urging to leave and stands in front of her even though he is heavily injured and cannot stand straight. Shang Bi Xi calls him a brave man before pushing him and he falls to the ground.",
+      "chapters": [
+        1059
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "defending-shang-xin-ci-from-shang-bi-xi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_bi_xi",
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Against Bai Ning Bing’s demonic subordinates he kills several before his right arm is crippled by ice, then Bai Ning Bing freezes him into a transparent icicle and he dies. Ying Wu Xie appears, revives him with an immortal killer move, forbids killing him after luck inspection shows abundant luck resonant with Ying Wu Xie’s own, and leaves him gasping on the ground.",
+      "chapters": [
+        1166
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "near-death-under-bai-ning-bing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "char_ying_wu_xie"
+      ]
+    },
+    {
+      "text": "After that brush with death he meets a mysterious Gu Immortal master, trains in black heaven under light path restriction, and succeeds in an aurora bird killer move built from transformation path and light path understanding. The master is Lu Wei Yin, who heals the injured upper extreme heavenly eagle, places it with Ye Fan as karma to resolve later, and sends him back toward Southern Border. He had also stood with Shang Xin Ci in mortal Shang clan work before that Bai Ning Bing loss.",
+      "chapters": [
+        1409
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "master-lu-wei-yin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_lu_wei_yin",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "He watches Fang Yuan arrive and guesses the eagle’s karma may involve that Gu Immortal.",
+      "chapters": [
+        1535
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-fang-yuan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan treats him as a luck connected target blessed by fate and decides killing him would help because burning soul bursting luck feeds him a share.",
+      "chapters": [
+        1536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-fang-yuan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan ranks him a rank five Gu Master mortal beside that immemorial desolate beast, notes the eagle on his shoulder, and moves to capture him first.",
+      "chapters": [
+        1537
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-fang-yuan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Lu Wei Yin then drops an immortal battlefield and shields the mortals, and Ye Fan cries out for his master.",
+      "chapters": [
+        1538
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-five-and-fang-yuan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At a Central Continent Refinement Path Convention he and Hong Yi both succeed in a round and give their names.",
+      "chapters": [
+        1702
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When an Earth Trench later swallows Emperor City, Fang Yuan dives into the crowd, kills Ye Fan and Hong Yi among the luck connected elites, and feels relief as his luck path advantage shows.",
+      "chapters": [
+        1727
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_trench",
+        "loc_emperor_city"
+      ]
+    },
+    {
+      "text": "Lu Wei Yin later points at Fang Yuan and names Ye Fan as the disciple who died in those hands.",
+      "chapters": [
+        1745
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He enters Emperor City again for a Refinement Path Convention, still calling Lu Wei Yin master, and meets Hong Yi as a sworn brother the same way as in the prior life.",
+      "chapters": [
+        1931
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-painting-world",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Genesis Lotus’s will later seals him and Hong Yi into a painting world; there he buys hero Gu, meets Lu Wei Yin again, and learns that Fang Yuan had secretly connected luck to him and that Paradise Earth arrangements point him at Genesis Lotus’s true inheritance and the child of humanity, who gains the favor of human path.",
+      "chapters": [
+        1947
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "emperor-city-painting-world",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_hero_gu",
+        "char_paradise_earth_immortal_venerable",
+        "inh_genesis_lotus_true_inheritance"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/ye-fan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/ye-fan/",
+      "chapters": [
+        680,
+        681,
+        682,
+        1059,
+        1166,
+        1409,
+        1531,
+        1535,
+        1536,
+        1537,
+        1538,
+        1702,
+        1727,
+        1745,
+        1931,
+        1947
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 1537",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 1537,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_black_yellow_mother_qi_gu",
+      "role": "holder",
+      "recorded_chapter": 680,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_blue_face_gu",
+      "role": "owner",
+      "recorded_chapter": 823,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_hero_gu",
+      "role": "unspecified",
+      "recorded_chapter": 1947,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_vagrant_warrior_gu",
+      "role": "unspecified",
+      "recorded_chapter": 2065,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

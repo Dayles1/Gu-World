@@ -1,0 +1,197 @@
+{
+  "id": "char_lin_san_chi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lin San Chi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "lin san chi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Линь Сань Чи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lin San Chi is a rank four demonic Gu Master named among Hu Mei Er's network for metal and earth path skill.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 339,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    339
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_hu_mei_er",
+      "count": 2
+    },
+    {
+      "target": "char_li_xian",
+      "count": 2
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 2
+    },
+    {
+      "target": "char_tyrant_heng_mei",
+      "count": 2
+    },
+    {
+      "target": "fac_ten_tyrants",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "path_metal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a cave on San Cha Mountain, after the Ten Tyrants complain that Hu Mei Er used them to test the black and white demons, Tyrant Heng Mei slaps the second brother and scolds them that this is not Nan mountain. He tells them heavily injured is fine so long as they are not dead, then warns them not to find problems with Hu Mei Er. He says this demoness seduces men to their death, has a wide network, and is involved with Lin San Chi, has rumors with Li Xian, and even Mo Wu Tian. Narration calls his metal and earth specialty renowned through the land. Be it Lin San Chi, Li Xian, or Mo Wu Tian, they are all rank four Gu Masters. The nine brothers go pale and speechless.",
+      "chapters": [
+        339
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "fac_ten_tyrants",
+        "char_hu_mei_er",
+        "char_tyrant_heng_mei",
+        "loc_nan_mountain",
+        "char_li_xian",
+        "char_mo_wu_tian",
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/lin-san-chi/",
+      "chapters": [
+        339
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 339",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 339",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 339,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": "demonic path as of ch. 339",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

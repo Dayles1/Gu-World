@@ -1,0 +1,157 @@
+{
+  "id": "loc_feng_bo_cliff",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Feng Bo Cliff",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Feng Bo Cliff is a pickup site where Lang Ya land spirit prepares an immortal level Gu formation for Fang Yuan to return to Lang Ya blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1048,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1048,
+    1082,
+    1085
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes the cliff’s rock face or height beyond naming the place and the formation arranged there.",
+      "chapters": [
+        1048
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Seven days after Lang Ya land spirit gives the location directly, Fang Yuan arrives at Feng Bo cliff and sees the land spirit’s arrangements. The immortal level Gu formation is similar in use to the green crystal hero’s path Zombie Alliance had. Fang Yuan uses it to free himself from the ancient cloud beasts and return to Lang Ya blessed land.",
+      "chapters": [
+        1048
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "char_fang_yuan",
+        "sys_gu_formation",
+        "fac_zombie_alliance",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "When Fang Yuan was previously hurrying back from Southern Border, he used the teleportation Gu formation at Feng Bo Cliff to get rid of troublesome cloud beasts and return to Lang Ya blessed land. That formation left a deep impression on him.",
+      "chapters": [
+        1082
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "teleportation-gu-formation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "One of Lang Ya blessed land’s teleportation Gu formations was set up at Feng Bo Cliff. Fang Yuan later learns the location of a second such formation at Northern Plains’ dragon elephant plain.",
+      "chapters": [
+        1085
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "second-formation-named",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/feng-bo-cliff/",
+      "chapters": [
+        1048,
+        1082,
+        1085
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "landmark",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "move_spring_autumn_target",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spring Autumn Target",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spring Autumn Target is a Red Lotus true inheritance killer move that can send a rebirth back to a chosen time, without guaranteeing success.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1750,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1750
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_red_lotus_demon_venerable",
+      "role": "inheritance",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1750,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1750,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_red_lotus_demon_venerable",
+      "count": 2
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "move_spring_autumn_success",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After a long rebirth that used spring autumn success, Fang Yuan notes that Red Lotus’ true inheritance also holds the killer move Spring Autumn Target, which can go back to a specific time. That move cannot guarantee the success of rebirth, so he chose spring autumn success to remove the possibility of failure.",
+      "chapters": [
+        1750
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "choice-against-spring-autumn-success",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/spring-autumn-target/",
+      "chapters": [
+        1750
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Red Lotus Demon Venerable (inheritance) Fang Yuan (holder)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

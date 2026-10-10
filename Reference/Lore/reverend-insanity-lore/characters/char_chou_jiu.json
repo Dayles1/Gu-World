@@ -1,0 +1,511 @@
+{
+  "id": "char_chou_jiu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chou Jiu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chou jiu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чоу Цзю",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Killer Ghost Doctor"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chou Jiu, titled killer ghost doctor, is a rank five healing Gu Master who arrives at San Cha Mountain's foot as one of Southern Border's four great doctors.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 375,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    375,
+    384,
+    400,
+    401,
+    467,
+    468,
+    1004
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shadow_sect",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 384,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_remnant_life_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 385,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_warp_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 385,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_slavery_gu",
+      "role": "host",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 400,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shadow_sect",
+      "count": 4
+    },
+    {
+      "target": "gu_slavery_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_remnant_life_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_warp_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 2
+    },
+    {
+      "target": "char_tie_mu_bai",
+      "count": 2
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_sea_oath_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_door_of_life_and_death",
+      "count": 2
+    },
+    {
+      "target": "gu_undefeated_hundred_battles_gu",
+      "count": 2
+    },
+    {
+      "target": "char_old_man_yan_shi",
+      "count": 2
+    },
+    {
+      "target": "loc_sheng_si_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "char_divine_doctor_sheng_shou",
+      "count": 1
+    },
+    {
+      "target": "char_lu_zuan_feng",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_travelling_doctor_jiu_zhi",
+      "count": 1
+    },
+    {
+      "target": "fac_four_great_doctors",
+      "count": 1
+    },
+    {
+      "target": "char_ku_mo",
+      "count": 1
+    },
+    {
+      "target": "char_wang_xiao",
+      "count": 1
+    },
+    {
+      "target": "char_wu_lan_shan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_death_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_life_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_mountain_pledge_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_poison_vow_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shadow_sect_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "inh_king_xin_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_yan_jun",
+      "count": 1
+    },
+    {
+      "target": "fac_yan_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Anyone he heals must kill a person for him in return. After he ascends San Cha mountain, Tie Mu Bai invites him and the two drink together.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "char_tie_mu_bai"
+      ]
+    },
+    {
+      "text": "He has an ugly appearance. His hair is like dry yellow grass. His brain is protruding and his eyes are of different sizes. His cheekbone is very high, his nose is flat, a large clump of hair grows out of his nostrils, and his yellow teeth project outwards.",
+      "chapters": [
+        384
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Beaten down by Fang Yuan in three kings blessed land, he bargains using knowledge of the Door of Life and Death to preserve his life. He says he explored that place, refined one life one death Gu, and that death-to-lifeforce conversion is why his healing methods are so profound. He will not speak the door’s details to an outsider because of a sea oath Gu vow, and instead presses Fang Yuan to join Shadow Sect so the vow will allow it.",
+      "chapters": [
+        384
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "door-of-life-and-death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_door_of_life_and_death",
+        "gu_sea_oath_gu",
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "Fang Yuan plants rank five slavery Gu on him while the land spirit suppresses his Gu worms. Chou Jiu resists in a soul contest, and the merge has not finished.",
+      "chapters": [
+        400
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "slavery-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_slavery_gu",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Fang Yuan breaks his focus so the yellow light finishes merging. Once enslaved, he kneels, answers Fang Yuan about a past poison vow with Doctor Su Shou, and is sent to seize undefeated hundred battles Gu from King Xin inheritance.",
+      "chapters": [
+        401
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "enslavement-and-orders",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_doctor_su_shou",
+        "gu_undefeated_hundred_battles_gu",
+        "inh_king_xin_inheritance"
+      ]
+    },
+    {
+      "text": "In Sheng Si blessed land he kneels before rank seven Old Man Yan Shi. He thanks that return for freeing him from lifelong slavery. Yan Shi says the slavery Gu on him has already been altered, orders him to act as a spy beside Fang Yuan at Yi Tian mountain, and tells him to go call his junior sister Bai Ning Bing.",
+      "chapters": [
+        467
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "yan-shi-orders",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_sheng_si_blessed_land",
+        "char_old_man_yan_shi",
+        "loc_yi_tian_mountain",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing’s later recollection places the recruitment earlier: after Wei Yang let her go, she met Chou Jiu while gravely injured. He healed her and proposed she join Shadow Sect to deal with Fang Yuan. She agreed for a time, and with Old Man Yan Shi and Chou Jiu she made a sea oath before the Immortal Gu that she could leave once Fang Yuan was killed, and that Shadow Sect would not move against her.",
+      "chapters": [
+        468
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bai-ning-bing-recruitment",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "When Yi Tian mountain has already collapsed into ruin, its demonic path Gu Masters are heavily injured or dead. Chou Jiu is not named in that accounting, so whether he survives is left unsettled.",
+      "chapters": [
+        1004
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yi-tian-mountain-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/chou-jiu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chou-jiu/",
+      "chapters": [
+        375,
+        384,
+        400,
+        401,
+        467,
+        468,
+        1004
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shadow Sect as of ch. 384",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 375",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Unknown",
+    "alignment": "demonic path as of ch. 375",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_remnant_life_gu",
+      "role": "unspecified",
+      "recorded_chapter": 385,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_slavery_gu",
+      "role": "host",
+      "recorded_chapter": 400,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_warp_gu",
+      "role": "unspecified",
+      "recorded_chapter": 385,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "id": "res_yellow_mud",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yellow mud",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yellow mud is the mud left when gruel mud Immortal Gu power turns mountain rock into mud, later sold as a refinement ingredient.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 425,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    425,
+    469,
+    475,
+    491
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_gruel_mud",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_gruel_mud",
+      "count": 3
+    },
+    {
+      "target": "evt_arc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_bai_hu",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_no_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After an earthly calamity in Hu Immortal blessed land, Fang Yuan crushes a gutstone and finds mud staining his palm. Yellow mud on his hand slowly turns hard rock into more mud until the rock vanishes, and the mud flowing onto Dang Hun Mountain keeps damaging the mountain. Most of the mountain is affected; six out of ten gutstones below the mountain waist are turning into mud. Fang Yuan judges this the lingering effect of rank six gruel mud Gu carried in by a desolate beast swamp crab, with no Immortal Gu aura showing in the yellow mud itself. He orders little Hu Immortal to clear out as much yellow mud as possible to slow the danger.",
+      "chapters": [
+        425
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mountain-corrosion",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "char_fang_yuan",
+        "loc_dang_hun_mountain",
+        "gu_no_gu",
+        "char_fairy_bai_hu"
+      ]
+    },
+    {
+      "text": "Mud cleared from Dang Hun Mountain still holds gruel mud Immortal Gu power. Gu Immortals treat that mud as a must-have ingredient when refining gruel mud Immortal Gu. Fang Yuan sells it in treasure yellow heaven under the name gruel mud, asking for remnant recipes of that Immortal Gu rather than other goods. Buyers sense intense Immortal Gu aura from the real gruel mud on sale. Cleared mud kept in the west of the blessed land slowly forms a swamp as more of it accumulates.",
+      "chapters": [
+        469
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sold-as-refinement-mud",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "On the dying mountain, some guts Gu knead into yellow mud or yellow paste instead of usable worms. Those yellow mud pieces are all gruel mud and can be sold at treasure yellow heaven, though they are worth far less than intact guts Gu. Gu Immortals scramble for the sold mud because it can be used with an Immortal Gu recipe to refine gruel mud Immortal Gu.",
+      "chapters": [
+        475
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yellow-paste-guts-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_guts_gu",
+        "sys_gu_recipe"
+      ]
+    },
+    {
+      "text": "In treasure yellow heaven trade talk, Gruel Mud is named one of the necessary materials to refine the Immortal Gu, while the recipe itself is treated as many times more valuable than the mud.",
+      "chapters": [
+        491
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "necessary-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_gruel_mud"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/yellow-mud.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/yellow-mud/",
+      "chapters": [
+        425,
+        469,
+        475,
+        491
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Dang Hun Mountain after gruel mud Immortal Gu corrosion",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Gruel Mud",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

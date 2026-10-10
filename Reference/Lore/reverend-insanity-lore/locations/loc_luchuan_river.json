@@ -1,0 +1,144 @@
+{
+  "id": "loc_luchuan_river",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luchuan River",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border river region Tie Mu Bai names when recalling a golden fog tactic from age twenty-eight.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 374,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    374
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "gu_create_fog_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_tie_mu_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_tie_mu_bai",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_needle_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_puppet_control_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Tie Ruo Nan clears nearly a thousand ash-grey mountain apes and climbs the peak on San Cha Mountain, Tie Mu Bai answers with a denser needle cloud that bores countless holes through nearby boulders and kills the trees beside them. He names Luchuan river when he explains the create fog Gu pairing behind that cloud, then moves on to puppet control Gu and an older capture at Tie Mu mountain.",
+      "chapters": [
+        374
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_ruo_nan",
+        "loc_san_cha_mountain",
+        "char_tie_mu_bai",
+        "gu_create_fog_gu",
+        "gu_puppet_control_gu",
+        "loc_tie_mu_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/luchuan-river/",
+      "chapters": [
+        374
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "river",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "move_luck_plan_strategy",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luck Plan Strategy",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Luck Plan Strategy is a luck path killer move. It uses rank six Immortal Gu Luck Plan as the core and is specialized in making battle tactics.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1781,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1781,
+    1782
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_luck_plan_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan gains it along with mature bamboo chest. It belongs to luck path but has wisdom path effect. Luck Plan Immortal Gu’s power is to make deductions on how to optimize the use of the Gu Immortal’s resources. Ordinary Gu Immortals cultivate one path and rarely take a second, so there are many killer moves that mimic other paths. Those moves are created with limited foundation in the mimicked path. They can be strong, but they are easily countered and the weaknesses are obvious. Compared to actual wisdom path methods, they are less useful.",
+      "chapters": [
+        1781
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_luck_plan_immortal_gu",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s wisdom path methods are plentiful. He does not need this move or mature bamboo chest. He only practises them to increase his understanding of the Genesis Lotus true inheritances and Giant Sun’s true inheritance.",
+      "chapters": [
+        1782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dual-inheritances",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/luck-plan-strategy/",
+      "chapters": [
+        1781,
+        1782
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

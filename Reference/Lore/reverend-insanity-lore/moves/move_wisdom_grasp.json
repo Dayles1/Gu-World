@@ -1,0 +1,181 @@
+{
+  "id": "move_wisdom_grasp",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wisdom Grasp",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wisdom Grasp is Fang Yuan's immortal killer move. He kills Wan Liang Han with a cast that looks like great thief ghost hand and says he has already taken that life.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1801,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1801,
+    1802,
+    1857
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1801,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_wan_liang_han",
+      "count": 2
+    },
+    {
+      "target": "inh_steal_life_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_great_thief_ghost_hand",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the fight against Wan clan’s three immortals, Fang Yuan shows Wisdom Grasp among two wisdom path killer moves used that day. He takes Wan Liang Han’s corpse and shelters behind four immemorial soul beasts, then publicizes the battle under Suan Bu Jin’s name. Fang Di Chang later treats those two wisdom path killer moves as part of why Fang clan should protect Suan Bu Jin.",
+      "chapters": [
+        1801
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan",
+        "char_fang_yuan",
+        "sys_killer_moves",
+        "char_wan_liang_han",
+        "char_fang_di_chang",
+        "fac_fang_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan deduced wisdom grasp after referencing great thief ghost hand and the Steal Life true inheritance. Great thief ghost hand steals Immortal Gu while wisdom grasp steals lives and kills instantly. The move is only rank seven, so it has very poor effect against rank eight Gu Immortals, but he judges it perfect against Wan Liang Han. He added transformation path Gu worms so the cast disguises itself as great thief ghost hand.",
+      "chapters": [
+        1802
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "deduction-and-limits",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_great_thief_ghost_hand",
+        "inh_steal_life_true_inheritance",
+        "sys_immortal_gu",
+        "sys_gu_immortal",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Fang Yuan later recalls that using great thief ghost hand and then wisdom grasp to kill Wan Liang Han left an impression on Fang clan, so his interest in theft path felt natural to them.",
+      "chapters": [
+        1857
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-clan-impression",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/wisdom-grasp/",
+      "chapters": [
+        1801,
+        1802,
+        1857
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

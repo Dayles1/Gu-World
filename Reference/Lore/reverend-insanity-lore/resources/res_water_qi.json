@@ -1,0 +1,166 @@
+{
+  "id": "res_water_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Water qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Water qi is a common qi material used to feed delight in water and mountain Immortal Gu and listed among qi path immortal materials.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 672,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    672,
+    1815,
+    1881
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "gu_delight_in_water_and_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_big_family_qi_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_big_qi_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_luck_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Delight in water and mountain Immortal Gu needs large amounts of earth qi, water qi, and some laughter stones. Even earth qi and water qi are not easy to extract.",
+      "chapters": [
+        672
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-gu-food",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_delight_in_water_and_mountain"
+      ]
+    },
+    {
+      "text": "Unlimited qi sea uses Immortal Gu such as Big Qi and Big Family Qi together with countless qi path immortal materials, including metal qi, water qi, fire qi, and others, as well as special ones such as luck qi and divine qi.",
+      "chapters": [
+        1815
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "unlimited-qi-sea-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "gu_big_qi_immortal_gu",
+        "gu_big_family_qi_immortal_gu"
+      ]
+    },
+    {
+      "text": "As qi path declined, qi sea shrank to less than one ten-thousandth of its former size, and the qi currents inside turned into pure water qi, with only the most central area still holding some qi path immortal materials. The area contains mostly water qi. In Eastern Sea, water qi is easy to collect almost anywhere, so Gu Immortals have little reason to enter qi sea for it alone.",
+      "chapters": [
+        1881
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qi-sea-remnant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/water-qi/",
+      "chapters": [
+        672,
+        1815,
+        1881
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

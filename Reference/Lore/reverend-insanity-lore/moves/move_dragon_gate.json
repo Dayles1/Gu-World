@@ -1,0 +1,160 @@
+{
+  "id": "move_dragon_gate",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dragon Gate",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dragon Gate is Duke Long's immortal killer move. A huge gate appears with two red pillars and coiled dragons.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1369,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1369,
+    1373,
+    1945
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_duke_long",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_duke_long",
+      "count": 3
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "loc_shadow_sect_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "move_five_finger_fist_heart_sword",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Spectral Soul is captured, Purple Mountain True Monarch moves deeper into Shadow Sect’s blessed land and the entrance closes. Duke Long aims at that location and uses this move. The gate is majestic and huge. Two red pillars stand by the side with a dragon coiling around each of them. The dragon claws hold up the top of the gate, firm as a mountain. Flickering dragon scales cover two tough dragon bodies. The dragons’ upper bodies look at each other, mouths open, each holding a dragon pearl that shines like a radiant sun, forming a scene of two dragons and two pearls. The gate opens and the interior of Shadow Sect’s blessed land can be seen. The move can forcefully open blessed lands. Duke Long steps in as the gate closes, then vanishes.",
+      "chapters": [
+        1369
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_purple_mountain_true_monarch",
+        "loc_shadow_sect_blessed_land",
+        "char_duke_long"
+      ]
+    },
+    {
+      "text": "He can freely enter and exit blessed lands and grotto-heavens. Even if Shadow Sect’s blessed land closes its entrance, it cannot trap him.",
+      "chapters": [
+        1373
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blessed-land-travel",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Heavenly Court, a gate appears with the same two red pillars and coiled dragons. This time the dragons’ upper bodies leave the pillars and gather in the middle to form the top of the gate, each mouth holding a radiant dragon pearl. Two gates appear at once, one in front of Duke Long and one behind Fang Yuan. Duke Long disappears into the first and appears from the second, closing the distance so five finger fist heart sword has no space to work. When Fang Yuan’s dragon scales begin to flicker with yellow light, Duke Long retreats far away with the same move. In his combat system it is the method for long distance movement.",
+      "chapters": [
+        1945
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "paired-gates",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/dragon-gate.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/dragon-gate/",
+      "chapters": [
+        1369,
+        1373,
+        1945
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Duke Long",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

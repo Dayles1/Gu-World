@@ -1,0 +1,182 @@
+{
+  "id": "fac_lin_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lin Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A merchant clan whose vice leader sends Lin Dong through the Fei Hou mountain monkey checkpoint in the same caravan as Zhang clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 240,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    240,
+    247,
+    248
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_lin_jian_xing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2304,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_lin_jian_xing",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 2
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_jia_family",
+      "count": 1
+    },
+    {
+      "target": "loc_fei_hou_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 1
+    },
+    {
+      "target": "loc_skeleton_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Jia Long and Chen vice leader Chen Shuang Jin argue over who must hold the first line of defense, Lin clan’s vice leader walks over and advises that it is not the time for arguments.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mediation-and-losses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_shuang_jin"
+      ]
+    },
+    {
+      "text": "After the white feather flying elephant rampage, survivors gather: Jia clan and Chen Clan are the strongest groups and still deep in losses, while Lin clan has only three Gu Masters left and some other clans’ groups are wiped out entirely.",
+      "chapters": [
+        248
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mediation-and-losses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jia_family",
+        "fac_chen_clan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "At the Fei Hou mountain monkey checkpoint, caravan groups wrestle the monkey king in an agreed order so their wagons can pass with fewer losses. After Jia Long’s group moves through, Lin clan’s vice leader calls the next turn and sends Lin Dong out.",
+      "chapters": [
+        240
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "monkey-checkpoint",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fei_hou_mountain",
+        "char_jia_long"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/lin-clan/",
+      "chapters": [
+        240,
+        247,
+        248
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

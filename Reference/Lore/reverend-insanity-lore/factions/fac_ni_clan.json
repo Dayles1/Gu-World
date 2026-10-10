@@ -1,0 +1,288 @@
+{
+  "id": "fac_ni_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ni Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Southern Border clan whose specialty is earth path.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1034,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1034,
+    1035,
+    1036
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_ni_kun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1034,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ni_jian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ni_kun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ni_ren",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ni_xiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ni_kun",
+      "count": 5
+    },
+    {
+      "target": "char_ni_jian",
+      "count": 4
+    },
+    {
+      "target": "char_ni_xiang",
+      "count": 4
+    },
+    {
+      "target": "char_ni_ren",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_ni_clan_village",
+      "count": 2
+    },
+    {
+      "target": "char_qi_zai",
+      "count": 2
+    },
+    {
+      "target": "gu_yes_or_no_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_air_bubble_fish",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "gu_muddy_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_qi_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_rotten_mud_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_feng_tian_yu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_yellow_heaven",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_red_heaven",
+      "count": 1
+    },
+    {
+      "target": "sys_unifying_human_and_gu",
+      "count": 1
+    },
+    {
+      "target": "path_refinement",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Ni clan village, Ni Jian names earth path as the clan specialty when he resists his grandfather’s push away from sword path. That grandfather is Ni Kun, the current leader and a rank five Gu Master.",
+      "chapters": [
+        1034
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-specialty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_ni_clan_village",
+        "char_ni_jian",
+        "char_ni_kun",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Qi Zai places Ni Xiang’s descendants among several Southern Border branches and says Ni clan no longer has Gu Immortals. He names Ni Ren as the last Ni clan Gu Immortal, a refinement path talent who refined chosen Immortal Gu into descendants’ bloodlines.",
+      "chapters": [
+        1035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-status",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_zai",
+        "char_ni_xiang",
+        "reg_southern_border",
+        "sys_gu_immortal",
+        "char_ni_ren",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Once in a while a Ni clan Gu Master who survives bloodline awakening grows an Immortal Gu inside the body. The first such Immortal Gu is the information path Immortal Gu Yes or No. It answers only yes or no from heaven and earth, and each answer costs the user fifty years of lifespan. The mortal who bears it is called the current generation Ni Xiang.",
+      "chapters": [
+        1036
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bloodline-awakening",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_yes_or_no_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/ni-clan/",
+      "chapters": [
+        1034,
+        1035,
+        1036
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Ni Kun",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

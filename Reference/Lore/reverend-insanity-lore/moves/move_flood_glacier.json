@@ -1,0 +1,188 @@
+{
+  "id": "move_flood_glacier",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flood Glacier",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flood Glacier is Pi Shui Han's water path and ice path immortal killer move. Surging waves freeze into a glacier that crashes down with bone-chilling cold.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 790,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    790,
+    1109
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_pi_shui_han",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 790,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_pi_shui_han",
+      "count": 4
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_killer_moves",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_self_giant_hand",
+      "count": 1
+    },
+    {
+      "target": "move_final_afterglow",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tie_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_iron_eagle_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Tai Qiu, when the blood veil covering an immemorial ruin bat corpse holds against the demonic path assault, rank seven Pi Shui Han clears space and activates this water path and ice path killer move. Over ten thousand Gu worms run in his immortal aperture while rank seven red date immortal essence is spent bead by bead. Waves roar out of thin air within hundreds of steps, then condense into ice from the inside out within several breaths and smash down like a falling pillar. The glacier deforms Dong Fang Chang Fan’s blood veil but cannot break it; that veil is built from eight Gu Immortals’ immortal aperture origin cores and site arrangements, so Pi Shui Han alone cannot force through. The surroundings around the ruin bat become glacier, and Fang Yuan judges that even all eight of his strength path giant hands would not stop the move head-on.",
+      "chapters": [
+        790
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tai_qiu",
+        "char_pi_shui_han",
+        "sys_killer_moves",
+        "sys_gu_worms",
+        "char_dong_fang_chang_fan",
+        "sys_gu_immortal",
+        "char_fang_yuan",
+        "move_myriad_self_giant_hand"
+      ]
+    },
+    {
+      "text": "Flood Glacier called Pi Shui Han’s signature move during an Iron Eagle blessed land fight.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "signature-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_iron_eagle_blessed_land"
+      ]
+    },
+    {
+      "text": "When Pi Shui Han later waves a hand and tides freeze into glaciers against Hei Tie Sheng, a Hei tribe rank six Gu Immortal names the attack as Pi Shui Han’s signature killer move Flood Glacier. Black water covers the white glacier and breaks it apart in a few breaths, and Pi Shui Han spits blood and falls.",
+      "chapters": [
+        1109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "signature-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tie_sheng",
+        "fac_hei_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/flood-glacier.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/flood-glacier/",
+      "chapters": [
+        790,
+        1109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Pi Shui Han",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

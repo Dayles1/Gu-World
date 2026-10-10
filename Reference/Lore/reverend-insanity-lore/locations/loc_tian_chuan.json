@@ -1,0 +1,252 @@
+{
+  "id": "loc_tian_chuan",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tian Chuan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains region that holds a heroes assembly during the struggle toward Imperial Court.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 489,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    489,
+    496,
+    501,
+    502,
+    520,
+    545
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "fac_cheng_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_fei_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 2
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 2
+    },
+    {
+      "target": "loc_warm_pond_valley",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_song_tribe_alliance_army",
+      "count": 1
+    },
+    {
+      "target": "loc_mirror_lake",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Ma tribe annihilates Fei tribe, Ma Ying Jie tells Ma higher-ups that the win will help their progress in Tian Chuan’s heroes assembly. He says that if they can subjugate Cheng tribe, Ma tribe will have a strong lead. Speakers also name Yu Tian, Meng Qiu, and Cao Fu as other seats that need watching, and treat winning a heroes assembly as the first step of the great battle of Northern Plains.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "fac_fei_tribe",
+        "char_ma_ying_jie",
+        "loc_heroes_assembly",
+        "fac_cheng_tribe",
+        "loc_yu_tian",
+        "loc_cao_fu_region"
+      ]
+    },
+    {
+      "text": "Fang Yuan hears that Ma tribe has completely absorbed Fei tribe and become Tian Chuan heroes assembly’s main character.",
+      "chapters": [
+        496
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "assembly-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Tian Chuan, Meng Qiu, Cao Fu, and every other region of northern plains are already engaging in battle, while Hei tribe still holds back.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "regional-warfare",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "fac_hei_tribe"
+      ]
+    },
+    {
+      "text": "Zhao tribe leader considers traveling to Tian Chuan to side with Ma tribe, then hesitates because the distance is long and dangerous.",
+      "chapters": [
+        502
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhao-tribe-interest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zhao_tribe"
+      ]
+    },
+    {
+      "text": "At Tian Chuan heroes assembly, Ma tribe suppresses Cheng tribe to become the alliance leader. After the poison vow, Ma tribe’s military force rises to six hundred thousand. Ma tribe then ventures west, going southwest from Tian Chuan, training troops on beast groups and stubborn forces along the way.",
+      "chapters": [
+        520
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-leadership",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As the ten-year blizzard draws near, warm pond valley sits in Tian Chuan.",
+      "chapters": [
+        545
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "valley-within-the-region",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_warm_pond_valley"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/tian-chuan/",
+      "chapters": [
+        489,
+        496,
+        501,
+        502,
+        520,
+        545
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "region",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "id": "loc_xiao_yue_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Yue Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mountain whose territory the caravan enters on a stretch of uninhabited mountains and valleys.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 245,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    245,
+    246
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_fang_zhuan_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xue_lei_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_jia_family",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Xiao Yue mountain territory is uninhabited mountains and valleys. Gu worms and beasts roam free, and not even a hamlet exists there.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "After four more villages past Fang Zhuan Mountain, the caravan camps near a cliff as it draws close to Xiao Yue mountain. Jia clan’s leader orders full attention from that night onward: Gu worms and beasts roam free there, and not even a hamlet exists. This is the most dangerous segment of the caravan’s route. Once they pass it, they reach Xue Lei mountain, then a few more clan villages, then Shang Liang mountain’s Shang Clan City.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "grey-wolf-night",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fang_zhuan_mountain",
+        "fac_jia_family",
+        "loc_xue_lei_mountain",
+        "loc_shang_liang_mountain",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "Fang Yuan says some people claim the entire southern border wolves live here, and that during a full moon the packs gaze at the round moon while howls can make the whole mountain tremble and shake. On the first night a Grey Wolf King howls, grey wolves answer, and a grey wolf pack assaults the camp. In a few minutes the first line of defense breaks and wolves enter the camp; the assault lasts fifteen minutes before the pack retreats. Losses are the greatest the caravan has suffered since its establishment: three Gu Masters die in battle, over a dozen are injured, countless servants die, and most goods are damaged.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "grey-wolf-night",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "A few days later grey wolf packs strike again at larger scale, but precautions keep losses lower than the first night. Three days after that, lighting wolf packs attack with three frenzy lightning wolves and nine bold lightning wolves; fifteen Gu Masters die, and a wounded frenzy lightning wolf escapes with the rest. Gu Masters who chase stop short of deep Xiao Yue mountain. That evening the leaders decide to leave the mountain as quickly as possible, yet for the next fifteen days grey wolves, lightning wolves, snow wolves, two-headed wolves, and blood fang wolves keep striking until the caravan finally exits Xiao Yue mountain.",
+      "chapters": [
+        246
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "escalating-wolf-attacks",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/xiao-yue-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/xiao-yue-mountain/",
+      "chapters": [
+        245,
+        246
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

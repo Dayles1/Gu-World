@@ -1,0 +1,175 @@
+{
+  "id": "char_immortal_monarch_gu_ying",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Immortal Monarch Gu Ying",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Immortal Monarch Gu Ying is a former Heavenly Court shadow path Gu Immortal whose inheritance resonates in Star Constellation's derivation formation.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2284,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_final_war"
+  },
+  "chapters_cited": [
+    2284
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_shadow",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2284,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_heavenly_court",
+      "count": 3
+    },
+    {
+      "target": "path_shadow",
+      "count": 3
+    },
+    {
+      "target": "gu_shadow_puppet_gu",
+      "count": 2
+    },
+    {
+      "target": "char_star_constellation_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_sun_yuan_hua",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Star Constellation Immortal Venerable explains that after Sun Yuan Hua entered the derivation formation, his comprehension of human path resonated with the inheritance of Heavenly Court’s former shadow path Gu Immortal Immortal Monarch Gu Ying, and he obtained the Immortal Gu recipe of shadow puppet Gu.",
+      "chapters": [
+        2284
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_star_constellation_immortal_venerable",
+        "char_sun_yuan_hua",
+        "fac_heavenly_court",
+        "sys_gu_immortal",
+        "sys_gu_recipe",
+        "gu_shadow_puppet_gu"
+      ]
+    },
+    {
+      "text": "Gu Ying appeared after Star Constellation Immortal Venerable’s era. After inspecting historical records, Star Constellation Immortal Venerable retains a deep impression of him. In his inheritance he states that although shadow path is only a small branch of dark path now, it has more potential. Shadow path is also part of light path, because there is no shadow without light, and if it developed it could fuse light path and dark path into a larger, more powerful path.",
+      "chapters": [
+        2284
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-and-shadow-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_shadow"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/immortal-monarch-gu-ying/",
+      "chapters": [
+        2284
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Shadow path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Heavenly Court as of ch. 2284",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_shadow"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": null,
+    "region": null,
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,138 @@
+{
+  "id": "res_dragonman_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dragonman soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A dragonman soul is a soul matched to a dragonman body, distinct from an ordinary human soul.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1804,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1804,
+    1830
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan’s dragonman clone begins with a split soul that has the appearance of his sovereign immortal body and a deep human soul foundation. After his refinement, the soul takes the dragonman’s form, with dragon tail, horns, scales, and vertical dragon pupils, while its soul path dao marks fall to single digits and its foundation drops to a few dozen man soul.",
+      "chapters": [
+        1804
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "matching-body-and-soul",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Split souls start as human souls. Entering a dragonman body by human soul possession alone does not make a complete dragonman. After painstaking refinement, Fang Yuan refines the dragonman body with a matching dragonman soul so the clone can be considered a complete dragonman.",
+      "chapters": [
+        1804
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "matching-body-and-soul",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Even though that soul has been turned into a dragonman soul and has not undergone soul cultivation, its foundation remains much deeper than ordinary people’s. Soul foundation directly affects enslavement path, which aids Wu Shuai’s ant manipulation in the dream realm.",
+      "chapters": [
+        1830
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soul-foundation-edge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_shuai"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/dragonman-soul/",
+      "chapters": [
+        1804,
+        1830
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Soul Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Dragonmen",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

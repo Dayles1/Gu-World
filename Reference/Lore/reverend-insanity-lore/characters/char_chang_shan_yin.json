@@ -1,0 +1,711 @@
+{
+  "id": "char_chang_shan_yin",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chang Shan Yin",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chang shan yin",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чан Шань Инь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chang Shan Yin is the name Fang Yuan gives when he reaches northern plains poison grassland and saves Ge Yao from poison beard wolves.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 426,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    426,
+    430,
+    431,
+    432,
+    434,
+    445
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 430,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_wolf_strength_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 431,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_wolf_sprint_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 436,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "took_part_in",
+      "target": "evt_fight_chang_shan_yin_against_ha_tu_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 430,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chang_tribe",
+      "count": 4
+    },
+    {
+      "target": "evt_fight_chang_shan_yin_against_ha_tu_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_wolf_sprint_gu",
+      "count": 3
+    },
+    {
+      "target": "gu_wolf_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 2
+    },
+    {
+      "target": "char_ha_tu_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_battle_bone_wheel_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_snow_wash_gu",
+      "count": 2
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_northern_plains_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_enslavement_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "house_white_bone_chariot",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "sys_soul_seizure",
+      "count": 1
+    },
+    {
+      "target": "gu_human_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_old_removal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 1
+    },
+    {
+      "target": "char_yang_po_ying",
+      "count": 1
+    },
+    {
+      "target": "char_chang_sheng_dun",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_eagle_wings_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jun_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "char_man_tu",
+      "count": 1
+    },
+    {
+      "target": "gu_dark_toss_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_chase_smoke_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_man_duo",
+      "count": 1
+    },
+    {
+      "target": "char_man_hao",
+      "count": 1
+    },
+    {
+      "target": "sys_man_soul",
+      "count": 1
+    },
+    {
+      "target": "char_ge_xiang",
+      "count": 1
+    },
+    {
+      "target": "char_man_hong",
+      "count": 1
+    },
+    {
+      "target": "gu_wolf_care_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_brave_fight_gu",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "gu_autumn_voice_grass",
+      "count": 1
+    },
+    {
+      "target": "gu_medicine_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_fen_meng",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "char_yan_tian_ji",
+      "count": 1
+    },
+    {
+      "target": "gu_sight_blow_gu",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_yan_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_yan_cui_er",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_bei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 1
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_tu",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_bao_ya",
+      "count": 1
+    },
+    {
+      "target": "char_chai_zhang",
+      "count": 1
+    },
+    {
+      "target": "char_zhong_fei_you",
+      "count": 1
+    },
+    {
+      "target": "fac_chai_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zhong_tribe",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_explosion_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "char_e_xuan_ming",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_wan_shan",
+      "count": 1
+    },
+    {
+      "target": "char_sun_shi_han",
+      "count": 1
+    },
+    {
+      "target": "char_wan_xin",
+      "count": 1
+    },
+    {
+      "target": "char_pan_ping",
+      "count": 1
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 1
+    },
+    {
+      "target": "char_bian_si_xuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_xiu_yi",
+      "count": 1
+    },
+    {
+      "target": "gu_water_image_gu",
+      "count": 1
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "move_seven_star_light",
+      "count": 1
+    },
+    {
+      "target": "sys_battle_merits",
+      "count": 1
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_chang_biao",
+      "count": 1
+    },
+    {
+      "target": "char_chang_ji_you",
+      "count": 1
+    },
+    {
+      "target": "inh_harmony_immortal_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_ni_xue_tong",
+      "count": 1
+    },
+    {
+      "target": "path_enslavement",
+      "count": 1
+    },
+    {
+      "target": "gu_liu_wen_wus_gu_worm",
+      "count": 1
+    },
+    {
+      "target": "gu_man_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ouyang_bi_sang",
+      "count": 1
+    },
+    {
+      "target": "move_asura_transformation",
+      "count": 1
+    },
+    {
+      "target": "move_three_head_six_arms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ge Yao finds the name familiar and asks whether he is of Chang tribe. Fang Yuan claims northern plains origin while she hears an outsider accent.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_yao",
+        "fac_chang_tribe",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "He has a northern man’s stiff nose and rough cheeks. Grey hair of old age grows in that style. Chest hair extends from his throat to his crotch. His skin has the pale solidity of old skin.",
+      "chapters": [
+        432
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When he was young, he was one of the most handsome teenagers in Chang tribe. His five features are proper. His nose is sharp. His brown eyes are deep. His lips are thick. His sideburns are already turning white.",
+      "chapters": [
+        434
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is a middle-aged man.",
+      "chapters": [
+        445
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Talk Ge Yao overheard as a child fills in why this ground matters. Adults said Chang tribe had an amazing person, the Wolf King, an enslavement path Gu Master who could alter his battle formations as he wished and was famed as a filial righteous figure. When his mother was poisoned, only snow wash Gu inside spiraea could cure her, so he ignored opposition and went alone. Talk says Wolf King’s enemy Ha Tu Gu planned the scheme; Wolf King was not to be trifled with, killing all of the bandits with Ha Tu Gu and eliminating a huge pest for the grassland, then that Wolf King Chang Shan Yin lost his life on that field.",
+      "chapters": [
+        430
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-king-legend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "gu_snow_wash_gu",
+        "char_ha_tu_gu"
+      ]
+    },
+    {
+      "text": "A white bone wheel as tall as two men rolls through purple fog toward Fang Yuan and Ge Yao, bone spikes on its rim and blood-red flame in a skull at the spoke. Fang Yuan names it Ha Tu Gu’s rank five Battle Bone Wheel, gone wild and feeding on bones after its master died. Golden dragon Gu shatters on contact; her spiral water arrows and water armor keep them alive while they kite for hours until the cracked wheel falls and he refines it. The skeletons and overgrown trenches around them already mark a fight from at least twenty years earlier.",
+      "chapters": [
+        430
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-king-legend",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_battle_bone_wheel_gu"
+      ]
+    },
+    {
+      "text": "The battlefield dates from about twenty years earlier. Chang Shan Yin was rank four peak stage; Ha Tu Gu was rank five initial stage with a large band. Childhood friends who loved the same woman, they became mortal enemies after she chose Chang Shan Yin and Ha Tu Gu poisoned his mother. Chang Shan Yin ambushed with wolf packs, then fought Ha Tu Gu bare-handed when both were spent. Ha Tu Gu recovered primeval essence first and cast a poisonous bone spear; Chang Shan Yin forced the spear into Ha Tu Gu’s eyes and killed him, but the poison had already spread. He activated wolf fetus burial Gu, drilled underground, and slept.",
+      "chapters": [
+        431
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "buried-wolf-gu",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan finds the buried wolf Gu, cuts him free while he is still unconscious and green-skinned with the spear fragment in him, and pinches his neck. He dies without waking. Eight enslavement path rank four Gu sealed in tortoise breath Gu are taken from him. Grassland legend had already spread his tale; Fang Yuan’s intervention cuts short the future in which Ma Hong Yun would later pull him free, and with Ma Hong Yun’s aid he would become a rank seven Gu Immortal receiving the title Sky Wolf General, before dying against Central Continent.",
+      "chapters": [
+        431
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "buried-wolf-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_hong_yun",
+        "sys_gu_immortal",
+        "reg_central_continent"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/chang-shan-yin.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chang-shan-yin/",
+      "chapters": [
+        426,
+        430,
+        431,
+        432,
+        434,
+        445
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 431",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Chang Tribe as of ch. 430",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 431,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_wolf_sprint_gu",
+      "role": "unspecified",
+      "recorded_chapter": 436,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_wolf_strength_gu",
+      "role": "user",
+      "recorded_chapter": 431,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "id": "char_chen_xin",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chen Xin",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chen xin",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чэнь Синь",
+    "ru_status": "transliteration",
+    "aliases": [
+      "lord Chen Xin"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chen Xin is a young Chen clan Gu Master on a merchant caravan near Zi You mountain, rank one, ordered to feed winged snakes while Fang Yuan and Bai Ning Bing join as laborers.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 234,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    234,
+    237,
+    247,
+    248,
+    251,
+    252,
+    253,
+    257
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_chen_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 234,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_bury_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 248,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_chen_clan",
+      "count": 4
+    },
+    {
+      "target": "gu_bury_gu",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 2
+    },
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 2
+    },
+    {
+      "target": "char_zhang_zhu",
+      "count": 2
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_ou_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Near Zi You mountain, a Chen Gu Master who is a caravan vice leader grabs Chen Xin out of a daze and sends him to feed the winged snakes, saying that snake of his has already swallowed three servants these few days. Chen Xin answers Yes clan elder, then Yes Lord vice leader after a chiding on address, and runs away swiftly.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_zi_you_mountain",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "The vice leader later tells the village head to have Fang Yuan and Bai Ning Bing report to Chen Xin. Chen Xin sees the two and does not think of Bai clan’s arrest warrant. He loses interest at once, especially disgusted by Fang Yuan’s appearance. He is only rank one. He observes them carelessly, feels no Gu Master aura, and has an old attendant arrange their jobs.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "Chen servants later scheme against those newcomers and shout that Brother Qiang’s sister is lord Chen Xin’s concubine.",
+      "chapters": [
+        237
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is a young male Gu Master. He raises his head when the vice leader grabs him.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "No chapter describes his face or build.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During a white feather flying elephant stampede, Zhang Zhu sees a Gu Master running over with three elephants chasing him, shouting Save me. Zhang Zhu can tell this is Chen clan’s young Gu Master, called Chen Xin. Zhang Zhu is worried about Shang Xin Ci and does not stop. Chen Xin sees Zhang Zhu and chases him like a drowning person grabbing a log.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stampede-and-bury-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Zhang Zhu is eventually dragged into the mess. At a cliff dead end Chen Xin shouts, and before he can react a flying elephant crashes and makes a huge hole in the cliff behind him, tusks stabbing into the mountain rocks. After Fang Yuan kills Zhang Zhu and leaves, Chen Xin digs out from under a pile of rocks, breathing raggedly, cold sweat on his spine. He credits bury Gu. That Gu lets a Gu Master dig into the ground and hide. Once used, the Gu Master can only be buried at one spot and cannot move, and sustaining it consumes a lot of primeval essence. He had been chased until the final moment before he could use it. Seeing Zhang Zhu’s corpse turned to meat paste, he gulps and escapes frantically, having seen a Gu Master assassinate Zhang Zhu.",
+      "chapters": [
+        248
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stampede-and-bury-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_bury_gu"
+      ]
+    },
+    {
+      "text": "When camp talk says Fang Yuan shot a white spear, Chen Xin’s heart jumps. He had witnessed Zhang Zhu’s death and the image of Fang Yuan’s spiral bone spear is ingrained, so the term white spear links both scenes for him.",
+      "chapters": [
+        251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "report-to-chen-shuang-jin",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He later watches a vice-leader tent, then approaches Chen clan’s caravan leader Chen Shuang Jin as Uncle with an important matter. In their own tent he reminds Chen Shuang Jin that he reported Zhang Zhu’s murder. Chen Shuang Jin already knows Zhang Zhu was killed with bone spears, and that Hei Tu and Bai Yun also used bone spears that day. Chen Xin wants the crime made known and the two killed early. Chen Shuang Jin refuses: witness talk without material evidence, and even evidence is useless without strength, after the pair killed Ou clan’s father and son in public. Chen Xin fears they will find out that he knows. Chen Shuang Jin tells him he is nothing to worry about, and that they may already know and have not moved because he is not a threat. Chen Xin stays dazed, fists clenched, and cannot speak for a long while.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "report-to-chen-shuang-jin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_tu",
+        "char_bai_yun",
+        "fac_ou_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan later looks at Chen Xin as the problem, the young Gu Master who fled with Zhang Zhu. Fang Yuan had thought the elephants had smashed him into meat paste, then finds him alive. Unusual Gu worms, even at low cultivation, are not to be looked down on. Fang Yuan had lost Earth Hearing Ear Grass and overlooked him, and does not know how much Chen Xin found out.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "report-to-chen-shuang-jin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "gu_earth_communication_ear_grass"
+      ]
+    },
+    {
+      "text": "Fang Yuan plans that Chen Xin must die, and that others would die with him, because disposing of Chen Xin alone could make the situation more troublesome.",
+      "chapters": [
+        253
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "died-in-battle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the later zombie fighting, narration states that Chen Xin and Chen Shuang Jin, who knew about Zhang Zhu’s murder, had already died in battle.",
+      "chapters": [
+        257
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "died-in-battle",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The fan translation writes Chen Xin, with lord Chen Xin from Chen servants and Uncle from Chen Xin to Chen Shuang Jin. Zhang Zhu names him Chen clan’s young Gu Master, called Chen Xin.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chen_shuang_jin",
+        "char_zhang_zhu",
+        "fac_chen_clan"
+      ]
+    },
+    {
+      "text": "No Chinese characters for the name appear in the English chapter files used here.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "translation-notes",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chen-xin/",
+      "chapters": [
+        234,
+        237,
+        247,
+        248,
+        251,
+        252,
+        253,
+        257
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "I as of ch. 234",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Chen Clan as of ch. 234",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 1,
+        "as_of_chapter": 234,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_bury_gu",
+      "role": "user",
+      "recorded_chapter": 248,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

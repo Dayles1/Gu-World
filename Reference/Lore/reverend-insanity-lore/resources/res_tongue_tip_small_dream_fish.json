@@ -1,0 +1,132 @@
+{
+  "id": "res_tongue_tip_small_dream_fish",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tongue tip small dream fish",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tongue tip small dream fish are bright red, tongue-shaped monstrous fish kept in dream river water as a dream path Gu material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2097,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2097
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_dream",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_dream",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "res_dream_river_water",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the southeast lake of Meng Zhen immortal aperture, whose water is dream river water, there is a type of monstrous fish that looks like a tongue. The fish is bright red and moves agilely; it is called tongue tip small dream fish.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fish-in-the-lake",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Tongue tip small dream fish is listed with earth dream fetus hair, nine tune dream flower, dream river water, and dream sand as dream path Gu materials Fang Yuan obtained in that period. Dream path Gu materials were still rare then; after nearly ransacking Southern Border’s underground, he collected only this much. Moved into Meng Zhen immortal aperture, away from surrounding earth path dao marks, they can grow under dream path dao marks and were expected to yield a stream of immortal materials.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dream-path-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "path_dream",
+        "reg_southern_border"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/tongue-tip-small-dream-fish.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/tongue-tip-small-dream-fish/",
+      "chapters": [
+        2097
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Dream Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Dream river water lake in Meng Zhen immortal aperture",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

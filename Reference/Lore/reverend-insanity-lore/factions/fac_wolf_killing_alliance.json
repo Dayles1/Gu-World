@@ -1,0 +1,192 @@
+{
+  "id": "fac_wolf_killing_alliance",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wolf Killing Alliance",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A secret organisation that Pan Ping and Chang Biao form to deal with Fang Yuan during the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 576,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    576,
+    577,
+    580
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_chang_biao",
+      "count": 2
+    },
+    {
+      "target": "char_pan_ping",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_xing_jiu_peak",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Pan Ping presses Chang Biao to bring Ma Ying Jie in after Fang Yuan snatches Pan Ping’s inheritance on Xing Jiu peak. Both are rank four peak stage from Eighty-Eight True Yang Building gains, and Chang Biao also carries the grudge of Chang Shan Yin taking his wife, so they judge their chance against Fang Yuan as low without more help.",
+      "chapters": [
+        576
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "secret-organisation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_pan_ping",
+        "char_chang_biao",
+        "char_ma_ying_jie",
+        "char_fang_yuan",
+        "loc_xing_jiu_peak",
+        "house_eighty_eight_true_yang_building",
+        "char_chang_shan_yin"
+      ]
+    },
+    {
+      "text": "Chang Biao refuses reckless recruitment. He argues that Ma Ying Jie is pouring effort into revitalizing the dying Ma Tribe and might mend ties with the Wolf King rather than oppose him, and that secrecy is their biggest advantage. Pan Ping presses for Ma Ying Jie’s horse group against Fang Yuan’s wolves and strength path, then proposes treating Wolf King as Ma Ying Jie’s biggest obstacle to restoring the tribe. Chang Biao takes that premise and starts planning how Ma Ying Jie might willingly join.",
+      "chapters": [
+        576
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "secret-organisation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe"
+      ]
+    },
+    {
+      "text": "Pan Ping pushes to invite other round-clearers.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "more-recruits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After each tests the killer move alone, Pan Ping visits Chang Biao and suggests inviting the three other people who cleared the round with them, then recruiting them into the Wolf Killing Alliance once relations improve. Chang Biao answers vaguely that he already has plans that will take effect in the next few days.",
+      "chapters": [
+        577
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "more-recruits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Pan Ping dies first while cursing Fang Yuan as Wolf King. Several days later Chang Biao dies exhausted in the same struggle, still thinking the Wolf Killing Alliance was only just being set up and that the scheme to force Ma Ying Jie to join had only just started.",
+      "chapters": [
+        580
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "founders-deaths",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/wolf-killing-alliance/",
+      "chapters": [
+        576,
+        577,
+        580
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "alliance",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "id": "res_bone_dream_sand",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bone dream sand",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Bone dream sand farm"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bone dream sand is a farm of dream path desolate bones that nourishes soil into dream sand with bone marrow.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2097,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2097
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_dream",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_dream",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_meng_qiu_zhen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "res_dream_sand",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the north-most part of Meng Zhen immortal aperture sits a field of desolate bones. Hundreds of huge bones are buried in the ground, with a portion still exposed. Those bones are dream path Gu materials taken from the corpses of a few dream path ancient desolate beasts. Meng Qiu Zhen places them there and sets up a Gu formation, creating this bone dream sand farm.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-bone-farm",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_qiu_zhen",
+        "sys_gu_formation"
+      ]
+    },
+    {
+      "text": "The sand farm is nourished with bone marrow and gradually turns the soil into dream sand. Dream sand is listed with earth dream fetus hair, nine tune dream flower, dream river water, and tongue tip small dream fish among the dream path Gu materials Fang Yuan obtains in that period. Dream path Gu materials are still rare then; after nearly ransacking Southern Border’s underground, he collects only this much.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-bone-farm",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_dream_sand",
+        "char_fang_yuan",
+        "path_dream",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Moved into Meng Zhen immortal aperture, away from surrounding earth path dao marks, these materials can grow under dream path dao marks and are expected to yield a stream of immortal materials. That aperture is the number one dream path Gu material production ground in the world at that time, though it can only produce rank six dream path immortal materials in pitifully small quantity.",
+      "chapters": [
+        2097
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "desolate-bone-farm",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/bone-dream-sand/",
+      "chapters": [
+        2097
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Dream Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Dream path ancient desolate beast corpses",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

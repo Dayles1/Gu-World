@@ -1,0 +1,238 @@
+{
+  "id": "loc_leng_zhan_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Leng Zhan Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Leng Chan mountain"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Zuo clan's mountain neighboring San Cha mountain, across from Che clan's Fei Lai mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 323,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    323,
+    389
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "char_che_qiao_xiang",
+      "count": 1
+    },
+    {
+      "target": "char_che_you_yin",
+      "count": 1
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_chan_yu",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_wu_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_che_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_zuo_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_fei_lai_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On the mountain waist of San Cha Mountain, an ending battle leaves three Zuo Clan Gu Masters still standing against four from Che Clan. Elder Zuo Wu Sheng stands wounded before Zuo Chan Yu, Zuo clan leader’s eldest daughter, A grade aptitude and rank three middle stage before age twenty, called the future hope of Zuo clan. Zuo Wu Sheng and Che You Yin are rivals for tens of years and about equal strength; both are injured rank three fighters when Kong Ri Tian appears and captures Zuo Chan Yu with Che Qiao Xiang, then the three kings inheritance opens on the peaks.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zuo-clan-fight-at-san-cha",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "fac_zuo_clan",
+        "fac_gu_masters",
+        "fac_che_clan",
+        "char_zuo_wu_sheng",
+        "char_zuo_chan_yu",
+        "char_che_you_yin",
+        "char_kong_ri_tian",
+        "char_che_qiao_xiang"
+      ]
+    },
+    {
+      "text": "Zuo clan has six hundred years of history. Che and Zuo are mortal enemies with centuries of hatred, and for the past hundred years both have expanded and fought to occupy San Cha mountain.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zuo-clan-fight-at-san-cha",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "zuo-clan-fight-at-san-cha",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "zuo-clan-fight-at-san-cha",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Both wordings keep Che clan’s Fei Lai mountain as the other neighbor.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "zuo-clan-fight-at-san-cha",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fei_lai_mountain"
+      ]
+    },
+    {
+      "text": "Later narration places the whole San Cha mountain between Zuo clan’s Leng Chan mountain and Che clan’s Fei Lai mountain. Those two clans had been expanding and competing at San Cha with intent to occupy it before the three kings inheritance ruined that plan. The same passage frames Southern Border as a land of a hundred thousand famous mountains and countless unnamed hills, and treats Che and Zuo as nearby forces who can finally commit most of their troops once the inheritance turns strange.",
+      "chapters": [
+        389
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "leng-chan-wording",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Zuo clan fight at San Cha",
+      "positions": [
+        {
+          "position": "Zuo clan's neighboring mountain is named Leng Zhan mountain.",
+          "support": "Chapter 323.",
+          "chapters": [
+            323
+          ]
+        },
+        {
+          "position": "Zuo clan's neighboring mountain is named Leng Chan mountain.",
+          "support": "Chapter 389.",
+          "chapters": [
+            389
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/leng-zhan-mountain/",
+      "chapters": [
+        323,
+        389
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

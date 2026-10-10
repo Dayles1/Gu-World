@@ -1,0 +1,375 @@
+{
+  "id": "char_wei_shen_jing",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wei Shen Jing",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wei shen jing",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Вэй Шэнь Цзин",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Counterfeit Master"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wei Shen Jing is a demonic Gu Master skilled at creating counterfeit items and is called the Counterfeit Master.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 276,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    276,
+    283,
+    285,
+    330,
+    331,
+    1072,
+    2123,
+    2132
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wu_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 283,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_wu_clan",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_empress_wu_ji",
+      "count": 2
+    },
+    {
+      "target": "char_li_ran",
+      "count": 2
+    },
+    {
+      "target": "char_wei_de_xin",
+      "count": 2
+    },
+    {
+      "target": "loc_sun_moon_sinkhole",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "sys_stellar_stone",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "fac_wei_clan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_pu_lao",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_yan",
+      "count": 1
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 1
+    },
+    {
+      "target": "char_bai_zu_wei",
+      "count": 1
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_lan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "char_mountain_moving_old_monster",
+      "count": 1
+    },
+    {
+      "target": "char_wu_qiao",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Shang Clan City, scrap grade gambling rocks lose market value after he appears. He once sold large amounts of counterfeit scrap grade rocks, and almost all large clans posted arrest warrants for him across the southern border.",
+      "chapters": [
+        276
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "He is a subordinate of Empress Wu Ji. Li Ran communicates with Wu clan and asks him to create a stellar stone like the scrap grade fossil used as counter support in a gambling den, a fake no one would be able to discern.",
+      "chapters": [
+        283
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_empress_wu_ji",
+        "char_li_ran"
+      ]
+    },
+    {
+      "text": "When Fang Yuan later confronts Li Ran over that stone, Li Ran thinks it came from Wei Shen Jing and had no flaws.",
+      "chapters": [
+        285
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan tells Wei De Xin he knows she means to contact her younger brother Wei Shen Jing for revenge, and later warns her that Wei Shen Jing has already been recruited by Wu clan and is being monitored.",
+      "chapters": [
+        330
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wei-de-xin-and-wu-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_wei_de_xin",
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "After Wei De Xin gives birth and stays visible at Shang Xin Ci’s side, he sends a letter urging her to serve Wu clan with him. Wei De Xin thinks of him as a hidden elder in Wu clan who is ostracized yet safe.",
+      "chapters": [
+        1072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wu-clan-letter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Xiao Lan names Lord Wei Shen Jing the Counterfeit Master whose ability at creating counterfeit goods is well known in Southern Border, and Shang Xin Ci recalls meeting him in Sun Moon Sinkhole while chasing Kong Ri Tian. Wei De Xin reports that Wu clan is promoting external elders toward Gu Immortal seats and that her brother faces that test and cannot come in person.",
+      "chapters": [
+        2123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shang-xin-ci-crisis",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiao_lan",
+        "char_bai_zu_wei",
+        "reg_southern_border",
+        "loc_sun_moon_sinkhole",
+        "char_kong_ri_tian",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "At Wu clan he stands among roughly fifty Gu Masters who have emerged from competition and obtained the chance to become immortal, gathered before Wu Yong with Mountain Moving Old Monster and Wu Qiao present.",
+      "chapters": [
+        2132
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wu-clan-hall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_wu_yong",
+        "char_mountain_moving_old_monster",
+        "char_wu_qiao"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wei-shen-jing/",
+      "chapters": [
+        276,
+        283,
+        285,
+        330,
+        331,
+        1072,
+        2123,
+        2132
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wu Clan as of ch. 283",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 276",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "demonic path as of ch. 276",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

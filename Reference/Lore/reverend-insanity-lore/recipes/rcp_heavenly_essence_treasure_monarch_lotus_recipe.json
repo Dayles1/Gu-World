@@ -1,0 +1,205 @@
+{
+  "id": "rcp_heavenly_essence_treasure_monarch_lotus_recipe",
+  "entity_type": "recipe",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly Essence Treasure Monarch Lotus recipe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The refinement recipe for rank four Heavenly Essence Treasure Monarch Lotus, kept unrefined by Ju clan and auctioned unappraised in Shang Clan City after their mountain's hurricane disaster.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 308,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    308,
+    309
+  ],
+  "relations": [
+    {
+      "type": "produces",
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refinement_materials",
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 308,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "fac_ju_clan",
+      "role": "previous holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 308,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_wei_yang",
+      "role": "buyer",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 308,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 309,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 2
+    },
+    {
+      "target": "fac_ju_clan",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The auctioneer calls the final lot the greatest treasure of the auction and says it has not been appraised, because appraisal itself risks a leak and a recipe known to everyone is worth less than a blank sheet of paper. She names it a recipe for Heavenly Essence Treasure Monarch Lotus, and the room recites the series back at her: rank three Heavenly Essence Treasure Lotus, rank four Heavenly Essence Treasure Monarch Lotus, rank five Heavenly Essence Treasure King Lotus, all tied to Immortal Venerable Genesis Lotus. Fang Yuan asks aloud whether the recipe needs Heavenly Essence Treasure Lotus as its material, and the auctioneer admits it does. Buyers without that lotus lose interest, but the room recognizes the recipe as Ju clan’s kept treasure and bidding still climbs from five hundred thousand to six hundred and seventy thousand primeval stones, where Wei Yang places the final bid.",
+      "chapters": [
+        308
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_heavenly_essence_treasure_lotus",
+        "char_fang_yuan",
+        "fac_ju_clan",
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "Wei Yang hands Fang Yuan a rank four heart engraved Gu carrying the recipe after three cups of wine, once the auction crowd has dispersed. Fang Yuan has Wei Yang activate it straight into his own mind rather than refine a second copy, and the recipe imprints itself whole: the main Gu worm for the fusion, every supplementary material, and every step and caution. He judges the odds of the unappraised recipe being fake as small, reasoning Shang clan would not risk its own auction house’s name on a forgery, though he still means to check it against other Gu before he trusts it fully.",
+      "chapters": [
+        309
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "delivered-as-a-private-gift",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "fac_shang_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/recipes/heavenly-essence-treasure-monarch-lotus-recipe/",
+      "chapters": [
+        308,
+        309
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Produces": {
+      "text": "Heavenly Essence Treasure Lotus",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Ranks": {
+      "text": "IV as of ch. 308",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refinement materials": {
+      "text": "Heavenly Essence Treasure Lotus",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Holders": {
+      "text": "Ju Clan (previous holder) Wei Yang (buyer) Fang Yuan (holder)",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Source": {
+      "text": "Ju clan's collection, auctioned unappraised as the closing lot of Shang clan's auction",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

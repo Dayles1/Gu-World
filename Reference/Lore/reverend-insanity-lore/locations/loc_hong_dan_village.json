@@ -1,0 +1,162 @@
+{
+  "id": "loc_hong_dan_village",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hong Dan Village",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An eggman village inside King Bao Inheritance that Fang Yuan meets after entering from San Cha mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 376,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    376
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "inh_king_bao_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_exploding_egg_gu",
+      "count": 1
+    },
+    {
+      "target": "race_eggmen",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Grey-white sky and light red ground stretch toward the horizons. On the ground are pieces of volcanic rocks, hot rising steam, or grey dust cloud.",
+      "chapters": [
+        376
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The tops of volcanic rocks flip over, and tiny humans walk out. They are the size of babies, pink and tender. At the middle of their chests they have a cute and round red egg. These are eggmen, variant humans like the hairy men, and Fang Yuan knows them as the red eggmen among eggmen. The eggs on them are red. They use the large volcanic rocks to build their houses and live inside.",
+      "chapters": [
+        376
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "They cry that a devil has descended again, call companions to gather, and shout that Hong Dan village can only be protected by themselves. King Bao Inheritance’s aim in that round is to make Fang Yuan use exploding egg Gu to exterminate these red eggmen and advance. He can use only one exploding egg Gu, and he lets their assault injure him instead.",
+      "chapters": [
+        376
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_king_bao_inheritance",
+        "gu_exploding_egg_gu"
+      ]
+    },
+    {
+      "text": "Grey-white sky and light red ground stretch toward the horizons. On the ground are pieces of volcanic rocks, hot rising steam, or grey dust cloud. The eggmen use the large volcanic rocks to build their houses and live inside.",
+      "chapters": [
+        376
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/hong-dan-village.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/hong-dan-village/",
+      "chapters": [
+        376
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "village",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

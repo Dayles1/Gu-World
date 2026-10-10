@@ -1,0 +1,374 @@
+{
+  "id": "fac_mo_family",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mo Family",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Mo family branch Mo faction"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Mo family is a Gu Yue clan branch on Qing Mao Mountain, headed by elder Gu Yue Mo Chen and rival to the Chi family branch.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 21,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    6,
+    21,
+    33,
+    78,
+    82,
+    83,
+    172
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_gu_yue_mo_chen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 21,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_mo_bei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 21,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_mo_chen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 21,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_yue_mo_yan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 31,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gao_wan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 32,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_gu_yue_mo_chen",
+      "count": 5
+    },
+    {
+      "target": "char_gao_wan",
+      "count": 4
+    },
+    {
+      "target": "char_gu_yue_mo_bei",
+      "count": 4
+    },
+    {
+      "target": "char_gu_yue_mo_yan",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_chi_lian",
+      "count": 2
+    },
+    {
+      "target": "fac_chi_family",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 1
+    },
+    {
+      "target": "char_wang_er",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 1
+    },
+    {
+      "target": "gu_nine_leaf_vitality_grass",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_yao_ji",
+      "count": 1
+    },
+    {
+      "target": "fac_medicine_faction",
+      "count": 1
+    },
+    {
+      "target": "gu_afterlife_grass_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_pig_iron_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Fang Zheng shows A grade talent at the Awakening Ceremony, Gu Yue Mo Chen contests Gu Yue Chi Lian’s bid to adopt him and claims the boy should be raised under Mo Chen instead; clan head Gu Yue Bo takes Fang Zheng himself.",
+      "chapters": [
+        6
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "branch-inside-gu-yue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng",
+        "sys_a_grade",
+        "sys_awakening_ceremony",
+        "char_gu_yue_mo_chen",
+        "char_gu_yue_chi_lian",
+        "char_gu_yue_bo"
+      ]
+    },
+    {
+      "text": "The Mo branch family home is named when Mo Chen sits in that courtyard after Fang Yuan takes first place in vital Gu refinement. Mo Chen rebukes his grandson Gu Yue Mo Bei for losing heart, and frames the boy’s future duty as heading the Mo family branch and competing with the Chi family branch.",
+      "chapters": [
+        21
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "branch-inside-gu-yue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_vital_gu",
+        "char_gu_yue_mo_bei",
+        "fac_chi_family"
+      ]
+    },
+    {
+      "text": "Gu Yue Mo Chen’s Mo family is later one of the three political fields inside the Gu Yue clan, beside the clan leader faction and Gu Yue Chi Lian’s Chi family.",
+      "chapters": [
+        78
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "branch-inside-gu-yue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "After Fang Yuan beats Mo Bei, Gu Yue Mo Yan tracks him to the academy hostel. Clan rules protect dormitory students and bar outsiders from forcing entry to seize them, so she stays outside the open door, then leaves the servant Gao Wan on watch rather than crossing the threshold.",
+      "chapters": [
+        33
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "academy-hostel-standoff",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_mo_yan",
+        "char_gao_wan"
+      ]
+    },
+    {
+      "text": "At the year-end exam crowd, students name Gu Yue Mo Yan as the Mo family’s little miss among the rising Gu Masters watching the arena.",
+      "chapters": [
+        82
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "juniors-on-the-exam-stage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Observers then treat Mo Bei and Chi Cheng as the Mo faction and Chi faction future leaders, with Fang Zheng as the clan leader faction’s rising junior.",
+      "chapters": [
+        83
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "juniors-on-the-exam-stage",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_chi_cheng"
+      ]
+    },
+    {
+      "text": "During the wolf tide the Mo faction inheritor Gu Yue Mo Bei dies despite the faction’s efforts to protect him, and Mo Chen is left without a male heir under clan inheritance custom. At the banquet Mo Chen claims he kept Fang Yuan off the battlefield for Mo Yan’s sake; afterward Fang Yuan sits in the cooling pavilion while Mo Chen, across from him, presses toward a son-in-law marriage that could let a husband inherit Mo faction standing.",
+      "chapters": [
+        172
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide-losses",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/mo-family/",
+      "chapters": [
+        6,
+        21,
+        33,
+        78,
+        82,
+        83,
+        172
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Gu Yue Mo Chen",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

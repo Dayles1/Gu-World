@@ -1,0 +1,254 @@
+{
+  "id": "loc_huang_jin_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huang Jin Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A gold-rich mountain where the travel-worn caravan arrives after leaving Fei Hou mountain's region.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 241,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    241,
+    242,
+    243,
+    244,
+    245
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "fac_huang_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_jin_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_crocodile_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_golden_silkworm_gu",
+      "count": 2
+    },
+    {
+      "target": "res_jinzan_grass",
+      "count": 2
+    },
+    {
+      "target": "loc_ju_yu_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_qi_gu",
+      "count": 1
+    },
+    {
+      "target": "res_milk",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The mountain holds many gold mines, and its soil is rich in gold. In daylight the slopes often reflect a hazy golden light, surrounding the mountain in that glow.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "By the time the caravan reaches the base of Huang Jin mountain, Fang Yuan has finished refining crocodile strength Gu. The mountain holds many gold mines; its soil is rich in gold, and filtering mountain-stream sediment can yield dozens of gold granules. In daylight the slopes often reflect a hazy golden light. In this world gold is a metal mineral whose greatest use is as a material for refining Gu, not currency.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gold-mines-and-two-villages",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_crocodile_strength_gu"
+      ]
+    },
+    {
+      "text": "Two clans sit on the mountain: Huang village on the southern side and Jin village on the northern side. Like Qing Mao mountain, Huang Clan and Jin Clan are not harmonious. Both welcome the caravan, but their notice allows only one host; choosing Huang bars Jin, and the reverse, after past cases where the clans used caravans against each other. The coagglomeration of caravans splits so each group goes to one clan and stations around the villages rather than entering them.",
+      "chapters": [
+        241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gold-mines-and-two-villages",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "fac_huang_clan",
+        "fac_jin_clan"
+      ]
+    },
+    {
+      "text": "The mountain is blessed with gold everywhere, and Jin clan dress shows gold trim as the mountain’s characteristic among Southern Border clan attire.",
+      "chapters": [
+        242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gold-mines-and-two-villages",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "While bartering, Fang Yuan tells a Jin clan Gu Master that the same goods can fetch a good price on Huang Jin mountain. In prior-life memory, Jin clan later uses rank three golden silkworm Gu to eliminate Huang clan and dominate Huang Jin mountain.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "goods-pricing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "gu_golden_silkworm_gu"
+      ]
+    },
+    {
+      "text": "After the Jinzan grass buyback closes, the Jin clan leader orders Gu Masters to watch the caravan until it fully leaves Huang Jin mountain’s region and to kill anyone who tries to go secretly to Huang clan. Fang Yuan glances back at Huang Jin mountain as the group departs.",
+      "chapters": [
+        244
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "caravan-departure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_jinzan_grass",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "At Tong clan village on Ju Yu mountain, the golden lamp oil Fang Yuan bought on Huang Jin mountain proves very popular.",
+      "chapters": [
+        245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "golden-lamp-oil",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_ju_yu_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/huang-jin-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/huang-jin-mountain/",
+      "chapters": [
+        241,
+        242,
+        243,
+        244,
+        245
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

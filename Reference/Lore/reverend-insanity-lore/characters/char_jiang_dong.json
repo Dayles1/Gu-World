@@ -1,0 +1,277 @@
+{
+  "id": "char_jiang_dong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jiang Dong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "jiang dong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цзян Дун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jiang Dong is a hunting-group leader in Imperial Court blessed land who takes Ma Hong Yun out to hunt earth chief beasts near the sacred palace.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 570,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    570,
+    571,
+    572,
+    577
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 571,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_strength",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_movement_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_chang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He snorts at Ma Hong Yun over Huang Jin tribe luck inside Eighty-Eight True Yang Building. Ma Hong Yun answers that his bloodline is not thick enough to enter the building, following Zhao Lian Yun’s instruction, and the group’s bitterness eases.",
+      "chapters": [
+        570
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_hong_yun",
+        "fac_huang_jin_bloodline",
+        "house_eighty_eight_true_yang_building",
+        "char_zhao_lian_yun"
+      ]
+    },
+    {
+      "text": "The hunting group has killed earth chief beasts near the sacred palace before, but this time the beast king is an old thousand beast king with rank three battle strength from the wild Gu it holds. At the start Jiang Dong is decisive and experienced: he leads part of the group into the beasts to stall that king while the rest slaughter the herd; otherwise the group would have crumbled. Northern Plains culture has these Gu Masters cultivate strength path as well, and they fight close combat to save primeval essence.",
+      "chapters": [
+        571
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-chief-hunt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_wild_gu",
+        "reg_northern_plains",
+        "fac_gu_masters",
+        "path_strength"
+      ]
+    },
+    {
+      "text": "When the old beast king kills one of them, morale collapses. With less than twenty percent primeval essence left, Jiang Dong decides reputation is worth less than his life inside Imperial Court blessed land, spends his remaining essence on a movement Gu, and flees. The beast king chases him. Seeing rank one support Gu Master Ma Hong Yun nearby, Jiang Dong lures the chase toward him, knocks him unconscious, and tosses him as bait while laughing that the lad’s death is not in vain. The beast king ignores that bait and keeps after Jiang Dong until Fang Yuan’s announced wolf hunt overruns the field; the wolf tide tears Jiang Dong to pieces within seconds.",
+      "chapters": [
+        571
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-chief-hunt",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court_blessed_land",
+        "sys_movement_gu",
+        "sys_gu_master",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Ma Hong Yun later wakes under a dead blood forest wolf and recalls that Jiang Dong knocked him out before the beast king and wolves came.",
+      "chapters": [
+        572
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When a later Chang tribe chase forces another split-and-run, Ma Hong Yun remembers wanting only to warn Jiang Dong and nearly dying for it.",
+      "chapters": [
+        577
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chang_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/jiang-dong/",
+      "chapters": [
+        570,
+        571,
+        572,
+        577
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Strength path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_strength"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

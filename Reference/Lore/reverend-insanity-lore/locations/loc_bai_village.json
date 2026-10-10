@@ -1,0 +1,254 @@
+{
+  "id": "loc_bai_village",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Village",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Bai family village Bai Clan Village"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bai Village is a rival clan settlement on Qing Mao Mountain that Gu Yue elders name beside Xiong Village.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    14,
+    65,
+    78,
+    117,
+    121
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 2
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_bitter_shell_wine",
+      "count": 1
+    },
+    {
+      "target": "res_green_bamboo_wine",
+      "count": 1
+    },
+    {
+      "target": "res_white_grains_liquid",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_leader",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Qing Mao Mountain elders note that rival mountain clans have produced talented juniors in recent years, they put Bai Village beside Xiong Village in that worry, and they name Bai Ning Bing of the Bai clan as especially terrifying.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "loc_xiong_village",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "Behind Qing Mao Mountain a huge waterfall plummets to the earth and pounds out a deep pool. The waterfall’s flow varies with the weather. Bai Clan Village sits beside that deep pool.",
+      "chapters": [
+        14
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same seat is named as the back mountain waterfall among Qing Mao Mountain’s three mountain villages.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qing Mao Mountain holds three mountain villages. Gu Yue village sits at the mountain waist, the Xiong family village on the fore mountain, and the Bai family village at the back mountain waterfall.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "seat-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "Gu Yue Bo later frames outside work as dealing with a gradually rising Bai clan village alongside an arrogant and rude Xiong clan village, and that wording treats the settlement as a Bai clan village.",
+      "chapters": [
+        78
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "seat-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_bo",
+        "fac_bai_clan"
+      ]
+    },
+    {
+      "text": "Bai village’s white grain liquid is named with Gu Yue’s green bamboo wine and Xiong village’s bear gall wine as the three wines of Qing Mao.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "seat-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Bai village’s rise has broken the old Qing Mao balance, with Gu Yue weakened and Xiong village’s operations not running properly.",
+      "chapters": [
+        121
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mountain-balance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/bai-village.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bai-village/",
+      "chapters": [
+        1,
+        14,
+        65,
+        78,
+        117,
+        121
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "village",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,840 @@
+{
+  "id": "char_dong_fang_chang_fan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Fang Chang Fan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "dong fang chang fan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дун Фан Чан Фань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dong Fang Chang Fan is Dong Fang tribe's sole wisdom path Gu Immortal during the Imperial Court contest, a famous Northern Plains schemer nearing the end of his lifespan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 514,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    514,
+    515,
+    519,
+    528,
+    657,
+    660,
+    1007,
+    1201,
+    1202,
+    1204
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_dong_fang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 514,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_menses_blood_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 789,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_split_shadow_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 804,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_myriad_star_fireflies",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 793,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_big_to_small",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 801,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_dong_fang_wisdom_path_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 690,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_possession_true_inheritance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 789,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 4
+    },
+    {
+      "target": "inh_dong_fang_wisdom_path_inheritance",
+      "count": 3
+    },
+    {
+      "target": "gu_menses_blood_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "inh_possession_true_inheritance",
+      "count": 3
+    },
+    {
+      "target": "move_myriad_star_fireflies",
+      "count": 3
+    },
+    {
+      "target": "move_big_to_small",
+      "count": 3
+    },
+    {
+      "target": "gu_split_shadow_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 2
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 2
+    },
+    {
+      "target": "char_tan_bi_ya",
+      "count": 2
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_ni_yu_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_hei_bai",
+      "count": 2
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_blood_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_lai",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_mental_energy",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_lifespan_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_giant_sun_immortal_venerable_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_blade_demon",
+      "count": 1
+    },
+    {
+      "target": "char_liu_yi_feng",
+      "count": 1
+    },
+    {
+      "target": "gu_sole_blade_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_refine_essence_spirit_gu",
+      "count": 1
+    },
+    {
+      "target": "char_su_xian",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_guan_shen_zhao",
+      "count": 1
+    },
+    {
+      "target": "fac_chanyu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_murong_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_huang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_yin_yang_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_alliance_agreement",
+      "count": 1
+    },
+    {
+      "target": "gu_airsac_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_lotus_giant_silkworm_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_wisdom_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "gu_malicious_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "char_lu_qing_ming",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_wan_xiu",
+      "count": 1
+    },
+    {
+      "target": "res_ruin_bat_corpse",
+      "count": 1
+    },
+    {
+      "target": "char_pi_shui_han",
+      "count": 1
+    },
+    {
+      "target": "char_su_guang",
+      "count": 1
+    },
+    {
+      "target": "move_entangled_wind",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yi_kong",
+      "count": 1
+    },
+    {
+      "target": "move_flood_glacier",
+      "count": 1
+    },
+    {
+      "target": "move_thousand_disintegrations",
+      "count": 1
+    },
+    {
+      "target": "move_life_chasing_fire",
+      "count": 1
+    },
+    {
+      "target": "move_final_afterglow",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_half_moon_brutemaster",
+      "count": 1
+    },
+    {
+      "target": "char_he_ruo",
+      "count": 1
+    },
+    {
+      "target": "char_qie_shi_min",
+      "count": 1
+    },
+    {
+      "target": "gu_disintegrate_rule_path_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_small_rule_path_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_captivating_sea",
+      "count": 1
+    },
+    {
+      "target": "move_ice_dragon_lock",
+      "count": 1
+    },
+    {
+      "target": "race_minimen",
+      "count": 1
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_will",
+      "count": 1
+    },
+    {
+      "target": "loc_miniscule_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_zhou_ping",
+      "count": 1
+    },
+    {
+      "target": "char_zhuo_zhan",
+      "count": 1
+    },
+    {
+      "target": "gu_self_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_blessed_land_consolidation",
+      "count": 1
+    },
+    {
+      "target": "fac_meng_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_large_cave_toad_gu",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_jade",
+      "count": 1
+    },
+    {
+      "target": "res_hidden_dragon_beard",
+      "count": 1
+    },
+    {
+      "target": "res_moon_fangs",
+      "count": 1
+    },
+    {
+      "target": "res_profound_grey_salt",
+      "count": 1
+    },
+    {
+      "target": "res_wind_whistling_bronze",
+      "count": 1
+    },
+    {
+      "target": "fac_traveling_three_elites",
+      "count": 1
+    },
+    {
+      "target": "inh_purple_mountain_true_monarch_time_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_black_heaven_temple",
+      "count": 1
+    },
+    {
+      "target": "move_approaching_body",
+      "count": 1
+    },
+    {
+      "target": "move_defending_day_and_night",
+      "count": 1
+    },
+    {
+      "target": "char_demon_lord_long_dan",
+      "count": 1
+    },
+    {
+      "target": "char_gong_zi_mo",
+      "count": 1
+    },
+    {
+      "target": "char_li_peng_wang",
+      "count": 1
+    },
+    {
+      "target": "gu_landscape_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_star_fog_concealment",
+      "count": 1
+    },
+    {
+      "target": "sys_public_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He first appears in Ni Yu blessed land with Tan Bi Ya, sipping tea while a smoke image shows the Hei tribe and Dong Fang tribe battle. He has an ancient noble appearance and eyes that flash with changing colors, and is Dong Fang tribe’s sole wisdom path Gu Immortal.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_ni_yu_blessed_land",
+        "char_tan_bi_ya",
+        "fac_hei_tribe",
+        "fac_dong_fang_tribe",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "He has an ancient noble appearance, with eyes that intermittently flash with all kinds of colors. He is already old.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is an elderly man sitting beside a pool, fishing.",
+      "chapters": [
+        657
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "jade-pool",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A later Ni Yu visit with Hei Bai names him a rank seven Gu Immortal, a great power in Northern Plains, and the pillar of Dong Fang tribe. He is a famous wisdom path Gu Immortal with glorious battle results, who single-handedly raised a declining Dong Fang tribe after he became immortal.",
+      "chapters": [
+        519
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-and-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_bai",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "His lifespan is near its end; righteous and demonic Gu Immortals both restrict lifespan Gu sales to him, and he turns to choosing a successor, settling on Dong Fang Yu Liang.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-and-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_lifespan_gu",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "He tells Tan Bi Ya he only spoke a few sentences of guidance to Dong Fang Yu Liang, and that he has promised to heal Dong Fang Yu Liang’s sister and nurture him as a successor if Yu Liang becomes Lord of Imperial Court. Privately he treats that contest as a secondary plan to bind Yu Liang through the sick sister, and he is already calculating his own approaching death. He feeds Tan Bi Ya a personal deduction that Snowy Mountain blessed land secretly supports Ma tribe, then opens the blessed land door so she leaves to warn others; after she goes, he smiles, because the discussion was a scheme aimed at her stake in Liu Wen Wu. He keeps watching as Dong Fang Yu Liang retreats, and later collects the smoke when Yu Liang’s Imperial Court hopes look nearly gone.",
+      "chapters": [
+        514
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "scheme-through-tan-bi-ya",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court",
+        "loc_snowy_mountain",
+        "fac_ma_tribe",
+        "char_liu_wen_wu"
+      ]
+    },
+    {
+      "text": "Hei Cheng later calls him a petty schemer hated by Gu Immortals and claims he had a hand in Su Xian Er’s death, while admitting the evidence is thin.",
+      "chapters": [
+        528
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "scheme-through-tan-bi-ya",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_cheng",
+        "char_su_xian"
+      ]
+    },
+    {
+      "text": "After his final arrangements with Dong Fang Yu Liang, Northern Plains’ number one wisdom path Gu Immortal Dong Fang Chang Fan has passed away. Dong Fang tribe cries for three days, while righteous and demonic Gu Immortals both feel relief, because his schemes had made enemies across the region and those enemies had blocked his lifespan Gu purchases.",
+      "chapters": [
+        660
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "public-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the first grand tribulation descends over the battlefield, Shadow Sect’s Gu Immortals call its appearance expected, saying their own plan defies heaven and that Dong Fang Chang Fan had already shown them the same thing.",
+      "chapters": [
+        1007
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "invoked-as-precedent",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect"
+      ]
+    },
+    {
+      "text": "Ye Lui Qun Xing challenged him again and again, suffering defeat after defeat and still persisting in challenging him. As one of the leading figures of the righteous path he could not lay a heavy hand on Ye Lui Qun Xing, who was similarly of Huang Jin bloodline. After one victory over him he personally instructed Ye Lui Qun Xing in some secrets of myriad star fireflies, and Ye Lui Qun Xing treated the guidance as a precious treasure and went straight into closed cultivation, not knowing that the instruction was Dong Fang Chang Fan’s scheme. Getting rid of the annoying Ye Lui Qun Xing also expressed his goodwill to Ye Lui tribe, smoothly accomplished an instance of collaboration with that tribe, and gained large amounts of benefits. Myriad star fireflies is his killer move, famous throughout the whole of Northern Plains’ Gu Immortal world.",
+      "chapters": [
+        1201
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "the-man-ye-lui-qun-xing-kept-challenging",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_lui_qun_xing",
+        "fac_huang_jin_bloodline",
+        "fac_ye_lui_tribe"
+      ]
+    },
+    {
+      "text": "Weighing how to kill Ye Lui Qun Xing, Fang Yuan recalls that even Dong Fang Chang Fan had felt a headache because he could not kill him.",
+      "chapters": [
+        1202
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuans-measure-at-blood-plain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Believing his hundred star fragments will hold, Ye Lui Qun Xing thinks of the dead Dong Fang Chang Fan and tells him inwardly that he will sustain the reputation of myriad star fireflies for him, since his own immortal killer move had received Dong Fang Chang Fan’s guidance.",
+      "chapters": [
+        1204
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-at-ye-lui-qun-xings-last-stand",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/dong-fang-chang-fan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/dong-fang-chang-fan/",
+      "chapters": [
+        514,
+        515,
+        519,
+        528,
+        657,
+        660,
+        1007,
+        1201,
+        1202,
+        1204
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 519",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Dong Fang Tribe as of ch. 514",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 519,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_menses_blood_immortal_gu",
+      "role": "unspecified",
+      "recorded_chapter": 789,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_split_shadow_immortal_gu",
+      "role": "unspecified",
+      "recorded_chapter": 804,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

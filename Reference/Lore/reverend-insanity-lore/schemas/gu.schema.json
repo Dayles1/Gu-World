@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "gu.schema.json",
+  "title": "Gu",
+  "allOf": [
+    { "$ref": "common.schema.json#/$defs/envelope" },
+    {
+      "type": "object",
+      "required": ["classification", "appearance", "abilities", "feeding", "refinement", "economy", "distribution", "ownership_history", "history"],
+      "properties": {
+        "entity_type": { "const": "gu" },
+        "id": { "type": "string", "pattern": "^gu_" },
+        "classification": {
+          "type": "object",
+          "required": ["ranks", "rank_type", "paths", "functional_types", "organism_type"],
+          "properties": {
+            "ranks": {
+              "description": "Ranks at which this Gu is recorded. Empty = rank not recorded. Never extrapolated.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["rank"],
+                "properties": {
+                  "rank": { "type": "integer", "minimum": 1, "maximum": 9 },
+                  "recorded_chapter": { "$ref": "common.schema.json#/$defs/nullable_chapter" },
+                  "confidence": { "$ref": "common.schema.json#/$defs/confidence" }
+                }
+              }
+            },
+            "rank_type": { "enum": ["mortal", "immortal", "unknown"] },
+            "is_immortal_gu": { "type": ["boolean", "null"] },
+            "paths": { "type": "array", "items": { "type": "string", "pattern": "^path_" } },
+            "path_unverified": { "type": "boolean" },
+            "functional_types": {
+              "type": "array",
+              "items": { "enum": ["attack", "defense", "movement", "support", "healing", "investigation", "cultivation", "transformation", "expenditure", "storage", "communication", "concealment", "control", "other"] }
+            },
+            "effect_type_raw": { "type": ["string", "null"] },
+            "organism_type": { "enum": ["insect", "worm", "plant", "beast", "aquatic", "crystal_or_object", "substance", "unknown"] },
+            "organism_type_basis": { "type": ["string", "null"] },
+            "claims": { "$ref": "common.schema.json#/$defs/claims" }
+          }
+        },
+        "appearance": {
+          "type": "object",
+          "required": ["claims", "visual_confidence"],
+          "properties": {
+            "claims": { "$ref": "common.schema.json#/$defs/claims" },
+            "visual_confidence": { "enum": ["text_described", "unknown"] }
+          }
+        },
+        "abilities": {
+          "type": "object",
+          "required": ["activation_raw", "claims"],
+          "properties": {
+            "activation_raw": { "type": ["string", "null"] },
+            "claims": { "$ref": "common.schema.json#/$defs/claims" }
+          }
+        },
+        "feeding": {
+          "type": "object",
+          "required": ["known", "food_raw", "foods", "claims"],
+          "properties": {
+            "known": { "type": "boolean" },
+            "food_raw": { "type": ["string", "null"] },
+            "foods": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/entity_id" } },
+            "claims": { "$ref": "common.schema.json#/$defs/claims" }
+          }
+        },
+        "refinement": {
+          "type": "object",
+          "required": ["recipes", "refinement_materials", "confirmed_evolutions", "related_variants", "claims"],
+          "properties": {
+            "recipes": { "type": "array", "items": { "type": "string", "pattern": "^rcp_" } },
+            "used_in_recipes": { "type": "array", "items": { "type": "string", "pattern": "^rcp_" } },
+            "refinement_materials": { "type": "array", "items": { "type": "string" } },
+            "confirmed_evolutions": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["from", "to", "basis"],
+                "properties": {
+                  "from": { "type": "string" },
+                  "to": { "type": "string" },
+                  "basis": { "enum": ["recipe_page", "claim"] },
+                  "chapters": { "$ref": "common.schema.json#/$defs/chapter_list" }
+                }
+              }
+            },
+            "related_variants": { "type": "array", "items": { "type": "string", "pattern": "^gu_" } },
+            "claims": { "$ref": "common.schema.json#/$defs/claims" }
+          }
+        },
+        "economy": {
+          "type": "object",
+          "required": ["canonical_prices", "price_claims", "game_proposals"],
+          "properties": {
+            "canonical_prices": {
+              "description": "Only prices reviewed against a cited claim. Unreviewed price mentions live in price_claims.",
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["amount", "currency", "chapters"],
+                "properties": {
+                  "amount": { "type": ["number", "null"] },
+                  "currency": { "type": "string" },
+                  "context": { "type": ["string", "null"] },
+                  "location": { "type": ["string", "null"] },
+                  "chapters": { "$ref": "common.schema.json#/$defs/chapter_list" }
+                }
+              }
+            },
+            "price_claims": { "$ref": "common.schema.json#/$defs/claims" },
+            "game_proposals": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/game_proposal" } }
+          }
+        },
+        "distribution": {
+          "type": "object",
+          "required": ["locations", "factions", "claims"],
+          "properties": {
+            "locations": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/entity_id" } },
+            "factions": { "type": "array", "items": { "type": "string", "pattern": "^fac_" } },
+            "origin": { "enum": ["wild", "cultivated", "artificial", "created_by_recipe", "unknown"] },
+            "claims": { "$ref": "common.schema.json#/$defs/claims" }
+          }
+        },
+        "ownership_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["character", "role"],
+            "properties": {
+              "character": { "$ref": "common.schema.json#/$defs/entity_id" },
+              "role": { "type": "string" },
+              "recorded_chapter": { "$ref": "common.schema.json#/$defs/nullable_chapter" },
+              "from_chapter": { "$ref": "common.schema.json#/$defs/nullable_chapter" },
+              "to_chapter": { "$ref": "common.schema.json#/$defs/nullable_chapter" },
+              "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+              "source_id": { "type": "string" }
+            }
+          }
+        },
+        "history": {
+          "type": "object",
+          "required": ["claims"],
+          "properties": { "claims": { "$ref": "common.schema.json#/$defs/claims" } }
+        }
+      }
+    }
+  ]
+}

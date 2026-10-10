@@ -1,0 +1,167 @@
+{
+  "id": "res_round_kun_stone",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Round kun stone",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Round kun stone is an earth path immortal material produced in Central Continent's earth qi rock forest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1705,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1705,
+    1921,
+    2133
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Central Continent’s earth qi rock forest produces a vast amount of earth path cultivation resources, including round kun stone. Round kun stone has never been sold in large numbers in treasure yellow heaven, because the site belongs to one of Central Continent’s ten great ancient sects and they need the stone themselves.",
+      "chapters": [
+        1705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-qi-rock-forest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "fac_ten_great_ancient_sects"
+      ]
+    },
+    {
+      "text": "Western Desert earth path Gu Immortal Shi Gan Dang fails to buy it even at raised prices, then destroys the forest’s protecting formation and takes all of the immortal materials there, including round kun stones, into his immortal aperture.",
+      "chapters": [
+        1705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-qi-rock-forest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Shi Gan Dang’s destruction of the earth qi rock forest and haul of round kun stones is recalled when Western Desert’s actions against Central Continent resources are listed.",
+      "chapters": [
+        1921
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "shi-gan-dang-haul",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Round kun stone appears among earth path immortal materials such as diamond soil, impermanence rock, smoky warm jade, and eight-parts jade.",
+      "chapters": [
+        2133
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-materials",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/round-kun-stone/",
+      "chapters": [
+        1705,
+        1921,
+        2133
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Earth Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Earth qi rock forest",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

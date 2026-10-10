@@ -1,0 +1,188 @@
+{
+  "id": "res_transformation_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Transformation path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Transformation path immortal materials are immortal materials of transformation path, traded, scavenged, and spent in transformation path refinement.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1400,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1400,
+    1652,
+    1803,
+    2076
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_transformation",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_thousand_transformations_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "house_merit_obelisk",
+      "count": 1
+    },
+    {
+      "target": "res_false_pearl",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "res_blue_smoke_fox_child",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Among many kinds of immortal materials offered for year beasts, a large share of transformation path immortal materials is what moves Thousand Transformations Ancestor.",
+      "chapters": [
+        1400
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "trade-offer-weight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_thousand_transformations_ancestor"
+      ]
+    },
+    {
+      "text": "On a Merit Obelisk island, Fang Yuan as Chu Ying is a transformation path Gu Immortal and obtains a lot of transformation path immortal materials when the group scavenges and redistributes resources. Because transformation path projects all paths, those materials can be of various types and paths.",
+      "chapters": [
+        1652
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scavenge-share",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_merit_obelisk",
+        "char_fang_yuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "False pearl is not a pearl but a transformation path immortal material that can transform into any gem. It is a rank eight material and the main material of that Long Hair refinement path formation step.",
+      "chapters": [
+        1803
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "false-pearl-main-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_false_pearl"
+      ]
+    },
+    {
+      "text": "Blue smoke fox child is a rank eight transformation path immortal material recorded in The Legends of Ren Zu. Bai Ning Bing’s group finds one still present where the species had been treated as extinct.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "extinct-species-found-alive",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_blue_smoke_fox_child",
+        "sys_the_legends_of_ren_zu",
+        "char_bai_ning_bing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/transformation-path-immortal-material/",
+      "chapters": [
+        1400,
+        1652,
+        1803,
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Transformation Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

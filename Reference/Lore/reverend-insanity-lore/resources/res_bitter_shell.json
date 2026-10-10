@@ -1,0 +1,203 @@
+{
+  "id": "res_bitter_shell",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bitter shell",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Hundred year bitter shell Thousand year bitter shell"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bitter shell is a black deep-water conch that turns swallowed sand and stone into bitter water used for wine and Gu refinement.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 117,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    117,
+    120,
+    859,
+    860
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_four_flavors_liquor_worm",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_change_form_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 859,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 3
+    },
+    {
+      "target": "gu_change_form_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "res_bitter_shell_wine",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_river_swallowing_toad",
+      "count": 1
+    },
+    {
+      "target": "loc_star_form_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A Gu Yue tavern shopkeeper describes bitter shell as a completely black conch found in deep ponds, with circles of white lines on its shell like a tree’s growth rings. Unlike pearl-forming conches, it swallows sand and stones in the water, dissolves them into bitter water, and that water is brewed into bitter shell wine, bitter and fragrant. The wine made from it is covered on bitter shell wine.",
+      "chapters": [
+        117
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "conch-and-bitter-water",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "res_bitter_shell_wine"
+      ]
+    },
+    {
+      "text": "Hundred year bitter shells are black as ink with white round markings like tree rings. Their bitter water, after accumulation through time, can turn into wine. When River Swallowing Toad empties a riverbed, Hundred year bitter shells buried in the soil are exposed among the seafood; Fang Yuan collects six little shells, four intact and two broken, and gathers bitter shell wine from them for Four Flavor Liquor worm refinement.",
+      "chapters": [
+        120
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hundred-year-shells",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_river_swallowing_toad",
+        "char_fang_yuan",
+        "gu_four_flavors_liquor_worm"
+      ]
+    },
+    {
+      "text": "While refining Change Form Immortal Gu in Star Form blessed land, Fang Yuan calls for a thousand year bitter shell and Star Form land spirit hands it to him as assistant labor.",
+      "chapters": [
+        859
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-gu-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_change_form_immortal_gu",
+        "loc_star_form_blessed_land"
+      ]
+    },
+    {
+      "text": "Bitter shells live in deep waters and melt sand and rocks into bitter water; brewing that water yields bitter shell wine. Ordinary bitter shells are already rare; thousand year bitter shells are rarer still and are good material to refine Immortal Gu. A thousand year bitter shell is black with circular white markings like tree rings, and Fang Yuan treats such shells as immortal materials that must be checked before refinement. He melts twelve thousand year bitter shells one by one into boiling poisonous blood; when they melt perfectly the foul odor turns fragrant as a success sign.",
+      "chapters": [
+        860
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "thousand-year-shells",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/bitter-shell.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/bitter-shell/",
+      "chapters": [
+        117,
+        120,
+        859,
+        860
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Deep ponds and riverbeds",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Four Flavors Liquor Worm Change Form Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "res_wind_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wind path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wind path immortal materials are immortal materials of wind path, found underground and traded at high grades.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2076,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2076,
+    2101
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wind",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wind",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_treasury",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "res_profound_eerie_wind",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "gu_eight_faced_prestige_wind_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_sheng_tian_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Profound eerie wind is a rank eight wind path immortal material. It only appears deep underground, and even Heavenly Court’s Gu Immortals have a huge desire for it. Bai Ning Bing’s group finds it in Earth Treasury among other immortal materials and names it as a wind path immortal material.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "profound-eerie-wind",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_profound_eerie_wind",
+        "fac_heavenly_court",
+        "sys_gu_immortal",
+        "char_bai_ning_bing",
+        "reg_earth_earth_treasury"
+      ]
+    },
+    {
+      "text": "A rank nine wind path immortal material is rare in the market and is paid through treasure yellow heaven when Wu Yong trades for Sheng Tian true inheritance. Obtaining that grade gives Wu Yong a significant breakthrough in preparatory work for refining eight-faced prestige wind Immortal Gu.",
+      "chapters": [
+        2101
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-nine-grade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_yong",
+        "inh_sheng_tian_true_inheritance",
+        "gu_eight_faced_prestige_wind_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/wind-path-immortal-material/",
+      "chapters": [
+        2076,
+        2101
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wind Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

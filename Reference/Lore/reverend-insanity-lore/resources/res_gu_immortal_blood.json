@@ -1,0 +1,132 @@
+{
+  "id": "res_gu_immortal_blood",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gu Immortal blood",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "blood of Gu Immortals"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gu Immortal blood is the blood of Gu Immortals, gathered into lakes used to recover blood path Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1167,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1167,
+    1291,
+    1461
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_asset_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_beast_blood",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Mini Eastern Sea, Fang Yuan isolates a blood lake from the outside sea and adds the blood of desolate beasts and Gu Immortals. He places blood asset Immortal Gu in that lake to recover after heavy damage.",
+      "chapters": [
+        1167
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "blood-lake-recovery",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mini_eastern_sea",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "gu_blood_asset_immortal_gu"
+      ]
+    },
+    {
+      "text": "The same blood lake holds a large amount of desolate beast blood and Gu Immortal blood after blood asset Immortal Gu has fully recovered. Fang Yuan keeps the lake even though the Gu no longer needs it.",
+      "chapters": [
+        1291
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stock-after-recovery",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The water of that blood lake has collected a lot of desolate beast and Gu Immortal blood from earlier repair work on blood asset Immortal Gu.",
+      "chapters": [
+        1461
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "lake-stock-restated",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/gu-immortal-blood/",
+      "chapters": [
+        1167,
+        1291,
+        1461
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Gu Immortals",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "id": "loc_hong_yu_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hong Yu Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A blessed land owned by Loner Hong Yu, first shown when Gui Wang pays him with lava bats.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 446,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    446
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_loner_hong_yu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gui_wang",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_poison_grassland",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Loner Hong Yu accepts three and a half million lava bats and says that with those bats his Hong Yu blessed land would not need to dump lava into the ground every month. Narration states that each blessed land’s door is different, and that this mini sun is Hong Yu blessed land’s entrance. The bats descend into the sun and enter the land. Gui Wang says that since Loner Hong Yu accepted the bats, it means he agreed to barge into Lang Ya Blessed Land with him. Loner Hong Yu affirms the promise and says that a month later they will get to Lang Ya blessed land.",
+      "chapters": [
+        446
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_loner_hong_yu",
+        "char_gui_wang",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page uses the Northern Plains region field because chapter 446 places the entrance south of Fang Yuan and has Gui Wang fly from it into Poison Grassland. The chapter does not print a five-region seat for Hong Yu blessed land.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains",
+        "char_fang_yuan",
+        "loc_poison_grassland"
+      ]
+    },
+    {
+      "text": "The blessed land’s entrance is a mini sun that engulfs a radius of a few hundred li in bright red light; a jade bridge stretches out from that sun. Each blessed land’s door is different, and this mini sun is Hong Yu blessed land’s entrance.",
+      "chapters": [
+        446
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/hong-yu-blessed-land.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/hong-yu-blessed-land/",
+      "chapters": [
+        446
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

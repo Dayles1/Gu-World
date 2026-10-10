@@ -1,0 +1,274 @@
+{
+  "id": "fac_shi_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shi Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shi clan is a Western Desert righteous path super force that controls myriad ore desert and its rockman miners.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1474,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1474,
+    2130,
+    2222,
+    2255
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shi_zhong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1474,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shi_kang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2130,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_shi_zhong",
+      "count": 4
+    },
+    {
+      "target": "char_shi_kang",
+      "count": 4
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "fac_sun_clan",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_wealth_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_worry_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_myriad_ore_desert",
+      "count": 1
+    },
+    {
+      "target": "res_blue_sea_water",
+      "count": 1
+    },
+    {
+      "target": "res_subterranean_adamantite",
+      "count": 1
+    },
+    {
+      "target": "char_fang_dong_xi",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_sand_heap_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_tuoba_feng_yan",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The famous myriad ore desert in Western Desert is under the control of the super force Shi clan. A hundred thousand rockmen live there as miners. Mortal ores are excavated by those rockmen, while immortal ores need Gu Immortals.",
+      "chapters": [
+        1474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "myriad-ore-desert",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Shi clan is a righteous path super force in Western Desert. The desert borders other super forces that are enemies of Shi clan.",
+      "chapters": [
+        1474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "myriad-ore-desert",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shi clan sends a Gu Immortal to guard the site and excavate immortal ores, and that posting is normally for someone ostracized by the clan.",
+      "chapters": [
+        2222
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "myriad-ore-desert",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shi Zhong has rank seven cultivation yet is ostracized by Shi clan’s Gu Immortals because his father betrayed the clan and caused huge losses in resources and Gu Immortal lives. Shi clan’s first supreme elder sends him to defend myriad ore desert.",
+      "chapters": [
+        1474
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shi-zhong-and-first-supreme-elder",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shi_zhong"
+      ]
+    },
+    {
+      "text": "Western Desert righteous path Gu Immortals, including Fang clan, refuse to kill Shi Kang over Sand Heap spoils because killing him would invite Shi clan retaliation and escalate the dispute.",
+      "chapters": [
+        2130
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sand-heap-restraint",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan",
+        "char_shi_kang"
+      ]
+    },
+    {
+      "text": "When Wan clan gathers forces to attack Fang clan, the alliance already includes Xiao clan, Qin clan, Sun clan, Shi clan, Gong clan, and Tang clan.",
+      "chapters": [
+        2255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wan-clan-alliance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan",
+        "fac_xiao_clan",
+        "fac_sun_clan",
+        "fac_gong_clan",
+        "fac_tang_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/shi-clan/",
+      "chapters": [
+        1474,
+        2130,
+        2222,
+        2255
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

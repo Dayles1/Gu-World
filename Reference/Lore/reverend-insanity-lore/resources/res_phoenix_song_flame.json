@@ -1,0 +1,154 @@
+{
+  "id": "res_phoenix_song_flame",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Phoenix song flame",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Phoenix song flame is a rank eight immortal material, a two-layered red and yellow flame whose inner phoenix sings as it burns.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1645,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1645,
+    2108
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_spring_autumn_cicada",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Phoenix song flame is a rank eight immortal material, red and yellow, with two layers. The outside layer is yellow and the inside is red. The inner layer is shaped like a phoenix; it flies around while singing loudly, and as the flames burn it emits a crisp and wonderful melody.",
+      "chapters": [
+        1645
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "two-layered-flame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A basin-sized lump can be tossed onto a Gu’s surface so the flames surround and burn it. Traces of ghost qi that emerge are destroyed by the flames. After the ghost qi is gone and the surface melts, further methods can follow. The flame on the Gu is stubborn and may dissipate only after a few hours under opposing cold methods.",
+      "chapters": [
+        1645
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "two-layered-flame",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan chooses phoenix song flame to get rid of ghost qi left by a ghost hand purification method and also to temper Spring Autumn Cicada during refinement to rank seven.",
+      "chapters": [
+        1645
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "two-layered-flame",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_spring_autumn_cicada"
+      ]
+    },
+    {
+      "text": "Phoenix song flame is listed among flames taken in quantity with date flame, black lantern blind fire, elephant tusk flame, firefly flame, flying flame, dragon snake dancing flame, and others.",
+      "chapters": [
+        2108
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "flame-stock",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/phoenix-song-flame.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/phoenix-song-flame/",
+      "chapters": [
+        1645,
+        2108
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Spring Autumn Cicada",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

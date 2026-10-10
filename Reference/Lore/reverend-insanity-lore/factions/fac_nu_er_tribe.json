@@ -1,0 +1,301 @@
+{
+  "id": "fac_nu_er_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Nu Er Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe named while Ma tribe higher-ups prepare to watch Meng Qiu before Imperial Court.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 489,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    489,
+    496,
+    536,
+    1107
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_nu_er_tu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 489,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_nu_er_bao_xiong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_nu_er_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_nu_er_qian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_nu_er_tu",
+      "count": 4
+    },
+    {
+      "target": "char_nu_er_gu",
+      "count": 4
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 3
+    },
+    {
+      "target": "char_nu_er_bao_xiong",
+      "count": 3
+    },
+    {
+      "target": "house_loud_thunder_hall",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_yang_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_guan_chou",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_tian",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_guan_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ma Tribe higher-ups say Yu Tian, Meng Qiu, and Cao Fu heroes assemblies all need close watch if they mean to enter Imperial Court blessed land. A messenger rushes in with the newest intel; after Ma Ying Jie reads it with a gloomy face and passes it around, the room answers with gasps, and the readers say Nu Er tribe has sent Nu Er Tu into Meng Qiu with momentum so strong that Lui tribe may not hold them off.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "newest-intel-pass",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "loc_yu_tian",
+        "loc_cao_fu_region",
+        "loc_imperial_court_blessed_land",
+        "char_ma_ying_jie"
+      ]
+    },
+    {
+      "text": "Ge Guang reports that at Meng Qiu heroes assembly Nu Er tribe’s representative is the rank five Gu Master Nu Er Tu.",
+      "chapters": [
+        496
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "meng-qiu-representative",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_guang",
+        "sys_gu_master",
+        "char_nu_er_tu"
+      ]
+    },
+    {
+      "text": "Among the armies with highest hopes for Imperial Court, Nu Er tribe stands with the new Leopard King beside Hei tribe, Yang tribe, Ma tribe, and Ye Lui tribe. In the first half of September, Nu Er tribe army fights Yang tribe army; the leopard group cannot contest eagles and rats, and after half a month Nu Er Tu loses.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "defeat-by-yang-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_imperial_court",
+        "fac_hei_tribe",
+        "fac_yang_tribe",
+        "fac_ye_lui_tribe"
+      ]
+    },
+    {
+      "text": "Nu Er Gu comes from Nu Er tribe, part of the Huang Jin bloodline, and a super force. He is a famous righteous path rank seven expert who cultivates sound path, and he and Guan Chou are Gu Immortals from Nu Er tribe and Guan tribe with equally strong backgrounds.",
+      "chapters": [
+        1107
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "iron-crown-eagle-field",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_nu_er_gu",
+        "fac_huang_jin_bloodline",
+        "char_guan_chou",
+        "sys_gu_immortal",
+        "fac_guan_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/nu-er-tribe/",
+      "chapters": [
+        489,
+        496,
+        536,
+        1107
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "id": "char_wang_xiao_er",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wang Xiao Er",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wang xiao er",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ван Сяо Эр",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wang Xiao Er is a ragged mortal shepherd of Sorrowful Wind Mountain Range who is driven off other mountains and later dragged into Gu Master conflicts.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2039,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2039,
+    2095
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_qin_juan",
+      "count": 2
+    },
+    {
+      "target": "loc_sun_moon_sinkhole",
+      "count": 2
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_kong_sheng_tian",
+      "count": 1
+    },
+    {
+      "target": "char_mo_li",
+      "count": 1
+    },
+    {
+      "target": "loc_sand_heap_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_dong_xi",
+      "count": 1
+    },
+    {
+      "target": "gu_self_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On Sorrowful Wind Mountain Range other youngsters tell him the mountain is occupied and that there is no place for him. The strongest pushes him to the ground. He does not resist, only moves his small group of sheep and leaves, later finding a patch of grass for them after falling and bruising on steep paths.",
+      "chapters": [
+        2039
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "His clothes are patched with many tattered areas and he looks like a beggar. He walks on thin legs.",
+      "chapters": [
+        2039
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Central Continent’s four great obscenities and Wang Xiao Er are forced into desperation by Qin Juan at Southern Border’s Sun Moon Sinkhole. He shouts that they will jump if she comes closer.",
+      "chapters": [
+        2095
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sun-moon-sinkhole-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "char_qin_juan",
+        "loc_sun_moon_sinkhole"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/wang-xiao-er.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wang-xiao-er/",
+      "chapters": [
+        2039,
+        2095
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

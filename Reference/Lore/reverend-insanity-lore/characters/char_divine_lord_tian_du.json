@@ -1,0 +1,329 @@
+{
+  "id": "char_divine_lord_tian_du",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Divine Lord Tian Du",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Divine Lord Tian Du is a rank six Gu Immortal of Northern Plains with bronze skin and lightning coiled around his body, first seen pressuring Gu Ye for wilted essence.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 738,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    738,
+    739,
+    782,
+    783,
+    793
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_thunder_shuttle",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 782,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_thunder_shuttle",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 2
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 2
+    },
+    {
+      "target": "char_unfettered_scholar",
+      "count": 2
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    },
+    {
+      "target": "loc_old_earth_city",
+      "count": 1
+    },
+    {
+      "target": "res_wilted_essence",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_traveling_three_elites",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "char_lu_qing_ming",
+      "count": 1
+    },
+    {
+      "target": "char_zhuo_zhan",
+      "count": 1
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the old earth wood near Old Earth City, he arrives with Shi Hou and demands that the immortal zombie Gu Ye sell one hundred and fifty kilograms of wilted essence for one immortal essence stone. He has already extorted Gu Ye many times, speaks with open disdain toward immortal zombies, and leaves laughing after Gu Ye accepts the deal.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_old_earth_city",
+        "char_shi_hou",
+        "char_gu_ye"
+      ]
+    },
+    {
+      "text": "Gu Ye later treats that stone as face paid under fear of Zombie Alliance rather than a fair price.",
+      "chapters": [
+        739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance"
+      ]
+    },
+    {
+      "text": "He has a strong muscular body. His skin is bronze in color, and lightning coils around his body.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later recognizes him in the scramble at Tai Qiu: the same bronze-skinned figure with lightning around his body, now cultivating lightning path and racing for a Gu formation with a movement killer move. He is not Unfettered Scholar’s match; with Shi Hou he is beaten back while fighting that rank seven Gu Immortal two against one. From farther off he sends Thunder Shuttle, an Immortal Gu that turns into lightning as it shoots toward Fang Yuan’s group, until Fang Yuan’s giant hand traps it.",
+      "chapters": [
+        782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-scramble",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_tai_qiu",
+        "sys_gu_formation",
+        "char_unfettered_scholar",
+        "sys_gu_immortal",
+        "gu_thunder_shuttle",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Thunder Shuttle then breaks free and flies back; Unfettered Scholar grabs for it while pressing him, and he recovers the Gu with his own method.",
+      "chapters": [
+        783
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-scramble",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In a later clash he holds his Immortal Gu ready to strike when Dong Fang Yu Liang names myriad star fireflies.",
+      "chapters": [
+        793
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-scramble",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_dong_fang_yu_liang"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/divine-lord-tian-du.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/divine-lord-tian-du/",
+      "chapters": [
+        738,
+        739,
+        782,
+        783,
+        793
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VI as of ch. 738",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 6,
+        "as_of_chapter": 738,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_thunder_shuttle",
+      "role": "owner",
+      "recorded_chapter": 782,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

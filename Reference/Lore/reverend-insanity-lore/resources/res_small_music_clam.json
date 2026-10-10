@@ -1,0 +1,123 @@
+{
+  "id": "res_small_music_clam",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Small music clam",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A small music clam is the dead shell of an ancient desolate music clam, a rank seven sound path immortal material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1885,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1885
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_sound",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_sound",
+      "count": 1
+    },
+    {
+      "target": "sys_sound_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "res_sound_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the qi sea banquet, Wu Ma Yang presents a floating shell that Eastern Sea immortals recognize as a small music clam shell, a rank seven immortal material. Music clams are ordinary clams that hold sound path dao marks: at desolate beast level they grow into giant music clams, then shrink again as ancient desolate beasts into small music clams. The specimen he shows is dead and without vitality, merely a rank seven sound path immortal material. He is not selling the clam itself, but the music stored inside, later named as the rank seven immortal material ghostly wail.",
+      "chapters": [
+        1885
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dead-shell-at-the-banquet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/small-music-clam/",
+      "chapters": [
+        1885
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Sound Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Music clam",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

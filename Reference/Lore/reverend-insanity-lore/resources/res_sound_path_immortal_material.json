@@ -1,0 +1,146 @@
+{
+  "id": "res_sound_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sound path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sound path immortal materials are immortal materials of sound path, including dead music clam shells and stored wave sound.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1885,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1885,
+    1895
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_sound",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_sound",
+      "count": 1
+    },
+    {
+      "target": "res_small_music_clam",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_dragon_whale_paradise",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the qi sea banquet, Wu Ma Yang presents a floating shell that Eastern Sea immortals recognize as a small music clam shell, a rank seven immortal material. Music clams are ordinary clams that contain sound path dao marks: at desolate beast level they become giant music clams, then shrink again as ancient desolate beasts into small music clams. The specimen he shows is dead and without vitality, merely a rank seven sound path immortal material.",
+      "chapters": [
+        1885
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "small-music-clam",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "res_small_music_clam"
+      ]
+    },
+    {
+      "text": "In Dragon Whale Paradise, Shen Cong Sheng pays Fang Yuan with a palm-sized desolate beast conch that stores wave sound. That wave sound is a sound path rank seven immortal material, a specialty product of Shen clan that can produce sounds for years without stopping. Fang Yuan names it constant wave sound when he takes the deal.",
+      "chapters": [
+        1895
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "payment-for-a-secret",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dragon_whale_paradise",
+        "char_shen_cong_sheng",
+        "char_fang_yuan",
+        "fac_shen_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/sound-path-immortal-material/",
+      "chapters": [
+        1885,
+        1895
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Sound Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

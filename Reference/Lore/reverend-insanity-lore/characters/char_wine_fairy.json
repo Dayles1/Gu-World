@@ -1,0 +1,210 @@
+{
+  "id": "char_wine_fairy",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wine Fairy",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wine Fairy is a Central Continent lone human rank eight great expert, the wife in the Ascetic Wine Couple with Green Ant Ascetic.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1829,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1829,
+    1845
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_green_ant_ascetic",
+      "count": 2
+    },
+    {
+      "target": "char_calligraphy_pavilion_lady",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "race_dragonmen",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 1
+    },
+    {
+      "target": "char_zui_xian_weng",
+      "count": 1
+    },
+    {
+      "target": "gu_wine_drinker_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_food_path_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_green_ant_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_wine_fairy_true_inheritance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Green Ant Ascetic and Wine Fairy are husband and wife, a famous lone immortal great expert couple in Central Continent history. They were childhood friends who became Gu Immortals, reunited, and took those titles after joking about childhood mud, ants, and wine selling. The woman changed her title to Wine Fairy. Dragonman planners treat becoming Green Ant Ascetic’s only disciple as a way to build a relationship with the Ascetic Wine Couple, calling the pair two rank eight great experts who would be a huge help if the dragonman race faces difficulty.",
+      "chapters": [
+        1829
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_green_ant_ascetic",
+        "reg_central_continent",
+        "sys_gu_immortal",
+        "race_dragonmen"
+      ]
+    },
+    {
+      "text": "Wu Shuai secretly targeted Green Ant Ascetic, Wine Fairy, and Calligraphy Pavilion Lady, and enslaved them all.",
+      "chapters": [
+        1845
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "enslavement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_shuai",
+        "char_calligraphy_pavilion_lady"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wine-fairy/",
+      "chapters": [
+        1829,
+        1845
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1829",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1829,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

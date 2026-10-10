@@ -1,0 +1,176 @@
+{
+  "id": "res_earth_path_crystal_essence",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Earth path crystal essence",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Earth path crystal essence is a rank eight earth path immortal material from the secluded domain Hu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1468,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1468,
+    2076
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "char_yellow",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_lady_white_rabbit",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    },
+    {
+      "target": "res_black_yellow_heart",
+      "count": 1
+    },
+    {
+      "target": "res_earth_blood_veins",
+      "count": 1
+    },
+    {
+      "target": "res_lightning_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "res_water_path_crystal_essence",
+      "count": 1
+    },
+    {
+      "target": "path_water",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After a Southern Border earthquake opens trenches for millions of li, Zheng Qing sees a mountain-like orange crystal rock with countless holes, some large as houses and some small as fists. Yellow smoke spews from those holes without cease, thickens, and turns into soil that buries the rock under a thick layer in a dozen breaths. He names it the earth path crystal essence in Hu land and a rank eight immortal material.",
+      "chapters": [
+        1468
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-origin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "char_yellow",
+        "loc_hu_land"
+      ]
+    },
+    {
+      "text": "In an underground cache of rare immortal materials, crystal essence is first judged highest in quantity, with earth path crystal essence named among water path and lightning path crystal essences when Black Tigress guesses at Hu Land. Water path and lightning path crystal essences from that list are covered on water path crystal essence and lightning path crystal essence. Further search shows earth blood veins buried in the soil outnumber the crystal essence, and their source is a black-yellow heart; those finds are covered on earth blood veins and black-yellow heart.",
+      "chapters": [
+        2076
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-hu-essences",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lady_white_rabbit",
+        "path_water",
+        "res_water_path_crystal_essence",
+        "res_lightning_path_crystal_essence",
+        "res_earth_blood_veins",
+        "res_black_yellow_heart"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/earth-path-crystal-essence.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/earth-path-crystal-essence/",
+      "chapters": [
+        1468,
+        2076
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Earth Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Secluded domain of heaven and earth, Hu",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

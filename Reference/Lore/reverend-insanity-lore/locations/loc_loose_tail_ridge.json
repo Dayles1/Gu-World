@@ -1,0 +1,156 @@
+{
+  "id": "loc_loose_tail_ridge",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Loose Tail Ridge",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Loose Tail Ridge is one of Northern Plains' ten great fierce areas. Prince Feng Xian's group places Lang Ya blessed land near it during Heavenly Court's hunt.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1546,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1546,
+    1592
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 3
+    },
+    {
+      "target": "char_le_yao",
+      "count": 2
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 1
+    },
+    {
+      "target": "char_swordmaster_you_lan",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes the ridge’s look beyond naming it among Northern Plains’ ten great fierce areas.",
+      "chapters": [
+        1546
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Le Yao tells Prince Feng Xian that Loose Tail Ridge is nearby and that Lang Ya blessed land is likely hiding there while they conceal themselves over the grassland.",
+      "chapters": [
+        1546
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_le_yao",
+        "char_prince_feng_xian",
+        "loc_lang_ya_blessed_land"
+      ]
+    },
+    {
+      "text": "Later talk again places Prince Feng Xian as possibly waiting near Loose Tail Ridge for a chance.",
+      "chapters": [
+        1592
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/loose-tail-ridge/",
+      "chapters": [
+        1546,
+        1592
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "ridge",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "res_rank_nine_luck_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rank nine luck path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A rank nine luck path immortal material is a luck path immortal material of rank nine, of which favored heart is one named example.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2078,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2078,
+    2162
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_luck",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_luck",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_treasury",
+      "count": 1
+    },
+    {
+      "target": "char_bing_sai_chuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Earth Treasury holds abundant immortal materials, and among them favored heart is named as a rank nine luck path immortal material. It can refine rank nine luck path Immortal Gu. A single Earth Treasury’s favored heart is far from enough for that attempt, though using rank nine immortal material when refining rank eight Immortal Gu can slightly raise the success rate.",
+      "chapters": [
+        2078
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "grade-and-use",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_treasury",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan proposes exchanging immortal materials with Longevity Heaven and asks for rank nine luck path immortal materials; Bing Sai Chuan rejects the exchange.",
+      "chapters": [
+        2162
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sought-from-longevity-heaven",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_longevity_heaven",
+        "char_bing_sai_chuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/rank-nine-luck-path-immortal-material/",
+      "chapters": [
+        2078,
+        2162
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Luck Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

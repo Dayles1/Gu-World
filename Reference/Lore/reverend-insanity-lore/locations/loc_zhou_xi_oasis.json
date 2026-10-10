@@ -1,0 +1,185 @@
+{
+  "id": "loc_zhou_xi_oasis",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhou Xi Oasis",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A small Western Desert oasis controlled by Lan clan, with a no-fly zone in the sky above it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 694,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    694,
+    695
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "fac_lan_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_womans_heart",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lan_duan",
+      "count": 1
+    },
+    {
+      "target": "char_lan_xin",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From high altitude the oasis looks like a jewel encased in the golden desert. A clear blue lake sits inside with trees around it, and the marketplace is lively.",
+      "chapters": [
+        694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "From high altitude the oasis looks like a jewel in the golden desert, with a clear blue lake, trees around it, and a lively marketplace. Gu Masters of Lan clan on sand gulls rise toward Fang Yuan; he breaks their attacks and crashes into the clan head pavilion at the center.",
+      "chapters": [
+        694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "oasis-approach",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "fac_lan_clan",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan destroys the clan head pavilion at the oasis center; it is the clan’s most important place and holds ancestors’ tablets behind strong defensive Gu. The elderly clan leader claims Lan clan has stayed neutral for many generations and offers compensation.",
+      "chapters": [
+        694
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "clan-head-pavilion-and-treasury",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_defensive_gu"
+      ]
+    },
+    {
+      "text": "After the slaughter, the oasis is thick with smoke and fire, and Fang Yuan finishes feeding Woman’s Heart there before searching the ruins. Under the collapsed pavilion he opens an underground treasury of primeval stones, Gu refinement materials, and mortal Gu, then reaches a deep breeding cave where Lan clan raises sand gulls and keeps a house-sized egg on a central stone table.",
+      "chapters": [
+        695
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "clan-head-pavilion-and-treasury",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_womans_heart",
+        "sys_mortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/zhou-xi-oasis.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/zhou-xi-oasis/",
+      "chapters": [
+        694,
+        695
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "oasis",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

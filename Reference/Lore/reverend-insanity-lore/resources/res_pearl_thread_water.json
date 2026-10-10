@@ -1,0 +1,160 @@
+{
+  "id": "res_pearl_thread_water",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Pearl thread water",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Pearl thread water is a rank eight water path immortal material, the saliva of immemorial water spiders, and the food of Addition Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1791,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1791
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_water",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_water",
+      "count": 1
+    },
+    {
+      "target": "char_ba_shi_ba",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_addition_gu",
+      "count": 1
+    },
+    {
+      "target": "res_water_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Pearl thread water is a rank eight water path immortal material. On the surface it looks like ordinary crystal clear water, but a hand placed in the water can grab water threads and pull them out. The threads are long and silky, with pearls gathered along them like a necklace; if the threads are pulled upward continuously, the pearls shrink until all the water becomes long threads.",
+      "chapters": [
+        1791
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "water-threads-and-pearls",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Pearl thread water is the saliva of immemorial water spiders, essence formed after they live a long time in water. It accumulates droplet by droplet; if it is not collected in time, ancient water spiders consume it to increase their strength. Ba Shi Ba kept a lake with many ancient water spiders and two immemorial water spiders, one male and one female, to produce it in his immortal aperture.",
+      "chapters": [
+        1791
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "immemorial-spider-saliva",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ba_shi_ba"
+      ]
+    },
+    {
+      "text": "Addition Gu consumes pearl thread water as food. Submerged in pearl thread water for eight days and nights, the Gu becomes full, and the next feeding is eighty years later. When Fang Yuan inspects Ba Shi Ba’s stock, thirty-six years remain until the next feeding, with enough pearl thread water already on hand. Feeding a rule path Immortal Gu on pearl thread water forced Ba Shi Ba to build a water path resource point in a mostly rule path aperture.",
+      "chapters": [
+        1791
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "addition-gu-food",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_addition_gu",
+        "char_fang_yuan",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/pearl-thread-water/",
+      "chapters": [
+        1791
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Water Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Saliva of immemorial water spiders",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

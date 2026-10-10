@@ -1,0 +1,161 @@
+{
+  "id": "move_years_grant_strength",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Years Grant Strength",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Years Grant Strength is Hei Fan's time path immortal killer move. Using year Gu as the core, it grants the Gu Immortal immense physical strength.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1130,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1130
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_time",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_year_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_year_gu",
+      "count": 3
+    },
+    {
+      "target": "path_time",
+      "count": 1
+    },
+    {
+      "target": "char_hei_fan",
+      "count": 2
+    },
+    {
+      "target": "inh_hei_fan_true_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Reading Hei Fan true inheritance, Fang Yuan finds this immortal killer move among more than thirty time path immortal killer moves. The more year Gu expended, the greater the strength obtained.",
+      "chapters": [
+        1130
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_hei_fan_true_inheritance",
+        "char_fang_yuan",
+        "gu_year_gu"
+      ]
+    },
+    {
+      "text": "It is Hei Fan’s own creation. He used time path Gu worms to achieve a strength path effect. Using one’s own path to mimic other paths is the symbol of a rank eight expert. Ordinary rank eight Gu Immortals cannot reach that stage.",
+      "chapters": [
+        1130
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_fan",
+        "sys_gu_worms",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/years-grant-strength/",
+      "chapters": [
+        1130
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Time Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Year Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

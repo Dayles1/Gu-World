@@ -1,0 +1,137 @@
+{
+  "id": "loc_xue_song_pavilion",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xue Song Pavilion",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A seven storey ice crystal pavilion on Xue Song Zi's Snowy Mountain branch peak in Northern Plains.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 537,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    537
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_xue_wa",
+      "count": 2
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_xue_song_zi",
+      "count": 1
+    },
+    {
+      "target": "char_green",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On a Snowy Mountain branch peak covered in green pine trees stands a seven storey pavilion made of ice crystal. Three words are carved on its board: Xue Song Pavilion.",
+      "chapters": [
+        537
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Green pine trees cover one peak of Snowy Mountain, and the pavilion board there is carved with the three words Xue Song Pavilion. Xue Song Zi stands on the top floor looking down over the branch peak that belongs exclusively to him. Xue Wa, Xue Mi, and Xue Ming kneel in front of Xue Song Pavilion and greet him as Lord Immortal before receiving orders.",
+      "chapters": [
+        537
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_green",
+        "loc_snowy_mountain",
+        "char_xue_song_zi",
+        "char_xue_wa"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/xue-song-pavilion.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/xue-song-pavilion/",
+      "chapters": [
+        537
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "pavilion",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

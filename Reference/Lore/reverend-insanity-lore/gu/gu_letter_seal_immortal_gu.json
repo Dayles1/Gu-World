@@ -1,0 +1,229 @@
+{
+  "id": "gu_letter_seal_immortal_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Letter Seal Immortal Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Letter Seal Immortal Gu is a rank seven information path Immortal Gu that Wu Shuai finds inside a rock at Gu tribe headquarters, where it had sealed ant nest Immortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1862,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1862
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_information",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_wu_shuai",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1862,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wu_shuai",
+      "count": 3
+    },
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "gu_ant_nest_gu",
+      "count": 2
+    },
+    {
+      "target": "inh_wu_shuai_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_army_ant",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/letter-seal-immortal-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/letter-seal-immortal-gu/",
+      "chapters": [
+        1862
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 7,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_information"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "At Gu tribe headquarters, Fang Yuan’s dragonman clone Wu Shuai dissects a grey rock and finds two Immortal Gu inside, rank eight ant nest Immortal Gu and rank seven letter seal Immortal Gu. Letter seal Immortal Gu is an information path Immortal Gu and holds a large amount of content about army ants. It had been used to seal ant nest Immortal Gu, which was hard to preserve as an inheritance because an Immortal Gu must be fed in time or it dies of hunger. The real Wu Shuai used letter seal Immortal Gu to cover ant nest Immortal Gu in a thick rock membrane, making an Immortal Gu rock, and the price was that letter seal Immortal Gu had to stay inside as well. When the clone opens the rock, both Immortal Gu are extremely weak and hungry, and he feeds them with food Fang Yuan prepared. Gu tribe had preserved the rock as Wu Shuai’s inheritance and returns it to him.",
+        "chapters": [
+          1862
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_tribe",
+          "char_fang_yuan",
+          "char_wu_shuai",
+          "sys_immortal_gu",
+          "gu_ant_nest_gu",
+          "inh_wu_shuai_inheritance"
+        ],
+        "needs_review": true
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_wu_shuai",
+      "role": "holder",
+      "recorded_chapter": 1862,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": []
+  },
+  "attributes": {
+    "Path": {
+      "text": "Information Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

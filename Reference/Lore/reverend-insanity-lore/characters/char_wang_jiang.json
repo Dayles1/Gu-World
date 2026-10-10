@@ -1,0 +1,282 @@
+{
+  "id": "char_wang_jiang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wang Jiang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wang jiang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ван Цзян",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wang Jiang is a rank three Gu Master of Wang tribe who hunts Tang tribe in a Northern Plains army battle after Tang tribe snatches his fiance Luo Yu Feng.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 509,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    509,
+    510
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_wang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 509,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_swallow_fire_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 510,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_swallow_fire_gu",
+      "count": 3
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_luo_yu_feng",
+      "count": 2
+    },
+    {
+      "target": "char_tang_fang",
+      "count": 2
+    },
+    {
+      "target": "fac_tang_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_tang_miao_ming",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_attack_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Tang Fang tries to leave the field after Tang Miao Ming is captured, a Tang tribe elder names the rushing rank three Gu Master as Wang Jiang and tells Tang Fang to flee while he holds the line. Narration states Wang Jiang’s fiance Luo Yu Feng had been snatched by Tang tribe, so he holds deep hatred and will not miss the chance for revenge in that large battle.",
+      "chapters": [
+        509
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tang_fang",
+        "char_tang_miao_ming",
+        "fac_tang_tribe",
+        "sys_gu_master",
+        "char_luo_yu_feng"
+      ]
+    },
+    {
+      "text": "In the next clash his whole body inflates like a black bear as he smashes toward Tang Fang, but no chapter gives a standing face or dress description beyond that battle posture.",
+      "chapters": [
+        510
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He shouts that he will repay Tang tribe’s humiliation double, then meets Tang Fang’s pellet fire Gu by opening his mouth and swallowing the orange fire. Tang Fang recognizes rank four swallow fire Gu. Narration calls swallow fire Gu a storage Gu rather than an offensive Gu, and states Wang Jiang spent a huge price to buy it specifically because Tang tribe always prioritized fire path Gu worms, so he could use it against them later.",
+      "chapters": [
+        510
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "weaponizing-a-storage-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_storage_gu",
+        "sys_attack_gu",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Two rank three Gu Masters rush in to help him, and the Tang side turns pale at the numbers plus the swallow fire Gu. Tang Fang escapes while the Tang tribe elder stays behind with the rank three rare Gu slow steps, which slows Wang Jiang and the two helpers enough that they abandon the chase and attack the elder instead. Wang Jiang’s punch is the first blow that lands on that elder before a wind blade severs an arm and a snowball finishes the kill as an ice sculpture.",
+      "chapters": [
+        510
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fight-on-the-field",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wang-jiang/",
+      "chapters": [
+        509,
+        510
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 509",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Wang Tribe as of ch. 509",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 509,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_swallow_fire_gu",
+      "role": "user",
+      "recorded_chapter": 510,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

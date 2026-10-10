@@ -1,0 +1,149 @@
+{
+  "id": "sys_grey_bone_huge_book",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Grey Bone Huge Book",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Grey Bone Huge Book is a large bone book found with Grey Bone Scholar's corpse in the White Bone inheritance. It holds refinement recipes and the scholar's account of why the inheritance exists.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 222,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    222,
+    224
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_grey_bone_scholar",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spike_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_spiral_bone_cave",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the third bone hall of the inheritance on Bai Gu mountain, a human skeleton sits before a huge book made of bone, as long as an arm, half an arm wide, and about eight inches thick. Fang Yuan recalls that the Bai clan twins named this book the Grey Bone Huge Book in his previous life.",
+      "chapters": [
+        222
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_gu_mountain",
+        "char_fang_yuan",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "The book ends by identifying the corpse as Grey Bone Scholar himself and inviting a kind inheritor to kowtow three times, then split the skull for his lifebound Gu. Fang Yuan hands the book to Bai Ning Bing before he kowtows. Bai Ning Bing wants to open the skull at once; Fang Yuan stops her, treating curiosity about the lifebound Gu as the trap, and waits until a second tunnel opens before he smashes the corpse and takes a rank three Bone Spike Gu from the skull.",
+      "chapters": [
+        222
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "contents",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_grey_bone_scholar",
+        "char_bai_ning_bing",
+        "gu_bone_spike_gu"
+      ]
+    },
+    {
+      "text": "Deeper in the inheritance, Fang Yuan finds another bone book many times smaller than the Grey Bone Huge Book, about half an adult palm, with a successor message under the names Grey Bone Scholar and Flesh Bone Master.",
+      "chapters": [
+        224
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "book-size-contrast",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/mechanics/grey-bone-huge-book.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/grey-bone-huge-book/",
+      "chapters": [
+        222,
+        224
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Inheritance record",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

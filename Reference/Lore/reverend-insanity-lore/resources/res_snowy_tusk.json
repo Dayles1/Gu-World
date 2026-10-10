@@ -1,0 +1,171 @@
+{
+  "id": "res_snowy_tusk",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Snowy Tusk",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "snow-white tusk wild boar king's snowy tusk"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Snowy tusk is the wild boar king's snow-white tusk, the material Fang Yuan wants for combining Gu worms.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 94,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    94,
+    99
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_white_jade_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_white_jade_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_fusion",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan needs wild boar tusks to combine Gu worms and judges the wild boar king’s tusks the most suitable, and he has in fact meant to kill it from the start. The wild boar king fights Sickly Snake group’s Gu Masters with its snow white tusks, and Fang Yuan holds both of them to pin it down. Fang Yuan then stops pulling, and the tusks fling him aside before a second sweep catches Hua Xing, one of Sickly Snake group’s Gu Masters, and breaks her body in two.",
+      "chapters": [
+        94
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-most-suitable-boar-tusk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_worms",
+        "char_gu_yue_jiao_san",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "After a lightning wolf pack eats away most of the wild boar king’s skin and flesh, its two snow-white tusks, shaped like an elephant’s, are the most valuable spoils left from Sickly Snake group’s kill. By the clan’s rules, Fang Yuan receives one tusk as a member of the kill.",
+      "chapters": [
+        99
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "spoils-of-the-hunt",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan throws the snowy tusk into a Gu fusion already merging White Boar Gu and Jade Skin Gu, a recipe circulated for over a thousand years without anyone having heard of adding a wild boar king’s snowy tusk. The tusk raises the fusion’s success rate by twenty percent, and the fusion completes into White Jade Gu.",
+      "chapters": [
+        99
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-jade-gu-fusion",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_fusion",
+        "gu_white_boar_gu",
+        "gu_jade_skin_gu",
+        "gu_white_jade_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/snowy-tusk.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/snowy-tusk/",
+      "chapters": [
+        94,
+        99
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Wild boar king",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "White Jade Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

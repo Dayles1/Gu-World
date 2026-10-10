@@ -1,0 +1,295 @@
+{
+  "id": "char_bei_cao_sheng",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bei Cao Sheng",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bei cao sheng",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Бэй Цао Шэн",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bei Cao Sheng is Bei tribe's old rank three enslavement path envoy who asks Wang tribe to join the Bei, Zheng, and Pei alliance against Ge tribe.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 477,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    477,
+    478,
+    484,
+    532
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_bei_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 477,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_bei_tribe",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "fac_pei_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_pei_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "char_bei_cao_chuan",
+      "count": 2
+    },
+    {
+      "target": "gu_liu_wen_wus_gu_worm",
+      "count": 2
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_yan_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "char_wang_de_dao",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Wang tribe beside crescent lake, Wang tribe leader hears that Yan tribe has been wiped by Ge tribe and faces Bei tribe’s envoy: an old rank three Gu Master with wrinkled face, grey hair, and sunken dark eyes, named as an enslavement path expert with some reputation in Northern Plains. He states he represents the Bei, Zheng, and Pei alliance and asks Wang tribe to join and punish Ge tribe together.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wang_tribe",
+        "loc_crescent_lake",
+        "fac_yan_tribe",
+        "fac_ge_tribe",
+        "fac_bei_tribe",
+        "sys_gu_master",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Bei Cao Sheng is an old Gu Master. His face is filled with wrinkles. He has grey hair and sunken and dark eyes.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He credits Ge tribe’s win to Chang Shan Yin, names Wolf King’s reduced wolf group and demonic path conduct as reasons to strike, and argues four allied tribes need not fear Ge tribe. He is Bei tribe’s political advisor there, and his words can incite people. He also names Bei tribe’s forest soldier corps, Zheng tribe’s lightning spear battle formation, and Pei tribe leader Pei Yan Fei at rank four peak stage as tools against an enslavement path opponent. Wang tribe leader stalls for at most three days of hospitality; Bei Cao Sheng leaves disappointed after pressing that delay lets Ge tribe digest its spoils.",
+      "chapters": [
+        478
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-pitch",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "fac_zheng_tribe",
+        "fac_pei_tribe",
+        "char_pei_yan_fei"
+      ]
+    },
+    {
+      "text": "While Wang tribe entertains him and rejects meetings, he keeps requesting the tribe leader and still treats alliance work as his mission. On the third day he meets Bei Cao Chuan and other Bei elders in person, admits Wang tribe will not join, and still claims the three tribes can handle Ge tribe alone.",
+      "chapters": [
+        484
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wang-tribe-stay",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bei_cao_chuan"
+      ]
+    },
+    {
+      "text": "In order to contest Wolf King Chang Shan Yin, Bei tribe elder Bei Cao Sheng sacrifices himself and entrusts his soul to Bei Cao Chuan. Using Liu Wen Wu’s Gu worm, Bei Cao Chuan absorbs that soul’s power and briefly gains enslavement path master attainment.",
+      "chapters": [
+        532
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "soul-sacrifice",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_liu_wen_wus_gu_worm"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/bei-cao-sheng.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bei-cao-sheng/",
+      "chapters": [
+        477,
+        478,
+        484,
+        532
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "III as of ch. 477",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Bei Tribe as of ch. 477",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 3,
+        "as_of_chapter": 477,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

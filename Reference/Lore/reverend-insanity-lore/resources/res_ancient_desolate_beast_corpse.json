@@ -1,0 +1,150 @@
+{
+  "id": "res_ancient_desolate_beast_corpse",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ancient desolate beast corpse",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An ancient desolate beast corpse is the body of an ancient desolate beast, worth far more than a desolate beast corpse and sold as immortal materials.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 729,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    729,
+    994,
+    1482
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_ancient_desolate_beast",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_starry_sky_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_falling_heavenly_river",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Among Starry Sky grotto-heaven loot, the astral wind flying heavenly boar is counted as an ancient desolate beast corpse beside seven ordinary desolate beast corpses. Ancient desolate beast corpses are about ten times the price of desolate beast corpses, around four hundred immortal essence stones. Ancient desolate beasts have battle strength equivalent to rank seven Gu Immortals, and their bodies are covered in dao marks that blunt mortal and many immortal killer moves, so killing one costs heavy immortal essence and the net profit is often only about a hundred immortal essence stones. Desolate beast and ancient desolate beast corpses are easy to split because their prices can be evaluated.",
+      "chapters": [
+        729
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "price-against-desolate-corpses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_starry_sky_grotto_heaven",
+        "sys_ancient_desolate_beast",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "During the Falling Heavenly River chaos, dead ancient desolate beast corpses sometimes float to the surface, and Fang Yuan takes them for a heavy sum.",
+      "chapters": [
+        994
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "river-surface-gains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_falling_heavenly_river",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Shadow Sect members capture desolate beasts and ancient desolate beasts in Tai Qiu, Fang Yuan takes only the souls; the remaining corpses are immortal materials that can be sold for a high price.",
+      "chapters": [
+        1482
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "corpses-kept-as-materials",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "loc_tai_qiu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/ancient-desolate-beast-corpse/",
+      "chapters": [
+        729,
+        994,
+        1482
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Ancient desolate beasts",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

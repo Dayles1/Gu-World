@@ -1,0 +1,254 @@
+{
+  "id": "char_yao_yuan_ying",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yao Yuan Ying",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "yao yuan ying",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Яо Юань Ин",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yao Yuan Ying is a Yao tribe healing Gu Immortal who represents Yao Huang at Blood Plain, yields the Longevity Edict to Gong Wan Ting, and later loses to Chu Du.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1193,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1193,
+    1202,
+    1235
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_yao_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_yao_tribe",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 2
+    },
+    {
+      "target": "char_nu_er_qian",
+      "count": 2
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 2
+    },
+    {
+      "target": "char_liu_zhuan_shen",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 1
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "char_chu_du",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From Yao tribe’s Immortal Gu House Divine Light Hall she flies out and greets Gong Wan Ting first, then Nu Er Qian. Nu Er Qian reads her nature as gentle, not proficient in fighting and killing, but specialized in healing, and takes that as a sign Yao tribe does not intend to put in much effort. Yao Huang appointed her; he is friends with Heavenly Lord Bai Zu and framed the blood battle martial competition as an explanation to Longevity Heaven while focusing on refining Gu. Beyond most Gu Immortals’ expectations she asks how she could command the Longevity Edict with Fairy Gong Wan Ting present, offers it three times, and only on the third offer does Gong Wan Ting accept as if forced.",
+      "chapters": [
+        1193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yao_tribe",
+        "sys_immortal_gu_house",
+        "char_gong_wan_ting",
+        "char_nu_er_qian",
+        "char_yao_huang",
+        "char_heavenly_lord_bai_zu",
+        "fac_longevity_heaven",
+        "sys_gu_immortal",
+        "gu_longevity_edict"
+      ]
+    },
+    {
+      "text": "Chu Du lists Yao tribe’s Yao Yuan Ying among experts he must watch if he keeps taking the stage after Ye Lui Qun Xing.",
+      "chapters": [
+        1202
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-experts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chu_du",
+        "char_ye_lui_qun_xing"
+      ]
+    },
+    {
+      "text": "Gong Wan Ting tells Domination Immortal Chu Du he defeated Liu Zhuan Shen and Yao Yuan Ying consecutively. Yao Yuan Ying and Liu Zhuan Shen have pale expressions; Chu Du is stronger than them.",
+      "chapters": [
+        1235
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "consecutive-loss-to-chu-du",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_liu_zhuan_shen"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/yao-yuan-ying/",
+      "chapters": [
+        1193,
+        1202,
+        1235
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Yao Tribe",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

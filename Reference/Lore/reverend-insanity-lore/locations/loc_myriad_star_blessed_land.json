@@ -1,0 +1,149 @@
+{
+  "id": "loc_myriad_star_blessed_land",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Myriad Star Blessed Land",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Myriad Star blessed land is Star Lord Wan Xiang's blessed land, which he claims uniquely produces star shoot Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 667,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    667
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "gu_star_shoot_gu",
+      "count": 2
+    },
+    {
+      "target": "char_eight_arm_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_star_lord_wan_xiang",
+      "count": 1
+    },
+    {
+      "target": "loc_treasure_yellow_heaven",
+      "count": 1
+    },
+    {
+      "target": "move_spring_star_rain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Deviation (recorded): chapter 667 does not name a five-region seat for Myriad Star blessed land.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In treasure yellow heaven, as Eight Arm Immortal, Fang Yuan bargains Star Lord Wan Xiang’s will down to three immortal essence stones for one thousand two hundred starlight firefly Gu. He then asks for star path killer moves and settles on spring star rain, which needs consumable star shoot Gu among its components. When he offers two immortal essence stones for the killer move plus a star shoot Gu recipe, the will refuses the recipe and will not let him inspect the land; he buys spring star rain with enough star shoot Gu for ten activations instead.",
+      "chapters": [
+        667
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_treasure_yellow_heaven",
+        "char_eight_arm_immortal",
+        "char_fang_yuan",
+        "char_star_lord_wan_xiang",
+        "gu_star_shoot_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/myriad-star-blessed-land/",
+      "chapters": [
+        667
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "blessed-land",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

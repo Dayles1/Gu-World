@@ -1,0 +1,144 @@
+{
+  "id": "move_gold_and_silver_lightning_dragon",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gold and Silver Lightning Dragon",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gold and Silver Lightning Dragon is Zheng tribe's cooperative killer move. Hundreds of Gu Masters fuse lightning spears, and rank three elders arm the result into a dragon.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 480,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    480
+  ],
+  "relations": [
+    {
+      "type": "constituent_gu",
+      "target": "gu_lightning_spear_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_lightning_spear_gu",
+      "count": 2
+    },
+    {
+      "target": "move_thunder_bird",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_support_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When three myriad wolf kings charge Zheng tribe camp, Zheng tribe leader’s Thunder Bird obstructs the turtleback myriad wolf king. He shouts for the lightning spear corps to shoot together. Lightning spears fly. Support Gu Masters converge them into a lightning snake. One elder activates eagle claw Gu so the snake grows two sharp, steel-like claws. Another activates rhino horn Gu, and a sharp golden horn grows from its head. A third activates silver scales Gu, adding bright silver scale armor. The armed lightning spear circles in the air like a divine dragon and charges the wind wolf myriad beast king.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zheng_tribe",
+        "move_thunder_bird",
+        "sys_support_gu"
+      ]
+    },
+    {
+      "text": "Normal killer moves are activated by one Gu Master, as with Zheng tribe leader’s Thunder Bird. Fang Yuan had already seen this move obstruct the night wolf myriad beast king and inflict serious injuries. While it lasts, the wind wolf myriad beast king cannot advance. After it dissipates, that wolf king is free to kill Zheng tribe elders.",
+      "chapters": [
+        480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/moves/gold-and-silver-lightning-dragon.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/gold-and-silver-lightning-dragon/",
+      "chapters": [
+        480
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Mortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Constituent Gu": {
+      "text": "Lightning Spear Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

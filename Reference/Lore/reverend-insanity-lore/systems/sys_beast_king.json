@@ -1,0 +1,166 @@
+{
+  "id": "sys_beast_king",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beast King",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A beast king is the ruler of a large beast group. Its body holds Gu that fight with it, and group size ranks kings as hundred, thousand, or myriad.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 95,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    95,
+    114,
+    115,
+    118
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_thousand_beast_king",
+      "count": 2
+    },
+    {
+      "target": "sys_beast_group",
+      "count": 1
+    },
+    {
+      "target": "sys_hundred_beast_king",
+      "count": 1
+    },
+    {
+      "target": "sys_myriad_beast_king",
+      "count": 1
+    },
+    {
+      "target": "gu_river_swallowing_toad",
+      "count": 1
+    },
+    {
+      "target": "char_little_beast_king",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_shou_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A beast king’s aura is authority among wild beasts. Other beasts shrink from it and a beast horde may route around the region unless a stronger horde or another beast king arrives.",
+      "chapters": [
+        95
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Large beast groups create beast kings. The threat of a beast king is multiple times that of a normal wild beast, because one or two Gu live in its body and come out to assist when the king is attacked.",
+      "chapters": [
+        114
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Group size ranks beast kings from low to high as Hundred Beast King, Thousand Beast King, and Myriad Beast King. Weaker kings cannot rule a large number of their kind.",
+      "chapters": [
+        114
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_hundred_beast_king",
+        "sys_thousand_beast_king",
+        "sys_myriad_beast_king"
+      ]
+    },
+    {
+      "text": "A hundred beast king may, over years, advance toward thousand beast king and unify more of its kind if it gains that ability.",
+      "chapters": [
+        115
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Strong beast groups invade and conquer neighbouring land; weaker groups are exiled, and that instinct also feeds beast tides. A territory’s beast king can be recognised by roaming beasts such as River Swallowing Toad, which leaves once that recognition is settled.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_river_swallowing_toad"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/beast-king/",
+      "chapters": [
+        95,
+        114,
+        115,
+        118
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Beast tier",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

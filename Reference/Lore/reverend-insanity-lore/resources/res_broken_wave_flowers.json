@@ -1,0 +1,105 @@
+{
+  "id": "res_broken_wave_flowers",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Broken wave flowers",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Broken wave flowers are an immortal material grown in large rivers, born in the brief moments when waves appear and vanish.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 762,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    762
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Broken wave flowers grow in large rivers. They are magical flowers born during the moments where waves appear and vanish, and their short lifespan makes them hard to gather.",
+      "chapters": [
+        762
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "river-growth",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Qin Bai Sheng’s open transactions, the first Gu Immortal on stage offers a large amount of this immortal material and asks for prosperity soil in return. The seller holds large numbers of the flowers and completes a trade for one thousand and five hundred kilograms of prosperity soil before leaving the stage.",
+      "chapters": [
+        762
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "open-trade",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qin_bai_sheng",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/broken-wave-flowers/",
+      "chapters": [
+        762
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Large rivers",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "res_rice_wine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rice wine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Rice wine is a common, cheap village liquor sold beside muddy wine in Gu Yue taverns.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 12,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    12,
+    23,
+    38,
+    64,
+    105,
+    268
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "gu_four_flavors_liquor_worm",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Gu Yue Village has three taverns that sell common rice wine, muddy wine, and other similar common wine, in contrast to the expensive green bamboo wine at the sole inn.",
+      "chapters": [
+        12
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "common-tavern-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "A Liquor worm can live on turbid wine or rice wine, but those second-rate wines force it to drink many jars every day, so Fang Yuan prefers green bamboo wine for cost and secrecy.",
+      "chapters": [
+        23
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "second-rate-gu-feed",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_liquor_worm",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "At the inn, an old man sips rice wine while looking enviously at Fang Yuan’s green bamboo wine, which he cannot afford.",
+      "chapters": [
+        38
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-table-drink",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When green bamboo wine is sold out after a caravan visit, Fang Yuan orders a jar of rice wine and pre-orders the next bamboo brew.",
+      "chapters": [
+        64
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "substitute-when-sold-out",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the four wines for a Four Flavors Liquor Worm, rice wines can fit the sweet wine criteria, while bitter wines remain the hard slot to fill.",
+      "chapters": [
+        105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sweet-fusion-stand-in",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_four_flavors_liquor_worm"
+      ]
+    },
+    {
+      "text": "A server later calls a jar the cheapest rice wine when Fang Yuan has no money for better liquor.",
+      "chapters": [
+        268
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cheap-purchase",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/rice-wine/",
+      "chapters": [
+        12,
+        23,
+        38,
+        64,
+        105,
+        268
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Common village brew",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

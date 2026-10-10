@@ -1,0 +1,526 @@
+{
+  "id": "fac_wind_cloud_manor",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wind Cloud Manor",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A sect whose Gu Immortal is Hong Chi Ming.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 811,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    811,
+    838,
+    923,
+    1030,
+    1052,
+    1060,
+    1069,
+    1239,
+    1708,
+    1931
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_hong_chi_ming",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 811,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_mi_lan_guang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 838,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_old_man_bei_feng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1052,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_feng_chan_zi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1069,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_song_tao_zi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1841,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chen_da_jiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1992,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hong_chi_ming",
+      "count": 3
+    },
+    {
+      "target": "char_mi_lan_guang",
+      "count": 3
+    },
+    {
+      "target": "char_feng_chan_zi",
+      "count": 3
+    },
+    {
+      "target": "char_old_man_bei_feng",
+      "count": 2
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 2
+    },
+    {
+      "target": "house_cloud_passing_building",
+      "count": 2
+    },
+    {
+      "target": "char_song_tao_zi",
+      "count": 2
+    },
+    {
+      "target": "char_chen_da_jiang",
+      "count": 2
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "house_wind_cloud_manor",
+      "count": 2
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 2
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "house_modest_thatched_hut",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ling_mei",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 1
+    },
+    {
+      "target": "loc_ming_tang_valley",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "loc_pot_river",
+      "count": 1
+    },
+    {
+      "target": "char_di_zang_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_hidden_dragon_cave",
+      "count": 1
+    },
+    {
+      "target": "char_ye_fan",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_combat_immortal_sect",
+      "count": 1
+    },
+    {
+      "target": "house_canary_pavilion",
+      "count": 1
+    },
+    {
+      "target": "house_edge_link_camp",
+      "count": 1
+    },
+    {
+      "target": "loc_emperor_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Wind Cloud Manor’s Immortal Gu House Wind Sweeping Building has seven floors and fluttering curtains.",
+      "chapters": [
+        1239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_wind_cloud_manor",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "It is one of the manor’s two signature Immortal Gu Houses, paired with Cloud Passing Building.",
+      "chapters": [
+        1708
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_cloud_passing_building"
+      ]
+    },
+    {
+      "text": "Hong Chi Ming speaks during the investigation in Northern Plains after Eighty-Eight True Yang Building collapses. He prefers the original name Thatched Hut for Modest Thatched Hut, and he recounts how Dong Fang Yu of Dong Fang tribe inherited that house and renamed it. Before becoming an immortal he had explored Northern Plains as a mortal and lived there for some time, so he knew those details clearly. He raises the history while hinting that they should go to Jade Pool blessed land to plunder for resources.",
+      "chapters": [
+        811
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "jade-pool-counsel",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hong_chi_ming",
+        "reg_northern_plains",
+        "house_eighty_eight_true_yang_building",
+        "house_modest_thatched_hut",
+        "fac_dong_fang_tribe",
+        "loc_jade_pool_blessed_land"
+      ]
+    },
+    {
+      "text": "Lightning Information Sect’s creator, Mi Lan Guang, was originally a lightning path Gu Immortal from Wind Cloud Manor. Because he broke the sect rules, he was crippled in his cultivation and expelled from the sect.",
+      "chapters": [
+        838
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sect-standing-and-disciples",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mi_lan_guang",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Hong Chi Ming came from Wind Cloud Manor, one of the ten great ancient sects of Central Continent. He was skilled in Gu formations and was famous in Central Continent. A Gu formation he set up let Fairy Ling Mei vanish and reappear far away at the moment between life and death, and a later wall of light during the Luo Po Valley breakout was also his work, even while he was not inside it.",
+      "chapters": [
+        923
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sect-standing-and-disciples",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ten_great_sects",
+        "reg_central_continent",
+        "sys_gu_formation",
+        "char_fairy_ling_mei",
+        "loc_luo_po_valley"
+      ]
+    },
+    {
+      "text": "Ming Tang valley is under the control of Wind Cloud Manor and Heavenly Lotus Sect, two of the ten great ancient sects. It is famous in Central Continent as one of the best places to produce light path Gu worms, rich in light path dao marks, and almost every twenty years a wild light path Immortal Gu forms there.",
+      "chapters": [
+        1030
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territory-and-treasure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_ming_tang_valley",
+        "fac_heavenly_lotus_sect",
+        "sys_gu_worms",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "The banks of Pot River in the eastern part of Central Continent sit under Wind Cloud Manor’s jurisdiction. The light of the immemorial era, a rare Gu refinement material that every Fixed Immortal Travel recipe revolves around, is one of the treasures of Wind Cloud Manor.",
+      "chapters": [
+        1052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territory-and-treasure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_pot_river",
+        "gu_fixed_immortal_travel"
+      ]
+    },
+    {
+      "text": "A super force of the ten great ancient sects, Wind Cloud Manor is in charge at Pot River. Every year during that river’s flood season it holds a festival that draws countless Gu Masters of all ages and genders, not only its own disciples but also the surrounding forces.",
+      "chapters": [
+        1060
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territory-and-treasure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Wind Cloud Manor was only a sect under Heavenly Court, but they already had the light of the immemorial era in their inventory. Gu Immortal Feng Chan Zi stole that material from their treasury and sold it to an outsider. Fairy Zi Wei punishes him to guard Hidden Dragon Cave and Di Zang Sheng for twenty years.",
+      "chapters": [
+        1069
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "territory-and-treasure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "char_feng_chan_zi",
+        "char_fairy_zi_wei",
+        "loc_hidden_dragon_cave",
+        "char_di_zang_sheng"
+      ]
+    },
+    {
+      "text": "When three Immortal Gu Houses pierce the heavenly wind qi wall into black heaven, Wind Cloud Manor’s Wind Sweeping Building is one of them: a house of seven floors with fluttering curtains, sent with Heavenly Lotus Sect’s Canary Pavilion and Combat Immortal Sect’s Edge Link Camp. Zhao Lian Yun rides in that middle house.",
+      "chapters": [
+        1239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wind-sweeping-building-deployments",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_wind_sweeping_building",
+        "fac_heavenly_lotus_sect",
+        "house_canary_pavilion",
+        "fac_combat_immortal_sect",
+        "house_edge_link_camp",
+        "char_zhao_lian_yun"
+      ]
+    },
+    {
+      "text": "It is named a rank seven Immortal Gu House.",
+      "chapters": [
+        1708
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wind-sweeping-building-deployments",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ye Fan looks at Immortal Gu Houses floating over Emperor City and names a seven-story tower with fluttering curtains as Wind Cloud Manor’s rank seven Immortal Gu House, Wind Sweeping Building.",
+      "chapters": [
+        1931
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wind-sweeping-building-deployments",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ye_fan",
+        "loc_emperor_city"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/wind-cloud-manor/",
+      "chapters": [
+        811,
+        838,
+        923,
+        1030,
+        1052,
+        1060,
+        1069,
+        1239,
+        1708,
+        1931
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

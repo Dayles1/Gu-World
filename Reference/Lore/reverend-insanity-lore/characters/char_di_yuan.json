@@ -1,0 +1,185 @@
+{
+  "id": "char_di_yuan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Di Yuan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "di yuan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ди Юань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Di Yuan is a Gu Immortal who sells starlight fireflies through treasure yellow heaven, one of three competing sellers Fang Yuan deals with there.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 466,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    466,
+    467,
+    667
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_yao_guang",
+      "count": 2
+    },
+    {
+      "target": "char_star_lord_wan_xiang",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_star_fragment_grass",
+      "count": 1
+    },
+    {
+      "target": "char_eight_arm_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_little_hu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan pushes remnant Immortal Gu recipes into treasure yellow heaven to buy starlight fireflies, a third Gu Immortal calling himself Di Yuan says he possesses a large number of them, joining Starlord Wan Xiang and Fairy Yao Guang as competing sellers. Fang Yuan lets the three bid, and they settle on thirty-three thousand starlight fireflies each rather than undercutting one another hard. Di Yuan’s offered swarm shows a treasure light of five and a half meters, brighter than Fairy Yao Guang’s three meters and weaker than Starlord Wan Xiang’s seven meters, which include many starlight firefly Gu mixed in.",
+      "chapters": [
+        466
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_recipe",
+        "sys_gu_immortal",
+        "char_star_lord_wan_xiang",
+        "char_fairy_yao_guang"
+      ]
+    },
+    {
+      "text": "Fang Yuan next asks the same three sellers for seeds and farming knowledge for star fragment grass, the food of starlight fireflies. Among the three documents, Di Yuan’s writeup is simple and brief, while Starlord Wan Xiang’s has innovative ideas and Fairy Yao Guang’s is verbose and detailed. Fang Yuan uses all three to memorize star fragment grass cultivation.",
+      "chapters": [
+        467
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "farming-documents",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Later, while haggling over a starlight firefly Gu swarm under the name Eight Arm Immortal, Fang Yuan names Fairy Yao Guang and Di Yuan as other sellers he can turn to if the price is wrong. Fang Yuan had Little Hu Immortal deal with all three Gu Immortals earlier, buying over a hundred thousand starlight fireflies, their food star fragment grass, and their planting experience.",
+      "chapters": [
+        667
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-as-other-seller",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_eight_arm_immortal",
+        "char_little_hu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/di-yuan/",
+      "chapters": [
+        466,
+        467,
+        667
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

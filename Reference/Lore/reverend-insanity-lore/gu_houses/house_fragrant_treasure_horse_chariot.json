@@ -1,0 +1,158 @@
+{
+  "id": "house_fragrant_treasure_horse_chariot",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fragrant Treasure Horse Chariot",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fragrant Treasure Horse Chariot is an Immortal Gu House that rank eight lone cultivator Yang Jun uses while chasing Dragon Palace.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1691,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1691,
+    1692,
+    1886
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "char_yang_jun",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yang_jun",
+      "count": 4
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "move_familiar_face",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan stalks the Eastern Sea rank eight contest over Dragon Palace until, several days later, Yang Jun finds him by chance from this house. Fang Yuan strikes Yang Jun and escapes at once. That movement draws the other rank eights, but Duke Long is too late to act.",
+      "chapters": [
+        1691
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_eastern_sea",
+        "house_dragon_palace",
+        "char_yang_jun",
+        "char_duke_long"
+      ]
+    },
+    {
+      "text": "Fang Yuan later lists Yang Jun’s discovery of him in familiar face disguise among the rank eight methods that prove Eastern Sea’s rank eights cannot be underestimated.",
+      "chapters": [
+        1692
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "disguise-exposure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_familiar_face"
+      ]
+    },
+    {
+      "text": "In Fang Yuan’s previous life, Yang Jun had this Immortal Gu House, and while chasing Dragon Palace he found Fang Yuan’s traces and ruined Fang Yuan’s chance to sneak up on it.",
+      "chapters": [
+        1886
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/fragrant-treasure-horse-chariot/",
+      "chapters": [
+        1691,
+        1692,
+        1886
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Yang Jun (owner)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

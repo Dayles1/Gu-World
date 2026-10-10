@@ -1,0 +1,117 @@
+{
+  "id": "loc_fog_city",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fog City",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fog City is an image of a city in Crazed Demon Cave fog, formed from gathered vengeful souls of Gu Immortals.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1174,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1174
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "loc_crazed_demon_cave",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_not_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan sees the image of a city in the fog of Crazed Demon Cave’s third layer.",
+      "chapters": [
+        1174
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_crazed_demon_cave"
+      ]
+    },
+    {
+      "text": "Not Immortal leads Fang Yuan through Crazed Demon Cave. The third layer is covered in white fog with many fog Gu and fierce beasts. Special bamboo on the scale of the first layer’s rainforest creates endless fog there. In that fog Fang Yuan sees Fog City. Not Immortal says the vengeful souls who died gather and form there, and that looking is pointless. Fang Yuan knows Fog City; souls that form it are at least Gu Immortals and numerous. With his strength then, entering would mean certain death with no escape.",
+      "chapters": [
+        1174
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_not_immortal",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/fog-city.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/fog-city/",
+      "chapters": [
+        1174
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "city",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

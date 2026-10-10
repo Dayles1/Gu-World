@@ -1,0 +1,254 @@
+{
+  "id": "char_dragon_head_tortoise",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dragon Head Tortoise",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dragon Head Tortoise is one of Eastern Sea's three most famous wisdom path Gu Immortals and lives inside adversity sea.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 899,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    899,
+    903,
+    1296,
+    1887
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_hua_an",
+      "count": 2
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 2
+    },
+    {
+      "target": "fac_nan_gong_clan",
+      "count": 2
+    },
+    {
+      "target": "char_song_xia_qi",
+      "count": 1
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 1
+    },
+    {
+      "target": "loc_adversity_sea",
+      "count": 1
+    },
+    {
+      "target": "char_lu_tan_xin",
+      "count": 1
+    },
+    {
+      "target": "char_gong_liang_bai",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Eastern Sea talk ranks three wisdom path experts with the saying that Jia Dan sits in twin polar, Hua An hides in Nan Gong, and Dragon Head Tortoise lives inside adversity sea.",
+      "chapters": [
+        899
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "char_song_jia_dan",
+        "char_hua_an",
+        "fac_nan_gong_clan"
+      ]
+    },
+    {
+      "text": "When Song Jia Dan cannot deduce Xing Xiang Zi’s location, Song Yi Shi and Song Xia Qi reason that anyone shielding him would have to stand at least at Song Jia Dan’s level, and name Nan Gong clan’s Hua An and Dragon Head Tortoise Immortal in adversity sea as the two who might have done it.",
+      "chapters": [
+        899
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_song_yi_shi",
+        "char_song_xia_qi"
+      ]
+    },
+    {
+      "text": "Song Jia Dan and Hua An are righteous path members who rarely deduce for lone immortals. Dragon Head Tortoise stays inside adversity sea, his traces hard to find, so people struggle to seek his help.",
+      "chapters": [
+        1296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "adversity-sea-recluse",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dragon Head Tortoise Immortal in adversity sea is one of the famous Eastern Sea Gu Immortals who come to attend Fang Yuan’s qi sea banquet.",
+      "chapters": [
+        1887
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qi-sea-banquet-guest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/dragon-head-tortoise/",
+      "chapters": [
+        899,
+        903,
+        1296,
+        1887
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

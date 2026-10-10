@@ -1,0 +1,258 @@
+{
+  "id": "fac_qi_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qi Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qi clan is a Southern Border qi path force descended from the Heaven Surveying Five Xiangs. Its elders live in Qi Sea grotto-heaven rather than ruling like Shang or Wu clan.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1035,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1035,
+    1036,
+    1037
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qi_he",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1035,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qi_xiang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1035,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_qi_he",
+      "count": 4
+    },
+    {
+      "target": "char_qi_xiang",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_qi_zai",
+      "count": 2
+    },
+    {
+      "target": "fac_heaven_surveying_five_xiangs",
+      "count": 2
+    },
+    {
+      "target": "loc_qi_sea_grotto_heaven",
+      "count": 2
+    },
+    {
+      "target": "loc_rotten_mud_mountain",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_ni_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_ni_clan_village",
+      "count": 1
+    },
+    {
+      "target": "fac_xue_clan",
+      "count": 1
+    },
+    {
+      "target": "inh_qi_xiang_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_heaven_form",
+      "count": 1
+    },
+    {
+      "target": "move_unlimited_qi_sea",
+      "count": 1
+    },
+    {
+      "target": "char_xue_xiang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes a clan compound or banner. Elders are said to live in Qi Sea grotto-heaven.",
+      "chapters": [
+        1035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_sea_grotto_heaven"
+      ]
+    },
+    {
+      "text": "Qi Zai consoles newly ascended Qi He and says that when his matter is settled they can return to Qi Sea grotto-heaven, where seniors will be happy that Qi clan has another Gu Immortal. Qi He asks why Qi clan elders who have become Gu Immortals do not look after descendants the way Southern Border super forces like Wu clan and Shang clan do, instead allowing juniors to be bullied and suppressed.",
+      "chapters": [
+        1035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_zai",
+        "char_qi_he",
+        "sys_gu_immortal",
+        "reg_southern_border",
+        "fac_wu_clan",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Qi Zai says the underlying cause relates to Qi clan’s ancestor, one of the Heaven Surveying Five Xiangs thousands of years ago.",
+      "chapters": [
+        1035
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heaven-surveying-five-xiangs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heaven_surveying_five_xiangs"
+      ]
+    },
+    {
+      "text": "He tells Qi He that Ni clan’s pathetic state was most likely schemed by Qi clan’s ancestors, and that Qi clan itself is in a bad state. He shows her a signature method of Qi clan and cannot conceal his pride that qi path has a long history.",
+      "chapters": [
+        1036
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "heaven-surveying-five-xiangs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ni_clan"
+      ]
+    },
+    {
+      "text": "Ni clan villages scattered over Southern Border were purposely preserved by Qi clan’s Gu Immortals. Qi Zai is in charge of Rotten Mud Mountain. Qi clan is already in sight of victory regarding the ancient bet by the Heaven Surveying Five Xiangs when a mysterious Gu Immortal appears at the final juncture.",
+      "chapters": [
+        1037
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ancient-bet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_rotten_mud_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/qi-clan/",
+      "chapters": [
+        1035,
+        1036,
+        1037
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

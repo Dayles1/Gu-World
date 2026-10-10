@@ -1,0 +1,257 @@
+{
+  "id": "fac_four_great_doctors",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Four Great Doctors",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "four great doctors of southern border"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Southern Border's four great doctors are first named when Fang Yuan ranks Doctor Su Shou with three peer healers in Shang clan city.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 271,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    271,
+    375,
+    383,
+    385,
+    388
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_divine_doctor_sheng_shou",
+      "count": 1
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_travelling_doctor_jiu_zhi",
+      "count": 1
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_sky_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan names Doctor Su Shou, Roaming Doctor Jiu Zhi, Doctor Sheng Shou, and Doctor Sha Ren as the four great doctors of the southern border.",
+      "chapters": [
+        271
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-healers-of-southern-border",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_doctor_su_shou",
+        "char_travelling_doctor_jiu_zhi",
+        "char_divine_doctor_sheng_shou"
+      ]
+    },
+    {
+      "text": "Another stretch keeps Doctor Su Shou, travelling doctor Jiu Zhi, and divine doctor Sheng Shou, and places killer ghost doctor Chou Jiu in the fourth seat instead of Doctor Sha Ren. The four great doctors heal both demonic and righteous path Gu Masters.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alternate-fourth-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chou_jiu",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "alternate-fourth-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "alternate-fourth-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan recalls that the battle of Yi Tian mountain shows Chou Jiu’s ability, and that killer ghost doctor becomes publicly recognised as the head of the four great doctors.",
+      "chapters": [
+        383
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "head-of-the-four",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yi_tian_mountain"
+      ]
+    },
+    {
+      "text": "Each has a peculiarity: killer ghost doctor and Doctor Su Shou aside, Travelling Doctor Jiu Zhi likes to disguise himself as an old beggar and wander, and Divine Doctor Sheng Shou is a male who likes other males.",
+      "chapters": [
+        385
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "peculiarities-among-the-four",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the current southern border, only the four great doctors can cleanse jade sky Gu’s immemorial-era poison.",
+      "chapters": [
+        388
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "jade-sky-gu-poison",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_jade_sky_gu"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Alternate fourth seat",
+      "positions": [
+        {
+          "position": "The four are Doctor Su Shou, Roaming Doctor Jiu Zhi, Doctor Sheng Shou, and Doctor Sha Ren.",
+          "support": "Chapter 271.",
+          "chapters": [
+            271
+          ]
+        },
+        {
+          "position": "The four are Doctor Su Shou, travelling doctor Jiu Zhi, divine doctor Sheng Shou, and killer ghost doctor Chou Jiu.",
+          "support": "Chapter 375.",
+          "chapters": [
+            375
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/four-great-doctors/",
+      "chapters": [
+        271,
+        375,
+        383,
+        385,
+        388
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

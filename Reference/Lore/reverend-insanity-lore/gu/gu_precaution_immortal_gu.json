@@ -1,0 +1,373 @@
+{
+  "id": "gu_precaution_immortal_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Precaution Immortal Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Precaution is a rank seven rule path defensive Immortal Gu. Alone it needs ten breaths before its defense rises, and Fang Yuan later folds it into vajra shell.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1340,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1340,
+    1346,
+    1347,
+    1353,
+    1405,
+    1415,
+    1813
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1340,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_vajra_shell",
+      "count": 3
+    },
+    {
+      "target": "move_fixed_luck",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "sys_formation_path_mortal_gu",
+      "count": 2
+    },
+    {
+      "target": "house_myriad_year_flying_warship",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "gu_big_rule_path_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_main_rule_path_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_stubborn_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/precaution-immortal-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/precaution-immortal-gu/",
+      "chapters": [
+        1340,
+        1346,
+        1347,
+        1353,
+        1405,
+        1415,
+        1813
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 7,
+        "recorded_chapter": 1346,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [
+      "defense"
+    ],
+    "effect_type_raw": "Defensive",
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is the size of two hands, like a long-horned beetle with a black exoskeleton, and very heavy. Even with Fang Yuan’s sovereign immortal body he cannot hold it; once refined it floats while he observes it.",
+        "chapters": [
+          1346
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "As the name suggests, it protects the Gu Immortal. It is rule path. Used alone it needs time: its effects activate only after ten breaths. Once those ten breaths pass, its defensive effect is among the top rank seven defenses, with status equal to sword escape Immortal Gu.",
+        "chapters": [
+          1346
+        ],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_immortal"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "owner",
+      "recorded_chapter": 1340,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan plans to add precaution Immortal Gu and formation path mortal Gu into vajra shell so the move’s power rises by multiple times.",
+        "chapters": [
+          1340
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "sys_formation_path_mortal_gu"
+        ]
+      },
+      {
+        "text": "It is one of the two Immortal Gu he took after joining Wu clan as Wu Yi Hai.",
+        "chapters": [
+          1346
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_immortal_gu",
+          "fac_wu_clan",
+          "char_wu_yi_hai"
+        ]
+      },
+      {
+        "text": "His first fusion test fails because he treats the tenth breath as the activation point; the Gu unleashes power at the eleventh breath, the killer move breaks, and he takes a backlash, though precaution Immortal Gu itself is not damaged.",
+        "chapters": [
+          1347
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "vajra-shell-timing",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He later rebuilds vajra shell with time path mortal Gu that remove the ten-breath delay, so the precaution effect is active as soon as the move starts.",
+        "chapters": [
+          1353
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "vajra-shell-timing",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_mortal_gu"
+        ]
+      },
+      {
+        "text": "He also uses it as the core of a Gu formation modified from Purple Mountain True Monarch’s inheritance.",
+        "chapters": [
+          1405
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "cores",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_formation",
+          "char_purple_mountain_true_monarch"
+        ]
+      },
+      {
+        "text": "In another modified killer move, it and rule path Immortal Gu Big replace stubborn Immortal Gu and rule path Immortal Gu Main as the core.",
+        "chapters": [
+          1415
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "cores",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "As the defense core of Myriad Year Flying Warship it later takes heavy injury when many ship Gu are damaged.",
+        "chapters": [
+          1813
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "cores",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "house_myriad_year_flying_warship"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Effect type": {
+      "text": "Defensive",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

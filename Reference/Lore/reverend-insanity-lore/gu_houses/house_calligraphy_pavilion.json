@@ -1,0 +1,194 @@
+{
+  "id": "house_calligraphy_pavilion",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Calligraphy Pavilion",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Calligraphy Pavilion is an Immortal Gu House owned by Calligraphy Pavilion Lady, a rank eight leader of Central Continent's lone cultivators.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1833,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1833,
+    1834,
+    1848
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "char_calligraphy_pavilion_lady",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "owners",
+      "target": "char_wu_shuai",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1848,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_calligraphy_pavilion_lady",
+      "count": 4
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 3
+    },
+    {
+      "target": "char_fan_ji",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shu_jiu_ling",
+      "count": 1
+    },
+    {
+      "target": "loc_black_heaven_temple",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "inh_wu_shuai_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_qian_kun_crystal_wall",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a dream realm, Fang Yuan’s dragonman clone is sent to Shu Jiu Ling’s husband contest so the dragonman race can use a marriage tie to pull Calligraphy Pavilion Lady, already going against Black Heaven Temple, onto their side. Kong Yi Hen brings Fan Ji to Calligraphy Pavilion to negotiate over that conflict. After the talks fail, Kong Yi Hen and Calligraphy Pavilion Lady fight for a few rounds, then stop.",
+      "chapters": [
+        1833
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_shu_jiu_ling",
+        "char_calligraphy_pavilion_lady",
+        "loc_black_heaven_temple",
+        "char_fan_ji"
+      ]
+    },
+    {
+      "text": "The dragonman clone returns to Calligraphy Pavilion at midnight and looks at the pavilion at the peak of the mountain. A dragonman Gu Immortal flies up from the shadows and reports that while the clone was away, the sister-in-law met Fan Ji in secret again.",
+      "chapters": [
+        1834
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mountain-peak-pavilion",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "When Fang Yuan collates Wu Shuai’s gains inside Dragon Palace, he records that Wu Shuai suppressed and enslaved Calligraphy Pavilion Lady and gained her Immortal Gu House Calligraphy Pavilion. Wu Shuai found the house so strong because many Qian Kun Crystal Wall fragments were stored inside; those fragments were only a portion of the original secluded domain of heaven and earth named in The Legends of Ren Zu, which had always been in a state of fragmentation. Fang Yuan treats Qian Kun Crystal Wall among the most valuable dragonman legacies kept in Dragon Palace, as a foundation of information path he lacked.",
+      "chapters": [
+        1848
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "crystal-wall-fragments",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_shuai",
+        "house_dragon_palace",
+        "sys_immortal_gu_house",
+        "loc_qian_kun_crystal_wall",
+        "sys_the_legends_of_ren_zu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/calligraphy-pavilion/",
+      "chapters": [
+        1833,
+        1834,
+        1848
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Owners": {
+      "text": "Calligraphy Pavilion Lady (owner) Wu Shuai",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

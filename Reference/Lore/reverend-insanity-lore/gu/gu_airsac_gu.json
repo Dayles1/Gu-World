@@ -1,0 +1,375 @@
+{
+  "id": "gu_airsac_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Airsac Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Airsac Gu is a rank three storage Gu that can hold guts Gu so those guts Gu can leave Dang Hun Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 701,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    701,
+    705,
+    707,
+    739,
+    808,
+    822,
+    825
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "namer",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 701,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_guts_gu",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "gu_strength_qi_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_stone_nest",
+      "count": 2
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_treasury_flower_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_chang_fan",
+      "count": 1
+    },
+    {
+      "target": "gu_malicious_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_memory_thought_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_starlight_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_star_form_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/airsac-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/airsac-gu/",
+      "chapters": [
+        701,
+        705,
+        707,
+        739,
+        808,
+        822,
+        825
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 3,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It resembles a ladybug about the size of a large bowl. Its head is extremely small, and its stomach occupies ninety-nine percent of its body. That stomach is round like a lamp bulb and translucent. It has no carapace on its back and no wings. Another Gu sits inside the translucent stomach.",
+        "chapters": [
+          701
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "It belongs with common storage Gu worms made to store Gu worms, such as Earth Treasury Flower. Guts Gu dissipate once taken out of Dang Hun Mountain, so control of the mountain meant control of guts Gu until Airsac Gu let them be stored and carried out.",
+        "chapters": [
+          701
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_storage_gu",
+          "sys_gu_worms",
+          "gu_earth_treasury_flower_gu",
+          "gu_guts_gu",
+          "loc_dang_hun_mountain"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [
+      {
+        "text": "To refine the rank three Gu, Hei Lou Lan’s rank six strength qi Gu must muster strength qi. Hei Lou Lan calls Airsac Gu truly very special.",
+        "chapters": [
+          705
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-and-trade",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_hei_lou_lan",
+          "gu_strength_qi_immortal_gu"
+        ]
+      },
+      {
+        "text": "With help from the light of wisdom, Fang Yuan innovates Airsac Gu and opens the guts Gu business that forces Immortal Crane Sect to compromise.",
+        "chapters": [
+          739
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-and-trade",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Fang Yuan tells Dong Fang Chang Fan’s soul that Airsac Gu is his creation and that the guts Gu business is also his.",
+        "chapters": [
+          808
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-and-trade",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_dong_fang_chang_fan"
+        ]
+      },
+      {
+        "text": "In the Fang Yuan stone nest he splits the refinement into over a dozen steps for hairy men, and notes that this recipe does not need one refiner working nonstop. Each Airsac Gu holds one guts Gu.",
+        "chapters": [
+          707
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-and-trade",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_stone_nest"
+        ]
+      },
+      {
+        "text": "Airsac Gu is a one time consumable Gu paired with guts Gu and sold with it.",
+        "chapters": [
+          825
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-and-trade",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Crushing Airsac Gu also breaks the guts Gu inside, turning them into nourishment that strengthens and recovers the soul.",
+        "chapters": [
+          822
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "refinement-and-trade",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "namer",
+      "recorded_chapter": 701,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "During the stand-off over Hu Immortal blessed land, Fang Yuan hands He Feng Yang of Immortal Crane Sect this Gu and, when asked for its name, casually names it Airsac Gu.",
+        "chapters": [
+          701
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_hu_immortal_blessed_land",
+          "char_fang_yuan",
+          "char_he_feng_yang",
+          "fac_immortal_crane_sect"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

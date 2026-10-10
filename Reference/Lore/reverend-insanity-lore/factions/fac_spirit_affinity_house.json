@@ -1,0 +1,853 @@
+{
+  "id": "fac_spirit_affinity_house",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spirit Affinity House",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Spirit Affinity House is a Central Continent top sect first named when Lord Sky Crane places Feng Jin Huang as its genius in the Hu Immortal inheritance climb.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 366,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    375,
+    398,
+    406,
+    552,
+    566,
+    568,
+    569,
+    924,
+    989,
+    1016,
+    1093,
+    1192
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_feng_jin_huang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 365,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fairy_bai_qing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 406,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_feng_jiu_ge",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 406,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_mo_yao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_shui_ni",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 566,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_spirit_affinity_first_supreme_elder",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 696,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_prince_feng_xian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 744,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bo_qing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 854,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_qin_juan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 854,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_sun_yao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 854,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_li_jun_ying",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 949,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xu_hao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 949,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fairy_zi_wei",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1052,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_zhao_lian_yun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1230,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bu_zhen_zi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1237,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_le_yao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1546,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_swordmaster_you_lan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1546,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_feng_jin_huang",
+      "count": 4
+    },
+    {
+      "target": "char_fairy_bai_qing",
+      "count": 4
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 4
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 4
+    },
+    {
+      "target": "char_shui_ni",
+      "count": 4
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 4
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "char_spirit_affinity_first_supreme_elder",
+      "count": 3
+    },
+    {
+      "target": "char_prince_feng_xian",
+      "count": 3
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 3
+    },
+    {
+      "target": "char_sun_yao",
+      "count": 3
+    },
+    {
+      "target": "char_li_jun_ying",
+      "count": 3
+    },
+    {
+      "target": "char_xu_hao",
+      "count": 3
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 3
+    },
+    {
+      "target": "char_bu_zhen_zi",
+      "count": 3
+    },
+    {
+      "target": "char_le_yao",
+      "count": 3
+    },
+    {
+      "target": "char_swordmaster_you_lan",
+      "count": 3
+    },
+    {
+      "target": "char_qin_juan",
+      "count": 2
+    },
+    {
+      "target": "house_sun_and_moon_temple",
+      "count": 2
+    },
+    {
+      "target": "house_water_pavilion",
+      "count": 3
+    },
+    {
+      "target": "char_xiao_qi_xing",
+      "count": 2
+    },
+    {
+      "target": "char_ying_sheng_ji",
+      "count": 2
+    },
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 2
+    },
+    {
+      "target": "loc_spirit_butterfly_valley",
+      "count": 2
+    },
+    {
+      "target": "gu_love_gu",
+      "count": 2
+    },
+    {
+      "target": "char_he_feng_yang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "inh_hu_immortal_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_giant_sun_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "gu_calamity_beckoning_gu",
+      "count": 1
+    },
+    {
+      "target": "race_inkmen",
+      "count": 1
+    },
+    {
+      "target": "gu_water_harmony_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_di_qiu_inheritance",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "gu_letter_sending_green_bird_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "gu_dream_wings_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "path_dream",
+      "count": 1
+    },
+    {
+      "target": "loc_feng_xian_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "gu_worldly_wave_trace",
+      "count": 1
+    },
+    {
+      "target": "char_lord_tiger_demon",
+      "count": 1
+    },
+    {
+      "target": "move_ink_transformation",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_ancient_moon_physique",
+      "count": 1
+    },
+    {
+      "target": "move_five_finger_fist_heart_sword",
+      "count": 1
+    },
+    {
+      "target": "res_hibiscus_stalactite",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ao_xue",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ling_mei",
+      "count": 1
+    },
+    {
+      "target": "inh_thieving_heaven_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_divine_concealment",
+      "count": 1
+    },
+    {
+      "target": "move_ghostly_concealment",
+      "count": 1
+    },
+    {
+      "target": "fac_gong_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_falling_heavenly_river",
+      "count": 1
+    },
+    {
+      "target": "char_hui_feng_zi",
+      "count": 1
+    },
+    {
+      "target": "gu_wave_sword_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_sword_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_era_medieval",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_southern_border_war",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_glory_lightning_brilliance",
+      "count": 1
+    },
+    {
+      "target": "gu_life_tablet_gu",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "move_life_locking_silver_chain",
+      "count": 1
+    },
+    {
+      "target": "move_meteor_rain",
+      "count": 1
+    },
+    {
+      "target": "char_yu_yi_ye_zi",
+      "count": 1
+    },
+    {
+      "target": "move_golden_sun_spear",
+      "count": 1
+    },
+    {
+      "target": "move_yin_wind_ghost_sickle_hand",
+      "count": 1
+    },
+    {
+      "target": "char_green",
+      "count": 1
+    },
+    {
+      "target": "gu_change_soul_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_silence_surpasses_sound",
+      "count": 1
+    },
+    {
+      "target": "gu_remembrance_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_ten_extreme_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_dream_pillow_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fan_xi_liu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 1
+    },
+    {
+      "target": "move_eight_refinement_gates",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Its signature Immortal Gu house Water Pavilion shows in a pool as a pavilion silhouette like the reflection of the moon in the water. The pavilion is neither big nor small, with three layers, a rustic flare, ancient materials, furniture, and drawings. It can hide in water like an illusion, move with currents or mist and fog, fly in the sky, or hide in an iceberg corner.",
+      "chapters": [
+        566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_water_pavilion"
+      ]
+    },
+    {
+      "text": "Water Pavilion is one of the symbols of Spirit Affinity House.",
+      "chapters": [
+        568
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Immortal Crane Sect’s He Feng Yang tells watching Gu Immortals that among the youngsters Myriad Dragon Dock has Ying Sheng Ji, Spirit Affinity House has Feng Jin Huang, and Spirit Butterfly Valley has Xiao Qi Xing, so Immortal Crane cannot contend and therefore used a secret support method.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "immortal-crane-cannot-match-on-open-strength",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_immortal_crane_sect",
+        "char_he_feng_yang",
+        "sys_gu_immortal",
+        "fac_myriad_dragon_dock",
+        "char_ying_sheng_ji",
+        "char_feng_jin_huang",
+        "loc_spirit_butterfly_valley",
+        "char_xiao_qi_xing"
+      ]
+    },
+    {
+      "text": "Outside the blessed land, Gu Immortals congratulate He Feng Yang on Immortal Crane Sect’s strong showing. A Gu Immortal then sneers that the Hu Immortal Inheritance belongs to Spirit Affinity House, and Feng Jin Huang uses Dream Wings to surge past Fang Zheng.",
+      "chapters": [
+        398
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-claim-outside-the-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_hu_immortal_inheritance",
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Immortal Crane talk recalls that Fairy Bai Qing of Spirit Affinity House reformed Feng Jiu Ge through true love after he fought the ten sects. The same council then treats present-day Feng Jiu Ge as rank seven with Spirit Affinity House, one of the ten sects, backing him while he presses overbearing demands on Immortal Crane Sect.",
+      "chapters": [
+        406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fairy-bai-qing-and-feng-jiu-ge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_bai_qing",
+        "char_feng_jiu_ge"
+      ]
+    },
+    {
+      "text": "After becoming a demonic path Gu Immortal, Giant Sun Immortal Venerable took the number one fairy of Spirit Affinity House as his wife, became an external supreme elder of the house, and converted to the righteous path.",
+      "chapters": [
+        552
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "giant-sun-and-an-earlier-fairy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_giant_sun_immortal_venerable"
+      ]
+    },
+    {
+      "text": "Shui Ni, a rank eight Gu Immortal, created water path and founded Spirit Affinity House as one of the top ten Central Continent sects. Her signature Immortal Gu house method is Water Pavilion. Water Pavilion is also named as one of the symbols of Spirit Affinity House, once wielded by Fairy Mo Yao, the thirty-sixth generation fairy, an inkman and refinement path grandmaster.",
+      "chapters": [
+        566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "founder-fairies-and-water-pavilion",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shui_ni",
+        "reg_central_continent",
+        "house_water_pavilion",
+        "char_mo_yao"
+      ]
+    },
+    {
+      "text": "Every generation of Spirit Affinity House fairies is described as the cream of the crop, one out of ten thousand.",
+      "chapters": [
+        569
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "founder-fairies-and-water-pavilion",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Giant Sun Immortal Venerable recruited concubines, Spirit Affinity House sent numerous female Gu Immortals into the palaces, and several who gained favor came from the house.",
+      "chapters": [
+        566
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "founder-fairies-and-water-pavilion",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The sect controls one of Thieving Heaven Demon Venerable’s true inheritances, confirmed by its own higher-up Feng Jiu Ge when Qin Bai Sheng of Shadow Sect names it during the hundred days battle at Luo Po valley.",
+      "chapters": [
+        924
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "thieving-heaven-true-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_thieving_heaven_demon_venerable",
+        "char_qin_bai_sheng",
+        "fac_shadow_sect",
+        "loc_luo_po_valley"
+      ]
+    },
+    {
+      "text": "Shadow Sect has learned that Zhao Lian Yun was secretly sent to Central Continent, and its Blazing Glory Lightning Brilliance immortal zombie expects Spirit Affinity House to send her to the true inheritance it controls.",
+      "chapters": [
+        989
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "thieving-heaven-true-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhao_lian_yun",
+        "char_blazing_glory_lightning_brilliance"
+      ]
+    },
+    {
+      "text": "Shadow Sect’s Purple names Spirit Affinity House’s signature Immortal Gu as Love Gu, a rank nine Gu whose might he calls nigh unstoppable, and says Azure fell into the trap of love because the sect used it.",
+      "chapters": [
+        1016
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "signature-immortal-gu-named",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "gu_love_gu"
+      ]
+    },
+    {
+      "text": "Central Continent tea talk lists Spirit Affinity House’s qingpu tea beside Myriad Dragon Dock’s dragon shadow tea as very famous.",
+      "chapters": [
+        1093
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qingpu-tea",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fairy Bai Qing names Love Gu as Spirit Affinity House’s signature Immortal Gu and says the sect values moving people through love.",
+      "chapters": [
+        1192
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "love-gu-and-the-sects-values",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/spirit-affinity-house/",
+      "chapters": [
+        375,
+        398,
+        406,
+        552,
+        566,
+        568,
+        569,
+        924,
+        989,
+        1016,
+        1093,
+        1192
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

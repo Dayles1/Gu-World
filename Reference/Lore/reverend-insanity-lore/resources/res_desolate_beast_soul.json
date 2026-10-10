@@ -1,0 +1,167 @@
+{
+  "id": "res_desolate_beast_soul",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Desolate beast soul",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A desolate beast soul is the soul of a desolate beast, used as soul feedstock for guts Gu and as material for a yama child.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1199,
+    "volume": null,
+    "arc": "evt_arc_new_blessed_land_crazed_demon"
+  },
+  "chapters_cited": [
+    1199,
+    1755
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "refines_into",
+      "target": "gu_guts_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_guts_gu",
+      "count": 3
+    },
+    {
+      "target": "path_soul",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "loc_tai_qiu",
+      "count": 1
+    },
+    {
+      "target": "res_beast_soul",
+      "count": 1
+    },
+    {
+      "target": "res_gu_immortal_soul",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_earth_trench",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Lang Ya land spirit plans primary soul investment for guts Gu in Tai Qiu, where desolate beast and desolate plant souls can be gathered in quantity from a stable source. Those souls are far inferior to Gu Immortal souls for guts Gu production, but quantity can offset the gap.",
+      "chapters": [
+        1199
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "tai-qiu-feedstock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "gu_guts_gu",
+        "loc_tai_qiu",
+        "res_gu_immortal_soul"
+      ]
+    },
+    {
+      "text": "In a newly formed Earth Trench, Fang Yuan takes a desolate beast corpse that still holds a soul. That desolate beast soul can be turned into a yama child.",
+      "chapters": [
+        1755
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soul-for-a-yama-child",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_trench",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/desolate-beast-soul/",
+      "chapters": [
+        1199,
+        1755
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Soul Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Desolate beasts",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Guts Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

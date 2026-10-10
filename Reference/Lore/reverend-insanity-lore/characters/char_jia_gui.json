@@ -1,0 +1,356 @@
+{
+  "id": "char_jia_gui",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jia Gui",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "jia gui",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цзя Гуй",
+    "ru_status": "transliteration",
+    "aliases": [
+      "young master Jia Gui"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jia Gui is the Jia family head's second son and the rank four rival of Jia Fu in the family's asset contest, named in the early Southern Border stretch though he never appears on Qing Mao Mountain himself.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 45,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    45,
+    56,
+    57,
+    59,
+    109,
+    247
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_jia_family",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 45,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_jia_family",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 2
+    },
+    {
+      "target": "char_jia_jin_sheng",
+      "count": 2
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "char_chen_shuang_jin",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan first supplies the name while dealing with Jia Jin Sheng at the Jia caravan stop on Qing Mao Mountain, drawing on a previous-life memory of Jia inheritance politics. In every early scene that uses the name, he is only spoken of offstage; he never speaks or arrives with that caravan.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_jia_jin_sheng",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "No Chinese character form for the name is given in these chapters.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Jia family head sends children out in caravan pairs and splits assets by results. Fang Yuan’s memory names Jia Fu as eldest son and Jia Gui as second son, both extremely talented, locked in a multi-year stalemate with no clear victor even after the head’s death in that prior life. In the same memory the brothers later call in outside help, escalate into a large Gu competition, and both die, after which the family’s sudden rise collapses.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rival-for-family-assets",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jia_family",
+        "char_jia_fu"
+      ]
+    },
+    {
+      "text": "At Gu Yue village, hall talk treats both brothers as rank four Gu Masters with their own supporters, and once Jia Jin Sheng’s misfortune is read as an internal plot, speakers name Jia Gui as Jia Fu’s greatest competitor.",
+      "chapters": [
+        56
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rival-for-family-assets",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "With no hard proof against Fang Yuan, Gu Yue elders and Jia Fu redirect suspicion toward Jia Gui acting in the shadows, because the Jia succession fight would give him motive and the crime’s cleanliness looks beyond a fifteen-year-old academy student.",
+      "chapters": [
+        56
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blamed-for-jia-jin-shengs-disappearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Jia Fu privately becomes certain Jia Gui is the mastermind, yet still has no evidence he can take to their father without looking like he is framing his rival.",
+      "chapters": [
+        57
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blamed-for-jia-jin-shengs-disappearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Leaving the village, he tells a subordinate he suspects young master Jia Gui and vows eye for an eye after rejecting a scapegoat plan that Jia Gui could overturn.",
+      "chapters": [
+        59
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blamed-for-jia-jin-shengs-disappearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan states that he pushed the blame onto the innocent Jia Gui and expects Jia Fu to treat Jia Gui as the culprit, hoping the sibling conflict intensifies.",
+      "chapters": [
+        59
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "framing-and-later-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A year later, Jia Fu mistakenly believes Jia Jin Sheng’s death was a conspiracy by his rival Jia Gui, and radical steps after Jia Fu returned home make their competition more intense. Village report after that return says Jia Fu squabbled with Jia Gui in public and the clash became a fight, and that the scar on Jia Fu’s face could be from that fight; the scar link is presented as rumor, not settled fact.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "framing-and-later-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Still later, caravan gossip on the Southern Border road says Chen clan lean toward Jia Gui while Jia Long serves Jia Fu.",
+      "chapters": [
+        247
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "framing-and-later-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "fac_chen_clan",
+        "char_jia_long"
+      ]
+    },
+    {
+      "text": "No later current-timeline chapter states Jia Gui’s final place in Jia family succession after Fang Yuan’s rebirth diverges from the previous-life mutual death.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "framing-and-later-rivalry",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/jia-gui/",
+      "chapters": [
+        45,
+        56,
+        57,
+        59,
+        109,
+        247
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 56",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Jia Family as of ch. 45",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 56,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

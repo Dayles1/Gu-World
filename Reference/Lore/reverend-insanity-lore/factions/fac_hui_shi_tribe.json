@@ -1,0 +1,200 @@
+{
+  "id": "fac_hui_shi_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Hui Shi Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Hui Shi tribe is a rockman tribe in the southern district of Hu Immortal blessed land, one of eight rockmen tribes that fall under Yan Yong's joint leadership.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 412,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    412,
+    413,
+    421,
+    422
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_yan_yong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 413,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yan_yong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 412,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yan_yong",
+      "count": 5
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "loc_dang_hun_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_slavery_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the southern district of Hu Immortal blessed land, Hui Shi tribe’s eight hundred year old leader wakes his grandson Yan Yong to bring offerings before the immortal who now rules the land. Hui Shi tribe is one of eight rockmen tribes summoned that day, each represented by a tribe leader among the offering-bearers. When the tribe leaders push back on the size of the tribute, Fang Yuan kills the loudest objector, and the rockmen’s ensuing attack ends with every one of the eight tribes’ leaders and heirs dead except Yan Yong, whom Fang Yuan spares.",
+      "chapters": [
+        412
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "beneath-hu-immortal-blessed-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "char_yan_yong",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fox groups sent by Fang Yuan attack the leaderless rockmen tribes, and the eight tribes ally underground to defend themselves. Once Yan Yong recovers from his injuries, grateful tribesmen ask him to lead in the old white rock tribe leader’s place, and he inherits Hui Shi tribe’s own leadership before also taking up white rock tribe’s. Over the following month and a half he gains the rest of the surviving tribes one after another, becoming joint leader of all eight rockmen tribes.",
+      "chapters": [
+        413
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "yan-yongs-succession-and-the-eight-tribes",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After a staged battle leaves Dang Hun Mountain covered in gutstones, the rockmen tribes under Yan Yong’s joint rule strike the stones to strengthen their souls, and their combined population grows from a few hundred survivors to three hundred thousand within four days.",
+      "chapters": [
+        421
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "population-growth-from-gutstones",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dang_hun_mountain"
+      ]
+    },
+    {
+      "text": "Because a rockman social structure can govern at most about a hundred thousand people, the grown population splits into three groups of roughly a hundred thousand each, settling around separate spirit springs. Fang Yuan then uses rank three slavery Gu to enslave three rockmen tribe leaders, Yan Yong among them, along with more than a dozen tribe elders, bringing all three hundred thousand rockmen under his control.",
+      "chapters": [
+        422
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "enslavement-and-partition",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_slavery_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/hui-shi-tribe/",
+      "chapters": [
+        412,
+        413,
+        421,
+        422
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Yan Yong",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

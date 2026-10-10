@@ -1,0 +1,153 @@
+{
+  "id": "move_brilliant_will_dissolution",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Brilliant Will Dissolution",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Brilliant Will Dissolution is Purple Mountain True Monarch's immortal killer move.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1366,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1366,
+    1465
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_purple_mountain_true_monarch",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 3
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "char_duke_long",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "While Duke Long is in the greatest danger he has been in, Purple Mountain True Monarch’s methods finally work and break through his defenses. Purple Mountain True Monarch flies to him and spits purple gas. The mystical breath lands on Duke Long and dissolves all of his defenses. Duke Long then opens his eyes, wakes, and withstands the follow-up strike.",
+      "chapters": [
+        1366
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_duke_long",
+        "char_purple_mountain_true_monarch"
+      ]
+    },
+    {
+      "text": "On cloud soil in Lang Ya blessed land, Fang Yuan trains Purple Mountain True Monarch’s wisdom path killer moves. After purple thought perception starlight hits and enough information is collected, wisdom path methods can deal with the enemy’s killer move during the battle itself. Next, this move would be used to unravel the enemy’s killer move and attain victory.",
+      "chapters": [
+        1465
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wisdom-path-set",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_lang_ya_blessed_land",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/brilliant-will-dissolution/",
+      "chapters": [
+        1366,
+        1465
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Wisdom Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Purple Mountain True Monarch",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

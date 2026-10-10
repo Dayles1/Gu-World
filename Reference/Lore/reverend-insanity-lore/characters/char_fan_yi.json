@@ -1,0 +1,187 @@
+{
+  "id": "char_fan_yi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fan Yi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "fan yi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Фань И",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fan Yi is a rank five sect leader who sneaks into Universal Life Academy's valley at night seeking an underground zhi forest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 680,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    680
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_hong_xuan_ji",
+      "count": 2
+    },
+    {
+      "target": "char_yuan_bai",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_universal_life_academy",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Universal Life Academy, Valley Lord Yuan Bai asks Sect Leader Fan Yi whether a zhi forest and earth horses truly lie under the valley. Fan Yi answers that he saw them personally and leads Yuan Bai into a cavern, arguing that principal Hong Xuan Ji is strong but weak in investigative methods. Both are rank five Gu Masters, and Yuan Bai frets that the leaders of two sects are venturing into the academy late at night.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_universal_life_academy",
+        "char_yuan_bai",
+        "char_hong_xuan_ji",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Inside the underground forest Fan Yi exclaims at its size while Yuan Bai envies the resource. When Fang Yuan takes the lingzhi king’s heart, the two reach the king too late, then face the earth horse family’s anger until Hong Xuan Ji drives them off. Hong Xuan Ji then halts the sect competition and warns that Yuan Bai and Fan Yi will gather other sects to pressure the academy over the forest.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhi-forest-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/fan-yi/",
+      "chapters": [
+        680
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 680",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 680,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,684 @@
+{
+  "id": "char_flower_wine_monk",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Flower Wine Monk",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Flower Wine Monk is a rank five Gu Master famous in the Demon faction as a flower thief, whose death on Qing Mao Mountain becomes clan legend in Gu Yue academy teaching, and whose hidden remains hold a Liquor worm inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 7,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    7,
+    14,
+    16,
+    46,
+    61,
+    64,
+    105,
+    122,
+    129,
+    156,
+    163,
+    188,
+    189,
+    433,
+    1658
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_photo_audio_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 16,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_liquor_worm",
+      "role": "former owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 17,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_thousand_li_earthwolf_spider",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 46,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_earth_treasury_flower_gu",
+      "role": "planter",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 63,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 163,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "linked_inheritance",
+      "target": "inh_flower_wine_monk_inheritance",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_liquor_worm",
+      "count": 4
+    },
+    {
+      "target": "gu_photo_audio_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_thousand_li_earthwolf_spider",
+      "count": 4
+    },
+    {
+      "target": "gu_earth_treasury_flower_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_heavenly_essence_treasure_lotus",
+      "count": 4
+    },
+    {
+      "target": "inh_flower_wine_monk_inheritance",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_moonshadow_gu",
+      "count": 2
+    },
+    {
+      "target": "char_jia_jin_sheng",
+      "count": 2
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_white_boar_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_white_jade_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 2
+    },
+    {
+      "target": "gu_chainsaw_golden_centipede",
+      "count": 2
+    },
+    {
+      "target": "char_first_gen_gu_yue",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_fourth_generation_clan_leader",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_ranks_and_realms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_bamboo_grove",
+      "count": 1
+    },
+    {
+      "target": "loc_secret_cave",
+      "count": 1
+    },
+    {
+      "target": "res_moon_orchid",
+      "count": 1
+    },
+    {
+      "target": "sys_poison_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_inheritance_ground",
+      "count": 1
+    },
+    {
+      "target": "loc_rock_forest",
+      "count": 1
+    },
+    {
+      "target": "loc_golden_centipedes_cave",
+      "count": 1
+    },
+    {
+      "target": "char_genesis_lotus_immortal_venerable",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "gu_bladewing_blood_bat_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_blood_lake",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_frenzy_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_rank_one_through_rank_five",
+      "count": 1
+    },
+    {
+      "target": "sys_storage_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_treasury_flower_king_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Academy teaching names him a rank five Gu Master famous among the Demon faction as a flower thief who came to Qing Mao Mountain a few hundred years earlier. The clan story says he fought the fourth generation Gu Yue clan leader, begged for mercy, then launched a sneak attack that killed that leader after the Monk himself was slain on the spot. Fang Yuan already knows from prior-life memory that the Monk left bones and an inheritance with a Liquor worm, and he hunts that trail from the first academy week.",
+      "chapters": [
+        7
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "loc_qing_mao_mountain",
+        "fac_gu_yue_clan",
+        "char_fang_yuan",
+        "gu_liquor_worm"
+      ]
+    },
+    {
+      "text": "A pile of skeleton bones is bundled inside a clump of withered Wine Sack Flower and Rice Pouch Grass roots.",
+      "chapters": [
+        14
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan follows a drunken Liquor worm into a boulder crevice and finds the Monk’s skeleton bundled in withered Wine Sack Flower and Rice Pouch Grass roots.",
+      "chapters": [
+        14
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "remains-and-liquor-worm",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Ripping the vines awakens a Photo-audio Gu that replays the fight. The recording shows the fourth generation clan head plotting first, losing the battle, then landing a sneak attack that only drives the Monk off, after which the elders reverse the roles in public history. The Monk dies later in the cave after Moonshadow Gu taints him and drags him to death, leaving little besides the image, a few primeval stones, and the Liquor worm. That worm is the living remnant that survived on the Wine Sack Flower growth, then left the cave when the food failed. Fang Yuan takes that evidence for himself rather than report it to the clan.",
+      "chapters": [
+        16
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "the-photo-audio-truth",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_photo_audio_gu",
+        "gu_moonshadow_gu"
+      ]
+    },
+    {
+      "text": "Before dying, the Monk used a Thousand Li Earthwolf Spider to dig a tunnel meant to guide an inheritor deeper into the mountain.",
+      "chapters": [
+        61
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_thousand_li_earthwolf_spider"
+      ]
+    },
+    {
+      "text": "Fang Yuan names what that path holds a strength inheritance, and treats it as a sincere setup rather than a trap.",
+      "chapters": [
+        64
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Earlier, when the Photo-audio wall shifts for Jia Jin Sheng and Fang Yuan, the Monk’s own recording offers the full inheritance on the condition that the successor exterminate the Gu Yue clan. Jia Jin Sheng already names the Thousand Li Earthwolf Spider as the rank five steed that let the Monk move freely as a demonic cultivator.",
+      "chapters": [
+        46
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_jin_sheng"
+      ]
+    },
+    {
+      "text": "As Fang Yuan clears the barriers he classifies the setup as a micro-scale legacy left in haste, and lists White Boar Gu, Jade Skin Gu, and Liquor worm among what he has already taken, with Stealth Stone Gu barely counting as part of the same line.",
+      "chapters": [
+        122
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_white_boar_gu",
+        "gu_jade_skin_gu"
+      ]
+    },
+    {
+      "text": "Deeper barriers add Earth Communication Ear Grass and Chainsaw Golden Centipede behind White Jade Gu defense, and a later recall states the Monk hid those Gu worms inside earth treasury flower Gu.",
+      "chapters": [
+        129
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "strength-inheritance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_earth_communication_ear_grass",
+        "gu_chainsaw_golden_centipede",
+        "gu_white_jade_gu",
+        "sys_gu_worms",
+        "gu_earth_treasury_flower_gu"
+      ]
+    },
+    {
+      "text": "A still later example treats the Photo-audio record of the clan leader’s defeat and the dug underground cave that lures an inheritor toward the clan spirit spring as the revenge design of that same inheritance.",
+      "chapters": [
+        1658
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Clan talk states that the Monk had refined a Mist Perspiring Butterfly from a Liquor worm to enchant women, and that after his death the butterfly degenerated back into the Liquor worm Fang Yuan finds.",
+      "chapters": [
+        105
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mist-perspiring-butterfly",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Moonshadow Gu’s true effect is known, Fang Yuan notes that the fourth generation fight and elders should have left only mild injuries, so the blood-soaked state on the Photo-audio wall cannot be explained by Moonshadow Gu alone and the escape after that fight becomes an open question again.",
+      "chapters": [
+        156
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-purpose",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A following stretch states he came for a natural spirit spring so he could refine Heavenly Essence Treasure Lotus, fought and killed the fourth generation leader and many elders, then worked in secret after Moonshadow Gu restricted his primeval essence.",
+      "chapters": [
+        163
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-purpose",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_heavenly_essence_treasure_lotus"
+      ]
+    },
+    {
+      "text": "When Fang Yuan reaches the blood river graveyard line, the later chapters answer that wound gap: the Monk also fought First gen Gu Yue over nurturing that treasure lotus, lost to terrain advantage, fled on the Thousand Li Earthwolf Spider, threw the lotus into the blood river graveyard, and only then hurriedly created the secret cave and left the inheritance before dying.",
+      "chapters": [
+        188
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-purpose",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_first_gen_gu_yue"
+      ]
+    },
+    {
+      "text": "That spider had already engaged First gen Gu Yue under the Monk’s command during the flight.",
+      "chapters": [
+        189
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-purpose",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Read in order, those chapters place the fourth-generation fight before the First gen clash on the same Qing Mao campaign.",
+      "chapters": [
+        156
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-purpose",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He is bald and muscular, dressed in pink clothes.",
+      "chapters": [
+        163
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "living-look",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/flower-wine-monk.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/flower-wine-monk/",
+      "chapters": [
+        7,
+        14,
+        16,
+        46,
+        61,
+        64,
+        105,
+        122,
+        129,
+        156,
+        163,
+        188,
+        189,
+        433,
+        1658
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 7",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 7",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 7,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": "demonic path as of ch. 7",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_earth_treasury_flower_gu",
+      "role": "planter",
+      "recorded_chapter": 63,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_heavenly_essence_treasure_lotus",
+      "role": "refiner",
+      "recorded_chapter": 163,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_liquor_worm",
+      "role": "former owner",
+      "recorded_chapter": 17,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_photo_audio_gu",
+      "role": "user",
+      "recorded_chapter": 16,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_thousand_li_earthwolf_spider",
+      "role": "user",
+      "recorded_chapter": 46,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

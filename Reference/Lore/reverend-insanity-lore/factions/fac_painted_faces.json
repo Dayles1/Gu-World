@@ -1,0 +1,176 @@
+{
+  "id": "fac_painted_faces",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Painted Faces",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Painted Face organization"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Painted Faces is a demonic path assassination organization that spanned all five regions, created by Sly Heart Old Man.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2095,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2095
+  ],
+  "relations": [
+    {
+      "type": "leader",
+      "target": "char_sly_heart_old_man",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2095,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_sly_heart_old_man",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2095,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_sly_heart_old_man",
+      "count": 5
+    },
+    {
+      "target": "char_meng_qiu_zhen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Meng Qiu Zhen meets its leader in a dream realm from Spectral Soul. The organization is like Zombie Alliance and Shadow Sect, a huge organization rarely seen in history. Killing Gu Masters was ordinary. At their peak they even had Gu Immortal experts, and as long as the price was paid, they could kill Gu Immortals for their customers.",
+      "chapters": [
+        2095
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_qiu_zhen",
+        "fac_zombie_alliance",
+        "fac_shadow_sect",
+        "fac_gu_masters",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Positions are numbered. Meng Qiu Zhen has already gone from the initial one hundred and eighth position to third. His dream path instincts say that becoming number one will pass the dream realm. The organization is dark and cruel, with no regard for human lives. A Gu worm in a member’s body can be activated as punishment, causing heavy injuries or death. Number two is reached by choosing one of three mission Gu. Meeting Sly Heart Old Man again after surviving the tunnel beyond his door would gain the number one position.",
+      "chapters": [
+        2095
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "char_sly_heart_old_man"
+      ]
+    },
+    {
+      "text": "All members have painted faces of various colors to differentiate their varying statuses. The leader’s face is covered in paint. He gives off a peculiar and cold feeling.",
+      "chapters": [
+        2095
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/painted-faces.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/painted-faces/",
+      "chapters": [
+        2095
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Leader": {
+      "text": "Sly Heart Old Man",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "res_ginseng_roots",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ginseng roots",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ginseng roots are the food of Earth Communication Ear Grass, gathered from the forested mountains of the Southern Border.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 128,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    128,
+    202
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ginseng roots are the food of Earth Communication Ear Grass. There are many forested mountains in the Southern Border, with far more ginsengs there than on Earth, and hunter families occasionally pick some when they go hunting in the mountains. Dried and sealed properly, ginseng keeps for a long time at room temperature, unlike moon orchid petals, which wilt within days. Fang Yuan trades small battle merits for ginseng roots to feed his Earth Communication Ear Grass and restore its vitality.",
+      "chapters": [
+        128
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "food-of-earth-communication-ear-grass",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_earth_communication_ear_grass",
+        "reg_southern_border",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "A stock of ginseng roots kept inside the tusita flower is enough to feed Earth Communication Ear Grass for a year.",
+      "chapters": [
+        202
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "stockpiled-supply",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/ginseng-roots.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/ginseng-roots/",
+      "chapters": [
+        128,
+        202
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Ginseng, grown wild on forested mountains in the Southern Border",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

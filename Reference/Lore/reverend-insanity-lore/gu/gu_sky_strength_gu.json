@@ -1,0 +1,207 @@
+{
+  "id": "gu_sky_strength_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sky Strength Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sky Strength Gu is a Gu that, when matched with borrow strength Gu, lets a Gu Master borrow the strength of the sky. By the Imperial Court treasure-room stretch it is already extinct.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 560,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    560
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "gu_borrow_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_earth_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_fire_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_water_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_wind_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/sky-strength-gu/",
+      "chapters": [
+        560
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "unknown",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": []
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan recalls it while looking at a rank five strength path borrow strength Gu sealed past the guest halt stele in Eighty-Eight True Yang Building.",
+        "chapters": [
+          560
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "gu_borrow_strength_gu",
+          "house_eighty_eight_true_yang_building"
+        ]
+      },
+      {
+        "text": "Borrow strength Gu cannot be used alone. Matched with Sky Strength Gu, it lets the Gu Master borrow the strength of the sky. The same pattern covers earth, fire, and water strength Gu for earth, fire, and water flow.",
+        "chapters": [
+          560
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "pairing-with-borrow-strength-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master",
+          "gu_water_strength_gu"
+        ]
+      },
+      {
+        "text": "By that chapter Sky Strength Gu is already extinct. Earth strength Gu, fire strength Gu, water strength Gu, wind strength Gu, and similar Gu still circulate widely, though often away from that original borrow-strength pairing.",
+        "chapters": [
+          560
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "extinction",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_earth_strength_gu",
+          "gu_fire_strength_gu",
+          "gu_wind_strength_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "id": "char_li_fei_le",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Li Fei Le",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "li fei le",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ли Фэй Лэ",
+    "ru_status": "transliteration",
+    "aliases": [
+      "sturdy as a mountain"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Li Fei Le, titled sturdy as a mountain, is a rank four upper stage earth path Gu Master named among arrivals at San Cha Mountain during the three kings inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 375,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    375,
+    387,
+    392
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_li_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 375,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_li_clan",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 2
+    },
+    {
+      "target": "char_zhang_san_san",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_feng_tian_yu",
+      "count": 1
+    },
+    {
+      "target": "char_hu_mei_er",
+      "count": 1
+    },
+    {
+      "target": "char_kong_ri_tian",
+      "count": 1
+    },
+    {
+      "target": "char_li_xian",
+      "count": 1
+    },
+    {
+      "target": "char_long_qing_tian",
+      "count": 1
+    },
+    {
+      "target": "char_tao_zi",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "char_yan_jun",
+      "count": 1
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 1
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On San Cha mountain, talk spreads that he arrived the day before. Li clan nurtured him as a rising star and an expert in defense, yet he stayed fixed on pursuing strength. Dedication after losing direction becomes obsession: to pursue the greatest strength he killed people to refine Gu, was not accepted by the righteous path, and became a demonic path cultivator. He is only the start of a wider month of established Gu Masters reaching the mountain.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "fac_li_clan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "A later mountain roster places him with Yi Huo, Kong Ri Tian, Long Qing Tian, Yi Chong, Tao Zi, Feng Tian Yu, Yan Jun, Li Xian, Hu Mei Er, Tie clan’s four old-timers, Tie Ruo Nan, and others of varied strengths and skills.",
+      "chapters": [
+        387
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-among-san-cha-experts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yi_huo",
+        "char_kong_ri_tian",
+        "char_long_qing_tian",
+        "char_yi_chong",
+        "char_tao_zi",
+        "char_feng_tian_yu",
+        "char_yan_jun",
+        "char_li_xian",
+        "char_hu_mei_er",
+        "fac_tie_clan",
+        "char_tie_ruo_nan"
+      ]
+    },
+    {
+      "text": "When Mo Wu Tian refuses to organize demonic Gu Masters into groups against the righteous path charge, he is young, leading for the first time, and cannot subdue everyone; old demonic experts like Kong Ri Tian and Li Fei Le would not listen to him easily.",
+      "chapters": [
+        392
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "demonic-path-command",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_wu_tian",
+        "sys_demonic_path"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/li-fei-le/",
+      "chapters": [
+        375,
+        387,
+        392
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 375",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Li Clan as of ch. 375",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 375",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 375,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": "demonic path as of ch. 375",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

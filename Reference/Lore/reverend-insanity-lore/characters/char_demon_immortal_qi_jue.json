@@ -1,0 +1,506 @@
+{
+  "id": "char_demon_immortal_qi_jue",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Demon Immortal Qi Jue",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Demon Immortal Qi Jue is a rank eight Gu Immortal of the Olden Antiquity Era whose Five Words Poem Fang Yuan recognizes when Luo Mu Zi recites it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1319,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1319,
+    1999,
+    2000,
+    2003,
+    2057
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_blood_qi_gu",
+      "role": "prior owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2014,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_practice_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2208,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_great_qi_grasp",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2000,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_upper_lower_breathless_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2000,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_great_qi_cloud_explosion",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2064,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_xi_xi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_great_qi_grasp",
+      "count": 3
+    },
+    {
+      "target": "move_upper_lower_breathless_qi",
+      "count": 3
+    },
+    {
+      "target": "gu_blood_qi_gu",
+      "count": 3
+    },
+    {
+      "target": "move_xi_xi",
+      "count": 3
+    },
+    {
+      "target": "move_great_qi_cloud_explosion",
+      "count": 3
+    },
+    {
+      "target": "gu_practice_gu",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "char_hei_fan",
+      "count": 2
+    },
+    {
+      "target": "char_limitless_demon_venerable",
+      "count": 2
+    },
+    {
+      "target": "loc_qi_jue_grotto_heaven",
+      "count": 2
+    },
+    {
+      "target": "loc_xi_land",
+      "count": 2
+    },
+    {
+      "target": "char_blood_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_luo_mu_zi",
+      "count": 1
+    },
+    {
+      "target": "inh_blood_sea_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_reckless_savage_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_shabi_ninety_five",
+      "count": 1
+    },
+    {
+      "target": "sys_qi_harvest_fruit",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_he_jian",
+      "count": 1
+    },
+    {
+      "target": "char_zhou_xiong_xin",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "sys_pseudo_venerable",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_search_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_turbulent_flow",
+      "count": 1
+    },
+    {
+      "target": "loc_turbulent_flow_sea_area",
+      "count": 1
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "char_red_heart_traveler",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "move_illusory_sand_shifting_shadow",
+      "count": 1
+    },
+    {
+      "target": "house_peaceful_soil_heavy_mountain_fortress",
+      "count": 1
+    },
+    {
+      "target": "move_accumulated_soil_mountain",
+      "count": 1
+    },
+    {
+      "target": "inh_limitless_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "inh_red_lotus_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "move_great_qi_hand_explosion",
+      "count": 1
+    },
+    {
+      "target": "path_sword",
+      "count": 1
+    },
+    {
+      "target": "move_all_life_is_bitter",
+      "count": 1
+    },
+    {
+      "target": "move_bitter_taste",
+      "count": 1
+    },
+    {
+      "target": "move_suffering_loss_is_a_blessing",
+      "count": 1
+    },
+    {
+      "target": "move_swallow_loss",
+      "count": 1
+    },
+    {
+      "target": "move_eat_heart",
+      "count": 1
+    },
+    {
+      "target": "house_divine_emperor_city",
+      "count": 1
+    },
+    {
+      "target": "move_qi_jue_revival",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_land",
+      "count": 1
+    },
+    {
+      "target": "house_rising_cloud_city",
+      "count": 1
+    },
+    {
+      "target": "house_unbreakable_golden_fortress",
+      "count": 1
+    },
+    {
+      "target": "char_seven_fiendish_primeval_monarch",
+      "count": 1
+    },
+    {
+      "target": "house_scarlet_palace",
+      "count": 1
+    },
+    {
+      "target": "move_hu_elevation",
+      "count": 1
+    },
+    {
+      "target": "loc_primordial_domain",
+      "count": 1
+    },
+    {
+      "target": "move_blood_extraction_light",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_guardian",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan knows him as a great expert of immense battle strength who fought Limitless Demon Venerable three times, with a win, a draw, and a loss. The first two battles were before Limitless Demon Venerable advanced to rank nine. In the final battle Limitless Demon Venerable had advanced to rank nine, surpassing him. That fight lasted nine days and nine nights before he was defeated. Limitless Demon Venerable did not kill him and let him go, and said he had been his biggest enemy and had a hand in pushing that cultivation. After that recognition his name was marked in history. The grotto-heaven left after his death lasted until Fang Yuan’s present. In Fang Yuan’s first life it was exposed when dream realms manifested during the five regions chaotic war. That grotto-heaven held the Demon Immortal’s true inheritance. This Demon Immortal was on the same level as Sword Immortal Bo Qing, even Hei Fan paled in comparison to him.",
+      "chapters": [
+        1319
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_limitless_demon_venerable",
+        "char_bo_qing",
+        "char_hei_fan"
+      ]
+    },
+    {
+      "text": "He is born as a baby with tiny arms and legs, as if malnourished, then grows into a boy.",
+      "chapters": [
+        1999
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He has a tiny child body, a boyish figure, and a young face, with a child-like appearance and an elderly voice.",
+      "chapters": [
+        2000
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A qi harvest fruit at the center of Qi Jue grotto-heaven holds a growing baby and absorbs surrounding qi currents. The fruit self-detonates and the baby is born. A secluded domain of heaven and earth appears above his head, and he shouts Xi. The surrounding qi currents pour into that domain, and the whole grotto-heaven turns into qi currents and is absorbed. The boy recites the Five Words Poem, then names himself: “Yours truly, Demon Immortal Qi Jue.” He cultivated qi path. Heavenly Court’s Gu Immortals call him a five regions Gu Immortal. Zhou Xiong Xin wonders: if this is Demon Immortal Qi Jue, is the secluded domain Xi from The Legends of Ren Zu?",
+      "chapters": [
+        1999
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "return-to-life",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_jue_grotto_heaven",
+        "fac_heavenly_court",
+        "sys_gu_immortal",
+        "char_zhou_xiong_xin",
+        "sys_the_legends_of_ren_zu"
+      ]
+    },
+    {
+      "text": "The secluded domain above his head is named Xi Land. Qi path killer moves from Qi Sea Ancestor are absorbed into it. He says he has completely fixed it after dismantling the turbulent flow sea area, and that with it he can counter all qi path methods in the world.",
+      "chapters": [
+        2003
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "secluded-domain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_xi_land",
+        "path_qi",
+        "char_qi_sea_ancestor"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/demon-immortal-qi-jue.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/demon-immortal-qi-jue/",
+      "chapters": [
+        1319,
+        1999,
+        2000,
+        2003,
+        2057
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1319",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1319,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_blood_qi_gu",
+      "role": "prior owner",
+      "recorded_chapter": 2014,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_practice_gu",
+      "role": "user",
+      "recorded_chapter": 2208,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

@@ -1,0 +1,907 @@
+{
+  "id": "gu_moonlight_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Moonlight Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Moonlight Gu is a rank one mortal Gu and the signature Gu of the Gu Yue clan. Early academy students use it to throw pale-blue moonblades.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 7,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    7,
+    8,
+    10,
+    17,
+    19,
+    20,
+    21,
+    22,
+    23,
+    62,
+    69,
+    70,
+    82,
+    98,
+    106,
+    114,
+    157
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": 20,
+      "to_chapter": 106,
+      "recorded_chapter": 20,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_zheng",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 10,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_gu_yue_mo_bei",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 21,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_gu_yue_chi_cheng",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 21,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_gu_yue_qing_shu",
+      "role": "former user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 106,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_zheng",
+      "count": 4
+    },
+    {
+      "target": "char_gu_yue_mo_bei",
+      "count": 4
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "char_gu_yue_chi_cheng",
+      "count": 3
+    },
+    {
+      "target": "rcp_moonlight_gu_recipe",
+      "count": 2
+    },
+    {
+      "target": "sys_vital_gu",
+      "count": 2
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_liquor_worm",
+      "count": 2
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 2
+    },
+    {
+      "target": "gu_bear_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_stream_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_little_light_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_moonglow_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_moonwhirl_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_whirlwind_gu",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_gu_yue_village",
+      "count": 2
+    },
+    {
+      "target": "char_jiang_he",
+      "count": 1
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_awakening_ceremony",
+      "count": 1
+    },
+    {
+      "target": "sys_c_grade",
+      "count": 1
+    },
+    {
+      "target": "sys_green_copper_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_moonblade",
+      "count": 1
+    },
+    {
+      "target": "sys_white_silver_primeval_essence",
+      "count": 1
+    },
+    {
+      "target": "gu_scarecrow_gu",
+      "count": 1
+    },
+    {
+      "target": "res_moon_orchid",
+      "count": 1
+    },
+    {
+      "target": "gu_bronze_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "char_gao_wan",
+      "count": 1
+    },
+    {
+      "target": "res_intimate_grass",
+      "count": 1
+    },
+    {
+      "target": "loc_gambling_den",
+      "count": 1
+    },
+    {
+      "target": "res_purple_gold_rock",
+      "count": 1
+    },
+    {
+      "target": "loc_secret_cave",
+      "count": 1
+    },
+    {
+      "target": "inh_flower_wine_monk_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_yellow_camel_longhorn_beetle_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_fusion",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_skin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_moon_raiment",
+      "count": 1
+    },
+    {
+      "target": "gu_moonlight_treasure_king_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_moonscar_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_scar_rock_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fish_scale_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_secret_hall",
+      "count": 1
+    },
+    {
+      "target": "gu_digital_shade_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_moon_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/moonlight-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/moonlight-gu/",
+      "chapters": [
+        7,
+        8,
+        10,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        62,
+        69,
+        70,
+        82,
+        98,
+        106,
+        114,
+        157
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 1,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is crystalline and shaped like a crescent, like a piece of blue quartz. It is very light, comparable to the weight of a piece of paper. It occupies a small area of the palm, roughly the size of a common jade pendant. Held in the hand, one can see through it and gaze at the lines on the palm.",
+        "chapters": [
+          8
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After refinement it returns to its original semi-transparent blue crystal form, then drops onto the forehead and forms a pale blue crescent mark in the middle of the brow.",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In the Gu room it appears as a small, light, crystalline blue form shaped like a crescent, like a piece of blue quartz. Fang Yuan can see his palm lines through it. Every Gu in that room is rank one, specifically rank one Moonlight Gu with little difference between them.",
+        "chapters": [
+          8
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The Liquor worm is a rank one Gu like Moonlight Gu.",
+        "chapters": [
+          17
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After refinement finishes, the Gu returns to its original semi-transparent blue crystal form, then does not sit in the aperture. It settles on the body as a pale blue crescent mark, first shown on Fang Yuan’s brow,",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "later worked from the palm when he attacks.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "The academy lesson names the attack moonblade. The Gu Master moves the crescent mark to the palm, pours in primeval essence until pale-blue light gathers, then cuts the air to launch a hand-sized crescent of light. In the elder’s demonstration that blade cuts a grass puppet cleanly at about ten meters.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "One moonblade costs about 10% of a rank one Gu Master’s primeval essence.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "The Little Light Gu can assist it.",
+        "chapters": [
+          62
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_little_light_gu"
+        ]
+      },
+      {
+        "text": "When both sit in the same palm and take essence together, the moonblade roughly doubles in size and range compared with Moonlight Gu alone.",
+        "chapters": [
+          70
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He picks one from the academy Gu room while still hunting the Liquor worm, planning to refine Moonlight Gu if the worm stays out of reach.",
+        "chapters": [
+          8
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "After the Spring Autumn Cicada’s aura breaks the Moonlight Gu’s will, he finishes the refinement in minutes and reports first place for his batch.",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "From then on it is one of the mortal Gu he trains with beside the Liquor worm and the Spring Autumn Cicada.",
+        "chapters": [
+          20
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_mortal_gu",
+          "gu_liquor_worm",
+          "gu_spring_autumn_cicada"
+        ]
+      },
+      {
+        "text": "He keeps the rank one form through the early rank two stretch, planning the Moonlight Gu plus two Little Light Gu fuse into Moonglow Gu.",
+        "chapters": [
+          98
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_moonglow_gu"
+        ]
+      },
+      {
+        "text": "After one failed try and a later success, the rank one Moonlight Gu is consumed into rank two Moonglow Gu.",
+        "chapters": [
+          106
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Looking back from the stone forest fights, he treats that advance as the jump that made moonblade his main kill method against jade eye stone monkeys.",
+        "chapters": [
+          114
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": true,
+    "food_raw": null,
+    "foods": [],
+    "claims": [
+      {
+        "text": "It eats moon orchid petals: two meals a day, two petals each meal, four petals a day in total. Without special storage the petals spoil in about five days.",
+        "chapters": [
+          23
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "feeding",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "refinement": {
+    "recipes": [
+      "rcp_moonlight_gu_recipe"
+    ],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": [
+      {
+        "text": "Later, when Fang Yuan studies clan recipes, he states that Moonlight Gu is not natural: the first-generation clan leader obtained it by reverse fusion, turning a higher Gu back into this rank one form. The reverse-fusion recipe is kept by the clan leader and a most-loyal elder of that generation, and Fang Yuan ranks its worth above ordinary rank four and five recipes for the clan.",
+        "chapters": [
+          157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "origin-by-reverse-fusion",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "That account matches the earlier claim that the breed is clan-made, and adds the method and the keeper of the recipe.",
+        "chapters": [
+          8
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "origin-by-reverse-fusion",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [
+      "fac_gu_yue_clan",
+      "fac_xiong_clan",
+      "fac_bai_clan"
+    ],
+    "origin": "unknown",
+    "claims": [
+      {
+        "text": "The Gu Yue clan treats it as their local specialty and clan symbol. Many clansmen choose it as their vital Gu. It is not a wild natural Gu: the clan cultivates the breed by a secret method, and it is not found elsewhere.",
+        "chapters": [
+          8
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "clan-signature",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_gu_yue_clan"
+        ]
+      },
+      {
+        "text": "The academy elder later teaches the same point in class: Moonlight Gu is Gu Yue’s symbolic Gu, set beside the Xiong clan’s Bear Strength Gu and the Bai clan’s Stream Gu.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "clan-signature",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_xiong_clan",
+          "gu_bear_strength_gu",
+          "fac_bai_clan",
+          "gu_stream_gu"
+        ]
+      },
+      {
+        "text": "Showing moonlight from the palm can prove Gu Yue identity to another Gu Yue Gu Master, because that sign cannot be forged.",
+        "chapters": [
+          69
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "clan-signature",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "Among Fang Yuan’s batch, about thirty-five of the fifty-seven talented students refine a Moonlight Gu. Remaining D-grade students largely withdraw from that refinement because of the difficulty, not because they do not want the Gu.",
+        "chapters": [
+          22
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "clan-signature",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "At the later group-recruit stretch most fighters still use Moonlight Gu, so arena matches often open as moonblade exchanges until essence runs out.",
+        "chapters": [
+          82
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "clan-signature",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "To a rank one Gu Master, Fang Yuan rates it as only slightly above average next to a Liquor worm.",
+        "chapters": [
+          19
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "clan-signature",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 20,
+      "from_chapter": 20,
+      "to_chapter": 106,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_zheng",
+      "role": "user",
+      "recorded_chapter": 10,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_gu_yue_mo_bei",
+      "role": "user",
+      "recorded_chapter": 21,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_gu_yue_chi_cheng",
+      "role": "user",
+      "recorded_chapter": 21,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_gu_yue_qing_shu",
+      "role": "former user",
+      "recorded_chapter": 106,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan first names it as the clan’s Moonlight Gu when he is weighing what to take as a vital Gu after the Awakening Ceremony. He judges it a far worse vital Gu than the Liquor worm he has been hunting at night with wine as bait, if only he can catch it before April runs out.",
+        "chapters": [
+          7
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "sys_vital_gu",
+          "sys_awakening_ceremony"
+        ]
+      },
+      {
+        "text": "At the end of that same day’s class he takes one from the academy Gu room on Qing Mao Mountain.",
+        "chapters": [
+          8
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_qing_mao_mountain"
+        ]
+      },
+      {
+        "text": "Gu Yue Fang Zheng refines a Moonlight Gu in the same academy stretch; with A-grade recovery he can keep refining without leaning on primeval stones the way weaker talents must.",
+        "chapters": [
+          10
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "other-early-owners",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_zheng"
+        ]
+      },
+      {
+        "text": "Gu Yue Mo Bei is refining one when news of Fang Yuan’s first place breaks his focus, and Gu Yue Chi Cheng is told his grandfather will suppress his Moonlight Gu’s will to finish refinement.",
+        "chapters": [
+          21
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "other-early-owners",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_mo_bei",
+          "char_gu_yue_chi_cheng"
+        ]
+      },
+      {
+        "text": "Gu Yue Qing Shu later takes the Moonlight Gu plus Whirlwind Gu route into Moonwhirl Gu.",
+        "chapters": [
+          106
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "other-early-owners",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_gu_yue_qing_shu",
+          "gu_whirlwind_gu",
+          "gu_moonwhirl_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

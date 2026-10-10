@@ -1,0 +1,170 @@
+{
+  "id": "res_jinzan_grass",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jinzan grass",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jinzan grass is a refinement material Jin clan needs to produce Golden Silkworm Gu in large numbers.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 243,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    243,
+    244
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_golden_silkworm_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_golden_silkworm_gu",
+      "count": 4
+    },
+    {
+      "target": "fac_jin_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_huang_jin_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "To Jin clan, Jinzan grass cannot be replaced with other materials. It is an important war resource because it can be used as a refinement material for producing large numbers of Golden Silkworm Gu. Fang Yuan judges it an unpopular material: rare, yet little needed by most people.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-use",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jin_clan",
+        "gu_golden_silkworm_gu",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Jin clan grows three acres of it while working toward a fixed Golden Silkworm Gu recipe, keeping that purpose among higher ups so even the young master thinks the clan leader plants it only for interest. The growth period is very long, needing four years to mature. Losing that acreage would leave little of the grass on the market and would delay any Jin clan campaign that depended on mass-producing the Gu.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "growth-and-planting",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A Jin clan Gu Master secretly sells a batch through the young master before a caravan leaves Huang Jin mountain. After bargaining, the sale price falls below the cost of nurturing the grass.",
+      "chapters": [
+        243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "market-price",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "loc_huang_jin_mountain"
+      ]
+    },
+    {
+      "text": "Outsiders treat the grass as nearly worthless: demand is almost non-existent, though it is easy to preserve, and a large unused stockpile is expected to rot or be dump-sold at a loss. Three carts change hands in that private deal. Jin clan later seeks them back, offering three thousand primeval stones as a stated maximum market price, then settling at eight thousand after Fang Yuan pushes higher. Fang Yuan had spent under five hundred primeval stones to buy them. The Jin clan leader treats the buyback as proof outsiders do not know how important the grass is to the clan, and still posts watchers until the caravan leaves the Huang Jin mountain region.",
+      "chapters": [
+        244
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "buyback",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/jinzan-grass.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/jinzan-grass/",
+      "chapters": [
+        243,
+        244
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Grass",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Golden Silkworm Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

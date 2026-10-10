@@ -1,0 +1,175 @@
+{
+  "id": "res_qi_pillar",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qi pillar",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qi pillars are rank eight immortal materials that interweave into moving tunnels at the center of Qi Jue grotto-heaven.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1998,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1998,
+    1999
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "char_di_zang_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_he_jian",
+      "count": 1
+    },
+    {
+      "target": "house_clear_jade_dripping_wind_tiny_bamboo_building",
+      "count": 1
+    },
+    {
+      "target": "house_dragon_palace",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_jue_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "res_qi_currents",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the center of Qi Jue grotto-heaven is a huge hollow sphere whose many qi pillars interweave and create countless tunnels. The pillars keep moving, some fast and some slow, and they affect each other. Xiao He Jian warns that these qi pillars are special, at least rank eight immortal materials, and that they should not be touched casually or unnecessary problems will occur. Clear Jade Dripping Wind Tiny Bamboo Building picks a careful route around them, while Wu Shuai’s Evil Dragon charges through, breaking and shattering pillars to open a path for Dragon Palace.",
+      "chapters": [
+        1998
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "center-of-qi-jue",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_jue_grotto_heaven",
+        "char_xiao_he_jian",
+        "house_clear_jade_dripping_wind_tiny_bamboo_building",
+        "char_wu_shuai",
+        "char_di_zang_sheng",
+        "house_dragon_palace"
+      ]
+    },
+    {
+      "text": "Clear Jade Dripping Wind Tiny Bamboo Building still has to dodge the qi pillars on a long, winding route, while the Evil Dragon advances in a straight line by destroying them. After the pillars break, they turn into strong qi currents that intertwine around the Evil Dragon and try to attack and kill it from all directions. Rampant destruction drives Qi Jue grotto-heaven into a berserk state: the currents batter the Immortal Gu Houses like tsunami waves, and Southern Border Gu Immortals recognize colossal lightning qi on par with rank eight immortal materials among them. Sharp blade qi, black hard qi, dark death qi, and other sorts of qi currents there are all at rank eight level, with dense dao marks that make the environment dangerous.",
+      "chapters": [
+        1999
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "broken-into-qi-currents",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "reg_southern_border",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/qi-pillar/",
+      "chapters": [
+        1998,
+        1999
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Qi Jue grotto-heaven",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

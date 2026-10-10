@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "chapter.schema.json",
+  "type": "object",
+  "required": [
+    "id",
+    "entity_type",
+    "schema_version",
+    "number",
+    "subjects",
+    "summary_source"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ch_\\d{4}$"
+    },
+    "entity_type": {
+      "const": "chapter"
+    },
+    "number": {
+      "$ref": "common.schema.json#/$defs/chapter"
+    },
+    "subjects": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/entity_id"
+      }
+    }
+  }
+}

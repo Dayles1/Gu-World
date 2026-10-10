@@ -1,0 +1,340 @@
+{
+  "id": "gu_blood_oath_immortal_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Oath Immortal Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blood Oath Immortal Gu is a blood path Immortal Gu. A holder can offer it to form a pact.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1045,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    1045,
+    1154,
+    1157,
+    2252
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_ding_yan",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1154,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_ding_qi",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1157,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2252,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_ding_qi",
+      "count": 4
+    },
+    {
+      "target": "char_ding_yan",
+      "count": 4
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "path_blood",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_trace_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_liu_qing_yu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/blood-oath-immortal-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/blood-oath-immortal-gu/",
+      "chapters": [
+        1045,
+        1154,
+        1157,
+        2252
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [
+      "Rank not recorded at source."
+    ],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [],
+    "rank_type": "immortal",
+    "is_immortal_gu": true,
+    "paths": [
+      "path_blood"
+    ],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": []
+  },
+  "appearance": {
+    "claims": [],
+    "visual_confidence": "unknown"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Ding Qi uses blood trace Immortal Gu for investigation when he reconstructs Fang Yuan taking the inheritance.",
+        "chapters": [
+          1157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "feeding": {
+    "known": true,
+    "food_raw": null,
+    "foods": [],
+    "claims": [
+      {
+        "text": "That dead blood path demonic immortal is Ding Yan, younger brother of Ding Qi.",
+        "chapters": [
+          1154
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "creators",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_ding_yan",
+          "char_ding_qi"
+        ]
+      },
+      {
+        "text": "Ding Qi states that he and his brother created blood trace Immortal Gu and also created Immortal Gu Blood Oath. Those brothers researched, created, and refined Blood Oath and Blood Trace as a pair of blood path Immortal Gu.",
+        "chapters": [
+          1157
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "creators",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_blood_trace_immortal_gu",
+          "sys_immortal_gu"
+        ]
+      }
+    ]
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_ding_yan",
+      "role": "holder",
+      "recorded_chapter": 1154,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_ding_qi",
+      "role": "refiner",
+      "recorded_chapter": 1157,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_fang_yuan",
+      "role": "owner",
+      "recorded_chapter": 2252,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "After Fang Yuan flies out of the blue water regional wall into Eastern Sea, a rank six blood path Gu Immortal fleeing Liu Qing Yu and other Eastern Sea Gu Immortals offers him a share of a peerless fortuitous encounter in the turbulent flow sea area if Fang Yuan helps him, and says he is willing to use blood oath Immortal Gu to form that pact.",
+        "chapters": [
+          1045
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "reg_eastern_sea",
+          "path_blood",
+          "sys_gu_immortal",
+          "char_liu_qing_yu"
+        ]
+      },
+      {
+        "text": "Fang Yuan later lists blood trace Gu and blood oath Gu together and states that one was used for investigation and the other could achieve an information path effect. He holds blood oath Gu among his other blood path Immortal Gu. He did not take the Immortal Gu recipes from Ding Yan and Ding Qi; he knew those two Immortal Gu were destroyed, then used natural inspiration and his own deductions to refine them.",
+        "chapters": [
+          2252
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-copy",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_recipe"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal Gu": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,926 @@
+{
+  "id": "loc_san_cha_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "San Cha Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "San Cha Mountain is a Southern Border peak shaped like a three-tipped fork. The three kings inheritance opens from its three summits.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 323,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    275,
+    323,
+    325,
+    326,
+    328,
+    337,
+    339,
+    340,
+    344,
+    347,
+    374,
+    375,
+    377,
+    379,
+    389,
+    391,
+    405,
+    425,
+    468
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_one_vs_seven",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 363,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "fights_here",
+      "target": "evt_fight_tie_mu_bai_against_wu_gui_and_ku_mo",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 372,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_one_vs_seven",
+      "count": 3
+    },
+    {
+      "target": "evt_fight_tie_mu_bai_against_wu_gui_and_ku_mo",
+      "count": 3
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "fac_che_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_zuo_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_fei_lai_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_king_bao",
+      "count": 2
+    },
+    {
+      "target": "char_king_quan",
+      "count": 2
+    },
+    {
+      "target": "char_king_xin",
+      "count": 2
+    },
+    {
+      "target": "inh_king_bao_inheritance",
+      "count": 2
+    },
+    {
+      "target": "inh_king_quan_inheritance",
+      "count": 2
+    },
+    {
+      "target": "inh_king_xin_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_mo_wu_tian",
+      "count": 2
+    },
+    {
+      "target": "char_tie_mu_bai",
+      "count": 2
+    },
+    {
+      "target": "char_wu_gui",
+      "count": 2
+    },
+    {
+      "target": "char_ku_mo",
+      "count": 2
+    },
+    {
+      "target": "gu_liquid_metal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_chou_jiu",
+      "count": 2
+    },
+    {
+      "target": "char_li_fei_le",
+      "count": 2
+    },
+    {
+      "target": "char_wang_xiao",
+      "count": 2
+    },
+    {
+      "target": "char_wu_lan_shan",
+      "count": 2
+    },
+    {
+      "target": "char_yun_luo_tian",
+      "count": 2
+    },
+    {
+      "target": "char_zhang_san_san",
+      "count": 2
+    },
+    {
+      "target": "fac_yun_clan",
+      "count": 2
+    },
+    {
+      "target": "loc_wu_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_ying_ming",
+      "count": 2
+    },
+    {
+      "target": "gu_fixed_immortal_travel",
+      "count": 2
+    },
+    {
+      "target": "loc_shadow_sect_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "gu_extreme_light_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_flesh_unity_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_bone_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_yellow_gold_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_paper_crane_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_horizontal_charge_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 1
+    },
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "gu_bitter_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "char_che_qiao_xiang",
+      "count": 1
+    },
+    {
+      "target": "char_zuo_chan_yu",
+      "count": 1
+    },
+    {
+      "target": "fac_three_kings",
+      "count": 1
+    },
+    {
+      "target": "inh_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_leng_zhan_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_three_kings_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_long_qing_tian",
+      "count": 1
+    },
+    {
+      "target": "char_wu_tong_shen",
+      "count": 1
+    },
+    {
+      "target": "gu_nine_eyes_liquor_worm",
+      "count": 1
+    },
+    {
+      "target": "path_poison",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "char_jiao_huang",
+      "count": 1
+    },
+    {
+      "target": "char_meng_tu",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_fu_lu",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_huo_tan_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_demonic_path_rise",
+      "count": 1
+    },
+    {
+      "target": "char_little_beast_king",
+      "count": 1
+    },
+    {
+      "target": "fac_black_and_white_twin_demons",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_tyrants",
+      "count": 1
+    },
+    {
+      "target": "loc_nan_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_hu_mei_er",
+      "count": 1
+    },
+    {
+      "target": "path_enchantment",
+      "count": 1
+    },
+    {
+      "target": "char_li_xian",
+      "count": 1
+    },
+    {
+      "target": "char_lin_san_chi",
+      "count": 1
+    },
+    {
+      "target": "char_tyrant_heng_mei",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shen_tong",
+      "count": 1
+    },
+    {
+      "target": "char_yi_chong",
+      "count": 1
+    },
+    {
+      "target": "gu_violent_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "char_gu_ting",
+      "count": 1
+    },
+    {
+      "target": "char_xue_san_si",
+      "count": 1
+    },
+    {
+      "target": "gu_expend_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_biao_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_self_reliance_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_golden_bell_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "char_century_boy",
+      "count": 1
+    },
+    {
+      "target": "gu_bladewing_blood_bat_gu",
+      "count": 1
+    },
+    {
+      "target": "char_han_bu_liu",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_guts_above_heaven_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_guts_above_mountain_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_guts_above_sea_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_guts_gu",
+      "count": 1
+    },
+    {
+      "target": "path_enslavement",
+      "count": 1
+    },
+    {
+      "target": "sys_king_quan_travel_token",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "From the mountain foot the mass rises into three hills. Seen from afar it resembles a fork with three tips pointing at the sky, and the entrances to the three kings inheritance sit above those three peaks.",
+      "chapters": [
+        339
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the mountain first enters the story, Zuo clan and Che clan are already fighting on its waist to occupy it. The peak sits between Zuo clan ground and Che clan’s Fei Lai Mountain.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zuo_clan",
+        "fac_che_clan",
+        "loc_fei_lai_mountain"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Both wordings keep Che clan’s Fei Lai mountain as the other neighbor.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before the inheritance opens, the mountain is a local contest between those two expanding clans rather than a famous gathering site for the wider Southern Border.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "When the inheritance opens, three light pillars, yellow, blue, and red, burst from the three mountain peaks into the sky, and a voice announces that the three kings inheritance opens that day for righteous and demonic alike.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inheritance-opening-event",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan calls the inheritance ground an ancient Gu Master’s blessed land.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Tie Mu Bai later names the same origin: a mysterious Gu Immortal’s blessed land that the three kings inherited and remodelled into an inheritance site.",
+      "chapters": [
+        374
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_mu_bai",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "The three kings themselves were demonic path Gu Masters who rose from roaming kids on the blessed land’s resources, failed to break through to rank six, and remodelled the place before dying. They walked refinement, fire, and enslavement path.",
+      "chapters": [
+        377
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "The three kings inheritance is a demonic inheritance.",
+      "chapters": [
+        326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "News of the three kings inheritance draws Shang clan and then Wu clan to contest the entrances. After that, news that the site is a rank six Gu Immortal blessed land pulls a wider wave of Southern Border Gu Masters until even Shang and Wu cannot keep the mountain under control.",
+      "chapters": [
+        326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shang_clan",
+        "fac_wu_clan"
+      ]
+    },
+    {
+      "text": "Several months after the opening, the disturbance still pulls righteous and demonic figures into a slaughterhouse contest for entry quotas.",
+      "chapters": [
+        337
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Dedicated pages cover each pillar site: King Xin Inheritance (refinement), King Quan Inheritance (enslavement), and King Bao Inheritance (fire).",
+      "chapters": [
+        347
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "origin-and-the-crowds-it-draws",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_king_xin_inheritance",
+        "inh_king_quan_inheritance",
+        "inh_king_bao_inheritance"
+      ]
+    },
+    {
+      "text": "Fang Yuan plans for the three kings inheritance while still in Shang Clan City, including choosing the strength path as part of that plan.",
+      "chapters": [
+        275
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "He later tells Shang Xin Ci that he will leave the city with Bai Ning Bing for San Cha mountain.",
+      "chapters": [
+        328
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "On the approach, the two are already known as demonic path rising stars, the black and white twin demons, and Fang Yuan treats reputation through killing as a tool for the mountain stretch ahead.",
+      "chapters": [
+        337
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-on-the-mountain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the mountain itself he states that what he treads is the demonic path.",
+      "chapters": [
+        344
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuan-on-the-mountain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Half a month before a later teaching scene, Tie Mu Bai fights two rank five demonic path experts alone on the mountain. He uses turn gold Gu and liquid metal Gu until both sides relent, and the contest settles that righteous and demonic paths may both contend for the three kings inheritance.",
+      "chapters": [
+        374
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "experts-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_liquid_metal_gu"
+      ]
+    },
+    {
+      "text": "That San Cha mountain battle is named as Tie Mu Bai against Ku Mo and Wu Gui.",
+      "chapters": [
+        379
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "experts-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ku_mo",
+        "char_wu_gui"
+      ]
+    },
+    {
+      "text": "As later openings continue, more established Gu Masters arrive. Li Fei Le comes as a rank four upper stage earth path fighter titled sturdy as a mountain. Zhang San San arrives as an enslavement path Gu Master already called enslavement master at rank four middle stage. Tao Zi is named as a righteous path expert holding the famous rank five healing Gu spirit peach Gu. Yun Luo Tian, young clan leader of Yun clan, arrives as a wind path Gu Master a step from rank four peak stage.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "experts-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_li_fei_le",
+        "char_zhang_san_san",
+        "char_tao_zi",
+        "gu_spirit_peach_gu",
+        "char_yun_luo_tian",
+        "fac_yun_clan"
+      ]
+    },
+    {
+      "text": "A month later the mountain gains its fourth rank five Gu Master: Wang Xiao, owner of Wu Mountain, a demonic poison cultivator and local overlord. Two months later Wu Lan Shan, younger cousin of Wu clan’s leader, arrives, fights Wang Xiao to a draw, and shows strength above Ku Mo and Wu Gui. Eight days after that, Chou Jiu, the killer ghost doctor and one of the four great doctors, appears at the mountain foot; Tie Mu Bai invites him to a banquet.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "experts-on-the-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wang_xiao",
+        "loc_wu_mountain",
+        "char_wu_lan_shan",
+        "char_chou_jiu"
+      ]
+    },
+    {
+      "text": "Mo Wu Tian names the three kings and the goods he treats as the inheritance essence: King Bao, Wang Ba Dan, with eight egg empresses and numerous eggmen; King Xin, Wang Xiao Ya, whose inheritance holds divulge information Gu and undefeated hundred battles Gu; King Quan, Wang Er Gou, with the dog emperors Ying Ming and Ba Huang.",
+      "chapters": [
+        391
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "essence-named-inside-the-land",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mo_wu_tian",
+        "char_king_bao",
+        "char_king_xin",
+        "gu_undefeated_hundred_battles_gu",
+        "char_king_quan",
+        "char_wang_er",
+        "char_ying_ming",
+        "char_ba_huang"
+      ]
+    },
+    {
+      "text": "In Southern Border on San Cha mountain, Fang Yuan refines fixed immortal travel Gu in public as a mortal.",
+      "chapters": [
+        405
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "collapse-and-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_fixed_immortal_travel"
+      ]
+    },
+    {
+      "text": "When he leaves by that Gu, the blessed land collapses. Winds of assimilation rise, experts flee, and San Cha mountain goes into chaos again.",
+      "chapters": [
+        405
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "collapse-and-aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Looking back later, those winds wiped out the whole San Cha mountain until it was barren land.",
+      "chapters": [
+        468
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "collapse-and-aftermath",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Appearance",
+      "positions": [
+        {
+          "position": "Zuo clan's neighboring mountain is named Leng Zhan mountain.",
+          "support": "Chapter 323.",
+          "chapters": [
+            323
+          ]
+        },
+        {
+          "position": "Zuo clan's neighboring mountain is named Leng Chan mountain.",
+          "support": "Chapter 389.",
+          "chapters": [
+            389
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/san-cha-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/san-cha-mountain/",
+      "chapters": [
+        275,
+        323,
+        325,
+        326,
+        328,
+        337,
+        339,
+        340,
+        344,
+        347,
+        374,
+        375,
+        377,
+        379,
+        389,
+        391,
+        405,
+        425,
+        468
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

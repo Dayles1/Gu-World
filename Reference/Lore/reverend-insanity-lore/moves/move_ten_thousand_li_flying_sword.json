@@ -1,0 +1,170 @@
+{
+  "id": "move_ten_thousand_li_flying_sword",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ten Thousand Li Flying Sword",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ten Thousand Li Flying Sword is one of the sword path killer moves Sword Immortal Bo Qing created with flying sword Gu as a core.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 995,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    995,
+    1468
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_bo_qing",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1468,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "constituent_gu",
+      "target": "gu_flying_sword_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bo_qing",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "gu_flying_sword_gu",
+      "count": 3
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Using flying sword Gu as a core, together with other Immortal Gu and mortal Gu, Sword Immortal Bo Qing created many sword path killer moves. Fang Yuan draws that rank seven Immortal Gu, shaped like a silver-winged dragonfly, from the sleeping immortal zombie Bo Qing as the fourth Immortal Gu in that haul. Ten thousand li flying sword is named among the examples, with formless flying sword, cloud flying sword, and pursuing flying sword.",
+      "chapters": [
+        995
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "sys_mortal_gu",
+        "char_bo_qing",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "In Lang Ya blessed land Fang Yuan points and sword light flies out like a rainbow, shooting towards the sky, traveling several thousand li in the blink of an eye, extremely accurate. He has already modified this Bo Qing move along with the other three he practises here. Compared with wisdom path he lacks sword path Immortal Gu and attainment, so the change is limited and the power remains about the same as Bo Qing’s version.",
+      "chapters": [
+        1468
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "modified-activation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_lang_ya_blessed_land"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/ten-thousand-li-flying-sword/",
+      "chapters": [
+        995,
+        1468
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Tier": {
+      "text": "Immortal",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Known users": {
+      "text": "Bo Qing (creator) Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Constituent Gu": {
+      "text": "Flying Sword Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "id": "char_wan_che_zhen",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wan Che Zhen",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wan che zhen",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Вань Чэ Чжэнь",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wan Che Zhen is a rank eight Gu Immortal and Deng Zuo Yan's best friend in the historical record of Thieving Heaven Demon Venerable's familiar face.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 709,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    709
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_deng_zuo_yan",
+      "count": 2
+    },
+    {
+      "target": "char_thieving_heaven_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Gu Master history names him as the friend Thieving Heaven Demon Venerable impersonated with familiar face when scamming Deng Zuo Yan. After the theft from Deng Zuo Yan’s blessed land, Deng Zuo Yan attacked him in a fierce fight; he could not explain himself at first, then stopped defending and let Deng Zuo Yan deal three blows that left him on the verge of death, which finally proved the friendship.",
+      "chapters": [
+        709
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_thieving_heaven_demon_venerable",
+        "char_deng_zuo_yan"
+      ]
+    },
+    {
+      "text": "Deng Zuo Yan tried to heal him regardless of the consequences, but the deep injuries would not heal. Seeing Deng Zuo Yan about to face a tribulation, Wan Che Zhen left secretly so he would not be a burden.",
+      "chapters": [
+        709
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "injury-and-departure",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Thieving Heaven then disguised as him, pretended to be ill in bed, and extorted cultivation resources from Deng Zuo Yan before escaping. After Deng Zuo Yan died in tribulation, Wan Che Zhen heard the news, vomited blood from anger, and his already weak injured body gave in; he died several days later. The same record counts both rank eight deaths as the most illustrious achievement of familiar face.",
+      "chapters": [
+        709
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wan-che-zhen/",
+      "chapters": [
+        709
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 709",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 709,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

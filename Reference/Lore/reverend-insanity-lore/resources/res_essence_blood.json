@@ -1,0 +1,127 @@
+{
+  "id": "res_essence_blood",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Essence blood",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Essence blood is the refiner's own blood bled into an Immortal Gu refinement to bind ownership.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 390,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    390,
+    402
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_second_aperture_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_second_aperture_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During the final stage of refining Second Aperture Gu in the bronze cauldron, Fang Yuan cuts his artery and bleeds out his own essence blood. That step is required for the refined Gu to become his; without it the result would be ownerless and would fly away once refined. Large amounts of essence blood infused into the blue smoke and yellow light turn them, with sizzling sounds, into a red cloud like a wave of blood sea.",
+      "chapters": [
+        390
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ownership-step",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_second_aperture_gu",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Fang Yuan resumes the same refinement during a stalemate among Gu Masters outside, he again cuts his artery and bleeds essence blood into the blended smoke and light, forming the red blood-sea cloud and then a field of red wheat.",
+      "chapters": [
+        402
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-resumes",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/essence-blood/",
+      "chapters": [
+        390,
+        402
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Gu Master's own blood",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Second Aperture Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

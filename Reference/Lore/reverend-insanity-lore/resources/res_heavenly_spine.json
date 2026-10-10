@@ -1,0 +1,167 @@
+{
+  "id": "res_heavenly_spine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Heavenly spine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Heavenly spine is a giant bone structure in Dragon Whale Paradise, later identified as a rank nine bone path immortal material.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1914,
+    "volume": null,
+    "arc": "evt_arc_fate_destruction"
+  },
+  "chapters_cited": [
+    1914,
+    1915,
+    1916
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_bone",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_bone",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "house_merit_obelisk",
+      "count": 1
+    },
+    {
+      "target": "loc_dragon_whale_paradise",
+      "count": 1
+    },
+    {
+      "target": "char_paradise_earth_immortal_venerable",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The first super mission of the Merit Obelisk asks to get rid of the black fire on the heavenly spine. Fang Yuan teleports to the mission location at the top of the clouds, the highest point in the sky, and finds a vast field of black fire already burning there.",
+      "chapters": [
+        1914
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-mission-site",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_merit_obelisk",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "The black fire is attached to giant milky white bones with a sacred aura. A main trunk runs east to west like a spine holding up the sky, with branching bones like ribs or ivory tusks. Fang Yuan evaluates the heavenly spine as a rank nine bone path immortal material. He judges it should not be a human bone, and that its one and only use is to reinforce Dragon Whale Paradise. Black fire fiercely corrodes and destroys the spine; the immortals cannot clear more than a tiny fraction of the fire and abandon the super mission.",
+      "chapters": [
+        1915
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-nine-bone-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_dragon_whale_paradise"
+      ]
+    },
+    {
+      "text": "Fang Yuan later frames open questions about the heavenly spine left behind by Paradise Earth Immortal Venerable, including where it originated and what Paradise Earth’s true intent was.",
+      "chapters": [
+        1916
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "paradise-earth-remnant",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_paradise_earth_immortal_venerable"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/heavenly-spine.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/heavenly-spine/",
+      "chapters": [
+        1914,
+        1915,
+        1916
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "IX as of ch. 1915",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Bone Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Dragon Whale Paradise",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

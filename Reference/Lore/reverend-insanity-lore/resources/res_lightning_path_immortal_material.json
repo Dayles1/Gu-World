@@ -1,0 +1,124 @@
+{
+  "id": "res_lightning_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lightning path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Lightning path immortal materials are immortal materials of lightning path, grown as unique flowers or formed as rank eight tree parts in a lightning forest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1744,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1744,
+    2020
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_lightning",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_lightning",
+      "count": 1
+    },
+    {
+      "target": "char_great_treasury_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_mi_lan_guang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Mi Lan Guang personally grew electrolytic iron starflower, an information path and lightning path immortal material that had never appeared before. Great Treasury Immortal stole one flower to research it, calling the chase over a rank seven immortal material not worth fighting to the death over.",
+      "chapters": [
+        1744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "theft-leads-to-a-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mi_lan_guang",
+        "char_great_treasury_immortal"
+      ]
+    },
+    {
+      "text": "Deep underground, a lightning forest shows flashes of lightning that form a tall silver tree for a moment, with large thunder leaves and silver lightning branches that materialize. Watching immortals call those parts priceless lightning path rank eight immortal materials.",
+      "chapters": [
+        2020
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "lightning-forest-wealth",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/lightning-path-immortal-material/",
+      "chapters": [
+        1744,
+        2020
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Lightning Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

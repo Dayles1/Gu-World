@@ -1,0 +1,127 @@
+{
+  "id": "loc_snow_domain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Snow Domain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xue Song Zi's battlefield killer move: an ice crystal domain of frost energy raised in the air on the icy plain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 688,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    688
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xue_song_zi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Frost energy spreads quickly and forms an ice crystal domain in the air. Inside, pine trees grow from nothingness into dense trunks whose branches tie together into thick walls, and snow white hair lengthens into dozens of dragon shaped ice coils that castle around the center.",
+      "chapters": [
+        688
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside the domain, Xue Song Zi uses towering pine tree and icy hair dragon stream together as Fang Yuan’s myriad self army charges him. Pines grow from nothingness into dense trunks whose branches tie into thick walls, and his long snow white hair lengthens with a dragon cry, turning into dozens of dragon shaped ice coils that castle around him at the center. The army collapses the pines and shatters the ice dragons after a moment, the domain breaks apart, and he retreats faster than he arrived, pale and asking who the immortal zombie is.",
+      "chapters": [
+        688
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xue_song_zi",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/snow-domain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/snow-domain/",
+      "chapters": [
+        688
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "battlefield",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

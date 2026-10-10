@@ -1,0 +1,300 @@
+{
+  "id": "fac_caravan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Caravan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Large merchant groups of Gu Masters that move goods between Southern Border mountain villages when mortal travel cannot.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 11,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    11,
+    39,
+    44,
+    45,
+    47,
+    109
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_jia_family",
+      "count": 1
+    },
+    {
+      "target": "gu_treasure_brass_toad",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_yao_ji",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_die",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A caravan enters along the mountain like a colorful worm, led by a Treasure Brass Toad two and a half meters tall. The toad’s entire body is orange-yellow. Its back is thick and full of warts and knots, like the lumps of bronze nails on ancient city gates, and thick ropes tie plenty of goods on that back like a giant backpack. Behind the toad comes a fifteen meter fat worm shaped like a silkworm, with two eyes like multi-colored glass windows and a thick layer of black porcelain-like leather armor piled with merchandise. Robust mortal martial warriors follow a fat black beetle on the ground. Brightly feathered ostriches, hairy mountain spiders, and winged snakes with two pairs of feathered wings travel in smaller numbers. Most of the beasts are toads like the Treasure Brass Toad but smaller, with the build of cows and horses, carrying merchandise and people.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_treasure_brass_toad"
+      ]
+    },
+    {
+      "text": "When the group stations at dusk, the village rim becomes a widespread area of temporary shops. Red, blue, yellow, and green lofty tents stand there, and every inch between the tents is squeezed with little street stalls. The area stays brightly lit at night.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "From a hillside the merchant caravan looks like a fat and colourful flower python snaking through a narrow mountain road.",
+      "chapters": [
+        47
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A later visit of larger scale also brings a Gu house: an eighteen meter tree with roots and branches twisted like the tangling of dragons and snakes, a brown trunk ten meters across at the base, three layers of space and windows in the trunk, and a verdant treetop. The text names that plant Gu three star cave and says only large-scale caravans have Gu houses.",
+      "chapters": [
+        109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_house"
+      ]
+    },
+    {
+      "text": "At Gu Yue Village, the only inn stays mostly deserted except when the annual merchant caravan comes to trade on Qing Mao Mountain.",
+      "chapters": [
+        11
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "early-mention-on-qing-mao-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_gu_yue_village",
+        "loc_qing_mao_mountain"
+      ]
+    },
+    {
+      "text": "Southern Border has a hundred thousand mountains, and Qing Mao Mountain is only one of them. Between the mountains, deep forest, steep cliffs, falling rock, ferocious beasts, and peculiar Gu worms block mortal passage; alone, travelers need at least rank three to get through. Because of that poor economy, the main form of trade is caravan merchants. Only a merchant group organized at large scale can bring Gu Masters together with enough power to help each other, conquer the route, and traverse from mountain to mountain.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "why-caravans-exist",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "sys_gu_worms",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "One May, a caravan enters Gu Yue Village led by a Treasure Brass Toad. Its present leader is Fu of the Jia family, a rank four Gu Master. The group stations in the village by afternoon and, by dusk, spreads temporary shops, lofty tents, and street stalls around the village rim. The village needs yearly caravan trade, and the caravan needs the business.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "jia-fus-visit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_jia_family",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Stores normally open for three days and three nights; by the morning after the second night the merchant caravan is already due to leave. Talk during that stay places Jia Fu as the caravan leader in a long-sleeved yellow robe.",
+      "chapters": [
+        44
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "jia-fus-visit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_fu"
+      ]
+    },
+    {
+      "text": "Fang Yuan later plans to sell to a merchant in the caravan because those outsiders sit outside village disputes, and the same stretch says the caravan will leave Gu Yue mountain village in a day toward either the Xiong clan or the Bai clan.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "jia-fus-visit",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_xiong_clan",
+        "fac_bai_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/factions/caravan.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/caravan/",
+      "chapters": [
+        11,
+        39,
+        44,
+        45,
+        47,
+        109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

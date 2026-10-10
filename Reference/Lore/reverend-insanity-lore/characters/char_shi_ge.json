@@ -1,0 +1,236 @@
+{
+  "id": "char_shi_ge",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shi Ge",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shi ge",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ши Гэ",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Senior Shi Ge"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shi Ge is a Central Continent rank seven Gu Immortal with a righteous aura who travels with Mu Ling Lan under Heavenly Court orders toward Northern Plains.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1233,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1233,
+    1243,
+    1254
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_mu_ling_lan",
+      "count": 2
+    },
+    {
+      "target": "char_shi_zheng_yi",
+      "count": 2
+    },
+    {
+      "target": "house_canary_pavilion",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "house_wind_sweeping_building",
+      "count": 1
+    },
+    {
+      "target": "loc_black_lanterns",
+      "count": 1
+    },
+    {
+      "target": "loc_snowy_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After Mu Ling Lan subdues a swamp crab, a blue robed Gu Immortal with a square face, thick eyebrows, tall nose bridge, and an aura of righteousness that cannot be violated greets him. Mu Ling Lan names him Senior Shi Ge. He has just arrived, praises the swamp crab method, and confirms Heavenly Court orders to join the Northern Plains battle, inviting Mu Ling Lan to travel together. Even though both are rank seven, he is higher in seniority after passing two grand tribulations, while Mu Ling Lan has not passed his first, so he teaches along the way. He descends early to bring his son Zheng Yi, a newly ascended Gu Immortal who lacks experience, and later recognizes Heavenly Lotus Sect’s Canary Pavilion as a good Immortal Gu House for capturing flying beasts and moving quickly.",
+      "chapters": [
+        1233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_mu_ling_lan",
+        "sys_gu_immortal",
+        "fac_heavenly_court",
+        "reg_northern_plains",
+        "char_shi_zheng_yi",
+        "fac_heavenly_lotus_sect",
+        "house_canary_pavilion",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "At Wind Sweeping Building’s top floor, Shi Zheng Yi sobs over his father’s eyes. Narration calls Shi Ge a famous rank seven Gu Immortal expert and one of three who went blind when black lanterns struck. He had been using an investigative killer move on the night heavenly wolf group; that useful move cost him vision permanently. He remains calm, pats Shi Zheng Yi’s head, and says he has many methods and countless investigative killer moves, so he can still cultivate and fight without eyes. He tells his son not to cry like a weakling and to think of story protagonists charging ahead while alive.",
+      "chapters": [
+        1243
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blinded-by-black-lanterns",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_wind_sweeping_building"
+      ]
+    },
+    {
+      "text": "Shi Zheng Yi is restless in Snowy Mountain blessed land because his father Shi Ge is among the missing reinforcements from the other group, fate unknown at that moment.",
+      "chapters": [
+        1254
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "missing-among-reinforcements",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_snowy_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shi-ge/",
+      "chapters": [
+        1233,
+        1243,
+        1254
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 1233",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 1233,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

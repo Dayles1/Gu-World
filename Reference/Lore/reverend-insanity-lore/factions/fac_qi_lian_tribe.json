@@ -1,0 +1,232 @@
+{
+  "id": "fac_qi_lian_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qi Lian Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe first named when Qi Lian tribe leader's godson Wu Ming is credited in the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 536,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    536,
+    538,
+    539,
+    540,
+    543
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_wu_ming",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 536,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wu_ming",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_alliance_of_seven_armies",
+      "count": 2
+    },
+    {
+      "target": "fac_yang_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_tao_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_ye_lui_sang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_du_jiao_region",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Du Jiao region, when Ye Lui Sang’s army defeats the alliance of seven armies, the biggest achiever named is a hidden elder in Qi Lian tribe: Qi Lian tribe leader’s godson Wu Ming. Wu Ming is a rank five middle stage dark path Gu Master who snuck into the enemy camp, killed two rank five experts and thirteen rank four Gu Masters, and left the seven alliance armies in fear with low morale.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hidden-elder-at-du-jiao",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_du_jiao_region",
+        "char_ye_lui_sang",
+        "fac_alliance_of_seven_armies",
+        "char_wu_ming",
+        "sys_gu_master",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "After Ma tribe beats Ye Lui tribe and chases Ye Lui Sang, the tribes that had submitted to Ye Lui tribe, including Qi Lian tribe, go to Ma tribe.",
+      "chapters": [
+        538
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ma-tribe-allegiance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "fac_ye_lui_tribe"
+      ]
+    },
+    {
+      "text": "From that fight Ma tribe gains many large tribes, including Qi Lian tribe.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "large-tribe-roster",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Wu Ming is still named Qi Lian tribe leader’s godson and a rank five dark path Gu Master; Ye Lui Sang’s win over the seven army alliance is tied to those assassinations of enemy leaders, and Wu Ming’s later kills raise him as the number one assassin in the current world.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "assassin-reputation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Ma tribe leader Ma Shang Feng dies and Ma tribesmen lose the will to battle, Tao tribe, Yang tribe, and Qi Lian tribe surrender one after another, and that surrender process draws most of Hei tribe’s attention.",
+      "chapters": [
+        543
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "contest-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_shang_feng",
+        "fac_tao_tribe",
+        "fac_yang_tribe",
+        "fac_hei_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/qi-lian-tribe/",
+      "chapters": [
+        536,
+        538,
+        539,
+        540,
+        543
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

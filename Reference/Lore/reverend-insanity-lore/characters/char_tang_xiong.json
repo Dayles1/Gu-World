@@ -1,0 +1,329 @@
+{
+  "id": "char_tang_xiong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tang Xiong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "tang xiong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Тан Сюн",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tang Xiong is Tang Qing's brother, and Wei Yang warns that he falls from fourth inner city to fifth to forcefully challenge Fang Yuan for revenge.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 280,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    280,
+    281
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_strength",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_bear_palm_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_grand_bear_gu",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 281,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_grand_bear_gu",
+      "count": 4
+    },
+    {
+      "target": "gu_bear_palm_gu",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "char_tang_qing",
+      "count": 2
+    },
+    {
+      "target": "gu_blood_moon_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "gu_jumping_grass_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_fourth_inner_city",
+      "count": 1
+    },
+    {
+      "target": "sys_beast_phantom",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Before the match, Wei Yang is not worried; he secretly hopes the challenge will push Fang Yuan off the strength path.",
+      "chapters": [
+        280
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "He is eight feet tall, with wide shoulders and a thick waist. His arms alone are as thick as Fang Yuan’s thighs. He stands on the stage without an upper garment or shoes. His chest is filled with black chest hair, giving a wild and formidable aura. He looks at Fang Yuan with bloodshot eyes. When grand bear Gu expands him, his muscles expand visibly and his body size grows by a fold; bear palm Gu turns his hands and feet into thick, enormous bear palms covered at first in yellow light.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_grand_bear_gu",
+        "gu_bear_palm_gu"
+      ]
+    },
+    {
+      "text": "On a mid-scale lava battle stage only a few dozen spectators are present.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stage-fight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Spectators say the Tang brothers grew up relying on each other, that Tang Qing is dead, and that only Tang Xiong remains. Wei Yang, disguised in the crowd, reads him as a strength path rank two peak stage expert who can unleash the strength of three bears and who had already won into fourth inner city.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stage-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tang_qing"
+      ]
+    },
+    {
+      "text": "He charges like a wild bull, ignoring the scalding dark red lava rock under bare feet and shattering deep footprints with each step. A head-on collision throws him back six steps and shocks him into taking Fang Yuan seriously. Narration says he holds only the strength of two bears until grand bear Gu expands his body for a temporary third bear’s strength. A black bear beast phantom appears behind him and for a time gives him the upper hand; spectators cite prior fights where he averages five bear strength phantoms.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stage-fight",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan switches to jumping grass and rank three blood moon Gu moonblades from range, Tang Xiong’s weaker long range methods cannot threaten him. Fang Yuan’s rank three initial stage light silver primeval essence outlasts Tang Xiong’s B grade red steel essence. After five or six bleeding wounds Tang Xiong admits defeat, covers the injuries, threatens to smack Fang Yuan into minced meat someday, and leaves pale. Fang Yuan takes grand bear Gu as the match prize; with it gone Tang Xiong has only two bears’ strength left and his battle strength falls by about thirty percent.",
+      "chapters": [
+        281
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stage-fight",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_blood_moon_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/tang-xiong.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/tang-xiong/",
+      "chapters": [
+        280,
+        281
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "II as of ch. 281",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Paths": {
+      "text": "Strength path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 2,
+        "as_of_chapter": 281,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_strength"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_bear_palm_gu",
+      "role": "user",
+      "recorded_chapter": 281,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_grand_bear_gu",
+      "role": "user",
+      "recorded_chapter": 281,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

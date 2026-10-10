@@ -1,0 +1,201 @@
+{
+  "id": "char_sun_gan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sun Gan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "sun gan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сунь Гань",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Hunting King Hunting King Sun Gan"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sun Gan is the righteous path figure nicknamed Hunting King in Fang Yuan's prior-life memory, remembered for hunting dark leopards and making Breath Concealment Gu famous across the Southern Border.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 229,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    229,
+    239,
+    673
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "gu_breath_concealment_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Almost every dark leopard carries a Breath Concealment Gu in its ears, yet the beasts move in pairs at least at thousand beasts king level, so capturing them is dangerous. In Fang Yuan’s prior-life memory, Sun Gan, called Hunting King, was first to hunt those dark leopards on Zi You mountain for that Gu and sold the haul for a fortune. Others followed, and within a few years the mountain’s dark leopards were wiped out; at the story’s present the mountain is still secluded.",
+      "chapters": [
+        229
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zi-you-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_breath_concealment_gu",
+        "char_fang_yuan",
+        "loc_zi_you_mountain"
+      ]
+    },
+    {
+      "text": "Within fifty years after Hunting King Sun Gan made Breath Concealment Gu widely known, a great war across the Southern Border put that Gu into wide use.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "war-use",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "When Fang Yuan later sorts rebirth targets by future luck, he sets aside Hunting King Sun Gan of the Southern Border as someone who would only be at rank five all his life.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-ceiling",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/sun-gan/",
+      "chapters": [
+        229,
+        239,
+        673
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 673",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 673,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": null,
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

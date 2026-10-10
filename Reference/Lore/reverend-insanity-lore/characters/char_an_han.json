@@ -1,0 +1,214 @@
+{
+  "id": "char_an_han",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "An Han",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "an han",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ань Хань",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Lord An Han first elder An Han"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An Han is first elder of Flying Frost Sect and a host figure at the Central Continent Refinement Path Convention round held there.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 828,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    828,
+    831,
+    832
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "loc_flying_frost_sect",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "sys_mental_energy",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    },
+    {
+      "target": "gu_ghost_fire_gu",
+      "count": 1
+    },
+    {
+      "target": "char_zheng_shan_chuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_qi_shan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Flying Frost Sect he sits on a bamboo chair as first elder, reads Fang Yuan’s leaked rank five aura as real, and orders burly men to move around the disguised demonic Gu Master.",
+      "chapters": [
+        828
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_flying_frost_sect",
+        "char_fang_yuan",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Watching Fang Yuan burn souls to refine ghost fire Gu, he snorts that the method is evil and unorthodox. As host first elder he faces loss of face if he fails, and he wants first place in that Refinement Path Convention round for Flying Frost Sect. Crowds around the stage say first place there has to go to Lord An Han.",
+      "chapters": [
+        831
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ghost-fire-round",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_ghost_fire_gu",
+        "sys_refinement_path_convention"
+      ]
+    },
+    {
+      "text": "Fang Yuan’s two-tasks-at-once refinement shocks him into standing without noticing. A disciple calls him back, and the sect leader’s look forces him onto the stage to restore reputation through refinement path. Spectators cast optimistic gazes at the famous An Han, while an old Gu Master judges that he already knows he cannot beat Fang Yuan and has lost composure. When a duel between Fang Yuan and Zheng Shan Chuan draws the crowd, An Han leaves the venue to them and later quietly pushes resources so the duel continues.",
+      "chapters": [
+        832
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "stage-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_zheng_shan_chuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/an-han/",
+      "chapters": [
+        828,
+        831,
+        832
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

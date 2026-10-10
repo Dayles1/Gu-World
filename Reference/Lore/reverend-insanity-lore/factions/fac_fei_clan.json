@@ -1,0 +1,307 @@
+{
+  "id": "fac_fei_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fei Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Fei Clan is one of the top Southern Border clans named beside Tie and Shang under Wu clan's dominance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 228,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    231,
+    306,
+    307,
+    308,
+    411
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_fei_luan_feng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 306,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fei_luan_feng",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 2
+    },
+    {
+      "target": "char_yi_bu_hui",
+      "count": 2
+    },
+    {
+      "target": "gu_chasing_wind_gu",
+      "count": 2
+    },
+    {
+      "target": "char_empress_wu_ji",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_flesh_unity_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_yi_huo",
+      "count": 1
+    },
+    {
+      "target": "char_zui_xian_weng",
+      "count": 1
+    },
+    {
+      "target": "gu_divine_travel",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At a Shang Clan City auction, Fei clan elder Fei Luan Feng appears among the gathered experts.",
+      "chapters": [
+        306
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "elder-at-the-shang-clan-auction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "char_fei_luan_feng"
+      ]
+    },
+    {
+      "text": "He and Yi Clan elder Yi Bu Hui compete for a chasing wind Gu; the two clans have a poor relationship, and Yi Bu Hui wins at four hundred and forty thousand.",
+      "chapters": [
+        307
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "elder-at-the-shang-clan-auction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yi_clan",
+        "char_yi_bu_hui",
+        "gu_chasing_wind_gu"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "elder-at-the-shang-clan-auction",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "elder-at-the-shang-clan-auction",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Shang Xin Ci later treats Yi clan and Fei clan elders as rival bidders who might push prices higher.",
+      "chapters": [
+        308
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "elder-at-the-shang-clan-auction",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Fang Yuan judges that large-scale use of bone flesh unity Gu would need an alliance of at least Wu Clan, Fei clan, Tie Clan, and Shang Clan to resist outside greed.",
+      "chapters": [
+        231
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-scale-for-bone-flesh-unity-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_bone_flesh_unity_gu",
+        "fac_wu_clan",
+        "fac_tie_clan",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Fang Yuan lists Southern Border’s Fei clan as possessing the top quality wine Zhuang Si Fei when weighing who can obtain divine travel Gu more easily than he can.",
+      "chapters": [
+        411
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "top-quality-wine",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "gu_divine_travel"
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Elder at the Shang clan auction",
+      "positions": [
+        {
+          "position": "The Fei clan elder at the auction is named Fei Luan Feng.",
+          "support": "Chapters 306 and 307.",
+          "chapters": [
+            306,
+            307
+          ]
+        },
+        {
+          "position": "The Fei clan elder at the auction is named Yan Luan Feng.",
+          "support": "Chapter 308.",
+          "chapters": [
+            308
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/fei-clan/",
+      "chapters": [
+        231,
+        306,
+        307,
+        308,
+        411
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

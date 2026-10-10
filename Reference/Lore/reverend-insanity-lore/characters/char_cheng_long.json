@@ -1,0 +1,262 @@
+{
+  "id": "char_cheng_long",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Cheng Long",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "cheng long",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чэн Лун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Cheng Long is Cheng tribe leader, a rank five transformation path expert and Cheng Hu's elder brother, sent out for Ma tribe in the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 539,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    539,
+    541,
+    542
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_ma_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 539,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_ma_tribe",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_cheng_hu",
+      "count": 2
+    },
+    {
+      "target": "char_gu_guo_long",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_luo_bo_jun",
+      "count": 1
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 1
+    },
+    {
+      "target": "fac_cheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "move_four_arm_earth_king",
+      "count": 1
+    },
+    {
+      "target": "move_three_head_six_arms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Against Gu Guo Long on the Imperial Court field, he answers a polite bow with a refusal to teach and a move comparison, then flies freely while Gu Guo Long keeps attack and defense steady through twenty exchanges before Hei Lou Lan sends Luo Bo Jun.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_guo_long",
+        "loc_imperial_court",
+        "char_hei_lou_lan",
+        "char_luo_bo_jun"
+      ]
+    },
+    {
+      "text": "He is an enormous dragon with a golden horn, three claws, and dragon eyes burning like lanterns.",
+      "chapters": [
+        541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Fang Yuan kills Cheng Hu, a three-clawed golden horn dragon blocks the way for revenge as Cheng Hu’s big brother Cheng Long. Fang Yuan smashes him down in one collision and leaves him with a broken horn in a pit.",
+      "chapters": [
+        541
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "imperial-court-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_cheng_hu"
+      ]
+    },
+    {
+      "text": "Cheng Long crawls out, clears nearby foes, and pursues again; Fang Yuan blinds him in the air, hammers the dragon head to pieces, and the corpse stays in dragon form after death.",
+      "chapters": [
+        542
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "imperial-court-clash",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/cheng-long.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/cheng-long/",
+      "chapters": [
+        539,
+        541,
+        542
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 539",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Ma Tribe as of ch. 539",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 539,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

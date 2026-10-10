@@ -1,0 +1,267 @@
+{
+  "id": "char_jiang_fan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Jiang Fan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "jiang fan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Цзян Фань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Jiang Fan is a mortal fishery servant in Fang Yuan's previous-life recollection, whose bond with a rank five River Swallowing Toad makes him a legend across the southern continent's hundred thousand mountains.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 118,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    39,
+    118,
+    157,
+    178
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_river_swallowing_toad",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 118,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_river_swallowing_toad",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan recalls him while thinking of the River Swallowing Toad. The recollection places Jiang Fan about two hundred years later in that previous life, first calling him a special Gu Master whose story spreads among mortals, then stating that he never awakened an aperture and stayed a mere mortal who kept the rank five toad.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_river_swallowing_toad",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "The flood that follows startles the southern continent, and his name spreads through the one hundred thousand mountains; earlier text places those mountains in the Southern Border.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Jiang Fan is a family servant who alone runs a fishery for a stingy, cruel master. A sleeping River Swallowing Toad arrives belly up at the coast, blocks the river’s upflow, and ruins his catch; he cannot move the rank five Gu, dares not report the blockage after another servant was killed for missing quota, and vents fear and anger on the “toad corpse” each day. When the toad wakes, he treats it as a dying companion, then as his only friend. On collection day it drinks the river dry and vomits a mountain of seafood that saves three months of quota.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fishery-servant-and-the-toad",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Village Gu Masters try to expel the rank five Gu. Jiang Fan kneels and begs; they kick him aside and nearly kill him. The toad then carries him and vomits a river that engulfs the village and drowns half the hill. With the toad at his side, people treat him as owning a rank five Gu worm even though he has no awakened aperture, and that standing stuns the Gu Master world.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "flood-and-legend-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "A later chapter cites the same pair as a human case of borrowing a Gu worm’s ability without being a Gu Master.",
+      "chapters": [
+        157
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "flood-and-legend-standing",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He builds a hamlet on the ruined village site, treats mortals kindly, and aspires to equality without oppression. Surrounding mortals gather to him, but he is assassinated; a later aside states a Gu Master kills him even with the toad’s assistance.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hamlet-and-death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After his death the River Swallowing Toad leaves. Gu Masters raze the hamlet and slaughter mortals who opposed them. Fang Yuan then wonders whether Jiang Fan will still appear in the present timeline after Fang Yuan’s own influence, and leaves that question open.",
+      "chapters": [
+        118
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hamlet-and-death",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/jiang-fan/",
+      "chapters": [
+        39,
+        118,
+        157,
+        178
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_river_swallowing_toad",
+      "role": "owner",
+      "recorded_chapter": 118,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

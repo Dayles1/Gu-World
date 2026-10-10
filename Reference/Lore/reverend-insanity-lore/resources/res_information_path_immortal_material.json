@@ -1,0 +1,167 @@
+{
+  "id": "res_information_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Information path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Information path immortal materials are immortal materials of information path, inspected by information path Immortal Gu and used where information path dao marks are needed.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1161,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1161,
+    1562,
+    2228
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_information",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_information",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_perceivable_dao_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "res_elephant_armor_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_shi_zheng_yi",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Perceivable Dao is an information path Immortal Gu. When it inspects purely information path immortal materials, immortal essence expenditure is lower than for other immortal materials, because other types carry conflicting dao marks.",
+      "chapters": [
+        1161
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "perceivable-dao-cost",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_perceivable_dao_immortal_gu",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Elephant armor mountain is a rank eight immemorial immortal material of information path. Lang Ya land spirit processes over ten rank eight information path immortal materials, including that mountain, into a temporary multicolored whirlpool whose aura draws wisdom Gu. Legends say wisdom Gu’s recipe contains a large amount of information path immortal materials, and a wild wisdom Gu advances only in places full of information path dao marks.",
+      "chapters": [
+        1562
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wisdom-gu-lure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_elephant_armor_mountain",
+        "char_lang_ya_land_spirit",
+        "gu_wisdom_gu"
+      ]
+    },
+    {
+      "text": "Zhao Lian Yun gives Shi Zheng Yi an information path immortal material: trash talk petal flower, a rank six immortal material he needs to refine his Immortal Gu.",
+      "chapters": [
+        2228
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rank-six-gift",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_zhao_lian_yun",
+        "char_shi_zheng_yi"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/information-path-immortal-material/",
+      "chapters": [
+        1161,
+        1562,
+        2228
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Information Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

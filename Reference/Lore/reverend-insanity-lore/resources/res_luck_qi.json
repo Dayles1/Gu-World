@@ -1,0 +1,202 @@
+{
+  "id": "res_luck_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Luck qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Luck qi is a rare qi path immortal material drawn as orange-yellow qi with auspicious clouds.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1644,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1644,
+    1815,
+    2109
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 1
+    },
+    {
+      "target": "res_righteous_qi",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_big_family_qi_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_big_qi_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "res_divine_qi",
+      "count": 1
+    },
+    {
+      "target": "res_fire_qi",
+      "count": 1
+    },
+    {
+      "target": "res_metal_qi",
+      "count": 1
+    },
+    {
+      "target": "res_water_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_earth_qi",
+      "count": 1
+    },
+    {
+      "target": "sys_heaven_qi",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_xiang_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "res_elderly_qi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan pulls qi from unlimited qi sea, an orange-yellow flow comes out, shiny and lively, trailing behind itself with auspicious clouds at the tip. That flow is luck qi, a type of immortal material. Unlimited qi sea holds many kinds of qi, and luck qi is among the rarer ones; even across the five regions and two heavens, luck qi at that scale is seldom seen.",
+      "chapters": [
+        1644
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "form-and-rarity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Unlimited qi sea uses Immortal Gu such as Big Qi and Big Family Qi together with countless qi path immortal materials, including common types such as metal qi, water qi, and fire qi, and special ones such as luck qi and divine qi. Those common and special stocks are covered on metal qi, water qi, fire qi, and divine qi.",
+      "chapters": [
+        1815
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qi-path-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "gu_big_qi_immortal_gu",
+        "gu_big_family_qi_immortal_gu",
+        "res_metal_qi",
+        "res_water_qi",
+        "res_fire_qi",
+        "res_divine_qi"
+      ]
+    },
+    {
+      "text": "After Fang Yuan annexes Qi Xiang grotto-heaven, the sovereign immortal aperture first gains the largest quantity of heaven and earth qi among its new qi currents, then luck qi appears among immortal materials that form alongside profound yin qi, blood qi, astral qi, domination qi, life qi, death qi, righteous qi, orchid vitality qi, elderly qi, and other named qi materials. Heaven and earth qi, elderly qi, and righteous qi from that production are covered on heaven qi, earth qi, elderly qi, and righteous qi.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sovereign-aperture-production",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qi_xiang_grotto_heaven",
+        "sys_heaven_qi",
+        "sys_earth_qi",
+        "res_elderly_qi",
+        "res_righteous_qi"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/luck-qi/",
+      "chapters": [
+        1644,
+        1815,
+        2109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Unlimited qi sea and other qi stocks",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

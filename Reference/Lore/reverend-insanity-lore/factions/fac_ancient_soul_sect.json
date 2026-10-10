@@ -1,0 +1,456 @@
+{
+  "id": "fac_ancient_soul_sect",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ancient Soul Sect",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ancient Soul Sect is named among Central Continent's top ten sects when Immortal Crane elites prepare for the Hu Immortal inheritance contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 335,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    335,
+    341,
+    728,
+    777,
+    1191,
+    1241,
+    1250,
+    1705
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_gu_ting",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 341,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_old_oracle",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 756,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yu_yi_ye_zi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1241,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 4
+    },
+    {
+      "target": "char_gu_ting",
+      "count": 4
+    },
+    {
+      "target": "char_old_oracle",
+      "count": 4
+    },
+    {
+      "target": "char_yu_yi_ye_zi",
+      "count": 4
+    },
+    {
+      "target": "house_frost_dragon_manor",
+      "count": 3
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 2
+    },
+    {
+      "target": "fac_heavens_envy_sect",
+      "count": 2
+    },
+    {
+      "target": "loc_spirit_butterfly_valley",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_bi_xia",
+      "count": 2
+    },
+    {
+      "target": "char_wei_wu_shang",
+      "count": 2
+    },
+    {
+      "target": "reg_earth_earth_abyss",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 2
+    },
+    {
+      "target": "char_wine_emperor",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_sects",
+      "count": 1
+    },
+    {
+      "target": "inh_hu_immortal_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_heavenly_lotus",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_ti",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "res_underground_moss",
+      "count": 1
+    },
+    {
+      "target": "gu_bamboo_gentleman_gu",
+      "count": 1
+    },
+    {
+      "target": "move_gentlemans_bamboo",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "fac_ten_great_ancient_sects",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "move_heart_blood_premonition",
+      "count": 1
+    },
+    {
+      "target": "char_shi_lei",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "evt_era_medieval",
+      "count": 1
+    },
+    {
+      "target": "fac_combat_immortal_sect",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "loc_star_form_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_bu_zhen_zi",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "house_divine_emperor_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ancient Soul Sect’s Immortal Gu House, Frost Dragon Manor, is a garden exquisitely built and grand with white jade tiles, oozing with cold air, with faint dragon roars heard occasionally.",
+      "chapters": [
+        1191
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house",
+        "house_frost_dragon_manor"
+      ]
+    },
+    {
+      "text": "Immortal Crane Sect elites bound for Fairy Bai Hu’s inheritance are told the lord Gu Immortals of the sects have agreed not to strike and will send elite disciples to compete fairly instead. The same briefing names Heavenly Lotus Sect, Spirit Butterfly Valley, Ancient Soul Sect, Heaven’s Envy Sect, and the rest of Central Continent’s peer forces as co-competitors, and says Immortal Crane Sect must stay united on the trip.",
+      "chapters": [
+        335
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "place-in-the-ten-sect-contest",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_immortal_crane_sect",
+        "inh_hu_immortal_inheritance",
+        "sys_gu_immortal",
+        "fac_heavenly_lotus_sect",
+        "loc_spirit_butterfly_valley",
+        "fac_heavens_envy_sect"
+      ]
+    },
+    {
+      "text": "Three days after Wei Wu Shang’s warning, Ancient Soul Sect disciples arrive at Tian Ti. Gu Ting leads them, and after learning of the matter between Fairy Bi Xia and Fang Zheng, he immediately sends a challenge. Fang Zheng avoids the fight at first. Gu Ting visits his cave daily for seven days to provoke him, Immortal Crane disciples who go out are defeated, and Ancient Soul Sect’s momentum rises until a crowd blocks Fang Zheng’s cave and curses him. Lord Sky Crane urges Fang Zheng to fight Gu Ting and shut the mouths of those Ancient Soul Sect people, and Fang Zheng finally walks out to answer the challenge.",
+      "chapters": [
+        341
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-ting-at-tian-ti",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_wu_shang",
+        "loc_tian_ti",
+        "char_gu_ting",
+        "char_fairy_bi_xia",
+        "char_fang_zheng",
+        "char_lord_sky_crane"
+      ]
+    },
+    {
+      "text": "The main headquarters sits in Earth Abyss in the far west of Central Continent. Ancient Soul Sect is one of the ten great ancient sects, treated as a force that has held dominance over that far west for thousands of years and occupies Earth Abyss as an exclusive domain. Fang Yuan and Hei Lou Lan see its mortal Gu Masters hunting and gathering moss on the upper layers, with cultivation rising as they descend, until mortal Gu Masters vanish deeper down and a rank six Ancient Soul Sect Gu Immortal appears on the thirty-fifth layer. Narration states the sect has spent thousands of years and fully explored no more than eighteen layers, with brief explorations to the twenty-seventh, occasional Gu Immortal roaming from the twenty-eighth to thirty-sixth, and current occupation of thirty-six layers closest to the surface.",
+      "chapters": [
+        728
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "earth-abyss-headquarters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_abyss",
+        "reg_central_continent",
+        "char_fang_yuan",
+        "char_hei_lou_lan",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Old Oracle is a wisdom path Gu Immortal from Ancient Soul Sect among Central Continent’s ten great ancient sects. In Northern Plains he works a deduction after True Yang Building’s collapse, then leaves after Feng Jiu Ge notes that Ancient Soul Sect gave him secret missions as well.",
+      "chapters": [
+        777
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-immortals-beyond-gu-ting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_old_oracle",
+        "fac_ten_great_ancient_sects",
+        "reg_northern_plains",
+        "house_eighty_eight_true_yang_building",
+        "char_feng_jiu_ge"
+      ]
+    },
+    {
+      "text": "Yu Yi Ye Zi greets Bu Zhen Zi and Zhao Lian Yun as a young male Gu Immortal from Ancient Soul Sect.",
+      "chapters": [
+        1241
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-immortals-beyond-gu-ting",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yu_yi_ye_zi",
+        "char_bu_zhen_zi",
+        "char_zhao_lian_yun"
+      ]
+    },
+    {
+      "text": "Later description places him as rank six with high refinement path attainment, widely acknowledged for that craft.",
+      "chapters": [
+        1250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-immortals-beyond-gu-ting",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Yang Feng later guards Ancient Soul Sect’s spirit bank spring as a rank seven expert, refusing spring water even for outsiders, then grows dazed and confused as Forgotten Daoist calmly takes the water and leaves.",
+      "chapters": [
+        1705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-immortals-beyond-gu-ting",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Deep in Earth Abyss, rank seven transformation path Gu Immortal Yang Feng hosts Combat Immortal Sect’s Shi Lei in a garden that the text names Ancient Soul Sect’s Immortal Gu House, Frost Dragon Manor: white jade tiles, cold air, and faint dragon roars. The same scene states that among the ten great ancient sects, Ancient Soul Sect has the longest history, true to the word ancient in its name. Yang Feng draws red emperor wine from the sect treasury and ties it to an ancestor’s Medieval Antiquity Era contest with Eastern Sea’s Wine Emperor. Star Form blessed land is also placed inside Earth Abyss in Ancient Soul Sect territory, with Yang Feng sent to cooperate when Heavenly Court orders an attack there.",
+      "chapters": [
+        1191
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "longest-history-and-frost-dragon-manor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_combat_immortal_sect",
+        "char_shi_lei",
+        "evt_era_medieval",
+        "reg_eastern_sea",
+        "char_wine_emperor",
+        "loc_star_form_blessed_land",
+        "fac_heavenly_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/ancient-soul-sect/",
+      "chapters": [
+        335,
+        341,
+        728,
+        777,
+        1191,
+        1241,
+        1250,
+        1705
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

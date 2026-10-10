@@ -1,0 +1,195 @@
+{
+  "id": "loc_bamboo_building",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bamboo Building",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "bamboo houses"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tall houses of green bamboo and wood stand at least two storeys on Qing Mao Mountain, with people living on the second floor above wooden stakes.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 3,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    3,
+    39,
+    90,
+    91
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "gu_treasure_brass_toad",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_jiao_san",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Under a deep dark-blue sky before sunrise, tall houses of green bamboo and wood stand against the mountain as a sea of pale green. Each house has at least two floors: massive wooden stakes for the first level on uneven terrain, and living quarters on the second.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On Qing Mao Mountain, tall houses of green bamboo and wood form a pale green mass against the slopes. Each has at least two floors: massive wooden stakes for the first level on uneven terrain, and living quarters on the second. Fang Yuan and his brother stay on that upper floor.",
+      "chapters": [
+        3
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "green-bamboo-houses",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "When Jia Fu leads the merchant caravan into Gu Yue Village, his Treasure Brass Toad hops high enough that its head levels with second-floor windows. On the ground the toad still stands taller than the first level of the bamboo buildings. The streets tighten around the beast as it moves among a great number of bamboo houses.",
+      "chapters": [
+        39
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "village-streets-and-the-jia-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jia_fu",
+        "loc_gu_yue_village",
+        "gu_treasure_brass_toad"
+      ]
+    },
+    {
+      "text": "Fang Yuan stops at a torn, worn-out bamboo building he rented in his previous life. Rent is lower than elsewhere and is counted by the day rather than by the month, and he takes a second-floor room with one bed, a patched blanket, and an oil lamp.",
+      "chapters": [
+        90
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "worn-out-rental",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Jiao San’s group later finds him there from the owner’s description of that second-floor rental, then breaks the door while he is in closed-door cultivation.",
+      "chapters": [
+        91
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "worn-out-rental",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_yue_jiao_san"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/bamboo-building.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bamboo-building/",
+      "chapters": [
+        3,
+        39,
+        90,
+        91
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "building",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

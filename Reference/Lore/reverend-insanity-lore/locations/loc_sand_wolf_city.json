@@ -1,0 +1,158 @@
+{
+  "id": "loc_sand_wolf_city",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sand Wolf City",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Mo clan main city in Western Desert: a stone city at the center of a vast oasis, with short walls of great length and many mortal residents.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1973,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1973,
+    2015
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_mo_li",
+      "count": 2
+    },
+    {
+      "target": "char_peng_da",
+      "count": 2
+    },
+    {
+      "target": "char_plump_lady",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_mo_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "An oasis holds a stone city at its center. The city walls are short but overall long, and a huge number of mortals live in the city.",
+      "chapters": [
+        1973
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sand Wolf City is one of Mo clan’s main cities. Plump Lady flies to the City Lord Manor without covering her tracks, is received as a revered immortal, and refuses a prepared banquet of the city’s best wine, delicacies, and fresh fruit so she can take a secret room for closed cultivation and gather apt, loyal Gu Masters as Immortal seeds. Entry costs one primeval stone per person at the gate. Mo Li’s house sits in the central area as a huge house with a garden of flowers.",
+      "chapters": [
+        1973
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_mo_clan",
+        "char_plump_lady",
+        "fac_gu_masters",
+        "char_mo_li"
+      ]
+    },
+    {
+      "text": "When Mo Li’s merchant caravan returns, Sand Wolf City has become ruins: corpses everywhere, rubble and wreckage on the roads, fire and smoke. Peng Da calls it a large city that had many Gu Masters stationed, now destroyed and devoid of life. Traces point to a mountain-sized beast whose footprint crater marks a beast calamity rather than a qi tide.",
+      "chapters": [
+        2015
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "city-in-ruins",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_peng_da"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/sand-wolf-city.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/sand-wolf-city/",
+      "chapters": [
+        1973,
+        2015
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "city",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

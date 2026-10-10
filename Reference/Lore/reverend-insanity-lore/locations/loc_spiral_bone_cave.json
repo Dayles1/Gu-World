@@ -1,0 +1,173 @@
+{
+  "id": "loc_spiral_bone_cave",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Spiral Bone Cave",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The only cave on Bai Gu Mountain packed with spiral-tipped bone spikes, and the entrance to Grey Bone Scholar's inheritance.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 221,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    221,
+    222
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_grey_bone_scholar",
+      "count": 1
+    },
+    {
+      "target": "sys_grey_bone_huge_book",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The cave is white throughout. Its walls have sharp bone spikes, and the tips are spiral, unlike spikes in other caves on Bai Gu mountain. It is the only cave on the mountain packed with so many spiral bone spikes.",
+      "chapters": [
+        221
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On Bai Gu Mountain, the cave walls are white bone with sharp spikes. Close looking shows the tips are spiral, unlike spikes in other caves on the mountain. Fang Yuan twists a large spike with closely carved spiral markings and opens a squarish secret door into the inheritance path. He later pulls the shortest spiral bone spike so the entrance seals and the bone spears in the tunnel retract into the walls.",
+      "chapters": [
+        221
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cave-and-secret-door",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_gu_mountain",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Fang Yuan and Bai Ning Bing reach a bone hall with a vat of milk-spring liquid holding many Bone Spear Gu and fewer Spiral Bone Spear Gu. Bone Spear Gu is the foundational Gu of the White Bone inheritance. Spiral Bone Spear Gu is the evolution of Bone Spear Gu, with spiral markings on the spear surface and higher attack power and penetrative force. Later halls hold a three-pillar choice of rank three Gu and a sitting skeleton with the Grey Bone Huge Book tied to Grey Bone Scholar.",
+      "chapters": [
+        222
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-bone-inheritance-halls",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "gu_bone_spear_gu",
+        "gu_spiral_bone_spear_gu",
+        "inh_white_bone_inheritance",
+        "sys_grey_bone_huge_book",
+        "char_grey_bone_scholar"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/spiral-bone-cave.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/spiral-bone-cave/",
+      "chapters": [
+        221,
+        222
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "cave",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

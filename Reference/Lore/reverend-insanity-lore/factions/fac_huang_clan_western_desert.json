@@ -1,0 +1,146 @@
+{
+  "id": "fac_huang_clan_western_desert",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Huang Clan (Western Desert)",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Huang clan of the Western Desert that Fang Yuan flies toward in search of Han Li, a different Huang clan from the one seated on Huang Jin mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 673,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    673,
+    674
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_han_li",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_han_village",
+      "count": 1
+    },
+    {
+      "target": "loc_sha_jing_oasis",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan expects, from the Biography of Han Li, to find Han Li, still a child and his first connect luck target, in a mortal hamlet close to Huang clan. Fang Yuan leaves the thousand wish tree and flies toward Huang clan.",
+      "chapters": [
+        673
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "near-han-lis-hamlet",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_han_li"
+      ]
+    },
+    {
+      "text": "In the Western Desert, Huang clan is an upper tier force with hundreds of years of history at Sha Jing oasis, holding the oasis’s most important resources at its center. Small forces at the oasis’s outer parts have submitted to Huang clan, and mortal villages at the fringe, including Han village, live under the control of Huang clan and other Gu Master forces there.",
+      "chapters": [
+        674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "upper-tier-force-at-sha-jing-oasis",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_western_desert",
+        "loc_sha_jing_oasis",
+        "loc_han_village",
+        "sys_gu_master"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/huang-clan-western-desert/",
+      "chapters": [
+        673,
+        674
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

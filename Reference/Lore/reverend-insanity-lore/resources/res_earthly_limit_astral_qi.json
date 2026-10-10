@@ -1,0 +1,172 @@
+{
+  "id": "res_earthly_limit_astral_qi",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Earthly limit astral qi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Earthly limit astral qi pearl"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Earthly limit astral qi is an immortal material that joins light azure astral qi and black earth qi in one lump that constantly converts between the two.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 861,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    861,
+    970,
+    1904
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_change_form_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_change_form_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_yu_mu_chun",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "res_astral_qi",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Earthly limit astral qi is an immortal material made of soil and qi gathered into a lump: light azure astral qi on top and black soil below. Astral qi is the heaven qi of the nine heavens, and the black soil is earth qi essence condensed from the ten depths. Heaven and earth qi normally cannot coexist, yet here they stay joined and convert into each other, black soil becoming astral qi and astral qi becoming black soil. After shaking, the lump briefly fuses into fog, then separates again with black below and astral qi above.",
+      "chapters": [
+        861
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "form-and-nature",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "res_astral_qi"
+      ]
+    },
+    {
+      "text": "Ordinary refinement path killer moves cannot process it perfectly. Only the four strongest public immortal killer moves for immortal materials (slumbering lightning python, reflect snow, muffled thunder stone drum, and wind grind) can finish the step instantly. An earthly limit astral qi pearl is a hundred portions squeezed into a pure pearl, extremely firm; even Gu Immortals may need months or years to melt one, while Yu Mu Chun melts a pearl in fifteen minutes with wind grind. Fang Yuan lacks those four moves and instead uses his flesh body blood refinement technique, swallowing the material and circulating it through wound-linked blood for three days and three nights.",
+      "chapters": [
+        861
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "processing-difficulty",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_yu_mu_chun",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "During that same processing, Fang Yuan treats melting all of the earthly limit astral qi as the most difficult part of refining Change Form Immortal Gu.",
+      "chapters": [
+        970
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "change-form-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_change_form_immortal_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan later spends earthly limit astral qi among other immortal materials when building supplementary formations, which other Gu Immortals read as a display of deep wealth.",
+      "chapters": [
+        1904
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "formation-expenditure",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/earthly-limit-astral-qi.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/earthly-limit-astral-qi/",
+      "chapters": [
+        861,
+        970,
+        1904
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Change Form Immortal Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

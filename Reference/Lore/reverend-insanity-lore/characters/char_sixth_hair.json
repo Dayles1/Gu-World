@@ -1,0 +1,904 @@
+{
+  "id": "char_sixth_hair",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sixth Hair",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sixth Hair is a hairy man Gu Immortal, the remaining Shadow Sect spy placed in Lang Ya blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1068,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1068,
+    1070,
+    1074,
+    1081,
+    1135,
+    1136,
+    1143,
+    1145,
+    1153,
+    1206,
+    1210,
+    1256,
+    1264,
+    1265,
+    1362,
+    1380,
+    1385,
+    1396,
+    1406,
+    1424,
+    1439,
+    1443,
+    1475,
+    1479,
+    1480,
+    1481,
+    2245
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_hairy_men",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shadow_sect",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1068,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_self_love_immortal_gu",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1406,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_master_servant_gu",
+      "role": "refiner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2245,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_refinement_snake_lifespan_flower",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shadow_sect",
+      "count": 4
+    },
+    {
+      "target": "gu_self_love_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "move_refinement_snake_lifespan_flower",
+      "count": 3
+    },
+    {
+      "target": "gu_master_servant_gu",
+      "count": 3
+    },
+    {
+      "target": "rcp_cleanse_soul_immortal_gu_recipe",
+      "count": 2
+    },
+    {
+      "target": "race_hairy_men",
+      "count": 1
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 2
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 2
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 2
+    },
+    {
+      "target": "gu_spring_autumn_cicada",
+      "count": 2
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "loc_dark_flow_giant_city",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_yan_shi",
+      "count": 1
+    },
+    {
+      "target": "char_red_lotus_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "gu_change_form_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_self_reliance_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_sovereign_immortal_fetus_gu",
+      "count": 1
+    },
+    {
+      "target": "char_heaven_overseeing_tower_lord",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "loc_cloud_cover_continent",
+      "count": 1
+    },
+    {
+      "target": "move_lead_soul_into_dream",
+      "count": 1
+    },
+    {
+      "target": "char_spectral_soul_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "sys_great_strength_true_martial_physique",
+      "count": 1
+    },
+    {
+      "target": "sys_phantom_aperture",
+      "count": 1
+    },
+    {
+      "target": "gu_landscape_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_cleanse_soul",
+      "count": 1
+    },
+    {
+      "target": "gu_eat_strength_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_man_as_before_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_man_as_before_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_mark_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_star_shoot_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fifth_hair",
+      "count": 1
+    },
+    {
+      "target": "gu_self_will_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bing_zhuo",
+      "count": 1
+    },
+    {
+      "target": "gu_dog_shit_luck",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_ye_lui_qun_xing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "char_upper_extreme_heavenly_eagle",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 1
+    },
+    {
+      "target": "inh_blazing_heaven_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    },
+    {
+      "target": "char_shi_nu",
+      "count": 1
+    },
+    {
+      "target": "move_soul_replacement",
+      "count": 1
+    },
+    {
+      "target": "res_fan_door_wind",
+      "count": 1
+    },
+    {
+      "target": "res_thousand_li_soul_thread",
+      "count": 1
+    },
+    {
+      "target": "fac_variant_human_alliance",
+      "count": 1
+    },
+    {
+      "target": "res_ice_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "res_snow_lotus_essence",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "char_bing_yuan",
+      "count": 1
+    },
+    {
+      "target": "move_heavenly_light_ring",
+      "count": 1
+    },
+    {
+      "target": "gu_heavenly_secret_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "loc_heaven_sealing_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_desolate_beast_blood",
+      "count": 1
+    },
+    {
+      "target": "res_green_beetle_water_lotus",
+      "count": 1
+    },
+    {
+      "target": "res_smelly_fly_flowers",
+      "count": 1
+    },
+    {
+      "target": "res_purple_star_urchin",
+      "count": 1
+    },
+    {
+      "target": "char_fourth_hair",
+      "count": 1
+    },
+    {
+      "target": "char_seventh_hair",
+      "count": 1
+    },
+    {
+      "target": "char_third_hair",
+      "count": 1
+    },
+    {
+      "target": "move_immortal_binding_vine",
+      "count": 1
+    },
+    {
+      "target": "move_dead_inside_from_sorrow",
+      "count": 1
+    },
+    {
+      "target": "char_eighth_hair",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_era_of_three_venerables",
+      "count": 1
+    },
+    {
+      "target": "char_lian_ke_xin",
+      "count": 1
+    },
+    {
+      "target": "loc_spectral_valley_forbidden_ground",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He is the spy Shadow Sect placed in Lang Ya blessed land, one of three at first and now the only one remaining. He communicates with Ying Wu Xie, passing information about Fang Yuan and the blessed land. While the hairy man Gu Immortals resist blue charm lightning shadows in an ancient battle formation, he sabotages more than he helps, because Shadow Sect does not want Fang Yuan to refine change form Immortal Gu. He uses the killer move one arm sacrifice, expecting the silver giant to collapse and many hairy men to die, so that after surviving he would gain more responsibility. The severed arm explodes among the lightning shadows and kills most of them instead. He is shocked that it worked, then regrets that Lang Ya land spirit orders him to care for the injured rather than attack further.",
+      "chapters": [
+        1068
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "loc_lang_ya_blessed_land",
+        "char_ying_wu_xie",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "gu_change_form_immortal_gu",
+        "char_lang_ya_land_spirit"
+      ]
+    },
+    {
+      "text": "While Ying Wu Xie holds off a Heavenly Court wisdom path deduction in Central Continent, the traitor Sixth Hair, over in Lang Ya blessed land, has already sent him a letter of apology, giving Ying Wu Xie a clear understanding of Fang Yuan’s situation.",
+      "chapters": [
+        1070
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-letter-of-apology-to-ying-wu-xie",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court",
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "He is the sixth city lord of Cloud Cover Continent’s twelve cloud cities, guarding the sixth cloud city. He waits in the guest room of Fang Yuan’s cloud city, greets him as second city lord and asks aloud for guidance in combat, while transmitting privately that he comes on Ying Wu Xie’s behalf with a deal to offer, which exposes him to Fang Yuan as the Shadow Sect spy.",
+      "chapters": [
+        1074
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sixth-city-lord-and-the-deal-offer",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_cloud_cover_continent"
+      ]
+    },
+    {
+      "text": "To cover the flaw his visits to Fang Yuan’s cloud city left, he tells the other hairy man Gu Immortals he went for combat advice, then spars with them and beats them all, which he can do easily because he is one of Spectral Soul’s split souls and his combat proficiency runs deep.",
+      "chapters": [
+        1081
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "split-soul-and-combat-proficiency",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When the falling star hound breaks into the grass, he teleports a panicking hairy man Gu Immortal to a comrade a thousand steps away before anyone else reacts, then tells him not to let Lang Ya Sect lose face in front of the outsider.",
+      "chapters": [
+        1135
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "saving-a-hairy-man-in-the-grass",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_lang_ya_sect"
+      ]
+    },
+    {
+      "text": "Seeing Fang Yuan’s burst of speed in battle, Sixth Hair grits his teeth, guessing correctly that Fang Yuan used sword escape Immortal Gu, Bo Qing’s Immortal Gu.",
+      "chapters": [
+        1136
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "recognizing-bo-qings-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "char_bo_qing"
+      ]
+    },
+    {
+      "text": "At a variant human feast Sixth Hair criticizes Fang Yuan, a guest, for not draining his wine bowl as tradition demands, taking the chance to cause trouble for him and suppress his growth, and Fang Yuan answers that he knows the tradition and simply dislikes lip fish wine. When the snowman Gu Immortal Bing Zhuo mentions that Fang Yuan possesses an immemorial upper extreme heavenly eagle, and Fang Yuan confirms it, Sixth Hair finally understands why the variant human Gu Immortals give Fang Yuan such importance: an immemorial desolate beast with rank eight battle strength. He cannot bear the impact, his legs give way, and he sits back down on his stone chair.",
+      "chapters": [
+        1143
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wine-etiquette-and-a-shock-at-the-feast",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bing_zhuo"
+      ]
+    },
+    {
+      "text": "Working to bring the hairy men and the snowmen and rockmen together, Sixth Hair takes the chance to show his skills and obtain more contribution points, which makes Lang Ya land spirit trust him more and raises his status. In the discussions he even sells almost all his intel on Fang Yuan, to win more trust from the other side.",
+      "chapters": [
+        1145
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "selling-intel-for-trust-and-status",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Working out whose luck can be used against heaven’s will, Ying Wu Xie puts Fang Yuan and his dog shit luck Immortal Gu first, and adds that Sixth Hair, who is in Lang Ya Sect, is not to be forgotten either.",
+      "chapters": [
+        1153
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "remembered-in-ying-wu-xies-luck-calculation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Shadow Sect’s defeat at Yi Tian Mountain, Sixth Hair may well be the only member of Shadow Sect left alive in Northern Plains, and his information gathering has slowed accordingly.",
+      "chapters": [
+        1206
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "likely-the-last-survivor-in-northern-plains",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yi_tian_mountain",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "When Fang Yuan comes back through the Gu formation, Sixth Hair immediately gets news of it. He already knows Fang Yuan killed Ye Lui Qun Xing, and that Fang Yuan used ancient sword dragon transformation with his own strength rather than the upper extreme heavenly eagle. He wants to trip Fang Yuan and cannot. Whenever he thinks of that eagle he becomes dejected: rank eight battle strength. He does not know the truth, and can only hope Fang Yuan has few heavenly crystals and cannot feed it. He hopes this upper extreme heavenly eagle dies of hunger.",
+      "chapters": [
+        1210
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "blessed-land-news",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_ye_lui_qun_xing"
+      ]
+    },
+    {
+      "text": "Ying Wu Xie and Hei Lou Lan are far away in Eastern Sea, but Sixth Hair is still in Northern Plains. He quietly sneaks into Dark Flow Giant City and takes away all of Blazing Heaven Demoness’ Immortal Gu. He sends the Immortal Gu to Ying Wu Xie.",
+      "chapters": [
+        1256
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "taking-blazing-heaven-demoness-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "reg_eastern_sea",
+        "loc_dark_flow_giant_city",
+        "char_blazing_heaven_demoness"
+      ]
+    },
+    {
+      "text": "Sixth Hair appears on top of Dark Flow Giant City to join the fight against Fang Yuan, and their shared Lang Ya Sect information path alliance agreement makes Fang Yuan wary of striking him carelessly.",
+      "chapters": [
+        1264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "joining-the-fight-at-dark-flow-giant-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sixth Hair stays behind at the ruined city like Shi Nu had, to hold Fang Yuan back while Ying Wu Xie and the others flee. Fang Yuan chooses not to kill him, saying he would rather let Sixth Hair despair watching Ying Wu Xie die later.",
+      "chapters": [
+        1265
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "left-to-hold-the-rear-and-spared",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shi_nu"
+      ]
+    },
+    {
+      "text": "Because communication information path Gu come in pairs and would expose either side’s location, Fang Yuan cannot contact Shadow Sect directly and instead relies on Sixth Hair as the middleman.",
+      "chapters": [
+        1362
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "acting-as-fang-yuans-middleman",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sixth Hair is not bound by any alliance agreement of Shadow Sect itself, which is why Fang Yuan cannot be certain how he will react to Fang Yuan becoming Shadow Sect’s leader; Fang Yuan also weighs that Sixth Hair, though not of high value himself, is a member of Lang Ya Sect who might one day help topple it.",
+      "chapters": [
+        1380
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "free-of-shadow-sects-own-agreement",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sixth Hair doubts Fang Yuan’s motives and asks him to save Ying Wu Xie instead, since only these two split souls of Spectral Soul remain.",
+      "chapters": [
+        1385
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "only-two-split-souls-left",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Sixth Hair, a split soul of Spectral Soul skilled at a human style he has never exposed in his years in Lang Ya blessed land, resolves that since Fang Yuan has obtained Ying Wu Xie’s acknowledgement he will try to accept him as Shadow Sect’s leader, and asks the first supreme elder to let him help with the Gu refinement.",
+      "chapters": [
+        1396
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "trying-to-accept-a-new-leader",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He was covered in sweat, completely drenched, his hair stuck together. His eyes were red, filled with blood.",
+      "chapters": [
+        1406
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-hall",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The light of the fire reflected on his face. His face was covered in dust and soot, and his eyes were bloodshot. His hair was burnt. Red snake tattoos appeared on his body, moving rapidly from his waist to his chest.",
+      "chapters": [
+        1424
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "firelight-and-soot",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He looked withered and haggard, and in a miserable state.",
+      "chapters": [
+        1439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "miserable-state",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Because Sixth Hair’s refinement path attainment is higher than Fang Yuan’s, the task of modifying the Immortal Gu recipe falls mainly to him.",
+      "chapters": [
+        1443
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "trusted-with-the-recipes-modification",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_recipe"
+      ]
+    },
+    {
+      "text": "He was thin and haggard. In order to refine Gu he had gone all out, exhausted both mentally and physically.",
+      "chapters": [
+        1475
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "physical-strain",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan lets Sixth Hair into his sovereign immortal aperture to help refine Spring Autumn Cicada, and Sixth Hair agrees to do his best to assist.",
+      "chapters": [
+        1479
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "assisting-the-parallel-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_spring_autumn_cicada"
+      ]
+    },
+    {
+      "text": "Red snake tattoos appeared on his skin and moved upward. They had been at his chest and moved toward his neck. His eyes were bursting with brilliance.",
+      "chapters": [
+        1480
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-save",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan notices red snake tattoos moving up Sixth Hair’s body and identifies his refinement path killer move as one that spends his lifespan, warning that he will die once the tattoos reach his head.",
+      "chapters": [
+        1481
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "a-killer-move-that-costs-his-life",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He was thin as a stick, his cheeks were caved in, and his eye bags were deep.",
+      "chapters": [
+        2245
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "physical-decline",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/sixth-hair.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/sixth-hair/",
+      "chapters": [
+        1068,
+        1070,
+        1074,
+        1081,
+        1135,
+        1136,
+        1143,
+        1145,
+        1153,
+        1206,
+        1210,
+        1256,
+        1264,
+        1265,
+        1362,
+        1380,
+        1385,
+        1396,
+        1406,
+        1424,
+        1439,
+        1443,
+        1475,
+        1479,
+        1480,
+        1481,
+        2245
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Hairy Men",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shadow Sect as of ch. 1068",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_hairy_men",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_master_servant_gu",
+      "role": "refiner",
+      "recorded_chapter": 2245,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "gu": "gu_self_love_immortal_gu",
+      "role": "refiner",
+      "recorded_chapter": 1406,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

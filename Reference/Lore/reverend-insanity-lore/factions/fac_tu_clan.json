@@ -1,0 +1,287 @@
+{
+  "id": "fac_tu_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tu Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Tu clan village"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tu clan is a Southern Border force named in a formation path dream realm of true memories.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1322,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1322,
+    2144,
+    2145,
+    2146,
+    2148,
+    2149,
+    2150
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tu_shi_cheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1322,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_tu_shi_cheng",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_huang_wan",
+      "count": 2
+    },
+    {
+      "target": "char_huang_xiao_mi",
+      "count": 2
+    },
+    {
+      "target": "char_le_tu",
+      "count": 2
+    },
+    {
+      "target": "reg_earth_earth_tunnel",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_dao_veins_famous_mountains",
+      "count": 1
+    },
+    {
+      "target": "char_meng_qiu_zhen",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "reg_earth_tomb_earth",
+      "count": 1
+    },
+    {
+      "target": "move_cracked_soil_shattering_life",
+      "count": 1
+    },
+    {
+      "target": "char_wu_xiao",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In a dream realm of true memories, a middle-aged Gu Immortal asks his son why Tu clan dominates their mountain range and answers: formation path. He names himself Tu Shi Cheng and says he will guide the child as future clan leader.",
+      "chapters": [
+        1322
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "formation-path-dream",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_tu_shi_cheng"
+      ]
+    },
+    {
+      "text": "Meng Qiu Zhen reaches Tu clan village while tracking mushroomman Huang Xiao Mi. Its market trades mortal goods such as mushrooms and vegetables; Gu worms appear only when a merchant caravan passes.",
+      "chapters": [
+        2144
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-village",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_meng_qiu_zhen",
+        "char_huang_xiao_mi",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "The village sits on a famous mountain with a natural Earth Tunnel that villagers developed into an extensive underground prison and resource base, enough to nurture two rank four elders.",
+      "chapters": [
+        2145
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-village",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_earth_earth_tunnel"
+      ]
+    },
+    {
+      "text": "Village Gu Masters hunt nearby mushroommen, and elders treat capturing a mushroomman spy as a major contribution.",
+      "chapters": [
+        2144
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-village",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Huang Wan, the mushroomman witch, lived concealed in the village and raised a hybrid son later called Le Tu; the village head is that son’s father and later uses him against her.",
+      "chapters": [
+        2148
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-village",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_huang_wan",
+        "char_le_tu"
+      ]
+    },
+    {
+      "text": "A rank four Tu clan elder practices cracked soil shattering life to sneak-attack Huang Wan from underground.",
+      "chapters": [
+        2148
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mortal-village",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Meng Qiu Zhen recalls that in Fang Yuan’s previous life, during the five regions chaotic war, a Southern Border super clan named Tu clan emerged whose Gu Immortals were most skilled at digging tunnels and using them for sneak attacks, and he wonders whether that rise connects to this village.",
+      "chapters": [
+        2146
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "previous-life-super-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "After trapping mushroommen at an execution ground, Tu clan village still loses when the mushroomman tribe launches an all-out assault: higher-ups are concentrated at the ground, defenses weaken, and the village head is heavily injured and captured.",
+      "chapters": [
+        2150
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "village-defeat",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/tu-clan/",
+      "chapters": [
+        1322,
+        2144,
+        2145,
+        2146,
+        2148,
+        2149,
+        2150
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

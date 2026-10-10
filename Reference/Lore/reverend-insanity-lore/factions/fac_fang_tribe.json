@@ -1,0 +1,218 @@
+{
+  "id": "fac_fang_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Fang Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A large Northern Plains tribe that declares for Hei Lou Lan at Yu Tian after Wolf King Chang Shan Yin joins his side.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 499,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    499,
+    500,
+    504,
+    508
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_tu_bo",
+      "count": 2
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_wang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang tribe’s speaker tells Hei Lou Lan that Fang tribe will bet on him this time.",
+      "chapters": [
+        499
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bet-at-yu-tian",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan"
+      ]
+    },
+    {
+      "text": "Fang tribe’s place among large tribes in Hei Lou Lan’s main tent.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-seat",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the Hei Tribe alliance main tent, after Fang Yuan’s seat, the leaders of the large tribes seated next are Wang tribe, Fang tribe, and Ye tribe.",
+      "chapters": [
+        500
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-seat",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "char_fang_yuan",
+        "fac_wang_tribe",
+        "fac_ye_tribe"
+      ]
+    },
+    {
+      "text": "Fang tribe leader’s role when Hei alliance hunters take a mutated shark fin wolf.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "shark-fin-wolf-capture",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Tu Bo reports that capturing the shark fin wolf cost four rank three Gu Masters and over two hundred rank two Gu Masters, and that without Wang tribe leader and Fang tribe leader’s timely reinforcement the wolf would have escaped.",
+      "chapters": [
+        504
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shark-fin-wolf-capture",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tu_bo",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Fang tribe leader among Hei Lou Lan’s named commanders before the Dong Fang battle.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "field-command-tent",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On the twin-headed rhino that carries the main tent, the named experts include Hei Lou Lan, Fang Yuan, Hao Ji Liu, Wang tribe leader, Fang tribe leader, Ye tribe leader, and others.",
+      "chapters": [
+        508
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "field-command-tent",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hao_ji_liu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/fang-tribe/",
+      "chapters": [
+        499,
+        500,
+        504,
+        508
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

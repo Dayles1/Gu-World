@@ -1,0 +1,134 @@
+{
+  "id": "fac_beggar_sect",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Beggar Sect",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Beggar Sect is a human path sect formed in the painting world when Fang Di Chang uses beggar Gu and a sect token Gu killer move to command city beggars.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2065,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2065
+  ],
+  "relations": [
+    {
+      "type": "leader",
+      "target": "char_fang_di_chang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2065,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_di_chang",
+      "count": 2
+    },
+    {
+      "target": "gu_beggar_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_sect_token_gu",
+      "count": 2
+    },
+    {
+      "target": "char_shen_shang",
+      "count": 1
+    },
+    {
+      "target": "path_human",
+      "count": 1
+    },
+    {
+      "target": "loc_qi_howling_painting_world",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Di Chang’s current body is formed from a beggar Gu, and he is already a rank five five bags beggar. With Shen Shang’s help he purchases large amounts of beggar Gu and uses a sect token Gu to form a killer move, establishing Beggar Sect. At that time, most of the beggars in the whole city are already under his command. He instructs brothers to follow a crowd and probe for information.",
+      "chapters": [
+        2065
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_di_chang",
+        "gu_beggar_gu",
+        "char_shen_shang",
+        "gu_sect_token_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/beggar-sect/",
+      "chapters": [
+        2065
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "sect",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Leader": {
+      "text": "Fang Di Chang",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

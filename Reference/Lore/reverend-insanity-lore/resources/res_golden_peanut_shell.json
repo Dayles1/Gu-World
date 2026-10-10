@@ -1,0 +1,130 @@
+{
+  "id": "res_golden_peanut_shell",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Golden peanut shell",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Golden peanut shell is the golden shell form that receives divine travel Gu during Second Aperture Gu refinement.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 391,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    391,
+    392
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_second_aperture_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_second_aperture_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_divine_travel",
+      "count": 1
+    },
+    {
+      "target": "gu_lifespan_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After lifespan Gu steps in the San Cha Mountain blessed land hall, Fang Yuan holds a Gu like a peanut shell, golden, with scarlet blood-trace markings on the surface. At that step the real second aperture Gu has already formed and is nurturing in the peanut shell. Only a strong external force from rank six divine travel Gu can eliminate the false Gu and make it real.",
+      "chapters": [
+        391
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "forty-year-shell",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_lifespan_gu",
+        "loc_san_cha_mountain",
+        "char_fang_yuan",
+        "gu_second_aperture_gu",
+        "gu_divine_travel"
+      ]
+    },
+    {
+      "text": "When Gu refinement reaches the crucial period, the golden peanut shell collides with divine travel Gu. With the land spirit secretly pouring immortal essence, Fang Yuan activates divine travel Gu; it turns into light speckles and enters the golden peanut shell, and the qualitative change begins.",
+      "chapters": [
+        392
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "collision-with-divine-travel",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/golden-peanut-shell/",
+      "chapters": [
+        391,
+        392
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Refines into": {
+      "text": "Second Aperture Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

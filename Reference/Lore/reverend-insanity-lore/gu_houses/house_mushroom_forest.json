@@ -1,0 +1,173 @@
+{
+  "id": "house_mushroom_forest",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mushroom Forest",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "mushroom forest Gu house"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Mushroom Forest is a Northern Plains Gu house made by planting many Mush Room Gu into grey-topped mushroom dwellings. Tribe elders and affluent Gu Masters live in those clusters.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 439,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    439,
+    568
+  ],
+  "relations": [
+    {
+      "type": "core_gu",
+      "target": "gu_mush_room_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_mush_room_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Ge tribe’s camp in Northern Plains, after the common lizard Gu houses, Fang Yuan reaches the mushroom forest Gu houses. They are formed by planting large numbers of Mush Room Gu. Each house is a large mushroom with a grey round top that sheds rainwater, does not draw lightning in storms, and stays stable in strong wind. The stem is strong and circular, with white walls and windows inside.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ge_tribe",
+        "reg_northern_plains",
+        "sys_gu_house",
+        "char_fang_yuan",
+        "gu_mush_room_gu"
+      ]
+    },
+    {
+      "text": "A few Mush Room Gu together make one living arrangement. Dozens turn an area into a small mushroom forest, and those who live there are tribe elders or affluent Gu Masters. Ge tribe’s camp center holds over a hundred Mush Room Gu. Fang Yuan follows Ge tribe leader into the largest mushroom forest, where people sit by status in the largest Mush Room Gu.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because the novel names mushroom forest as a Gu house type. It is a class of planted dwellings, not one unique named house with a single owner.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later lists the mushroom forest Gu house among Gu houses he has met after rebirth: planting a large number of Mush Room Gu forms many mushroom houses into a courtyard. He calls mushroom forest Gu house a model example of a Gu house, a courtyard formed by gathering large numbers of Mush Room Gu, after defining Gu houses as killer moves made by combining and solidifying ten or more kinds of Gu worms.",
+      "chapters": [
+        568
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "gu-house-model",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu-houses/mushroom-forest.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/mushroom-forest/",
+      "chapters": [
+        439,
+        568
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Core Gu": {
+      "text": "Mush Room Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

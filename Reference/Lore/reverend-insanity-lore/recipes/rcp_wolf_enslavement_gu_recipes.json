@@ -1,0 +1,246 @@
+{
+  "id": "rcp_wolf_enslavement_gu_recipes",
+  "entity_type": "recipe",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wolf Enslavement Gu recipes",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The refinement recipes for Wolf Enslavement Gu, sold by rank in northern plains markets and held in different hands at different ranks. A single rank has several recipe types, each reaching the same Gu through different materials and procedures.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 437,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    437,
+    441,
+    487,
+    491,
+    492
+  ],
+  "relations": [
+    {
+      "type": "produces",
+      "target": "gu_wolf_enslavement_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "buyer",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 441,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_lang_ya_land_spirit",
+      "role": "seller",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 487,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_wolf_enslavement_gu",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "loc_lang_ya_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_little_hu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan rides into northern plains holding one rank two and one rank three wolf enslavement Gu and no way to replace them. Beast enslavement Gu disperse after use, success or failure alike, and without the recipes for rank three and rank four wolf enslavement Gu his wolf group can hold at most a few thousand wolves.",
+      "chapters": [
+        437
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "gu_wolf_enslavement_gu"
+      ]
+    },
+    {
+      "text": "The Gu refinement area of a northern plains market refines Gu on a customer’s behalf and buys and sells recipes over the same counter. Fang Yuan buys the recipes for rank one to rank three wolf enslavement Gu there in a few transactions. The recipe for rank four stays in the hands of the few large tribes and rarely reaches the market.",
+      "chapters": [
+        441
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "sold-by-rank",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Lang Ya blessed land gathers recipes from ancient times onward, a collection the narration calls as vast as the sea, and a common recipe like wolf enslavement’s cannot be missing from it. Fang Yuan has wanted to buy these recipes all along and holds back in treasure yellow heaven, where a wisdom path Gu Master could deduce his plans from the purchases.",
+      "chapters": [
+        487
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-lang-ya-stack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_lang_ya_blessed_land",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "He names the recipes as his price after Lang Ya land spirit refuses to sell his hairy men, and receives a large stack covering rank one to rank five. Eight types of recipe exist for the rank five wolf enslavement Gu alone, each using different materials and different procedures to obtain the similar Gu worm, and the lower ranks carry more types still.",
+      "chapters": [
+        487
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "the-lang-ya-stack",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit",
+        "sys_gu_worms"
+      ]
+    },
+    {
+      "text": "Mass refinement needs hands. Refining the amount Fang Yuan wants with only Little Hu Immortal’s help would take two to three months, so he buys over three thousand old hairy men and over seven thousand young ones in treasure yellow heaven to work the recipes.",
+      "chapters": [
+        491
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refining-in-bulk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_little_hu_immortal"
+      ]
+    },
+    {
+      "text": "When Gu Immortals buy up the materials for refining wolf enslavement Gu in bulk to obstruct him, the stack answers the squeeze: many of its recipes take different routes, and Lang Ya land spirit’s personal recipes use materials whose purpose other Gu Immortals cannot recognise.",
+      "chapters": [
+        492
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refining-in-bulk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/recipes/wolf-enslavement-gu-recipes/",
+      "chapters": [
+        437,
+        441,
+        487,
+        491,
+        492
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Produces": {
+      "text": "Wolf Enslavement Gu",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Ranks": {
+      "text": "I II III IV V as of ch. 487",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Holders": {
+      "text": "Fang Yuan (buyer) Lang Ya Land Spirit (seller)",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Source": {
+      "text": "Lang Ya blessed land's recipe collection",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

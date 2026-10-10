@@ -1,0 +1,236 @@
+{
+  "id": "loc_universal_life_academy",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Universal Life Academy",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A small Central Continent sect in a mountain valley on the heavenly river plain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 676,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    676,
+    679,
+    680,
+    823,
+    829
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 3
+    },
+    {
+      "target": "char_hong_yi",
+      "count": 2
+    },
+    {
+      "target": "char_hong_xuan_ji",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 1
+    },
+    {
+      "target": "gu_rewind_gu",
+      "count": 1
+    },
+    {
+      "target": "char_fan_yi",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_escape_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_smoke_dust_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_x_ray_vision_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_zhi_forest",
+      "count": 1
+    },
+    {
+      "target": "sys_refinement_path_convention",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The academy sits in a mountain valley with only a few rooms and one square. That square can hold two stages with hundreds of Gu Masters watching below.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "From a forest, Fang Yuan watches two stages and hundreds of Gu Masters at a sect competition in Universal Life Academy’s square, with Hong Yi among the crowd.",
+      "chapters": [
+        676
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_hong_yi"
+      ]
+    },
+    {
+      "text": "Under night lights the grounds stay quiet and tranquil while he plants many Gu worms nearby to conceal Connect Luck and watch the surroundings, then finishes a luck connection on Hong Yi.",
+      "chapters": [
+        679
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "gu_connect_luck"
+      ]
+    },
+    {
+      "text": "Two rank five Gu Masters sneak into the valley at night seeking a zhi forest and earth horses beneath it, and they name Hong Xuan Ji as strong but weak in investigative methods. For Universal Life Academy that underground zhi forest is a huge benefit and an important stockpile, yet the sect is still kept in the dark until the clash draws its Gu Masters in. Hong Xuan Ji then halts the sect competition and recalls disciples and elders to defend the forest as a foundation to rise up.",
+      "chapters": [
+        680
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hidden-resource-conflict",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hong_xuan_ji"
+      ]
+    },
+    {
+      "text": "Every Central Continent sect has a Refinement Path Convention quota; Universal Life Academy is still called a small sect and holds three reserved places, one each for a disciple, an elder, and an external elder.",
+      "chapters": [
+        823
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-path-convention",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "sys_refinement_path_convention"
+      ]
+    },
+    {
+      "text": "A placing near the end of the list a hundred years earlier also grants three automatic Convention spots for people such as Hong Yi.",
+      "chapters": [
+        829
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "refinement-path-convention",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/universal-life-academy.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/universal-life-academy/",
+      "chapters": [
+        676,
+        679,
+        680,
+        823,
+        829
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

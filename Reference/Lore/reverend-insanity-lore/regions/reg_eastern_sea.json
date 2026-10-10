@@ -1,0 +1,626 @@
+{
+  "id": "reg_eastern_sea",
+  "entity_type": "region",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Eastern Sea",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Water rather than land, divided into named sea areas.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 334,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    334,
+    353,
+    672,
+    819,
+    892,
+    1045,
+    1295,
+    1297,
+    1665
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "loc_tian_jing_beacon",
+      "count": 4
+    },
+    {
+      "target": "loc_tian_jing_island",
+      "count": 4
+    },
+    {
+      "target": "loc_turbulent_flow",
+      "count": 4
+    },
+    {
+      "target": "loc_hai_shi_blessed_land",
+      "count": 3
+    },
+    {
+      "target": "loc_blue_dragon_whale",
+      "count": 3
+    },
+    {
+      "target": "loc_yu_lu_blessed_land",
+      "count": 3
+    },
+    {
+      "target": "loc_ascending_heaven_plain",
+      "count": 3
+    },
+    {
+      "target": "loc_poetic_emotion_sea_area",
+      "count": 3
+    },
+    {
+      "target": "loc_shark_sea",
+      "count": 3
+    },
+    {
+      "target": "loc_ge_pi_blessed_land",
+      "count": 3
+    },
+    {
+      "target": "loc_adversity_sea",
+      "count": 3
+    },
+    {
+      "target": "loc_twin_polar_sea_strait",
+      "count": 3
+    },
+    {
+      "target": "loc_yellow_spring_sea_area",
+      "count": 3
+    },
+    {
+      "target": "loc_bee_sea",
+      "count": 3
+    },
+    {
+      "target": "loc_turbulent_flow_sea_area",
+      "count": 3
+    },
+    {
+      "target": "loc_city_well",
+      "count": 3
+    },
+    {
+      "target": "loc_dragonfish_sea_area",
+      "count": 3
+    },
+    {
+      "target": "loc_white_crane_sea_area",
+      "count": 3
+    },
+    {
+      "target": "loc_icy_sea_area",
+      "count": 3
+    },
+    {
+      "target": "loc_heavy_water_blessed_land",
+      "count": 2
+    },
+    {
+      "target": "loc_purple_rosewood_myriad_sparrow_island",
+      "count": 2
+    },
+    {
+      "target": "char_li_xian",
+      "count": 2
+    },
+    {
+      "target": "char_zui_xian_weng",
+      "count": 2
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 2
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 2
+    },
+    {
+      "target": "char_su_bai_man",
+      "count": 2
+    },
+    {
+      "target": "char_bo_dan",
+      "count": 2
+    },
+    {
+      "target": "char_song_yi_shi",
+      "count": 2
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 2
+    },
+    {
+      "target": "race_mermen",
+      "count": 2
+    },
+    {
+      "target": "char_song_qi_yuan",
+      "count": 2
+    },
+    {
+      "target": "char_seven_seas_snake_woman",
+      "count": 2
+    },
+    {
+      "target": "char_dragon_head_tortoise",
+      "count": 2
+    },
+    {
+      "target": "char_hua_an",
+      "count": 2
+    },
+    {
+      "target": "char_song_jia_dan",
+      "count": 2
+    },
+    {
+      "target": "fac_nan_gong_clan",
+      "count": 2
+    },
+    {
+      "target": "char_lu_tan_xin",
+      "count": 2
+    },
+    {
+      "target": "char_ninth_ghost_finger",
+      "count": 2
+    },
+    {
+      "target": "char_corpse_detonation_king",
+      "count": 2
+    },
+    {
+      "target": "char_liu_qing_yu",
+      "count": 2
+    },
+    {
+      "target": "char_tang_song",
+      "count": 2
+    },
+    {
+      "target": "char_zhou_li",
+      "count": 2
+    },
+    {
+      "target": "fac_shen_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_su_clan",
+      "count": 2
+    },
+    {
+      "target": "char_ding_yan",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jiang",
+      "count": 2
+    },
+    {
+      "target": "char_immortal_hua_die",
+      "count": 2
+    },
+    {
+      "target": "char_miao_ming_shen",
+      "count": 2
+    },
+    {
+      "target": "char_ren_xiu_ping",
+      "count": 2
+    },
+    {
+      "target": "char_wine_emperor",
+      "count": 2
+    },
+    {
+      "target": "char_wu_yi_hai",
+      "count": 2
+    },
+    {
+      "target": "char_gong_liang_bai",
+      "count": 2
+    },
+    {
+      "target": "char_tong_hua",
+      "count": 2
+    },
+    {
+      "target": "char_tu_tou_tuo",
+      "count": 2
+    },
+    {
+      "target": "char_xie_bao_shu",
+      "count": 2
+    },
+    {
+      "target": "char_you_chan",
+      "count": 2
+    },
+    {
+      "target": "fac_hua_clan",
+      "count": 2
+    },
+    {
+      "target": "char_qin_bai_he",
+      "count": 2
+    },
+    {
+      "target": "char_qing_yue_an",
+      "count": 2
+    },
+    {
+      "target": "char_qing_yue_zhi_cheng",
+      "count": 2
+    },
+    {
+      "target": "fac_qing_yue_clan",
+      "count": 2
+    },
+    {
+      "target": "char_su_chen",
+      "count": 2
+    },
+    {
+      "target": "char_xie_han_mo",
+      "count": 2
+    },
+    {
+      "target": "char_granny_rong",
+      "count": 2
+    },
+    {
+      "target": "char_shi_miao",
+      "count": 2
+    },
+    {
+      "target": "char_yang_zi_he",
+      "count": 2
+    },
+    {
+      "target": "char_zhang_yin",
+      "count": 2
+    },
+    {
+      "target": "char_hua_cai_yun",
+      "count": 2
+    },
+    {
+      "target": "fac_eastern_sea_righteous_path",
+      "count": 2
+    },
+    {
+      "target": "char_yang_jun",
+      "count": 2
+    },
+    {
+      "target": "char_shen_cong_sheng",
+      "count": 2
+    },
+    {
+      "target": "char_great_treasury_immortal",
+      "count": 2
+    },
+    {
+      "target": "fac_merman_imperial_court",
+      "count": 2
+    },
+    {
+      "target": "char_tang_qiong",
+      "count": 2
+    },
+    {
+      "target": "fac_xie_clan",
+      "count": 2
+    },
+    {
+      "target": "char_lian_ke_xin",
+      "count": 2
+    },
+    {
+      "target": "char_yu_zi",
+      "count": 2
+    },
+    {
+      "target": "char_xia_rui_zhi",
+      "count": 2
+    },
+    {
+      "target": "fac_righteous_qi_alliance",
+      "count": 2
+    },
+    {
+      "target": "char_gu_ming_xu",
+      "count": 2
+    },
+    {
+      "target": "char_air_bubble_fish",
+      "count": 1
+    },
+    {
+      "target": "char_li_xiao_yao",
+      "count": 1
+    },
+    {
+      "target": "char_song_xia_qi",
+      "count": 1
+    },
+    {
+      "target": "char_pu_wan_dao",
+      "count": 1
+    },
+    {
+      "target": "char_ding_qi",
+      "count": 1
+    },
+    {
+      "target": "char_gui_qi_ye",
+      "count": 1
+    },
+    {
+      "target": "char_zeng_luo_zi",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 1
+    },
+    {
+      "target": "char_long_ling",
+      "count": 1
+    },
+    {
+      "target": "char_shen_qi",
+      "count": 1
+    },
+    {
+      "target": "char_shen_tan",
+      "count": 1
+    },
+    {
+      "target": "char_shen_xiao",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_blue_sky_gu",
+      "count": 2
+    },
+    {
+      "target": "char_qi_sea_ancestor",
+      "count": 2
+    },
+    {
+      "target": "char_blood_sea_ancestor",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the east sits a huge sea with islands like chess pieces on a board, and the novel names that expanse Eastern Sea.",
+      "chapters": [
+        334
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Barriers separate it from the other four regions and make travel and news hard.",
+      "chapters": [
+        353
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Tian Jing Beacon follows a world-map label for a place the novel calls Tian Jing island. Fang Yuan places that island in Eastern Sea as the only site of natural sky well Gu, used with Eastern Sea’s blue sky Gu.",
+      "chapters": [
+        353
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-places",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_tian_jing_beacon",
+        "loc_tian_jing_island",
+        "char_fang_yuan",
+        "gu_blue_sky_gu"
+      ]
+    },
+    {
+      "text": "Named sea areas sit inside that expanse. Turbulent Flow is one, a maze of currents Gu Immortals often lose their way in.",
+      "chapters": [
+        1045
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-places",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_turbulent_flow",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Qi sea is another special and mysterious sea area inside Eastern Sea.",
+      "chapters": [
+        1297
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "named-places",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_qi_sea_ancestor"
+      ]
+    },
+    {
+      "text": "Eastern Sea is the most abundant in resources of the five regions, and its Gu Immortals are usually more affluent. That wealth feeds trading conventions famous across the five regions, where Immortal Gu often change hands.",
+      "chapters": [
+        1295
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "resources-and-cultivation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Most Eastern Sea Gu Immortals cultivate water path.",
+      "chapters": [
+        1297
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "resources-and-cultivation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Most mermen in the world live in Eastern Sea.",
+      "chapters": [
+        1297
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "resources-and-cultivation",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Vast sea areas and deep seas hide water creatures, sea beasts, minerals, and precious stones, which draws Gu Immortals from the other four regions.",
+      "chapters": [
+        672
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "character-of-the-region",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Eastern Sea is divided into named sea areas, and resource-rich ones are distributed among people the way grassland is split in the Northern Plains. The region also holds populations that are not human, with mermen among its top super forces.",
+      "chapters": [
+        892
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "sea-areas-and-peoples",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Among the mermen, a legendary story places the first batch of mermen in Eastern Sea, where they built a small fishing village before a sea beast and a Sea God bargain shaped later ceremony custom.",
+      "chapters": [
+        1665
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "merman-legend",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/regions/eastern-sea.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/regions/eastern-sea/",
+      "chapters": [
+        334,
+        353,
+        672,
+        819,
+        892,
+        1045,
+        1295,
+        1297,
+        1665
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "One of the five regions of the Gu World",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Locations catalogued": {
+      "text": "21",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "region_kind": "regions"
+}

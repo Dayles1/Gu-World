@@ -1,0 +1,184 @@
+{
+  "id": "loc_treasure_moon_oasis",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Treasure Moon Oasis",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Treasure Moon Oasis is a Dong clan site in Western Desert's sand sea that Fang clan approaches and strips of natural dao marks with steal dao.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1779,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1779,
+    1780,
+    1781,
+    2258
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_dong_lu_chen",
+      "count": 1
+    },
+    {
+      "target": "char_fang_di_chang",
+      "count": 1
+    },
+    {
+      "target": "char_fang_gong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "house_red_river_wheel",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Within the sand sea, Fang clan Gu Immortals secretly gather and approach treasure moon oasis. Fang Gong attacks it directly while Dong Lu Chen must defend the oasis behind him. Fang Di Chang says Dong clan spread a rumor that Fang clan once attacked treasure moon oasis, and that Fang clan will now give them evidence. Using steal dao from a theft path Immortal Gu House, Fang clan exposes the oasis’s countless natural dao marks, woven like webs and thread balls, and draws them into the house.",
+      "chapters": [
+        1779
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan",
+        "sys_gu_immortal",
+        "char_fang_gong",
+        "char_dong_lu_chen",
+        "char_fang_di_chang",
+        "fac_dong_clan",
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "After the assault, Dong Lu Chen remains unscathed, but the entire treasure moon oasis is wiped from existence. It is a mid sized resource point, not a large one. It holds special meaning for Dong Lu Chen because his beloved wife is buried there, and he visits yearly to mourn. Only the dao marks are lost; his wife’s grave is not touched.",
+      "chapters": [
+        1780
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mid-sized-resource-point",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang clan Gu Immortals note that their attack on treasure moon oasis has started to show effect. On the surface Dong Lu Chen keeps seeking compensation from Fang clan over the oasis matter while secretly hoping their investigation clears Dong clan’s name in a related plot.",
+      "chapters": [
+        1781
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "aftermath",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside Red River Wheel, Dong Ming names the prior Fang clan raid that destroyed Dong clan’s treasure moon oasis as a debt to be paid.",
+      "chapters": [
+        2258
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "oasis-grievance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_red_river_wheel"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/treasure-moon-oasis/",
+      "chapters": [
+        1779,
+        1780,
+        1781,
+        2258
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "resource-point",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

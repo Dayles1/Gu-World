@@ -1,0 +1,334 @@
+{
+  "id": "char_dong_fang_qing_yu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Dong Fang Qing Yu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "dong fang qing yu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Дун Фан Цин Юй",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Dong Fang Qing Yu is a famous beauty of Dong Fang tribe in Northern Plains, named by Hei Lou Lan when he prepares to attack Cao Fu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 501,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    501,
+    503,
+    507,
+    508,
+    660,
+    795,
+    806
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_dong_fang_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 501,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 2
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_nauseous_crying_baby_gu",
+      "count": 1
+    },
+    {
+      "target": "move_three_hearts_combination_soul",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Hei Lou Lan tells Fang Yuan he will strike Cao Fu, eradicate Dong Fang tribe, kill its men, and capture its women, and he singles out Dong Fang Qing Yu among those beauties as famous in Northern Plains.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_fang_yuan",
+        "loc_cao_fu_region",
+        "fac_dong_fang_tribe",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "She is a gentle, graceful, and extremely beautiful girl in a light yellow dress, with a bright appearance, soft and glossy skin, and eyes that are clear and transparent.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She has a delicate body and watery eyes.",
+      "chapters": [
+        806
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hei tribe talk states that Dong Fang Yu Liang lost his parents at eleven and had to care for his then six year old little sister Dong Fang Qing Yu.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "childhood-and-family",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "A later recall of the same childhood keeps that age gap and care.",
+      "chapters": [
+        660
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "childhood-and-family",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "She enters his study in a light yellow dress, draws him out to view jade apricot blossom in the rain, and asks about Zhao tribe’s move while he plans the Hei tribe war. Hei Lou Lan’s youth grudge is named in the same stretch: he harbored unkind thoughts toward her on an earlier adventure and was taught a lesson by Dong Fang Yu Liang.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "childhood-and-family",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zhao_tribe"
+      ]
+    },
+    {
+      "text": "She has been weak since childhood, has no aptitude to cultivate, and thinks the illness keeps her from helping her brother.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "childhood-and-family",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan recalls that after Ma Hong Yun was captured by Dong Fang tribe, he met Dong Fang Qing Yu by accident, gained her affection, was freed by her in secret, and learned the secrets of three hearts combination soul from her.",
+      "chapters": [
+        507
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-imperial-court-memory",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_hong_yun"
+      ]
+    },
+    {
+      "text": "A later restatement of that prior life still places her as Dong Fang Yu Liang’s sister who frees Ma Hong Yun and gives him that killer move’s secret, and Fang Yuan weighs whether her motive was discovering something about her brother’s fate rather than affection alone.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "prior-life-imperial-court-memory",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "When Fang Yuan captures Dong Fang tribesmen with strength path giant hands, he finds her among them and keeps her in his immortal aperture. He brings out the young girl in the light yellow dress to force Dong Fang Yu Liang’s will to surface, rips off her left arm, then presses her head into her chest and kills her.",
+      "chapters": [
+        806
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "capture-and-death",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/dong-fang-qing-yu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/dong-fang-qing-yu/",
+      "chapters": [
+        501,
+        503,
+        507,
+        508,
+        660,
+        795,
+        806
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Dong Fang Tribe as of ch. 501",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

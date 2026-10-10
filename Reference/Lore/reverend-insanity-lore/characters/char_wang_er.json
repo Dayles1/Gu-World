@@ -1,0 +1,476 @@
+{
+  "id": "char_wang_er",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wang Er",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "wang er",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ван Эр",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Second brother Wang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wang Er is a mortal hunter from a hamlet at the foot of Qing Mao Mountain, second son of hunter old man Wang, and he confronts Fang Yuan over a trapped wild boar.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 65,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    4,
+    65,
+    66,
+    67,
+    68,
+    69,
+    74,
+    75,
+    76,
+    78,
+    139,
+    160,
+    175,
+    176
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 67,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_gao_wan",
+      "count": 2
+    },
+    {
+      "target": "char_jiang_he",
+      "count": 2
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 2
+    },
+    {
+      "target": "gu_love_separation_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_old_man_wang",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_moonblade",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_mo_family",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "gu_love_life_separation",
+      "count": 1
+    },
+    {
+      "target": "char_king_quan",
+      "count": 1
+    },
+    {
+      "target": "char_ying_ming",
+      "count": 1
+    },
+    {
+      "target": "inh_three_kings_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He first appears on a mountain path near a foot-of-the-mountain hamlet under Qing Mao Mountain, naming himself Wang Er when he finds Fang Yuan at a wild boar trap and orders him to get lost.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "That mountain sits in the Southern Border with the Gu Yue clan among the three villages that control the hamlets below.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "He is tall, carrying a bow and arrow, with bulging muscles and eyes full of spirit. Companions place him at nineteen.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "He has a muscular body and a bowl-sized fist.",
+      "chapters": [
+        66
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Companions call him second brother Wang and praise him as the village’s best wild-boar hunter after old man Wang, the hunting king of the region. Dialogue among the hunters places him at nineteen, still unmarried, and already speaking of leaving Qing Mao Mountain to roam the wider world. The same talk asks why little sister Wang did not come to the hunt, and Er Gou Dan speaks of wanting to marry her.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hunter-under-gu-yue-rule",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The hamlets under Gu Yue control are farmer-slave villages; when Wang Er offends a Gu Master, clan rules threaten the whole household.",
+      "chapters": [
+        67
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hunter-under-gu-yue-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "Fang Yuan later pieces the household together from hunter answers and his own reconstruction. Old man Wang’s wife was killed by wild wolves decades earlier and left two sons and a daughter. Village talk places eldest son Wang Da as dead while hunting three years before, and places Wang Da’s wife under conflicting stories of a broken heart or of being hounded to death by old man Wang. Fang Yuan reads Wang Er’s calmness before Gu Masters, refusal to marry, and ambition to leave the mortal realm as the result of contact with his elder brother Wang Da, who had secretly become a demonic Gu Master. After that contact Wang Er aims to become a Gu Master himself; Fang Yuan also judges that fear of exposing Wang Da kept Wang Er unmarried.",
+      "chapters": [
+        74
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hunter-under-gu-yue-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "When Fang Yuan answers “get lost” with a moonblade, Wang Er alone stands and fights among the four hunters. He draws bow and arrow, then discards the bow for close combat; Fang Yuan uses the angle of the sun’s rays to blank Wang Er’s vision, then a third moonblade to cut half his head away, and Wang Er dies on the path. Fang Yuan ranks his mortal strength above the Mo family servant Gao Wan and judges that a careless rank one upper stage Gu Master could lose to him.",
+      "chapters": [
+        66
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-on-the-boar-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_mo_family",
+        "char_gao_wan"
+      ]
+    },
+    {
+      "text": "Two hunters carry the corpse to old man Wang’s wooden house. Fang Yuan names Wang Er’s offense as the pretext for a beast-skin map of traps and wild-beast grounds, then kills old man Wang and Wang Er’s sister after taking the map.",
+      "chapters": [
+        67
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-on-the-boar-path",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Stationed Gu Master Jiang He later treats the killing of Wang Er’s household as a servant offense against a Gu Yue master and covers the matter for clan assessment reasons.",
+      "chapters": [
+        69
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death-on-the-boar-path",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jiang_he"
+      ]
+    },
+    {
+      "text": "The treehouse revenge plot and mid-year exam assault on Fang Zheng belong to Wang Da in the chapters that first solve the mystery and show the fight. Fang Yuan names the living demonic Gu Master Wang Da, the exam clash kills him after he mistakes Fang Zheng for Fang Yuan, and Jiang He later confirms the corpse as Wang Da.",
+      "chapters": [
+        74
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "name-of-the-demonic-gu-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_zheng"
+      ]
+    },
+    {
+      "text": "Later narration and dialogue sometimes call that same demonic Gu Master Wang Er instead, including the assassination-attempt recollection, the Love Separation Gu stock note, and Tie Ruo Nan’s public case against Fang Yuan.",
+      "chapters": [
+        139
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "name-of-the-demonic-gu-master",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_love_separation_gu",
+        "char_tie_ruo_nan"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "name-of-the-demonic-gu-master",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "name-of-the-demonic-gu-master",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Name of the demonic Gu Master",
+      "positions": [
+        {
+          "position": "Wang Er is the second son, a mortal hunter Fang Yuan kills in chapter 66. The rank two demonic Gu Master who mistakes Fang Zheng for Fang Yuan is the elder brother Wang Da.",
+          "support": "Chapters 66, 74, 75, 76, and 78: Wang Er dies on the boar path; Fang Yuan names Wang Da as the living demonic Gu Master; the exam fight and corpse identification use Wang Da.",
+          "chapters": [
+            66,
+            74,
+            75,
+            76,
+            78
+          ]
+        },
+        {
+          "position": "The demonic Gu Master who assaulted Fang Zheng, and the prior owner of Love Separation Gu, is named Wang Er.",
+          "support": "Chapter 139 (Wang Er's assassination attempt), chapter 160 (Love Separation as Wang Er's), and chapters 175 to 176 (Tie Ruo Nan and Fang Yuan naming the demonic Gu Master Wang Er).",
+          "chapters": [
+            139,
+            160,
+            175,
+            176
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/wang-er.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/wang-er/",
+      "chapters": [
+        4,
+        65,
+        66,
+        67,
+        68,
+        69,
+        74,
+        75,
+        76,
+        78,
+        139,
+        160,
+        175,
+        176
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 67",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

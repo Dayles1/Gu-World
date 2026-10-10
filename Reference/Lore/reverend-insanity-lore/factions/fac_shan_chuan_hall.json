@@ -1,0 +1,143 @@
+{
+  "id": "fac_shan_chuan_hall",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shan Chuan Hall",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shan Chuan Hall is a Central Continent east coast super force skilled in refinement path. Fang Yuan's prior life memory names Zheng Shan Chuan as its creator.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 833,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    833
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "char_zheng_shan_chuan",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_five_virtues_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Fang Yuan’s prior life memory, hundreds of years after the Five Virtues Sect stretch, Central Continent’s east coast has a super force called Shan Chuan Hall. Its creator is named Zheng Shan Chuan. The hall is skilled in refinement path, and when dream realms manifest and dream path flourishes, Shan Chuan Hall’s leader benefits with the age and becomes a Gu Immortal.",
+      "chapters": [
+        833
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_five_virtues_sect",
+        "reg_central_continent",
+        "char_zheng_shan_chuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan wonders whether the young Zheng Shan Chuan before him is that future creator, and he considers killing him so that east coast would never gain Shan Chuan Hall, then decides to leave him alive to keep his rebirth advantage. Later memory also places a bloodline descendant as Shan Chuan Hall’s leader, who promotes the mortal killer move nine shine into the immortal killer move profound light nine shine and becomes a light path healing expert during the five regions chaotic war.",
+      "chapters": [
+        833
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/shan-chuan-hall/",
+      "chapters": [
+        833
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "id": "char_xiao_shi_rang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Shi Rang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xiao shi rang",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сяо Ши Жан",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xiao Shi Rang is a rank seven Xiao clan Gu Immortal of Western Desert who serves as deputy leader beside Xiao Hu Chi at the impassable dunes.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 837,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    837,
+    907,
+    908,
+    1705
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_xiao_clan_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 837,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_xiao_clan_western_desert",
+      "count": 4
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_xiao_hu_chi",
+      "count": 2
+    },
+    {
+      "target": "loc_impassable_dunes",
+      "count": 2
+    },
+    {
+      "target": "char_pi_shui_han",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "house_ten_thousand_li_silk_corridor",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At the impassable dunes in Western Desert, Xiao Hu Chi and Xiao Shi Rang lead a Xiao clan group to capture hidden sand spider queens so the clan can raise them at headquarters and refine mortal spider Gu to feed Ten Thousand Li Silk Corridor. Xiao Shi Rang transmits that the training objective is done and the Gu Masters should retreat. When Fang Yuan’s strength path giant hands seize a queen, only Xiao Hu Chi and Xiao Shi Rang fight those hands on even terms. During the trade talk, Xiao Shi Rang asks Fang Yuan’s price.",
+      "chapters": [
+        837
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_impassable_dunes",
+        "reg_western_desert",
+        "char_xiao_hu_chi",
+        "fac_xiao_clan_western_desert",
+        "house_ten_thousand_li_silk_corridor",
+        "fac_gu_masters",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "On a later delivery he is the Xiao clan Gu Immortal who meets Fang Yuan. He has a stable personality and is quite wise, and he is known with Xiao Hu Chi as Xiao clan ‘s brains and brawn duo. He inspects the goods, pays, and also hands over Xiao clan ‘s transaction token with an information path mortal Gu.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "transaction-token",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "sys_information_path_mortal_gu"
+      ]
+    },
+    {
+      "text": "He tells Fang Yuan the token makes him a Xiao clan trading partner with preferential policies, and that he may refuse it. After Fang Yuan accepts, Xiao Shi Rang shows more goodwill; Xiao clan ‘s investigations had not found Fang Yuan’s identity.",
+      "chapters": [
+        908
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "transaction-token",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Central Continent, Xiao Shi Rang joins Xiao Hu Chi against Pi Shui Han over a resource point.",
+      "chapters": [
+        1705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "resource-point-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent"
+      ]
+    },
+    {
+      "text": "Xiao Hu Chi and Pi Shui Han drive a guarding Gu Immortal off a resource point, then fight over the split. Xiao Shi Rang arrives from the horizon and joins Xiao Hu Chi. After a time both Xiao clan Gu Immortals retreat. Xiao Shi Rang names the opponent as Northern Plains’ demonic path Gu Immortal Pi Shui Han.",
+      "chapters": [
+        1705
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "resource-point-clash",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_pi_shui_han",
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/xiao-shi-rang.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xiao-shi-rang/",
+      "chapters": [
+        837,
+        907,
+        908,
+        1705
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VII as of ch. 837",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Xiao Clan (Western Desert) as of ch. 837",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 7,
+        "as_of_chapter": 837,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

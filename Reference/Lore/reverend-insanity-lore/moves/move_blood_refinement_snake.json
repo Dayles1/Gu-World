@@ -1,0 +1,137 @@
+{
+  "id": "move_blood_refinement_snake",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Blood Refinement Snake",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Blood Refinement Snake is Fang Yuan's blood refinement killer move. Blood from his seven orifices forms seven snakes that coil around a refinement lump and eat mortal Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 988,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    988
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_blood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "known_users",
+      "target": "char_fang_yuan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 3
+    },
+    {
+      "target": "path_blood",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_all_out_effort_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_star_form_blessed_land",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In Star Form blessed land, while refining all-out effort Gu, Fang Yuan activates this blood refinement killer move after an earth path refinement path killer move has packed fused immortal materials into a muddy ball. His body shakes, and his eyes, nose, and ears, all seven orifices, start to bleed. The blood flows into seven snakes that slither, hiss, climb onto the muddy ball, and coil it into a ball of snakes. He throws mortal Gu in continuously. The blood snakes eat them, and with every Gu worm eaten their bodies sink into the muddy ball. Two hours later the snakes have fused in completely. The surface shows countless red snake scales that flicker, and the ball almost seems alive and breathing.",
+      "chapters": [
+        988
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_star_form_blessed_land",
+        "gu_all_out_effort_gu",
+        "char_fang_yuan",
+        "sys_mortal_gu",
+        "sys_gu_worms"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/blood-refinement-snake/",
+      "chapters": [
+        988
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Blood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Known users": {
+      "text": "Fang Yuan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

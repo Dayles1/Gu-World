@@ -1,0 +1,574 @@
+{
+  "id": "char_bai_clan_leader",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Clan Leader of Qing Mao Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Bai clan head"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The man who leads the Bai clan on Qing Mao Mountain until the mountain's fall, said to love drinking bitter shell wine.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 120,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    120,
+    125,
+    143,
+    144,
+    165,
+    166,
+    167,
+    168,
+    170,
+    173,
+    178,
+    179,
+    186,
+    189,
+    190,
+    191,
+    193,
+    198,
+    303
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_bai_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 120,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_bai_clan",
+      "count": 4
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_gu_yue_bo",
+      "count": 1
+    },
+    {
+      "target": "char_xiong_li",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_northern_dark_ice_soul_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_second_battle",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "char_lightning_lycan",
+      "count": 1
+    },
+    {
+      "target": "char_thunder_crown_wolf",
+      "count": 1
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "char_tie_xue_leng",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 1
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "gu_white_form_immortal_snake",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_third_battle",
+      "count": 1
+    },
+    {
+      "target": "char_lord_sky_crane",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Chi Shan remarks that the Bai clan’s current clan leader loves to drink bitter shell wine, as Fang Yuan collects hundred year bitter shells beside a river.",
+      "chapters": [
+        120
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chi_shan",
+        "fac_bai_clan",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Three clan heads stand up in the rock building to look down at thousands of Gu Masters, with the Gu Yue clan head at the center and the Bai clan head and the Xiong clan head on either side. The Bai clan head, at the other end, wears a tough expression while Xiong Li’s group has a good start in the Gu battle tournament.",
+      "chapters": [
+        125
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-slope",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_gu_yue_bo",
+        "fac_xiong_clan",
+        "char_xiong_li"
+      ]
+    },
+    {
+      "text": "The Bai clan leader gave Bai Ning Bing a red steel relic Gu, which Bai Ning Bing never used because of quickly reaching rank three cultivation. In a deep memory of a summer rain, Bai Ning Bing is officially adopted by the Bai clan leader while the clan elders offer congratulations.",
+      "chapters": [
+        143
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "raising-bai-ning-bing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "gu_relic_gu"
+      ]
+    },
+    {
+      "text": "After Bai Ning Bing loses the right arm, the Bai clan leader enters Bai Ning Bing’s room, says many Gu worms can heal such an injury, and, warning that the wolf tide is growing fiercer, asks Bai Ning Bing to show up that night to hearten the clansmen. Bai Ning Bing answers with impatience, and the Bai clan leader sighs and leaves. The narration says the leader raised Bai Ning Bing for many years and was lenient, and that Bai Ning Bing has no doubt the leader would be the first to kill Bai Ning Bing if the Northern Dark Ice Soul physique were exposed.",
+      "chapters": [
+        144
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "raising-bai-ning-bing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_worms",
+        "sys_northern_dark_ice_soul_physique"
+      ]
+    },
+    {
+      "text": "Gu Yue Bo and the Bai clan leader are at a standoff over a thunder crown wolf, wary of each other. The narration says the Bai clan had risen in those years until its cumulative strength exceeded the Gu Yue clan’s, and that after killing a thunder crown wolf and pushing back the wolf tide, the Bai clan leader brought clan elders to Gu Yue Village to look for opportunities.",
+      "chapters": [
+        165
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan",
+        "loc_gu_yue_village"
+      ]
+    },
+    {
+      "text": "Gu Yue Bo dodges an attack from the Bai clan leader.",
+      "chapters": [
+        166
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Five clan elders have died, three of the Gu Yue clan and two of the Bai clan, and the battle between Gu Yue Bo and the Bai clan leader is intense, both feeling heartache from their losses.",
+      "chapters": [
+        167
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Bai clan leader suddenly realizes that the wolf is not a thunder crown wolf, and from within dark smoke asks Gu Yue Bo what he says, after which Gu Yue Bo agrees to work together to get out first.",
+      "chapters": [
+        168
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-tide",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After all the elders have died, only the Gu Yue clan leader and the Bai clan leader remain, both full of injuries and almost out of primeval essence, and the narration calls them two rank four Gu Masters. When Tie Xue Leng reaches them, the Bai clan leader draws a long breath in shock, surprised, joyous and puzzled about why he is there. The Bai clan leader thanks Tie Xue Leng for saving the leader’s life and invites him to honor Bai Village with a visit. The Bai clan leader’s expression changes when Gu Yue Bo says that Tie Xue Leng has come at Jia Fu’s request to investigate a murder.",
+      "chapters": [
+        170
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "meeting-tie-xue-leng",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_xue_leng",
+        "loc_bai_village",
+        "char_jia_fu"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing tells the Bai clan leader about the Northern Dark Ice Soul physique, and the leader refuses to accept it, saying Bai Ning Bing tested as A grade with ninety-nine percent primeval essence. The leader mourns that all ten extreme aptitudes defy the heavens and that even Ren Zu’s ten children did not end well. Declaring that the Bai clan has been suppressed by the Gu Yue clan for centuries and has finally found hope, the leader leads Bai Ning Bing along a long secret pathway to the clan’s restricted area, the spirit spring.",
+      "chapters": [
+        173
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-spring",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ren_zu"
+      ]
+    },
+    {
+      "text": "The leader explains that every clan’s foundation rests on a natural spirit spring, and that the Bai clan, a small to medium scale clan, could become a large scale clan only by annexing the Gu Yue and Xiong clans and holding at least three springs. A snake Gu titled Great Immortal, left by the Bai clan’s first generation ancestor, lives secretly in the spring and feeds on its water, and the ancestor’s secret inheritance opens for whoever earns the snake’s approval, while anyone refused is killed. When the snake rises from the spring the leader kneels to pay respects, and puzzles over the snake entering Bai Ning Bing’s aperture instead, which does not match the clan’s secret records.",
+      "chapters": [
+        173
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-spring",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_white_form_immortal_snake"
+      ]
+    },
+    {
+      "text": "The Bai clan leader asks Bai Ning Bing in concern whether Great Immortal has done anything, and Bai Ning Bing answers that the snake does not recognise Bai Ning Bing and moved from the clan’s spirit spring into Bai Ning Bing’s aperture only because the Northern Dark Ice Soul physique attracted it. The leader reports that the three clans have decided on a three-clan tournament, open only to Gu Masters aged thirty and below, with the compensation settled by its results. Embarrassed when thanked, the leader says it is also for the sake of the clan, and the narration says the tournament was the leader’s own suggestion, chiefly to squeeze the last remaining value out of Bai Ning Bing.",
+      "chapters": [
+        178
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "competition-proposal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Bo also wants to squeeze out Fang Yuan’s maximum worth, just like the Bai clan leader.",
+      "chapters": [
+        179
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "competition-proposal",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Gu Yue Bo, the Bai clan leader and the Xiong clan leader stand side by side on the slope at dawn, and the Bai clan leader snorts and ignores the Xiong clan leader’s call for a preliminary competition.",
+      "chapters": [
+        186
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "competition-day",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "As Bai Ning Bing faces a charging bear group, the Bai clan leader stays calm as water and plots in silence, thinking that everyone has underestimated Bai Ning Bing. When Gu Yue Bo is eager to step in, the Bai clan leader stops him by invoking the agreement against interference and shouts that Bai Ning Bing is the Northern Dark Ice Soul physique.",
+      "chapters": [
+        189
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "competition-day",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The Bai clan leader grows nervous, gaze tightening, on seeing that Fang Yuan’s side has a rank five Gu as well, and laughs sinisterly that Fang Yuan is sure to lose. The Bai clan leader is shocked as the white snake escapes, and when Gu Yue Bo concedes the battle and threatens whoever stops him, answers that the leader is not scared and signals the Bai clan Gu Masters.",
+      "chapters": [
+        190
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "competition-day",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Under the crane attack, the three clan leaders, who hated each other, fight together against the white brow elderly on a huge crane, and they die one by one as he flicks his sleeves.",
+      "chapters": [
+        191
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The narration counts the three clan leaders as rank four and says Lord Sky Crane killed them.",
+      "chapters": [
+        193
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lord_sky_crane"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing says that the Bai clan’s future is ruined and it can no longer be a village, and that the clan leader to whom Bai Ning Bing is indebted is dead too.",
+      "chapters": [
+        198
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan later tells Tie Ruo Nan that his clan leader and the Bai clan leader worked together at the explosion and protected him and Bai Ning Bing at the cost of their lives.",
+      "chapters": [
+        303
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "death",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_ruo_nan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/bai-clan-leader.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bai-clan-leader/",
+      "chapters": [
+        120,
+        125,
+        143,
+        144,
+        165,
+        166,
+        167,
+        168,
+        170,
+        173,
+        178,
+        179,
+        186,
+        189,
+        190,
+        191,
+        193,
+        198,
+        303
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "IV as of ch. 170",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Bai Clan of Qing Mao Mountain as of ch. 120",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 4,
+        "as_of_chapter": 170,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

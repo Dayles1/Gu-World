@@ -1,0 +1,284 @@
+{
+  "id": "loc_zi_you_mountain",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zi You Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A secluded purple mountain, safe by day and dangerous by night, home to dark leopards and purple maple leaves.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 228,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    228,
+    229,
+    232,
+    234,
+    239,
+    295,
+    477
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "gu_breath_concealment_gu",
+      "count": 2
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_fei_hou_mountain",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sun_gan",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "char_chen_xin",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Near Zi You mountain the forest trees are short and thick with lush purple leaves that canopy the sunlight, so looking into the distance shows a sea of purple.",
+      "chapters": [
+        228
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The mountain itself is still a secluded area.",
+      "chapters": [
+        229
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fleeing north from Bai Gu Mountain, Fang Yuan and Bai Ning Bing land in a forest of purple leaves and place themselves near Zi You mountain by course. As evening comes, Fang Yuan pushes them to find shelter quickly. They take a pouched bear cave, keep watch through the night, and hear beast fights outside, including a winged black feather python that kills a pregnant female dark leopard before the male kills the python and then dies beside her.",
+      "chapters": [
+        228
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "after-bai-gu-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_bai_gu_mountain",
+        "char_fang_yuan",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "From those corpses Fang Yuan takes two Breath Concealment Gu, purple leaf Gu that hide aura and cultivation. He and Bai Ning Bing skirt the mountain rather than climb it, then find a man-made path and a mortal hamlet in a mountain basin.",
+      "chapters": [
+        229
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "breath-concealment-gu-and-the-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_breath_concealment_gu"
+      ]
+    },
+    {
+      "text": "Fang Yuan later notes caravans pass this place on a long cycle, sometimes once a year and sometimes once every half year, and uses that traffic to join a caravan heading west toward Shang clan city.",
+      "chapters": [
+        232
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "breath-concealment-gu-and-the-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "Old Zhang, the hamlet head, helps them onto that caravan by begging a vice leader who still needs local help when he crosses the mountain again.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "breath-concealment-gu-and-the-caravan",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After they leave, the caravan is already far into Fei Hou Mountain region, and Fang Yuan treats that distance as safer cover for his identity.",
+      "chapters": [
+        239
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "breath-concealment-gu-and-the-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_fei_hou_mountain"
+      ]
+    },
+    {
+      "text": "When he later pressures Bai clan in Shang clan city, Fang Yuan says he suffered serious injuries and landed on Zi You mountain while escaping with Bai Ning Bing.",
+      "chapters": [
+        295
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "bargaining-with-bai-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan_bai_gu_mountain",
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "While refining a rank five Breath Concealment Gu in Northern Plains, Fang Yuan recalls that he first obtained rank two Breath Concealment Gu on Zi You mountain and ranked that worm up to reach the later form.",
+      "chapters": [
+        477
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ranked-breath-concealment-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/zi-you-mountain.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/zi-you-mountain/",
+      "chapters": [
+        228,
+        229,
+        232,
+        234,
+        239,
+        295,
+        477
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "mountain",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "id": "char_song_zhong",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Song Zhong",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "song zhong",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сун Чжун",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Song Zhong is a demonic path rising star from Fang Yuan's previous life, named as Song Zi Xing's son, and has not been born yet in the present timeline.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 408,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    408,
+    734,
+    2084
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_hu_immortal_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jin_huang",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Thinking of how hard it is to force Hu Immortal blessed land, Fang Yuan recalls that five hundred years into his previous life he allied with almost ten demonic Gu Immortals to invade that place, and that eventually only he and Song Zhong were left. Back then Fang Yuan was already a senior of the demonic path; Song Zhong inherited his father’s inheritance, gained great strength, and could fight Fang Yuan for tens of rounds without a winner, rising to fame from that battle. Fang Yuan snickers at having been used as a stepping stone for that junior, and thinks of finding a chance to kill Song Zi Xing so Song Zhong will not come into the world.",
+      "chapters": [
+        408
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_hu_immortal_blessed_land",
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "char_song_zi_xing"
+      ]
+    },
+    {
+      "text": "Lagging in dream realms with only mortal dream path Gu, and needing a dream path Immortal Gu to catch up, Fang Yuan gathered Song Zhong and other demonic path Gu Immortals to attack Hu Immortal blessed land, killing Feng Jin Huang. He did not get her dream wings Immortal Gu.",
+      "chapters": [
+        734
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hu-immortal-blessed-land-assault",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "char_feng_jin_huang"
+      ]
+    },
+    {
+      "text": "In the five hundred years of Fang Yuan’s previous life, Fang Yuan invaded Hu Immortal blessed land and was aided by Song Zhong, managing to kill Feng Jin Huang. Song Zhong was publicly Song Zi Xing’s son but in reality was created from his blood fetus, and Song Zi Xing was a member of Shadow Sect and one of Spectral Soul’s split souls.",
+      "chapters": [
+        2084
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "previous-life-origin",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/song-zhong/",
+      "chapters": [
+        408,
+        734,
+        2084
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 408",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Unknown",
+    "alignment": "demonic path as of ch. 408",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

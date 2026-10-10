@@ -1,0 +1,150 @@
+{
+  "id": "res_wilted_essence",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Wilted essence",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Wilted essence is a wood path resource still produced at Northern Plains old earth wood.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 738,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    738,
+    739,
+    782
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wood",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_wood",
+      "count": 1
+    },
+    {
+      "target": "char_divine_lord_tian_du",
+      "count": 1
+    },
+    {
+      "target": "char_gu_ye",
+      "count": 1
+    },
+    {
+      "target": "char_shi_hou",
+      "count": 1
+    },
+    {
+      "target": "fac_zombie_alliance",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Gu Ye, the hollow Old Earth City Lord posted at old earth wood, names wilted essence as the wood path resource that still draws interest to the ruined wooden city. Divine Lord Tian Du and Shi Hou coerce him into selling one hundred and fifty kilograms of wilted essence for one immortal essence stone.",
+      "chapters": [
+        738
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "extortion-forces-a-sale",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gu_ye",
+        "char_divine_lord_tian_du",
+        "char_shi_hou"
+      ]
+    },
+    {
+      "text": "That single immortal essence stone is recorded as the price paid for the hundred and fifty kilograms of wilted essence.",
+      "chapters": [
+        739
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "coerced-price",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same forced purchase is remembered later: the lightning path immortal and Shi Hou once coerced a Zombie Alliance immortal zombie into selling one hundred and fifty kilograms of wilted essence for one immortal essence stone.",
+      "chapters": [
+        782
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "forced-purchase-recalled",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_zombie_alliance"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/wilted-essence/",
+      "chapters": [
+        738,
+        739,
+        782
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Path": {
+      "text": "Wood Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Old earth wood",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

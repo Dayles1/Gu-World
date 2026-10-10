@@ -1,0 +1,291 @@
+{
+  "id": "char_shang_tuo_hai",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shang Tuo Hai",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shang tuo hai",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Шан То Хай",
+    "ru_status": "transliteration",
+    "aliases": [
+      "young clan leader Shang Tuo Hai"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shang Tuo Hai is Shang Yan Fei's illegitimate son and the Shang clan young clan leader when Fang Yuan reaches Shang clan city.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 267,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    267,
+    270,
+    322,
+    333,
+    2122
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_shang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 267,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_shang_clan",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 2
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_shang_bu_li",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 1
+    },
+    {
+      "target": "char_wei_yang",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_demonic_path_rise",
+      "count": 1
+    },
+    {
+      "target": "char_shang_fu_xi",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "He is first named in Shang clan city when Shang Ya Zi guesses that Fang Yuan and Bai Ning Bing might be Shang Yan Fei’s illegitimate children and rejects the idea by comparing them to Shang Tuo Hai, already the current young clan leader and an acknowledged illegitimate son who was firmly protected once discovered.",
+      "chapters": [
+        267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "char_shang_ya_zi",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "char_shang_yan_fei"
+      ]
+    },
+    {
+      "text": "At the clan banquet that reveals Shang Xin Ci, the other young masters recall the same history: Tuo Hai rose from illegitimate birth to young clan leader, and they weigh whether Xin Ci could become another rival on that track. Narration also notes that even Tuo Hai never received the open seat beside Shang Yan Fei that Xin Ci is given that night.",
+      "chapters": [
+        270
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci"
+      ]
+    },
+    {
+      "text": "Across that early Shang city stretch he is spoken of by others; the cited chapters do not put him on stage in his own scenes until much later.",
+      "chapters": [
+        267
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Above the ten contesting young masters sits the young clan leader post, and Fang Yuan later reminds Shang Xin Ci that Shang Tuo Hai holds that seat before the five elders, Shang Yan Fei, and the Shang supreme elder. Xin Ci answers that when Tuo Hai became young clan leader he had the perfect conditions, unlike her own lack of ready alliances.",
+      "chapters": [
+        333
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "young-clan-leader",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the ten young masters of that stretch, only he has two rank four subordinates, and those are clan sent aides rather than a private force, because as young clan leader he runs a caravan and needs strength for outside trade. Wei Yang also cites his young master trade assessment score of eight hundred and ninety thousand as a result that already caused a huge commotion, still below Shang Yan Fei’s nine hundred and twenty thousand record line.",
+      "chapters": [
+        322
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "young-clan-leader",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "After Shang Yan Fei’s immortal ascension gathering, he praises Tuo Hai’s management of the merchant caravan, gives him that entire caravan, and also hands over a largely incomplete water path immortal inheritance, urging him to keep working hard. The gift names a water path immortal inheritance; the chapter does not state that Tuo Hai himself cultivates water path. When Shang Bu Li resigns amid fake Gu flooding the Shang Liang Mountain market, Tuo Hai seeks Shang Xin Ci and confirms the plot is aimed at her clan leader seat. He names Shang Bu Li as already turned after losing the slave trade, and warns that more defections will follow. He states plainly that they are both illegitimate children, that even if she falls he will not become clan leader, and that he will rarely return, leading the caravan to explore the world and seek immortality on his own. He asks that if she later becomes immortal, his present kindness be repaid. From Xin Ci’s later view among Shang Yan Fei’s children he ranks in the top three for ability and personality, yet lacked the favor of greater existences.",
+      "chapters": [
+        2122
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "warning-of-coming-defections",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_bu_li",
+        "loc_shang_liang_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shang-tuo-hai/",
+      "chapters": [
+        267,
+        270,
+        322,
+        333,
+        2122
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Shang Clan as of ch. 267",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

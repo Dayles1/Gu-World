@@ -1,0 +1,147 @@
+{
+  "id": "loc_bee_sea",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bee Sea",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bee Sea is an Eastern Sea area linked to flower sea, where water bees gather nectar from boat flowers each May.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 907,
+    "volume": null,
+    "arc": "evt_arc_eastern_sea"
+  },
+  "chapters_cited": [
+    907
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 3
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_song_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the air over this sea, Fang Yuan, Shark Demon, and their group hold an intense negotiation with Song clan Gu Immortals and reach an agreement after half an hour.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_shark_demon",
+        "fac_song_clan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Countless bee groups emerge from the water and land on boat flowers floating on the surface. During May in Eastern Sea, ripples carry those flowers across bee sea; the flowers are vibrant, as large as small boats, and spread like scrolls in a sea of flowers.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "Bee sea connects to flower sea. Large numbers of water bees live there. They can fly only for a short time and are better at swimming freely in the sea. The yearly May arrival of boat flowers is their only chance to collect nectar.",
+      "chapters": [
+        907
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/bee-sea.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/bee-sea/",
+      "chapters": [
+        907
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

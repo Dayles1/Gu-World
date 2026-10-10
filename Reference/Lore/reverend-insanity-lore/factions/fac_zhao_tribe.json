@@ -1,0 +1,284 @@
+{
+  "id": "fac_zhao_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Zhao Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe of Cao Fu named during the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 489,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    489,
+    496,
+    501,
+    502,
+    503
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_old_caretaker",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 502,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_zhao_lian_yun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 502,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_lady_xiao_yun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 520,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 4
+    },
+    {
+      "target": "char_lady_xiao_yun",
+      "count": 3
+    },
+    {
+      "target": "char_old_caretaker",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 2
+    },
+    {
+      "target": "char_dong_fang_yu_liang",
+      "count": 2
+    },
+    {
+      "target": "char_dong_po_kong",
+      "count": 2
+    },
+    {
+      "target": "char_ma_ying_jie",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_zheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 1
+    },
+    {
+      "target": "char_dong_fang_qing_yu",
+      "count": 1
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Ma Tribe higher-ups say Cao Fu’s heroes assembly needs close watch if they mean to enter Imperial Court blessed land. A messenger rushes in with the newest intel; Ma Ying Jie turns gloomy as he reads, then hands the report around while the room fills with gasps, and the readers name Zhao tribe under Dong Fang’s hold on Cao Fu.",
+      "chapters": [
+        489
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "newest-intel-pass",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ma_tribe",
+        "loc_cao_fu_region",
+        "loc_imperial_court_blessed_land",
+        "char_ma_ying_jie"
+      ]
+    },
+    {
+      "text": "Fang Yuan names Cao Fu’s Zhao tribe while recalling Zhao Lian Yun as still a young girl at that time.",
+      "chapters": [
+        496
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "fang-yuans-recall",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_zhao_lian_yun"
+      ]
+    },
+    {
+      "text": "When Hei Tribe marches on Cao Fu, Dong Fang still holds the greatest dominance there and only Zhao tribe is barely resisting harsh alliance terms. Dong Fang Yu Liang then softens the offer and goes in person to invite the tribe.",
+      "chapters": [
+        501
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_hei_tribe",
+        "char_dong_fang_yu_liang"
+      ]
+    },
+    {
+      "text": "In the study, the tribe leader is a rank five initial stage Gu Master torn between Dong Fang and Hei tribe, with the tribe’s main headquarters in Cao Fu. Speaking as Yunyun, Zhao Lian Yun tells him “Our Zheng tribe is like a sheep” while urging him to leave both sides and ally with Ma tribe instead.",
+      "chapters": [
+        502
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "study-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "fac_zheng_tribe"
+      ]
+    },
+    {
+      "text": "Hei Lou Lan later learns Zhao tribe tore down camp and left; camp talk calls it a large scale tribe whose leader had been defeated by Dong Po Kong three years earlier.",
+      "chapters": [
+        503
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "camp-talk",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_hei_lou_lan",
+        "char_dong_po_kong"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/zhao-tribe/",
+      "chapters": [
+        489,
+        496,
+        501,
+        502,
+        503
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

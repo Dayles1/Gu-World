@@ -1,0 +1,880 @@
+{
+  "id": "gu_attitude_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Attitude Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Attitude Gu is named in early Ren Zu lore as one of three Gu left in Rules and Regulation Gu's net with Belief Gu and Suspicion Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 59,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    59,
+    87,
+    709,
+    870,
+    948,
+    974,
+    976,
+    998,
+    1019,
+    1023,
+    1025,
+    1043,
+    1083,
+    1134,
+    1142,
+    1291,
+    1331,
+    1333,
+    1954,
+    1963
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_hei_fan",
+      "role": "prior owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 948,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_lady_earth_mother",
+      "role": "holder",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 948,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "held_by",
+      "target": "char_hei_lou_lan",
+      "role": "owner",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 948,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_hei_fan",
+      "count": 4
+    },
+    {
+      "target": "char_lady_earth_mother",
+      "count": 4
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 3
+    },
+    {
+      "target": "move_thunder_rush_yellow_bird_transformation",
+      "count": 3
+    },
+    {
+      "target": "char_ren_zu",
+      "count": 2
+    },
+    {
+      "target": "gu_rules_and_regulation_gu",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 2
+    },
+    {
+      "target": "gu_change_form_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_freedom_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_change_soul_immortal_gu",
+      "count": 2
+    },
+    {
+      "target": "char_huo_kong_dong",
+      "count": 2
+    },
+    {
+      "target": "gu_wisdom_sword_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_adaptation_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_mutation_gu",
+      "count": 2
+    },
+    {
+      "target": "house_embroidered_tower",
+      "count": 2
+    },
+    {
+      "target": "gu_return_light_gu",
+      "count": 2
+    },
+    {
+      "target": "char_jia_fu",
+      "count": 1
+    },
+    {
+      "target": "gu_belief_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_suspicion_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_wisdom_against_restrictions",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_attitude",
+      "count": 1
+    },
+    {
+      "target": "gu_heart_of_loneliness",
+      "count": 1
+    },
+    {
+      "target": "gu_faith_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_light_of_faith",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "move_familiar_face",
+      "count": 1
+    },
+    {
+      "target": "move_unfamiliar_face",
+      "count": 1
+    },
+    {
+      "target": "gu_self_strength",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_freedom_in_death",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_purple_mountain_true_monarch",
+      "count": 1
+    },
+    {
+      "target": "sys_mental_energy",
+      "count": 1
+    },
+    {
+      "target": "sys_the_legends_of_ren_zu",
+      "count": 1
+    },
+    {
+      "target": "gu_slavery_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_village",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "char_bo_qing",
+      "count": 1
+    },
+    {
+      "target": "char_mo_yao",
+      "count": 1
+    },
+    {
+      "target": "char_ying_wu_xie",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_unravel_mystery",
+      "count": 1
+    },
+    {
+      "target": "char_qi_zai",
+      "count": 1
+    },
+    {
+      "target": "loc_northern_icy_plain",
+      "count": 1
+    },
+    {
+      "target": "res_flowing_light_fruits",
+      "count": 1
+    },
+    {
+      "target": "gu_dazzling_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_wisdom_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_heavenly_crystal_eagle_nest",
+      "count": 1
+    },
+    {
+      "target": "char_chen_chi",
+      "count": 1
+    },
+    {
+      "target": "gu_years_flow_like_water",
+      "count": 1
+    },
+    {
+      "target": "inh_hei_fan_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_light_pit",
+      "count": 1
+    },
+    {
+      "target": "gu_black_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_borrow_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_colored_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_jade_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_reflect_light_gu",
+      "count": 1
+    },
+    {
+      "target": "res_aurora_lights",
+      "count": 1
+    },
+    {
+      "target": "gu_affection_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_vajra_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_chi_shang",
+      "count": 1
+    },
+    {
+      "target": "move_ancient_year_beast_transformation",
+      "count": 1
+    },
+    {
+      "target": "inh_reckless_savage_true_inheritance",
+      "count": 1
+    },
+    {
+      "target": "gu_cognition_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_fate_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_joy_and_weight_of_freedom",
+      "count": 1
+    },
+    {
+      "target": "move_devouring_blue_leopard_transformation",
+      "count": 1
+    },
+    {
+      "target": "move_incomplete_freedom_transformation",
+      "count": 1
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 1
+    },
+    {
+      "target": "char_reckless_savage_demon_venerable",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    },
+    {
+      "target": "gu_fear_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_weak_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_facing_a_strong_predicament",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_hope_triumphs_again",
+      "count": 1
+    },
+    {
+      "target": "gu_self_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_legend_betraying_ones_self",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/attitude-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/attitude-gu/",
+      "chapters": [
+        59,
+        87,
+        709,
+        870,
+        948,
+        974,
+        976,
+        998,
+        1019,
+        1023,
+        1025,
+        1043,
+        1083,
+        1134,
+        1142,
+        1291,
+        1331,
+        1333,
+        1954,
+        1963
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 8,
+        "recorded_chapter": 974,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "immortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "Hei Lou Lan calls her Attitude Gu a rank eight Immortal Gu and says anyone with a thinking mind can wear it and use it, naming it a legendary Gu worm recorded in The Legends of Ren Zu. She says the requirements to use it are minimal: it does not need immortal essence and only consumes mental energy, so even she as a rank six Gu Immortal can use this rank eight Immortal Gu.",
+        "chapters": [
+          974
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "rank-and-wear",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_worms",
+          "sys_the_legends_of_ren_zu"
+        ]
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "Attitude Gu’s appearance is like a mask. Ren Zu puts it on his face, but he cannot wear it. Even tied with a rope, it still falls off.",
+        "chapters": [
+          87
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "Attitude Gu at rank eight is the sole core of familiar face. Besides Attitude Gu, familiar face has over twenty supplementary Gu, among them two Immortal Gu including change form Immortal Gu.",
+        "chapters": [
+          976
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "sole-core-among-the-move",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_change_form_immortal_gu"
+        ]
+      },
+      {
+        "text": "Disguised as Huang Sha to join Yi Tian Village early, Fang Yuan uses an immortal killer move with attitude Gu as its core, familiar face, to keep from being exposed by the Southern Border Gu Immortals there.",
+        "chapters": [
+          998
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "first-use-disguised-as-huang-sha",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "loc_yi_tian_village",
+          "reg_southern_border"
+        ]
+      },
+      {
+        "text": "Fang Yuan’s acting with Attitude Gu makes Lang Ya land spirit believe he is speaking the truth, sincere and apologetic.",
+        "chapters": [
+          1134
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "used-against-lang-ya-land-spirit",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "During a Southern Border banquet, Fang Yuan uses Attitude Gu again as he praises Chi Shang, and Chi Shang’s suspicion that he might be acting fades even as he tries to stay alert to being played.",
+        "chapters": [
+          1331
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "used-on-chi-shang",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_chi_shang"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": true,
+    "food_raw": null,
+    "foods": [],
+    "claims": [
+      {
+        "text": "In the same green heaven stretch that gives freedom Gu its origin, Ren Zu wears attitude Gu’s mask to feign warmth and draw hungry feathermen into his house, then takes it off once the timing is ripe, revealing his true, cold expression, and lets them starve.",
+        "chapters": [
+          870
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "feigned-warmth-for-the-feathermen",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_freedom_gu"
+        ]
+      },
+      {
+        "text": "Planning attitude Gu’s feeding, the text calls it worthy of being a legendary Immortal Gu recorded in The Legends of Ren Zu, since even though it is rank eight, it can be activated on mental energy and freely used by a rank six Gu Immortal like Fang Yuan. The chapter also states that attitude Gu feeds on flowing light fruits in enormous quantity at long intervals, that Hei Lou Lan’s will is still inside it though some of the information path restrictions on Fang Yuan should have been broken, and that Fang Yuan sets the plan of refining it into his own aside for the moment because wisdom Gu does not acknowledge him, so he cannot use the light of wisdom to arrange the wisdom refinement formation it would take.",
+        "chapters": [
+          1083
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "feeding-plan-and-the-refinement-set-aside",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_wisdom_gu"
+        ]
+      },
+      {
+        "text": "Feeding it is one of Fang Yuan’s two unresolved problems among his rank eight Immortal Gu, alongside Wisdom Sword.",
+        "chapters": [
+          1291
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "feeding-difficulty",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_wisdom_sword_gu"
+        ]
+      }
+    ]
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_hei_fan",
+      "role": "prior owner",
+      "recorded_chapter": 948,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_lady_earth_mother",
+      "role": "holder",
+      "recorded_chapter": 948,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    },
+    {
+      "character": "char_hei_lou_lan",
+      "role": "owner",
+      "recorded_chapter": 948,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Jia Fu continues a Ren Zu stretch after Rules and Regulation Gu have given Ren Zu strength and cost him wisdom. Ren Zu will not free the leftover Gu in the net, so they bet that once the net opens they will flee in three directions, and that only the Gu he captures will submit. Jia Fu’s aide guesses Ren Zu captures Attitude Gu.",
+        "chapters": [
+          59
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_jia_fu",
+          "gu_rules_and_regulation_gu",
+          "char_ren_zu"
+        ]
+      },
+      {
+        "text": "Lang Ya land spirit names the legendary Attitude Gu as the core Gu of the immortal killer move familiar face when he offers Fang Yuan the related mortal killer move unfamiliar face.",
+        "chapters": [
+          709
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "familiar-face-core",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_lang_ya_land_spirit",
+          "char_fang_yuan"
+        ]
+      },
+      {
+        "text": "Blazing Heaven Demoness says the Gu was once in Hei Fan’s hands; he gave it to his granddaughter Hei Feng Yue, who as a mortal brought the Immortal Gu onto the icy plain, was targeted by a mysterious Gu Immortal, and vanished with Attitude Gu. Hei Lou Lan says she obtained Attitude Gu from the icy plain, and that she went there for immortal ascension because she had clues to its whereabouts, subduing it by borrowing the heavenly might of the tribulation.",
+        "chapters": [
+          948
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "icy-plain",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_blazing_heaven_demoness",
+          "char_hei_fan",
+          "char_lady_earth_mother",
+          "sys_immortal_gu",
+          "sys_gu_immortal",
+          "char_hei_lou_lan"
+        ]
+      },
+      {
+        "text": "After swapping souls with Ying Wu Xie, Fang Yuan realizes attitude Gu let him disguise himself and deceive Ying Wu Xie’s will that sits inside the dream path Immortal Gu and mortal Gu now in his hands, the same trick he used earlier to coax Immortal Gu out of Bo Qing’s immortal zombie body with Mo Yao’s fake will.",
+        "chapters": [
+          1019
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "disguise-inside-borrowed-gu-worms",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_ying_wu_xie",
+          "sys_mortal_gu",
+          "char_bo_qing",
+          "char_mo_yao"
+        ]
+      },
+      {
+        "text": "Inspecting the Gu worms he regained control of after using Change Soul, Fang Yuan finds the highest-ranking among them is the legendary attitude Immortal Gu, alongside the wisdom path Unravel Mystery and the soul path Change Soul.",
+        "chapters": [
+          1023
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "highest-ranking-gu-after-the-swap",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_change_soul_immortal_gu",
+          "gu_unravel_mystery"
+        ]
+      },
+      {
+        "text": "Having deceived Huo Kong Dong using attitude Gu alone, Fang Yuan reflects that although attitude Gu is of high rank, it has a low usage requirement and only expends mental energy, which matters because he has just revived and has little immortal essence, far less than his original accumulation.",
+        "chapters": [
+          1025
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "low-usage-requirement-despite-high-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_huo_kong_dong"
+        ]
+      },
+      {
+        "text": "Killing Qi Zai with a disguised version of familiar face, the text confirms that even without change form Immortal Gu the killer move’s core is still rank eight attitude Gu, which influences the minds of others, letting them feel Fang Yuan’s ‘attitude’ and lowering their suspicions.",
+        "chapters": [
+          1043
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "influencing-minds-as-familiar-faces-core",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_qi_zai"
+        ]
+      },
+      {
+        "text": "After bluffing the variant human Gu Immortals that he is a Lang Ya Sect supreme elder on their side and placing the upper extreme heavenly eagle inside his immortal aperture as a show of sincerity, Fang Yuan himself offers to stay and notify Lang Ya Sect and feigns a joyful attitude; with his acting joined to attitude Gu, the text states there is no flaw in it at all, and the variant human Gu Immortals notice none.",
+        "chapters": [
+          1142
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "no-flaw-in-his-feigned-joy",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "fac_lang_ya_sect"
+        ]
+      },
+      {
+        "text": "While Fang Yuan spends the following days drawing Chi Shang closer, narration credits his scheming and his possession of Attitude Gu for Chi Shang being no match for him.",
+        "chapters": [
+          1333
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-edge-over-chi-shang",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "In the same telling where fate Gu’s spider silk binds Ren Zu, freedom Gu itself says he once used attitude Gu to bully it, along with love to bind it and wealth to bribe it, and that it came to him for the cognition Gu on him rather than for his own sake.",
+        "chapters": [
+          1954
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "bullying-freedom-gu",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_fate_gu",
+          "gu_cognition_gu"
+        ]
+      },
+      {
+        "text": "Feng Jiu Ge tells Fang Yuan that Heavenly Court’s Embroidered Tower holds three true inheritances left by Reckless Savage Demon Venerable, each requiring a key: attitude Gu, mutation Gu, and adaptation Gu.",
+        "chapters": [
+          1963
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "embroidered-tower-keys",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_feng_jiu_ge",
+          "fac_heavenly_court",
+          "house_embroidered_tower",
+          "char_reckless_savage_demon_venerable",
+          "gu_mutation_gu",
+          "gu_adaptation_gu"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

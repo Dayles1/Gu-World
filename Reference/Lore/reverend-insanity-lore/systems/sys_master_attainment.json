@@ -1,0 +1,234 @@
+{
+  "id": "sys_master_attainment",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Master Attainment",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "master realm"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Master is the second of the five main attainment levels from ordinary to supreme grandmaster. At this step, use of Gu becomes an art.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 687,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    687,
+    731,
+    810,
+    1326
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_attainment",
+      "count": 2
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "char_chang_shan_yin",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_bao_ya",
+      "count": 1
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_tu",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_yang_po_ying",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_lang_ya_land_spirit",
+      "count": 1
+    },
+    {
+      "target": "sys_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Realm on a path climbs a fixed ladder from ordinary to supreme grandmaster. Master sits above quasi-master and below quasi-grandmaster on that ladder.",
+      "chapters": [
+        687
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_attainment"
+      ]
+    },
+    {
+      "text": "Among the five main levels (ordinary, master, grandmaster, great grandmaster, and supreme grandmaster), master is the first step above ordinary.",
+      "chapters": [
+        810
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Reaching master level takes abundant talent, or long training and accumulation.",
+      "chapters": [
+        810
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "reaching-master-level",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Masters are extremely rare. In the Imperial Court contest, of everyone who got inside Imperial Court blessed land, only Fang Yuan and Tai Bai Yun Sheng held master level attainment in flying, and only five people held master level in enslavement path across the whole contest. The five were Jiang Bao Ya, Yang Po Ying, Ma Zun, Nu Er Tu, and Fang Yuan under the Chang Shan Yin name.",
+      "chapters": [
+        687
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "rarity-among-gu-masters",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "evt_arc_imperial_court_contest",
+        "loc_imperial_court_blessed_land",
+        "char_fang_yuan",
+        "char_tai_bai_yun_sheng",
+        "char_jiang_bao_ya",
+        "char_yang_po_ying",
+        "char_ma_zun",
+        "char_nu_er_tu",
+        "char_chang_shan_yin"
+      ]
+    },
+    {
+      "text": "It is rare to find even one master among ten thousand Gu Masters. That one-in-ten-thousand figure refers to mortals. For rank six Gu Immortals, the main path is at least master level.",
+      "chapters": [
+        1326
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "among-gu-immortals",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "By Lang Ya land spirit’s account, swallowing a rank six blessed land takes master level attainment in that realm.",
+      "chapters": [
+        731
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "swallowing-blessed-lands",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_lang_ya_land_spirit"
+      ]
+    },
+    {
+      "text": "The full ladder is on Attainment. Neighboring steps include quasi-master and quasi-grandmaster attainment. Dao marks and how they relate to attainment are on Dao Marks and Attainment.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "swallowing-blessed-lands",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_dao_marks"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/master-attainment/",
+      "chapters": [
+        687,
+        731,
+        810,
+        1326
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Path comprehension",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

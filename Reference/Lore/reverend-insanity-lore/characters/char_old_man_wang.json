@@ -1,0 +1,353 @@
+{
+  "id": "char_old_man_wang",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Old Man Wang",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Hunter Wang"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Old Man Wang, also called Hunter Wang, is a mortal hunter of a village under Gu Yue clan control at the foot of Qing Mao Mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 65,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    4,
+    65,
+    67,
+    68,
+    69,
+    74,
+    90,
+    175
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gu_yue_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 67,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wang_er",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "char_gao_wan",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_he",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ruo_nan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Young hunters on a Qing Mao Mountain path praise their family’s Old Wang as the hunting king of the entire region while they approach Fang Yuan at a wild boar trap.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "That mountain sits in the Southern Border.",
+      "chapters": [
+        4
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "Qing Mao Mountain has three mountain villages, and tens of tiny villages at the foot that those three villages control; the nearby ones sit under Gu Yue rule as farmer-slave settlements.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "Gu Yue later stations Gu Masters in the little villages and hamlets for the same border control.",
+      "chapters": [
+        69
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "No chapter describes his appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan forces entry at a wooden house outside the village crowd and asks whether the man is old man Wang; the old man kneels and pays his respects to a Gu Master. Fang Yuan names Wang Er’s offense, orders the corpse brought forward, and calls old man Wang the best hunter among the nearby villages, still getting good results at his age. Clan rules threaten the whole household when a son offends a Gu Master. Old man Wang stops his daughter from attacking, kowtows, and agrees to draw trap and wild-beast maps on bamboo paper to buy survival.",
+      "chapters": [
+        67
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "hunter-under-gu-yue-rule",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_master",
+        "char_wang_er"
+      ]
+    },
+    {
+      "text": "Narration places his family line at its peak with him as the acclaimed number one hunter. After two young hunters vouch for the bamboo papers, Fang Yuan kills him with a moonblade, then kills his daughter as she runs to the corpse. Fang Yuan searches the house for a hunter’s beast skin map, finds a bamboo tube hidden as charcoal in the firepit, and reads markings the bamboo papers omitted, including a giant red cross in a large wild boar herd far beyond the village; he treats that omission as old man Wang’s cunning.",
+      "chapters": [
+        68
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "beast-skin-map",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The same map is a Wang family heirloom that helped make him famous beyond the vicinity. Captive hunters say Hunter Wang’s wife died to wild wolves decades earlier after bearing two sons and a daughter, that eldest son Wang Da died hunting three years ago, and that rumor blamed old man Wang for hounding Wang Da’s widow to death. They also say he moved the household out of the village and chased away young hunters who asked for teaching. Stationed Gu Master Jiang He treats the dead household as peasant servants who offended a Gu Yue master, covers the deaths for clan assessment reasons, and blames the remote wooden house for making the cover easy.",
+      "chapters": [
+        69
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "family-heirloom-and-cover",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_jiang_he"
+      ]
+    },
+    {
+      "text": "Later recollection still groups the killing with Gao Wan as the killing of mortals whose lives were cheap as grass.",
+      "chapters": [
+        90
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "family-heirloom-and-cover",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_gao_wan"
+      ]
+    },
+    {
+      "text": "Fang Yuan concludes that Wang Da likely became a Gu Master in secret, that the family moved away to hide that truth, and that red circles on the beast skin map marked rotating hideouts for the living son rather than mere alert zones. He also reads the fewer red crosses on that map as old man Wang avenging his son’s death.",
+      "chapters": [
+        74
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "wang-da-reading",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Years later, Tie Ruo Nan states that Fang Yuan murdered old man Wang’s entire family and thereby set Wang Er on a revenge path that mistook Fang Zheng for Fang Yuan.",
+      "chapters": [
+        175
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "mistaken-identity",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_ruo_nan",
+        "char_fang_zheng"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/old-man-wang/",
+      "chapters": [
+        4,
+        65,
+        67,
+        68,
+        69,
+        74,
+        90,
+        175
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gu Yue Clan as of ch. 67",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_southern_border",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

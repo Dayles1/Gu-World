@@ -1,0 +1,206 @@
+{
+  "id": "loc_rock_forest",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Rock Forest",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "An underground inverted stone forest inside Qing Mao Mountain, packed with jade eye stone monkeys on drooping rock pillars.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 79,
+    "volume": null,
+    "arc": "evt_arc_qing_mao_mountain"
+  },
+  "chapters_cited": [
+    79,
+    100,
+    114,
+    116
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_flower_wine_monk",
+      "count": 1
+    },
+    {
+      "target": "loc_inheritance_ground",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_golden_centipedes_cave",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A large underground stone forest over thirty mu across. Stone walls rise over sixteen meters, and dark red pillars hang from the stone ceiling like upside-down tree stems without branches, each glowing faintly red with the walls. Pillar surfaces are full of dark holes.",
+      "chapters": [
+        79
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Past a rock door in the Flower Wine Monk inheritance path under Qing Mao Mountain, the space opens into a large underground stone forest over thirty mu across. Stone walls rise over sixteen meters, and dark red pillars hang from the stone ceiling like upside-down tree stems without branches, each glowing faintly red with the walls. Fang Yuan judges the underground space naturally formed inside the mountain.",
+      "chapters": [
+        79
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "layout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_flower_wine_monk",
+        "loc_qing_mao_mountain",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Pillar surfaces are full of dark holes. Jade eye stone monkeys live in those holes, sleep there, and eat the rock when hungry. They stay put unless a traveler comes within about ten meters or provokes them. When killed, a monkey turns to grey rock and leaves two heavy jade-green eye pearls.",
+      "chapters": [
+        79
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "layout",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Deeper into the forest, the pillars grow larger and the monkey gangs denser. Fang Yuan clears paths by fighting and retreating, using the monkeys as training while hunting the next inheritance clue toward the center.",
+      "chapters": [
+        100
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fighting-through-the-pillars",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The largest and thickest pillar stands at the center, hanging from the ceiling almost to the ground, and holds the biggest monkey group on the site.",
+      "chapters": [
+        114
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fighting-through-the-pillars",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After heavy fighting, surviving monkeys relocate and regroup, so an opened path can vanish again.",
+      "chapters": [
+        116
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fighting-through-the-pillars",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the bottom of that central pillar he finds a cave with crude rock stairs leading down into darkness. He treats it as the next inheritance clue and leaves without descending that day.",
+      "chapters": [
+        116
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cave-under-the-central-pillar",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/rock-forest.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/rock-forest/",
+      "chapters": [
+        79,
+        100,
+        114,
+        116
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "forest",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

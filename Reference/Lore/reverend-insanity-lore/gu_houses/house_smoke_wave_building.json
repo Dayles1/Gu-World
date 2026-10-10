@@ -1,0 +1,172 @@
+{
+  "id": "house_smoke_wave_building",
+  "entity_type": "gu_house",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Smoke Wave Building",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Smoke Wave Building is Fang clan's rank seven Immortal Gu House.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2259,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2259,
+    2260
+  ],
+  "relations": [
+    {
+      "type": "owners",
+      "target": "fac_fang_clan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_fang_clan",
+      "count": 2
+    },
+    {
+      "target": "char_zuo_qiu_san_sha",
+      "count": 2
+    },
+    {
+      "target": "move_vortex_sweep",
+      "count": 2
+    },
+    {
+      "target": "house_thought_expelling_pavilion",
+      "count": 2
+    },
+    {
+      "target": "char_shi_kang",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "house_chicken_dog_coop",
+      "count": 1
+    },
+    {
+      "target": "house_myriad_age_building",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Two Fang clan rank seven Gu Immortals fly out of Chicken Dog Coop and take out a two-floor short building. As the house activates, the roof releases dense smoke. Alliance immortals call it a completely new Immortal Gu House and take Fang clan’s sale of resource points as having gathered enough from Heaven Refining Demon Venerable to construct another. Shi Kang approaches and probes it. The house is not fast, but dense smoke on the roof keeps gushing out, fills most of the battlefield, and attempts to engulf Zuo Qiu San Sha. Alliance immortals do not understand the smoke’s power, so they retreat carefully. Qin Lang activates Vortex Sweep and most of the smoke dissipates, clearing the surroundings. Shi Kang is covered in black smoke and retreats with a shout. The dense black smoke emitted by the house makes defense extremely difficult for him.",
+      "chapters": [
+        2259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_fang_clan",
+        "sys_gu_immortal",
+        "house_chicken_dog_coop",
+        "sys_immortal_gu_house",
+        "char_shi_kang",
+        "char_zuo_qiu_san_sha",
+        "move_vortex_sweep"
+      ]
+    },
+    {
+      "text": "Deviation (recorded): this page is filed under gu-houses because Smoke Wave Building is a named Immortal Gu House. It is mobile equipment of Fang clan, not a five-region map seat.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Under Myriad Age Building’s lead, the alliance army gives chase. The immortals first destroy Smoke Wave Building, then destroy Thought Expelling Pavilion.",
+      "chapters": [
+        2260
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "myriad-age-chase",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "house_myriad_age_building",
+        "house_thought_expelling_pavilion"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu-houses/smoke-wave-building.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu-houses/smoke-wave-building/",
+      "chapters": [
+        2259,
+        2260
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Owners": {
+      "text": "Fang Clan",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

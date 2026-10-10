@@ -1,0 +1,115 @@
+{
+  "id": "res_too_much_water",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Too much water",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Too much water is a water path rank eight immortal material created by Third Princess and later treated as extinct.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2242,
+    "volume": null,
+    "arc": "evt_arc_era_of_three_venerables"
+  },
+  "chapters_cited": [
+    2242
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_water",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_water",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "evt_era_remote",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Merfolk Gu Immortals reading the sovereign immortal aperture exchange board name too much water among listed inheritances and materials. They credit Third Princess, the most powerful mermaid of the Remote Antiquity Era, with creating this water path rank eight immortal material. By their account it has already gone extinct, so finding it listed on that board is a shock.",
+      "chapters": [
+        2242
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "third-princess-creation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "evt_era_remote"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/too-much-water/",
+      "chapters": [
+        2242
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Rank": {
+      "text": "VIII",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Water Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

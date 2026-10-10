@@ -1,0 +1,190 @@
+{
+  "id": "sys_soul_beast",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Soul Beast",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "desolate soul beast ancient soul beast immemorial soul beast"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Soul beasts are soul path creatures that fight as beasts. They can form from taken souls on a battlefield, or sit among other path beasts born from heaven and earth.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 703,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    703,
+    898,
+    1042,
+    1341
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "move_soul_beast_summoning",
+      "count": 2
+    },
+    {
+      "target": "move_soul_taker_battlefield",
+      "count": 1
+    },
+    {
+      "target": "sys_desolate_beast",
+      "count": 1
+    },
+    {
+      "target": "move_fighting_soul_battlefield",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_soul_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "res_soul_beast_corpse",
+      "count": 1
+    },
+    {
+      "target": "res_soul_core",
+      "count": 1
+    },
+    {
+      "target": "res_mud_core",
+      "count": 1
+    },
+    {
+      "target": "gu_soul_beast_token",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_black_heaven",
+      "count": 1
+    },
+    {
+      "target": "move_luck_changing_golden_light_path",
+      "count": 1
+    },
+    {
+      "target": "loc_spectral_heaven",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In soul taker battlefield, living beings who die have their souls taken and transformed into soul beasts under the move user’s control. Dark blue soul beasts form in the fog and fight as troops. Fragments of shredded soul beasts can form new ones, and a dead crane’s soul becomes another soul beast for the enemy side.",
+      "chapters": [
+        703
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fighting soul battlefield keeps producing soul beasts without pause. Desolate beast level soul beasts form first, then ancient desolate soul beasts. Prolonged delay raises the fear of immemorial desolate soul beasts appearing as well.",
+      "chapters": [
+        898
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "strength-tiers",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_desolate_beast"
+      ]
+    },
+    {
+      "text": "Soul beasts nurture a soul core in their bodies, about the size of an egg, holding a large number of soul path dao marks and treated as a top tier refinement material. After death, the soul beast’s corpse disappears after some time and has no other use.",
+      "chapters": [
+        1042
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soul-core",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Soul Beast Token as an Immortal Gu is covered on Soul Beast Token. Soul Beast Summoning as a named move is covered on Soul Beast Summoning.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "soul-core",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu",
+        "gu_soul_beast_token",
+        "move_soul_beast_summoning"
+      ]
+    },
+    {
+      "text": "Blood beasts are a type of path beast: they do not reproduce normally, but are born from heaven and earth using natural blood path dao marks. Soul beasts are named in the same group as snow monsters, mud monsters, cloud beasts, year beasts, and rock dragons.",
+      "chapters": [
+        1341
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "path-beast-kinship",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/soul-beast/",
+      "chapters": [
+        703,
+        898,
+        1042,
+        1341
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Creatures",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

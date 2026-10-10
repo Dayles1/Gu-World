@@ -1,0 +1,135 @@
+{
+  "id": "res_will_of_heaven_and_earth",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Will of heaven and earth",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Will of heaven and earth is Heaven Overseeing Tower Lord's other name for heaven's will when naming it as immortal material for restoring Fate Gu.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 886,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    886
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_fate_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_fate_gu",
+      "count": 3
+    },
+    {
+      "target": "char_heaven_overseeing_tower_lord",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Heaven Overseeing Tower Lord states that heaven’s will is also known as the will of heaven and earth: humans have will, and heaven and earth also has will. Beside heaven and earth, humans are tiny like ants and lowly like sand. He names heaven’s will the most important immortal material to restore Fate Gu.",
+      "chapters": [
+        886
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fate-gu-restoration-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heaven_overseeing_tower_lord",
+        "gu_fate_gu"
+      ]
+    },
+    {
+      "text": "Drawing it into the refinement path Gu formation begins a long, arduous stage of management, because the workers must resist boundless heaven’s will so it does not ruin their minds, with severe injury or death as the risk, and Heavenly Court has already lost rank eight Gu Immortals in that process.",
+      "chapters": [
+        886
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "fate-gu-restoration-material",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "fac_heavenly_court",
+        "sys_gu_immortal"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/will-of-heaven-and-earth/",
+      "chapters": [
+        886
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Fate Gu",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

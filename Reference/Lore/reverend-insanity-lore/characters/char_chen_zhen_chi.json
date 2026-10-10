@@ -1,0 +1,330 @@
+{
+  "id": "char_chen_zhen_chi",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chen Zhen Chi",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "chen zhen chi",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Чэнь Чжэнь Чи",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Chen Zhen Chi is a Gu Immortal who crosses into Northern Plains with Feng Jiu Ge's Central Continent group.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 710,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    710,
+    756,
+    811,
+    886,
+    923,
+    925
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_central_continent",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_myriad_dragon_dock",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 756,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_approaching_body",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_myriad_dragon_dock",
+      "count": 4
+    },
+    {
+      "target": "move_approaching_body",
+      "count": 3
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_fairy_ao_xue",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 2
+    },
+    {
+      "target": "fac_heavens_envy_sect",
+      "count": 2
+    },
+    {
+      "target": "char_bu_fei_yan",
+      "count": 2
+    },
+    {
+      "target": "fac_heavenly_lotus_sect",
+      "count": 2
+    },
+    {
+      "target": "char_hui_feng_zi",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_ling_mei",
+      "count": 1
+    },
+    {
+      "target": "move_peerless_crescent_moon_slash",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_old_lord_can_yang",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "char_hei_cheng",
+      "count": 1
+    },
+    {
+      "target": "fac_shadow_sect",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_formation",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Feng Jiu Ge’s party opens a path through saint regional wall, he watches Fairy Ao Xue and Fairy Ling Mei cut seventy-six steps with peerless crescent moon slash and names that killer move a well-known technique of Heaven’s Envy Manor.",
+      "chapters": [
+        710
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "char_fairy_ao_xue",
+        "char_fairy_ling_mei",
+        "fac_heavens_envy_sect"
+      ]
+    },
+    {
+      "text": "He is named as a Gu Immortal of Myriad Dragon Dock and a flying grandmaster. While the group lurks near crimson reed marsh to reinforce Feng Jiu Ge, he is the flying grandmaster who once explored an inheritance ground and obtained an incomplete wisdom path inheritance by chance. Feng Jiu Ge pays a price and buys that incomplete inheritance from him.",
+      "chapters": [
+        756
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "incomplete-wisdom-inheritance-sold",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "fac_myriad_dragon_dock"
+      ]
+    },
+    {
+      "text": "Central Continent talk pairs him with Heavenly Lotus Sect’s Bu Fei Yan in the saying Zhen Chi of the nine heavens, followed by Fei Yan: the first half means he can spread his wings into the immemorial nine heavens so heaven and earth cannot restrict him. He holds the immortal killer move approaching body, and as a flying grandmaster he is not afraid of Old Lord Can Yang’s life chasing fire because he can escape it.",
+      "chapters": [
+        811
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "zhen-chi-of-the-nine-heavens",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_central_continent",
+        "fac_heavenly_lotus_sect",
+        "char_bu_fei_yan",
+        "char_old_lord_can_yang"
+      ]
+    },
+    {
+      "text": "At Luo Po Valley Qin Bai Sheng’s soul suppression forces him back three times in a row, one move each time, and he stabilizes himself in shock and fury.",
+      "chapters": [
+        886
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "soul-suppression-at-luo-po-valley",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_luo_po_valley",
+        "char_qin_bai_sheng"
+      ]
+    },
+    {
+      "text": "When Shadow Sect breaks out he shouts for the enemy to die there and reaches Fairy Ling Mei’s side as fast as Fairy Ao Xue because of that speed. Hei Cheng grits his teeth under the pressure of him and Bu Fei Yan as famous flying grandmasters, recalling the saying Zhen Chi of the nine heavens, followed by Fei Yan. Qin Bai Sheng’s golden chains bind him more effectively than Feng Jiu Ge; he and Bu Fei Yan dodge the mystical lights that drag Feng Jiu Ge, Fairy Ao Xue, and Fairy Ling Mei into the valley, then he calls to take down the escaping Shadow Sect immortals first.",
+      "chapters": [
+        923
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shadow-sect-breakout",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_shadow_sect",
+        "char_hei_cheng"
+      ]
+    },
+    {
+      "text": "With Bu Fei Yan he later uses a peripheral Gu formation to chase and block Hui Feng Zi; alone neither can stop that foe, but together they coordinate the pursuit.",
+      "chapters": [
+        925
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "chase-after-hui-feng-zi",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_formation",
+        "char_hui_feng_zi"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/chen-zhen-chi/",
+      "chapters": [
+        710,
+        756,
+        811,
+        886,
+        923,
+        925
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Central Continent",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Myriad Dragon Dock as of ch. 756",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_central_continent",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,142 @@
+{
+  "id": "res_sand_gull_soil",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Sand gull soil",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Sand gull soil is a Gu material: sand formed from ordinary soil under a worldly sand gull's influence.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 695,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    695,
+    709,
+    1291,
+    2072
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "gu_connect_luck",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_western_desert",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Connect luck Immortal Gu needs the sand of a worldly sand gull’s resting area as food. That sand is sand gull soil, a special resource formed from ordinary soil under the ancient desolate beast’s influence. Fang Yuan needs five thousand kilograms to feed the Gu until it is full. With life essence from a worldly sand gull dead egg condensed into light yellow juice, ordinary sand becomes sand gull soil after a day and a night, and within three days he has enough to feed the Gu fully.",
+      "chapters": [
+        695
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "connect-luck-food",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_connect_luck",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Connect luck Immortal Gu still needs five thousand kilograms of sand gull soil per feeding. Looking at the worldly sand gull dead egg, it could produce another fifteen thousand kilograms, enough for three further feeding sessions.",
+      "chapters": [
+        709
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "feeding-stock-left",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Mini Western Desert, a sand gull soil beach produces sand gull soil. It is a Gu material and was the food of connect luck Immortal Gu; once Fang Yuan no longer holds that Gu, the soil is sold for immortal essence stones. At the beach’s center sits the worldly sand gull dead egg, whose life essence can turn ordinary sand into sand gull soil.",
+      "chapters": [
+        1291
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soil-beach-resource",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mini_western_desert"
+      ]
+    },
+    {
+      "text": "Among Fang Yuan’s sovereign immortal aperture projects is creating sand gull soil, still at an initial phase with little investment.",
+      "chapters": [
+        2072
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "aperture-management",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/materials/sand-gull-soil.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/sand-gull-soil/",
+      "chapters": [
+        695,
+        709,
+        1291,
+        2072
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Worldly sand gull",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

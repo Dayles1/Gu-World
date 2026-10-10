@@ -1,0 +1,158 @@
+{
+  "id": "loc_tian_jing_island",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tian Jing Island",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Eastern Sea's Tian Jing island"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Tian Jing island is an Eastern Sea island Fang Yuan names as the only place natural sky well Gu is found.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 353,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    353
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_eastern_sea",
+      "count": 4
+    },
+    {
+      "target": "fac_yi_clan",
+      "count": 2
+    },
+    {
+      "target": "gu_blue_sky_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_blue_sky_well_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_li_xian",
+      "count": 1
+    },
+    {
+      "target": "gu_sky_well_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_jing_beacon",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan tells Li Xian that rank four blue sky Gu is fused from rank three sky granary Gu and is rare even in Eastern Sea. To raise that Gu to rank five, he names fusion with sky well Gu into rank five blue sky well Gu as the best method, then points to Eastern Sea’s Tian Jing island and adds that in Southern Border only Yi clan might hold sky well Gu.",
+      "chapters": [
+        353
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "source-of-sky-well-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_li_xian",
+        "gu_blue_sky_gu",
+        "reg_eastern_sea",
+        "gu_blue_sky_well_gu",
+        "reg_southern_border",
+        "fac_yi_clan"
+      ]
+    },
+    {
+      "text": "Li Xian repeats the same string of names, blue sky Gu, sky well Gu, blue sky well Gu, and Tian Jing island, when he wonders how Fang Yuan knows them so clearly.",
+      "chapters": [
+        353
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "source-of-sky-well-gu",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/tian-jing-island.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/tian-jing-island/",
+      "chapters": [
+        353
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "island",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

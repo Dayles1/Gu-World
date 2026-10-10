@@ -1,0 +1,178 @@
+{
+  "id": "fac_lei_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Lei Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan named when Lei Gong Cheng introduces himself among caravan vice leaders after Ou clan's father and son are killed.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 252,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    250,
+    251,
+    252
+  ],
+  "relations": [
+    {
+      "type": "members",
+      "target": "char_lei_gong_cheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 252,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_lei_gong_cheng",
+      "count": 4
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_bai_yun",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hei_tu",
+      "count": 1
+    },
+    {
+      "target": "char_jia_long",
+      "count": 1
+    },
+    {
+      "target": "char_ou_fei",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_zhang_clan",
+      "count": 1
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "In the caravan camp, Fang Yuan kills Ou Fei with a punch.",
+      "chapters": [
+        250
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-in-the-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_ou_fei"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing then finishes Ou Yang Gong with a spiral bone spear through the head after he tries to flee. The death of a rank three vice leader freezes the crowd; the camp falls silent as Fang Yuan and Bai Ning Bing stand side by side.",
+      "chapters": [
+        251
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-in-the-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "With Ou Yang Gong and Ou Fei gone, the caravan still counts eleven rank three Gu Masters, but it is only a temporary mix of clans that will not easily unite as cannon fodder. Shang Xin Ci steps out and names the pair as Zhang Clan hidden elders Hei Tu and Bai Yun. Jia Long then laughs that everything was a misunderstanding, and other vice leaders cup their hands in turn. Among them, Lei Gong Cheng names himself of Lei Clan and calls meeting them good fortune. The same exchange praises Zhang Clan as one of the top clans of Southern Border.",
+      "chapters": [
+        252
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-in-the-caravan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "char_shang_xin_ci",
+        "fac_zhang_clan",
+        "char_hei_tu",
+        "char_bai_yun",
+        "char_jia_long",
+        "char_lei_gong_cheng",
+        "reg_southern_border"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/lei-clan/",
+      "chapters": [
+        250,
+        251,
+        252
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

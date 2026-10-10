@@ -1,0 +1,136 @@
+{
+  "id": "char_xue_tu",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xue Tu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xue tu",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сюэ Ту",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xue Tu appears once in Immortal Crane Sect elders' talk about Blood Sea Ancestor inheritances.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 407,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    407
+  ],
+  "relations": [
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_blood_sea_ancestor",
+      "count": 1
+    },
+    {
+      "target": "char_song_zi_xing",
+      "count": 1
+    },
+    {
+      "target": "fac_immortal_crane_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During an Immortal Crane Sect discussion of Blood Sea Ancestor’s many inheritance sites across the five regions, an elder asks whether that former butcher became a famous demonic cultivator after obtaining blood sea inheritance. The talk then turns to Song Zi Xing and the nine true blood sea inheritances.",
+      "chapters": [
+        407
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_immortal_crane_sect",
+        "char_blood_sea_ancestor",
+        "char_song_zi_xing"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xue-tu/",
+      "chapters": [
+        407
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Alignment": {
+      "text": "demonic path as of ch. 407",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": null,
+    "status": "Unknown",
+    "alignment": "demonic path as of ch. 407",
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

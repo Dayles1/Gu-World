@@ -1,0 +1,271 @@
+{
+  "id": "char_bo_dan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bo Dan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "bo dan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Бо Дань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Bo Dan is a living wisdom path Gu Immortal of Eastern Sea Zombie Alliance who joins Shark Demon's attacks on Yu Lu blessed land.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 818,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    818,
+    889,
+    890
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_wisdom",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "in_region",
+      "target": "reg_eastern_sea",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_zombie_alliance",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 818,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_zombie_alliance",
+      "count": 3
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 2
+    },
+    {
+      "target": "path_wisdom",
+      "count": 1
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_shark_demon",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "house_profound_ice_house",
+      "count": 1
+    },
+    {
+      "target": "loc_yu_lu_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_tai_bai_yun_sheng",
+      "count": 1
+    },
+    {
+      "target": "char_blazing_heaven_demoness",
+      "count": 1
+    },
+    {
+      "target": "res_medicine_ice",
+      "count": 1
+    },
+    {
+      "target": "move_freezing_rain_frozen_earth",
+      "count": 1
+    },
+    {
+      "target": "move_fighting_soul_battlefield",
+      "count": 1
+    },
+    {
+      "target": "char_lu_tan_xin",
+      "count": 1
+    },
+    {
+      "target": "gu_star_thought_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_no_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "During an assault inside Yu Lu blessed land, Shark Demon scolds him for taking so long without deducing the flaw in a battlefield killer move. He is a living person and a wisdom path Gu Immortal, yet he cowers under the immortal zombie Shark Demon’s shouting. Shark Demon then says Bo Dan is powerless and that the group must use Profound Ice House to force a path. After the retreat he remarks that they are thankful for Profound Ice House, and Shark Demon’s harsh glance silences him.",
+      "chapters": [
+        818
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_yu_lu_blessed_land",
+        "char_shark_demon",
+        "sys_gu_immortal",
+        "house_profound_ice_house"
+      ]
+    },
+    {
+      "text": "He is a Gu Immortal member of Eastern Sea Zombie Alliance, not an immortal zombie, in difficult straits with low status after joining. Shark Demon brings him for his wisdom path attainment. Before Fang Yuan appears, Bo Dan is the only pseudo-wisdom path Gu Immortal in the group. He has no Immortal Gu and relies on Shark Demon’s defensive immortal killer move in the freezing rain. His wisdom path inheritance is incomplete, low quality, and limited in methods.",
+      "chapters": [
+        889
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-status",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_eastern_sea",
+        "fac_zombie_alliance",
+        "char_fang_yuan",
+        "gu_no_gu"
+      ]
+    },
+    {
+      "text": "When Xing Xiang Zi stalls on dismantling a battlefield killer move, Bo Dan provokes him and pushes for immortal methods, sowing discord while the immortal zombies grow frustrated.",
+      "chapters": [
+        890
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pressure-on-xing-xiang-zi",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/bo-dan/",
+      "chapters": [
+        818,
+        889,
+        890
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Region": {
+      "text": "Eastern Sea",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Zombie Alliance as of ch. 818",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_wisdom"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_eastern_sea",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

@@ -1,0 +1,105 @@
+{
+  "id": "move_willow_wind",
+  "entity_type": "move",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Willow Wind",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Willow Wind is a creation of Wu Yong, used after Snowy Wind of No Return against the Fierce Gorge Seven Ghosts.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2067,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    2067
+  ],
+  "relations": [
+    {
+      "type": "known_users",
+      "target": "char_wu_yong",
+      "role": "creator",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 2067,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wu_yong",
+      "count": 2
+    },
+    {
+      "target": "move_snowy_wind_of_no_return",
+      "count": 2
+    },
+    {
+      "target": "char_green",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At Corpse Emperor Yu Ding Tian, Snowy Wind of No Return kills two of the Fierce Gorge Seven Ghosts. Green leaves then emerge from the remaining five, and branches grow rapidly. They scream miserably as their life force is completely seized. Lush willow branches grow on the corpses.",
+      "chapters": [
+        2067
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "move_snowy_wind_of_no_return",
+        "char_green"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/moves/willow-wind/",
+      "chapters": [
+        2067
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Known users": {
+      "text": "Wu Yong (creator)",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

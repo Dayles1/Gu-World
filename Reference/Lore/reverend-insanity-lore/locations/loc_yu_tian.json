@@ -1,0 +1,227 @@
+{
+  "id": "loc_yu_tian",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yu Tian",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Yu Tian pastureland"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yu Tian is a famous Northern Plains pastureland where tribes gather for a heroes assembly before the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 497,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    497
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_northern_plains",
+      "count": 4
+    },
+    {
+      "target": "char_hei_lou_lan",
+      "count": 2
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 2
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_hao_ji_liu",
+      "count": 1
+    },
+    {
+      "target": "char_zhong_fei_you",
+      "count": 1
+    },
+    {
+      "target": "fac_cheng_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_fang_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_liu_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_nu_er_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_onion_explosion_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_cao_fu_region",
+      "count": 1
+    },
+    {
+      "target": "loc_crescent_lake",
+      "count": 1
+    },
+    {
+      "target": "loc_heroes_assembly",
+      "count": 1
+    },
+    {
+      "target": "loc_onion_valley",
+      "count": 1
+    },
+    {
+      "target": "loc_tian_chuan",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_imperial_court_contest",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_northern_plains_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_chai_ming",
+      "count": 1
+    },
+    {
+      "target": "char_mo_shi_kuang",
+      "count": 1
+    },
+    {
+      "target": "char_hei_xiu_yi",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The sky is pure and azure, and the ground is like a sea of jade. The soil is especially fertile, with water plants growing lushly up to a man’s knee.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Narration calls this the famous Yu Tian of Northern Plains, reputed as one of the most abundant pasturelands, with people gathering under fluttering banners.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Yu Tian’s heroes assembly has already lasted for half a month when Fang Yuan’s side arrives. In the first week every tribe shouts its own slogans; gradually the forces join into alliances until two strongest sides remain: Liu tribe’s Liu Wen Wu and Hei tribe’s Hei Lou Lan.",
+      "chapters": [
+        497
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "alliance-formation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "fac_liu_tribe",
+        "char_liu_wen_wu",
+        "fac_hei_tribe",
+        "char_hei_lou_lan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/yu-tian.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/yu-tian/",
+      "chapters": [
+        497
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "pastureland",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

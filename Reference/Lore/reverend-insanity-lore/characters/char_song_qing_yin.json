@@ -1,0 +1,247 @@
+{
+  "id": "char_song_qing_yin",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Song Qing Yin",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "song qing yin",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Сун Цин Инь",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Water Immortal Water Fairy Water Fairy Song Qing Yin"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Song Qing Yin is the northern plains flying master Ge Yao calls Water Immortal when judging Fang Yuan's flight on poison grassland.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 430,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    430,
+    525,
+    540
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_song_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 525,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_song_tribe",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_dong_po_kong",
+      "count": 2
+    },
+    {
+      "target": "char_wu_ye",
+      "count": 2
+    },
+    {
+      "target": "char_ma_zun",
+      "count": 2
+    },
+    {
+      "target": "loc_mirror_lake",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "loc_poison_grassland",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_song_tribe_alliance_army",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After surviving shadow crow and earth spike rat assaults on poison grassland, Ge Yao ranks Fang Yuan’s flying against three named first-rate northern plains flyers: Lightning Dong Po Kong, Water Immortal Song Qing Yin, and Green Bat Wu Ye.",
+      "chapters": [
+        430
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_poison_grassland",
+        "char_ge_yao",
+        "char_fang_yuan",
+        "char_dong_po_kong",
+        "char_wu_ye"
+      ]
+    },
+    {
+      "text": "At Mirror Lake, Ma tribe breaks two Song tribe defense lines. Song tribe alliance leader Song Qing Yin leads a counterattack and ambush that forces Ma tribe to give up a line, then Ma tribe enslavement master Ma Zun surrounds and kills her in the air with his pegasus group. Song tribe army collapses after Ma tribe stirs internal discord, and Ma tribe annexes most of the tribes while remnants flee. The same report names her one of the few flying masters of Northern Plains, rank five initial stage Water Fairy, and treats her death as a stepping stone for Ma Zun’s fame.",
+      "chapters": [
+        525
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mirror-lake-battle",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_mirror_lake",
+        "fac_ma_tribe",
+        "fac_song_tribe",
+        "char_ma_zun",
+        "reg_northern_plains"
+      ]
+    },
+    {
+      "text": "Later battlefield talk among Ma tribe flyers still lists Water Fairy Song Qing Yin among the three original flying masters and notes she had already died in battle.",
+      "chapters": [
+        540
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "mirror-lake-battle",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/song-qing-yin/",
+      "chapters": [
+        430,
+        525,
+        540
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "V as of ch. 525",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Song Tribe as of ch. 525",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Dead",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 5,
+        "as_of_chapter": 525,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Dead",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

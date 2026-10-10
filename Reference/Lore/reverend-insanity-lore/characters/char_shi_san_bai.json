@@ -1,0 +1,192 @@
+{
+  "id": "char_shi_san_bai",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Shi San Bai",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "shi san bai",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Ши Сань Бай",
+    "ru_status": "transliteration",
+    "aliases": [
+      "Rockman Gu Immortal Shi San Bai"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Shi San Bai is a rockman Gu Immortal who cheers when Myriad Ravine Mountain Range appears inside Fang Yuan's sovereign immortal aperture.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 2154,
+    "volume": null,
+    "arc": "evt_arc_battle_of_crazed_demon_cave"
+  },
+  "chapters_cited": [
+    2154,
+    2254
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_earth",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_rockmen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_earth",
+      "count": 1
+    },
+    {
+      "target": "race_rockmen",
+      "count": 1
+    },
+    {
+      "target": "char_shi_gua_bi",
+      "count": 2
+    },
+    {
+      "target": "char_yu_zi",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_mini_central_continent",
+      "count": 1
+    },
+    {
+      "target": "char_wu_shuai",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "When Fang Yuan splits a rockman earth path grotto-heaven into the sovereign immortal aperture, a mountain range appears in Mini Central Continent. Shi San Bai shouts that it has appeared and names it their tribe’s Myriad Ravine Mountain Range. He is among the rockman Gu Immortals of that former grotto-heaven who were sent into the sovereign immortal aperture in advance, then fly into the mountain range to speak to cheering rockman Gu Masters and begin earth vein core work.",
+      "chapters": [
+        2154
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_mini_central_continent",
+        "sys_gu_immortal",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Rockman Gu Immortal Shi San Bai thanks Yu Zi for specializing in water path while helping set up an earth path resource point he could not have accomplished alone. He had agreed with Shi Gua Bi to finish that mission, then waits for others to team up when needed. With Shi San Bai as the leader and Yu Zi as the support, the two spend close to ten days finishing the resource point. He shows a respectful expression when Lord Wu Shuai arrives, congratulates Wu Shuai, and later invites Yu Zi to continue teaming up on another earth path resource point. When she refuses, he suggests she take a rest and says from his own experience the mission board is never empty and manpower is short.",
+      "chapters": [
+        2254
+      ],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "earth-path-resource-points",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yu_zi",
+        "char_shi_gua_bi",
+        "char_wu_shuai"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/shi-san-bai/",
+      "chapters": [
+        2154,
+        2254
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Paths": {
+      "text": "Earth path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Rockmen",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [
+      "path_earth"
+    ],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_rockmen",
+    "region": null,
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

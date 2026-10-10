@@ -1,0 +1,136 @@
+{
+  "id": "sys_mortal_will",
+  "entity_type": "system",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Mortal Will",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A mortal will is a will produced by mortal Gu. Under heavy thinking drains such as the light of wisdom, those wills run out fast and in small amounts.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 653,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    653,
+    655
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "sys_special_will",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan retreats from the light of wisdom to activate Gu worms and fill his mind with many types of wills. Mortal Gu cannot create too many wills, and those wills are easily consumed in the light of wisdom. He therefore accumulates a fixed amount of mortal wills before stepping into the light again.",
+      "chapters": [
+        653
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_worms",
+        "sys_mortal_gu"
+      ]
+    },
+    {
+      "text": "Deducing an Immortal Gu recipe demands a great amount of will. Mortal Gu produce too little will each time. Running them at full capacity for days pushes them toward damage if the limit is exceeded. Compared with rank five mortal wisdom path Gu, whose wills are like a puddle, an Immortal Gu’s joyful will pours like a great river. Fang Yuan still notes that mortal Gu were not efficient for that deduction work.",
+      "chapters": [
+        655
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "scale-versus-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_recipe",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Special will as a will type is covered on Special Will. Thought, will, and emotion as a ladder are covered on thought, will, and emotion.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "scale-versus-immortal-gu",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_special_will"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/cultivation/mortal-will/",
+      "chapters": [
+        653,
+        655
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Topic": {
+      "text": "Wisdom path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

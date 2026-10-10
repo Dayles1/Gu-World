@@ -1,0 +1,149 @@
+{
+  "id": "res_frost_ice_flame",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Frost ice flame",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Frost ice flame is a special fire path immortal material that forms where ice and snow path dao marks are dense.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1972,
+    "volume": null,
+    "arc": "evt_arc_great_era_spectral_soul"
+  },
+  "chapters_cited": [
+    1972,
+    2109
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_fire",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_fire",
+      "count": 1
+    },
+    {
+      "target": "sys_heavenly_dao",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_triple_sacred_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_fire_path_immortal_material",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Frost ice flame appears as a pure white flame that flutters in a blizzard and attaches wherever it burns. It is a special fire immortal material. Where ice and snow path dao marks are dense, there is a certain probability that this flame will be produced. Most of the flame is filled with ice and snow path dao marks, but the heart of the flame has dense fire path dao marks.",
+      "chapters": [
+        1972
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-flame-in-snow",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Once the flames grow to a certain size, snowmen and snow monsters burn to death in them. Even Gu Masters find it difficult to stop the immortal material once it spreads. It can burn ice path crystal essence inside a snow crystal formation. Heavenly Dao can create fire path dao marks within ice and snow path dao marks in an extreme snow environment; if the flame spreads unchecked, that terrain can be altered beyond recognition.",
+      "chapters": [
+        1972
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "white-flame-in-snow",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters",
+        "sys_heavenly_dao"
+      ]
+    },
+    {
+      "text": "Frost ice flame is a fire path immortal material produced in an area of dense ice and snow path dao marks, an example of a resource that needs an opposite environment.",
+      "chapters": [
+        2109
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "opposite-environment",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/frost-ice-flame/",
+      "chapters": [
+        1972,
+        2109
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Fire Path",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Origin": {
+      "text": "Areas of dense ice and snow path dao marks",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

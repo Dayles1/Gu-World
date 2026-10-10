@@ -1,0 +1,660 @@
+{
+  "id": "char_prince_feng_xian",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Prince Feng Xian",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Prince Feng Xian is a Northern Plains rank eight Gu Immortal named among the few rank eight seniors when Heavenly Lord Bai Zu sends visitors on to invite him.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 736,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    736,
+    737,
+    743,
+    744,
+    749,
+    754,
+    951,
+    993,
+    1179,
+    1190,
+    1546,
+    1727,
+    1793,
+    1995,
+    2024
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_gong_tribe",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 749,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_spirit_affinity_house",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 744,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "member_of",
+      "target": "fac_heavenly_court",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1793,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "holds_gu",
+      "target": "gu_eat_strength_immortal_gu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 758,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_phoenix_chirping_divine_flame",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "fac_gong_tribe",
+      "count": 4
+    },
+    {
+      "target": "fac_spirit_affinity_house",
+      "count": 3
+    },
+    {
+      "target": "gu_eat_strength_immortal_gu",
+      "count": 3
+    },
+    {
+      "target": "fac_heavenly_court",
+      "count": 3
+    },
+    {
+      "target": "move_phoenix_chirping_divine_flame",
+      "count": 3
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 2
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "char_heavenly_lord_bai_zu",
+      "count": 2
+    },
+    {
+      "target": "char_swordmaster_you_lan",
+      "count": 2
+    },
+    {
+      "target": "loc_feng_xian_grotto_heaven",
+      "count": 2
+    },
+    {
+      "target": "char_feng_jiu_ge",
+      "count": 2
+    },
+    {
+      "target": "fac_longevity_heaven",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_li_shan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_qin_bai_sheng",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_huang_jin_bloodline",
+      "count": 1
+    },
+    {
+      "target": "sys_sword_path_dao_marks",
+      "count": 1
+    },
+    {
+      "target": "house_eighty_eight_true_yang_building",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "reg_central_continent",
+      "count": 1
+    },
+    {
+      "target": "fac_yao_tribe",
+      "count": 1
+    },
+    {
+      "target": "gu_moon_demon_bat_claw_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 1
+    },
+    {
+      "target": "house_medicine_cottage",
+      "count": 1
+    },
+    {
+      "target": "char_zhao_lian_yun",
+      "count": 1
+    },
+    {
+      "target": "loc_luo_po_valley",
+      "count": 1
+    },
+    {
+      "target": "char_hui_feng_zi",
+      "count": 1
+    },
+    {
+      "target": "char_gong_er",
+      "count": 1
+    },
+    {
+      "target": "house_golden_dawn_hall",
+      "count": 1
+    },
+    {
+      "target": "char_five_elements_grandmaster",
+      "count": 1
+    },
+    {
+      "target": "char_old_ancestor_xue_hu",
+      "count": 1
+    },
+    {
+      "target": "char_yao_huang",
+      "count": 1
+    },
+    {
+      "target": "loc_hei_fan_grotto_heaven",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_new_blessed_land_crazed_demon",
+      "count": 1
+    },
+    {
+      "target": "gu_longevity_edict",
+      "count": 1
+    },
+    {
+      "target": "char_gong_wan_ting",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_blood_battle_martial_competition",
+      "count": 1
+    },
+    {
+      "target": "char_south_desolation_immortal",
+      "count": 1
+    },
+    {
+      "target": "char_le_yao",
+      "count": 1
+    },
+    {
+      "target": "loc_loose_tail_ridge",
+      "count": 1
+    },
+    {
+      "target": "move_assimilation_wind_song",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_central_continent_chaos",
+      "count": 1
+    },
+    {
+      "target": "char_yuan_rang_zun",
+      "count": 1
+    },
+    {
+      "target": "char_bai_cang_shui",
+      "count": 1
+    },
+    {
+      "target": "move_blood_petals",
+      "count": 1
+    },
+    {
+      "target": "move_yellow_flowers_thinning_life",
+      "count": 1
+    },
+    {
+      "target": "move_farewell_friend_wind",
+      "count": 1
+    },
+    {
+      "target": "char_ye_qiao_zi",
+      "count": 1
+    },
+    {
+      "target": "char_zhu_que_er",
+      "count": 1
+    },
+    {
+      "target": "move_extreme_ice_crystal_light_immortal_suppression_coffin",
+      "count": 1
+    },
+    {
+      "target": "char_lin_jian_xing",
+      "count": 1
+    },
+    {
+      "target": "gu_sword_qi_gu",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "After leaving Heavenly Lord Bai Zu, Fairy Li Shan and Qin Bai Sheng hurry toward him as their last invitee,",
+      "chapters": [
+        736
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_heavenly_lord_bai_zu",
+        "char_fairy_li_shan",
+        "char_qin_bai_sheng"
+      ]
+    },
+    {
+      "text": "and Qin Bai Sheng calls him a model of the righteous path. Fang Yuan refuses to go along, judging him a rank eight Gu Immortal with an investigative Immortal Gu of at least rank seven.",
+      "chapters": [
+        737
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_immortal",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "He wears a tall crown and a golden cape.",
+      "chapters": [
+        1727
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Feng Xian grotto-heaven he sits as a rank eight Gu Immortal, praises the auction for reducing fights, and declines to attend himself because he is mediating heaven and earth qi in his immortal aperture after being forced out by Immortal Gu work. He says he will send someone to represent him, names Immortal Gu that do not suit his path for exchange at the sale, and has Swordmaster You Lan send the visitors off.",
+      "chapters": [
+        743
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-by-proxy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_feng_xian_grotto_heaven",
+        "char_swordmaster_you_lan"
+      ]
+    },
+    {
+      "text": "At the auction hall he is counted among the five rank eight Gu Immortals as a righteous path Gu Immortal and only an external supreme elder of Gong tribe, without Huang Jin bloodline, living outside for years after grievances with that tribe and helping only in huge crises.",
+      "chapters": [
+        749
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-by-proxy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gong_tribe",
+        "fac_huang_jin_bloodline"
+      ]
+    },
+    {
+      "text": "Bidders treat him as a fire path cultivator when they wonder why he would want a water path Immortal Gu.",
+      "chapters": [
+        754
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "auction-by-proxy",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After Qin Bai Sheng and Fairy Li Shan leave, he meets Feng Jiu Ge as an equal and warns that a Central Continent immortal aperture will stand out among furious Northern Plains Gu Immortals hunting the Imperial Court culprit. Narration states that this rank eight expert of Northern Plains is a spy sent by Spirit Affinity House, placed there for the plan to topple Eighty-Eight True Yang Building. Feng Jiu Ge praises him for ascending in Northern Plains for that sect task and staying hidden for hundreds of years.",
+      "chapters": [
+        744
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-affinity-house-spy",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_feng_jiu_ge",
+        "reg_central_continent",
+        "reg_northern_plains",
+        "loc_imperial_court",
+        "fac_spirit_affinity_house",
+        "house_eighty_eight_true_yang_building"
+      ]
+    },
+    {
+      "text": "He later recounts his own climb: cultivation from age thirteen, rank four at sixteen, rank five peak at eighteen, a sect mission into Northern Plains, rank six after three years, Gong tribe membership, and rank eight after a hundred years without his true identity exposed. Spirit Affinity House pairs him with Feng Jiu Ge as its Northern and Central pride, and he primarily cultivates fire path.",
+      "chapters": [
+        1546
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "spirit-affinity-house-spy",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At Luo Po Valley he wears a mask. His figure is blurry and shrouded in fog, and his true appearance is concealed.",
+      "chapters": [
+        951
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "disguised-appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_luo_po_valley"
+      ]
+    },
+    {
+      "text": "When Feng Jiu Ge goes quiet after freeing himself, Prince Feng Xian reasons that he must be staying low to see which of Spirit Affinity House’s own people had turned on him during his disappearance, and a rank eight Gu Immortal’s full-strength search soon turns up Feng Jiu Ge nearby.",
+      "chapters": [
+        993
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "feng-jiu-ge-found",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Prince Feng Xian is doing nothing on the surface, but he is secretly retrieving blessed lands. At that time Yao Huang and Old Ancestor Xue Hu are busy refining Gu and Five Elements Grandmaster is busy dealing with Longevity Heaven, while Heavenly Lord Bai Zu picks his timing against Hei Fan grotto-heaven.",
+      "chapters": [
+        1179
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "retrieving-blessed-lands",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yao_huang",
+        "char_old_ancestor_xue_hu",
+        "char_five_elements_grandmaster",
+        "fac_longevity_heaven",
+        "loc_hei_fan_grotto_heaven"
+      ]
+    },
+    {
+      "text": "A later summary states that he returns to Heavenly Court, calling that return a huge traitor blow to Northern Plains’ righteous path and an implication for Longevity Heaven.",
+      "chapters": [
+        1793
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-return",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_heavenly_court"
+      ]
+    },
+    {
+      "text": "In the two heavens fighting he and Bai Cang Shui are treated as elite rank eights able to become Heavenly Court members and therefore above ordinary rank eights.",
+      "chapters": [
+        1995
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-return",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_cang_shui"
+      ]
+    },
+    {
+      "text": "Heavenly Court narration later restates that he came from Spirit Affinity House as a spy into Northern Plains, reached rank eight, married into Gong tribe, and became the strongest Central Continent spy in that region.",
+      "chapters": [
+        2024
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "heavenly-court-return",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/characters/prince-feng-xian.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/prince-feng-xian/",
+      "chapters": [
+        736,
+        737,
+        743,
+        744,
+        749,
+        754,
+        951,
+        993,
+        1179,
+        1190,
+        1546,
+        1727,
+        1793,
+        1995,
+        2024
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 736",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Affiliations": {
+      "text": "Gong tribe as of ch. 749 Spirit Affinity House as of ch. 744 Heavenly Court as of ch. 1793",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": "Alive",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 736,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_northern_plains",
+    "status": "Alive",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": [
+    {
+      "gu": "gu_eat_strength_immortal_gu",
+      "role": "unspecified",
+      "recorded_chapter": 758,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ]
+}

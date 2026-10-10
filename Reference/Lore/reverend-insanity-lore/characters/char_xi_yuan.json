@@ -1,0 +1,206 @@
+{
+  "id": "char_xi_yuan",
+  "entity_type": "character",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xi Yuan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": "xi yuan",
+    "pinyin_status": "derived_from_en_romanization",
+    "ru": "Си Юань",
+    "ru_status": "transliteration",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Xi Yuan is a Western Desert Late Antiquity Era sword path rank eight Gu Immortal. He created sword abyss and killed three rank eight Gu Immortals.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1432,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1432,
+    1434
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "race",
+      "target": "race_humans",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "uses_move",
+      "target": "move_sword_burial_abyss",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "move_sword_burial_abyss",
+      "count": 3
+    },
+    {
+      "target": "race_humans",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_dao_jiu_lang",
+      "count": 2
+    },
+    {
+      "target": "char_huang_shi",
+      "count": 2
+    },
+    {
+      "target": "evt_era_late",
+      "count": 1
+    },
+    {
+      "target": "loc_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "path_blade",
+      "count": 1
+    },
+    {
+      "target": "move_nine_nine_reincarnation_blades",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Lord Huang Shi, in a River of Time segment from about a hundred thousand years earlier, names him among the Late Antiquity experts whose fight left sword qi and blade light in that water. Remnant immortal killer moves from his deathmatch with Dao Jiu Lang can still appear and attack travelers there.",
+      "chapters": [
+        1432
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_huang_shi",
+        "loc_river_of_time",
+        "evt_era_late",
+        "char_dao_jiu_lang"
+      ]
+    },
+    {
+      "text": "Spectral Soul’s will triggers his main trump card from the suppressed river wave against Lord Huang Shi. Huang Shi names that signature killer move sword burial abyss. Deep sword qi locks him in place and swallows his life force until he dies.",
+      "chapters": [
+        1434
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "signature-move",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/characters/xi-yuan/",
+      "chapters": [
+        1432,
+        1434
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Ranks": {
+      "text": "VIII as of ch. 1432",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Race": {
+      "text": "Humans",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Status": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  },
+  "cultivation": {
+    "rank_timeline": [
+      {
+        "rank": 8,
+        "as_of_chapter": 1432,
+        "confidence": "B"
+      }
+    ],
+    "rank_timeline_note": "As recorded by the source infobox; may stop before the character's final rank. Gu Master rank, not Gu rank.",
+    "paths": [],
+    "aperture": null,
+    "talent_grade": null
+  },
+  "biography": {
+    "race": "race_humans",
+    "region": "reg_western_desert",
+    "status": "Unknown",
+    "alignment": null,
+    "age": null,
+    "birthplace": null
+  },
+  "gu_held": []
+}

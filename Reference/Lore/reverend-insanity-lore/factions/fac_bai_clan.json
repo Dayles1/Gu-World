@@ -1,0 +1,547 @@
+{
+  "id": "fac_bai_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Clan of Qing Mao Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [
+      "Bai family Bai village"
+    ],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Bai clan is one of the three clans that share Qing Mao Mountain in the Southern Border, and Bai Ning Bing is the genius Gu Yue elders treat as the pressure on their own rise.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1,
+    "volume": null,
+    "arc": "evt_arc_gu_yue_village"
+  },
+  "chapters_cited": [
+    1,
+    45,
+    65,
+    74,
+    123,
+    124,
+    132,
+    140,
+    173,
+    198,
+    220,
+    233
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_ning_bing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_clan_leader",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 120,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_zhong_shui",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 124,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_bing_yi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 125,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_clan_leader",
+      "count": 4
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 3
+    },
+    {
+      "target": "char_bai_zhong_shui",
+      "count": 3
+    },
+    {
+      "target": "char_bai_bing_yi",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_village",
+      "count": 2
+    },
+    {
+      "target": "char_gu_yue_qing_shu",
+      "count": 2
+    },
+    {
+      "target": "char_xiong_zhan",
+      "count": 2
+    },
+    {
+      "target": "gu_moonlight_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_stream_gu",
+      "count": 2
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "sys_a_grade",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_xiong_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_gu_yue_village",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_xiong_village",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "fac_caravan",
+      "count": 1
+    },
+    {
+      "target": "gu_bear_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "gu_red_steel_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "res_bitter_shell_wine",
+      "count": 1
+    },
+    {
+      "target": "gu_fish_scale_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_alliance_slope",
+      "count": 1
+    },
+    {
+      "target": "gu_water_drill_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_battle_merits",
+      "count": 1
+    },
+    {
+      "target": "sys_northern_dark_ice_soul_physique",
+      "count": 1
+    },
+    {
+      "target": "sys_ten_extreme_physique",
+      "count": 1
+    },
+    {
+      "target": "gu_blue_bird_ice_coffin_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_pine_needle_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_gu_yue_qing_shu_and_gu_yue_yao_hong_against_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "gu_thunderwings_gu",
+      "count": 1
+    },
+    {
+      "target": "char_thunder_crown_wolf",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_fang_yuan_against_bai_ning_bing_second_battle",
+      "count": 1
+    },
+    {
+      "target": "res_thunder_crown_wolf_blood",
+      "count": 1
+    },
+    {
+      "target": "res_thunder_crown_wolf_bones",
+      "count": 1
+    },
+    {
+      "target": "res_thunder_crown_wolf_eyes",
+      "count": 1
+    },
+    {
+      "target": "res_thunder_crown_wolf_fur",
+      "count": 1
+    },
+    {
+      "target": "char_chainsaw_mad_demon",
+      "count": 1
+    },
+    {
+      "target": "gu_thunder_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_wolf_tide",
+      "count": 1
+    },
+    {
+      "target": "gu_white_form_immortal_snake",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "On alliance ground, Bai clan Gu Masters have whitish skin and a Yin aura, which the narration links to living by the waterfall behind the mountain.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "Qing Mao Mountain holds three mountain villages. Gu Yue Village sits at the mountain waist, the Xiong family village on the fore mountain, and the Bai family village at the back mountain waterfall.",
+      "chapters": [
+        65
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_qing_mao_mountain",
+        "loc_gu_yue_village",
+        "loc_xiong_village",
+        "loc_bai_village"
+      ]
+    },
+    {
+      "text": "Merchants already name the Bai and Xiong families as the other two clan families on the mountain while a caravan is still in Gu Yue Village.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bai Gu Masters on alliance ground are described with whitish skin and a Yin aura, which the narration links to living by that waterfall.",
+      "chapters": [
+        124
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The clan’s signature Gu among the three-clan exchange talk is Stream Gu, not exchangeable for clan resources, the same as Gu Yue’s Moonlight Gu and Xiong’s Bear Strength Gu.",
+      "chapters": [
+        123
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "where-it-sits",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_stream_gu",
+        "fac_gu_yue_clan",
+        "gu_moonlight_gu",
+        "gu_bear_strength_gu"
+      ]
+    },
+    {
+      "text": "Gu Yue elders open the novel already worried about Bai Ning Bing: rank three after about two years of training, and someone they expect to become a Bai clan pillar.",
+      "chapters": [
+        1
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rise-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Merchants later name him as an A grade talent of the Bai family whose appearance tracks with Bai clan’s fast growth on Qing Mao Mountain.",
+      "chapters": [
+        45
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rise-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_a_grade"
+      ]
+    },
+    {
+      "text": "Later talk on Qing Mao Mountain treats Bai Ning Bing as the only successful A grade talent nurtured among the three clans in those years, and treats Bai clan village as gradually rising while Gu Yue still holds dominance under pressure.",
+      "chapters": [
+        74
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rise-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bai Ning Bing is the Bai clan figure that rivalry builds fights around. Gu Yue Qing Shu faces Bai Ning Bing in a rank three-scale fight after Bai Ning Bing kills Gu Yue Gu Masters and breaks the three-clan alliance.",
+      "chapters": [
+        140
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rise-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_ning_bing",
+        "char_gu_yue_qing_shu"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing is also written as the clan’s living symbol: after he kills a Bai clansman who cried for rescue and then loots Xiong Zhan while ignoring the Gu-return treaty, the narration states that the clan would definitely protect him for ignoring that rule.",
+      "chapters": [
+        132
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rise-and-rivalry",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_xiong_zhan"
+      ]
+    },
+    {
+      "text": "Bai clan leader talk during the later mountain crisis treats Bai clan as a small-medium scale clan whose spirit spring is its foundation, and whose path to becoming a large scale clan would require annexing Gu Yue and Xiong ground and holding at least three springs.",
+      "chapters": [
+        173
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rise-and-rivalry",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During the fight at Qing Mao Mountain’s destruction, Bai Ning Bing kills a Bai clansman and says that with so many dead the clan’s future is already ruined, that it can no longer be a village, and that the clan leader he is indebted to is dead too. Bai Ning Bing and Fang Yuan go on to kill everyone else inside the blood barrier, Gu Masters and mortals alike, and outside it no one is spared the aftermath of the battle between the two rank five experts.",
+      "chapters": [
+        198
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ruin-of-the-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "A Tie clan Gu Master’s account, relayed to the leader of a clan near Bai Gu Mountain, says that Qing Mao Mountain’s three clans were completely wiped out.",
+      "chapters": [
+        220
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ruin-of-the-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_tie_clan",
+        "sys_gu_master",
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing later counts the former Bai clan leader of her own clan among the people who helped her, whereas she sees the Bai clan of Bai Gu Mountain, a different clan of the same name, as destined to be her enemy.",
+      "chapters": [
+        233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ruin-of-the-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_clan_leader",
+        "fac_bai_clan_bai_gu_mountain"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/bai-clan/",
+      "chapters": [
+        1,
+        45,
+        65,
+        74,
+        123,
+        124,
+        132,
+        140,
+        173,
+        198,
+        220,
+        233
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

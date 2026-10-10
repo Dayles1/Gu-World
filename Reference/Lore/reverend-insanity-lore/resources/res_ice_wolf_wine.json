@@ -1,0 +1,112 @@
+{
+  "id": "res_ice_wolf_wine",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Ice wolf wine",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Ice wolf wine is a brew from Bing Zhuo's winery among the snowman Gu Immortals.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1143,
+    "volume": null,
+    "arc": "evt_arc_heavenly_court_pursuit"
+  },
+  "chapters_cited": [
+    1143,
+    1584
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_bing_zhuo",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_xue_er",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "At a feast with snowman and rockman Gu Immortals, Bing Zhuo has ice wolf wine brought from his winery after Fang Yuan rejects lip fish wine. The wine is served in an ice bowl, almost frozen and releasing cold air. Bing Zhuo says he brewed it himself because he dislikes lip fish wine. The first sip is icy cold in the mouth, then hot like fire in the throat; Fang Yuan calls it good wine and drains the bowl. Xue Er later pours ice wolf wine for him during the same feast.",
+      "chapters": [
+        1143
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "bing-zhuo-brew",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "char_bing_zhuo",
+        "char_fang_yuan",
+        "char_xue_er"
+      ]
+    },
+    {
+      "text": "Narration later recalls that Bing Zhuo once invited Fang Yuan to drink his ice wolf wine and that the two had a rather good relationship.",
+      "chapters": [
+        1584
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "prior-invitation",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/ice-wolf-wine/",
+      "chapters": [
+        1143,
+        1584
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Origin": {
+      "text": "Bing Zhuo winery",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

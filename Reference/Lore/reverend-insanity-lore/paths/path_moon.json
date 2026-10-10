@@ -1,0 +1,161 @@
+{
+  "id": "path_moon",
+  "entity_type": "path",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Moon Path",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The moon path is the Gu path of moon path Gu Immortals, moon path killer moves, and moon path dao marks.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 795,
+    "volume": null,
+    "arc": "evt_arc_blessed_land_consolidation"
+  },
+  "chapters_cited": [
+    795,
+    2169
+  ],
+  "relations": [],
+  "co_mentions": [
+    {
+      "target": "char_half_moon_brutemaster",
+      "count": 2
+    },
+    {
+      "target": "char_yin_wu_que",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_pi_shui_han",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_jade_pool_blessed_land",
+      "count": 1
+    },
+    {
+      "target": "evt_era_olden",
+      "count": 1
+    },
+    {
+      "target": "move_crescent_moon_thrust",
+      "count": 1
+    },
+    {
+      "target": "move_moon_rise",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The novel treats moon path as a named cultivation path with ranked Gu Immortals, Immortal Gu, killer moves, and dao marks built around the moon.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "intro",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_gu_immortal",
+        "sys_immortal_gu"
+      ]
+    },
+    {
+      "text": "Half Moon Brutemaster is named a rank six peak Gu Immortal of the moon path who joins a clash drawn by Pi Shui Han’s fight. He holds an Immortal Gu that can pierce space and open a pathway into Jade Pool blessed land, and he unleashes a killer move when Fang Yuan’s group enters through that hole.",
+      "chapters": [
+        795
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "what-the-path-governs",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_half_moon_brutemaster",
+        "char_pi_shui_han",
+        "loc_jade_pool_blessed_land",
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "Yin Wu Que inherits the inheritance of an Olden Antiquity moon path Gu Immortal great expert and fights with a complete moon path combat system. Killer moves such as Crescent Moon Thrust, Moon Rise, and moonblade methods produce crescent moonblades. A waxing crescent moon in the sky amplifies his moon path killer moves, and when those moves are destroyed or countered the lingering moon path dao marks are absorbed so the crescent grows toward a full moon that raises his offense and defense to their strongest state.",
+      "chapters": [
+        2169
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "moon-path-combat-system",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yin_wu_que",
+        "evt_era_olden",
+        "move_crescent_moon_thrust",
+        "move_moon_rise"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/paths/moon.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/paths/moon/",
+      "chapters": [
+        795,
+        2169
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Roundel": {
+      "text": "Moon path",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

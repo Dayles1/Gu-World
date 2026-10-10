@@ -1,0 +1,405 @@
+{
+  "id": "gu_carapace_gu",
+  "entity_type": "gu",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Carapace Gu",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Carapace Gu is a rank two Gu that enhances a Gu Master's back defense.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 204,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    204,
+    205,
+    208,
+    209,
+    222,
+    228
+  ],
+  "relations": [
+    {
+      "type": "held_by",
+      "target": "char_fang_yuan",
+      "role": "user",
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 204,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_fang_yuan",
+      "count": 2
+    },
+    {
+      "target": "gu_crocodile_strength_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_ribcage_shield_gu",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "gu_sky_canopy_gu",
+      "count": 1
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 1
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "path_strength",
+      "count": 1
+    },
+    {
+      "target": "sys_defensive_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_frenzy_needle_bee_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flying_bone_shield_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_earth_communication_ear_grass",
+      "count": 1
+    },
+    {
+      "target": "gu_chainsaw_golden_centipede",
+      "count": 1
+    }
+  ],
+  "claims": [],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/gu/carapace-gu.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/gu/carapace-gu/",
+      "chapters": [
+        204,
+        205,
+        208,
+        209,
+        222,
+        228
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "classification": {
+    "ranks": [
+      {
+        "rank": 2,
+        "recorded_chapter": null,
+        "confidence": "B"
+      }
+    ],
+    "rank_type": "mortal",
+    "is_immortal_gu": null,
+    "paths": [],
+    "path_unverified": false,
+    "functional_types": [],
+    "effect_type_raw": null,
+    "organism_type": "unknown",
+    "organism_type_basis": null,
+    "claims": [
+      {
+        "text": "No cited chapter names a cultivation path for this Gu.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "path",
+        "text_origin": "source_excerpt"
+      }
+    ]
+  },
+  "appearance": {
+    "claims": [
+      {
+        "text": "It is palm-size, with a turtle shell whose protruding surface is covered in crocodile scales. After refinement it flies to the back and forms a large scale insignia like a tattoo, from shoulder to waist, covering the whole back.",
+        "chapters": [
+          204
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "appearance",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Both Carapace Gu and Crocodile Strength Gu are rank two Gu worms from that hundred beast king. The Carapace Gu is almost dying when found. It is palm-size, with a turtle shell whose protruding surface is covered in crocodile scales.",
+        "chapters": [
+          204
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_crocodile_strength_gu",
+          "sys_gu_worms"
+        ]
+      },
+      {
+        "text": "Once refined, it flies to Fang Yuan’s back and forms a large scale insignia like a tattoo, running from shoulder to waist and covering the whole back.",
+        "chapters": [
+          204
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "form-and-rank",
+        "text_origin": "source_excerpt"
+      }
+    ],
+    "visual_confidence": "text_described"
+  },
+  "abilities": {
+    "activation_raw": null,
+    "claims": [
+      {
+        "text": "As the name suggests, it enhances the defense of a Gu Master’s back.",
+        "chapters": [
+          204
+        ],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Its defensive area is too small for Fang Yuan’s needs because it can only defend the back.",
+        "chapters": [
+          205
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "effect",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "He judges Carapace Gu and Crocodile Strength Gu both imperfect for him at rank one initial stage. He still keeps Carapace Gu because he needs personal defense while Sky Canopy Gu stays with Bai Ning Bing.",
+        "chapters": [
+          205
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_sky_canopy_gu"
+        ]
+      },
+      {
+        "text": "Inside the Bai Gu Mountain inheritance, he notes that Ribcage shield Gu could pair with Carapace Gu for front and back defense, yet he also expects Carapace Gu to be replaced. He chooses Flying bone shield Gu instead.",
+        "chapters": [
+          222
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "citation_unchecked",
+        "source_id": "src_sagaofgu",
+        "section": "fang-yuans-early-use",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "inh_white_bone_inheritance",
+          "gu_ribcage_shield_gu",
+          "gu_flying_bone_shield_gu"
+        ]
+      }
+    ]
+  },
+  "feeding": {
+    "known": false,
+    "food_raw": null,
+    "foods": [],
+    "claims": []
+  },
+  "refinement": {
+    "recipes": [],
+    "used_in_recipes": [],
+    "refinement_materials": [],
+    "confirmed_evolutions": [],
+    "related_variants": [],
+    "claims": []
+  },
+  "economy": {
+    "canonical_prices": [],
+    "price_claims": [],
+    "game_proposals": []
+  },
+  "distribution": {
+    "locations": [],
+    "factions": [],
+    "origin": "unknown",
+    "claims": []
+  },
+  "ownership_history": [
+    {
+      "character": "char_fang_yuan",
+      "role": "user",
+      "recorded_chapter": 204,
+      "from_chapter": null,
+      "to_chapter": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "history": {
+    "claims": [
+      {
+        "text": "Fang Yuan takes Carapace Gu from the corpse of a Grand Crocodile king after Bai Ning Bing kills that hundred beast king on the riverbank stretch toward Bai Gu Mountain. He refines it at once and keeps it as his own back defense while Sky Canopy Gu is lent to Bai Ning Bing.",
+        "chapters": [
+          204
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "char_fang_yuan",
+          "char_bai_ning_bing",
+          "loc_bai_gu_mountain"
+        ]
+      },
+      {
+        "text": "Cited chapters name no Gu Master owner other than Fang Yuan; the worm comes from that beast king corpse.",
+        "chapters": [],
+        "certainty": "inferred",
+        "confidence": "C",
+        "verification": "no_citation",
+        "source_id": "src_sagaofgu",
+        "section": "intro",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "sys_gu_master"
+        ]
+      },
+      {
+        "text": "Activation uses primeval essence poured into the Gu at the back. The skin there becomes uneven, slightly bulging, and turns into tough, thick crocodile skin armor. Ordinary frenzy needle bees cannot penetrate that armor.",
+        "chapters": [
+          208
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "crocodile-skin-armor-and-bee-chase",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "During the frenzy needle bee chase, the crocodile skin armor on his back stops ordinary bees, and Bai Ning Bing draws most of the bee Gu. The Carapace Gu’s small defensive area is usually useless, but that fight helped him a lot and left him with barely any injuries.",
+        "chapters": [
+          208
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "crocodile-skin-armor-and-bee-chase",
+        "text_origin": "source_excerpt"
+      },
+      {
+        "text": "Carapace Gu is among the Gu destroyed in the pursuit, together with earth hearing ear grass, Chainsaw Golden Centipede, iron thistles, stealth scales Gu, and the footless bird. Fang Yuan notes that with iron thistles and carapace Gu gone, he still has canopy Gu and Flying bone shield.",
+        "chapters": [
+          228
+        ],
+        "certainty": "canon",
+        "confidence": "B",
+        "verification": "cross_checked_chapter_summary",
+        "source_id": "src_sagaofgu",
+        "section": "destruction-after-the-bai-gu-pursuit",
+        "text_origin": "source_excerpt",
+        "mentions": [
+          "gu_chainsaw_golden_centipede"
+        ]
+      }
+    ]
+  },
+  "attributes": {
+    "Path": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Food": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Activation": {
+      "text": null,
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

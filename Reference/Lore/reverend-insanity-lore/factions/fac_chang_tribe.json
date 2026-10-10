@@ -1,0 +1,336 @@
+{
+  "id": "fac_chang_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Chang Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe named when Ge Yao hears the cover name Chang Shan Yin and asks whether he belongs to it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 426,
+    "volume": null,
+    "arc": "evt_arc_northern_plains_imperial_court"
+  },
+  "chapters_cited": [
+    426,
+    430,
+    439,
+    447,
+    472
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chang_shan_yin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 430,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chang_sheng_dun",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 439,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chang_biao",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 527,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chang_ji_you",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 527,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_ni_xue_tong",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 530,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_chang_li",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 577,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_chang_shan_yin",
+      "count": 4
+    },
+    {
+      "target": "char_chang_sheng_dun",
+      "count": 3
+    },
+    {
+      "target": "char_chang_biao",
+      "count": 3
+    },
+    {
+      "target": "char_chang_ji_you",
+      "count": 3
+    },
+    {
+      "target": "char_ni_xue_tong",
+      "count": 2
+    },
+    {
+      "target": "char_chang_li",
+      "count": 2
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_ha_tu_gu",
+      "count": 2
+    },
+    {
+      "target": "char_ma_hong_yun",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_ge_yao",
+      "count": 1
+    },
+    {
+      "target": "loc_poison_grassland",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_chang_shan_yin_against_ha_tu_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_snow_wash_gu",
+      "count": 1
+    },
+    {
+      "target": "fac_ge_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_man_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_liu_wen_wu",
+      "count": 1
+    },
+    {
+      "target": "char_ge_guang",
+      "count": 1
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "char_sun_shi_han",
+      "count": 1
+    },
+    {
+      "target": "char_hei_shu",
+      "count": 1
+    },
+    {
+      "target": "char_jiang_dong",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The question comes on poison grassland right after Fang Yuan finishes the poison beard wolf king and Ge Yao closes on him, still treating the stranger as an outsider by clothing and accent.",
+      "chapters": [
+        426
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "first-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_poison_grassland",
+        "char_fang_yuan",
+        "char_ge_yao"
+      ]
+    },
+    {
+      "text": "Ge Yao recalls adults saying Chang tribe had an amazing person, Wolf King Chang Shan Yin, an enslavement path Gu Master heavily nurtured by Chang tribe, able to alter battle formations as he wished, and a righteous figure extremely filial to his mother. Talk places his venture into poison grassland on a search for snow wash Gu inside spiraea after his mother was poisoned, and names Ha Tu Gu as the enemy behind that scheme.",
+      "chapters": [
+        430
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "wolf-king-of-chang-tribe",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_chang_shan_yin",
+        "sys_gu_master",
+        "gu_snow_wash_gu",
+        "char_ha_tu_gu"
+      ]
+    },
+    {
+      "text": "At Ge tribe’s banquet, old Ge tribe leader asks if Chang Shan Yin is of Chang tribe, saying he has several friends there and that his second daughter married into Chang tribe.",
+      "chapters": [
+        439
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ge-tribe-ties",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_ge_tribe"
+      ]
+    },
+    {
+      "text": "At a Man tribe banquet, Chang Shan Yin stands as a righteous hero and the genius Gu Master that Chang tribe nurtured, known across northern plains after he killed Ha Tu Gu and the bandits.",
+      "chapters": [
+        447
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "man-tribe-reputation",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_man_tribe"
+      ]
+    },
+    {
+      "text": "In a later letter used to move Ge Guang, Fang Yuan frames Chang Shan Yin’s mother as secretly poisoned and the poison-grassland ambush as a sinister Chang tribe internal plot meant to suppress him. Fang Yuan’s past-life recollection then has Chang Shan Yin, after helping Ma Hong Yun take Imperial Court, clear Chang tribe higher-ups, become Chang tribe leader, and take revenge for that plot.",
+      "chapters": [
+        472
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "letter-and-past-life",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ge_guang",
+        "char_ma_hong_yun",
+        "loc_imperial_court"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/chang-tribe/",
+      "chapters": [
+        426,
+        430,
+        439,
+        447,
+        472
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

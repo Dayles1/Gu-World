@@ -1,0 +1,261 @@
+{
+  "id": "fac_yang_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yang Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Yang clan is a Southern Border righteous path super force that specializes in soul path and borders Chi clan and Wu clan along yellow dragon river.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1321,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1321,
+    1330,
+    1345,
+    1348,
+    1587,
+    1604
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "fac_chi_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_hou_clan",
+      "count": 2
+    },
+    {
+      "target": "fac_yao_clan",
+      "count": 2
+    },
+    {
+      "target": "char_yang_san_mu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_wu_yong",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "sys_wild_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_poisonous_waterfall",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu_house",
+      "count": 1
+    },
+    {
+      "target": "fac_qiao_clan",
+      "count": 1
+    },
+    {
+      "target": "res_star_path_immortal_material",
+      "count": 1
+    },
+    {
+      "target": "res_star_path_meteor_materials",
+      "count": 1
+    },
+    {
+      "target": "res_soul_core",
+      "count": 1
+    },
+    {
+      "target": "char_chi_bang",
+      "count": 1
+    },
+    {
+      "target": "char_yang_wen_kui",
+      "count": 1
+    },
+    {
+      "target": "char_yang_yin_guang",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Wu Yong lists a wild Immortal Gu near Xuan Ming Mountain and notes that Yang clan, a super force, has already mobilized; if Wu clan cannot seize the Gu, it must destroy it rather than let Yang clan take it. Fang Yuan refuses that task because fighting Yang clan’s Gu Immortal would mean facing a force specialized in soul path.",
+      "chapters": [
+        1321
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wu_yong",
+        "sys_wild_immortal_gu",
+        "fac_wu_clan",
+        "char_fang_yuan",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Yang clan is a neighbor of Chi clan, named with Chi clan and Wu clan among Southern Border powers.",
+      "chapters": [
+        1330
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "super-force-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_chi_clan",
+        "reg_southern_border"
+      ]
+    },
+    {
+      "text": "At the Yang and Wu border, Yang clan plans for a long time, plants mortal Yang clansmen to create conflict with Wu clan, then uses that excuse to invade Wu territory openly and push toward Corpse Mountain. Yao clan, Yang clan, and Hou clan are among the Southern Border clans pressing Wu clan in that period.",
+      "chapters": [
+        1345
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "border-pressure",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yao_clan",
+        "fac_hou_clan"
+      ]
+    },
+    {
+      "text": "Chi clan sits at the extreme west of Southern Border; southwest of it is Yang clan, farther from Chi’s base but with a long shared border and a poor historical relationship. Yang clan’s Ghost Hand Mountain sits at the source of yellow dragon river, holds abundant resources, and is a strategic location; Yang clan Gu Immortals mostly cultivate soul path and threaten Chi clan. East of Yang clan along yellow dragon river lies Wu clan territory. When Chi clan invades, Yang clan has no rank eight Gu Immortal and must answer with its Immortal Gu House and many Gu Immortals in a passive posture.",
+      "chapters": [
+        1348
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ghost-hand-mountain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "sys_immortal_gu_house"
+      ]
+    },
+    {
+      "text": "Yang San Mu is a rank seven Yang clan Gu Immortal who temporarily leads a righteous path formation defense, leaves to fight Fang Yuan, and dies after being trapped in yama battlefield.",
+      "chapters": [
+        1587
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "named-experts",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yang_san_mu"
+      ]
+    },
+    {
+      "text": "Yang Ku is named among Southern Border’s peak soul path representatives; he once destroyed an ancient desolate beast nest alone and escaped an immemorial desolate beast’s pursuit.",
+      "chapters": [
+        1604
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "soul-path-expert",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yang-clan/",
+      "chapters": [
+        1321,
+        1330,
+        1345,
+        1348,
+        1587,
+        1604
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

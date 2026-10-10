@@ -1,0 +1,149 @@
+{
+  "id": "loc_four_seasons_restaurant",
+  "entity_type": "location",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Four Seasons Restaurant",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A famous five-storey restaurant in Shang clan city that seats guests by mortal and Gu Master rank.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 259,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    259
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "A five-storey building of white-black tiles, with a vermillion gate and huge pillars, and the aroma of wine and dishes around it.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Hungry after a hard walk through Shang clan city, Fang Yuan and Bai Ning Bing follow a waiter into a white-black tiled building with a vermillion gate, huge pillars, and the aroma of wine and dishes. When Fang Yuan asks to leave the noisy hall for upstairs, the waiter says the private rooms open only to Gu Masters until Fang Yuan shows snow-silver primeval essence.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ranked-floors-in-shang-clan-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "At the stairs a girl explains the house rule: the first floor hall is for mortals; the second floor serves rank one Gu Masters; the third serves rank two with a twenty percent discount; the fourth serves rank three with a fifty percent discount; the fifth serves rank four with services free of charge. Fang Yuan chooses the fourth floor and is asked to demonstrate his primeval essence before going up.",
+      "chapters": [
+        259
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "ranked-floors-in-shang-clan-city",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": {
+    "url": "https://sagaofgu.com/art/locations/four-seasons-restaurant.webp",
+    "kind": "reference_site_art",
+    "canonical": false,
+    "source_id": "src_sagaofgu"
+  },
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/locations/four-seasons-restaurant/",
+      "chapters": [
+        259
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Type": {
+      "text": "restaurant",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

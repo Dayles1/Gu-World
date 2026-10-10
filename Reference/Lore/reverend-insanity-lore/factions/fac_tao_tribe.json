@@ -1,0 +1,189 @@
+{
+  "id": "fac_tao_tribe",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Tao Tribe",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A Northern Plains tribe whose alliance leader Tao You faces Nu Er Tu during the Imperial Court contest.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 536,
+    "volume": null,
+    "arc": "evt_arc_imperial_court_contest"
+  },
+  "chapters_cited": [
+    536,
+    539,
+    543
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_northern_plains",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_tao_you",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 536,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_tao_you",
+      "count": 4
+    },
+    {
+      "target": "reg_northern_plains",
+      "count": 1
+    },
+    {
+      "target": "char_nu_er_tu",
+      "count": 2
+    },
+    {
+      "target": "fac_yang_tribe",
+      "count": 2
+    },
+    {
+      "target": "fac_qi_lian_tribe",
+      "count": 2
+    },
+    {
+      "target": "loc_imperial_court",
+      "count": 1
+    },
+    {
+      "target": "fac_ma_tribe",
+      "count": 1
+    },
+    {
+      "target": "fac_ye_lui_tribe",
+      "count": 1
+    },
+    {
+      "target": "char_ma_shang_feng",
+      "count": 1
+    },
+    {
+      "target": "fac_hei_tribe",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "The new enslavement master Leopard King Nu Er Tu leads his army against Tao tribe. Tao tribe alliance army has already suffered many setbacks; alliance leader Tao You judges that he has no hope of ascending to Lord of Imperial Court, submits to Nu Er Tu, and after the armies combine their military power surges.",
+      "chapters": [
+        536
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "facing-leopard-king",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_nu_er_tu",
+        "char_tao_you",
+        "loc_imperial_court"
+      ]
+    },
+    {
+      "text": "Previously Nu Er Tu annexed Tao tribe, then lost to Yang tribe, who was then attacked by Ye Lui tribe; in the end Ma tribe defeated Ye Lui tribe and became the final winner. From that battle Ma tribe gained many large tribes, including Tao tribe.",
+      "chapters": [
+        539
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "annexation-chain",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_yang_tribe",
+        "fac_ye_lui_tribe",
+        "fac_ma_tribe"
+      ]
+    },
+    {
+      "text": "After Ma tribe leader Ma Shang Feng dies and Ma tribesmen lose the will to battle, Tao tribe, Yang tribe, and Qi Lian tribe surrender one after another, and that surrender process draws most of Hei tribe’s attention.",
+      "chapters": [
+        543
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "contest-aftermath",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_ma_shang_feng",
+        "fac_qi_lian_tribe",
+        "fac_hei_tribe"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/tao-tribe/",
+      "chapters": [
+        536,
+        539,
+        543
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "tribe",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Northern Plains",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

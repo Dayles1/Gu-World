@@ -1,0 +1,316 @@
+{
+  "id": "fac_xiao_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Xiao Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan first named when assassins on Huo Tan mountain fear mentioning Xiao Fu Lu, grandson of Xiao clan's supreme elder.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 335,
+    "volume": null,
+    "arc": "evt_arc_demonic_path_rise"
+  },
+  "chapters_cited": [
+    335,
+    389,
+    402,
+    962
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_fu_lu",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 335,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_mang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 389,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xiao_shan",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 390,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xiao_fu_lu",
+      "count": 4
+    },
+    {
+      "target": "char_xiao_mang",
+      "count": 4
+    },
+    {
+      "target": "char_xiao_shan",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "char_jiao_huang",
+      "count": 2
+    },
+    {
+      "target": "fac_wu_clan",
+      "count": 2
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_huo_tan_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "path_light",
+      "count": 1
+    },
+    {
+      "target": "move_myriad_self_giant_hand",
+      "count": 1
+    },
+    {
+      "target": "fac_dong_clan",
+      "count": 1
+    },
+    {
+      "target": "sys_information_path_mortal_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "fac_xiao_clan_western_desert",
+      "count": 1
+    },
+    {
+      "target": "reg_western_desert",
+      "count": 1
+    },
+    {
+      "target": "char_lu_zuan_feng",
+      "count": 1
+    },
+    {
+      "target": "gu_extreme_light_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_flash_sword_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_rumbling_thunder_gu",
+      "count": 1
+    },
+    {
+      "target": "house_beacon_tower",
+      "count": 1
+    },
+    {
+      "target": "char_meng_tribe_meng_tu",
+      "count": 1
+    },
+    {
+      "target": "char_pi_shui_han",
+      "count": 1
+    },
+    {
+      "target": "fac_shi_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_sun_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_anti_fang_alliance",
+      "count": 1
+    },
+    {
+      "target": "house_winding_light_platform",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Xiao clan holds Light Mountain, which is more than two and a half kilometers tall.",
+      "chapters": [
+        962
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-first-naming",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "On Huo Tan mountain, on the road toward San Cha mountain, the demonic assassination duo Jiao Huang and Meng Tu recall killing Xiao Fu Lu and warn each other not to speak of him. Jiao Huang says Xiao Fu Lu is the grandson of Xiao clan’s supreme elder, and that killing him offended a Gu Immortal.",
+      "chapters": [
+        335
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance-and-first-naming",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_huo_tan_mountain",
+        "loc_san_cha_mountain",
+        "char_jiao_huang",
+        "char_meng_tribe_meng_tu",
+        "char_xiao_fu_lu",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Fang Yuan recognizes a rank five entrant into the three kings blessed land as Xiao Mang of Xiao clan, an expert of the light path who possesses rank five extreme light Gu, and recalls that in his previous life Xiao Mang appeared on San Cha mountain.",
+      "chapters": [
+        389
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "xiao-mang",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "char_xiao_mang"
+      ]
+    },
+    {
+      "text": "Facing the demonic path across a dog-beast formation, Xiao Mang is the young master of the grand Xiao clan and a famous righteous-path figure who will not lower his head first.",
+      "chapters": [
+        402
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "xiao-mang",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Southern Border’s Light Mountain, more than two and a half kilometers tall and known for light path Gu worms, has been held by a single force for the last thousand years: Xiao clan. Rumors say Southern Border’s Xiao clan and Western Desert’s Xiao clan share one origin, and that a thousand years earlier an internal conflict in the western clan sent the losing side to Southern Border. Southern Border’s Xiao clan was once a super force, but its final remaining Gu Immortal, the supreme elder, had not appeared for a hundred years, and the clan had fallen to a large scale force. Clan leader Xiao Shan stands on a mountain slope looking at the main base partway up the mountain; under pressure from Wu Hui and Wu clan, he enters the clan forbidden area seeking an ancestor’s inheritance, and Xiao Mang appears as his twin brother to seize on that breach and claim the leadership.",
+      "chapters": [
+        962
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "western-desert-origin-rumor",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "reg_southern_border",
+        "sys_gu_worms",
+        "reg_western_desert",
+        "fac_xiao_clan_western_desert",
+        "char_xiao_shan",
+        "fac_wu_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/xiao-clan/",
+      "chapters": [
+        335,
+        389,
+        402,
+        962
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

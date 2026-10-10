@@ -1,0 +1,903 @@
+{
+  "id": "fac_bai_clan_bai_gu_mountain",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Bai Clan of Bai Gu Mountain",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "The Bai clan of Bai Gu Mountain is the large Bai village that, in Fang Yuan's memory, moves its base to Bai Gu Mountain ten years later and becomes the overlord of the land around it.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 214,
+    "volume": null,
+    "arc": "evt_arc_bai_gu_mountain"
+  },
+  "chapters_cited": [
+    214,
+    215,
+    216,
+    217,
+    221,
+    223,
+    226,
+    227,
+    233,
+    234,
+    292,
+    293,
+    294,
+    295,
+    296,
+    298,
+    323,
+    336
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_clan_female_leader",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 215,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_mo_xing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 215,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_cao_shuai",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_hua",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_lian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_mo_ting",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_sheng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_zhan_lie",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 217,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_sheng_jing",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 218,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_zhan_wen",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 227,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_bai_feng",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 293,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_bai_hua",
+      "count": 4
+    },
+    {
+      "target": "char_bai_sheng",
+      "count": 4
+    },
+    {
+      "target": "char_bai_clan_female_leader",
+      "count": 4
+    },
+    {
+      "target": "char_bai_mo_xing",
+      "count": 4
+    },
+    {
+      "target": "char_bai_cao_shuai",
+      "count": 4
+    },
+    {
+      "target": "char_bai_lian",
+      "count": 4
+    },
+    {
+      "target": "char_bai_mo_ting",
+      "count": 4
+    },
+    {
+      "target": "char_bai_zhan_lie",
+      "count": 4
+    },
+    {
+      "target": "char_bai_sheng_jing",
+      "count": 4
+    },
+    {
+      "target": "char_bai_zhan_wen",
+      "count": 4
+    },
+    {
+      "target": "char_bai_feng",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 2
+    },
+    {
+      "target": "gu_arm_bone_wings_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_ribcage_shield_gu",
+      "count": 2
+    },
+    {
+      "target": "char_grey_bone_scholar",
+      "count": 2
+    },
+    {
+      "target": "char_tie_dao_ku",
+      "count": 2
+    },
+    {
+      "target": "fac_bai_clan",
+      "count": 2
+    },
+    {
+      "target": "inh_white_bone_inheritance",
+      "count": 2
+    },
+    {
+      "target": "loc_bai_gu_mountain",
+      "count": 2
+    },
+    {
+      "target": "gu_human_torch_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_lotus_cloth_gu",
+      "count": 2
+    },
+    {
+      "target": "gu_small_tornado_gu",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_fang_zheng",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    },
+    {
+      "target": "fac_tie_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_blood_moon_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_charred_thunder_potato_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_crocodile_strength_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_stealth_scales_gu",
+      "count": 1
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_yue_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_qing_mao_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    },
+    {
+      "target": "gu_green_copper_relic_gu",
+      "count": 1
+    },
+    {
+      "target": "sys_smoke_image",
+      "count": 1
+    },
+    {
+      "target": "gu_clearing_heat_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_anxiety_accumulation_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_swimming_dragon_butterfly_gu",
+      "count": 1
+    },
+    {
+      "target": "char_tie_ao_tian",
+      "count": 1
+    },
+    {
+      "target": "sys_tie_clan_token",
+      "count": 1
+    },
+    {
+      "target": "sys_grey_bone_huge_book",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_spike_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_spiral_bone_spear_gu",
+      "count": 1
+    },
+    {
+      "target": "res_milk",
+      "count": 1
+    },
+    {
+      "target": "gu_flesh_laughter_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_footless_bird_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_flesh_sac_secret_chamber",
+      "count": 1
+    },
+    {
+      "target": "gu_bone_flesh_unity_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_blitz_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_frost_fish_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_arc_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "res_crocodile_flesh",
+      "count": 1
+    },
+    {
+      "target": "char_chen_xin",
+      "count": 1
+    },
+    {
+      "target": "fac_chen_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_yi_tian_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "fac_zhao_clan",
+      "count": 1
+    },
+    {
+      "target": "loc_ju_ren_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_lu_zao_mountain",
+      "count": 1
+    },
+    {
+      "target": "loc_xue_lei_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "gu_poison_vow_gu",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 1
+    },
+    {
+      "target": "loc_shi_zi_restaurant",
+      "count": 1
+    },
+    {
+      "target": "fac_feng_yu_manor",
+      "count": 1
+    },
+    {
+      "target": "loc_zi_you_mountain",
+      "count": 1
+    },
+    {
+      "target": "char_li_ran",
+      "count": 1
+    },
+    {
+      "target": "gu_fountain_thoughts_gu",
+      "count": 1
+    },
+    {
+      "target": "gu_little_wind_drill_gu",
+      "count": 1
+    },
+    {
+      "target": "evt_fight_bai_ning_bing_against_tie_dao_ku",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Fang Yuan recalls that Bai Gu Mountain is still a wild mountain with no human inhabitants, and that ten years later a large village named Bai will move its base there. With the mountain as its centre, that clan would become the overlord of the thousand miles of land around it.",
+      "chapters": [
+        214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "memory-of-the-move",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "loc_bai_gu_mountain"
+      ]
+    },
+    {
+      "text": "What Fang Yuan remembers most clearly is not the rise in power but a pair of twins in the village, Bai Sheng and Bai Hua. At eighteen, during a test in the back area of Bai Gu Mountain, they find a cave by accident and activate the complete inheritance of a rank four righteous Gu Master, who left behind only the title Flesh Bone Lord. The inheritance makes them the twin stars of the righteous path, and a hundred years later both have risen to rank five and taken over Bai village.",
+      "chapters": [
+        214
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "memory-of-the-move",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_sheng",
+        "char_bai_hua",
+        "sys_righteous_path",
+        "char_grey_bone_scholar"
+      ]
+    },
+    {
+      "text": "Bai Mo Xing is sixty-eight and should have retired, but the clan is in a rough stretch, and as an important elder and the uncle of the clan leader he cannot abandon it. A nephew of his introduces him to Fang Yuan and Bai Ning Bing as the clan’s number one elder.",
+      "chapters": [
+        215
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hunting-cover-and-the-dying-spring",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_mo_xing",
+        "char_bai_ning_bing"
+      ]
+    },
+    {
+      "text": "This is a different clan from the Bai clan of Qing Mao Mountain. When Fang Yuan introduces himself as a young master of Qing Mao Mountain’s Gu Yue clan, Bai Mo Xing answers that Qing Mao Mountain has long been destroyed. He then reasons that if the survivors are heading for Bai Gu Mountain too, their main team would be his clan’s enemy.",
+      "chapters": [
+        215
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hunting-cover-and-the-dying-spring",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan",
+        "loc_qing_mao_mountain",
+        "fac_gu_yue_clan"
+      ]
+    },
+    {
+      "text": "On the surface the group is out hunting to temper the young masters’ bravery, and most of its members know nothing more. The real motive is to find a spirit spring on Bai Gu Mountain and start a campaign to exterminate the wild beasts there. Fang Yuan sees at once what lies behind it: the clan’s spirit spring is drying out, and it needs a new one to relocate to. Secrecy matters, because enemy forces who learned of the move could disrupt it and put the whole clan in danger of being wiped out. The clan leader began preparing ten years ahead, sending clansmen to scout the mountain from time to time. Bai Mo Xing invites the pair to be guests of the clan’s main team nearby, and the clan leader who hosts them at the banquet there is a middle-aged woman.",
+      "chapters": [
+        215
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "hunting-cover-and-the-dying-spring",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In private after the banquet, the clan leader, Bai clan’s female leader, turns down Bai Mo Xing’s idea of striking first and resolves to get information on the spirit spring, which she reasons the Gu Yue clan must hold, out of the two young guests, with a plan of her own that he praises. In the camp she is rank four, with five to six clan elders and many rank two Gu Masters under her.",
+      "chapters": [
+        216
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "leader-and-neighbours",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_clan_female_leader",
+        "fac_gu_masters"
+      ]
+    },
+    {
+      "text": "The Fang, Liao and Fan clans lie around the clan and are strong clans of equal power. The leader expects them to attack its weakness if the news of the drying spring gets out, so the search for a new spring runs under the guise of a hunting competition, which restricts it and costs more manpower and resources.",
+      "chapters": [
+        216
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "leader-and-neighbours",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In Fang Yuan’s previous life it is she who leads the clan on the resettlement and sets the foundation for the next generation’s prosperity.",
+      "chapters": [
+        221
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "leader-and-neighbours",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At a banquet in the central tent, Bai Mo Xing introduces four rising rank three youths, two men and two women: Bai Mo Ting, his nephew, who ranked third in that day’s hunt; Bai Cao Shuai, who ranked fourth; Bai Lian, the most beautiful girl in the clan; and Bai Zhan Lie. The clan leader calls Bai Zhan Lie the number one youth expert in the clan.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "youths-and-the-twins",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_mo_ting",
+        "char_bai_cao_shuai",
+        "char_bai_lian",
+        "char_bai_zhan_lie"
+      ]
+    },
+    {
+      "text": "The clan leader also presents her son and daughter, Bai Sheng and Bai Hua, who are still too young to be students. In Fang Yuan’s previous life the two become the famous Righteous Twin Stars, both reach rank five, and the clan rises to an unprecedented height with them, while Bai Sheng eventually becomes the clan leader.",
+      "chapters": [
+        217
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "youths-and-the-twins",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "With Fang Yuan holding the two young masters hostage, the clan leader, who is their birth mother, steadies herself, has the captive Tie Dao Ku released and apologises to him.",
+      "chapters": [
+        221
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pursuit-through-the-inheritance-ground",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_tie_dao_ku"
+      ]
+    },
+    {
+      "text": "She sees that the two intruders’ true destination was the inheritance ground, and when Bai Lian, Bai Sheng Jing and others kneel and ask for punishment for failing to protect the two young masters, she tells them to stand, since they acted on her instructions. Tie Dao Ku judges that the pair, too weak to roam Bai Gu Mountain alone, borrowed the clan’s strength to reach the inheritance.",
+      "chapters": [
+        223
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pursuit-through-the-inheritance-ground",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_sheng_jing"
+      ]
+    },
+    {
+      "text": "Inside the inheritance, Fang Yuan throws Bai Sheng and Bai Hua into the fire of a Gu refinement, and they burn to death, leaving no corpses behind.",
+      "chapters": [
+        226
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pursuit-through-the-inheritance-ground",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "In the tunnel out of the inheritance ground the clan leader leads the elders in pursuit, and the clansmen stop attacking only when Fang Yuan asks whether they want to know where their two young masters are.",
+      "chapters": [
+        227
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pursuit-through-the-inheritance-ground",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At the cliff, elder Bai Zhan Wen burns himself with human torch Gu, a rank four Gu that turns the body into fire until the lifeforce is spent, and asks the clan leader to look after his grandson Bai Zhan Lie. He chases Fang Yuan and Bai Ning Bing through the air and self-detonates when he cannot catch them, and the clan leader vomits blood and faints after watching the pair escape.",
+      "chapters": [
+        227
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pursuit-through-the-inheritance-ground",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_zhan_wen",
+        "gu_human_torch_gu"
+      ]
+    },
+    {
+      "text": "Bai Ning Bing is later said to have been able to watch the twins burn to death coldly because this clan was destined to be her enemy.",
+      "chapters": [
+        233
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "pursuit-through-the-inheritance-ground",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The clan puts out an arrest warrant that shows two youngsters, one male and one female, with an information price of a thousand primeval stones and a separate killing price. It reaches a caravan thousands of li from the clan, where its vice leader reads it as a sign that the clan hates the two to the core.",
+      "chapters": [
+        234
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "arrest-warrant",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "A group of pursuing clansmen arrives at the foot of Shang Clan City.",
+      "chapters": [
+        292
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city"
+      ]
+    },
+    {
+      "text": "Elder Bai Feng, who roamed the Southern Border in his youth and has been to the city before, leads a group of six that includes Bai Lian and Bai Zhan Lie, who wants revenge for his grandfather. From passers-by they learn that Fang Yuan holds a purple thorn token for saving the illegitimate daughter of the Shang clan leader, so in the city they can do nothing to him.",
+      "chapters": [
+        293
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_bai_feng",
+        "reg_southern_border",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "Bai Feng accuses Fang Yuan of slaughtering the clan’s two young clan leaders. Fang Yuan answers that the clan obtained the Bai Gu inheritance only because of him, and at a private table tells them that the two are dead. He then says that the clan’s spirit spring is drying up, a secret held only by the clan leader and a few elders that even Bai Lian and Bai Zhan Lie did not know, and claims the young leaders told him of it before they died, which the narration marks as nonsense.",
+      "chapters": [
+        294
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "inh_white_bone_inheritance"
+      ]
+    },
+    {
+      "text": "Fang Yuan adds that the falling output of primeval stones will leave traces, and that if he spread the secret the neighbouring forces, who covet the inheritance, would move against the clan. He demands three million primeval stones, Bai Feng calls it too much, and Fang Yuan lowers the immediate payment to five hundred thousand within a day, with no clansman left in the city.",
+      "chapters": [
+        295
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Everything is settled on the spot with poison vow Gu. Bai Feng then tells Tie Dao Ku that the clan is withdrawing and can no longer go against the pair, and the clansmen walk out and leave him behind. Bai Feng plans to borrow three hundred thousand from loan sharks on his standing as an elder and to pawn his core small tornado Gu for the rest, Bai Lian adds her lotus cloth Gu, and he says he will take all the responsibility once they return to the clan, which the narration reads as protecting the political prospects of Bai Lian, Bai Zhan Lie and the others.",
+      "chapters": [
+        296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_poison_vow_gu",
+        "gu_small_tornado_gu",
+        "gu_lotus_cloth_gu"
+      ]
+    },
+    {
+      "text": "The clan pays Fang Yuan the five hundred thousand, all it can raise.",
+      "chapters": [
+        298
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan notes that the clan has left the city and that, using the excuse of exploring the Bai Gu inheritance, it is searching for the spirit spring on Bai Gu Mountain faster than in his previous life.",
+      "chapters": [
+        296
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The narration later says the clan had paid almost half of the three million by then, including three hundred thousand Fang Yuan had just received.",
+      "chapters": [
+        323
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan reasons that the clan, whose spring secret he knows and from whom he extorted three million, would have every reason to hate him and may be behind a trap set for him.",
+      "chapters": [
+        336
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "shang-clan-city-encounter",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/bai-clan-bai-gu-mountain/",
+      "chapters": [
+        214,
+        215,
+        216,
+        217,
+        221,
+        223,
+        226,
+        227,
+        233,
+        234,
+        292,
+        293,
+        294,
+        295,
+        296,
+        298,
+        323,
+        336
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

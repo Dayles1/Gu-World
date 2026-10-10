@@ -1,0 +1,235 @@
+{
+  "id": "fac_merman_sacred_court",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Merman Sacred Court",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Its current generation saintess Xie Han Mo came to find evidence of Frost Tide tribe's corruption.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1661,
+    "volume": null,
+    "arc": "evt_arc_red_lotus_true_inheritance"
+  },
+  "chapters_cited": [
+    1661,
+    1663,
+    1664,
+    1665,
+    1668,
+    1669,
+    1674
+  ],
+  "relations": [
+    {
+      "type": "members",
+      "target": "char_xie_han_mo",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1661,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_xia_lin",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 1674,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_xie_han_mo",
+      "count": 4
+    },
+    {
+      "target": "char_xia_lin",
+      "count": 2
+    },
+    {
+      "target": "loc_demon_suppression_regret_crying_sea",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_master",
+      "count": 1
+    },
+    {
+      "target": "loc_merman_sacred_city",
+      "count": 1
+    },
+    {
+      "target": "reg_eastern_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fang Yuan asks to repay the debt of saving his life. He offers help from having operated gambling dens, and says Frost Tide tribe’s money laundering has to run through that den. The saintess accepts the human Gu Master Gu Yue Fang Yuan. Her guards had said she showed herself to save him, they failed to find any evidence, and they made the other party alert.",
+      "chapters": [
+        1661
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan",
+        "sys_gu_master"
+      ]
+    },
+    {
+      "text": "An investigator from it, the jade-scaled merman Wu De, comes to Sacred City to investigate rumors that the current generation saintess Xie Han Mo has an affair with the human Gu Master Gu Yue Fang Yuan. Xie Han Mo asks for the elder assembly’s token. Wu De says he can investigate Fang Yuan without one because Fang Yuan is a human Gu Master with no background. Eastern Sea’s Merman Sacred Court is a super force.",
+      "chapters": [
+        1663
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "investigator-and-token",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_merman_sacred_city",
+        "char_xie_han_mo",
+        "reg_eastern_sea"
+      ]
+    },
+    {
+      "text": "After Xie Han Mo rejects the investigator and protects Fang Yuan, it decides to hold the Sea God Ceremony again to decide on the saintess once more. Xie Han Mo says corruption among its elders has gotten very severe. Bu Su Lian is the wife of the former third elder.",
+      "chapters": [
+        1664
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ceremony-and-elders",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Xie Han Mo became the saintess because she was supported by the grand elder. Among the higher-ups, the grand elder is the fairest and most lenient, with great authority. After Qiu Shuang’s story is exposed, it cannot keep the news secret, Sacred City is in a commotion, and people there call it the biggest scandal in the court for the last thousand years. The higher-ups are furious and the punishment towards Qiu Shuang is rapidly decided.",
+      "chapters": [
+        1665
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "grand-elder",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Frost Tide tribe’s leader says Frost Tide tribe is the largest faction in the court. He says that if he dies, the entire court will be in turmoil or even break apart, and that the grand elder only wants to keep him in check.",
+      "chapters": [
+        1668
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "largest-faction",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Merman Sacred City is inside the blue dragon whale grotto-heaven.",
+      "chapters": [
+        1669
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "grotto-heaven-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Among the sea areas it controls, the most dangerous is Demon Suppression Regret Crying Sea. In the court, the selected saintess has one important mission: to purify that sea.",
+      "chapters": [
+        1674
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "saintess-mission",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_demon_suppression_regret_crying_sea"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/merman-sacred-court/",
+      "chapters": [
+        1661,
+        1663,
+        1664,
+        1665,
+        1668,
+        1669,
+        1674
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "court",
+      "unverified_at_source": false,
+      "linked": false
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "res_qi_path_immortal_material",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Qi path immortal material",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Qi path immortal materials are immortal materials of qi path, gathered, traded, and spent in qi path cultivation and killer moves.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1809,
+    "volume": null,
+    "arc": "evt_arc_central_continent_chaos"
+  },
+  "chapters_cited": [
+    1809,
+    1816,
+    1974,
+    2052
+  ],
+  "relations": [
+    {
+      "type": "path",
+      "target": "path_qi",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "path_qi",
+      "count": 2
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_worms",
+      "count": 1
+    },
+    {
+      "target": "sys_immortal_gu",
+      "count": 1
+    },
+    {
+      "target": "move_unlimited_qi_sea",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Inside a mountain cave tunnel in a dream realm, Fang Yuan finds several qi path immortal materials, and autumn scale concealment qi among them is the biggest help to his escape.",
+      "chapters": [
+        1809
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "dream-realm-stock",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fang_yuan"
+      ]
+    },
+    {
+      "text": "After enough mortal level qi accumulate, they start producing qi path immortal materials. After a longer time those materials stabilize and form a special connection with the environment, the initial formation of a resource point.",
+      "chapters": [
+        1816
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "from-mortal-qi",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "After a qi tide passes, qi path dao marks flood an area and suppress other paths, while qi path immortal materials increase in number. Spectral Soul judges that when those materials are produced widely in the five regions and two heavens, lower cultivation cost will draw many qi path cultivators.",
+      "chapters": [
+        1974
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "qi-tide-yield",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Qi path can use qi path immortal materials in place of Gu worms to execute killer moves. Unlimited Qi Sea can store many kinds of qi as qi path immortal materials: the more it stores, the stronger the move, and offensive use expends immortal essence and immortal materials while defensive use absorbs external qi currents. Primordial Origin’s primordial qi wall holds both qi path Immortal Gu and qi path immortal materials, and Fang Yuan absorbs the materials inside when he breaks the wall.",
+      "chapters": [
+        2052
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "killer-move-trait",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "path_qi",
+        "sys_gu_worms",
+        "move_unlimited_qi_sea",
+        "sys_immortal_gu"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/qi-path-immortal-material/",
+      "chapters": [
+        1809,
+        1816,
+        1974,
+        2052
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Path": {
+      "text": "Qi Path",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

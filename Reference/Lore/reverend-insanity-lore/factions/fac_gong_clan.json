@@ -1,0 +1,164 @@
+{
+  "id": "fac_gong_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Gong Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Gong clan is a Western Desert super force that controls a tributary of the River of Time, whose Gu Immortals fight at range with curse methods, above all bow shadow cup.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1436,
+    "volume": null,
+    "arc": "evt_arc_river_of_time"
+  },
+  "chapters_cited": [
+    1436,
+    2255
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_western_desert",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "reg_western_desert",
+      "count": 2
+    },
+    {
+      "target": "char_fairy_zi_wei",
+      "count": 1
+    },
+    {
+      "target": "sys_gu_immortal",
+      "count": 1
+    },
+    {
+      "target": "loc_tributary_of_the_river_of_time",
+      "count": 1
+    },
+    {
+      "target": "move_bow_shadow_cup",
+      "count": 1
+    },
+    {
+      "target": "fac_fang_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_shi_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_sun_clan",
+      "count": 1
+    },
+    {
+      "target": "fac_wan_clan",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Fairy Zi Wei names Gong clan among the three Western Desert forces that control a tributary of the River of Time. Gong clan Gu Immortals are proficient in long-range fighting methods, especially curse related killer moves that can kill silently at enormous range. Their most famous immortal killer move, bow shadow cup, needs only a trace of the target’s shadow and can kill no matter how far apart the distance; it has terrorized Western Desert’s Gu Immortal world.",
+      "chapters": [
+        1436
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_fairy_zi_wei",
+        "reg_western_desert",
+        "loc_tributary_of_the_river_of_time",
+        "sys_gu_immortal"
+      ]
+    },
+    {
+      "text": "Wan clan’s expedition alliance against Fang clan includes Gong clan among Xiao, Qin, Sun, Shi, and Tang clans. Gong clan sends Gong Jiao Che, whose battle accomplishments Fang clan immortals already know. Western Desert’s super forces are listed as fourteen clans, including Gong clan.",
+      "chapters": [
+        2255
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "against-fang-clan",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_wan_clan",
+        "fac_fang_clan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/gong-clan/",
+      "chapters": [
+        1436,
+        2255
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Western Desert",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

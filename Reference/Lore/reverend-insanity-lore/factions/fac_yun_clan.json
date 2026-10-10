@@ -1,0 +1,234 @@
+{
+  "id": "fac_yun_clan",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Yun Clan",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "A clan named when Yun Luo Tian is introduced as its young clan leader among Gu Masters gathering at San Cha mountain.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "partially_confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 375,
+    "volume": null,
+    "arc": "evt_arc_hu_immortal_blessed_land"
+  },
+  "chapters_cited": [
+    375,
+    376,
+    381,
+    382
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "members",
+      "target": "char_yun_luo_tian",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 375,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_yun_luo_tian",
+      "count": 4
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_san_cha_mountain",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "sys_righteous_path",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "No chapter describes its appearance.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "appearance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "At twenty-three Yun Luo Tian had reached rank three peak stage; at thirty-five he is a step away from rank four peak stage.",
+      "chapters": [
+        375
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-entrance-and-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_yun_luo_tian"
+      ]
+    },
+    {
+      "text": "At an inheritance entrance on San Cha Mountain, Yun Luo Tian wears white clothing when he blocks Fang Yuan and Bai Ning Bing as a righteous Gu Master, then enters after Fang Yuan yields the queue. Nearby talk treats Yun clan as first-class rather than a super clan. His conduct is inspected as representing Yun clan’s image, and he expects the exchange to raise Yun clan’s standing in the righteous faction.",
+      "chapters": [
+        376
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "rank-entrance-and-standing",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_san_cha_mountain",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "sys_righteous_path"
+      ]
+    },
+    {
+      "text": "Sources conflict:",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "inside-the-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "The question is open.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "inside-the-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Inside the inheritance he meets Bai Ning Bing again and dies when her dog beasts overwhelm him.",
+      "chapters": [
+        381
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inside-the-inheritance",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Before dying he warns that killing him would offend Yun clan; Bai Ning Bing answers that she does not fear that house. As young clan leader he carries two tokens meant to protect him, but both fail when he tries to leave.",
+      "chapters": [
+        382
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "inside-the-inheritance",
+      "text_origin": "source_excerpt"
+    }
+  ],
+  "conflicts": [
+    {
+      "topic": "Inside the inheritance",
+      "positions": [
+        {
+          "position": "Yun Luo Tian is a wind path Gu Master.",
+          "support": "Chapter 375, the San Cha mountain arrival list.",
+          "chapters": [
+            375
+          ]
+        },
+        {
+          "position": "Yun Luo Tian walked the cloud path, and the Gu taken from him are rank four.",
+          "support": "Chapter 382, after Bai Ning Bing keeps his Gu worms.",
+          "chapters": [
+            382
+          ]
+        }
+      ],
+      "status": "The question is open.",
+      "preferred": null,
+      "source_id": "src_sagaofgu"
+    }
+  ],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/yun-clan/",
+      "chapters": [
+        375,
+        376,
+        381,
+        382
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "clan",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

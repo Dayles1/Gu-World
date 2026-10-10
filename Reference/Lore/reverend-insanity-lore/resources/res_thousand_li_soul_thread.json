@@ -1,0 +1,151 @@
+{
+  "id": "res_thousand_li_soul_thread",
+  "entity_type": "resource",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Thousand li soul thread",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Thousand li soul thread is a light immortal material formed in ancient soul beast bodies and valued by length.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 1424,
+    "volume": null,
+    "arc": "evt_arc_southern_border_war"
+  },
+  "chapters_cited": [
+    1424
+  ],
+  "relations": [
+    {
+      "type": "refines_into",
+      "target": "gu_cleanse_soul",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "gu_cleanse_soul",
+      "count": 3
+    },
+    {
+      "target": "rcp_cleanse_soul_immortal_gu_recipe",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_sixth_hair",
+      "count": 1
+    },
+    {
+      "target": "fac_lang_ya_sect",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Thousand li soul thread is an immortal material created in the bodies of ancient soul beasts. The value of soul threads depends on their length. Lang Ya Sect’s thousand li soul thread is extremely valuable and on par with rank eight immortal materials. It is a quasi-rank eight immortal material; because it is too rare to sell often even in treasure yellow heaven, its market value sits at rank eight immortal material level.",
+      "chapters": [
+        1424
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ancient-soul-beast-thread",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_lang_ya_sect"
+      ]
+    },
+    {
+      "text": "The soul thread is dark green like a strip of seaweed with golden light shining inside, and it is very light.",
+      "chapters": [
+        1424
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "ancient-soul-beast-thread",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "During refinement of cleanse soul Immortal Gu, Sixth Hair takes thousand li soul thread and cuts down one section with refinement path methods. Refining cleanse soul Immortal Gu needs only a small part of the soul thread; hundred li soul thread is sufficient, but thousand li soul thread raises the success rate and saves time. Fang Yuan pays a huge price to exchange for Lang Ya Sect’s thousand li soul thread for that plan. Tossed into the flames, the blazing fire turns into eerie ghost fire with screams and cries.",
+      "chapters": [
+        1424
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "cleanse-soul-refinement",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_cleanse_soul",
+        "char_sixth_hair",
+        "char_fang_yuan"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/materials/thousand-li-soul-thread/",
+      "chapters": [
+        1424
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Immortal material": {
+      "text": "Yes",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Origin": {
+      "text": "Ancient soul beasts",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Refines into": {
+      "text": "Cleanse Soul",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}

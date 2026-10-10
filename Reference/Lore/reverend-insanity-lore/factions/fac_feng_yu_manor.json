@@ -1,0 +1,321 @@
+{
+  "id": "fac_feng_yu_manor",
+  "entity_type": "faction",
+  "schema_version": "1.0",
+  "names": {
+    "en": "Feng Yu Manor",
+    "zh": null,
+    "zh_source": null,
+    "pinyin": null,
+    "pinyin_status": null,
+    "ru": null,
+    "ru_status": "unknown",
+    "aliases": [],
+    "translation_variants": []
+  },
+  "summary": {
+    "text": "Feng Yu Manor sells information in Shang Clan City.",
+    "text_origin": "source_excerpt",
+    "source_id": "src_sagaofgu"
+  },
+  "canon_status": "confirmed",
+  "confidence": "B",
+  "first_appearance": {
+    "chapter": 264,
+    "volume": null,
+    "arc": "evt_arc_shang_clan_city"
+  },
+  "chapters_cited": [
+    264,
+    275,
+    277,
+    295,
+    306,
+    308,
+    315,
+    325,
+    327
+  ],
+  "relations": [
+    {
+      "type": "in_region",
+      "target": "reg_southern_border",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": null,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    },
+    {
+      "type": "leader",
+      "target": "char_wei_yang",
+      "role": null,
+      "from_chapter": null,
+      "to_chapter": null,
+      "recorded_chapter": 306,
+      "count": null,
+      "confidence": "B",
+      "source_id": "src_sagaofgu",
+      "note": null
+    }
+  ],
+  "co_mentions": [
+    {
+      "target": "char_wei_yang",
+      "count": 3
+    },
+    {
+      "target": "reg_southern_border",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_clan_city",
+      "count": 2
+    },
+    {
+      "target": "char_doctor_su_shou",
+      "count": 2
+    },
+    {
+      "target": "char_bai_ning_bing",
+      "count": 1
+    },
+    {
+      "target": "char_fang_yuan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_ya_zi",
+      "count": 1
+    },
+    {
+      "target": "sys_demonic_path",
+      "count": 1
+    },
+    {
+      "target": "loc_shang_liang_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_bai_clan_bai_gu_mountain",
+      "count": 1
+    },
+    {
+      "target": "fac_shang_clan",
+      "count": 1
+    },
+    {
+      "target": "char_shang_yan_fei",
+      "count": 1
+    },
+    {
+      "target": "gu_atmosphere_gu",
+      "count": 1
+    },
+    {
+      "target": "char_shang_xin_ci",
+      "count": 1
+    },
+    {
+      "target": "fac_gu_masters",
+      "count": 1
+    }
+  ],
+  "claims": [
+    {
+      "text": "Shang Ya Zi says he spent a large amount of primeval stones buying information on Fang Yuan and Bai Ning Bing from Feng Yu Manor before approaching them, and that the Manor’s report marked the pair as wanted demonic Gu Masters.",
+      "chapters": [
+        264
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "selling-information-in-shang-clan-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_ya_zi",
+        "char_fang_yuan",
+        "char_bai_ning_bing",
+        "sys_demonic_path"
+      ]
+    },
+    {
+      "text": "Fang Yuan later points Bai Ning Bing to Feng Yu Manor as a place that specializes in selling information.",
+      "chapters": [
+        275
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "selling-information-in-shang-clan-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Bai Ning Bing does go there and returns afterward.",
+      "chapters": [
+        277
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "selling-information-in-shang-clan-city",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Those sales sit inside Shang Clan City on Shang Liang Mountain.",
+      "chapters": [],
+      "certainty": "inferred",
+      "confidence": "C",
+      "verification": "no_citation",
+      "source_id": "src_sagaofgu",
+      "section": "selling-information-in-shang-clan-city",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "loc_shang_clan_city",
+        "loc_shang_liang_mountain"
+      ]
+    },
+    {
+      "text": "When Fang Yuan threatens Bai clan inside the city, he names Shang clan’s Feng Yu Manor as a buyer that would pay well for the information he holds.",
+      "chapters": [
+        295
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "clan-ownership",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "fac_bai_clan_bai_gu_mountain",
+        "fac_shang_clan"
+      ]
+    },
+    {
+      "text": "As one of Shang clan’s five great generals, Wei Yang controls the intelligence agency Feng Yu Manor, which lets him learn auction sequences and guest identities that are supposed to stay secret.",
+      "chapters": [
+        306
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intelligence-charge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_wei_yang"
+      ]
+    },
+    {
+      "text": "At the auction he is again named as the one in charge of Feng Yu Manor, bidding for atmosphere Gu to make his subordinates work better.",
+      "chapters": [
+        308
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intelligence-charge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "gu_atmosphere_gu"
+      ]
+    },
+    {
+      "text": "Later bargaining repeats the same charge: Wei Yang is in charge of Feng Yu manor and controlled intel in the city.",
+      "chapters": [
+        325
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "intelligence-charge",
+      "text_origin": "source_excerpt"
+    },
+    {
+      "text": "Intel from Feng Yu Manor also reaches Shang Yan Fei. After Bai Ning Bing’s loss, that intel places her recuperating at Doctor Su Shou’s place.",
+      "chapters": [
+        315
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "cross_checked_chapter_summary",
+      "source_id": "src_sagaofgu",
+      "section": "intelligence-charge",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_yan_fei",
+        "char_doctor_su_shou"
+      ]
+    },
+    {
+      "text": "Shang Xin Ci calls Feng Yu manor Shang clan’s biggest information organization and says it has always been investigating demonic Gu Masters at the battle stage in secret, never openly, so Shang can absorb talent without driving those Gu Masters into hatred. She contrasts that hidden work with the open information-gathering business she wants to run.",
+      "chapters": [
+        327
+      ],
+      "certainty": "canon",
+      "confidence": "B",
+      "verification": "citation_unchecked",
+      "source_id": "src_sagaofgu",
+      "section": "battle-stage-work",
+      "text_origin": "source_excerpt",
+      "mentions": [
+        "char_shang_xin_ci",
+        "fac_gu_masters"
+      ]
+    }
+  ],
+  "conflicts": [],
+  "image": null,
+  "sources": [
+    {
+      "source_id": "src_sagaofgu",
+      "url": "https://sagaofgu.com/factions/feng-yu-manor/",
+      "chapters": [
+        264,
+        275,
+        277,
+        295,
+        306,
+        308,
+        315,
+        325,
+        327
+      ],
+      "accessed": "2026-10-09",
+      "note": null
+    }
+  ],
+  "research": {
+    "status": "extracted",
+    "is_stub_at_source": false,
+    "unresolved": [],
+    "notes": [],
+    "last_updated": "2026-10-09"
+  },
+  "game_proposals": [],
+  "attributes": {
+    "Type": {
+      "text": "force",
+      "unverified_at_source": false,
+      "linked": false
+    },
+    "Region": {
+      "text": "Southern Border",
+      "unverified_at_source": false,
+      "linked": true
+    },
+    "Leader": {
+      "text": "Wei Yang",
+      "unverified_at_source": false,
+      "linked": true
+    }
+  }
+}
