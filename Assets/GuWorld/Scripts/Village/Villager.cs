@@ -48,6 +48,7 @@ namespace GuWorld.Village
         Vector3 talkTo;
         System.Random random;
         List<HitZone> zones;
+        bool seated;
         float fleeing;
         float downFor = -1;
 
@@ -121,6 +122,7 @@ namespace GuWorld.Village
             }
 
             // Off home at a run.
+            seated = false;
             fleeing = FleeTime;
             Go(Home.at);
         }
@@ -192,7 +194,7 @@ namespace GuWorld.Village
             {
                 speed = Mathf.MoveTowards(speed, 0, dt * 4);
 
-                if (activity.doing == Doing.Stand || activity.doing == Doing.Porch)
+                if (activity.doing == Doing.Stand || activity.doing == Doing.Porch || activity.doing == Doing.Sit)
                 {
                     Turn(yaw * Mathf.Deg2Rad, dt);
                 }
@@ -224,6 +226,7 @@ namespace GuWorld.Village
                     stance = Physics.Stance.Stand,
                     grounded = true,
                     turnRate = -turnRate,
+                    sit = seated && route.Count == 0 && !Talking ? 3 : 0,
                 });
             }
         }
@@ -234,10 +237,11 @@ namespace GuWorld.Village
             var (target, standYaw) = activity.doing switch
             {
                 Doing.Sleep or Doing.Porch => (Home.at, Home.yaw),
-                Doing.Stand => PlaceOf(activity.place),
+                Doing.Stand or Doing.Sit => PlaceOf(activity.place),
                 _ => (WanderTarget(), 0f),
             };
             yaw = standYaw;
+            seated = false;
 
             if (there)
             {
@@ -337,6 +341,9 @@ namespace GuWorld.Village
                 case Doing.Wander:
                     wait = 4 + (float)random.NextDouble() * 12;
                     break;
+                case Doing.Sit:
+                    seated = fleeing <= 0;
+                    break;
             }
         }
 
@@ -355,12 +362,8 @@ namespace GuWorld.Village
             transform.position = at;
         }
 
-        static float Ground(Vector3 at)
-        {
-            var terrain = Terrain.activeTerrain;
-
-            return terrain != null ? terrain.SampleHeight(at) + terrain.transform.position.y : at.y;
-        }
+        /// <summary>The ground under a point: the finest terrain there (a village's own, else the mountain's).</summary>
+        static float Ground(Vector3 at) => GuWorld.World.QingMao.GroundAt(at);
 
         public void BeginTalk(Vector3 speaker)
         {

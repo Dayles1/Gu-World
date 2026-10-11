@@ -18,15 +18,16 @@ namespace GuWorld.Render
     /// </summary>
     public class DaySky : MonoBehaviour
     {
-        static readonly Color NightSky = Hex(0x0b1020);
-        static readonly Color LowSky = Hex(0xc99a80);
-        static readonly Color DaySkyColor = Hex(0xa7bccd);
-        static readonly Color NightGround = Hex(0x14171d);
-        static readonly Color DayGround = Hex(0x6b6a5c);
-        static readonly Color LowSun = Hex(0xffb07a);
-        static readonly Color HighSun = Hex(0xfff3e2);
-        static readonly Color MoonLight = new Color(0.55f, 0.64f, 0.9f);
-        const float SunStrength = 2.2f;
+        // A darker, colder palette than the web's: the novel's mountain is a grim place.
+        static readonly Color NightSky = Hex(0x070a14);
+        static readonly Color LowSky = Hex(0xa8806c);
+        static readonly Color DaySkyColor = Hex(0x8496a6);
+        static readonly Color NightGround = Hex(0x0e1014);
+        static readonly Color DayGround = Hex(0x4e4f46);
+        static readonly Color LowSun = Hex(0xf0a070);
+        static readonly Color HighSun = Hex(0xf2ead8);
+        static readonly Color MoonLight = new Color(0.5f, 0.6f, 0.88f);
+        const float SunStrength = 2.05f;
 
         public Light Sun;
         /// <summary>The moon's light (a second, shadowless directional light), made when there is a sky material.</summary>
@@ -71,7 +72,7 @@ namespace GuWorld.Render
                 sunIntensity = SunStrength * SmoothStep(height, -0.02f, 0.18f),
                 sky = Color.Lerp(Color.Lerp(NightSky, DaySkyColor, day), LowSky, low * 0.5f),
                 ground = Color.Lerp(NightGround, DayGround, day),
-                ambientIntensity = 0.3f + 1.1f * day,
+                ambientIntensity = 0.24f + 1.05f * day,
             };
         }
 

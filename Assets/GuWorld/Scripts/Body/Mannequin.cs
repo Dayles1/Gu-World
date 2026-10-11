@@ -19,6 +19,10 @@ namespace GuWorld.Body
         public bool swimming;
         /// <summary>0…1 through a climb, or null.</summary>
         public float? climb;
+        /// <summary>How far through the moves of climbing a tree's trunk (it grows as they climb), or null when not on one.</summary>
+        public float? treeClimb;
+        /// <summary>Sitting: 0 not, 1 on the ground, 2 on an edge with the legs hanging over it, 3 on a seat (a bench, a stool).</summary>
+        public int sit;
         /// <summary>Where the camera looks relative to the body (radians; positive toward the figure's left, as on the web).</summary>
         public float lookYaw, lookPitch;
         /// <summary>Ground height under a world point, to plant the feet on; null in the air.</summary>
@@ -211,7 +215,25 @@ namespace GuWorld.Body
         {
             Array.Copy(Rest, target, target.Length);
 
-            if (motion.climb.HasValue)
+            if (motion.treeClimb.HasValue)
+            {
+                TreePose(motion.treeClimb.Value);
+            }
+            else if (motion.sit > 0)
+            {
+                SitPose(motion.sit >= 2);
+
+                if (motion.sit == 3)
+                {
+                    // On a seat: the hips at its height, the feet on the ground.
+                    this[P.BodyY] += 0.42f;
+                    this[P.KneeL] = this[P.KneeR] = 1.55f;
+                    this[P.ArmL] = this[P.ArmR] = -0.45f;
+                    this[P.ElbowL] = this[P.ElbowR] = -0.8f;
+                    this[P.ArmOutL] = this[P.ArmOutR] = 0.12f;
+                }
+            }
+            else if (motion.climb.HasValue)
             {
                 ClimbPose(motion.climb.Value);
             }
@@ -239,7 +261,7 @@ namespace GuWorld.Body
             this[P.ArmOutR] += ArmsOut;
 
             // A throw: the right arm comes up to the shoulder and cuts across in front, the body turning into it.
-            if (Throw >= 0 && motion.climb == null)
+            if (Throw >= 0 && motion.climb == null && motion.treeClimb == null)
             {
                 var t = Smooth(Throw);
                 this[P.ArmR] = -1.4f;
@@ -420,6 +442,64 @@ namespace GuWorld.Body
             this[P.FootR] = -(this[P.ThighR] + this[P.KneeR]) * 0.8f;
             this[P.Lean] = 0.35f * Mathf.Sin(Mathf.PI * progress);
             this[P.HeadX] = -0.4f * (1 - progress);
+        }
+
+        /// <summary>Hugging a trunk: the arms up round it, a knee raised, the hands and feet taking turns as they climb.</summary>
+        void TreePose(float phase)
+        {
+            var s = Mathf.Sin(phase * Mathf.PI * 2);
+            this[P.Ik] = 0;
+            this[P.BodyY] = -0.08f;
+            this[P.BodyZ] = 0.05f;
+            this[P.Lean] = 0.2f;
+            this[P.ArmL] = -2.5f + 0.35f * s;
+            this[P.ArmR] = -2.5f - 0.35f * s;
+            this[P.ArmOutL] = this[P.ArmOutR] = 0.45f;
+            this[P.ElbowL] = -1.0f - 0.25f * s;
+            this[P.ElbowR] = -1.0f + 0.25f * s;
+            this[P.ThighL] = -0.9f - 0.45f * Mathf.Max(0, -s);
+            this[P.ThighR] = -0.9f - 0.45f * Mathf.Max(0, s);
+            this[P.KneeL] = 1.3f + 0.5f * Mathf.Max(0, -s);
+            this[P.KneeR] = 1.3f + 0.5f * Mathf.Max(0, s);
+            this[P.SpreadL] = this[P.SpreadR] = 0.25f;
+            this[P.FootL] = -(this[P.ThighL] + this[P.KneeL]) * 0.7f;
+            this[P.FootR] = -(this[P.ThighR] + this[P.KneeR]) * 0.7f;
+            this[P.HeadX] = -0.35f;
+        }
+
+        /// <summary>Sitting: on the ground with the knees up and the arms on them, or on an edge with the legs hanging down, the hands on it either side.</summary>
+        void SitPose(bool edge)
+        {
+            this[P.Ik] = 0;
+
+            if (edge)
+            {
+                this[P.BodyY] = -(Hips - HipJoint) + 0.04f;
+                this[P.ThighL] = this[P.ThighR] = -1.5f;
+                this[P.KneeL] = 1.35f + 0.1f * Mathf.Sin(time * 0.8f);
+                this[P.KneeR] = 1.35f + 0.1f * Mathf.Sin(time * 0.8f + 2);
+                this[P.FootL] = this[P.FootR] = 0.1f;
+                this[P.SpreadL] = this[P.SpreadR] = 0.08f;
+                this[P.ArmL] = this[P.ArmR] = 0.15f;
+                this[P.ArmOutL] = this[P.ArmOutR] = 0.35f;
+                this[P.ElbowL] = this[P.ElbowR] = -0.15f;
+                this[P.Lean] = 0.08f;
+            }
+            else
+            {
+                this[P.BodyY] = -(Hips - HipJoint) + 0.1f;
+                this[P.ThighL] = this[P.ThighR] = -1.15f;
+                this[P.KneeL] = this[P.KneeR] = 2.1f;
+                this[P.FootL] = this[P.FootR] = -0.6f;
+                this[P.SpreadL] = this[P.SpreadR] = 0.22f;
+                this[P.ArmL] = this[P.ArmR] = -0.75f;
+                this[P.ArmOutL] = this[P.ArmOutR] = 0.2f;
+                this[P.ElbowL] = this[P.ElbowR] = -0.9f;
+                this[P.Lean] = 0.25f;
+            }
+
+            // Breathing.
+            this[P.Lean] += Mathf.Sin(time * 1.7f) * 0.012f;
         }
 
         /// <summary>Eases each foot's ground height toward what is really under it.</summary>

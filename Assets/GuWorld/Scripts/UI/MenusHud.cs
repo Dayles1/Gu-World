@@ -90,6 +90,7 @@ namespace GuWorld.UI
             BuildQuest();
             BuildBar();
             BuildLog();
+            BuildLegend();
 
             promptLine = UiKit.Label("", hud, 22, UiKit.Text, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
             promptLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -500, 150, -500, -190);
@@ -237,8 +238,37 @@ namespace GuWorld.UI
             }
         }
 
+        RectTransform legend;
+
+        /// <summary>The hitbox view's key: what each colour is (shown while the view is on).</summary>
+        void BuildLegend()
+        {
+            legend = UiKit.Panel("Hitbox Legend", hud, UiKit.Hex(0x0E0D0C, 0.82f)).rectTransform;
+            legend.Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 24, -150, -284, -150);
+            var list = UiKit.Rect("List", legend).Fill();
+            list.Stack<VerticalLayoutGroup>(2, new RectOffset(14, 14, 10, 10));
+            UiKit.Caps("Хитбоксы · F4", list, 13).Size(22);
+
+            foreach (var (_, name, colour) in Render.HitboxView.Legend)
+            {
+                var row = UiKit.Rect(name, list);
+                row.Size(22);
+                var chip = UiKit.Image("Chip", row, colour);
+                chip.rectTransform.At(new Vector2(0, 0.5f), new Vector2(8, 0), new Vector2(14, 4));
+                UiKit.Label(name, row, 14, UiKit.Text).rectTransform.Place(Vector2.zero, Vector2.one, 24, 0, 0, 0);
+            }
+
+            UiKit.Label("Части тела — цвета страницы «Тело» (B)", list, 13, UiKit.Muted).Size(34);
+            legend.gameObject.SetActive(false);
+        }
+
         void UpdateHud()
         {
+            if (legend != null && legend.gameObject.activeSelf != Render.HitboxView.On)
+            {
+                legend.gameObject.SetActive(Render.HitboxView.On);
+            }
+
             if (!hud.gameObject.activeSelf || host == null)
             {
                 return;
@@ -270,7 +300,7 @@ namespace GuWorld.UI
 
         void UpdateMinimap()
         {
-            var map = host.Map;
+            var map = host.NearMap ?? host.Map;
 
             if (map == null)
             {

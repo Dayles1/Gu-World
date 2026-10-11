@@ -1,3 +1,4 @@
+using System.Linq;
 using GuWorld.Body;
 using GuWorld.Combat;
 using GuWorld.Cultivation;
@@ -79,7 +80,10 @@ namespace GuWorld
         ChunkManager world;
         DaySky sky;
         Atmosphere atmosphere;
+        /// <summary>The people of the hero's own village (the named ones and its crowd).</summary>
         Villagers villagers;
+        /// <summary>Every village's people (the other clans' too).</summary>
+        readonly System.Collections.Generic.List<Villagers> crowds = new System.Collections.Generic.List<Villagers>();
         Cultivator cultivator;
         Health health;
         readonly Quests quests = new Quests();
@@ -87,6 +91,9 @@ namespace GuWorld
         /// <summary>The shop the hero is at (while its page is open).</summary>
         Shop shop;
         LocalMap map;
+        /// <summary>The minimap's finer map round the hero, drawn again when they have walked far from its middle.</summary>
+        LocalMap nearMap;
+        const float NearSpan = 900;
         /// <summary>The bed being gathered, and how long E has been held on it.</summary>
         HerbBed gathering;
         float gatherHeld;
@@ -94,6 +101,7 @@ namespace GuWorld
         int asked;
         Menus menus;
         HitboxView hitboxes;
+        Insects insects;
         /// <summary>The debug panel's weather (R cycles it); null: the world's own.</summary>
         GuWorld.World.Sky? forcedWeather;
         /// <summary>For pictures: a time of day held fixed (`-time 0.9`).</summary>
@@ -118,6 +126,63 @@ namespace GuWorld
         /// </summary>
         string screenshot;
         int screenshotFrame;
+        /// <summary>`-bench N`: N frames timed before the picture, written beside it (`.txt`).</summary>
+        int benchFrames;
+        readonly System.Collections.Generic.List<float> frameTimes = new System.Collections.Generic.List<float>();
+        readonly System.Collections.Generic.Dictionary<string, (Unity.Profiling.ProfilerRecorder recorder, double sum)> counters = new System.Collections.Generic.Dictionary<string, (Unity.Profiling.ProfilerRecorder, double)>();
+        double gpuSum;
+        int qualityBefore = -1;
+        /// <summary>`-views "x,y,z,yaw,pitch,file;…"`: more pictures after the first, from these views (above the ground with `-ground`).</summary>
+        readonly System.Collections.Generic.List<(Pose pose, float pitch, string file)> moreViews = new System.Collections.Generic.List<(Pose, float, string)>();
+        int gpuCount;
+
+        /// <summary>`-off a,b`: parts of the world left out of a timed run, to find what costs the frames.</summary>
+        void LeaveOut(string list)
+        {
+            foreach (var part in list.Split(','))
+            {
+                switch (part.Trim())
+                {
+                    case "trees":
+                        foreach (var t in Terrain.activeTerrains) t.treeDistance = 0;
+                        break;
+                    case "grass":
+                        foreach (var t in Terrain.activeTerrains) t.detailObjectDistance = 0;
+                        break;
+                    case "shadows":
+                        foreach (var l in FindObjectsByType<Light>(FindObjectsSortMode.None)) l.shadows = LightShadows.None;
+                        break;
+                    case "msaa":
+                        if (UnityEngine.Rendering.GraphicsSettings.currentRenderPipeline is UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset urp) urp.msaaSampleCount = 1;
+                        break;
+                    case "post":
+                        foreach (var v in FindObjectsByType<UnityEngine.Rendering.Volume>(FindObjectsSortMode.None)) v.enabled = false;
+                        break;
+                    case "people":
+                        foreach (var v in FindObjectsByType<Villagers>(FindObjectsSortMode.None)) v.gameObject.SetActive(false);
+                        break;
+                    default:
+                        // A part of the mountain by its root's name: "Giant Trees", "Village gu_yue", "Hamlets", "Trails", "Water".
+                        foreach (var go in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
+                        {
+                            if (go.name.Replace(" ", "").ToLowerInvariant().Contains(part.Trim().Replace(" ", "").ToLowerInvariant()))
+                            {
+                                go.SetActive(false);
+                            }
+                        }
+
+                        break;
+                }
+            }
+        }
+
+        void StartCounters()
+        {
+            foreach (var (category, name) in new[] { (Unity.Profiling.ProfilerCategory.Internal, "Main Thread"), (Unity.Profiling.ProfilerCategory.Render, "Batches Count"), (Unity.Profiling.ProfilerCategory.Render, "SetPass Calls Count"), (Unity.Profiling.ProfilerCategory.Render, "Triangles Count"), (Unity.Profiling.ProfilerCategory.Render, "Shadow Casters Count"), (Unity.Profiling.ProfilerCategory.Render, "Visible Skinned Meshes Count") })
+            {
+                counters[name] = (Unity.Profiling.ProfilerRecorder.StartNew(category, name), 0);
+            }
+        }
         bool talkAt;
         string screenshotPage;
         bool castAt;
@@ -137,13 +202,41 @@ namespace GuWorld
         public Trade Trade => trade;
         public Shop Shop => shop;
         public LocalMap Map => map;
+        public LocalMap NearMap => nearMap;
         public Vector3 HeroAt => body.transform.position;
         public float HeroFacing => body.Facing;
         public double Now => clock.Minutes;
         public Look Look => look;
         public bool HasSave => saved;
         public string SaveSummary => $"{look.FullName} · Ранг {cultivator.Aperture.Rank} · Деревня Гу Юэ · День {clock.Day}, {clock.Label}";
-        public string PlaceName => Location.id == QingMao.Id ? $"{Atlas.QingMao.Name} · деревня Гу Юэ" : Location.title;
+        public string PlaceName => Location.id == QingMao.Id ? $"{Atlas.QingMao.Name} · {Where(HeroAt)}" : Location.title;
+
+        /// <summary>Where on the mountain a point is: the settlement it is in or near, else the mountain's side.</summary>
+        static string Where(Vector3 at)
+        {
+            var p = new Vector2(at.x, at.z);
+
+            foreach (var place in QingMao.Settlements)
+            {
+                if (Vector2.Distance(p, place.Centre) < place.Radius * 1.35f)
+                {
+                    return place.Name.ToLowerInvariant();
+                }
+            }
+
+            foreach (var place in QingMao.Settlements)
+            {
+                if (Vector2.Distance(p, place.Centre) < place.Radius * 3 + 300)
+                {
+                    return $"окрестности: {place.Name.ToLowerInvariant()}";
+                }
+            }
+
+            if (Vector2.Distance(p, QingMao.Peak) < 900) return "вершина";
+            if (Vector2.Distance(p, QingMao.ForePeak) < 1300) return "передняя гора";
+
+            return p.y > 3500 ? "задняя гора" : "склоны горы";
+        }
         public string TimeLine => $"{PhaseName(clock.Phase).ToUpperInvariant()} · ДЕНЬ {clock.Day} · {clock.Label} · {GuWorld.World.Weather.Name(weather.Kind)}";
 
         void Awake()
@@ -174,6 +267,12 @@ namespace GuWorld
             if (at >= 0 && at + 1 < args.Length)
             {
                 screenshot = args[at + 1];
+                var benchAt = System.Array.IndexOf(args, "-bench");
+
+                if (benchAt >= 0 && benchAt + 1 < args.Length)
+                {
+                    int.TryParse(args[benchAt + 1], out benchFrames);
+                }
             }
 
             var restored = screenshot != null ? SaveGame.NewGame(Location) : SaveGame.Load(Location);
@@ -200,13 +299,47 @@ namespace GuWorld
             // The ground under the hero must be there before they are put on it.
             world?.LoadAround(new Vector3(restored.player.x, 0, restored.player.z));
 
-            // A village with a plan has its people.
-            var layout = FindAnyObjectByType<VillageLayout>();
+            // A village with a plan has its people: the hero's own clan's village first.
+            VillageLayout layout = null;
+            var layouts = FindObjectsByType<VillageLayout>(FindObjectsSortMode.None);
 
-            if (layout != null)
+            foreach (var candidate in layouts)
             {
-                villagers = Villagers.Create(layout, picture.Parts);
+                if (layout == null || candidate.Settlement == "gu_yue")
+                {
+                    layout = candidate;
+                }
             }
+
+            foreach (var each in layouts)
+            {
+                // The hero's own village: its named people and a crowd; the other clans' villages, crowds of their own.
+                var specs = new System.Collections.Generic.List<VillagerSpec>();
+
+                if (each == layout)
+                {
+                    specs.AddRange(Roster.People());
+                }
+
+                var count = each.Settlement == "gu_yue" ? 80 : each.Settlement == null ? 0 : 34;
+                specs.AddRange(Crowd.Of(each.Settlement ?? "gu_yue", count, (each.Settlement ?? "").GetHashCode()));
+                var people = Villagers.Create(each, picture.Parts, specs);
+                crowds.Add(people);
+
+                if (each == layout)
+                {
+                    villagers = people;
+                }
+            }
+            // `-quality N` (with a picture): the graphics level for this run, not saved.
+            var qualityAt = System.Array.IndexOf(args, "-quality");
+
+            if (screenshot != null && qualityAt >= 0 && qualityAt + 1 < args.Length && int.TryParse(args[qualityAt + 1], out var quality))
+            {
+                qualityBefore = GameSettings.Quality;
+                GameSettings.Quality = quality;
+            }
+
             GameSettings.Apply(view);
             view.GetComponent<Camera>().farClipPlane = FarClip;
             sky.FogStart = FogStart;
@@ -224,6 +357,9 @@ namespace GuWorld
             Wounds.Landed += OnWound;
             hitboxes = HitboxView.Create(view.transform);
             HitboxView.On = GameSettings.ShowHitboxes;
+            insects = Insects.Create();
+            TreeBranch.Creaking += OnCreak;
+            TreeBranch.Snapped += OnSnap;
             PlaceDummies(layout);
             PlaceBeds(layout, restored.beds);
             DrawMap(layout);
@@ -243,6 +379,24 @@ namespace GuWorld
                     fixedView = new Pose { x = v[0], y = v[1], z = v[2], yaw = v[3] };
                     viewPitch = v.Length > 4 ? v[4] : 15;
                     viewAboveGround = Has(args, "-ground");
+                }
+
+                var viewsAt = System.Array.IndexOf(args, "-views");
+
+                if (viewsAt >= 0 && viewsAt + 1 < args.Length)
+                {
+                    foreach (var one in args[viewsAt + 1].Split(';'))
+                    {
+                        var parts = one.Split(',');
+
+                        if (parts.Length >= 6)
+                        {
+                            float F(int i) => float.Parse(parts[i], System.Globalization.CultureInfo.InvariantCulture);
+                            moreViews.Add((new Pose { x = F(0), y = F(1), z = F(2), yaw = F(3) }, F(4), string.Join(",", parts, 5, parts.Length - 5)));
+                        }
+                    }
+
+                    viewAboveGround |= Has(args, "-ground");
                 }
 
                 player.AutoWalk = Has(args, "-run") ? 2 : Has(args, "-walk") ? 1 : 0;
@@ -633,13 +787,15 @@ namespace GuWorld
                         var at = spring.at + Quaternion.Euler(0, angle, 0) * Vector3.forward * radius;
                         var p = new Vector2(at.x, at.z);
 
-                        if (Location.id == QingMao.Id && (QingMao.ToRiver(p).distance < QingMao.RiverHalfWidth + 5 || QingMao.ToPath(p) < QingMao.PathHalfWidth + 1.5f))
+                        var plan = WorldPlan.Current;
+
+                        if (plan != null && (WorldPlan.Distance(plan.Streams, p) < 4 || WorldPlan.Distance(plan.Trails, p) < 1.5f || WorldPlan.Distance(plan.Streets, p) < 1))
                         {
                             continue;
                         }
 
                         if (!UnityEngine.Physics.Raycast(at + Vector3.up * 60, Vector3.down, out var hit, 200, ~0, QueryTriggerInteraction.Ignore) ||
-                            hit.normal.y < 0.9f || hit.collider.GetComponent<TerrainCollider>() == null)
+                            hit.normal.y < 0.94f || hit.collider.GetComponent<TerrainCollider>() == null)
                         {
                             continue;
                         }
@@ -673,8 +829,11 @@ namespace GuWorld
         /// <summary>The location's map for the HUD and the map page, with the village's places marked.</summary>
         void DrawMap(VillageLayout layout)
         {
-            var terrain = Terrain.activeTerrain;
-            map = terrain != null ? LocalMap.Draw(terrain, Location.id == QingMao.Id) : LocalMap.Grid(Location.bounds);
+            var plan = WorldPlan.Current;
+            map = plan != null
+                ? LocalMap.World(plan, new Rect(Location.bounds.min.x, Location.bounds.min.z, Location.bounds.size.x, Location.bounds.size.z))
+                : LocalMap.Grid(Location.bounds);
+            RedrawNearMap(true);
 
             if (layout != null)
             {
@@ -695,6 +854,37 @@ namespace GuWorld
             if (HerbBed.All.Count > 0)
             {
                 map.Marks.Add(new MapMark { Label = "Лунные орхидеи", At = HerbBed.All[0].transform.position });
+            }
+        }
+
+        /// <summary>The minimap's map round the hero, again when they have walked a third of it away from its middle.</summary>
+        void RedrawNearMap(bool now = false)
+        {
+            var plan = WorldPlan.Current;
+
+            if (plan == null || body == null)
+            {
+                return;
+            }
+
+            var at = body.transform.position;
+
+            if (!now && nearMap != null && Vector2.Distance(new Vector2(at.x, at.z), nearMap.Area.center) < NearSpan * 0.3f)
+            {
+                return;
+            }
+
+            if (nearMap != null)
+            {
+                Destroy(nearMap.Texture);
+            }
+
+            nearMap = LocalMap.Around(at, NearSpan, plan);
+
+            // The village's places are worth a label at this scale.
+            foreach (var mark in map.Marks)
+            {
+                nearMap.Marks.Add(new MapMark { Label = mark.Label, At = mark.At, Major = true });
             }
         }
 
@@ -726,6 +916,28 @@ namespace GuWorld
         {
             quests.Count("hit_dummy");
             menus.Notify(broke ? "Чучело разрублено!" : $"{Wounds.Line("Чучело", part, damage, false)} (осталось {Mathf.Max(0, dummy.Health):0})");
+        }
+
+        void OnCreak(TreeBranch branch)
+        {
+            if (body != null && body.Branch == branch)
+            {
+                menus.Notify("Ветка трещит под ногами!");
+                view.Shake(0.15f);
+            }
+            else if (Vector3.Distance(branch.Root, body.transform.position) < 40)
+            {
+                menus.Notify("Ветка трещит от удара");
+            }
+        }
+
+        void OnSnap(TreeBranch branch, string why)
+        {
+            if (Vector3.Distance(branch.Root, body.transform.position) < 60)
+            {
+                menus.Notify($"Ветка обломилась — {why}");
+                view.Shake(0.35f);
+            }
         }
 
         /// <summary>A blow landed on someone (a villager, the hero): what it did, in the log.</summary>
@@ -884,17 +1096,88 @@ namespace GuWorld
                 }
 
                 // `-cast`: the first slot used just before the picture (the blade in flight).
-                if (screenshotFrame == 150 - castFrames && castAt)
+                if (screenshotFrame == 150 + benchFrames - castFrames && castAt)
                 {
                     cultivator.Use(0);
                 }
 
-                if (screenshotFrame == 150)
+                if (screenshotFrame == 140)
+                {
+                    var offAt = System.Array.IndexOf(System.Environment.GetCommandLineArgs(), "-off");
+
+                    if (offAt >= 0 && offAt + 1 < System.Environment.GetCommandLineArgs().Length)
+                    {
+                        LeaveOut(System.Environment.GetCommandLineArgs()[offAt + 1]);
+                    }
+
+                    if (benchFrames > 0)
+                    {
+                        StartCounters();
+                    }
+                }
+
+                if (screenshotFrame > 150 && screenshotFrame <= 150 + benchFrames)
+                {
+                    frameTimes.Add(Time.unscaledDeltaTime * 1000);
+
+                    foreach (var key in counters.Keys.ToList())
+                    {
+                        var (recorder, sum) = counters[key];
+                        counters[key] = (recorder, sum + (recorder.Valid ? recorder.LastValue : 0));
+                    }
+
+                    FrameTimingManager.CaptureFrameTimings();
+                    var timings = new FrameTiming[1];
+
+                    if (FrameTimingManager.GetLatestTimings(1, timings) > 0 && timings[0].gpuFrameTime > 0)
+                    {
+                        gpuSum += timings[0].gpuFrameTime;
+                        gpuCount++;
+                    }
+                }
+
+                if (screenshotFrame == 150 + benchFrames)
                 {
                     ScreenCapture.CaptureScreenshot(screenshot);
+
+                    if (frameTimes.Count > 0)
+                    {
+                        frameTimes.Sort();
+                        var average = frameTimes.Average();
+                        var p95 = frameTimes[Mathf.Min(frameTimes.Count - 1, (int)(frameTimes.Count * 0.95f))];
+                        System.IO.File.WriteAllText(screenshot + ".txt",
+                            $"frames {frameTimes.Count}, average {average:0.0} ms ({1000 / average:0} fps), 95% under {p95:0.0} ms, worst {frameTimes[frameTimes.Count - 1]:0.0} ms, " +
+                            $"quality {GameSettings.Quality}, memory {UnityEngine.Profiling.Profiler.GetTotalAllocatedMemoryLong() / (1024 * 1024)} MB" + System.Environment.NewLine +
+                            $"gpu {(gpuCount > 0 ? (gpuSum / gpuCount).ToString("0.0") + " ms" : "n/a")}" +
+                            string.Concat(counters.Select(c => $", {c.Key} {(c.Value.recorder.Valid ? (c.Key == "Main Thread" ? (c.Value.sum / frameTimes.Count / 1e6).ToString("0.0") + " ms" : (c.Value.sum / frameTimes.Count).ToString("0")) : "n/a")}")) + System.Environment.NewLine);
+                    }
                 }
-                else if (screenshotFrame == 160)
+                else if (screenshotFrame > 150 + benchFrames && screenshotFrame <= 150 + benchFrames + 45 * moreViews.Count)
                 {
+                    // The other views, one every 45 frames: moved to, let settle, taken.
+                    var since = screenshotFrame - 150 - benchFrames;
+                    var k = (since - 1) / 45;
+
+                    if (since % 45 == 1)
+                    {
+                        fixedView = moreViews[k].pose;
+                        viewPitch = moreViews[k].pitch;
+                        view.Following = false;
+                    }
+                    else if (since % 45 == 0)
+                    {
+                        ScreenCapture.CaptureScreenshot(moreViews[k].file);
+                    }
+                }
+                else if (screenshotFrame == 160 + benchFrames + 45 * moreViews.Count)
+                {
+                    // The player's own graphics level back (a timed run's is not kept).
+                    if (qualityBefore >= 0)
+                    {
+                        GameSettings.Quality = qualityBefore;
+                        PlayerPrefs.Save();
+                    }
+
                     Application.Quit();
                 }
             }
@@ -947,9 +1230,17 @@ namespace GuWorld
 
             // The village lives by the clock (the main menu's by its evening).
             var hourOfDay = (forcedTime ?? (mode == Mode.Title ? TitleTimeOfDay : clock.TimeOfDay)) * 24;
-            villagers?.Tick(hourOfDay, Time.deltaTime, view.transform.position);
+            foreach (var crowd in crowds)
+            {
+                crowd.Tick(hourOfDay, Time.deltaTime, view.transform.position);
+            }
 
             HerbBed.Now = clock.Minutes;
+
+            if (mode == Mode.Playing && Time.frameCount % 30 == 0)
+            {
+                RedrawNearMap();
+            }
 
             if (mode == Mode.Playing && screenshot == null)
             {
@@ -1018,6 +1309,7 @@ namespace GuWorld
             var time = forcedTime ?? (mode == Mode.Title ? TitleTimeOfDay : clock.TimeOfDay);
             sky.Apply(time, weather);
             atmosphere?.Apply(sky, weather, time, view.transform);
+            insects?.Apply(sky, weather, view.transform);
 
             if (Time.unscaledDeltaTime > 0)
             {
@@ -1036,7 +1328,57 @@ namespace GuWorld
         void Interact(Keyboard keyboard)
         {
             var at = body.transform.position;
-            var before = villagers?.Before(at, view.transform.forward);
+            var pressed = keyboard != null && keyboard.eKey.wasPressedThisFrame;
+
+            // On a giant tree: climbing, stepping onto a branch, back onto the trunk, sitting.
+            if (body.Tree != null)
+            {
+                var branch = body.Tree.BranchAt(body.TreeAngle, body.TreeHeight + 0.4f);
+                menus.SetPrompt(branch != null ? "[E]  Перейти на ветку   ·   W/S — лезть   ·   Пробел — спрыгнуть" : "W/S — лезть   ·   A/D — вокруг ствола   ·   Пробел — спрыгнуть");
+
+                if (pressed && branch != null)
+                {
+                    body.StepOntoBranch();
+                }
+
+                return;
+            }
+
+            if (body.Sitting)
+            {
+                menus.SetPrompt("Вы сидите   ·   [X] или шаг — встать");
+
+                return;
+            }
+
+            var trunk = ClimbTree.Near(at, 0.9f, out _);
+
+            if (trunk != null && body.Grounded)
+            {
+                menus.SetPrompt(body.Branch != null ? "[E]  Ухватиться за ствол   ·   [X] — сесть" : "[E]  Лезть на дерево");
+
+                if (pressed)
+                {
+                    body.GrabTree(trunk);
+                }
+
+                return;
+            }
+
+            if (body.Branch != null)
+            {
+                var thin = body.Branch.ThicknessAt(body.Branch.Along(at)) < 0.42f;
+                menus.SetPrompt(thin ? "Ветка тонкая — может не выдержать   ·   [X] — сесть" : "[X]  Сесть на ветку");
+
+                return;
+            }
+
+            Villager before = null;
+
+            foreach (var crowd in crowds)
+            {
+                before ??= crowd.Before(at, view.transform.forward);
+            }
 
             if (before != null)
             {
@@ -1124,11 +1466,9 @@ namespace GuWorld
             {
                 var v = fixedView.Value;
                 var at = new Vector3(v.x, v.y, v.z);
-                var terrain = Terrain.activeTerrain;
-
-                if (viewAboveGround && terrain != null)
+                if (viewAboveGround)
                 {
-                    at.y += terrain.SampleHeight(at) + terrain.transform.position.y;
+                    at.y += QingMao.GroundAt(at);
                 }
 
                 view.transform.SetPositionAndRotation(at, Quaternion.Euler(viewPitch, v.yaw, 0));
@@ -1188,6 +1528,8 @@ namespace GuWorld
             Time.timeScale = 1;
             TrainingDummy.Struck -= OnStruck;
             Wounds.Landed -= OnWound;
+            TreeBranch.Creaking -= OnCreak;
+            TreeBranch.Snapped -= OnSnap;
             GameSettings.Restore();
         }
 

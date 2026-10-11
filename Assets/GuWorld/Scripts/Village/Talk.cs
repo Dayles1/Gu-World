@@ -36,6 +36,11 @@ namespace GuWorld.Village
                 Role.Teacher => $"{time} А, ты из тех, кто ждёт пробуждения.{weather}",
                 Role.Student => $"Привет! {weather.Trim()}",
                 Role.Elder => $"{time} Не торопись, {you}. Старикам нравится, когда с ними говорят.",
+                Role.Child => "Ой! Ты кто? Ты тоже из академии?",
+                Role.Idler => $"{time} Присядь, {you}, отдохни со стариком.",
+                Role.Drinker => $"{time} Нальёшь — расскажу всё, что знаю. Шучу. Почти.",
+                Role.Patrol => $"{time} Не мешайся, {you}, я на обходе.",
+                _ when who.Spec.Settlement != "gu_yue" => $"Чужак? Да ещё в одежде Гу Юэ. {time.Replace("Доброе утро.", "Утро не доброе.")} Говори, что надо, и уходи.",
                 _ => $"{time}{weather}",
             };
         }
@@ -45,7 +50,7 @@ namespace GuWorld.Village
         public static string News(Villager who, int day)
         {
             var mine = who.Spec.Lines;
-            var general = General;
+            var general = who.Spec.Settlement == "gu_yue" ? General : new string[0];
             var pick = (day * 7 + who.Index * 3) % (mine.Length + general.Length);
 
             return pick < mine.Length ? mine[pick] : general[pick - mine.Length];
@@ -53,7 +58,7 @@ namespace GuWorld.Village
 
         public static string Village(Villager who, int asked)
         {
-            var facts = Facts;
+            var facts = who.Spec.Settlement == "gu_yue" ? Facts : who.Spec.Lines;
 
             return facts[(asked + who.Index) % facts.Length];
         }

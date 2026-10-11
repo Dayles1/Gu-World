@@ -22,13 +22,16 @@ namespace GuWorld.Village
         public IReadOnlyList<Villager> People => people;
         public bool AllHere => waiting.Count == 0;
 
-        public static Villagers Create(VillageLayout layout, HumanBody.Parts parts)
+        public static Villagers Create(VillageLayout layout, HumanBody.Parts parts) => Create(layout, parts, Roster.People());
+
+        /// <summary>A village's people: who they are (made one a frame, as they are needed).</summary>
+        public static Villagers Create(VillageLayout layout, HumanBody.Parts parts, System.Collections.Generic.IEnumerable<VillagerSpec> specs)
         {
-            var villagers = new GameObject("Villagers").AddComponent<Villagers>();
+            var villagers = new GameObject($"Villagers {layout.Settlement}").AddComponent<Villagers>();
             villagers.layout = layout;
             villagers.parts = parts;
 
-            foreach (var person in Roster.People())
+            foreach (var person in specs)
             {
                 villagers.waiting.Enqueue(person);
             }

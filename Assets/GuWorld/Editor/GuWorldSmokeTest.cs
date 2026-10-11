@@ -300,6 +300,57 @@ namespace GuWorld.Editor
             Check(body.GetComponentsInChildren<Combat.HitZone>().Length == Combat.HitZones.Specs.Length,
                 $"the hero's body has its parts ({body.GetComponentsInChildren<Combat.HitZone>().Length})");
 
+            // A giant tree: climbed, a branch stepped onto, sat on at its edge, cut off.
+            {
+                var treeGo = new GameObject("Test Tree");
+                treeGo.transform.position = new Vector3(-30, 0, 30);
+                var tree = treeGo.AddComponent<World.ClimbTree>();
+                tree.BaseRadius = 1;
+                tree.TopRadius = 0.6f;
+                tree.ClimbHeight = 12;
+                var trunk = treeGo.AddComponent<CapsuleCollider>();
+                trunk.radius = 0.95f;
+                trunk.height = 14;
+                trunk.center = new Vector3(0, 7, 0);
+                var limbGo = new GameObject("Branch");
+                limbGo.transform.SetParent(treeGo.transform, false);
+                limbGo.transform.localPosition = new Vector3(0, 6, 0.8f);
+                var limb = limbGo.AddComponent<World.TreeBranch>();
+                limb.Length = 7;
+                limb.RootThickness = 0.8f;
+                limb.TipThickness = 0.25f;
+                limb.Health = 150;
+                limb.Tree = tree;
+                var solidGo = new GameObject("Solid");
+                solidGo.transform.SetParent(limbGo.transform, false);
+                solidGo.transform.localPosition = new Vector3(0, 0, 3.5f);
+                solidGo.AddComponent<BoxCollider>().size = new Vector3(0.8f, 0.75f, 7);
+                tree.Branches = new[] { limb };
+                UnityEngine.Physics.SyncTransforms();
+
+                Teleport(body, new Vector3(-30, 0, 31.6f));
+                Check(World.ClimbTree.Near(body.transform.position, 0.9f, out _) == tree && body.GrabTree(tree), "the hero takes hold of a giant tree's trunk");
+
+                for (var t = 0f; t < 4; t += Dt)
+                {
+                    body.ClimbTick(Dt, 1, 0, false);
+                }
+
+                Check(body.Tree == tree && body.TreeHeight > 5.2f && body.transform.position.y > 5, $"W climbs the trunk ({body.TreeHeight:0.0} m up)");
+                Check(body.StepOntoBranch() && body.Tree == null, "E steps from the trunk onto the branch beside it");
+                UnityEngine.Physics.SyncTransforms();
+                Run(body, 0.5f, Vector2.zero);
+                Check(body.Grounded && body.transform.position.y > 6 && body.Branch == limb, $"standing on the branch ({body.transform.position.y:0.00} m, on {body.Branch?.name})");
+                Run(body, 1.2f, new Vector2(0, 1));
+                Run(body, 0.3f, Vector2.zero);
+                Check(body.SitDown() && body.Sitting, $"X sits down on the branch (on its edge: {body.SittingOnEdge})");
+                body.StandUp();
+                limb.TakeStrike(new Combat.Strike { Power = 400, Sharpness = 1, Direction = Vector3.right }, null);
+                Check(limb.Broken && limb.GetComponent<Rigidbody>() != null, "a hard enough cut breaks the branch off and it falls");
+                Object.DestroyImmediate(treeGo);
+                Teleport(body, new Vector3(0, 0, 12));
+            }
+
             // The body: the model worn, its feet on the ground, its head up top.
             var picture = Object.FindAnyObjectByType<HeroView>();
             Check(picture != null && picture.HasBody, "the hero wears the realistic body");

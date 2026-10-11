@@ -91,6 +91,120 @@ namespace GuWorld.Editor
             Triangle(material, a, c, d, outward);
         }
 
+        /// <summary>Nothing has been added yet.</summary>
+        public bool IsEmpty => order.Count == 0;
+
+        /// <summary>A triangle with its own texture coordinates, facing `outward` (up when not given).</summary>
+        public void TriangleUV(Material material, Vector3 a, Vector3 b, Vector3 c, Vector2 ua, Vector2 ub, Vector2 uc, Vector3? outward = null)
+        {
+            var facing = outward ?? Vector3.up;
+
+            if (Vector3.Dot(Vector3.Cross(b - a, c - a), facing) < 0)
+            {
+                (b, c) = (c, b);
+                (ub, uc) = (uc, ub);
+            }
+
+            a = Transform.MultiplyPoint3x4(a);
+            b = Transform.MultiplyPoint3x4(b);
+            c = Transform.MultiplyPoint3x4(c);
+            var normal = Vector3.Cross(b - a, c - a).normalized;
+
+            if (normal == Vector3.zero)
+            {
+                return;
+            }
+
+            var part = For(material);
+            var start = part.vertices.Count;
+            part.vertices.Add(a);
+            part.vertices.Add(b);
+            part.vertices.Add(c);
+            part.normals.Add(normal);
+            part.normals.Add(normal);
+            part.normals.Add(normal);
+            part.uvs.Add(ua);
+            part.uvs.Add(ub);
+            part.uvs.Add(uc);
+            part.triangles.Add(start);
+            part.triangles.Add(start + 1);
+            part.triangles.Add(start + 2);
+        }
+
+        /// <summary>A quad (corners in order round it) with its own texture coordinates, facing `outward` (up when not given).</summary>
+        public void QuadUV(Material material, Vector3 a, Vector3 b, Vector3 c, Vector3 d, Vector2 ua, Vector2 ub, Vector2 uc, Vector2 ud, Vector3? outward = null)
+        {
+            TriangleUV(material, a, b, c, ua, ub, uc, outward);
+            TriangleUV(material, a, c, d, ua, uc, ud, outward);
+        }
+
+        /// <summary>Everything another kit holds, added to this one (moved by this kit's Transform).</summary>
+        public void Append(MeshKit other)
+        {
+            foreach (var material in other.order)
+            {
+                var from = other.parts[material];
+                var part = For(material);
+                var start = part.vertices.Count;
+
+                for (var i = 0; i < from.vertices.Count; i++)
+                {
+                    part.vertices.Add(Transform.MultiplyPoint3x4(from.vertices[i]));
+                    part.normals.Add(Transform.MultiplyVector(from.normals[i]).normalized);
+                    part.uvs.Add(from.uvs[i]);
+                }
+
+                foreach (var t in from.triangles)
+                {
+                    part.triangles.Add(start + t);
+                }
+            }
+        }
+
+        /// <summary>How many triangles it holds.</summary>
+        public int TriangleCount
+        {
+            get
+            {
+                var count = 0;
+
+                foreach (var part in parts.Values)
+                {
+                    count += part.triangles.Count / 3;
+                }
+
+                return count;
+            }
+        }
+
+        /// <summary>Moves every point already added by `bend` (to make a building crooked: a lean, a sagging ridge).</summary>
+        public void Deform(System.Func<Vector3, Vector3> bend)
+        {
+            foreach (var part in parts.Values)
+            {
+                for (var i = 0; i < part.vertices.Count; i++)
+                {
+                    part.vertices[i] = bend(part.vertices[i]);
+                }
+
+                // The faces' normals again, from their moved corners.
+                for (var t = 0; t + 2 < part.triangles.Count; t += 3)
+                {
+                    var a = part.vertices[part.triangles[t]];
+                    var b = part.vertices[part.triangles[t + 1]];
+                    var c = part.vertices[part.triangles[t + 2]];
+                    var n = Vector3.Cross(b - a, c - a).normalized;
+
+                    if (n != Vector3.zero)
+                    {
+                        part.normals[part.triangles[t]] = n;
+                        part.normals[part.triangles[t + 1]] = n;
+                        part.normals[part.triangles[t + 2]] = n;
+                    }
+                }
+            }
+        }
+
         /// <summary>A box: centre, size and a turn about Y (degrees).</summary>
         public void Box(Material material, Vector3 centre, Vector3 size, float yaw = 0)
         {
@@ -152,7 +266,10 @@ namespace GuWorld.Editor
         /// <summary>A rough sphere (an icosahedron, once subdivided), squashed by `scale`.</summary>
         public void Blob(Material material, Vector3 centre, Vector3 scale, int seed = 0)
         {
-            foreach (var (a, b, c) in Icosphere())
+            // Small ones need no roundness: 20 faces, not 80 (thousands of them lie about the villages).
+            var small = Mathf.Max(scale.x, Mathf.Max(scale.y, scale.z)) < 0.45f;
+
+            foreach (var (a, b, c) in small ? Icosahedron() : Icosphere())
             {
                 // Each corner nudged its own way, from the seed, so blobs are not all alike.
                 Vector3 Bump(Vector3 p) => p * (1 + 0.12f * Mathf.Sin(seed * 12.9898f + p.x * 7.1f + p.y * 3.7f + p.z * 5.3f));
@@ -164,6 +281,51 @@ namespace GuWorld.Editor
         }
 
         static List<(Vector3, Vector3, Vector3)> icosphere;
+        static List<(Vector3, Vector3, Vector3)> icosahedron;
+
+        /// <summary>The icosphere's corners before it is divided: 20 faces.</summary>
+        static List<(Vector3, Vector3, Vector3)> Icosahedron()
+        {
+            if (icosahedron != null)
+            {
+                return icosahedron;
+            }
+
+            icosahedron = new List<(Vector3, Vector3, Vector3)>();
+            var faces = Icosphere();
+
+            // Every fourth face of the divided one is the middle of an original face; its corners' origins are the others'.
+            for (var i = 0; i < faces.Count; i += 4)
+            {
+                icosahedron.Add((faces[i].Item1, faces[i + 1].Item1, faces[i + 2].Item1));
+            }
+
+            return icosahedron;
+        }
+
+        /// <summary>A small lump (a cabbage, a clod): eight faces, nudged by the seed.</summary>
+        public void Lump(Material material, Vector3 centre, Vector3 scale, int seed = 0)
+        {
+            var j = 0.85f + 0.3f * Mathf.Abs(Mathf.Sin(seed * 12.9898f));
+            var top = centre + Vector3.up * scale.y * j;
+            var bottom = centre - Vector3.up * scale.y * 0.4f;
+            var turn = Quaternion.Euler(0, seed * 37 % 90, 0);
+            var ring = new Vector3[4];
+
+            for (var i = 0; i < 4; i++)
+            {
+                var a = i * Mathf.PI / 2;
+                ring[i] = centre + turn * new Vector3(Mathf.Cos(a) * scale.x, 0, Mathf.Sin(a) * scale.z);
+            }
+
+            for (var i = 0; i < 4; i++)
+            {
+                var a = ring[i];
+                var b = ring[(i + 1) % 4];
+                Triangle(material, a, top, b, (a + b + top) / 3 - centre);
+                Triangle(material, b, bottom, a, (a + b + bottom) / 3 - centre);
+            }
+        }
 
         static List<(Vector3, Vector3, Vector3)> Icosphere()
         {

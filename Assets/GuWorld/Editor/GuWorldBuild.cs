@@ -20,10 +20,30 @@ namespace GuWorld.Editor
         [MenuItem("Gu World/Build for Windows", priority = 40)]
         public static void Windows()
         {
+            BuildLog.Begin("Windows player build");
             if (!File.Exists(ScenePath))
             {
                 GuWorldSetup.CreateScene();
             }
+
+            // The mountain is made, not kept, and built on its own (Tools/QingMao/build.ps1, or Gu World → Build Qing Mao Mountain):
+            // a player build without it would start on the proving ground.
+            if (!File.Exists(QingMaoBuilder.ScenePath))
+            {
+                Debug.LogError($"GU World: Qing Mao Mountain is not built ({QingMaoBuilder.ScenePath}). Build it first: Tools/QingMao/build.ps1.");
+
+                if (Application.isBatchMode)
+                {
+                    EditorApplication.Exit(1);
+                }
+
+                return;
+            }
+
+            // Colliders' shapes baked at build time (the mountain's drawn-only meshes are not readable in the game).
+            PlayerSettings.bakeCollisionMeshes = true;
+            // The GPU's time per frame, for the timed runs (-bench).
+            PlayerSettings.enableFrameTimingStats = true;
 
             // The scenes the project lists (the mountain first, where it exists).
             var scenes = System.Array.ConvertAll(System.Array.FindAll(EditorBuildSettings.scenes, s => s.enabled && File.Exists(s.path)), s => s.path);
@@ -40,11 +60,11 @@ namespace GuWorld.Editor
 
             if (summary.result == BuildResult.Succeeded)
             {
-                Debug.Log($"GU World: built {summary.outputPath} ({summary.totalSize / (1024 * 1024)} MB) in {summary.totalTime.TotalSeconds:0} s");
+                BuildLog.Write($"built {summary.outputPath} ({summary.totalSize / (1024 * 1024)} MB) in {summary.totalTime.TotalSeconds:0} s");
             }
             else
             {
-                Debug.LogError($"GU World: the build {summary.result} with {summary.totalErrors} errors");
+                BuildLog.Write($"the build {summary.result} with {summary.totalErrors} errors");
 
                 if (Application.isBatchMode)
                 {

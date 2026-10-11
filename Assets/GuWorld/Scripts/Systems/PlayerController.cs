@@ -86,9 +86,40 @@ namespace GuWorld.Systems
                 Cursor.visible = true;
             }
 
+            // On a giant tree's trunk: W/S climb, A/D go round it, Space jumps off.
+            if (body.Tree != null)
+            {
+                if (Active)
+                {
+                    static float Key(bool positive, bool negative) => (positive ? 1 : 0) - (negative ? 1 : 0);
+                    var up = Key(keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed, keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed);
+                    var around = Key(keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed, keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed);
+                    body.ClimbTick(Time.deltaTime, up, around, keyboard.spaceKey.wasPressedThisFrame);
+                    var delta = mouse.delta.ReadValue();
+                    var scroll = mouse.scroll.ReadValue().y;
+                    Camera.Look(delta.x, delta.y, -Mathf.Sign(scroll) * (scroll != 0 ? 1 : 0));
+                }
+
+                transform.rotation = Quaternion.Euler(0, body.Facing * Mathf.Rad2Deg, 0);
+
+                return;
+            }
+
             if (Active)
             {
-                if (keyboard.spaceKey.wasPressedThisFrame) Jump();
+                // Sitting: X again, or any step, gets up.
+                if (keyboard.xKey.wasPressedThisFrame)
+                {
+                    if (body.Sitting) body.StandUp();
+                    else body.SitDown();
+                }
+
+                if (body.Sitting && Direction(keyboard).sqrMagnitude > 0.01f)
+                {
+                    body.StandUp();
+                }
+
+                if (keyboard.spaceKey.wasPressedThisFrame && !body.Sitting) Jump();
                 if (keyboard.cKey.wasPressedThisFrame || keyboard.leftCtrlKey.wasPressedThisFrame) ToggleStance(Stance.Crouch);
                 if (keyboard.zKey.wasPressedThisFrame) ToggleStance(Stance.Crawl);
 
@@ -130,7 +161,8 @@ namespace GuWorld.Systems
             }
 
             var running = body.HorizontalSpeed > HeroMotor.SpeedOf(body.Stance).walk + 0.5f;
-            Camera.Follow(Time.deltaTime, transform.position, EyesOf(body.Stance) * EyeScale, running, !cameraPlaced);
+            var eyes = body.Sitting ? (body.SittingOnEdge ? 0.95f : 0.85f) : EyesOf(body.Stance);
+            Camera.Follow(Time.deltaTime, transform.position, eyes * EyeScale, running, !cameraPlaced);
             cameraPlaced = true;
         }
 

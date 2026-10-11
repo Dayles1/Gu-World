@@ -25,16 +25,23 @@ namespace GuWorld.Render
         /// <summary>The village's lit materials whose glow comes on at night (their emission is on in the asset).</summary>
         public Material LanternMaterial;
         public Material WindowMaterial;
+        /// <summary>Lit materials that glow warm at night (braziers, forges, red lanterns).</summary>
+        public Material[] WarmMaterials = new Material[0];
+        /// <summary>The waterfall's sheet: its texture scrolled down, so the water falls.</summary>
+        public Material FallMaterial;
         public Light[] NightLights = new Light[0];
         /// <summary>Where mist lies: centre (x, height, z) and size, m.</summary>
         public Vector4[] MistSpots = new Vector4[0];
         /// <summary>The cloud layers' heights, m.</summary>
         public float CloudHeight = 780;
         public float HighCloudHeight = 1250;
+        /// <summary>How far the cloud layers reach from the camera, m (they go with it, their texture fixed to the world).</summary>
+        public float CloudRadius = 4200;
 
         Transform stars;
         Transform moon;
         Material[] clouds;
+        Transform[] cloudLayers;
         Material mist;
         Material starGlow;
         Material moonGlow;
@@ -61,8 +68,11 @@ namespace GuWorld.Render
             {
                 clouds = new[] { new Material(CloudMaterial), new Material(CloudMaterial) };
                 clouds[1].mainTextureScale = CloudMaterial.mainTextureScale * 0.6f;
-                Part("Clouds", CloudLayer(CloudHeight, 4200), clouds[0]);
-                Part("High Clouds", CloudLayer(HighCloudHeight, 4600), clouds[1]);
+                cloudLayers = new[]
+                {
+                    Part("Clouds", CloudLayer(CloudHeight, CloudRadius, 1500 * CloudRadius / 4200), clouds[0]).transform,
+                    Part("High Clouds", CloudLayer(HighCloudHeight, CloudRadius * 1.1f, 1500 * CloudRadius / 4200), clouds[1]).transform,
+                };
             }
 
             if (MistMaterial != null && MistSpots.Length > 0)
@@ -172,7 +182,7 @@ namespace GuWorld.Render
         }
 
         /// <summary>A wide disc of cloud, sinking towards its rim and fading out there, so it meets the horizon softly.</summary>
-        static Mesh CloudLayer(float height, float radius)
+        static Mesh CloudLayer(float height, float radius, float texel)
         {
             const int rings = 18;
             const int segments = 56;
@@ -193,7 +203,7 @@ namespace GuWorld.Render
                     var a = 2 * Mathf.PI * s / segments;
                     var i = 1 + r * segments + s;
                     vertices[i] = new Vector3(Mathf.Cos(a) * distance, height - (height - 120) * t * t, Mathf.Sin(a) * distance);
-                    uvs[i] = new Vector2(vertices[i].x, vertices[i].z) / 1500;
+                    uvs[i] = new Vector2(vertices[i].x, vertices[i].z) / texel;
                     colors[i] = new Color(1, 1, 1, 1 - Mathf.Clamp01((t - 0.45f) / 0.5f));
                 }
             }
@@ -326,7 +336,23 @@ namespace GuWorld.Render
             {
                 rain.transform.position = at + Vector3.up * 18 + Vector3.ProjectOnPlane(followed.forward, Vector3.up).normalized * 10;
             }
+
+            // The clouds go with the camera; their texture is pulled back by as much, so they stay where they are in the sky.
+            if (cloudLayers != null)
+            {
+                var texel = 1500 * CloudRadius / 4200;
+
+                for (var i = 0; i < cloudLayers.Length; i++)
+                {
+                    cloudLayers[i].position = new Vector3(at.x, 0, at.z);
+                    var scale = clouds[i].mainTextureScale;
+                    cloudOffsets[i] += wind * Time.unscaledDeltaTime * (i == 0 ? 0.6f : 1);
+                    clouds[i].mainTextureOffset = cloudOffsets[i] + new Vector2(at.x, at.z) / texel * scale.x;
+                }
+            }
         }
+
+        readonly Vector2[] cloudOffsets = new Vector2[2];
 
         /// <summary>Colours and places it all for this moment: the time of day (0…1), the weather and where the camera is.</summary>
         public void Apply(DaySky sky, Weather weather, float timeOfDay, Transform camera)
@@ -359,8 +385,7 @@ namespace GuWorld.Render
                 tint = Color.Lerp(tint, tint.grayscale * new Color(0.78f, 0.8f, 0.84f), weather.Cover * 0.6f + weather.Rain * 0.3f);
                 clouds[0].color = new Color(tint.r, tint.g, tint.b, 0.2f + 0.8f * weather.Cover);
                 clouds[1].color = new Color(tint.r, tint.g, tint.b, 0.25f + 0.35f * weather.Cover);
-                clouds[0].mainTextureOffset += wind * dt * 0.6f;
-                clouds[1].mainTextureOffset += wind * dt;
+
             }
 
             if (mist != null)
@@ -393,6 +418,20 @@ namespace GuWorld.Render
             if (WindowMaterial != null)
             {
                 WindowMaterial.SetColor("_EmissionColor", new Color(1, 0.72f, 0.4f) * 1.25f * lit);
+            }
+
+            foreach (var warm in WarmMaterials)
+            {
+                if (warm != null)
+                {
+                    // Fires burn by day too, brighter at night.
+                    warm.SetColor("_EmissionColor", new Color(1, 0.55f, 0.25f) * (0.6f + 2.2f * lit));
+                }
+            }
+
+            if (FallMaterial != null)
+            {
+                FallMaterial.mainTextureOffset += new Vector2(0, dt * 1.6f);
             }
 
             foreach (var lamp in NightLights)

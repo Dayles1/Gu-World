@@ -64,9 +64,10 @@ namespace GuWorld.World
                 // Night stretches (21:00–06:00) rain a little more often.
                 var hour = (stretch * 3 % 24 + 24) % 24;
                 var night = hour >= 21 || hour < 6;
-                var rain = night ? 0.28f : 0.18f;
+                var rain = night ? 0.3f : 0.2f;
 
-                return roll < rain ? Sky.Rain : roll < rain + 0.3f ? Sky.Cloudy : Sky.Clear;
+                // An overcast land more often than not.
+                return roll < rain ? Sky.Rain : roll < rain + 0.42f ? Sky.Cloudy : Sky.Clear;
             }
         }
 

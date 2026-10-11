@@ -52,6 +52,8 @@ namespace GuWorld.UI
 
         /// <summary>The location's map, where the hero is on it and which way they face (radians, 0 north).</summary>
         LocalMap Map { get; }
+        /// <summary>A finer map round the hero, for the minimap (null where there is none).</summary>
+        LocalMap NearMap { get; }
         Vector3 HeroAt { get; }
         float HeroFacing { get; }
         /// <summary>The place and the hour, as the HUD shows them.</summary>

@@ -114,9 +114,11 @@ namespace GuWorld.Render
                 acceleration = body.Acceleration,
                 swimming = false,
                 climb = body.ClimbProgress,
+                treeClimb = body.Tree != null ? body.ClimbPhase : null,
+                sit = body.Sitting ? (body.SittingOnEdge ? 2 : 1) : 0,
                 lookYaw = lookYaw,
                 lookPitch = lookPitch,
-                ground = body.Grounded ? GroundAt : null,
+                ground = body.Grounded && !body.Sitting ? GroundAt : null,
             }, body.LandingSpeed);
             body.LandingSpeed = 0;
         }

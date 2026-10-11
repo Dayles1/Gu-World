@@ -16,6 +16,16 @@ namespace GuWorld.Village
         Carpenter,
         Wanderer,
         Attendant,
+        /// <summary>A child: runs about the lanes all day.</summary>
+        Child,
+        /// <summary>Old folk: on a bench through the day.</summary>
+        Idler,
+        /// <summary>Sweeps the doorstep in the morning, about the house after.</summary>
+        Sweeper,
+        /// <summary>At a tavern from late afternoon into the night.</summary>
+        Drinker,
+        /// <summary>A guard walking between the gates.</summary>
+        Patrol,
     }
 
     /// <summary>What someone is doing at an hour of the day.</summary>
@@ -29,6 +39,8 @@ namespace GuWorld.Village
         Stand,
         /// <summary>Strolling about a place, stopping now and then.</summary>
         Wander,
+        /// <summary>Sitting at a place (a bench, a tavern's table).</summary>
+        Sit,
     }
 
     public struct Activity
@@ -61,6 +73,11 @@ namespace GuWorld.Village
         public float Speed = 1.35f;
         public string About;
         public string[] Lines;
+        /// <summary>One of a village's ordinary people (Crowd), not a named one; and whose village it is.</summary>
+        public bool Generic;
+        public string Settlement = "gu_yue";
+        /// <summary>A number of their own, to pick their bench or tavern.</summary>
+        public int Seat => Mathf.Abs((Name ?? "").GetHashCode());
 
         /// <summary>
         /// How hard their body is to wound (Combat.Wounds): common folk are soft, the
@@ -110,6 +127,20 @@ namespace GuWorld.Village
                         hour < 18 ? Activity.At(Doing.Wander, Post, 22) : Activity.At(Doing.Wander, "square", 20);
                 case Role.Attendant:
                     return hour < 6 || hour >= 21 ? Activity.At(Doing.Sleep) : hour < 19 ? Activity.At(Doing.Stand, Post) : Activity.At(Doing.Wander, "square", 20);
+                case Role.Child:
+                    return hour < 7 || hour >= 20 ? Activity.At(Doing.Sleep) : hour < 8 ? Activity.At(Doing.Porch) :
+                        Activity.At(Doing.Wander, (int)hour % 3 == 0 ? "square" : Post, 70);
+                case Role.Idler:
+                    return hour < 6 || hour >= 20 ? Activity.At(Doing.Sleep) : hour < 9 || hour >= 17 ? Activity.At(Doing.Porch) :
+                        Activity.At(Doing.Sit, $"bench {Seat % 4}");
+                case Role.Sweeper:
+                    return hour < 6 || hour >= 21 ? Activity.At(Doing.Sleep) : hour < 10 || hour >= 18 ? Activity.At(Doing.Porch) :
+                        Activity.At(Doing.Wander, Post, 35);
+                case Role.Drinker:
+                    return hour < 8 || hour >= 23 ? Activity.At(Doing.Sleep) : hour < 16 ? Activity.At(Doing.Wander, Post, 45) :
+                        Activity.At(Doing.Sit, $"tavern {Seat % 3}");
+                case Role.Patrol:
+                    return hour < 6 || hour >= 22 ? Activity.At(Doing.Sleep) : Activity.At(Doing.Wander, (int)(hour / 2) % 2 == 0 ? "gate south" : Post, 30);
                 default:
                     return hour < 7 || hour >= 21 ? Activity.At(Doing.Sleep) : hour < 8 ? Activity.At(Doing.Porch) : Activity.At(Doing.Wander, Post, 55);
             }

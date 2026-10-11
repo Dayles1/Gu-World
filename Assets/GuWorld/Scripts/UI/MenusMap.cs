@@ -99,7 +99,8 @@ namespace GuWorld.UI
             UiKit.Caps(region.Name, info, 13, UiKit.EssenceLit).Size(22);
             UiKit.Label($"По атласу: около {place.Width / 1000:0} км в поперечнике, вершина {place.Top:0} м над морем, {place.Rock}. " +
                         $"Ранги мастеров здесь — {place.RankMin}–{place.RankMax}.", info, 16).Size(70);
-            UiKit.Label("Три деревни делят одну гору: Гу Юэ — на склоне, Сюн — на передней горе, Бай — у водопада на задней.", info, 16, UiKit.Muted).Size(70);
+            UiKit.Label("Три деревни делят одну гору и враждуют: Гу Юэ — на поясе горы, Сюн — на передней горе, Бай — у глубокого омута под водопадом на задней. " +
+                        "У подножия — хутора простых людей.", info, 16, UiKit.Muted).Size(70);
             UiKit.Label($"<b>Климат:</b> {region.Climate}", info, 16).Size(26);
             UiKit.Label($"<b>Погода:</b> {string.Join(", ", region.Weather)}", info, 16).Size(48);
             UiKit.Label($"<b>Природа:</b> {string.Join(", ", region.Nature)}", info, 16).Size(48);
@@ -108,7 +109,7 @@ namespace GuWorld.UI
             // Under the world map, in its column.
             var below = UiKit.Rect("Below", right.transform).Place(Vector2.zero, new Vector2(0, 1), 28, 24, -(28 + WorldSize), 72 + WorldSize + 20);
             below.Stack<VerticalLayoutGroup>(6);
-            UiKit.Label("Играть можно только на горе Цинмао: на карте — её обжитое сердце, деревня клана и окрестности. " +
+            UiKit.Label("Играть можно только на горе Цинмао: на карте — вся гора, двадцать километров с запада на восток. " +
                         "Остальной мир атласа откроется в следующих арках.", below, 16, UiKit.Muted).Size(70);
         }
     }

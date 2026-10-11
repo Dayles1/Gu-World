@@ -19,12 +19,6 @@ namespace GuWorld.Render
         Moving,
     }
 
-    /// <summary>Marks a thing's colliders with what it is (the builders put it on houses, props, trees).</summary>
-    public class HitboxTag : MonoBehaviour
-    {
-        public HitboxKind Kind;
-    }
-
     /// <summary>
     /// The hitbox view (F4, or the setting): every collider near the camera drawn as
     /// wire lines in the colour of what it is — buildings orange, props yellow, trees

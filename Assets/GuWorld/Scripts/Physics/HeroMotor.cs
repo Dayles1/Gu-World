@@ -1,3 +1,4 @@
+using GuWorld.World;
 using UnityEngine;
 
 namespace GuWorld.Physics
@@ -104,7 +105,19 @@ namespace GuWorld.Physics
         public float HorizontalSpeed => new Vector2(Velocity.x, Velocity.z).magnitude;
         /// <summary>0…1 through a climb, or null when not climbing.</summary>
         public float? ClimbProgress => climbing ? climbTime / climbDuration : null;
-        public bool Free => !climbing;
+        public bool Free => !climbing && Tree == null && !Sitting;
+
+        /// <summary>The giant tree being climbed (null: none), where round its trunk and how high up the feet are.</summary>
+        public ClimbTree Tree { get; private set; }
+        public float TreeAngle { get; private set; }
+        public float TreeHeight { get; private set; }
+        /// <summary>How far through its moves the climbing has gone (for the arms' and legs' swing).</summary>
+        public float ClimbPhase { get; private set; }
+        /// <summary>Sitting (on the ground, or on an edge with the legs hanging over it).</summary>
+        public bool Sitting { get; private set; }
+        public bool SittingOnEdge { get; private set; }
+        /// <summary>The branch under the feet (null: none).</summary>
+        public TreeBranch Branch { get; private set; }
 
         CharacterController controller;
         float sinceGrounded;
@@ -120,6 +133,7 @@ namespace GuWorld.Physics
         // Collected from the controller's hits during one Move.
         bool hitWalkable;
         Vector3 walkableNormal;
+        Collider groundCollider;
 
         void Awake()
         {
@@ -142,6 +156,139 @@ namespace GuWorld.Physics
             controller.enabled = true;
             Velocity = Vector3.zero;
             climbing = false;
+            Tree = null;
+            Sitting = false;
+        }
+
+        // ── Giant trees ───────────────────────────────────────────────
+
+        /// <summary>Takes hold of a tree's trunk where the body stands before it.</summary>
+        public bool GrabTree(ClimbTree tree)
+        {
+            if (tree == null || climbing || Stance == Stance.Crawl)
+            {
+                return false;
+            }
+
+            var local = transform.position - tree.Foot;
+            TreeAngle = Mathf.Atan2(local.x, local.z);
+            TreeHeight = Mathf.Clamp(local.y + 0.15f, 0.2f, tree.ClimbHeight);
+            Tree = tree;
+            Sitting = false;
+            Stance = Stance.Stand;
+            ApplyCapsule();
+            Velocity = Vector3.zero;
+            HoldTree();
+
+            return true;
+        }
+
+        /// <summary>Lets go of the trunk: a jump away from it, or a drop at its foot.</summary>
+        public void LeaveTree(bool jump)
+        {
+            if (Tree == null)
+            {
+                return;
+            }
+
+            var away = new Vector3(Mathf.Sin(TreeAngle), 0, Mathf.Cos(TreeAngle));
+            Tree = null;
+            Velocity = jump ? away * 4.5f + Vector3.up * 5 : Vector3.zero;
+            Facing = Mathf.Atan2(away.x, away.z);
+        }
+
+        /// <summary>
+        /// A step of climbing: `up` (−1…1) up or down the trunk, `around` (−1…1) round it,
+        /// a jump away from it. At its foot, climbing down puts the feet back on the ground.
+        /// </summary>
+        public void ClimbTick(float dt, float up, float around, bool jump)
+        {
+            if (Tree == null)
+            {
+                return;
+            }
+
+            if (jump)
+            {
+                LeaveTree(true);
+
+                return;
+            }
+
+            var radius = Tree.RadiusAt(TreeHeight);
+            TreeHeight = Mathf.Clamp(TreeHeight + up * 1.4f * dt, 0, Tree.ClimbHeight);
+            TreeAngle += around * 1.2f / Mathf.Max(0.5f, radius) * dt;
+            ClimbPhase += (Mathf.Abs(up) + Mathf.Abs(around) * 0.7f) * dt * 1.3f;
+
+            if (TreeHeight <= 0.01f && up < 0)
+            {
+                LeaveTree(false);
+                PlaceAt(transform.position);
+
+                return;
+            }
+
+            HoldTree();
+        }
+
+        void HoldTree()
+        {
+            controller.enabled = false;
+            transform.position = Tree.Surface(TreeAngle, TreeHeight, Radius + 0.1f);
+            controller.enabled = true;
+            Facing = TreeAngle + Mathf.PI;
+            Grounded = false;
+            Velocity = Vector3.zero;
+        }
+
+        /// <summary>Steps from the trunk onto the branch beside the hands, if there is one: standing on it, facing out along it.</summary>
+        public bool StepOntoBranch()
+        {
+            var branch = Tree != null ? Tree.BranchAt(TreeAngle, TreeHeight + 0.4f) : null;
+
+            if (branch == null)
+            {
+                return false;
+            }
+
+            Tree = null;
+            var top = branch.transform.TransformPoint(new Vector3(0, branch.RootThickness * 0.5f + 0.08f, 1.1f));
+            controller.enabled = false;
+            transform.position = top;
+            controller.enabled = true;
+            var along = branch.transform.forward;
+            Facing = Mathf.Atan2(along.x, along.z);
+            Velocity = Vector3.zero;
+            Grounded = true;
+
+            return true;
+        }
+
+        // ── Sitting ───────────────────────────────────────────────────
+
+        /// <summary>Sits down where the body stands: on an edge (a branch, a wall, a ledge) with the legs over it, or on the ground.</summary>
+        public bool SitDown()
+        {
+            if (!Free || !Grounded || HorizontalSpeed > 0.6f)
+            {
+                return false;
+            }
+
+            var forward = new Vector3(Mathf.Sin(Facing), 0, Mathf.Cos(Facing));
+            var feet = transform.position;
+            // An edge: nothing to stand on just ahead, for a good way down.
+            SittingOnEdge = !SurfaceBelow(feet + forward * 0.5f + Vector3.up * 0.3f, 1.1f, out _, out _);
+            Sitting = true;
+            Velocity = Vector3.zero;
+            Stance = Stance.Stand;
+            ApplyCapsule();
+
+            return true;
+        }
+
+        public void StandUp()
+        {
+            Sitting = false;
         }
 
         /// <summary>Changes stance; false when there is no room to stand taller.</summary>
@@ -236,6 +383,19 @@ namespace GuWorld.Physics
         public void Tick(float dt, MotorInput input)
         {
             var before = Facing;
+
+            if (Tree != null)
+            {
+                return;
+            }
+
+            if (Sitting)
+            {
+                Velocity = Vector3.zero;
+                TurnRate = 0;
+
+                return;
+            }
 
             if (climbing)
             {
@@ -357,6 +517,7 @@ namespace GuWorld.Physics
             controller.stepOffset = wasGrounded && !jumped ? StepUp : 0;
 
             hitWalkable = false;
+            groundCollider = null;
             controller.Move(Velocity * h);
 
             Grounded = hitWalkable;
@@ -382,6 +543,14 @@ namespace GuWorld.Physics
                 Landed?.Invoke(fallSpeed);
             }
 
+            // On a branch: it bears the weight (a thin stretch may give).
+            Branch = Grounded && groundCollider != null ? groundCollider.GetComponentInParent<TreeBranch>() : null;
+
+            if (Branch != null)
+            {
+                Branch.Bear(transform.position, h);
+            }
+
             KeepInside();
         }
 
@@ -398,6 +567,7 @@ namespace GuWorld.Physics
             {
                 hitWalkable = true;
                 walkableNormal = normal;
+                groundCollider = hit.collider;
 
                 return;
             }

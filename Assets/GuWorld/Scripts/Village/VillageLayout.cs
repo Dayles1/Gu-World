@@ -22,6 +22,8 @@ namespace GuWorld.Village
             public float yaw;
         }
 
+        /// <summary>Whose village it is (QingMao's settlement id: "gu_yue", "bai", "xiong").</summary>
+        public string Settlement;
         public Spot[] Houses = new Spot[0];
         public Spot[] Places = new Spot[0];
         public Vector3[] Nodes = new Vector3[0];
