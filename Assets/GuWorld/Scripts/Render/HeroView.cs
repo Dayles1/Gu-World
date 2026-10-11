@@ -1,4 +1,5 @@
 using GuWorld.Body;
+using GuWorld.Combat;
 using GuWorld.Physics;
 using UnityEngine;
 
@@ -38,6 +39,9 @@ namespace GuWorld.Render
 
         public bool HasBody => figure != null && figure.HasBody;
 
+        /// <summary>The hero's figure (its joints carry the body's parts).</summary>
+        public PersonFigure Figure => figure;
+
         /// <summary>The figure's size against the models' (1 = 1.8 m).</summary>
         public float Scale => HeightOf(Look.Gender) / 1.8f;
 
@@ -53,6 +57,7 @@ namespace GuWorld.Render
             Look = look;
             figure?.Destroy();
             figure = new PersonFigure(transform, Parts, look, HumanBody.Build.ForHero(look), HeightOf(look.Gender));
+            HitZones.Build(figure.Rig, GetComponent<IStrikable>());
             Pose(0.5f);
         }
 

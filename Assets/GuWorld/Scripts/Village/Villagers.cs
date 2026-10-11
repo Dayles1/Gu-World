@@ -68,7 +68,7 @@ namespace GuWorld.Village
 
             foreach (var person in people)
             {
-                if (person.Asleep)
+                if (person.Asleep || person.Down)
                 {
                     continue;
                 }

@@ -277,7 +277,7 @@ namespace GuWorld.Editor
             if (dummy != null)
             {
                 var hero = body.GetComponent<CharacterController>();
-                var target = dummy.transform.position + Vector3.up * 1.2f;
+                var target = dummy.transform.position + Vector3.up * 1.35f;
                 var from = target + Vector3.back * 6;
                 UnityEngine.Physics.SyncTransforms();
                 var blade = Moonblade.Throw(from, target - from, GuBook.Moonlight, hero);
@@ -287,9 +287,18 @@ namespace GuWorld.Editor
                     blade.Step(Dt);
                 }
 
-                Check(Mathf.Approximately(dummy.Health, TrainingDummy.Toughness - GuBook.Moonlight.Damage),
-                    $"the moonblade cuts the dummy ({dummy.Health} of {TrainingDummy.Toughness})");
+                Check(dummy.Health < TrainingDummy.Sturdiness - 10 && dummy.Health > 0,
+                    $"the moonblade cuts the dummy ({dummy.Health:0} of {TrainingDummy.Sturdiness})");
             }
+
+            // Wounds: a blow far weaker than the body does nothing; an equal one takes the part's share.
+            Check(Combat.Wounds.Scale(30, 100) == 0 && Mathf.Approximately(Combat.Wounds.Scale(100, 100), 1) && Combat.Wounds.Scale(400, 100) > 1.9f,
+                $"blows scale by strength against toughness ({Combat.Wounds.Scale(30, 100)}, {Combat.Wounds.Scale(100, 100)}, {Combat.Wounds.Scale(400, 100):0.00})");
+            var headShare = Combat.Wounds.Harm(Combat.BodyPart.Head, new Combat.Strike { Power = 100, Sharpness = 1 }, 100, 100, null);
+            var handShare = Combat.Wounds.Harm(Combat.BodyPart.HandL, new Combat.Strike { Power = 100, Sharpness = 1 }, 100, 100, null);
+            Check(headShare > 60 && headShare < 70 && handShare < 6, $"the head takes far more than a hand ({headShare:0}, {handShare:0.0})");
+            Check(body.GetComponentsInChildren<Combat.HitZone>().Length == Combat.HitZones.Specs.Length,
+                $"the hero's body has its parts ({body.GetComponentsInChildren<Combat.HitZone>().Length})");
 
             // The body: the model worn, its feet on the ground, its head up top.
             var picture = Object.FindAnyObjectByType<HeroView>();

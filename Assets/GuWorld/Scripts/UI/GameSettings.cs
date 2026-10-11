@@ -19,6 +19,14 @@ namespace GuWorld.UI
         const string FovKey = "gw.fov";
         const string VolumeKey = "gw.volume";
         const string FpsKey = "gw.showFps";
+        const string HitboxKey = "gw.hitboxes";
+
+        /// <summary>The hitbox view (F4): every collider near the camera drawn as wire lines.</summary>
+        public static bool ShowHitboxes
+        {
+            get => PlayerPrefs.GetInt(HitboxKey, 0) == 1;
+            set => PlayerPrefs.SetInt(HitboxKey, value ? 1 : 0);
+        }
 
         /// <summary>A frames-per-second counter in the top left corner.</summary>
         public static bool ShowFps
@@ -41,22 +49,54 @@ namespace GuWorld.UI
         }
 
         /// <summary>
-        /// 0 low, 1 medium, 2 high: how sharp the picture is drawn (render scale), how
-        /// smooth its edges (MSAA) and how far the shadows reach. (The project's quality
-        /// levels cannot do it: a Windows build keeps only one of them.)
+        /// The graphics level, 0 low … 3 ultra: how sharp the picture is drawn (render
+        /// scale), how smooth its edges (MSAA), how far and how finely the shadows reach,
+        /// how far grass, trees and fine detail are drawn, how many insects fly and how
+        /// far people are seen. (The project's quality levels cannot do it: a Windows
+        /// build keeps only one of them.)
         /// </summary>
         public static int Quality
         {
-            get => Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 2), 0, 2);
-            set => PlayerPrefs.SetInt(QualityKey, Mathf.Clamp(value, 0, 2));
+            get => Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 2), 0, Levels.Length - 1);
+            set => PlayerPrefs.SetInt(QualityKey, Mathf.Clamp(value, 0, Levels.Length - 1));
         }
 
-        static readonly (float scale, int msaa, float shadows)[] Levels =
+        public struct Level
         {
-            (0.75f, 1, 25),
-            (1f, 2, 40),
-            (1f, 4, 60),
+            public string Name;
+            public float Scale;
+            public int Msaa;
+            public float Shadows;
+            public int Cascades;
+            public float LodBias;
+            /// <summary>The terrain's error in pixels (lower: finer far away).</summary>
+            public float TerrainError;
+            /// <summary>Grass and small plants: how far, m, and how thick, 0…1.</summary>
+            public float GrassDistance;
+            public float GrassDensity;
+            /// <summary>Trees in full, m, and drawn at all, m.</summary>
+            public float TreeDetail;
+            public float TreeDistance;
+            /// <summary>How many insects fly, against the high level's.</summary>
+            public float Insects;
+            /// <summary>How far people are drawn, m, and posed, m.</summary>
+            public float PeopleSight;
+            public float PeoplePose;
+            /// <summary>How far the camera sees, against the location's own.</summary>
+            public float Distance;
+            public bool Bloom;
+        }
+
+        public static readonly Level[] Levels =
+        {
+            new Level { Name = "Низкое", Scale = 0.75f, Msaa = 1, Shadows = 35, Cascades = 1, LodBias = 0.6f, TerrainError = 8, GrassDistance = 45, GrassDensity = 0.35f, TreeDetail = 120, TreeDistance = 1200, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false },
+            new Level { Name = "Среднее", Scale = 0.9f, Msaa = 2, Shadows = 55, Cascades = 2, LodBias = 1, TerrainError = 5, GrassDistance = 75, GrassDensity = 0.6f, TreeDetail = 200, TreeDistance = 2200, Insects = 0.6f, PeopleSight = 130, PeoplePose = 60, Distance = 0.75f, Bloom = true },
+            new Level { Name = "Высокое", Scale = 1, Msaa = 4, Shadows = 85, Cascades = 4, LodBias = 1.5f, TerrainError = 3, GrassDistance = 110, GrassDensity = 0.9f, TreeDetail = 320, TreeDistance = 3500, Insects = 1, PeopleSight = 170, PeoplePose = 75, Distance = 1, Bloom = true },
+            new Level { Name = "Ультра", Scale = 1, Msaa = 4, Shadows = 140, Cascades = 4, LodBias = 2.2f, TerrainError = 1.5f, GrassDistance = 160, GrassDensity = 1, TreeDetail = 480, TreeDistance = 5000, Insects = 1.5f, PeopleSight = 230, PeoplePose = 110, Distance = 1.25f, Bloom = true },
         };
+
+        /// <summary>The level in effect.</summary>
+        public static Level Current => Levels[Quality];
 
         // The render pipeline's own values, to give back on leaving play in the editor
         // (there the pipeline is an asset of the project, and changes to it would stay).
@@ -64,6 +104,7 @@ namespace GuWorld.UI
         static float originalScale;
         static int originalMsaa;
         static float originalShadows;
+        static int originalCascades;
 
         /// <summary>Gives the render pipeline its own values back (the editor, on leaving play).</summary>
         public static void Restore()
@@ -73,6 +114,7 @@ namespace GuWorld.UI
                 urp.renderScale = originalScale;
                 urp.msaaSampleCount = originalMsaa;
                 urp.shadowDistance = originalShadows;
+                urp.shadowCascadeCount = originalCascades;
             }
         }
 
@@ -102,6 +144,9 @@ namespace GuWorld.UI
             set => PlayerPrefs.SetFloat(VolumeKey, Mathf.Clamp01(value));
         }
 
+        /// <summary>The settings changed (things that read the level — insects, people — take it up).</summary>
+        public static event System.Action Changed;
+
         /// <summary>Puts every setting into effect.</summary>
         public static void Apply(Render.ThirdPersonCamera view)
         {
@@ -112,14 +157,44 @@ namespace GuWorld.UI
                     originalScale = urp.renderScale;
                     originalMsaa = urp.msaaSampleCount;
                     originalShadows = urp.shadowDistance;
+                    originalCascades = urp.shadowCascadeCount;
                     remembered = true;
                 }
 
-                var level = Levels[Quality];
-                urp.renderScale = level.scale;
-                urp.msaaSampleCount = level.msaa;
-                urp.shadowDistance = level.shadows;
+                urp.renderScale = Current.Scale;
+                urp.msaaSampleCount = Current.Msaa;
+                urp.shadowDistance = Current.Shadows;
+                urp.shadowCascadeCount = Current.Cascades;
             }
+
+            var level = Current;
+            QualitySettings.lodBias = level.LodBias;
+
+            foreach (var terrain in Terrain.activeTerrains)
+            {
+                if (terrain == null)
+                {
+                    continue;
+                }
+
+                terrain.heightmapPixelError = level.TerrainError;
+                terrain.detailObjectDistance = level.GrassDistance;
+                terrain.detailObjectDensity = level.GrassDensity;
+                terrain.treeBillboardDistance = level.TreeDetail;
+                terrain.treeDistance = level.TreeDistance;
+                terrain.treeCrossFadeLength = 30;
+            }
+
+            // Bloom (the lanterns' and the moonblade's glow) only from the medium level up.
+            foreach (var volume in Object.FindObjectsByType<Volume>(FindObjectsSortMode.None))
+            {
+                if (volume.sharedProfile != null && volume.sharedProfile.TryGet<Bloom>(out var bloom))
+                {
+                    bloom.active = level.Bloom;
+                }
+            }
+
+            Changed?.Invoke();
 
             QualitySettings.vSyncCount = VSync ? 1 : 0;
             AudioListener.volume = Volume;

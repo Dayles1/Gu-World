@@ -62,6 +62,21 @@ namespace GuWorld.Village
         public string About;
         public string[] Lines;
 
+        /// <summary>
+        /// How hard their body is to wound (Combat.Wounds): common folk are soft, the
+        /// clan's youths a little harder, its Gu Masters — the guards, the teachers —
+        /// harder still, an elder hardest.
+        /// </summary>
+        public float Toughness => Role switch
+        {
+            Role.Guard or Role.NightGuard => 140,
+            Role.Teacher => 220,
+            Role.Elder => 300,
+            Role.Attendant => 110,
+            Role.Student => 70,
+            _ => Name != null && Name.Contains("Гу Юэ") ? 80 : 45,
+        };
+
         /// <summary>What they do at an hour (0…24).</summary>
         public Activity Plan(float hour)
         {

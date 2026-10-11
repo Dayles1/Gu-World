@@ -42,7 +42,7 @@ namespace GuWorld.UI
             var tabs = UiKit.Rect("Tabs", top).Place(Vector2.zero, new Vector2(0, 1), 430, 12, -1100, 12);
             tabs.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleLeft).childForceExpandWidth = true;
 
-            foreach (var (label, key, target) in new[] { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Карта", "M", Page.Map) })
+            foreach (var (label, key, target) in new[] { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) })
             {
                 var to = target;
                 UiKit.Button($"{UiKit.Spaced(label)}   <color=#A69A86>{key}</color>", tabs, () => host.OpenPage(to), target == page ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(52, -1, 1);

@@ -666,14 +666,17 @@ namespace GuWorld.Cultivation
             return Feed(hungriest);
         }
 
+        int throws;
+
         /// <summary>The cut: the hero turns to where the camera looks and throws the blade from the right hand.</summary>
         void ThrowMoonblade(GuKind kind)
         {
-            var aim = Camera != null ? Camera.transform.forward : transform.forward;
-            // Not into one's own feet: aim no lower than a little below level.
-            aim.y = Mathf.Max(aim.y, -0.25f);
-            aim.Normalize();
-            var flat = new Vector3(aim.x, 0, aim.z).normalized;
+            // Where the camera looks, but level when it looks over the hero's shoulder as it usually
+            // does (a little from above): raising or lowering the view raises or lowers the throw.
+            var forward = Camera != null ? Camera.transform.forward : transform.forward;
+            var flat = new Vector3(forward.x, 0, forward.z).normalized;
+            var rise = Camera != null ? Mathf.Clamp(-(Camera.Pitch - 0.3f), -0.35f, 0.9f) : 0;
+            var aim = (flat * Mathf.Cos(rise) + Vector3.up * Mathf.Sin(rise)).normalized;
 
             if (flat.sqrMagnitude > 0.01f && body != null)
             {
@@ -684,7 +687,10 @@ namespace GuWorld.Cultivation
             var height = view != null ? 1.3f * view.Scale : 1.25f;
             var right = Vector3.Cross(Vector3.up, flat);
             var from = transform.position + Vector3.up * height + right * 0.25f + flat * 0.45f;
-            Moonblade.Throw(from, aim, kind, solid);
+            // Stronger with every rank; each cut tilted the other way, as the arm swings.
+            var power = kind.Power * (1 + 0.6f * (Aperture.Rank - 1));
+            throws++;
+            Moonblade.Throw(from, aim, kind, solid, power, throws % 2 == 0 ? 14 : -14);
             view?.Throw();
         }
 

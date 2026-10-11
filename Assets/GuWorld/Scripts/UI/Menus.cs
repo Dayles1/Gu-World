@@ -35,6 +35,9 @@ namespace GuWorld.UI
         /// <summary>Goes to one of the hero's pages (the bag, the aperture, the map) — the world waits.</summary>
         void OpenPage(Menus.Page page);
 
+        /// <summary>The bodies the figures are made of (the body page shows the hero's).</summary>
+        HumanBody.Parts Parts { get; }
+
         /// <summary>The hero as a Gu Master, their health, their tasks.</summary>
         Cultivator Cultivator { get; }
         Health Health { get; }
@@ -88,6 +91,8 @@ namespace GuWorld.UI
             Shop,
             /// <summary>The Gu encyclopedia (from the main menu).</summary>
             Codex,
+            /// <summary>The body: where blows wound and how much.</summary>
+            Body,
         }
 
         enum Tab
@@ -211,6 +216,11 @@ namespace GuWorld.UI
             Current = page;
             hud.gameObject.SetActive(page == Page.None || page == Page.Dialogue);
 
+            if (page != Page.Body)
+            {
+                Render.BodyStudio.Close();
+            }
+
             for (var i = pageRoot.childCount - 1; i >= 0; i--)
             {
                 Destroy(pageRoot.GetChild(i).gameObject);
@@ -232,6 +242,7 @@ namespace GuWorld.UI
                 case Page.Map: MapPage(); break;
                 case Page.Shop: ShopPage(); break;
                 case Page.Codex: Codex(); break;
+                case Page.Body: BodyPage(); break;
             }
         }
 
@@ -251,6 +262,7 @@ namespace GuWorld.UI
                 case Page.Bag:
                 case Page.Map:
                 case Page.Shop:
+                case Page.Body:
                     host.Resume();
                     return true;
                 default: return false;
@@ -455,12 +467,13 @@ namespace GuWorld.UI
             var line = UiKit.Image("Line", pageRoot, UiKit.GoldDeep);
             line.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -256, -400, 254);
 
-            var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 90, -330, -640, -190);
-            menu.Stack<VerticalLayoutGroup>(4, null, TextAnchor.UpperLeft);
+            var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 90, -400, -640, -190);
+            menu.Stack<VerticalLayoutGroup>(2, null, TextAnchor.UpperLeft);
             UiKit.Entry("Продолжить", null, menu, host.Resume, "续");
             UiKit.Entry("Апертура", null, menu, () => host.OpenPage(Page.Aperture), "窍");
             UiKit.Entry("Сумка", null, menu, () => host.OpenPage(Page.Bag), "囊");
             UiKit.Entry("Карта", null, menu, () => host.OpenPage(Page.Map), "图");
+            UiKit.Entry("Тело", null, menu, () => host.OpenPage(Page.Body), "体");
             UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Pause), "设");
             UiKit.Entry("Главное меню", null, menu, () => FadeThrough(host.BackToTitle), "门");
             UiKit.Entry("Выйти из игры", null, menu, host.Quit, "离");
@@ -485,10 +498,12 @@ namespace GuWorld.UI
                 { "1 – 9", "Гу и вещи на панели" },
                 { "E", "говорить · собрать (удерживать)" },
                 { "V", "поглотить первобытный камень" },
-                { "K · I · M", "апертура · сумка · карта" },
+                { "K · I · M · B", "апертура · сумка · карта · тело" },
+                { "X", "сесть · встать" },
+                { "E у дерева", "лезть на дерево" },
                 { "Мышь", "камера, колесо — ближе / дальше" },
                 { "Esc", "пауза" },
-                { "F3", "отладка" },
+                { "F3 · F4", "отладка · хитбоксы" },
             };
 
             for (var i = 0; i < keys.GetLength(0); i++)
@@ -561,9 +576,20 @@ namespace GuWorld.UI
                 case Tab.Graphics:
                 {
                     var quality = UiKit.Row("Качество", column);
-                    UiKit.Choices(quality, new[] { "Низкое", "Среднее", "Высокое" }, GameSettings.Quality, i =>
+                    UiKit.Choices(quality, System.Array.ConvertAll(GameSettings.Levels, l => l.Name), GameSettings.Quality, i =>
                     {
                         GameSettings.Quality = i;
+                        GameSettings.Apply(view);
+                        Show(Page.Settings);
+                    });
+                    var level = GameSettings.Current;
+                    UiKit.Label($"Тени до {level.Shadows:0} м · трава до {level.GrassDistance:0} м · деревья до {level.TreeDistance / 1000:0.#} км · люди до {level.PeopleSight:0} м · " +
+                                $"масштаб {level.Scale * 100:0}% · MSAA ×{level.Msaa}", column, 15, UiKit.Muted).Size(26);
+                    var boxes = UiKit.Row("Хитбоксы (F4)", column);
+                    UiKit.Choices(boxes, new[] { "Скрыты", "Показаны" }, GameSettings.ShowHitboxes ? 1 : 0, i =>
+                    {
+                        GameSettings.ShowHitboxes = i == 1;
+                        Render.HitboxView.On = i == 1;
                         GameSettings.Apply(view);
                         Show(Page.Settings);
                     });

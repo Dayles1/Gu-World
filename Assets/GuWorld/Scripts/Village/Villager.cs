@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using GuWorld.Body;
+using GuWorld.Combat;
 using GuWorld.Render;
 using UnityEngine;
 
@@ -14,12 +15,19 @@ namespace GuWorld.Village
     ///
     /// Where they are follows from the time: when the clock jumps (a loaded game,
     /// the debug panel's hour), they are simply where they should be.
+    ///
+    /// Their body can be wounded part by part (HitZones, Wounds): struck, they
+    /// flinch and run for home; struck down, they lie where they fell until the
+    /// hero is far away, and are home again afterwards.
     /// </summary>
-    public class Villager : MonoBehaviour
+    public class Villager : MonoBehaviour, IStrikable, IZoned
     {
+        public const float MaxHealth = 100;
+        /// <summary>Seconds a struck villager runs for home before going about their day again.</summary>
+        const float FleeTime = 9;
         /// <summary>Poses are worked out only this near the camera; farther, the figure stands still or is hidden.</summary>
-        const float PoseDistance = 75;
-        const float SightDistance = 170;
+        static float PoseDistance => GuWorld.UI.GameSettings.Current.PeoplePose;
+        static float SightDistance => GuWorld.UI.GameSettings.Current.PeopleSight;
 
         public VillagerSpec Spec { get; private set; }
         public int Index { get; private set; }
@@ -39,6 +47,13 @@ namespace GuWorld.Village
         float turnRate;
         Vector3 talkTo;
         System.Random random;
+        List<HitZone> zones;
+        float fleeing;
+        float downFor = -1;
+
+        public float Health { get; private set; } = MaxHealth;
+        /// <summary>Struck down: lying where they fell.</summary>
+        public bool Down => downFor >= 0;
 
         VillageLayout.Spot Home => layout.Houses[Mathf.Abs(Spec.Home) % layout.Houses.Length];
 
@@ -62,14 +77,100 @@ namespace GuWorld.Village
             solid.radius = 0.3f;
             solid.height = spec.Height;
             solid.center = new Vector3(0, spec.Height / 2, 0);
+            zones = HitZones.Build(figure.Rig, this);
+        }
+
+        public void TakeStrike(Strike strike, BodyPart? part)
+        {
+            if (Down || Asleep)
+            {
+                return;
+            }
+
+            var harm = Wounds.Harm(part ?? BodyPart.Chest, strike, MaxHealth, Spec.Toughness, random);
+            Health = Mathf.Max(0, Health - harm);
+            var down = Health <= 0;
+            Wounds.Report(Spec.Name, part, harm, down);
+
+            if (harm < 0.5f)
+            {
+                // It did not get through: they only turn to see who it was.
+                if (strike.Source != null)
+                {
+                    talkTo = strike.Source.transform.position;
+                }
+
+                return;
+            }
+
+            Talking = false;
+
+            if (down)
+            {
+                downFor = 0;
+                route.Clear();
+                speed = 0;
+                // Fallen on their back, the way the blow pushed them.
+                var away = strike.Direction;
+                away.y = 0;
+                facing = away.sqrMagnitude > 0.01f ? Mathf.Atan2(-away.x, -away.z) : facing;
+                figure.Root.localRotation = Quaternion.Euler(-88, 0, 0);
+                figure.Root.localPosition = new Vector3(0, 0.12f, 0);
+
+                return;
+            }
+
+            // Off home at a run.
+            fleeing = FleeTime;
+            Go(Home.at);
+        }
+
+        /// <summary>Back on their feet at home, whole (after lying struck down while the hero was away).</summary>
+        void GetUp()
+        {
+            downFor = -1;
+            Health = MaxHealth;
+            figure.Root.localRotation = Quaternion.identity;
+            figure.Root.localPosition = Vector3.zero;
+            route.Clear();
+            Place(Home.at);
+            activityKey = null;
         }
 
         /// <summary>A step of the day: `hour` 0…24, `dt` seconds; `jumped` when the clock leapt (be where you should be).</summary>
         public void Tick(float hour, float dt, Vector3 camera, bool jumped)
         {
+            var distance = Vector3.Distance(camera, transform.position);
+
+            if (Down)
+            {
+                downFor += dt;
+                transform.rotation = Quaternion.Euler(0, facing * Mathf.Rad2Deg, 0);
+                figure.SetVisible(distance < SightDistance);
+                solid.enabled = false;
+
+                // Out of sight a while: carried home, and whole again.
+                if (downFor > 60 && distance > 120)
+                {
+                    GetUp();
+                }
+
+                return;
+            }
+
+            if (fleeing > 0)
+            {
+                fleeing -= dt;
+
+                if (fleeing <= 0)
+                {
+                    activityKey = null;
+                }
+            }
+
             var plan = Spec.Plan(hour);
 
-            if (plan.Key != activityKey)
+            if (fleeing <= 0 && plan.Key != activityKey)
             {
                 var first = activityKey == null;
                 activityKey = plan.Key;
@@ -95,7 +196,7 @@ namespace GuWorld.Village
                 {
                     Turn(yaw * Mathf.Deg2Rad, dt);
                 }
-                else if (activity.doing == Doing.Wander)
+                else if (activity.doing == Doing.Wander && fleeing <= 0)
                 {
                     wait -= dt;
 
@@ -108,7 +209,6 @@ namespace GuWorld.Village
 
             transform.rotation = Quaternion.Euler(0, facing * Mathf.Rad2Deg, 0);
 
-            var distance = Vector3.Distance(camera, transform.position);
             var seen = !Asleep && distance < SightDistance;
             figure.SetVisible(seen);
             solid.enabled = !Asleep;
@@ -207,7 +307,7 @@ namespace GuWorld.Village
             var to = next - transform.position;
             to.y = 0;
             var distance = to.magnitude;
-            speed = Mathf.MoveTowards(speed, Spec.Speed, dt * 3);
+            speed = Mathf.MoveTowards(speed, fleeing > 0 ? 3.6f : Spec.Speed, dt * (fleeing > 0 ? 8 : 3));
             var step = speed * dt;
 
             if (distance <= Mathf.Max(step, 0.25f))
@@ -232,7 +332,7 @@ namespace GuWorld.Village
             switch (activity.doing)
             {
                 case Doing.Sleep:
-                    Asleep = true;
+                    Asleep = fleeing <= 0;
                     break;
                 case Doing.Wander:
                     wait = 4 + (float)random.NextDouble() * 12;

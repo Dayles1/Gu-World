@@ -1,4 +1,5 @@
 using GuWorld.Body;
+using GuWorld.Combat;
 using GuWorld.Cultivation;
 using GuWorld.Engine;
 using GuWorld.Items;
@@ -92,6 +93,7 @@ namespace GuWorld
         Villager talkingTo;
         int asked;
         Menus menus;
+        HitboxView hitboxes;
         /// <summary>The debug panel's weather (R cycles it); null: the world's own.</summary>
         GuWorld.World.Sky? forcedWeather;
         /// <summary>For pictures: a time of day held fixed (`-time 0.9`).</summary>
@@ -119,6 +121,8 @@ namespace GuWorld
         bool talkAt;
         string screenshotPage;
         bool castAt;
+        /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
+        int castFrames = 5;
         /// <summary>`-view x,y,z,yaw,pitch` (with -screenshot): the camera held there, looking that way (degrees).</summary>
         Pose? fixedView;
         /// <summary>`-ground` (with -view): its height is above the ground there.</summary>
@@ -127,6 +131,7 @@ namespace GuWorld
         public bool CreatorFace { get; set; }
         public ThirdPersonCamera View => view;
         public Cultivator Cultivator => cultivator;
+        public HumanBody.Parts Parts => picture.Parts;
         public Health Health => health;
         public Quests Quests => quests;
         public Trade Trade => trade;
@@ -216,6 +221,9 @@ namespace GuWorld
             quests.Said += menus.Notify;
             health.Fainted += OnFainted;
             TrainingDummy.Struck += OnStruck;
+            Wounds.Landed += OnWound;
+            hitboxes = HitboxView.Create(view.transform);
+            HitboxView.On = GameSettings.ShowHitboxes;
             PlaceDummies(layout);
             PlaceBeds(layout, restored.beds);
             DrawMap(layout);
@@ -240,6 +248,9 @@ namespace GuWorld
                 player.AutoWalk = Has(args, "-run") ? 2 : Has(args, "-walk") ? 1 : 0;
                 talkAt = Has(args, "-talk");
                 castAt = Has(args, "-cast");
+                var castFramesAt = System.Array.IndexOf(args, "-cast");
+                castFrames = castFramesAt >= 0 && castFramesAt + 1 < args.Length && int.TryParse(args[castFramesAt + 1], out var cf) ? cf : 5;
+                HitboxView.On |= Has(args, "-hitboxes");
                 var timeAt = System.Array.IndexOf(args, "-time");
 
                 if (timeAt >= 0 && timeAt + 1 < args.Length)
@@ -711,10 +722,16 @@ namespace GuWorld
             return at;
         }
 
-        void OnStruck(TrainingDummy dummy, float damage, bool broke)
+        void OnStruck(TrainingDummy dummy, BodyPart? part, float damage, bool broke)
         {
             quests.Count("hit_dummy");
-            menus.Notify(broke ? "Чучело разрублено!" : $"Попадание: −{damage:0} (осталось {Mathf.Max(0, dummy.Health):0})");
+            menus.Notify(broke ? "Чучело разрублено!" : $"{Wounds.Line("Чучело", part, damage, false)} (осталось {Mathf.Max(0, dummy.Health):0})");
+        }
+
+        /// <summary>A blow landed on someone (a villager, the hero): what it did, in the log.</summary>
+        void OnWound(string who, BodyPart? part, float harm, bool down)
+        {
+            menus.Notify(Wounds.Line(who, part, harm, down));
         }
 
         /// <summary>Begins a conversation with a villager: they stop and turn; their greeting and the questions show.</summary>
@@ -861,12 +878,13 @@ namespace GuWorld
                         case "bag": OpenPage(Menus.Page.Bag); break;
                         case "aperture": OpenPage(Menus.Page.Aperture); break;
                         case "map": OpenPage(Menus.Page.Map); break;
+                    case "body": OpenPage(Menus.Page.Body); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
                     }
                 }
 
                 // `-cast`: the first slot used just before the picture (the blade in flight).
-                if (screenshotFrame == 145 && castAt)
+                if (screenshotFrame == 150 - castFrames && castAt)
                 {
                     cultivator.Use(0);
                 }
@@ -897,6 +915,14 @@ namespace GuWorld
             if (keyboard != null)
             {
                 if (keyboard.f3Key.wasPressedThisFrame) debug = !debug;
+
+                // The hitbox view: every collider near the camera as wire lines.
+                if (keyboard.f4Key.wasPressedThisFrame)
+                {
+                    GameSettings.ShowHitboxes = !GameSettings.ShowHitboxes;
+                    HitboxView.On = GameSettings.ShowHitboxes;
+                    menus.Notify(HitboxView.On ? "Хитбоксы: показаны (F4 — скрыть)" : "Хитбоксы скрыты");
+                }
 
                 // Debug: move the clock to see the light change, and go through the weathers.
                 if (debug && keyboard.tKey.wasPressedThisFrame) clock.Skip(1);
@@ -948,11 +974,13 @@ namespace GuWorld
                 if (keyboard.kKey.wasPressedThisFrame) OpenPage(Menus.Page.Aperture);
                 else if (keyboard.iKey.wasPressedThisFrame) OpenPage(Menus.Page.Bag);
                 else if (keyboard.mKey.wasPressedThisFrame) OpenPage(Menus.Page.Map);
+                else if (keyboard.bKey.wasPressedThisFrame) OpenPage(Menus.Page.Body);
             }
             else if (mode == Mode.Paused && keyboard != null && !wasPlaying && IsHeroPage(menus.Current))
             {
                 // On the hero's pages the same keys go between them, and the page's own key closes it.
-                var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag : keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : Menus.Page.None;
+                var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag :
+                    keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : keyboard.bKey.wasPressedThisFrame ? Menus.Page.Body : Menus.Page.None;
 
                 if (to != Menus.Page.None)
                 {
@@ -999,7 +1027,7 @@ namespace GuWorld
             menus.SetFps(fps);
         }
 
-        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map;
+        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body;
 
         /// <summary>
         /// What the hero can do where they stand: talk to the one before them (E), or gather
@@ -1159,6 +1187,7 @@ namespace GuWorld
             // Leaving play mode in the editor must not leave the editor paused, or its render pipeline changed.
             Time.timeScale = 1;
             TrainingDummy.Struck -= OnStruck;
+            Wounds.Landed -= OnWound;
             GameSettings.Restore();
         }
 

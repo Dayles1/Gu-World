@@ -1,4 +1,5 @@
 using System;
+using GuWorld.Combat;
 using GuWorld.Cultivation;
 using GuWorld.Physics;
 using UnityEngine;
@@ -14,8 +15,11 @@ namespace GuWorld.Systems
     ///
     /// The numbers — a hundred points, how fast it mends, how hard a landing
     /// must be to hurt — are the game's own, to be tuned.
+    ///
+    /// Blows land on the hero's body part by part (HitZones on the figure, Wounds):
+    /// the toughness grows with the aperture's rank.
     /// </summary>
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, IStrikable, IZoned
     {
         public const float Max = 100;
         /// <summary>Mending by itself, points per game hour.</summary>
@@ -80,6 +84,18 @@ namespace GuWorld.Systems
             {
                 Current = Mathf.Min(Max, Current + amount);
             }
+        }
+
+        /// <summary>How hard the hero's body is to wound: a youth's at rank one, harder with every rank.</summary>
+        public float Toughness => 80 * (gu != null ? 1 + 0.8f * (gu.Aperture.Rank - 1) : 1);
+
+        readonly System.Random random = new System.Random();
+
+        public void TakeStrike(Strike strike, BodyPart? part)
+        {
+            var harm = Wounds.Harm(part ?? BodyPart.Chest, strike, Max, Toughness, random);
+            var through = TakeHarm(harm);
+            Wounds.Report("Вы", part, through, Down);
         }
 
         /// <summary>Harm from outside: the jade skin takes what it can first. Returns what got through.</summary>

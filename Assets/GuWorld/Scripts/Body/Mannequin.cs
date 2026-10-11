@@ -84,6 +84,9 @@ namespace GuWorld.Body
         /// <summary>How far through a throw with the right hand (a moonblade's cut), 0…1; below 0 none.</summary>
         public float Throw = -1;
 
+        /// <summary>Arms held out from the sides besides, radians (a figure shown on the body page).</summary>
+        public float ArmsOut;
+
         /// <summary>A foot came down (loudness 0…1).</summary>
         public Action<float> OnStep = _ => { };
 
@@ -232,6 +235,8 @@ namespace GuWorld.Body
             this[P.Twist] += lookYaw * 0.15f;
             this[P.HeadX] += Mathf.Clamp(motion.lookPitch * 0.45f, -0.35f, 0.45f) * lookScale;
             this[P.Lean] += Stoop;
+            this[P.ArmOutL] += ArmsOut;
+            this[P.ArmOutR] += ArmsOut;
 
             // A throw: the right arm comes up to the shoulder and cuts across in front, the body turning into it.
             if (Throw >= 0 && motion.climb == null)

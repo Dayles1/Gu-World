@@ -50,7 +50,11 @@ namespace GuWorld.Cultivation
         /// <summary>How far its strike cuts at full strength, and how far it flies before it fades, m.</summary>
         public float Reach;
         public float Range;
-        public float Damage;
+        /// <summary>
+        /// The strike's strength (Combat.Strike.Power) for a rank-one Gu Master: what it
+        /// does depends on the body it lands on and the part it hits (Combat.Wounds).
+        /// </summary>
+        public float Power;
         /// <summary>What it eats (ItemBook), how many at a meal, and how often (game minutes).</summary>
         public string Food;
         public int Meal;
@@ -80,7 +84,8 @@ namespace GuWorld.Cultivation
         /// clan's own. Driven with essence it throws a pale-blue crescent — a moonblade —
         /// for a tenth of the aperture each throw; it cuts cleanly at about ten metres and
         /// fades some six metres further. It eats moon orchid petals, two at a meal, morning
-        /// and evening.
+        /// and evening. By the lore the cut has no cooldown — essence is its only limit; the
+        /// game keeps a fifth of a second between throws so a held key does not spray them.
         /// </summary>
         public static readonly GuKind Moonlight = new GuKind
         {
@@ -94,10 +99,10 @@ namespace GuWorld.Cultivation
             Skill = SkillKind.Moonblade,
             SkillName = "Лунный клинок",
             Cost = 10,
-            Cooldown = 0.9f,
+            Cooldown = 0.2f,
             Reach = 10,
             Range = 16,
-            Damage = 25,
+            Power = 100,
             Food = GuWorld.Items.ItemBook.Petal,
             Meal = 2,
             MealEvery = 12 * 60,
