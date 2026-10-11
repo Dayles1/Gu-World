@@ -15,10 +15,11 @@ namespace GuWorld.State
     }
 
     /// <summary>
-    /// The saved game, format v2 (as in client/state/save.ts): the format's
+    /// The saved game, format v3 (v2 as in client/state/save.ts): the format's
     /// version, the location the hero is in, the game minutes since the world
-    /// began and where the hero stands and faces. The world's changes are not
-    /// tracked yet, so none are written.
+    /// began and where the hero stands and faces; the hero's look, their
+    /// cultivation (aperture, Gu, bag, action bar), health and tasks; and when
+    /// each moon orchid bed is in flower again. Formats 1 and 2 still load.
     ///
     /// The position is kept in the web's numbers, so a save means the same
     /// place in both games: Unity's world is the web's mirrored (X negated),
@@ -27,7 +28,7 @@ namespace GuWorld.State
     [Serializable]
     public class Save
     {
-        public const int CurrentVersion = 2;
+        public const int CurrentVersion = 3;
 
         public int version = CurrentVersion;
         public string location;
@@ -35,6 +36,13 @@ namespace GuWorld.State
         public Pose player;
         /// <summary>How the hero looks (gender, hair, beard); empty until the hero is made.</summary>
         public GuWorld.Body.Look look = new GuWorld.Body.Look();
+        /// <summary>The hero as a Gu Master (aperture, Gu, slots, stones); unset in older saves.</summary>
+        public GuWorld.Cultivation.CultivationSave cultivation = new GuWorld.Cultivation.CultivationSave();
+        /// <summary>The hero's health; below 0 in older saves (full).</summary>
+        public float health = -1;
+        public GuWorld.Systems.QuestSave quests = new GuWorld.Systems.QuestSave();
+        /// <summary>The game minute each moon orchid bed is in flower again, in the beds' order.</summary>
+        public double[] beds = new double[0];
     }
 
     /// <summary>A game got back from a save — repaired where it had to be.</summary>
@@ -45,6 +53,12 @@ namespace GuWorld.State
         public Pose player;
         /// <summary>The hero's look; not chosen yet in a new game (the hero is made first).</summary>
         public GuWorld.Body.Look look = new GuWorld.Body.Look();
+        /// <summary>The hero as a Gu Master; null for a new game (the test Gu Master, Cultivator.Load).</summary>
+        public GuWorld.Cultivation.CultivationSave cultivation;
+        /// <summary>The hero's health (below 0: full), their tasks (null: none yet), the beds' regrowth.</summary>
+        public float health = -1;
+        public GuWorld.Systems.QuestSave quests;
+        public double[] beds;
         /// <summary>No save at all: a new game.</summary>
         public bool fresh;
         /// <summary>Why parts of the save were replaced; empty when it was sound.</summary>
@@ -64,7 +78,7 @@ namespace GuWorld.State
     /// </summary>
     public static class SaveGame
     {
-        static readonly int[] Readable = { 1, 2 };
+        static readonly int[] Readable = { 1, 2, 3 };
 
         public static string FilePath => Path.Combine(Application.persistentDataPath, "gu_world_save.json");
 
@@ -125,6 +139,10 @@ namespace GuWorld.State
                 game.look = saved.look;
             }
 
+            game.cultivation = saved.cultivation;
+            game.health = float.IsFinite(saved.health) ? saved.health : -1;
+            game.quests = saved.quests;
+
             // One location at a time so far: anything else goes back to the start.
             if (saved.location != start.id)
             {
@@ -134,6 +152,7 @@ namespace GuWorld.State
             }
 
             game.clock = WorldClock.FromSaved(saved.world_minutes, out var repaired);
+            game.beds = saved.beds;
 
             if (repaired)
             {

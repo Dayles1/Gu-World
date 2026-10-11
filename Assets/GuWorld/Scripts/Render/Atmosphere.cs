@@ -386,7 +386,8 @@ namespace GuWorld.Render
 
             if (LanternMaterial != null)
             {
-                LanternMaterial.SetColor("_EmissionColor", new Color(1, 0.42f, 0.18f) * 2.6f * lit);
+                // The Gu Yue's lanterns burn cold, like moonlight (the art direction's); the windows warm.
+                LanternMaterial.SetColor("_EmissionColor", new Color(0.62f, 0.78f, 1) * 2.4f * lit);
             }
 
             if (WindowMaterial != null)

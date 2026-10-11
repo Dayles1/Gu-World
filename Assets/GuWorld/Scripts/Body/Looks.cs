@@ -20,6 +20,22 @@ namespace GuWorld.Body
         Bald,
     }
 
+    /// <summary>The hero's hanfu: dark, grey or white.</summary>
+    public enum Robe
+    {
+        Dark,
+        Grey,
+        White,
+    }
+
+    /// <summary>A sign worn on the clothes, showing whose one is: a clan's mark.</summary>
+    public enum Emblem
+    {
+        None,
+        /// <summary>The Gu Yue clan's: a crescent moon, for the moonlight Gu at the heart of its arts.</summary>
+        Crescent,
+    }
+
     public enum Beard
     {
         None,
@@ -45,10 +61,18 @@ namespace GuWorld.Body
         public string hair_color = "black";
         public string beard = "none";
         public string eyes = "brown";
+        /// <summary>The hanfu's colour ("dark", "grey", "white").</summary>
+        public string robe = "dark";
+        /// <summary>The hero's own name (the clan's name goes before it); empty until given.</summary>
+        public string name = "";
 
         public Gender Gender => gender == "female" ? Gender.Female : Gender.Male;
         public HairStyle Hair => Parse(hair, DefaultHair(Gender));
         public Beard BeardStyle => Gender == Gender.Female ? Beard.None : Parse(beard, Beard.None);
+        public Robe RobeColour => Parse(robe, Robe.Dark);
+
+        /// <summary>The clothes' dye for the hanfu's colour (Clothes.For).</summary>
+        public int Dye => 8 + (int)RobeColour;
 
         /// <summary>Whether the save holds a look at all (a game started before looks were chosen does not).</summary>
         public bool IsChosen => gender == "male" || gender == "female";
@@ -62,9 +86,49 @@ namespace GuWorld.Body
 
         public static HairStyle DefaultHair(Gender gender) => gender == Gender.Female ? HairStyle.Buns : HairStyle.Parted;
 
-        public Look With(Gender? gender = null, HairStyle? hair = null, Beard? beard = null)
+        /// <summary>
+        /// The hero as others call them: the clan's name before their own (lore: fac_gu_yue_clan —
+        /// "Gu Yue Fang Yuan"); without a name of their own, a student of the clan.
+        /// </summary>
+        public string FullName
+        {
+            get
+            {
+                var own = (name ?? "").Trim();
+
+                return own.Length > 0 ? "Гу Юэ " + own : Gender == Gender.Female ? "Ученица клана Гу Юэ" : "Ученик клана Гу Юэ";
+            }
+        }
+
+        /// <summary>A name as the hero may have it: letters, spaces and hyphens, at most 16, trimmed.</summary>
+        public static string CleanName(string text)
+        {
+            var kept = new System.Text.StringBuilder();
+
+            foreach (var c in text ?? "")
+            {
+                if ((char.IsLetter(c) || c == ' ' || c == '-') && kept.Length < 16)
+                {
+                    kept.Append(c);
+                }
+            }
+
+            return kept.ToString().Trim();
+        }
+
+        public Look With(Gender? gender = null, HairStyle? hair = null, Beard? beard = null, Robe? robe = null, string name = null)
         {
             var next = (Look)MemberwiseClone();
+
+            if (name != null)
+            {
+                next.name = CleanName(name);
+            }
+
+            if (robe.HasValue)
+            {
+                next.robe = Word(robe.Value);
+            }
 
             if (gender.HasValue)
             {
@@ -92,7 +156,7 @@ namespace GuWorld.Body
         }
 
         /// <summary>A stable key: two looks with the same key are drawn the same.</summary>
-        public string Key => $"{Gender}/{Hair}/{BeardStyle}";
+        public string Key => $"{Gender}/{Hair}/{BeardStyle}/{RobeColour}";
 
         public static string Word<T>(T value) where T : Enum => value.ToString().ToLowerInvariant();
 
@@ -108,6 +172,13 @@ namespace GuWorld.Body
             HairStyle.Ponytail => "Хвост",
             HairStyle.Long => "Длинные",
             _ => "Лысый",
+        };
+
+        public static string Name(Robe robe) => robe switch
+        {
+            Robe.Grey => "Серое",
+            Robe.White => "Белое",
+            _ => "Тёмное",
         };
 
         public static string Name(Beard beard) => beard switch

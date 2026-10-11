@@ -63,8 +63,8 @@ namespace GuWorld.Physics
         const int MaxSteps = 10;
         const float Gravity = 25;
         const float JumpSpeed = 8.6f;
-        const float GroundAcceleration = 30;
-        const float GroundBraking = 38;
+        const float GroundAcceleration = 24;
+        const float GroundBraking = 30;
         const float AirAcceleration = 9;
         /// <summary>The steepest ground one can stand on: cos 50°.</summary>
         static readonly float Walkable = Mathf.Cos(50 * Mathf.Deg2Rad);
@@ -93,6 +93,8 @@ namespace GuWorld.Physics
         public float Acceleration { get; private set; }
         /// <summary>Downward speed at the last landing, for the animation.</summary>
         public float LandingSpeed;
+        /// <summary>The body came down on walkable ground, this fast (m/s, downward).</summary>
+        public event System.Action<float> Landed;
         public Stance Stance { get; private set; } = Stance.Stand;
 
         /// <summary>The box the body is kept in.</summary>
@@ -105,7 +107,6 @@ namespace GuWorld.Physics
         public bool Free => !climbing;
 
         CharacterController controller;
-        float accumulator;
         float sinceGrounded;
         float jumpBuffered;
         float lastSpeed;
@@ -140,7 +141,6 @@ namespace GuWorld.Physics
             transform.position = new Vector3(position.x, Mathf.Max(position.y, ground), position.z);
             controller.enabled = true;
             Velocity = Vector3.zero;
-            accumulator = 0;
             climbing = false;
         }
 
@@ -248,12 +248,15 @@ namespace GuWorld.Physics
                     jumpBuffered = JumpBuffer;
                 }
 
-                accumulator = Mathf.Min(accumulator + dt, Step * MaxSteps);
+                // Every frame moves the body by the frame's own time, cut into steps of at most
+                // 1/120 s: no frame without a step (which, at high frame rates, made it stutter),
+                // and steps small enough to stay steady.
+                var time = Mathf.Min(dt, Step * MaxSteps);
+                var steps = Mathf.Max(1, Mathf.CeilToInt(time / Step - 0.001f));
 
-                while (accumulator >= Step)
+                for (var k = 0; k < steps; k++)
                 {
-                    StepOnce(input);
-                    accumulator -= Step;
+                    StepOnce(input, time / steps);
                 }
 
                 if (input.moveX != 0 || input.moveZ != 0)
@@ -313,16 +316,15 @@ namespace GuWorld.Physics
             {
                 climbing = false;
                 Grounded = true;
-                accumulator = 0;
             }
         }
 
-        void StepOnce(MotorInput input)
+        void StepOnce(MotorInput input, float h)
         {
             var wasGrounded = Grounded;
 
-            sinceGrounded = wasGrounded ? 0 : sinceGrounded + Step;
-            jumpBuffered = Mathf.Max(0, jumpBuffered - Step);
+            sinceGrounded = wasGrounded ? 0 : sinceGrounded + h;
+            jumpBuffered = Mathf.Max(0, jumpBuffered - h);
 
             var (walk, run) = SpeedOf(Stance);
             var speed = (input.sprint ? run : walk) * input.speedScale;
@@ -330,7 +332,7 @@ namespace GuWorld.Physics
             var wishZ = input.moveZ * speed;
             var braking = wishX * Velocity.x + wishZ * Velocity.z <= 0 ||
                           Mathf.Sqrt(wishX * wishX + wishZ * wishZ) < HorizontalSpeed;
-            var acceleration = (wasGrounded ? (braking ? GroundBraking : GroundAcceleration) : AirAcceleration) * Step;
+            var acceleration = (wasGrounded ? (braking ? GroundBraking : GroundAcceleration) : AirAcceleration) * h;
             var dx = wishX - Velocity.x;
             var dz = wishZ - Velocity.z;
             var change = Mathf.Sqrt(dx * dx + dz * dz);
@@ -348,14 +350,14 @@ namespace GuWorld.Physics
                 jumped = true;
             }
 
-            Velocity.y -= Gravity * Step;
+            Velocity.y -= Gravity * h;
             var fallSpeed = -Velocity.y;
 
             // The controller only steps up while it thinks it stands.
             controller.stepOffset = wasGrounded && !jumped ? StepUp : 0;
 
             hitWalkable = false;
-            controller.Move(Velocity * Step);
+            controller.Move(Velocity * h);
 
             Grounded = hitWalkable;
 
@@ -377,6 +379,7 @@ namespace GuWorld.Physics
             if (Grounded && !wasGrounded)
             {
                 LandingSpeed = Mathf.Max(LandingSpeed, fallSpeed);
+                Landed?.Invoke(fallSpeed);
             }
 
             KeepInside();

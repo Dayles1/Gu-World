@@ -81,6 +81,9 @@ namespace GuWorld.Body
         /// <summary>How bent the back is besides (an old person's stoop), radians.</summary>
         public float Stoop;
 
+        /// <summary>How far through a throw with the right hand (a moonblade's cut), 0…1; below 0 none.</summary>
+        public float Throw = -1;
+
         /// <summary>A foot came down (loudness 0…1).</summary>
         public Action<float> OnStep = _ => { };
 
@@ -229,6 +232,17 @@ namespace GuWorld.Body
             this[P.Twist] += lookYaw * 0.15f;
             this[P.HeadX] += Mathf.Clamp(motion.lookPitch * 0.45f, -0.35f, 0.45f) * lookScale;
             this[P.Lean] += Stoop;
+
+            // A throw: the right arm comes up to the shoulder and cuts across in front, the body turning into it.
+            if (Throw >= 0 && motion.climb == null)
+            {
+                var t = Smooth(Throw);
+                this[P.ArmR] = -1.4f;
+                this[P.ArmOutR] = Mathf.Lerp(1.25f, -0.4f, t);
+                this[P.ElbowR] = Mathf.Lerp(-0.9f, -0.15f, t);
+                this[P.Twist] += Mathf.Lerp(0.35f, -0.3f, t);
+                this[P.HeadY] += Mathf.Lerp(0.2f, -0.1f, t);
+            }
 
             // Keep the eyes level whatever the back does.
             this[P.HeadX] -= this[P.Lean] * 0.7f;

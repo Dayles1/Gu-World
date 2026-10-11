@@ -18,6 +18,14 @@ namespace GuWorld.UI
         const string VSyncKey = "gw.vsync";
         const string FovKey = "gw.fov";
         const string VolumeKey = "gw.volume";
+        const string FpsKey = "gw.showFps";
+
+        /// <summary>A frames-per-second counter in the top left corner.</summary>
+        public static bool ShowFps
+        {
+            get => PlayerPrefs.GetInt(FpsKey, 0) == 1;
+            set => PlayerPrefs.SetInt(FpsKey, value ? 1 : 0);
+        }
 
         /// <summary>How fast the mouse turns the camera (1 = as on the web).</summary>
         public static float Sensitivity

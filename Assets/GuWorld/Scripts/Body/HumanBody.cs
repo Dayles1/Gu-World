@@ -110,11 +110,16 @@ namespace GuWorld.Body
             public Color hair;
             /// <summary>Which dye the clothes are (Clothes.For).</summary>
             public int dye;
+            /// <summary>The clan's mark on the clothes.</summary>
+            public Emblem emblem;
 
-            /// <summary>The hero: fifteen, black-haired, in their own colours.</summary>
-            public static Build Hero => new Build { youth = 1, hair = Look.HairBlack, dye = 0 };
+            /// <summary>The hero: fifteen, black-haired, a Gu Yue in a dark hanfu.</summary>
+            public static Build Hero => ForHero(Look.Default(Gender.Male));
 
-            public string Key => $"{youth:0.00}|{ColorUtility.ToHtmlStringRGB(hair)}|{dye}";
+            /// <summary>The hero in their look's hanfu, with the clan's crescent.</summary>
+            public static Build ForHero(Look look) => new Build { youth = 1, hair = Look.HairBlack, dye = look.Dye, emblem = Emblem.Crescent };
+
+            public string Key => $"{youth:0.00}|{ColorUtility.ToHtmlStringRGB(hair)}|{dye}|{emblem}";
         }
 
         /// <summary>A teenager's head is a little bigger for the body than a grown-up's.</summary>
@@ -328,20 +333,21 @@ namespace GuWorld.Body
 
                     if (material.name.StartsWith("MI_Superhero"))
                     {
-                        // The muscles painted into the skin's relief, mostly smoothed away.
+                        // The muscles painted into the skin's relief: gone.
                         foreach (var name in new[] { "normalTexture_scale", "_BumpScale", "normalScale" })
                         {
                             if (material.HasProperty(name))
                             {
-                                material.SetFloat(name, 0.3f);
+                                material.SetFloat(name, 0);
                             }
                         }
 
+                        // …and into its colour, as light and shade: evened, fair.
                         foreach (var name in new[] { "baseColorTexture", "_BaseMap", "_MainTex" })
                         {
                             if (material.HasProperty(name) && material.GetTexture(name) != null)
                             {
-                                material.SetTexture(name, Paint.Saturate(material.GetTexture(name), Paint.SkinSaturation));
+                                material.SetTexture(name, Paint.Saturate(material.GetTexture(name), Paint.SkinSaturation, Paint.SkinEvenness, Paint.SkinTone));
                             }
                         }
                     }
@@ -379,6 +385,10 @@ namespace GuWorld.Body
                         else if (renderer.name == "Eyebrows") brows = renderer.sharedMesh;
                     }
                 }
+
+                // No bodybuilder's muscles, young or old: the skin smoothed (the clothes are cut from it next).
+                Muscles.Smooth(skin.Renderer);
+                skin = new SkinData(skin.Renderer);
 
                 var frame = HeadFrame.Measure(skin, eyes, brows);
                 var hair = new Material(parts.cloth) { name = "Hair" };
@@ -425,8 +435,11 @@ namespace GuWorld.Body
                 }
 
                 SetSmoothness(cloth, 0.12f);
-                Clothes.Dress(skin, frame, look.Gender, cloth, build.dye);
+                Clothes.Dress(skin, frame, look.Gender, cloth, build.dye, build.emblem);
             }
+
+            // 4. Drawn as the art direction asks: cel-shaded, outlined.
+            Toon.Apply(instance);
 
             // Its meshes are shared by every copy and outlive any one of them.
             foreach (var owned in instance.GetComponentsInChildren<GuWorld.World.OwnedMesh>(true))

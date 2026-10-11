@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using GuWorld.Body;
+using GuWorld.Cultivation;
+using GuWorld.Items;
+using GuWorld.Systems;
+using GuWorld.World;
 using GuWorld.Physics;
 using GuWorld.Render;
 using GuWorld.State;
 using System.IO;
-using GuWorld.World;
 using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
@@ -160,6 +163,133 @@ namespace GuWorld.Editor
             var turned = new Vector2(view.forward.x, view.forward.z).normalized;
             var cross = screenForward.x * turned.y - screenForward.y * turned.x;
             Check(cross < 0, $"the mouse to the right turns the view to the right (yaw {before2:0.00} → {camera.Yaw:0.00})");
+
+            // The Gu Master: the test start, a moonblade's cost and rest, the sea refilling, a stone.
+            var gu = Object.FindAnyObjectByType<Cultivator>();
+            var game = Object.FindAnyObjectByType<GuWorldGame>();
+            var health = gu.GetComponent<Health>();
+            var moon = gu.First(GuBook.Moonlight.Id);
+            Check(gu != null && gu.Aperture.Grade == Grade.C && Mathf.Approximately(gu.Aperture.Essence, 45) && moon != null && moon.vital &&
+                  gu.Bar[0] == "gu:moonlight" && gu.Stones == 10 && gu.Bag.Count(ItemBook.Petal) == 8,
+                $"a new game is the test Gu Master: C grade, a full sea of 45%, a vital Moonlight Gu on key 1, 10 stones, 8 petals ({gu?.Aperture.Grade}, {gu?.Aperture.Essence}, {gu?.Bar[0]}, {gu?.Stones}, {gu?.Bag.Count(ItemBook.Petal)})");
+            Check(gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 35) && Object.FindAnyObjectByType<Moonblade>() != null,
+                $"a moonblade costs a tenth of the aperture and flies ({gu.Aperture.Essence})");
+            Check(!gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 35), "a second throw at once waits for the Gu to rest");
+            var start = gu.Now;
+            gu.Tick(start + 60);
+            Check(Mathf.Abs(gu.Aperture.Essence - 39) < 0.01f, $"an hour refills 4% at C grade ({gu.Aperture.Essence:0.00})");
+            Check(gu.AbsorbStone() && Mathf.Approximately(gu.Aperture.Essence, 45) && gu.Stones == 9, $"a stone tops the sea up to its cap ({gu.Aperture.Essence}, {gu.Stones} left)");
+            gu.Aperture.Essence = 5;
+            Check(!gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 5), "without the essence the Gu cannot be used");
+
+            // Hunger (lore: two petals a meal, twice a day): hungry after a meal's time, fed from the bag, too weak to answer if starved.
+            gu.Tick(start + 12 * 60 + 1);
+            Check(gu.HungerOf(moon) == Hunger.Hungry, $"after twelve hours the Moonlight Gu is hungry ({gu.HungerOf(moon)})");
+            Check(gu.Feed(moon) && gu.Bag.Count(ItemBook.Petal) == 6 && gu.HungerOf(moon) == Hunger.Fed, $"feeding it takes two petals ({gu.Bag.Count(ItemBook.Petal)} left)");
+            Check(!gu.Feed(moon, true) && gu.Bag.Count(ItemBook.Petal) == 6, "a Gu just fed is not fed again");
+            gu.Aperture.Essence = 45;
+            gu.Tick(gu.Now + 24 * 60 + 1);
+            Check(gu.HungerOf(moon) == Hunger.Starving && !gu.UseGu(GuBook.Moonlight.Id), $"a day unfed it is too weak to use ({gu.HungerOf(moon)})");
+            gu.Feed(moon);
+            Check(gu.HungerOf(moon) == Hunger.Fed, "fed again, it answers again");
+
+            // Petals wilt in five days; what is taken comes from the pile that wilts first.
+            var bag = new Bag();
+            bag.Add(ItemBook.Petal, 10, 0);
+            bag.Add(ItemBook.Petal, 10, 3 * 24 * 60);
+            Check(bag[0].count == 10 && bag[1].count == 10, "petals of different days lie apart");
+            bag.Take(ItemBook.Petal, 4);
+            Check(bag[0].count == 6 && bag[1].count == 10, "the older petals are used first");
+            var lost = bag.Spoil(5 * 24 * 60 + 1);
+            Check(lost != null && lost[ItemBook.Petal] == 6 && bag.Count(ItemBook.Petal) == 10, "after five days the old petals have wilted");
+            Check(bag.Room(ItemBook.Stone, 0) <= (int)((Bag.Capacity - bag.Weight) / 0.02f) + 1, "the bag's weight limits what fits");
+
+            // A fall from ten metres hurts; health mends with time.
+            health.Set(Health.Max);
+            Teleport(body, body.transform.position + Vector3.up * 10);
+            Run(body, 2, Vector2.zero);
+            Check(body.Grounded && health.Current < Health.Max - 30 && health.Current > 0, $"a ten-metre fall hurts ({health.Current:0})");
+            var hurt = health.Current;
+            health.Mend(60);
+            Check(Mathf.Abs(health.Current - (hurt + Health.MendPerHour)) < 0.01f, $"an hour mends {Health.MendPerHour:0} ({health.Current:0})");
+
+            // A Jade Skin Gu, bought and refined: it takes a ring cell and the bar; its skin turns harm into essence spent.
+            var baoshan = Trade.Of("Гу Юэ Баошань");
+            gu.Bag.Add(ItemBook.Stone, 200, gu.Now);
+            var stones = gu.Stones;
+            var deal = game.Trade.Buy(baoshan, new System.Collections.Generic.Dictionary<string, int> { [ItemBook.JadeSkinGu] = 1, [ItemBook.Petal] = 1, [ItemBook.JadeRock] = 1 }, gu.Bag, gu.Now, out var paid);
+            Check(deal == Deal.Done && paid == 95 && gu.Stones == stones - 95 && gu.Bag.Count(ItemBook.JadeSkinGu) == 1 && gu.Bag.Count(ItemBook.JadeRock) == 1,
+                $"Baoshan sells a Jade Skin Gu, ten petals and a jade rock for 95 stones ({deal}, {paid})");
+            Check(game.Trade.Buy(baoshan, new System.Collections.Generic.Dictionary<string, int> { [ItemBook.JadeSkinGu] = 1 }, gu.Bag, gu.Now, out _) == Deal.NoStock, "his one Jade Skin Gu is sold for today");
+            var cell = -1;
+
+            for (var i = 0; i < Bag.Cells; i++)
+            {
+                if (gu.Bag[i]?.id == ItemBook.JadeSkinGu) cell = i;
+            }
+
+            gu.Aperture.Essence = 45;
+            Check(gu.Refine(cell) && gu.First(GuBook.JadeSkin.Id) != null && !gu.First(GuBook.JadeSkin.Id).vital && Mathf.Approximately(gu.Aperture.Essence, 5) &&
+                  System.Array.IndexOf(gu.Bar, "gu:jade_skin") >= 0, $"refining it takes 40% and puts it in the ring and on the bar ({gu.Aperture.Essence})");
+            gu.Aperture.Essence = 45;
+            Check(gu.UseGu(GuBook.JadeSkin.Id) && gu.SkinOn && Mathf.Approximately(gu.Aperture.Essence, 43), "the jade skin rises for 2%");
+            health.Set(Health.Max);
+            health.TakeHarm(50);
+            Check(Mathf.Approximately(health.Current, Health.Max) && Mathf.Abs(gu.Aperture.Essence - 37) < 0.01f, $"the skin stops a blow for essence ({health.Current}, {gu.Aperture.Essence:0.00})");
+            gu.Tick(gu.Now + 10);
+            Check(Mathf.Abs(gu.Aperture.Essence - (37 - 2.5f + 10 * 4 / 60f)) < 0.01f, $"held, it costs its upkeep ({gu.Aperture.Essence:0.00})");
+
+            // The Gu Master saved and loaded is the same.
+            var saved = gu.Save();
+            var petals = gu.Bag.Count(ItemBook.Petal);
+            gu.Load(saved, gu.Now);
+            Check(gu.Gu.Count == 2 && gu.Bag.Count(ItemBook.Petal) == petals && gu.Bar[0] == "gu:moonlight" && gu.SkinOn && gu.First(GuBook.Moonlight.Id).vital,
+                $"saved and loaded, the Gu Master is the same ({gu.Gu.Count} Gu, {gu.Bag.Count(ItemBook.Petal)} petals)");
+
+            // The academy's first task: taken from the teacher, done, handed back for stones.
+            var quests = game.Quests;
+            var first = quests.NextFrom(Quests.Teacher);
+            Check(first != null && first.Id == "first_blade", $"the teacher has the first task ({first?.Id})");
+            quests.Take(first);
+            quests.Count("hit_dummy", 3);
+            stones = gu.Stones;
+            Check(quests.Ready && quests.HandIn(Quests.Teacher) == first && quests.Current == null && quests.NextFrom(Quests.Teacher)?.Id == "orchids",
+                "three hits finish it, and the next task waits");
+
+            // A moon orchid bed gives petals and stands bare until it grows back.
+            Check(HerbBed.All.Count == 6, $"six moon orchid beds ({HerbBed.All.Count})");
+
+            if (HerbBed.All.Count > 0)
+            {
+                var bed = HerbBed.All[0];
+                HerbBed.Now = gu.Now;
+                var before3 = gu.Bag.Count(ItemBook.Petal);
+                game.Gather(bed);
+                Check(gu.Bag.Count(ItemBook.Petal) == before3 + bed.Yield && !bed.Ready, $"gathering a bed gives {bed.Yield} petals and leaves it bare");
+            }
+
+            Check(game.Map != null && game.Map.Texture != null, "the location has a map");
+
+            // A moonblade thrown at a dummy cuts it.
+            var dummy = Object.FindAnyObjectByType<TrainingDummy>();
+            Check(dummy != null, "a training dummy stands before the spawn");
+
+            if (dummy != null)
+            {
+                var hero = body.GetComponent<CharacterController>();
+                var target = dummy.transform.position + Vector3.up * 1.2f;
+                var from = target + Vector3.back * 6;
+                UnityEngine.Physics.SyncTransforms();
+                var blade = Moonblade.Throw(from, target - from, GuBook.Moonlight, hero);
+
+                for (var i = 0; i < 60 && blade != null && blade.Flying; i++)
+                {
+                    blade.Step(Dt);
+                }
+
+                Check(Mathf.Approximately(dummy.Health, TrainingDummy.Toughness - GuBook.Moonlight.Damage),
+                    $"the moonblade cuts the dummy ({dummy.Health} of {TrainingDummy.Toughness})");
+            }
 
             // The body: the model worn, its feet on the ground, its head up top.
             var picture = Object.FindAnyObjectByType<HeroView>();

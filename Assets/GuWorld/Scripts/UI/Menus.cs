@@ -1,6 +1,10 @@
 using System;
 using System.Collections.Generic;
 using GuWorld.Body;
+using GuWorld.Cultivation;
+using GuWorld.Items;
+using GuWorld.Systems;
+using GuWorld.World;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +13,7 @@ namespace GuWorld.UI
     /// <summary>What the menus ask of the game.</summary>
     public interface IMenuHost
     {
-        /// <summary>A saved game to go on with, and a line about it ("День 3 · 14:20 · Полигон").</summary>
+        /// <summary>A saved game to go on with, and a line about it ("Гу Юэ Лань · Ранг 1 · День 3 · 14:20").</summary>
         bool HasSave { get; }
         string SaveSummary { get; }
         Look Look { get; }
@@ -28,16 +32,42 @@ namespace GuWorld.UI
         void Quit();
         /// <summary>The conversation is over: back to playing.</summary>
         void EndTalk();
+        /// <summary>Goes to one of the hero's pages (the bag, the aperture, the map) — the world waits.</summary>
+        void OpenPage(Menus.Page page);
+
+        /// <summary>The hero as a Gu Master, their health, their tasks.</summary>
+        Cultivator Cultivator { get; }
+        Health Health { get; }
+        Quests Quests { get; }
+        /// <summary>The shop the hero is at (null: none), and a deal there.</summary>
+        Shop Shop { get; }
+        Trade Trade { get; }
+        Deal Buy(IDictionary<string, int> lots);
+        int Sell(int cell, int count);
+        /// <summary>Throws a pile out of the bag.</summary>
+        void Drop(int cell);
+
+        /// <summary>The location's map, where the hero is on it and which way they face (radians, 0 north).</summary>
+        LocalMap Map { get; }
+        Vector3 HeroAt { get; }
+        float HeroFacing { get; }
+        /// <summary>The place and the hour, as the HUD shows them.</summary>
+        string PlaceName { get; }
+        string TimeLine { get; }
+        /// <summary>The game minute now.</summary>
+        double Now { get; }
     }
 
     /// <summary>
-    /// GU World's menus (uGUI, built in code): the main menu over the living
-    /// world, the hero's making, the pause, the settings in tabs, the about
-    /// page and confirmations — plus the HUD while playing. Changing between
-    /// the big screens fades through black. Everything animates in real time,
-    /// so it works while the world is paused.
+    /// GU World's menus (uGUI, built in code, in the design's look): the main
+    /// menu over the living world, the hero's making, the pause, the settings,
+    /// the Gu encyclopedia, confirmations and conversations — and, while
+    /// playing, the HUD (MenusHud) and the hero's pages: the bag, the aperture,
+    /// the map and a shop (MenusBag, MenusAperture, MenusMap, MenusShop).
+    /// Changing between the big screens fades through black. Everything
+    /// animates in real time, so it works while the world is paused.
     /// </summary>
-    public class Menus : MonoBehaviour
+    public partial class Menus : MonoBehaviour
     {
         public enum Page
         {
@@ -51,6 +81,13 @@ namespace GuWorld.UI
             Confirm,
             /// <summary>Talking to someone: their words below, the questions beside them; the world goes on.</summary>
             Dialogue,
+            /// <summary>The aperture: the sea of essence, the ring of Gu, feeding them.</summary>
+            Aperture,
+            Bag,
+            Map,
+            Shop,
+            /// <summary>The Gu encyclopedia (from the main menu).</summary>
+            Codex,
         }
 
         enum Tab
@@ -61,16 +98,12 @@ namespace GuWorld.UI
             Sound,
         }
 
-        public const string Version = "0.1.0";
+        public const string Version = "0.2.0";
 
         IMenuHost host;
         Canvas canvas;
         RectTransform pageRoot;
-        RectTransform hud;
-        Text hudLine;
-        Text noticeLine;
-        Text promptLine;
-        float noticeUntil;
+        Text fpsLine;
 
         // The conversation on screen.
         string speaker;
@@ -90,11 +123,12 @@ namespace GuWorld.UI
         Action confirmAction;
         Page confirmBack;
         Page settingsBack;
+        string codexChosen;
 
         public Page Current { get; private set; } = (Page)(-1);
 
         /// <summary>The width of the hero's making panel, in screen pixels (the camera is dragged right of it).</summary>
-        public float CreatorPanelWidth => 560f * canvas.scaleFactor;
+        public float CreatorPanelWidth => 600f * canvas.scaleFactor;
 
         public static Menus Create(IMenuHost host)
         {
@@ -110,28 +144,22 @@ namespace GuWorld.UI
             canvas = UiKit.Canvas("Menu Canvas", 10);
             canvas.transform.SetParent(transform, false);
 
-            hud = UiKit.Rect("HUD", canvas.transform).Fill();
-            hudLine = UiKit.Label("", hud, 22).Shadowed();
-            hudLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 28, -90, -900, 24);
-            noticeLine = UiKit.Label("", hud, 22, UiKit.Text, TextAnchor.UpperRight).Shadowed();
-            noticeLine.rectTransform.Place(new Vector2(1, 1), new Vector2(1, 1), -620, -70, 28, 24);
-            promptLine = UiKit.Label("", hud, 24, UiKit.Text, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
-            promptLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -500, 150, -500, -200);
-
+            BuildHud();
             pageRoot = UiKit.Rect("Page", canvas.transform).Fill();
+
+            // The counter sits above everything, menus too.
+            fpsLine = UiKit.Label("", canvas.transform, 15, new Color(0.62f, 0.9f, 0.62f), TextAnchor.UpperLeft, FontStyle.Bold).Shadowed();
+            fpsLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 12, -30, -300, 8);
 
             fade = UiKit.Image("Fade", canvas.transform, Color.black);
             fade.rectTransform.Fill();
             fade.raycastTarget = false;
         }
 
-        /// <summary>A line on the HUD (the time and place).</summary>
-        public void SetHud(string text) => hudLine.text = text;
-
-        /// <summary>A hint at the foot of the screen (what one can do here); null for none.</summary>
-        public void SetPrompt(string text)
+        /// <summary>The frames-per-second counter's value (shown when the setting is on).</summary>
+        public void SetFps(float fps)
         {
-            promptLine.text = text ?? "";
+            fpsLine.text = GameSettings.ShowFps ? $"FPS {fps:0}" : "";
         }
 
         /// <summary>Shows a conversation: who speaks, what they say, and what one can answer.</summary>
@@ -142,12 +170,6 @@ namespace GuWorld.UI
             spoken = text;
             answers = choices;
             Show(Page.Dialogue);
-        }
-
-        public void Notify(string text)
-        {
-            noticeLine.text = text;
-            noticeUntil = Time.unscaledTime + 2.2f;
         }
 
         /// <summary>Fades to black, does `then`, and fades back in.</summary>
@@ -179,20 +201,22 @@ namespace GuWorld.UI
                 then?.Invoke();
             }
 
-            var noticeLeft = noticeUntil - Time.unscaledTime;
-            noticeLine.color = new Color(UiKit.Text.r, UiKit.Text.g, UiKit.Text.b, Mathf.Clamp01(noticeLeft * 2));
+            UpdateHud();
+            UpdatePages();
         }
 
         /// <summary>Shows a page (rebuilt from scratch: the pages are small).</summary>
         public void Show(Page page)
         {
             Current = page;
-            hud.gameObject.SetActive(page == Page.None);
+            hud.gameObject.SetActive(page == Page.None || page == Page.Dialogue);
 
             for (var i = pageRoot.childCount - 1; i >= 0; i--)
             {
                 Destroy(pageRoot.GetChild(i).gameObject);
             }
+
+            pageCells.Clear();
 
             switch (page)
             {
@@ -203,6 +227,11 @@ namespace GuWorld.UI
                 case Page.About: About(); break;
                 case Page.Confirm: Confirm(); break;
                 case Page.Dialogue: Dialogue(); break;
+                case Page.Aperture: AperturePage(); break;
+                case Page.Bag: BagPage(); break;
+                case Page.Map: MapPage(); break;
+                case Page.Shop: ShopPage(); break;
+                case Page.Codex: Codex(); break;
             }
         }
 
@@ -213,10 +242,17 @@ namespace GuWorld.UI
             {
                 case Page.Settings: Show(settingsBack); return true;
                 case Page.About: Show(Page.Title); return true;
+                case Page.Codex: Show(Page.Title); return true;
                 case Page.Confirm: Show(confirmBack); return true;
                 case Page.Creator: FadeThrough(host.BackToTitle); return true;
                 case Page.Pause: host.Resume(); return true;
                 case Page.Dialogue: host.EndTalk(); return true;
+                case Page.Aperture:
+                case Page.Bag:
+                case Page.Map:
+                case Page.Shop:
+                    host.Resume();
+                    return true;
                 default: return false;
             }
         }
@@ -249,54 +285,70 @@ namespace GuWorld.UI
         void Title()
         {
             // The world shows through; the left is darkened for the menu.
-            var shade = UiKit.Image("Shade", pageRoot, new Color(0, 0, 0, 0.88f), UiKit.SoftEdge);
+            var shade = UiKit.Image("Shade", pageRoot, new Color(0.02f, 0.016f, 0.016f, 0.9f), UiKit.SoftEdge);
             shade.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 0, -1150, 0);
             var floor = UiKit.Image("Floor", pageRoot, new Color(0, 0, 0, 0.35f));
             floor.rectTransform.Place(Vector2.zero, new Vector2(1, 0), 0, 0, 0, -90);
 
-            // The emblem: 蛊, "Gu", large and faint behind the name.
-            if (UiKit.Glyphs != null)
-            {
-                var emblem = UiKit.Label("蛊", pageRoot, 380, new Color(UiKit.Gold.r, UiKit.Gold.g, UiKit.Gold.b, 0.1f), TextAnchor.MiddleCenter);
-                emblem.font = UiKit.Glyphs;
-                emblem.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 40, -560, -620, 60);
-            }
+            // The seal and the name.
+            var seal = UiKit.SealMark("蛊", pageRoot, 84);
+            seal.rectTransform.anchorMin = seal.rectTransform.anchorMax = new Vector2(0, 1);
+            seal.rectTransform.anchoredPosition = new Vector2(160, -150);
+            var name = UiKit.Label("GU WORLD", pageRoot, 104, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Shadowed();
+            name.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 222, -210, -1100, 90);
+            var world = UiKit.Glyph("蛊 · 世 · 界", pageRoot, 30, UiKit.Gold);
+            world.alignment = TextAnchor.MiddleLeft;
+            world.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 228, -258, -900, 214);
+            var line = UiKit.Image("Line", pageRoot, UiKit.GoldDeep);
+            line.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -282, -700, 280);
+            var mountain = UiKit.Caps("Гора Цинмао · Южная граница", pageRoot, 18, UiKit.Muted);
+            mountain.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -326, -900, 292);
 
-            var name = UiKit.Label("GU WORLD", pageRoot, 118, UiKit.Text, TextAnchor.LowerLeft, FontStyle.Bold).Shadowed();
-            name.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 112, -300, -1100, 120);
-            var line = UiKit.Image("Line", pageRoot, UiKit.Gold);
-            line.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -316, -340, 312);
-            var motto = UiKit.Label("МИР ГУ  ·  РАННЯЯ ВЕРСИЯ", pageRoot, 22, UiKit.Gold, TextAnchor.UpperLeft, FontStyle.Bold).Shadowed();
-            motto.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -370, -1100, 330);
-
-            var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0), new Vector2(0, 0), 90, 150, -620, -560);
-            menu.Stack<VerticalLayoutGroup>(6, null, TextAnchor.LowerLeft);
+            var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0), new Vector2(0, 0), 96, 140, -660, -620);
+            menu.Stack<VerticalLayoutGroup>(8, null, TextAnchor.LowerLeft);
 
             if (host.HasSave)
             {
-                UiKit.Entry("Продолжить", host.SaveSummary, menu, () => FadeThrough(host.Continue));
+                // The way back in: a card with the cinnabar button and who is waiting.
+                var card = UiKit.Panel("Continue", menu, UiKit.Hex(0x121010, 0.92f));
+                card.Size(118);
+                var column = UiKit.Rect("Column", card.transform).Fill();
+                column.Stack<VerticalLayoutGroup>(6, new RectOffset(20, 20, 16, 14));
+                UiKit.Button(UiKit.Spaced("Продолжить"), column, () => FadeThrough(host.Continue), ButtonKind.Gold, 22).Size(54);
+                UiKit.Label(host.SaveSummary, column, 17, UiKit.Muted).Size(26);
             }
 
-            UiKit.Entry("Новая игра", null, menu, () =>
+            UiKit.Entry("Новый путь", null, menu, () =>
             {
                 if (host.HasSave)
                 {
-                    Ask("Начать заново?", "Сохранённая игра будет удалена: вы заново создадите героя и начнёте с первого утра.",
+                    Ask("Начать новый путь?", "Сохранённая игра будет удалена: вы заново создадите героя и начнёте с первого утра.",
                         "Начать заново", () => FadeThrough(host.NewGame), Page.Title);
                 }
                 else
                 {
                     FadeThrough(host.NewGame);
                 }
-            });
-            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Title));
-            UiKit.Entry("Об игре", null, menu, () => Show(Page.About));
-            UiKit.Entry("Выход", null, menu, host.Quit);
+            }, "始");
+            UiKit.Entry("Энциклопедия Гу", null, menu, () => Show(Page.Codex), "典");
+            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Title), "设");
+            UiKit.Entry("Об игре", null, menu, () => Show(Page.About), "文");
+            UiKit.Entry("Выход", null, menu, host.Quit, "离");
 
-            var credit = UiKit.Label("Модели персонажей — Quaternius (CC0)", pageRoot, 16, UiKit.Muted).Shadowed();
+            // The chronicle: what is new in this version.
+            var chronicle = UiKit.Panel("Chronicle", pageRoot, UiKit.Hex(0x121010, 0.88f));
+            chronicle.rectTransform.Place(new Vector2(1, 0), new Vector2(1, 0), -560, 90, 48, -330);
+            var notes = UiKit.Rect("Notes", chronicle.transform).Fill();
+            notes.Stack<VerticalLayoutGroup>(6, new RectOffset(26, 26, 20, 18));
+            UiKit.Caps("Хроника", notes, 15).Size(24);
+            UiKit.Label("Гора Цинмао по атласу мира", notes, 21, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(30);
+            UiKit.Label("Кольцо апертуры на восемь Гу, голод и кормление Гу, сумка, лавки, задания академии, " +
+                        "грядки лунных орхидей, здоровье, карта горы и мира.", notes, 16, UiKit.Muted).Size(84);
+
+            var credit = UiKit.Label("Модели персонажей — Quaternius (CC0)", pageRoot, 15, UiKit.Muted).Shadowed();
             credit.rectTransform.Place(Vector2.zero, Vector2.zero, 118, 28, -900, -60);
-            var version = UiKit.Label($"v{Version}", pageRoot, 18, UiKit.Muted, TextAnchor.LowerRight).Shadowed();
-            version.rectTransform.Place(new Vector2(1, 0), new Vector2(1, 0), -300, 28, 36, -60);
+            var version = UiKit.Label($"v{Version}", pageRoot, 17, UiKit.Muted, TextAnchor.LowerRight).Shadowed();
+            version.rectTransform.Place(new Vector2(1, 0), new Vector2(1, 0), -300, 28, 48, -60);
         }
 
         // ── The hero's making ─────────────────────────────────────────
@@ -304,14 +356,20 @@ namespace GuWorld.UI
         void Creator()
         {
             var look = host.Look;
-            var panel = UiKit.Panel("Panel", pageRoot, new Color(0.05f, 0.055f, 0.065f, 0.97f));
-            panel.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 0, -560, 0);
-            panel.sprite = null;
+            var panel = UiKit.Panel("Panel", pageRoot, UiKit.Hex(0x0E0C0B, 0.97f));
+            panel.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 0, -600, 0);
             var column = UiKit.Rect("Column", panel.transform).Fill();
-            column.Stack<VerticalLayoutGroup>(10, new RectOffset(52, 52, 56, 40));
+            column.Stack<VerticalLayoutGroup>(8, new RectOffset(52, 52, 48, 36));
 
-            UiKit.Label("СОЗДАНИЕ ГЕРОЯ", column, 40, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(52);
-            UiKit.Label("Пятнадцать лет. Волосы чёрные, как у всех в клане.", column, 18, UiKit.Muted).Size(30);
+            UiKit.Label("СОЗДАНИЕ ГЕРОЯ", column, 38, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(50);
+            UiKit.Label("Пятнадцать лет, клан Гу Юэ. Волосы чёрные, как у всех в клане.", column, 17, UiKit.Muted).Size(28);
+
+            Heading(column, "ИМЯ");
+            UiKit.Field(column, look.name, "Своё имя — после имени клана", 16, text =>
+            {
+                // The name is kept as typed; the body is not rebuilt for it.
+                look.name = Look.CleanName(text);
+            });
 
             Heading(column, "ПОЛ");
             UiKit.Choices(column, new[] { "Юноша", "Девушка" }, look.Gender == Gender.Male ? 0 : 1, i =>
@@ -333,19 +391,14 @@ namespace GuWorld.UI
                 Show(Page.Creator);
             });
 
-            if (look.Gender == Gender.Male)
+            Heading(column, "ХАНЬФУ");
+            var robes = (Robe[])Enum.GetValues(typeof(Robe));
+            Grid(column, robes, 3, r => Look.Name(r), r => r == look.RobeColour, r =>
             {
-                Heading(column, "БОРОДА");
-                var beards = (Beard[])Enum.GetValues(typeof(Beard));
-                Grid(column, beards, 3, b => Look.Name(b), b => b == look.BeardStyle, b =>
-                {
-                    host.Wear(look.With(beard: b));
-                    Show(Page.Creator);
-                });
-            }
-
-            Heading(column, "ОДЕЖДА");
-            UiKit.Label("Рубаха с запахом, кушак, широкие штаны с обмотками и тканевые туфли — как носят в горной деревне.", column, 17, UiKit.Muted).Size(48);
+                host.Wear(look.With(robe: r));
+                Show(Page.Creator);
+            });
+            UiKit.Label("На спине и груди — серебряный полумесяц: знак клана Гу Юэ и его Гу Лунного Света.", column, 15, UiKit.Muted).Size(40);
 
             Heading(column, "ВИД");
             UiKit.Choices(column, new[] { "Весь рост", "Лицо" }, host.CreatorFace ? 1 : 0, i =>
@@ -361,14 +414,14 @@ namespace GuWorld.UI
             buttons.Stack<HorizontalLayoutGroup>(10).childForceExpandWidth = true;
             buttons.Size(56);
             UiKit.Button("Назад", buttons, () => FadeThrough(host.BackToTitle)).Size(56, -1, 1);
-            UiKit.Button("Начать игру", buttons, () => FadeThrough(host.StartPlaying), ButtonKind.Gold, 22).Size(56, -1, 2);
+            UiKit.Button(UiKit.Spaced("Начать путь"), buttons, () => FadeThrough(host.StartPlaying), ButtonKind.Gold, 21).Size(56, -1, 2);
 
             var hint = UiKit.Label("Потяните мышью, чтобы повернуть героя", pageRoot, 18, UiKit.Muted, TextAnchor.LowerCenter).Shadowed();
-            hint.rectTransform.Place(new Vector2(0, 0), new Vector2(1, 0), 560, 30, 0, -70);
+            hint.rectTransform.Place(new Vector2(0, 0), new Vector2(1, 0), 600, 30, 0, -70);
         }
 
         static void Heading(Transform parent, string text) =>
-            UiKit.Label(text, parent, 16, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(34);
+            UiKit.Label(text, parent, 15, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(30);
 
         static void Grid<T>(Transform parent, IList<T> items, int across, Func<T, string> name, Func<T, bool> chosen, Action<T> pick)
         {
@@ -394,27 +447,30 @@ namespace GuWorld.UI
         {
             var dim = UiKit.Image("Dim", pageRoot, new Color(0, 0, 0, 0.45f));
             dim.rectTransform.Fill();
-            var shade = UiKit.Image("Shade", pageRoot, new Color(0, 0, 0, 0.8f), UiKit.SoftEdge);
+            var shade = UiKit.Image("Shade", pageRoot, new Color(0.02f, 0.016f, 0.016f, 0.85f), UiKit.SoftEdge);
             shade.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 0, -1000, 0);
 
-            var title = UiKit.Label("ПАУЗА", pageRoot, 72, UiKit.Text, TextAnchor.LowerLeft, FontStyle.Bold).Shadowed();
-            title.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 112, -260, -900, 120);
-            var line = UiKit.Image("Line", pageRoot, UiKit.Gold);
-            line.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -276, -300, 272);
+            var title = UiKit.Label("ПАУЗА", pageRoot, 68, UiKit.Text, TextAnchor.LowerLeft, FontStyle.Bold).Shadowed();
+            title.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 112, -240, -900, 120);
+            var line = UiKit.Image("Line", pageRoot, UiKit.GoldDeep);
+            line.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -256, -400, 254);
 
-            var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 90, -260, -620, -140);
-            menu.Stack<VerticalLayoutGroup>(6, null, TextAnchor.UpperLeft);
-            UiKit.Entry("Продолжить", null, menu, host.Resume);
-            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Pause));
-            UiKit.Entry("Главное меню", null, menu, () => FadeThrough(host.BackToTitle));
-            UiKit.Entry("Выйти из игры", null, menu, host.Quit);
+            var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 90, -330, -640, -190);
+            menu.Stack<VerticalLayoutGroup>(4, null, TextAnchor.UpperLeft);
+            UiKit.Entry("Продолжить", null, menu, host.Resume, "续");
+            UiKit.Entry("Апертура", null, menu, () => host.OpenPage(Page.Aperture), "窍");
+            UiKit.Entry("Сумка", null, menu, () => host.OpenPage(Page.Bag), "囊");
+            UiKit.Entry("Карта", null, menu, () => host.OpenPage(Page.Map), "图");
+            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Pause), "设");
+            UiKit.Entry("Главное меню", null, menu, () => FadeThrough(host.BackToTitle), "门");
+            UiKit.Entry("Выйти из игры", null, menu, host.Quit, "离");
 
             // The controls, on a card at the right.
             var card = UiKit.Panel("Controls", pageRoot);
-            card.rectTransform.Place(new Vector2(1, 0.5f), new Vector2(1, 0.5f), -620, -250, 110, -250);
+            card.rectTransform.Place(new Vector2(1, 0.5f), new Vector2(1, 0.5f), -640, -340, 100, -340);
             var list = UiKit.Rect("List", card.transform).Fill();
-            list.Stack<VerticalLayoutGroup>(4, new RectOffset(36, 36, 30, 30));
-            UiKit.Label("УПРАВЛЕНИЕ", list, 18, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(36);
+            list.Stack<VerticalLayoutGroup>(2, new RectOffset(34, 34, 26, 26));
+            UiKit.Caps("Управление", list, 16).Size(32);
             Keys(list);
         }
 
@@ -425,10 +481,12 @@ namespace GuWorld.UI
                 { "W A S D", "ходьба" },
                 { "Shift", "бег" },
                 { "Пробел", "прыжок · залезть на уступ" },
-                { "C", "присесть" },
-                { "Z", "ползти" },
-                { "Мышь", "камера" },
-                { "Колесо", "ближе / дальше" },
+                { "C / Z", "присесть / ползти" },
+                { "1 – 9", "Гу и вещи на панели" },
+                { "E", "говорить · собрать (удерживать)" },
+                { "V", "поглотить первобытный камень" },
+                { "K · I · M", "апертура · сумка · карта" },
+                { "Мышь", "камера, колесо — ближе / дальше" },
                 { "Esc", "пауза" },
                 { "F3", "отладка" },
             };
@@ -437,11 +495,11 @@ namespace GuWorld.UI
             {
                 var row = UiKit.Rect(keys[i, 0], parent);
                 row.Stack<HorizontalLayoutGroup>(12, null, TextAnchor.MiddleLeft).childForceExpandWidth = false;
-                row.Size(40);
-                var key = UiKit.Panel("Key", row, UiKit.InkLight);
-                key.Size(34, 150, 0);
-                UiKit.Label(keys[i, 0], key.transform, 17, UiKit.Text, TextAnchor.MiddleCenter, FontStyle.Bold).rectTransform.Fill();
-                UiKit.Label(keys[i, 1], row, 18, UiKit.Text).Size(-1, -1, 1);
+                row.Size(38);
+                var key = UiKit.Panel("Key", row, UiKit.InkLight, UiKit.LineLit);
+                key.Size(32, 140, 0);
+                UiKit.Label(keys[i, 0], key.transform, 16, UiKit.GoldLit, TextAnchor.MiddleCenter, FontStyle.Bold).rectTransform.Fill();
+                UiKit.Label(keys[i, 1], row, 17, UiKit.Text).Size(-1, -1, 1);
             }
         }
 
@@ -451,18 +509,18 @@ namespace GuWorld.UI
         {
             Backdrop();
             var card = UiKit.Panel("Settings", pageRoot);
-            card.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), -560, -400, -560, -400);
+            card.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), -560, -420, -560, -420);
             var column = UiKit.Rect("Column", card.transform).Fill();
             column.Stack<VerticalLayoutGroup>(12, new RectOffset(48, 48, 40, 36));
 
-            UiKit.Label("НАСТРОЙКИ", column, 40, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(56);
+            UiKit.Label("НАСТРОЙКИ", column, 38, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(54);
             UiKit.Choices(column, new[] { "Игра", "Управление", "Графика", "Звук" }, (int)tab, i =>
             {
                 tab = (Tab)i;
                 Show(Page.Settings);
             }, 19);
 
-            var rule = UiKit.Image("Rule", column, new Color(1, 1, 1, 0.08f));
+            var rule = UiKit.Image("Rule", column, UiKit.Line);
             rule.Size(2);
 
             var view = host.View;
@@ -494,7 +552,7 @@ namespace GuWorld.UI
                         GameSettings.Apply(view);
                         Show(Page.Settings);
                     });
-                    UiKit.Label("Клавиши", column, 16, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(34);
+                    UiKit.Label("Клавиши", column, 15, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(30);
                     var keys = UiKit.Rect("Keys", column);
                     keys.Stack<VerticalLayoutGroup>(2);
                     Keys(keys);
@@ -520,6 +578,13 @@ namespace GuWorld.UI
                     UiKit.Choices(vsync, new[] { "Выкл", "Вкл" }, GameSettings.VSync ? 1 : 0, i =>
                     {
                         GameSettings.VSync = i == 1;
+                        GameSettings.Apply(view);
+                        Show(Page.Settings);
+                    });
+                    var counter = UiKit.Row("Показывать FPS", column);
+                    UiKit.Choices(counter, new[] { "Выкл", "Вкл" }, GameSettings.ShowFps ? 1 : 0, i =>
+                    {
+                        GameSettings.ShowFps = i == 1;
                         GameSettings.Apply(view);
                         Show(Page.Settings);
                     });
@@ -555,27 +620,28 @@ namespace GuWorld.UI
         /// <summary>The world dimmed behind a card.</summary>
         void Backdrop()
         {
-            var dim = UiKit.Image("Dim", pageRoot, new Color(0, 0, 0, 0.62f));
+            var dim = UiKit.Image("Dim", pageRoot, new Color(0.02f, 0.016f, 0.016f, 0.7f));
             dim.rectTransform.Fill();
             dim.raycastTarget = true;
         }
 
-        // ── About, confirmations ──────────────────────────────────────
+        // ── About, the encyclopedia, confirmations ────────────────────
 
         void About()
         {
             Backdrop();
             var card = UiKit.Panel("About", pageRoot);
-            card.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), -480, -330, -480, -330);
+            card.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), -500, -340, -500, -340);
             var column = UiKit.Rect("Column", card.transform).Fill();
-            column.Stack<VerticalLayoutGroup>(14, new RectOffset(48, 48, 40, 36));
+            column.Stack<VerticalLayoutGroup>(12, new RectOffset(48, 48, 40, 36));
 
-            UiKit.Label("ОБ ИГРЕ", column, 40, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(56);
+            UiKit.Label("ОБ ИГРЕ", column, 38, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(54);
             UiKit.Label("GU World — игра о мире Гу, вдохновлённая романом «Reverend Insanity» (Гу Чжэнь Жэнь). " +
-                        "Это ранняя версия: полигон для проверки движка, герой и его облик.", column, 20).Size(84);
-            UiKit.Label($"Версия {Version}", column, 18, UiKit.Muted).Size(28);
-            UiKit.Label("АВТОРЫ И ИСТОЧНИКИ", column, 16, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(34);
-            UiKit.Label("Модели персонажей — Quaternius, Universal Base Characters (CC0).\nДвижок — Unity 6, Universal Render Pipeline.", column, 18).Size(60);
+                        "Первая арка — гора Цинмао на Южной границе: деревня клана Гу Юэ, академия, первые Гу. " +
+                        "Мир разложен по атласу «Мир Гу»; сведения о Гу — из лор-базы, слова — свои.", column, 19).Size(110);
+            UiKit.Label($"Версия {Version}", column, 17, UiKit.Muted).Size(26);
+            UiKit.Label("АВТОРЫ И ИСТОЧНИКИ", column, 15, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(32);
+            UiKit.Label("Модели персонажей — Quaternius, Universal Base Characters (CC0).\nДвижок — Unity 6, Universal Render Pipeline.", column, 17).Size(56);
 
             var space = UiKit.Rect("Space", column);
             space.Size(-1).flexibleHeight = 1;
@@ -585,26 +651,83 @@ namespace GuWorld.UI
             UiKit.Button("Назад", buttons, () => Show(Page.Title)).Size(52, 220);
         }
 
-        /// <summary>The conversation: a band across the foot of the screen, the questions on its right.</summary>
-        void Dialogue()
+        /// <summary>The Gu encyclopedia: the Gu the game knows, and what the lore says each eats and does.</summary>
+        void Codex()
         {
-            var band = UiKit.Panel("Dialogue", pageRoot);
-            band.rectTransform.Place(new Vector2(0, 0), new Vector2(1, 0), 120, 40, 120, -330);
-            var left = UiKit.Rect("Words", band.transform).Place(Vector2.zero, new Vector2(0.62f, 1));
-            left.Stack<VerticalLayoutGroup>(6, new RectOffset(40, 24, 30, 26));
-            UiKit.Label(speaker, left, 30, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(38);
-            UiKit.Label(speakerTitle, left, 18, UiKit.Muted).Size(26);
-            UiKit.Image("Rule", left, new Color(1, 1, 1, 0.08f)).Size(2);
-            UiKit.Label(spoken, left, 23).Size(-1).flexibleHeight = 1;
+            Backdrop();
+            var card = UiKit.Panel("Codex", pageRoot);
+            card.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), -720, -420, -720, -420);
 
-            var right = UiKit.Rect("Answers", band.transform).Place(new Vector2(0.62f, 0), Vector2.one);
-            right.Stack<VerticalLayoutGroup>(8, new RectOffset(16, 34, 30, 26), TextAnchor.MiddleLeft);
+            var header = UiKit.Rect("Header", card.transform).Place(new Vector2(0, 1), new Vector2(1, 1), 40, -110, 40, 30);
+            var seal = UiKit.SealMark("典", header, 64);
+            seal.rectTransform.At(new Vector2(0, 0.5f), new Vector2(32, 0), new Vector2(64, 64));
+            var title = UiKit.Label("ЭНЦИКЛОПЕДИЯ ГУ", header, 34, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold);
+            title.rectTransform.Place(Vector2.zero, Vector2.one, 86, 0, 0, 0);
 
-            foreach (var (text, act) in answers)
+            var list = UiKit.Rect("List", card.transform).Place(Vector2.zero, new Vector2(0, 1), 40, 100, -380, 130);
+            list.Stack<VerticalLayoutGroup>(8);
+            GuKind chosen = null;
+
+            foreach (var kind in GuBook.All)
             {
-                UiKit.Button(text, right, act, ButtonKind.Plain, 19).Size(50);
+                chosen ??= kind;
+
+                if (kind.Id == codexChosen)
+                {
+                    chosen = kind;
+                }
             }
+
+            foreach (var kind in GuBook.All)
+            {
+                var k = kind;
+                UiKit.Button($"{kind.Name} · ранг {kind.Rank}", list, () =>
+                {
+                    codexChosen = k.Id;
+                    Show(Page.Codex);
+                }, kind == chosen ? ButtonKind.Tab : ButtonKind.Plain, 18).Size(52);
+            }
+
+            var details = UiKit.Rect("Details", card.transform).Place(Vector2.zero, Vector2.one, 420, 100, 40, 130);
+            details.Stack<VerticalLayoutGroup>(10);
+
+            if (chosen != null)
+            {
+                var item = ItemBook.Find(chosen.Item);
+                var food = ItemBook.Find(chosen.Food);
+                UiKit.Label(chosen.Name, details, 30, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(40);
+                UiKit.Caps($"Ранг {chosen.Rank} · {chosen.Kind}", details, 15, Aperture.RankColour(chosen.Rank)).Size(24);
+                UiKit.Label(item?.About ?? "", details, 19).Size(84);
+                UiKit.Image("Rule", details, UiKit.Line).Size(2);
+                UiKit.Label($"<b>Навык:</b> {chosen.SkillName} — {SkillLine(chosen)}", details, 18).Size(30);
+                UiKit.Label($"<b>Пища:</b> {food?.Name.ToLowerInvariant()} ×{chosen.Meal} {MealLine(chosen.MealEvery)}", details, 18).Size(30);
+                UiKit.Label($"<b>Очищение в апертуру:</b> {chosen.RefineCost:0}% эссенции разом", details, 18).Size(30);
+                UiKit.Label($"<b>Цена в лавке:</b> {(item != null && item.Price > 0 ? ItemBook.Stones(item.Price) : "не продаётся")}", details, 18).Size(30);
+                UiKit.Label($"Запись лор-базы: {chosen.LoreRef}", details, 14, UiKit.Muted).Size(22);
+            }
+
+            var buttons = UiKit.Rect("Buttons", card.transform).Place(new Vector2(1, 0), new Vector2(1, 0), -280, 36, 40, -88);
+            buttons.Stack<HorizontalLayoutGroup>(10, null, TextAnchor.MiddleRight).childForceExpandWidth = true;
+            UiKit.Button("Назад", buttons, () => Show(Page.Title)).Size(52);
         }
+
+        /// <summary>A Gu's skill in a line: what it costs and does.</summary>
+        static string SkillLine(GuKind kind) => kind.Skill switch
+        {
+            SkillKind.Moonblade => $"{kind.Cost:0}% эссенции за бросок, режет на {kind.Reach:0} м и гаснет через {kind.Range:0} м, отдых {kind.Cooldown:0.0} с",
+            SkillKind.JadeSkin => $"поднять — {kind.Cost:0}% эссенции, держать — {kind.Upkeep * 60:0}% в час, удары тоже берут эссенцию",
+            _ => "—",
+        };
+
+        /// <summary>How often a Gu eats, in words.</summary>
+        static string MealLine(double minutes)
+        {
+            var hours = minutes / 60;
+
+            return hours >= 24 ? $"раз в {Days((int)Math.Round(hours / 24))}" : hours == 12 ? "дважды в день" : $"каждые {hours:0} ч";
+        }
+
+        static string Days(int n) => n == 1 ? "день" : ItemBook.Count(n, "день", "дня", "дней");
 
         void Confirm()
         {
@@ -614,7 +737,7 @@ namespace GuWorld.UI
             var column = UiKit.Rect("Column", card.transform).Fill();
             column.Stack<VerticalLayoutGroup>(14, new RectOffset(44, 44, 36, 32));
 
-            UiKit.Label(confirmTitle, column, 34, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(46);
+            UiKit.Label(confirmTitle, column, 32, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(46);
             UiKit.Label(confirmText, column, 19, UiKit.Muted).Size(64);
             var space = UiKit.Rect("Space", column);
             space.Size(-1).flexibleHeight = 1;
@@ -624,6 +747,27 @@ namespace GuWorld.UI
             buttons.Size(54);
             UiKit.Button("Отмена", buttons, () => Show(confirmBack)).Size(54, -1, 1);
             UiKit.Button(confirmButton, buttons, () => confirmAction?.Invoke(), ButtonKind.Danger).Size(54, -1, 1);
+        }
+
+        /// <summary>The conversation: a band across the foot of the screen, the questions on its right.</summary>
+        void Dialogue()
+        {
+            var band = UiKit.Panel("Dialogue", pageRoot, UiKit.Hex(0x121010, 0.95f));
+            band.rectTransform.Place(new Vector2(0, 0), new Vector2(1, 0), 120, 40, 120, -340);
+            var left = UiKit.Rect("Words", band.transform).Place(Vector2.zero, new Vector2(0.6f, 1));
+            left.Stack<VerticalLayoutGroup>(6, new RectOffset(40, 24, 28, 24));
+            UiKit.Label(speaker, left, 28, UiKit.GoldLit, TextAnchor.MiddleLeft, FontStyle.Bold).Size(36);
+            UiKit.Caps(speakerTitle ?? "", left, 14, UiKit.Muted).Size(22);
+            UiKit.Image("Rule", left, UiKit.Line).Size(2);
+            UiKit.Label(spoken, left, 21).Size(-1).flexibleHeight = 1;
+
+            var right = UiKit.Rect("Answers", band.transform).Place(new Vector2(0.6f, 0), Vector2.one);
+            right.Stack<VerticalLayoutGroup>(7, new RectOffset(16, 34, 24, 22), TextAnchor.MiddleLeft);
+
+            foreach (var (text, act) in answers)
+            {
+                UiKit.Button(text, right, act, ButtonKind.Plain, 18).Size(46);
+            }
         }
     }
 }

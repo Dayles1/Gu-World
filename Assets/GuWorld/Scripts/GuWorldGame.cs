@@ -1,5 +1,7 @@
 using GuWorld.Body;
+using GuWorld.Cultivation;
 using GuWorld.Engine;
+using GuWorld.Items;
 using GuWorld.Physics;
 using GuWorld.Render;
 using GuWorld.State;
@@ -24,7 +26,7 @@ namespace GuWorld
     /// The game opens on the main menu over the living world: the hero stands
     /// in the evening light while the camera circles them. From there it goes
     /// on with the saved game, or starts a new one by making the hero (gender,
-    /// hairstyle, beard; fifteen, black-haired). While playing, Esc pauses;
+    /// hairstyle, hanfu; fifteen, black-haired, beardless). While playing, Esc pauses;
     /// pausing saves, and so do going back to the main menu and quitting.
     /// While paused nothing in the world moves (Time.timeScale is 0).
     ///
@@ -77,6 +79,16 @@ namespace GuWorld
         DaySky sky;
         Atmosphere atmosphere;
         Villagers villagers;
+        Cultivator cultivator;
+        Health health;
+        readonly Quests quests = new Quests();
+        readonly Trade trade = new Trade();
+        /// <summary>The shop the hero is at (while its page is open).</summary>
+        Shop shop;
+        LocalMap map;
+        /// <summary>The bed being gathered, and how long E has been held on it.</summary>
+        HerbBed gathering;
+        float gatherHeld;
         Villager talkingTo;
         int asked;
         Menus menus;
@@ -105,14 +117,29 @@ namespace GuWorld
         string screenshot;
         int screenshotFrame;
         bool talkAt;
+        string screenshotPage;
+        bool castAt;
         /// <summary>`-view x,y,z,yaw,pitch` (with -screenshot): the camera held there, looking that way (degrees).</summary>
         Pose? fixedView;
+        /// <summary>`-ground` (with -view): its height is above the ground there.</summary>
+        bool viewAboveGround;
 
         public bool CreatorFace { get; set; }
         public ThirdPersonCamera View => view;
+        public Cultivator Cultivator => cultivator;
+        public Health Health => health;
+        public Quests Quests => quests;
+        public Trade Trade => trade;
+        public Shop Shop => shop;
+        public LocalMap Map => map;
+        public Vector3 HeroAt => body.transform.position;
+        public float HeroFacing => body.Facing;
+        public double Now => clock.Minutes;
         public Look Look => look;
         public bool HasSave => saved;
-        public string SaveSummary => $"День {clock.Day} · {clock.Label} · {Location.title}";
+        public string SaveSummary => $"{look.FullName} · Ранг {cultivator.Aperture.Rank} · Деревня Гу Юэ · День {clock.Day}, {clock.Label}";
+        public string PlaceName => Location.id == QingMao.Id ? $"{Atlas.QingMao.Name} · деревня Гу Юэ" : Location.title;
+        public string TimeLine => $"{PhaseName(clock.Phase).ToUpperInvariant()} · ДЕНЬ {clock.Day} · {clock.Label} · {GuWorld.World.Weather.Name(weather.Kind)}";
 
         void Awake()
         {
@@ -180,7 +207,18 @@ namespace GuWorld
             sky.FogStart = FogStart;
             sky.FogEnd = FogEnd;
 
+            cultivator.Load(restored.cultivation, clock.Minutes);
+            health.Set(restored.health < 0 ? Health.Max : restored.health);
+            quests.Load(restored.quests);
             menus = Menus.Create(this);
+            cultivator.Said += menus.Notify;
+            cultivator.Did += quests.Count;
+            quests.Said += menus.Notify;
+            health.Fainted += OnFainted;
+            TrainingDummy.Struck += OnStruck;
+            PlaceDummies(layout);
+            PlaceBeds(layout, restored.beds);
+            DrawMap(layout);
 
             if (restored.problems.Count > 0)
             {
@@ -196,10 +234,12 @@ namespace GuWorld
                     var v = System.Array.ConvertAll(args[viewAt + 1].Split(','), s => float.Parse(s, System.Globalization.CultureInfo.InvariantCulture));
                     fixedView = new Pose { x = v[0], y = v[1], z = v[2], yaw = v[3] };
                     viewPitch = v.Length > 4 ? v[4] : 15;
+                    viewAboveGround = Has(args, "-ground");
                 }
 
                 player.AutoWalk = Has(args, "-run") ? 2 : Has(args, "-walk") ? 1 : 0;
                 talkAt = Has(args, "-talk");
+                castAt = Has(args, "-cast");
                 var timeAt = System.Array.IndexOf(args, "-time");
 
                 if (timeAt >= 0 && timeAt + 1 < args.Length)
@@ -215,6 +255,12 @@ namespace GuWorld
                 }
                 CreatorFace = Has(args, "-face");
 
+                // `-back`: the hero's making seen from behind.
+                if (Has(args, "-back"))
+                {
+                    creatorAngle = Mathf.PI;
+                }
+
                 if (Has(args, "-title")) Enter(Mode.Title);
                 else if (Has(args, "-create")) Enter(Mode.Create);
                 else if (Has(args, "-pause")) { Enter(Mode.Playing); Enter(Mode.Paused); }
@@ -224,7 +270,12 @@ namespace GuWorld
                     var tab = System.Array.IndexOf(args, "-settings") + 1 < args.Length && int.TryParse(args[System.Array.IndexOf(args, "-settings") + 1], out var t) ? t : 0;
                     menus.ShowSettings(tab, Menus.Page.Title);
                 }
+                else if (Has(args, "-codex")) { Enter(Mode.Title); menus.Show(Menus.Page.Codex); }
                 else Enter(Mode.Playing);
+
+                // `-page bag|aperture|map|shop`: one of the hero's pages over the game (opened once the hero stands).
+                var pageAt = System.Array.IndexOf(args, "-page");
+                screenshotPage = pageAt >= 0 && pageAt + 1 < args.Length ? args[pageAt + 1] : null;
 
                 // A held view: the hero's camera lets go of it.
                 if (fixedView.HasValue)
@@ -257,6 +308,7 @@ namespace GuWorld
                 gender = parts.Length > 0 ? parts[0] : "male",
                 hair = parts.Length > 1 ? parts[1] : "",
                 beard = parts.Length > 2 ? parts[2] : "none",
+                robe = parts.Length > 3 ? parts[3] : "dark",
             };
         }
 
@@ -330,14 +382,17 @@ namespace GuWorld
                 faint = FaintMaterial,
             };
             picture.Camera = view;
+            health = hero.AddComponent<Health>();
+            cultivator = hero.AddComponent<Cultivator>();
+            cultivator.Camera = view;
             hero.SetActive(true);
             Wear(look);
         }
 
-        /// <summary>Builds the hero's body for a look.</summary>
+        /// <summary>Builds the hero's body for a look (beardless: the hero is fifteen).</summary>
         public void Wear(Look next)
         {
-            look = next;
+            look = next.With(beard: Beard.None);
             picture.Wear(look);
             player.EyeScale = picture.Scale;
         }
@@ -418,7 +473,67 @@ namespace GuWorld
 
         public void StartPlaying() => Play();
 
-        public void Resume() => Enter(Mode.Playing);
+        public void Resume()
+        {
+            // Leaving a shop ends the talk it was opened from.
+            shop = null;
+
+            if (talkingTo != null)
+            {
+                talkingTo.EndTalk();
+                talkingTo = null;
+            }
+
+            Enter(Mode.Playing);
+        }
+
+        /// <summary>One of the hero's pages (bag, aperture, map): the world waits while it is open.</summary>
+        public void OpenPage(Menus.Page page)
+        {
+            if (mode != Mode.Paused)
+            {
+                Enter(Mode.Paused);
+            }
+
+            menus.Show(page);
+        }
+
+        public Deal Buy(System.Collections.Generic.IDictionary<string, int> lots)
+        {
+            var deal = trade.Buy(shop, lots, cultivator.Bag, clock.Minutes, out var paid);
+
+            if (deal != Deal.Done)
+            {
+                menus.Notify(Trade.Explain(deal));
+
+                return deal;
+            }
+
+            menus.Notify($"Куплено за {ItemBook.Stones(paid)}");
+
+            foreach (var pair in lots)
+            {
+                if (pair.Value > 0)
+                {
+                    quests.Count("buy:" + pair.Key, pair.Value * (ItemBook.Find(pair.Key)?.Bundle ?? 1));
+                }
+            }
+
+            return deal;
+        }
+
+        public int Sell(int cell, int count) => trade.Sell(cultivator.Bag, cell, count, clock.Minutes);
+
+        public void Drop(int cell)
+        {
+            var stack = cultivator.Bag[cell];
+
+            if (stack != null)
+            {
+                menus.Notify($"Выброшено: {stack.Kind?.Name} ×{stack.count}");
+                cultivator.Bag.TakeFrom(cell, stack.count);
+            }
+        }
 
         public void NewGame()
         {
@@ -429,6 +544,15 @@ namespace GuWorld
             player.Spawn = new Vector3(start.x, start.y, start.z);
             player.SpawnYaw = start.yaw;
             player.Respawn();
+            cultivator.Load(null, clock.Minutes);
+            health.Set(Health.Max);
+            quests.Load(null);
+
+            foreach (var bed in HerbBed.All)
+            {
+                bed.ReadyAt = 0;
+            }
+
             creatorAngle = 0;
             Wear(Look.Default(look.Gender));
             Enter(Mode.Create);
@@ -444,6 +568,153 @@ namespace GuWorld
             }
 
             Enter(Mode.Title);
+        }
+
+        /// <summary>Straw dummies to try skills on: in the academy's yard, or (on the proving ground) before the spawn.</summary>
+        void PlaceDummies(VillageLayout layout)
+        {
+            var straw = Lit("Straw", 0xc9b07a);
+            var wood = Lit("Post", 0x5a4330);
+
+            if (layout != null && layout.TryPlace("academy yard", out var yard))
+            {
+                var turn = Quaternion.Euler(0, yard.yaw, 0);
+
+                for (var i = -1; i <= 1; i++)
+                {
+                    var at = yard.at + turn * new Vector3(i * 3.2f, 0, 7);
+                    // Looked for from just above the yard: the academy's eaves reach out over it.
+                    TrainingDummy.Make(OnGround(at, 3), yard.yaw + 180, straw, wood);
+                }
+
+                return;
+            }
+
+            if (UseChunks)
+            {
+                for (var i = -1; i <= 1; i++)
+                {
+                    TrainingDummy.Make(OnGround(new Vector3(i * 3.2f, 0, 2)), 0, straw, wood);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Moon orchid beds (lore: res_moon_orchid — the clan grows them by its spring): a
+        /// little garden on dry, level ground near the village's spring, or (on the proving
+        /// ground) beside the spawn. Each bed's regrowth comes from the save, by its order.
+        /// </summary>
+        void PlaceBeds(VillageLayout layout, double[] saved)
+        {
+            var blue = Lit("Orchid Blue", 0x8fb4ff);
+            var pink = Lit("Orchid Pink", 0xf0a6c8);
+            var leaf = Lit("Orchid Leaf", 0x3f6b3a);
+            var heart = Lit("Orchid Heart", 0xf4f0d8);
+            var spots = new System.Collections.Generic.List<Vector3>();
+
+            if (layout != null && layout.TryPlace("spring", out var spring))
+            {
+                // Rings round the spring, from near to far: dry ground, not steep, beds apart.
+                for (var radius = 9f; radius <= 24 && spots.Count < 6; radius += 2.5f)
+                {
+                    for (var angle = 0f; angle < 360 && spots.Count < 6; angle += 20)
+                    {
+                        var at = spring.at + Quaternion.Euler(0, angle, 0) * Vector3.forward * radius;
+                        var p = new Vector2(at.x, at.z);
+
+                        if (Location.id == QingMao.Id && (QingMao.ToRiver(p).distance < QingMao.RiverHalfWidth + 5 || QingMao.ToPath(p) < QingMao.PathHalfWidth + 1.5f))
+                        {
+                            continue;
+                        }
+
+                        if (!UnityEngine.Physics.Raycast(at + Vector3.up * 60, Vector3.down, out var hit, 200, ~0, QueryTriggerInteraction.Ignore) ||
+                            hit.normal.y < 0.9f || hit.collider.GetComponent<TerrainCollider>() == null)
+                        {
+                            continue;
+                        }
+
+                        if (spots.TrueForAll(s => Vector3.Distance(s, hit.point) > 2.6f))
+                        {
+                            spots.Add(hit.point);
+                        }
+                    }
+                }
+            }
+            else if (UseChunks)
+            {
+                for (var i = 0; i < 6; i++)
+                {
+                    spots.Add(OnGround(new Vector3(6 + i % 3 * 2.6f, 0, 7 + i / 3 * 2.6f)));
+                }
+            }
+
+            for (var i = 0; i < spots.Count; i++)
+            {
+                var bed = HerbBed.Make(spots[i], 41 + i * 7, blue, pink, leaf, heart);
+
+                if (saved != null && i < saved.Length && double.IsFinite(saved[i]) && saved[i] <= clock.Minutes + bed.Regrow)
+                {
+                    bed.ReadyAt = saved[i];
+                }
+            }
+        }
+
+        /// <summary>The location's map for the HUD and the map page, with the village's places marked.</summary>
+        void DrawMap(VillageLayout layout)
+        {
+            var terrain = Terrain.activeTerrain;
+            map = terrain != null ? LocalMap.Draw(terrain, Location.id == QingMao.Id) : LocalMap.Grid(Location.bounds);
+
+            if (layout != null)
+            {
+                foreach (var (place, label) in new[]
+                {
+                    ("square", "Площадь"), ("pavilion", "Павильон клана"), ("academy", "Академия"), ("shrine", "Святилище"),
+                    ("stall 2", "Лавка Баошаня"), ("stall 0", "Лапшичная"),
+                    ("gate north", "Северные ворота"), ("gate south", "Южные ворота"), ("gate east", "Восточные ворота"), ("gate west", "Западные ворота"),
+                })
+                {
+                    if (layout.TryPlace(place, out var spot))
+                    {
+                        map.Marks.Add(new MapMark { Label = label, At = spot.at });
+                    }
+                }
+            }
+
+            if (HerbBed.All.Count > 0)
+            {
+                map.Marks.Add(new MapMark { Label = "Лунные орхидеи", At = HerbBed.All[0].transform.position });
+            }
+        }
+
+        /// <summary>Fainted: the world goes dark, and the hero wakes in the village some hours later, weak.</summary>
+        void OnFainted()
+        {
+            menus.Notify("Вы потеряли сознание");
+            menus.FadeThrough(() =>
+            {
+                body.PlaceAt(player.Spawn);
+                body.Facing = player.SpawnYaw;
+                view.Yaw = player.SpawnYaw + Mathf.PI;
+                clock.Skip(3);
+                cultivator.Tick(clock.Minutes);
+                health.Set(Health.Max * 0.3f);
+                menus.Notify("Вы очнулись в деревне. Прошло три часа");
+            });
+        }
+
+        /// <summary>A point dropped onto whatever is under it, looked for from `above` metres over it.</summary>
+        static Vector3 OnGround(Vector3 at, float above = 100)
+        {
+            at.y = UnityEngine.Physics.Raycast(new Vector3(at.x, at.y + above, at.z), Vector3.down, out var hit, 400, ~0, QueryTriggerInteraction.Ignore) ? hit.point.y : at.y;
+
+            return at;
+        }
+
+        void OnStruck(TrainingDummy dummy, float damage, bool broke)
+        {
+            quests.Count("hit_dummy");
+            menus.Notify(broke ? "Чучело разрублено!" : $"Попадание: −{damage:0} (осталось {Mathf.Max(0, dummy.Health):0})");
         }
 
         /// <summary>Begins a conversation with a villager: they stop and turn; their greeting and the questions show.</summary>
@@ -465,13 +736,66 @@ namespace GuWorld
                 return;
             }
 
-            menus.ShowDialogue(who.Spec.Name, who.Spec.Title, text, new (string, System.Action)[]
+            var choices = new System.Collections.Generic.List<(string, System.Action)>();
+            var name = who.Spec.Name;
+            var theirs = Trade.Of(name);
+
+            if (theirs != null)
             {
-                ("Кто вы?", () => Say(Talk.About(who))),
-                ("Что нового?", () => Say(Talk.News(who, clock.Day))),
-                ("Расскажите о деревне", () => Say(Talk.Village(who, asked++))),
-                ("До свидания", () => menus.ShowDialogue(who.Spec.Name, who.Spec.Title, Talk.Farewell(who, look.Gender), new (string, System.Action)[] { ("Уйти", EndTalk) })),
+                choices.Add(("Показать товар", () => OpenShop(theirs)));
+            }
+
+            if (quests.Ready && quests.Current.Giver == name)
+            {
+                choices.Add(("Я выполнил поручение", () => HandIn(who)));
+            }
+            else if (quests.NextFrom(name) is QuestKind next)
+            {
+                choices.Add(("Есть ли для меня поручение?", () => Offer(who, next)));
+            }
+
+            choices.Add(("Кто вы?", () => Say(Talk.About(who))));
+            choices.Add(("Что нового?", () => Say(Talk.News(who, clock.Day))));
+            choices.Add(("Расскажите о деревне", () => Say(Talk.Village(who, asked++))));
+            choices.Add(("До свидания", () => menus.ShowDialogue(who.Spec.Name, who.Spec.Title, Talk.Farewell(who, look.Gender), new (string, System.Action)[] { ("Уйти", EndTalk) })));
+            menus.ShowDialogue(who.Spec.Name, who.Spec.Title, text, choices);
+        }
+
+        /// <summary>A task offered: what it asks, and taking it or not.</summary>
+        void Offer(Villager who, QuestKind quest)
+        {
+            menus.ShowDialogue(who.Spec.Name, who.Spec.Title, quest.Offer, new (string, System.Action)[]
+            {
+                ("Возьмусь", () =>
+                {
+                    quests.Take(quest);
+                    Say("Ступай. И не трать эссенцию попусту.");
+                }),
+                ("В другой раз", () => Say("Как знаешь. Поручение подождёт.")),
             });
+        }
+
+        /// <summary>A task handed back: the giver's thanks and the reward in stones.</summary>
+        void HandIn(Villager who)
+        {
+            var quest = quests.HandIn(who.Spec.Name);
+
+            if (quest == null)
+            {
+                return;
+            }
+
+            var got = cultivator.Bag.Add(ItemBook.Stone, quest.RewardStones, clock.Minutes);
+            menus.Notify($"Задание «{quest.Title}» сдано: получено {ItemBook.Stones(got)}");
+            Say(quest.Thanks);
+        }
+
+        /// <summary>The shop of the one being talked to.</summary>
+        void OpenShop(Shop theirs)
+        {
+            shop = theirs;
+            Enter(Mode.Paused);
+            menus.OpenShop();
         }
 
         public void EndTalk()
@@ -530,6 +854,23 @@ namespace GuWorld
                     }
                 }
 
+                if (screenshotFrame == 100 && screenshotPage != null)
+                {
+                    switch (screenshotPage)
+                    {
+                        case "bag": OpenPage(Menus.Page.Bag); break;
+                        case "aperture": OpenPage(Menus.Page.Aperture); break;
+                        case "map": OpenPage(Menus.Page.Map); break;
+                        case "shop": OpenShop(Trade.Shops[0]); break;
+                    }
+                }
+
+                // `-cast`: the first slot used just before the picture (the blade in flight).
+                if (screenshotFrame == 145 && castAt)
+                {
+                    cultivator.Use(0);
+                }
+
                 if (screenshotFrame == 150)
                 {
                     ScreenCapture.CaptureScreenshot(screenshot);
@@ -582,28 +923,67 @@ namespace GuWorld
             var hourOfDay = (forcedTime ?? (mode == Mode.Title ? TitleTimeOfDay : clock.TimeOfDay)) * 24;
             villagers?.Tick(hourOfDay, Time.deltaTime, view.transform.position);
 
-            if (mode == Mode.Playing && villagers != null && screenshot == null)
-            {
-                var before = villagers.Before(body.transform.position, view.transform.forward);
-                menus.SetPrompt(before != null ? $"[E]  Поговорить — {before.Spec.Name}" : null);
+            HerbBed.Now = clock.Minutes;
 
-                if (before != null && keyboard != null && keyboard.eKey.wasPressedThisFrame)
+            if (mode == Mode.Playing && screenshot == null)
+            {
+                Interact(keyboard);
+            }
+
+            // The Gu Master's keys: the action bar, a stone, the hero's pages.
+            if (mode == Mode.Playing && keyboard != null && screenshot == null)
+            {
+                var digits = new[] { keyboard.digit1Key, keyboard.digit2Key, keyboard.digit3Key, keyboard.digit4Key, keyboard.digit5Key, keyboard.digit6Key, keyboard.digit7Key, keyboard.digit8Key, keyboard.digit9Key };
+
+                for (var i = 0; i < digits.Length; i++)
                 {
-                    StartTalk(before);
+                    if (digits[i].wasPressedThisFrame)
+                    {
+                        cultivator.Use(i);
+                    }
                 }
+
+                if (keyboard.vKey.wasPressedThisFrame) cultivator.AbsorbStone();
+
+                if (keyboard.kKey.wasPressedThisFrame) OpenPage(Menus.Page.Aperture);
+                else if (keyboard.iKey.wasPressedThisFrame) OpenPage(Menus.Page.Bag);
+                else if (keyboard.mKey.wasPressedThisFrame) OpenPage(Menus.Page.Map);
+            }
+            else if (mode == Mode.Paused && keyboard != null && !wasPlaying && IsHeroPage(menus.Current))
+            {
+                // On the hero's pages the same keys go between them, and the page's own key closes it.
+                var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag : keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : Menus.Page.None;
+
+                if (to != Menus.Page.None)
+                {
+                    if (to == menus.Current) Resume();
+                    else menus.Show(to);
+                }
+            }
+
+            if (debug && keyboard != null && keyboard.gKey.wasPressedThisFrame)
+            {
+                cultivator.NextGrade();
+            }
+
+            if (debug && keyboard != null && keyboard.yKey.wasPressedThisFrame)
+            {
+                cultivator.Bag.Add(ItemBook.Stone, 50, clock.Minutes);
+                menus.Notify("Отладка: +50 первобытных камней");
             }
 
             if (mode == Mode.Playing || mode == Mode.Talking)
             {
+                var before = clock.Minutes;
                 clock.Advance(Time.deltaTime);
+                cultivator.Tick(clock.Minutes);
+                health.Mend(clock.Minutes - before);
                 sinceSave += Time.deltaTime;
 
                 if (sinceSave >= AutosaveEvery)
                 {
                     Save();
                 }
-
-                menus.SetHud($"<b>День {clock.Day}</b> · {clock.Label} · {PhaseName(clock.Phase)} · {GuWorld.World.Weather.Name(weather.Kind)}\n{Location.title}");
             }
 
             // The main menu's own light and fair sky; the game's clock and weather everywhere else.
@@ -615,6 +995,97 @@ namespace GuWorld
             {
                 fps = Mathf.Lerp(fps, 1 / Time.unscaledDeltaTime, 0.05f);
             }
+
+            menus.SetFps(fps);
+        }
+
+        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map;
+
+        /// <summary>
+        /// What the hero can do where they stand: talk to the one before them (E), or gather
+        /// a bed in flower beside them (E held for a moment) — or see that it is bare.
+        /// </summary>
+        void Interact(Keyboard keyboard)
+        {
+            var at = body.transform.position;
+            var before = villagers?.Before(at, view.transform.forward);
+
+            if (before != null)
+            {
+                gathering = null;
+                menus.SetPrompt($"[E]  Поговорить — {before.Spec.Name}");
+
+                if (keyboard != null && keyboard.eKey.wasPressedThisFrame)
+                {
+                    StartTalk(before);
+                }
+
+                return;
+            }
+
+            HerbBed bed = null;
+
+            foreach (var candidate in HerbBed.All)
+            {
+                var d = Vector3.Distance(candidate.transform.position, at);
+
+                if (d < 2.3f && (bed == null || d < Vector3.Distance(bed.transform.position, at)))
+                {
+                    bed = candidate;
+                }
+            }
+
+            if (bed == null)
+            {
+                gathering = null;
+                menus.SetPrompt(null);
+
+                return;
+            }
+
+            if (!bed.Ready)
+            {
+                gathering = null;
+                menus.SetPrompt($"{bed.Label} — отцвела, вырастет через {Menus.Span(bed.ReadyAt - clock.Minutes)}");
+
+                return;
+            }
+
+            if (bed != gathering || keyboard == null || !keyboard.eKey.isPressed)
+            {
+                gathering = bed;
+                gatherHeld = 0;
+            }
+
+            if (keyboard != null && keyboard.eKey.isPressed)
+            {
+                gatherHeld += Time.deltaTime;
+            }
+
+            menus.SetPrompt($"[E]  Собрать · {bed.Label} · {HerbBed.GatherTime:0} с", gatherHeld > 0 ? gatherHeld / HerbBed.GatherTime : -1);
+
+            if (gatherHeld >= HerbBed.GatherTime)
+            {
+                Gather(bed);
+                gatherHeld = 0;
+            }
+        }
+
+        /// <summary>Picks a bed: its petals into the bag (what fits), counted for the task.</summary>
+        public void Gather(HerbBed bed)
+        {
+            if (cultivator.Bag.Room(bed.Item, clock.Minutes) <= 0)
+            {
+                menus.Notify("Сумка полна");
+
+                return;
+            }
+
+            var picked = bed.Gather();
+            var kept = cultivator.Bag.Add(bed.Item, picked, clock.Minutes);
+            var kind = ItemBook.Find(bed.Item);
+            menus.Notify($"Собрано: {kind?.Name.ToLowerInvariant()} ×{kept}");
+            quests.Count("gather:" + bed.Item, kept);
         }
 
         float viewPitch;
@@ -624,7 +1095,15 @@ namespace GuWorld
             if (fixedView.HasValue)
             {
                 var v = fixedView.Value;
-                view.transform.SetPositionAndRotation(new Vector3(v.x, v.y, v.z), Quaternion.Euler(viewPitch, v.yaw, 0));
+                var at = new Vector3(v.x, v.y, v.z);
+                var terrain = Terrain.activeTerrain;
+
+                if (viewAboveGround && terrain != null)
+                {
+                    at.y += terrain.SampleHeight(at) + terrain.transform.position.y;
+                }
+
+                view.transform.SetPositionAndRotation(at, Quaternion.Euler(viewPitch, v.yaw, 0));
 
                 return;
             }
@@ -679,6 +1158,7 @@ namespace GuWorld
         {
             // Leaving play mode in the editor must not leave the editor paused, or its render pipeline changed.
             Time.timeScale = 1;
+            TrainingDummy.Struck -= OnStruck;
             GameSettings.Restore();
         }
 
@@ -714,6 +1194,10 @@ namespace GuWorld
                 world_minutes = clock.Minutes,
                 player = SaveGame.ToSaved(body.transform.position, body.Facing),
                 look = look,
+                cultivation = cultivator.Save(),
+                health = health.Current,
+                quests = quests.Save(),
+                beds = HerbBed.All.ConvertAll(b => b.ReadyAt).ToArray(),
             });
 
             saved |= ok;
@@ -738,14 +1222,16 @@ namespace GuWorld
 
             skin ??= new MenuSkin();
             var p = body.transform.position;
-            GUILayout.BeginArea(new Rect(16, 90, 380, 200), skin.Panel);
+            GUILayout.BeginArea(new Rect(16, 250, 440, 230), skin.Panel);
             GUILayout.Label(
                 $"FPS {fps:0}\n" +
                 $"x {p.x:0.00}  y {p.y:0.00}  z {p.z:0.00}\n" +
                 $"скорость {body.HorizontalSpeed:0.0} м/с · {body.Stance} · {(body.Grounded ? "на земле" : "в воздухе")}\n" +
                 (world != null ? $"чанков загружено {world.LoadedCount} (по {Chunks.size} м)\n" : $"{Location.title}\n") +
                 $"погода: {GuWorld.World.Weather.Name(weather.Kind)}{(forcedWeather.HasValue ? " (вручную)" : "")}\n" +
-                "T — +1 час · R — погода",
+                $"эссенция {cultivator.Aperture.Essence:0.0}% / {cultivator.Aperture.Cap:0}% · класс {cultivator.Aperture.Grade}\n" +
+                $"жизнь {health.Current:0} · камней {cultivator.Stones} · вес {cultivator.Bag.Weight:0.0}\n" +
+                "T — +1 час · R — погода · G — класс таланта · Y — +50 камней",
                 skin.Small);
             GUILayout.EndArea();
         }

@@ -45,6 +45,11 @@ namespace GuWorld.Body
                 case 5: return P(0x5a4a66, 0xb89a5a, 0x3a2e40, 0x3a3436);
                 case 6: return P(0x6a7d6a, 0x2c3a2c, 0x7a5a3a, 0x3c3a34);
                 case 7: return P(0x8a5a45, 0x2e1e18, 0x4a4a3a, 0x3a3430);
+                // The hero's hanfu (the art direction's "Hero 2.0"): slate blue with a dark red
+                // trim and sash, earth-brown trousers, linen wraps; then grey, then white.
+                case 8: return Hanfu(0x2b2f3a, 0x7a2526, 0x6e1f22, 0x4a4238, 0xd2c6b1);
+                case 9: return Hanfu(0x6d7078, 0x25272b, 0x6e1f22, 0x3a3c40, 0xd2c6b1);
+                case 10: return Hanfu(0xd8d5cc, 0x2c2f35, 0x4a4f58, 0x9c9a94);
             }
 
             return gender == Gender.Female
@@ -52,7 +57,31 @@ namespace GuWorld.Body
                 : P(0x56686a, 0x262a2c, 0x7a4e2d, 0x3d3a35);
         }
 
-        public const int Palettes = 8;
+        public const int Palettes = 11;
+
+        static Palette Hanfu(int tunic, int trim, int sash, int trousers, int wraps = -1) => new Palette
+        {
+            tunic = Hex(tunic), trim = Hex(trim), sash = Hex(sash),
+            trousers = Hex(trousers), wraps = wraps >= 0 ? Hex(wraps) : Hex(trousers) * 1.15f, shoes = Hex(0x141317),
+        };
+
+        /// <summary>Whether a dye is a hanfu's (cut long, to the middle of the shin).</summary>
+        static bool Long(int dye) => dye == 5 || dye >= 8;
+
+        /// <summary>The mark's colour on a dye: silver on dark cloth, slate on white.</summary>
+        static Color MarkColour(int dye) => dye == 10 ? Hex(0x34405a) : Hex(0xc9ccd4);
+
+        /// <summary>
+        /// Whether a point of the body (rest pose) lies in a crescent: a disc of radius
+        /// `radius` round `centre` (X, Y), less a second disc set off towards its opening.
+        /// </summary>
+        static bool InCrescent(Vector3 p, Vector2 centre, float radius)
+        {
+            var at = new Vector2(p.x, p.y) - centre;
+            var bite = new Vector2(radius * 0.38f, radius * 0.16f);
+
+            return at.sqrMagnitude < radius * radius && (at - bite).sqrMagnitude > radius * radius * 0.7f;
+        }
 
         /// <summary>Where the body's joints are in the rest pose (the mesh's bind pose).</summary>
         class Landmarks
@@ -85,7 +114,7 @@ namespace GuWorld.Body
         }
 
         /// <summary>Dresses the body; the pieces are made beside it and given back.</summary>
-        public static List<SkinnedMeshRenderer> Dress(SkinData body, HeadFrame frame, Gender gender, Material clothTemplate, int dye = 0)
+        public static List<SkinnedMeshRenderer> Dress(SkinData body, HeadFrame frame, Gender gender, Material clothTemplate, int dye = 0, Emblem emblem = Emblem.None)
         {
             var palette = For(gender, dye);
             var at = new Landmarks(body);
@@ -230,17 +259,41 @@ namespace GuWorld.Body
 
                 var along = Mathf.Clamp01((Mathf.Abs(p.x) - elbow) / Mathf.Max(0.05f, wrist - elbow));
                 var onArm = Mathf.Clamp01(arms[i] + hands[i]);
-                tunicLift[i] = 0.012f + 0.03f * along * along * onArm;
+                // Sleeves widening towards the wrist (wider still on a hanfu).
+                tunicLift[i] = 0.012f + (Long(dye) ? 0.05f : 0.03f) * along * along * onArm;
             }
 
-            bool Trim(Vector3 p, Vector3 n)
+            // The clan's mark: a large one between the shoulder blades, a small one on the
+            // wearer's left breast (-X here; the crossing edge is on the right).
+            var markY = at["spine_03"].y;
+            var mark = MarkColour(dye);
+
+            Color? Paint(Vector3 p, Vector3 n)
             {
                 var line = Neckline(p, n);
                 var neckBand = line - p.y < 0.022f;
                 var crossing = ToEdge(p) < 0.009f && Front(n) > 0.5f;
                 var cuff = Mathf.Abs(p.x) > wrist - 0.08f;
 
-                return neckBand || crossing || cuff;
+                if (neckBand || crossing || cuff)
+                {
+                    return palette.trim;
+                }
+
+                if (emblem == Emblem.Crescent && Mathf.Abs(p.x) < 0.2f)
+                {
+                    if (n.z < -0.45f && InCrescent(p, new Vector2(0, markY + 0.03f), 0.085f))
+                    {
+                        return mark;
+                    }
+
+                    if (n.z > 0.45f && InCrescent(p, new Vector2(-0.085f, markY + 0.11f), 0.03f))
+                    {
+                        return mark;
+                    }
+                }
+
+                return null;
             }
 
             // The cloth falls from the chest instead of clinging under it: below the
@@ -304,7 +357,7 @@ namespace GuWorld.Body
             }
 
             var tunicPainted = new Material(clothTemplate) { name = "Tunic (painted)" };
-            var painted = Bake(body, tunic, Trim, palette.tunic, palette.trim);
+            var painted = Bake(body, tunic, Paint, palette.tunic);
 
             foreach (var name in new[] { "_BaseMap", "_MainTex" })
             {
@@ -319,7 +372,8 @@ namespace GuWorld.Body
             Add(Shell.Cut(body, tunic, 0, tunicPainted, "Cloth_tunic", tunicLift, placed));
 
             // 5. The tunic's skirt, hanging free round both legs from the waist.
-            var hem = gender == Gender.Female || dye == 5 ? knee - 0.05f : Mathf.Lerp(hips, knee, 0.5f);
+            // A hanfu hangs to the middle of the shin; a work tunic to mid-thigh (a girl's to the knee).
+            var hem = Long(dye) ? Mathf.Lerp(knee, ankle, 0.45f) : gender == Gender.Female ? knee - 0.05f : Mathf.Lerp(hips, knee, 0.5f);
             Add(Skirt(body, waist + 0.03f, hem, tunicCloth, trimCloth));
 
             // 6. The sash over it all, and its two ends hanging at the wearer's right front.
@@ -508,7 +562,7 @@ namespace GuWorld.Body
         /// covered triangles is the cloth's colour or the trim's, by where on the body it
         /// lies, over a fine weave. Texels outside the piece are the cloth's colour.
         /// </summary>
-        static Texture2D Bake(SkinData body, float[] cover, System.Func<Vector3, Vector3, bool> trim, Color cloth, Color trimColour, int size = 1024)
+        static Texture2D Bake(SkinData body, float[] cover, System.Func<Vector3, Vector3, Color?> paint, Color cloth, int size = 1024)
         {
             var pixels = new Color32[size * size];
 
@@ -573,9 +627,11 @@ namespace GuWorld.Body
                         var p = body.Vertices[a] * wa + body.Vertices[b] * wb + body.Vertices[c] * wc;
                         var n = (body.Normals[a] * wa + body.Normals[b] * wb + body.Normals[c] * wc).normalized;
 
-                        if (trim(p, n))
+                        var colour = paint(p, n);
+
+                        if (colour.HasValue)
                         {
-                            pixels[y * size + x] = Woven(trimColour, x, y);
+                            pixels[y * size + x] = Woven(colour.Value, x, y);
                         }
                     }
                 }

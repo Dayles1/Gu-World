@@ -16,8 +16,9 @@ namespace GuWorld.World
     /// loaded game has the weather it was saved with, and no state needs saving.
     /// One stretch eases into the next over its first forty minutes.
     ///
-    /// Spring on Qing Mao Mountain: mostly fair, often clouded, rain now and then
-    /// (more likely at night).
+    /// Spring on Qing Mao Mountain, in the atlas' Southern Border (a humid,
+    /// subtropical land of long rains and misty gorges): fair about half the
+    /// time, often clouded, rain fairly often (more likely at night).
     /// </summary>
     public struct Weather
     {
@@ -63,7 +64,7 @@ namespace GuWorld.World
                 // Night stretches (21:00–06:00) rain a little more often.
                 var hour = (stretch * 3 % 24 + 24) % 24;
                 var night = hour >= 21 || hour < 6;
-                var rain = night ? 0.24f : 0.14f;
+                var rain = night ? 0.28f : 0.18f;
 
                 return roll < rain ? Sky.Rain : roll < rain + 0.3f ? Sky.Cloudy : Sky.Clear;
             }

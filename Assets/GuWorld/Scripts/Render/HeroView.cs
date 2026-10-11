@@ -26,6 +26,12 @@ namespace GuWorld.Render
         HeroMotor body;
         CharacterController controller;
         PersonFigure figure;
+        /// <summary>Seconds into a throw (a moonblade's cut); below 0 none.</summary>
+        float throwing = -1;
+        const float ThrowTime = 0.32f;
+
+        /// <summary>Starts the right hand's cut (the figure eases into it and out again).</summary>
+        public void Throw() => throwing = 0;
 
         /// <summary>The look the hero is drawn with.</summary>
         public Look Look { get; private set; } = Look.Default(Gender.Male);
@@ -46,7 +52,7 @@ namespace GuWorld.Render
         {
             Look = look;
             figure?.Destroy();
-            figure = new PersonFigure(transform, Parts, look, HumanBody.Build.Hero, HeightOf(look.Gender));
+            figure = new PersonFigure(transform, Parts, look, HumanBody.Build.ForHero(look), HeightOf(look.Gender));
             Pose(0.5f);
         }
 
@@ -75,6 +81,17 @@ namespace GuWorld.Render
             {
                 lookYaw = -WrapAngle(Camera.Facing - body.Facing);
                 lookPitch = Camera.Pitch;
+            }
+
+            if (throwing >= 0)
+            {
+                throwing += dt;
+                figure.Rig.Throw = throwing < ThrowTime ? throwing / ThrowTime : -1;
+
+                if (throwing >= ThrowTime)
+                {
+                    throwing = -1;
+                }
             }
 
             // The figure is drawn smaller than the physics' metres: its speeds are its own.
