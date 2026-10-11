@@ -464,6 +464,9 @@ namespace GuWorld.Editor
                         var t = along / length;
                         var valleyFloor = Land(at.x, at.y) - stream.Valley * Mathf.Lerp(0.45f, 1, t);
                         lowest = Mathf.Min(lowest, valleyFloor - 1.2f);
+                        // Never deeper than a few metres under its own valley's floor: where a stream goes round a village over
+                        // higher ground, a bed that only ever falls would lie a hundred metres down a slot (it rises there a little).
+                        lowest = Mathf.Max(lowest, valleyFloor - 9f);
                         var index = stream.Bed.Count;
                         stream.Bed.Add((at, lowest, Mathf.Lerp(stream.HalfFrom, stream.HalfTo, t)));
 
@@ -598,9 +601,11 @@ namespace GuWorld.Editor
                 var valley = stream.Valley * (1 - SmoothStep(0, stream.ValleyWidth, distance));
                 h -= valley * valley / stream.Valley;
 
-                // The channel: banks down to the bed.
+                // The channel: banks down to the bed at one slope (~29°) all the way up to the land, however deep the bed
+                // lies — where a stream runs round a village over higher ground its bed (never rising) lies deep, and banks
+                // that ended 22 m out made a slot with sheer walls a trail fell into. Now it is a wide valley one can walk.
                 var bank = bed + Mathf.Max(0, distance - half) * 0.55f;
-                h = Mathf.Min(h, Mathf.Lerp(bank, h, SmoothStep(half + 4, half + 22, distance)));
+                h = Mathf.Min(h, bank);
             }
 
             // The deep pool under the fall.

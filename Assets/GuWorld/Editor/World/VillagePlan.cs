@@ -872,7 +872,7 @@ namespace GuWorld.Editor
 
                 var local = Quaternion.Euler(0, -pad.Yaw, 0) * new Vector3(p.x - pad.Centre.x, 0, p.y - pad.Centre.y);
 
-                if (Mathf.Abs(local.x) < pad.Half.x + 1.5f && Mathf.Abs(local.z) < pad.Half.y + 1.5f)
+                if (Mathf.Abs(local.x) < pad.Half.x + 4 && Mathf.Abs(local.z) < pad.Half.y + 4)
                 {
                     return true;
                 }
