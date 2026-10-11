@@ -16,10 +16,11 @@ namespace GuWorld.Editor
     ///
     /// - the terrain (QingMao.HeightAt), painted — grass, forest floor, rock on
     ///   steep ground, the paths, trodden earth in the villages;
-    /// - Gu Yue village at the mountain's waist: stone-footed walls with towers
-    ///   higher than the walls and four gates, ladders up the walls inside,
-    ///   bamboo houses on stilts, the five-storey clan pavilion with sweeping
-    ///   roofs and its square, a shrine, the academy and its hostel, lanterns;
+    /// - Gu Yue village at the mountain's waist (its buildings in QingMaoBuildings,
+    ///   after the art direction): stone-footed walls with watchtowers and four
+    ///   gates, ladders up the walls inside, bamboo houses on stilts, the
+    ///   five-storey clan pavilion and its square, the ancestral hall, the
+    ///   academy and its hostel, lanterns and banners;
     /// - the Xiong and Bai villages on the fore and back mountains (seen from afar);
     /// - pines, broadleaf trees, the bamboo grove, grass, the river from the
     ///   spirit spring, and far mountains all round.
@@ -29,7 +30,7 @@ namespace GuWorld.Editor
     /// (Gu World → Build Qing Mao Mountain) or the command line:
     /// Unity -batchmode -quit -executeMethod GuWorld.Editor.QingMaoBuilder.Build
     /// </summary>
-    public static class QingMaoBuilder
+    public static partial class QingMaoBuilder
     {
         const string Root = "Assets/GuWorld/Locations/QingMao";
         public const string ScenePath = Root + "/QingMao.unity";
@@ -76,8 +77,8 @@ namespace GuWorld.Editor
             EditorUtility.DisplayProgressBar("Qing Mao", "Gu Yue village…", 0.6f);
             var village = new GameObject("Gu Yue Village").transform;
             BuildVillage(village);
-            BuildSmallVillage("Xiong Village", QingMao.Xiong, 3);
-            BuildSmallVillage("Bai Village", QingMao.Bai, 7);
+            BuildSmallVillage("Xiong Village", QingMao.Xiong, 3, Clan.Xiong);
+            BuildSmallVillage("Bai Village", QingMao.Bai, 7, Clan.Bai);
             EditorUtility.DisplayProgressBar("Qing Mao", "Water and horizon…", 0.85f);
             BuildRiver();
             BuildSurroundings();
@@ -807,17 +808,19 @@ namespace GuWorld.Editor
             return result;
         }
 
-        // The village's materials.
-        static Material Bamboo => Mat("Bamboo Wall", 0x5f7d3e, 0.3f, false, BambooTexture(), 1);
-        static Material Wood => Mat("Wood", 0x6e4a2e, 0.15f);
-        static Material DarkWood => Mat("Dark Wood", 0x3e2a1e, 0.15f);
-        static Material Lacquer => Mat("Red Lacquer", 0x8a2f22, 0.35f);
-        static Material Tiles => Mat("Roof Tiles", 0x3a4048, 0.25f, true, TilesTexture(), 1);
-        static Material Thatch => Mat("Thatch", 0x7a6640, 0.05f, true);
-        static Material Stone => Mat("Stone", 0x8c877a, 0.1f);
-        static Material Paper => Glow(Mat("Paper Window", 0xd8cfb4, 0.1f));
+        // The village's materials: the Gu Yue's palette (Reference/Design/project/Houses.dc.html) —
+        // dark timber, blue-grey tiles, blue-grey stone, the lore's dark green bamboo, pale moonlight
+        // lanterns — a shade lighter than drawn, for the daylight. More in QingMaoBuildings.
+        static Material Bamboo => Mat("Bamboo Wall", 0x4f6b3c, 0.25f, false, BambooTexture(), 1);
+        static Material Wood => Mat("Wood", 0x5a3e2a, 0.15f);
+        static Material DarkWood => Mat("Dark Wood", 0x2e211a, 0.15f);
+        static Material Lacquer => Mat("Red Lacquer", 0x6b2420, 0.35f);
+        static Material Tiles => Mat("Roof Tiles", 0x4a566a, 0.25f, true, TilesTexture(), 0.5f);
+        static Material Thatch => Mat("Thatch", 0x6a5530, 0.05f, true, ThatchTexture(), 0.5f);
+        static Material Stone => Mat("Stone", 0x67686d, 0.1f, false, StoneTexture(), 0.5f);
+        static Material Paper => Glow(Mat("Paper Window", 0xbfb394, 0.1f));
         static Material Gold => Mat("Gold", 0xc89a3a, 0.6f);
-        static Material Lantern => Glow(Mat("Lantern", 0xc2412c, 0.3f));
+        static Material Lantern => Glow(Mat("Lantern", 0xbfd6f2, 0.3f));
 
         /// <summary>A material that can glow: its emission on (dark until the night lights it, Atmosphere).</summary>
         static Material Glow(Material material)
@@ -847,11 +850,35 @@ namespace GuWorld.Editor
 
         static Texture2D TilesTexture() => tilesTexture != null ? tilesTexture : tilesTexture = Texture("Roof Tiles", 256, (u, v) =>
         {
-            // Rows of curved tiles running down the roof.
-            var across = Mathf.Abs(Mathf.Repeat(u * 8, 1) - 0.5f) * 2;
-            var row = Mathf.Repeat(v * 6, 1);
-            var shade = 0.7f + 0.3f * (1 - across * across) - (row < 0.06f ? 0.25f : 0);
-            return new Color(shade, shade, shade);
+            // The rows are in the roofs' own shape now: here only weathering, a tile darker or lighter.
+            var tile = TileNoise(u * 16, v * 32, 16, 61);
+            var weather = TileFbm(u, v, 3, 62);
+            var shade = 0.78f + 0.14f * tile + 0.16f * weather;
+            return new Color(shade, shade, shade * 1.02f);
+        });
+
+        static Texture2D thatchTexture;
+        static Texture2D stoneTexture;
+
+        static Texture2D ThatchTexture() => thatchTexture != null ? thatchTexture : thatchTexture = Texture("Thatch", 256, (u, v) =>
+        {
+            // Straw in bundles: fine streaks, combed one way.
+            var straw = TileNoise(u * 64, v * 6, 64, 71);
+            var bundle = TileFbm(u, v, 4, 72);
+            var shade = 0.7f + 0.22f * straw + 0.18f * bundle;
+            return new Color(shade, shade * 0.97f, shade * 0.9f);
+        });
+
+        static Texture2D StoneTexture() => stoneTexture != null ? stoneTexture : stoneTexture = Texture("Dressed Stone", 256, (u, v) =>
+        {
+            // Dressed blocks in courses, each its own shade, the joints dark.
+            var row = Mathf.FloorToInt(v * 4);
+            var x = u * 2 + (row % 2) * 0.5f;
+            var joint = Mathf.Min(Mathf.Abs(Mathf.Repeat(v * 4, 1) - 0.5f), Mathf.Abs(Mathf.Repeat(x, 1) - 0.5f)) > 0.47f;
+            var block = TileNoise(Mathf.Floor(x) * 3.1f, row * 1.7f, 64, 81);
+            var grain = TileFbm(u, v, 8, 82);
+            var shade = joint ? 0.55f : 0.82f + 0.12f * block + 0.12f * grain;
+            return new Color(shade, shade, shade * 1.02f);
         });
 
         /// <summary>The main village's doorsteps, as the houses are placed (for its plan).</summary>
@@ -882,16 +909,7 @@ namespace GuWorld.Editor
             var radius = QingMao.VillageRadius;
             var segmentLength = 2 * Mathf.PI * radius / segments;
 
-            var wall = Make("Wall Segment", kit =>
-            {
-                kit.Box(Stone, new Vector3(0, 0.2f, 0), new Vector3(segmentLength + 0.1f, 3.2f, 1.6f));
-                kit.Box(DarkWood, new Vector3(0, 3.6f, 0), new Vector3(segmentLength + 0.1f, 3.6f, 0.9f));
-
-                for (var i = 0; i < 4; i++)
-                {
-                    kit.Box(DarkWood, new Vector3(-segmentLength / 2 + (i + 0.5f) * segmentLength / 4, 5.75f, -0.25f), new Vector3(0.9f, 0.7f, 0.4f));
-                }
-            });
+            var wall = Make("Wall Segment", kit => WallSegment(kit, segmentLength));
             var ladder = Make("Ladder", kit =>
             {
                 kit.Box(Wood, new Vector3(-0.3f, 2.6f, 0), new Vector3(0.08f, 5.6f, 0.08f));
@@ -902,41 +920,8 @@ namespace GuWorld.Editor
                     kit.Box(Wood, new Vector3(0, 0.3f + i * 0.45f, 0), new Vector3(0.6f, 0.05f, 0.06f));
                 }
             });
-            var tower = Make("Tower", kit =>
-            {
-                kit.Box(Stone, new Vector3(0, 1, 0), new Vector3(5, 4, 5));
-                kit.Box(DarkWood, new Vector3(0, 5.5f, 0), new Vector3(4.4f, 5, 4.4f));
-
-                foreach (var x in new[] { -1.9f, 1.9f })
-                {
-                    foreach (var z in new[] { -1.9f, 1.9f })
-                    {
-                        kit.Box(Wood, new Vector3(x, 9.1f, z), new Vector3(0.3f, 2.2f, 0.3f));
-                    }
-                }
-
-                kit.Box(Wood, new Vector3(0, 8, 0), new Vector3(4.8f, 0.25f, 4.8f));
-                kit.Box(DarkWood, new Vector3(0, 8.5f, 2.2f), new Vector3(4.4f, 0.8f, 0.15f));
-                kit.Box(DarkWood, new Vector3(0, 8.5f, -2.2f), new Vector3(4.4f, 0.8f, 0.15f));
-                kit.Box(DarkWood, new Vector3(2.2f, 8.5f, 0), new Vector3(0.15f, 0.8f, 4.4f));
-                kit.Box(DarkWood, new Vector3(-2.2f, 8.5f, 0), new Vector3(0.15f, 0.8f, 4.4f));
-                kit.Roof(Tiles, new Vector3(0, 10.2f, 0), 4.4f, 4.4f, 1.8f, 0.9f, 0.6f);
-            });
-            var gate = Make("Gate", kit =>
-            {
-                foreach (var x in new[] { -5.2f, 5.2f })
-                {
-                    kit.Box(Stone, new Vector3(x, 2, 0), new Vector3(2.4f, 8, 3));
-                    kit.Box(Lacquer, new Vector3(x * 0.78f, 3.4f, 0), new Vector3(0.6f, 6.8f, 0.6f));
-                }
-
-                kit.Box(Lacquer, new Vector3(0, 6.6f, 0), new Vector3(12.4f, 0.9f, 1.2f));
-                kit.Box(DarkWood, new Vector3(0, 7.5f, 0), new Vector3(12.8f, 0.9f, 2.6f));
-                kit.Roof(Tiles, new Vector3(0, 8, 0), 13.2f, 3.4f, 2.2f, 1.1f, 0.9f);
-                // The doors, swung open inward.
-                kit.Box(DarkWood, new Vector3(-3.9f, 3, 1.8f), new Vector3(0.25f, 5.6f, 3.2f), 0);
-                kit.Box(DarkWood, new Vector3(3.9f, 3, 1.8f), new Vector3(0.25f, 5.6f, 3.2f), 0);
-            });
+            var tower = Make("Tower", Watchtower);
+            var gate = Make("Gate", ClanGate);
 
             // Segments are centred on the gates' directions (east, north, west, south: every 90°).
             for (var s = 0; s < segments; s++)
@@ -973,178 +958,38 @@ namespace GuWorld.Editor
             }
         }
 
-        /// <summary>The clan pavilion: five storeys on a stone podium, each under a sweeping roof, the top crowned.</summary>
+        /// <summary>The clan pavilion (QingMaoBuildings.ClanPavilion) at the head of the square.</summary>
         static void BuildPavilion(Transform village)
         {
-            var pavilion = Make("Clan Pavilion", kit =>
-            {
-                kit.Box(Stone, new Vector3(0, 0.1f, 0), new Vector3(22, 2.2f, 19));
-
-                // Steps up the podium's front (south, −Z).
-                for (var i = 0; i < 5; i++)
-                {
-                    kit.Box(Stone, new Vector3(0, -0.6f + i * 0.24f, -10.4f + i * 0.4f), new Vector3(8, 0.24f, 1.2f));
-                }
-
-                var y = 1.2f;
-
-                for (var storey = 0; storey < 5; storey++)
-                {
-                    var width = 15 - storey * 1.8f;
-                    var depth = 12.5f - storey * 1.5f;
-                    const float height = 3.6f;
-                    kit.Box(Wood, new Vector3(0, y + height / 2, 0), new Vector3(width, height, depth));
-
-                    // Red columns at the corners and along the front, paper windows between them.
-                    for (var c = 0; c <= 4; c++)
-                    {
-                        var x = -width / 2 + c * width / 4;
-                        kit.Box(Lacquer, new Vector3(x, y + height / 2, -depth / 2 - 0.1f), new Vector3(0.45f, height, 0.45f));
-                        kit.Box(Lacquer, new Vector3(x, y + height / 2, depth / 2 + 0.1f), new Vector3(0.45f, height, 0.45f));
-
-                        if (c < 4)
-                        {
-                            var mid = x + width / 8;
-                            var door = storey == 0 && c is 1 or 2;
-                            kit.Box(door ? DarkWood : Paper, new Vector3(mid, y + (door ? 1.5f : 2), -depth / 2 - 0.05f), new Vector3(width / 4 - 1, door ? 3 : 1.4f, 0.1f));
-                        }
-                    }
-
-                    y += height;
-                    var top = storey == 4;
-                    kit.Roof(Tiles, new Vector3(0, y - 0.15f, 0), width + 0.4f, depth + 0.4f, top ? 4.2f : 1.4f, top ? 2.2f : 2, top ? 1.6f : 1.1f);
-                    y += top ? 0 : 0.5f;
-                }
-
-                // The crown on the ridge.
-                kit.Cylinder(Gold, new Vector3(0, y + 4, 0), new Vector3(0, y + 6.2f, 0), 0.25f, 0.08f, 8);
-                kit.Blob(Gold, new Vector3(0, y + 4.6f, 0), new Vector3(0.6f, 0.6f, 0.6f), 9);
-            });
-
+            var pavilion = Make("Clan Pavilion", ClanPavilion);
             var (low, _) = Under(Pavilion, new Vector2(11, 9.5f), 0);
             Place(village, "Clan Pavilion", pavilion, new Vector3(Pavilion.x, low, Pavilion.y), 0);
         }
 
         static void BuildShrine(Transform village)
         {
-            var shrine = Make("Shrine", kit =>
-            {
-                kit.Box(Stone, new Vector3(0, 0.1f, 0), new Vector3(12, 1.6f, 10));
-                kit.Box(Lacquer, new Vector3(0, 2.6f, 0), new Vector3(9, 3.4f, 7));
-                kit.Box(DarkWood, new Vector3(0, 2.2f, -3.55f), new Vector3(2.6f, 2.8f, 0.1f));
-                kit.Roof(Tiles, new Vector3(0, 4.3f, 0), 9.4f, 7.4f, 2.4f, 1.6f, 1.1f);
-                // An incense burner before it.
-                kit.Cylinder(Gold, new Vector3(0, 0.9f, -7), new Vector3(0, 1.8f, -7), 0.5f, 0.6f, 8);
-                kit.Cylinder(Stone, new Vector3(0, -0.5f, -7), new Vector3(0, 0.9f, -7), 0.7f, 0.7f, 8);
-            });
+            var shrine = Make("Shrine", AncestralHall);
             var (low, _) = Under(Shrine, new Vector2(6, 5), 0);
             Place(village, "Shrine", shrine, new Vector3(Shrine.x, low, Shrine.y), 0);
         }
 
         static void BuildAcademy(Transform village)
         {
-            var academy = Make("Academy", kit =>
-            {
-                kit.Box(Stone, new Vector3(0, 0, 0), new Vector3(21, 1.4f, 12.5f));
-                kit.Box(Wood, new Vector3(0, 2.5f, 0), new Vector3(19, 3.6f, 10));
-
-                for (var c = 0; c <= 6; c++)
-                {
-                    var x = -9.5f + c * 19 / 6f;
-                    kit.Box(Lacquer, new Vector3(x, 2.5f, -5.1f), new Vector3(0.4f, 3.6f, 0.4f));
-
-                    if (c < 6)
-                    {
-                        kit.Box(c == 3 ? DarkWood : Paper, new Vector3(x + 19 / 12f, c == 3 ? 2.2f : 2.8f, -5.05f), new Vector3(19 / 6f - 0.9f, c == 3 ? 2.8f : 1.3f, 0.1f));
-                    }
-                }
-
-                kit.Roof(Tiles, new Vector3(0, 4.3f, 0), 19.4f, 10.4f, 2.6f, 1.6f, 1);
-            });
+            var academy = Make("Academy", AcademyHall);
             var (low, _) = Under(Academy, new Vector2(10.5f, 6.2f), 0);
             Place(village, "Academy", academy, new Vector3(Academy.x, low, Academy.y), 0);
 
-            var hostel = Make("Hostel", kit =>
-            {
-                kit.Box(Stone, new Vector3(0, 0, 0), new Vector3(15, 1.2f, 9));
-                kit.Box(Bamboo, new Vector3(0, 2.3f, 0), new Vector3(14, 3.4f, 8));
-                kit.Box(Bamboo, new Vector3(0, 5.6f, 0), new Vector3(13, 3, 7));
-                kit.Roof(Tiles, new Vector3(0, 3.9f, 0), 14.2f, 8.2f, 0.9f, 1.2f, 0.6f);
-                kit.Roof(Tiles, new Vector3(0, 7.1f, 0), 13.2f, 7.2f, 2.2f, 1.4f, 0.9f);
-
-                for (var c = 0; c < 5; c++)
-                {
-                    kit.Box(Paper, new Vector3(-5.6f + c * 2.8f, 5.8f, -3.55f), new Vector3(1.4f, 1.1f, 0.1f));
-                    kit.Box(c == 2 ? DarkWood : Paper, new Vector3(-5.6f + c * 2.8f, c == 2 ? 2 : 2.6f, -4.05f), new Vector3(1.4f, c == 2 ? 2.6f : 1.1f, 0.1f));
-                }
-            });
+            var hostel = Make("Hostel", HostelHouse);
             var (hostelLow, _) = Under(Hostel, new Vector2(7.5f, 4.5f), 180);
             Place(village, "Hostel", hostel, new Vector3(Hostel.x, hostelLow, Hostel.y), 180);
         }
 
-        /// <summary>Bamboo houses on stilts: a few kinds, each its own mesh (door to +Z).</summary>
-        static (Mesh, Material[])[] HouseKinds() => new[]
-        {
-            Make("House A", kit => House(kit, 7, 5, false, Tiles)),
-            Make("House B", kit => House(kit, 9, 6, false, Tiles)),
-            Make("House C", kit => House(kit, 6, 4.5f, false, Thatch)),
-            Make("House D", kit => House(kit, 7.5f, 6, true, Tiles)),
-        };
-
-        static void House(MeshKit kit, float width, float depth, bool twoStoreys, Material roof)
-        {
-            const float floor = 1.1f;
-            const float wallHeight = 2.8f;
-
-            // Stilts, deep enough to reach the ground on any slope.
-            for (var i = 0; i <= 2; i++)
-            {
-                for (var k = 0; k <= 1; k++)
-                {
-                    var x = -width / 2 + 0.3f + i * (width - 0.6f) / 2;
-                    var z = -depth / 2 + 0.3f + k * (depth - 0.6f);
-                    kit.Cylinder(Bamboo, new Vector3(x, -3, z), new Vector3(x, floor, z), 0.16f, 0.16f, 6);
-                }
-            }
-
-            // The floor, with a porch in front, and steps down.
-            kit.Box(Wood, new Vector3(0, floor, 0.75f), new Vector3(width + 0.4f, 0.25f, depth + 1.9f));
-            kit.Box(Wood, new Vector3(0, floor * 0.66f, depth / 2 + 2), new Vector3(1.4f, 0.15f, 0.5f));
-            kit.Box(Wood, new Vector3(0, floor * 0.33f, depth / 2 + 2.45f), new Vector3(1.4f, 0.15f, 0.5f));
-
-            // Porch railing.
-            kit.Box(Bamboo, new Vector3(-width / 2 + 1, floor + 0.55f, depth / 2 + 1.6f), new Vector3(width / 2 - 1, 0.08f, 0.08f));
-            kit.Box(Bamboo, new Vector3(width / 2 - 1, floor + 0.55f, depth / 2 + 1.6f), new Vector3(width / 2 - 1, 0.08f, 0.08f));
-
-            // Walls, door and windows.
-            var wallsTop = floor + wallHeight;
-            kit.Box(Bamboo, new Vector3(0, floor + wallHeight / 2, 0), new Vector3(width, wallHeight, depth));
-            kit.Box(DarkWood, new Vector3(0, floor + 1.05f, depth / 2 + 0.03f), new Vector3(1.1f, 2.1f, 0.06f));
-            kit.Box(Paper, new Vector3(-width / 4 - 0.3f, floor + 1.7f, depth / 2 + 0.03f), new Vector3(1.2f, 0.9f, 0.06f));
-            kit.Box(Paper, new Vector3(width / 4 + 0.3f, floor + 1.7f, depth / 2 + 0.03f), new Vector3(1.2f, 0.9f, 0.06f));
-            kit.Box(Paper, new Vector3(width / 2 + 0.03f, floor + 1.7f, 0), new Vector3(0.06f, 0.9f, 1.4f));
-            kit.Box(Paper, new Vector3(-width / 2 - 0.03f, floor + 1.7f, 0), new Vector3(0.06f, 0.9f, 1.4f));
-
-            if (twoStoreys)
-            {
-                kit.Roof(roof, new Vector3(0, wallsTop, 0), width, depth, 0.7f, 0.9f, 0.4f);
-                kit.Box(Bamboo, new Vector3(0, wallsTop + 1.5f, 0), new Vector3(width - 1.4f, 2.4f, depth - 1.2f));
-                kit.Box(Paper, new Vector3(0, wallsTop + 1.6f, (depth - 1.2f) / 2 + 0.03f), new Vector3(1.6f, 0.9f, 0.06f));
-                wallsTop += 2.7f;
-                kit.Roof(roof, new Vector3(0, wallsTop, 0), width - 1.4f, depth - 1.2f, 1.8f, 1, 0.7f);
-            }
-            else
-            {
-                kit.Roof(roof, new Vector3(0, wallsTop, 0), width, depth, 2, 1.1f, 0.6f);
-            }
-        }
-
         /// <summary>Houses round the streets: a jittered grid inside the walls, each facing its nearest street.</summary>
-        static void BuildHouses(Transform village, Vector2 centre, float outer, float inner, float spacing, bool main)
+        static void BuildHouses(Transform village, Vector2 centre, float outer, float inner, float spacing, bool main, Clan clan = Clan.GuYue)
         {
             var houses = new GameObject("Houses").transform;
             houses.SetParent(village, false);
-            var kinds = HouseKinds();
+            var kinds = HouseKinds(clan);
             var random = new System.Random(main ? 11 : (int)(centre.x * 13 + centre.y));
             float R() => (float)random.NextDouble();
             var count = 0;
@@ -1204,14 +1049,13 @@ namespace GuWorld.Editor
 
                     var yaw = Mathf.Atan2(toward.x, toward.y) * Mathf.Rad2Deg;
                     var which = random.Next(kinds.Length);
-                    var kind = kinds[which];
+                    var (kind, depth) = kinds[which];
                     var (low, high) = Under(p, new Vector2(4.5f, 4), yaw);
                     Place(houses, $"House {count++}", kind, new Vector3(p.x, high - 0.15f, p.y), yaw);
 
                     if (main)
                     {
                         // The doorstep: just past the foot of the steps, facing out.
-                        var depth = new[] { 5f, 6f, 4.5f, 6f }[which];
                         var step = Quaternion.Euler(0, yaw, 0) * new Vector3(0, 0, depth / 2 + 3.3f);
                         var door = p + new Vector2(step.x, step.z);
                         doorsteps.Add(new GuWorld.Village.VillageLayout.Spot { name = $"house {doorsteps.Count}", at = new Vector3(door.x, Ground(door), door.y), yaw = yaw });
@@ -1230,7 +1074,7 @@ namespace GuWorld.Editor
         {
             var market = new GameObject("Market").transform;
             market.SetParent(village, false);
-            var awnings = new[] { Mat("Awning Red", 0x9a3a2a, 0.05f, true), Mat("Awning Indigo", 0x2e4a6a, 0.05f, true), Mat("Awning Ochre", 0xb08a3a, 0.05f, true) };
+            var awnings = new[] { Mat("Awning Red", 0x7a2e24, 0.05f, true), Mat("Awning Indigo", 0x2e3a52, 0.05f, true), Mat("Awning Ochre", 0x8a6a3a, 0.05f, true) };
             var wares = new[] { Mat("Ware Green", 0x5a8a3a, 0.2f), Mat("Ware Orange", 0xc8782a, 0.2f), Mat("Ware Cloth", 0xb8a888, 0.1f) };
             var stalls = new[] { Square + new Vector2(-15, -8), Square + new Vector2(15, -8), Square + new Vector2(-15, 8) };
 
@@ -1266,19 +1110,7 @@ namespace GuWorld.Editor
                 Spot($"stall {i}", at + new Vector2(behind.x, behind.z), yaw);
             }
 
-            var well = Make("Well", kit =>
-            {
-                kit.Cylinder(Stone, new Vector3(0, -0.5f, 0), new Vector3(0, 0.8f, 0), 1.1f, 1.1f, 12);
-                kit.Cylinder(Mat("Well Water", 0x1e2a2c, 0.8f), new Vector3(0, 0.6f, 0), new Vector3(0, 0.7f, 0), 0.9f, 0.9f, 12);
-
-                foreach (var x in new[] { -1, 1 })
-                {
-                    kit.Box(DarkWood, new Vector3(x * 1.05f, 1.6f, 0), new Vector3(0.14f, 2, 0.14f));
-                }
-
-                kit.Box(Wood, new Vector3(0, 2.35f, 0), new Vector3(2.4f, 0.14f, 0.14f));
-                kit.Roof(Tiles, new Vector3(0, 2.6f, 0), 2.4f, 1.6f, 0.8f, 0.5f, 0.4f);
-            });
+            var well = Make("Well", VillageWell);
             var wellAt = Square + new Vector2(15, 8);
             Place(market, "Well", well, new Vector3(wellAt.x, Ground(wellAt), wellAt.y), 0);
             Spot("well", wellAt + new Vector2(-1.8f, 0), 90);
@@ -1439,12 +1271,7 @@ namespace GuWorld.Editor
         {
             var lanterns = new GameObject("Lanterns").transform;
             lanterns.SetParent(village, false);
-            var post = Make("Lantern Post", kit =>
-            {
-                kit.Box(DarkWood, new Vector3(0, 1.4f, 0), new Vector3(0.14f, 2.8f, 0.14f));
-                kit.Box(DarkWood, new Vector3(0.35f, 2.75f, 0), new Vector3(0.8f, 0.1f, 0.1f));
-                kit.Box(Lantern, new Vector3(0.6f, 2.35f, 0), new Vector3(0.38f, 0.5f, 0.38f));
-            });
+            var post = Make("Lantern Post", LanternPost);
             var count = 0;
 
             foreach (var street in Streets)
@@ -1466,7 +1293,7 @@ namespace GuWorld.Editor
         }
 
         /// <summary>A smaller village on its own hill: a palisade, a hall, houses round it (seen from afar for now).</summary>
-        static void BuildSmallVillage(string name, Vector2 centre, int seed)
+        static void BuildSmallVillage(string name, Vector2 centre, int seed, Clan clan)
         {
             var village = new GameObject(name).transform;
             var radius = QingMao.SmallVillageRadius;
@@ -1492,14 +1319,9 @@ namespace GuWorld.Editor
                 Place(village, $"Palisade {s}", palisade, new Vector3(at.x, Ground(at), at.y), yaw);
             }
 
-            var hall = Make("Village Hall", kit =>
-            {
-                kit.Box(Stone, Vector3.zero, new Vector3(13, 1.2f, 10));
-                kit.Box(Wood, new Vector3(0, 2.4f, 0), new Vector3(12, 3.6f, 9));
-                kit.Roof(Tiles, new Vector3(0, 4.2f, 0), 12.4f, 9.4f, 3, 1.6f, 1.1f);
-            });
+            var hall = Make($"{clan} Hall", kit => VillageHall(kit, clan));
             Place(village, "Hall", hall, new Vector3(centre.x, Ground(centre), centre.y), seed * 30);
-            BuildHouses(village, centre, radius - 7, 13, 11, false);
+            BuildHouses(village, centre, radius - 7, 13, 11, false, clan);
         }
 
         // ── Water, horizon, the game ──────────────────────────────────
@@ -1764,7 +1586,7 @@ namespace GuWorld.Editor
                 lamp.transform.position = new Vector3(at.x, Ground(at) + 3.2f, at.y);
                 lamp.type = LightType.Point;
                 lamp.range = 16;
-                lamp.color = new Color(1, 0.66f, 0.4f);
+                lamp.color = new Color(0.78f, 0.86f, 1);
                 lamp.intensity = 0;
                 lamp.shadows = LightShadows.None;
                 lamps.Add(lamp);
@@ -1772,7 +1594,9 @@ namespace GuWorld.Editor
 
             atmosphere.NightLights = lamps.ToArray();
 
-            // Post-processing: bloom (the lanterns glow), tone mapping, a little vignette and contrast.
+            // Post-processing: bloom (the lanterns glow), tone mapping, a little vignette and contrast;
+            // as the art direction's evening scene asks, colour a little quieter, the shadows cold
+            // and the lights warm.
             var profilePath = $"{Root}/QingMao Post.asset";
             AssetDatabase.DeleteAsset(profilePath);
             var profile = ScriptableObject.CreateInstance<VolumeProfile>();
@@ -1787,8 +1611,12 @@ namespace GuWorld.Editor
             vignette.intensity.Override(0.2f);
             vignette.smoothness.Override(0.45f);
             var colour = profile.Add<ColorAdjustments>(true);
-            colour.contrast.Override(8);
-            colour.saturation.Override(6);
+            colour.contrast.Override(12);
+            colour.saturation.Override(-16);
+            var toning = profile.Add<SplitToning>(true);
+            toning.shadows.Override(new Color(0.36f, 0.44f, 0.62f));
+            toning.highlights.Override(new Color(0.62f, 0.56f, 0.46f));
+            toning.balance.Override(-15);
 
             foreach (var component in profile.components)
             {

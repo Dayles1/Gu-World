@@ -258,6 +258,289 @@ namespace GuWorld.Editor
             Box(material, centre + turn * new Vector3(0, height + 0.08f, 0), new Vector3(ridge * 2 + 0.4f, 0.22f, 0.3f), yaw);
         }
 
+        /// <summary>
+        /// A Gu Yue hall's roof: hipped over a `width` × `depth` rectangle (X × Z) whose eaves are at
+        /// `centre`'s height, rising `height` to a ridge along X. Its slopes are hollow — shallow at the
+        /// eaves, steep under the ridge — and its corners swept out and up by `curl`. Tiles on top in
+        /// raised rows (`ribs` apart; 0 for none, as thatch), a boarded underside `under`, a fascia
+        /// along the eaves, the ridge and the four hips capped with `ridge`, the hips' ends curling up
+        /// into horns and the ridge's ends turned up.
+        /// </summary>
+        public void CurvedRoof(Material tiles, Material under, Material ridge, Vector3 centre, float width, float depth,
+                               float height, float overhang, float curl, float yaw = 0, float ribs = 0.34f)
+        {
+            var turn = Quaternion.Euler(0, yaw, 0);
+            var w = width / 2 + overhang;
+            var d = depth / 2 + overhang;
+            var r = Mathf.Max(0.05f, w - d * 0.92f);
+            var flare = curl * 0.55f;
+            const int across = 12;
+            const int up = 6;
+            const float thickness = 0.14f;
+
+            Vector3 P(Vector3 local) => centre + turn * local;
+
+            // A point of the slope: `u` along the eave (−1…1), `v` from the eave (0) to the ridge (1).
+            // Sides 0, 1 are the long ones (−Z, +Z), 2, 3 the ends (−X, +X).
+            Vector3 Slope(int side, float u, float v)
+            {
+                var a = Mathf.Pow(Mathf.Abs(u), 3);
+                var s = side % 2 == 0 ? -1 : 1;
+                Vector3 eave, top;
+
+                if (side < 2)
+                {
+                    eave = new Vector3(u * (w + flare * a), curl * a, s * (d + flare * a));
+                    top = new Vector3(u * r, height, 0);
+                }
+                else
+                {
+                    eave = new Vector3(s * (w + flare * a), curl * a, u * (d + flare * a));
+                    top = new Vector3(s * r, height, 0);
+                }
+
+                var flat = Vector3.Lerp(eave, top, v);
+                flat.y = height * Mathf.Pow(v, 1.7f) + eave.y * (1 - v) * (1 - v);
+
+                return flat;
+            }
+
+            Vector3 Out(int side) => side < 2 ? new Vector3(0, 1, side == 0 ? -1 : 1) : new Vector3(side == 2 ? -1 : 1, 1, 0);
+
+            for (var side = 0; side < 4; side++)
+            {
+                var outward = turn * Out(side);
+                var sideways = side < 2 ? new Vector3(0, 0, Out(side).z) : new Vector3(Out(side).x, 0, 0);
+
+                for (var i = 0; i < across; i++)
+                {
+                    var u0 = -1 + 2f * i / across;
+                    var u1 = -1 + 2f * (i + 1) / across;
+
+                    for (var k = 0; k < up; k++)
+                    {
+                        var v0 = (float)k / up;
+                        var v1 = (float)(k + 1) / up;
+                        var a = Slope(side, u0, v0);
+                        var b = Slope(side, u1, v0);
+                        var c = Slope(side, u1, v1);
+                        var e = Slope(side, u0, v1);
+                        Quad(tiles, P(a), P(b), P(c), P(e), outward);
+
+                        var down = Vector3.down * thickness;
+                        Quad(under, P(a + down), P(b + down), P(c + down), P(e + down), Vector3.down);
+                    }
+
+                    // The fascia along the eave.
+                    var f0 = Slope(side, u0, 0);
+                    var f1 = Slope(side, u1, 0);
+                    Quad(under, P(f0), P(f1), P(f1 + Vector3.down * thickness), P(f0 + Vector3.down * thickness), turn * sideways);
+                }
+
+                // Rows of tiles, eave to ridge.
+                if (ribs > 0)
+                {
+                    var length = side < 2 ? 2 * w : 2 * d;
+                    var rows = Mathf.Max(2, Mathf.RoundToInt(length / ribs));
+                    var half = 0.055f / (length / 2);
+
+                    for (var j = 1; j < rows; j++)
+                    {
+                        var u = -1 + 2f * j / rows;
+
+                        for (var k = 0; k < up; k++)
+                        {
+                            var v0 = k == 0 ? -0.02f : (float)k / up;
+                            var v1 = Mathf.Min(0.97f, (float)(k + 1) / up);
+                            var l0 = Slope(side, u - half, v0);
+                            var l1 = Slope(side, u - half, v1);
+                            var r0 = Slope(side, u + half, v0);
+                            var r1 = Slope(side, u + half, v1);
+                            var a0 = (l0 + r0) / 2 + Vector3.up * 0.07f;
+                            var a1 = (l1 + r1) / 2 + Vector3.up * 0.07f;
+                            Quad(tiles, P(l0), P(a0), P(a1), P(l1), turn * ((a0 + l0) / 2 - r0));
+                            Quad(tiles, P(a0), P(r0), P(r1), P(a1), turn * ((a0 + r0) / 2 - l0));
+                        }
+                    }
+                }
+            }
+
+            // The hips: a rolled ridge from the ridge's end down to each corner, the corner curling up.
+            const float rolled = 0.11f;
+
+            foreach (var (side, u) in new[] { (0, -1f), (0, 1f), (1, -1f), (1, 1f) })
+            {
+                var previous = Slope(side, u, 1);
+
+                for (var k = up - 1; k >= 0; k--)
+                {
+                    var next = Slope(side, u, (float)k / up);
+                    Cylinder(ridge, P(previous + Vector3.up * rolled), P(next + Vector3.up * rolled), rolled, rolled, 5);
+                    previous = next;
+                }
+
+                var corner = Slope(side, u, 0) + Vector3.up * rolled;
+                var outAlong = new Vector3(u, 0, side == 0 ? -1 : 1).normalized;
+                var bend = corner + outAlong * 0.32f * (0.5f + curl) + Vector3.up * 0.12f * (0.5f + curl);
+                var tip = bend + outAlong * 0.16f * (0.5f + curl) + Vector3.up * 0.2f * (0.5f + curl);
+                Cylinder(ridge, P(corner), P(bend), rolled, rolled * 0.8f, 5);
+                Cylinder(ridge, P(bend), P(tip), rolled * 0.8f, 0.02f, 5);
+            }
+
+            // The ridge, its ends turned up.
+            var ridgeY = height + 0.12f;
+            Box(ridge, centre + turn * new Vector3(0, ridgeY, 0), new Vector3(2 * r + 0.3f, 0.3f, 0.3f), yaw);
+
+            foreach (var s in new[] { -1, 1 })
+            {
+                var end = new Vector3(s * (r + 0.1f), ridgeY, 0);
+                var bend = end + new Vector3(s * 0.22f, 0.18f, 0);
+                var tip = bend + new Vector3(-s * 0.04f, 0.24f, 0);
+                Cylinder(ridge, P(end), P(bend), 0.16f, 0.14f, 6);
+                Cylinder(ridge, P(bend), P(tip), 0.14f, 0.03f, 6);
+            }
+        }
+
+        /// <summary>
+        /// A crescent moon, the Gu Yue's mark (as the art direction draws it: the horns to the right),
+        /// `radius` across its outer arc and `thickness` deep, standing in the XY plane at `centre`,
+        /// turned `roll` degrees within it and `yaw` about Y.
+        /// </summary>
+        public void Crescent(Material material, Vector3 centre, float radius, float thickness, float roll = 0, float yaw = 0)
+        {
+            var turn = Quaternion.Euler(0, yaw, 0) * Quaternion.Euler(0, 0, roll);
+            const int steps = 14;
+            var tip = Mathf.Atan2(0.9f, 0.436f);
+            var outer = new Vector3[steps + 1];
+            var inner = new Vector3[steps + 1];
+
+            for (var i = 0; i <= steps; i++)
+            {
+                var t = (float)i / steps;
+                var phi = tip + t * (2 * Mathf.PI - 2 * tip);
+                var psi = Mathf.PI / 2 + t * Mathf.PI;
+                outer[i] = new Vector3(Mathf.Cos(phi), Mathf.Sin(phi), 0) * radius;
+                inner[i] = new Vector3(0.436f * radius + 0.9f * radius * Mathf.Cos(psi), 0.9f * radius * Mathf.Sin(psi), 0);
+            }
+
+            var front = Vector3.forward * thickness / 2;
+            var innerCentre = new Vector3(0.436f * radius, 0, 0);
+
+            for (var i = 0; i < steps; i++)
+            {
+                Vector3 W(Vector3 p) => centre + turn * p;
+                Quad(material, W(outer[i] + front), W(outer[i + 1] + front), W(inner[i + 1] + front), W(inner[i] + front), turn * Vector3.forward);
+                Quad(material, W(outer[i] - front), W(outer[i + 1] - front), W(inner[i + 1] - front), W(inner[i] - front), turn * Vector3.back);
+                Quad(material, W(outer[i] + front), W(outer[i + 1] + front), W(outer[i + 1] - front), W(outer[i] - front), turn * (outer[i] + outer[i + 1]));
+                Quad(material, W(inner[i] + front), W(inner[i + 1] + front), W(inner[i + 1] - front), W(inner[i] - front), turn * (innerCentre - (inner[i] + inner[i + 1]) / 2));
+            }
+        }
+
+        /// <summary>
+        /// A wall `width` × `height` (from `centre`, its foot's middle) and `thickness` deep in the XY
+        /// plane, turned `yaw`, with a round hole `radius` across whose middle is `holeY` above the foot:
+        /// a moon gate, or a round window. The hole is lined with `lining`, a ring round it on both faces.
+        /// </summary>
+        public void RoundOpening(Material wall, Material lining, Vector3 centre, float width, float height, float thickness,
+                                 float radius, float holeY, float yaw = 0, float ring = 0.12f)
+        {
+            var turn = Quaternion.Euler(0, yaw, 0);
+            var hole = new Vector2(0, holeY);
+            const int perSide = 6;
+            Vector3 W(Vector2 p, float z) => centre + turn * new Vector3(p.x, p.y, z);
+
+            // The rectangle's corners as seen from the hole's middle, counter-clockwise from the lower right.
+            var corners = new[] { new Vector2(width / 2, 0), new Vector2(width / 2, height), new Vector2(-width / 2, height), new Vector2(-width / 2, 0) };
+            var front = thickness / 2;
+
+            for (var c = 0; c < 4; c++)
+            {
+                var from = corners[c];
+                var to = corners[(c + 1) % 4];
+                var a0 = Mathf.Atan2(from.y - hole.y, from.x - hole.x);
+                var a1 = Mathf.Atan2(to.y - hole.y, to.x - hole.x);
+
+                if (a1 < a0)
+                {
+                    a1 += 2 * Mathf.PI;
+                }
+
+                for (var i = 0; i < perSide; i++)
+                {
+                    var t0 = (float)i / perSide;
+                    var t1 = (float)(i + 1) / perSide;
+                    var e0 = Vector2.Lerp(from, to, t0);
+                    var e1 = Vector2.Lerp(from, to, t1);
+                    var c0 = hole + new Vector2(Mathf.Cos(Mathf.Lerp(a0, a1, t0)), Mathf.Sin(Mathf.Lerp(a0, a1, t0))) * radius;
+                    var c1 = hole + new Vector2(Mathf.Cos(Mathf.Lerp(a0, a1, t1)), Mathf.Sin(Mathf.Lerp(a0, a1, t1))) * radius;
+
+                    foreach (var z in new[] { front, -front })
+                    {
+                        Quad(wall, W(c0, z), W(c1, z), W(e1, z), W(e0, z), turn * new Vector3(0, 0, z));
+                    }
+                }
+            }
+
+            // The hole's lining and the rings round it.
+            const int round = 24;
+
+            for (var i = 0; i < round; i++)
+            {
+                var a0 = 2 * Mathf.PI * i / round;
+                var a1 = 2 * Mathf.PI * (i + 1) / round;
+                var d0 = new Vector2(Mathf.Cos(a0), Mathf.Sin(a0));
+                var d1 = new Vector2(Mathf.Cos(a1), Mathf.Sin(a1));
+                var p0 = hole + d0 * radius;
+                var p1 = hole + d1 * radius;
+                Quad(lining, W(p0, front), W(p1, front), W(p1, -front), W(p0, -front), turn * -(Vector3)(d0 + d1));
+
+                if (ring > 0)
+                {
+                    var q0 = hole + d0 * (radius + ring);
+                    var q1 = hole + d1 * (radius + ring);
+
+                    foreach (var z in new[] { front + 0.03f, -front - 0.03f })
+                    {
+                        Quad(lining, W(p0, z), W(p1, z), W(q1, z), W(q0, z), turn * new Vector3(0, 0, z));
+                    }
+
+                    Quad(lining, W(q0, front + 0.03f), W(q1, front + 0.03f), W(q1, front), W(q0, front), turn * (Vector3)(d0 + d1));
+                    Quad(lining, W(q0, -front - 0.03f), W(q1, -front - 0.03f), W(q1, -front), W(q0, -front), turn * (Vector3)(d0 + d1));
+                }
+            }
+        }
+
+        /// <summary>
+        /// A lattice window: a paper pane `width` × `height` at `centre` (facing +Z after `yaw`),
+        /// framed, with bars across it every `cell` both ways.
+        /// </summary>
+        public void Lattice(Material frame, Material paper, Vector3 centre, float width, float height, float yaw = 0, float cell = 0.2f)
+        {
+            var turn = Quaternion.Euler(0, yaw, 0);
+            Vector3 At(float x, float y, float z) => centre + turn * new Vector3(x, y, z);
+            const float bar = 0.035f;
+            const float rim = 0.08f;
+
+            Box(paper, centre, new Vector3(width, height, 0.03f), yaw);
+            Box(frame, At(0, height / 2 + rim / 2, 0.02f), new Vector3(width + 2 * rim, rim, 0.09f), yaw);
+            Box(frame, At(0, -height / 2 - rim / 2, 0.02f), new Vector3(width + 2 * rim, rim, 0.09f), yaw);
+            Box(frame, At(width / 2 + rim / 2, 0, 0.02f), new Vector3(rim, height, 0.09f), yaw);
+            Box(frame, At(-width / 2 - rim / 2, 0, 0.02f), new Vector3(rim, height, 0.09f), yaw);
+
+            var columns = Mathf.Max(1, Mathf.RoundToInt(width / cell));
+            var rows = Mathf.Max(1, Mathf.RoundToInt(height / cell));
+
+            for (var i = 1; i < columns; i++)
+            {
+                Box(frame, At(-width / 2 + width * i / columns, 0, 0.03f), new Vector3(bar, height, 0.04f), yaw);
+            }
+
+            for (var j = 1; j < rows; j++)
+            {
+                Box(frame, At(0, -height / 2 + height * j / rows, 0.03f), new Vector3(width, bar, 0.04f), yaw);
+            }
+        }
+
         /// <summary>The mesh, a submesh per material in the order first used, and those materials.</summary>
         public (Mesh mesh, Material[] materials) Build(string name)
         {
