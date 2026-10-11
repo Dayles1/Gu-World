@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — интерьеры кланов</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 3264px; height: 2500px; box-sizing: border-box; padding: 48px; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column; gap: 32px">
+  <header style="display: flex; align-items: center; gap: 18px">
+    <span style="width: 52px; height: 52px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 36px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">室</span>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h1 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 44px; line-height: 1">Интерьеры — мебель и мелочи</h1>
+      <span style="font-size: 15px; letter-spacing: 0.16em; color: #A69A86">КОМНАТЫ В РАЗРЕЗЕ · ТАВЕРНА · ДОМ СЕМЬИ · КАБИНЕТ ГЛАВЫ · КОМНАТА ОЧИЩЕНИЯ ГУ</span>
+    </div>
+  </header>
+  <sc-for list="{{ clans }}" as="c" hint-placeholder-count="3">
+    <div style="display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; align-items: baseline; gap: 14px"><span style="font-family: 'Oranienbaum', serif; font-size: 30px">{{ c.name }}</span><span style="font-family: 'Ma Shan Zheng', serif; font-size: 26px; color: {{ c.accent }}">{{ c.glyph }}</span></div>
+      <div style="display: flex; gap: 16px">
+        <sc-for list="{{ c.rooms }}" as="h" hint-placeholder-count="4">
+          <div style="width: 780px; height: 680px; flex: none; box-sizing: border-box; background: #121214; border: 1px solid #26242A; display: flex; flex-direction: column">
+            <svg width="778" height="459" viewBox="0 0 780 460" role="img" aria-label="{{ h.name }}">
+              <sc-for list="{{ h.parts }}" as="p" hint-placeholder-count="40"><path d="{{ p.d }}" fill="{{ p.f }}" stroke="{{ p.s }}" stroke-width="{{ p.w }}" opacity="{{ p.o }}" stroke-linejoin="round" stroke-linecap="round"></path></sc-for>
+            </svg>
+            <div style="padding: 14px 18px; display: flex; flex-direction: column; gap: 7px">
+              <div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Oranienbaum', serif; font-size: 24px">{{ h.name }}</span><span style="font-size: 13px; color: #6E655A">{{ h.num }}</span></div>
+              <span style="font-size: 14px; line-height: 1.4; color: #CFC4B0">{{ h.desc }}</span>
+              <span style="font-size: 11px; letter-spacing: 0.16em; color: {{ c.accent }}; margin-top: 4px">ПРОМПТ ДЛЯ ГЕНЕРАТОРА · EN</span>
+              <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.5; color: #9A8F7E; user-select: text">{{ h.prompt }}</span>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3264,"height":2500}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var OUT = '#08070A';
+    var parts = [];
+    function P(d, f, s, w, o) { parts.push({ d: d, f: f || 'none', s: s || 'none', w: w || 0, o: o == null ? 1 : o }); }
+    function R(x, y, w, h) { return 'M' + x + ' ' + y + 'h' + w + 'v' + h + 'h' + (-w) + 'Z'; }
+    function C(cx, cy, r) { return 'M' + (cx - r) + ' ' + cy + 'a' + r + ' ' + r + ' 0 1 0 ' + (2 * r) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (-2 * r) + ' 0Z'; }
+    function crescent(cx, cy, r) { var x = cx + 0.436 * r, r2 = 0.9 * r; return 'M' + x + ' ' + (cy - 0.9 * r) + 'A' + r + ' ' + r + ' 0 1 0 ' + x + ' ' + (cy + 0.9 * r) + 'A' + r2 + ' ' + r2 + ' 0 0 1 ' + x + ' ' + (cy - 0.9 * r) + 'Z'; }
+    function frost(cx, cy, r) { var d = ''; for (var k = 0; k < 3; k++) { var a = k * Math.PI / 3, dx = Math.cos(a) * r, dy = Math.sin(a) * r; d += 'M' + (cx - dx) + ' ' + (cy - dy) + 'L' + (cx + dx) + ' ' + (cy + dy); } return d; }
+    function claw(cx, cy, r) { var d = ''; for (var i = -1; i <= 1; i++) { var x = cx + i * r * 0.5; d += 'M' + (x - r * 0.25) + ' ' + (cy - r) + 'Q' + (x + r * 0.25) + ' ' + cy + ' ' + (x - r * 0.1) + ' ' + (cy + r); } return d; }
+    function emblem(cl, cx, cy, r, color) {
+      if (cl.id === 'gy') P(crescent(cx, cy, r), color, OUT, 1);
+      else if (cl.id === 'bai') P(frost(cx, cy, r), 'none', color, Math.max(1.6, r * 0.16));
+      else P(claw(cx, cy, r), 'none', color, Math.max(2, r * 0.22));
+    }
+
+    var CL = [
+      { id: 'gy', name: 'Клан Гу Юэ', glyph: '古月', accent: '#9FB4D6', wall: '#3A2E26', wall2: '#2C221C', floor: '#2A2018', plank: '#1E1610', wood: '#5A3E28', woodD: '#3A2616', cloth: '#1F2A44', light: '#E8B866', glowC: '#BFD6F2', emb: '#C9D2DC', sky: '#1C2638',
+        style: 'Gu Yue clan interior: dark lacquered wood panelling, indigo textiles, silver crescent-moon motifs, round lattice windows with moonlight' },
+      { id: 'bai', name: 'Клан Бай', glyph: '白', accent: '#8FD3E8', wall: '#C8C4BC', wall2: '#A8A49C', floor: '#6A6660', plank: '#55524C', wood: '#5A5248', woodD: '#3A3530', cloth: '#DDE6EC', light: '#BFE8F4', glowC: '#9FE0F0', emb: '#3E8FAE', sky: '#2A3644',
+        style: 'Bai clan interior: whitewashed plaster walls, grey stone floor, pale wood, white and ice-cyan textiles, frost-crystal motifs, cold daylight through paper windows' },
+      { id: 'xiong', name: 'Клан Сюн', glyph: '熊', accent: '#D0703E', wall: '#5A3E26', wall2: '#43301E', floor: '#3A2A1C', plank: '#2A1C10', wood: '#6A4A2E', woodD: '#3A2616', cloth: '#7A2A1C', light: '#F0A04A', glowC: '#F0A04A', emb: '#E8A060', sky: '#2A1E18', logs: true,
+        style: 'Xiong clan interior: rough log walls, packed-earth floor, a central fire hearth, bear pelts and antlers, red-ochre textiles, bronze fittings, warm firelight' }
+    ];
+
+    function room(cl) {
+      P(R(0, 0, 780, 460), '#0B0A0A');
+      P(R(60, 40, 660, 290), cl.wall);
+      if (cl.logs) { var d = ''; for (var y = 52; y < 330; y += 18) d += 'M60 ' + y + 'H720'; P(d, 'none', '#2E1E10', 3); }
+      else if (cl.id === 'gy') { var e = ''; for (var x = 60; x <= 720; x += 66) e += 'M' + x + ' 40V330'; e += 'M60 250H720'; P(e, 'none', cl.wall2, 4); }
+      else { P(R(60, 290, 660, 40), '#8E8A82'); P('M60 290H720', 'none', '#6A6660', 2); }
+      P('M0 0 L60 40 L60 330 L0 460 Z', cl.wall2); P('M780 0 L720 40 L720 330 L780 460 Z', cl.wall2);
+      P('M0 0 L60 40 L60 330 L0 460 Z M780 0 L720 40 L720 330 L780 460 Z', '#000000', null, 0, 0.3);
+      P('M0 0 H780 L720 40 H60 Z', '#0E0B09');
+      P('M60 40 L0 0 M200 40 L170 0 M340 40 L330 0 M440 40 L450 0 M580 40 L610 0 M720 40 L780 0', 'none', cl.woodD, 8);
+      P('M60 330 L720 330 L780 460 L0 460 Z', cl.floor);
+      var f = ''; for (var i = 1; i < 10; i++) { var t = i / 10; f += 'M' + (60 + 660 * t) + ' 330 L' + (780 * t) + ' 460'; } f += 'M30 395 H750';
+      P(f, 'none', cl.plank, 1.4, 0.8);
+      P('M60 330 H720', 'none', '#000000', 3, 0.5);
+    }
+    function windowW(cl, x, y, w, h, round) {
+      if (round) { P(C(x + w / 2, y + h / 2, w / 2 + 6), cl.woodD, OUT, 1.4); P(C(x + w / 2, y + h / 2, w / 2), cl.sky, OUT, 1); P(crescent(x + w / 2 + 8, y + h / 2 - 6, 10), '#C9D2DC'); P('M' + x + ' ' + (y + h / 2) + 'h' + w + 'M' + (x + w / 2) + ' ' + y + 'v' + h, 'none', cl.woodD, 2.4); return; }
+      P(R(x - 6, y - 6, w + 12, h + 12), cl.woodD, OUT, 1.4); P(R(x, y, w, h), cl.id === 'bai' ? '#E8EEF0' : cl.sky, OUT, 1);
+      var d = ''; for (var i = 1; i < 4; i++) d += 'M' + (x + w * i / 4) + ' ' + y + 'v' + h; for (var j = 1; j < 3; j++) d += 'M' + x + ' ' + (y + h * j / 3) + 'h' + w;
+      P(d, 'none', cl.woodD, 2);
+    }
+    function table(cl, x, y, w, h) { P('M' + x + ' ' + y + 'L' + (x + w) + ' ' + y + 'L' + (x + w - 14) + ' ' + (y - 14) + 'L' + (x + 14) + ' ' + (y - 14) + 'Z', cl.wood, OUT, 1.4); P(R(x, y, w, 7), cl.woodD, OUT, 1.2); P(R(x + 8, y + 7, 7, h) + R(x + w - 15, y + 7, 7, h), cl.woodD, OUT, 1.2); }
+    function bench(cl, x, y, w) { P(R(x, y, w, 6), cl.wood, OUT, 1.2); P(R(x + 6, y + 6, 5, 16) + R(x + w - 11, y + 6, 5, 16), cl.woodD, OUT, 1); }
+    function jar(cl, x, y, r, label) { P('M' + (x - r) + ' ' + y + 'Q' + (x - r * 1.1) + ' ' + (y - r * 1.6) + ' ' + (x - r * 0.4) + ' ' + (y - r * 1.8) + 'h' + (r * 0.8) + 'Q' + (x + r * 1.1) + ' ' + (y - r * 1.6) + ' ' + (x + r) + ' ' + y + 'Z', '#6A4A2A', OUT, 1.4); P(R(x - r * 0.5, y - r * 2.1, r, r * 0.35), '#3A2616', OUT, 1); if (label) P(R(x - r * 0.35, y - r * 1.3, r * 0.7, r * 0.7), '#A82E25', OUT, 0.8); P('M' + (x + r * 0.3) + ' ' + (y - r * 0.2) + 'Q' + (x + r * 0.9) + ' ' + (y - r) + ' ' + (x + r * 0.5) + ' ' + (y - r * 1.6), 'none', '#000000', 4, 0.2); }
+    function cup(x, y) { P('M' + (x - 5) + ' ' + y + 'l2 -8h6l2 8Z', '#E6E2DA', OUT, 1); }
+    function bowl(x, y, c) { P('M' + (x - 9) + ' ' + (y - 6) + 'Q' + x + ' ' + (y + 6) + ' ' + (x + 9) + ' ' + (y - 6) + 'Z', c || '#E6E2DA', OUT, 1); }
+    function lamp(cl, x, y) { P('M' + x + ' 40V' + (y - 14), 'none', OUT, 1.4); P(C(x, y, 34), cl.light, null, 0, 0.12); P(C(x, y, 12), cl.light, OUT, 1.4); P(R(x - 8, y - 14, 16, 4) + R(x - 8, y + 10, 16, 4), '#141214'); }
+    function shelf(cl, x, y, w, h, rows, fill) {
+      P(R(x, y, w, h), cl.woodD, OUT, 1.4); P(R(x + 5, y + 5, w - 10, h - 10), '#0E0B09');
+      for (var i = 1; i < rows; i++) P(R(x, y + h * i / rows - 3, w, 6), cl.wood, OUT, 1);
+      for (var j = 0; j < rows; j++) fill(x + 10, y + h * (j + 1) / rows - 4, w - 20);
+    }
+    function scrolls(x, y, w) { var d = ''; for (var k = x; k < x + w - 8; k += 12) d += C(k + 5, y - 6, 5); P(d, '#D8CDB8', OUT, 1); }
+    function books(x, y, w) { var d = ''; var cs = ['#7A2A1C', '#2E3A58', '#4E6A4A', '#6A5A3A']; for (var k = 0; x + k * 9 < x + w - 8; k++) P(R(x + k * 9, y - 22 + (k % 3) * 3, 7, 22 - (k % 3) * 3), cs[k % 4], OUT, 0.8); }
+    function bottles(cl, x, y, w, glow) { for (var k = x; k < x + w - 10; k += 18) { P('M' + k + ' ' + y + 'v-12q0 -6 5 -6h4q5 0 5 6v12Z', glow ? '#2A3A34' : '#6A5A44', OUT, 1); if (glow) P(C(k + 7, y - 8, 4), cl.glowC, null, 0, 0.9); } }
+    function banner(cl, x, y) { P(R(x - 26, y, 52, 110), cl.cloth, OUT, 1.4); P(R(x - 30, y - 4, 60, 6), cl.woodD, OUT, 1); emblem(cl, x, y + 50, 16, cl.emb); }
+    function hangScroll(cl, x, y) { P(R(x - 30, y, 60, 130), '#D8CDB8', OUT, 1.2); P(R(x - 34, y - 4, 68, 6) + R(x - 34, y + 128, 68, 6), cl.woodD, OUT, 1); P('M' + (x - 22) + ' ' + (y + 100) + 'L' + (x - 6) + ' ' + (y + 60) + 'L' + (x + 4) + ' ' + (y + 80) + 'L' + (x + 14) + ' ' + (y + 50) + 'L' + (x + 24) + ' ' + (y + 100) + 'Z', '#5A5A5A', null, 0, 0.6); P(C(x + 12, y + 28, 7), '#A82E25', null, 0, 0.7); }
+    function screenP(cl, x, y, w, h) { var n = 4, pw = w / n; for (var i = 0; i < n; i++) { P(R(x + i * pw, y, pw - 2, h), cl.woodD, OUT, 1.2); P(R(x + i * pw + 5, y + 5, pw - 12, h - 10), cl.id === 'xiong' ? '#8A6A4A' : '#D8D2C4', null, 0, 1); } P('M' + (x + 8) + ' ' + (y + h - 30) + 'L' + (x + w * 0.3) + ' ' + (y + h * 0.35) + 'L' + (x + w * 0.45) + ' ' + (y + h * 0.55) + 'L' + (x + w * 0.65) + ' ' + (y + h * 0.25) + 'L' + (x + w - 10) + ' ' + (y + h - 30) + 'Z', '#3A3A40', null, 0, 0.5); }
+    function rug(cl, x, y, w) { P('M' + x + ' ' + y + 'L' + (x + w) + ' ' + y + 'L' + (x + w + 40) + ' ' + (y + 60) + 'L' + (x - 40) + ' ' + (y + 60) + 'Z', cl.cloth, OUT, 1.2); P('M' + (x + 10) + ' ' + (y + 8) + 'L' + (x + w - 10) + ' ' + (y + 8) + 'L' + (x + w + 26) + ' ' + (y + 52) + 'L' + (x - 26) + ' ' + (y + 52) + 'Z', 'none', cl.emb, 1.4, 0.6); }
+    function pelt(x, y) { P('M' + x + ' ' + y + 'q40 -20 90 -6 q30 -16 60 0 q20 20 -10 34 q-60 20 -110 6 q-40 -6 -30 -34 Z', '#5A4030', OUT, 1.4); P(C(x + 120, y - 8, 12), '#5A4030', OUT, 1.2); P(C(x + 116, y - 12, 2) + C(x + 126, y - 12, 2), '#0B0A0A'); }
+    function hearth(cl, x, y) { P(R(x - 60, y - 16, 120, 16), '#57524A', OUT, 1.4); P('M' + (x - 30) + ' ' + (y - 16) + 'q10 -40 30 -60 q20 30 30 60 Z', '#F0A04A', OUT, 1); P('M' + (x - 14) + ' ' + (y - 16) + 'q6 -24 14 -36 q10 18 14 36 Z', '#F4D27A'); P(C(x, y - 40, 90), '#F0A04A', null, 0, 0.12); P('M' + (x - 40) + ' ' + (y - 100) + 'L' + x + ' ' + (y - 140) + 'L' + (x + 40) + ' ' + (y - 100), 'none', '#2A1A0E', 4); P('M' + x + ' ' + (y - 140) + 'V' + (y - 74), 'none', '#2A1A0E', 3); P('M' + (x - 22) + ' ' + (y - 74) + 'Q' + x + ' ' + (y - 50) + ' ' + (x + 22) + ' ' + (y - 74) + 'Z', '#3A3530', OUT, 1.4); }
+    function bed(cl, x, y, w) { P(R(x, y - 40, w, 40), cl.woodD, OUT, 1.4); P('M' + x + ' ' + (y - 40) + 'L' + (x + w) + ' ' + (y - 40) + 'L' + (x + w - 20) + ' ' + (y - 70) + 'L' + (x + 20) + ' ' + (y - 70) + 'Z', cl.cloth, OUT, 1.4); P(R(x + 30, y - 78, 50, 14), '#E6E2DA', OUT, 1.2); P('M' + (x + 100) + ' ' + (y - 66) + 'q60 -10 110 0', 'none', '#000000', 3, 0.25); }
+    function chest(cl, x, y) { P(R(x, y - 40, 70, 40), cl.wood, OUT, 1.4); P(R(x, y - 46, 70, 8), cl.woodD, OUT, 1.2); P(R(x + 30, y - 32, 10, 10), '#B08A4A', OUT, 1); }
+    function desk(cl, x, y, w) { table(cl, x, y, w, 40); P(R(x + 30, y - 22, 60, 6), '#E8E2D4', OUT, 1); P(R(x + 110, y - 24, 22, 10), '#141214', OUT, 1); P('M' + (x + 150) + ' ' + (y - 16) + 'l20 -24', 'none', '#3A2616', 3); P(C(x + w - 40, y - 22, 9), '#5A5A60', OUT, 1); }
+    function censer(x, y) { P('M' + (x - 14) + ' ' + y + 'l4 -18h20l4 18Z', '#8A6A3A', OUT, 1.2); P('M' + (x - 2) + ' ' + (y - 20) + 'q-8 -20 4 -36 q10 -14 0 -30', 'none', '#B9B4AC', 1.6, 0.5); }
+    function cauldron(cl, x, y) { P(C(x, y - 50, 120), cl.glowC, null, 0, 0.1); P('M' + (x - 70) + ' ' + (y - 80) + 'h140q0 60 -70 70q-70 -10 -70 -70Z', '#7A5A2E', OUT, 1.8); P('M' + (x - 50) + ' ' + (y - 14) + 'l-8 14M' + (x + 50) + ' ' + (y - 14) + 'l8 14M' + x + ' ' + (y - 10) + 'v10', 'none', '#5A401E', 6); P('M' + (x - 78) + ' ' + (y - 86) + 'h156', 'none', '#5A401E', 8); P('M' + (x - 60) + ' ' + (y - 70) + 'h120', 'none', '#B08A4A', 2); P(R(x - 82, y - 100, 12, 20) + R(x + 70, y - 100, 12, 20), '#5A401E', OUT, 1.2); P('M' + (x - 40) + ' ' + (y - 92) + 'q-10 -40 10 -60 q20 -20 0 -50 M' + (x + 20) + ' ' + (y - 92) + 'q10 -30 -6 -54', 'none', cl.glowC, 3, 0.6); emblem(cl, x, y - 48, 12, '#E0C78A'); }
+    function cushion(cl, x, y) { P('M' + (x - 40) + ' ' + y + 'q40 -24 80 0q-40 14 -80 0Z', cl.cloth, OUT, 1.4); }
+    function gnats(cl, pts) { var a = '', b = ''; pts.forEach(function (p) { a += C(p[0], p[1], 2.4); b += C(p[0], p[1], 9); }); P(b, cl.glowC, null, 0, 0.15); P(a, cl.glowC, null, 0, 0.95); }
+    function racks(cl, x, y) { P(R(x, y - 120, 8, 120) + R(x + 70, y - 120, 8, 120), cl.woodD, OUT, 1.2); P(R(x - 4, y - 110, 86, 6) + R(x - 4, y - 70, 86, 6), cl.wood, OUT, 1); P('M' + (x + 20) + ' ' + (y - 130) + 'L' + (x + 24) + ' ' + (y - 20) + 'M' + (x + 50) + ' ' + (y - 140) + 'L' + (x + 52) + ' ' + (y - 20), 'none', '#9A9AA0', 3); P('M' + (x + 16) + ' ' + (y - 140) + 'l8 -14l8 14Z', '#9A9AA0', OUT, 1); }
+
+    var ROOMS = [
+      { name: 'Таверна — зал', desc: 'Стойка, полки с кувшинами вина, столы со скамьями, чаши, фонари, флаг клана.', en: 'the main hall of a village tavern: a long wooden counter, shelves of sealed wine jars behind it, low tables with benches, cups and bowls of food, hanging lanterns, a clan banner on the wall',
+        draw: function (cl) {
+          room(cl);
+          shelf(cl, 90, 90, 200, 170, 3, function (x, y, w) { for (var k = x + 14; k < x + w; k += 36) jar(cl, k, y, 12, true); });
+          P(R(80, 258, 240, 52), cl.wood, OUT, 1.6); P(R(76, 252, 248, 10), cl.woodD, OUT, 1.4); cup(120, 252); cup(140, 252); jar(cl, 290, 252, 13, true);
+          banner(cl, 600, 70); windowW(cl, 420, 90, 100, 90, cl.id === 'gy');
+          table(cl, 380, 360, 150, 30); bench(cl, 370, 390, 170); cup(420, 346); cup(440, 346); bowl(480, 348, '#C9A87A');
+          table(cl, 560, 400, 160, 34); bench(cl, 550, 432, 180); cup(600, 386); bowl(650, 388, '#C9A87A'); jar(cl, 700, 386, 9, false);
+          jar(cl, 90, 420, 18, true); jar(cl, 130, 430, 16, true); jar(cl, 112, 392, 14, false);
+          lamp(cl, 260, 120); lamp(cl, 470, 230); lamp(cl, 650, 180);
+        } },
+      { name: 'Дом семьи — комната', desc: 'Лежанка с одеялом, очаг с котлом, низкий столик с чаем, сундук, травы на стене.', en: 'the single room of a common family home: a raised sleeping platform with quilts, a cooking stove with an iron pot, a low tea table, a wooden chest, bundles of herbs and tools hanging on the walls',
+        draw: function (cl) {
+          room(cl);
+          windowW(cl, 330, 80, 110, 90, cl.id === 'gy');
+          if (cl.id === 'xiong') hearth(cl, 200, 400);
+          else { P(R(90, 250, 150, 80), '#57524A', OUT, 1.6); P(C(165, 250, 32), '#2A2622', OUT, 1.4); P(R(110, 290, 30, 24), '#0B0A0A', OUT, 1); P(R(114, 296, 22, 14), '#F0A04A', null, 0, 0.8); P('M150 230 q-8 -30 6 -50 M172 228 q8 -26 -4 -46', 'none', '#B9B4AC', 2, 0.4); }
+          var hb = ''; for (var x = 280; x < 320; x += 12) hb += 'M' + x + ' 60 L' + (x - 5) + ' 100 L' + (x + 5) + ' 100 Z'; P(hb, '#5A7A4A', OUT, 1);
+          shelf(cl, 480, 90, 140, 110, 2, function (x, y, w) { for (var k = x + 10; k < x + w; k += 24) bowl(k, y, '#C9BCA8'); });
+          bed(cl, 470, 430, 260);
+          table(cl, 300, 400, 120, 22); cup(330, 386); cup(350, 386); P('M372 386 q0 -16 14 -16 q14 0 14 16 Z', '#4E6A5A', OUT, 1.2);
+          chest(cl, 640, 330);
+          lamp(cl, 400, 200);
+          if (cl.id === 'xiong') pelt(300, 440);
+        } },
+      { name: 'Кабинет главы клана', desc: 'Большой стол с кистью и тушечницей, ширма с горами, свитки, стойка с оружием, курильница.', en: 'the private study of the clan leader: a large writing desk with brush, inkstone and documents, a painted folding screen of mountains behind, scroll shelves, a weapon rack, an incense burner and a rich rug',
+        draw: function (cl) {
+          room(cl);
+          screenP(cl, 250, 90, 280, 200);
+          shelf(cl, 80, 70, 140, 250, 4, function (x, y, w) { if (Math.round(y) % 2) scrolls(x, y, w); else books(x, y, w); });
+          shelf(cl, 560, 70, 140, 250, 4, function (x, y, w) { books(x, y, w); });
+          hangScroll(cl, 640, 40);
+          banner(cl, 390, 40);
+          rug(cl, 250, 380, 280);
+          desk(cl, 270, 370, 240);
+          P(R(370, 300, 40, 30), cl.woodD, OUT, 1.2);
+          censer(560, 400);
+          racks(cl, 120, 430);
+          lamp(cl, 230, 140); lamp(cl, 550, 140);
+          if (cl.id === 'xiong') pelt(560, 450);
+        } },
+      { name: 'Комната очищения Гу', desc: 'Бронзовый котёл с сиянием, полки со светящимися банками Гу, материалы, подушка для медитации.', en: 'a secluded Gu refinement chamber: a glowing bronze tripod cauldron at the centre, shelves of softly glowing Gu jars, a table of refinement materials and primeval stones, a meditation cushion, faint glowing insects in the air',
+        draw: function (cl) {
+          room(cl);
+          P(R(60, 40, 660, 290), '#000000', null, 0, 0.35);
+          shelf(cl, 80, 80, 160, 220, 3, function (x, y, w) { bottles(cl, x, y, w, true); });
+          shelf(cl, 540, 80, 160, 220, 3, function (x, y, w) { bottles(cl, x, y, w, true); });
+          banner(cl, 390, 60);
+          cauldron(cl, 390, 400);
+          table(cl, 560, 410, 150, 28); P('M590 396 l8 -14 l8 14 Z M612 396 l8 -16 l8 16 Z', '#8FD0BC', OUT, 1); P(C(660, 392, 8), '#5A7A4A', OUT, 1);
+          cushion(cl, 160, 430); censer(240, 420);
+          gnats(cl, [[300, 220], [470, 200], [250, 300], [520, 290], [400, 170], [600, 240], [180, 260]]);
+        } }
+    ];
+    var TAIL = ', interior environment concept art for a dark xianxia game, cutaway room view, moody volumetric light, painterly, highly detailed props, 16:9';
+    var clans = CL.map(function (cl) {
+      return { name: cl.name, glyph: cl.glyph, accent: cl.accent, rooms: ROOMS.map(function (r, i) {
+        parts = []; r.draw(cl);
+        return { name: r.name, num: '0' + (i + 1), desc: r.desc, parts: parts, prompt: cl.style + ', ' + r.en + TAIL };
+      }) };
+    });
+    return { clans: clans };
+  }
+}
+</script>
+</body>
+</html>

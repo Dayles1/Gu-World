@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — одежда кланов</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 3240px; height: 5380px; box-sizing: border-box; padding: 48px; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column; gap: 32px">
+
+  <header style="display: flex; align-items: center; gap: 18px">
+    <span style="width: 52px; height: 52px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 36px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">衣</span>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h1 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 44px; line-height: 1">Одежда кланов горы Цин Мао — арка 1</h1>
+      <span style="font-size: 15px; letter-spacing: 0.16em; color: #A69A86">ТРИ КЛАНА · 19 ОБРАЗОВ НА КЛАН: ЗНАТЬ, СТРАЖА, МАСТЕРА ГУ, ПРОСТОЛЮДИНЫ · ВЕКТОРНЫЙ КОНЦЕПТ + ПРОМПТ ДЛЯ ГЕНЕРАТОРА АРТА</span>
+    </div>
+  </header>
+
+  <sc-for list="{{ clans }}" as="c" hint-placeholder-count="3">
+    <div style="display: flex; flex-wrap: wrap; gap: 16px">
+      <div style="width: 300px; height: 840px; flex: none; box-sizing: border-box; background: #121214; border: 1px solid {{ c.accent }}; display: flex; flex-direction: column">
+        <svg width="298" height="300" viewBox="0 0 300 300" role="img" aria-label="Герб клана">
+          <sc-for list="{{ c.crest }}" as="p" hint-placeholder-count="6"><path d="{{ p.d }}" fill="{{ p.f }}" stroke="{{ p.s }}" stroke-width="{{ p.w }}" opacity="{{ p.o }}" stroke-linejoin="round" stroke-linecap="round"></path></sc-for>
+        </svg>
+        <div style="padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+          <div style="display: flex; align-items: baseline; gap: 12px">
+            <span style="font-family: 'Oranienbaum', serif; font-size: 32px; line-height: 1">{{ c.name }}</span>
+            <span style="font-family: 'Ma Shan Zheng', serif; font-size: 28px; color: {{ c.accent }}; line-height: 1">{{ c.glyph }}</span>
+          </div>
+          <span style="font-size: 15px; line-height: 1.45; color: #CFC4B0">{{ c.motto }}</span>
+          <sc-for list="{{ c.rules }}" as="r" hint-placeholder-count="4">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.4; color: #CFC4B0"><span style="color: {{ c.accent }}">◆</span><span>{{ r }}</span></div>
+          </sc-for>
+          <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-top: auto">
+            <sc-for list="{{ c.swatches }}" as="sw" hint-placeholder-count="6"><div style="height: 40px; background: {{ sw }}; border: 1px solid #2A2622"></div></sc-for>
+          </div>
+        </div>
+      </div>
+      <sc-for list="{{ c.looks }}" as="h" hint-placeholder-count="9">
+        <div style="width: 300px; height: 840px; flex: none; box-sizing: border-box; background: #121214; border: 1px solid #26242A; display: flex; flex-direction: column">
+          <svg width="298" height="540" viewBox="0 0 300 560" role="img" aria-label="{{ h.name }}">
+            <sc-for list="{{ h.parts }}" as="p" hint-placeholder-count="40"><path d="{{ p.d }}" fill="{{ p.f }}" stroke="{{ p.s }}" stroke-width="{{ p.w }}" opacity="{{ p.o }}" stroke-linejoin="round" stroke-linecap="round"></path></sc-for>
+          </svg>
+          <div style="padding: 12px 16px; display: flex; flex-direction: column; gap: 6px; flex: 1; min-height: 0">
+            <div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Oranienbaum', serif; font-size: 22px; line-height: 1.1">{{ h.name }}</span><span style="font-size: 13px; color: #6E655A">{{ h.num }}</span></div>
+            <span style="font-size: 13px; line-height: 1.4; color: #CFC4B0">{{ h.desc }}</span>
+            <span style="font-size: 11px; letter-spacing: 0.16em; color: {{ c.accent }}; margin-top: 2px">ПРОМПТ · EN</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; line-height: 1.5; color: #9A8F7E; user-select: text">{{ h.prompt }}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3240,"height":5380}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var OUT = '#08070A', SKIN = '#E6D6C4', SKINS = '#C9B0A6';
+    var parts = [];
+    function P(d, f, s, w, o) { parts.push({ d: d, f: f || 'none', s: s || 'none', w: w || 0, o: o == null ? 1 : o }); }
+    function R(x, y, w, h) { return 'M' + x + ' ' + y + 'h' + w + 'v' + h + 'h' + (-w) + 'Z'; }
+    function C(cx, cy, r) { return 'M' + (cx - r) + ' ' + cy + 'a' + r + ' ' + r + ' 0 1 0 ' + (2 * r) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (-2 * r) + ' 0Z'; }
+    function crescent(cx, cy, r) { var x = cx + 0.436 * r, r2 = 0.9 * r; return 'M' + x + ' ' + (cy - 0.9 * r) + 'A' + r + ' ' + r + ' 0 1 0 ' + x + ' ' + (cy + 0.9 * r) + 'A' + r2 + ' ' + r2 + ' 0 0 1 ' + x + ' ' + (cy - 0.9 * r) + 'Z'; }
+    function frost(cx, cy, r) {
+      var d = '';
+      for (var k = 0; k < 3; k++) { var a = k * Math.PI / 3, dx = Math.cos(a) * r, dy = Math.sin(a) * r; d += 'M' + (cx - dx) + ' ' + (cy - dy) + 'L' + (cx + dx) + ' ' + (cy + dy); }
+      for (var j = 0; j < 6; j++) { var b = j * Math.PI / 3, px = cx + Math.cos(b) * r * 0.6, py = cy + Math.sin(b) * r * 0.6, l = b + 0.6, m = b - 0.6; d += 'M' + (px + Math.cos(l) * r * 0.28) + ' ' + (py + Math.sin(l) * r * 0.28) + 'L' + px + ' ' + py + 'L' + (px + Math.cos(m) * r * 0.28) + ' ' + (py + Math.sin(m) * r * 0.28); }
+      return d;
+    }
+    function claw(cx, cy, r) { var d = ''; for (var i = -1; i <= 1; i++) { var x = cx + i * r * 0.5; d += 'M' + (x - r * 0.25) + ' ' + (cy - r) + 'Q' + (x + r * 0.25) + ' ' + cy + ' ' + (x - r * 0.1) + ' ' + (cy + r); } return d; }
+    function emblem(cl, cx, cy, r, color) {
+      if (cl.id === 'gy') P(crescent(cx, cy, r), color, OUT, r > 20 ? 2 : 0.8);
+      else if (cl.id === 'bai') P(frost(cx, cy, r), 'none', color, Math.max(1.3, r * 0.14));
+      else P(claw(cx, cy, r), 'none', color, Math.max(1.6, r * 0.22));
+    }
+
+    var CL = [
+      { id: 'gy', name: 'Клан Гу Юэ', glyph: '古月', accent: '#9FB4D6', bg: '#151A24', eye: '#5A6E9A',
+        motto: 'Индиго и полночная синь, серебряная отделка, вышитый полумесяц.',
+        rules: ['Знать — длинные халаты с широкими рукавами', 'Серебро только у семьи главы и старейшин', 'Полумесяц на груди у всех членов клана', 'Простолюдины — серо-синие ткани'],
+        robe: '#1F2A44', shade: '#141B2E', trim: '#C9D2DC', inner: '#E6E2DA', sash: '#3A4F7A', pants: '#232836', shoe: '#141317', cape: '#10151F', metal: '#8C96A6', fur: '#3A3A40', hair: '#15141A',
+        common: '#4A4E5C', commonShade: '#363A46', commonTrim: '#2A3348', emb: '#C9D2DC' },
+      { id: 'bai', name: 'Клан Бай', glyph: '白', accent: '#8FD3E8', bg: '#18202A', eye: '#7FB8CC',
+        motto: 'Белые и светло-серые слои, ледяная бирюза, белый мех.',
+        rules: ['Чем выше статус — тем белее одежда', 'Отделка цвета льда, кристалл инея', 'Белый мех у старших и охотников', 'Простолюдины — некрашеный лён'],
+        robe: '#E2E0DA', shade: '#B4B4B2', trim: '#4E9CB8', inner: '#F4F2EE', sash: '#8FD3E8', pants: '#C2C6CA', shoe: '#3A3F46', cape: '#D2D8DC', metal: '#AEB8C2', fur: '#EDEDEA', hair: '#1A1A20',
+        common: '#B2AEA4', commonShade: '#8E8A82', commonTrim: '#5A6470', emb: '#3E8FAE' },
+      { id: 'xiong', name: 'Клан Сюн', glyph: '熊', accent: '#D0703E', bg: '#1C1613', eye: '#9A6A2A',
+        motto: 'Кожа и грубая шерсть, красная охра, бронза, тяжёлый мех.',
+        rules: ['Воины ходят без рукавов', 'Мех медведя — знак главы и охотников', 'Бронзовые пряжки и наручи', 'Знак — три следа когтей'],
+        robe: '#5E3E26', shade: '#43291A', trim: '#B5482E', inner: '#C9A87A', sash: '#7A2A1C', pants: '#3A2A1C', shoe: '#241810', cape: '#3A2416', metal: '#A8843E', fur: '#6A5038', hair: '#18120E',
+        common: '#7A6450', commonShade: '#5A4838', commonTrim: '#4A3020', emb: '#E8A060' }
+    ];
+
+    function figure(cl, o) {
+      var robe = o.common ? cl.common : (o.robe || cl.robe), shade = o.common ? cl.commonShade : (o.shade || cl.shade), trim = o.common ? cl.commonTrim : cl.trim;
+      var hair = o.grey ? '#B8B6B2' : cl.hair, len = o.len, f = o.g === 'f';
+      var fl = (len - 248) * (f ? 0.26 : 0.16);
+      P(R(0, 0, 300, 560), cl.bg);
+      P(C(150, 290, 150), cl.accent, null, 0, 0.05);
+      P('M0 470 Q150 450 300 470 V560 H0 Z', '#000000', null, 0, 0.25);
+      P('M70 542 Q150 528 230 542 Q150 552 70 542 Z', '#000000', null, 0, 0.6);
+
+      if (o.cape) P('M108 126 L192 126 L216 ' + o.cape + ' L84 ' + o.cape + ' Z', cl.cape, OUT, 1.6);
+      if (o.hood) P('M112 74 Q108 14 150 10 Q192 14 188 74 L198 132 L102 132 Z', o.hoodC || cl.cape, OUT, 1.6);
+      if (o.hair === 'long') P('M116 46 Q106 140 112 232 L188 232 Q194 140 184 46 Z', hair, OUT, 1.6);
+      if (o.hair === 'pony') { P('M166 36 Q196 70 192 140 Q188 176 196 212 Q172 186 176 140 Q180 86 158 46 Z', hair, OUT, 1.6); }
+      if (o.bow) { P('M206 92 Q120 150 104 318', 'none', '#4A321C', 5); P('M206 92 L104 318', 'none', '#D8CDB8', 1); P('M174 104 L196 96 L216 214 L196 222 Z', '#4A321C', OUT, 1.4); P('M180 102 l-4 -14 M188 98 l0 -16 M194 96 l4 -14', 'none', '#D8CDB8', 3); }
+
+      if (len < 520 || f) {
+        P('M118 300 L149 300 L146 522 L124 522 Q114 420 118 300 Z', o.pants || cl.pants, OUT, 1.6);
+        P('M151 300 L182 300 Q186 420 176 522 L154 522 Z', o.pants || cl.pants, OUT, 1.6);
+        P('M162 310 L182 300 Q186 420 176 522 L166 522 Q172 420 162 310 Z', '#000000', null, 0, 0.22);
+      }
+      if (o.foot === 'boots') { P(R(120, 462, 29, 60) + R(151, 462, 29, 60), o.common ? '#2A2622' : cl.shoe, OUT, 1.4); P(R(118, 458, 33, 9) + R(149, 458, 33, 9), trim, OUT, 1.2); }
+      if (o.foot === 'wraps') { P(R(122, 466, 26, 56) + R(152, 466, 26, 56), '#CFC3AE', OUT, 1.4); P('M123 478 L147 486 M123 492 L147 500 M123 506 L147 514 M153 486 L177 478 M153 500 L177 492 M153 514 L177 506', 'none', '#8F8371', 1.6); }
+      P('M122 520 L148 520 L149 538 L112 540 Q110 528 122 520 Z', o.common ? '#2A2622' : cl.shoe, OUT, 1.6);
+      P('M152 520 L178 520 Q190 528 188 540 L151 538 Z', o.common ? '#2A2622' : cl.shoe, OUT, 1.6);
+
+      P('M110 248 L190 248 L' + (190 + fl) + ' ' + len + ' L' + (110 - fl) + ' ' + len + ' Z', robe, OUT, 1.8);
+      P('M164 252 L190 248 L' + (190 + fl) + ' ' + len + ' L' + (160 + fl * 0.4) + ' ' + len + ' Z', '#000000', null, 0, 0.24);
+      if (len > 320) P('M136 262 L' + (128 - fl * 0.3) + ' ' + (len - 10) + ' L' + (144 - fl * 0.1) + ' ' + (len - 10) + ' Z M170 266 L' + (176 + fl * 0.4) + ' ' + (len - 10) + ' L' + (160 + fl * 0.2) + ' ' + (len - 10) + ' Z', '#000000', null, 0, 0.18);
+      P('M' + (110 - fl) + ' ' + (len - 9) + ' L' + (190 + fl) + ' ' + (len - 9) + ' L' + (190 + fl) + ' ' + len + ' L' + (110 - fl) + ' ' + len + ' Z', trim, OUT, 1.2);
+      P('M124 250 L' + (122 - fl * 0.45) + ' ' + len, 'none', trim, 6);
+      P('M112 252 L' + (112 - fl) + ' ' + (len - 10), 'none', '#FFFFFF', 1.6, 0.12);
+      if (o.apron) { P('M126 250 L174 250 L180 ' + Math.min(len - 20, 400) + ' L120 ' + Math.min(len - 20, 400) + ' Z', o.apron, OUT, 1.4); P('M126 262 H174', 'none', '#000000', 1.2, 0.3); }
+
+      P('M106 126 Q128 116 150 118 Q172 116 194 126 L190 252 L110 252 Z', robe, OUT, 1.8);
+      P('M170 120 Q186 120 194 126 L190 252 L166 252 Q176 190 170 120 Z', '#000000', null, 0, 0.24);
+      if (o.armor) { P(R(116, 150, 68, 64), cl.metal, OUT, 1.4); P('M116 166 H184 M116 182 H184 M116 198 H184 M150 150 V214', 'none', '#2A2622', 1.4); P(R(160, 150, 24, 64), '#000000', null, 0, 0.2); }
+      P('M141 121 L150 138 L159 121 Z', cl.inner, OUT, 1);
+      P('M140 120 L150 140 L160 120', 'none', trim, 6);
+      P('M163 122 Q154 170 132 222 L124 252', 'none', trim, 7);
+      P('M168 124 Q160 172 138 224 L130 252', 'none', '#FFFFFF', 1, 0.16);
+      if (o.emb) emblem(cl, 172, 176, 10, cl.emb);
+
+      P(R(108, 238, 84, 16), o.sashC || cl.sash, OUT, 1.4);
+      P('M122 254 L116 330 L128 332 L132 254 Z M134 254 L136 314 L146 314 L142 254 Z', o.sashC || cl.sash, OUT, 1.2);
+      P('M118 244 Q128 236 138 244 Q128 256 118 250 Z', o.sashC || cl.sash, OUT, 1.2);
+      if (o.gourd) { P(C(186, 292, 11) + C(186, 272, 7), '#8A6A3A', OUT, 1.4); P('M186 262 v-8', 'none', '#7A2A1C', 2); }
+      if (o.sword) { P('M188 246 L238 392', 'none', '#1A1714', 7); P('M188 246 L238 392', 'none', cl.metal, 1.4, 0.6); P('M180 228 L196 262 M178 240 L198 236', 'none', '#B08A4A', 4); }
+
+      if (o.spear) { P('M222 40 L222 542', 'none', '#4A321C', 4.5); P('M222 6 L230 42 L214 42 Z', cl.metal, OUT, 1.4); P('M216 44 q6 22 12 0', cl.id === 'bai' ? '#8FD3E8' : '#A82E25', OUT, 1); }
+      if (o.staff) { P('M78 40 L78 542', 'none', '#3A2616', 5); emblem(cl, 78, 26, 14, cl.emb); }
+
+      if (o.sleeve === 'wide') {
+        P('M106 128 Q88 142 84 196 L66 296 L114 300 L114 192 Z', robe, OUT, 1.8);
+        P('M194 128 Q212 142 216 196 L234 296 L186 300 L186 192 Z', shade, OUT, 1.8);
+        P('M66 288 L114 292 L114 300 L66 296 Z M234 288 L186 292 L186 300 L234 296 Z', trim, OUT, 1.2);
+        P('M104 132 Q90 146 86 196 L70 288', 'none', '#FFFFFF', 1.4, 0.14);
+        P('M82 298 Q80 320 92 324 Q104 320 102 298 Z', SKIN, OUT, 1.4);
+        P('M218 298 Q220 320 208 324 Q196 320 198 298 Z', SKINS, OUT, 1.4);
+      } else if (o.sleeve === 'none') {
+        P('M108 128 Q96 140 96 182 L92 266 L106 268 L112 184 Z', SKIN, OUT, 1.6);
+        P('M192 128 Q204 140 204 182 L208 266 L194 268 L188 184 Z', SKINS, OUT, 1.6);
+        P('M106 126 Q112 150 112 176 M194 126 Q188 150 188 176', 'none', trim, 4);
+        P('M92 266 Q88 288 98 292 Q108 288 106 268 Z', SKIN, OUT, 1.4);
+        P('M208 266 Q212 288 202 292 Q192 288 194 268 Z', SKINS, OUT, 1.4);
+      } else {
+        P('M106 128 Q94 140 92 180 L88 268 L106 270 L110 182 Z', robe, OUT, 1.8);
+        P('M194 128 Q206 140 208 180 L212 268 L194 270 L190 182 Z', shade, OUT, 1.8);
+        P(R(86, 260, 21, 9) + R(193, 260, 21, 9), trim, OUT, 1.2);
+        P('M89 270 Q86 290 97 294 Q108 290 105 270 Z', SKIN, OUT, 1.4);
+        P('M211 270 Q214 290 203 294 Q192 290 195 270 Z', SKINS, OUT, 1.4);
+      }
+      if (o.bracers) { var bx = o.sleeve === 'none' ? [91, 191] : [88, 192]; P(R(bx[0], 218, 18, 40) + R(bx[1], 218, 18, 40), o.common ? '#5A4030' : cl.metal, OUT, 1.4); P('M' + bx[0] + ' 230 h18 M' + bx[0] + ' 244 h18 M' + bx[1] + ' 230 h18 M' + bx[1] + ' 244 h18', 'none', '#2A2018', 1.2); }
+      if (o.scroll) { P(R(76, 286, 34, 11), '#D8CDB8', OUT, 1.2); P(R(72, 284, 5, 15) + R(109, 284, 5, 15), '#4A321C', OUT, 1); }
+      if (o.basket) { P('M62 300 Q66 344 96 344 Q126 344 130 300 Z', '#8A6A3A', OUT, 1.6); P('M68 312 H124 M70 324 H122 M76 336 H116', 'none', '#5C4524', 1.4); P('M70 302 Q96 266 122 302', 'none', '#5C4524', 3); P(C(86, 298, 6) + C(100, 296, 7), '#4E9A86', OUT, 1); }
+      if (o.staff) P('M76 292 q-8 6 -4 14 q8 4 10 -4', SKIN, OUT, 1.2);
+
+      if (o.armor) {
+        P('M96 124 Q108 110 128 118 L124 148 Q106 152 92 146 Z', cl.metal, OUT, 1.6);
+        P('M204 124 Q192 110 172 118 L176 148 Q194 152 208 146 Z', cl.metal, OUT, 1.6);
+        P('M96 136 Q110 132 126 134 M204 136 Q190 132 174 134', 'none', '#2A2622', 1.4);
+        P(C(110, 126, 2) + C(190, 126, 2), '#E0C78A');
+        P('M176 120 Q192 114 204 124 L208 146 Q194 150 178 146 Z', '#000000', null, 0, 0.2);
+      }
+      if (o.mantle) { P('M100 124 Q124 110 148 122 L142 152 Q120 162 92 170 Z', o.mantle, OUT, 1.6); P('M98 140 Q120 132 144 134 M96 154 Q118 146 142 146', 'none', '#000000', 1.6, 0.4); P(C(134, 132, 2.6) + C(122, 136, 2.6), '#D8CDB8', OUT, 0.8); }
+      if (o.fur) {
+        P('M104 126 Q110 104 126 110 Q134 94 150 102 Q166 94 174 110 Q190 104 196 126 Q186 146 150 140 Q114 146 104 126 Z', o.furC || cl.fur, OUT, 1.6);
+        P('M112 118 l4 6 M124 112 l2 7 M138 106 l1 7 M150 104 v7 M162 106 l-1 7 M176 112 l-2 7 M188 118 l-4 6', 'none', '#000000', 1.4, 0.3);
+      }
+
+      P(R(142, 90, 16, 34), SKIN, OUT, 1.4);
+      P('M142 98 Q150 110 158 98 L158 106 Q150 116 142 106 Z', SKINS);
+      if (f) P('M124 60 Q123 34 150 30 Q177 34 176 60 L175 74 Q172 88 160 96 L153 99 Q150 100 147 99 L140 96 Q128 88 125 74 Z', SKIN, OUT, 1.6);
+      else P('M123 58 Q122 34 150 30 Q178 34 177 58 L176 72 Q174 86 163 95 L154 99 Q150 101 146 99 L137 95 Q126 86 124 72 Z', SKIN, OUT, 1.6);
+      P('M123 62 Q117 64 118 72 Q119 79 124 79 Z M177 62 Q183 64 182 72 Q181 79 176 79 Z', SKIN, OUT, 1.2);
+      P('M166 76 Q170 88 162 95 L156 98 Q166 88 165 76 Z', SKINS);
+      P('M131 66 Q138 62 147 64 L146 70 Q139 72 132 70 Z M169 66 Q162 62 153 64 L154 70 Q161 72 168 70 Z', '#F4EEE6');
+      P(C(139, 67.5, 3.2) + C(161, 67.5, 3.2), cl.eye);
+      P(C(139, 68, 1.3) + C(161, 68, 1.3), '#0B0708');
+      P(C(140.2, 66.4, 0.8) + C(162.2, 66.4, 0.8), '#FFFFFF');
+      P('M130 66 Q138 59 148 63 M170 66 Q162 59 152 63', 'none', '#100C0F', f ? 2.8 : 2.2);
+      if (f) P('M130 56 Q138 53 146 56 M170 56 Q162 53 154 56', 'none', hair, 1.6);
+      else P('M129 57 L146 60 M171 57 L154 60', 'none', o.grey ? '#9A9894' : '#141217', 2.6);
+      P('M151 72 L149 81 L153 82', 'none', '#A88E80', 1.2);
+      P(f ? 'M145 89 Q150 91 155 89' : 'M144 89 Q150 90 156 88', 'none', f ? '#9A4A4A' : '#5E3F3A', f ? 2 : 1.4);
+      if (o.beard) { P('M136 90 Q140 134 150 142 Q160 134 164 90 Q156 100 150 98 Q144 100 136 90 Z', hair, OUT, 1.4); P('M139 86 Q150 82 161 86', 'none', hair, 3); }
+
+      if (o.hair === 'long' || o.hair === 'bun') {
+        P('M121 66 Q118 24 150 20 Q182 24 179 66 Q172 44 152 40 Q140 54 125 70 Z', hair, OUT, 1.6);
+        P('M121 60 Q114 110 120 170 Q128 120 129 72 Z M179 60 Q186 110 180 170 Q172 120 171 72 Z', hair, OUT, 1.4);
+        P('M134 30 Q150 24 168 32', 'none', '#FFFFFF', 2, 0.18);
+      } else if (o.hair === 'short') {
+        P('M120 66 Q116 22 150 18 Q186 22 180 66 L176 44 L170 60 L164 38 L156 56 L150 34 L142 56 L134 38 L128 58 L124 44 Z', hair, OUT, 1.6);
+      } else if (!o.hood) {
+        P('M121 64 Q118 26 150 22 Q182 26 179 64 L173 50 L169 68 L161 46 L155 64 L148 44 L141 64 L134 48 L129 68 Z', hair, OUT, 1.6);
+        P('M122 60 Q118 80 124 98 Q126 82 128 66 Z M178 60 Q182 80 176 98 Q174 82 172 66 Z', hair, OUT, 1.2);
+        P('M134 32 Q150 26 166 32', 'none', '#FFFFFF', 2, 0.16);
+      }
+      if (o.hair === 'topknot' || o.grey) { P(C(150, 16, 10), hair, OUT, 1.6); P('M134 14 L166 18', 'none', o.grey ? '#4A3A2A' : '#B08A4A', 2.4); }
+      if (o.hair === 'bun') { P(C(150, 14, 12), hair, OUT, 1.6); P('M128 6 L174 22', 'none', '#B08A4A', 2.4); P(C(174, 22, 3.4), cl.id === 'bai' ? '#8FD3E8' : '#4E9A86', OUT, 1); }
+      if (o.hair === 'long') { P('M132 22 L172 30', 'none', '#B08A4A', 2.4); P(C(172, 30, 3.6), cl.id === 'bai' ? '#8FD3E8' : (cl.id === 'gy' ? '#C9D2DC' : '#D0703E'), OUT, 1); }
+      if (o.hat === 'guan') { P('M139 12 L161 12 L164 -2 L136 -2 Z', '#141217', OUT, 1.4); P('M132 6 L168 6', 'none', cl.metal, 2); }
+      if (o.hat === 'fur') { P('M114 52 Q110 10 150 6 Q190 10 186 52 Q168 42 150 44 Q132 42 114 52 Z', cl.fur, OUT, 1.6); P(R(114, 44, 72, 12), '#3A2416', OUT, 1.2); emblem(cl, 150, 26, 8, cl.emb); }
+      if (o.hat === 'band') { P(R(121, 40, 58, 9), o.sashC || cl.sash, OUT, 1.2); P('M178 44 l14 10 M178 46 l10 16', 'none', o.sashC || cl.sash, 3); }
+      if (o.hood) P('M116 76 Q112 18 150 14 Q188 18 184 76 Q178 34 150 30 Q122 34 116 76 Z', o.hoodC || cl.cape, OUT, 1.6);
+      if (o.straw) { P('M96 52 L150 2 L204 52 Q150 64 96 52 Z', '#B8A06A', OUT, 1.6); P('M150 2 L124 56 M150 2 L150 60 M150 2 L176 56 M110 48 Q150 40 190 48', 'none', '#7A6A40', 1.2); P('M150 2 L204 52 Q178 60 150 60 Z', '#000000', null, 0, 0.2); }
+      if (o.helm) { P('M120 58 Q118 12 150 8 Q182 12 180 58 L172 48 Q150 40 128 48 Z', cl.metal, OUT, 1.6); P('M120 58 L128 48 Q150 40 172 48 L180 58', 'none', '#2A2622', 2); P('M150 8 Q156 -8 150 -20', 'none', cl.id === 'bai' ? '#8FD3E8' : '#A82E25', 5); P('M156 12 Q174 14 180 58 L172 48 Q166 24 150 18 Z', '#000000', null, 0, 0.2); emblem(cl, 150, 28, 6, '#E0C78A'); }
+      if (o.glaive) { P('M226 40 L226 542', 'none', '#2A1E14', 4.5); P('M226 8 Q248 26 238 64 L226 62 Z', cl.metal, OUT, 1.4); P('M220 66 h12', 'none', '#B08A4A', 4); P('M222 70 q4 20 8 0', cl.id === 'bai' ? '#8FD3E8' : '#A82E25', OUT, 1); }
+      if (o.hoe) { P('M64 540 L104 176', 'none', '#5A3E26', 5); P('M94 168 L126 178 L122 194 L92 186 Z', cl.metal, OUT, 1.4); }
+      if (o.hammer) { P('M204 290 L234 236', 'none', '#4A321C', 5); P('M220 224 L244 214 L252 232 L228 242 Z', '#5A5A60', OUT, 1.4); }
+      if (o.ladle) { P('M206 290 L236 214', 'none', '#7A5A3A', 4); P(C(238, 208, 9), '#7A5A3A', OUT, 1.4); }
+      if (o.tray) { P('M82 280 L218 280 L212 292 L88 292 Z', '#5A3E26', OUT, 1.4); P('M112 280 v-12 h14 v12 Z M150 280 v-16 h12 v16 Z', '#E6E2DA', OUT, 1.2); P('M176 278 q8 -12 16 0 Z', '#4E9A86', OUT, 1); }
+      if (o.box) { P('M104 300 L172 132', 'none', '#3A2616', 3); P(R(80, 296, 44, 36), '#6A4A2A', OUT, 1.4); P('M80 310 h44 M102 296 v36', 'none', '#3A2616', 1.4); P(C(102, 318, 3), '#A82E25'); }
+      if (o.ledger) { P(R(74, 276, 32, 24), '#7A2A1C', OUT, 1.4); P('M78 280 h24 M78 286 h20', 'none', '#E0C78A', 1); }
+      if (o.pouch) { P('M176 262 Q170 290 184 296 Q198 290 192 262 Z', '#B08A4A', OUT, 1.4); P('M176 264 h16', 'none', '#5A3E26', 2); }
+      return parts;
+    }
+
+    var ROLES = [
+      { name: 'Глава клана', desc: 'Парадный халат до пола, широкие рукава, плащ, малая корона.', en: 'the clan leader, a stern middle-aged man in a floor-length ceremonial robe with wide sleeves, a long cape and a small crown',
+        o: function (cl) { return { g: 'm', hair: 'topknot', hat: cl.id === 'xiong' ? 'fur' : 'guan', len: 524, sleeve: cl.id === 'xiong' ? 'narrow' : 'wide', cape: 530, emb: true, fur: cl.id !== 'gy', bracers: cl.id === 'xiong', sashC: cl.id === 'gy' ? '#C9D2DC' : null }; } },
+      { name: 'Старейшина', desc: 'Седой, с бородой. Тёмный длинный халат, резной посох с гербом.', en: 'a grey-bearded clan elder in a long dark robe with wide sleeves, leaning on a carved staff topped with the clan emblem',
+        o: function (cl) { return { g: 'm', grey: true, beard: true, len: 524, sleeve: 'wide', staff: true, emb: true, robe: cl.id === 'bai' ? '#CFCBC2' : (cl.id === 'gy' ? '#2A2F3E' : '#4A3424'), shade: cl.id === 'bai' ? '#A6A29A' : (cl.id === 'gy' ? '#1C202C' : '#33231A') }; } },
+      { name: 'Мастер Гу, ранг 3', desc: 'Боевой халат до колен, накидка на плече, наручи, тыква для Гу.', en: 'a rank-three Gu Master warrior in a knee-length fighting robe, a leather mantle on one shoulder, bracers, boots and a copper gourd for Gu at the hip',
+        o: function (cl) { return { g: 'm', hair: 'pony', len: 400, sleeve: cl.id === 'xiong' ? 'none' : 'narrow', mantle: cl.id === 'bai' ? '#9AA4AE' : '#3A332C', bracers: true, foot: 'boots', gourd: true, emb: true, sword: cl.id !== 'gy' }; } },
+      { name: 'Ученик академии', desc: '15 лет. Короткая форма академии, хвост, бамбуковый свиток.', en: 'a fifteen-year-old Gu academy student in a short school tunic and trousers, ponytail, holding a bamboo scroll',
+        o: function (cl) { return { g: 'm', hair: 'pony', len: 330, sleeve: 'narrow', scroll: true, foot: 'wraps', emb: true, robe: cl.id === 'gy' ? '#2E3A58' : (cl.id === 'bai' ? '#D8DCE0' : '#6A4A30') }; } },
+      { name: 'Житель', desc: 'Рабочая рубаха до бёдер, обмотки, простые ткани без герба.', en: 'a common villager man in a plain hip-length work tunic, rolled trousers and shin wraps, no clan emblem',
+        o: function (cl) { return { g: 'm', hair: 'short', len: 300, sleeve: cl.id === 'xiong' ? 'none' : 'narrow', common: true, foot: 'wraps', pants: '#3A3630', sashC: '#4A4238' }; } },
+      { name: 'Жительница', desc: 'Длинное простое платье, фартук, корзина с травами.', en: 'a village woman in a long plain dress with an apron, hair in a bun, carrying a woven basket of herbs',
+        o: function (cl) { return { g: 'f', hair: 'bun', len: 524, sleeve: 'narrow', common: true, apron: cl.id === 'bai' ? '#E0DCD2' : '#8A7A62', basket: true, sashC: '#5A4A3A' }; } },
+      { name: 'Охотник-разведчик', desc: 'Плащ с капюшоном до колен, лук и колчан, сапоги.', en: 'a hunter-scout in a hooded knee-length coat with a bow and quiver on the back and soft boots',
+        o: function (cl) { return { g: 'm', hood: true, hoodC: cl.id === 'bai' ? '#C8CED2' : (cl.id === 'gy' ? '#1A2130' : '#4A3424'), len: 390, sleeve: 'narrow', bow: true, foot: 'boots', fur: cl.id !== 'gy', bracers: true }; } },
+      { name: 'Стражник', desc: 'Форменный халат, лакированные наплечники и нагрудник, копьё с кистью.', en: 'a clan guard in a knee-length uniform robe with lacquered shoulder and chest armor, a headband, holding a tasselled spear',
+        o: function (cl) { return { g: 'm', hair: 'topknot', hat: 'band', len: 400, sleeve: 'narrow', armor: true, spear: true, foot: 'boots', emb: false }; } },
+      { name: 'Дочь главной семьи', desc: 'Юная мастер Гу. Струящийся халат, широкие рукава, шпилька из нефрита.', en: 'a young female Gu Master of the main family in a flowing floor-length robe with wide sleeves, long hair and a jade hairpin',
+        o: function (cl) { return { g: 'f', hair: 'long', len: 524, sleeve: 'wide', emb: true, sashC: cl.id === 'gy' ? '#6F8FB5' : (cl.id === 'bai' ? '#8FD3E8' : '#B5482E'), robe: cl.id === 'gy' ? '#26345A' : null }; } },
+      { name: 'Стража главы', desc: 'Личная охрана главы клана: шлем с плюмажем, доспех, плащ, глефа.', en: 'an elite honor guard of the clan leader in a plumed helmet, full lacquered lamellar armor over a knee-length robe, a short cape and a long glaive',
+        o: function (cl) { return { g: 'm', hair: 'short', helm: true, len: 400, sleeve: 'narrow', armor: true, cape: 430, glaive: true, foot: 'boots', bracers: true, robe: cl.id === 'bai' ? '#9AA6B0' : (cl.id === 'gy' ? '#141C30' : '#3A2416'), shade: cl.id === 'bai' ? '#7A8690' : (cl.id === 'gy' ? '#0E1422' : '#2A180E') }; } },
+      { name: 'Охрана старейшин', desc: 'Телохранитель старейшины: лёгкий доспех, наручи, меч у пояса, повязка.', en: 'a bodyguard of the clan elders in light chest armor over a knee-length robe, bracers, a headband and a sword at the hip',
+        o: function (cl) { return { g: 'm', hair: 'topknot', hat: 'band', len: 400, sleeve: 'narrow', armor: true, bracers: true, sword: true, foot: 'boots', emb: true, robe: cl.id === 'bai' ? '#C2C8CE' : null }; } },
+      { name: 'Мастер Гу, ранг 1', desc: 'Только что пробудил апертуру. Простая форма, тыква для первого Гу.', en: 'a newly awakened rank-one Gu Master teenager in a simple clan uniform tunic with shin wraps and a small gourd for his first Gu',
+        o: function (cl) { return { g: 'm', hair: 'pony', len: 360, sleeve: 'narrow', gourd: true, foot: 'wraps', emb: true, robe: cl.id === 'gy' ? '#34405E' : (cl.id === 'bai' ? '#CCD0D4' : '#6A4A30') }; } },
+      { name: 'Госпожа клана', desc: 'Жена главы. Длинный халат с широкими рукавами, мех, причёска со шпилькой.', en: 'the clan leader’s wife, an elegant noblewoman in a floor-length layered robe with wide sleeves, a fur stole and a jeweled hairpin',
+        o: function (cl) { return { g: 'f', hair: 'bun', len: 524, sleeve: 'wide', emb: true, fur: cl.id !== 'gy', sashC: cl.id === 'gy' ? '#C9D2DC' : (cl.id === 'bai' ? '#8FD3E8' : '#B5482E') }; } },
+      { name: 'Торговец', desc: 'Халат до колен, кошель с камнями, книга счетов.', en: 'a village merchant in a knee-length robe with a fat purse of primeval stones and an account ledger',
+        o: function (cl) { return { g: 'm', hair: 'topknot', len: 400, sleeve: 'narrow', common: true, pouch: true, ledger: true, foot: 'shoes', sashC: '#B08A4A' }; } },
+      { name: 'Трактирщик', desc: 'Короткая рубаха, фартук, половник. Хозяин таверны.', en: 'a tavern keeper in a short work tunic and a stained apron, holding a ladle',
+        o: function (cl) { return { g: 'm', hair: 'short', len: 300, sleeve: 'narrow', common: true, apron: '#C9BCA4', ladle: true, foot: 'shoes', sashC: '#5A4A3A' }; } },
+      { name: 'Кузнец', desc: 'Без рукавов, кожаный фартук, молот, обмотки.', en: 'a muscular village blacksmith, sleeveless, in a heavy leather apron with a forging hammer',
+        o: function (cl) { return { g: 'm', hair: 'short', len: 300, sleeve: 'none', common: true, apron: '#3A2A1C', hammer: true, foot: 'wraps', bracers: true, sashC: '#3A2A1C' }; } },
+      { name: 'Крестьянин', desc: 'Соломенная шляпа, короткая рубаха, мотыга. Работает на полях клана.', en: 'a peasant farmer of the clan fields in a conical straw hat and a short patched tunic, carrying a hoe',
+        o: function (cl) { return { g: 'm', hair: 'short', straw: true, len: 300, sleeve: 'narrow', common: true, hoe: true, foot: 'wraps', sashC: '#6A5A44' }; } },
+      { name: 'Слуга', desc: 'Слуга главной семьи: простой халат, поднос с чаем.', en: 'a household servant of the main family in a plain neat robe carrying a tea tray',
+        o: function (cl) { return { g: 'f', hair: 'bun', len: 524, sleeve: 'narrow', common: true, tray: true, sashC: cl.id === 'gy' ? '#3A4F7A' : (cl.id === 'bai' ? '#8FD3E8' : '#7A2A1C') }; } },
+      { name: 'Лекарь-травник', desc: 'Халат цвета трав, ящик с лекарствами на ремне.', en: 'a village herbal healer in a muted green robe with a wooden medicine box on a shoulder strap',
+        o: function (cl) { return { g: 'f', hair: 'bun', len: 524, sleeve: 'narrow', box: true, robe: '#3E5248', shade: '#2C3A33', sashC: '#8A7A62' }; } }
+    ];
+    var FASHION = {
+      gy: 'Gu Yue clan fashion: deep indigo and midnight-blue fabrics, silver trim, silver crescent-moon embroidery, pale moonlight accents',
+      bai: 'Bai clan fashion: white and pale-grey layered fabrics, ice-cyan trim, frost-crystal embroidery, white fur details',
+      xiong: 'Xiong clan fashion: brown leather and rough wool, red-ochre trim, bronze fittings, bear-claw emblems, heavy fur'
+    };
+    var TAIL = ', full-body character concept art, front view, dark xianxia, painterly splash-art style, dramatic rim lighting, glowing particles, highly detailed costume, plain dark background';
+
+    var clans = CL.map(function (cl) {
+      parts = [];
+      P(R(0, 0, 300, 300), cl.bg);
+      P(C(150, 150, 100), cl.accent, null, 0, 0.06);
+      P(C(150, 150, 78), 'none', cl.accent, 1.4, 0.5);
+      emblem(cl, 150, 150, 56, cl.id === 'gy' ? '#C9D2DC' : cl.accent);
+      var crest = parts;
+      var looks = ROLES.map(function (r, i) {
+        parts = [];
+        figure(cl, r.o(cl));
+        return { name: r.name, num: (i < 9 ? '0' : '') + (i + 1), desc: r.desc, parts: parts, prompt: FASHION[cl.id] + ', ' + r.en + TAIL };
+      });
+      return { name: cl.name, glyph: cl.glyph, accent: cl.accent, motto: cl.motto, rules: cl.rules, crest: crest, looks: looks,
+        swatches: [cl.robe, cl.shade, cl.trim, cl.sash, cl.common, cl.fur] };
+    });
+    return { clans: clans };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,5 +1,11 @@
 # Research progress
 
+## 2026-10-10 — session 2: Russian names
+
+All 4247 entities that had `names.ru === null` now have a Russian name: 3607 filled this session (640 characters already had a Palladius transliteration from the build pipeline). Breakdown: gu 1035, characters 273, moves 634, resources 445, locations 366, systems 297, factions 182, gu_houses 104, inheritances 83, events 93, regions 24, creatures 13, recipes 11, paths 47. `ru_status` is `transliteration` for clean romanized-Chinese names (Palladius, via `tools/palladius.py`) and `working_translation` for everything else — **none of this is canon**, the official Webnovel translation is still inaccessible (403). `tools/ru-glossary.json` holds the canonical Russian rendering for the 47 path names and ~25 recurring core terms (Immortal Gu, Dao Marks, True Inheritance, Sect/Clan/Tribe, …) so the same fragment reads the same way across every category. `python tools/validate.py` — 0 errors; every file's diff is limited to the `names.ru`/`names.ru_status`(/`names.pinyin`) fields, nothing else was touched.
+
+This replaces item 6 below (now done, scope widened from Gu to every category) — still open: organism_type classification and the 154 Gu price mentions.
+
 ## 2026-10-09 — session 1
 
 Update: the crawl finished (6615/6615, 0 failures) and all sections are built: 6581 records, validator 0 errors. Steps 1–2 below are done. DATA_CONTRACT.md 0.2 has been agreed with the game agent and awaits user confirmation. README.md and glossary.md are in Russian.

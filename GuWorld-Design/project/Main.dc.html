@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — UI-система</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 1120px; box-sizing: border-box; padding: 52px 72px; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column; gap: 36px">
+
+  <header style="display: flex; align-items: center; justify-content: space-between">
+    <div style="display: flex; align-items: center; gap: 20px">
+      <span style="width: 64px; height: 64px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 46px; line-height: 1; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">蛊</span>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <h1 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 52px; line-height: 1; letter-spacing: 0.06em">GU WORLD</h1>
+        <span style="font-size: 15px; letter-spacing: 0.18em; color: #A69A86">UI-СИСТЕМА · ЧЁРНЫЙ ЛАК · КИНОВАРЬ · СТАРОЕ ЗОЛОТО</span>
+      </div>
+    </div>
+    <div style="display: flex; gap: 6px">
+      <div style="width: 56px; height: 40px; background: #0B0A0A; border: 1px solid #3A3128"></div>
+      <div style="width: 56px; height: 40px; background: #161311"></div>
+      <div style="width: 56px; height: 40px; background: #3A3128"></div>
+      <div style="width: 56px; height: 40px; background: #E6DCC8"></div>
+      <div style="width: 56px; height: 40px; background: #B8975A"></div>
+      <div style="width: 56px; height: 40px; background: #9C2A23"></div>
+      <div style="width: 56px; height: 40px; background: #4E9A86"></div>
+    </div>
+  </header>
+
+  <div style="display: grid; grid-template-columns: 7fr 5fr; gap: 28px">
+
+    <section style="position: relative; background: #121010; border: 1px solid #3A3128; padding: 28px 32px; display: flex; flex-direction: column; gap: 24px">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: -1px; top: -1px"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; right: -1px; bottom: -1px; transform: rotate(180deg)"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <span style="width: 30px; height: 30px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 22px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">钮</span>
+        <h2 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 28px">Кнопки — хитиновые пластины</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px 24px; align-items: end">
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86">ГЛАВНАЯ</span>
+          <button type="button" style="height: 56px; padding: 0; border: none; background: #C9A563; clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 18px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 52px; margin: 2px; background: #9C2A23; clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%); box-shadow: inset 0 1px 0 #D8574B, inset 0 -6px 0 #741E19; color: #F7EEDC; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 0.18em">НАЧАТЬ ПУТЬ</span></button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86">НАВЕДЕНИЕ</span>
+          <div style="filter: drop-shadow(0 0 12px rgba(216,87,75,0.55))"><button type="button" style="width: 100%; height: 56px; padding: 0; border: none; background: #F0D08A; clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 18px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 52px; margin: 2px; background: #B3342B; clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%); box-shadow: inset 0 1px 0 #EE7A6C, inset 0 -6px 0 #842520; color: #FFF8EA; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 0.18em">НАЧАТЬ ПУТЬ</span></button></div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86">НАЖАТИЕ</span>
+          <button type="button" style="height: 56px; padding: 0; border: none; background: #8E7444; clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 18px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 52px; margin: 2px; background: #7A211B; clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%); box-shadow: inset 0 4px 0 #5A1712; color: #E8DCC6; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 600; font-size: 17px; letter-spacing: 0.18em; padding-top: 3px; box-sizing: border-box">НАЧАТЬ ПУТЬ</span></button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86">ВТОРИЧНАЯ</span>
+          <button type="button" style="height: 52px; padding: 0; border: none; background: #6A5A44; clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 50px; margin: 1px; background: #1A1715; clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%); color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 0.16em">НАСТРОЙКИ</span></button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86">ОПАСНОЕ ДЕЙСТВИЕ</span>
+          <button type="button" style="height: 52px; padding: 0; border: none; background: #C2413A; clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 50px; margin: 1px; background: #241010; clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%); color: #F2A497; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 0.16em">ВЫБРОСИТЬ</span></button>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86">НЕДОСТУПНО</span>
+          <button type="button" disabled="disabled" style="height: 52px; padding: 0; border: none; background: #2A2622; clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%)"><span style="display: flex; align-items: center; justify-content: center; height: 50px; margin: 1px; background: #121010; clip-path: polygon(15px 0, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, 15px 100%, 0 50%); color: #6E655A; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 0.16em">ЗАКРЫТО</span></button>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; gap: 14px; padding-top: 4px; border-top: 1px solid #241F1A">
+        <span style="font-size: 12px; letter-spacing: 0.16em; color: #A69A86; margin-right: 6px; padding-top: 16px">ИКОНКИ</span>
+        <button type="button" aria-label="Инвентарь" style="margin-top: 16px; width: 56px; height: 50px; padding: 0; border: none; background: #B8975A; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 52px; height: 46px; background: #1A1715; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; align-items: center; justify-content: center; color: #E6DCC8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"></path><path d="M9 8V6a3 3 0 0 1 6 0v2"></path></svg></span></button>
+        <button type="button" aria-label="Апертура" style="margin-top: 16px; width: 56px; height: 50px; padding: 0; border: none; background: #B8975A; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 52px; height: 46px; background: #1A1715; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; align-items: center; justify-content: center; color: #E6DCC8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"></circle><circle cx="12" cy="12" r="3.5"></circle></svg></span></button>
+        <button type="button" aria-label="Карта" style="margin-top: 16px; width: 56px; height: 50px; padding: 0; border: none; background: #B8975A; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 52px; height: 46px; background: #1A1715; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; align-items: center; justify-content: center; color: #E6DCC8"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"></path><path d="M9 4v14M15 6v14"></path></svg></span></button>
+        <button type="button" aria-label="Активная вкладка: персонаж" style="margin-top: 16px; width: 56px; height: 50px; padding: 0; border: none; background: #D8574B; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 52px; height: 46px; background: #5A1712; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; align-items: center; justify-content: center; color: #FFF0E0"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="8" r="4"></circle><path d="M4 21c1-5 4-7 8-7s7 2 8 7"></path></svg></span></button>
+        <button type="button" aria-label="Закрыть" style="margin-top: 16px; margin-left: auto; width: 44px; height: 44px; padding: 0; border: 1px solid #6A5A44; background: #1A1715; transform: rotate(45deg); cursor: pointer; display: flex; align-items: center; justify-content: center; color: #E6DCC8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" style="transform: rotate(-45deg)"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+      </div>
+    </section>
+
+    <section style="position: relative; background: #121010; border: 1px solid #3A3128; padding: 28px 32px; display: flex; flex-direction: column; gap: 20px">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: -1px; top: -1px"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; right: -1px; bottom: -1px; transform: rotate(180deg)"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <span style="width: 30px; height: 30px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 22px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">设</span>
+        <h2 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 28px">Поля и переключатели</h2>
+      </div>
+      <label style="display: flex; flex-direction: column; gap: 8px; font-size: 13px; letter-spacing: 0.14em; color: #A69A86">ПОИСК ПРЕДМЕТА
+        <span style="display: flex; align-items: center; gap: 10px; height: 48px; padding: 0 14px; background: #0B0A0A; border: 1px solid #4A3F33; border-bottom: 2px solid #B8975A; color: #E6DCC8"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg><input type="text" placeholder="Гу, трава, оружие…" style="flex: 1; background: none; border: none; outline: none; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 16px; letter-spacing: 0"></input></span>
+      </label>
+      <div role="radiogroup" aria-label="Сортировка" style="display: flex; border: 1px solid #4A3F33">
+        <button type="button" role="radio" aria-checked="true" style="flex: 1; height: 44px; border: none; background: #3A2A1C; box-shadow: inset 0 -2px 0 #C9A563; color: #F0D08A; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 15px; letter-spacing: 0.1em; cursor: pointer">По рангу</button>
+        <button type="button" role="radio" aria-checked="false" style="flex: 1; height: 44px; border: none; border-left: 1px solid #4A3F33; background: #121010; color: #A69A86; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 15px; letter-spacing: 0.1em; cursor: pointer">По типу</button>
+        <button type="button" role="radio" aria-checked="false" style="flex: 1; height: 44px; border: none; border-left: 1px solid #4A3F33; background: #121010; color: #A69A86; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 15px; letter-spacing: 0.1em; cursor: pointer">Новые</button>
+      </div>
+      <label style="display: flex; align-items: center; justify-content: space-between; min-height: 44px; font-size: 16px; color: #E6DCC8; cursor: pointer">Предупреждать о голоде Гу
+        <span style="width: 52px; height: 26px; background: #9C2A23; border: 1px solid #C9A563; box-sizing: border-box; position: relative; display: block; clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0 50%)"><span style="position: absolute; right: 7px; top: 3px; width: 18px; height: 18px; background: #F3E6D0; transform: rotate(45deg) scale(0.75); display: block"></span></span>
+      </label>
+      <label style="display: flex; align-items: center; justify-content: space-between; min-height: 44px; font-size: 16px; color: #E6DCC8; cursor: pointer">Показывать урон
+        <span style="width: 52px; height: 26px; background: #1A1715; border: 1px solid #4A3F33; box-sizing: border-box; position: relative; display: block; clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 50%, calc(100% - 8px) 100%, 8px 100%, 0 50%)"><span style="position: absolute; left: 7px; top: 3px; width: 18px; height: 18px; background: #6E655A; transform: rotate(45deg) scale(0.75); display: block"></span></span>
+      </label>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <div style="display: flex; justify-content: space-between; font-size: 16px"><span>Громкость</span><span style="color: #A69A86">60</span></div>
+        <div style="height: 4px; background: #2A2622; position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 60%; background: #C9A563"></div><div style="position: absolute; left: 60%; top: 50%; width: 16px; height: 16px; background: #F0D08A; transform: translate(-50%, -50%) rotate(45deg); border: 2px solid #0B0A0A"></div></div>
+      </div>
+    </section>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; flex: 1">
+
+    <section style="position: relative; background: #121010; border: 1px solid #3A3128; padding: 28px 32px; display: flex; flex-direction: column; gap: 18px">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: -1px; top: -1px"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <span style="width: 30px; height: 30px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 22px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">元</span>
+        <h2 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 28px">Шкалы и валюта</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="display: flex; justify-content: space-between; font-size: 13px; letter-spacing: 0.14em"><span>ЖИЗНЬ</span><span style="color: #A69A86">[342 / 400]</span></div>
+        <div style="height: 16px; background: #C9A563; clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); padding: 1px; box-sizing: border-box"><div style="height: 100%; background: #1E1614; clip-path: polygon(7px 0, 100% 0, calc(100% - 7px) 100%, 0 100%); position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 85%; background: #B3342B; box-shadow: inset 0 2px 0 #E0675C"></div><div style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 39px, #0B0A0A 39px 41px)"></div></div></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <div style="display: flex; justify-content: space-between; font-size: 13px; letter-spacing: 0.14em"><span>ПЕРВОБЫТНАЯ ЭССЕНЦИЯ</span><span style="color: #8FD0BC">78%</span></div>
+        <div style="height: 12px; background: #C9A563; clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); padding: 1px; box-sizing: border-box"><div style="height: 100%; background: #121A18; clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%); position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 78%; background: #4E9A86; box-shadow: inset 0 2px 0 #8FD0BC"></div></div></div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 6px">
+        <div style="display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 6px 0 12px; background: #0B0A0A; border: 1px solid #3A3128">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13-7-13z" fill="#2E5E54"></path><path d="M12 2l7 7H5z" fill="#8FD0BC"></path><path d="M12 2v20M5 9l7 3 7-3" stroke="#0B0A0A" stroke-width="0.8" fill="none"></path></svg>
+          <span style="flex: 1; font-size: 15px; color: #A69A86">Первобытные камни</span>
+          <span style="font-size: 18px; font-weight: 600; color: #E6DCC8">[1 240]</span>
+          <button type="button" aria-label="Пополнить" style="width: 32px; height: 32px; border: 1px solid #6A5A44; background: #1A1715; color: #F0D08A; font-size: 18px; line-height: 1; cursor: pointer">+</button>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px; height: 44px; padding: 0 6px 0 12px; background: #0B0A0A; border: 1px solid #3A3128">
+          <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#B8975A"></circle><circle cx="12" cy="12" r="7.5" fill="none" stroke="#7A6038" stroke-width="1"></circle><rect x="9" y="9" width="6" height="6" fill="#0B0A0A"></rect></svg>
+          <span style="flex: 1; font-size: 15px; color: #A69A86">Монеты клана</span>
+          <span style="font-size: 18px; font-weight: 600; color: #E6DCC8">[86]</span>
+          <span style="width: 32px"></span>
+        </div>
+      </div>
+    </section>
+
+    <section style="position: relative; background: #121010; border: 1px solid #3A3128; padding: 28px 32px; display: flex; flex-direction: column; gap: 18px">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: -1px; top: -1px"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <span style="width: 30px; height: 30px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 22px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">品</span>
+        <h2 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 28px">Ячейки и ранги</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px">
+        <sc-for list="{{ ranks }}" as="r" hint-placeholder-count="5">
+          <div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+            <div style="width: 64px; height: 64px; background: {{ r.color }}; clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px); padding: 2px; box-sizing: border-box"><div style="width: 100%; height: 100%; background: {{ r.bg }}; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px); display: flex; align-items: center; justify-content: center; font-family: 'Ma Shan Zheng', serif; font-size: 30px; color: {{ r.color }}">{{ r.glyph }}</div></div>
+            <span style="font-size: 12px; color: #A69A86; text-align: center; line-height: 1.2">{{ r.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display: flex; gap: 10px; margin-top: 4px">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><div style="width: 64px; height: 64px; background: #F0D08A; clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px); padding: 2px; box-sizing: border-box"><div style="width: 100%; height: 100%; background: #2A1E12; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px)"></div></div><span style="font-size: 12px; color: #A69A86">Выбрана</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><div style="width: 64px; height: 64px; box-sizing: border-box; border: 1px dashed #4A3F33"></div><span style="font-size: 12px; color: #A69A86">Пусто</span></div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><div style="width: 64px; height: 64px; background: #0E0D0C; border: 1px solid #241F1A; box-sizing: border-box; display: flex; align-items: center; justify-content: center; color: #4A4238"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="5" y="10" width="14" height="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><span style="font-size: 12px; color: #A69A86">Закрыта</span></div>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; gap: 14px">
+      <div style="position: relative; background: #0F0D0C; border: 1px solid #4E9A86; box-shadow: 0 18px 40px rgba(0,0,0,0.7)">
+        <div style="height: 4px; background: #4E9A86"></div>
+        <div style="padding: 18px 20px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; justify-content: space-between; align-items: flex-start">
+            <div style="display: flex; flex-direction: column; gap: 4px">
+              <span style="font-family: 'Oranienbaum', serif; font-size: 26px; line-height: 1.1">Гу Лунного света</span>
+              <span style="font-size: 13px; letter-spacing: 0.14em; color: #8FD0BC">РАНГ 1 · ПУТЬ ЛУНЫ</span>
+            </div>
+            <span style="font-family: 'Ma Shan Zheng', serif; font-size: 34px; color: #4E9A86; line-height: 1">一</span>
+          </div>
+          <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #CFC4B0">Метает серповидный клинок лунного света.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 16px; font-size: 14px; padding: 10px 0; border-top: 1px solid #241F1A; border-bottom: 1px solid #241F1A">
+            <span style="color: #A69A86">Урон</span><span style="text-align: right">[УРОН]</span>
+            <span style="color: #A69A86">Эссенция</span><span style="text-align: right">[РАСХОД]</span>
+            <span style="color: #A69A86">Перезарядка</span><span style="text-align: right">[СЕК]</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: #EBC98A"><span style="width: 8px; height: 8px; background: #E0A13A; transform: rotate(45deg); display: block"></span>Голоден через [N] ч · пища: [ПИЩА]</div>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #0F0D0C; border: 1px solid #5A4520; font-size: 15px; color: #EBC98A"><span style="width: 8px; height: 8px; background: #E0A13A; transform: rotate(45deg); display: block; flex: none"></span>Гу проголодался — накормите его</div>
+      <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; background: #0F0D0C; border: 1px solid #2E5E54; font-size: 15px; color: #A9DCCB"><span style="width: 8px; height: 8px; background: #4E9A86; transform: rotate(45deg); display: block; flex: none"></span>Получено: [3] первобытных камня</div>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1120}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      ranks: [
+        { glyph: '一', color: '#4E9A86', bg: '#101A17', label: 'Ранг 1' },
+        { glyph: '二', color: '#C2524A', bg: '#1C1110', label: 'Ранг 2' },
+        { glyph: '三', color: '#C9CCD1', bg: '#16171A', label: 'Ранг 3' },
+        { glyph: '四', color: '#D4AE52', bg: '#1C170C', label: 'Ранг 4' },
+        { glyph: '五', color: '#9C7AD6', bg: '#16111E', label: 'Ранг 5' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

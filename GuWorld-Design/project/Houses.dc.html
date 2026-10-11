@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — дома кланов</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 3408px; height: 3880px; box-sizing: border-box; padding: 48px; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column; gap: 32px">
+
+  <header style="display: flex; align-items: center; gap: 18px">
+    <span style="width: 52px; height: 52px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 36px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">寨</span>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h1 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 44px; line-height: 1">Дома кланов горы Цин Мао — арка 1</h1>
+      <span style="font-size: 15px; letter-spacing: 0.16em; color: #A69A86">ТРИ КЛАНА · 13 ЗДАНИЙ НА КЛАН · ВЕКТОРНЫЙ КОНЦЕПТ + ПРОМПТ ДЛЯ ГЕНЕРАТОРА АРТА</span>
+    </div>
+  </header>
+
+  <sc-for list="{{ clans }}" as="c" hint-placeholder-count="3">
+    <div style="display: flex; flex-wrap: wrap; gap: 16px">
+      <div style="width: 400px; height: 580px; flex: none; box-sizing: border-box; background: #121214; border: 1px solid {{ c.accent }}; display: flex; flex-direction: column">
+        <svg width="398" height="250" viewBox="0 0 400 250" role="img" aria-label="Герб клана">
+          <sc-for list="{{ c.crest }}" as="p" hint-placeholder-count="6"><path d="{{ p.d }}" fill="{{ p.f }}" stroke="{{ p.s }}" stroke-width="{{ p.w }}" opacity="{{ p.o }}" stroke-linejoin="round" stroke-linecap="round"></path></sc-for>
+        </svg>
+        <div style="padding: 18px 20px; display: flex; flex-direction: column; gap: 12px; flex: 1">
+          <div style="display: flex; align-items: baseline; gap: 12px">
+            <span style="font-family: 'Oranienbaum', serif; font-size: 34px; line-height: 1">{{ c.name }}</span>
+            <span style="font-family: 'Ma Shan Zheng', serif; font-size: 30px; color: {{ c.accent }}; line-height: 1">{{ c.glyph }}</span>
+          </div>
+          <span style="font-size: 15px; line-height: 1.45; color: #CFC4B0">{{ c.motto }}</span>
+          <sc-for list="{{ c.rules }}" as="r" hint-placeholder-count="3">
+            <div style="display: flex; gap: 10px; font-size: 14px; line-height: 1.4; color: #CFC4B0"><span style="color: {{ c.accent }}">◆</span><span>{{ r }}</span></div>
+          </sc-for>
+          <div style="display: flex; gap: 6px; margin-top: auto">
+            <sc-for list="{{ c.swatches }}" as="sw" hint-placeholder-count="6"><div style="flex: 1; height: 36px; background: {{ sw }}; border: 1px solid #2A2622"></div></sc-for>
+          </div>
+        </div>
+      </div>
+      <sc-for list="{{ c.houses }}" as="h" hint-placeholder-count="7">
+        <div style="width: 400px; height: 580px; flex: none; box-sizing: border-box; background: #121214; border: 1px solid #26242A; display: flex; flex-direction: column">
+          <svg width="398" height="300" viewBox="0 0 400 300" role="img" aria-label="{{ h.name }}">
+            <sc-for list="{{ h.parts }}" as="p" hint-placeholder-count="30"><path d="{{ p.d }}" fill="{{ p.f }}" stroke="{{ p.s }}" stroke-width="{{ p.w }}" opacity="{{ p.o }}" stroke-linejoin="round" stroke-linecap="round"></path></sc-for>
+          </svg>
+          <div style="padding: 14px 18px; display: flex; flex-direction: column; gap: 7px; flex: 1; min-height: 0">
+            <div style="display: flex; justify-content: space-between; align-items: baseline"><span style="font-family: 'Oranienbaum', serif; font-size: 23px; line-height: 1.1">{{ h.name }}</span><span style="font-size: 13px; color: #6E655A">{{ h.num }}</span></div>
+            <span style="font-size: 14px; line-height: 1.4; color: #CFC4B0">{{ h.desc }}</span>
+            <span style="font-size: 11px; letter-spacing: 0.16em; color: {{ c.accent }}; margin-top: 4px">ПРОМПТ ДЛЯ ГЕНЕРАТОРА · EN</span>
+            <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; line-height: 1.5; color: #9A8F7E; user-select: text">{{ h.prompt }}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":3408,"height":3880}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var OUT = '#08070A';
+    var parts = [];
+    function P(d, f, s, w, o) { parts.push({ d: d, f: f || 'none', s: s || 'none', w: w || 0, o: o == null ? 1 : o }); }
+    function R(x, y, w, h) { return 'M' + x + ' ' + y + 'h' + w + 'v' + h + 'h' + (-w) + 'Z'; }
+    function C(cx, cy, r) { return 'M' + (cx - r) + ' ' + cy + 'a' + r + ' ' + r + ' 0 1 0 ' + (2 * r) + ' 0a' + r + ' ' + r + ' 0 1 0 ' + (-2 * r) + ' 0Z'; }
+    function crescent(cx, cy, r) { var x = cx + 0.436 * r, r2 = 0.9 * r; return 'M' + x + ' ' + (cy - 0.9 * r) + 'A' + r + ' ' + r + ' 0 1 0 ' + x + ' ' + (cy + 0.9 * r) + 'A' + r2 + ' ' + r2 + ' 0 0 1 ' + x + ' ' + (cy - 0.9 * r) + 'Z'; }
+    function frost(cx, cy, r) {
+      var d = '';
+      for (var k = 0; k < 3; k++) {
+        var a = k * Math.PI / 3, dx = Math.cos(a) * r, dy = Math.sin(a) * r;
+        d += 'M' + (cx - dx) + ' ' + (cy - dy) + 'L' + (cx + dx) + ' ' + (cy + dy);
+      }
+      for (var j = 0; j < 6; j++) {
+        var b = j * Math.PI / 3, px = cx + Math.cos(b) * r * 0.6, py = cy + Math.sin(b) * r * 0.6;
+        var l = b + 0.6, m = b - 0.6;
+        d += 'M' + (px + Math.cos(l) * r * 0.28) + ' ' + (py + Math.sin(l) * r * 0.28) + 'L' + px + ' ' + py + 'L' + (px + Math.cos(m) * r * 0.28) + ' ' + (py + Math.sin(m) * r * 0.28);
+      }
+      return d;
+    }
+    function claw(cx, cy, r) {
+      var d = '';
+      for (var i = -1; i <= 1; i++) {
+        var x = cx + i * r * 0.5;
+        d += 'M' + (x - r * 0.25) + ' ' + (cy - r) + 'Q' + (x + r * 0.25) + ' ' + cy + ' ' + (x - r * 0.1) + ' ' + (cy + r);
+      }
+      return d;
+    }
+    function emblem(cl, cx, cy, r, color) {
+      if (cl.id === 'gy') P(crescent(cx, cy, r), color, OUT, r > 20 ? 2 : 0.8);
+      else if (cl.id === 'bai') P(frost(cx, cy, r), 'none', color, Math.max(1.4, r * 0.14));
+      else P(claw(cx, cy, r), 'none', color, Math.max(1.6, r * 0.22));
+    }
+
+    var CL = [
+      { id: 'gy', name: 'Клан Гу Юэ', glyph: '古月', accent: '#9FB4D6',
+        motto: 'Клан полумесяца. Тёмное дерево, сине-серая черепица, круглые «лунные» проходы и серебро.',
+        rules: ['Крыши с сильно загнутыми карнизами', 'Полумесяц на коньках, флагах и табличках', 'Фонари холодного лунного света'],
+        sky: '#18202C', mount: '#222B39', mist: '#3A4658', ground: '#161B19',
+        wall: '#5A4A3C', wood: '#2A1E18', roof: '#2E3746', roofShade: '#1D232E', ridge: '#141820', stone: '#4A4C52',
+        banner: '#1F2A44', lantern: '#BFD6F2', glow: '#E8B866', roofType: 'curved', door: 'moon', moon: true },
+      { id: 'bai', name: 'Клан Бай', glyph: '白', accent: '#8FD3E8',
+        motto: 'Белый клан. Побелённые стены на сером камне, крутые прямые крыши под снегом, холодный голубой свет.',
+        rules: ['Строгая геометрия, прямые скаты', 'Снег на крышах, иней на камне', 'Знак — ледяной кристалл'],
+        sky: '#1C2430', mount: '#2A3440', mist: '#56636F', ground: '#2C343B',
+        wall: '#D4D0C8', wood: '#3A3F46', roof: '#4A535E', roofShade: '#343B45', ridge: '#262B32', stone: '#6A7078',
+        banner: '#DDE6EC', lantern: '#9FE0F0', glow: '#BFE8F4', roofType: 'straight', door: 'rect', snow: true },
+      { id: 'xiong', name: 'Клан Сюн', glyph: '熊', accent: '#D0703E',
+        motto: 'Клан медведя. Брёвна на валунах, толстая соломенная кровля, черепа и рога, следы когтей.',
+        rules: ['Тяжёлые бревенчатые стены', 'Солома и кора вместо черепицы', 'Красная охра, бронза, огонь'],
+        sky: '#211B19', mount: '#2E2622', mist: '#4A3E36', ground: '#1E1813',
+        wall: '#6B4A30', wood: '#3A2616', roof: '#6A5530', roofShade: '#4A3A1F', ridge: '#2E2314', stone: '#57524A',
+        banner: '#7A2A1C', lantern: '#F0A04A', glow: '#F0A04A', roofType: 'thatch', door: 'wide', logs: true }
+    ];
+
+    function background(cl) {
+      P(R(0, 0, 400, 300), cl.sky);
+      if (cl.moon) { P(C(326, 62, 44), '#C9D2DC', null, 0, 0.06); P(C(326, 62, 24), '#C9D2DC', null, 0, 0.85); }
+      if (cl.id === 'xiong') { P(C(80, 70, 50), '#7A3A22', null, 0, 0.12); }
+      P('M0 172 L56 124 L110 150 L188 92 L256 142 L322 104 L400 132 V300 H0 Z', cl.mount);
+      if (cl.snow) P('M164 112 L188 92 L210 110 L198 106 L188 114 L178 106 Z M304 118 L322 104 L340 116 L330 114 L322 120 Z', '#C9D3DA', null, 0, 0.7);
+      P(R(0, 160, 400, 30), cl.mist, null, 0, 0.45);
+      P('M0 250 Q200 238 400 250 V300 H0 Z', cl.ground);
+      if (cl.snow) P('M20 262 Q60 254 110 262 Q60 268 20 262 Z M260 266 Q320 256 380 266 Q320 272 260 266 Z', '#C9D3DA', null, 0, 0.45);
+    }
+
+    function roof(cl, L, Rr, yb, rh, ov, finial) {
+      var cx = (L + Rr) / 2, w = Rr - L, ry = yb - rh;
+      if (cl.roofType === 'curved') {
+        var a = cx - w * 0.24, b = cx + w * 0.24;
+        P('M' + (L - ov) + ' ' + (yb - 14) + 'Q' + L + ' ' + (yb + 2) + ' ' + (L + ov * 1.6) + ' ' + yb + 'L' + (Rr - ov * 1.6) + ' ' + yb + 'Q' + Rr + ' ' + (yb + 2) + ' ' + (Rr + ov) + ' ' + (yb - 14) + 'Q' + (Rr - ov * 0.4) + ' ' + (yb - rh * 0.45) + ' ' + b + ' ' + ry + 'L' + a + ' ' + ry + 'Q' + (L + ov * 0.4) + ' ' + (yb - rh * 0.45) + ' ' + (L - ov) + ' ' + (yb - 14) + 'Z', cl.roof, OUT, 1.6);
+        var n = Math.max(4, Math.round(w / 11));
+        var d = '';
+        for (var i = 1; i < n; i++) { var t = i / n; d += 'M' + (L + ov * 1.6 + (w - ov * 3.2) * t) + ' ' + (yb - 1) + 'L' + (a + (b - a) * t) + ' ' + (ry + 2); }
+        P(d, 'none', cl.roofShade, 1.3, 0.9);
+        P('M' + cx + ' ' + ry + 'L' + b + ' ' + ry + 'Q' + (Rr - ov * 0.4) + ' ' + (yb - rh * 0.45) + ' ' + (Rr + ov) + ' ' + (yb - 14) + 'Q' + Rr + ' ' + (yb + 2) + ' ' + (Rr - ov * 1.6) + ' ' + yb + 'L' + cx + ' ' + yb + 'Z', '#000000', null, 0, 0.22);
+        P('M' + (L + ov * 1.6) + ' ' + yb + 'L' + (Rr - ov * 1.6) + ' ' + yb, 'none', cl.ridge, 3);
+        P(R(a - 4, ry - 5, b - a + 8, 6), cl.ridge, OUT, 1.2);
+        P('M' + (a - 4) + ' ' + (ry - 2) + 'q-8 -2 -10 -12 M' + (b + 4) + ' ' + (ry - 2) + 'q8 -2 10 -12', 'none', cl.ridge, 4);
+        P('M' + (L - ov) + ' ' + (yb - 14) + 'l-5 -8 M' + (Rr + ov) + ' ' + (yb - 14) + 'l5 -8', 'none', cl.ridge, 3);
+      } else if (cl.roofType === 'straight') {
+        var a2 = cx - w * 0.2, b2 = cx + w * 0.2;
+        P('M' + (L - ov) + ' ' + yb + 'L' + (Rr + ov) + ' ' + yb + 'L' + b2 + ' ' + ry + 'L' + a2 + ' ' + ry + 'Z', cl.roof, OUT, 1.6);
+        var n2 = Math.max(4, Math.round(w / 10)), d2 = '';
+        for (var j = 1; j < n2; j++) { var u = j / n2; d2 += 'M' + (L - ov + (w + 2 * ov) * u) + ' ' + (yb - 1) + 'L' + (a2 + (b2 - a2) * u) + ' ' + (ry + 2); }
+        P(d2, 'none', cl.roofShade, 1.2, 0.9);
+        P('M' + cx + ' ' + ry + 'L' + b2 + ' ' + ry + 'L' + (Rr + ov) + ' ' + yb + 'L' + cx + ' ' + yb + 'Z', '#000000', null, 0, 0.2);
+        var s = 0.5, lx = a2 + (L - ov - a2) * s, rx = b2 + (Rr + ov - b2) * s, sy = ry + rh * s;
+        P('M' + a2 + ' ' + ry + 'L' + b2 + ' ' + ry + 'L' + rx + ' ' + sy + 'Q' + (cx + w * 0.25) + ' ' + (sy - 8) + ' ' + (cx + w * 0.1) + ' ' + (sy + 2) + 'Q' + cx + ' ' + (sy - 6) + ' ' + (cx - w * 0.12) + ' ' + (sy + 1) + 'Q' + (cx - w * 0.28) + ' ' + (sy - 7) + ' ' + lx + ' ' + sy + 'Z', '#DDE5EA', OUT, 1, 0.95);
+        P('M' + (L - ov) + ' ' + yb + 'L' + (Rr + ov) + ' ' + yb, 'none', cl.ridge, 3);
+        P(R(a2 - 3, ry - 4, b2 - a2 + 6, 5), cl.ridge, OUT, 1.2);
+      } else {
+        P('M' + (L - ov) + ' ' + (yb + 4) + 'Q' + (L - ov * 0.6) + ' ' + (yb - rh * 0.75) + ' ' + cx + ' ' + ry + 'Q' + (Rr + ov * 0.6) + ' ' + (yb - rh * 0.75) + ' ' + (Rr + ov) + ' ' + (yb + 4) + 'Q' + cx + ' ' + (yb - 4) + ' ' + (L - ov) + ' ' + (yb + 4) + 'Z', cl.roof, OUT, 1.8);
+        var d3 = '';
+        for (var k = 0; k < Math.round(w / 6); k++) {
+          var x = L - ov + 4 + k * 6, h = 8 + (Math.sin(k * 2.3) + 1) * 5;
+          d3 += 'M' + x + ' ' + (yb + 1) + 'l' + ((cx - x) * 0.05) + ' ' + (-h);
+        }
+        P(d3, 'none', cl.roofShade, 1.4, 0.9);
+        P('M' + cx + ' ' + ry + 'Q' + (Rr + ov * 0.6) + ' ' + (yb - rh * 0.75) + ' ' + (Rr + ov) + ' ' + (yb + 4) + 'Q' + (cx + w * 0.3) + ' ' + (yb - 2) + ' ' + cx + ' ' + yb + 'Z', '#000000', null, 0, 0.22);
+        P(R(cx - w * 0.18, ry + 2, w * 0.36, 7), cl.ridge, OUT, 1.2);
+        P('M' + (cx - w * 0.1) + ' ' + (ry + 1) + 'v9 M' + (cx + w * 0.1) + ' ' + (ry + 1) + 'v9', 'none', '#A08A5A', 2);
+      }
+      if (finial) {
+        if (cl.id === 'gy') P(crescent(cx, ry - 14, 9), '#C9D2DC', OUT, 1);
+        else if (cl.id === 'bai') P('M' + cx + ' ' + (ry - 24) + 'L' + (cx + 5) + ' ' + (ry - 5) + 'L' + (cx - 5) + ' ' + (ry - 5) + 'Z', '#BFE8F4', OUT, 1);
+        else { P('M' + (cx - 4) + ' ' + (ry + 2) + 'Q' + (cx - 22) + ' ' + (ry - 4) + ' ' + (cx - 18) + ' ' + (ry - 22) + 'M' + (cx + 4) + ' ' + (ry + 2) + 'Q' + (cx + 22) + ' ' + (ry - 4) + ' ' + (cx + 18) + ' ' + (ry - 22), 'none', '#D8CDB8', 4); P(C(cx, ry - 2, 6), '#D8CDB8', OUT, 1); }
+      }
+      return ry;
+    }
+
+    function wall(cl, L, Rr, top, bottom, pillars) {
+      var w = Rr - L;
+      P(R(L, top, w, bottom - top), cl.wall, OUT, 1.6);
+      if (cl.logs) { var d = ''; for (var y = top + 7; y < bottom; y += 8) d += 'M' + L + ' ' + y + 'H' + Rr; P(d, 'none', '#3E2A18', 1.6); d = ''; for (var y2 = top + 7; y2 < bottom; y2 += 8) d += 'M' + (L - 3) + ' ' + y2 + 'a3 3 0 1 0 0.1 0 M' + (Rr + 3) + ' ' + y2 + 'a3 3 0 1 1 -0.1 0'; P(d, '#8A6440', OUT, 0.8); }
+      if (cl.snow) { P(R(L, bottom - 14, w, 14), cl.stone, OUT, 1.2); P('M' + (L + 12) + ' ' + (bottom - 14) + 'v14 M' + (L + 34) + ' ' + (bottom - 14) + 'v14 M' + (Rr - 20) + ' ' + (bottom - 14) + 'v14 M' + L + ' ' + (bottom - 7) + 'H' + Rr, 'none', '#4E545B', 1); }
+      if (pillars) { var dp = ''; for (var i = 0; i <= pillars; i++) { var x = L + w * i / pillars; dp += R(x - 3, top, 6, bottom - top - (cl.snow ? 14 : 0)); } P(dp, cl.wood, OUT, 1); }
+      P(R(L, top, w, 6), cl.wood, OUT, 1);
+      P(R(L + w * 0.62, top, w * 0.38, bottom - top), '#000000', null, 0, 0.22);
+      P(R(L, top, w, 10), '#000000', null, 0, 0.35);
+    }
+    function windowAt(cl, x, y, w, h, lit) {
+      P(R(x - 2, y - 2, w + 4, h + 4), cl.wood, OUT, 1.2);
+      P(R(x, y, w, h), lit ? cl.glow : '#0E0D10', null, 0, lit ? 0.9 : 1);
+      var d = 'M' + (x + w / 2) + ' ' + y + 'v' + h + 'M' + x + ' ' + (y + h / 2) + 'h' + w;
+      if (cl.id === 'bai') d += 'M' + (x + w / 4) + ' ' + y + 'v' + h + 'M' + (x + 3 * w / 4) + ' ' + y + 'v' + h;
+      P(d, 'none', cl.wood, 1.6);
+      if (lit) P(C(x + w / 2, y + h / 2, w), cl.glow, null, 0, 0.1);
+    }
+    function door(cl, cx, bottom, w, h) {
+      if (cl.door === 'moon') { var r = h * 0.5; P(C(cx, bottom - r, r + 5), cl.wood, OUT, 1.4); P(C(cx, bottom - r, r), '#0B0B0E', OUT, 1); P(R(cx - r - 6, bottom - 4, 2 * r + 12, 4), cl.stone, OUT, 1); }
+      else if (cl.door === 'rect') { P(R(cx - w / 2 - 4, bottom - h - 4, w + 8, h + 4), cl.wood, OUT, 1.4); P(R(cx - w / 2, bottom - h, w, h), '#2A3038', OUT, 1); P('M' + cx + ' ' + (bottom - h) + 'v' + h, 'none', '#141820', 1.6); P(C(cx - 4, bottom - h / 2, 1.6) + C(cx + 4, bottom - h / 2, 1.6), '#BFE8F4'); }
+      else { P(R(cx - w / 2 - 5, bottom - h - 5, w + 10, h + 5), '#2A1A0E', OUT, 1.6); P(R(cx - w / 2, bottom - h, w, h), '#4A321C', OUT, 1); P('M' + (cx - w / 2) + ' ' + (bottom - h * 0.55) + 'h' + w + 'M' + cx + ' ' + (bottom - h) + 'v' + h, 'none', '#1E140A', 3); P(C(cx - 6, bottom - h * 0.55, 2.4) + C(cx + 6, bottom - h * 0.55, 2.4), '#B08A4A'); }
+    }
+    function lantern(cl, x, y) { P('M' + x + ' ' + (y - 16) + 'V' + (y - 7), 'none', OUT, 1.2); P(C(x, y, 16), cl.lantern, null, 0, 0.14); P(C(x, y, 6.5), cl.lantern, OUT, 1.2); P(R(x - 4, y - 8, 8, 2.5) + R(x - 4, y + 6, 8, 2.5), '#151316'); }
+    function banner(cl, x, ground, h) {
+      P(R(x - 2, ground - h, 4, h), cl.wood, OUT, 1);
+      P(C(x, ground - h - 3, 3), '#B08A4A', OUT, 1);
+      var fy = ground - h + 6;
+      P('M' + (x + 2) + ' ' + fy + 'h28v72l-14 -10l-14 10Z', cl.banner, OUT, 1.2);
+      emblem(cl, x + 16, fy + 28, 9, cl.id === 'bai' ? '#5AA7C2' : (cl.id === 'gy' ? '#C9D2DC' : '#E8C27A'));
+    }
+    function platform(cl, L, Rr, ground, ph) {
+      P(R(L, ground - ph, Rr - L, ph), cl.stone, OUT, 1.4);
+      var d = 'M' + L + ' ' + (ground - ph / 2) + 'H' + Rr;
+      for (var x = L + 18; x < Rr; x += 26) d += 'M' + x + ' ' + (ground - ph) + 'v' + (ph / 2) + 'M' + (x + 13) + ' ' + (ground - ph / 2) + 'v' + (ph / 2);
+      P(d, 'none', '#2E3034', 1, 0.8);
+      P('M' + L + ' ' + (ground - ph + 1) + 'H' + Rr, 'none', '#8A8E96', 1, 0.6);
+    }
+    function stairs(cl, cx, ground, ph, w) { var n = 3; for (var i = 0; i < n; i++) { var sw = w + (n - i) * 8, sh = ph / n; P(R(cx - sw / 2, ground - sh * (i + 1), sw, sh), cl.stone, OUT, 1); } }
+    function plaque(cl, cx, y) { P(R(cx - 18, y, 36, 15), '#141214', OUT, 1.2); P(R(cx - 15, y + 2, 30, 11), 'none', '#B08A4A', 1); emblem(cl, cx, y + 7.5, 5, '#E0C78A'); }
+    function totem(cl, x, ground) {
+      P(R(x - 7, ground - 120, 14, 120), '#4A321C', OUT, 1.4);
+      P('M' + (x - 7) + ' ' + (ground - 90) + 'h14M' + (x - 7) + ' ' + (ground - 60) + 'h14M' + (x - 7) + ' ' + (ground - 30) + 'h14', 'none', '#2A1A0E', 2);
+      P(C(x, ground - 128, 11), '#D8CDB8', OUT, 1.4);
+      P(C(x - 4, ground - 130, 2.4) + C(x + 4, ground - 130, 2.4), '#0B0A0A');
+      P('M' + (x - 9) + ' ' + (ground - 136) + 'q-10 -4 -8 -16 M' + (x + 9) + ' ' + (ground - 136) + 'q10 -4 8 -16', 'none', '#D8CDB8', 3.4);
+    }
+    function clawMarks(cl, cx, cy) { if (cl.id === 'xiong') P(claw(cx, cy, 10), 'none', '#2A1A0E', 2.4, 0.8); }
+
+    var G = 252;
+    var TYPES = [
+      { key: 'head', name: 'Дом главы клана', desc: 'Двухэтажная резиденция на каменной платформе, лестница, флаги клана.', en: 'the two-storey residence of the clan leader on a raised stone platform with wide stairs and clan banners',
+        draw: function (cl) {
+          platform(cl, 70, 330, G, 20); stairs(cl, 200, G, 20, 50);
+          wall(cl, 128, 272, 104, 160, 4); windowAt(cl, 146, 122, 22, 22, true); windowAt(cl, 232, 122, 22, 22, false);
+          roof(cl, 128, 272, 104, 36, 20, true);
+          wall(cl, 96, 304, 166, G - 20, 6); windowAt(cl, 112, 186, 24, 28, false); windowAt(cl, 264, 186, 24, 28, true);
+          door(cl, 200, G - 20, 40, 52); plaque(cl, 200, 170); clawMarks(cl, 150, 200);
+          roof(cl, 96, 304, 166, 24, 18, false);
+          banner(cl, 58, G, 130); banner(cl, 342, G, 130);
+          lantern(cl, 104, 186); lantern(cl, 296, 186);
+          if (cl.id === 'xiong') totem(cl, 30, G);
+        } },
+      { key: 'ancestral', name: 'Зал предков', desc: 'Высокий зал с двойной крышей, курильница у входа, здесь хранят таблички предков.', en: 'a tall double-eaved ancestral hall with ancestor tablets inside and an incense burner smoking at the entrance',
+        draw: function (cl) {
+          platform(cl, 80, 320, G, 16); stairs(cl, 200, G, 16, 60);
+          wall(cl, 138, 262, 108, 144, 4);
+          roof(cl, 138, 262, 108, 30, 20, true);
+          wall(cl, 110, 290, 148, G - 16, 6);
+          door(cl, 200, G - 16, 44, 60); plaque(cl, 200, 152);
+          windowAt(cl, 124, 174, 18, 34, true); windowAt(cl, 258, 174, 18, 34, true);
+          roof(cl, 110, 290, 148, 20, 20, false);
+          P(R(190, G - 34, 20, 14) + R(186, G - 36, 28, 4), '#6A5A3C', OUT, 1.2);
+          P('M196 ' + (G - 40) + 'q-6 -14 2 -26 q8 -12 0 -28 M204 ' + (G - 40) + 'q6 -16 -2 -30', 'none', '#B9B4AC', 1.6, 0.5);
+          lantern(cl, 118, 168); lantern(cl, 282, 168);
+          if (cl.id === 'xiong') { totem(cl, 50, G); totem(cl, 350, G); }
+        } },
+      { key: 'family', name: 'Дом семьи', desc: 'Обычный дом жителей: одна комната, двор с низкой оградой, дрова.', en: 'a modest one-room family house with a small yard, a low fence and stacked firewood',
+        draw: function (cl) {
+          wall(cl, 118, 282, 176, G, 3);
+          door(cl, 170, G, 32, 46); windowAt(cl, 232, 196, 26, 24, true); clawMarks(cl, 260, 232);
+          roof(cl, 118, 282, 176, 30, 16, false);
+          P(R(292, G - 22, 30, 22), '#5A3E26', OUT, 1.2); P('M292 ' + (G - 11) + 'h30M300 ' + (G - 22) + 'v22M314 ' + (G - 22) + 'v22', 'none', '#3A2616', 1.4);
+          var d = ''; for (var x = 60; x <= 340; x += 14) { if (x > 150 && x < 192) continue; d += R(x, G - 4, 4, 20); }
+          P(d, cl.id === 'bai' ? '#8A9098' : '#4A321C', OUT, 1);
+          P('M58 ' + (G + 2) + 'H152M190 ' + (G + 2) + 'H344M58 ' + (G + 10) + 'H152M190 ' + (G + 10) + 'H344', 'none', cl.id === 'bai' ? '#8A9098' : '#4A321C', 2.4);
+          lantern(cl, 128, 196);
+        } },
+      { key: 'academy', name: 'Академия Гу', desc: 'Учебный зал, боковое крыло и внутренний двор за стеной. Здесь пробуждают апертуру.', en: 'a Gu Master academy compound: main lecture hall, a lower side wing and a courtyard wall with a roofed gate',
+        draw: function (cl) {
+          wall(cl, 168, 318, 152, 236, 5); windowAt(cl, 184, 176, 20, 26, true); windowAt(cl, 284, 176, 20, 26, true);
+          roof(cl, 168, 318, 152, 28, 18, true);
+          wall(cl, 70, 170, 186, 238, 3); windowAt(cl, 96, 204, 20, 20, false);
+          roof(cl, 70, 170, 186, 20, 12, false);
+          P(R(30, 230, 150, 26) + R(220, 230, 150, 26), cl.id === 'bai' ? '#C8C4BC' : (cl.id === 'xiong' ? '#5A4A3A' : '#4E4036'), OUT, 1.4);
+          P(R(28, 224, 154, 6) + R(218, 224, 154, 6), cl.roof, OUT, 1.2);
+          if (cl.snow) P(R(28, 222, 154, 3) + R(218, 222, 154, 3), '#DDE5EA');
+          P(R(180, 200, 6, 56) + R(214, 200, 6, 56), cl.wood, OUT, 1.2);
+          roof(cl, 176, 224, 200, 14, 10, false);
+          plaque(cl, 200, 206);
+          lantern(cl, 168, 226); lantern(cl, 232, 226);
+        } },
+      { key: 'shop', name: 'Лавка', desc: 'Открытый прилавок с навесом: корм для Гу, травы, вино. Вертикальная вывеска.', en: 'a small village shop with an open front counter, a cloth awning, jars of Gu food, herbs and wine, and a vertical hanging sign',
+        draw: function (cl) {
+          wall(cl, 108, 292, 172, G, 2);
+          P(R(128, 196, 144, 56), '#0E0D10', OUT, 1.2);
+          P(R(124, 230, 152, 22), cl.wood, OUT, 1.4);
+          P(C(146, 222, 8) + C(166, 220, 10) + C(234, 222, 8) + C(254, 223, 7), cl.id === 'bai' ? '#B8C4CC' : '#8A6440', OUT, 1);
+          P(R(186, 214, 26, 16), '#4E9A86', OUT, 1);
+          roof(cl, 108, 292, 172, 28, 14, false);
+          P('M116 190 L284 190 L300 214 L100 214 Z', cl.banner, OUT, 1.4);
+          var d = ''; for (var x = 116; x < 284; x += 21) d += 'M' + x + ' 190 L' + (x - 16 * (x - 200) / 100 - (x < 200 ? 0 : 0)) + ' 214';
+          P(d, 'none', '#000000', 6, 0.18);
+          P('M100 214 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0 q8 6 16 0', cl.banner, OUT, 1.2);
+          P(R(306, 182, 18, 58), '#B8A27A', OUT, 1.2); P('M311 192h8M311 200h8M311 212h8M315 220v10', 'none', '#2A1E14', 2);
+          P('M315 172v10', 'none', OUT, 1.4);
+          lantern(cl, 92, 196);
+        } },
+      { key: 'tower', name: 'Дозорная башня', desc: 'Трёхъярусная башня на каменном основании: дозор за горной тропой и зверями.', en: 'a three-tier wooden watchtower on a rough stone base overlooking a mountain path',
+        draw: function (cl) {
+          wall(cl, 176, 224, 84, 124, 2); windowAt(cl, 192, 98, 16, 14, true);
+          roof(cl, 176, 224, 84, 30, 14, true);
+          wall(cl, 168, 232, 128, 166, 2); windowAt(cl, 192, 140, 16, 16, false);
+          roof(cl, 168, 232, 128, 14, 12, false);
+          wall(cl, 160, 240, 172, 212, 3); windowAt(cl, 190, 182, 20, 18, false);
+          roof(cl, 160, 240, 172, 14, 14, false);
+          P('M150 ' + G + ' L156 212 L244 212 L250 ' + G + ' Z', cl.stone, OUT, 1.6);
+          P('M154 232H246M170 212v20M200 232v20M226 212v20', 'none', '#2E3034', 1.2);
+          lantern(cl, 160, 190); lantern(cl, 240, 190);
+          plaque(cl, 200, 220);
+        } },
+      { key: 'gate', name: 'Ворота клана', desc: 'Главные церемониальные ворота: четыре столба, три крыши, табличка с гербом.', en: 'the clan’s main ceremonial gate: a four-pillar archway with three small roofs and a central emblem plaque, stone walls on both sides',
+        draw: function (cl) {
+          P(R(30, 214, 74, 38) + R(296, 214, 74, 38), cl.id === 'bai' ? '#C8C4BC' : (cl.id === 'xiong' ? '#5A4A3A' : '#4E4036'), OUT, 1.4);
+          P(R(28, 208, 78, 6) + R(294, 208, 78, 6), cl.roof, OUT, 1.2);
+          P(R(104, 148, 12, 104) + R(156, 136, 12, 116) + R(232, 136, 12, 116) + R(284, 148, 12, 104), cl.wood, OUT, 1.4);
+          P(R(100, 240, 20, 12) + R(152, 240, 20, 12) + R(228, 240, 20, 12) + R(280, 240, 20, 12), cl.stone, OUT, 1.2);
+          P(R(98, 156, 204, 10) + R(108, 182, 184, 7), cl.wood, OUT, 1.2);
+          P(R(170, 112, 60, 30), '#141214', OUT, 1.4); P(R(174, 116, 52, 22), 'none', '#B08A4A', 1.2);
+          emblem(cl, 200, 127, 9, '#E0C78A');
+          roof(cl, 94, 172, 148, 14, 10, false); roof(cl, 228, 306, 148, 14, 10, false);
+          roof(cl, 148, 252, 112, 22, 14, true);
+          lantern(cl, 136, 200); lantern(cl, 264, 200);
+          if (cl.id === 'xiong') { P(claw(130, 228, 8) + claw(270, 228, 8), 'none', '#2A1A0E', 2.4); }
+        } },
+      { key: 'tavern', name: 'Таверна', desc: 'Двухэтажная таверна: винный флаг, кувшины у входа, столы под навесом, много огней.', en: 'a lively two-storey village tavern with a tall wine flag, rows of wine jars by the door, tables and benches under the eaves and many warm lanterns',
+        draw: function (cl) {
+          wall(cl, 122, 278, 118, 166, 4); windowAt(cl, 136, 132, 20, 20, true); windowAt(cl, 190, 132, 20, 20, true); windowAt(cl, 244, 132, 20, 20, true);
+          roof(cl, 122, 278, 118, 30, 16, false);
+          wall(cl, 96, 304, 176, G, 6);
+          P(R(160, 200, 80, 52), '#0E0D10', OUT, 1.2); P(R(160, 200, 80, 52), cl.glow, null, 0, 0.25);
+          windowAt(cl, 112, 196, 26, 26, true); windowAt(cl, 262, 196, 26, 26, true);
+          roof(cl, 96, 304, 176, 22, 16, false);
+          P(R(174, 188, 52, 13), '#141214', OUT, 1.2); P('M182 194h36', 'none', '#E0C78A', 2);
+          P(R(334, 96, 4, 156), cl.wood, OUT, 1); P('M338 102 h26 v64 l-13 -8 l-13 8 Z', '#D8CDB8', OUT, 1.2); P('M344 120 q7 -8 14 0 v20 q-7 6 -14 0 Z', '#7A2A1C', OUT, 1);
+          P(C(66, G - 10, 10) + C(86, G - 9, 9) + C(48, G - 8, 8), '#6A4A2A', OUT, 1.2); P('M56 ' + (G - 20) + 'h20', 'none', '#2A1A0E', 2);
+          P(R(300, G - 14, 30, 4) + R(304, G - 10, 3, 10) + R(323, G - 10, 3, 10), '#4A321C', OUT, 1);
+          lantern(cl, 104, 196); lantern(cl, 296, 196); lantern(cl, 150, 188); lantern(cl, 250, 188);
+        } },
+      { key: 'inn', name: 'Постоялый двор', desc: 'Длинный дом для путников: комнаты в ряд, коновязь, повозка у ворот.', en: 'a long roadside inn for travellers with a row of guest rooms, a hitching post, a parked wooden cart and a hanging inn sign',
+        draw: function (cl) {
+          wall(cl, 64, 336, 184, G, 8);
+          windowAt(cl, 80, 204, 22, 24, true); windowAt(cl, 116, 204, 22, 24, false); windowAt(cl, 262, 204, 22, 24, true); windowAt(cl, 298, 204, 22, 24, false);
+          door(cl, 200, G, 38, 50); plaque(cl, 200, 188);
+          roof(cl, 64, 336, 184, 28, 16, true);
+          P(R(30, G - 34, 5, 34) + R(52, G - 34, 5, 34), cl.wood, OUT, 1); P(R(28, G - 30, 32, 4), cl.wood, OUT, 1);
+          P(R(340, G - 26, 46, 16), '#5A3E26', OUT, 1.4); P(C(352, G - 6, 9) + C(376, G - 6, 9), '#3A2616', OUT, 1.4); P('M352 ' + (G - 15) + 'v18M343 ' + (G - 6) + 'h18M376 ' + (G - 15) + 'v18M367 ' + (G - 6) + 'h18', 'none', '#8A6440', 1.2);
+          lantern(cl, 76, 196); lantern(cl, 324, 196);
+        } },
+      { key: 'smithy', name: 'Кузница', desc: 'Открытый навес на столбах: горн с огнём, наковальня, дымящая труба.', en: 'an open-sided village smithy under a roof on heavy posts, a glowing stone forge, an anvil, hanging tools and a smoking chimney',
+        draw: function (cl) {
+          P(R(266, 120, 22, 132), cl.stone, OUT, 1.4); P('M270 ' + 118 + ' q-10 -20 6 -36 q14 -14 -2 -34 M282 118 q10 -24 -4 -44', 'none', '#7A746C', 3, 0.45);
+          P(R(110, 176, 6, 76) + R(194, 176, 6, 76) + R(284, 176, 6, 76), cl.wood, OUT, 1.2);
+          P(R(116, 196, 168, 56), '#0E0D10', null, 0, 0.75);
+          P(R(206, 212, 56, 40), cl.stone, OUT, 1.4); P(R(214, 216, 40, 14), '#F0A04A', OUT, 1); P(C(234, 222, 26), '#F0A04A', null, 0, 0.2);
+          P('M140 236 h40 l-6 8 h-28 Z M150 244 h20 v8 h-20 Z', '#4A4A50', OUT, 1.2);
+          P('M126 200 v24 M136 200 v18 M146 200 v22', 'none', '#7A7A80', 3);
+          roof(cl, 104, 296, 176, 24, 16, false);
+          P(R(60, G - 24, 30, 24) + R(66, G - 40, 18, 16), '#5A4A3A', OUT, 1.2);
+          lantern(cl, 112, 196);
+        } },
+      { key: 'herbs', name: 'Лавка травника', desc: 'Пучки трав сушатся под карнизом, стойки с корнями, банки с лекарствами.', en: 'an herbalist’s shop with bundles of herbs drying under the eaves, drying racks of roots outside and shelves of medicine jars',
+        draw: function (cl) {
+          wall(cl, 120, 280, 180, G, 3); door(cl, 160, G, 32, 46); windowAt(cl, 226, 198, 34, 26, true);
+          roof(cl, 120, 280, 180, 28, 18, false);
+          var d = ''; for (var x = 128; x < 276; x += 16) d += 'M' + x + ' 186 v10';
+          P(d, 'none', OUT, 1);
+          var hb = ''; for (var x2 = 128; x2 < 276; x2 += 16) hb += 'M' + (x2 - 4) + ' 196 L' + x2 + ' 212 L' + (x2 + 4) + ' 196 Z';
+          P(hb, '#5A7A4A', OUT, 1);
+          P(R(300, G - 50, 4, 50) + R(352, G - 50, 4, 50), cl.wood, OUT, 1); P('M300 ' + (G - 44) + 'h56M300 ' + (G - 28) + 'h56', 'none', cl.wood, 3);
+          P('M306 ' + (G - 44) + 'l4 12l4 -12M320 ' + (G - 44) + 'l4 14l4 -14M334 ' + (G - 44) + 'l4 12l4 -12M308 ' + (G - 28) + 'l4 10l4 -10M326 ' + (G - 28) + 'l4 12l4 -12', '#8A6A3A', OUT, 1);
+          P(C(80, G - 8, 8) + C(98, G - 7, 7) + R(60, G - 12, 10, 12), '#8A9A8A', OUT, 1);
+          lantern(cl, 128, 198);
+        } },
+      { key: 'granary', name: 'Амбар клана', desc: 'Склад на сваях от сырости и крыс: лестница, мешки с рисом, замок.', en: 'a clan granary raised on wooden stilts against damp and rats, with a ladder, sacks of rice and a heavy lock on the door',
+        draw: function (cl) {
+          P(R(132, 206, 6, 46) + R(196, 206, 6, 46) + R(262, 206, 6, 46), cl.wood, OUT, 1.2);
+          P(R(122, 200, 156, 8), cl.wood, OUT, 1.2);
+          wall(cl, 128, 272, 140, 200, 3); door(cl, 200, 200, 30, 40);
+          P(R(196, 172, 8, 8), '#B08A4A', OUT, 1);
+          roof(cl, 128, 272, 140, 30, 16, true);
+          P('M226 252 L246 202 M240 252 L260 202 M230 242 h14 M234 232 h14 M238 222 h14 M242 212 h14', 'none', '#5A3E26', 2.4);
+          P('M70 252 q-6 -20 8 -24 q14 4 8 24 Z M92 252 q-6 -18 8 -22 q14 4 8 22 Z M80 232 q-6 -18 8 -22 q14 4 8 22 Z', '#C9B48A', OUT, 1.2);
+          plaque(cl, 200, 146);
+        } },
+      { key: 'gufarm', name: 'Питомник Гу', desc: 'Решётчатый павильон для выкармливания Гу: глиняные горшки, светящиеся насекомые.', en: 'a lattice-walled Gu nursery pavilion where Gu insects are raised, rows of clay feeding pots, faint glowing insects drifting in the air',
+        draw: function (cl) {
+          P(R(100, 172, 200, 80), '#0E0D10', OUT, 1.6);
+          var d = ''; for (var x = 110; x < 300; x += 12) d += 'M' + x + ' 172 v80'; for (var y = 184; y < 252; y += 12) d += 'M100 ' + y + ' h200';
+          P(d, 'none', cl.wood, 2);
+          P(R(100, 172, 200, 80), cl.accent, null, 0, 0.06);
+          P(R(96, 172, 6, 80) + R(200, 172, 6, 80) + R(298, 172, 6, 80), cl.wood, OUT, 1.2);
+          roof(cl, 96, 304, 172, 26, 18, true);
+          P(C(70, G - 7, 8) + C(92, G - 7, 8) + C(318, G - 7, 8) + C(340, G - 7, 8), '#7A5236', OUT, 1.2);
+          var g = ''; [[130, 196], [168, 212], [220, 190], [254, 224], [150, 236], [276, 204], [60, 200], [340, 186], [200, 150]].forEach(function (p) { g += C(p[0], p[1], 2.2); });
+          P(g, cl.lantern, null, 0, 0.95);
+          var h = ''; [[130, 196], [168, 212], [220, 190], [254, 224], [150, 236], [276, 204], [60, 200], [340, 186], [200, 150]].forEach(function (p) { h += C(p[0], p[1], 8); });
+          P(h, cl.lantern, null, 0, 0.15);
+        } }
+    ];
+
+    var STYLE_EN = {
+      gy: 'Gu Yue clan architecture: dark timber halls, blue-grey glazed roof tiles with sweeping upturned eaves, round moon-gate doorways, silver crescent-moon emblems and roof finials, pale blue moonlight lanterns',
+      bai: 'Bai clan architecture: whitewashed walls on grey stone bases, steep straight slate roofs heavy with snow, crisp geometric lattice windows, ice-cyan banners with a frost-crystal emblem, cold blue lanterns',
+      xiong: 'Xiong clan architecture: heavy log walls on rough boulder foundations, thick thatch and bark roofs, bear skulls and horns on the ridges, carved claw marks, red-ochre banners, firelit lanterns'
+    };
+    var TAIL = ', environment concept art for a dark xianxia game, misty mountain village at dusk, volumetric fog, dramatic rim light, painterly, highly detailed, 16:9';
+
+    var clans = CL.map(function (cl) {
+      parts = [];
+      P(R(0, 0, 400, 250), cl.sky);
+      P(C(200, 125, 92), cl.accent, null, 0, 0.06);
+      P(C(200, 125, 70), 'none', cl.accent, 1.4, 0.5);
+      emblem(cl, 200, 125, 52, cl.id === 'gy' ? '#C9D2DC' : cl.accent);
+      var crest = parts;
+      var houses = TYPES.map(function (t, i) {
+        parts = [];
+        background(cl);
+        t.draw(cl);
+        P('M0 262 H400 V300 H0 Z', cl.mist, null, 0, 0.12);
+        return { name: t.name, num: (i < 9 ? '0' : '') + (i + 1), desc: t.desc, parts: parts, prompt: STYLE_EN[cl.id] + ', ' + t.en + TAIL };
+      });
+      return { name: cl.name, glyph: cl.glyph, accent: cl.accent, motto: cl.motto, rules: cl.rules, crest: crest, houses: houses,
+        swatches: [cl.sky, cl.wall, cl.wood, cl.roof, cl.banner, cl.lantern] };
+    });
+    return { clans: clans };
+  }
+}
+</script>
+</body>
+</html>

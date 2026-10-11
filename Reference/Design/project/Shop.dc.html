@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — лавка торговца</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden">
+  <div style="position: absolute; inset: 0; background: repeating-linear-gradient(135deg, rgba(201,165,99,0.025) 0 2px, transparent 2px 14px)"></div>
+
+  <header style="height: 76px; flex: none; display: flex; align-items: center; gap: 24px; padding: 0 40px; background: linear-gradient(180deg, #17130F, #100E0C); border-bottom: 1px solid #4A3E2E; box-shadow: 0 1px 0 #1A1612, 0 2px 0 #3A3024; position: relative">
+    <span style="width: 36px; height: 36px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 26px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg); box-shadow: 0 0 0 2px #0B0A0A, 0 0 0 3px #C9A563">商</span>
+    <div style="display: flex; flex-direction: column"><span style="font-family: 'Oranienbaum', serif; font-size: 28px; line-height: 1">Лавка</span><span style="font-size: 13px; color: #A69A86; letter-spacing: 0.12em">[ИМЯ ТОРГОВЦА] · ДЕРЕВНЯ ГУ ЮЭ</span></div>
+    <div role="tablist" aria-label="Режим" style="display: flex; margin-left: 24px; border: 1px solid #4A3E2E">
+      <button type="button" role="tab" aria-selected="{{ buyOn }}" onClick="{{ toBuy }}" style="height: 40px; padding: 0 22px; border: none; background: {{ buyBg }}; color: {{ buyFg }}; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 15px; letter-spacing: 0.14em; cursor: pointer">КУПИТЬ</button>
+      <button type="button" role="tab" aria-selected="{{ sellOn }}" onClick="{{ toSell }}" style="height: 40px; padding: 0 22px; border: none; border-left: 1px solid #4A3E2E; background: {{ sellBg }}; color: {{ sellFg }}; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 15px; letter-spacing: 0.14em; cursor: pointer">ПРОДАТЬ</button>
+    </div>
+    <div style="margin-left: auto; display: flex; align-items: center; gap: 8px; height: 42px; padding: 0 16px; background: #0B0A0A; border: 1px solid #3A3128">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13-7-13z" fill="#2E5E54"></path><path d="M12 2l7 7H5z" fill="#8FD0BC"></path></svg>
+      <span style="font-size: 18px; font-weight: 600">{{ balance }}</span><span style="font-size: 13px; color: #A69A86">камней</span>
+    </div>
+    <button type="button" aria-label="Закрыть" style="width: 44px; height: 44px; padding: 0; border: 1px solid #6A5A44; background: #1A1715; color: #E6DCC8; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+  </header>
+
+  <div style="flex: 1; display: flex; gap: 24px; padding: 28px 40px; min-height: 0; position: relative">
+    <section aria-label="Торговец" style="width: 280px; flex: none; display: flex; flex-direction: column; gap: 16px">
+      <div style="height: 300px; position: relative; background: linear-gradient(180deg, #1A1510, #0F0D0B); border: 1px solid #4A3E2E; box-shadow: inset 0 0 0 4px #0F0D0B, inset 0 0 0 5px #3A3024; overflow: hidden; display: flex; align-items: flex-end; justify-content: center">
+        <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true" style="position: absolute; left: -2px; top: -2px"><path d="M2 46V14Q2 2 14 2H46" stroke="#C9A563" stroke-width="1.6" fill="none"></path><path d="M14 16q8 0 8 8q0 6 -6 6q-4 0 -4 -4" stroke="#C9A563" stroke-width="1.4" fill="none"></path></svg>
+        <svg width="220" height="270" viewBox="0 0 220 270" role="img" aria-label="Торговец">
+          <circle cx="110" cy="120" r="100" fill="#E8B866" opacity="0.08"></circle>
+          <path d="M30 270 Q34 170 110 160 Q186 170 190 270 Z" fill="#5A4A3A" stroke="#08070A" stroke-width="2"></path>
+          <path d="M96 166 L110 196 L124 166" stroke="#B08A4A" stroke-width="6" fill="none"></path>
+          <path d="M150 180 L150 270" stroke="#3A2E22" stroke-width="2"></path>
+          <rect x="100" y="132" width="20" height="32" fill="#E6D6C4" stroke="#08070A" stroke-width="1.6"></rect>
+          <path d="M80 92 Q78 52 110 48 Q142 52 140 92 L139 108 Q136 126 120 134 L113 138 Q110 140 107 138 L100 134 Q84 126 81 108 Z" fill="#E6D6C4" stroke="#08070A" stroke-width="2"></path>
+          <path d="M90 98 Q97 94 104 97 M130 98 Q123 94 116 97" stroke="#100C0F" stroke-width="2.4" fill="none"></path>
+          <path d="M98 122 Q110 130 122 122" stroke="#5E3F3A" stroke-width="1.8" fill="none"></path>
+          <path d="M96 128 Q110 150 124 128 Q110 136 96 128 Z" fill="#2A2420"></path>
+          <path d="M78 96 Q74 40 110 36 Q146 40 142 96 L134 74 L126 88 L116 64 L104 86 L94 66 L86 88 Z" fill="#2A2420" stroke="#08070A" stroke-width="2"></path>
+          <circle cx="110" cy="32" r="12" fill="#2A2420" stroke="#08070A" stroke-width="2"></circle>
+          <path d="M92 30 L128 34" stroke="#B08A4A" stroke-width="3"></path>
+          <path d="M150 210 Q144 240 160 246 Q176 240 170 210 Z" fill="#B08A4A" stroke="#08070A" stroke-width="1.6"></path>
+        </svg>
+      </div>
+      <div style="position: relative; padding: 14px 16px; background: #14110E; border: 1px solid #4A3E2E; font-size: 15px; line-height: 1.5; color: #CFC4B0">
+        <span style="position: absolute; left: 30px; top: -9px; width: 14px; height: 14px; background: #14110E; border-left: 1px solid #4A3E2E; border-top: 1px solid #4A3E2E; transform: rotate(45deg)"></span>
+        «[Реплика торговца. Например, приветствие или совет о товаре.]»
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 6px; font-size: 14px">
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Отношение</span><span style="color: #8FD0BC">[НЕЙТРАЛЬНОЕ]</span></div>
+        <div style="height: 6px; background: #1E1A17; border: 1px solid #3A3128; position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 50%; background: #4E9A86"></div></div>
+        <span style="font-size: 12px; color: #6E655A">Скидка растёт с отношением</span>
+      </div>
+    </section>
+
+    <section aria-label="Товары" style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; gap: 6px; flex-wrap: wrap">
+        <sc-for list="{{ cats }}" as="t" hint-placeholder-count="5">
+          <button type="button" aria-pressed="{{ t.on }}" onClick="{{ t.pick }}" style="height: 36px; padding: 0 14px; border: 1px solid {{ t.bd }}; background: {{ t.bg }}; color: {{ t.fg }}; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 14px; letter-spacing: 0.08em; cursor: pointer">{{ t.label }}</button>
+        </sc-for>
+      </div>
+      <div style="flex: 1; display: flex; flex-direction: column; border: 1px solid #3A3128; background: rgba(15,13,11,0.9)">
+        <div style="display: grid; grid-template-columns: 76px minmax(0, 1fr) 110px 120px 130px; gap: 12px; padding: 10px 16px; font-size: 12px; letter-spacing: 0.16em; color: #A69A86; border-bottom: 1px solid #3A3128"><span></span><span>ТОВАР</span><span>В НАЛИЧИИ</span><span>ЦЕНА</span><span></span></div>
+        <sc-for list="{{ rows }}" as="r" hint-placeholder-count="7">
+          <div style="display: grid; grid-template-columns: 76px minmax(0, 1fr) 110px 120px 130px; gap: 12px; align-items: center; padding: 8px 16px; border-bottom: 1px solid #1E1A17; background: {{ r.bg }}">
+            <div style="width: 60px; height: 60px; background: {{ r.rim }}; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px); padding: 1px; box-sizing: border-box"><div style="width: 100%; height: 100%; background: #0E0D0C; clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px); display: flex; align-items: center; justify-content: center; color: #E6DCC8"><svg width="30" height="30" viewBox="0 0 32 32" fill="{{ r.fill }}" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="{{ r.path }}"></path></svg></div></div>
+            <div style="display: flex; flex-direction: column; gap: 3px; min-width: 0"><span style="font-family: 'Oranienbaum', serif; font-size: 20px; line-height: 1.1">{{ r.name }}</span><span style="font-size: 13px; color: {{ r.subC }}; letter-spacing: 0.06em">{{ r.sub }}</span></div>
+            <span style="font-size: 15px; color: #CFC4B0">{{ r.stock }}</span>
+            <span style="display: flex; align-items: center; gap: 6px; font-size: 17px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13-7-13z" fill="#2E5E54"></path><path d="M12 2l7 7H5z" fill="#8FD0BC"></path></svg>{{ r.price }}</span>
+            <div style="display: flex; align-items: center; gap: 6px">
+              <button type="button" aria-label="Убрать одну" onClick="{{ r.minus }}" style="width: 34px; height: 34px; border: 1px solid #4A3E2E; background: #1A1715; color: #E6DCC8; font-size: 18px; cursor: pointer">−</button>
+              <span style="width: 28px; text-align: center; font-size: 16px; color: {{ r.qC }}">{{ r.q }}</span>
+              <button type="button" aria-label="Добавить одну" onClick="{{ r.plus }}" style="width: 34px; height: 34px; border: 1px solid #C9A563; background: #2A1E12; color: #F0D08A; font-size: 18px; cursor: pointer">+</button>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </section>
+
+    <section aria-label="Сделка" style="width: 320px; flex: none; position: relative; background: linear-gradient(180deg, #17130F, #0F0D0B); border: 1px solid #4A3E2E; box-shadow: inset 0 0 0 4px #0F0D0B, inset 0 0 0 5px #3A3024; padding: 24px 22px; display: flex; flex-direction: column; gap: 14px">
+      <svg width="40" height="40" viewBox="0 0 48 48" aria-hidden="true" style="position: absolute; right: -2px; top: -2px; transform: rotate(90deg)"><path d="M2 46V14Q2 2 14 2H46" stroke="#C9A563" stroke-width="1.6" fill="none"></path><path d="M14 16q8 0 8 8q0 6 -6 6q-4 0 -4 -4" stroke="#C9A563" stroke-width="1.4" fill="none"></path></svg>
+      <span style="font-size: 12px; letter-spacing: 0.2em; color: #D4B06A">СДЕЛКА</span>
+      <sc-if value="{{ empty }}" hint-placeholder-val="{{ false }}"><span style="font-size: 15px; color: #6E655A; line-height: 1.5">Нажмите «+» у товара, чтобы добавить его в сделку.</span></sc-if>
+      <sc-for list="{{ basket }}" as="b" hint-placeholder-count="2">
+        <div style="display: flex; justify-content: space-between; font-size: 15px; padding-bottom: 8px; border-bottom: 1px solid #241F1A"><span>{{ b.name }} × {{ b.q }}</span><span style="color: #CFC4B0">{{ b.sum }}</span></div>
+      </sc-for>
+      <div style="margin-top: auto; display: flex; flex-direction: column; gap: 8px; font-size: 15px; padding-top: 12px; border-top: 1px solid #4A3E2E">
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Итого</span><span style="font-size: 20px; font-weight: 600">{{ total }}</span></div>
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Останется</span><span style="color: {{ leftC }}">{{ left }}</span></div>
+      </div>
+      <button type="button" style="height: 56px; padding: 0; border: none; background: #C9A563; clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 18px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 52px; margin: 2px; background: #9C2A23; clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%); box-shadow: inset 0 1px 0 #D8574B, inset 0 -6px 0 #741E19; color: #F7EEDC; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.18em">{{ action }}</span></button>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  constructor(props) { super(props); this.state = { mode: 'buy', cat: 'all', q: {} }; }
+  renderVals() {
+    var self = this;
+    var P = {
+      moth: 'M16 7v19M16 10C11 3 4 5 4 10s7 7 12 4M16 10c5-7 12-5 12 0s-7 7-12 4M16 16c-4 2-8 4-7 9 3 1 6-3 7-6M16 16c4 2 8 4 7 9-3 1-6-3-7-6',
+      beetle: 'M16 9a6 7.5 0 1 0 .01 0zM16 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M16 10v14M10 13l-5-3M10 17H4M10 21l-5 3M22 13l5-3M22 17h6M22 21l5 3',
+      herb: 'M16 28V12M16 13c-6 0-9-4-9-9 5 0 9 3 9 9zM16 18c5 0 8-3 8-8-5 0-8 3-8 8z',
+      wine: 'M12 5h8v4c4 2 6 6 6 10 0 5-4 8-10 8S6 24 6 19c0-4 2-8 6-10zM11 5h10M10 16h12',
+      meat: 'M9 19c-2-6 4-13 11-11 6 2 6 10 0 13-4 2-8 2-11-2zM9 19l-4 5M4 23l3 3',
+      scroll: 'M8 7h16v19H8zM5 7a3 3 0 0 1 6 0M21 7a3 3 0 0 1 6 0M12 13h8M12 17h8M12 21h5',
+      pill: 'M16 6a10 10 0 1 0 .01 0zM9 12c3-3 8-4 12-2'
+    };
+    var items = [
+      { id: 'moon', cat: 'gu', icon: 'moth', name: 'Гу Лунного света', sub: 'Ранг 1 · Гу', subC: '#8FD0BC', rim: '#4E9A86', stock: '1', price: 0, pl: '[ЦЕНА]' },
+      { id: 'jade', cat: 'gu', icon: 'beetle', name: 'Гу Нефритовой кожи', sub: 'Ранг 1 · Гу', subC: '#8FD0BC', rim: '#4E9A86', stock: '2', price: 0, pl: '[ЦЕНА]' },
+      { id: 'orchid', cat: 'food', icon: 'herb', name: 'Лунная орхидея', sub: 'Корм для лунных Гу', subC: '#A69A86', rim: '#6A5A44', stock: '40', price: 0, pl: '[ЦЕНА]' },
+      { id: 'wine', cat: 'food', icon: 'wine', name: 'Рисовое вино', sub: 'Корм · напиток', subC: '#A69A86', rim: '#6A5A44', stock: '12', price: 0, pl: '[ЦЕНА]' },
+      { id: 'meat', cat: 'food', icon: 'meat', name: 'Мясо кабана', sub: 'Еда', subC: '#A69A86', rim: '#6A5A44', stock: '8', price: 0, pl: '[ЦЕНА]' },
+      { id: 'pill', cat: 'mat', icon: 'pill', name: '[ПИЛЮЛЯ]', sub: 'Расходник', subC: '#A69A86', rim: '#6A5A44', stock: '5', price: 0, pl: '[ЦЕНА]' },
+      { id: 'scroll', cat: 'mat', icon: 'scroll', name: '[РЕЦЕПТ ОЧИЩЕНИЯ]', sub: 'Свиток', subC: '#D4B06A', rim: '#C9A563', stock: '1', price: 0, pl: '[ЦЕНА]' }
+    ];
+    var q = this.state.q;
+    var catDefs = [['all', 'Все'], ['gu', 'Гу'], ['food', 'Корм и еда'], ['mat', 'Расходники и свитки']];
+    var cats = catDefs.map(function (c) { var on = c[0] === self.state.cat; return { label: c[1], on: on ? 'true' : 'false', bg: on ? '#3A2A1C' : '#121010', fg: on ? '#F0D08A' : '#A69A86', bd: on ? '#C9A563' : '#3A3128', pick: function () { self.setState({ cat: c[0] }); } }; });
+    var shown = items.filter(function (it) { return self.state.cat === 'all' || it.cat === self.state.cat; });
+    var rows = shown.map(function (it) {
+      var n = q[it.id] || 0;
+      var set = function (v) { var nq = Object.assign({}, self.state.q); nq[it.id] = Math.max(0, v); self.setState({ q: nq }); };
+      return { name: it.name, sub: it.sub, subC: it.subC, rim: it.rim, stock: it.stock, price: it.pl, path: P[it.icon], fill: 'none', q: n, qC: n ? '#F0D08A' : '#6E655A', bg: n ? 'rgba(201,165,99,0.07)' : 'transparent',
+        plus: function () { set(n + 1); }, minus: function () { set(n - 1); } };
+    });
+    var basket = items.filter(function (it) { return q[it.id]; }).map(function (it) { return { name: it.name, q: q[it.id], sum: '[СУММА]' }; });
+    var buy = this.state.mode === 'buy';
+    return {
+      cats: cats, rows: rows, basket: basket, empty: basket.length === 0,
+      balance: '[1 240]', total: basket.length ? '[ИТОГО]' : '0', left: '[ОСТАТОК]', leftC: '#CFC4B0',
+      action: buy ? 'КУПИТЬ' : 'ПРОДАТЬ',
+      buyOn: buy ? 'true' : 'false', sellOn: buy ? 'false' : 'true',
+      buyBg: buy ? '#3A2A1C' : '#121010', buyFg: buy ? '#F0D08A' : '#A69A86', sellBg: buy ? '#121010' : '#3A2A1C', sellFg: buy ? '#A69A86' : '#F0D08A',
+      toBuy: function () { self.setState({ mode: 'buy' }); }, toSell: function () { self.setState({ mode: 'sell' }); }
+    };
+  }
+}
+</script>
+</body>
+</html>

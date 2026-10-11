@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — HUD для ПК</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 810px; position: relative; overflow: hidden; background: #101412; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif">
+
+  <svg width="1440" height="810" viewBox="0 0 1440 810" style="position: absolute; inset: 0" aria-hidden="true">
+    <rect width="1440" height="810" fill="#101412"></rect>
+    <circle cx="1040" cy="200" r="64" fill="#3A403A"></circle>
+    <path d="M0 470 L120 380 L230 440 L380 300 L520 420 L640 350 L800 450 L960 330 L1120 430 L1260 360 L1440 440 L1440 810 L0 810 Z" fill="#171C19"></path>
+    <path d="M0 560 L160 480 L320 540 L470 470 L640 560 L820 490 L1000 570 L1180 500 L1440 560 L1440 810 L0 810 Z" fill="#131714"></path>
+    <path d="M0 650 L220 610 L420 650 L700 620 L980 660 L1240 620 L1440 650 L1440 810 L0 810 Z" fill="#0E110F"></path>
+  </svg>
+  <div style="position: absolute; inset: 0; box-shadow: inset 0 0 220px 60px rgba(0,0,0,0.85)"></div>
+  <span style="position: absolute; left: 50%; top: 42%; transform: translateX(-50%); font-size: 13px; letter-spacing: 0.3em; color: #4A524C">[ИГРОВОЙ МИР]</span>
+
+  <div style="position: absolute; left: 50%; top: 50%; width: 10px; height: 10px; transform: translate(-50%, -50%) rotate(45deg); border: 1.5px solid #E6DCC8" aria-hidden="true"></div>
+
+  <div style="position: absolute; left: 28px; top: 24px; display: flex; gap: 16px; align-items: center">
+    <div style="width: 104px; height: 104px; border-radius: 50%; background: conic-gradient(#4E9A86 0 78%, #1E2623 78% 100%); display: flex; align-items: center; justify-content: center; position: relative" role="img" aria-label="Первобытная эссенция 78%">
+      <div style="width: 94px; height: 94px; border-radius: 50%; background: #C9A563; display: flex; align-items: center; justify-content: center">
+        <div style="width: 90px; height: 90px; border-radius: 50%; background: #121010; overflow: hidden; display: flex; align-items: flex-end; justify-content: center">
+          <svg width="74" height="84" viewBox="0 0 64 72" aria-hidden="true"><path d="M14 72c0-16 8-24 18-24s18 8 18 24z" fill="#25232A"></path><path d="M20 30c0-12 5-20 12-20s12 8 12 20-5 18-12 18-12-6-12-18z" fill="#D8CCBB"></path><path d="M16 34c-2-18 6-28 16-28s20 6 17 26c-3-8-6-14-10-16-6 4-14 6-23 18z" fill="#2B2A2E"></path><path d="M22 18q-2 8-3 16" stroke="#A3A2A8" stroke-width="2.5" fill="none"></path><path d="M26 30h5M35 30h5" stroke="#C2413A" stroke-width="2"></path></svg>
+        </div>
+      </div>
+      <span style="position: absolute; bottom: -6px; left: 50%; transform: translateX(-50%); width: 30px; height: 30px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 20px; display: flex; align-items: center; justify-content: center">一</span>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 8px; width: 290px">
+      <div style="display: flex; align-items: baseline; justify-content: space-between">
+        <span style="font-family: 'Oranienbaum', serif; font-size: 24px; line-height: 1">[ИМЯ ГЕРОЯ]</span>
+        <span style="font-size: 12px; color: #8FD0BC; letter-spacing: 0.1em">ЭССЕНЦИЯ 78%</span>
+      </div>
+      <div style="height: 18px; background: #C9A563; clip-path: polygon(9px 0, 100% 0, calc(100% - 9px) 100%, 0 100%); padding: 1px; box-sizing: border-box"><div style="height: 100%; background: #1E1614; clip-path: polygon(8px 0, 100% 0, calc(100% - 8px) 100%, 0 100%); position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 72%; background: #B3342B; box-shadow: inset 0 2px 0 #E0675C"></div><div style="position: absolute; inset: 0; background: repeating-linear-gradient(90deg, transparent 0 39px, #0B0A0A 39px 41px)"></div><span style="position: absolute; right: 14px; top: 0; font-size: 12px; font-weight: 600; color: #F7EEDC">[288 / 400]</span></div></div>
+      <div style="height: 8px; width: 80%; background: #6A5A44; clip-path: polygon(4px 0, 100% 0, calc(100% - 4px) 100%, 0 100%); padding: 1px; box-sizing: border-box"><div style="height: 100%; background: #161311; position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 64%; background: #CFC4B0"></div></div></div>
+      <div style="display: flex; gap: 6px; margin-top: 2px">
+        <div title="Скрытность" style="width: 28px; height: 28px; background: #4E9A86; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); display: flex; align-items: center; justify-content: center"><div style="width: 24px; height: 24px; background: #101A17; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); display: flex; align-items: center; justify-content: center; color: #A9DCCB"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" role="img" aria-label="Скрытность"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12z"></path></svg></div></div>
+        <div title="Кровотечение" style="width: 28px; height: 28px; background: #C2413A; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); display: flex; align-items: center; justify-content: center"><div style="width: 24px; height: 24px; background: #241010; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); display: flex; align-items: center; justify-content: center; color: #F2A497"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" role="img" aria-label="Кровотечение"><path d="M12 3c4 6 6 9 6 12a6 6 0 0 1-12 0c0-3 2-6 6-12z"></path></svg></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 50%; top: 24px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 6px">
+    <div style="display: flex; align-items: center; gap: 12px"><span style="width: 24px; height: 1px; background: #B8975A"></span><span style="font-family: 'Oranienbaum', serif; font-size: 22px; letter-spacing: 0.06em">[ЛОКАЦИЯ]</span><span style="width: 24px; height: 1px; background: #B8975A"></span></div>
+    <span style="font-size: 12px; color: #A69A86; letter-spacing: 0.2em">НОЧЬ · ДЕНЬ [N]</span>
+  </div>
+
+  <div style="position: absolute; right: 28px; top: 24px; display: flex; flex-direction: column; gap: 14px; width: 232px; align-items: flex-end">
+    <div style="display: flex; gap: 8px">
+      <div style="display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px; background: rgba(11,10,10,0.8); border: 1px solid #3A3128; font-size: 14px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13-7-13z" fill="#2E5E54"></path><path d="M12 2l7 7H5z" fill="#8FD0BC"></path></svg>[1 240]</div>
+      <div style="display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 10px; background: rgba(11,10,10,0.8); border: 1px solid #3A3128; font-size: 14px; font-weight: 600"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#B8975A"></circle><rect x="9" y="9" width="6" height="6" fill="#0B0A0A"></rect></svg>[86]</div>
+    </div>
+    <div style="width: 200px; height: 200px; position: relative">
+      <div style="position: absolute; inset: 0; background: #B8975A; transform: rotate(45deg) scale(0.707)"></div>
+      <div style="position: absolute; inset: 2px; background: #121614; transform: rotate(45deg) scale(0.707); overflow: hidden"></div>
+      <svg width="200" height="200" viewBox="0 0 200 200" aria-hidden="true" style="position: absolute; inset: 0"><clipPath id="mm"><path d="M100 3 L197 100 L100 197 L3 100 Z"></path></clipPath><g clip-path="url(#mm)"><path d="M20 130 C60 110 80 140 110 120 S160 90 190 100" stroke="#2C3A33" stroke-width="8" fill="none"></path><rect x="70" y="60" width="16" height="12" fill="#2A2622"></rect><rect x="92" y="70" width="12" height="10" fill="#2A2622"></rect><circle cx="130" cy="130" r="4" fill="#C2413A"></circle><circle cx="72" cy="104" r="3.5" fill="#E0A13A"></circle></g><path d="M100 92l7 16-7-4-7 4z" fill="#F0D08A"></path><text x="100" y="22" text-anchor="middle" font-size="13" fill="#E6DCC8" font-family="IBM Plex Sans Condensed">С</text></svg>
+      <span style="position: absolute; left: 0; bottom: 0; font-size: 12px; color: #A69A86">[X, Y]</span>
+    </div>
+    <div style="width: 232px; box-sizing: border-box; background: rgba(11,10,10,0.78); border: 1px solid #3A3128; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px">
+      <div style="display: flex; align-items: center; gap: 8px"><span style="width: 7px; height: 7px; background: #C9A563; transform: rotate(45deg); display: block"></span><span style="font-size: 12px; letter-spacing: 0.16em; color: #D4B06A">ЗАДАНИЕ</span></div>
+      <span style="font-family: 'Oranienbaum', serif; font-size: 19px; line-height: 1.2">[НАЗВАНИЕ ЗАДАНИЯ]</span>
+      <span style="font-size: 14px; color: #CFC4B0; line-height: 1.4">[Цель задания] <span style="color: #A69A86">0 / 3</span></span>
+    </div>
+  </div>
+
+  <div style="position: absolute; left: 28px; bottom: 28px; width: 360px; display: flex; flex-direction: column; gap: 5px; font-size: 14px; line-height: 1.4">
+    <span style="color: #A69A86"><span style="color: #D4B06A">[Игрок]:</span> [сообщение]</span>
+    <span style="color: #A69A86"><span style="color: #8FD0BC">Система:</span> получено 3 первобытных камня</span>
+    <span style="color: #EBC98A">Гу Нефритовой кожи проголодался</span>
+    <div style="height: 38px; margin-top: 6px; background: rgba(11,10,10,0.78); border: 1px solid #3A3128; display: flex; align-items: center; padding: 0 12px; color: #6E655A">Enter — написать</div>
+  </div>
+
+  <div style="position: absolute; left: 50%; bottom: 24px; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px">
+    <div style="display: flex; align-items: center; gap: 10px; padding: 7px 14px; background: rgba(11,10,10,0.85); border: 1px solid #3A3128; font-size: 15px">
+      <span style="width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; background: #C9A563; color: #0B0A0A; font-size: 13px; font-weight: 600; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%)">E</span>
+      <span>Собрать · <span style="color: #A69A86">Лунная орхидея</span></span>
+    </div>
+    <div style="display: flex; gap: 6px; padding: 8px 10px; background: rgba(11,10,10,0.7); border-top: 1px solid #B8975A">
+      <sc-for list="{{ bar }}" as="s" hint-placeholder-count="9">
+        <div style="width: 62px; height: 62px; background: {{ s.rim }}; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px); padding: {{ s.pad }}; box-sizing: border-box">
+          <div style="width: 100%; height: 100%; background: {{ s.bg }}; clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px); position: relative; display: flex; align-items: center; justify-content: center; color: #E6DCC8">
+            <sc-if value="{{ s.has }}" hint-placeholder-val="{{ false }}"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{{ s.path }}"></path></svg></sc-if>
+            <sc-if value="{{ s.cd }}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: 0; background: rgba(8,7,6,0.72); display: flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 600">2с</div></sc-if>
+            <sc-if value="{{ s.hungry }}" hint-placeholder-val="{{ false }}"><span style="position: absolute; right: 6px; top: 6px; width: 7px; height: 7px; background: #E0A13A; transform: rotate(45deg); display: block"></span></sc-if>
+            <span style="position: absolute; left: 6px; top: 2px; font-size: 12px; color: #A69A86">{{ s.key }}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="position: absolute; right: 28px; bottom: 28px; display: flex; gap: 6px">
+    <sc-for list="{{ menu }}" as="m" hint-placeholder-count="4">
+      <button type="button" aria-label="{{ m.label }}" style="width: 58px; height: 52px; padding: 0; border: none; background: #B8975A; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); cursor: pointer; display: flex; align-items: center; justify-content: center"><span style="width: 54px; height: 48px; background: #1A1715; clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1px; color: #E6DCC8"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{{ m.path }}"></path></svg><span style="font-size: 10px; color: #A69A86">{{ m.key }}</span></span></button>
+    </sc-for>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":810}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var moth = 'M16 7v19M16 10C11 3 4 5 4 10s7 7 12 4M16 10c5-7 12-5 12 0s-7 7-12 4M16 16c-4 2-8 4-7 9 3 1 6-3 7-6M16 16c4 2 8 4 7 9-3 1-6-3-7-6';
+    var beetle = 'M16 9a6 7.5 0 1 0 .01 0zM16 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M16 10v14M10 13l-5-3M10 17H4M10 21l-5 3M22 13l5-3M22 17h6M22 21l5 3';
+    var blade = 'M6 26L21 11l5-5-1 6-15 15zM8 20l4 4';
+    var herb = 'M16 28V12M16 13c-6 0-9-4-9-9 5 0 9 3 9 9zM16 18c5 0 8-3 8-8-5 0-8 3-8 8z';
+    var e = { has: false, path: '', cd: false, hungry: false, rim: '#2A2622', bg: 'rgba(14,13,12,0.9)', pad: '1px' };
+    var bar = [
+      Object.assign({}, e, { key: '1', has: true, path: moth, rim: '#F0D08A', bg: '#2A1E12', pad: '2px' }),
+      Object.assign({}, e, { key: '2', has: true, path: beetle, rim: '#4E9A86', hungry: true }),
+      Object.assign({}, e, { key: '3', has: true, path: beetle, rim: '#C2524A', cd: true }),
+      Object.assign({}, e, { key: '4', has: true, path: blade, rim: '#6A5A44' }),
+      Object.assign({}, e, { key: '5', has: true, path: herb, rim: '#6A5A44' }),
+      Object.assign({}, e, { key: '6' }), Object.assign({}, e, { key: '7' }), Object.assign({}, e, { key: '8' }), Object.assign({}, e, { key: '9' })
+    ];
+    var menu = [
+      { label: 'Апертура (K)', key: 'K', path: 'M12 3.5a8.5 8.5 0 1 0 .01 0zM12 8.5a3.5 3.5 0 1 0 .01 0z' },
+      { label: 'Инвентарь (I)', key: 'I', path: 'M5 8h14l-1.2 12H6.2zM9 8V6a3 3 0 0 1 6 0v2' },
+      { label: 'Карта (M)', key: 'M', path: 'M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2zM9 4v14M15 6v14' },
+      { label: 'Меню (Esc)', key: 'ESC', path: 'M4 7h16M4 12h16M4 17h16' }
+    ];
+    return { bar: bar, menu: menu };
+  }
+}
+</script>
+</body>
+</html>

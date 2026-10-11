@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — лист ракурсов героя</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 2000px; height: 1120px; box-sizing: border-box; padding: 48px 60px; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column; gap: 20px">
+
+  <header style="display: flex; align-items: center; gap: 18px">
+    <span style="width: 48px; height: 48px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 34px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">魔</span>
+    <div style="display: flex; flex-direction: column; gap: 4px">
+      <h1 style="margin: 0; font-family: 'Oranienbaum', serif; font-weight: 400; font-size: 40px; line-height: 1">[ИМЯ ГЕРОЯ] — лист ракурсов</h1>
+      <span style="font-size: 14px; letter-spacing: 0.16em; color: #A69A86">РЕФЕРЕНС ДЛЯ 3D-МОДЕЛИ · A-ПОЗА · ОДИН МАСШТАБ НА ВСЕХ ВИДАХ</span>
+    </div>
+  </header>
+
+  <div style="display: flex; gap: 32px; flex: 1; min-height: 0">
+
+    <div style="width: 1528px; flex: none; position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px">
+      <sc-for list="{{ guides }}" as="g" hint-placeholder-count="7">
+        <div style="position: absolute; left: 0; right: 0; top: {{ g.top }}; height: 1px; background: #241F1A; pointer-events: none"></div>
+        <span style="position: absolute; right: 0; top: {{ g.labelTop }}; font-size: 11px; letter-spacing: 0.1em; color: #6E655A">{{ g.label }}</span>
+      </sc-for>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative">
+        <span style="height: 24px; font-size: 14px; letter-spacing: 0.2em; color: #D4B06A">СПЕРЕДИ</span>
+        <svg width="360" height="860" viewBox="0 0 360 860" role="img" aria-label="Герой, вид спереди">
+          <g id="heroFront">
+            <ellipse cx="180" cy="808" rx="96" ry="9" fill="#000000" opacity="0.6"></ellipse>
+            <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+              <path d="M200 140 Q238 200 224 300 Q216 340 228 380 Q200 342 204 290 Q210 220 192 160 Z" fill="#232227"></path>
+              <path d="M140 80 Q132 30 180 24 Q232 28 222 84 L226 150 Q214 128 210 100 L150 100 Q146 128 134 152 Z" fill="#232227"></path>
+              <rect x="170" y="146" width="20" height="28" fill="#BFB2A0"></rect>
+              <path d="M120 190 Q150 172 180 176 Q210 172 240 190 L250 330 L262 640 L216 650 L200 360 L160 360 L144 650 L98 640 L110 330 Z" fill="#25232A"></path>
+              <path d="M160 360 L200 360 L208 650 L186 652 L180 420 L174 652 L152 650 Z" fill="#1B1A1F"></path>
+              <path d="M164 158 L196 158 L200 186 L160 186 Z" fill="#16151A"></path>
+              <path d="M164 186 L196 186 L200 360 L160 360 Z" fill="#16151A"></path>
+            </g>
+            <path d="M200 188 L240 190 L250 330 L262 640 L216 650 L200 360 Z" fill="#000000" opacity="0.28"></path>
+            <path d="M122 196 Q114 300 100 636" stroke="#4A4652" stroke-width="1.6" fill="none"></path>
+            <path d="M130 420 L124 600 M234 420 L246 610 M138 230 Q150 270 146 310 M226 236 Q216 276 220 312" stroke="#121116" stroke-width="1.6" fill="none"></path>
+            <path d="M164 186 L160 360 L144 650" stroke="#7A2526" stroke-width="4" fill="none"></path>
+            <path d="M196 186 L200 360 L216 650" stroke="#7A2526" stroke-width="4" fill="none"></path>
+            <path d="M166 160 L194 160" stroke="#3A3842" stroke-width="1.4"></path>
+            <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+              <path d="M112 196 L96 300 L88 360 L112 362 L124 300 L130 220 Z" fill="#25232A"></path>
+              <path d="M248 196 L264 300 L272 360 L248 362 L236 300 L230 220 Z" fill="#1E1C22"></path>
+              <path d="M88 352 L112 354 L112 364 L88 362 Z M248 354 L272 352 L272 362 L248 364 Z" fill="#7A2526"></path>
+              <path d="M90 362 L84 440 L104 442 L110 364 Z" fill="#BDB2A0"></path>
+              <path d="M250 364 L256 440 L276 442 L270 362 Z" fill="#A99E8C"></path>
+              <path d="M84 440 Q82 468 94 472 Q106 468 104 442 Z" fill="#D8CCBB"></path>
+              <path d="M256 442 Q254 468 266 472 Q278 468 276 442 Z" fill="#C9BCAA"></path>
+            </g>
+            <path d="M89 377 L109 380 M88 394 L108 396 M87 411 L107 413 M86 428 L105 430 M251 380 L271 377 M252 396 L272 394 M253 413 L273 411 M255 430 L274 428" stroke="#8F8574" stroke-width="1.4"></path>
+            <path d="M96 397 l4 6 l-4 6 M262 397 l-4 6 l4 6" stroke="#A82E25" stroke-width="1.8" fill="none"></path>
+            <path d="M89 456 L91 468 M94 458 L95 471 M99 457 L99 470 M261 456 L262 469 M266 458 L266 471 M271 456 L270 468" stroke="#A8998A" stroke-width="1"></path>
+            <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+              <path d="M112 186 Q140 170 170 182 L162 214 Q136 226 104 238 Z" fill="#3A332C"></path>
+              <path d="M150 330 L210 330 L212 352 L148 352 Z" fill="#7A2526"></path>
+              <path d="M196 352 L204 420 L212 418 L205 352 Z" fill="#5A1C1D"></path>
+              <path d="M206 352 L216 410 L222 406 L212 352 Z" fill="#6B2223"></path>
+              <circle cx="158" cy="408" r="10" fill="#5E9C7A"></circle>
+              <ellipse cx="224" cy="352" rx="6" ry="7" fill="#8A6A3A"></ellipse>
+              <ellipse cx="224" cy="374" rx="10" ry="13" fill="#8A6A3A"></ellipse>
+              <path d="M150 650 L176 650 L178 790 L146 790 Z" fill="#2A2622"></path>
+              <path d="M184 650 L210 650 L214 790 L182 790 Z" fill="#221F1C"></path>
+              <path d="M140 790 L180 790 L180 806 L132 806 Z" fill="#141210"></path>
+              <path d="M182 790 L222 790 L230 806 L182 806 Z" fill="#141210"></path>
+            </g>
+            <path d="M110 214 Q134 206 164 198 M108 228 Q132 218 162 210" stroke="#1E1A16" stroke-width="2" fill="none"></path>
+            <path d="M116 192 Q140 178 166 186" stroke="#5A4F43" stroke-width="1.4" fill="none"></path>
+            <circle cx="152" cy="196" r="3.4" fill="#D8CDB8" stroke="#060508" stroke-width="1"></circle>
+            <circle cx="138" cy="203" r="3.4" fill="#D8CDB8" stroke="#060508" stroke-width="1"></circle>
+            <path d="M160 352 L158 398" stroke="#7A2526" stroke-width="1.6"></path>
+            <circle cx="158" cy="408" r="3.2" fill="#16151A"></circle>
+            <path d="M152 402 Q158 398 164 402" stroke="#9FD3B8" stroke-width="1.2" fill="none"></path>
+            <path d="M218 368 Q224 362 230 368" stroke="#5C4524" stroke-width="1.4" fill="none"></path>
+            <path d="M220 362 Q216 372 218 384" stroke="#C9A563" stroke-width="1.2" fill="none"></path>
+            <path d="M149 672 L176 668 M148 700 L177 694 M147 728 L177 722 M147 756 L178 750 M184 668 L210 672 M183 694 L211 700 M183 722 L212 728 M182 750 L213 756" stroke="#3E3730" stroke-width="2"></path>
+            <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+              <path d="M150 70 Q150 40 180 38 Q210 40 210 70 L208 112 Q200 140 180 150 Q160 140 152 112 Z" fill="#D8CCBB"></path>
+            </g>
+            <path d="M196 120 Q192 140 180 150 Q196 140 206 112 Z" fill="#B8AA97"></path>
+            <path d="M152 112 Q160 140 180 150 Q170 136 166 118 Z" fill="#C6B9A7"></path>
+            <path d="M158 90 L176 93" stroke="#1C1B1F" stroke-width="2.6"></path>
+            <path d="M184 93 L202 89" stroke="#1C1B1F" stroke-width="2.6"></path>
+            <path d="M159 99 L176 97 L174 102 L162 103 Z" fill="#14100F"></path>
+            <path d="M184 97 L201 99 L198 103 L186 102 Z" fill="#14100F"></path>
+            <circle cx="169" cy="100" r="2.3" fill="#C2413A"></circle>
+            <circle cx="191" cy="100" r="2.3" fill="#C2413A"></circle>
+            <path d="M180 108 L178 118 L182 118" stroke="#9A8B7C" stroke-width="1.2" fill="none"></path>
+            <path d="M173 131 L187 130" stroke="#6E4E47" stroke-width="1.6"></path>
+            <path d="M199 108 L205 122" stroke="#A86F66" stroke-width="1.6"></path>
+            <path d="M146 84 Q148 40 180 34 Q214 38 214 84 L205 64 L199 94 L189 60 L179 98 L170 62 L161 92 L156 66 Z" fill="#2B2A2E" stroke="#060508" stroke-width="2" stroke-linejoin="round"></path>
+            <path d="M170 44 Q186 38 200 46" stroke="#4A4652" stroke-width="1.6" fill="none"></path>
+            <path d="M160 62 Q153 92 149 124 Q157 104 165 70 Z" fill="#B3B2B8" stroke="#060508" stroke-width="1.2"></path>
+          </g>
+        </svg>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative">
+        <span style="height: 24px; font-size: 14px; letter-spacing: 0.2em; color: #D4B06A">ТРИ ЧЕТВЕРТИ</span>
+        <svg width="360" height="860" viewBox="0 0 360 860" role="img" aria-label="Герой, вид в три четверти">
+          <ellipse cx="180" cy="808" rx="96" ry="9" fill="#000000" opacity="0.6"></ellipse>
+          <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+            <path d="M206 140 Q244 200 232 300 Q226 340 238 380 Q210 342 212 290 Q216 220 198 160 Z" fill="#232227"></path>
+            <ellipse cx="236" cy="374" rx="8" ry="12" fill="#7A5C30"></ellipse>
+            <path d="M234 198 L246 300 L252 360 L232 362 L224 300 L222 222 Z" fill="#1E1C22"></path>
+            <path d="M234 362 L238 440 L254 442 L250 362 Z" fill="#A99E8C"></path>
+            <path d="M238 442 Q236 466 246 470 Q256 466 254 442 Z" fill="#C9BCAA"></path>
+            <path d="M146 82 Q140 32 186 26 Q234 32 224 86 L228 148 Q216 126 212 100 L156 100 Q152 126 142 150 Z" fill="#232227"></path>
+            <rect x="176" y="146" width="20" height="28" fill="#BFB2A0"></rect>
+            <path d="M124 190 Q156 172 188 176 Q214 172 236 188 L244 330 L254 640 L214 650 L204 360 L170 360 L156 650 L106 640 L116 330 Z" fill="#25232A"></path>
+            <path d="M170 360 L204 360 L212 650 L192 652 L188 420 L182 652 L162 650 Z" fill="#1B1A1F"></path>
+            <path d="M172 158 L200 158 L206 186 L168 186 Z" fill="#16151A"></path>
+            <path d="M172 186 L202 186 L204 360 L170 360 Z" fill="#16151A"></path>
+          </g>
+          <path d="M206 188 L236 188 L244 330 L254 640 L214 650 L204 360 Z" fill="#000000" opacity="0.28"></path>
+          <path d="M126 196 Q118 300 108 636" stroke="#4A4652" stroke-width="1.6" fill="none"></path>
+          <path d="M136 420 L132 600 M232 420 L240 610 M146 230 Q158 270 154 310" stroke="#121116" stroke-width="1.6" fill="none"></path>
+          <path d="M172 186 L170 360 L156 650" stroke="#7A2526" stroke-width="4" fill="none"></path>
+          <path d="M202 186 L204 360 L214 650" stroke="#7A2526" stroke-width="4" fill="none"></path>
+          <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+            <path d="M116 196 L100 300 L92 360 L118 362 L130 300 L136 220 Z" fill="#25232A"></path>
+            <path d="M92 352 L118 354 L118 364 L92 362 Z" fill="#7A2526"></path>
+            <path d="M94 362 L88 440 L110 442 L116 364 Z" fill="#BDB2A0"></path>
+            <path d="M88 440 Q86 468 99 472 Q112 468 110 442 Z" fill="#D8CCBB"></path>
+            <path d="M114 186 Q144 168 176 182 L168 216 Q140 228 106 238 Z" fill="#3A332C"></path>
+            <path d="M156 330 L216 330 L216 352 L154 352 Z" fill="#7A2526"></path>
+            <path d="M204 352 L210 418 L218 416 L212 352 Z" fill="#5A1C1D"></path>
+            <circle cx="164" cy="408" r="10" fill="#5E9C7A"></circle>
+            <path d="M158 650 L184 650 L186 790 L154 790 Z" fill="#2A2622"></path>
+            <path d="M192 650 L214 650 L218 790 L190 790 Z" fill="#221F1C"></path>
+            <path d="M148 790 L186 790 L188 806 L140 806 Z" fill="#141210"></path>
+            <path d="M190 790 L226 790 L236 806 L190 806 Z" fill="#141210"></path>
+          </g>
+          <path d="M93 377 L115 380 M92 394 L114 396 M91 411 L112 413 M90 428 L110 430" stroke="#8F8574" stroke-width="1.4"></path>
+          <path d="M100 397 l4 6 l-4 6" stroke="#A82E25" stroke-width="1.8" fill="none"></path>
+          <path d="M112 214 Q136 206 166 198 M110 228 Q134 218 164 210" stroke="#1E1A16" stroke-width="2" fill="none"></path>
+          <circle cx="158" cy="196" r="3.4" fill="#D8CDB8" stroke="#060508" stroke-width="1"></circle>
+          <circle cx="144" cy="203" r="3.4" fill="#D8CDB8" stroke="#060508" stroke-width="1"></circle>
+          <path d="M166 352 L164 398" stroke="#7A2526" stroke-width="1.6"></path>
+          <circle cx="164" cy="408" r="3.2" fill="#16151A"></circle>
+          <path d="M157 672 L184 668 M156 700 L185 694 M155 728 L185 722 M155 756 L186 750 M192 668 L214 672 M191 694 L215 700 M191 722 L216 728 M190 750 L217 756" stroke="#3E3730" stroke-width="2"></path>
+          <path d="M156 70 Q158 40 186 38 Q212 42 212 70 L212 98 L217 108 L211 112 Q206 136 190 150 Q170 142 162 116 Z" fill="#D8CCBB" stroke="#060508" stroke-width="2.2" stroke-linejoin="round"></path>
+          <path d="M206 112 Q200 138 190 150 Q199 134 201 116 Z" fill="#B8AA97"></path>
+          <ellipse cx="157" cy="104" rx="4" ry="8" fill="#C6B9A7" stroke="#060508" stroke-width="1.6"></ellipse>
+          <path d="M164 90 L182 93" stroke="#1C1B1F" stroke-width="2.6"></path>
+          <path d="M192 92 L206 90" stroke="#1C1B1F" stroke-width="2.4"></path>
+          <path d="M165 99 L182 97 L180 102 L168 103 Z" fill="#14100F"></path>
+          <path d="M193 98 L205 99 L203 102 L194 102 Z" fill="#14100F"></path>
+          <circle cx="175" cy="100" r="2.3" fill="#C2413A"></circle>
+          <circle cx="199" cy="100" r="1.8" fill="#C2413A"></circle>
+          <path d="M207 104 L212 112 L206 114" stroke="#9A8B7C" stroke-width="1.2" fill="none"></path>
+          <path d="M189 130 L201 129" stroke="#6E4E47" stroke-width="1.6"></path>
+          <path d="M204 112 L208 124" stroke="#A86F66" stroke-width="1.6"></path>
+          <path d="M150 84 Q152 38 186 32 Q218 38 216 84 L208 64 L204 94 L194 60 L186 98 L178 62 L168 92 L162 66 Z" fill="#2B2A2E" stroke="#060508" stroke-width="2" stroke-linejoin="round"></path>
+          <path d="M174 44 Q190 38 204 46" stroke="#4A4652" stroke-width="1.6" fill="none"></path>
+          <path d="M164 62 Q157 92 153 124 Q161 104 169 70 Z" fill="#B3B2B8" stroke="#060508" stroke-width="1.2"></path>
+        </svg>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative">
+        <span style="height: 24px; font-size: 14px; letter-spacing: 0.2em; color: #D4B06A">СБОКУ</span>
+        <svg width="360" height="860" viewBox="0 0 360 860" role="img" aria-label="Герой, вид сбоку">
+          <ellipse cx="184" cy="808" rx="70" ry="8" fill="#000000" opacity="0.6"></ellipse>
+          <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+            <path d="M156 96 Q132 160 140 260 Q144 320 132 370 Q156 330 156 270 Q154 180 168 120 Z" fill="#232227"></path>
+            <path d="M150 60 Q160 26 196 30 Q222 40 218 76 L210 100 L196 96 Q182 112 166 140 Q148 120 146 96 Z" fill="#232227"></path>
+            <rect x="182" y="130" width="16" height="44" fill="#BFB2A0"></rect>
+            <path d="M160 176 Q182 168 206 180 L214 330 L232 640 L148 646 L146 360 L140 330 Q146 220 160 176 Z" fill="#25232A"></path>
+            <path d="M168 646 L196 646 L196 650 L168 650 Z" fill="#1B1A1F"></path>
+            <path d="M190 160 L202 160 L208 186 L196 188 Z" fill="#16151A"></path>
+          </g>
+          <path d="M146 210 Q140 300 146 360 L148 646 L170 644 L168 360 Q160 280 166 200 Z" fill="#000000" opacity="0.28"></path>
+          <path d="M206 182 L214 330 L232 638" stroke="#7A2526" stroke-width="4" fill="none"></path>
+          <path d="M168 420 L164 620 M196 420 L206 620" stroke="#121116" stroke-width="1.6" fill="none"></path>
+          <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+            <path d="M144 330 L214 330 L214 352 L144 352 Z" fill="#7A2526"></path>
+            <circle cx="198" cy="404" r="10" fill="#5E9C7A"></circle>
+            <path d="M168 190 L156 300 L160 360 L184 360 L188 300 L192 200 Z" fill="#2B2930"></path>
+            <path d="M159 352 L185 352 L185 362 L159 362 Z" fill="#7A2526"></path>
+            <path d="M160 362 L162 440 L182 440 L184 362 Z" fill="#BDB2A0"></path>
+            <path d="M162 440 Q160 468 172 472 Q184 468 182 440 Z" fill="#D8CCBB"></path>
+            <path d="M150 180 Q176 166 204 182 L198 214 Q172 224 146 222 Z" fill="#3A332C"></path>
+            <path d="M166 650 L192 650 L194 790 L166 790 Z" fill="#2A2622"></path>
+            <path d="M162 790 L194 790 L222 806 L158 806 Z" fill="#141210"></path>
+          </g>
+          <path d="M198 352 L198 394" stroke="#7A2526" stroke-width="1.6"></path>
+          <circle cx="198" cy="404" r="3.2" fill="#16151A"></circle>
+          <path d="M161 377 L183 377 M161 394 L183 394 M162 411 L182 411 M162 428 L182 428" stroke="#8F8574" stroke-width="1.4"></path>
+          <path d="M168 397 l4 6 l-4 6" stroke="#A82E25" stroke-width="1.8" fill="none"></path>
+          <path d="M150 198 Q174 192 200 198 M150 210 Q172 206 198 210" stroke="#1E1A16" stroke-width="2" fill="none"></path>
+          <circle cx="186" cy="192" r="3.4" fill="#D8CDB8" stroke="#060508" stroke-width="1"></circle>
+          <path d="M166 672 L192 668 M166 700 L193 694 M166 728 L193 722 M166 756 L194 750" stroke="#3E3730" stroke-width="2"></path>
+          <path d="M196 50 Q214 56 214 80 L216 92 L223 104 L215 108 L215 118 Q212 130 204 136 L190 140 Q178 132 176 112 L178 70 Q184 52 196 50 Z" fill="#D8CCBB" stroke="#060508" stroke-width="2.2" stroke-linejoin="round"></path>
+          <path d="M190 140 Q180 130 178 116 L188 118 Q192 132 204 136 Z" fill="#B8AA97"></path>
+          <ellipse cx="186" cy="104" rx="5" ry="8" fill="#C6B9A7" stroke="#060508" stroke-width="1.6"></ellipse>
+          <path d="M200 89 L212 90" stroke="#1C1B1F" stroke-width="2.6"></path>
+          <path d="M201 97 L212 97 L210 101 L203 101 Z" fill="#14100F"></path>
+          <circle cx="207" cy="99" r="1.9" fill="#C2413A"></circle>
+          <path d="M207 128 L214 127" stroke="#6E4E47" stroke-width="1.6"></path>
+          <path d="M170 50 Q196 24 218 52 L216 76 L208 60 L206 88 L198 58 L190 78 Q184 60 170 50 Z" fill="#2B2A2E" stroke="#060508" stroke-width="2" stroke-linejoin="round"></path>
+          <path d="M198 58 Q193 86 195 120 Q202 96 204 64 Z" fill="#B3B2B8" stroke="#060508" stroke-width="1.2"></path>
+          <path d="M152 96 L170 100" stroke="#7A2526" stroke-width="4"></path>
+        </svg>
+      </div>
+
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; position: relative">
+        <span style="height: 24px; font-size: 14px; letter-spacing: 0.2em; color: #D4B06A">СЗАДИ</span>
+        <svg width="360" height="860" viewBox="0 0 360 860" role="img" aria-label="Герой, вид сзади">
+          <ellipse cx="180" cy="808" rx="96" ry="9" fill="#000000" opacity="0.6"></ellipse>
+          <g stroke="#060508" stroke-width="2.2" stroke-linejoin="round">
+            <rect x="170" y="140" width="20" height="34" fill="#BFB2A0"></rect>
+            <path d="M120 190 Q150 172 180 176 Q210 172 240 190 L250 330 L262 640 L98 640 L110 330 Z" fill="#25232A"></path>
+            <path d="M112 196 L96 300 L88 360 L112 362 L124 300 L130 220 Z" fill="#1E1C22"></path>
+            <path d="M248 196 L264 300 L272 360 L248 362 L236 300 L230 220 Z" fill="#25232A"></path>
+            <path d="M88 352 L112 354 L112 364 L88 362 Z M248 354 L272 352 L272 362 L248 364 Z" fill="#7A2526"></path>
+            <path d="M90 362 L84 440 L104 442 L110 364 Z" fill="#A99E8C"></path>
+            <path d="M250 364 L256 440 L276 442 L270 362 Z" fill="#BDB2A0"></path>
+            <path d="M84 440 Q82 468 94 472 Q106 468 104 442 Z" fill="#C9BCAA"></path>
+            <path d="M256 442 Q254 468 266 472 Q278 468 276 442 Z" fill="#D8CCBB"></path>
+            <path d="M248 186 Q220 170 190 182 L198 214 Q224 226 256 238 Z" fill="#3A332C"></path>
+            <path d="M150 330 L210 330 L212 352 L148 352 Z" fill="#7A2526"></path>
+            <path d="M150 640 L176 640 L178 790 L146 790 Z" fill="#221F1C"></path>
+            <path d="M184 640 L210 640 L214 790 L182 790 Z" fill="#2A2622"></path>
+            <path d="M140 790 L180 790 L180 806 L132 806 Z" fill="#141210"></path>
+            <path d="M182 790 L222 790 L230 806 L182 806 Z" fill="#141210"></path>
+          </g>
+          <path d="M120 190 Q150 180 160 186 L150 640 L98 640 L110 330 Z" fill="#000000" opacity="0.28"></path>
+          <path d="M180 360 L180 640" stroke="#121116" stroke-width="2"></path>
+          <path d="M140 420 L134 620 M222 420 L230 620" stroke="#121116" stroke-width="1.6" fill="none"></path>
+          <path d="M180 246 L198 290 L180 334 L162 290 Z" fill="none" stroke="#A82E25" stroke-width="3"></path>
+          <path d="M180 290 L136 268 M180 290 L224 268 M180 290 L142 318 M180 290 L218 318 M180 252 L174 236 M180 252 L186 236" stroke="#A82E25" stroke-width="2"></path>
+          <path d="M89 377 L109 380 M88 394 L108 396 M87 411 L107 413 M251 380 L271 377 M252 396 L272 394 M253 413 L273 411" stroke="#8F8574" stroke-width="1.4"></path>
+          <path d="M250 214 Q226 206 196 198 M252 228 Q228 218 198 210" stroke="#1E1A16" stroke-width="2" fill="none"></path>
+          <path d="M149 662 L176 658 M148 690 L177 684 M147 718 L177 712 M147 746 L178 740 M184 658 L210 662 M183 684 L211 690 M183 712 L212 718 M182 740 L213 746" stroke="#3E3730" stroke-width="2"></path>
+          <path d="M140 84 Q132 30 180 26 Q228 30 220 84 L222 140 Q200 160 180 158 Q160 160 138 140 Z" fill="#2B2A2E" stroke="#060508" stroke-width="2.2" stroke-linejoin="round"></path>
+          <path d="M160 50 Q170 90 166 140 M200 50 Q192 90 196 140 M180 40 L180 140" stroke="#1C1B20" stroke-width="1.6" fill="none"></path>
+          <path d="M172 150 Q164 240 176 330 Q182 380 172 420 Q196 380 192 320 Q186 240 190 150 Z" fill="#232227" stroke="#060508" stroke-width="2.2" stroke-linejoin="round"></path>
+          <rect x="170" y="148" width="22" height="12" fill="#7A2526" stroke="#060508" stroke-width="1.6"></rect>
+        </svg>
+      </div>
+    </div>
+
+    <aside style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+      <span style="font-size: 14px; letter-spacing: 0.2em; color: #D4B06A">ДЕТАЛИ КРУПНО</span>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+        <div style="display: flex; flex-direction: column; gap: 4px"><svg width="100%" height="150" viewBox="138 26 84 92" role="img" aria-label="Лицо крупно" style="background: #121010; border: 1px solid #241F1A"><use href="#heroFront"></use></svg><span style="font-size: 12px; color: #A69A86">Лицо: прядь, шрам, глаза</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><svg width="100%" height="150" viewBox="100 170 80 80" role="img" aria-label="Накидка крупно" style="background: #121010; border: 1px solid #241F1A"><use href="#heroFront"></use></svg><span style="font-size: 12px; color: #A69A86">Накидка, костяные застёжки</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><svg width="100%" height="150" viewBox="140 324 96 104" role="img" aria-label="Пояс крупно" style="background: #121010; border: 1px solid #241F1A"><use href="#heroFront"></use></svg><span style="font-size: 12px; color: #A69A86">Пояс: нефрит, медная тыква</span></div>
+        <div style="display: flex; flex-direction: column; gap: 4px"><svg width="100%" height="150" viewBox="76 346 44 130" role="img" aria-label="Предплечье крупно" style="background: #121010; border: 1px solid #241F1A"><use href="#heroFront"></use></svg><span style="font-size: 12px; color: #A69A86">Бинты с печатями</span></div>
+      </div>
+
+      <span style="font-size: 14px; letter-spacing: 0.2em; color: #D4B06A; margin-top: 6px">МАТЕРИАЛЫ</span>
+      <div style="display: flex; flex-direction: column; gap: 7px; font-size: 14px">
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #2B2A2E; border: 1px solid #3A3128; flex: none"></span><span>Волосы — матовые, синеватый отлив</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #25232A; border: 1px solid #3A3128; flex: none"></span><span>Халат — плотная шерсть, без блеска</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #7A2526; flex: none"></span><span>Подклад и пояс — тёмный шёлк</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #3A332C; flex: none"></span><span>Накидка — грубая кожа, потёртости</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #BDB2A0; flex: none"></span><span>Бинты — лён, печати киноварью</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #5E9C7A; flex: none"></span><span>Жетон — полупрозрачный нефрит</span></div>
+        <div style="display: flex; align-items: center; gap: 10px"><span style="width: 22px; height: 22px; background: #8A6A3A; flex: none"></span><span>Тыква — окисленная медь</span></div>
+      </div>
+
+      <div style="margin-top: auto; padding: 16px; background: #121010; border: 1px solid #3A3128; display: flex; flex-direction: column; gap: 8px; font-size: 14px">
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Рост</span><span>7 голов</span></div>
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Шейдинг</span><span>Cel + контур</span></div>
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Физика</span><span>Хвост, полы, пояс</span></div>
+        <div style="display: flex; justify-content: space-between"><span style="color: #A69A86">Полигоны</span><span>[БЮДЖЕТ]</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":2000,"height":1120}}'>
+class Component extends DCLogic {
+  renderVals() {
+    var off = 30;
+    var marks = [[24, 'МАКУШКА'], [150, 'ПОДБОРОДОК'], [186, 'ПЛЕЧИ'], [341, 'ПОЯС'], [470, 'КИСТИ'], [600, 'КОЛЕНИ'], [806, 'СТОПЫ']];
+    return {
+      guides: marks.map(function (m) { return { top: (m[0] + off) + 'px', labelTop: (m[0] + off - 16) + 'px', label: m[1] }; })
+    };
+  }
+}
+</script>
+</body>
+</html>

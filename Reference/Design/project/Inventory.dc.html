@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>GU World — инвентарь</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oranienbaum&amp;family=IBM+Plex+Sans+Condensed:wght@400;500;600&amp;family=Ma+Shan+Zheng&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0B0A0A}
+a{color:#D4B06A}a:hover{color:#F0D08A}
+</style>
+</helmet>
+<div style="width: 1440px; height: 900px; box-sizing: border-box; background: #0B0A0A; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; display: flex; flex-direction: column">
+
+  <header style="height: 76px; flex: none; display: flex; align-items: center; gap: 28px; padding: 0 40px; background: #121010; border-bottom: 1px solid #3A3128">
+    <div style="display: flex; align-items: center; gap: 12px">
+      <span style="width: 34px; height: 34px; background: #A82E25; color: #F3E6D0; font-family: 'Ma Shan Zheng', serif; font-size: 25px; display: flex; align-items: center; justify-content: center; transform: rotate(-4deg)">囊</span>
+      <span style="font-family: 'Oranienbaum', serif; font-size: 30px">Инвентарь</span>
+    </div>
+    <nav aria-label="Окна персонажа" style="display: flex; gap: 4px; align-self: stretch">
+      <a href="#" aria-current="page" style="display: flex; align-items: center; padding: 0 18px; color: #F0D08A; text-decoration: none; font-size: 15px; letter-spacing: 0.14em; box-shadow: inset 0 -2px 0 #C9A563">СУМКА <span style="margin-left: 8px; font-size: 12px; color: #A69A86">I</span></a>
+      <a href="#" style="display: flex; align-items: center; padding: 0 18px; color: #A69A86; text-decoration: none; font-size: 15px; letter-spacing: 0.14em">АПЕРТУРА <span style="margin-left: 8px; font-size: 12px; color: #6E655A">K</span></a>
+      <a href="#" style="display: flex; align-items: center; padding: 0 18px; color: #A69A86; text-decoration: none; font-size: 15px; letter-spacing: 0.14em">ПЕРСОНАЖ <span style="margin-left: 8px; font-size: 12px; color: #6E655A">C</span></a>
+      <a href="#" style="display: flex; align-items: center; padding: 0 18px; color: #A69A86; text-decoration: none; font-size: 15px; letter-spacing: 0.14em">ОЧИЩЕНИЕ <span style="margin-left: 8px; font-size: 12px; color: #6E655A">R</span></a>
+    </nav>
+    <div style="margin-left: auto; display: flex; align-items: center; gap: 12px">
+      <div style="display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; background: #0B0A0A; border: 1px solid #3A3128">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13-7-13z" fill="#2E5E54"></path><path d="M12 2l7 7H5z" fill="#8FD0BC"></path></svg>
+        <span style="font-size: 17px; font-weight: 600">[1 240]</span>
+        <span style="font-size: 13px; color: #A69A86">камней</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 14px; background: #0B0A0A; border: 1px solid #3A3128">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#B8975A"></circle><rect x="9" y="9" width="6" height="6" fill="#0B0A0A"></rect></svg>
+        <span style="font-size: 17px; font-weight: 600">[86]</span>
+        <span style="font-size: 13px; color: #A69A86">монет</span>
+      </div>
+      <button type="button" aria-label="Закрыть инвентарь" style="width: 44px; height: 44px; margin-left: 8px; padding: 0; border: 1px solid #6A5A44; background: #1A1715; color: #E6DCC8; cursor: pointer; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+    </div>
+  </header>
+
+  <div style="flex: 1; display: flex; gap: 24px; padding: 28px 40px; min-height: 0">
+
+    <section aria-label="Снаряжение" style="width: 340px; flex: none; position: relative; background: #121010; border: 1px solid #3A3128; padding: 20px; display: flex; flex-direction: column; gap: 14px">
+      <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="position: absolute; left: -1px; top: -1px"><path d="M1 23V1h22" stroke="#B8975A" stroke-width="2" fill="none"></path><path d="M6 12V6h6" stroke="#B8975A" stroke-width="1" fill="none"></path></svg>
+      <div style="display: flex; justify-content: space-between; align-items: baseline">
+        <span style="font-family: 'Oranienbaum', serif; font-size: 22px">[ИМЯ ГЕРОЯ]</span>
+        <span style="font-size: 13px; letter-spacing: 0.12em; color: #8FD0BC">РАНГ 1</span>
+      </div>
+      <div style="flex: 1; position: relative; display: flex; justify-content: center; align-items: center">
+        <svg width="150" height="380" viewBox="0 0 360 860" aria-hidden="true" style="opacity: 0.9">
+          <path d="M140 80 Q132 30 180 24 Q232 28 222 84 L226 150 Q214 128 210 100 L150 100 Q146 128 134 152 Z" fill="#2B2A2E"></path>
+          <path d="M150 70 Q150 40 180 38 Q210 40 210 70 L208 112 Q200 140 180 150 Q160 140 152 112 Z" fill="#3A3530"></path>
+          <path d="M120 190 Q150 172 180 176 Q210 172 240 190 L250 330 L262 640 L216 650 L200 360 L160 360 L144 650 L98 640 L110 330 Z" fill="#2A2622"></path>
+          <path d="M112 196 L96 300 L88 360 L84 440 L104 442 L124 300 L130 220 Z M248 196 L264 300 L272 360 L276 442 L256 440 L236 300 L230 220 Z" fill="#2A2622"></path>
+          <path d="M150 650 L176 650 L178 806 L132 806 Z M184 650 L210 650 L230 806 L182 806 Z" fill="#221F1C"></path>
+          <path d="M150 330 L210 330 L212 352 L148 352 Z" fill="#5A1C1D"></path>
+        </svg>
+        <sc-for list="{{ equip }}" as="e" hint-placeholder-count="8">
+          <div style="position: absolute; left: {{ e.x }}; top: {{ e.y }}; display: flex; flex-direction: column; align-items: center; gap: 3px">
+            <div style="width: 60px; height: 60px; background: {{ e.rim }}; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px); padding: 1px; box-sizing: border-box"><div style="width: 100%; height: 100%; background: #0E0D0C; clip-path: polygon(8px 0, calc(100% - 8px) 0, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) 100%, 8px 100%, 0 calc(100% - 8px), 0 8px); display: flex; align-items: center; justify-content: center; color: {{ e.ic }}; font-size: 11px; letter-spacing: 0.06em">
+              <sc-if value="{{ e.filled }}" hint-placeholder-val="{{ false }}"><svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="{{ e.path }}"></path></svg></sc-if>
+            </div></div>
+            <span style="font-size: 11px; color: #A69A86; letter-spacing: 0.08em">{{ e.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; font-size: 13px; text-align: center">
+        <div style="padding: 8px 4px; background: #0B0A0A; border: 1px solid #241F1A; display: flex; flex-direction: column; gap: 2px"><span style="color: #A69A86; font-size: 11px; letter-spacing: 0.1em">ЗАЩИТА</span><span style="font-size: 16px">[—]</span></div>
+        <div style="padding: 8px 4px; background: #0B0A0A; border: 1px solid #241F1A; display: flex; flex-direction: column; gap: 2px"><span style="color: #A69A86; font-size: 11px; letter-spacing: 0.1em">СИЛА</span><span style="font-size: 16px">[—]</span></div>
+        <div style="padding: 8px 4px; background: #0B0A0A; border: 1px solid #241F1A; display: flex; flex-direction: column; gap: 2px"><span style="color: #A69A86; font-size: 11px; letter-spacing: 0.1em">СКОРОСТЬ</span><span style="font-size: 16px">[—]</span></div>
+      </div>
+    </section>
+
+    <section aria-label="Сумка" style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; gap: 6px; flex-wrap: wrap">
+        <sc-for list="{{ cats }}" as="c" hint-placeholder-count="7">
+          <button type="button" aria-pressed="{{ c.on }}" onClick="{{ c.pick }}" style="height: 36px; padding: 0 14px; border: 1px solid {{ c.border }}; background: {{ c.bg }}; color: {{ c.fg }}; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 14px; letter-spacing: 0.08em; cursor: pointer">{{ c.label }}</button>
+        </sc-for>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 8px">
+        <sc-for list="{{ cells }}" as="s" hint-placeholder-count="40">
+          <button type="button" aria-label="{{ s.aria }}" onClick="{{ s.pick }}" style="height: 74px; padding: 0; border: none; background: {{ s.rim }}; clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 10px, 100% calc(100% - 10px), calc(100% - 10px) 100%, 10px 100%, 0 calc(100% - 10px), 0 10px); cursor: pointer; opacity: {{ s.dim }}">
+            <span style="display: flex; align-items: center; justify-content: center; height: calc(100% - {{ s.inset2 }}); margin: {{ s.inset }}; background: {{ s.bg }}; clip-path: polygon(9px 0, calc(100% - 9px) 0, 100% 9px, 100% calc(100% - 9px), calc(100% - 9px) 100%, 9px 100%, 0 calc(100% - 9px), 0 9px); position: relative; color: #E6DCC8">
+              <sc-if value="{{ s.has }}" hint-placeholder-val="{{ false }}"><svg width="34" height="34" viewBox="0 0 32 32" fill="{{ s.fill }}" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="{{ s.path }}"></path></svg></sc-if>
+              <sc-if value="{{ s.hasGlyph }}" hint-placeholder-val="{{ false }}"><span style="position: absolute; left: 6px; top: 3px; font-family: 'Ma Shan Zheng', serif; font-size: 14px; line-height: 1; color: {{ s.rankColor }}">{{ s.glyph }}</span></sc-if>
+              <sc-if value="{{ s.hasCount }}" hint-placeholder-val="{{ false }}"><span style="position: absolute; right: 6px; bottom: 3px; font-size: 13px; font-weight: 600; color: #E6DCC8">{{ s.count }}</span></sc-if>
+              <sc-if value="{{ s.hungry }}" hint-placeholder-val="{{ false }}"><span style="position: absolute; right: 7px; top: 7px; width: 7px; height: 7px; background: #E0A13A; transform: rotate(45deg); display: block"></span></sc-if>
+            </span>
+          </button>
+        </sc-for>
+      </div>
+      <div style="display: flex; align-items: center; gap: 16px; margin-top: auto">
+        <span style="font-size: 13px; letter-spacing: 0.12em; color: #A69A86">ВЕС</span>
+        <div style="flex: 1; height: 8px; background: #1E1A17; border: 1px solid #3A3128; position: relative"><div style="position: absolute; left: 0; top: 0; bottom: 0; width: 57%; background: #B8975A"></div></div>
+        <span style="font-size: 14px">[34 / 60]</span>
+        <button type="button" style="height: 40px; padding: 0 16px; border: 1px solid #6A5A44; background: #1A1715; color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 14px; letter-spacing: 0.1em; cursor: pointer">УПОРЯДОЧИТЬ</button>
+      </div>
+    </section>
+
+    <section aria-label="Описание предмета" style="width: 360px; flex: none; position: relative; background: #121010; border: 1px solid {{ cur.rankColor }}; display: flex; flex-direction: column">
+      <div style="height: 4px; background: {{ cur.rankColor }}"></div>
+      <div style="padding: 22px; display: flex; flex-direction: column; gap: 16px; flex: 1">
+        <div style="display: flex; gap: 16px; align-items: center">
+          <div style="width: 84px; height: 84px; flex: none; background: {{ cur.rankColor }}; clip-path: polygon(12px 0, calc(100% - 12px) 0, 100% 12px, 100% calc(100% - 12px), calc(100% - 12px) 100%, 12px 100%, 0 calc(100% - 12px), 0 12px); padding: 2px; box-sizing: border-box"><div style="width: 100%; height: 100%; background: #0E0D0C; clip-path: polygon(11px 0, calc(100% - 11px) 0, 100% 11px, 100% calc(100% - 11px), calc(100% - 11px) 100%, 11px 100%, 0 calc(100% - 11px), 0 11px); display: flex; align-items: center; justify-content: center; color: #E6DCC8"><svg width="48" height="48" viewBox="0 0 32 32" fill="{{ cur.fill }}" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="{{ cur.path }}"></path></svg></div></div>
+          <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0">
+            <span style="font-family: 'Oranienbaum', serif; font-size: 25px; line-height: 1.1">{{ cur.name }}</span>
+            <span style="font-size: 13px; letter-spacing: 0.12em; color: {{ cur.rankText }}">{{ cur.sub }}</span>
+          </div>
+        </div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #CFC4B0">{{ cur.desc }}</p>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 16px; font-size: 14px; padding: 12px 0; border-top: 1px solid #241F1A; border-bottom: 1px solid #241F1A">
+          <span style="color: #A69A86">Количество</span><span style="text-align: right">{{ cur.count }}</span>
+          <span style="color: #A69A86">Вес</span><span style="text-align: right">[ВЕС]</span>
+          <span style="color: #A69A86">Цена</span><span style="text-align: right">[ЦЕНА]</span>
+        </div>
+        <div style="margin-top: auto; display: flex; flex-direction: column; gap: 10px">
+          <button type="button" style="height: 54px; padding: 0; border: none; background: #C9A563; clip-path: polygon(18px 0, calc(100% - 18px) 0, 100% 50%, calc(100% - 18px) 100%, 18px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 50px; margin: 2px; background: #9C2A23; clip-path: polygon(17px 0, calc(100% - 17px) 0, 100% 50%, calc(100% - 17px) 100%, 17px 100%, 0 50%); box-shadow: inset 0 1px 0 #D8574B, inset 0 -6px 0 #741E19; color: #F7EEDC; font-family: 'IBM Plex Sans Condensed', sans-serif; font-weight: 600; font-size: 16px; letter-spacing: 0.18em">{{ cur.action }}</span></button>
+          <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+            <button type="button" style="height: 46px; padding: 0; border: none; background: #6A5A44; clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 44px; margin: 1px; background: #1A1715; clip-path: polygon(13px 0, calc(100% - 13px) 0, 100% 50%, calc(100% - 13px) 100%, 13px 100%, 0 50%); color: #E6DCC8; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 14px; letter-spacing: 0.14em">РАЗДЕЛИТЬ</span></button>
+            <button type="button" style="height: 46px; padding: 0; border: none; background: #C2413A; clip-path: polygon(14px 0, calc(100% - 14px) 0, 100% 50%, calc(100% - 14px) 100%, 14px 100%, 0 50%); cursor: pointer"><span style="display: flex; align-items: center; justify-content: center; height: 44px; margin: 1px; background: #241010; clip-path: polygon(13px 0, calc(100% - 13px) 0, 100% 50%, calc(100% - 13px) 100%, 13px 100%, 0 50%); color: #F2A497; font-family: 'IBM Plex Sans Condensed', sans-serif; font-size: 14px; letter-spacing: 0.14em">ВЫБРОСИТЬ</span></button>
+          </div>
+          <span style="font-size: 12px; color: #6E655A; text-align: center; letter-spacing: 0.06em">ПКМ по ячейке — быстрое действие · Shift+ЛКМ — переложить</span>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { sel: 'moon', cat: 'all' };
+  }
+  renderVals() {
+    var P = {
+      moth: 'M16 7v19M16 10C11 3 4 5 4 10s7 7 12 4M16 10c5-7 12-5 12 0s-7 7-12 4M16 16c-4 2-8 4-7 9 3 1 6-3 7-6M16 16c4 2 8 4 7 9-3 1-6-3-7-6',
+      beetle: 'M16 9a6 7.5 0 1 0 .01 0zM16 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5M16 10v14M10 13l-5-3M10 17H4M10 21l-5 3M22 13l5-3M22 17h6M22 21l5 3',
+      herb: 'M16 28V12M16 13c-6 0-9-4-9-9 5 0 9 3 9 9zM16 18c5 0 8-3 8-8-5 0-8 3-8 8z',
+      meat: 'M9 19c-2-6 4-13 11-11 6 2 6 10 0 13-4 2-8 2-11-2zM9 19l-4 5M4 23l3 3',
+      wine: 'M12 5h8v4c4 2 6 6 6 10 0 5-4 8-10 8S6 24 6 19c0-4 2-8 6-10zM11 5h10M10 16h12',
+      scroll: 'M8 7h16v19H8zM5 7a3 3 0 0 1 6 0M21 7a3 3 0 0 1 6 0M12 13h8M12 17h8M12 21h5',
+      blade: 'M6 26L21 11l5-5-1 6-15 15zM8 20l4 4',
+      stone: 'M16 3l9 9-9 17-9-17zM7 12h18M16 3v26',
+      pill: 'M16 6a10 10 0 1 0 .01 0zM9 12c3-3 8-4 12-2',
+      bone: 'M9 23L23 9M6 21a3 3 0 1 1 4 4M5 25a3 3 0 0 0 5 1M23 6a3 3 0 0 1 4 4M26 11a3 3 0 0 0 1-5',
+      gourd: 'M16 4a4 4 0 1 0 .01 0zM16 12c-5 0-8 5-8 9a8 8 0 0 0 16 0c0-4-3-9-8-9zM14 4h4',
+      head: 'M8 16c0-6 4-10 8-10s8 4 8 10v4H8zM6 20h20',
+      robe: 'M10 6l6 4 6-4 5 6-3 3v13H8V15l-3-3zM16 10v18',
+      boots: 'M10 5h7v14l8 4v4H8v-8zM10 13h7',
+      belt: 'M4 13h24v6H4zM14 12h4v8h-4z',
+      ring: 'M16 10a8 8 0 1 0 .01 0zM13 6l3-3 3 3'
+    };
+    var R = { 1: ['#4E9A86', '#8FD0BC', '一'], 2: ['#C2524A', '#E68A80', '二'], 3: ['#C9CCD1', '#DADDE1', '三'], 0: ['#6A5A44', '#B8A88E', ''] };
+    var items = [
+      { id: 'moon', cat: 'gu', icon: 'moth', rank: 1, n: 1, name: 'Гу Лунного света', type: 'Гу · атака', desc: 'Метает серповидный клинок лунного света. Нужно кормить.', action: 'ПОМЕСТИТЬ В АПЕРТУРУ' },
+      { id: 'jade', cat: 'gu', icon: 'beetle', rank: 1, n: 1, name: 'Гу Нефритовой кожи', type: 'Гу · защита', desc: 'Покрывает кожу твёрдым нефритовым слоем.', action: 'ПОМЕСТИТЬ В АПЕРТУРУ', hungry: true },
+      { id: 'red', cat: 'gu', icon: 'beetle', rank: 2, n: 1, name: '[НАЗВАНИЕ ГУ]', type: 'Гу · ранг 2', desc: '[Описание из лор-базы]', action: 'ПОМЕСТИТЬ В АПЕРТУРУ' },
+      { id: 'orchid', cat: 'herb', icon: 'herb', rank: 0, n: 12, name: 'Лунная орхидея', type: 'Трава · корм для Гу', desc: 'Лепестки — пища для лунных Гу.', action: 'НАКОРМИТЬ ГУ' },
+      { id: 'meat', cat: 'food', icon: 'meat', rank: 0, n: 4, name: 'Мясо кабана', type: 'Еда', desc: 'Сырое мясо. Лучше приготовить.', action: 'СЪЕСТЬ' },
+      { id: 'wine', cat: 'food', icon: 'wine', rank: 0, n: 2, name: 'Рисовое вино', type: 'Еда · корм для Гу', desc: 'Крепкое вино в глиняном кувшине.', action: 'ВЫПИТЬ' },
+      { id: 'stone', cat: 'mat', icon: 'stone', rank: 0, n: 24, name: 'Первобытный камень', type: 'Валюта · ресурс', desc: 'Содержит первобытную эссенцию. Им платят и восполняют апертуру.', action: 'ПОГЛОТИТЬ' },
+      { id: 'scroll', cat: 'scroll', icon: 'scroll', rank: 0, n: 1, name: '[ТЕХНИКА]', type: 'Свиток', desc: '[Описание техники]', action: 'ИЗУЧИТЬ' },
+      { id: 'blade', cat: 'weapon', icon: 'blade', rank: 0, n: 1, name: 'Короткий нож', type: 'Оружие', desc: 'Простой железный нож.', action: 'ЭКИПИРОВАТЬ' },
+      { id: 'pill', cat: 'food', icon: 'pill', rank: 0, n: 3, name: '[ПИЛЮЛЯ]', type: 'Расходник', desc: '[Эффект пилюли]', action: 'ПРИНЯТЬ' },
+      { id: 'bone', cat: 'mat', icon: 'bone', rank: 0, n: 7, name: 'Кость зверя', type: 'Материал', desc: 'Материал для очищения Гу.', action: 'ОСМОТРЕТЬ' },
+      { id: 'gourd', cat: 'mat', icon: 'gourd', rank: 0, n: 1, name: 'Медная тыква', type: 'Сосуд', desc: 'Сосуд для переноски Гу.', action: 'ОТКРЫТЬ' }
+    ];
+    var self = this;
+    var cat = this.state.cat;
+    var catDefs = [['all', 'Все'], ['gu', 'Гу'], ['weapon', 'Оружие'], ['food', 'Еда'], ['herb', 'Травы'], ['mat', 'Материалы'], ['scroll', 'Свитки']];
+    var cats = catDefs.map(function (c) {
+      var on = c[0] === cat;
+      return { label: c[1], on: on ? 'true' : 'false', bg: on ? '#3A2A1C' : '#121010', fg: on ? '#F0D08A' : '#A69A86', border: on ? '#C9A563' : '#3A3128', pick: function () { self.setState({ cat: c[0] }); } };
+    });
+    var cells = [];
+    for (var i = 0; i < 40; i++) {
+      var it = items[i];
+      if (it) {
+        var r = R[it.rank];
+        var sel = it.id === self.state.sel;
+        var match = cat === 'all' || it.cat === cat;
+        (function (it) {
+          cells.push({ has: true, path: P[it.icon], fill: it.icon === 'stone' ? 'rgba(78,154,134,0.35)' : 'none', rim: sel ? '#F0D08A' : r[0], bg: sel ? '#2A1E12' : '#0E0D0C', inset: sel ? '2px' : '1px', inset2: sel ? '4px' : '2px', hasGlyph: it.rank > 0, glyph: r[2], rankColor: r[0], hasCount: it.n > 1, count: it.n, hungry: !!it.hungry, dim: match ? '1' : '0.25', aria: it.name, pick: function () { self.setState({ sel: it.id }); } });
+        })(it);
+      } else {
+        cells.push({ has: false, rim: '#2A2622', bg: '#0E0D0C', inset: '1px', inset2: '2px', hasGlyph: false, hasCount: false, hungry: false, dim: '1', aria: 'Пустая ячейка', pick: null, path: '', fill: 'none' });
+      }
+    }
+    var c = items.filter(function (x) { return x.id === self.state.sel; })[0] || items[0];
+    var cr = R[c.rank];
+    var cur = { name: c.name, sub: (c.rank > 0 ? 'РАНГ ' + c.rank + ' · ' : '') + c.type.toUpperCase(), desc: c.desc, count: c.n, path: P[c.icon], fill: c.icon === 'stone' ? 'rgba(78,154,134,0.35)' : 'none', rankColor: cr[0], rankText: cr[1], action: c.action };
+    var eq = function (x, y, label, icon, rim) { return { x: x, y: y, label: label, filled: !!icon, path: icon ? P[icon] : '', rim: rim || '#2A2622', ic: '#E6DCC8' }; };
+    var equip = [
+      eq('0px', '10px', 'ГОЛОВА', null), eq('0px', '110px', 'ТЕЛО', 'robe', '#6A5A44'), eq('0px', '210px', 'ПОЯС', 'belt', '#6A5A44'), eq('0px', '310px', 'НОГИ', 'boots', '#6A5A44'),
+      eq('240px', '10px', 'ОРУЖИЕ', 'blade', '#6A5A44'), eq('240px', '110px', 'ТАЛИСМАН', 'ring', '#4E9A86'), eq('240px', '210px', 'ТАЛИСМАН', null), eq('240px', '310px', 'СОСУД', 'gourd', '#6A5A44')
+    ];
+    return { cats: cats, cells: cells, cur: cur, equip: equip };
+  }
+}
+</script>
+</body>
+</html>
