@@ -28,6 +28,8 @@ namespace GuWorld.Editor
         const float Dt = 1f / 60f;
         static int frames;
         static string only;
+        /// <summary>`-debug`: where the body is put after each trouble, and where it ends up.</summary>
+        static bool debug;
 
         public static void Run()
         {
@@ -36,6 +38,8 @@ namespace GuWorld.Editor
             var scene = at >= 0 && at + 1 < args.Length ? args[at + 1] : QingMaoBuilder.ScenePath;
             var o = System.Array.IndexOf(args, "-only");
             only = o >= 0 && o + 1 < args.Length ? args[o + 1] : null;
+            debug = System.Array.IndexOf(args, "-debug") >= 0;
+            SessionState.SetBool(Running + ".debug", debug);
             BuildLog.Begin($"route walk on {scene}");
             EditorSceneManager.OpenScene(scene);
             BuildLog.Mark("scene open");
@@ -54,6 +58,7 @@ namespace GuWorld.Editor
             {
                 only = SessionState.GetString(Running + ".only", "");
                 only = only.Length == 0 ? null : only;
+                debug = SessionState.GetBool(Running + ".debug", false);
                 EditorApplication.update += Tick;
             }
         }
@@ -126,6 +131,8 @@ namespace GuWorld.Editor
             BuildLog.Mark("play mode: walking");
             var routes = new List<(string name, Vector3[] points)>();
             routes.AddRange(plan.Trails.Select(t => ("Тропа: " + t.Name, t.Points)));
+            // And back: a drop one jumps down going one way is a wall going the other.
+            routes.AddRange(plan.Trails.Select(t => ("Тропа обратно: " + t.Name, t.Points.Reverse().ToArray())));
             routes.AddRange(plan.Streets.Where(s => s.Points.Length >= 2).Select(s => ("Улица: " + s.Name, s.Points)));
 
             if (only != null)
@@ -342,11 +349,18 @@ namespace GuWorld.Editor
         {
             index = Mathf.Min(way.Count - 1, index + metres);
             var p = way[index];
+            var before = body.transform.position;
             body.PlaceAt(new Vector3(p.x, Ground(p) + 0.3f, p.z));
+            var placed = body.transform.position;
 
             for (var k = 0; k < 10; k++)
             {
                 body.Tick(Dt, new MotorInput { speedScale = 1 });
+            }
+
+            if (debug)
+            {
+                BuildLog.Write($"  skip: from {before} to way {p} (ground {Ground(p):0.0}) placed {placed}, after 10 steps {body.transform.position}, grounded {body.Grounded}, climbing {body.ClimbProgress}, tree {body.Tree}, sitting {body.Sitting}");
             }
         }
     }

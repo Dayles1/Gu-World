@@ -820,6 +820,13 @@ namespace GuWorld.Editor
                         break;
                     }
 
+                    // At the top of a knoll uphill turns about at every step: the stair ends there, it does not mark time
+                    // (the route walk found hundreds of a stair's points in one spot in Xiong).
+                    if (line.Count > 8 && Vector2.Distance(p, line[line.Count - 8]) < 3)
+                    {
+                        break;
+                    }
+
                     if (inside > 6)
                     {
                         line.Add(p);
