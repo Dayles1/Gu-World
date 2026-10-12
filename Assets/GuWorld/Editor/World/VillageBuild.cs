@@ -126,6 +126,7 @@ namespace GuWorld.Editor
         }
 
         static readonly List<Light> nightLamps = new List<Light>();
+        static int openLogged;
 
         static void BuildVillage(VillagePlan plan, List<WorldPlan.Footprint> footprints, List<WorldPlan.Line> streets, List<WorldPlan.Mark> marks)
         {
@@ -246,6 +247,7 @@ namespace GuWorld.Editor
                     lamp.color = prop.Kind == "brazier" ? new Color(1, 0.62f, 0.32f) : new Color(0.72f, 0.82f, 1);
                     lamp.intensity = 0;
                     lamp.shadows = LightShadows.None;
+                    lamp.gameObject.AddComponent<NightLamp>();
                     nightLamps.Add(lamp);
                     lamps++;
                 }
@@ -329,6 +331,7 @@ namespace GuWorld.Editor
             var size = b.Size;
             var height = 6f;
             var scale = Vector3.one;
+            Design openDesign = null;
 
             switch (b.Kind)
             {
@@ -354,6 +357,7 @@ namespace GuWorld.Editor
                     break;
                 default:
                     var design = DesignFor(clan, b.Kind, b.Size, b.Seed);
+                    openDesign = design.Open ? design : null;
                     near = design.Near;
                     far = design.Far;
                     height = design.Height;
@@ -391,8 +395,55 @@ namespace GuWorld.Editor
             group.SetLODs(lods.ToArray());
             group.RecalculateBounds();
 
-            // Solid: the body (the great buildings' own shapes are their colliders).
-            if (far.HasValue)
+            // Solid: the body (the great buildings' own shapes are their colliders); one that is gone into, its walls.
+            if (far.HasValue && openDesign != null)
+            {
+                var w = size.x / scale.x;
+                var d = size.y / scale.z;
+                var storey = openDesign.Storey;
+                var doorAt = openDesign.DoorAt;
+                const float t = 0.2f;
+                const float gap = 1.4f;
+
+                void Wall(Vector3 centre, Vector3 extent)
+                {
+                    var box = go.AddComponent<BoxCollider>();
+                    box.center = centre;
+                    box.size = extent;
+                }
+
+                Wall(new Vector3(0, storey / 2, -d / 2 + t / 2), new Vector3(w, storey, t));
+                Wall(new Vector3(-w / 2 + t / 2, storey / 2, 0), new Vector3(t, storey, d));
+                Wall(new Vector3(w / 2 - t / 2, storey / 2, 0), new Vector3(t, storey, d));
+                var left = doorAt - gap / 2;
+                var right = doorAt + gap / 2;
+                Wall(new Vector3((-w / 2 + left) / 2, storey / 2, d / 2 - t / 2), new Vector3(left + w / 2, storey, t));
+                Wall(new Vector3((right + w / 2) / 2, storey / 2, d / 2 - t / 2), new Vector3(w / 2 - right, storey, t));
+                Wall(new Vector3(0, storey + 0.1f, 0), new Vector3(w, 0.2f, d));
+
+                if (openLogged++ < 6)
+                {
+                    var doorWorld = go.transform.TransformPoint(new Vector3(doorAt, 0, d / 2 + 1.2f));
+                    BuildLog.Write($"open {b.Kind} at ({b.Centre.x:0.0}, {b.Floor:0.0}, {b.Centre.y:0.0}) yaw {b.Yaw:0} door outside ({doorWorld.x:0.0}, {doorWorld.z:0.0})");
+                }
+
+                // The room lit by its lanterns (the day's light does not get in): a warm light, no shadows.
+                var lightGo = new GameObject("Room Light");
+                lightGo.transform.SetParent(go.transform, false);
+                lightGo.transform.localPosition = new Vector3(0, storey - 0.9f, 0);
+                var roomLight = lightGo.AddComponent<Light>();
+                roomLight.type = LightType.Point;
+                roomLight.color = new Color(1f, 0.74f, 0.46f);
+                roomLight.range = Mathf.Max(w, d) * 1.3f + 1;
+                roomLight.intensity = 5.5f;
+                roomLight.shadows = LightShadows.None;
+
+                if (height > storey + 0.5f)
+                {
+                    Wall(new Vector3(0, storey + (height - storey) / 2, 0), new Vector3(w * 0.85f, height - storey, d * 0.85f));
+                }
+            }
+            else if (far.HasValue)
             {
                 var body = go.AddComponent<BoxCollider>();
                 body.center = new Vector3(0, Mathf.Min(height, 3.2f) / 2 + 0.05f, 0);

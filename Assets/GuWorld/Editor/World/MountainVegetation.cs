@@ -20,14 +20,14 @@ namespace GuWorld.Editor
         static TreePrototype[] treePrototypes;
         static DetailPrototype[] detailPrototypes;
 
-        static Material Bark => Mat("Bark", 0x2e241c, 0.05f, false, BarkTexture(), 0.5f);
+        static Material Bark => Mat("Bark", 0x211a14, 0.05f, false, BarkTexture(), 0.5f);
         static Material PaleBark => Mat("Pale Bark", 0x5a5248, 0.05f, false, BarkTexture(), 0.5f);
-        static Material Needles => Mat("Needles", 0x1c2c20, 0.05f);
-        static Material PineNeedles => Mat("Pine Needles", 0x24341f, 0.05f);
-        static Material Leaves => Mat("Leaves", 0x22341c, 0.08f);
-        static Material DarkLeaves => Mat("Dark Leaves", 0x1a2618, 0.06f);
-        static Material Culm => Mat("Bamboo Culm", 0x4a6a2c, 0.35f);
-        static Material BambooLeaves => Mat("Bamboo Leaves", 0x34522a, 0.1f, true);
+        static Material Needles => Mat("Needles", 0x111c14, 0.05f);
+        static Material PineNeedles => Mat("Pine Needles", 0x162214, 0.05f);
+        static Material Leaves => Mat("Leaves", 0x142112, 0.08f);
+        static Material DarkLeaves => Mat("Dark Leaves", 0x0e180f, 0.06f);
+        static Material Culm => Mat("Bamboo Culm", 0x35501f, 0.35f);
+        static Material BambooLeaves => Mat("Bamboo Leaves", 0x22381b, 0.1f, true);
 
         static TreePrototype[] TreePrototypes()
         {

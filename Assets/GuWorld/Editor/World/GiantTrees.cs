@@ -32,10 +32,10 @@ namespace GuWorld.Editor
 
         static readonly List<(Vector2 at, float radius)> giantSpots = new List<(Vector2, float)>();
 
-        static Material GiantBark => Mat("Giant Bark", 0x1e1a16, 0.04f, false, BarkTexture(), 0.25f);
+        static Material GiantBark => Mat("Giant Bark", 0x16120f, 0.04f, false, BarkTexture(), 0.25f);
         static Material GiantMoss => Mat("Giant Moss", 0x22301c, 0.03f, false, BarkTexture(), 0.3f);
-        static Material GiantLeaves => Mat("Giant Leaves", 0x152218, 0.05f);
-        static Material GiantLeavesDeep => Mat("Giant Leaves Deep", 0x0f1912, 0.04f);
+        static Material GiantLeaves => Mat("Giant Leaves", 0x0d160f, 0.05f);
+        static Material GiantLeavesDeep => Mat("Giant Leaves Deep", 0x08100b, 0.04f);
 
         static float GiantRadius(GiantDesign d, float y) => Mathf.Lerp(d.BaseRadius, d.TopRadius, Mathf.Clamp01(y / d.ClimbHeight)) * Mathf.Lerp(1.35f, 1, Mathf.Clamp01(y / 3));
 

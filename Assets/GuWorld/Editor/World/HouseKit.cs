@@ -28,7 +28,14 @@ namespace GuWorld.Editor
             public float Height;
             public (Mesh mesh, Material[] materials) Near;
             public (Mesh mesh, Material[] materials) Far;
+            /// <summary>One can go in: its ground storey is a room (walls with a door's gap, furniture), its height and the door's place.</summary>
+            public bool Open;
+            public float Storey;
+            public float DoorAt;
         }
+
+        /// <summary>The trades one goes into: a tavern, a teahouse, an inn, a shop, the herbalist, the gambling house.</summary>
+        static bool Enterable(BuildingKind kind) => kind is BuildingKind.Tavern or BuildingKind.Teahouse or BuildingKind.Inn or BuildingKind.Shop or BuildingKind.Herbalist or BuildingKind.Gambling;
 
         static readonly Dictionary<(Clan, BuildingKind), List<Design>> catalogue = new Dictionary<(Clan, BuildingKind), List<Design>>();
 
@@ -82,6 +89,8 @@ namespace GuWorld.Editor
             /// <summary>The open ground level on stakes under the house, m (0: none) — the Gu Yue's way (lore ch. 3).</summary>
             public float Stilts;
             public float Lean, Sag, Twist;
+            /// <summary>A room inside (Enterable): not a solid block with a door painted on.</summary>
+            public bool Inside;
             public int Windows;
             public float DoorAt;
         }
@@ -193,7 +202,8 @@ namespace GuWorld.Editor
             r.Lantern = Chance(clan == Clan.GuYue ? 0.6f : 0.4f) || kind == BuildingKind.Tavern || kind == BuildingKind.Inn;
             r.Corn = Chance(poor ? 0.3f : 0.15f);
             r.Chimney = Chance(0.35f) || kind == BuildingKind.Smithy || kind == BuildingKind.Tavern;
-            r.OpenFront = kind == BuildingKind.Shop || kind == BuildingKind.Herbalist || kind == BuildingKind.Smithy;
+            r.OpenFront = kind == BuildingKind.Smithy;
+            r.Inside = Enterable(kind);
             r.Awning = kind == BuildingKind.Shop || kind == BuildingKind.Tavern || kind == BuildingKind.Teahouse || (kind == BuildingKind.Herbalist);
             r.Flag = kind == BuildingKind.Tavern;
             r.Sign = kind != BuildingKind.Family && kind != BuildingKind.Poor && kind != BuildingKind.Shed;
@@ -219,7 +229,14 @@ namespace GuWorld.Editor
             r.Twist = (R() - 0.5f) * 1.5f * age;
 
             var name = $"{clan} {kind} {index}";
-            var design = new Design { Name = name, Clan = clan, Kind = kind, Size = new Vector2(r.Width, r.Depth) };
+            if (r.Inside)
+            {
+                r.Lean *= 0.3f;
+                r.Twist *= 0.3f;
+                r.DoorAt = Mathf.Clamp(r.DoorAt, -r.Width / 2 + 1.2f, r.Width / 2 - 1.2f);
+            }
+
+            var design = new Design { Name = name, Clan = clan, Kind = kind, Size = new Vector2(r.Width, r.Depth), Open = r.Inside, Storey = r.Storeys > 1 ? 2.6f : 2.8f, DoorAt = r.DoorAt };
             var near = new MeshKit();
 
             if (r.Stilts > 0)
@@ -304,6 +321,171 @@ namespace GuWorld.Editor
             kit.Box(DarkWood, new Vector3(r.DoorAt, h + 0.85f, front + 0.9f), new Vector3(1.3f, 0.06f, 0.06f));
         }
 
+        /// <summary>
+        /// A ground storey one goes into: four walls with a door's gap (its leaves swung open), a plank floor, the
+        /// ceiling, warm lanterns hanging, and what the trade has — tables and stools and wine jars for a tavern, an inn
+        /// or a teahouse; a counter and shelves of jars and boxes for a shop or the herbalist; tables with dice for
+        /// the gambling house.
+        /// </summary>
+        static void Room(MeshKit kit, Recipe r, BuildingKind kind, float w, float d, float storey)
+        {
+            const float t = 0.18f;
+            const float door = 1.4f;
+            const float doorHigh = 2.2f;
+            var front = d / 2 - t / 2;
+            var random = new System.Random((int)(w * 100 + d * 37) + (int)kind);
+            float R() => (float)random.NextDouble();
+
+            // Walls: back, sides, and the front either side of the door and over it.
+            kit.Box(r.Wall, new Vector3(0, storey / 2, -d / 2 + t / 2), new Vector3(w, storey, t));
+            kit.Box(r.Wall, new Vector3(-w / 2 + t / 2, storey / 2, 0), new Vector3(t, storey, d));
+            kit.Box(r.Wall, new Vector3(w / 2 - t / 2, storey / 2, 0), new Vector3(t, storey, d));
+            var left = r.DoorAt - door / 2;
+            var right = r.DoorAt + door / 2;
+            kit.Box(r.Wall, new Vector3((-w / 2 + left) / 2, storey / 2, front), new Vector3(left + w / 2, storey, t));
+            kit.Box(r.Wall, new Vector3((right + w / 2) / 2, storey / 2, front), new Vector3(w / 2 - right, storey, t));
+            kit.Box(r.Wall, new Vector3(r.DoorAt, (doorHigh + storey) / 2, front), new Vector3(door, storey - doorHigh, t));
+            kit.Box(r.Frame, new Vector3(r.DoorAt, doorHigh + 0.07f, front + 0.06f), new Vector3(door + 0.25f, 0.14f, 0.12f));
+            // The leaves swung in against the wall.
+            kit.Box(DarkWood, new Vector3(left + 0.06f, 1.05f, front - 0.4f), new Vector3(0.05f, 2.1f, 0.7f));
+            kit.Box(DarkWood, new Vector3(right - 0.06f, 1.05f, front - 0.4f), new Vector3(0.05f, 2.1f, 0.7f));
+            // Paper windows either side, lit from within.
+            kit.Box(Paper, new Vector3((-w / 2 + left) / 2, 1.55f, front + 0.1f), new Vector3(Mathf.Min(1.1f, (left + w / 2) * 0.6f), 0.7f, 0.03f));
+            kit.Box(Paper, new Vector3((right + w / 2) / 2, 1.55f, front + 0.1f), new Vector3(Mathf.Min(1.1f, (w / 2 - right) * 0.6f), 0.7f, 0.03f));
+            // Floor and ceiling.
+            kit.Box(Wood, new Vector3(0, 0.02f, 0), new Vector3(w - 2 * t, 0.04f, d - 2 * t));
+            kit.Box(DarkWood, new Vector3(0, storey - 0.06f, 0), new Vector3(w - 2 * t, 0.12f, d - 2 * t));
+
+            for (var x = -w / 2 + 0.8f; x < w / 2 - 0.5f; x += 1.6f)
+            {
+                kit.Box(DarkWood, new Vector3(x, storey - 0.2f, 0), new Vector3(0.12f, 0.16f, d - 2 * t));
+            }
+
+            // Lanterns from the beams.
+            foreach (var x in new[] { -w / 4, w / 4 })
+            {
+                kit.Box(DarkWood, new Vector3(x, storey - 0.45f, 0), new Vector3(0.02f, 0.5f, 0.02f));
+                kit.Box(WarmLantern, new Vector3(x, storey - 0.85f, 0), new Vector3(0.32f, 0.42f, 0.32f));
+            }
+
+            var inner = new Vector2(w - 2 * t - 0.3f, d - 2 * t - 0.3f);
+
+            void Table(Vector3 at, float size)
+            {
+                kit.Box(Wood, at + new Vector3(0, 0.74f, 0), new Vector3(size, 0.06f, size * 0.8f));
+
+                foreach (var (x, z) in new[] { (-1, -1), (1, -1), (-1, 1), (1, 1) })
+                {
+                    kit.Box(DarkWood, at + new Vector3(x * (size / 2 - 0.08f), 0.37f, z * (size * 0.4f - 0.08f)), new Vector3(0.07f, 0.74f, 0.07f));
+                }
+            }
+
+            void Stool(Vector3 at)
+            {
+                kit.Box(Wood, at + new Vector3(0, 0.44f, 0), new Vector3(0.36f, 0.06f, 0.36f));
+                kit.Box(DarkWood, at + new Vector3(0, 0.21f, 0), new Vector3(0.22f, 0.42f, 0.22f));
+            }
+
+            void Jar(Vector3 at, float high)
+            {
+                kit.Cylinder(R() < 0.5f ? Clay : Glaze, at, at + Vector3.up * high, high * 0.32f, high * 0.22f, 7);
+            }
+
+            void Shelves(float z, float from, float to)
+            {
+                for (var level = 0; level < 3; level++)
+                {
+                    var y = 0.5f + level * 0.6f;
+                    kit.Box(DarkWood, new Vector3((from + to) / 2, y, z), new Vector3(to - from, 0.04f, 0.35f));
+
+                    for (var x = from + 0.2f; x < to - 0.15f; x += 0.3f + R() * 0.2f)
+                    {
+                        if (R() < 0.5f)
+                        {
+                            Jar(new Vector3(x, y + 0.02f, z), 0.18f + R() * 0.14f);
+                        }
+                        else
+                        {
+                            kit.Box(R() < 0.5f ? Wood : Straw, new Vector3(x, y + 0.1f, z), new Vector3(0.2f, 0.18f, 0.22f));
+                        }
+                    }
+                }
+
+                kit.Box(DarkWood, new Vector3(from + 0.02f, 1.05f, z), new Vector3(0.05f, 2.1f, 0.36f));
+                kit.Box(DarkWood, new Vector3(to - 0.02f, 1.05f, z), new Vector3(0.05f, 2.1f, 0.36f));
+            }
+
+            switch (kind)
+            {
+                case BuildingKind.Shop:
+                case BuildingKind.Herbalist:
+                {
+                    // A counter across the room, the keeper's shelves behind it, sacks by the door.
+                    var counterZ = -inner.y / 2 + 1.3f;
+                    kit.Box(Wood, new Vector3(0, 0.5f, counterZ), new Vector3(inner.x * 0.7f, 1.0f, 0.55f));
+                    kit.Box(DarkWood, new Vector3(0, 1.02f, counterZ), new Vector3(inner.x * 0.72f, 0.05f, 0.65f));
+                    Shelves(-inner.y / 2 + 0.2f, -inner.x / 2 + 0.2f, inner.x / 2 - 0.2f);
+
+                    for (var i = 0; i < 3; i++)
+                    {
+                        Jar(new Vector3(-inner.x * 0.25f + i * inner.x * 0.25f, 1.05f, counterZ), 0.22f);
+                    }
+
+                    kit.Box(Straw, new Vector3(-inner.x / 2 + 0.5f, 0.35f, inner.y / 2 - 0.5f), new Vector3(0.5f, 0.7f, 0.4f));
+                    kit.Box(Straw, new Vector3(-inner.x / 2 + 0.6f, 0.3f, inner.y / 2 - 1.1f), new Vector3(0.45f, 0.6f, 0.4f));
+                    break;
+                }
+                case BuildingKind.Gambling:
+                {
+                    for (var i = 0; i < 2; i++)
+                    {
+                        var at = new Vector3((i - 0.5f) * inner.x * 0.5f, 0, -0.2f);
+                        Table(at, 1.3f);
+
+                        for (var k = 0; k < 3; k++)
+                        {
+                            kit.Box(Glow(Mat("Dice", 0xe8e0d0, 0.2f)), at + new Vector3(-0.2f + k * 0.18f, 0.8f, 0.05f * k), Vector3.one * 0.05f);
+                        }
+
+                        Stool(at + new Vector3(-0.8f, 0, 0));
+                        Stool(at + new Vector3(0.8f, 0, 0));
+                    }
+
+                    Shelves(-inner.y / 2 + 0.2f, -inner.x / 2 + 0.3f, 0);
+                    break;
+                }
+                default:
+                {
+                    // A tavern, a teahouse, an inn: a counter along the back with jars, tables and stools in the room.
+                    kit.Box(Wood, new Vector3(inner.x * 0.15f, 0.55f, -inner.y / 2 + 0.7f), new Vector3(inner.x * 0.6f, 1.1f, 0.5f));
+                    kit.Box(DarkWood, new Vector3(inner.x * 0.15f, 1.12f, -inner.y / 2 + 0.7f), new Vector3(inner.x * 0.62f, 0.05f, 0.6f));
+
+                    for (var x = -inner.x / 2 + 0.4f; x < -inner.x * 0.18f; x += 0.55f)
+                    {
+                        Jar(new Vector3(x, 0, -inner.y / 2 + 0.35f), 0.7f + R() * 0.2f);
+                    }
+
+                    var tables = Mathf.Max(1, Mathf.FloorToInt(inner.x / 2.4f));
+
+                    for (var i = 0; i < tables; i++)
+                    {
+                        var at = new Vector3(-inner.x / 2 + (i + 0.5f) * inner.x / tables, 0, inner.y * 0.1f);
+                        Table(at, 1.0f);
+                        Stool(at + new Vector3(0, 0, -0.7f));
+                        Stool(at + new Vector3(0, 0, 0.7f));
+
+                        if (R() < 0.7f)
+                        {
+                            Jar(at + new Vector3(0.15f, 0.77f, 0), 0.16f);
+                            kit.Box(Glaze, at + new Vector3(-0.2f, 0.8f, 0.1f), new Vector3(0.08f, 0.06f, 0.08f));
+                        }
+                    }
+
+                    break;
+                }
+            }
+        }
+
         static int CountOf(BuildingKind kind) => kind switch
         {
             BuildingKind.Family => 22,
@@ -373,6 +555,10 @@ namespace GuWorld.Editor
 
                 kit.Box(Wood, new Vector3(0, 0.45f, front - 0.5f), new Vector3(w - 0.6f, 0.9f, 0.6f));
                 kit.Box(DarkWood, new Vector3(0, 0.92f, front - 0.45f), new Vector3(w - 0.4f, 0.06f, 0.75f));
+            }
+            else if (r.Inside)
+            {
+                Room(kit, r, kind, w, d, storey);
             }
             else
             {
@@ -474,6 +660,18 @@ namespace GuWorld.Editor
             else
             {
                 kit.CurvedRoof(r.Roof, RoofUnder, r.Thatched ? r.Roof : Ridge, new Vector3(0, height, 0), rw, rd, rise * (r.Thatched ? 1.25f : 1), r.Overhang, r.Thatched ? 0.1f : r.Curl, roofSpan, r.Thatched ? 0 : 0.34f);
+
+                // A tiled ridge's ends turned up into ornaments (the old "ridge beasts", plain here).
+                if (!r.Thatched)
+                {
+                    foreach (var end in new[] { -1f, 1f })
+                    {
+                        var p = Quaternion.Euler(0, roofSpan, 0) * new Vector3(end * (rw / 2 - 0.15f), 0, 0);
+                        kit.Box(Ridge, new Vector3(p.x, height + rise + 0.3f, p.z), new Vector3(0.2f, 0.55f, 0.32f), roofSpan);
+                        kit.Box(Ridge, new Vector3(p.x * 1.03f, height + rise + 0.65f, p.z * 1.03f), new Vector3(0.12f, 0.28f, 0.24f), roofSpan + 25 * end);
+                    }
+                }
+
                 height += rise;
             }
 
@@ -565,6 +763,22 @@ namespace GuWorld.Editor
                 // A tall board hung by the door, the trade's colour.
                 kit.Box(DarkWood, new Vector3(-w / 2 + 0.45f, 1.7f, front + 0.12f), new Vector3(0.5f, 1.6f, 0.06f));
                 kit.Box(Gold, new Vector3(-w / 2 + 0.45f, 1.7f, front + 0.16f), new Vector3(0.3f, 1.3f, 0.02f));
+            }
+
+            if (r.Inside)
+            {
+                // A trade one goes into: a short cloth over the door's top, a red lantern either side.
+                var curtain = Cloth(kind == BuildingKind.Tavern || kind == BuildingKind.Inn ? "Tavern Curtain" : "Shop Curtain", kind == BuildingKind.Tavern || kind == BuildingKind.Inn ? 0x5a1e18 : 0x1e2c3a);
+                kit.Box(curtain, new Vector3(r.DoorAt - 0.36f, 1.95f, front + 0.13f), new Vector3(0.66f, 0.5f, 0.02f));
+                kit.Box(curtain, new Vector3(r.DoorAt + 0.36f, 1.95f, front + 0.13f), new Vector3(0.66f, 0.5f, 0.02f));
+                var red = Glow(Mat("Red Lantern", 0xa83020, 0.3f));
+
+                foreach (var side in new[] { -1f, 1f })
+                {
+                    var x = r.DoorAt + side * 1.05f;
+                    kit.Box(DarkWood, new Vector3(x, 2.35f, front + 0.3f), new Vector3(0.03f, 0.3f, 0.03f));
+                    kit.Cylinder(red, new Vector3(x, 1.85f, front + 0.3f), new Vector3(x, 2.2f, front + 0.3f), 0.2f, 0.2f, 8);
+                }
             }
 
             if (kind == BuildingKind.Smithy)

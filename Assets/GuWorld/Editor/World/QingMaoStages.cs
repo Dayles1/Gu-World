@@ -596,6 +596,8 @@ namespace GuWorld.Editor
             var scene = EditorSceneManager.GetActiveScene();
             LoadGround();
 
+            var streamed = new List<GameObject>();
+
             foreach (var part in new[] { "Water", "Trails", "Village gu_yue", "Village xiong", "Village bai", "Hamlets", "Giant Trees" })
             {
                 var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PartPath(part));
@@ -607,16 +609,28 @@ namespace GuWorld.Editor
                     continue;
                 }
 
-                PrefabUtility.InstantiatePrefab(prefab, scene);
+                // Unpacked: its things are cut into the streamed squares below (the water and the trails stay whole).
+                var go = (GameObject)PrefabUtility.InstantiatePrefab(prefab, scene);
+                PrefabUtility.UnpackPrefabInstance(go, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
+
+                if (part != "Water" && part != "Trails")
+                {
+                    streamed.Add(go);
+                }
+
                 BuildLog.Mark($"assemble: {part}");
             }
 
             // Meshes only drawn (not any collider's shape) need no copy in memory in the game, besides the one on the
-            // graphics card (on this machine the same memory): marked so. Colliders' meshes stay readable.
+            // graphics card (on this machine the same memory): marked so, once the squares are cut (their stand-ins
+            // are made of them). Colliders' meshes stay readable.
             var solid = new HashSet<Mesh>(Object.FindObjectsByType<MeshCollider>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(c => c.sharedMesh).Where(m => m != null));
+            var drawn = Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(f => f.sharedMesh).Where(m => m != null).Distinct().ToList();
+            var streamer = CutIntoChunks(streamed);
+            drawn.AddRange(Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(f => f.sharedMesh).Where(m => m != null));
             var drawnOnly = 0;
 
-            foreach (var mesh in Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(f => f.sharedMesh).Where(m => m != null).Distinct())
+            foreach (var mesh in drawn.Where(m => m != null).Distinct())
             {
                 if (solid.Contains(mesh) || !AssetDatabase.Contains(mesh) || !mesh.isReadable)
                 {
@@ -632,9 +646,8 @@ namespace GuWorld.Editor
             AssetDatabase.SaveAssets();
             BuildLog.Mark($"assemble: {drawnOnly} meshes marked drawn-only (not readable in the game), {solid.Count} kept for colliders");
 
-            // The lamps lit at night are the villages' own.
+            // The lamps lit at night come and go with their squares (they make themselves known: NightLamp).
             nightLamps.Clear();
-            nightLamps.AddRange(Object.FindObjectsByType<Light>(FindObjectsInactive.Include, FindObjectsSortMode.None).Where(l => l.name == "Lamp"));
 
             BuildSurroundings();
             BuildAtmosphere();

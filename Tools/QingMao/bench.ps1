@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
   Times the built game in a few set-ups, one after another (play.ps1 each), and gathers the results.
 
@@ -23,7 +23,7 @@ foreach ($run in $Runs.Split(";")) {
     $shot = Join-Path $Out "$name.png"
     Remove-Item "$shot.txt" -ErrorAction SilentlyContinue
     $view = if ($View) { "-view $View -ground" } else { "" }
-    & (Join-Path $PSScriptRoot "play.ps1") -Arguments "-screenshot `"$shot`" $view -time 10 -weather fair -bench $Frames $more" | Out-Null
+    & (Join-Path $PSScriptRoot "play.ps1") -Arguments "-screenshot `"$shot`" $view -time 0.45 -weather clear -weather fair -bench $Frames $more" | Out-Null
     $result = if (Test-Path "$shot.txt") { (Get-Content "$shot.txt") -join " | " } else { "no result" }
     $peak = (Get-Content (Join-Path $project "Logs\QingMaoBuild\play.log") -Tail 1)
     $line = "$name ($more): $result || $peak"

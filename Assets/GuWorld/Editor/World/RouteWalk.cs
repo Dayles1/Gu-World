@@ -224,6 +224,7 @@ namespace GuWorld.Editor
             }
 
             var start = way[0];
+            Stream(new Vector3(start.x, 0, start.z));
             body.PlaceAt(new Vector3(start.x, Ground(start) + 0.3f, start.z));
 
             for (var k = 0; k < 20; k++)
@@ -299,6 +300,13 @@ namespace GuWorld.Editor
                 }
 
                 jumpWait -= Dt;
+
+                // The world's squares round the body, loaded as it goes (the whole walk is one frame: the streamer cannot).
+                if ((body.transform.position - streamedAt).sqrMagnitude > 60 * 60)
+                {
+                    Stream(body.transform.position);
+                }
+
                 body.Tick(Dt, new MotorInput { moveX = dir.x, moveZ = dir.z, sprint = true, speedScale = 1, jump = jump });
                 time += Dt;
 
@@ -344,11 +352,32 @@ namespace GuWorld.Editor
             return (length, time);
         }
 
+        static Vector3 streamedAt = new Vector3(float.MaxValue, 0, 0);
+        static int streams;
+
+        static void Stream(Vector3 at)
+        {
+            streamedAt = at;
+
+            if (ChunkStreamer.Current != null)
+            {
+                ChunkStreamer.Current.LoadNowAround(at);
+                UnityEngine.Physics.SyncTransforms();
+
+                // What the squares left behind used, let go now and then (the walk crosses the whole mountain).
+                if (++streams % 25 == 0)
+                {
+                    EditorUtility.UnloadUnusedAssetsImmediate();
+                }
+            }
+        }
+
         /// <summary>Puts the body a few metres further along the way (after a trouble, to test the rest).</summary>
         static void Skip(HeroMotor body, List<Vector3> way, ref int index, int metres)
         {
             index = Mathf.Min(way.Count - 1, index + metres);
             var p = way[index];
+            Stream(new Vector3(p.x, 0, p.z));
             var before = body.transform.position;
             body.PlaceAt(new Vector3(p.x, Ground(p) + 0.3f, p.z));
             var placed = body.transform.position;

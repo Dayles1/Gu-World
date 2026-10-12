@@ -145,6 +145,7 @@ namespace GuWorld
                 {
                     case "trees":
                         foreach (var t in Terrain.activeTerrains) t.treeDistance = 0;
+                        Render.TreeInstancer.Distance = 0;
                         break;
                     case "grass":
                         foreach (var t in Terrain.activeTerrains) t.detailObjectDistance = 0;
@@ -338,6 +339,12 @@ namespace GuWorld
             {
                 qualityBefore = GameSettings.Quality;
                 GameSettings.Quality = quality;
+            }
+
+            // The terrains' trees drawn in bulk (before the graphics level is applied: it sets how far).
+            if (Render.TreeInstancer.Current == null)
+            {
+                gameObject.AddComponent<Render.TreeInstancer>();
             }
 
             GameSettings.Apply(view);

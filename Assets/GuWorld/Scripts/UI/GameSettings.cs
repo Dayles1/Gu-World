@@ -57,7 +57,7 @@ namespace GuWorld.UI
         /// </summary>
         public static int Quality
         {
-            get => Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 2), 0, Levels.Length - 1);
+            get => Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 1), 0, Levels.Length - 1);
             set => PlayerPrefs.SetInt(QualityKey, Mathf.Clamp(value, 0, Levels.Length - 1));
         }
 
@@ -89,10 +89,10 @@ namespace GuWorld.UI
 
         public static readonly Level[] Levels =
         {
-            new Level { Name = "Низкое", Scale = 0.75f, Msaa = 1, Shadows = 35, Cascades = 1, LodBias = 0.6f, TerrainError = 8, GrassDistance = 35, GrassDensity = 0.3f, TreeDetail = 120, TreeDistance = 450, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false },
-            new Level { Name = "Среднее", Scale = 0.9f, Msaa = 1, Shadows = 50, Cascades = 2, LodBias = 0.9f, TerrainError = 5, GrassDistance = 55, GrassDensity = 0.5f, TreeDetail = 200, TreeDistance = 800, Insects = 0.6f, PeopleSight = 130, PeoplePose = 60, Distance = 0.75f, Bloom = true },
-            new Level { Name = "Высокое", Scale = 1, Msaa = 2, Shadows = 70, Cascades = 3, LodBias = 1.2f, TerrainError = 3, GrassDistance = 80, GrassDensity = 0.75f, TreeDetail = 320, TreeDistance = 1400, Insects = 1, PeopleSight = 170, PeoplePose = 75, Distance = 1, Bloom = true },
-            new Level { Name = "Ультра", Scale = 1, Msaa = 4, Shadows = 120, Cascades = 4, LodBias = 1.8f, TerrainError = 1.5f, GrassDistance = 120, GrassDensity = 1, TreeDetail = 480, TreeDistance = 2400, Insects = 1.5f, PeopleSight = 230, PeoplePose = 110, Distance = 1.25f, Bloom = true },
+            new Level { Name = "Низкое", Scale = 0.75f, Msaa = 1, Shadows = 35, Cascades = 1, LodBias = 0.6f, TerrainError = 8, GrassDistance = 35, GrassDensity = 0.3f, TreeDetail = 120, TreeDistance = 300, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false },
+            new Level { Name = "Среднее", Scale = 0.9f, Msaa = 1, Shadows = 50, Cascades = 2, LodBias = 0.9f, TerrainError = 5, GrassDistance = 55, GrassDensity = 0.5f, TreeDetail = 200, TreeDistance = 500, Insects = 0.6f, PeopleSight = 130, PeoplePose = 60, Distance = 0.75f, Bloom = true },
+            new Level { Name = "Высокое", Scale = 1, Msaa = 2, Shadows = 70, Cascades = 3, LodBias = 1.2f, TerrainError = 3, GrassDistance = 80, GrassDensity = 0.75f, TreeDetail = 320, TreeDistance = 800, Insects = 1, PeopleSight = 170, PeoplePose = 75, Distance = 1, Bloom = true },
+            new Level { Name = "Ультра", Scale = 1, Msaa = 4, Shadows = 120, Cascades = 4, LodBias = 1.8f, TerrainError = 1.5f, GrassDistance = 120, GrassDensity = 1, TreeDetail = 480, TreeDistance = 1400, Insects = 1.5f, PeopleSight = 230, PeoplePose = 110, Distance = 1.25f, Bloom = true },
         };
 
         /// <summary>The level in effect.</summary>
@@ -181,7 +181,9 @@ namespace GuWorld.UI
                 terrain.detailObjectDistance = level.GrassDistance;
                 terrain.detailObjectDensity = level.GrassDensity;
                 terrain.treeBillboardDistance = level.TreeDetail;
-                terrain.treeDistance = level.TreeDistance;
+                // The trees are drawn by the TreeInstancer (in bulk); the terrains keep them only to be solid.
+                Render.TreeInstancer.Distance = level.TreeDistance;
+                terrain.treeDistance = Render.TreeInstancer.Current != null ? 0 : level.TreeDistance;
                 terrain.treeCrossFadeLength = 30;
             }
 

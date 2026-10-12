@@ -49,6 +49,11 @@ namespace GuWorld.Render
         const int MaxVertices = 400000;
 
         readonly Collider[] found = new Collider[8192];
+        float nextRefresh;
+        Vector3 lastCentre = new Vector3(float.NaN, 0, 0);
+        /// <summary>The terrains' trees (their trunks are solid inside the terrain, where no overlap finds them): where each stands and its trunk.</summary>
+        static readonly System.Collections.Generic.Dictionary<TerrainData, System.Collections.Generic.List<(Vector3 at, float radius, float height)>> treeTrunks =
+            new System.Collections.Generic.Dictionary<TerrainData, System.Collections.Generic.List<(Vector3, float, float)>>();
         readonly List<Vector3> vertices = new List<Vector3>();
         readonly List<Color> colours = new List<Color>();
         readonly List<int> indices = new List<int>();
@@ -176,10 +181,19 @@ namespace GuWorld.Render
                 return;
             }
 
+            // Drawn again a few times a second, or when the watcher has moved: not every frame (that cost frames).
+            var centre = Around.position;
+
+            if (Time.unscaledTime < nextRefresh && !float.IsNaN(lastCentre.x) && (centre - lastCentre).sqrMagnitude < 2.25f)
+            {
+                return;
+            }
+
+            nextRefresh = Time.unscaledTime + 0.15f;
+            lastCentre = centre;
             vertices.Clear();
             colours.Clear();
             indices.Clear();
-            var centre = Around.position;
             var count = UnityEngine.Physics.OverlapSphereNonAlloc(centre, Radius, found, ~0, QueryTriggerInteraction.Collide);
 
             for (var i = 0; i < count && vertices.Count < MaxVertices; i++)
@@ -213,11 +227,79 @@ namespace GuWorld.Render
                 }
             }
 
+            TerrainTrees(centre);
             mesh.Clear();
             mesh.SetVertices(vertices);
             mesh.SetColors(colours);
             mesh.SetIndices(indices, MeshTopology.Lines, 0, false);
             mesh.bounds = new Bounds(centre, Vector3.one * (Radius * 2 + 50));
+        }
+
+        /// <summary>The trunks of the terrains' trees near the watcher, as upright capsules in the trees' colour.</summary>
+        void TerrainTrees(Vector3 centre)
+        {
+            var colour = System.Array.Find(Legend, e => e.kind == HitboxKind.Tree).colour;
+
+            foreach (var terrain in Terrain.activeTerrains)
+            {
+                var data = terrain.terrainData;
+                var corner = terrain.GetPosition();
+                var size = data.size;
+
+                if (centre.x < corner.x - Radius || centre.x > corner.x + size.x + Radius || centre.z < corner.z - Radius || centre.z > corner.z + size.z + Radius)
+                {
+                    continue;
+                }
+
+                if (!treeTrunks.TryGetValue(data, out var trunks))
+                {
+                    trunks = new System.Collections.Generic.List<(Vector3, float, float)>();
+                    var prototypes = data.treePrototypes;
+
+                    foreach (var tree in data.treeInstances)
+                    {
+                        var prefab = tree.prototypeIndex < prototypes.Length ? prototypes[tree.prototypeIndex].prefab : null;
+                        var capsule = prefab != null ? prefab.GetComponent<CapsuleCollider>() : null;
+
+                        if (capsule != null)
+                        {
+                            trunks.Add((Vector3.Scale(tree.position, size), capsule.radius * tree.widthScale, capsule.height * tree.heightScale));
+                        }
+                    }
+
+                    treeTrunks[data] = trunks;
+                }
+
+                foreach (var (local, radius, height) in trunks)
+                {
+                    var at = corner + local;
+
+                    if ((at - centre).sqrMagnitude < Radius * Radius && vertices.Count < MaxVertices)
+                    {
+                        Upright(at, radius, height, colour);
+                    }
+                }
+            }
+        }
+
+        void Upright(Vector3 foot, float radius, float height, Color colour)
+        {
+            const int sides = 8;
+
+            for (var i = 0; i < sides; i++)
+            {
+                var a = 2 * Mathf.PI * i / sides;
+                var b = 2 * Mathf.PI * (i + 1) / sides;
+                var pa = new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * radius;
+                var pb = new Vector3(Mathf.Cos(b), 0, Mathf.Sin(b)) * radius;
+                Line(foot + pa, foot + pb, colour);
+                Line(foot + pa + Vector3.up * height, foot + pb + Vector3.up * height, colour);
+
+                if (i % 2 == 0)
+                {
+                    Line(foot + pa, foot + pa + Vector3.up * height, colour);
+                }
+            }
         }
 
         void Line(Vector3 a, Vector3 b, Color colour)

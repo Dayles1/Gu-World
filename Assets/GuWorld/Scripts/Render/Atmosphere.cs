@@ -442,6 +442,16 @@ namespace GuWorld.Render
                     lamp.enabled = lit > 0.02f;
                 }
             }
+
+            // The lamps of the parts of the world loaded now (they come and go: ChunkStreamer).
+            foreach (var lamp in NightLamp.All)
+            {
+                if (lamp != null)
+                {
+                    lamp.intensity = 2.4f * lit;
+                    lamp.enabled = lit > 0.02f;
+                }
+            }
         }
     }
 }
