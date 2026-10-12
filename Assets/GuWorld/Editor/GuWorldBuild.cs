@@ -44,6 +44,7 @@ namespace GuWorld.Editor
             PlayerSettings.bakeCollisionMeshes = true;
             // The GPU's time per frame, for the timed runs (-bench).
             PlayerSettings.enableFrameTimingStats = true;
+            // Graphics jobs left as Unity sets them (on): forcing them off cost a quarter of the frames, split mode hung once.
 
             // The scenes the project lists (the mountain first, where it exists).
             var scenes = System.Array.ConvertAll(System.Array.FindAll(EditorBuildSettings.scenes, s => s.enabled && File.Exists(s.path)), s => s.path);

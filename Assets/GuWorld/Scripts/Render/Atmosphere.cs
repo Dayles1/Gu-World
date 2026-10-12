@@ -443,13 +443,16 @@ namespace GuWorld.Render
                 }
             }
 
-            // The lamps of the parts of the world loaded now (they come and go: ChunkStreamer).
+            // The lamps of the parts of the world loaded now (they come and go: ChunkStreamer); only those near lit
+            // (every lamp of a village at once costs frames, and a lamp lights only a few metres round it).
+            var near = Camera.main != null ? Camera.main.transform.position : Vector3.zero;
+
             foreach (var lamp in NightLamp.All)
             {
                 if (lamp != null)
                 {
                     lamp.intensity = 2.4f * lit;
-                    lamp.enabled = lit > 0.02f;
+                    lamp.enabled = lit > 0.02f && (lamp.transform.position - near).sqrMagnitude < 70 * 70;
                 }
             }
         }

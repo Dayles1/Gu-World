@@ -437,6 +437,7 @@ namespace GuWorld.Editor
                 roomLight.range = Mathf.Max(w, d) * 1.3f + 1;
                 roomLight.intensity = 5.5f;
                 roomLight.shadows = LightShadows.None;
+                lightGo.AddComponent<RoomLight>();
 
                 if (height > storey + 0.5f)
                 {
