@@ -305,6 +305,9 @@ namespace GuWorld.Editor
             }
 
             var summit = SmoothStep(260, 650, Vector2.Distance(new Vector2(x, z), QingMao.Peak));
+            // The way over the ridge from the peak down to the back mountain's waterfall: no ledges along it (the route
+            // walk could jump down 5 m ledges on the ridge's north face, but not climb back up them).
+            summit *= SmoothStep(800, 1100, QingMao.ToSegment(new Vector2(x, z), QingMao.Peak, QingMao.FallTop));
 
             return SmoothStep(0.58f, 0.74f, Mathf.PerlinNoise(x * 0.0011f + 71, z * 0.0011f + 13)) * SmoothStep(250, 1300, broad) * summit;
         }
