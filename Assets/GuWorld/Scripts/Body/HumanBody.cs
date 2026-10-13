@@ -434,6 +434,9 @@ namespace GuWorld.Body
                 Object.DestroyImmediate(owned);
             }
 
+            // 4. The look: cel shading and an ink outline (Anime), once everything is on.
+            Anime.Apply(instance);
+
             templates[key] = instance;
 
             return instance;
