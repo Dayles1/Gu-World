@@ -73,6 +73,43 @@ namespace GuWorld.Render
             Body?.Update();
         }
 
+        Renderer[] drawn;
+        Material[][] outlinedMaterials;
+        Material[][] plainMaterials;
+        bool outlined = true;
+
+        /// <summary>The body's dark outline drawn (near) or left out (far: there it is a pixel wide and draws the whole body again).</summary>
+        public void SetOutline(bool on)
+        {
+            if (outlined == on)
+            {
+                return;
+            }
+
+            outlined = on;
+
+            if (drawn == null)
+            {
+                drawn = Root.GetComponentsInChildren<Renderer>(true);
+                outlinedMaterials = new Material[drawn.Length][];
+                plainMaterials = new Material[drawn.Length][];
+
+                for (var i = 0; i < drawn.Length; i++)
+                {
+                    outlinedMaterials[i] = drawn[i].sharedMaterials;
+                    plainMaterials[i] = System.Array.ConvertAll(outlinedMaterials[i], Toon.Plain);
+                }
+            }
+
+            for (var i = 0; i < drawn.Length; i++)
+            {
+                if (drawn[i] != null)
+                {
+                    drawn[i].sharedMaterials = on ? outlinedMaterials[i] : plainMaterials[i];
+                }
+            }
+        }
+
         public void SetVisible(bool visible)
         {
             if (Root.gameObject.activeSelf != visible)

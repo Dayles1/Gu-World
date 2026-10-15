@@ -77,9 +77,36 @@ namespace GuWorld.Combat
         static Spec S(BodyPart part, Func<Mannequin, Transform> joint, Shape shape, Vector3 centre, Vector3 size) =>
             new Spec { Part = part, Joint = joint, Shape = shape, Centre = centre, Size = size };
 
+        static int layer = -1;
+
+        /// <summary>
+        /// The parts' own layer ("Body"), which touches no other: blows find the parts by casts
+        /// (Moonblade), never by the physics' trigger events, and two hundred people's parts
+        /// overlapping their own capsules, the ground and the houses cost the physics most of
+        /// its time each step.
+        /// </summary>
+        public static int Layer
+        {
+            get
+            {
+                if (layer < 0)
+                {
+                    layer = Mathf.Max(0, LayerMask.NameToLayer("Body"));
+
+                    for (var other = 0; other < 32 && layer > 0; other++)
+                    {
+                        UnityEngine.Physics.IgnoreLayerCollision(layer, other, true);
+                    }
+                }
+
+                return layer;
+            }
+        }
+
         /// <summary>
         /// Puts the body's parts on a figure's joints, for `owner` to be wounded through.
-        /// The figure's root gets a kinematic body, so the parts move with it as one.
+        /// The figure gets a kinematic body (unless one above it has one already), so the
+        /// parts move with it as one.
         /// </summary>
         public static List<HitZone> Build(Mannequin rig, IStrikable owner)
         {
@@ -90,7 +117,7 @@ namespace GuWorld.Combat
                 return zones;
             }
 
-            var body = rig.Root.GetComponent<Rigidbody>();
+            var body = rig.Root.GetComponentInParent<Rigidbody>();
 
             if (body == null)
             {
@@ -103,6 +130,7 @@ namespace GuWorld.Combat
             foreach (var spec in Specs)
             {
                 var go = new GameObject($"Zone {spec.Part}");
+                go.layer = Layer;
                 go.transform.SetParent(spec.Joint(rig), false);
                 var zone = go.AddComponent<HitZone>();
                 zone.Part = spec.Part;

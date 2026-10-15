@@ -541,6 +541,7 @@ namespace GuWorld.Cultivation
             }
 
             shape.isTrigger = true;
+            go.layer = HitZones.Layer;
             var zone = go.AddComponent<HitZone>();
             zone.Part = part;
             zone.Owner = dummy;

@@ -48,13 +48,15 @@ namespace GuWorld.Editor
 
             // The scenes the project lists (the mountain first, where it exists).
             var scenes = System.Array.ConvertAll(System.Array.FindAll(EditorBuildSettings.scenes, s => s.enabled && File.Exists(s.path)), s => s.path);
-            var folder = Path.Combine("Builds", $"GuWorld-{PlayerSettings.bundleVersion}");
+            // `-development`: a build the profiler can read (Builds/Dev), the game's own build left as it is.
+            var development = System.Array.IndexOf(System.Environment.GetCommandLineArgs(), "-development") >= 0;
+            var folder = development ? Path.Combine("Builds", "Dev") : Path.Combine("Builds", $"GuWorld-{PlayerSettings.bundleVersion}");
             var report = BuildPipeline.BuildPlayer(new BuildPlayerOptions
             {
                 scenes = scenes,
                 locationPathName = Path.Combine(folder, "GuWorld.exe"),
                 target = BuildTarget.StandaloneWindows64,
-                options = BuildOptions.None,
+                options = development ? BuildOptions.Development : BuildOptions.None,
             });
 
             var summary = report.summary;

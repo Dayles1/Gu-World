@@ -13,11 +13,16 @@
 param(
     [string]$Arguments = "",
     [int]$MinFreeMB = 900,
-    [int]$TimeoutSeconds = 240
+    [int]$TimeoutSeconds = 240,
+    # The game to run; empty: the game's own build (not the development one in Builds/Dev).
+    [string]$Game = "",
+    # The window's size.
+    [int]$Width = 1600,
+    [int]$Height = 900
 )
 
 $project = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
-$exe = Get-ChildItem -Path (Join-Path $project "Builds") -Filter GuWorld.exe -Recurse | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+$exe = if ($Game) { Get-Item $Game } else { Get-ChildItem -Path (Join-Path $project "Builds") -Filter GuWorld.exe -Recurse | Where-Object { $_.FullName -notmatch '\\Builds\\Dev\\' } | Sort-Object LastWriteTime -Descending | Select-Object -First 1 }
 $log = Join-Path $project "Logs\QingMaoBuild\play.log"
 New-Item -ItemType Directory -Force (Split-Path $log) | Out-Null
 
@@ -31,7 +36,7 @@ if (-not $exe) { Note "NO BUILD FOUND"; exit 2 }
 if (Get-Process -Name Unity, GuWorld -ErrorAction SilentlyContinue) { Note "NOT STARTED: Unity or the game is running"; exit 2 }
 
 Note "START $($exe.FullName) $Arguments"
-$process = Start-Process -FilePath $exe.FullName -ArgumentList ("-screen-fullscreen 0 -screen-width 1600 -screen-height 900 " + $Arguments) -PassThru
+$process = Start-Process -FilePath $exe.FullName -ArgumentList ("-screen-fullscreen 0 -screen-width $Width -screen-height $Height " + $Arguments) -PassThru
 $null = $process.Handle
 $started = Get-Date
 $peak = 0

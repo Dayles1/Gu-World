@@ -13,7 +13,7 @@
 |---|---|
 | `build.ps1` | Сборка горы по этапам (или другой метод Unity) под сторожем памяти, один Unity за раз |
 | `play.ps1` | Один запуск собранной игры (снимок, замер) под сторожем памяти |
-| `bench.ps1` | Серия замеров кадров в разных настройках, итог в `Logs/QingMaoBuild/bench/summary.txt` |
+| `bench.ps1` | Серия замеров кадров в разных настройках, итог в `Logs/QingMaoBuild/bench/summary.txt`. Ключи `-Width`/`-Height` — размер окна (замеры для ноутбука автора — 1920×1200), `-Game` — другой билд (отладочный в `Builds/Dev`) |
 
 ## Ключи игры для проверок
 
@@ -25,7 +25,11 @@
 - `-weather fair` — погода;
 - `-quality 0…3` — уровень графики на один запуск, ваш сохранённый не меняется;
 - `-bench 240` — замерить 240 кадров; результат пишется в `файл.png.txt`;
-- `-off trees,grass,shadows,msaa,post,people,giant,village,hamlets` — выключить части мира, чтобы найти, что тормозит;
+- `-off trees,grass,shadows,msaa,post,people,terrain,sky,worldstreamer,farstand,trails,water,atmosphere` — выключить части мира, чтобы найти, что тормозит (любое другое слово — корневой объект сцены по имени);
+- `-vsync 0|1` — вертикальная синхронизация на один запуск (для замеров — `0`, иначе кадр округляется до 16.6 / 33.3 / 50 мс);
+- `-grd 0|1` — GPU Resident Drawer выключен или включён;
+- `-profile файл` — только в отладочном билде: записать профиль замеренных кадров в `файл.raw` (разбор — `ProfileReport`);
+- `-force-d3d12` — ключ самого Unity: DirectX 12 вместо 11 (на Iris Xe медленнее, см. tests.md);
 - `-page map|body|bag` — открыть страницу.
 
 ## Методы редактора (`-executeMethod`)
@@ -35,4 +39,5 @@
 - `GuWorld.Editor.RouteWalk.Run` — проходимость: герой идёт по тропам и улицам, отчёт в `Logs/QingMaoBuild/routes.md`.
 - `GuWorld.Editor.MeshReport.Run` — что сколько весит среди мешей горы.
 - `GuWorld.Editor.MountainPreview.Run` — карта высот горы без сборки.
-- `GuWorld.Editor.GuWorldBuild.Windows` — билд игры для Windows.
+- `GuWorld.Editor.GuWorldBuild.Windows` — билд игры для Windows; с ключом `-development` — отладочный билд в `Builds/Dev` (для профайлера).
+- `GuWorld.Editor.ProfileReport.Run -raw файл.raw -out отчёт.txt` — разбор профиля: на что уходит кадр (главный поток, поток рендера, рабочие потоки), счётчики отрисовки.

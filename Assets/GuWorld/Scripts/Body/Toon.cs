@@ -14,6 +14,14 @@ namespace GuWorld.Body
     {
         static Shader shader;
         static readonly Dictionary<(Material, bool), Material> made = new Dictionary<(Material, bool), Material>();
+        /// <summary>Each outlined toon material's source, for its copy without the outline (Plain).</summary>
+        static readonly Dictionary<Material, Material> sourceOf = new Dictionary<Material, Material>();
+
+        /// <summary>
+        /// The same toon material without its outline (the outline is a second pass over the whole body: from
+        /// afar it is a pixel wide and costs as much as the body). Any other material is given back as it is.
+        /// </summary>
+        public static Material Plain(Material toon) => toon != null && sourceOf.TryGetValue(toon, out var source) ? From(source, false) : toon;
 
         public static Shader Shader => shader != null ? shader : shader = Shader.Find("GuWorld/Toon");
 
@@ -94,6 +102,10 @@ namespace GuWorld.Body
             if (!outlined)
             {
                 toon.SetShaderPassEnabled("SRPDefaultUnlit", false);
+            }
+            else
+            {
+                sourceOf[toon] = source;
             }
 
             // The shadows are cold, but for the skin's: warm, rosy (the art direction's).

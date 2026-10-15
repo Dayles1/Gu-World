@@ -131,6 +131,8 @@ namespace GuWorld
         readonly System.Collections.Generic.List<float> frameTimes = new System.Collections.Generic.List<float>();
         readonly System.Collections.Generic.Dictionary<string, (Unity.Profiling.ProfilerRecorder recorder, double sum)> counters = new System.Collections.Generic.Dictionary<string, (Unity.Profiling.ProfilerRecorder, double)>();
         double gpuSum;
+        double cpuSum;
+        double renderSum;
         int qualityBefore = -1;
         /// <summary>`-views "x,y,z,yaw,pitch,file;…"`: more pictures after the first, from these views (above the ground with `-ground`).</summary>
         readonly System.Collections.Generic.List<(Pose pose, float pitch, string file)> moreViews = new System.Collections.Generic.List<(Pose, float, string)>();
@@ -162,6 +164,13 @@ namespace GuWorld
                     case "people":
                         foreach (var v in FindObjectsByType<Villagers>(FindObjectsSortMode.None)) v.gameObject.SetActive(false);
                         break;
+                    case "terrain":
+                        foreach (var t in Terrain.activeTerrains) t.drawHeightmap = false;
+                        break;
+                    case "sky":
+                        RenderSettings.skybox = null;
+                        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+                        break;
                     default:
                         // A part of the mountain by its root's name: "Giant Trees", "Village gu_yue", "Hamlets", "Trails", "Water".
                         foreach (var go in UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects())
@@ -177,11 +186,52 @@ namespace GuWorld
             }
         }
 
+        /// <summary>What the world holds for the timed run's report: renderers (all, seen) by the top object they are under, colliders.</summary>
+        static string Census()
+        {
+            var all = FindObjectsByType<Renderer>(FindObjectsSortMode.None);
+            var seen = new System.Collections.Generic.Dictionary<string, int>();
+            var shown = 0;
+
+            foreach (var renderer in all)
+            {
+                if (!renderer.enabled || !renderer.gameObject.activeInHierarchy || !renderer.isVisible)
+                {
+                    continue;
+                }
+
+                shown++;
+                var top = renderer.transform.root.name;
+                top = top.Length > 28 ? top.Substring(0, 28) : top;
+                // Squares and houses by kind, not each one.
+                top = System.Text.RegularExpressions.Regex.Replace(top, @"[-\d\s(),]+$", "");
+                seen[top] = (seen.TryGetValue(top, out var n) ? n : 0) + 1;
+            }
+
+            var colliders = FindObjectsByType<Collider>(FindObjectsSortMode.None);
+            var bodies = FindObjectsByType<Rigidbody>(FindObjectsSortMode.None).Length;
+
+            return $"renderers {all.Length}, seen {shown} (" + string.Join(", ", seen.OrderByDescending(p => p.Value).Take(14).Select(p => $"{p.Key} {p.Value}")) + ")" +
+                   $"; colliders {colliders.Length} ({colliders.Count(c => c.enabled && c.gameObject.activeInHierarchy)} on), bodies {bodies}";
+        }
+
         void StartCounters()
         {
             foreach (var (category, name) in new[] { (Unity.Profiling.ProfilerCategory.Internal, "Main Thread"), (Unity.Profiling.ProfilerCategory.Render, "Batches Count"), (Unity.Profiling.ProfilerCategory.Render, "SetPass Calls Count"), (Unity.Profiling.ProfilerCategory.Render, "Triangles Count"), (Unity.Profiling.ProfilerCategory.Render, "Shadow Casters Count"), (Unity.Profiling.ProfilerCategory.Render, "Visible Skinned Meshes Count") })
             {
                 counters[name] = (Unity.Profiling.ProfilerRecorder.StartNew(category, name), 0);
+            }
+
+            // `-profile file` (a development build): the timed frames written for the profiler (file.raw).
+            var args = System.Environment.GetCommandLineArgs();
+            var at = System.Array.IndexOf(args, "-profile");
+
+            if (Debug.isDebugBuild && at >= 0 && at + 1 < args.Length)
+            {
+                UnityEngine.Profiling.Profiler.maxUsedMemory = 256 * 1024 * 1024;
+                UnityEngine.Profiling.Profiler.logFile = args[at + 1];
+                UnityEngine.Profiling.Profiler.enableBinaryLog = true;
+                UnityEngine.Profiling.Profiler.enabled = true;
             }
         }
         bool talkAt;
@@ -276,6 +326,12 @@ namespace GuWorld
                 }
             }
 
+            // A timed run goes on behind other windows (Unity stops a game out of focus).
+            if (screenshot != null)
+            {
+                Application.runInBackground = true;
+            }
+
             var restored = screenshot != null ? SaveGame.NewGame(Location) : SaveGame.Load(Location);
             clock = restored.clock;
             saved = restored.look.IsChosen;
@@ -348,6 +404,26 @@ namespace GuWorld
             }
 
             GameSettings.Apply(view);
+
+            // `-vsync 0|1` (with a picture): waiting for the screen or not, for this run.
+            var vsyncAt = System.Array.IndexOf(args, "-vsync");
+
+            if (screenshot != null && vsyncAt >= 0 && vsyncAt + 1 < args.Length && int.TryParse(args[vsyncAt + 1], out var vsync))
+            {
+                QualitySettings.vSyncCount = vsync;
+            }
+
+            // `-grd 0|1` (with a picture): the GPU Resident Drawer off or on, for this run.
+            var grdAt = System.Array.IndexOf(args, "-grd");
+
+            if (screenshot != null && grdAt >= 0 && grdAt + 1 < args.Length && int.TryParse(args[grdAt + 1], out var grd) &&
+                UnityEngine.Rendering.GraphicsSettings.currentRenderPipeline is UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset pipeline)
+            {
+                // (Its type lives in an assembly the game's scripts do not reference.)
+                var mode = pipeline.GetType().GetProperty("gpuResidentDrawerMode");
+                mode?.SetValue(pipeline, System.Enum.ToObject(mode.PropertyType, grd == 0 ? 0 : 1));
+            }
+
             view.GetComponent<Camera>().farClipPlane = FarClip;
             sky.FogStart = FogStart;
             sky.FogEnd = FogEnd;
@@ -1061,6 +1137,15 @@ namespace GuWorld
 
         // ── Each frame ────────────────────────────────────────────────
 
+        // The frame's parts, for the profiler (a development build's timed run, -profile).
+        static readonly Unity.Profiling.ProfilerMarker PeopleMarker = new Unity.Profiling.ProfilerMarker("GuWorld.People");
+        static readonly Unity.Profiling.ProfilerMarker SkyMarker = new Unity.Profiling.ProfilerMarker("GuWorld.Sky");
+        static readonly Unity.Profiling.ProfilerMarker AtmosphereMarker = new Unity.Profiling.ProfilerMarker("GuWorld.Atmosphere");
+        static readonly Unity.Profiling.ProfilerMarker InsectsMarker = new Unity.Profiling.ProfilerMarker("GuWorld.Insects");
+        static readonly Unity.Profiling.ProfilerMarker MapMarker = new Unity.Profiling.ProfilerMarker("GuWorld.Map");
+        static readonly Unity.Profiling.ProfilerMarker HeroMarker = new Unity.Profiling.ProfilerMarker("GuWorld.Cultivator");
+        static readonly Unity.Profiling.ProfilerMarker MenusMarker = new Unity.Profiling.ProfilerMarker("GuWorld.Menus");
+
         void Update()
         {
             if (screenshot != null)
@@ -1139,12 +1224,22 @@ namespace GuWorld
                     if (FrameTimingManager.GetLatestTimings(1, timings) > 0 && timings[0].gpuFrameTime > 0)
                     {
                         gpuSum += timings[0].gpuFrameTime;
+                        // The main thread's own work, without its wait for the screen.
+                        cpuSum += timings[0].cpuMainThreadFrameTime - timings[0].cpuMainThreadPresentWaitTime;
+                        renderSum += timings[0].cpuRenderThreadFrameTime;
                         gpuCount++;
                     }
                 }
 
                 if (screenshotFrame == 150 + benchFrames)
                 {
+                    if (UnityEngine.Profiling.Profiler.enabled)
+                    {
+                        UnityEngine.Profiling.Profiler.enabled = false;
+                        UnityEngine.Profiling.Profiler.enableBinaryLog = false;
+                        UnityEngine.Profiling.Profiler.logFile = "";
+                    }
+
                     ScreenCapture.CaptureScreenshot(screenshot);
 
                     if (frameTimes.Count > 0)
@@ -1155,8 +1250,9 @@ namespace GuWorld
                         System.IO.File.WriteAllText(screenshot + ".txt",
                             $"frames {frameTimes.Count}, average {average:0.0} ms ({1000 / average:0} fps), 95% under {p95:0.0} ms, worst {frameTimes[frameTimes.Count - 1]:0.0} ms, " +
                             $"quality {GameSettings.Quality}, memory {UnityEngine.Profiling.Profiler.GetTotalAllocatedMemoryLong() / (1024 * 1024)} MB" + System.Environment.NewLine +
-                            $"gpu {(gpuCount > 0 ? (gpuSum / gpuCount).ToString("0.0") + " ms" : "n/a")}" +
-                            string.Concat(counters.Select(c => $", {c.Key} {(c.Value.recorder.Valid ? (c.Key == "Main Thread" ? (c.Value.sum / frameTimes.Count / 1e6).ToString("0.0") + " ms" : (c.Value.sum / frameTimes.Count).ToString("0")) : "n/a")}")) + System.Environment.NewLine);
+                            $"gpu {(gpuCount > 0 ? (gpuSum / gpuCount).ToString("0.0") + " ms" : "n/a")}, cpu {(gpuCount > 0 ? (cpuSum / gpuCount).ToString("0.0") + " ms" : "n/a")}, render thread {(gpuCount > 0 ? (renderSum / gpuCount).ToString("0.0") + " ms" : "n/a")}, vsync {QualitySettings.vSyncCount}" +
+                            string.Concat(counters.Select(c => $", {c.Key} {(c.Value.recorder.Valid ? (c.Key == "Main Thread" ? (c.Value.sum / frameTimes.Count / 1e6).ToString("0.0") + " ms" : (c.Value.sum / frameTimes.Count).ToString("0")) : "n/a")}")) + System.Environment.NewLine +
+                            Census() + System.Environment.NewLine);
                     }
                 }
                 else if (screenshotFrame > 150 + benchFrames && screenshotFrame <= 150 + benchFrames + 45 * moreViews.Count)
@@ -1237,16 +1333,22 @@ namespace GuWorld
 
             // The village lives by the clock (the main menu's by its evening).
             var hourOfDay = (forcedTime ?? (mode == Mode.Title ? TitleTimeOfDay : clock.TimeOfDay)) * 24;
-            foreach (var crowd in crowds)
+            using (PeopleMarker.Auto())
             {
-                crowd.Tick(hourOfDay, Time.deltaTime, view.transform.position);
+                foreach (var crowd in crowds)
+                {
+                    crowd.Tick(hourOfDay, Time.deltaTime, view.transform.position);
+                }
             }
 
             HerbBed.Now = clock.Minutes;
 
             if (mode == Mode.Playing && Time.frameCount % 30 == 0)
             {
-                RedrawNearMap();
+                using (MapMarker.Auto())
+                {
+                    RedrawNearMap();
+                }
             }
 
             if (mode == Mode.Playing && screenshot == null)
@@ -1302,7 +1404,7 @@ namespace GuWorld
             {
                 var before = clock.Minutes;
                 clock.Advance(Time.deltaTime);
-                cultivator.Tick(clock.Minutes);
+                using (HeroMarker.Auto()) cultivator.Tick(clock.Minutes);
                 health.Mend(clock.Minutes - before);
                 sinceSave += Time.deltaTime;
 
@@ -1314,16 +1416,16 @@ namespace GuWorld
 
             // The main menu's own light and fair sky; the game's clock and weather everywhere else.
             var time = forcedTime ?? (mode == Mode.Title ? TitleTimeOfDay : clock.TimeOfDay);
-            sky.Apply(time, weather);
-            atmosphere?.Apply(sky, weather, time, view.transform);
-            insects?.Apply(sky, weather, view.transform);
+            using (SkyMarker.Auto()) sky.Apply(time, weather);
+            using (AtmosphereMarker.Auto()) atmosphere?.Apply(sky, weather, time, view.transform);
+            using (InsectsMarker.Auto()) insects?.Apply(sky, weather, view.transform);
 
             if (Time.unscaledDeltaTime > 0)
             {
                 fps = Mathf.Lerp(fps, 1 / Time.unscaledDeltaTime, 0.05f);
             }
 
-            menus.SetFps(fps);
+            using (MenusMarker.Auto()) menus.SetFps(fps);
         }
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body;

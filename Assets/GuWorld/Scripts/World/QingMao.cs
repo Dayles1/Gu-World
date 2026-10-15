@@ -126,27 +126,40 @@ namespace GuWorld.World
         /// <summary>The ground's height under a point: the finest terrain there (a village's own, else the mountain's).</summary>
         public static float GroundAt(Vector3 at)
         {
-            var best = default(Terrain);
+            // The terrains and their squares, looked up once a frame in the game (Terrain.activeTerrains makes a new array each time
+            // it is read); every time in the editor, where the builder makes terrains between two looks.
+            if (!Application.isPlaying || groundFrame != Time.frameCount)
+            {
+                groundFrame = Time.frameCount;
+                grounds.Clear();
+
+                foreach (var terrain in Terrain.activeTerrains)
+                {
+                    if (terrain != null && terrain.terrainData != null)
+                    {
+                        grounds.Add((terrain, terrain.GetPosition(), terrain.terrainData.size));
+                    }
+                }
+            }
+
+            var best = -1;
             var size = float.PositiveInfinity;
 
-            foreach (var terrain in Terrain.activeTerrains)
+            for (var i = 0; i < grounds.Count; i++)
             {
-                if (terrain == null)
-                {
-                    continue;
-                }
-
-                var corner = terrain.GetPosition();
-                var extent = terrain.terrainData.size;
+                var (_, corner, extent) = grounds[i];
 
                 if (at.x >= corner.x && at.x <= corner.x + extent.x && at.z >= corner.z && at.z <= corner.z + extent.z && extent.x < size)
                 {
-                    best = terrain;
+                    best = i;
                     size = extent.x;
                 }
             }
 
-            return best != null ? best.SampleHeight(at) + best.GetPosition().y : at.y;
+            return best >= 0 && grounds[best].terrain != null ? grounds[best].terrain.SampleHeight(at) + grounds[best].corner.y : at.y;
         }
+
+        static int groundFrame = -1;
+        static readonly System.Collections.Generic.List<(Terrain terrain, Vector3 corner, Vector3 extent)> grounds = new System.Collections.Generic.List<(Terrain, Vector3, Vector3)>();
     }
 }

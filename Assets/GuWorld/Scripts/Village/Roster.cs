@@ -51,7 +51,8 @@ namespace GuWorld.Village
         /// <summary>How far from the place one wanders, m.</summary>
         public float radius;
 
-        public string Key => $"{doing}:{place}";
+        /// <summary>The same thing to do at the same place (compared each frame: no string is made for it).</summary>
+        public bool Same(Activity other) => doing == other.doing && place == other.place && radius == other.radius;
 
         public static Activity At(Doing doing, string place = null, float radius = 0) => new Activity { doing = doing, place = place, radius = radius };
     }
@@ -77,7 +78,10 @@ namespace GuWorld.Village
         public bool Generic;
         public string Settlement = "gu_yue";
         /// <summary>A number of their own, to pick their bench or tavern.</summary>
-        public int Seat => Mathf.Abs((Name ?? "").GetHashCode());
+        public int Seat => seat ??= Mathf.Abs((Name ?? "").GetHashCode());
+        int? seat;
+        static readonly string[] Benches = { "bench 0", "bench 1", "bench 2", "bench 3" };
+        static readonly string[] Taverns = { "tavern 0", "tavern 1", "tavern 2" };
 
         /// <summary>
         /// How hard their body is to wound (Combat.Wounds): common folk are soft, the
@@ -132,13 +136,13 @@ namespace GuWorld.Village
                         Activity.At(Doing.Wander, (int)hour % 3 == 0 ? "square" : Post, 70);
                 case Role.Idler:
                     return hour < 6 || hour >= 20 ? Activity.At(Doing.Sleep) : hour < 9 || hour >= 17 ? Activity.At(Doing.Porch) :
-                        Activity.At(Doing.Sit, $"bench {Seat % 4}");
+                        Activity.At(Doing.Sit, Benches[Seat % 4]);
                 case Role.Sweeper:
                     return hour < 6 || hour >= 21 ? Activity.At(Doing.Sleep) : hour < 10 || hour >= 18 ? Activity.At(Doing.Porch) :
                         Activity.At(Doing.Wander, Post, 35);
                 case Role.Drinker:
                     return hour < 8 || hour >= 23 ? Activity.At(Doing.Sleep) : hour < 16 ? Activity.At(Doing.Wander, Post, 45) :
-                        Activity.At(Doing.Sit, $"tavern {Seat % 3}");
+                        Activity.At(Doing.Sit, Taverns[Seat % 3]);
                 case Role.Patrol:
                     return hour < 6 || hour >= 22 ? Activity.At(Doing.Sleep) : Activity.At(Doing.Wander, (int)(hour / 2) % 2 == 0 ? "gate south" : Post, 30);
                 default:

@@ -85,14 +85,23 @@ namespace GuWorld.UI
             /// <summary>How far the camera sees, against the location's own.</summary>
             public float Distance;
             public bool Bloom;
+            /// <summary>Shadows' edges softened (the sun's); `SoftQuality` 1 low … 3 high.</summary>
+            public bool SoftShadows;
+            public int SoftQuality;
+            public int ShadowResolution;
+            /// <summary>Screen-space ambient occlusion (a whole extra pass over the scene for its normals).</summary>
+            public bool Ambient;
+            /// <summary>The ground painted from its eight layers this near, m (two passes of four); farther, from its baked picture (one).</summary>
+            public float GroundDetail;
         }
 
         public static readonly Level[] Levels =
         {
-            new Level { Name = "Низкое", Scale = 0.75f, Msaa = 1, Shadows = 35, Cascades = 1, LodBias = 0.6f, TerrainError = 8, GrassDistance = 35, GrassDensity = 0.3f, TreeDetail = 120, TreeDistance = 300, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false },
-            new Level { Name = "Среднее", Scale = 0.9f, Msaa = 1, Shadows = 50, Cascades = 2, LodBias = 0.9f, TerrainError = 5, GrassDistance = 55, GrassDensity = 0.5f, TreeDetail = 200, TreeDistance = 500, Insects = 0.6f, PeopleSight = 130, PeoplePose = 60, Distance = 0.75f, Bloom = true },
-            new Level { Name = "Высокое", Scale = 1, Msaa = 2, Shadows = 70, Cascades = 3, LodBias = 1.2f, TerrainError = 3, GrassDistance = 80, GrassDensity = 0.75f, TreeDetail = 320, TreeDistance = 800, Insects = 1, PeopleSight = 170, PeoplePose = 75, Distance = 1, Bloom = true },
-            new Level { Name = "Ультра", Scale = 1, Msaa = 4, Shadows = 120, Cascades = 4, LodBias = 1.8f, TerrainError = 1.5f, GrassDistance = 120, GrassDensity = 1, TreeDetail = 480, TreeDistance = 1400, Insects = 1.5f, PeopleSight = 230, PeoplePose = 110, Distance = 1.25f, Bloom = true },
+            // Below 1 the picture is drawn smaller and enlarged by FSR (sharp enough, far cheaper on a laptop's graphics).
+            new Level { Name = "Низкое", Scale = 0.7f, Msaa = 1, Shadows = 30, Cascades = 1, LodBias = 0.6f, TerrainError = 8, GrassDistance = 35, GrassDensity = 0.3f, TreeDetail = 120, TreeDistance = 300, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false, SoftShadows = false, SoftQuality = 1, ShadowResolution = 1024, Ambient = false, GroundDetail = 150 },
+            new Level { Name = "Среднее", Scale = 0.8f, Msaa = 1, Shadows = 45, Cascades = 2, LodBias = 0.9f, TerrainError = 5, GrassDistance = 55, GrassDensity = 0.5f, TreeDetail = 200, TreeDistance = 500, Insects = 0.6f, PeopleSight = 130, PeoplePose = 60, Distance = 0.75f, Bloom = true, SoftShadows = true, SoftQuality = 1, ShadowResolution = 2048, Ambient = false, GroundDetail = 250 },
+            new Level { Name = "Высокое", Scale = 1, Msaa = 2, Shadows = 70, Cascades = 3, LodBias = 1.2f, TerrainError = 3, GrassDistance = 80, GrassDensity = 0.75f, TreeDetail = 320, TreeDistance = 800, Insects = 1, PeopleSight = 170, PeoplePose = 75, Distance = 1, Bloom = true, SoftShadows = true, SoftQuality = 2, ShadowResolution = 2048, Ambient = true, GroundDetail = 450 },
+            new Level { Name = "Ультра", Scale = 1, Msaa = 4, Shadows = 120, Cascades = 4, LodBias = 1.8f, TerrainError = 1.5f, GrassDistance = 120, GrassDensity = 1, TreeDetail = 480, TreeDistance = 1400, Insects = 1.5f, PeopleSight = 230, PeoplePose = 110, Distance = 1.25f, Bloom = true, SoftShadows = true, SoftQuality = 3, ShadowResolution = 4096, Ambient = true, GroundDetail = 900 },
         };
 
         /// <summary>The level in effect.</summary>
@@ -105,6 +114,55 @@ namespace GuWorld.UI
         static int originalMsaa;
         static float originalShadows;
         static int originalCascades;
+        static bool originalHdr;
+        static bool originalDepth;
+        static bool originalOpaque;
+        static int originalShadowResolution;
+        static UpscalingFilterSelection originalUpscaling;
+        static object originalSoftQuality;
+        static bool originalAmbient;
+        static Material noHoles;
+
+        // The asset's soft shadow quality has no public setter.
+        static readonly System.Reflection.FieldInfo SoftQualityField = typeof(UniversalRenderPipelineAsset).GetField("m_SoftShadowQuality", System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.NonPublic);
+
+        /// <summary>The renderers' ambient occlusion (SSAO) features.</summary>
+        static System.Collections.Generic.IEnumerable<ScriptableRendererFeature> AmbientFeatures(UniversalRenderPipelineAsset urp)
+        {
+            foreach (var data in urp.rendererDataList.ToArray())
+            {
+                if (data == null)
+                {
+                    continue;
+                }
+
+                foreach (var feature in data.rendererFeatures)
+                {
+                    if (feature != null && feature.GetType().Name == "ScreenSpaceAmbientOcclusion")
+                    {
+                        yield return feature;
+                    }
+                }
+            }
+        }
+
+        static void SetAmbient(UniversalRenderPipelineAsset urp, bool on)
+        {
+            foreach (var feature in AmbientFeatures(urp))
+            {
+                feature.SetActive(on);
+            }
+        }
+
+        static bool AmbientOn(UniversalRenderPipelineAsset urp)
+        {
+            foreach (var feature in AmbientFeatures(urp))
+            {
+                return feature.isActive;
+            }
+
+            return false;
+        }
 
         /// <summary>Gives the render pipeline its own values back (the editor, on leaving play).</summary>
         public static void Restore()
@@ -115,6 +173,15 @@ namespace GuWorld.UI
                 urp.msaaSampleCount = originalMsaa;
                 urp.shadowDistance = originalShadows;
                 urp.shadowCascadeCount = originalCascades;
+                urp.supportsHDR = originalHdr;
+                urp.supportsCameraDepthTexture = originalDepth;
+                urp.supportsCameraOpaqueTexture = originalOpaque;
+                urp.mainLightShadowmapResolution = originalShadowResolution;
+#pragma warning disable CS0618
+                urp.upscalingFilter = originalUpscaling;
+#pragma warning restore CS0618
+                SoftQualityField?.SetValue(urp, originalSoftQuality);
+                SetAmbient(urp, originalAmbient);
             }
         }
 
@@ -124,9 +191,10 @@ namespace GuWorld.UI
             set => PlayerPrefs.SetInt(FullscreenKey, value ? 1 : 0);
         }
 
+        /// <summary>Waiting for the screen: off unless chosen (a frame a little over 16 ms would wait to 33).</summary>
         public static bool VSync
         {
-            get => PlayerPrefs.GetInt(VSyncKey, 1) == 1;
+            get => PlayerPrefs.GetInt(VSyncKey, 0) == 1;
             set => PlayerPrefs.SetInt(VSyncKey, value ? 1 : 0);
         }
 
@@ -158,6 +226,15 @@ namespace GuWorld.UI
                     originalMsaa = urp.msaaSampleCount;
                     originalShadows = urp.shadowDistance;
                     originalCascades = urp.shadowCascadeCount;
+                    originalHdr = urp.supportsHDR;
+                    originalDepth = urp.supportsCameraDepthTexture;
+                    originalOpaque = urp.supportsCameraOpaqueTexture;
+                    originalShadowResolution = urp.mainLightShadowmapResolution;
+#pragma warning disable CS0618
+                    originalUpscaling = urp.upscalingFilter;
+#pragma warning restore CS0618
+                    originalSoftQuality = SoftQualityField?.GetValue(urp);
+                    originalAmbient = AmbientOn(urp);
                     remembered = true;
                 }
 
@@ -165,9 +242,33 @@ namespace GuWorld.UI
                 urp.msaaSampleCount = Current.Msaa;
                 urp.shadowDistance = Current.Shadows;
                 urp.shadowCascadeCount = Current.Cascades;
+                urp.mainLightShadowmapResolution = Current.ShadowResolution;
+#pragma warning disable CS0618
+                urp.upscalingFilter = Current.Scale < 1 ? UpscalingFilterSelection.FSR : UpscalingFilterSelection.Auto;
+#pragma warning restore CS0618
+                // The bright parts' glow (bloom) needs the wider colours; without it they cost only memory and time.
+                urp.supportsHDR = Current.Bloom;
+                // No shader of the game reads the scene's depth or colour (the ambient occlusion asks for its own).
+                urp.supportsCameraDepthTexture = false;
+                urp.supportsCameraOpaqueTexture = false;
+
+                if (SoftQualityField != null)
+                {
+                    SoftQualityField.SetValue(urp, System.Enum.ToObject(SoftQualityField.FieldType, Current.SoftQuality));
+                }
+
+                SetAmbient(urp, Current.Ambient);
             }
 
             var level = Current;
+
+            foreach (var light in Object.FindObjectsByType<Light>(FindObjectsSortMode.None))
+            {
+                if (light.type == LightType.Directional && light.shadows != LightShadows.None)
+                {
+                    light.shadows = level.SoftShadows ? LightShadows.Soft : LightShadows.Hard;
+                }
+            }
             QualitySettings.lodBias = level.LodBias;
 
             foreach (var terrain in Terrain.activeTerrains)
@@ -178,7 +279,17 @@ namespace GuWorld.UI
                 }
 
                 terrain.heightmapPixelError = level.TerrainError;
+                terrain.basemapDistance = level.GroundDetail;
                 terrain.detailObjectDistance = level.GrassDistance;
+
+                // A village's own ground has no holes (only the mountain's tiles under the villages do): its material
+                // without the alpha test, which costs the early depth test on every pixel of ground drawn.
+                if (terrain.groupingID == 2 && terrain.materialTemplate != null && terrain.materialTemplate.IsKeywordEnabled("_ALPHATEST_ON"))
+                {
+                    noHoles ??= new Material(terrain.materialTemplate) { name = terrain.materialTemplate.name + " (no holes)" };
+                    noHoles.DisableKeyword("_ALPHATEST_ON");
+                    terrain.materialTemplate = noHoles;
+                }
                 terrain.detailObjectDensity = level.GrassDensity;
                 terrain.treeBillboardDistance = level.TreeDetail;
                 // The trees are drawn by the TreeInstancer (in bulk); the terrains keep them only to be solid.

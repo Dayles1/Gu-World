@@ -28,6 +28,13 @@ namespace GuWorld.Village
         /// <summary>Poses are worked out only this near the camera; farther, the figure stands still or is hidden.</summary>
         static float PoseDistance => GuWorld.UI.GameSettings.Current.PeoplePose;
         static float SightDistance => GuWorld.UI.GameSettings.Current.PeopleSight;
+        /// <summary>The body's parts are there for blows only this near the camera (a blade flies 10 m).</summary>
+        const float ZonesNear = 30;
+        /// <summary>Posed every frame this near; farther, every second frame, and past twice this every third.</summary>
+        const float PoseEveryFrame = 14;
+        /// <summary>The body's outline only this near (farther it is a pixel and a second pass over the body).</summary>
+        const float OutlineNear = 22;
+        static readonly Unity.Profiling.ProfilerMarker PoseMarker = new Unity.Profiling.ProfilerMarker("GuWorld.People.Pose");
 
         public VillagerSpec Spec { get; private set; }
         public int Index { get; private set; }
@@ -39,7 +46,8 @@ namespace GuWorld.Village
         CapsuleCollider solid;
         readonly List<Vector3> route = new List<Vector3>();
         Activity activity;
-        string activityKey;
+        /// <summary>Taken up an activity yet (none at first, and after getting up or fleeing: the hour's is begun afresh).</summary>
+        bool busy;
         float wait;
         float yaw;
         float facing;
@@ -51,6 +59,13 @@ namespace GuWorld.Village
         bool seated;
         float fleeing;
         float downFor = -1;
+        bool zonesOn = true;
+        bool outlineOn = true;
+        float poseTime;
+        /// <summary>The way they face as last given to their transform (turning it moves a hundred joints and parts).</summary>
+        float shownFacing = float.NaN;
+        /// <summary>Near enough to be seen: their feet are put on the ground as they walk (farther, the ground is not looked up).</summary>
+        bool grounded = true;
 
         public float Health { get; private set; } = MaxHealth;
         /// <summary>Struck down: lying where they fell.</summary>
@@ -74,11 +89,32 @@ namespace GuWorld.Village
                 renderer.updateWhenOffscreen = false;
             }
 
+            // One kinematic body for the person: their capsule and their parts move as one
+            // (a collider moved without a body is the physics' costliest kind).
+            var body = gameObject.AddComponent<Rigidbody>();
+            body.isKinematic = true;
+            body.useGravity = false;
             solid = gameObject.AddComponent<CapsuleCollider>();
             solid.radius = 0.3f;
             solid.height = spec.Height;
             solid.center = new Vector3(0, spec.Height / 2, 0);
             zones = HitZones.Build(figure.Rig, this);
+        }
+
+        /// <summary>The body's parts there for blows (near) or left out of the physics (far).</summary>
+        void SetZones(bool on)
+        {
+            if (zonesOn == on)
+            {
+                return;
+            }
+
+            zonesOn = on;
+
+            foreach (var zone in zones)
+            {
+                zone.Shape.enabled = on;
+            }
         }
 
         public void TakeStrike(Strike strike, BodyPart? part)
@@ -136,13 +172,23 @@ namespace GuWorld.Village
             figure.Root.localPosition = Vector3.zero;
             route.Clear();
             Place(Home.at);
-            activityKey = null;
+            busy = false;
         }
 
         /// <summary>A step of the day: `hour` 0…24, `dt` seconds; `jumped` when the clock leapt (be where you should be).</summary>
         public void Tick(float hour, float dt, Vector3 camera, bool jumped)
         {
             var distance = Vector3.Distance(camera, transform.position);
+            SetZones(distance < (zonesOn ? ZonesNear + 4 : ZonesNear));
+            var near = distance < SightDistance + 10;
+
+            // Come near again: back on the ground where they are (far off it was not looked up).
+            if (near && !grounded && !Down)
+            {
+                Place(transform.position);
+            }
+
+            grounded = near;
 
             if (Down)
             {
@@ -166,16 +212,16 @@ namespace GuWorld.Village
 
                 if (fleeing <= 0)
                 {
-                    activityKey = null;
+                    busy = false;
                 }
             }
 
             var plan = Spec.Plan(hour);
 
-            if (fleeing <= 0 && plan.Key != activityKey)
+            if (fleeing <= 0 && (!busy || !plan.Same(activity)))
             {
-                var first = activityKey == null;
-                activityKey = plan.Key;
+                var first = !busy;
+                busy = true;
                 activity = plan;
                 Begin(first || jumped);
             }
@@ -209,16 +255,33 @@ namespace GuWorld.Village
                 }
             }
 
-            transform.rotation = Quaternion.Euler(0, facing * Mathf.Rad2Deg, 0);
+            if (!(Mathf.Abs(facing - shownFacing) < 1e-4f))
+            {
+                shownFacing = facing;
+                transform.rotation = Quaternion.Euler(0, facing * Mathf.Rad2Deg, 0);
+            }
 
             var seen = !Asleep && distance < SightDistance;
             figure.SetVisible(seen);
-            solid.enabled = !Asleep;
+            outlineOn = distance < (outlineOn ? OutlineNear + 3 : OutlineNear);
+            figure.SetOutline(outlineOn);
 
-            if (seen && distance < PoseDistance && dt > 0)
+            if (solid.enabled == Asleep)
+            {
+                solid.enabled = !Asleep;
+            }
+
+            // Farther people are posed less often (their own turn, so not all in one frame), for the time since.
+            poseTime += dt;
+            var every = distance < PoseEveryFrame ? 1 : distance < PoseEveryFrame * 2 ? 2 : 3;
+
+            if (seen && distance < PoseDistance && poseTime > 0 && (Time.frameCount + Index) % every == 0)
             {
                 var scale = figure.Scale;
-                figure.Pose(dt, new MotionState
+                var posed = Mathf.Min(poseTime, 0.25f);
+                poseTime = 0;
+                using var marker = PoseMarker.Auto();
+                figure.Pose(posed, new MotionState
                 {
                     speed = speed / scale,
                     walkSpeed = 1.4f / scale,
@@ -316,7 +379,7 @@ namespace GuWorld.Village
 
             if (distance <= Mathf.Max(step, 0.25f))
             {
-                Place(next);
+                Place(next, grounded);
                 route.RemoveAt(0);
 
                 if (route.Count == 0)
@@ -328,7 +391,7 @@ namespace GuWorld.Village
             }
 
             Turn(Mathf.Atan2(to.x, to.z), dt);
-            Place(transform.position + to / distance * step);
+            Place(transform.position + to / distance * step, grounded);
         }
 
         void Arrive()
@@ -355,10 +418,14 @@ namespace GuWorld.Village
             turnRate = dt > 0 ? (facing - before) / dt : 0;
         }
 
-        /// <summary>Puts them at a point on the ground.</summary>
-        void Place(Vector3 at)
+        /// <summary>Puts them at a point on the ground (or, far off, at the point's own height: the ground is looked up again as they come near).</summary>
+        void Place(Vector3 at, bool ground = true)
         {
-            at.y = Ground(at);
+            if (ground)
+            {
+                at.y = Ground(at);
+            }
+
             transform.position = at;
         }
 

@@ -10,7 +10,11 @@ param(
     [string]$Runs = "high|-quality 2",
     [string]$Out = "",
     [string]$View = "",
-    [int]$Frames = 240
+    [int]$Frames = 240,
+    # The game to run (play.ps1 -Game); empty: the game's own build.
+    [string]$Game = "",
+    [int]$Width = 1600,
+    [int]$Height = 900
 )
 
 $project = (Resolve-Path (Join-Path $PSScriptRoot "..\..")).Path
@@ -23,7 +27,7 @@ foreach ($run in $Runs.Split(";")) {
     $shot = Join-Path $Out "$name.png"
     Remove-Item "$shot.txt" -ErrorAction SilentlyContinue
     $view = if ($View) { "-view $View -ground" } else { "" }
-    & (Join-Path $PSScriptRoot "play.ps1") -Arguments "-screenshot `"$shot`" $view -time 0.45 -weather clear -weather fair -bench $Frames $more" | Out-Null
+    & (Join-Path $PSScriptRoot "play.ps1") -Game $Game -Width $Width -Height $Height -Arguments "-screenshot `"$shot`" $view -time 0.45 -weather clear -weather fair -bench $Frames $more" | Out-Null
     $result = if (Test-Path "$shot.txt") { (Get-Content "$shot.txt") -join " | " } else { "no result" }
     $peak = (Get-Content (Join-Path $project "Logs\QingMaoBuild\play.log") -Tail 1)
     $line = "$name ($more): $result || $peak"

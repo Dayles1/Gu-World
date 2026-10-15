@@ -289,11 +289,12 @@ namespace GuWorld.Render
             shape.scale = new Vector3(60, 1, 60);
 
             var velocity = system.velocityOverLifetime;
-            velocity.enabled = true;
+            // One mode for every axis (plain numbers, like the module's other curves), or Unity warns every frame.
             velocity.space = ParticleSystemSimulationSpace.World;
-            velocity.x = new ParticleSystem.MinMaxCurve(-1.2f, -0.6f);
-            velocity.y = new ParticleSystem.MinMaxCurve(-24, -20);
-            velocity.z = new ParticleSystem.MinMaxCurve(-0.4f, 0.4f);
+            velocity.x = new ParticleSystem.MinMaxCurve(-0.9f);
+            velocity.y = new ParticleSystem.MinMaxCurve(-22);
+            velocity.z = new ParticleSystem.MinMaxCurve(0);
+            velocity.enabled = true;
 
             var emission = system.emission;
             emission.rateOverTime = 0;
