@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using GuWorld.Engine;
 using UnityEngine;
 
 namespace GuWorld.Body
@@ -266,9 +267,9 @@ namespace GuWorld.Body
             // The clan's mark: a large one between the shoulder blades, a small one on the
             // wearer's left breast (-X here; the crossing edge is on the right).
             var markY = at["spine_03"].y;
-            var mark = MarkColour(dye);
 
-            Color? Paint(Vector3 p, Vector3 n)
+            // Where on the tunic the trim and the mark go (the mark's place is kept whether or not it is worn).
+            byte Region(Vector3 p, Vector3 n)
             {
                 var line = Neckline(p, n);
                 var neckBand = line - p.y < 0.022f;
@@ -277,23 +278,23 @@ namespace GuWorld.Body
 
                 if (neckBand || crossing || cuff)
                 {
-                    return palette.trim;
+                    return TrimRegion;
                 }
 
-                if (emblem == Emblem.Crescent && Mathf.Abs(p.x) < 0.2f)
+                if (Mathf.Abs(p.x) < 0.2f)
                 {
                     if (n.z < -0.45f && InCrescent(p, new Vector2(0, markY + 0.03f), 0.085f))
                     {
-                        return mark;
+                        return MarkRegion;
                     }
 
                     if (n.z > 0.45f && InCrescent(p, new Vector2(-0.085f, markY + 0.11f), 0.03f))
                     {
-                        return mark;
+                        return MarkRegion;
                     }
                 }
 
-                return null;
+                return ClothRegion;
             }
 
             // The cloth falls from the chest instead of clinging under it: below the
@@ -357,7 +358,7 @@ namespace GuWorld.Body
             }
 
             var tunicPainted = new Material(clothTemplate) { name = "Tunic (painted)" };
-            var painted = Bake(body, tunic, Paint, palette.tunic);
+            var painted = Painted(body, tunic, Region, palette, MarkColour(dye), emblem, dye);
 
             foreach (var name in new[] { "_BaseMap", "_MainTex" })
             {
@@ -557,30 +558,100 @@ namespace GuWorld.Body
                 new[] { faces }, new[] { cloth });
         }
 
+        /// <summary>Where on a tunic each texel is: plain cloth (or no tunic there), the trim, the clan's mark.</summary>
+        const byte ClothRegion = 0, TrimRegion = 1, MarkRegion = 2;
+
         /// <summary>
-        /// A texture for a piece cut from the skin (in the body's UVs): each texel of the
-        /// covered triangles is the cloth's colour or the trim's, by where on the body it
-        /// lies, over a fine weave. Texels outside the piece are the cloth's colour.
+        /// The tunic's texture size, texels a side: the hero's hanfu is seen close (the making of the
+        /// hero shows the face at arm's length), a villager's never nearer than a conversation.
         /// </summary>
-        static Texture2D Bake(SkinData body, float[] cover, System.Func<Vector3, Vector3, Color?> paint, Color cloth, int size = 1024)
+        static int TunicSize(int dye) => dye >= 8 ? 1024 : 512;
+
+        /// <summary>
+        /// The tunic's regions for a body's shape at a size, worked out once (the rasterising is the costliest
+        /// part of a body): keyed by the body's mesh, which every look of the same shape shares (HumanBody).
+        /// </summary>
+        static readonly Dictionary<(Mesh, int), byte[]> regionsOf = new Dictionary<(Mesh, int), byte[]>();
+
+        /// <summary>Each shape's tunic painted in a dye, with or without the mark, shared by everyone who wears it.</summary>
+        static readonly Dictionary<(Mesh, int, Emblem), Texture2D> painted = new Dictionary<(Mesh, int, Emblem), Texture2D>();
+
+        /// <summary>
+        /// The tunic's texture (in the body's UVs): each texel the cloth's colour, the trim's or the
+        /// mark's, by where on the body it lies (Regions), over a fine weave. Made once for each shape,
+        /// dye and mark and compressed (a sixth of the memory: every villager wears one).
+        /// </summary>
+        static Texture2D Painted(SkinData body, float[] cover, System.Func<Vector3, Vector3, byte> region, Palette palette, Color mark, Emblem emblem, int dye)
         {
-            var pixels = new Color32[size * size];
-
-            Color32 Woven(Color colour, int x, int y)
+            if (painted.TryGetValue((body.Mesh, dye, emblem), out var done) && done != null)
             {
-                var thread = (x / 2 + y / 2) % 2 == 0 ? 1f : 0.93f;
-
-                return colour * thread;
+                return done;
             }
+
+            var size = TunicSize(dye);
+
+            if (!regionsOf.TryGetValue((body.Mesh, size), out var regions))
+            {
+                using (Costs.Time("tunic regions"))
+                {
+                    regions = Regions(body, cover, region, size);
+                }
+
+                regionsOf[(body.Mesh, size)] = regions;
+            }
+
+            using var cost = Costs.Time("tunic painted");
+
+            // Each region's colour on the two threads of the weave.
+            var colours = new[] { palette.tunic, palette.trim, emblem == Emblem.Crescent ? mark : palette.tunic };
+            var threads = new Color32[colours.Length * 2];
+
+            for (var i = 0; i < colours.Length; i++)
+            {
+                threads[i * 2] = colours[i];
+                threads[i * 2 + 1] = colours[i] * 0.93f;
+            }
+
+            // The weave's threads the same size on the body whatever the texture's: 2 texels of 1024.
+            var thread = size / 512;
+            var bytes = new byte[size * size * 3];
 
             for (var y = 0; y < size; y++)
             {
                 for (var x = 0; x < size; x++)
                 {
-                    pixels[y * size + x] = Woven(cloth, x, y);
+                    var at = y * size + x;
+                    var c = threads[regions[at] * 2 + ((x / thread + y / thread) % 2 == 0 ? 0 : 1)];
+                    bytes[at * 3] = c.r;
+                    bytes[at * 3 + 1] = c.g;
+                    bytes[at * 3 + 2] = c.b;
                 }
             }
 
+            var texture = new Texture2D(size, size, TextureFormat.RGB24, true)
+            {
+                name = "Tunic (painted)",
+                wrapMode = TextureWrapMode.Clamp,
+                filterMode = FilterMode.Trilinear,
+                anisoLevel = 16,
+            };
+            texture.SetPixelData(bytes, 0);
+            texture.Apply(true, false);
+            texture.Compress(false);
+            texture.Apply(false, true);
+            painted[(body.Mesh, dye, emblem)] = texture;
+
+            return texture;
+        }
+
+        /// <summary>
+        /// The regions of a piece cut from the skin, texel by texel in the body's UVs: for each texel
+        /// of the covered triangles, where on the body it lies says what it is. Texels outside the
+        /// piece are plain cloth.
+        /// </summary>
+        static byte[] Regions(SkinData body, float[] cover, System.Func<Vector3, Vector3, byte> region, int size)
+        {
+            var regions = new byte[size * size];
             var uv = body.Uv;
             var source = body.Triangles;
 
@@ -626,28 +697,17 @@ namespace GuWorld.Body
 
                         var p = body.Vertices[a] * wa + body.Vertices[b] * wb + body.Vertices[c] * wc;
                         var n = (body.Normals[a] * wa + body.Normals[b] * wb + body.Normals[c] * wc).normalized;
+                        var what = region(p, n);
 
-                        var colour = paint(p, n);
-
-                        if (colour.HasValue)
+                        if (what != ClothRegion)
                         {
-                            pixels[y * size + x] = Woven(colour.Value, x, y);
+                            regions[y * size + x] = what;
                         }
                     }
                 }
             }
 
-            var texture = new Texture2D(size, size, TextureFormat.RGBA32, true)
-            {
-                name = "Tunic (painted)",
-                wrapMode = TextureWrapMode.Clamp,
-                filterMode = FilterMode.Trilinear,
-                anisoLevel = 16,
-            };
-            texture.SetPixels32(pixels);
-            texture.Apply(true, true);
-
-            return texture;
+            return regions;
         }
 
         public static void SetColour(Material material, Color colour)

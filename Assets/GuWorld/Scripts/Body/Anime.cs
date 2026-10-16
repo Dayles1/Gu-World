@@ -49,6 +49,30 @@ namespace GuWorld.Body
         static Material prototype;
         static bool looked;
         static readonly Dictionary<(Material, Role), Material> made = new Dictionary<(Material, Role), Material>();
+        /// <summary>The copies drawn with an outline, and each one's twin without it (Plain).</summary>
+        static readonly HashSet<Material> outlined = new HashSet<Material>();
+        static readonly Dictionary<Material, Material> plainOf = new Dictionary<Material, Material>();
+
+        /// <summary>
+        /// The same anime material without its ink outline (far off the outline is under a pixel
+        /// wide and still draws the whole body a second time). Any other material is given back as it is.
+        /// </summary>
+        public static Material Plain(Material material)
+        {
+            if (material == null || !outlined.Contains(material))
+            {
+                return material;
+            }
+
+            if (!plainOf.TryGetValue(material, out var plain) || plain == null)
+            {
+                plain = new Material(material) { name = material.name + " (no outline)" };
+                plain.SetShaderPassEnabled("SRPDefaultUnlit", false);
+                plainOf[material] = plain;
+            }
+
+            return plain;
+        }
 
         static readonly string[] TextureNames = { "baseColorTexture", "_BaseMap", "_MainTex" };
         static readonly string[] ColourNames = { "_BaseColor", "baseColorFactor", "_Color" };
@@ -211,6 +235,16 @@ namespace GuWorld.Body
             copy.SetFloat("_RimStrength", style.rim);
             copy.SetFloat("_ShadeSoftness", style.softness);
             copy.enableInstancing = true;
+
+            // No outline (the eyes, the brows): its pass not drawn at all.
+            if (style.outline > 0)
+            {
+                outlined.Add(copy);
+            }
+            else
+            {
+                copy.SetShaderPassEnabled("SRPDefaultUnlit", false);
+            }
 
             made[(source, role)] = copy;
 

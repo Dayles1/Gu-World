@@ -97,7 +97,7 @@ namespace GuWorld.Render
                 for (var i = 0; i < drawn.Length; i++)
                 {
                     outlinedMaterials[i] = drawn[i].sharedMaterials;
-                    plainMaterials[i] = System.Array.ConvertAll(outlinedMaterials[i], Toon.Plain);
+                    plainMaterials[i] = System.Array.ConvertAll(outlinedMaterials[i], m => Anime.Plain(Toon.Plain(m)));
                 }
             }
 

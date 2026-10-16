@@ -99,66 +99,104 @@ namespace GuWorld.World
 
         static LocalMap Paint(Rect area, int size, WorldPlan plan, bool fine)
         {
-            var map = new LocalMap { Area = area };
-            var pixels = new Color[size * size];
-            var ground = new Ground();
-            var top = 2200f;
+            var painting = new Painting(area, size, plan, fine);
 
-            for (var y = 0; y < size; y++)
+            return painting.Step(size);
+        }
+
+        /// <summary>
+        /// A map being drawn a few rows of the ground at a time, and the plan's lines over it at the end
+        /// (Step): the minimap is drawn again as the hero walks on, and at once it would stop the game for
+        /// a fifth of a second.
+        /// </summary>
+        public class Painting
+        {
+            readonly LocalMap map;
+            readonly int size;
+            readonly WorldPlan plan;
+            readonly bool fine;
+            readonly Color[] pixels;
+            readonly Ground ground = new Ground();
+            int row;
+
+            public Painting(Rect area, int size, WorldPlan plan, bool fine)
             {
-                for (var x = 0; x < size; x++)
-                {
-                    var wx = area.x + (x + 0.5f) / size * area.width;
-                    var wz = area.y + (y + 0.5f) / size * area.height;
-                    pixels[y * size + x] = ground.Sample(wx, wz, out var h, out var n) ? Tint(h, n, top) : new Color(0.16f, 0.2f, 0.15f);
-                }
+                map = new LocalMap { Area = area };
+                this.size = size;
+                this.plan = plan;
+                this.fine = fine;
+                pixels = new Color[size * size];
             }
 
-            if (plan != null)
+            /// <summary>Draws up to `rows` more rows; the map once it is all drawn (then null again), else null.</summary>
+            public LocalMap Step(int rows)
             {
-                var metres = area.width / size;
+                var area = map.Area;
+                var top = 2200f;
 
-                foreach (var stream in plan.Streams)
+                for (var end = Mathf.Min(size, row + rows); row < end; row++)
                 {
-                    Line(pixels, size, map, stream.Points, Mathf.Max(stream.Half, metres * 0.7f), Water, 1);
-                }
+                    var y = row;
 
-                foreach (var trail in plan.Trails)
-                {
-                    Line(pixels, size, map, trail.Points, Mathf.Max(trail.Half, metres * 0.6f), Path, fine ? 0.9f : 0.75f);
-                }
-
-                if (fine)
-                {
-                    foreach (var street in plan.Streets)
+                    for (var x = 0; x < size; x++)
                     {
-                        Line(pixels, size, map, street.Points, street.Half, Street, 0.9f);
-                    }
-
-                    foreach (var building in plan.Buildings)
-                    {
-                        Box(pixels, size, map, building);
-                    }
-                }
-                else
-                {
-                    foreach (var place in plan.Settlements)
-                    {
-                        Disc(pixels, size, map, place.Centre, place.Radius, Roof, 0.55f);
+                        var wx = area.x + (x + 0.5f) / size * area.width;
+                        var wz = area.y + (y + 0.5f) / size * area.height;
+                        pixels[y * size + x] = ground.Sample(wx, wz, out var h, out var n) ? Tint(h, n, top) : new Color(0.16f, 0.2f, 0.15f);
                     }
                 }
 
-                foreach (var mark in plan.Marks)
+                if (row < size)
                 {
-                    map.Marks.Add(new MapMark { Label = mark.Label, At = mark.At, Major = mark.Major });
+                    return null;
                 }
+
+                if (plan != null)
+                {
+                    var metres = area.width / size;
+
+                    foreach (var stream in plan.Streams)
+                    {
+                        Line(pixels, size, map, stream.Points, Mathf.Max(stream.Half, metres * 0.7f), Water, 1);
+                    }
+
+                    foreach (var trail in plan.Trails)
+                    {
+                        Line(pixels, size, map, trail.Points, Mathf.Max(trail.Half, metres * 0.6f), Path, fine ? 0.9f : 0.75f);
+                    }
+
+                    if (fine)
+                    {
+                        foreach (var street in plan.Streets)
+                        {
+                            Line(pixels, size, map, street.Points, street.Half, Street, 0.9f);
+                        }
+
+                        foreach (var building in plan.Buildings)
+                        {
+                            Box(pixels, size, map, building);
+                        }
+                    }
+                    else
+                    {
+                        foreach (var place in plan.Settlements)
+                        {
+                            Disc(pixels, size, map, place.Centre, place.Radius, Roof, 0.55f);
+                        }
+                    }
+
+                    foreach (var mark in plan.Marks)
+                    {
+                        map.Marks.Add(new MapMark { Label = mark.Label, At = mark.At, Major = mark.Major });
+                    }
+                }
+
+                map.Texture = new Texture2D(size, size, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp, name = fine ? "Near Map" : "Location Map" };
+                map.Texture.SetPixels(pixels);
+                map.Texture.Apply(false, true);
+
+                return map;
             }
-
-            map.Texture = new Texture2D(size, size, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp, name = fine ? "Near Map" : "Location Map" };
-            map.Texture.SetPixels(pixels);
-            map.Texture.Apply(false, true);
-
-            return map;
         }
 
         /// <summary>The whole location: every terrain there is, with the plan's lines and settlements.</summary>
@@ -167,6 +205,10 @@ namespace GuWorld.World
         /// <summary>A finer map `span` metres across round a point: streets and roofs too (the minimap's).</summary>
         public static LocalMap Around(Vector3 centre, float span, WorldPlan plan, int size = 512) =>
             Paint(new Rect(centre.x - span / 2, centre.z - span / 2, span, span), size, plan, true);
+
+        /// <summary>The same finer map, to be drawn a few rows a frame (Painting.Step).</summary>
+        public static Painting AroundInSteps(Vector3 centre, float span, WorldPlan plan, int size = 512) =>
+            new Painting(new Rect(centre.x - span / 2, centre.z - span / 2, span, span), size, plan, true);
 
         /// <summary>A plain map of flat ground with a grid every 16 m (the proving ground).</summary>
         public static LocalMap Grid(Bounds bounds, int size = 256)

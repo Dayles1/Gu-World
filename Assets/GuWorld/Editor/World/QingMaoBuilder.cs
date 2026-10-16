@@ -249,7 +249,10 @@ namespace GuWorld.Editor
             shape.scale = new Vector3(14, 2, 6);
             var velocity = system.velocityOverLifetime;
             velocity.enabled = true;
+            // Every axis in the same mode (two constants), or Unity logs an error every frame.
+            velocity.x = new ParticleSystem.MinMaxCurve(0, 0);
             velocity.y = new ParticleSystem.MinMaxCurve(0.8f, 2.2f);
+            velocity.z = new ParticleSystem.MinMaxCurve(0, 0);
             var colour = system.colorOverLifetime;
             colour.enabled = true;
             colour.color = new Gradient

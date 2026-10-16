@@ -149,7 +149,10 @@ namespace GuWorld.Render
                     return;
                 }
 
-                Gather();
+                using (Engine.Costs.Time("trees gathered"))
+                {
+                    Gather();
+                }
             }
 
             var camera = Camera.main;

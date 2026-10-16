@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using GuWorld.Engine;
 using UnityEngine;
 
 namespace GuWorld.Body
@@ -129,6 +130,22 @@ namespace GuWorld.Body
         static readonly Dictionary<string, GameObject> templates = new Dictionary<string, GameObject>();
         static Transform shelf;
 
+        /// <summary>
+        /// The model's meshes for a shape — a gender at an age — made younger and smoothed once
+        /// (the costliest part of a body after the tunic's paint) and shared by every look of that
+        /// shape, in the order of the model's skinned renderers (null: the model's own mesh).
+        /// </summary>
+        static readonly Dictionary<(Gender, float), Mesh[]> shapes = new Dictionary<(Gender, float), Mesh[]>();
+
+        /// <summary>The cloth's weave, one texture for every body.</summary>
+        static Texture2D weave;
+
+        /// <summary>
+        /// Ages are built in steps of a fifth (0, 0.2 … 1): a few shapes shared by a whole village
+        /// instead of a shape for every villager, and the difference of less than a step is not seen.
+        /// </summary>
+        public static float YouthStep(float youth) => Mathf.Round(Mathf.Clamp01(youth) * 5) / 5;
+
         public HumanBody(Parts parts, Look look, Mannequin rig) : this(parts, look, Build.Hero, rig)
         {
         }
@@ -141,11 +158,13 @@ namespace GuWorld.Body
         {
             this.rig = rig;
             root = rig.Root;
+            build.youth = YouthStep(build.youth);
 
             // Measured in the rest pose, with the figure upright.
             rig.ApplyRest();
 
             var template = Template(parts, look, build);
+            using var cost = Costs.Time("body copied");
             Holder = new GameObject("Body").transform;
             Holder.SetParent(root, false);
             var instance = Object.Instantiate(template, Holder, false);
@@ -237,6 +256,20 @@ namespace GuWorld.Body
             Hair.Borrow(skin, frame, HeadFrame.Measure(theirSkin, theirEyes, theirBrows), hair, material, name);
         }
 
+        /// <summary>The mesh of the renderer of that name (the model's eyes, its brows), or null.</summary>
+        static Mesh Find(SkinnedMeshRenderer[] renderers, string name)
+        {
+            foreach (var renderer in renderers)
+            {
+                if (renderer.name == name)
+                {
+                    return renderer.sharedMesh;
+                }
+            }
+
+            return null;
+        }
+
         static void SetSmoothness(Material material, float smoothness)
         {
             if (material.HasProperty("_Smoothness"))
@@ -271,6 +304,9 @@ namespace GuWorld.Body
             {
                 return done;
             }
+
+            using var cost = Costs.Time("look built");
+            var step = Costs.Time("model");
 
             if (shelf == null)
             {
@@ -354,42 +390,65 @@ namespace GuWorld.Body
                 }
 
                 renderer.materials = materials;
+            }
 
-                if (renderer.name.StartsWith("Superhero") || renderer.name.StartsWith("SuperHero"))
+            step.Dispose();
+            var renderers = instance.GetComponentsInChildren<SkinnedMeshRenderer>(true);
+            var skinRenderer = System.Array.Find(renderers, r => r.name.StartsWith("Superhero") || r.name.StartsWith("SuperHero"));
+
+            if (skinRenderer != null)
+            {
+                if (shapes.TryGetValue((look.Gender, build.youth), out var shaped))
                 {
-                    skin = new SkinData(renderer);
+                    // The shape made before: its younger, smoothed meshes as they are.
+                    for (var i = 0; i < renderers.Length && i < shaped.Length; i++)
+                    {
+                        if (shaped[i] != null)
+                        {
+                            renderers[i].sharedMesh = shaped[i];
+                        }
+                    }
+
+                    skin = new SkinData(skinRenderer);
                 }
-                else if (renderer.name == "Eyes")
+                else
                 {
-                    eyes = renderer.sharedMesh;
+                    step = Costs.Time("shape");
+                    skin = new SkinData(skinRenderer);
+
+                    // Younger: the face and the build (every mesh of the model together).
+                    if (build.youth > 0.01f)
+                    {
+                        Youth.Reshape(skin, HeadFrame.Measure(skin, Find(renderers, "Eyes"), Find(renderers, "Eyebrows")), look.Gender, renderers, build.youth);
+                        skin = new SkinData(skinRenderer);
+                    }
+
+                    // No bodybuilder's muscles, young or old: the skin smoothed (the clothes are cut from it next).
+                    Muscles.Smooth(skinRenderer);
+                    skin = new SkinData(skinRenderer);
+
+                    // Kept for every look of this shape (the meshes reshaped here are this body's own copies).
+                    shaped = new Mesh[renderers.Length];
+
+                    for (var i = 0; i < renderers.Length; i++)
+                    {
+                        if (renderers[i].GetComponent<GuWorld.World.OwnedMesh>() != null)
+                        {
+                            shaped[i] = renderers[i].sharedMesh;
+                        }
+                    }
+
+                    shapes[(look.Gender, build.youth)] = shaped;
+                    step.Dispose();
                 }
-                else if (renderer.name == "Eyebrows")
-                {
-                    brows = renderer.sharedMesh;
-                }
+
+                eyes = Find(renderers, "Eyes");
+                brows = Find(renderers, "Eyebrows");
             }
 
             if (skin != null)
             {
-                var renderers = instance.GetComponentsInChildren<SkinnedMeshRenderer>(true);
-
-                // Younger: the face and the build (every mesh of the model together).
-                if (build.youth > 0.01f)
-                {
-                    Youth.Reshape(skin, HeadFrame.Measure(skin, eyes, brows), look.Gender, renderers, build.youth);
-                    skin = new SkinData(skin.Renderer);
-
-                    foreach (var renderer in renderers)
-                    {
-                        if (renderer.name == "Eyes") eyes = renderer.sharedMesh;
-                        else if (renderer.name == "Eyebrows") brows = renderer.sharedMesh;
-                    }
-                }
-
-                // No bodybuilder's muscles, young or old: the skin smoothed (the clothes are cut from it next).
-                Muscles.Smooth(skin.Renderer);
-                skin = new SkinData(skin.Renderer);
-
+                step = Costs.Time("hair");
                 var frame = HeadFrame.Measure(skin, eyes, brows);
                 var hair = new Material(parts.cloth) { name = "Hair" };
                 Clothes.SetColour(hair, hairColour);
@@ -420,10 +479,16 @@ namespace GuWorld.Body
                 }
 
                 Hair.Grow(skin, frame, look, hair, stubble, strands);
+                step.Dispose();
 
                 // 3. The clothes, from the skin out.
+                step = Costs.Time("clothes");
                 var cloth = new Material(parts.cloth) { name = "Cloth" };
-                var weave = Paint.Weave();
+
+                if (weave == null)
+                {
+                    weave = Paint.Weave();
+                }
 
                 foreach (var name in new[] { "_BaseMap", "_MainTex" })
                 {
@@ -436,9 +501,11 @@ namespace GuWorld.Body
 
                 SetSmoothness(cloth, 0.12f);
                 Clothes.Dress(skin, frame, look.Gender, cloth, build.dye, build.emblem);
+                step.Dispose();
             }
 
             // 4. Drawn as the art direction asks: cel-shaded, outlined.
+            step = Costs.Time("materials");
             Toon.Apply(instance);
 
             // Its meshes are shared by every copy and outlive any one of them.
@@ -449,6 +516,7 @@ namespace GuWorld.Body
 
             // 4. The look: cel shading and an ink outline (Anime), once everything is on.
             Anime.Apply(instance);
+            step.Dispose();
 
             templates[key] = instance;
 

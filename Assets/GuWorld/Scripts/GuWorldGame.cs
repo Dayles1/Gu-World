@@ -94,6 +94,9 @@ namespace GuWorld
         /// <summary>The minimap's finer map round the hero, drawn again when they have walked far from its middle.</summary>
         LocalMap nearMap;
         const float NearSpan = 900;
+        /// <summary>The next minimap being drawn, a few rows a frame (all at once it stops the game for a fifth of a second).</summary>
+        LocalMap.Painting nearPainting;
+        const int NearRowsPerFrame = 16;
         /// <summary>The bed being gathered, and how long E has been held on it.</summary>
         HerbBed gathering;
         float gatherHeld;
@@ -129,7 +132,12 @@ namespace GuWorld
         /// <summary>`-bench N`: N frames timed before the picture, written beside it (`.txt`).</summary>
         int benchFrames;
         readonly System.Collections.Generic.List<float> frameTimes = new System.Collections.Generic.List<float>();
+        /// <summary>The frames before the timed ones (the village filling in), ms; and the frame the last villager came.</summary>
+        readonly System.Collections.Generic.List<float> startTimes = new System.Collections.Generic.List<float>();
+        int lastMadeAt = -1;
+        int peopleMade;
         readonly System.Collections.Generic.Dictionary<string, (Unity.Profiling.ProfilerRecorder recorder, double sum)> counters = new System.Collections.Generic.Dictionary<string, (Unity.Profiling.ProfilerRecorder, double)>();
+        readonly System.Collections.Generic.Dictionary<string, Unity.Profiling.ProfilerRecorder> memory = new System.Collections.Generic.Dictionary<string, Unity.Profiling.ProfilerRecorder>();
         double gpuSum;
         double cpuSum;
         double renderSum;
@@ -215,11 +223,32 @@ namespace GuWorld
                    $"; colliders {colliders.Length} ({colliders.Count(c => c.enabled && c.gameObject.activeInHierarchy)} on), bodies {bodies}";
         }
 
+        /// <summary>The first frames of a timed run, while the village fills in: how long, the worst, how many were slow.</summary>
+        string StartReport()
+        {
+            if (startTimes.Count == 0)
+            {
+                return "start: n/a";
+            }
+
+            var worst = startTimes.Max();
+            var slow = startTimes.Count(t => t > 50);
+
+            return $"start: frames 2–{startTimes.Count + 1} took {startTimes.Sum() / 1000:0.0} s, worst {worst:0} ms, {slow} over 50 ms; " +
+                   $"{peopleMade} people made, the last at frame {lastMadeAt}";
+        }
+
         void StartCounters()
         {
             foreach (var (category, name) in new[] { (Unity.Profiling.ProfilerCategory.Internal, "Main Thread"), (Unity.Profiling.ProfilerCategory.Render, "Batches Count"), (Unity.Profiling.ProfilerCategory.Render, "SetPass Calls Count"), (Unity.Profiling.ProfilerCategory.Render, "Triangles Count"), (Unity.Profiling.ProfilerCategory.Render, "Shadow Casters Count"), (Unity.Profiling.ProfilerCategory.Render, "Visible Skinned Meshes Count") })
             {
                 counters[name] = (Unity.Profiling.ProfilerRecorder.StartNew(category, name), 0);
+            }
+
+            // Memory as it stands at the end (the graphics' share is what the bodies' meshes and textures take).
+            foreach (var name in new[] { "Gfx Used Memory", "Total Used Memory" })
+            {
+                memory[name] = Unity.Profiling.ProfilerRecorder.StartNew(Unity.Profiling.ProfilerCategory.Memory, name);
             }
 
             // `-profile file` (a development build): the timed frames written for the profiler (file.raw).
@@ -669,6 +698,12 @@ namespace GuWorld
 
             var playing = next == Mode.Playing;
             Time.timeScale = next == Mode.Paused ? 0 : 1;
+
+            // The paused world's moment to let go of the streamed squares left behind (unseen behind the menu).
+            if (next == Mode.Paused && ChunkStreamer.Current != null)
+            {
+                ChunkStreamer.Current.LetGo();
+            }
             view.Following = playing || next == Mode.Paused || next == Mode.Talking;
 
             if (playing && screenshot == null)
@@ -913,10 +948,13 @@ namespace GuWorld
         void DrawMap(VillageLayout layout)
         {
             var plan = WorldPlan.Current;
-            map = plan != null
-                ? LocalMap.World(plan, new Rect(Location.bounds.min.x, Location.bounds.min.z, Location.bounds.size.x, Location.bounds.size.z))
-                : LocalMap.Grid(Location.bounds);
-            RedrawNearMap(true);
+
+            using (Costs.Time("map drawn"))
+            {
+                map = plan != null
+                    ? LocalMap.World(plan, new Rect(Location.bounds.min.x, Location.bounds.min.z, Location.bounds.size.x, Location.bounds.size.z))
+                    : LocalMap.Grid(Location.bounds);
+            }
 
             if (layout != null)
             {
@@ -938,10 +976,19 @@ namespace GuWorld
             {
                 map.Marks.Add(new MapMark { Label = "Лунные орхидеи", At = HerbBed.All[0].transform.position });
             }
+
+            // The minimap's, round where the hero comes in (they are put there only once the game runs).
+            if (plan != null)
+            {
+                using (Costs.Time("near map drawn"))
+                {
+                    ShowNearMap(LocalMap.Around(player.Spawn, NearSpan, plan));
+                }
+            }
         }
 
-        /// <summary>The minimap's map round the hero, again when they have walked a third of it away from its middle.</summary>
-        void RedrawNearMap(bool now = false)
+        /// <summary>The minimap's map round the hero, drawn again — a few rows a frame — when they have walked a third of it away from its middle.</summary>
+        void RedrawNearMap()
         {
             var plan = WorldPlan.Current;
 
@@ -950,19 +997,41 @@ namespace GuWorld
                 return;
             }
 
+            if (nearPainting != null)
+            {
+                using (Costs.Time("near map step"))
+                {
+                    var done = nearPainting.Step(NearRowsPerFrame);
+
+                    if (done != null)
+                    {
+                        nearPainting = null;
+                        ShowNearMap(done);
+                    }
+                }
+
+                return;
+            }
+
             var at = body.transform.position;
 
-            if (!now && nearMap != null && Vector2.Distance(new Vector2(at.x, at.z), nearMap.Area.center) < NearSpan * 0.3f)
+            if (nearMap != null && Vector2.Distance(new Vector2(at.x, at.z), nearMap.Area.center) < NearSpan * 0.3f)
             {
                 return;
             }
 
+            nearPainting = LocalMap.AroundInSteps(at, NearSpan, plan);
+        }
+
+        /// <summary>Puts a newly drawn minimap in place of the old one.</summary>
+        void ShowNearMap(LocalMap next)
+        {
             if (nearMap != null)
             {
                 Destroy(nearMap.Texture);
             }
 
-            nearMap = LocalMap.Around(at, NearSpan, plan);
+            nearMap = next;
 
             // The village's places are worth a label at this scale.
             foreach (var mark in map.Marks)
@@ -1152,6 +1221,20 @@ namespace GuWorld
             {
                 screenshotFrame++;
 
+                // The first frame is the scene's own loading; after it, the village fills in.
+                if (screenshotFrame > 1 && screenshotFrame <= 150)
+                {
+                    startTimes.Add(Time.unscaledDeltaTime * 1000);
+                }
+
+                var made = crowds.Sum(c => c.People.Count);
+
+                if (made != peopleMade)
+                {
+                    peopleMade = made;
+                    lastMadeAt = screenshotFrame;
+                }
+
                 // `-talk`: the hero before the nearest villager, talking.
                 if (screenshotFrame == 110 && talkAt && villagers != null)
                 {
@@ -1251,8 +1334,11 @@ namespace GuWorld
                             $"frames {frameTimes.Count}, average {average:0.0} ms ({1000 / average:0} fps), 95% under {p95:0.0} ms, worst {frameTimes[frameTimes.Count - 1]:0.0} ms, " +
                             $"quality {GameSettings.Quality}, memory {UnityEngine.Profiling.Profiler.GetTotalAllocatedMemoryLong() / (1024 * 1024)} MB" + System.Environment.NewLine +
                             $"gpu {(gpuCount > 0 ? (gpuSum / gpuCount).ToString("0.0") + " ms" : "n/a")}, cpu {(gpuCount > 0 ? (cpuSum / gpuCount).ToString("0.0") + " ms" : "n/a")}, render thread {(gpuCount > 0 ? (renderSum / gpuCount).ToString("0.0") + " ms" : "n/a")}, vsync {QualitySettings.vSyncCount}" +
-                            string.Concat(counters.Select(c => $", {c.Key} {(c.Value.recorder.Valid ? (c.Key == "Main Thread" ? (c.Value.sum / frameTimes.Count / 1e6).ToString("0.0") + " ms" : (c.Value.sum / frameTimes.Count).ToString("0")) : "n/a")}")) + System.Environment.NewLine +
-                            Census() + System.Environment.NewLine);
+                            string.Concat(counters.Select(c => $", {c.Key} {(c.Value.recorder.Valid ? (c.Key == "Main Thread" ? (c.Value.sum / frameTimes.Count / 1e6).ToString("0.0") + " ms" : (c.Value.sum / frameTimes.Count).ToString("0")) : "n/a")}")) +
+                            string.Concat(memory.Select(m => $", {m.Key} {(m.Value.Valid ? (m.Value.LastValue / (1024 * 1024)).ToString() + " MB" : "n/a")}")) + System.Environment.NewLine +
+                            Census() + System.Environment.NewLine +
+                            StartReport() + System.Environment.NewLine +
+                            $"costs: {Costs.Report()}" + System.Environment.NewLine);
                     }
                 }
                 else if (screenshotFrame > 150 + benchFrames && screenshotFrame <= 150 + benchFrames + 45 * moreViews.Count)
@@ -1343,7 +1429,7 @@ namespace GuWorld
 
             HerbBed.Now = clock.Minutes;
 
-            if (mode == Mode.Playing && Time.frameCount % 30 == 0)
+            if (mode == Mode.Playing && (nearPainting != null || Time.frameCount % 30 == 0))
             {
                 using (MapMarker.Auto())
                 {

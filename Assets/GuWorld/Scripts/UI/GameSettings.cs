@@ -57,9 +57,16 @@ namespace GuWorld.UI
         /// </summary>
         public static int Quality
         {
-            get => Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 1), 0, Levels.Length - 1);
-            set => PlayerPrefs.SetInt(QualityKey, Mathf.Clamp(value, 0, Levels.Length - 1));
+            // Kept once read: every villager asks for the level each frame.
+            get => quality >= 0 ? quality : quality = Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 1), 0, Levels.Length - 1);
+            set
+            {
+                quality = Mathf.Clamp(value, 0, Levels.Length - 1);
+                PlayerPrefs.SetInt(QualityKey, quality);
+            }
         }
+
+        static int quality = -1;
 
         public struct Level
         {

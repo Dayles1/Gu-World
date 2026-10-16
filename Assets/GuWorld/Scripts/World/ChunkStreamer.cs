@@ -33,6 +33,11 @@ namespace GuWorld.World
         public float UnloadRadius = 360;
         /// <summary>How many squares load at once.</summary>
         public int Parallel = 2;
+        /// <summary>
+        /// While playing, what the dropped squares used is let go only once this many have piled up (it stops
+        /// the game for a moment); otherwise when the game pauses (LetGo), where the moment is not seen.
+        /// </summary>
+        public int LetGoAfter = 24;
 
         public static ChunkStreamer Current { get; private set; }
 
@@ -150,9 +155,24 @@ namespace GuWorld.World
             }
 
             // Let go of what the dropped squares used, now and then (not every time: it takes a moment).
-            if (dropped >= 12)
+            if (dropped >= LetGoAfter)
             {
-                dropped = 0;
+                LetGo();
+            }
+        }
+
+        /// <summary>Lets go of what the squares dropped so far used (the game calls it as it pauses).</summary>
+        public void LetGo()
+        {
+            if (dropped == 0)
+            {
+                return;
+            }
+
+            dropped = 0;
+
+            using (Engine.Costs.Time("chunk assets let go"))
+            {
                 Resources.UnloadUnusedAssets();
             }
         }
@@ -223,6 +243,8 @@ namespace GuWorld.World
         /// <summary>The squares within reach of a place, loaded and made at once (a moment's pause, at a jump).</summary>
         public void LoadNowAround(Vector3 at)
         {
+            using var cost = Engine.Costs.Time("chunks loaded at once");
+
             for (var i = 0; i < Chunks.Length; i++)
             {
                 var distance = DistanceTo(i, at);
