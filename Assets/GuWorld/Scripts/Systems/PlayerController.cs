@@ -38,6 +38,13 @@ namespace GuWorld.Systems
         /// <summary>For checking by eye (`-screenshot … -walk`): walks forward, sprinting when 2, without the keys.</summary>
         public int AutoWalk;
 
+        /// <summary>Movement scaled by this (slower while drawing in a stone).</summary>
+        public float SpeedScale = 1;
+        /// <summary>No running (while drawing in a stone).</summary>
+        public bool NoSprint;
+        /// <summary>The body turned the way the camera looks (while a skill is aimed; always from the eyes).</summary>
+        public bool FaceView;
+
         /// <summary>Playing (the cursor is locked): held keys count.</summary>
         public bool Active => Cursor.lockState == CursorLockMode.Locked;
 
@@ -135,11 +142,17 @@ namespace GuWorld.Systems
             {
                 moveX = move.x,
                 moveZ = move.y,
-                sprint = AutoWalk == 2 || (Active && (keyboard.leftShiftKey.isPressed || keyboard.rightShiftKey.isPressed)),
+                sprint = !NoSprint && (AutoWalk == 2 || (Active && Sprinting(keyboard))),
                 jump = jumpQueued,
-                speedScale = 1,
+                speedScale = SpeedScale,
             });
             jumpQueued = false;
+
+            // Aiming, or seen from the eyes: the body faces where the camera looks (walking sideways or back).
+            if ((FaceView || (Camera != null && Camera.FirstPerson)) && Camera != null && body.Free)
+            {
+                body.Facing = Camera.Facing;
+            }
 
             var position = transform.position;
 
@@ -190,6 +203,9 @@ namespace GuWorld.Systems
                 jumpQueued = true;
             }
         }
+
+        /// <summary>Shift held.</summary>
+        public static bool Sprinting(Keyboard keyboard) => keyboard.leftShiftKey.isPressed || keyboard.rightShiftKey.isPressed;
 
         /// <summary>Crouch or crawl, or stand up again from it.</summary>
         void ToggleStance(Stance stance)

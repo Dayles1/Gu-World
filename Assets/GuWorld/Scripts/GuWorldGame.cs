@@ -266,6 +266,9 @@ namespace GuWorld
         bool talkAt;
         string screenshotPage;
         bool castAt;
+        /// <summary>`-aim`: the first Gu's skill held, aimed (its path on the ground); `-absorb`: a stone being drawn in.</summary>
+        bool aimShot;
+        bool absorbShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
         int castFrames = 5;
         /// <summary>`-view x,y,z,yaw,pitch` (with -screenshot): the camera held there, looking that way (degrees).</summary>
@@ -514,6 +517,8 @@ namespace GuWorld
                 player.AutoWalk = Has(args, "-run") ? 2 : Has(args, "-walk") ? 1 : 0;
                 talkAt = Has(args, "-talk");
                 castAt = Has(args, "-cast");
+                aimShot = Has(args, "-aim");
+                absorbShot = Has(args, "-absorb");
                 var castFramesAt = System.Array.IndexOf(args, "-cast");
                 castFrames = castFramesAt >= 0 && castFramesAt + 1 < args.Length && int.TryParse(args[castFramesAt + 1], out var cf) ? cf : 5;
                 HitboxView.On |= Has(args, "-hitboxes");
@@ -558,6 +563,12 @@ namespace GuWorld
                 if (fixedView.HasValue)
                 {
                     view.Following = false;
+                }
+
+                // `-fp`: seen from the hero's eyes.
+                if (Has(args, "-fp"))
+                {
+                    SetFirstPerson(true);
                 }
             }
             else
@@ -698,6 +709,12 @@ namespace GuWorld
 
             var playing = next == Mode.Playing;
             Time.timeScale = next == Mode.Paused ? 0 : 1;
+
+            // The main menu and the hero's making show the hero from outside.
+            if ((next == Mode.Title || next == Mode.Create) && view.FirstPerson)
+            {
+                SetFirstPerson(false);
+            }
 
             // The paused world's moment to let go of the streamed squares left behind (unseen behind the menu).
             if (next == Mode.Paused && ChunkStreamer.Current != null)
@@ -1270,6 +1287,17 @@ namespace GuWorld
                     }
                 }
 
+                if (aimShot && screenshotFrame > 100 && cultivator.KindOn(0) != null)
+                {
+                    ShowAim(cultivator.KindOn(0));
+                }
+
+                if (absorbShot && screenshotFrame == 120)
+                {
+                    cultivator.Aperture.Essence = 10;
+                    cultivator.StartAbsorbing();
+                }
+
                 // `-cast`: the first slot used just before the picture (the blade in flight).
                 if (screenshotFrame == 150 + benchFrames - castFrames && castAt)
                 {
@@ -1442,20 +1470,21 @@ namespace GuWorld
                 Interact(keyboard);
             }
 
-            // The Gu Master's keys: the action bar, a stone, the hero's pages.
+            // The Gu Master's keys: the Gu (held: aimed; let go: used), the stone, the view, the hero's pages.
             if (mode == Mode.Playing && keyboard != null && screenshot == null)
             {
-                var digits = new[] { keyboard.digit1Key, keyboard.digit2Key, keyboard.digit3Key, keyboard.digit4Key, keyboard.digit5Key, keyboard.digit6Key, keyboard.digit7Key, keyboard.digit8Key, keyboard.digit9Key };
+                Skills(keyboard, Mouse.current);
 
-                for (var i = 0; i < digits.Length; i++)
+                if (keyboard.vKey.wasPressedThisFrame)
                 {
-                    if (digits[i].wasPressedThisFrame)
-                    {
-                        cultivator.Use(i);
-                    }
+                    if (cultivator.Absorbing) cultivator.CancelAbsorbing("Поглощение прервано");
+                    else cultivator.StartAbsorbing();
                 }
 
-                if (keyboard.vKey.wasPressedThisFrame) cultivator.AbsorbStone();
+                if (keyboard.f5Key.wasPressedThisFrame)
+                {
+                    SetFirstPerson(!view.FirstPerson);
+                }
 
                 if (keyboard.kKey.wasPressedThisFrame) OpenPage(Menus.Page.Aperture);
                 else if (keyboard.iKey.wasPressedThisFrame) OpenPage(Menus.Page.Bag);
@@ -1486,6 +1515,26 @@ namespace GuWorld
                 menus.Notify("Отладка: +50 первобытных камней");
             }
 
+            if (mode != Mode.Playing)
+            {
+                StopAiming();
+            }
+
+            // Drawing in a stone: walking slowly is all one can do; a jump, a run or a climb breaks it off.
+            if (cultivator.Absorbing && (mode == Mode.Playing || mode == Mode.Talking))
+            {
+                if (!body.Free || body.Velocity.y > 1.5f || body.Velocity.y < -5 || (keyboard != null && screenshot == null &&
+                    (keyboard.spaceKey.wasPressedThisFrame || (PlayerController.Sprinting(keyboard) && body.HorizontalSpeed > 0.5f))))
+                {
+                    cultivator.CancelAbsorbing("Поглощение прервано");
+                }
+
+                cultivator.UpdateAbsorbing(Time.deltaTime);
+            }
+
+            player.SpeedScale = cultivator.Absorbing ? 0.45f : 1;
+            player.NoSprint = cultivator.Absorbing;
+
             if (mode == Mode.Playing || mode == Mode.Talking)
             {
                 var before = clock.Minutes;
@@ -1512,6 +1561,119 @@ namespace GuWorld
             }
 
             using (MenusMarker.Auto()) menus.SetFps(fps);
+        }
+
+        // ── The Gu's keys ────────────────────────────────────────────
+
+        /// <summary>The Gu's key held down (its skill being aimed), or -1.</summary>
+        int aiming = -1;
+        SkillAim aim;
+        Keyboard keysOf;
+        UnityEngine.InputSystem.Controls.KeyControl[] guKeys;
+
+        /// <summary>
+        /// The Gu's keys, 1–4, the way a MOBA has them: held down, the skill is aimed — its path or ring
+        /// shown on the ground, toward the crosshair — and let go, it is used; the right mouse button puts
+        /// it away unused. The left mouse button uses the first key's Gu at once, where the crosshair points.
+        /// </summary>
+        void Skills(Keyboard keyboard, Mouse mouse)
+        {
+            if (keysOf != keyboard)
+            {
+                keysOf = keyboard;
+                guKeys = new[] { keyboard.digit1Key, keyboard.digit2Key, keyboard.digit3Key, keyboard.digit4Key };
+            }
+
+            var click = mouse != null && mouse.leftButton.wasPressedThisFrame;
+
+            if (aiming < 0)
+            {
+                for (var i = 0; i < guKeys.Length && aiming < 0; i++)
+                {
+                    if (guKeys[i].wasPressedThisFrame)
+                    {
+                        // An empty key says so; a Gu's starts aiming.
+                        if (cultivator.KindOn(i) == null) cultivator.Use(i);
+                        else aiming = i;
+                    }
+                }
+
+                if (aiming < 0)
+                {
+                    if (click)
+                    {
+                        cultivator.Use(0);
+                    }
+
+                    return;
+                }
+            }
+
+            var kind = cultivator.KindOn(aiming);
+
+            if (kind == null || (mouse != null && mouse.rightButton.wasPressedThisFrame))
+            {
+                StopAiming();
+
+                return;
+            }
+
+            if (guKeys[aiming].isPressed && !click)
+            {
+                ShowAim(kind);
+
+                return;
+            }
+
+            // Let go (or the left button while it is held): used, where the crosshair points.
+            var key = aiming;
+            StopAiming();
+            cultivator.Use(key);
+        }
+
+        void ShowAim(GuWorld.Cultivation.GuKind kind)
+        {
+            aim ??= SkillAim.Create(body.transform);
+            var thrown = kind.Skill == GuWorld.Cultivation.SkillKind.Moonblade;
+            player.FaceView = thrown;
+            view.Aiming = thrown;
+            var usable = cultivator.CooldownLeft(kind.Id) <= 0 && (cultivator.Aperture.CanSpend(kind.Cost) || (kind.Skill == GuWorld.Cultivation.SkillKind.JadeSkin && cultivator.SkinOn));
+
+            if (thrown)
+            {
+                aim.ShowPath(body.transform.position, cultivator.AimPoint(kind), Moonblade.Width, kind.Reach, kind.Range, usable);
+            }
+            else
+            {
+                aim.ShowRing(body.transform.position, 1.1f, usable);
+            }
+        }
+
+        void StopAiming()
+        {
+            aiming = -1;
+
+            if (aim != null)
+            {
+                aim.Hide();
+            }
+
+            if (player != null)
+            {
+                player.FaceView = false;
+            }
+
+            if (view != null)
+            {
+                view.Aiming = false;
+            }
+        }
+
+        /// <summary>Into the hero's eyes (F5) or back behind them.</summary>
+        void SetFirstPerson(bool on)
+        {
+            view.SetFirstPerson(on);
+            picture.FirstPerson = on;
         }
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body;

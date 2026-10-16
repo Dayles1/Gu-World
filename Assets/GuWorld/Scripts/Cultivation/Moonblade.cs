@@ -23,6 +23,8 @@ namespace GuWorld.Cultivation
         const float SolidRadius = 0.22f;
         /// <summary>The crescent: its outer radius, its inner, and how far round the horns reach (radians from the front).</summary>
         public const float Outer = 1.05f;
+        /// <summary>How wide the blade is from horn to horn, m (the aimed path's width).</summary>
+        public static float Width => 2 * Mathf.Sin(Horns) * Outer;
         const float Inner = 0.74f;
         const float Horns = 1.32f;
 

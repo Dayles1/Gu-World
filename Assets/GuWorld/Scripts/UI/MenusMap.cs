@@ -16,7 +16,7 @@ namespace GuWorld.UI
 
         void MapPage()
         {
-            var body = BookFrame("图", "Карта", Page.Map);
+            var body = BookFrame("map", "Карта", Page.Map);
             var map = host.Map;
 
             var left = UiKit.Panel("Mountain", body);

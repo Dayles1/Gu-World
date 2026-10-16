@@ -51,8 +51,11 @@ namespace GuWorld.Cultivation
     /// <summary>
     /// The hero as a Gu Master (the design's aperture page): the aperture and its
     /// sea; the ring of eight cells round it where refined Gu live — five open at
-    /// rank one, two more at rank two, the last at three; the bag; and the action
-    /// bar, keys 1–9, each holding a Gu's skill or a thing from the bag.
+    /// rank one, two more at rank two, the last at three; the bag; and the Gu's
+    /// keys, 1–4, each holding a refined Gu's skill (changed on the aperture page).
+    /// Primeval stones have their own key (V) that does not change: drawing one in
+    /// takes three seconds (Absorbing), so the sea cannot be refilled at will in
+    /// the middle of a fight.
     ///
     /// Gu are alive (lore: sys_vital_gu, res_moon_orchid): each eats its own food
     /// at its own hours. Unfed past its meal it is hungry, then too starved to
@@ -67,7 +70,10 @@ namespace GuWorld.Cultivation
     public class Cultivator : MonoBehaviour
     {
         public const int Ring = 8;
-        public const int BarSize = 9;
+        /// <summary>The Gu's keys, 1–4.</summary>
+        public const int BarSize = 4;
+        /// <summary>Seconds it takes to draw in a primeval stone.</summary>
+        public const float AbsorbTime = 3;
 
         public Aperture Aperture { get; private set; } = Aperture.Full(Grade.C);
         public readonly Bag Bag = new Bag();
@@ -97,6 +103,11 @@ namespace GuWorld.Cultivation
             view = GetComponent<HeroView>();
             health = GetComponent<Health>();
             solid = GetComponent<CharacterController>();
+
+            if (health != null)
+            {
+                health.Hurt += _ => CancelAbsorbing("Поглощение сорвано: вас ударили");
+            }
         }
 
         /// <summary>How many of the ring's cells are open at a rank.</summary>
@@ -134,8 +145,6 @@ namespace GuWorld.Cultivation
                 Bag.Add(ItemBook.Stone, 10, now);
                 Bag.Add(ItemBook.Petal, 8, now);
                 Bar[0] = "gu:" + GuBook.Moonlight.Id;
-                Bar[1] = "item:" + ItemBook.Petal;
-                Bar[2] = "item:" + ItemBook.Stone;
 
                 return;
             }
@@ -190,9 +199,15 @@ namespace GuWorld.Cultivation
                 }
             }
 
-            for (var i = 0; i < BarSize && i < (saved.bar?.Length ?? 0); i++)
+            // The Gu's keys (a save from the nine-key bar: its Gu, in order; things from the bag are no longer on keys).
+            var key = 0;
+
+            for (var i = 0; i < (saved.bar?.Length ?? 0) && key < BarSize; i++)
             {
-                Bar[i] = Valid(saved.bar[i]) ? saved.bar[i] : null;
+                if (Valid(saved.bar[i]) && Array.IndexOf(Bar, saved.bar[i]) < 0)
+                {
+                    Bar[key++] = saved.bar[i];
+                }
             }
 
             foreach (var gu in Gu)
@@ -203,9 +218,8 @@ namespace GuWorld.Cultivation
             SkinOn = saved.skin && First(GuBook.JadeSkin.Id) != null && HungerOf(First(GuBook.JadeSkin.Id)) < Hunger.Starving;
         }
 
-        /// <summary>Whether an action bar entry names something that exists.</summary>
-        static bool Valid(string entry) =>
-            entry != null && (entry.StartsWith("gu:") ? GuBook.Find(entry.Substring(3)) != null : entry.StartsWith("item:") && ItemBook.Find(entry.Substring(5)) != null);
+        /// <summary>Whether a key's entry names a Gu that exists (only Gu go on the keys).</summary>
+        static bool Valid(string entry) => entry != null && entry.StartsWith("gu:") && GuBook.Find(entry.Substring(3)) != null;
 
         public CultivationSave Save()
         {
@@ -359,23 +373,26 @@ namespace GuWorld.Cultivation
         /// <summary>Seconds before a kind of Gu can be used again (0: ready).</summary>
         public float CooldownLeft(string kind) => kind != null && readyAt.TryGetValue(kind, out var at) ? Mathf.Max(0, at - Time.time) : 0;
 
-        /// <summary>Uses what is set on a key of the action bar.</summary>
-        public bool Use(int key)
+        /// <summary>The Gu on a key (null: none set).</summary>
+        public GuKind KindOn(int key) => key >= 0 && key < BarSize && Bar[key] != null ? GuBook.Find(Bar[key].Substring(3)) : null;
+
+        /// <summary>Uses the Gu set on a key, its skill aimed at a point (none: where the middle of the screen points).</summary>
+        public bool Use(int key, Vector3? target = null)
         {
             var entry = key >= 0 && key < BarSize ? Bar[key] : null;
 
             if (entry == null)
             {
-                Said?.Invoke($"Клавиша {key + 1}: ничего не назначено");
+                Said?.Invoke($"Клавиша {key + 1}: Гу не назначен (апертура, K)");
 
                 return false;
             }
 
-            return entry.StartsWith("gu:") ? UseGu(entry.Substring(3)) : UseItem(entry.Substring(5));
+            return UseGu(entry.Substring(3), target);
         }
 
         /// <summary>Uses a Gu of a kind: its skill, if it is fed enough, rested, and there is the essence.</summary>
-        public bool UseGu(string kindId)
+        public bool UseGu(string kindId, Vector3? target = null)
         {
             var gu = First(kindId);
             var kind = GuBook.Find(kindId);
@@ -409,7 +426,8 @@ namespace GuWorld.Cultivation
                         return false;
                     }
 
-                    ThrowMoonblade(kind);
+                    CancelAbsorbing(null);
+                    ThrowMoonblade(kind, target ?? AimPoint(kind));
                     Did?.Invoke("moonblade", 1);
                     break;
 
@@ -668,30 +686,114 @@ namespace GuWorld.Cultivation
 
         int throws;
 
-        /// <summary>The cut: the hero turns to where the camera looks and throws the blade from the right hand.</summary>
-        void ThrowMoonblade(GuKind kind)
-        {
-            // Where the camera looks, but level when it looks over the hero's shoulder as it usually
-            // does (a little from above): raising or lowering the view raises or lowers the throw.
-            var forward = Camera != null ? Camera.transform.forward : transform.forward;
-            var flat = new Vector3(forward.x, 0, forward.z).normalized;
-            var rise = Camera != null ? Mathf.Clamp(-(Camera.Pitch - 0.3f), -0.35f, 0.9f) : 0;
-            var aim = (flat * Mathf.Cos(rise) + Vector3.up * Mathf.Sin(rise)).normalized;
+        /// <summary>Where a skill is aimed by default: the middle of the screen (the crosshair), out to the skill's range.</summary>
+        public Vector3 AimPoint(GuKind kind) => Camera != null
+            ? Camera.AimPoint(Mathf.Max(kind.Range, kind.Reach, 4), transform)
+            : transform.position + Vector3.up * 1.3f + transform.forward * Mathf.Max(kind.Range, 4);
 
-            if (flat.sqrMagnitude > 0.01f && body != null)
+        /// <summary>Where the right hand lets a blade go, thrown toward a point (the hero turned toward it).</summary>
+        public Vector3 HandFor(Vector3 target)
+        {
+            var flat = target - transform.position;
+            flat.y = 0;
+            flat = flat.sqrMagnitude > 0.01f ? flat.normalized : transform.forward;
+            var height = view != null ? 1.3f * view.Scale : 1.25f;
+
+            return transform.position + Vector3.up * height + Vector3.Cross(Vector3.up, flat) * 0.25f + flat * 0.45f;
+        }
+
+        /// <summary>The cut: the hero turns toward the point aimed at and throws the blade at it from the right hand.</summary>
+        void ThrowMoonblade(GuKind kind, Vector3 target)
+        {
+            var flat = target - transform.position;
+            flat.y = 0;
+            flat = flat.sqrMagnitude > 0.01f ? flat.normalized : transform.forward;
+
+            if (body != null)
             {
                 body.Facing = Mathf.Atan2(flat.x, flat.z);
                 transform.rotation = Quaternion.Euler(0, body.Facing * Mathf.Rad2Deg, 0);
             }
 
-            var height = view != null ? 1.3f * view.Scale : 1.25f;
-            var right = Vector3.Cross(Vector3.up, flat);
-            var from = transform.position + Vector3.up * height + right * 0.25f + flat * 0.45f;
+            var from = HandFor(target);
+            var aim = target - from;
+            // A point right at the hand (a wall touching it): straight ahead instead.
+            aim = aim.sqrMagnitude > 0.25f ? aim.normalized : flat;
             // Stronger with every rank; each cut tilted the other way, as the arm swings.
             var power = kind.Power * (1 + 0.6f * (Aperture.Rank - 1));
             throws++;
             Moonblade.Throw(from, aim, kind, solid, power, throws % 2 == 0 ? 14 : -14);
             view?.Throw();
+        }
+
+        // ── Drawing in a stone ────────────────────────────────────────
+
+        float absorbing = -1;
+
+        /// <summary>Drawing in a stone now.</summary>
+        public bool Absorbing => absorbing >= 0;
+
+        /// <summary>How far through drawing in a stone, 0…1 (below 0: not drawing one).</summary>
+        public float AbsorbProgress => absorbing < 0 ? -1 : Mathf.Clamp01(absorbing / AbsorbTime);
+
+        /// <summary>Begins drawing in a stone (the stone key): three seconds, walking slowly at most.</summary>
+        public bool StartAbsorbing()
+        {
+            if (Absorbing)
+            {
+                return false;
+            }
+
+            if (Stones <= 0)
+            {
+                Said?.Invoke("Нет первобытных камней");
+
+                return false;
+            }
+
+            if (Aperture.Essence >= Aperture.Cap - 0.05f)
+            {
+                Said?.Invoke("Море эссенции и так полно");
+
+                return false;
+            }
+
+            absorbing = 0;
+
+            return true;
+        }
+
+        /// <summary>Stops drawing in a stone (the stone is kept); `why` is told, if given.</summary>
+        public void CancelAbsorbing(string why)
+        {
+            if (absorbing < 0)
+            {
+                return;
+            }
+
+            absorbing = -1;
+
+            if (why != null)
+            {
+                Said?.Invoke(why);
+            }
+        }
+
+        /// <summary>A moment of drawing in a stone; at the end the stone's essence is in the sea.</summary>
+        public void UpdateAbsorbing(float dt)
+        {
+            if (absorbing < 0)
+            {
+                return;
+            }
+
+            absorbing += dt;
+
+            if (absorbing >= AbsorbTime)
+            {
+                absorbing = -1;
+                AbsorbStone();
+            }
         }
 
         /// <summary>Draws in a primeval stone's essence.</summary>
@@ -746,7 +848,7 @@ namespace GuWorld.Cultivation
 
         // ── The action bar ────────────────────────────────────────────
 
-        /// <summary>Sets something on a key (taking it off any other).</summary>
+        /// <summary>Sets a Gu on a key (taking it off any other).</summary>
         public void Bind(int key, string entry)
         {
             if (key < 0 || key >= BarSize || !Valid(entry))

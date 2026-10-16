@@ -26,7 +26,7 @@ namespace GuWorld.UI
         {
             var gu = host.Cultivator;
             var a = gu.Aperture;
-            var body = BookFrame("窍", "Апертура", Page.Aperture);
+            var body = BookFrame("ring", "Апертура", Page.Aperture);
             var rank = Aperture.RankColour(a.Rank);
 
             // The hero, on the left.
@@ -38,7 +38,7 @@ namespace GuWorld.UI
             UiKit.Caps("Клан Гу Юэ · гора Цинмао", info, 13, UiKit.Muted).Size(22);
             var sealRow = UiKit.Rect("Seal", info);
             sealRow.Size(92);
-            var seal = UiKit.SealMark(Aperture.RankGlyph(a.Rank), sealRow, 80);
+            var seal = UiKit.SealText(Aperture.RankNumeral(a.Rank), sealRow, 80);
             seal.rectTransform.At(new Vector2(0, 0.5f), new Vector2(40, 0), new Vector2(80, 80));
             var rankText = UiKit.Label($"<b>Ранг {a.Rank}</b>\n{Aperture.Name(a.Stage)}", sealRow, 19);
             rankText.rectTransform.Place(Vector2.zero, Vector2.one, 98, 0, 0, 0);
@@ -87,7 +87,7 @@ namespace GuWorld.UI
 
             // The action bar, under the ring.
             var barRow = UiKit.Rect("Bar", body).Place(Vector2.zero, Vector2.zero, 380, 0, -(380 + 680), -100);
-            UiKit.Caps("Панель действий · щелчок убирает", barRow, 12, UiKit.Muted).rectTransform.Place(new Vector2(0, 1), Vector2.one, 0, -20, 0, 0);
+            UiKit.Caps("Клавиши Гу 1–4 · щелчок убирает", barRow, 12, UiKit.Muted).rectTransform.Place(new Vector2(0, 1), Vector2.one, 0, -20, 0, 0);
 
             for (var i = 0; i < Cultivator.BarSize; i++)
             {
@@ -153,9 +153,11 @@ namespace GuWorld.UI
             cell.Count.text = "";
             cell.Back.color = chosen ? UiKit.Hex(0x2A1E12) : UiKit.Hex(0x0E0D0C, 0.95f);
 
+            cell.Badge.enabled = false;
+
             if (slot >= gu.Open)
             {
-                cell.Mark.text = "锁";
+                cell.SetIcon("lock");
                 cell.Mark.color = UiKit.Hex(0x4A4238);
                 cell.Corner.text = "";
                 cell.SetRim(chosen ? UiKit.GoldLit : UiKit.Hex(0x2A2622));
@@ -165,7 +167,7 @@ namespace GuWorld.UI
 
             if (owned == null)
             {
-                cell.Mark.text = "";
+                cell.SetIcon(null);
                 cell.Corner.text = "";
                 cell.SetRim(chosen ? UiKit.GoldLit : UiKit.LineLit);
 
@@ -174,10 +176,12 @@ namespace GuWorld.UI
 
             var kind = owned.Kind;
             var hunger = gu.HungerOf(owned);
-            cell.Mark.text = kind.Glyph;
+            cell.SetIcon(kind.Icon);
             cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : UiKit.Text;
-            cell.Corner.text = owned.vital ? "命" : Aperture.RankGlyph(kind.Rank);
-            cell.Corner.color = owned.vital ? UiKit.GoldLit : Aperture.RankColour(kind.Rank);
+            cell.Corner.text = Aperture.RankNumeral(kind.Rank);
+            cell.Corner.color = Aperture.RankColour(kind.Rank);
+            // The vital Gu (its life is its master's): a heart.
+            cell.Badge.enabled = owned.vital;
             cell.Dot.enabled = hunger >= Hunger.Hungry;
             cell.Dot.color = hunger >= Hunger.Starving ? UiKit.Danger : UiKit.Hunger;
             cell.SetRim(chosen ? UiKit.GoldLit : Aperture.RankColour(kind.Rank));
@@ -259,7 +263,7 @@ namespace GuWorld.UI
                 host.Cultivator.Feed(chosenGu);
                 Show(Page.Aperture);
             }, ButtonKind.Gold, 16).Size(52, -1, 1);
-            UiKit.Label("1–9 — на панель", row, 15, UiKit.Muted, TextAnchor.MiddleCenter).Size(52, -1, 1);
+            UiKit.Label("1–4 — на клавишу", row, 15, UiKit.Muted, TextAnchor.MiddleCenter).Size(52, -1, 1);
         }
 
         /// <summary>A line of the feeding list: a dot for its hunger, the Gu, when it eats next.</summary>

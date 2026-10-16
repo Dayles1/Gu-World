@@ -8,12 +8,14 @@ using UnityEngine.UI;
 namespace GuWorld.UI
 {
     /// <summary>
-    /// The HUD (the design's "HUD — ПК"): at the top left the hero — a seal with
-    /// their rank inside a ring of essence, their name, health, the place and the
-    /// hour, their stones; at the top right a diamond-shaped minimap with the
-    /// north and where they stand, and the task under it; at the foot the action
-    /// bar, keys 1–9; the log of what happened at the bottom left; the keys of
-    /// the hero's pages at the bottom right; and over the bar what one can do here.
+    /// The HUD (the design's "HUD — ПК"): at the top left the hero — their rank
+    /// inside a ring of essence, their name, health, the place and the hour,
+    /// their stones; at the top right a diamond-shaped minimap with the north and
+    /// where they stand, and the task under it; at the foot the Gu's keys 1–4 and,
+    /// apart, the stone's key V; the crosshair in the middle (where blows go), and
+    /// under it, while a stone is drawn in, a ring filling for three seconds; the
+    /// log of what happened at the bottom left; the keys of the hero's pages at
+    /// the bottom right; and over the bar what one can do here.
     /// </summary>
     public partial class Menus
     {
@@ -43,7 +45,12 @@ namespace GuWorld.UI
         Text questGoal;
         Text questProgress;
         readonly Cell[] barCells = new Cell[Cultivator.BarSize];
+        Cell stoneCell;
         Text skinLine;
+        RectTransform crosshair;
+        RectTransform absorbing;
+        Image absorbFill;
+        Text absorbLine;
         Text promptLine;
         RectTransform promptBar;
         RectTransform promptFill;
@@ -64,7 +71,7 @@ namespace GuWorld.UI
             Radial(essenceRing);
             var inner = UiKit.Image("Inner", portrait, UiKit.Hex(0x17130F), UiKit.Disc);
             inner.rectTransform.Fill(19);
-            rankMark = UiKit.Glyph("一", inner.transform, 58, UiKit.Gold);
+            rankMark = UiKit.Mark("I", inner.transform, 46, UiKit.Gold);
             rankMark.rectTransform.Fill();
 
             heroName = UiKit.Label("", hud, 24, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Shadowed();
@@ -81,8 +88,8 @@ namespace GuWorld.UI
             placeLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 192, -156, -900, 134);
             timeLine = UiKit.Label("", hud, 15, UiKit.Muted).Shadowed();
             timeLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 192, -180, -900, 158);
-            var coin = UiKit.Glyph("元", hud, 20, UiKit.Gold).Shadowed();
-            coin.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 186, -210, -220, 184);
+            var coin = UiKit.Icon("stone", hud, 22, UiKit.Gold).Shadowed();
+            coin.rectTransform.At(new Vector2(0, 1), new Vector2(203, -198), new Vector2(22, 22));
             stonesLine = UiKit.Label("", hud, 17, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Shadowed();
             stonesLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 218, -210, -600, 186);
 
@@ -91,6 +98,7 @@ namespace GuWorld.UI
             BuildBar();
             BuildLog();
             BuildLegend();
+            BuildCrosshair();
 
             promptLine = UiKit.Label("", hud, 22, UiKit.Text, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
             promptLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -500, 150, -500, -190);
@@ -101,10 +109,10 @@ namespace GuWorld.UI
             promptBar.gameObject.SetActive(false);
 
             // The hero's pages, at the bottom right.
-            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -560, 26, 28, -64);
+            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -690, 26, 28, -64);
             keys.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleRight).childForceExpandWidth = false;
 
-            foreach (var (key, name) in new[] { ("K", "Апертура"), ("I", "Сумка"), ("M", "Карта"), ("Esc", "Меню") })
+            foreach (var (key, name) in new[] { ("K", "Апертура"), ("I", "Сумка"), ("M", "Карта"), ("F5", "Вид"), ("Esc", "Меню") })
             {
                 var plate = UiKit.Panel(name, keys, UiKit.Hex(0x0E0D0C, 0.78f));
                 plate.Size(38, key.Length > 1 ? 118 : 112, 0);
@@ -147,9 +155,7 @@ namespace GuWorld.UI
 
             minimapArrow = UiKit.Image("Hero", mask.transform, UiKit.GoldLit, UiKit.Arrow).rectTransform;
             minimapArrow.sizeDelta = new Vector2(20, 20);
-            var north = UiKit.Glyph("С", hud, 18, UiKit.GoldLit).Shadowed();
-            north.font = UiKit.Font;
-            north.fontStyle = FontStyle.Bold;
+            var north = UiKit.Mark("С", hud, 18, UiKit.GoldLit).Shadowed();
             north.rectTransform.At(new Vector2(1, 1), centre + new Vector2(0, MinimapSize * 0.5f + 14), new Vector2(30, 24));
             coordsLine = UiKit.Label("", hud, 14, UiKit.Muted, TextAnchor.MiddleCenter).Shadowed();
             coordsLine.rectTransform.At(new Vector2(1, 1), centre - new Vector2(0, MinimapSize * 0.5f + 16), new Vector2(200, 22));
@@ -175,10 +181,14 @@ namespace GuWorld.UI
 
         void BuildBar()
         {
-            const float size = 66;
+            const float size = 70;
             const float gap = 8;
-            var width = Cultivator.BarSize * size + (Cultivator.BarSize - 1) * gap;
+            // The Gu's keys, then — set apart — the stone's.
+            const float apart = 34;
+            var width = (Cultivator.BarSize + 1) * size + (Cultivator.BarSize - 1) * gap + apart;
             var bar = UiKit.Rect("Bar", hud).Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -width / 2, 26, -width / 2, -(26 + size));
+            var caption = UiKit.Caps("Гу", bar, 12, UiKit.Muted);
+            caption.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 0, 2, -200, -22);
 
             for (var i = 0; i < Cultivator.BarSize; i++)
             {
@@ -189,8 +199,43 @@ namespace GuWorld.UI
                 barCells[i] = cell;
             }
 
+            stoneCell = UiKit.Cell(bar, size);
+            stoneCell.Back.rectTransform.anchorMin = stoneCell.Back.rectTransform.anchorMax = new Vector2(1, 0.5f);
+            stoneCell.Back.rectTransform.anchoredPosition = new Vector2(-size / 2, 0);
+            stoneCell.Key.text = "V";
+            stoneCell.SetIcon("stone");
+            stoneCell.SetRim(UiKit.GoldDeep);
+            var stoneCaption = UiKit.Caps("Камень", bar, 12, UiKit.Muted);
+            stoneCaption.alignment = TextAnchor.MiddleRight;
+            stoneCaption.rectTransform.Place(new Vector2(1, 1), new Vector2(1, 1), -200, 2, 0, -22);
+
             skinLine = UiKit.Label("", hud, 15, UiKit.EssenceLit, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
             skinLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -300, 100, -300, -124);
+        }
+
+        /// <summary>The crosshair, and the ring that fills while a stone is drawn in.</summary>
+        void BuildCrosshair()
+        {
+            crosshair = UiKit.Rect("Crosshair", hud).At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(30, 30));
+            var ring = UiKit.Image("Ring", crosshair, new Color(UiKit.GoldLit.r, UiKit.GoldLit.g, UiKit.GoldLit.b, 0.75f), UiKit.Ring);
+            ring.rectTransform.Fill();
+            var dot = UiKit.Image("Dot", crosshair, UiKit.GoldLit, UiKit.Disc);
+            dot.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(5, 5));
+            ring.gameObject.AddComponent<Shadow>().effectColor = new Color(0, 0, 0, 0.6f);
+
+            absorbing = UiKit.Rect("Absorbing", hud).At(new Vector2(0.5f, 0.5f), new Vector2(0, -150), new Vector2(96, 96));
+            var back = UiKit.Image("Back", absorbing, UiKit.Hex(0x0E0D0C, 0.72f), UiKit.Disc);
+            back.rectTransform.Fill();
+            var track = UiKit.Image("Track", absorbing, new Color(UiKit.Essence.r, UiKit.Essence.g, UiKit.Essence.b, 0.25f), UiKit.Ring);
+            track.rectTransform.Fill(4);
+            absorbFill = UiKit.Image("Fill", absorbing, UiKit.EssenceLit, UiKit.Ring);
+            Radial(absorbFill);
+            absorbFill.rectTransform.Fill(4);
+            var stone = UiKit.Icon("stone", absorbing, 38, UiKit.EssenceLit);
+            stone.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(38, 38));
+            absorbLine = UiKit.Label("", absorbing, 17, UiKit.Text, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
+            absorbLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -160, -40, -160, 8);
+            absorbing.gameObject.SetActive(false);
         }
 
         void BuildLog()
@@ -281,7 +326,7 @@ namespace GuWorld.UI
             essenceRing.fillAmount = Mathf.Clamp01(a.Essence / 100);
             capRing.color = new Color(rank.r, rank.g, rank.b, 0.2f);
             capRing.fillAmount = Mathf.Clamp01(a.Cap / 100);
-            rankMark.text = Aperture.RankGlyph(a.Rank);
+            rankMark.text = Aperture.RankNumeral(a.Rank);
             heroName.text = host.Look.FullName;
             essenceLine.text = UiKit.Spaced("Эссенция") + $"  {a.Essence:0}%";
 
@@ -383,10 +428,25 @@ namespace GuWorld.UI
                 ShowEntry(barCells[i], gu, gu.Bar[i], true);
             }
 
+            var stones = gu.Stones;
+            stoneCell.Count.text = $"{stones}";
+            stoneCell.Mark.color = stones > 0 ? (gu.Absorbing ? UiKit.EssenceLit : UiKit.Text) : UiKit.Muted;
+            stoneCell.SetRim(gu.Absorbing ? UiKit.EssenceLit : UiKit.GoldDeep);
+            stoneCell.SetRest(gu.Absorbing ? 1 - gu.AbsorbProgress : 0);
             skinLine.text = gu.SkinOn ? UiKit.Spaced("Нефритовая кожа") : "";
+
+            // The crosshair only while playing (not in a conversation); the ring while a stone is drawn in.
+            crosshair.gameObject.SetActive(Current == Page.None);
+            absorbing.gameObject.SetActive(gu.Absorbing);
+
+            if (gu.Absorbing)
+            {
+                absorbFill.fillAmount = gu.AbsorbProgress;
+                absorbLine.text = $"Поглощение камня · {(1 - gu.AbsorbProgress) * Cultivator.AbsorbTime:0.0} с";
+            }
         }
 
-        /// <summary>Shows an action bar entry in a cell: a Gu (its rank rim, hunger, rest) or a thing (its count).</summary>
+        /// <summary>Shows a Gu's key in a cell: the Gu's icon, its rank rim, hunger and rest.</summary>
         static void ShowEntry(Cell cell, Cultivator gu, string entry, bool live)
         {
             cell.Count.text = "";
@@ -395,9 +455,9 @@ namespace GuWorld.UI
             cell.SetRest(0);
             cell.Mark.color = UiKit.Text;
 
-            if (entry == null)
+            if (entry == null || !entry.StartsWith("gu:"))
             {
-                cell.Mark.text = "";
+                cell.SetIcon(null);
                 cell.SetRim(UiKit.Hex(0x2A2622));
 
                 return;
@@ -407,7 +467,9 @@ namespace GuWorld.UI
             {
                 var kind = GuBook.Find(entry.Substring(3));
                 var owned = gu.First(kind?.Id);
-                cell.Mark.text = kind?.Glyph ?? "?";
+                cell.SetIcon(kind?.Icon);
+                cell.Corner.text = kind != null ? Aperture.RankNumeral(kind.Rank) : "";
+                cell.Corner.color = Aperture.RankColour(kind?.Rank ?? 1);
                 var rim = Aperture.RankColour(kind?.Rank ?? 1);
 
                 if (owned == null)
@@ -436,13 +498,6 @@ namespace GuWorld.UI
 
                 return;
             }
-
-            var item = ItemBook.Find(entry.Substring(5));
-            var count = item != null ? gu.Bag.Count(item.Id) : 0;
-            cell.Mark.text = item?.Glyph ?? "?";
-            cell.Mark.color = count > 0 ? UiKit.Text : UiKit.Muted;
-            cell.Count.text = count > 0 ? $"{count}" : "0";
-            cell.SetRim(UiKit.GoldDeep);
         }
 
         void UpdateLog()

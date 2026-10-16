@@ -27,14 +27,14 @@ namespace GuWorld.UI
         int bagFilter = -1;
 
         /// <summary>The frame of the hero's pages; returns the body to fill.</summary>
-        RectTransform BookFrame(string glyph, string title, Page page)
+        RectTransform BookFrame(string icon, string title, Page page)
         {
             var dim = UiKit.Image("Dim", pageRoot, UiKit.Hex(0x0B0A0A, 0.95f));
             dim.rectTransform.Fill();
             dim.raycastTarget = true;
 
             var top = UiKit.Rect("Top", pageRoot).Place(new Vector2(0, 1), Vector2.one, 48, -112, 48, 28);
-            var seal = UiKit.SealMark(glyph, top, 60);
+            var seal = UiKit.SealMark(icon, top, 60);
             seal.rectTransform.At(new Vector2(0, 0.5f), new Vector2(30, 0), new Vector2(60, 60));
             var name = UiKit.Label(title, top, 34, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold);
             name.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 82, 0, -420, 0);
@@ -50,7 +50,7 @@ namespace GuWorld.UI
 
             var close = UiKit.Button("Закрыть · Esc", top, host.Resume, ButtonKind.Plain, 16);
             ((RectTransform)close.transform).Place(new Vector2(1, 0), Vector2.one, -190, 12, 0, 12);
-            var coin = UiKit.Glyph("元", top, 24, UiKit.Gold);
+            var coin = UiKit.Icon("stone", top, 24, UiKit.Gold);
             coin.rectTransform.Place(new Vector2(1, 0), Vector2.one, -420, 0, 380, 0);
             var stones = UiKit.Label($"<b>{host.Cultivator.Stones}</b>  <color=#A69A86>камней</color>", top, 20, UiKit.Text);
             stones.rectTransform.Place(new Vector2(1, 0), Vector2.one, -376, 0, 206, 0);
@@ -61,7 +61,7 @@ namespace GuWorld.UI
             return UiKit.Rect("Body", pageRoot).Place(Vector2.zero, Vector2.one, 48, 36, 48, 140);
         }
 
-        /// <summary>Keys on the hero's pages: 1–9 put the chosen thing or Gu on the action bar.</summary>
+        /// <summary>Keys on the aperture page: 1–4 put the chosen Gu on that key.</summary>
         void UpdatePages()
         {
             var keyboard = Keyboard.current;
@@ -71,7 +71,7 @@ namespace GuWorld.UI
                 return;
             }
 
-            var digits = new[] { keyboard.digit1Key, keyboard.digit2Key, keyboard.digit3Key, keyboard.digit4Key, keyboard.digit5Key, keyboard.digit6Key, keyboard.digit7Key, keyboard.digit8Key, keyboard.digit9Key };
+            var digits = new[] { keyboard.digit1Key, keyboard.digit2Key, keyboard.digit3Key, keyboard.digit4Key };
 
             for (var i = 0; i < digits.Length; i++)
             {
@@ -96,13 +96,10 @@ namespace GuWorld.UI
         {
             var gu = host.Cultivator;
 
+            // Only Gu go on the keys (things are used from the bag; the stone has its own key).
             if (Current == Page.Bag)
             {
-                var stack = gu.Bag[bagChosen];
-                var kind = stack?.Kind;
-
-                // A Gu in the bag is not yet one's own: it goes on the bar once refined.
-                return kind == null || kind.Use == ItemUse.Refine || kind.Use == ItemUse.None ? null : "item:" + kind.Id;
+                return null;
             }
 
             var owned = gu.At(ringChosen);
@@ -117,7 +114,7 @@ namespace GuWorld.UI
         {
             var gu = host.Cultivator;
             var bag = gu.Bag;
-            var body = BookFrame("囊", "Инвентарь", Page.Bag);
+            var body = BookFrame("bag", "Инвентарь", Page.Bag);
 
             if (bag[bagChosen] == null)
             {
@@ -144,7 +141,7 @@ namespace GuWorld.UI
             Stat(info, "Первобытные камни", $"{gu.Stones}");
             Stat(info, "Вес", $"{bag.Weight:0.0} / {Bag.Capacity:0}");
             UiKit.Image("Rule", info, UiKit.Line).Size(2);
-            UiKit.Label("Выберите вещь и нажмите 1–9, чтобы положить её на панель действий.", info, 16, UiKit.Muted).Size(64);
+            UiKit.Label("Камни поглощаются клавишей V (3 с). Гу ставятся на клавиши 1–4 в апертуре (K).", info, 16, UiKit.Muted).Size(64);
             UiKit.Label("Гу в сумке лежат в сосуде и не голодают — пока вы не очистите их в апертуру.", info, 16, UiKit.Muted).Size(64);
 
             // The cells, in the middle.
@@ -251,10 +248,6 @@ namespace GuWorld.UI
                     Show(Page.Bag);
                 }, Page.Bag), ButtonKind.Danger, 15).Size(50, -1, 1);
 
-            if (kind.Use != ItemUse.Refine)
-            {
-                UiKit.Label("1–9 — положить на панель действий", details, 15, UiKit.Muted, TextAnchor.MiddleCenter).Size(24);
-            }
         }
 
         static string ActionName(ItemKind kind) => kind.Use switch
@@ -281,13 +274,13 @@ namespace GuWorld.UI
             return who.Count > 0 ? string.Join(", ", who) : "—";
         }
 
-        /// <summary>A pile in a cell: its character, its count, its rank, whether it is about to spoil; chosen or filtered out.</summary>
+        /// <summary>A pile in a cell: its icon, its count, its rank, whether it is about to spoil; chosen or filtered out.</summary>
         void ShowStack(Cell cell, ItemStack stack, bool chosen, double now)
         {
             var kind = stack?.Kind;
-            cell.Mark.text = kind?.Glyph ?? "";
+            cell.SetIcon(kind?.Icon);
             cell.Count.text = stack != null && stack.count > 1 ? $"{stack.count}" : "";
-            cell.Corner.text = kind != null && kind.Rank > 0 ? Aperture.RankGlyph(kind.Rank) : "";
+            cell.Corner.text = kind != null && kind.Rank > 0 ? Aperture.RankNumeral(kind.Rank) : "";
             cell.Corner.color = Aperture.RankColour(kind?.Rank ?? 1);
             cell.Dot.enabled = stack != null && stack.spoils > 0 && stack.spoils - now < 24 * 60;
             cell.Dot.color = UiKit.Hunger;

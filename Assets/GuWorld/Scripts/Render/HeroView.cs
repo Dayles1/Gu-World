@@ -45,6 +45,32 @@ namespace GuWorld.Render
         /// <summary>The figure's size against the models' (1 = 1.8 m).</summary>
         public float Scale => HeightOf(Look.Gender) / 1.8f;
 
+        bool eyes;
+
+        /// <summary>Seen from the hero's own eyes: the body casts its shadow but is not drawn (it would fill the view).</summary>
+        public bool FirstPerson
+        {
+            get => eyes;
+            set
+            {
+                eyes = value;
+                ShowBody();
+            }
+        }
+
+        void ShowBody()
+        {
+            if (figure == null)
+            {
+                return;
+            }
+
+            foreach (var renderer in figure.Root.GetComponentsInChildren<Renderer>(true))
+            {
+                renderer.shadowCastingMode = eyes ? UnityEngine.Rendering.ShadowCastingMode.ShadowsOnly : UnityEngine.Rendering.ShadowCastingMode.On;
+            }
+        }
+
         void Awake()
         {
             body = GetComponent<HeroMotor>();
@@ -58,6 +84,7 @@ namespace GuWorld.Render
             figure?.Destroy();
             figure = new PersonFigure(transform, Parts, look, HumanBody.Build.ForHero(look), HeightOf(look.Gender));
             HitZones.Build(figure.Rig, GetComponent<IStrikable>());
+            ShowBody();
             Pose(0.5f);
         }
 

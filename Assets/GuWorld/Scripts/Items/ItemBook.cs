@@ -57,7 +57,7 @@ namespace GuWorld.Items
         /// <summary>For a Gu: the kind of Gu it is (GuBook).</summary>
         public string Gu;
         /// <summary>The character on its cell (a stand-in for the design's icons).</summary>
-        public string Glyph;
+        public string Icon;
     }
 
     /// <summary>
@@ -97,7 +97,7 @@ namespace GuWorld.Items
                 Price = 30,
                 Use = ItemUse.Refine,
                 Gu = "moonlight",
-                Glyph = "月",
+                Icon = "moon",
             });
             Add(new ItemKind
             {
@@ -113,7 +113,7 @@ namespace GuWorld.Items
                 Price = 90,
                 Use = ItemUse.Refine,
                 Gu = "jade_skin",
-                Glyph = "玉",
+                Icon = "jade",
             });
             Add(new ItemKind
             {
@@ -131,7 +131,7 @@ namespace GuWorld.Items
                 Bundle = 10,
                 Keeps = 5 * Day,
                 Use = ItemUse.Feed,
-                Glyph = "兰",
+                Icon = "orchid",
             });
             Add(new ItemKind
             {
@@ -145,7 +145,7 @@ namespace GuWorld.Items
                 Weight = 0.2f,
                 Price = 4,
                 Use = ItemUse.Feed,
-                Glyph = "石",
+                Icon = "rock",
             });
             Add(new ItemKind
             {
@@ -159,7 +159,7 @@ namespace GuWorld.Items
                 Stack = 999,
                 Weight = 0.02f,
                 Use = ItemUse.Absorb,
-                Glyph = "元",
+                Icon = "stone",
             });
             Add(new ItemKind
             {
@@ -174,7 +174,7 @@ namespace GuWorld.Items
                 Keeps = Day,
                 Use = ItemUse.Eat,
                 Heal = 35,
-                Glyph = "面",
+                Icon = "bowl",
             });
             Add(new ItemKind
             {
@@ -188,7 +188,7 @@ namespace GuWorld.Items
                 Price = 2,
                 Use = ItemUse.Eat,
                 Heal = 15,
-                Glyph = "酒",
+                Icon = "jar",
             });
         }
 

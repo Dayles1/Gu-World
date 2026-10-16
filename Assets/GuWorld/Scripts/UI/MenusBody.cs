@@ -29,7 +29,7 @@ namespace GuWorld.UI
 
         void BodyPage()
         {
-            var body = BookFrame("体", "Тело", Page.Body);
+            var body = BookFrame("body", "Тело", Page.Body);
 
             // The figure.
             var left = UiKit.Panel("Figure", body);

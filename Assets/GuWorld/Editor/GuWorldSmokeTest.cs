@@ -192,6 +192,16 @@ namespace GuWorld.Editor
             var cross = screenForward.x * turned.y - screenForward.y * turned.x;
             Check(cross < 0, $"the mouse to the right turns the view to the right (yaw {before2:0.00} → {camera.Yaw:0.00})");
 
+            // F5: the camera in the hero's eyes, looking the way the view turns; and back behind them.
+            camera.SetFirstPerson(true);
+            camera.Follow(0.016f, body.transform.position, 1.55f, false, true);
+            var eyes = camera.transform.position - body.transform.position;
+            Check(camera.FirstPerson && Mathf.Abs(eyes.y - 1.55f) < 0.2f && new Vector2(eyes.x, eyes.z).magnitude < 0.3f,
+                $"F5 puts the camera in the hero's eyes ({eyes.y:0.00} m up, {new Vector2(eyes.x, eyes.z).magnitude:0.00} m aside)");
+            camera.SetFirstPerson(false);
+            camera.Follow(0.016f, body.transform.position, 1.55f, false, true);
+            Check(!camera.FirstPerson && (camera.transform.position - body.transform.position).magnitude > 1.5f, "F5 again puts it back behind the hero");
+
             // The Gu Master: the test start, a moonblade's cost and rest, the sea refilling, a stone.
             var gu = Object.FindAnyObjectByType<Cultivator>();
             var game = Object.FindAnyObjectByType<GuWorldGame>();
@@ -209,6 +219,22 @@ namespace GuWorld.Editor
             Check(gu.AbsorbStone() && Mathf.Approximately(gu.Aperture.Essence, 45) && gu.Stones == 9, $"a stone tops the sea up to its cap ({gu.Aperture.Essence}, {gu.Stones} left)");
             gu.Aperture.Essence = 5;
             Check(!gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 5), "without the essence the Gu cannot be used");
+
+            // Drawing in a stone takes three seconds; a blow breaks it off and the stone is kept.
+            gu.Aperture.Essence = 20;
+            var stonesBefore = gu.Stones;
+            Check(gu.StartAbsorbing() && gu.Absorbing, "V begins drawing in a stone");
+            gu.UpdateAbsorbing(1.5f);
+            Check(gu.Absorbing && Mathf.Approximately(gu.Aperture.Essence, 20) && gu.Stones == stonesBefore,
+                $"half way through it has given nothing yet ({gu.AbsorbProgress:0.00})");
+            gu.UpdateAbsorbing(1.6f);
+            Check(!gu.Absorbing && gu.Aperture.Essence > 31 && gu.Stones == stonesBefore - 1,
+                $"after three seconds the stone is in the sea ({gu.Aperture.Essence:0}%, {gu.Stones} left)");
+            gu.StartAbsorbing();
+            health.Strike(1);
+            Check(!gu.Absorbing && gu.Stones == stonesBefore - 1, "a blow breaks it off, the stone kept");
+            health.Set(Health.Max);
+            gu.Aperture.Essence = 5;
 
             // Hunger (lore: two petals a meal, twice a day): hungry after a meal's time, fed from the bag, too weak to answer if starved.
             gu.Tick(start + 12 * 60 + 1);

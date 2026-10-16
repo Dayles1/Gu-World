@@ -305,13 +305,12 @@ namespace GuWorld.UI
             floor.rectTransform.Place(Vector2.zero, new Vector2(1, 0), 0, 0, 0, -90);
 
             // The seal and the name.
-            var seal = UiKit.SealMark("蛊", pageRoot, 84);
+            var seal = UiKit.SealMark("moon", pageRoot, 84);
             seal.rectTransform.anchorMin = seal.rectTransform.anchorMax = new Vector2(0, 1);
             seal.rectTransform.anchoredPosition = new Vector2(160, -150);
             var name = UiKit.Label("GU WORLD", pageRoot, 104, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Shadowed();
             name.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 222, -210, -1100, 90);
-            var world = UiKit.Glyph("蛊 · 世 · 界", pageRoot, 30, UiKit.Gold);
-            world.alignment = TextAnchor.MiddleLeft;
+            var world = UiKit.Caps("Мир Гу · путь мастера", pageRoot, 22, UiKit.Gold);
             world.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 228, -258, -900, 214);
             var line = UiKit.Image("Line", pageRoot, UiKit.GoldDeep);
             line.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 118, -282, -700, 280);
@@ -343,11 +342,11 @@ namespace GuWorld.UI
                 {
                     FadeThrough(host.NewGame);
                 }
-            }, "始");
-            UiKit.Entry("Энциклопедия Гу", null, menu, () => Show(Page.Codex), "典");
-            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Title), "设");
-            UiKit.Entry("Об игре", null, menu, () => Show(Page.About), "文");
-            UiKit.Entry("Выход", null, menu, host.Quit, "离");
+            }, "play");
+            UiKit.Entry("Энциклопедия Гу", null, menu, () => Show(Page.Codex), "book");
+            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Title), "gear");
+            UiKit.Entry("Об игре", null, menu, () => Show(Page.About), "info");
+            UiKit.Entry("Выход", null, menu, host.Quit, "exit");
 
             // The chronicle: what is new in this version.
             var chronicle = UiKit.Panel("Chronicle", pageRoot, UiKit.Hex(0x121010, 0.88f));
@@ -471,14 +470,14 @@ namespace GuWorld.UI
 
             var menu = UiKit.Rect("Menu", pageRoot).Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 90, -400, -640, -190);
             menu.Stack<VerticalLayoutGroup>(2, null, TextAnchor.UpperLeft);
-            UiKit.Entry("Продолжить", null, menu, host.Resume, "续");
-            UiKit.Entry("Апертура", null, menu, () => host.OpenPage(Page.Aperture), "窍");
-            UiKit.Entry("Сумка", null, menu, () => host.OpenPage(Page.Bag), "囊");
-            UiKit.Entry("Карта", null, menu, () => host.OpenPage(Page.Map), "图");
-            UiKit.Entry("Тело", null, menu, () => host.OpenPage(Page.Body), "体");
-            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Pause), "设");
-            UiKit.Entry("Главное меню", null, menu, () => FadeThrough(host.BackToTitle), "门");
-            UiKit.Entry("Выйти из игры", null, menu, host.Quit, "离");
+            UiKit.Entry("Продолжить", null, menu, host.Resume, "play");
+            UiKit.Entry("Апертура", null, menu, () => host.OpenPage(Page.Aperture), "ring");
+            UiKit.Entry("Сумка", null, menu, () => host.OpenPage(Page.Bag), "bag");
+            UiKit.Entry("Карта", null, menu, () => host.OpenPage(Page.Map), "map");
+            UiKit.Entry("Тело", null, menu, () => host.OpenPage(Page.Body), "body");
+            UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Pause), "gear");
+            UiKit.Entry("Главное меню", null, menu, () => FadeThrough(host.BackToTitle), "home");
+            UiKit.Entry("Выйти из игры", null, menu, host.Quit, "exit");
 
             // The controls, on a card at the right.
             var card = UiKit.Panel("Controls", pageRoot);
@@ -497,13 +496,15 @@ namespace GuWorld.UI
                 { "Shift", "бег" },
                 { "Пробел", "прыжок · залезть на уступ" },
                 { "C / Z", "присесть / ползти" },
-                { "1 – 9", "Гу и вещи на панели" },
+                { "1 – 4", "Гу: держать — прицел, отпустить — удар" },
+                { "ЛКМ · ПКМ", "удар первым Гу в прицел · отмена прицела" },
+                { "V", "поглотить первобытный камень (3 с)" },
                 { "E", "говорить · собрать (удерживать)" },
-                { "V", "поглотить первобытный камень" },
                 { "K · I · M · B", "апертура · сумка · карта · тело" },
                 { "X", "сесть · встать" },
                 { "E у дерева", "лезть на дерево" },
                 { "Мышь", "камера, колесо — ближе / дальше" },
+                { "F5", "вид от первого лица / из-за спины" },
                 { "Esc", "пауза" },
                 { "F3 · F4", "отладка · хитбоксы" },
             };
@@ -687,7 +688,7 @@ namespace GuWorld.UI
             card.rectTransform.Place(new Vector2(0.5f, 0.5f), new Vector2(0.5f, 0.5f), -720, -420, -720, -420);
 
             var header = UiKit.Rect("Header", card.transform).Place(new Vector2(0, 1), new Vector2(1, 1), 40, -110, 40, 30);
-            var seal = UiKit.SealMark("典", header, 64);
+            var seal = UiKit.SealMark("book", header, 64);
             seal.rectTransform.At(new Vector2(0, 0.5f), new Vector2(32, 0), new Vector2(64, 64));
             var title = UiKit.Label("ЭНЦИКЛОПЕДИЯ ГУ", header, 34, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold);
             title.rectTransform.Place(Vector2.zero, Vector2.one, 86, 0, 0, 0);

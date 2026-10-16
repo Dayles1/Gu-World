@@ -90,14 +90,14 @@ namespace GuWorld.Cultivation
             _ => new Color32(0x4E, 0x9A, 0x86, 0xFF),
         };
 
-        /// <summary>A rank as the seal shows it: 一 二 三 四 五.</summary>
-        public static string RankGlyph(int rank) => rank switch
+        /// <summary>A rank as the seals and cells show it: I … V.</summary>
+        public static string RankNumeral(int rank) => rank switch
         {
-            2 => "二",
-            3 => "三",
-            4 => "四",
-            5 => "五",
-            _ => "一",
+            2 => "II",
+            3 => "III",
+            4 => "IV",
+            5 => "V",
+            _ => "I",
         };
 
         public static string Name(Grade grade) => grade.ToString();

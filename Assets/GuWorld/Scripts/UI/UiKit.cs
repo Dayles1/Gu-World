@@ -47,25 +47,11 @@ namespace GuWorld.UI
             new Color(((rgb >> 16) & 0xff) / 255f, ((rgb >> 8) & 0xff) / 255f, (rgb & 0xff) / 255f, alpha);
 
         static Font font;
-        static Font glyphs;
         static Sprite rounded, softEdge, chamfer, chamferFrame, ring, disc, diamond, arrow;
 
         /// <summary>The text font (Unity's own).</summary>
         public static Font Font => font != null ? font : font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
 
-        /// <summary>A system font with Chinese characters, for seals and glyphs (null where there is none).</summary>
-        public static Font Glyphs
-        {
-            get
-            {
-                if (glyphs == null)
-                {
-                    glyphs = Font.CreateDynamicFontFromOSFont(new[] { "KaiTi", "STKaiti", "Microsoft YaHei", "SimSun", "Noto Sans CJK SC", "PingFang SC", "Arial Unicode MS" }, 64);
-                }
-
-                return glyphs;
-            }
-        }
 
         /// <summary>A rounded rectangle, sliced so it stretches to any size.</summary>
         public static Sprite Rounded => rounded != null ? rounded : rounded = MakeShape(64, 14, Shape.Round, 0);
@@ -332,18 +318,20 @@ namespace GuWorld.UI
             return label;
         }
 
-        /// <summary>A Chinese character (a seal's, an item's), in the glyph font where there is one.</summary>
-        public static Text Glyph(string glyph, Transform parent, int size, Color colour)
+        /// <summary>An icon (Icons), square, tinted.</summary>
+        public static Image Icon(string name, Transform parent, float size, Color colour)
         {
-            var label = Label(glyph, parent, size, colour, TextAnchor.MiddleCenter);
+            var icon = Image(name ?? "Icon", parent, colour, Icons.Get(name));
+            icon.preserveAspect = true;
+            icon.rectTransform.sizeDelta = new Vector2(size, size);
+            icon.enabled = icon.sprite != null;
 
-            if (Glyphs != null)
-            {
-                label.font = Glyphs;
-            }
-
-            return label;
+            return icon;
         }
+
+        /// <summary>Text set as a mark (a rank's numeral in a seal): centred, bold.</summary>
+        public static Text Mark(string text, Transform parent, int size, Color colour) =>
+            Label(text, parent, size, colour, TextAnchor.MiddleCenter, FontStyle.Bold);
 
         /// <summary>A small labelled heading in spaced capitals ("ЗАДАНИЕ").</summary>
         public static Text Caps(string text, Transform parent, int size = 15, Color? colour = null) =>
@@ -352,12 +340,23 @@ namespace GuWorld.UI
         /// <summary>Capitals with a thin space between letters, as the design sets its small headings.</summary>
         public static string Spaced(string text) => string.Join(" ", text.ToUpperInvariant().ToCharArray());
 
-        /// <summary>A cinnabar seal: a square with a character in it.</summary>
-        public static Image SealMark(string glyph, Transform parent, float size)
+        /// <summary>A cinnabar seal: a square with an icon in it.</summary>
+        public static Image SealMark(string icon, Transform parent, float size)
         {
             var seal = Image("Seal", parent, Seal, Chamfer);
             seal.rectTransform.sizeDelta = new Vector2(size, size);
-            var mark = Glyph(glyph, seal.transform, Mathf.RoundToInt(size * 0.62f), OnGold);
+            var mark = Icon(icon, seal.transform, size * 0.62f, OnGold);
+            mark.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.one * size * 0.62f);
+
+            return seal;
+        }
+
+        /// <summary>A cinnabar seal with a numeral or a word in it (a rank).</summary>
+        public static Image SealText(string text, Transform parent, float size)
+        {
+            var seal = Image("Seal", parent, Seal, Chamfer);
+            seal.rectTransform.sizeDelta = new Vector2(size, size);
+            var mark = Mark(text, seal.transform, Mathf.RoundToInt(size * (text.Length > 2 ? 0.36f : 0.48f)), OnGold);
             mark.rectTransform.Fill();
 
             return seal;
@@ -400,12 +399,12 @@ namespace GuWorld.UI
             return element;
         }
 
-        /// <summary>A big entry of the main menu: text that lights up gold when pointed at, a character at its right.</summary>
-        public static MenuEntry Entry(string text, string detail, Transform parent, Action click, string glyph = null)
+        /// <summary>A big entry of the main menu: text that lights up gold when pointed at, an icon at its right.</summary>
+        public static MenuEntry Entry(string text, string detail, Transform parent, Action click, string icon = null)
         {
             var rect = Rect(text, parent);
             var entry = rect.gameObject.AddComponent<MenuEntry>();
-            entry.Build(text, detail, click, glyph);
+            entry.Build(text, detail, click, icon);
             rect.Size(detail != null ? 74 : 58);
 
             return entry;
@@ -528,7 +527,7 @@ namespace GuWorld.UI
 
         /// <summary>
         /// An item cell (the design's corner-cut cells): its rim in a rank's or kind's colour,
-        /// a character in the middle, a count at the foot. Clicking it calls `click`.
+        /// an icon in the middle, a count at the foot. Clicking it calls `click`.
         /// </summary>
         public static Cell Cell(Transform parent, float size, Action click = null)
         {
@@ -590,15 +589,16 @@ namespace GuWorld.UI
         }
     }
 
-    /// <summary>An item cell: rim, character, count, a corner mark (rank), a dot (hunger), a shade (rest after use).</summary>
+    /// <summary>An item cell: rim, icon, count, a corner mark (rank), a badge (the vital Gu's heart), a dot (hunger), a shade (rest after use).</summary>
     public class Cell : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
     {
         public Image Back;
         public Image Rim;
-        public Text Mark;
+        public Image Mark;
         public Text Count;
         public Text Corner;
         public Text Key;
+        public Image Badge;
         public Image Dot;
         public Image Shade;
         Action click;
@@ -612,13 +612,15 @@ namespace GuWorld.UI
             Rim = UiKit.Frame(back.transform, UiKit.Line);
             Shade = UiKit.Image("Rest", back.transform, new Color(0, 0, 0, 0.62f), UiKit.Chamfer);
             Shade.rectTransform.Place(Vector2.zero, new Vector2(1, 0));
-            Mark = UiKit.Glyph("", back.transform, Mathf.RoundToInt(size * 0.5f), UiKit.Text);
-            Mark.rectTransform.Fill();
+            Mark = UiKit.Icon(null, back.transform, size * 0.56f, UiKit.Text);
+            Mark.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, Vector2.one * size * 0.56f);
             Count = UiKit.Label("", back.transform, Mathf.RoundToInt(Mathf.Clamp(size * 0.24f, 13, 18)), UiKit.Text, TextAnchor.LowerRight, FontStyle.Bold).Shadowed();
             Count.rectTransform.Fill(5);
-            Corner = UiKit.Glyph("", back.transform, Mathf.RoundToInt(Mathf.Clamp(size * 0.22f, 12, 18)), UiKit.Essence);
-            Corner.alignment = TextAnchor.UpperRight;
+            Corner = UiKit.Label("", back.transform, Mathf.RoundToInt(Mathf.Clamp(size * 0.2f, 11, 16)), UiKit.Essence, TextAnchor.UpperRight, FontStyle.Bold);
             Corner.rectTransform.Fill(5);
+            Badge = UiKit.Icon("heart", back.transform, Mathf.Clamp(size * 0.22f, 11, 18), UiKit.Danger);
+            Badge.rectTransform.At(Vector2.zero, new Vector2(Mathf.Clamp(size * 0.22f, 11, 18) * 0.5f + 5, Mathf.Clamp(size * 0.22f, 11, 18) * 0.5f + 5), Vector2.one * Mathf.Clamp(size * 0.22f, 11, 18));
+            Badge.enabled = false;
             Key = UiKit.Label("", back.transform, 14, UiKit.Muted, TextAnchor.UpperLeft, FontStyle.Bold);
             Key.rectTransform.Fill(5);
             Dot = UiKit.Image("Dot", back.transform, UiKit.Hunger, UiKit.Disc);
@@ -631,6 +633,13 @@ namespace GuWorld.UI
         {
             rim = colour;
             Rim.color = colour;
+        }
+
+        /// <summary>The icon in the middle (null: none).</summary>
+        public void SetIcon(string name)
+        {
+            Mark.sprite = Icons.Get(name);
+            Mark.enabled = Mark.sprite != null;
         }
 
         /// <summary>How far through its rest it still is (0 ready … 1 just used): a shade rising from the foot.</summary>
@@ -662,14 +671,14 @@ namespace GuWorld.UI
     {
         Text title;
         Text note;
-        Text mark;
+        Image mark;
         Image bar;
         Image glow;
         Action click;
         float lit;
         bool over;
 
-        public void Build(string text, string detail, Action onClick, string glyph)
+        public void Build(string text, string detail, Action onClick, string icon)
         {
             click = onClick;
             var rect = (RectTransform)transform;
@@ -688,11 +697,10 @@ namespace GuWorld.UI
                 note.rectTransform.Place(Vector2.zero, new Vector2(1, 0.42f), 26, 0, 60, 0);
             }
 
-            if (glyph != null)
+            if (icon != null)
             {
-                mark = UiKit.Glyph(glyph, rect, 30, UiKit.Hex(0x3A3024));
-                mark.alignment = TextAnchor.MiddleRight;
-                mark.rectTransform.Place(new Vector2(1, 0), Vector2.one, -60, 0, 8, 0);
+                mark = UiKit.Icon(icon, rect, 30, UiKit.Hex(0x3A3024));
+                mark.rectTransform.At(new Vector2(1, 0.5f), new Vector2(-26, 0), new Vector2(30, 30));
             }
         }
 

@@ -48,7 +48,7 @@ namespace GuWorld.UI
 
             // The head: the seal, the shop, buying or selling, the purse.
             var top = UiKit.Rect("Top", pageRoot).Place(new Vector2(0, 1), Vector2.one, 48, -112, 48, 28);
-            var seal = UiKit.SealMark("商", top, 60);
+            var seal = UiKit.SealMark("coin", top, 60);
             seal.rectTransform.At(new Vector2(0, 0.5f), new Vector2(30, 0), new Vector2(60, 60));
             var title = UiKit.Label($"<b>Лавка</b>  <size=18><color=#A69A86>{shop.Keeper} · деревня Гу Юэ</color></size>", top, 32, UiKit.Text);
             title.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 82, 0, -760, 0);
@@ -58,7 +58,7 @@ namespace GuWorld.UI
             UiKit.Button(UiKit.Spaced("Продать"), modes, () => { shopSelling = true; Show(Page.Shop); }, shopSelling ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(52, -1, 1);
             var close = UiKit.Button("Закрыть · Esc", top, host.Resume, ButtonKind.Plain, 16);
             ((RectTransform)close.transform).Place(new Vector2(1, 0), Vector2.one, -190, 12, 0, 12);
-            var coin = UiKit.Glyph("元", top, 24, UiKit.Gold);
+            var coin = UiKit.Icon("stone", top, 24, UiKit.Gold);
             coin.rectTransform.Place(new Vector2(1, 0), Vector2.one, -420, 0, 380, 0);
             var purse = UiKit.Label($"<b>{gu.Stones}</b>  <color=#A69A86>камней</color>", top, 20, UiKit.Text);
             purse.rectTransform.Place(new Vector2(1, 0), Vector2.one, -376, 0, 206, 0);
@@ -252,8 +252,8 @@ namespace GuWorld.UI
             row.Size(64);
             var cell = UiKit.Cell(row, 56);
             cell.Size(56, 56, 0);
-            cell.Mark.text = kind.Glyph;
-            cell.Corner.text = kind.Rank > 0 ? Aperture.RankGlyph(kind.Rank) : "";
+            cell.SetIcon(kind.Icon);
+            cell.Corner.text = kind.Rank > 0 ? Aperture.RankNumeral(kind.Rank) : "";
             cell.Corner.color = Aperture.RankColour(kind.Rank);
             cell.SetRim(kind.Rank > 0 ? Aperture.RankColour(kind.Rank) : UiKit.GoldDeep);
             UiKit.Label($"<b>{kind.Name}</b>\n<size=13><color=#A69A86>{kind.Kind}</color></size>", row, 17).Size(-1, -1, 1);

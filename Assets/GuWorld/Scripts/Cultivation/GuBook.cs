@@ -36,7 +36,7 @@ namespace GuWorld.Cultivation
         public string Kind;
         /// <summary>The thing it is as an item in the bag (ItemBook).</summary>
         public string Item;
-        public string Glyph;
+        public string Icon;
         public SkillKind Skill;
         public string SkillName;
         /// <summary>Essence one use costs (for a skin: raising it), % of the aperture.</summary>
@@ -95,7 +95,7 @@ namespace GuWorld.Cultivation
             Rank = 1,
             Kind = "атака",
             Item = GuWorld.Items.ItemBook.MoonlightGu,
-            Glyph = "月",
+            Icon = "moon",
             Skill = SkillKind.Moonblade,
             SkillName = "Лунный клинок",
             Cost = 10,
@@ -122,7 +122,7 @@ namespace GuWorld.Cultivation
             Rank = 1,
             Kind = "защита",
             Item = GuWorld.Items.ItemBook.JadeSkinGu,
-            Glyph = "玉",
+            Icon = "jade",
             Skill = SkillKind.JadeSkin,
             SkillName = "Нефритовая кожа",
             Cost = 2,
