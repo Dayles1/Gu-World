@@ -410,13 +410,13 @@ namespace GuWorld.UI
                 return;
             }
 
-            var next = quests.NextFrom(Quests.Teacher);
+            var next = quests.Next;
             questCard.gameObject.SetActive(next != null);
 
             if (next != null)
             {
-                questTitle.text = "Академия клана";
-                questGoal.text = $"Наставник академии {Quests.Teacher} ждёт вас с поручением";
+                questTitle.text = "Новое поручение";
+                questGoal.text = $"Вас ждёт {next.GiverTitle ?? ""} {next.Giver}".Replace("  ", " ");
                 questProgress.text = "";
             }
         }

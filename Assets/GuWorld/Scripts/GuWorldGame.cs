@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using GuWorld.Body;
 using GuWorld.Combat;
+using GuWorld.Creatures;
 using GuWorld.Cultivation;
 using GuWorld.Engine;
 using GuWorld.Items;
@@ -483,6 +484,10 @@ namespace GuWorld
             PlaceDummies(layout);
             PlaceBeds(layout, restored.beds);
             DrawMap(layout);
+
+            // The wolves of the forest round the village (their dens outside its walls), and the packs a command calls up.
+            wolves = WolfPacks.Create(body.transform, WolfDens(), 3);
+            Wolf.Killed += OnWolfKilled;
 
             if (restored.problems.Count > 0)
             {
@@ -1153,6 +1158,7 @@ namespace GuWorld
         {
             talkingTo = who;
             who.BeginTalk(body.transform.position);
+            quests.Count("talk:" + who.Spec.Name);
             Enter(Mode.Talking);
             var hour = Mathf.FloorToInt((float)clock.MinuteOfDay / 60);
             Say(Talk.Greeting(who, hour, weather.Kind, look.Gender));
@@ -1174,6 +1180,24 @@ namespace GuWorld
             if (theirs != null)
             {
                 choices.Add(("Показать товар", () => OpenShop(theirs)));
+            }
+
+            // A thing to deliver to this one (a task's): handed over.
+            var task = quests.Current;
+
+            if (task != null && !quests.Ready && task.Event.StartsWith("deliver:") && task.Event.EndsWith("@" + name))
+            {
+                var item = task.Event.Substring(8, task.Event.IndexOf('@') - 8);
+
+                if (cultivator.Bag.Has(item, 1))
+                {
+                    choices.Add(($"Отдать: {ItemBook.Find(item)?.Name.ToLowerInvariant()}", () =>
+                    {
+                        cultivator.Bag.Take(item, 1);
+                        quests.Count(task.Event);
+                        Say("Вот спасибо! Передай мою благодарность тому, кто прислал.");
+                    }));
+                }
             }
 
             if (quests.Ready && quests.Current.Giver == name)
@@ -1200,6 +1224,13 @@ namespace GuWorld
                 ("Возьмусь", () =>
                 {
                     quests.Take(quest);
+
+                    if (quest.Gives != null)
+                    {
+                        var got = cultivator.Bag.Add(quest.Gives, quest.GivesCount, clock.Minutes);
+                        menus.Notify($"Получено: {ItemBook.Find(quest.Gives)?.Name} ×{got}");
+                    }
+
                     Say("Ступай. И не трать эссенцию попусту.");
                 }),
                 ("В другой раз", () => Say("Как знаешь. Поручение подождёт.")),
@@ -1509,6 +1540,11 @@ namespace GuWorld
                 Interact(keyboard);
             }
 
+            if (mode == Mode.Playing && Time.frameCount % 20 == 0)
+            {
+                Visits();
+            }
+
             // The Gu Master's keys: the Gu (held: aimed; let go: used), the stone, the view, the hero's pages.
             if (mode == Mode.Playing && keyboard != null && screenshot == null)
             {
@@ -1715,6 +1751,24 @@ namespace GuWorld
             picture.FirstPerson = on;
         }
 
+        /// <summary>A "visit:" task: done once the hero is within 30 m of its place.</summary>
+        void Visits()
+        {
+            var task = quests.Current;
+
+            if (task == null || quests.Ready || !task.Event.StartsWith("visit:") || !Places.TryGetValue(task.Event.Substring(6), out var place))
+            {
+                return;
+            }
+
+            var at = body.transform.position;
+
+            if (new Vector2(at.x - place.x, at.z - place.z).magnitude < 30)
+            {
+                quests.Count(task.Event);
+            }
+        }
+
         // ── The function keys (as Minecraft has them) ─────────────────
 
         bool f3Combo;
@@ -1883,7 +1937,36 @@ namespace GuWorld
 
         public void Kill() => health.Strike(Health.Max * 10);
 
-        public int SpawnWolves(int count) => 0;
+        public int SpawnWolves(int count) => wolves != null ? wolves.CallNear(count) : 0;
+
+        WolfPacks wolves;
+
+        /// <summary>The wolves' dens: in the forest round the hero's village, well outside its walls (none on the proving ground).</summary>
+        IEnumerable<Vector3> WolfDens()
+        {
+            if (Location.id != QingMao.Id)
+            {
+                yield break;
+            }
+
+            var village = QingMao.Find("gu_yue");
+
+            foreach (var degrees in new[] { 205f, 250f, 295f, 160f, 25f })
+            {
+                var angle = degrees * Mathf.Deg2Rad;
+                var at = new Vector3(village.Centre.x + Mathf.Cos(angle) * (village.Radius + 210), 0, village.Centre.y + Mathf.Sin(angle) * (village.Radius + 210));
+                at.y = QingMao.GroundAt(at);
+                yield return at;
+            }
+        }
+
+        /// <summary>A wolf killed: its fang into the bag, and the task counts it.</summary>
+        void OnWolfKilled(Wolf wolf)
+        {
+            var kept = cultivator.Bag.Add(ItemBook.WolfFang, 1, clock.Minutes);
+            menus.Notify(kept > 0 ? "Волк убит — волчий клык в сумке" : "Волк убит");
+            quests.Count("kill:wolf");
+        }
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body;
 
@@ -2096,6 +2179,7 @@ namespace GuWorld
             Wounds.Landed -= OnWound;
             TreeBranch.Creaking -= OnCreak;
             TreeBranch.Snapped -= OnSnap;
+            Wolf.Killed -= OnWolfKilled;
             GameSettings.Restore();
         }
 

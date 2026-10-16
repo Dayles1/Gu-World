@@ -340,6 +340,24 @@ namespace GuWorld.Editor
             said = game.Commands.Run("/время set 7");
             Check(System.Math.Abs(game.Clock.MinuteOfDay / 60 - 7) < 0.1, $"the commands answer to Russian names too ({said})");
             Check(game.Commands.Run("/nonsense").StartsWith("!"), "an unknown command is refused");
+
+            // Wolves: called up beside the hero; a moonblade cuts one, a second kills it, its fang is the hero's.
+            var came = game.SpawnWolves(1);
+            var wolf = Creatures.Wolf.All.Find(w => !w.Dead);
+            Check(came == 1 && wolf != null && wolf.GetComponentsInChildren<MeshRenderer>().Length > 10, $"/wolves calls up a wolf beside the hero ({came})");
+
+            if (wolf != null)
+            {
+                var fangs = gu.Bag.Count(ItemBook.WolfFang);
+                var cut = new Combat.Strike { Power = 100, Sharpness = 1, Direction = Vector3.forward };
+                wolf.TakeStrike(cut, null);
+                Check(!wolf.Dead && wolf.Health < Creatures.Wolf.MaxHealth - 20, $"a moonblade cuts a wolf deep ({wolf.Health:0} of {Creatures.Wolf.MaxHealth})");
+                wolf.TakeStrike(cut, null);
+                Check(wolf.Dead && gu.Bag.Count(ItemBook.WolfFang) == fangs + 1, "a second kills it, and its fang is the hero's");
+            }
+
+            Check(Quests.Book.Length >= 9 && System.Array.Exists(Quests.Book, q => q.Event == "kill:wolf") && System.Array.Exists(Quests.Book, q => q.Gives != null),
+                $"the villagers have tasks past the academy's: wolves, a place, a delivery, a word ({Quests.Book.Length})");
             Teleport(body, new Vector3(0, 0, 12));
 
             // A moonblade thrown at a dummy cuts it.

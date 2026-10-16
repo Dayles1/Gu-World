@@ -75,6 +75,7 @@ namespace GuWorld.Items
         public const string JadeSkinGu = "gu_jade_skin";
         public const string Noodles = "noodles";
         public const string BambooWine = "green_bamboo_wine";
+        public const string WolfFang = "wolf_fang";
 
         /// <summary>A game day in minutes.</summary>
         const double Day = 24 * 60;
@@ -189,6 +190,19 @@ namespace GuWorld.Items
                 Use = ItemUse.Eat,
                 Heal = 15,
                 Icon = "jar",
+            });
+            Add(new ItemKind
+            {
+                Id = WolfFang,
+                Name = "Волчий клык",
+                Kind = "Добыча",
+                About = "Клык серого волка с гор Цинмао. Стража платит за них: так в деревне считают убитых волков.",
+                Category = ItemCategory.Material,
+                Stack = 30,
+                Weight = 0.05f,
+                Price = 2,
+                Use = ItemUse.None,
+                Icon = "wolf",
             });
         }
 

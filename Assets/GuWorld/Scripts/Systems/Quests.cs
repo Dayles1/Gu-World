@@ -12,11 +12,20 @@ namespace GuWorld.Systems
         public string Title;
         /// <summary>The villager who gives it and takes it back (their name).</summary>
         public string Giver;
+        /// <summary>Who the giver is (for the HUD's "who waits for you").</summary>
+        public string GiverTitle;
         /// <summary>What to do, in a line (the HUD's goal).</summary>
         public string Goal;
         /// <summary>What counts: an event's key ("hit_dummy", "gather:moon_orchid_petal", "feed:moonlight", "buy:…").</summary>
+        /// <summary>
+        /// What counts toward it: "hit_dummy", "gather:&lt;item&gt;", "buy:&lt;item&gt;", "feed:&lt;gu&gt;",
+        /// "kill:wolf", "visit:&lt;place&gt;" (Commands' places), "talk:&lt;name&gt;", "deliver:&lt;item&gt;@&lt;name&gt;".
+        /// </summary>
         public string Event;
         public int Target;
+        /// <summary>A thing the giver hands over with the task (to deliver), and how many.</summary>
+        public string Gives;
+        public int GivesCount = 1;
         public int RewardStones;
         /// <summary>What the giver says handing it out, and taking it back.</summary>
         public string Offer;
@@ -51,6 +60,7 @@ namespace GuWorld.Systems
                 Id = "first_blade",
                 Title = "Первый лунный клинок",
                 Giver = Teacher,
+                GiverTitle = "наставник академии",
                 Goal = "Попадите лунным клинком в чучело во дворе академии",
                 Event = "hit_dummy",
                 Target = 3,
@@ -64,6 +74,7 @@ namespace GuWorld.Systems
                 Id = "orchids",
                 Title = "Пища для Гу",
                 Giver = Teacher,
+                GiverTitle = "наставник академии",
                 Goal = "Соберите лепестки лунной орхидеи на грядках у источника",
                 Event = "gather:" + ItemBook.Petal,
                 Target = 8,
@@ -77,6 +88,7 @@ namespace GuWorld.Systems
                 Id = "feed",
                 Title = "Сытый Гу",
                 Giver = Teacher,
+                GiverTitle = "наставник академии",
                 Goal = "Накормите Гу Лунного Света (апертура — клавиша K)",
                 Event = "feed:moonlight",
                 Target = 1,
@@ -90,13 +102,87 @@ namespace GuWorld.Systems
                 Id = "market",
                 Title = "Лавка на площади",
                 Giver = Teacher,
+                GiverTitle = "наставник академии",
                 Goal = "Купите лепестки лунной орхидеи в лавке Баошаня на площади",
                 Event = "buy:" + ItemBook.Petal,
                 Target = 10,
                 RewardStones = 2,
                 Offer = "Грядки не бесконечны. На площади Баошань продаёт лепестки — десяток за первобытный камень. " +
                         "Купи десяток про запас.",
-                Thanks = "Теперь ты знаешь, как прокормить своего Гу. Дальше учись сам — и приходи, когда будешь готов к большему.",
+                Thanks = "Теперь ты знаешь, как прокормить своего Гу. Дальше учись сам. А за стенами нужны руки: " +
+                         "загляни к Тешаню у южных ворот.",
+            },
+            new QuestKind
+            {
+                Id = "wolves_gate",
+                Title = "Волки у южных ворот",
+                Giver = "Гу Юэ Тешань",
+                GiverTitle = "стражник южных ворот",
+                Goal = "Убейте трёх волков в лесу за стенами деревни",
+                Event = "kill:wolf",
+                Target = 3,
+                RewardStones = 8,
+                Offer = "Слышал, наставник тебя хвалит. Волки опять подходят к стенам — по ночам воют у самых ворот. " +
+                        "Ступай в лес и убей трёх. Держись на расстоянии: лунный клинок режет дальше, чем волк прыгает. " +
+                        "И не трать эссенцию до дна — камень в бою поглощать долго.",
+                Thanks = "Три клыка — три волка. Неплохо для ученика. Держи камни.",
+            },
+            new QuestKind
+            {
+                Id = "cave",
+                Title = "Тропа над рощей",
+                Giver = "Гу Юэ Шулинь",
+                GiverTitle = "бамбукорез",
+                Goal = "Поднимитесь над бамбуковой рощей к скале с пещерой (к востоку от деревни)",
+                Event = "visit:cave",
+                Target = 1,
+                RewardStones = 4,
+                Offer = "Над рощей, у скалы, есть расщелина — оттуда вечно сочится вода. Давно хочу знать, не обвалилась ли тропа. " +
+                        "Сходи, посмотри. Мне с бамбуком не отойти.",
+                Thanks = "Цела, говоришь? Хорошо. Странное это место: тихо там, как в храме. Возьми за труды.",
+            },
+            new QuestKind
+            {
+                Id = "noodles",
+                Title = "Ужин для ночного стража",
+                Giver = "Тётушка Хуа",
+                GiverTitle = "лапшичная у площади",
+                Goal = "Отнесите миску лапши ночному стражнику Лэю (северные ворота)",
+                Event = "deliver:" + ItemBook.Noodles + "@Гу Юэ Лэй",
+                Target = 1,
+                RewardStones = 3,
+                Gives = ItemBook.Noodles,
+                Offer = "Лэй опять сторожит всю ночь на пустой желудок. Отнеси ему миску лапши к северным воротам, пока горячая. " +
+                        "Только не съешь по дороге!",
+                Thanks = "Отнёс? Вот и славно. Держи — и заходи поесть сам.",
+            },
+            new QuestKind
+            {
+                Id = "elder_word",
+                Title = "Весть восточным воротам",
+                Giver = "Старейшина Гу Юэ Хуайюй",
+                GiverTitle = "хранитель святилища",
+                Goal = "Передайте стражнику Хэну у восточных ворот слово старейшины",
+                Event = "talk:Гу Юэ Хэн",
+                Target = 1,
+                RewardStones = 3,
+                Offer = "Волчья стая ходит всё ближе. Передай Хэну у восточных ворот: пусть ночью держит факелы зажжёнными " +
+                        "и не открывает ворот до рассвета.",
+                Thanks = "Передал — хорошо. Клан держится на тех, кто делает малое без напоминаний.",
+            },
+            new QuestKind
+            {
+                Id = "wolf_pack",
+                Title = "Волчья стая",
+                Giver = "Гу Юэ Тешань",
+                GiverTitle = "стражник южных ворот",
+                Goal = "Убейте шестерых волков: стая подошла к деревне",
+                Event = "kill:wolf",
+                Target = 6,
+                RewardStones = 15,
+                Offer = "Это уже не пара бродяг — стая. Шестеро, а может, больше. Возьми камней в запас и бей их у логова, " +
+                        "пока они не пришли к нам сами. Ночью они видят дальше — иди днём.",
+                Thanks = "Шесть волков. Старейшина узнает об этом. Ты больше не просто ученик.",
             },
         };
 
@@ -111,6 +197,9 @@ namespace GuWorld.Systems
         public event Action<string> Said;
 
         public static QuestKind Find(string id) => Array.Find(Book, q => q.Id == id);
+
+        /// <summary>The next task waiting for the hero (none while one is taken, or when all are done).</summary>
+        public QuestKind Next => Current != null ? null : Array.Find(Book, q => !done.Contains(q.Id));
 
         public bool IsDone(string id) => done.Contains(id);
 
