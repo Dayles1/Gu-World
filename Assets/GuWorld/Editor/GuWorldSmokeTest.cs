@@ -324,6 +324,24 @@ namespace GuWorld.Editor
 
             Check(game.Map != null && game.Map.Texture != null, "the location has a map");
 
+            // The chat's commands: the hour, a thing given, a jump across the ground; what is suggested as one types.
+            var said = game.Commands.Run("/time set 22");
+            var hour = game.Clock.MinuteOfDay / 60;
+            Check(hour > 21.9 && hour < 22.1, $"/time set 22 sets the hour ({hour:0.00}: {said})");
+            var stonesHad = gu.Stones;
+            said = game.Commands.Run("/give primeval_stone 5");
+            Check(gu.Stones == stonesHad + 5, $"/give puts things in the bag ({said})");
+            said = game.Commands.Run("/tp 5 20");
+            Check(Vector2.Distance(new Vector2(body.transform.position.x, body.transform.position.z), new Vector2(5, 20)) < 0.5f, $"/tp x z moves the hero there ({said})");
+            Check(game.Commands.Suggest("/ti", out _).Contains("/time") && game.Commands.Suggest("/weather r", out var usage).Contains("rain") && usage != null,
+                "typing suggests the commands, then their choices");
+            Check(Systems.Commands.Normalize(".ез 1 2") == "/tp 1 2" && Systems.Commands.Normalize("/время") == "/время",
+                "a line typed with the Russian layout is read as the keys meant (but not a Russian command)");
+            said = game.Commands.Run("/время set 7");
+            Check(System.Math.Abs(game.Clock.MinuteOfDay / 60 - 7) < 0.1, $"the commands answer to Russian names too ({said})");
+            Check(game.Commands.Run("/nonsense").StartsWith("!"), "an unknown command is refused");
+            Teleport(body, new Vector3(0, 0, 12));
+
             // A moonblade thrown at a dummy cuts it.
             var dummy = Object.FindAnyObjectByType<TrainingDummy>();
             Check(dummy != null, "a training dummy stands before the spawn");

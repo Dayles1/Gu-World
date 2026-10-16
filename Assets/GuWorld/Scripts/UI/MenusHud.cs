@@ -519,8 +519,10 @@ namespace GuWorld.UI
                 }
 
                 var (text, at) = log[first + index];
-                var alpha = Mathf.Clamp01((LogFor - (now - at)) / 2);
-                logTexts[i].text = $"<color=#C9A563{Mathf.RoundToInt(alpha * 255):X2}>Система:</color> {text}";
+                // The chat shows the log itself while it is open.
+                var alpha = Current == Page.Chat ? 0 : Mathf.Clamp01((LogFor - (now - at)) / 2);
+                var said = text.StartsWith("> ") || text.StartsWith("!") || text.StartsWith("<color");
+                logTexts[i].text = said ? ChatLine(text) : $"<color=#C9A563{Mathf.RoundToInt(alpha * 255):X2}>Система:</color> {text}";
                 logTexts[i].color = new Color(UiKit.Text.r, UiKit.Text.g, UiKit.Text.b, alpha);
             }
         }

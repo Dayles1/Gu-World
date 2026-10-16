@@ -34,6 +34,9 @@ namespace GuWorld.UI
         void EndTalk();
         /// <summary>Goes to one of the hero's pages (the bag, the aperture, the map) — the world waits.</summary>
         void OpenPage(Menus.Page page);
+        /// <summary>The chat's commands (null where there are none), and closing the chat.</summary>
+        GuWorld.Systems.Commands Commands { get; }
+        void CloseChat();
 
         /// <summary>The bodies the figures are made of (the body page shows the hero's).</summary>
         HumanBody.Parts Parts { get; }
@@ -95,6 +98,8 @@ namespace GuWorld.UI
             Codex,
             /// <summary>The body: where blows wound and how much.</summary>
             Body,
+            /// <summary>The chat over the game (T, /): the world goes on.</summary>
+            Chat,
         }
 
         enum Tab
@@ -179,6 +184,19 @@ namespace GuWorld.UI
             Show(Page.Dialogue);
         }
 
+        bool hudHidden;
+
+        /// <summary>The interface hidden (F1): only the world is drawn.</summary>
+        public bool HudHidden
+        {
+            get => hudHidden;
+            set
+            {
+                hudHidden = value;
+                hud.gameObject.SetActive(!hudHidden && (Current == Page.None || Current == Page.Dialogue || Current == Page.Chat));
+            }
+        }
+
         /// <summary>Fades to black, does `then`, and fades back in.</summary>
         public void FadeThrough(Action then)
         {
@@ -210,13 +228,18 @@ namespace GuWorld.UI
 
             UpdateHud();
             UpdatePages();
+
+            if (Current == Page.Chat)
+            {
+                UpdateChat();
+            }
         }
 
         /// <summary>Shows a page (rebuilt from scratch: the pages are small).</summary>
         public void Show(Page page)
         {
             Current = page;
-            hud.gameObject.SetActive(page == Page.None || page == Page.Dialogue);
+            hud.gameObject.SetActive(!hudHidden && (page == Page.None || page == Page.Dialogue || page == Page.Chat));
 
             if (page != Page.Body)
             {
@@ -242,6 +265,7 @@ namespace GuWorld.UI
                 case Page.Aperture: AperturePage(); break;
                 case Page.Bag: BagPage(); break;
                 case Page.Map: MapPage(); break;
+                case Page.Chat: ChatPage(); break;
                 case Page.Shop: ShopPage(); break;
                 case Page.Codex: Codex(); break;
                 case Page.Body: BodyPage(); break;

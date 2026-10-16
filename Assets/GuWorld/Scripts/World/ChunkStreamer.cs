@@ -177,6 +177,9 @@ namespace GuWorld.World
             }
         }
 
+        /// <summary>Whether a square is in the world now (the borders' view colours it).</summary>
+        public bool IsHere(int i) => i >= 0 && i < slots.Length && slots[i].State == State.Here;
+
         /// <summary>Moves the loads along: an asked prefab, once there, is made (spread over frames); a made one shows.</summary>
         void Finish()
         {

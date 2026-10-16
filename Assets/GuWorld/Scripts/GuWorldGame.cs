@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using GuWorld.Body;
 using GuWorld.Combat;
@@ -34,7 +35,7 @@ namespace GuWorld
     ///
     /// Put it on an empty object in an empty scene: it makes everything else.
     /// </summary>
-    public class GuWorldGame : MonoBehaviour, IMenuHost
+    public class GuWorldGame : MonoBehaviour, IMenuHost, ICommandHost
     {
         /// <summary>Seconds of play between saves.</summary>
         const float AutosaveEvery = 30;
@@ -51,6 +52,8 @@ namespace GuWorld
             Paused,
             /// <summary>Talking to a villager: the world goes on, the cursor is free for the answers.</summary>
             Talking,
+            /// <summary>Typing in the chat (T, /): the world goes on, the hero stands.</summary>
+            Chat,
         }
 
         public LocationSettings Location = LocationSettings.TestGrounds;
@@ -269,6 +272,8 @@ namespace GuWorld
         /// <summary>`-aim`: the first Gu's skill held, aimed (its path on the ground); `-absorb`: a stone being drawn in.</summary>
         bool aimShot;
         bool absorbShot;
+        /// <summary>`-chat "/tp g"`: the chat open with that typed in (its suggestions shown).</summary>
+        string chatShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
         int castFrames = 5;
         /// <summary>`-view x,y,z,yaw,pitch` (with -screenshot): the camera held there, looking that way (degrees).</summary>
@@ -519,6 +524,8 @@ namespace GuWorld
                 castAt = Has(args, "-cast");
                 aimShot = Has(args, "-aim");
                 absorbShot = Has(args, "-absorb");
+                var chatAt = System.Array.IndexOf(args, "-chat");
+                chatShot = chatAt >= 0 && chatAt + 1 < args.Length ? args[chatAt + 1] : null;
                 var castFramesAt = System.Array.IndexOf(args, "-cast");
                 castFrames = castFramesAt >= 0 && castFramesAt + 1 < args.Length && int.TryParse(args[castFramesAt + 1], out var cf) ? cf : 5;
                 HitboxView.On |= Has(args, "-hitboxes");
@@ -721,7 +728,7 @@ namespace GuWorld
             {
                 ChunkStreamer.Current.LetGo();
             }
-            view.Following = playing || next == Mode.Paused || next == Mode.Talking;
+            view.Following = playing || next == Mode.Paused || next == Mode.Talking || next == Mode.Chat;
 
             if (playing && screenshot == null)
             {
@@ -746,6 +753,8 @@ namespace GuWorld
                 Mode.Paused => Menus.Page.Pause,
                 // The dialogue page comes with its words (StartTalk).
                 Mode.Talking => menus.Current,
+                // The chat opens itself (OpenChat), with what is to be in its line.
+                Mode.Chat => menus.Current,
                 _ => Menus.Page.None,
             });
 
@@ -835,7 +844,13 @@ namespace GuWorld
             }
         }
 
-        public void NewGame()
+        public void NewGame() => Begin(false);
+
+        /// <summary>
+        /// A new game from the first morning: the save gone, the Gu Master, the tasks and the beds new.
+        /// The hero made afresh — or, after a death, the same hero (look and name) going straight on.
+        /// </summary>
+        void Begin(bool sameHero)
         {
             SaveGame.Delete();
             saved = false;
@@ -854,6 +869,17 @@ namespace GuWorld
             }
 
             creatorAngle = 0;
+
+            if (sameHero)
+            {
+                Wear(look);
+                saved = true;
+                Enter(Mode.Playing);
+                Save();
+
+                return;
+            }
+
             Wear(Look.Default(look.Gender));
             Enter(Mode.Create);
         }
@@ -1058,20 +1084,27 @@ namespace GuWorld
         }
 
         /// <summary>Fainted: the world goes dark, and the hero wakes in the village some hours later, weak.</summary>
+        /// <summary>Dead: the world goes dark, and the path begins again from the first morning, the same hero.</summary>
         void OnFainted()
         {
-            menus.Notify("Вы потеряли сознание");
+            if (dying)
+            {
+                return;
+            }
+
+            dying = true;
+            StopAiming();
+            cultivator.CancelAbsorbing(null);
+            menus.Notify("Вы погибли");
             menus.FadeThrough(() =>
             {
-                body.PlaceAt(player.Spawn);
-                body.Facing = player.SpawnYaw;
-                view.Yaw = player.SpawnYaw + Mathf.PI;
-                clock.Skip(3);
-                cultivator.Tick(clock.Minutes);
-                health.Set(Health.Max * 0.3f);
-                menus.Notify("Вы очнулись в деревне. Прошло три часа");
+                dying = false;
+                Begin(true);
+                menus.Notify("Вы погибли. Путь начинается заново — с первого утра");
             });
         }
+
+        bool dying;
 
         /// <summary>A point dropped onto whatever is under it, looked for from `above` metres over it.</summary>
         static Vector3 OnGround(Vector3 at, float above = 100)
@@ -1292,6 +1325,13 @@ namespace GuWorld
                     ShowAim(cultivator.KindOn(0));
                 }
 
+                if (chatShot != null && screenshotFrame == 110)
+                {
+                    menus.Notify("Пример сообщения в чате");
+                    Enter(Mode.Chat);
+                    menus.OpenChat(chatShot);
+                }
+
                 if (absorbShot && screenshotFrame == 120)
                 {
                     cultivator.Aperture.Essence = 10;
@@ -1414,20 +1454,10 @@ namespace GuWorld
 
             if (keyboard != null)
             {
-                if (keyboard.f3Key.wasPressedThisFrame) debug = !debug;
+                FunctionKeys(keyboard);
 
-                // The hitbox view: every collider near the camera as wire lines.
-                if (keyboard.f4Key.wasPressedThisFrame)
-                {
-                    GameSettings.ShowHitboxes = !GameSettings.ShowHitboxes;
-                    HitboxView.On = GameSettings.ShowHitboxes;
-                    menus.Notify(HitboxView.On ? "Хитбоксы: показаны (F4 — скрыть)" : "Хитбоксы скрыты");
-                }
-
-                // Debug: move the clock to see the light change, and go through the weathers.
-                if (debug && keyboard.tKey.wasPressedThisFrame) clock.Skip(1);
-
-                if (debug && keyboard.rKey.wasPressedThisFrame)
+                // Debug: go through the weathers.
+                if (debug && !keyboard.f3Key.isPressed && keyboard.rKey.wasPressedThisFrame)
                 {
                     forcedWeather = forcedWeather switch
                     {
@@ -1438,10 +1468,19 @@ namespace GuWorld
                     };
                 }
 
-                // Esc on a menu steps back (not the Esc that just paused).
-                if (!wasPlaying && keyboard.escapeKey.wasPressedThisFrame)
+                // Esc on a menu steps back (not the Esc that just paused; the chat closes itself).
+                if (!wasPlaying && mode != Mode.Chat && keyboard.escapeKey.wasPressedThisFrame)
                 {
                     menus.Back();
+                }
+
+                // T: the chat; /: the chat with a command begun.
+                if (mode == Mode.Playing && screenshot == null && (keyboard.tKey.wasPressedThisFrame || keyboard.slashKey.wasPressedThisFrame))
+                {
+                    var start = keyboard.slashKey.wasPressedThisFrame ? "/" : "";
+                    StopAiming();
+                    Enter(Mode.Chat);
+                    menus.OpenChat(start);
                 }
             }
 
@@ -1504,7 +1543,7 @@ namespace GuWorld
                 }
             }
 
-            if (debug && keyboard != null && keyboard.gKey.wasPressedThisFrame)
+            if (debug && keyboard != null && !keyboard.f3Key.isPressed && keyboard.gKey.wasPressedThisFrame)
             {
                 cultivator.NextGrade();
             }
@@ -1535,7 +1574,7 @@ namespace GuWorld
             player.SpeedScale = cultivator.Absorbing ? 0.45f : 1;
             player.NoSprint = cultivator.Absorbing;
 
-            if (mode == Mode.Playing || mode == Mode.Talking)
+            if (mode == Mode.Playing || mode == Mode.Talking || mode == Mode.Chat)
             {
                 var before = clock.Minutes;
                 clock.Advance(Time.deltaTime);
@@ -1675,6 +1714,176 @@ namespace GuWorld
             view.SetFirstPerson(on);
             picture.FirstPerson = on;
         }
+
+        // ── The function keys (as Minecraft has them) ─────────────────
+
+        bool f3Combo;
+
+        /// <summary>
+        /// F3 with another key, Minecraft's way: F3+B the hitboxes, F3+G the borders of the streamed squares,
+        /// F3+Q the list of these keys; F3 alone (let go without another) the debug panel. F4 the hitboxes too;
+        /// F7 shows them while held; F1 hides the interface; F2 saves a picture of the screen.
+        /// </summary>
+        void FunctionKeys(Keyboard keyboard)
+        {
+            if (keyboard.f3Key.isPressed)
+            {
+                if (keyboard.bKey.wasPressedThisFrame)
+                {
+                    f3Combo = true;
+                    Hitboxes = !Hitboxes;
+                    menus.Notify(Hitboxes ? "Хитбоксы показаны (F3+B — скрыть)" : "Хитбоксы скрыты");
+                }
+
+                if (keyboard.gKey.wasPressedThisFrame)
+                {
+                    f3Combo = true;
+                    HitboxView.ChunkBorders = !HitboxView.ChunkBorders;
+                    menus.Notify(HitboxView.ChunkBorders ? "Границы участков мира показаны (128 м)" : "Границы участков скрыты");
+                }
+
+                if (keyboard.qKey.wasPressedThisFrame)
+                {
+                    f3Combo = true;
+                    menus.Notify("F3 — отладка · F3+B — хитбоксы · F3+G — границы участков · F7 (держать) — хитбоксы · F1 — скрыть интерфейс · F2 — снимок экрана · F5 — вид · T — чат · / — команда");
+                }
+            }
+
+            if (keyboard.f3Key.wasReleasedThisFrame)
+            {
+                if (!f3Combo)
+                {
+                    debug = !debug;
+                }
+
+                f3Combo = false;
+            }
+
+            if (keyboard.f4Key.wasPressedThisFrame)
+            {
+                Hitboxes = !Hitboxes;
+                menus.Notify(Hitboxes ? "Хитбоксы показаны (F4 — скрыть)" : "Хитбоксы скрыты");
+            }
+
+            // F7 held: the hitboxes while it is down.
+            HitboxView.On = GameSettings.ShowHitboxes || keyboard.f7Key.isPressed;
+
+            if (keyboard.f1Key.wasPressedThisFrame)
+            {
+                menus.HudHidden = !menus.HudHidden;
+            }
+
+            if (keyboard.f2Key.wasPressedThisFrame)
+            {
+                var folder = System.IO.Path.Combine(Application.persistentDataPath, "Screenshots");
+                System.IO.Directory.CreateDirectory(folder);
+                var file = System.IO.Path.Combine(folder, $"gu_world_{System.DateTime.Now:yyyy-MM-dd_HH-mm-ss}.png");
+                ScreenCapture.CaptureScreenshot(file);
+                menus.Notify($"Снимок сохранён: {file}");
+            }
+        }
+
+        // ── The chat's commands (ICommandHost) ───────────────────────
+
+        Commands commands;
+        Dictionary<string, Vector3> places;
+
+        public Commands Commands => commands ??= new Commands(this);
+
+        public void CloseChat()
+        {
+            if (mode == Mode.Chat)
+            {
+                Enter(Mode.Playing);
+            }
+        }
+
+        public WorldClock Clock => clock;
+
+        public IReadOnlyDictionary<string, Vector3> Places
+        {
+            get
+            {
+                if (places != null)
+                {
+                    return places;
+                }
+
+                places = new Dictionary<string, Vector3> { ["spawn"] = player.Spawn };
+
+                if (Location.id == QingMao.Id)
+                {
+                    foreach (var settlement in QingMao.Settlements)
+                    {
+                        places[settlement.Id] = new Vector3(settlement.Centre.x, float.NaN, settlement.Centre.y);
+                    }
+
+                    foreach (var (name, at) in new[] { ("peak", QingMao.Peak), ("fore_peak", QingMao.ForePeak), ("spring", QingMao.Spring), ("cave", QingMao.SecretCave),
+                                 ("grove", QingMao.Grove), ("pool", QingMao.Pool), ("waterfall", QingMao.FallTop) })
+                    {
+                        places[name] = new Vector3(at.x, float.NaN, at.y);
+                    }
+                }
+
+                // The hero's own village's squares, gates, stalls…
+                foreach (var layout in FindObjectsByType<VillageLayout>(FindObjectsSortMode.None))
+                {
+                    if (layout.Settlement != "gu_yue")
+                    {
+                        continue;
+                    }
+
+                    foreach (var spot in layout.Places)
+                    {
+                        places.TryAdd(spot.name.Replace(' ', '_').ToLowerInvariant(), spot.at);
+                    }
+                }
+
+                return places;
+            }
+        }
+
+        public void Teleport(Vector3 at)
+        {
+            // The streamed squares there first, so the hero stands on what is built there, not under it.
+            if (ChunkStreamer.Current != null)
+            {
+                ChunkStreamer.Current.LoadNowAround(at);
+            }
+
+            UnityEngine.Physics.SyncTransforms();
+
+            if (float.IsNaN(at.y))
+            {
+                var probe = new Vector3(at.x, 0, at.z);
+                at.y = (Location.id == QingMao.Id ? QingMao.GroundAt(probe) : OnGround(probe, 300).y) + 1;
+            }
+
+            body.PlaceAt(at);
+            player.PlaceCamera();
+        }
+
+        public void SetWeather(GuWorld.World.Sky? sky) => forcedWeather = sky;
+
+        public bool FirstPerson
+        {
+            get => view.FirstPerson;
+            set => SetFirstPerson(value);
+        }
+
+        public bool Hitboxes
+        {
+            get => GameSettings.ShowHitboxes;
+            set
+            {
+                GameSettings.ShowHitboxes = value;
+                HitboxView.On = value;
+            }
+        }
+
+        public void Kill() => health.Strike(Health.Max * 10);
+
+        public int SpawnWolves(int count) => 0;
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body;
 
@@ -1959,7 +2168,7 @@ namespace GuWorld
                 $"погода: {GuWorld.World.Weather.Name(weather.Kind)}{(forcedWeather.HasValue ? " (вручную)" : "")}\n" +
                 $"эссенция {cultivator.Aperture.Essence:0.0}% / {cultivator.Aperture.Cap:0}% · класс {cultivator.Aperture.Grade}\n" +
                 $"жизнь {health.Current:0} · камней {cultivator.Stones} · вес {cultivator.Bag.Weight:0.0}\n" +
-                "T — +1 час · R — погода · G — класс таланта · Y — +50 камней",
+                "R — погода · G — класс таланта · Y — +50 камней · F3+Q — все клавиши",
                 skin.Small);
             GUILayout.EndArea();
         }

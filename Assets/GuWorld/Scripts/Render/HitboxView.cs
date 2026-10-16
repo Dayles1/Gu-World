@@ -30,6 +30,10 @@ namespace GuWorld.Render
     {
         /// <summary>Whether the view is on (the settings keep it).</summary>
         public static bool On;
+        /// <summary>The streamed squares' borders drawn too (F3+G): loaded ones bright, the rest faint.</summary>
+        public static bool ChunkBorders;
+        /// <summary>How far round the watcher the borders are drawn, m.</summary>
+        const float BordersReach = 420;
 
         public static readonly (HitboxKind kind, string name, Color colour)[] Legend =
         {
@@ -45,7 +49,7 @@ namespace GuWorld.Render
         };
 
         public Transform Around;
-        public float Radius = 60;
+        public float Radius = 80;
         const int MaxVertices = 400000;
 
         readonly Collider[] found = new Collider[8192];
@@ -171,13 +175,17 @@ namespace GuWorld.Render
 
         void LateUpdate()
         {
+            var shown = On || ChunkBorders;
+
             if (drawn != null)
             {
-                drawn.enabled = On && Around != null;
+                drawn.enabled = shown && Around != null;
             }
 
-            if (!On || material == null || Around == null)
+            if (!shown || material == null || Around == null)
             {
+                lastCentre = new Vector3(float.NaN, 0, 0);
+
                 return;
             }
 
@@ -194,7 +202,7 @@ namespace GuWorld.Render
             vertices.Clear();
             colours.Clear();
             indices.Clear();
-            var count = UnityEngine.Physics.OverlapSphereNonAlloc(centre, Radius, found, ~0, QueryTriggerInteraction.Collide);
+            var count = On ? UnityEngine.Physics.OverlapSphereNonAlloc(centre, Radius, found, ~0, QueryTriggerInteraction.Collide) : 0;
 
             for (var i = 0; i < count && vertices.Count < MaxVertices; i++)
             {
@@ -227,12 +235,75 @@ namespace GuWorld.Render
                 }
             }
 
-            TerrainTrees(centre);
+            if (On)
+            {
+                TerrainTrees(centre);
+            }
+
+            if (ChunkBorders)
+            {
+                Borders(centre);
+            }
+
             mesh.Clear();
             mesh.SetVertices(vertices);
             mesh.SetColors(colours);
             mesh.SetIndices(indices, MeshTopology.Lines, 0, false);
-            mesh.bounds = new Bounds(centre, Vector3.one * (Radius * 2 + 50));
+            mesh.bounds = new Bounds(centre, Vector3.one * (Mathf.Max(Radius, ChunkBorders ? BordersReach : 0) * 2 + 50));
+        }
+
+        /// <summary>The streamed squares near the watcher: their outlines on the ground and a post at each corner.</summary>
+        void Borders(Vector3 centre)
+        {
+            var streamer = GuWorld.World.ChunkStreamer.Current;
+
+            if (streamer == null)
+            {
+                return;
+            }
+
+            var loaded = new Color(0.35f, 0.9f, 1f);
+            var away = new Color(1f, 0.4f, 0.35f, 0.5f);
+
+            for (var i = 0; i < streamer.Chunks.Length; i++)
+            {
+                var chunk = streamer.Chunks[i];
+                var middle = new Vector3(chunk.Corner.x + chunk.Size / 2, centre.y, chunk.Corner.y + chunk.Size / 2);
+
+                if ((new Vector2(middle.x, middle.z) - new Vector2(centre.x, centre.z)).magnitude > BordersReach)
+                {
+                    continue;
+                }
+
+                var colour = streamer.IsHere(i) ? loaded : away;
+                var corners = new[]
+                {
+                    new Vector2(chunk.Corner.x, chunk.Corner.y), new Vector2(chunk.Corner.x + chunk.Size, chunk.Corner.y),
+                    new Vector2(chunk.Corner.x + chunk.Size, chunk.Corner.y + chunk.Size), new Vector2(chunk.Corner.x, chunk.Corner.y + chunk.Size),
+                };
+
+                for (var side = 0; side < 4; side++)
+                {
+                    var a = corners[side];
+                    var b = corners[(side + 1) % 4];
+                    const int pieces = 16;
+
+                    for (var k = 0; k < pieces; k++)
+                    {
+                        var p = Vector2.Lerp(a, b, k / (float)pieces);
+                        var q = Vector2.Lerp(a, b, (k + 1) / (float)pieces);
+                        var from = new Vector3(p.x, 0, p.y);
+                        var to = new Vector3(q.x, 0, q.y);
+                        from.y = GuWorld.World.QingMao.GroundAt(from) + 0.3f;
+                        to.y = GuWorld.World.QingMao.GroundAt(to) + 0.3f;
+                        Line(from, to, colour);
+                    }
+
+                    var post = new Vector3(a.x, 0, a.y);
+                    post.y = GuWorld.World.QingMao.GroundAt(post);
+                    Line(post, post + Vector3.up * 40, colour);
+                }
+            }
         }
 
         /// <summary>The trunks of the terrains' trees near the watcher, as upright capsules in the trees' colour.</summary>
