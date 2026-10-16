@@ -73,6 +73,50 @@ namespace GuWorld.Editor
             "GC Allocated In Frame", "GC Allocation In Frame Count",
         };
 
+        /// <summary>The slowest frames, each with the main thread's costliest markers by their own time (what made the hitch).</summary>
+        static void Spikes(StringBuilder text, int first, int last)
+        {
+            var times = new List<(int frame, float ms)>();
+
+            for (var frame = first; frame <= last; frame++)
+            {
+                using var view = ProfilerDriver.GetHierarchyFrameDataView(frame, 0, HierarchyFrameDataView.ViewModes.MergeSamplesWithTheSameName, HierarchyFrameDataView.columnSelfTime, false);
+
+                if (view != null && view.valid)
+                {
+                    times.Add((frame, view.frameTimeMs));
+                }
+            }
+
+            text.AppendLine();
+            text.AppendLine("== the slowest frames: the main thread's costliest markers (own time, ms) ==");
+
+            foreach (var (frame, ms) in times.OrderByDescending(t => t.ms).Take(8))
+            {
+                using var view = ProfilerDriver.GetHierarchyFrameDataView(frame, 0, HierarchyFrameDataView.ViewModes.MergeSamplesWithTheSameName, HierarchyFrameDataView.columnSelfTime, false);
+                var self = new Dictionary<string, float>();
+                var stack = new Stack<int>();
+                var children = new List<int>();
+                stack.Push(view.GetRootItemID());
+
+                while (stack.Count > 0)
+                {
+                    var id = stack.Pop();
+                    children.Clear();
+                    view.GetItemChildren(id, children);
+
+                    foreach (var child in children)
+                    {
+                        var name = view.GetItemName(child);
+                        self[name] = (self.TryGetValue(name, out var v) ? v : 0) + view.GetItemColumnDataAsFloat(child, HierarchyFrameDataView.columnSelfTime);
+                        stack.Push(child);
+                    }
+                }
+
+                text.AppendLine($"frame {frame}: {ms:0.0} ms — " + string.Join(", ", self.OrderByDescending(p => p.Value).Take(8).Select(p => $"{p.Key} {p.Value:0.0}")));
+            }
+        }
+
         static void Counters(StringBuilder text, int first, int last)
         {
             text.AppendLine();
@@ -184,6 +228,7 @@ namespace GuWorld.Editor
 
             text.AppendLine($"frame {frameMs / frames:0.00} ms on average ({1000 * frames / frameMs:0} fps, profiler on)");
             Counters(text, first, last);
+            Spikes(text, first, last);
 
             foreach (var thread in new[] { "Main Thread", "Render Thread", "Job workers" })
             {
