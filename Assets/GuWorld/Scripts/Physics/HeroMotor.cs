@@ -130,6 +130,9 @@ namespace GuWorld.Physics
         float climbTime;
         float climbDuration;
 
+        /// <summary>On the ground or just off it this step (steps are gone up only then).</summary>
+        bool standing;
+
         // Collected from the controller's hits during one Move.
         bool hitWalkable;
         Vector3 walkableNormal;
@@ -513,14 +516,22 @@ namespace GuWorld.Physics
             Velocity.y -= Gravity * h;
             var fallSpeed = -Velocity.y;
 
-            // The controller only steps up while it thinks it stands.
-            controller.stepOffset = wasGrounded && !jumped ? StepUp : 0;
+            // The controller only steps up while it thinks it stands; running up stairs it is off the ground for
+            // a moment after each step, so the moment's grace (as for a jump) counts as standing.
+            standing = sinceGrounded <= CoyoteTime && !jumped;
+            controller.stepOffset = standing ? StepUp : 0;
 
             hitWalkable = false;
             groundCollider = null;
-            controller.Move(Velocity * h);
+            var flags = controller.Move(Velocity * h);
 
             Grounded = hitWalkable;
+
+            // Still against something low ahead: a step, gone up onto (the controller's own stepping misses some).
+            if (standing && (flags & CollisionFlags.Sides) != 0 && StepUpOnto(input.moveX, input.moveZ))
+            {
+                Grounded = true;
+            }
 
             if (Grounded)
             {
@@ -557,7 +568,8 @@ namespace GuWorld.Physics
         /// <summary>
         /// Standing on ground that is flat enough; against steeper ground (or a
         /// wall) the velocity into it is taken away, so the body slides instead
-        /// of climbing.
+        /// of climbing — but not against the face of a step (low, within a
+        /// step's height above the feet, while standing): that is stepped up.
         /// </summary>
         void OnControllerColliderHit(ControllerColliderHit hit)
         {
@@ -572,12 +584,67 @@ namespace GuWorld.Physics
                 return;
             }
 
+            if (standing && hit.point.y < transform.position.y + StepUp && normal.y > -0.1f)
+            {
+                return;
+            }
+
             var into = Vector3.Dot(Velocity, normal);
 
             if (into < 0)
             {
                 Velocity -= normal * into;
             }
+        }
+
+        /// <summary>
+        /// Goes up onto a step ahead (in the direction asked for): ground no higher than a step above the
+        /// feet, flat enough to stand on, with room for the body there. True when it went up.
+        /// </summary>
+        bool StepUpOnto(float dirX, float dirZ)
+        {
+            var length = Mathf.Sqrt(dirX * dirX + dirZ * dirZ);
+
+            if (length < 0.1f)
+            {
+                return false;
+            }
+
+            dirX /= length;
+            dirZ /= length;
+            var feet = transform.position;
+            var ahead = new Vector3(feet.x + dirX * (Radius + 0.12f), feet.y + StepUp + 0.05f, feet.z + dirZ * (Radius + 0.12f));
+
+            if (!SurfaceBelow(ahead, StepUp + 0.05f, out var top, out var normal))
+            {
+                return false;
+            }
+
+            var rise = top - feet.y;
+
+            if (rise <= 0.02f || rise > StepUp || normal.y < Walkable)
+            {
+                return false;
+            }
+
+            var to = new Vector3(feet.x + dirX * 0.08f, top + 0.01f, feet.z + dirZ * 0.08f);
+
+            if (Blocked(to, Height))
+            {
+                return false;
+            }
+
+            controller.enabled = false;
+            transform.position = to;
+            controller.enabled = true;
+            walkableNormal = normal;
+
+            if (Velocity.y < 0)
+            {
+                Velocity.y = 0;
+            }
+
+            return true;
         }
 
         /// <summary>Keeps the feet on the ground when walking down a slope or a step.</summary>

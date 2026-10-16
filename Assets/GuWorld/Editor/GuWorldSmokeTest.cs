@@ -145,6 +145,34 @@ namespace GuWorld.Editor
             Run(body, 7, new Vector2(0, -1));
             Check(body.transform.position.y > 5, $"the gentle mound can be walked up ({body.transform.position.y:0.00} m)");
 
+            // Steps and stairs (a street's stone steps, a house's wooden ones, a high threshold): walked and run up
+            // without a jump, the feet carried over each step.
+            foreach (var (rise, tread, sprint) in new[] { (0.16f, 0.35f, false), (0.22f, 0.3f, false), (0.22f, 0.3f, true), (0.3f, 0.45f, false), (0.4f, 0.5f, true), (0.45f, 0.6f, false) })
+            {
+                Teleport(body, new Vector3(-60, 0, 60));
+                var foot = body.transform.position;
+                var stairs = new GameObject("Test Stairs");
+
+                for (var s = 0; s < 5; s++)
+                {
+                    // Solid steps from the ground up; the last a landing.
+                    var height = (s + 1) * rise;
+                    var depth = s == 4 ? 6 : tread;
+                    var step = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                    step.transform.SetParent(stairs.transform, false);
+                    step.transform.localScale = new Vector3(3, height, depth);
+                    step.transform.position = foot + new Vector3(0, height / 2, 1.5f + s * tread + depth / 2);
+                }
+
+                UnityEngine.Physics.SyncTransforms();
+                // Far enough to be on the landing, not past it.
+                Run(body, sprint ? 1.1f : 1.8f, new Vector2(0, 1), sprint);
+                var up = body.transform.position.y - foot.y;
+                Check(up > 5 * rise - 0.05f, $"{(sprint ? "running" : "walking")} up {rise * 100:0} cm steps without a jump ({up:0.00} of {5 * rise:0.00} m)");
+                Object.DestroyImmediate(stairs);
+                UnityEngine.Physics.SyncTransforms();
+            }
+
             // The camera's axes: right of where it looks is to the right on screen.
             // A new game starts on making the hero; play, so the camera follows.
             Object.FindAnyObjectByType<GuWorldGame>().Play();
@@ -434,11 +462,11 @@ namespace GuWorld.Editor
             return null;
         }
 
-        static void Run(HeroMotor body, float seconds, Vector2 move)
+        static void Run(HeroMotor body, float seconds, Vector2 move, bool sprint = false)
         {
             for (var t = 0f; t < seconds; t += Dt)
             {
-                body.Tick(Dt, new MotorInput { moveX = move.x, moveZ = move.y, speedScale = 1 });
+                body.Tick(Dt, new MotorInput { moveX = move.x, moveZ = move.y, sprint = sprint, speedScale = 1 });
             }
         }
 
