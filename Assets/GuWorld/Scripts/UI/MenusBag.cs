@@ -216,7 +216,11 @@ namespace GuWorld.UI
 
             if (kind.Use == ItemUse.Feed)
             {
-                Stat(details, "Кто ест", FeedsWhom(kind.Id));
+                Stat(details, "Кто ест", kind.AnyGu ? "любой Гу — вместо одной порции" : FeedsWhom(kind.Id));
+            }
+            else if (kind.Use == ItemUse.Eat && kind.Heal > 0)
+            {
+                Stat(details, "Даёт", $"+{kind.Heal:0} здоровья");
             }
 
             var space = UiKit.Rect("Space", details);
@@ -227,8 +231,15 @@ namespace GuWorld.UI
             {
                 UiKit.Button(UiKit.Spaced(ActionName(kind)), details, () =>
                 {
-                    host.Cultivator.UseCell(cellIndex);
-                    Show(Page.Bag);
+                    // A stone is drawn in over three seconds in the world: back to it.
+                    if (host.Cultivator.UseCell(cellIndex) && kind.Use == ItemUse.Absorb)
+                    {
+                        host.Resume();
+                    }
+                    else
+                    {
+                        Show(Page.Bag);
+                    }
                 }, ButtonKind.Gold, 17).Size(56);
             }
 
@@ -254,8 +265,9 @@ namespace GuWorld.UI
         {
             ItemUse.Refine => $"Очистить в апертуру · {GuBook.Find(kind.Gu)?.RefineCost:0}%",
             ItemUse.Absorb => "Поглотить · V",
-            ItemUse.Eat => kind.Id == ItemBook.BambooWine ? "Выпить" : "Съесть",
-            ItemUse.Feed => "Накормить Гу",
+            _ when kind.Verb != null => kind.Verb,
+            ItemUse.Eat => "Съесть",
+            ItemUse.Feed => kind.AnyGu ? "Подкормить Гу" : "Накормить Гу",
             _ => "",
         };
 
@@ -288,7 +300,8 @@ namespace GuWorld.UI
             cell.Back.color = chosen ? UiKit.Hex(0x2A1E12) : UiKit.Hex(0x0E0D0C, 0.95f);
             var shown = kind == null || bagFilter < 0 || (int)kind.Category == bagFilter;
             var alpha = shown ? 1 : 0.25f;
-            cell.Mark.color = new Color(UiKit.Text.r, UiKit.Text.g, UiKit.Text.b, alpha);
+            var tint = Icons.Tint(kind?.Icon);
+            cell.Mark.color = new Color(tint.r, tint.g, tint.b, alpha);
             cell.Count.color = new Color(UiKit.Text.r, UiKit.Text.g, UiKit.Text.b, alpha);
         }
 
@@ -314,7 +327,7 @@ namespace GuWorld.UI
             var hours = total / 60 % 24;
             var mins = total % 60;
 
-            return days > 0 ? $"{days} дн {hours} ч" : hours > 0 ? $"{hours} ч {mins} мин" : $"{mins} мин";
+            return days > 0 ? (hours > 0 ? $"{days} дн {hours} ч" : $"{days} дн") : hours > 0 ? (mins > 0 ? $"{hours} ч {mins} мин" : $"{hours} ч") : $"{mins} мин";
         }
     }
 }

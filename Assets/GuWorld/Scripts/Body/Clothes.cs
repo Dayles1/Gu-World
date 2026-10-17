@@ -51,6 +51,11 @@ namespace GuWorld.Body
                 case 8: return Hanfu(0x2b2f3a, 0x7a2526, 0x6e1f22, 0x4a4238, 0xd2c6b1);
                 case 9: return Hanfu(0x6d7078, 0x25272b, 0x6e1f22, 0x3a3c40, 0xd2c6b1);
                 case 10: return Hanfu(0xd8d5cc, 0x2c2f35, 0x4a4f58, 0x9c9a94);
+                // The clan's dark bamboo green (lore: the Gu Yue's green bamboo) with a bronze trim; indigo with silver;
+                // earth brown with a dark trim.
+                case 11: return Hanfu(0x26352b, 0x8a6a34, 0x5e1c1e, 0x3a3a32, 0xc8bea8);
+                case 12: return Hanfu(0x222a42, 0x8e9ab4, 0x3a2a48, 0x30323a, 0xccc6b6);
+                case 13: return Hanfu(0x4a3526, 0x231a14, 0x7a5a2a, 0x3a332c, 0xcfc2aa);
             }
 
             return gender == Gender.Female
@@ -58,7 +63,7 @@ namespace GuWorld.Body
                 : P(0x56686a, 0x262a2c, 0x7a4e2d, 0x3d3a35);
         }
 
-        public const int Palettes = 11;
+        public const int Palettes = 14;
 
         static Palette Hanfu(int tunic, int trim, int sash, int trousers, int wraps = -1) => new Palette
         {
@@ -437,7 +442,9 @@ namespace GuWorld.Body
                     var t = (float)r / rows;
                     var y = Mathf.Lerp(top, hem, t);
                     // Never narrower than above: the cloth falls, it does not cling.
-                    radius = Mathf.Max(radius, outline.At(angle, y) + 0.022f + 0.035f * t);
+                    // Clear of the trousers under it (they stand up to ~4.6 cm off the leg below the knee), so they never
+                    // show through the robe's skirt.
+                    radius = Mathf.Max(radius, outline.At(angle, y) + 0.045f + 0.04f * t);
                     radii[c, r] = radius;
                 }
             }

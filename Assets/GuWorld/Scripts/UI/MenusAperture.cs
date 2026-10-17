@@ -141,8 +141,15 @@ namespace GuWorld.UI
             }, ButtonKind.Plain, 15).Size(50, -1, 1);
             UiKit.Button(UiKit.Spaced("Поглотить камень"), buttons, () =>
             {
-                host.Cultivator.AbsorbStone();
-                Show(Page.Aperture);
+                // Three seconds in the world: back to it to draw the stone in.
+                if (host.Cultivator.StartAbsorbing())
+                {
+                    host.Resume();
+                }
+                else
+                {
+                    Show(Page.Aperture);
+                }
             }, ButtonKind.Plain, 15).Size(50, -1, 1);
         }
 
@@ -177,7 +184,7 @@ namespace GuWorld.UI
             var kind = owned.Kind;
             var hunger = gu.HungerOf(owned);
             cell.SetIcon(kind.Icon);
-            cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : UiKit.Text;
+            cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : Icons.Tint(kind.Icon);
             cell.Corner.text = Aperture.RankNumeral(kind.Rank);
             cell.Corner.color = Aperture.RankColour(kind.Rank);
             // The vital Gu (its life is its master's): a heart.

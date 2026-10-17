@@ -112,6 +112,30 @@ namespace GuWorld.Systems
                 return;
             }
 
+            // On a wall: W/S up and down it, A/D along it, Space pushes off, C (or Ctrl) lets go.
+            if (body.OnWall)
+            {
+                if (Active)
+                {
+                    static float Key(bool positive, bool negative) => (positive ? 1 : 0) - (negative ? 1 : 0);
+                    var up = Key(keyboard.wKey.isPressed || keyboard.upArrowKey.isPressed, keyboard.sKey.isPressed || keyboard.downArrowKey.isPressed);
+                    var side = Key(keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed, keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed);
+                    body.WallTick(Time.deltaTime, up, side, keyboard.spaceKey.wasPressedThisFrame,
+                        keyboard.cKey.wasPressedThisFrame || keyboard.leftCtrlKey.wasPressedThisFrame);
+                    var delta = mouse.delta.ReadValue();
+                    var scroll = mouse.scroll.ReadValue().y;
+                    Camera.Look(delta.x, delta.y, -Mathf.Sign(scroll) * (scroll != 0 ? 1 : 0));
+                }
+                else
+                {
+                    body.WallTick(Time.deltaTime, 0, 0, false, false);
+                }
+
+                transform.rotation = Quaternion.Euler(0, body.Facing * Mathf.Rad2Deg, 0);
+
+                return;
+            }
+
             if (Active)
             {
                 // Sitting: X again, or any step, gets up.
@@ -190,7 +214,7 @@ namespace GuWorld.Systems
             cameraPlaced = false;
         }
 
-        /// <summary>Jump — or climb, when there is a ledge ahead to climb onto.</summary>
+        /// <summary>Jump — or climb, when there is a ledge ahead to climb onto, or take hold of a wall before the body.</summary>
         void Jump()
         {
             var direction = Direction(Keyboard.current);
@@ -198,7 +222,7 @@ namespace GuWorld.Systems
                 ? direction
                 : new Vector2(Mathf.Sin(body.Facing), Mathf.Cos(body.Facing));
 
-            if (!body.Grounded || !body.TryClimb(ahead.x, ahead.y))
+            if (!body.Grounded || !(body.TryClimb(ahead.x, ahead.y) || body.GrabWall(ahead.x, ahead.y)))
             {
                 jumpQueued = true;
             }

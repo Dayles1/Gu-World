@@ -34,6 +34,8 @@ namespace GuWorld.UI
         void EndTalk();
         /// <summary>Goes to one of the hero's pages (the bag, the aperture, the map) — the world waits.</summary>
         void OpenPage(Menus.Page page);
+        /// <summary>Puts the hero at a point at once (y NaN: on the ground there).</summary>
+        void Teleport(Vector3 at);
         /// <summary>The chat's commands (null where there are none), and closing the chat.</summary>
         GuWorld.Systems.Commands Commands { get; }
         void CloseChat();
@@ -43,6 +45,8 @@ namespace GuWorld.UI
 
         /// <summary>The hero as a Gu Master, their health, their tasks.</summary>
         Cultivator Cultivator { get; }
+        /// <summary>The hero's own fists (their slot on the bar).</summary>
+        GuWorld.Combat.Melee Fists { get; }
         Health Health { get; }
         Quests Quests { get; }
         /// <summary>The shop the hero is at (null: none), and a deal there.</summary>
@@ -233,6 +237,11 @@ namespace GuWorld.UI
             {
                 UpdateChat();
             }
+
+            if (Current == Page.Map)
+            {
+                UpdateMapPage();
+            }
         }
 
         /// <summary>Shows a page (rebuilt from scratch: the pages are small).</summary>
@@ -396,17 +405,27 @@ namespace GuWorld.UI
             var panel = UiKit.Panel("Panel", pageRoot, UiKit.Hex(0x0E0C0B, 0.97f));
             panel.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 0, -600, 0);
             var column = UiKit.Rect("Column", panel.transform).Fill();
-            column.Stack<VerticalLayoutGroup>(8, new RectOffset(52, 52, 48, 36));
+            column.Stack<VerticalLayoutGroup>(6, new RectOffset(52, 52, 34, 26));
 
-            UiKit.Label("СОЗДАНИЕ ГЕРОЯ", column, 38, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(50);
-            UiKit.Label("Пятнадцать лет, клан Гу Юэ. Волосы чёрные, как у всех в клане.", column, 17, UiKit.Muted).Size(28);
+            UiKit.Label("СОЗДАНИЕ ГЕРОЯ", column, 36, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(46);
+            UiKit.Label("Пятнадцать лет, клан Гу Юэ. Волосы чёрные, как у всех в клане.", column, 16, UiKit.Muted).Size(24);
 
             Heading(column, "ИМЯ");
-            UiKit.Field(column, look.name, "Своё имя — после имени клана", 16, text =>
+            var nameRow = UiKit.Rect("Name", column);
+            nameRow.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleLeft).childForceExpandWidth = false;
+            nameRow.Size(48);
+            var field = UiKit.Field(nameRow, look.name, "Своё имя — после имени клана", 16, text =>
             {
                 // The name is kept as typed; the body is not rebuilt for it.
                 look.name = Look.CleanName(text);
             });
+            field.Size(46, -1, 1);
+            // A whole look by chance (the name and the gender kept).
+            UiKit.Button("Случайно", nameRow, () =>
+            {
+                host.Wear(look.Random(new System.Random()));
+                Show(Page.Creator);
+            }, ButtonKind.Plain, 16).Size(46, 130);
 
             Heading(column, "ПОЛ");
             UiKit.Choices(column, new[] { "Юноша", "Девушка" }, look.Gender == Gender.Male ? 0 : 1, i =>
@@ -428,16 +447,31 @@ namespace GuWorld.UI
                 Show(Page.Creator);
             });
 
-            Heading(column, "ХАНЬФУ");
+            Heading(column, "ХАНЬФУ — НА СПИНЕ И ГРУДИ СЕРЕБРЯНЫЙ ПОЛУМЕСЯЦ КЛАНА");
             var robes = (Robe[])Enum.GetValues(typeof(Robe));
             Grid(column, robes, 3, r => Look.Name(r), r => r == look.RobeColour, r =>
             {
                 host.Wear(look.With(robe: r));
                 Show(Page.Creator);
             });
-            UiKit.Label("На спине и груди — серебряный полумесяц: знак клана Гу Юэ и его Гу Лунного Света.", column, 15, UiKit.Muted).Size(40);
 
-            Heading(column, "ВИД");
+            Heading(column, "КОЖА");
+            var skins = (Skin[])Enum.GetValues(typeof(Skin));
+            Grid(column, skins, 3, s => Look.Name(s), s => s == look.SkinTone, s =>
+            {
+                host.Wear(look.With(skin: s));
+                Show(Page.Creator);
+            });
+
+            Heading(column, "РОСТ");
+            var statures = (Stature[])Enum.GetValues(typeof(Stature));
+            Grid(column, statures, 3, s => Look.Name(s), s => s == look.Height, s =>
+            {
+                host.Wear(look.With(stature: s));
+                Show(Page.Creator);
+            });
+
+            Heading(column, "ВИД — КОЛЕСО МЫШИ ПРИБЛИЖАЕТ");
             UiKit.Choices(column, new[] { "Весь рост", "Лицо" }, host.CreatorFace ? 1 : 0, i =>
             {
                 host.CreatorFace = i == 1;
@@ -453,12 +487,12 @@ namespace GuWorld.UI
             UiKit.Button("Назад", buttons, () => FadeThrough(host.BackToTitle)).Size(56, -1, 1);
             UiKit.Button(UiKit.Spaced("Начать путь"), buttons, () => FadeThrough(host.StartPlaying), ButtonKind.Gold, 21).Size(56, -1, 2);
 
-            var hint = UiKit.Label("Потяните мышью, чтобы повернуть героя", pageRoot, 18, UiKit.Muted, TextAnchor.LowerCenter).Shadowed();
+            var hint = UiKit.Label("Потяните мышью, чтобы повернуть героя · колесо — ближе / дальше", pageRoot, 18, UiKit.Muted, TextAnchor.LowerCenter).Shadowed();
             hint.rectTransform.Place(new Vector2(0, 0), new Vector2(1, 0), 600, 30, 0, -70);
         }
 
         static void Heading(Transform parent, string text) =>
-            UiKit.Label(text, parent, 15, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(30);
+            UiKit.Label(text, parent, 14, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(24);
 
         static void Grid<T>(Transform parent, IList<T> items, int across, Func<T, string> name, Func<T, bool> chosen, Action<T> pick)
         {
@@ -512,32 +546,57 @@ namespace GuWorld.UI
             Keys(list);
         }
 
-        static void Keys(Transform parent)
+        /// <summary>The keys and what they do, in one column or side by side in two (the settings' card is not tall enough for one).</summary>
+        static void Keys(Transform parent, int columns = 1)
         {
             string[,] keys =
             {
                 { "W A S D", "ходьба" },
                 { "Shift", "бег" },
-                { "Пробел", "прыжок · залезть на уступ" },
+                { "Пробел", "прыжок · на уступ · ухватиться за стену" },
                 { "C / Z", "присесть / ползти" },
                 { "1 – 4", "Гу: держать — прицел, отпустить — удар" },
-                { "ЛКМ · ПКМ", "удар первым Гу в прицел · отмена прицела" },
+                { "F", "кулаки: ЛКМ серия · ПКМ блок · Q · R" },
+                { "ЛКМ", "без кулаков — первый Гу в прицел" },
                 { "V", "поглотить первобытный камень (3 с)" },
                 { "E", "говорить · собрать (удерживать)" },
                 { "K · I · M · B", "апертура · сумка · карта · тело" },
                 { "X", "сесть · встать" },
-                { "E у дерева", "лезть на дерево" },
+                { "На стене", "W A S D — лезть · Пробел — оттолкнуться" },
                 { "Мышь", "камера, колесо — ближе / дальше" },
                 { "F5", "вид от первого лица / из-за спины" },
+                { "T · /", "чат и команды" },
                 { "Esc", "пауза" },
-                { "F3 · F4", "отладка · хитбоксы" },
+                { "F3 · F7", "отладка · режим хитбоксов" },
             };
+
+            var into = new Transform[columns];
+
+            if (columns > 1)
+            {
+                var sides = UiKit.Rect("Columns", parent);
+                sides.Stack<HorizontalLayoutGroup>(28).childForceExpandWidth = true;
+
+                for (var c = 0; c < columns; c++)
+                {
+                    var column = UiKit.Rect("Column", sides);
+                    column.Stack<VerticalLayoutGroup>(2, null, TextAnchor.UpperLeft);
+                    column.Size(-1, -1, 1);
+                    into[c] = column;
+                }
+            }
+            else
+            {
+                into[0] = parent;
+            }
+
+            var perColumn = Mathf.CeilToInt(keys.GetLength(0) / (float)columns);
 
             for (var i = 0; i < keys.GetLength(0); i++)
             {
-                var row = UiKit.Rect(keys[i, 0], parent);
+                var row = UiKit.Rect(keys[i, 0], into[i / perColumn]);
                 row.Stack<HorizontalLayoutGroup>(12, null, TextAnchor.MiddleLeft).childForceExpandWidth = false;
-                row.Size(38);
+                row.Size(35);
                 var key = UiKit.Panel("Key", row, UiKit.InkLight, UiKit.LineLit);
                 key.Size(32, 140, 0);
                 UiKit.Label(keys[i, 0], key.transform, 16, UiKit.GoldLit, TextAnchor.MiddleCenter, FontStyle.Bold).rectTransform.Fill();
@@ -597,7 +656,7 @@ namespace GuWorld.UI
                     UiKit.Label("Клавиши", column, 15, UiKit.Muted, TextAnchor.LowerLeft, FontStyle.Bold).Size(30);
                     var keys = UiKit.Rect("Keys", column);
                     keys.Stack<VerticalLayoutGroup>(2);
-                    Keys(keys);
+                    Keys(keys, 2);
                     break;
                 }
                 case Tab.Graphics:
@@ -612,7 +671,7 @@ namespace GuWorld.UI
                     var level = GameSettings.Current;
                     UiKit.Label($"Тени до {level.Shadows:0} м · трава до {level.GrassDistance:0} м · деревья до {level.TreeDistance / 1000:0.#} км · люди до {level.PeopleSight:0} м · " +
                                 $"масштаб {level.Scale * 100:0}% · MSAA ×{level.Msaa}", column, 15, UiKit.Muted).Size(26);
-                    var boxes = UiKit.Row("Хитбоксы (F4)", column);
+                    var boxes = UiKit.Row("Хитбоксы (F7)", column);
                     UiKit.Choices(boxes, new[] { "Скрыты", "Показаны" }, GameSettings.ShowHitboxes ? 1 : 0, i =>
                     {
                         GameSettings.ShowHitboxes = i == 1;

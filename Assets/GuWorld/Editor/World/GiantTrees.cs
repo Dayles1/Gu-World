@@ -48,7 +48,8 @@ namespace GuWorld.Editor
             d.ClimbHeight = d.Height * 0.72f;
 
             // The trunk: rings tapering up (straight: one climbs round it), its bark furrowed, moss on the lower part.
-            var trunk = new MeshKit();
+            // Its shell (the trunk and the roots' fins, not the crown's leaves) is its collider.
+            var trunk = new MeshKit { Solid = new SolidShell() };
             const int sides = 14;
             var rings = 12;
 
@@ -304,13 +305,10 @@ namespace GuWorld.Editor
                 trunkRenderer.sharedMaterials = design.Trunk.Item2;
                 var near = new List<Renderer> { trunkRenderer };
 
-                // The trunk solid: capsules stacked, tapering.
-                for (var y = 0f; y < design.Height * 0.85f; y += 6)
+                // The trunk solid by its own shape: tapering evenly, its roots' fins too (stacked capsules left ledges and waists).
+                if (SolidOf(design.Trunk.Item1) is Mesh trunkShell)
                 {
-                    var capsule = trunk.AddComponent<CapsuleCollider>();
-                    capsule.center = new Vector3(0, y + 3, 0);
-                    capsule.height = 6.5f;
-                    capsule.radius = Mathf.Max(0.3f, (y < design.ClimbHeight ? GiantRadius(design, y + 3) : design.TopRadius) - 0.05f);
+                    trunk.AddComponent<MeshCollider>().sharedMesh = trunkShell;
                 }
 
                 var branches = new List<TreeBranch>();

@@ -50,8 +50,9 @@ namespace GuWorld.Body
 
         /// <summary>Arms hang this far out from straight down (radians) at rest.</summary>
         const float ArmOut = 0.1f;
-        /// <summary>Finger curl per joint (radians), relaxed.</summary>
+        /// <summary>Finger curl per joint (radians), relaxed, and how much more a fist adds.</summary>
         const float CurlRest = 0.3f;
+        const float FistCurl = 1.25f;
         static readonly string[] Fingers = { "index", "middle", "ring", "pinky" };
         /// <summary>How much of the curl each knuckle takes, from the palm out.</summary>
         static readonly float[] Knuckles = { 0.8f, 1, 0.75f };
@@ -74,6 +75,9 @@ namespace GuWorld.Body
             /// <summary>The curl axis in the bone's own space, and its share of the curl.</summary>
             public Vector3 axis;
             public float amount;
+            /// <summary>The thumb's: the axis it swings in over the palm on (in its own space), and how far it goes in a fist, radians.</summary>
+            public Vector3 across;
+            public float over;
         }
 
         /// <summary>Holds the model: scaled to the Mannequin and turned to face +Z.</summary>
@@ -127,14 +131,16 @@ namespace GuWorld.Body
             public int dye;
             /// <summary>The clan's mark on the clothes.</summary>
             public Emblem emblem;
+            /// <summary>The skin's evened brightness (0: the game's own fair, Paint.SkinTone).</summary>
+            public float skin;
 
             /// <summary>The hero: fifteen, black-haired, a Gu Yue in a dark hanfu.</summary>
             public static Build Hero => ForHero(Look.Default(Gender.Male));
 
             /// <summary>The hero in their look's hanfu, with the clan's crescent.</summary>
-            public static Build ForHero(Look look) => new Build { youth = 1, hair = Look.HairBlack, dye = look.Dye, emblem = Emblem.Crescent };
+            public static Build ForHero(Look look) => new Build { youth = 1, hair = Look.HairBlack, dye = look.Dye, emblem = Emblem.Crescent, skin = look.SkinBrightness };
 
-            public string Key => $"{youth:0.00}|{ColorUtility.ToHtmlStringRGB(hair)}|{dye}|{emblem}";
+            public string Key => $"{youth:0.00}|{ColorUtility.ToHtmlStringRGB(hair)}|{dye}|{emblem}{(skin > 0 ? $"|{skin:0}" : "")}";
         }
 
         /// <summary>A teenager's head is a little bigger for the body than a grown-up's.</summary>
@@ -426,7 +432,7 @@ namespace GuWorld.Body
                         {
                             if (material.HasProperty(name) && material.GetTexture(name) != null)
                             {
-                                material.SetTexture(name, Paint.Saturate(material.GetTexture(name), Paint.SkinSaturation, Paint.SkinEvenness, Paint.SkinTone));
+                                material.SetTexture(name, Paint.Saturate(material.GetTexture(name), Paint.SkinSaturation, Paint.SkinEvenness, build.skin > 0 ? build.skin : Paint.SkinTone));
                             }
                         }
                     }
@@ -614,9 +620,15 @@ namespace GuWorld.Body
                 entry.bone.localRotation = Quaternion.Inverse(parentTarget) * target;
             }
 
+            // The fingers: loosely curled at rest, closed into a fist as the Mannequin grips (the thumb laid over them),
+            // straight when it opens the hand.
+            var curl = Mathf.Max(0.04f, CurlRest + rig.Grip * FistCurl);
+            var fist = Mathf.Clamp01(rig.Grip);
+
             foreach (var finger in fingers)
             {
-                finger.bone.localRotation = finger.rest * Quaternion.AngleAxis(CurlRest * finger.amount * Mathf.Rad2Deg, finger.axis);
+                var turn = finger.rest * Quaternion.AngleAxis(curl * finger.amount * Mathf.Rad2Deg, finger.axis);
+                finger.bone.localRotation = finger.over > 0 ? turn * Quaternion.AngleAxis(fist * finger.over * Mathf.Rad2Deg, finger.across) : turn;
             }
 
             // The hips also carry the body's shift (crouching, lying).
@@ -709,8 +721,11 @@ namespace GuWorld.Body
                 }
 
                 var axis = Vector3.Cross(along, palm).normalized;
+                // The thumb swings over the palm toward the little finger: about the palm's normal, whichever way takes its tip there.
+                var thumb = (At($"thumb_03_{s}") - At($"thumb_01_{s}")).normalized;
+                var over = Vector3.Dot(Vector3.Cross(palm, thumb), across) > 0 ? palm : -palm;
 
-                void Add(string name, float amount)
+                void Add(string name, float amount, float swing = 0)
                 {
                     if (!bones.TryGetValue(name, out var bone))
                     {
@@ -723,6 +738,8 @@ namespace GuWorld.Body
                         rest = bone.localRotation,
                         axis = Quaternion.Inverse(InFigure(bone)) * axis,
                         amount = amount,
+                        across = Quaternion.Inverse(InFigure(bone)) * over,
+                        over = swing,
                     });
                 }
 
@@ -734,9 +751,45 @@ namespace GuWorld.Body
                     }
                 }
 
-                Add($"thumb_02_{s}", 0.35f);
-                Add($"thumb_03_{s}", 0.45f);
+                Add($"thumb_01_{s}", 0.1f, 1.05f);
+                Add($"thumb_02_{s}", 0.45f);
+                Add($"thumb_03_{s}", 0.55f);
             }
+        }
+
+        /// <summary>
+        /// For the checks: the finger joints found, the curl now, and for each hand how far its index and middle tips have
+        /// come round toward the palm (1 straight out from the wrist, -1 folded back to it) and to which side of the palm's plane.
+        /// </summary>
+        public string HandReport()
+        {
+            var text = $"fingers {fingers.Count}, grip {rig.Grip:0.00}, curl {Mathf.Max(0.04f, CurlRest + rig.Grip * FistCurl):0.00}";
+
+            foreach (var s in new[] { "l", "r" })
+            {
+                Vector3 At(string name) => PositionInFigure(Bone(name));
+                var wrist = At($"hand_{s}");
+                var along = (At($"middle_01_{s}") - wrist).normalized;
+                var palm = Vector3.Cross(along, At($"pinky_01_{s}") - At($"index_01_{s}")).normalized;
+
+                if (Vector3.Dot(palm, At($"thumb_03_{s}") - wrist) < 0)
+                {
+                    palm = -palm;
+                }
+
+                foreach (var finger in new[] { "index", "middle" })
+                {
+                    var tip = (At($"{finger}_03_{s}") - At($"{finger}_01_{s}")).normalized;
+                    text += $"; {finger}_{s}: along {Vector3.Dot(tip, along):0.00}, palm side {Vector3.Dot(tip, palm):0.00}";
+                }
+
+                // The thumb's tip: how far it lies over toward the little finger, and in front of the palm.
+                var across = (At($"pinky_01_{s}") - At($"index_01_{s}")).normalized;
+                var thumbTip = At($"thumb_04_leaf_{s}") - At($"index_01_{s}");
+                text += $"; thumb_{s}: toward the little finger {Vector3.Dot(thumbTip, across) * 100:0.0} cm, before the palm {Vector3.Dot(thumbTip, palm) * 100:0.0} cm";
+            }
+
+            return text;
         }
 
         public void Destroy()

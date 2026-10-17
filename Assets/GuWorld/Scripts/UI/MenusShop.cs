@@ -9,9 +9,10 @@ namespace GuWorld.UI
 {
     /// <summary>
     /// A shop (the design's "Лавка торговца"): the keeper and what they say on
-    /// the left; buying or selling in the middle — the goods by kind, how many
-    /// are left, the price, and how many to take; the deal on the right — what
-    /// is in it, its sum, and the stones left after it.
+    /// the left, and under them the thing chosen in the list (a click on its
+    /// row) — what it is and what it does; buying or selling in the middle — the
+    /// goods by kind, how many are left, the price, and how many to take; the
+    /// deal on the right — what is in it, its sum, and the stones left after it.
     /// </summary>
     public partial class Menus
     {
@@ -20,6 +21,10 @@ namespace GuWorld.UI
         readonly Dictionary<string, int> shopLots = new Dictionary<string, int>();
         /// <summary>What is being sold: a bag cell → (the thing's id, how many).</summary>
         readonly Dictionary<int, (string id, int count)> shopSales = new Dictionary<int, (string, int)>();
+        /// <summary>The thing whose details show under the keeper (null: the first of the goods).</summary>
+        string shopChosen;
+        /// <summary>How far down the goods the list is scrolled (the page is built again on every click: it stays there).</summary>
+        float shopScroll;
 
         /// <summary>Opens the shop the hero is at, with an empty deal.</summary>
         public void OpenShop()
@@ -28,6 +33,8 @@ namespace GuWorld.UI
             shopFilter = -1;
             shopLots.Clear();
             shopSales.Clear();
+            shopChosen = null;
+            shopScroll = 0;
             Show(Page.Shop);
         }
 
@@ -54,8 +61,8 @@ namespace GuWorld.UI
             title.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 82, 0, -760, 0);
             var modes = UiKit.Rect("Modes", top).Place(Vector2.zero, new Vector2(0, 1), 780, 12, -1180, 12);
             modes.Stack<HorizontalLayoutGroup>(8).childForceExpandWidth = true;
-            UiKit.Button(UiKit.Spaced("Купить"), modes, () => { shopSelling = false; Show(Page.Shop); }, shopSelling ? ButtonKind.Plain : ButtonKind.Tab, 16).Size(52, -1, 1);
-            UiKit.Button(UiKit.Spaced("Продать"), modes, () => { shopSelling = true; Show(Page.Shop); }, shopSelling ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(52, -1, 1);
+            UiKit.Button(UiKit.Spaced("Купить"), modes, () => { shopSelling = false; shopScroll = 0; Show(Page.Shop); }, shopSelling ? ButtonKind.Plain : ButtonKind.Tab, 16).Size(52, -1, 1);
+            UiKit.Button(UiKit.Spaced("Продать"), modes, () => { shopSelling = true; shopScroll = 0; Show(Page.Shop); }, shopSelling ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(52, -1, 1);
             var close = UiKit.Button("Закрыть · Esc", top, host.Resume, ButtonKind.Plain, 16);
             ((RectTransform)close.transform).Place(new Vector2(1, 0), Vector2.one, -190, 12, 0, 12);
             var coin = UiKit.Icon("stone", top, 24, UiKit.Gold);
@@ -71,10 +78,12 @@ namespace GuWorld.UI
             keeper.Stack<VerticalLayoutGroup>(10, new RectOffset(26, 26, 24, 22));
             UiKit.Label(shop.Keeper, keeper, 24, UiKit.GoldLit, TextAnchor.MiddleLeft, FontStyle.Bold).Size(34);
             UiKit.Caps(shop.Title, keeper, 12, UiKit.Muted).Size(40);
-            UiKit.Label($"«{shop.Hello}»", keeper, 18, UiKit.Text, TextAnchor.UpperLeft, FontStyle.Italic).Size(150);
+            UiKit.Label($"«{shop.Hello}»", keeper, 18, UiKit.Text, TextAnchor.UpperLeft, FontStyle.Italic).Size(118);
             UiKit.Image("Rule", keeper, UiKit.Line).Size(2);
             Stat(keeper, "Отношение", "нейтральное");
-            UiKit.Label("Лавка покупает вещи за половину своей цены. Товар пополняется каждое утро.", keeper, 15, UiKit.Muted).Size(64);
+            UiKit.Label("Лавка покупает вещи за половину своей цены. Товар пополняется каждое утро.", keeper, 15, UiKit.Muted).Size(44);
+            UiKit.Image("Rule", keeper, UiKit.Line).Size(2);
+            Goods(keeper, ItemBook.Find(shopChosen ?? (shop.Goods.Length > 0 ? shop.Goods[0].Item : null)));
 
             // The goods (or the bag, selling).
             var centre = UiKit.Panel("Goods", body);
@@ -84,6 +93,7 @@ namespace GuWorld.UI
             UiKit.Choices(column, new[] { "Все", "Гу", "Корм и еда", "Материалы" }, shopFilter + 1, i =>
             {
                 shopFilter = i - 1;
+                shopScroll = 0;
                 Show(Page.Shop);
             }, 15);
             var header = UiKit.Rect("Header", column);
@@ -93,7 +103,7 @@ namespace GuWorld.UI
             UiKit.Caps(shopSelling ? "В сумке" : "В наличии", header, 12, UiKit.Muted).Size(-1, 120, 0);
             UiKit.Caps("Цена", header, 12, UiKit.Muted).Size(-1, 150, 0);
             UiKit.Label("", header, 12).Size(-1, 150, 0);
-            var rows = Scroll(column);
+            var rows = Scroll(column, shopScroll, v => shopScroll = v);
 
             if (!shopSelling)
             {
@@ -200,11 +210,65 @@ namespace GuWorld.UI
             _ => true,
         };
 
+        /// <summary>The chosen thing: its cell, name and kind, a few lines about it, and what it gives.</summary>
+        static void Goods(Transform parent, ItemKind kind)
+        {
+            if (kind == null)
+            {
+                return;
+            }
+
+            var head = UiKit.Rect("Head", parent);
+            head.Size(76);
+            var big = UiKit.Cell(head, 68);
+            big.Back.rectTransform.anchorMin = big.Back.rectTransform.anchorMax = new Vector2(0, 0.5f);
+            big.Back.rectTransform.anchoredPosition = new Vector2(34, 0);
+            big.SetIcon(kind.Icon);
+            big.Mark.color = Icons.Tint(kind.Icon);
+            big.Corner.text = kind.Rank > 0 ? Aperture.RankNumeral(kind.Rank) : "";
+            big.Corner.color = Aperture.RankColour(kind.Rank);
+            big.SetRim(kind.Rank > 0 ? Aperture.RankColour(kind.Rank) : UiKit.GoldDeep);
+            var title = UiKit.Rect("Title", head).Place(Vector2.zero, Vector2.one, 82, 0, 0, 0);
+            title.Stack<VerticalLayoutGroup>(2, null, TextAnchor.MiddleLeft);
+            UiKit.Label(kind.Name, title, 18, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(44);
+            UiKit.Caps((kind.Rank > 0 ? $"Ранг {kind.Rank} · " : "") + kind.Kind, title, 11, kind.Rank > 0 ? Aperture.RankColour(kind.Rank) : UiKit.Muted).Size(18);
+            UiKit.Label(kind.About, parent, 15).Size(104);
+            var gives = kind.Use switch
+            {
+                ItemUse.Eat when kind.Heal > 0 => $"+{kind.Heal:0} здоровья",
+                ItemUse.Feed when kind.AnyGu => "порция корма любому Гу",
+                ItemUse.Feed => "корм для Гу",
+                ItemUse.Refine => $"очистка за {GuBook.Find(kind.Gu)?.RefineCost:0}% эссенции",
+                _ => null,
+            };
+
+            void Line(string name, string value)
+            {
+                var row = UiKit.Rect(name, parent);
+                row.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleLeft).childForceExpandWidth = false;
+                row.Size(26);
+                UiKit.Label(name, row, 15, UiKit.Muted).Size(-1, 92, 0);
+                UiKit.Label(value, row, 15, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(-1, -1, 1);
+            }
+
+            if (gives != null)
+            {
+                Line("Даёт", gives);
+            }
+
+            Line("Хранится", kind.Keeps > 0 ? Span(kind.Keeps) : "не портится");
+            Line("Вес", $"{kind.Weight:0.##}");
+        }
+
         void BuyRow(Transform parent, Shop shop, Goods goods, ItemKind kind, double now)
         {
             var left = host.Trade.Left(shop, goods, now);
             shopLots.TryGetValue(kind.Id, out var lots);
-            var row = Row(parent, kind, lots > 0);
+            var row = Row(parent, kind, lots > 0, () =>
+            {
+                shopChosen = kind.Id;
+                Show(Page.Shop);
+            });
             UiKit.Label(left > 0 ? (kind.Bundle > 1 ? $"{left * kind.Bundle} шт." : $"{left}") : "нет", row, 16, left > 0 ? UiKit.Text : UiKit.Danger).Size(-1, 120, 0);
             UiKit.Label(kind.Bundle > 1 ? $"{ItemBook.Price(kind.Price)}\n<size=13><color=#A69A86>за {kind.Bundle} шт.</color></size>" : ItemBook.Price(kind.Price), row, 16, UiKit.Text).Size(-1, 150, 0);
             Counter(row, kind.Bundle > 1 ? $"{lots * kind.Bundle}" : $"{lots}", lots > 0, () =>
@@ -222,7 +286,11 @@ namespace GuWorld.UI
         {
             shopSales.TryGetValue(cell, out var sale);
             var count = sale.id == stack.id ? sale.count : 0;
-            var row = Row(parent, kind, count > 0);
+            var row = Row(parent, kind, count > 0, () =>
+            {
+                shopChosen = kind.Id;
+                Show(Page.Shop);
+            });
             UiKit.Label($"{stack.count}", row, 16, UiKit.Text).Size(-1, 120, 0);
             UiKit.Label($"{ItemBook.Price(Trade.SellPrice(kind, kind.Bundle))}" + (kind.Bundle > 1 ? $"\n<size=13><color=#A69A86>за {kind.Bundle} шт.</color></size>" : ""), row, 15, UiKit.Text).Size(-1, 150, 0);
             var step = kind.Bundle;
@@ -244,15 +312,21 @@ namespace GuWorld.UI
             });
         }
 
-        /// <summary>A row of the goods: the thing's cell, its name and what it is.</summary>
-        static RectTransform Row(Transform parent, ItemKind kind, bool inDeal)
+        /// <summary>A row of the goods: the thing's cell, its name and what it is; a click on it shows it under the keeper.</summary>
+        RectTransform Row(Transform parent, ItemKind kind, bool inDeal, System.Action choose)
         {
-            var row = UiKit.Image(kind.Name, parent, inDeal ? new Color(0.79f, 0.65f, 0.39f, 0.07f) : new Color(0, 0, 0, 0)).rectTransform;
+            var chosen = kind.Id == shopChosen;
+            var resting = inDeal ? new Color(0.79f, 0.65f, 0.39f, 0.07f) : chosen ? new Color(1, 1, 1, 0.04f) : new Color(0, 0, 0, 0);
+            var image = UiKit.Image(kind.Name, parent, resting, UiKit.Chamfer);
+            image.raycastTarget = true;
+            image.gameObject.AddComponent<Hover>().Set(image, resting, new Color(0.79f, 0.65f, 0.39f, 0.12f), choose);
+            var row = image.rectTransform;
             row.Stack<HorizontalLayoutGroup>(10, new RectOffset(4, 6, 4, 4), TextAnchor.MiddleLeft).childForceExpandWidth = false;
             row.Size(64);
             var cell = UiKit.Cell(row, 56);
             cell.Size(56, 56, 0);
             cell.SetIcon(kind.Icon);
+            cell.Mark.color = Icons.Tint(kind.Icon);
             cell.Corner.text = kind.Rank > 0 ? Aperture.RankNumeral(kind.Rank) : "";
             cell.Corner.color = Aperture.RankColour(kind.Rank);
             cell.SetRim(kind.Rank > 0 ? Aperture.RankColour(kind.Rank) : UiKit.GoldDeep);
@@ -301,8 +375,11 @@ namespace GuWorld.UI
             }
         }
 
-        /// <summary>A scrolling column (the goods can be more than fit).</summary>
-        static RectTransform Scroll(Transform parent)
+        /// <summary>
+        /// A scrolling column (the goods can be more than fit): scrolled `down` points from its top at first, and telling
+        /// `scrolled` where it is as it moves.
+        /// </summary>
+        static RectTransform Scroll(Transform parent, float down = 0, System.Action<float> scrolled = null)
         {
             var view = UiKit.Rect("View", parent);
             view.Size(-1).flexibleHeight = 1;
@@ -322,6 +399,13 @@ namespace GuWorld.UI
             scroll.horizontal = false;
             scroll.movementType = ScrollRect.MovementType.Clamped;
             scroll.scrollSensitivity = 30;
+            // Points from the top, not a share of the length: the list's length is only known once it is laid out.
+            content.anchoredPosition = new Vector2(0, down);
+
+            if (scrolled != null)
+            {
+                scroll.onValueChanged.AddListener(_ => scrolled(content.anchoredPosition.y));
+            }
 
             return content;
         }

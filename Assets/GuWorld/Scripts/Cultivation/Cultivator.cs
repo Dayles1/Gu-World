@@ -503,7 +503,8 @@ namespace GuWorld.Cultivation
                     return Refine(cell);
 
                 case ItemUse.Absorb:
-                    return AbsorbStone();
+                    // Three seconds in the world, as with the stone key (a page pauses the world: it is begun, not done).
+                    return StartAbsorbing();
 
                 case ItemUse.Eat:
                     if (health != null && health.Current >= Health.Max - 0.5f)
@@ -610,17 +611,28 @@ namespace GuWorld.Cultivation
             }
 
             var food = ItemBook.Find(kind.Food);
+            // Short of its own food by one portion: a stalk of a food any Gu eats (intimate grass) stands in for it —
+            // for one portion only, never the whole meal (lore: res_intimate_grass).
+            var filler = kind.Meal > 1 && Bag.Count(kind.Food) == kind.Meal - 1 && Bag.Has(ItemBook.IntimateGrass, 1) ? 1 : 0;
 
-            if (!Bag.Take(kind.Food, kind.Meal))
+            if (Bag.Count(kind.Food) + filler < kind.Meal)
             {
-                if (!quiet) Said?.Invoke($"Нечем кормить {kind.Name}: нужно {food?.Name.ToLowerInvariant()} ×{kind.Meal}");
+                if (!quiet) Said?.Invoke($"Нечем кормить {kind.Name}: нужно {food?.Name.ToLowerInvariant()} ×{kind.Meal}" +
+                                         (kind.Meal > 1 ? " (одну порцию может заменить трава близости)" : ""));
 
                 return false;
             }
 
+            Bag.Take(kind.Food, kind.Meal - filler);
+
+            if (filler > 0)
+            {
+                Bag.Take(ItemBook.IntimateGrass, filler);
+            }
+
             gu.fedAt = Now;
             gu.told = Hunger.Fed;
-            Said?.Invoke($"{kind.Name} накормлен ({food?.Name.ToLowerInvariant()} ×{kind.Meal})");
+            Said?.Invoke($"{kind.Name} накормлен ({food?.Name.ToLowerInvariant()} ×{kind.Meal - filler}" + (filler > 0 ? " и трава близости" : "") + ")");
             Did?.Invoke("feed:" + kind.Id, 1);
 
             return true;
@@ -664,6 +676,11 @@ namespace GuWorld.Cultivation
         /// <summary>Feeds the Gu that eat a food (the bar's or the bag's "feed").</summary>
         public bool FeedWith(string food)
         {
+            if (ItemBook.Find(food) is { AnyGu: true } stopgap)
+            {
+                return Stopgap(stopgap);
+            }
+
             OwnedGu hungriest = null;
 
             foreach (var gu in Gu)
@@ -677,6 +694,43 @@ namespace GuWorld.Cultivation
             if (hungriest == null)
             {
                 Said?.Invoke($"Этим не кормят ни одного вашего Гу");
+
+                return false;
+            }
+
+            return Feed(hungriest);
+        }
+
+        /// <summary>
+        /// Food any Gu eats besides its own (intimate grass), used from the bag: the hungriest living Gu that is due a
+        /// meal is fed, the stalk standing in for one portion of it (Feed) — the rest must still be its own food.
+        /// </summary>
+        bool Stopgap(ItemKind food)
+        {
+            OwnedGu hungriest = null;
+            var most = 0.0;
+
+            foreach (var gu in Gu)
+            {
+                var kind = gu.Kind;
+
+                if (kind == null || HungerOf(gu) == Hunger.Dead)
+                {
+                    continue;
+                }
+
+                var meals = (Now - gu.fedAt) / kind.MealEvery;
+
+                if (meals > most)
+                {
+                    most = meals;
+                    hungriest = gu;
+                }
+            }
+
+            if (hungriest == null || most < 0.5)
+            {
+                Said?.Invoke(hungriest == null && Gu.Count == 0 ? "Кормить некого: в апертуре нет Гу" : "Ваши Гу сыты");
 
                 return false;
             }

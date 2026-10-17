@@ -27,6 +27,10 @@ namespace GuWorld.Render
         static readonly Color LowSun = Hex(0xf0a070);
         static readonly Color HighSun = Hex(0xf2ead8);
         static readonly Color MoonLight = new Color(0.5f, 0.6f, 0.88f);
+        /// <summary>The least light of a clear night (the stars, the sky's own glow): the village still shows, dimly and blue.</summary>
+        static readonly Color NightFloor = Hex(0x1c2436);
+        /// <summary>The sky's own glow at dusk, after the sun and before the moon: the light of the blue hour.</summary>
+        static readonly Color DuskGlow = Hex(0x3c3848);
         const float SunStrength = 2.05f;
 
         public Light Sun;
@@ -56,6 +60,19 @@ namespace GuWorld.Render
             public float ambientIntensity;
         }
 
+        void Start()
+        {
+            // The tone curve: neutral, not ACES — ACES pressed the shade and the middle tones down into black (the mood is
+            // the grade's and the light's, not lost detail). The scene's own profile (built with ACES) is set so here.
+            foreach (var volume in FindObjectsByType<UnityEngine.Rendering.Volume>(FindObjectsSortMode.None))
+            {
+                if (volume.isGlobal && volume.sharedProfile != null && volume.profile.TryGet<UnityEngine.Rendering.Universal.Tonemapping>(out var tone))
+                {
+                    tone.mode.Override(UnityEngine.Rendering.Universal.TonemappingMode.Neutral);
+                }
+            }
+        }
+
         public static DayLight LightAt(float timeOfDay)
         {
             var angle = (timeOfDay - 0.25f) * Mathf.PI * 2;
@@ -83,7 +100,8 @@ namespace GuWorld.Render
             var light = LightAt(timeOfDay);
             var cover = weather.Cover;
             var dull = SmoothStep(cover, 0.3f, 1);
-            Night = 1 - SmoothStep(light.sunDirection.y, -0.18f, 0.06f);
+            // A longer dusk: the blue hour lasts some forty minutes of the game after sunset before it is night.
+            Night = 1 - SmoothStep(light.sunDirection.y, -0.32f, 0.05f);
 
             // Clouds grey the sky and dim the sun.
             var grey = light.sky.grayscale;
@@ -109,15 +127,19 @@ namespace GuWorld.Render
             {
                 Moon.transform.rotation = Quaternion.LookRotation(-MoonDirection);
                 Moon.color = MoonLight;
-                Moon.intensity = 0.28f * Night * (1 - 0.75f * dull) * SmoothStep(MoonDirection.y, -0.05f, 0.2f);
+                Moon.intensity = 0.5f * Night * (1 - 0.7f * dull) * SmoothStep(MoonDirection.y, -0.05f, 0.2f);
                 Moon.enabled = Moon.intensity > 0.002f;
             }
 
+            // The sky's light. These colours are read as sRGB (the project draws in linear light): a wall in the shade at
+            // noon gets about a fifth of white from them — enough to see its timber and plaster, not a black cut-out.
             RenderSettings.ambientMode = UnityEngine.Rendering.AmbientMode.Trilight;
-            var moonGlow = MoonLight * 0.05f * Night * (1 - dull);
-            RenderSettings.ambientSkyColor = light.sky * light.ambientIntensity * 0.6f + moonGlow;
-            RenderSettings.ambientEquatorColor = Color.Lerp(light.sky, light.ground, 0.5f) * light.ambientIntensity * 0.5f + moonGlow * 0.6f;
-            RenderSettings.ambientGroundColor = light.ground * light.ambientIntensity * 0.4f;
+            // The floor of the night's light comes in as the day's goes (not only when it is full night): no darker gap at dusk.
+            var dusk = 1 - SmoothStep(light.sunDirection.y, -0.1f, 0.25f);
+            var moonGlow = MoonLight * 0.08f * Night * (1 - dull) + NightFloor * dusk * (1 - 0.5f * dull) + DuskGlow * (dusk * (1 - Night) * (1 - 0.4f * dull));
+            RenderSettings.ambientSkyColor = light.sky * light.ambientIntensity * 0.85f + moonGlow;
+            RenderSettings.ambientEquatorColor = Color.Lerp(light.sky, light.ground, 0.5f) * light.ambientIntensity * 0.85f + moonGlow * 0.8f;
+            RenderSettings.ambientGroundColor = light.ground * light.ambientIntensity * 0.55f + moonGlow * 0.4f;
 
             // The haze: thicker and nearer in rain, a little under cloud.
             var thick = Mathf.Lerp(1, 0.32f, weather.Rain) * Mathf.Lerp(1, 0.85f, dull);

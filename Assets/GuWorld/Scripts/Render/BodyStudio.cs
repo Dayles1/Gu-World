@@ -72,7 +72,7 @@ namespace GuWorld.Render
             turntable = new GameObject("Turntable").transform;
             turntable.SetParent(root.transform, false);
 
-            var height = HeroView.HeightOf(look.Gender);
+            var height = HeroView.HeightOf(look);
             figure = new PersonFigure(turntable, parts, look, HumanBody.Build.ForHero(look), height);
             figure.Rig.ArmsOut = 0.42f;
 

@@ -19,8 +19,9 @@ namespace GuWorld.UI
     /// </summary>
     public partial class Menus
     {
-        /// <summary>Metres across the minimap.</summary>
-        const float MinimapSpan = 260;
+        /// <summary>Metres across the minimap, at each of its zooms (+ and − while playing); the first three on the finer map round the hero.</summary>
+        static readonly float[] MinimapSpans = { 130, 260, 400, 1500, 4000 };
+        int minimapZoom = 1;
         const float MinimapSize = 236;
         const int LogLines = 7;
         const float LogFor = 14;
@@ -38,14 +39,19 @@ namespace GuWorld.UI
         Text stonesLine;
         RawImage minimap;
         RectTransform minimapArrow;
+        RectTransform minimapPin;
         Text coordsLine;
         readonly List<(RectTransform dot, Text label)> minimapMarks = new List<(RectTransform, Text)>();
+        /// <summary>Where the minimap's names already are this frame (a name that would cover another is left out, its dot kept).</summary>
+        readonly List<Rect> minimapTaken = new List<Rect>();
         RectTransform questCard;
         Text questTitle;
         Text questGoal;
         Text questProgress;
         readonly Cell[] barCells = new Cell[Cultivator.BarSize];
         Cell stoneCell;
+        Cell fistCell;
+        Text fistLine;
         Text skinLine;
         RectTransform crosshair;
         RectTransform absorbing;
@@ -153,12 +159,16 @@ namespace GuWorld.UI
                 minimapMarks.Add((dot, label));
             }
 
+            // The map's mark (MenusMap): where it is, or at the edge toward it when it lies farther.
+            minimapPin = UiKit.Icon("pin", mask.transform, 22, UiKit.Seal).rectTransform;
+            minimapPin.pivot = new Vector2(0.5f, 0.04f);
+            UiKit.Image("Hole", minimapPin, UiKit.OnGold, UiKit.Disc).rectTransform.At(new Vector2(0.5f, 0.5f), new Vector2(0, 3), new Vector2(6, 6));
             minimapArrow = UiKit.Image("Hero", mask.transform, UiKit.GoldLit, UiKit.Arrow).rectTransform;
             minimapArrow.sizeDelta = new Vector2(20, 20);
             var north = UiKit.Mark("С", hud, 18, UiKit.GoldLit).Shadowed();
             north.rectTransform.At(new Vector2(1, 1), centre + new Vector2(0, MinimapSize * 0.5f + 14), new Vector2(30, 24));
             coordsLine = UiKit.Label("", hud, 14, UiKit.Muted, TextAnchor.MiddleCenter).Shadowed();
-            coordsLine.rectTransform.At(new Vector2(1, 1), centre - new Vector2(0, MinimapSize * 0.5f + 16), new Vector2(200, 22));
+            coordsLine.rectTransform.At(new Vector2(1, 1), centre - new Vector2(0, MinimapSize * 0.5f + 16), new Vector2(300, 22));
         }
 
         void BuildQuest()
@@ -198,6 +208,17 @@ namespace GuWorld.UI
                 cell.Key.text = $"{i + 1}";
                 barCells[i] = cell;
             }
+
+            // The fists, set apart to the left of the Gu: F readies them.
+            fistCell = UiKit.Cell(bar, size);
+            fistCell.Back.rectTransform.anchorMin = fistCell.Back.rectTransform.anchorMax = new Vector2(0, 0.5f);
+            fistCell.Back.rectTransform.anchoredPosition = new Vector2(-apart - size / 2, 0);
+            fistCell.Key.text = "F";
+            fistCell.SetIcon("fist");
+            var fistCaption = UiKit.Caps("Кулаки", bar, 12, UiKit.Muted);
+            fistCaption.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), -apart - size - 20, 2, apart - 20, -22);
+            fistLine = UiKit.Label("", hud, 15, UiKit.GoldLit, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
+            fistLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -420, 128, -420, -150);
 
             stoneCell = UiKit.Cell(bar, size);
             stoneCell.Back.rectTransform.anchorMin = stoneCell.Back.rectTransform.anchorMax = new Vector2(1, 0.5f);
@@ -292,7 +313,7 @@ namespace GuWorld.UI
             legend.Place(new Vector2(0, 0.5f), new Vector2(0, 0.5f), 24, -150, -284, -150);
             var list = UiKit.Rect("List", legend).Fill();
             list.Stack<VerticalLayoutGroup>(2, new RectOffset(14, 14, 10, 10));
-            UiKit.Caps("Хитбоксы · F4", list, 13).Size(22);
+            UiKit.Caps("Хитбоксы · F7", list, 13).Size(22);
 
             foreach (var (_, name, colour) in Render.HitboxView.Legend)
             {
@@ -309,9 +330,9 @@ namespace GuWorld.UI
 
         void UpdateHud()
         {
-            if (legend != null && legend.gameObject.activeSelf != Render.HitboxView.On)
+            if (legend != null && legend.gameObject.activeSelf != Render.HitboxView.Shown)
             {
-                legend.gameObject.SetActive(Render.HitboxView.On);
+                legend.gameObject.SetActive(Render.HitboxView.Shown);
             }
 
             if (!hud.gameObject.activeSelf || host == null)
@@ -343,9 +364,21 @@ namespace GuWorld.UI
             UpdateLog();
         }
 
+        /// <summary>The minimap closer in (-1) or farther out (+1).</summary>
+        public void ZoomMinimap(int step)
+        {
+            minimapZoom = Mathf.Clamp(minimapZoom + step, 0, MinimapSpans.Length - 1);
+            Notify($"Миникарта: {(MinimapSpans[minimapZoom] >= 1000 ? $"{MinimapSpans[minimapZoom] / 1000:0.#} км" : $"{MinimapSpans[minimapZoom]:0} м")} в поперечнике");
+        }
+
         void UpdateMinimap()
         {
-            var map = host.NearMap ?? host.Map;
+            var minimapSpan = MinimapSpans[minimapZoom];
+            var near = host.NearMap;
+            var heroAt = new Vector2(host.HeroAt.x, host.HeroAt.z);
+            // The finer map while all that is shown lies on it; farther out, the whole mountain's.
+            var onNear = near != null && near.Area.Contains(heroAt - Vector2.one * minimapSpan / 2) && near.Area.Contains(heroAt + Vector2.one * minimapSpan / 2);
+            var map = onNear ? near : host.Map ?? near;
 
             if (map == null)
             {
@@ -358,12 +391,24 @@ namespace GuWorld.UI
             minimap.texture = map.Texture;
             var at = host.HeroAt;
             var centre = map.ToMap(at);
-            var span = new Vector2(MinimapSpan / map.Area.width, MinimapSpan / map.Area.height);
+            var span = new Vector2(minimapSpan / map.Area.width, minimapSpan / map.Area.height);
             minimap.uvRect = new Rect(centre - span * 0.5f, span);
             minimapArrow.localEulerAngles = new Vector3(0, 0, -host.HeroFacing * Mathf.Rad2Deg);
             coordsLine.text = $"{at.x:0}, {at.z:0}";
+            minimapPin.gameObject.SetActive(MapPin.HasValue);
+
+            if (MapPin.HasValue)
+            {
+                var pin = MapPin.Value;
+                var toPin = (map.ToMap(pin) - centre) / span * MinimapSize;
+                var edge = MinimapSize * 0.5f - 12;
+                var round = Mathf.Abs(toPin.x) + Mathf.Abs(toPin.y);
+                minimapPin.anchoredPosition = round > edge ? toPin * (edge / round) : toPin;
+                coordsLine.text += $"   ·   метка {Distance(new Vector2(pin.x - at.x, pin.z - at.z).magnitude)}";
+            }
 
             var shown = 0;
+            minimapTaken.Clear();
 
             foreach (var mark in map.Marks)
             {
@@ -382,10 +427,18 @@ namespace GuWorld.UI
 
                 var (dot, label) = minimapMarks[shown++];
                 dot.gameObject.SetActive(true);
-                label.gameObject.SetActive(true);
                 dot.anchoredPosition = offset;
-                label.rectTransform.anchoredPosition = offset + new Vector2(0, 13);
-                label.text = mark.Label;
+                var width = mark.Label.Length * label.fontSize * 0.56f;
+                var box = new Rect(offset.x - width * 0.5f, offset.y + 4, width, label.fontSize + 4);
+                var fits = !minimapTaken.Exists(r => r.Overlaps(box));
+                label.gameObject.SetActive(fits);
+
+                if (fits)
+                {
+                    minimapTaken.Add(box);
+                    label.rectTransform.anchoredPosition = offset + new Vector2(0, 13);
+                    label.text = mark.Label;
+                }
             }
 
             for (var i = shown; i < minimapMarks.Count; i++)
@@ -428,9 +481,26 @@ namespace GuWorld.UI
                 ShowEntry(barCells[i], gu, gu.Bar[i], true);
             }
 
+            // The fists: lit while ready, the special blows' letters in the corner (dim while they rest), what the keys do above.
+            var fists = host.Fists;
+
+            if (fists != null)
+            {
+                var resting = Mathf.Max(fists.RestLeft(GuWorld.Combat.Blow.Heavy) / GuWorld.Combat.Melee.RestOf(GuWorld.Combat.Blow.Heavy),
+                    fists.RestLeft(GuWorld.Combat.Blow.Spin) / GuWorld.Combat.Melee.RestOf(GuWorld.Combat.Blow.Spin));
+                fistCell.SetRim(fists.Ready ? UiKit.GoldLit : UiKit.GoldDeep);
+                fistCell.Mark.color = fists.Ready ? UiKit.GoldLit : UiKit.Muted;
+                fistCell.Corner.text = fists.Ready ? "Q R" : "";
+                fistCell.Corner.color = resting > 0 ? UiKit.Muted : UiKit.GoldLit;
+                fistCell.SetRest(fists.Ready ? resting : 0);
+                fistLine.text = fists.Ready
+                    ? $"ЛКМ — серия   ·   ПКМ — блок   ·   Q — мощный удар{Rest(fists, GuWorld.Combat.Blow.Heavy)}   ·   R — с разворота{Rest(fists, GuWorld.Combat.Blow.Spin)}"
+                    : "";
+            }
+
             var stones = gu.Stones;
             stoneCell.Count.text = $"{stones}";
-            stoneCell.Mark.color = stones > 0 ? (gu.Absorbing ? UiKit.EssenceLit : UiKit.Text) : UiKit.Muted;
+            stoneCell.Mark.color = stones > 0 ? (gu.Absorbing ? UiKit.EssenceLit : Icons.Tint("stone")) : UiKit.Muted;
             stoneCell.SetRim(gu.Absorbing ? UiKit.EssenceLit : UiKit.GoldDeep);
             stoneCell.SetRest(gu.Absorbing ? 1 - gu.AbsorbProgress : 0);
             skinLine.text = gu.SkinOn ? UiKit.Spaced("Нефритовая кожа") : "";
@@ -444,6 +514,14 @@ namespace GuWorld.UI
                 absorbFill.fillAmount = gu.AbsorbProgress;
                 absorbLine.text = $"Поглощение камня · {(1 - gu.AbsorbProgress) * Cultivator.AbsorbTime:0.0} с";
             }
+        }
+
+        /// <summary>" (1.2 с)" while a special blow rests, else nothing.</summary>
+        static string Rest(GuWorld.Combat.Melee fists, GuWorld.Combat.Blow blow)
+        {
+            var left = fists.RestLeft(blow);
+
+            return left > 0 ? $" ({left:0.0} с)" : "";
         }
 
         /// <summary>Shows a Gu's key in a cell: the Gu's icon, its rank rim, hunger and rest.</summary>
@@ -483,7 +561,7 @@ namespace GuWorld.UI
                 var hunger = gu.HungerOf(owned);
                 cell.Dot.enabled = hunger >= Hunger.Hungry;
                 cell.Dot.color = hunger >= Hunger.Starving ? UiKit.Danger : UiKit.Hunger;
-                cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : kind.Skill == SkillKind.JadeSkin && gu.SkinOn ? UiKit.EssenceLit : UiKit.Text;
+                cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : kind.Skill == SkillKind.JadeSkin && gu.SkinOn ? UiKit.EssenceLit : Icons.Tint(kind.Icon);
                 cell.SetRim(kind.Skill == SkillKind.JadeSkin && gu.SkinOn ? UiKit.GoldLit : rim);
 
                 if (live && kind.Cooldown > 0)

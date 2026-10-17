@@ -85,6 +85,10 @@ namespace GuWorld.Editor
             public bool Curved, Gable, LeanTo, Thatched, RidgeAlongZ;
             public float Pitch, Overhang, Curl;
             public bool Porch, Gallery, SideShed, OutsideStair, Lantern, Corn, Chimney, OpenFront, Awning, Flag, Sign, Lattice, Snow;
+            /// <summary>The Gu Yue's marks on a better house (the design's): a silver crescent on the ridge, a round "moon" arch over the door.</summary>
+            public bool Moon;
+            /// <summary>A course of stone along the foot of the walls.</summary>
+            public bool StoneFoot;
             public float Plinth;
             /// <summary>The open ground level on stakes under the house, m (0: none) — the Gu Yue's way (lore ch. 3).</summary>
             public float Stilts;
@@ -178,6 +182,8 @@ namespace GuWorld.Editor
                     r.Gable = !r.Curved && Chance(0.6f);
                     r.Plinth = 0.3f + R() * 0.5f;
                     r.Lattice = true;
+                    // Two designs in three (by their number: the draws of chance after this stay as they were).
+                    r.Moon = !poor && index % 3 != 2;
                     break;
             }
 
@@ -189,6 +195,8 @@ namespace GuWorld.Editor
             }
 
             r.LeanTo = kind == BuildingKind.Shed && Chance(0.6f);
+            // Plaster, mud and bamboo stand on a course of stone (logs and planks on their sill).
+            r.StoneFoot = r.Wall == Plaster || r.Wall == Mud || r.Wall == Bamboo || r.Wall == OldBamboo || r.Wall == BaiWall;
             r.Frame = DarkWood;
             r.Pitch = r.Thatched ? 0.55f + R() * 0.2f : r.Curved ? 0.42f + R() * 0.18f : 0.48f + R() * 0.2f;
             r.Overhang = r.Thatched ? 0.55f + R() * 0.3f : 0.7f + R() * 0.45f;
@@ -237,7 +245,7 @@ namespace GuWorld.Editor
             }
 
             var design = new Design { Name = name, Clan = clan, Kind = kind, Size = new Vector2(r.Width, r.Depth), Open = r.Inside, Storey = r.Storeys > 1 ? 2.6f : 2.8f, DoorAt = r.DoorAt };
-            var near = new MeshKit();
+            var near = new MeshKit { Solid = new SolidShell() };
 
             if (r.Stilts > 0)
             {
@@ -496,12 +504,26 @@ namespace GuWorld.Editor
             _ => 2,
         };
 
+        /// <summary>The solid shells kept beside the meshes made from kits that had one (null: nothing in it was solid).</summary>
+        static readonly Dictionary<Mesh, Mesh> solidOf = new Dictionary<Mesh, Mesh>();
+
+        /// <summary>A kit's mesh saved as an asset — and its solid shell beside it, when it kept one.</summary>
         static (Mesh, Material[]) Save(MeshKit kit, string name)
         {
             var built = kit.Build(name);
+            var mesh = Keep(built.mesh, $"{Generated}/Meshes/{name}.asset");
 
-            return (Keep(built.mesh, $"{Generated}/Meshes/{name}.asset"), built.materials);
+            if (kit.Solid != null)
+            {
+                var shell = kit.Solid.Build($"{name} solid");
+                solidOf[mesh] = shell != null ? Keep(shell, $"{Generated}/Meshes/{name} solid.asset") : null;
+            }
+
+            return (mesh, built.materials);
         }
+
+        /// <summary>What a built mesh's collider is: its solid shell where one was kept (null when nothing in it is solid), else the mesh itself.</summary>
+        static Mesh SolidOf(Mesh mesh) => solidOf.TryGetValue(mesh, out var shell) ? shell : mesh;
 
         /// <summary>Makes a house crooked: its walls lean (more the higher), its ridge sags in the middle, its top twists a little.</summary>
         static void Crook(MeshKit kit, Recipe r, float height)
@@ -566,6 +588,32 @@ namespace GuWorld.Editor
                 // The door: two dark leaves under a lintel.
                 kit.Box(DarkWood, new Vector3(r.DoorAt, 1.05f, front), new Vector3(1.2f, 2.1f, 0.06f));
                 kit.Box(r.Frame, new Vector3(r.DoorAt, 2.18f, front + 0.02f), new Vector3(1.45f, 0.14f, 0.1f));
+
+                if (r.StoneFoot)
+                {
+                    const float course = 0.34f;
+                    kit.Box(Stone, new Vector3(0, course / 2, -d / 2), new Vector3(w + 0.14f, course, 0.14f));
+                    kit.Box(Stone, new Vector3(-w / 2, course / 2, 0), new Vector3(0.14f, course, d + 0.14f));
+                    kit.Box(Stone, new Vector3(w / 2, course / 2, 0), new Vector3(0.14f, course, d + 0.14f));
+                    // Along the front, either side of the door.
+                    var left = r.DoorAt - 0.72f;
+                    var right = r.DoorAt + 0.72f;
+
+                    if (left > -w / 2 + 0.1f)
+                    {
+                        kit.Box(Stone, new Vector3((-w / 2 - 0.07f + left) / 2, course / 2, d / 2), new Vector3(left + w / 2 + 0.07f, course, 0.14f));
+                    }
+
+                    if (right < w / 2 - 0.1f)
+                    {
+                        kit.Box(Stone, new Vector3((right + w / 2 + 0.07f) / 2, course / 2, d / 2), new Vector3(w / 2 + 0.07f - right, course, 0.14f));
+                    }
+                }
+
+                if (r.Moon)
+                {
+                    MoonArch(kit, new Vector3(r.DoorAt, 0, front + 0.05f), 0.74f, 2.25f, Mathf.Min(0.42f, storey - 2.33f), r.Frame);
+                }
 
                 if (r.Lattice)
                 {
@@ -661,15 +709,25 @@ namespace GuWorld.Editor
             {
                 kit.CurvedRoof(r.Roof, RoofUnder, r.Thatched ? r.Roof : Ridge, new Vector3(0, height, 0), rw, rd, rise * (r.Thatched ? 1.25f : 1), r.Overhang, r.Thatched ? 0.1f : r.Curl, roofSpan, r.Thatched ? 0 : 0.34f);
 
-                // A tiled ridge's ends turned up into ornaments (the old "ridge beasts", plain here).
+                // Brackets under the eaves' corners (stacked blocks, the old timber way of holding them out).
                 if (!r.Thatched)
                 {
-                    foreach (var end in new[] { -1f, 1f })
+                    foreach (var sx in new[] { -1f, 1f })
                     {
-                        var p = Quaternion.Euler(0, roofSpan, 0) * new Vector3(end * (rw / 2 - 0.15f), 0, 0);
-                        kit.Box(Ridge, new Vector3(p.x, height + rise + 0.3f, p.z), new Vector3(0.2f, 0.55f, 0.32f), roofSpan);
-                        kit.Box(Ridge, new Vector3(p.x * 1.03f, height + rise + 0.65f, p.z * 1.03f), new Vector3(0.12f, 0.28f, 0.24f), roofSpan + 25 * end);
+                        foreach (var sz in new[] { -1f, 1f })
+                        {
+                            var corner = new Vector3(sx * (w / 2 + 0.05f), height, sz * (d / 2 + 0.05f));
+                            var outward = new Vector3(sx, 0, sz).normalized;
+                            kit.Box(r.Frame, corner + Vector3.down * 0.16f, new Vector3(0.32f, 0.16f, 0.32f));
+                            kit.Box(r.Frame, corner + Vector3.down * 0.04f + outward * 0.18f, new Vector3(0.26f, 0.1f, 0.26f), 45);
+                        }
                     }
+                }
+
+                // The Gu Yue's crescent at the middle of the ridge.
+                if (r.Moon && !r.Thatched)
+                {
+                    Finial(kit, new Vector3(0, height + rise + 0.22f, 0), 0.55f);
                 }
 
                 height += rise;
@@ -819,6 +877,23 @@ namespace GuWorld.Editor
             }
 
             height = top;
+        }
+
+        /// <summary>A "moon" arch round a door in a wall facing +Z: two posts up from the ground (`foot` between them) to `spring`, and a curve of dark timber over the lintel between them, `rise` high.</summary>
+        static void MoonArch(MeshKit kit, Vector3 foot, float radius, float spring, float rise, Material frame)
+        {
+            const int pieces = 9;
+            var previous = foot + new Vector3(-radius, spring, 0);
+            kit.Box(frame, foot + new Vector3(-radius, spring / 2, 0), new Vector3(0.12f, spring, 0.1f));
+            kit.Box(frame, foot + new Vector3(radius, spring / 2, 0), new Vector3(0.12f, spring, 0.1f));
+
+            for (var i = 1; i <= pieces; i++)
+            {
+                var a = Mathf.PI * (1 - (float)i / pieces);
+                var next = foot + new Vector3(Mathf.Cos(a) * radius, spring + Mathf.Sin(a) * rise, 0);
+                kit.Cylinder(frame, previous, next, 0.06f, 0.06f, 5);
+                previous = next;
+            }
         }
 
         static void Window(MeshKit kit, Recipe r, Vector3 at, float yaw, float width, float height)

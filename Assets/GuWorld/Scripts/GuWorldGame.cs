@@ -90,6 +90,7 @@ namespace GuWorld
         readonly System.Collections.Generic.List<Villagers> crowds = new System.Collections.Generic.List<Villagers>();
         Cultivator cultivator;
         Health health;
+        Melee melee;
         readonly Quests quests = new Quests();
         readonly Trade trade = new Trade();
         /// <summary>The shop the hero is at (while its page is open).</summary>
@@ -279,14 +280,41 @@ namespace GuWorld
         int wolvesShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
         int castFrames = 5;
+        /// <summary>`-blow kick 16`: that blow thrown so many frames before the picture; `-guard`: the guard up.</summary>
+        Blow? blowShot;
+        int blowFrames;
+        bool guardShot;
+        /// <summary>`-climb x,z,yaw,seconds`: the hero put there facing that way (degrees), taking hold of the wall before them and climbing up it;
+        /// `-climb near,seconds`: before the nearest house's wall, wherever the hero is (x NaN).</summary>
+        Vector4? climbShot;
+        /// <summary>`-fists`: the fists ready (their slot lit, the stance a fighter's).</summary>
+        bool fistsShot;
+        /// <summary>`-orbit angle,distance,height`: the camera held on the hero from that side (degrees from their front), that far, looking at that height.</summary>
+        Vector3? orbitView;
+        float orbitTurn;
+        float pitchShot = float.NaN;
+        /// <summary>`-pin x,z[,go]`: a mark put on the map (and gone to).</summary>
+        Vector3? pinShot;
+        bool pinGo;
+        /// <summary>What a check run saw (the picture's name + ".log.txt"): the climb's steps, the blows that landed.</summary>
+        System.Text.StringBuilder testLog;
         /// <summary>`-view x,y,z,yaw,pitch` (with -screenshot): the camera held there, looking that way (degrees).</summary>
         Pose? fixedView;
         /// <summary>`-ground` (with -view): its height is above the ground there.</summary>
         bool viewAboveGround;
 
-        public bool CreatorFace { get; set; }
+        /// <summary>The making's camera: 0 the whole figure … 1 the face (eased toward where the wheel or the buttons put it).</summary>
+        float creatorZoom;
+        float creatorZoomTo;
+
+        public bool CreatorFace
+        {
+            get => creatorZoomTo > 0.5f;
+            set => creatorZoomTo = value ? 1 : 0;
+        }
         public ThirdPersonCamera View => view;
         public Cultivator Cultivator => cultivator;
+        public Melee Fists => melee;
         public HumanBody.Parts Parts => picture.Parts;
         public Health Health => health;
         public Quests Quests => quests;
@@ -311,7 +339,7 @@ namespace GuWorld
             {
                 if (Vector2.Distance(p, place.Centre) < place.Radius * 1.35f)
                 {
-                    return place.Name.ToLowerInvariant();
+                    return LowerFirst(place.Name);
                 }
             }
 
@@ -319,7 +347,7 @@ namespace GuWorld
             {
                 if (Vector2.Distance(p, place.Centre) < place.Radius * 3 + 300)
                 {
-                    return $"окрестности: {place.Name.ToLowerInvariant()}";
+                    return $"окрестности: {LowerFirst(place.Name)}";
                 }
             }
 
@@ -537,7 +565,62 @@ namespace GuWorld
                 chatShot = chatAt >= 0 && chatAt + 1 < args.Length ? args[chatAt + 1] : null;
                 var castFramesAt = System.Array.IndexOf(args, "-cast");
                 castFrames = castFramesAt >= 0 && castFramesAt + 1 < args.Length && int.TryParse(args[castFramesAt + 1], out var cf) ? cf : 5;
-                HitboxView.On |= Has(args, "-hitboxes");
+                HitboxView.On = (HitboxView.On || Has(args, "-hitboxes")) && !Has(args, "-nohitboxes");
+                var blowAt = System.Array.IndexOf(args, "-blow");
+
+                if (blowAt >= 0 && blowAt + 1 < args.Length && System.Enum.TryParse<Blow>(args[blowAt + 1], true, out var blow))
+                {
+                    blowShot = blow;
+                    blowFrames = blowAt + 2 < args.Length && int.TryParse(args[blowAt + 2], out var bf) ? bf : blow == Blow.Kick ? 16 : 9;
+                }
+
+                guardShot = Has(args, "-guard");
+                var climbAt = System.Array.IndexOf(args, "-climb");
+
+                if (climbAt >= 0 && climbAt + 1 < args.Length)
+                {
+                    var parts = args[climbAt + 1].Split(',');
+
+                    if (parts[0] == "near")
+                    {
+                        climbShot = new Vector4(float.NaN, 0, 0, parts.Length > 1 ? float.Parse(parts[1], System.Globalization.CultureInfo.InvariantCulture) : 4);
+                    }
+                    else
+                    {
+                        var c = System.Array.ConvertAll(parts, s => float.Parse(s, System.Globalization.CultureInfo.InvariantCulture));
+                        climbShot = new Vector4(c[0], c[1], c[2], c.Length > 3 ? c[3] : 3);
+                    }
+                }
+
+                fistsShot = Has(args, "-fists");
+                var orbitAt = System.Array.IndexOf(args, "-orbit");
+
+                if (orbitAt >= 0 && orbitAt + 1 < args.Length)
+                {
+                    var o = System.Array.ConvertAll(args[orbitAt + 1].Split(','), t => float.Parse(t, System.Globalization.CultureInfo.InvariantCulture));
+                    orbitView = new Vector3(o[0], o.Length > 1 ? o[1] : 3.2f, o.Length > 2 ? o[2] : 1.0f);
+                    // A fourth number: the way the hero walks (-walk, -run), degrees from the way they start facing.
+                    orbitTurn = o.Length > 3 ? o[3] * Mathf.Deg2Rad : 0;
+                }
+
+                // `-pitch` (radians, down positive): the hero's camera tipped so (the crosshair, the aim with it).
+                var pitchAt = System.Array.IndexOf(args, "-pitch");
+                pitchShot = pitchAt >= 0 && pitchAt + 1 < args.Length ? float.Parse(args[pitchAt + 1], System.Globalization.CultureInfo.InvariantCulture) : float.NaN;
+
+                var pinAt = System.Array.IndexOf(args, "-pin");
+
+                if (pinAt >= 0 && pinAt + 1 < args.Length)
+                {
+                    var parts = args[pinAt + 1].Split(',');
+                    pinShot = new Vector3(float.Parse(parts[0], System.Globalization.CultureInfo.InvariantCulture), 0, float.Parse(parts[1], System.Globalization.CultureInfo.InvariantCulture));
+                    pinGo = parts.Length > 2 && parts[2] == "go";
+                }
+
+                if (blowShot.HasValue || climbShot.HasValue)
+                {
+                    testLog = new System.Text.StringBuilder();
+                    Wounds.Landed += (who, part, harm, down) => testLog.AppendLine($"frame {screenshotFrame}: {Wounds.Line(who, part, harm, down)}");
+                }
                 var timeAt = System.Array.IndexOf(args, "-time");
 
                 if (timeAt >= 0 && timeAt + 1 < args.Length)
@@ -596,6 +679,9 @@ namespace GuWorld
 
         static bool Has(string[] args, string flag) => System.Array.IndexOf(args, flag) >= 0;
 
+        /// <summary>A name after a "·" or a word: its first letter small, the proper names in it as they are ("деревня Гу Юэ").</summary>
+        static string LowerFirst(string name) => string.IsNullOrEmpty(name) ? name : char.ToLowerInvariant(name[0]) + name.Substring(1);
+
         static Look LookFromArgs(string[] args)
         {
             var at = System.Array.IndexOf(args, "-look");
@@ -613,6 +699,8 @@ namespace GuWorld
                 hair = parts.Length > 1 ? parts[1] : "",
                 beard = parts.Length > 2 ? parts[2] : "none",
                 robe = parts.Length > 3 ? parts[3] : "dark",
+                skin = parts.Length > 4 ? parts[4] : "fair",
+                stature = parts.Length > 5 ? parts[5] : "middle",
             };
         }
 
@@ -672,6 +760,8 @@ namespace GuWorld
             hero.AddComponent<CharacterController>();
             body = hero.AddComponent<HeroMotor>();
             body.Bounds = Location.bounds;
+            melee = hero.AddComponent<Melee>();
+            melee.Hit += OnFistLanded;
             player = hero.AddComponent<PlayerController>();
             player.Camera = view;
             player.Spawn = new Vector3(pose.x, pose.y, pose.z);
@@ -703,6 +793,7 @@ namespace GuWorld
             look = next.With(beard: Beard.None);
             picture.Wear(look);
             player.EyeScale = picture.Scale;
+            melee.Scale = picture.Scale;
         }
 
         void BuildWorld()
@@ -1248,6 +1339,13 @@ namespace GuWorld
         /// <summary>A task handed back: the giver's thanks and the reward in stones.</summary>
         void HandIn(Villager who)
         {
+            if (quests.Ready && quests.Current.Giver == who.Spec.Name && cultivator.Bag.Room(ItemBook.Stone, clock.Minutes) < quests.Current.RewardStones)
+            {
+                menus.Notify("В сумке нет места для награды — освободите ячейку и приходите снова");
+
+                return;
+            }
+
             var quest = quests.HandIn(who.Spec.Name);
 
             if (quest == null)
@@ -1356,6 +1454,7 @@ namespace GuWorld
                         case "map": OpenPage(Menus.Page.Map); break;
                     case "body": OpenPage(Menus.Page.Body); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
+                        case "hua": OpenShop(Trade.Shops[1]); break;
                     }
                 }
 
@@ -1386,6 +1485,54 @@ namespace GuWorld
                 if (screenshotFrame == 150 + benchFrames - castFrames && castAt)
                 {
                     cultivator.Use(0);
+                }
+
+                // `-blow`, `-guard`: the fists.
+                if (blowShot.HasValue && screenshotFrame == 150 + benchFrames - blowFrames)
+                {
+                    melee.Launch(blowShot.Value);
+                }
+
+                if (guardShot && screenshotFrame > 100)
+                {
+                    melee.Guarding = true;
+                }
+
+                // `-pin`: the mark put before the map opens (frame 100); with "go", gone to from the map a moment later.
+                if (pinShot is Vector3 pin && screenshotFrame == 95)
+                {
+                    menus.PinMap(pin.x, pin.z);
+                }
+
+                if (orbitView.HasValue && screenshotFrame == 2)
+                {
+                    view.Yaw += orbitTurn;
+                }
+
+                if (!float.IsNaN(pitchShot))
+                {
+                    view.Pitch = pitchShot;
+                }
+
+                if (pinShot.HasValue && pinGo && screenshotFrame == 115)
+                {
+                    menus.TeleportToMapPin();
+                }
+
+                if (fistsShot && screenshotFrame == 100)
+                {
+                    melee.Ready = true;
+                }
+
+                // `-climb`: before the wall, taking hold of it, then up it (W held) — its steps written down.
+                if (climbShot is Vector4 climb)
+                {
+                    ClimbCheck(climb);
+                }
+
+                if (testLog != null && screenshotFrame == 150 + benchFrames + 1)
+                {
+                    System.IO.File.WriteAllText(screenshot + ".log.txt", testLog.ToString());
                 }
 
                 if (screenshotFrame == 140)
@@ -1437,6 +1584,12 @@ namespace GuWorld
 
                     ScreenCapture.CaptureScreenshot(screenshot);
 
+                    // `-handlog`: how the hero's fingers are bent at the picture.
+                    if (Has(System.Environment.GetCommandLineArgs(), "-handlog") && picture.Figure?.Body != null)
+                    {
+                        System.IO.File.WriteAllText(screenshot + ".hands.txt", picture.Figure.Body.HandReport());
+                    }
+
                     if (frameTimes.Count > 0)
                     {
                         frameTimes.Sort();
@@ -1485,6 +1638,8 @@ namespace GuWorld
 
             var keyboard = Keyboard.current;
             var wasPlaying = mode == Mode.Playing;
+            // The hitboxes only over the game itself (not the main menu, the hero's making, a page).
+            HitboxView.InPlay = mode == Mode.Playing || mode == Mode.Talking || mode == Mode.Chat;
             weather = forcedWeather.HasValue ? GuWorld.World.Weather.Of(forcedWeather.Value)
                 : mode == Mode.Title ? GuWorld.World.Weather.Fair
                 : GuWorld.World.Weather.At(clock.Minutes);
@@ -1501,7 +1656,7 @@ namespace GuWorld
                 FunctionKeys(keyboard);
 
                 // Debug: go through the weathers.
-                if (debug && !keyboard.f3Key.isPressed && keyboard.rKey.wasPressedThisFrame)
+                if (debug && !keyboard.f3Key.isPressed && keyboard.rKey.wasPressedThisFrame && !melee.Ready)
                 {
                     forcedWeather = forcedWeather switch
                     {
@@ -1558,6 +1713,11 @@ namespace GuWorld
                 Visits();
             }
 
+            if (mode == Mode.Playing)
+            {
+                Unstick();
+            }
+
             // The Gu Master's keys: the Gu (held: aimed; let go: used), the stone, the view, the hero's pages.
             if (mode == Mode.Playing && keyboard != null && screenshot == null)
             {
@@ -1572,6 +1732,16 @@ namespace GuWorld
                 if (keyboard.f5Key.wasPressedThisFrame)
                 {
                     SetFirstPerson(!view.FirstPerson);
+                }
+
+                // + and −: the minimap closer in and farther out.
+                if (keyboard.equalsKey.wasPressedThisFrame || keyboard.numpadPlusKey.wasPressedThisFrame)
+                {
+                    menus.ZoomMinimap(-1);
+                }
+                else if (keyboard.minusKey.wasPressedThisFrame || keyboard.numpadMinusKey.wasPressedThisFrame)
+                {
+                    menus.ZoomMinimap(1);
                 }
 
                 if (keyboard.kKey.wasPressedThisFrame) OpenPage(Menus.Page.Aperture);
@@ -1606,6 +1776,7 @@ namespace GuWorld
             if (mode != Mode.Playing)
             {
                 StopAiming();
+                melee.Stop();
             }
 
             // Drawing in a stone: walking slowly is all one can do; a jump, a run or a climb breaks it off.
@@ -1640,6 +1811,7 @@ namespace GuWorld
             // The main menu's own light and fair sky; the game's clock and weather everywhere else.
             var time = forcedTime ?? (mode == Mode.Title ? TitleTimeOfDay : clock.TimeOfDay);
             using (SkyMarker.Auto()) sky.Apply(time, weather);
+            StudioLight();
             using (AtmosphereMarker.Auto()) atmosphere?.Apply(sky, weather, time, view.transform);
             using (InsectsMarker.Auto()) insects?.Apply(sky, weather, view.transform);
 
@@ -1661,8 +1833,10 @@ namespace GuWorld
 
         /// <summary>
         /// The Gu's keys, 1–4, the way a MOBA has them: held down, the skill is aimed — its path or ring
-        /// shown on the ground, toward the crosshair — and let go, it is used; the right mouse button puts
-        /// it away unused. The left mouse button uses the first key's Gu at once, where the crosshair points.
+        /// shown toward the crosshair — and let go, it is used; the right mouse button puts it away unused
+        /// (the left uses it at once). Nothing aimed, the left button uses the first key's Gu at once; with
+        /// the fists ready (F) the mouse fights with them instead — the left button a blow (jab, cross, kick
+        /// in a chain), the right held a guard — and Q, R throw the special blows.
         /// </summary>
         void Skills(Keyboard keyboard, Mouse mouse)
         {
@@ -1673,6 +1847,14 @@ namespace GuWorld
             }
 
             var click = mouse != null && mouse.leftButton.wasPressedThisFrame;
+            melee.Strength = 1 + 0.6f * (cultivator.Aperture.Rank - 1);
+
+            // F: the fists ready, or put away.
+            if (keyboard.fKey.wasPressedThisFrame)
+            {
+                melee.Ready = !melee.Ready;
+                menus.Notify(melee.Ready ? "Кулаки наготове" : "Кулаки опущены");
+            }
 
             if (aiming < 0)
             {
@@ -1688,13 +1870,42 @@ namespace GuWorld
 
                 if (aiming < 0)
                 {
-                    if (click)
+                    if (melee.Ready)
                     {
-                        cultivator.Use(0);
+                        if (click)
+                        {
+                            melee.Press();
+                        }
+
+                        if (keyboard.qKey.wasPressedThisFrame && !keyboard.f3Key.isPressed)
+                        {
+                            Special(Blow.Heavy, "Мощный удар");
+                        }
+
+                        if (keyboard.rKey.wasPressedThisFrame)
+                        {
+                            Special(Blow.Spin, "Удар с разворота");
+                        }
+
+                        melee.Guarding = mouse != null && mouse.rightButton.isPressed && body.Free;
                     }
+                    else
+                    {
+                        if (click)
+                        {
+                            cultivator.Use(0);
+                        }
+
+                        melee.Guarding = false;
+                    }
+
+                    // Fighting: the hero faces where the crosshair is.
+                    player.FaceView = melee.Busy;
 
                     return;
                 }
+
+                melee.Guarding = false;
             }
 
             var kind = cultivator.KindOn(aiming);
@@ -1719,6 +1930,15 @@ namespace GuWorld
             cultivator.Use(key);
         }
 
+        /// <summary>A special blow (Q, R) thrown — or why not, when it still rests.</summary>
+        void Special(Blow blow, string name)
+        {
+            if (!melee.Special(blow) && melee.RestLeft(blow) > 0)
+            {
+                menus.Notify($"{name} — ещё {melee.RestLeft(blow):0.0} с");
+            }
+        }
+
         void ShowAim(GuWorld.Cultivation.GuKind kind)
         {
             aim ??= SkillAim.Create(body.transform);
@@ -1729,7 +1949,8 @@ namespace GuWorld
 
             if (thrown)
             {
-                aim.ShowPath(body.transform.position, cultivator.AimPoint(kind), Moonblade.Width, kind.Reach, kind.Range, usable);
+                var target = cultivator.AimPoint(kind);
+                aim.ShowPath(body.transform.position, cultivator.HandFor(target), target, Moonblade.Width, kind.Reach, kind.Range, usable);
             }
             else
             {
@@ -1788,8 +2009,8 @@ namespace GuWorld
 
         /// <summary>
         /// F3 with another key, Minecraft's way: F3+B the hitboxes, F3+G the borders of the streamed squares,
-        /// F3+Q the list of these keys; F3 alone (let go without another) the debug panel. F4 the hitboxes too;
-        /// F7 shows them while held; F1 hides the interface; F2 saves a picture of the screen.
+        /// F3+Q the list of these keys; F3 alone (let go without another) the debug panel. F4 and F7 the hitbox
+        /// mode on and off; F1 hides the interface; F2 saves a picture of the screen.
         /// </summary>
         void FunctionKeys(Keyboard keyboard)
         {
@@ -1812,7 +2033,7 @@ namespace GuWorld
                 if (keyboard.qKey.wasPressedThisFrame)
                 {
                     f3Combo = true;
-                    menus.Notify("F3 — отладка · F3+B — хитбоксы · F3+G — границы участков · F7 (держать) — хитбоксы · F1 — скрыть интерфейс · F2 — снимок экрана · F5 — вид · T — чат · / — команда");
+                    menus.Notify("F3 — отладка · F3+B — хитбоксы · F3+G — границы участков · F7 — режим хитбоксов · F1 — скрыть интерфейс · F2 — снимок экрана · F5 — вид · T — чат · / — команда");
                 }
             }
 
@@ -1826,14 +2047,12 @@ namespace GuWorld
                 f3Combo = false;
             }
 
-            if (keyboard.f4Key.wasPressedThisFrame)
+            // F4 or F7: the hitbox mode on or off (it stays as left, the settings keep it).
+            if (keyboard.f4Key.wasPressedThisFrame || keyboard.f7Key.wasPressedThisFrame)
             {
                 Hitboxes = !Hitboxes;
-                menus.Notify(Hitboxes ? "Хитбоксы показаны (F4 — скрыть)" : "Хитбоксы скрыты");
+                menus.Notify(Hitboxes ? "Режим хитбоксов включён (F7 — выключить)" : "Режим хитбоксов выключен");
             }
-
-            // F7 held: the hitboxes while it is down.
-            HitboxView.On = GameSettings.ShowHitboxes || keyboard.f7Key.isPressed;
 
             if (keyboard.f1Key.wasPressedThisFrame)
             {
@@ -1926,8 +2145,28 @@ namespace GuWorld
                 at.y = (Location.id == QingMao.Id ? QingMao.GroundAt(probe) : OnGround(probe, 300).y) + 1;
             }
 
+            // Onto what one can stand on there with room above — a roof, a terrace, the ground — never inside a house.
+            at = body.SafeSpot(at) ?? at;
             body.PlaceAt(at);
             player.PlaceCamera();
+            // The houses there may only now be made round the hero: watched for a few seconds.
+            unstickUntil = Time.unscaledTime + 4;
+        }
+
+        float unstickUntil;
+
+        /// <summary>After a teleport: if what was made there since holds the hero inside it, out onto it.</summary>
+        void Unstick()
+        {
+            if (Time.unscaledTime > unstickUntil || body == null || body.OnWall || !body.Stuck)
+            {
+                return;
+            }
+
+            if (body.SafeSpot(body.transform.position, 40) is Vector3 free)
+            {
+                body.PlaceAt(free);
+            }
         }
 
         public void SetWeather(GuWorld.World.Sky? sky) => forcedWeather = sky;
@@ -1973,11 +2212,86 @@ namespace GuWorld
             }
         }
 
+        /// <summary>`-climb x,z,yaw,seconds` (a check): the hero stood there facing the wall, taking hold of it at frame 100, climbing for the seconds given.</summary>
+        void ClimbCheck(Vector4 climb)
+        {
+            var yaw = climb.z * Mathf.Deg2Rad;
+
+            if (screenshotFrame == 100)
+            {
+                if (float.IsNaN(climb.x))
+                {
+                    // The nearest house: stood a little way out from it, on the side toward the hero, facing it.
+                    var at = body.transform.position;
+                    Collider house = null;
+
+                    foreach (var collider in UnityEngine.Physics.OverlapSphere(at, 60, ~0, QueryTriggerInteraction.Ignore))
+                    {
+                        if (collider is MeshCollider && collider.GetComponentInParent<HitboxTag>() is HitboxTag tag && tag.Kind == HitboxKind.Building &&
+                            collider.bounds.size.y > 4 && collider.bounds.size.y < 14 &&
+                            (house == null || (collider.bounds.center - at).sqrMagnitude < (house.bounds.center - at).sqrMagnitude))
+                        {
+                            house = collider;
+                        }
+                    }
+
+                    if (house == null)
+                    {
+                        testLog.AppendLine("frame 100: no house near");
+
+                        return;
+                    }
+
+                    var middle = house.bounds.center;
+                    var away = at - middle;
+                    away.y = 0;
+                    away = away.sqrMagnitude > 0.01f ? away.normalized : Vector3.forward;
+                    // Out of the house along that line, then back to just before its wall.
+                    var outside = middle + away * (house.bounds.extents.magnitude + 2);
+                    var feet = new Vector3(outside.x, middle.y + 2, outside.z);
+
+                    if (house.Raycast(new Ray(feet, -away), out var wall, 100))
+                    {
+                        outside = wall.point + wall.normal * 0.8f;
+                    }
+
+                    climb = new Vector4(outside.x, outside.z, Mathf.Atan2(-away.x, -away.z) * Mathf.Rad2Deg, climb.w);
+                    climbShot = climb;
+                    yaw = climb.z * Mathf.Deg2Rad;
+                    testLog.AppendLine($"frame 100: the nearest house {house.name} ({house.transform.parent?.name}), its bounds {house.bounds}");
+                }
+
+                Teleport(new Vector3(climb.x, float.NaN, climb.y));
+                body.Facing = yaw;
+                view.Yaw = yaw + Mathf.PI;
+                var held = body.GrabWall(Mathf.Sin(yaw), Mathf.Cos(yaw));
+                testLog.AppendLine($"frame 100: at {body.transform.position}, took hold of a wall: {held}{(held ? $", its normal {body.WallNormal}" : "")}");
+            }
+            else if (screenshotFrame > 100 && screenshotFrame <= 100 + climb.w * 60)
+            {
+                if (body.OnWall)
+                {
+                    body.WallTick(Time.deltaTime, 1, 0, false, false);
+                }
+
+                if (screenshotFrame % 20 == 0)
+                {
+                    testLog.AppendLine($"frame {screenshotFrame}: at {body.transform.position}, on the wall {body.OnWall}, climbing over {body.ClimbProgress?.ToString("0.00") ?? "-"}, grounded {body.Grounded}");
+                }
+            }
+        }
+
+        /// <summary>A fist or a foot landed: the camera jolts a little (more on something solid that does not give).</summary>
+        void OnFistLanded(Collider what, Vector3 point)
+        {
+            view.Shake(what.GetComponent<HitZone>() != null || what.GetComponentInParent<IStrikable>() != null ? 0.06f : 0.03f);
+        }
+
         /// <summary>A wolf killed: its fang into the bag, and the task counts it.</summary>
         void OnWolfKilled(Wolf wolf)
         {
             var kept = cultivator.Bag.Add(ItemBook.WolfFang, 1, clock.Minutes);
-            menus.Notify(kept > 0 ? "Волк убит — волчий клык в сумке" : "Волк убит");
+            menus.Notify(kept > 0 ? "Волк убит — волчий клык в сумке" : "Волк убит — клык не поместился в сумку");
             quests.Count("kill:wolf");
         }
 
@@ -1991,6 +2305,14 @@ namespace GuWorld
         {
             var at = body.transform.position;
             var pressed = keyboard != null && keyboard.eKey.wasPressedThisFrame;
+
+            // On a wall: how to climb it and get off it.
+            if (body.OnWall)
+            {
+                menus.SetPrompt("W/S — вверх, вниз   ·   A/D — в сторону   ·   Пробел — оттолкнуться   ·   C — отпустить");
+
+                return;
+            }
 
             // On a giant tree: climbing, stepping onto a branch, back onto the trunk, sitting.
             if (body.Tree != null)
@@ -2124,6 +2446,17 @@ namespace GuWorld
 
         void LateUpdate()
         {
+            if (orbitView is Vector3 orbit && body != null)
+            {
+                var around = body.Facing + orbit.x * Mathf.Deg2Rad;
+                var look = body.transform.position + Vector3.up * orbit.z;
+                view.Following = false;
+                view.transform.position = look + new Vector3(Mathf.Sin(around), 0, Mathf.Cos(around)) * orbit.y + Vector3.up * 0.25f;
+                view.transform.rotation = Quaternion.LookRotation(look - view.transform.position, Vector3.up);
+
+                return;
+            }
+
             if (fixedView.HasValue)
             {
                 var v = fixedView.Value;
@@ -2152,7 +2485,7 @@ namespace GuWorld
         void TitleCamera()
         {
             titleAngle += Time.unscaledDeltaTime * 0.07f;
-            var height = HeroView.HeightOf(look.Gender);
+            var height = HeroView.HeightOf(look);
             var facing = body.Facing + 0.55f + 0.35f * Mathf.Sin(titleAngle);
             var direction = new Vector3(Mathf.Sin(facing), 0, Mathf.Cos(facing));
             var target = body.transform.position + Vector3.up * height * 0.62f;
@@ -2162,26 +2495,91 @@ namespace GuWorld
             camera.rotation = Quaternion.LookRotation(target + aside - camera.position, Vector3.up);
         }
 
-        /// <summary>Making the hero: the camera in front of them, turned round by dragging right of the panel.</summary>
+        /// <summary>Making the hero: the camera in front of them, turned round by dragging right of the panel, the wheel bringing it from the whole figure in to the face.</summary>
         void CreatorCamera()
         {
             var mouse = Mouse.current;
 
-            if (mouse != null && mouse.leftButton.isPressed && mouse.position.ReadValue().x > menus.CreatorPanelWidth)
+            if (mouse != null && mouse.position.ReadValue().x > menus.CreatorPanelWidth)
             {
-                creatorAngle -= mouse.delta.ReadValue().x * 0.008f;
+                if (mouse.leftButton.isPressed)
+                {
+                    creatorAngle -= mouse.delta.ReadValue().x * 0.008f;
+                }
+
+                var wheel = mouse.scroll.ReadValue().y;
+
+                if (Mathf.Abs(wheel) > 0.01f)
+                {
+                    creatorZoomTo = Mathf.Clamp01(creatorZoomTo + Mathf.Sign(wheel) * 0.2f);
+                }
             }
 
-            var height = HeroView.HeightOf(look.Gender);
-            var target = body.transform.position + Vector3.up * (CreatorFace ? height * 0.93f : height * 0.55f);
-            var distance = CreatorFace ? 0.8f : 3.1f;
+            creatorZoom = Mathf.Lerp(creatorZoom, creatorZoomTo, 1 - Mathf.Exp(-8 * Time.unscaledDeltaTime));
+            var z = creatorZoom * creatorZoom * (3 - 2 * creatorZoom);
+            var height = HeroView.HeightOf(look);
+            var target = body.transform.position + Vector3.up * height * Mathf.Lerp(0.55f, 0.93f, z);
+            var distance = Mathf.Lerp(3.1f, 0.8f, z);
             var facing = body.Facing + creatorAngle;
             var direction = new Vector3(Mathf.Sin(facing), 0, Mathf.Cos(facing));
             // Seen a little from the right of the screen's middle, leaving room for the panel.
-            var aside = Vector3.Cross(Vector3.up, direction).normalized * (CreatorFace ? 0.18f : 0.75f);
+            var aside = Vector3.Cross(Vector3.up, direction).normalized * Mathf.Lerp(0.75f, 0.18f, z);
             var camera = view.transform;
-            camera.position = target + direction * distance + Vector3.up * (CreatorFace ? 0.02f : 0.25f) + aside;
+            camera.position = target + direction * distance + Vector3.up * Mathf.Lerp(0.25f, 0.02f, z) + aside;
             camera.rotation = Quaternion.LookRotation(target + aside - camera.position, Vector3.up);
+        }
+
+        bool studioLit;
+
+        /// <summary>
+        /// Making the hero: a portrait's light — the sun swung round to shine on them from before them, a little from the
+        /// left and above, warm and without the houses' shadows; the moon a cool fill from the other side. Back to the
+        /// sky's own the moment the making is over.
+        /// </summary>
+        /// <summary>The sun's shadows before the hero's making lit it its own way.</summary>
+        LightShadows sunShadows = LightShadows.Soft;
+
+        void StudioLight()
+        {
+            var lit = mode == Mode.Create && sky != null && sky.Sun != null && body != null;
+
+            if (!lit)
+            {
+                if (studioLit && sky != null && sky.Sun != null)
+                {
+                    sky.Sun.shadows = sunShadows;
+                }
+
+                studioLit = false;
+
+                return;
+            }
+
+            if (!studioLit)
+            {
+                sunShadows = sky.Sun.shadows;
+            }
+
+            studioLit = true;
+            sky.Sun.enabled = true;
+            var toCamera = view.transform.position - body.transform.position;
+            toCamera.y = 0;
+            toCamera = toCamera.sqrMagnitude > 0.01f ? toCamera.normalized : Vector3.forward;
+            var left = Vector3.Cross(toCamera, Vector3.up);
+            var key = (toCamera + left * 0.5f + Vector3.up * 0.8f).normalized;
+            sky.Sun.transform.rotation = Quaternion.LookRotation(-key);
+            sky.Sun.color = new Color(1f, 0.94f, 0.86f);
+            sky.Sun.intensity = 1.6f;
+            sky.Sun.shadows = LightShadows.None;
+
+            if (sky.Moon != null)
+            {
+                sky.Moon.enabled = true;
+                var fill = (toCamera - left * 0.8f + Vector3.up * 0.3f).normalized;
+                sky.Moon.transform.rotation = Quaternion.LookRotation(-fill);
+                sky.Moon.color = new Color(0.7f, 0.78f, 0.95f);
+                sky.Moon.intensity = 0.45f;
+            }
         }
 
         void OnDestroy()

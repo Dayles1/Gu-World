@@ -20,12 +20,31 @@ namespace GuWorld.Body
         Bald,
     }
 
-    /// <summary>The hero's hanfu: dark, grey or white.</summary>
+    /// <summary>The hero's hanfu: dark, grey or white; the clan's bamboo green, indigo, earth brown.</summary>
     public enum Robe
     {
         Dark,
         Grey,
         White,
+        Green,
+        Indigo,
+        Brown,
+    }
+
+    /// <summary>The skin: fair, warm, tanned (a mountain clan's youths work in the sun).</summary>
+    public enum Skin
+    {
+        Fair,
+        Warm,
+        Tan,
+    }
+
+    /// <summary>The hero's height among the fifteen-year-olds: shorter, middling, taller.</summary>
+    public enum Stature
+    {
+        Short,
+        Middle,
+        Tall,
     }
 
     /// <summary>A sign worn on the clothes, showing whose one is: a clan's mark.</summary>
@@ -61,8 +80,11 @@ namespace GuWorld.Body
         public string hair_color = "black";
         public string beard = "none";
         public string eyes = "brown";
-        /// <summary>The hanfu's colour ("dark", "grey", "white").</summary>
+        /// <summary>The hanfu's colour ("dark", "grey", "white", "green", "indigo", "brown").</summary>
         public string robe = "dark";
+        /// <summary>The skin ("fair", "warm", "tan") and the height ("short", "middle", "tall").</summary>
+        public string skin = "fair";
+        public string stature = "middle";
         /// <summary>The hero's own name (the clan's name goes before it); empty until given.</summary>
         public string name = "";
 
@@ -70,6 +92,14 @@ namespace GuWorld.Body
         public HairStyle Hair => Parse(hair, DefaultHair(Gender));
         public Beard BeardStyle => Gender == Gender.Female ? Beard.None : Parse(beard, Beard.None);
         public Robe RobeColour => Parse(robe, Robe.Dark);
+        public Skin SkinTone => Parse(skin, Skin.Fair);
+        public Stature Height => Parse(stature, Stature.Middle);
+
+        /// <summary>The height against a middling one's.</summary>
+        public float HeightFactor => Height == Stature.Short ? 0.955f : Height == Stature.Tall ? 1.045f : 1;
+
+        /// <summary>The skin's evened brightness (Paint.Saturate's tone, 0–255).</summary>
+        public float SkinBrightness => SkinTone == Skin.Tan ? 146 : SkinTone == Skin.Warm ? 176 : 204;
 
         /// <summary>The clothes' dye for the hanfu's colour (Clothes.For).</summary>
         public int Dye => 8 + (int)RobeColour;
@@ -116,9 +146,20 @@ namespace GuWorld.Body
             return kept.ToString().Trim();
         }
 
-        public Look With(Gender? gender = null, HairStyle? hair = null, Beard? beard = null, Robe? robe = null, string name = null)
+        public Look With(Gender? gender = null, HairStyle? hair = null, Beard? beard = null, Robe? robe = null, string name = null,
+            Skin? skin = null, Stature? stature = null)
         {
             var next = (Look)MemberwiseClone();
+
+            if (skin.HasValue)
+            {
+                next.skin = Word(skin.Value);
+            }
+
+            if (stature.HasValue)
+            {
+                next.stature = Word(stature.Value);
+            }
 
             if (name != null)
             {
@@ -156,7 +197,7 @@ namespace GuWorld.Body
         }
 
         /// <summary>A stable key: two looks with the same key are drawn the same.</summary>
-        public string Key => $"{Gender}/{Hair}/{BeardStyle}/{RobeColour}";
+        public string Key => $"{Gender}/{Hair}/{BeardStyle}/{RobeColour}/{SkinTone}/{Height}";
 
         public static string Word<T>(T value) where T : Enum => value.ToString().ToLowerInvariant();
 
@@ -178,8 +219,42 @@ namespace GuWorld.Body
         {
             Robe.Grey => "Серое",
             Robe.White => "Белое",
+            Robe.Green => "Зелёное",
+            Robe.Indigo => "Синее",
+            Robe.Brown => "Бурое",
             _ => "Тёмное",
         };
+
+        public static string Name(Skin skin) => skin switch
+        {
+            Skin.Warm => "Тёплая",
+            Skin.Tan => "Смуглая",
+            _ => "Светлая",
+        };
+
+        public static string Name(Stature stature) => stature switch
+        {
+            Stature.Short => "Пониже",
+            Stature.Tall => "Повыше",
+            _ => "Средний",
+        };
+
+        /// <summary>A look by chance (the gender kept): a hairstyle, a hanfu, a skin, a height.</summary>
+        public Look Random(System.Random random)
+        {
+            T Any<T>() where T : struct, Enum
+            {
+                var values = (T[])Enum.GetValues(typeof(T));
+
+                return values[random.Next(values.Length)];
+            }
+
+            var styles = Gender == Gender.Female
+                ? new[] { HairStyle.Buns, HairStyle.Bob, HairStyle.Ponytail, HairStyle.Long, HairStyle.Parted }
+                : new[] { HairStyle.Short, HairStyle.Parted, HairStyle.Ponytail, HairStyle.Long, HairStyle.Buns };
+
+            return With(hair: styles[random.Next(styles.Length)], robe: Any<Robe>(), skin: Any<Skin>(), stature: Any<Stature>());
+        }
 
         public static string Name(Beard beard) => beard switch
         {

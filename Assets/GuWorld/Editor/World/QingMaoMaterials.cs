@@ -49,7 +49,7 @@ namespace GuWorld.Editor
                 material = new Material(Shader.Find("Universal Render Pipeline/Lit"));
             }
 
-            material.color = Hex(rgb);
+            material.color = name == "Interior" ? Hex(rgb) : Lifted(Hex(rgb));
             material.SetFloat("_Smoothness", smoothness);
             material.SetFloat("_Cull", twoSided ? 0 : 2);
             material.doubleSidedGI = twoSided;
@@ -90,6 +90,62 @@ namespace GuWorld.Editor
         }
 
         static Color Hex(int rgb) => new Color(((rgb >> 16) & 0xff) / 255f, ((rgb >> 8) & 0xff) / 255f, (rgb & 0xff) / 255f);
+
+        /// <summary>
+        /// The least a surface's colour may be at its brightest channel (sRGB, as the palette is written): darker, it
+        /// reflects so little that in the sun it reads as a hole and in the shade as nothing (needles at 0x111c14 were
+        /// under 1% of white). The grim mood is the light's and the grade's, not black paint.
+        /// </summary>
+        const float ColourFloor = 0x48 / 255f;
+
+        /// <summary>A colour raised to the floor, its hue and its own light and dark kept.</summary>
+        static Color Lifted(Color colour)
+        {
+            var top = Mathf.Max(colour.r, Mathf.Max(colour.g, colour.b));
+
+            if (top >= ColourFloor || top <= 0.001f)
+            {
+                return colour;
+            }
+
+            var k = ColourFloor / top;
+
+            return new Color(colour.r * k, colour.g * k, colour.b * k, colour.a);
+        }
+
+        /// <summary>
+        /// Raises every material of the mountain that is darker than the floor (`-executeMethod
+        /// GuWorld.Editor.QingMaoBuilder.RepaintMaterials`): the built mountain takes the new colours at once, no build
+        /// needed. The dark of the rooms seen through doors (Interior) is left as it is.
+        /// </summary>
+        public static void RepaintMaterials()
+        {
+            var changed = 0;
+
+            foreach (var guid in AssetDatabase.FindAssets("t:Material", new[] { Root + "/Materials" }))
+            {
+                var material = AssetDatabase.LoadAssetAtPath<Material>(AssetDatabase.GUIDToAssetPath(guid));
+
+                if (material == null || material.name == "Interior" || !material.HasProperty("_BaseColor") || material.shader.name != "Universal Render Pipeline/Lit")
+                {
+                    continue;
+                }
+
+                var colour = material.GetColor("_BaseColor");
+                var lifted = Lifted(colour);
+
+                if (lifted != colour)
+                {
+                    material.SetColor("_BaseColor", lifted);
+                    EditorUtility.SetDirty(material);
+                    changed++;
+                }
+            }
+
+            AssetDatabase.SaveAssets();
+            Debug.Log($"GU World: {changed} materials raised to the colour floor");
+            BuildLog.Write($"repainted {changed} materials to the colour floor");
+        }
 
         /// <summary>Value noise that wraps every `period` cells (so a texture made of it tiles).</summary>
         static float TileNoise(float x, float y, int period, int seed)

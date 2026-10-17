@@ -57,9 +57,13 @@ namespace GuWorld.Body
 
         enum P
         {
-            BodyY, BodyZ, Pitch, Roll, HipsYaw, HipsRoll, Lean, Side, Twist, HeadX, HeadY, Ik,
+            BodyX, BodyY, BodyZ, Pitch, Roll, HipsYaw, HipsRoll, Lean, Side, Twist, HeadX, HeadY, Ik,
             FootZL, FootZR, LiftL, LiftR, ThighL, ThighR, KneeL, KneeR, FootL, FootR,
+            // The feet's pitch on top of what the legs' IK gives them (heel to toe as they walk; positive: toes down).
+            RollL, RollR,
             SpreadL, SpreadR, TurnOut, ArmL, ArmR, ArmOutL, ArmOutR, ElbowL, ElbowR,
+            // How the hands close: 0 loosely curled, 1 a fist, below 0 open and straight.
+            Grip,
             Count,
         }
 
@@ -88,8 +92,20 @@ namespace GuWorld.Body
         /// <summary>How far through a throw with the right hand (a moonblade's cut), 0…1; below 0 none.</summary>
         public float Throw = -1;
 
+        /// <summary>A blow of the body's own (a fist, a foot) and how far through it, 0…1; below 0 none.</summary>
+        public Combat.Blow Blow;
+        public float BlowPhase = -1;
+        /// <summary>How far the fists are up before the face to guard it, 0…1.</summary>
+        public float Guard;
+
         /// <summary>Arms held out from the sides besides, radians (a figure shown on the body page).</summary>
         public float ArmsOut;
+
+        /// <summary>How far a thrown skill is held ready (its key held down, aimed), 0…1: the right hand drawn back, open.</summary>
+        public float Aim;
+
+        /// <summary>How the hands are closed now (0 loosely curled, 1 a fist, below 0 open): HumanBody curls the fingers by it.</summary>
+        public float Grip => pose[(int)P.Grip];
 
         /// <summary>A foot came down (loudness 0…1).</summary>
         public Action<float> OnStep = _ => { };
@@ -102,6 +118,9 @@ namespace GuWorld.Body
         float squash;
         float groundL;
         float groundR;
+        /// <summary>How still the figure stands on its feet (1 standing, 0 walking, or not on its feet), and how much it runs — from the gait, for the stances over it.</summary>
+        float still;
+        float running;
 
         /// <param name="root">The figure's origin: between the feet, facing +Z.</param>
         public Mannequin(Transform root)
@@ -214,6 +233,8 @@ namespace GuWorld.Body
         void TargetPose(float dt, MotionState motion)
         {
             Array.Copy(Rest, target, target.Length);
+            still = 0;
+            running = 0;
 
             if (motion.treeClimb.HasValue)
             {
@@ -260,19 +281,188 @@ namespace GuWorld.Body
             this[P.ArmOutL] += ArmsOut;
             this[P.ArmOutR] += ArmsOut;
 
-            // A throw: the right arm comes up to the shoulder and cuts across in front, the body turning into it.
+            var free = motion.climb == null && motion.treeClimb == null && motion.sit == 0 && motion.stance != Stance.Crawl;
+
+            // The hands: loosely curled, closing as the figure runs, gripping as it climbs.
+            this[P.Grip] = motion.climb.HasValue || motion.treeClimb.HasValue ? 0.85f : 0.45f * running;
+
+            // A thrown skill held ready: the right hand raised before the chest, open, as if holding the light that will
+            // fly from it, the shoulders turned a little back after it; the head still on the mark.
+            if (Aim > 0.01f && Throw < 0 && free)
+            {
+                var a = Aim;
+                this[P.ArmR] = Mathf.Lerp(this[P.ArmR], -0.5f, a);
+                this[P.ArmOutR] = Mathf.Lerp(this[P.ArmOutR], 0.3f, a);
+                this[P.ElbowR] = Mathf.Lerp(this[P.ElbowR], -1.45f, a);
+                this[P.ArmL] = Mathf.Lerp(this[P.ArmL], -0.2f, a);
+                this[P.ElbowL] = Mathf.Lerp(this[P.ElbowL], -0.45f, a);
+                this[P.Twist] -= 0.15f * a;
+                this[P.HeadY] += 0.15f * a;
+                this[P.Grip] = Mathf.Lerp(this[P.Grip], -0.35f, a);
+            }
+
+            // A throw: wound up (as the aim holds it), the right arm cuts across in front from right to left, open-handed,
+            // the shoulders and the hips turning into it and the left arm swinging back; the head stays on the mark.
             if (Throw >= 0 && motion.climb == null && motion.treeClimb == null)
             {
-                var t = Smooth(Throw);
-                this[P.ArmR] = -1.4f;
-                this[P.ArmOutR] = Mathf.Lerp(1.25f, -0.4f, t);
-                this[P.ElbowR] = Mathf.Lerp(-0.9f, -0.15f, t);
-                this[P.Twist] += Mathf.Lerp(0.35f, -0.3f, t);
-                this[P.HeadY] += Mathf.Lerp(0.2f, -0.1f, t);
+                var t = Throw;
+                // The hand goes out from before the chest to the shoulder's height at the side, then sweeps across.
+                var rise = Smooth(t / 0.35f);
+                var cut = Smooth((t - 0.25f) / 0.45f);
+                this[P.ArmR] = Mathf.Lerp(Mathf.Lerp(-0.5f, -0.9f, rise), -1.5f, cut);
+                this[P.ArmOutR] = Mathf.Lerp(Mathf.Lerp(0.3f, 1.15f, rise), -0.5f, cut);
+                this[P.ElbowR] = Mathf.Lerp(Mathf.Lerp(-1.45f, -0.9f, rise), -0.08f, cut);
+                this[P.ArmL] = Mathf.Lerp(-0.2f, -0.3f, cut);
+                this[P.ArmOutL] = Mathf.Lerp(0.1f, 0.45f, cut);
+                this[P.ElbowL] = -0.5f;
+                var turn = Mathf.Lerp(-0.3f, 0.45f, cut);
+                var hips = Mathf.Lerp(-0.1f, 0.2f, cut);
+                this[P.Twist] += turn;
+                this[P.HipsYaw] += hips;
+                this[P.HeadY] -= (turn + hips) * 0.8f;
+                this[P.Lean] += 0.08f * cut;
+                this[P.Grip] = -0.4f;
+            }
+
+            // Fighting: the fists up before the face, and a blow thrown from there.
+            if ((Guard > 0.01f || BlowPhase >= 0) && free)
+            {
+                FightPose();
             }
 
             // Keep the eyes level whatever the back does.
             this[P.HeadX] -= this[P.Lean] * 0.7f;
+        }
+
+        /// <summary>Out and back: rising to 1 by `at`, held a moment, back to 0 by the end.</summary>
+        static float OutAndBack(float t, float at) => t < at ? Smooth(t / at) : 1 - Smooth((t - at - 0.08f) / Mathf.Max(0.01f, 1 - at - 0.08f));
+
+        /// <summary>
+        /// The guard (the elbows in, the forearms up, the fists before the chin, the chin down), and a blow from it:
+        /// a jab — the left fist straight out, the shoulders turning behind it; a cross — the right, the hips turning
+        /// too; a front kick — the right knee up, the leg snapped out at the hips' height and drawn back, the body
+        /// leaning back over the standing leg.
+        /// </summary>
+        void FightPose()
+        {
+            var guard = BlowPhase >= 0 ? 1 : Guard;
+            // The hands close into fists as soon as they come up.
+            this[P.Grip] = Mathf.Max(this[P.Grip], Mathf.Clamp01(guard * 1.6f));
+
+            // Standing with the fists up: a fighter's stance — the left foot ahead, the right behind and its heel up,
+            // the knees soft, the body turned behind the left shoulder (the head still to the front), bouncing a little
+            // on the balls of the feet. Walking, the feet keep to the gait.
+            var stand = guard * still;
+
+            if (stand > 0.01f)
+            {
+                this[P.FootZL] += 0.15f * stand;
+                this[P.FootZR] -= 0.13f * stand;
+                this[P.SpreadL] += 0.04f * stand;
+                this[P.SpreadR] += 0.08f * stand;
+                this[P.LiftR] += 0.02f * stand;
+                this[P.RollR] += 0.3f * stand;
+                this[P.BodyY] -= (0.05f + 0.014f * (0.5f + 0.5f * Mathf.Sin(time * 7.5f))) * stand;
+                this[P.HipsYaw] -= 0.32f * stand;
+                this[P.Twist] -= 0.12f * stand;
+                this[P.HeadY] += 0.38f * stand;
+            }
+            this[P.ArmL] = Mathf.Lerp(this[P.ArmL], -0.75f, guard);
+            this[P.ArmR] = Mathf.Lerp(this[P.ArmR], -0.6f, guard);
+            this[P.ElbowL] = Mathf.Lerp(this[P.ElbowL], -2.1f, guard);
+            this[P.ElbowR] = Mathf.Lerp(this[P.ElbowR], -2.25f, guard);
+            this[P.ArmOutL] = Mathf.Lerp(this[P.ArmOutL], 0.2f, guard);
+            this[P.ArmOutR] = Mathf.Lerp(this[P.ArmOutR], 0.2f, guard);
+            this[P.Lean] += 0.06f * guard;
+            this[P.HeadX] += 0.1f * guard;
+
+            if (BlowPhase < 0)
+            {
+                return;
+            }
+
+            var t = Mathf.Clamp01(BlowPhase);
+
+            switch (Blow)
+            {
+                case Combat.Blow.Jab:
+                {
+                    var e = OutAndBack(t, 0.38f);
+                    this[P.ArmL] = Mathf.Lerp(-0.75f, -1.52f, e);
+                    this[P.ElbowL] = Mathf.Lerp(-2.1f, -0.08f, e);
+                    this[P.ArmOutL] = Mathf.Lerp(0.2f, -0.12f, e);
+                    this[P.Twist] -= 0.32f * e;
+                    this[P.HeadY] += 0.12f * e;
+                    this[P.Lean] += 0.05f * e;
+                    break;
+                }
+                case Combat.Blow.Cross:
+                {
+                    var e = OutAndBack(t, 0.4f);
+                    this[P.ArmR] = Mathf.Lerp(-0.6f, -1.55f, e);
+                    this[P.ElbowR] = Mathf.Lerp(-2.25f, -0.06f, e);
+                    this[P.ArmOutR] = Mathf.Lerp(0.2f, -0.18f, e);
+                    this[P.Twist] += 0.5f * e;
+                    this[P.HipsYaw] += 0.22f * e;
+                    this[P.HeadY] -= 0.15f * e;
+                    this[P.Lean] += 0.1f * e;
+                    break;
+                }
+                case Combat.Blow.Heavy:
+                {
+                    // Down into the knees, the right fist dropped back; then up through the hips, the fist driven up under the chin before it.
+                    var load = t < 0.3f ? Smooth(t / 0.3f) : 1 - Smooth((t - 0.3f) / 0.22f);
+                    var drive = OutAndBack(t, 0.52f);
+                    this[P.BodyY] -= 0.1f * load;
+                    this[P.ArmR] = Mathf.Lerp(Mathf.Lerp(-0.6f, 0.35f, load), -1.95f, drive);
+                    this[P.ElbowR] = Mathf.Lerp(Mathf.Lerp(-2.25f, -1.4f, load), -1.25f, drive);
+                    this[P.ArmOutR] = Mathf.Lerp(0.2f, 0.05f, drive);
+                    this[P.Twist] += 0.55f * drive - 0.3f * load;
+                    this[P.HipsYaw] += 0.25f * drive - 0.12f * load;
+                    this[P.Lean] += 0.12f * load - 0.08f * drive;
+                    this[P.HeadX] -= 0.08f * drive;
+                    break;
+                }
+                case Combat.Blow.Spin:
+                {
+                    // The hips turn through, the right leg comes round high from the side, and back.
+                    var lift = t < 0.3f ? Smooth(t / 0.3f) : t < 0.65f ? 1 : 1 - Smooth((t - 0.65f) / 0.35f);
+                    var snap = t < 0.3f ? 0 : t < 0.5f ? Smooth((t - 0.3f) / 0.2f) : 1 - Smooth((t - 0.58f) / 0.22f);
+                    this[P.Ik] = 0;
+                    this[P.BodyY] = -0.04f;
+                    this[P.ThighL] = 0.05f;
+                    this[P.KneeL] = 0.18f;
+                    this[P.FootL] = -0.1f;
+                    this[P.HipsYaw] += 0.75f * lift;
+                    this[P.Twist] += 0.35f * lift;
+                    this[P.ThighR] = -0.9f * lift;
+                    this[P.SpreadR] = 1.15f * lift;
+                    this[P.KneeR] = 1.7f * lift * (1 - snap) + 0.12f * snap;
+                    this[P.Side] -= 0.3f * lift;
+                    this[P.Roll] -= 0.12f * lift;
+                    this[P.ArmOutL] += 0.5f * lift;
+                    this[P.ArmOutR] += 0.3f * lift;
+                    break;
+                }
+                default:
+                {
+                    var lift = t < 0.25f ? Smooth(t / 0.25f) : t < 0.7f ? 1 : 1 - Smooth((t - 0.7f) / 0.3f);
+                    var snap = t < 0.25f ? 0 : t < 0.45f ? Smooth((t - 0.25f) / 0.2f) : 1 - Smooth((t - 0.53f) / 0.2f);
+                    this[P.Ik] = 0;
+                    this[P.BodyY] = -0.03f;
+                    this[P.ThighL] = 0.06f;
+                    this[P.KneeL] = 0.14f;
+                    this[P.FootL] = -0.08f;
+                    this[P.ThighR] = -1.45f * lift;
+                    this[P.KneeR] = 1.9f * lift * (1 - snap) + 0.08f * snap;
+                    this[P.FootR] = 0.25f * snap;
+                    this[P.Lean] -= 0.24f * lift;
+                    this[P.HeadX] += 0.12f * lift;
+                    this[P.ArmOutL] += 0.15f * lift;
+                    this[P.ArmL] += 0.25f * snap;
+                    break;
+                }
+            }
         }
 
         void GaitPose(float dt, MotionState motion)
@@ -283,45 +473,65 @@ namespace GuWorld.Body
                 ? Mathf.Clamp01((speed - motion.walkSpeed) / (motion.runSpeed - motion.walkSpeed))
                 : 0;
             var moving = Smooth((speed - 0.05f) / 0.5f);
-            var half = Mathf.Clamp(speed * 0.13f, 0.06f, crouch ? 0.32f : 0.62f);
+            // Turning on the spot: short steps in place, so the feet do not slide round.
+            var turning = Mathf.Clamp01((Mathf.Abs(motion.turnRate) - 1.2f) / 2) * (1 - moving);
+            var stepSpeed = Mathf.Max(speed, turning * 0.8f);
+            var stepping = Mathf.Max(moving, turning * 0.5f);
+            var half = Mathf.Clamp(stepSpeed * 0.13f, 0.06f, crouch ? 0.32f : 0.62f);
             var duty = Mathf.Lerp(0.52f, 0.38f, run);
+            still = (1 - moving) * (1 - turning);
+            running = run * moving;
 
-            if (speed > 0.05f)
+            if (stepSpeed > 0.05f)
             {
                 var before = stepPhase;
-                stepPhase = (stepPhase + speed * duty / (2 * half) * dt) % 1;
+                stepPhase = (stepPhase + stepSpeed * duty / (2 * half) * dt) % 1;
 
                 // A foot lands at the start of each half of the cycle.
                 if (stepPhase < before || (before < 0.5f && stepPhase >= 0.5f))
                 {
-                    OnStep(Smooth((speed - 0.2f) / 1.5f) * (0.6f + 0.4f * run) * (crouch ? 0.45f : 1));
+                    OnStep(Smooth((stepSpeed - 0.2f) / 1.5f) * (0.6f + 0.4f * run) * (crouch ? 0.45f : 1));
                 }
             }
 
-            (float z, float lift) Foot(float phase)
+            // A foot through the cycle: how far ahead, how high, and its pitch. On the ground it comes down heel first
+            // (toes up), rolls flat, and rises onto its toes before it leaves (its heel lifting); in the air it swings
+            // toes up to the next heel strike — running, its heel kicking up behind it first.
+            (float z, float lift, float roll) Foot(float phase)
             {
                 if (phase < duty)
                 {
-                    return (half * (1 - 2 * phase / duty), 0);
+                    var stance = phase / duty;
+                    var heel = Smooth((stance - 0.55f) / 0.45f);
+
+                    return (half * (1 - 2 * stance), 0.045f * heel, -0.22f * (1 - Smooth(stance / 0.18f)) + 0.38f * heel);
                 }
 
                 var swing = (phase - duty) / (1 - duty);
+                var shape = Mathf.Pow(swing, Mathf.Lerp(1, 0.65f, run));
+                var lift = Mathf.Sin(Mathf.PI * shape) * (0.09f + 0.14f * run) * (crouch ? 0.7f : 1) + 0.045f * (1 - Smooth(swing / 0.25f));
 
-                return (-half + 2 * half * Smooth(swing),
-                    Mathf.Sin(Mathf.PI * swing) * (0.09f + 0.14f * run) * (crouch ? 0.7f : 1));
+                return (-half + 2 * half * Smooth(swing), lift, Mathf.Lerp(0.38f, -0.22f, Smooth(swing / 0.55f)));
             }
 
-            var (zL, liftL) = Foot(stepPhase);
-            var (zR, liftR) = Foot((stepPhase + 0.5f) % 1);
+            var (zL, liftL, rollL) = Foot(stepPhase);
+            var (zR, liftR, rollR) = Foot((stepPhase + 0.5f) % 1);
+            // Small steps roll the feet less.
+            var rolling = stepping * Mathf.Clamp01(half / 0.25f) * (crouch ? 0.6f : 1);
 
             this[P.Ik] = 1;
-            this[P.FootZL] = zL * moving;
-            this[P.FootZR] = zR * moving;
-            this[P.LiftL] = liftL * moving;
-            this[P.LiftR] = liftR * moving;
+            this[P.FootZL] = zL * stepping;
+            this[P.FootZR] = zR * stepping;
+            this[P.LiftL] = liftL * stepping;
+            this[P.LiftR] = liftR * stepping;
+            this[P.RollL] = rollL * rolling;
+            this[P.RollR] = rollR * rolling;
             this[P.SpreadL] = this[P.SpreadR] = crouch ? 0.06f : 0;
 
-            var bounce = 0.5f + 0.5f * Mathf.Cos(stepPhase * Mathf.PI * 4);
+            // Lowest as a foot comes down walking; running, lowest in the middle of the stance and highest in the flight.
+            var walkBounce = 0.5f + 0.5f * Mathf.Cos(stepPhase * Mathf.PI * 4);
+            var runBounce = 0.5f + 0.5f * Mathf.Cos((stepPhase - duty * 0.5f) * Mathf.PI * 4);
+            var bounce = Mathf.Lerp(walkBounce, runBounce, run);
             this[P.BodyY] = (crouch ? -0.36f : 0) - moving * (0.015f + 0.04f * run) * bounce - run * 0.05f;
             this[P.Lean] = (crouch ? 0.38f : 0) + moving * 0.03f + run * 0.16f;
             this[P.Lean] += Mathf.Clamp(motion.acceleration * 0.02f, -0.12f, 0.18f) * moving;
@@ -335,17 +545,32 @@ namespace GuWorld.Body
             this[P.ArmL] = -swingR * armSwing - (crouch ? 0.3f : 0);
             this[P.ArmR] = -swingL * armSwing - (crouch ? 0.3f : 0);
             this[P.ElbowL] = this[P.ElbowR] = -0.15f - moving * 0.2f - run * 1.0f - (crouch ? 0.5f : 0);
+            // An arm bends more as it swings forward, and straightens going back.
+            this[P.ElbowL] -= Mathf.Max(0, swingR) * (0.18f + 0.35f * run) * moving;
+            this[P.ElbowR] -= Mathf.Max(0, swingL) * (0.18f + 0.35f * run) * moving;
             this[P.ArmOutL] = this[P.ArmOutR] = 0.08f + run * 0.06f;
             this[P.Twist] = swingL * (0.08f + 0.06f * run) * moving;
             this[P.HipsYaw] = -swingL * 0.08f * moving;
             // The hip over the swinging leg drops a little each step.
             this[P.HipsRoll] = Mathf.Sin(stepPhase * Mathf.PI * 2) * (0.045f - 0.02f * run) * moving * (crouch ? 0.5f : 1);
 
-            // Breathing and a slow shift of weight while standing still.
-            var idle = 1 - moving;
+            // Standing at ease: breathing, the feet a little apart and one a little ahead, the weight slowly going over
+            // from one leg to the other (the body over the standing leg, the free one's hip dropping, its knee soft
+            // and its heel up), and now and then a look aside.
+            var idle = still;
             var breath = Mathf.Sin(time * 1.7f);
+            var weight = Mathf.Clamp(Mathf.Sin(time * 0.31f) * 1.7f, -1, 1);
 
-            this[P.HipsRoll] += Mathf.Sin(time * 0.45f) * 0.03f * idle;
+            this[P.FootZL] += 0.05f * idle;
+            this[P.FootZR] -= 0.03f * idle;
+            this[P.SpreadL] += 0.03f * idle;
+            this[P.SpreadR] += 0.03f * idle;
+            this[P.BodyX] = -0.025f * weight * idle;
+            this[P.HipsRoll] += 0.04f * weight * idle;
+            this[P.LiftR] += 0.02f * Mathf.Max(0, weight) * idle;
+            this[P.RollR] += 0.22f * Mathf.Max(0, weight) * idle;
+            this[P.LiftL] += 0.02f * Mathf.Max(0, -weight) * idle;
+            this[P.RollL] += 0.22f * Mathf.Max(0, -weight) * idle;
             this[P.ArmL] -= 0.05f * idle;
             this[P.ArmR] -= 0.05f * idle;
             this[P.ElbowL] -= 0.1f * idle;
@@ -354,28 +579,33 @@ namespace GuWorld.Body
             this[P.ArmOutL] += breath * 0.015f * idle;
             this[P.ArmOutR] += breath * 0.015f * idle;
             this[P.HeadX] += Mathf.Sin(time * 0.6f) * 0.03f * idle;
+            this[P.HeadY] += Mathf.Sin(time * 0.21f) * Mathf.Max(0, Mathf.Sin(time * 0.13f)) * 0.3f * idle;
             this[P.BodyY] -= squash;
         }
 
+        /// <summary>
+        /// In the air: going up, the knees drawn up (one more than the other) and the arms lifted; coming down, the
+        /// legs reaching for the ground and the arms spread for balance, the eyes on where it will land.
+        /// </summary>
         void AirPose(MotionState motion)
         {
-            var rising = Mathf.Clamp(motion.verticalSpeed / 8, -1, 1);
-            var falling = Mathf.Clamp01(-motion.verticalSpeed / 14);
+            var up = Mathf.Clamp01(motion.verticalSpeed / 6);
+            var down = Mathf.Clamp01(-motion.verticalSpeed / 10);
 
             this[P.Ik] = 0;
-            this[P.ThighL] = -0.8f + falling * 0.4f;
-            this[P.ThighR] = -0.2f;
-            this[P.KneeL] = 1.2f - falling * 0.5f;
-            this[P.KneeR] = 0.6f;
+            this[P.ThighL] = Mathf.Lerp(-0.75f, -0.4f, down) - 0.25f * up;
+            this[P.ThighR] = Mathf.Lerp(-0.25f, -0.12f, down) - 0.15f * up;
+            this[P.KneeL] = Mathf.Lerp(1.15f, 0.55f, down) + 0.25f * up;
+            this[P.KneeR] = Mathf.Lerp(0.75f, 0.35f, down) + 0.15f * up;
             this[P.FootL] = -(this[P.ThighL] + this[P.KneeL]) * 0.8f;
             this[P.FootR] = -(this[P.ThighR] + this[P.KneeR]) * 0.8f;
-            this[P.ArmOutL] = this[P.ArmOutR] = 0.5f + rising * 0.2f + falling * 0.5f;
-            this[P.ArmL] = -0.4f;
-            this[P.ArmR] = 0.2f;
-            this[P.ElbowL] = this[P.ElbowR] = -0.6f;
-            this[P.Lean] = 0.1f;
+            this[P.ArmL] = Mathf.Lerp(-0.55f, -0.25f, down);
+            this[P.ArmR] = Mathf.Lerp(0.15f, -0.2f, down);
+            this[P.ArmOutL] = this[P.ArmOutR] = 0.45f + 0.15f * up + 0.55f * down;
+            this[P.ElbowL] = this[P.ElbowR] = -0.6f + 0.25f * down;
+            this[P.Lean] = 0.1f - 0.06f * down;
             this[P.Roll] = Mathf.Clamp(-motion.turnRate * motion.speed * 0.004f, -0.05f, 0.05f);
-            this[P.HeadX] = -rising * 0.12f;
+            this[P.HeadX] = -up * 0.12f + down * 0.15f;
         }
 
         void CrawlPose(float dt, MotionState motion)
@@ -535,8 +765,9 @@ namespace GuWorld.Body
 
             // The body sinks to reach the lower foot.
             var bodyY = Get(P.BodyY) + Mathf.Min(0, Mathf.Min(groundL, groundR)) * Get(P.Ik);
+            var bodyX = Get(P.BodyX);
 
-            Body.localPosition = new Vector3(0, Hips + bodyY, Get(P.BodyZ));
+            Body.localPosition = new Vector3(-bodyX, Hips + bodyY, Get(P.BodyZ));
             Body.localRotation = Xyz(Get(P.Pitch), 0, Get(P.Roll));
             HipsJoint.localRotation = Xyz(0, Get(P.HipsYaw), Get(P.HipsRoll));
             // The back straightens above the tilting hips.
@@ -561,8 +792,13 @@ namespace GuWorld.Body
                 footR = Mathf.Lerp(footR, right.foot, ik);
             }
 
-            HipL.localRotation = Xyz(thighL, Get(P.TurnOut), Get(P.SpreadL));
-            HipR.localRotation = Xyz(thighR, -Get(P.TurnOut), -Get(P.SpreadR));
+            footL += Get(P.RollL);
+            footR += Get(P.RollR);
+            // The body moved aside over the feet: the legs lean back to them (the feet stay where they stood).
+            var lean = bodyX / (Thigh + Shin) * ik;
+
+            HipL.localRotation = Xyz(thighL, Get(P.TurnOut), Get(P.SpreadL) - lean);
+            HipR.localRotation = Xyz(thighR, -Get(P.TurnOut), -(Get(P.SpreadR) + lean));
             KneeL.localRotation = Xyz(kneeL, 0, 0);
             KneeR.localRotation = Xyz(kneeR, 0, 0);
             AnkleL.localRotation = Xyz(footL, 0, 0);

@@ -167,7 +167,7 @@ Shader "GuWorld/Toon"
                 // A cold rim along the silhouette.
                 half fresnel = 1 - saturate(dot(normal, view));
                 half rim = smoothstep(_RimStep - 0.03, _RimStep + 0.03, fresnel) * _RimStrength;
-                half brightness = saturate(Luminance(main.color) * 0.6 + Luminance(ambient) * 2);
+                half brightness = max(0.35, saturate(Luminance(main.color) * 0.6 + Luminance(ambient) * 2));
                 colour += _RimColor.rgb * rim * brightness;
 
                 colour = MixFog(colour, input.fog);

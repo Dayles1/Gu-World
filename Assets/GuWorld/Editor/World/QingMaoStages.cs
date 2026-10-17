@@ -213,6 +213,8 @@ namespace GuWorld.Editor
                     break;
                 case "water":
                     Prepare();
+                    // The ground as built (the villages' tiles reshape it): the water lies on it, not over it.
+                    LoadGround();
                     BuildWater();
                     SavePart("Water");
                     break;

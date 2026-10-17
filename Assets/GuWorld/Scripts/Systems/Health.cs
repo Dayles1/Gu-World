@@ -91,9 +91,31 @@ namespace GuWorld.Systems
 
         readonly System.Random random = new System.Random();
 
+        /// <summary>The guard meets blows at the body above this height over the feet, m; and lets through at least this share of a blow's strength as harm.</summary>
+        const float GuardFrom = 0.8f;
+        const float GuardChip = 0.04f;
+
         public void TakeStrike(Strike strike, BodyPart? part)
         {
+            // Guarding the head: a blow from in front at the upper body lands on a forearm, weakened — but the arms still
+            // take some of it (a guard is not a wall); a bite at the legs comes in under it.
+            var guarded = TryGetComponent<Melee>(out var melee) && melee.Meets(strike.Direction) &&
+                          strike.Point.y - transform.position.y > GuardFrom;
+            var power = strike.Power;
+
+            if (guarded)
+            {
+                strike.Power *= Melee.GuardLets;
+                part = random.Next(2) == 0 ? BodyPart.ForearmL : BodyPart.ForearmR;
+            }
+
             var harm = Wounds.Harm(part ?? BodyPart.Chest, strike, Max, Toughness, random);
+
+            if (guarded)
+            {
+                harm = Mathf.Max(harm, power * GuardChip);
+            }
+
             var through = TakeHarm(harm);
             Wounds.Report("Вы", part, through, Down);
         }

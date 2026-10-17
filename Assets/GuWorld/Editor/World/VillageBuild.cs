@@ -28,6 +28,8 @@ namespace GuWorld.Editor
             readonly Dictionary<Vector2Int, Transform> holders = new Dictionary<Vector2Int, Transform>();
             readonly Transform root;
             readonly string name;
+            /// <summary>The least a part must measure to be solid in its blocks' colliders (MeshKit.SolidThickness).</summary>
+            public float SolidThickness = 0.1f;
 
             public Blocks(Transform root, string name)
             {
@@ -44,7 +46,7 @@ namespace GuWorld.Editor
 
                 if (!kits.TryGetValue(key, out var kit))
                 {
-                    kits[key] = kit = new MeshKit();
+                    kits[key] = kit = new MeshKit { Solid = new SolidShell(), SolidThickness = SolidThickness };
                 }
 
                 kit.Transform = Matrix4x4.TRS(at, Quaternion.Euler(0, yaw, 0), Vector3.one * scale);
@@ -88,9 +90,9 @@ namespace GuWorld.Editor
             }
 
             /// <summary>
-            /// Builds every block's mesh; `solid` makes it its own collider (steps, walls). `cull`: below this share of the
-            /// screen's height (the block is 48 m) it is not drawn — the small things lying about vanish a couple of hundred
-            /// metres off, the walls only far away.
+            /// Builds every block's mesh; `solid` gives it a collider of its own shape — what in it is big enough to bump
+            /// into (MeshKit's shell). `cull`: below this share of the screen's height (the block is 48 m) it is not drawn —
+            /// the small things lying about vanish a couple of hundred metres off, the walls only far away.
             /// </summary>
             public void Finish(bool solid, HitboxKind kind, bool shadows = true, float cull = 0)
             {
@@ -116,9 +118,9 @@ namespace GuWorld.Editor
                         go.AddComponent<LODGroup>().SetLODs(new[] { new LOD(cull, new Renderer[] { renderer }) });
                     }
 
-                    if (solid)
+                    if (solid && SolidOf(mesh) is Mesh shell)
                     {
-                        go.AddComponent<MeshCollider>().sharedMesh = mesh;
+                        go.AddComponent<MeshCollider>().sharedMesh = shell;
                         go.AddComponent<HitboxTag>().Kind = kind;
                     }
                 }
@@ -139,7 +141,8 @@ namespace GuWorld.Editor
             var under = new Blocks(root, $"{plan.Place.Id} footings");
             var stones = new Blocks(root, $"{plan.Place.Id} walls");
             var things = new Blocks(root, $"{plan.Place.Id} things");
-            var steps = new Blocks(root, $"{plan.Place.Id} steps");
+            // Every face of a step is solid, however thin a sliver a bend leaves of it.
+            var steps = new Blocks(root, $"{plan.Place.Id} steps") { SolidThickness = 0 };
             var count = 0;
             var lamps = 0;
 
@@ -184,39 +187,10 @@ namespace GuWorld.Editor
                 }
             }
 
-            // The stairs: a stone step wherever the ground rises a step's height.
+            // The stairs: the street's own width cut into treads along it, each from where the last ends.
             foreach (var street in plan.Streets.Where(s => s.Stair))
             {
-                var points = street.Points;
-                var lastTop = Ground(points[0]);
-                var lastAt = points[0];
-
-                for (var i = 0; i + 1 < points.Count; i++)
-                {
-                    var a = points[i];
-                    var c = points[i + 1];
-                    var length = Vector2.Distance(a, c);
-
-                    for (var s = 0f; s < length; s += 0.2f)
-                    {
-                        var p = Vector2.Lerp(a, c, s / length);
-                        var g = Ground(p);
-
-                        if (g - lastTop < 0.16f && lastTop - g < 0.16f)
-                        {
-                            continue;
-                        }
-
-                        var top = Mathf.Max(g, lastTop);
-                        var mid = (p + lastAt) / 2;
-                        var depth = Mathf.Max(0.25f, Vector2.Distance(p, lastAt));
-                        var dir = (p - lastAt).normalized;
-                        var yaw = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
-                        steps.At(new Vector3(mid.x, top, mid.y), yaw).Box(Stone, new Vector3(0, -0.2f, 0), new Vector3(street.Half * 2 + 0.2f, 0.4f, depth + 0.05f));
-                        lastTop = g;
-                        lastAt = p;
-                    }
-                }
+                StairsAlong(steps, street.Points, street.Half + 0.1f, Ground);
             }
 
             // The wall round the village, its towers and gates, ladders up it inside.
@@ -230,11 +204,6 @@ namespace GuWorld.Editor
             {
                 var at = new Vector3(prop.At.x, Ground(new Vector2(prop.At.x, prop.At.z)), prop.At.z);
                 DrawProp(things.At(at, prop.Yaw, prop.Scale), prop.Kind, prop.Seed);
-
-                if (PropSolid(prop.Kind) is (Vector3 centre, Vector3 size) solid)
-                {
-                    things.Box(at, prop.Yaw, centre * prop.Scale, size * prop.Scale, prop.Kind.Contains("tree") ? HitboxKind.Tree : HitboxKind.Prop);
-                }
 
                 // The lamps on the main ways and round the square light the lanes at night (a few: lights are dear).
                 if ((prop.Kind == "lamp" || prop.Kind == "brazier" || prop.Kind == "stone lantern") && lamps < (clan == Clan.GuYue ? 40 : 12) && Vector2.Distance(new Vector2(at.x, at.z), plan.Square.Centre) < (clan == Clan.GuYue ? 120 : 70))
@@ -277,10 +246,11 @@ namespace GuWorld.Editor
                 }
             }
 
-            under.Finish(false, HitboxKind.Building, true, 0.035f);
-            stones.Finish(false, HitboxKind.Building, true, 0.012f);
+            // Everything solid by its own shape: the footings and stilts, the walls, the steps, the things lying about.
+            under.Finish(true, HitboxKind.Building, true, 0.035f);
+            stones.Finish(true, HitboxKind.Building, true, 0.012f);
             steps.Finish(true, HitboxKind.Prop, false, 0.05f);
-            things.Finish(false, HitboxKind.Prop, false, 0.22f);
+            things.Finish(true, HitboxKind.Prop, false, 0.22f);
 
             // The streets for the map, and the walkways for the people.
             foreach (var street in plan.Streets)
@@ -395,31 +365,19 @@ namespace GuWorld.Editor
             group.SetLODs(lods.ToArray());
             group.RecalculateBounds();
 
-            // Solid: the body (the great buildings' own shapes are their colliders); one that is gone into, its walls.
+            // Solid by its own shape: its walls, floors, stairs, posts and roof — what is big enough to bump into (MeshKit's
+            // shell): one can stand on its roof, walk under its eaves, go in at its door, up its stair, between its stilts.
+            if (SolidOf(near.Item1) is Mesh shell)
+            {
+                nearGo.AddComponent<MeshCollider>().sharedMesh = shell;
+            }
+
             if (far.HasValue && openDesign != null)
             {
                 var w = size.x / scale.x;
                 var d = size.y / scale.z;
                 var storey = openDesign.Storey;
                 var doorAt = openDesign.DoorAt;
-                const float t = 0.2f;
-                const float gap = 1.4f;
-
-                void Wall(Vector3 centre, Vector3 extent)
-                {
-                    var box = go.AddComponent<BoxCollider>();
-                    box.center = centre;
-                    box.size = extent;
-                }
-
-                Wall(new Vector3(0, storey / 2, -d / 2 + t / 2), new Vector3(w, storey, t));
-                Wall(new Vector3(-w / 2 + t / 2, storey / 2, 0), new Vector3(t, storey, d));
-                Wall(new Vector3(w / 2 - t / 2, storey / 2, 0), new Vector3(t, storey, d));
-                var left = doorAt - gap / 2;
-                var right = doorAt + gap / 2;
-                Wall(new Vector3((-w / 2 + left) / 2, storey / 2, d / 2 - t / 2), new Vector3(left + w / 2, storey, t));
-                Wall(new Vector3((right + w / 2) / 2, storey / 2, d / 2 - t / 2), new Vector3(w / 2 - right, storey, t));
-                Wall(new Vector3(0, storey + 0.1f, 0), new Vector3(w, 0.2f, d));
 
                 if (openLogged++ < 6)
                 {
@@ -438,28 +396,6 @@ namespace GuWorld.Editor
                 roomLight.intensity = 5.5f;
                 roomLight.shadows = LightShadows.None;
                 lightGo.AddComponent<RoomLight>();
-
-                if (height > storey + 0.5f)
-                {
-                    Wall(new Vector3(0, storey + (height - storey) / 2, 0), new Vector3(w * 0.85f, height - storey, d * 0.85f));
-                }
-            }
-            else if (far.HasValue)
-            {
-                var body = go.AddComponent<BoxCollider>();
-                body.center = new Vector3(0, Mathf.Min(height, 3.2f) / 2 + 0.05f, 0);
-                body.size = new Vector3(size.x / scale.x, Mathf.Min(height, 3.2f), size.y / scale.z);
-
-                if (height > 4)
-                {
-                    var upper = go.AddComponent<BoxCollider>();
-                    upper.center = new Vector3(0, 3.2f + (height - 3.2f) / 2, 0);
-                    upper.size = new Vector3(size.x / scale.x * 0.85f, height - 3.2f, size.y / scale.z * 0.85f);
-                }
-            }
-            else
-            {
-                nearGo.AddComponent<MeshCollider>().sharedMesh = near.Item1;
             }
 
             if (b.Kind == BuildingKind.Pavilion || b.Kind == BuildingKind.Academy || b.Kind == BuildingKind.Ancestral || b.Kind == BuildingKind.Hostel || b.Kind == BuildingKind.Hall)
@@ -526,6 +462,126 @@ namespace GuWorld.Editor
                     var v = turn * new Vector3(0, 0, z);
                     steps.At(new Vector3(b.Centre.x + v.x, top, b.Centre.y + v.z), b.Yaw).Box(Wood, new Vector3(0, -0.11f, 0), new Vector3(1.4f, 0.22f, 0.32f));
                 }
+            }
+        }
+
+        /// <summary>A stair's rise (the ground climbing this much starts a new tread) and the shallowest tread, m.</summary>
+        const float StairRise = 0.17f;
+        const float StairTread = 0.32f;
+
+        /// <summary>
+        /// A stair along a street: its width (`half` each side of the line) cut into treads, one after another — each
+        /// level, from where the last ends to where the ground has risen (or fallen) a step's height, never shallower
+        /// than a foot; their edges follow the street's bends (mitred), so no tread lies over another. Each is a slab
+        /// of stone down into the ground under it: its front is the riser.
+        /// </summary>
+        static void StairsAlong(Blocks steps, IReadOnlyList<Vector2> points, float half, Func<Vector2, float> ground)
+        {
+            // The line every 10 cm: where, how far along.
+            var at = new List<Vector2>();
+            var along = new List<float>();
+            var gone = 0f;
+
+            for (var i = 0; i + 1 < points.Count; i++)
+            {
+                var length = Vector2.Distance(points[i], points[i + 1]);
+                var pieces = Mathf.Max(1, Mathf.CeilToInt(length / 0.1f));
+
+                for (var k = 0; k < pieces; k++)
+                {
+                    at.Add(Vector2.Lerp(points[i], points[i + 1], (float)k / pieces));
+                    along.Add(gone + length * k / pieces);
+                }
+
+                gone += length;
+            }
+
+            at.Add(points[points.Count - 1]);
+            along.Add(gone);
+
+            if (at.Count < 3)
+            {
+                return;
+            }
+
+            // Which way the line goes at each point (the bends mitred: the sides cross them on the bisector).
+            Vector2 Across(int i)
+            {
+                var a = at[Mathf.Max(0, i - 1)];
+                var c = at[Mathf.Min(at.Count - 1, i + 1)];
+                var dir = (c - a).normalized;
+
+                return new Vector2(-dir.y, dir.x);
+            }
+
+            var start = 0;
+            var level = ground(at[0]);
+
+            for (var i = 1; i < at.Count; i++)
+            {
+                var g = ground(at[i]);
+                var last = i == at.Count - 1;
+
+                if (!last && (Mathf.Abs(g - level) < StairRise || along[i] - along[start] < StairTread))
+                {
+                    continue;
+                }
+
+                Tread(start, i, level);
+                start = i;
+                level = g;
+            }
+
+            void Tread(int from, int to, float top)
+            {
+                // Its outline: the sections where it begins and ends, and where the line turns between them.
+                var sections = new List<int> { from };
+                var heading = (at[Mathf.Min(to, from + 1)] - at[from]).normalized;
+
+                for (var i = from + 1; i < to; i++)
+                {
+                    var next = (at[i + 1] - at[i]).normalized;
+
+                    if (Vector2.Dot(next, heading) < 0.998f)
+                    {
+                        sections.Add(i);
+                        heading = next;
+                    }
+                }
+
+                sections.Add(to);
+                var bottom = top;
+
+                foreach (var i in sections)
+                {
+                    bottom = Mathf.Min(bottom, ground(at[i] + Across(i) * half), ground(at[i] - Across(i) * half));
+                }
+
+                bottom -= 0.35f;
+                var kit = steps.Raw(new Vector3(at[from].x, top, at[from].y));
+
+                Vector3 P(int i, float side, float y)
+                {
+                    var p = at[i] + Across(i) * (half * side);
+
+                    return new Vector3(p.x, y, p.y);
+                }
+
+                for (var k = 0; k + 1 < sections.Count; k++)
+                {
+                    var a = sections[k];
+                    var b = sections[k + 1];
+                    kit.Quad(Stone, P(a, -1, top), P(a, 1, top), P(b, 1, top), P(b, -1, top), Vector3.up);
+                    var left = new Vector3(-Across(a).x, 0, -Across(a).y);
+                    kit.Quad(Stone, P(a, -1, bottom), P(a, -1, top), P(b, -1, top), P(b, -1, bottom), left);
+                    kit.Quad(Stone, P(a, 1, bottom), P(a, 1, top), P(b, 1, top), P(b, 1, bottom), -left);
+                }
+
+                // Its front (the riser) and its back.
+                var forward = at[Mathf.Min(to, from + 1)] - at[from];
+                var back = at[to] - at[Mathf.Max(from, to - 1)];
+                kit.Quad(Stone, P(from, -1, bottom), P(from, 1, bottom), P(from, 1, top), P(from, -1, top), new Vector3(-forward.x, 0, -forward.y));
+                kit.Quad(Stone, P(to, -1, bottom), P(to, 1, bottom), P(to, 1, top), P(to, -1, top), new Vector3(back.x, 0, back.y));
             }
         }
 
@@ -643,7 +699,6 @@ namespace GuWorld.Editor
                     }
                 }
 
-                stones.Box(new Vector3(p.x, gl, p.y), yaw, new Vector3(0, tall / 2 - 0.5f, 0), new Vector3(segment + 0.05f, tall + 1, 1.6f), HitboxKind.Building);
 
                 sinceTower += segment;
                 sinceLadder += segment;
@@ -856,7 +911,7 @@ namespace GuWorld.Editor
             float Ground(Vector2 p) => natural(p.x, p.y);
             var under = new Blocks(root, $"{place.Id} footings");
             var things = new Blocks(root, $"{place.Id} things");
-            var steps = new Blocks(root, $"{place.Id} steps");
+            var steps = new Blocks(root, $"{place.Id} steps") { SolidThickness = 0 };
             var houses = new List<(Vector2 at, float r)>();
             var count = 8 + random.Next(10);
 
@@ -895,11 +950,6 @@ namespace GuWorld.Editor
                         var p = at + new Vector2(v.x, v.z);
                         var where = new Vector3(p.x, Ground(p), p.y);
                         DrawProp(things.At(where, yaw + (R() - 0.5f) * 40), thing, random.Next());
-
-                        if (PropSolid(thing) is (Vector3 c, Vector3 s))
-                        {
-                            things.Box(where, yaw, c, s, HitboxKind.Prop);
-                        }
                     }
                 }
             }
@@ -936,8 +986,8 @@ namespace GuWorld.Editor
                 DrawProp(things.At(new Vector3(stack.x, Ground(stack), stack.y), 0), "hay", random.Next());
             }
 
-            under.Finish(false, HitboxKind.Building, true, 0.035f);
-            things.Finish(false, HitboxKind.Prop, false, 0.22f);
+            under.Finish(true, HitboxKind.Building, true, 0.035f);
+            things.Finish(true, HitboxKind.Prop, false, 0.22f);
             steps.Finish(true, HitboxKind.Prop, false, 0.05f);
         }
     }

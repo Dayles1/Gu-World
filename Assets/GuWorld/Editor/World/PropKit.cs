@@ -26,36 +26,6 @@ namespace GuWorld.Editor
             return inside ? new Color(tone * (rib ? 0.7f : 1), tone * (rib ? 0.6f : 0.85f), tone * 0.5f, 1) : new Color(0, 0, 0, 0);
         }, false, false), 1, 0.5f, true);
 
-        /// <summary>A solid box round a prop, in its own frame (centre, size), or none.</summary>
-        static (Vector3 centre, Vector3 size)? PropSolid(string kind) => kind switch
-        {
-            "barrel" => (new Vector3(0, 0.45f, 0), new Vector3(0.65f, 0.9f, 0.65f)),
-            "crates" => (new Vector3(0, 0.5f, 0), new Vector3(1.2f, 1, 1)),
-            "cart" => (new Vector3(0, 0.6f, 0), new Vector3(1.4f, 1.2f, 2.6f)),
-            "stall" => (new Vector3(0, 0.6f, 0), new Vector3(3, 1.2f, 1.3f)),
-            "well" => (new Vector3(0, 0.6f, 0), new Vector3(2.3f, 1.2f, 2.3f)),
-            "old tree" => (new Vector3(0, 3, 0), new Vector3(1.6f, 6, 1.6f)),
-            "tree" => (new Vector3(0, 2, 0), new Vector3(0.5f, 4, 0.5f)),
-            "pine tree" => (new Vector3(0, 2, 0), new Vector3(0.45f, 4, 0.45f)),
-            "tavern table" or "tea table" or "dice table" or "book table" => (new Vector3(0, 0.4f, 0), new Vector3(1.3f, 0.8f, 0.8f)),
-            "weapon rack" => (new Vector3(0, 0.8f, 0), new Vector3(1.8f, 1.6f, 0.5f)),
-            "wine jars" => (new Vector3(0, 0.45f, 0), new Vector3(1.3f, 0.9f, 1.1f)),
-            "firewood" => (new Vector3(0, 0.55f, 0), new Vector3(1.8f, 1.1f, 0.6f)),
-            "hay" => (new Vector3(0, 0.6f, 0), new Vector3(1.8f, 1.2f, 1.6f)),
-            "notice board" => (new Vector3(0, 1, 0), new Vector3(2, 2, 0.3f)),
-            "drum" => (new Vector3(0, 0.8f, 0), new Vector3(1.2f, 1.6f, 1)),
-            "stone lantern" => (new Vector3(0, 1.1f, 0), new Vector3(0.7f, 2.2f, 0.7f)),
-            "anvil" => (new Vector3(0, 0.4f, 0), new Vector3(0.9f, 0.8f, 0.5f)),
-            "bench" => (new Vector3(0, 0.25f, 0), new Vector3(1.6f, 0.5f, 0.45f)),
-            "drying rack" => (new Vector3(0, 0.9f, 0), new Vector3(1.8f, 1.8f, 0.6f)),
-            "brazier" => (new Vector3(0, 0.5f, 0), new Vector3(0.7f, 1, 0.7f)),
-            "rubbish basket" => (new Vector3(0, 0.35f, 0), new Vector3(0.6f, 0.7f, 0.6f)),
-            "sacks" => (new Vector3(0, 0.3f, 0), new Vector3(1.1f, 0.6f, 0.8f)),
-            "hitching post" => (new Vector3(0, 0.6f, 0), new Vector3(2, 1.2f, 0.2f)),
-            "lamp" => (new Vector3(0, 1.5f, 0), new Vector3(0.25f, 3, 0.25f)),
-            _ => null,
-        };
-
         /// <summary>Draws a prop into a kit (its Transform already set to where the prop lies).</summary>
         /// <summary>For the mesh report: a thing drawn alone.</summary>
         public static void DrawPropForReport(MeshKit kit, string kind, int seed) => DrawProp(kit, kind, seed);

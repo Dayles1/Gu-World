@@ -27,6 +27,9 @@ namespace GuWorld.Render
             ? (gender == Gender.Female ? 1.523f : 1.658f)
             : (gender == Gender.Female ? 1.68f : 1.78f);
 
+        /// <summary>The hero's height for a look: the gender's, made a little shorter or taller.</summary>
+        public static float HeightOf(Look look) => HeightOf(look.Gender) * look.HeightFactor;
+
         /// <summary>The hero is drawn on a teenager's body (HumanBody.Parts' teen models are there).</summary>
         public static bool TeenBodies;
 
@@ -35,6 +38,7 @@ namespace GuWorld.Render
 
         HeroMotor body;
         CharacterController controller;
+        Melee melee;
         PersonFigure figure;
         /// <summary>Seconds into a throw (a moonblade's cut); below 0 none.</summary>
         float throwing = -1;
@@ -52,7 +56,7 @@ namespace GuWorld.Render
         public PersonFigure Figure => figure;
 
         /// <summary>The figure's size against the models' (1 = 1.8 m).</summary>
-        public float Scale => HeightOf(Look.Gender) / 1.8f;
+        public float Scale => HeightOf(Look) / 1.8f;
 
         bool eyes;
 
@@ -84,6 +88,7 @@ namespace GuWorld.Render
         {
             body = GetComponent<HeroMotor>();
             controller = GetComponent<CharacterController>();
+            melee = GetComponent<Melee>();
         }
 
         /// <summary>Builds the hero's body for a look (again, when the look changes).</summary>
@@ -91,7 +96,7 @@ namespace GuWorld.Render
         {
             Look = look;
             figure?.Destroy();
-            figure = new PersonFigure(transform, Parts, look, HumanBody.Build.ForHero(look), HeightOf(look.Gender));
+            figure = new PersonFigure(transform, Parts, look, HumanBody.Build.ForHero(look), HeightOf(look));
             HitZones.Build(figure.Rig, GetComponent<IStrikable>());
             ShowBody();
             Pose(0.5f);
@@ -135,6 +140,20 @@ namespace GuWorld.Render
                 }
             }
 
+            // A thrown skill aimed (its key held): the hand drawn back, ready.
+            var aiming = Camera != null && Camera.Aiming;
+            figure.Rig.Aim = Mathf.MoveTowards(figure.Rig.Aim, aiming ? 1 : 0, dt * (aiming ? 7 : 4));
+
+            // Fists: a blow under way, or the guard — up while guarding, and a while after the last blow.
+            if (melee != null)
+            {
+                figure.Rig.Blow = melee.Current ?? Blow.Jab;
+                figure.Rig.BlowPhase = melee.Current.HasValue ? melee.Phase : -1;
+                // The fists ready: a fighter's stance (the guard part way up) all the while.
+                var guard = melee.Guarding || melee.Current.HasValue ? 1 : melee.SinceBlow < 1.4f ? 0.85f : melee.Ready ? 0.7f : 0;
+                figure.Rig.Guard = Mathf.MoveTowards(figure.Rig.Guard, guard, dt * (guard > figure.Rig.Guard ? 8 : 2.5f));
+            }
+
             // The figure is drawn smaller than the physics' metres: its speeds are its own.
             var scale = Scale;
 
@@ -150,7 +169,7 @@ namespace GuWorld.Render
                 acceleration = body.Acceleration,
                 swimming = false,
                 climb = body.ClimbProgress,
-                treeClimb = body.Tree != null ? body.ClimbPhase : null,
+                treeClimb = body.Tree != null || body.OnWall ? body.ClimbPhase : null,
                 sit = body.Sitting ? (body.SittingOnEdge ? 2 : 1) : 0,
                 lookYaw = lookYaw,
                 lookPitch = lookPitch,

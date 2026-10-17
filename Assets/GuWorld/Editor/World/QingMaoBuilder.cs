@@ -41,7 +41,7 @@ namespace GuWorld.Editor
                 return done;
             }
 
-            var kit = new MeshKit();
+            var kit = new MeshKit { Solid = new SolidShell() };
             build(kit);
             var result = Save(kit, name);
             built[name] = result;
@@ -58,9 +58,10 @@ namespace GuWorld.Editor
             go.AddComponent<MeshFilter>().sharedMesh = shape.mesh;
             go.AddComponent<MeshRenderer>().sharedMaterials = shape.materials;
 
-            if (solid)
+            // Solid by its shell (what is big enough to bump into), where one was kept.
+            if (solid && SolidOf(shape.mesh) is Mesh shell)
             {
-                go.AddComponent<MeshCollider>().sharedMesh = shape.mesh;
+                go.AddComponent<MeshCollider>().sharedMesh = shell;
             }
 
             return go;
@@ -121,6 +122,31 @@ namespace GuWorld.Editor
             var root = new GameObject("Water").transform;
             var water = Water;
 
+            // The surface over the bed — or over the ground, where the ground as built lies lower than the bed (a village's
+            // tile cut it down): water that stood on its bed there hung in the air.
+            var lowered = 0;
+            var worst = (drop: 0f, at: Vector2.zero);
+
+            float Surface(Vector2 at, float bedHeight)
+            {
+                // NaN where no terrain lies (GroundAt gives back the height asked with).
+                var ground = QingMao.GroundAt(new Vector3(at.x, float.NaN, at.y));
+
+                if (float.IsNaN(ground) || ground >= bedHeight)
+                {
+                    return bedHeight + 0.9f;
+                }
+
+                lowered++;
+
+                if (bedHeight - ground > worst.drop)
+                {
+                    worst = (bedHeight - ground, at);
+                }
+
+                return ground + 0.6f;
+            }
+
             foreach (var stream in MountainShape.Streams)
             {
                 var kit = new MeshKit();
@@ -133,8 +159,8 @@ namespace GuWorld.Editor
                     var b = bed[i + 1];
                     var along = (b.at - a.at).normalized;
                     var across = new Vector2(-along.y, along.x);
-                    var ha = a.bed + 0.9f;
-                    var hb = b.bed + 0.9f;
+                    var ha = Surface(a.at, a.bed);
+                    var hb = Surface(b.at, b.bed);
                     var wa = a.half + 1.6f;
                     var wb = b.half + 1.6f;
                     kit.QuadUV(water,
@@ -155,6 +181,8 @@ namespace GuWorld.Editor
                     }
                 }
             }
+
+            BuildLog.Write($"water: {lowered} points of the streams laid on the ground below their beds (the most, {worst.drop:0.0} m at {worst.at})");
 
             // The deep pool under the waterfall.
             var pool = new MeshKit();
@@ -516,7 +544,8 @@ namespace GuWorld.Editor
             bloom.intensity.Override(0.7f);
             bloom.scatter.Override(0.65f);
             var tone = profile.Add<Tonemapping>(true);
-            tone.mode.Override(TonemappingMode.ACES);
+            // Neutral, not ACES: ACES pressed the shade into black (DaySky also sets it in the game).
+            tone.mode.Override(TonemappingMode.Neutral);
             var vignette = profile.Add<Vignette>(true);
             vignette.intensity.Override(0.3f);
             vignette.smoothness.Override(0.5f);

@@ -82,7 +82,8 @@ namespace GuWorld.Items
                 return 0;
             }
 
-            var byWeight = kind.Weight > 0 ? Mathf.FloorToInt((Capacity - Weight) / kind.Weight + 1e-4f) : int.MaxValue;
+            // Primeval stones are the money: they never weigh the bag past carrying (only room for their pile counts).
+            var byWeight = kind.Weight > 0 && id != ItemBook.Stone ? Mathf.FloorToInt((Capacity - Weight) / kind.Weight + 1e-4f) : int.MaxValue;
             var spoils = kind.Keeps > 0 ? now + kind.Keeps : 0;
             var byRoom = 0;
 

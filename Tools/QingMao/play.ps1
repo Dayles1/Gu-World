@@ -33,7 +33,8 @@ function Note([string]$line) {
 }
 
 if (-not $exe) { Note "NO BUILD FOUND"; exit 2 }
-if (Get-Process -Name Unity, GuWorld -ErrorAction SilentlyContinue) { Note "NOT STARTED: Unity or the game is running"; exit 2 }
+# Only an editor counts (Unity Hub's "unity.exe serve" and Unity's small helpers elsewhere are not editors), and the game.
+if ((Get-Process -Name Unity -ErrorAction SilentlyContinue | Where-Object { $_.Path -like "*\Editor\Unity.exe" }) -or (Get-Process -Name GuWorld -ErrorAction SilentlyContinue)) { Note "NOT STARTED: Unity or the game is running"; exit 2 }
 
 Note "START $($exe.FullName) $Arguments"
 $process = Start-Process -FilePath $exe.FullName -ArgumentList ("-screen-fullscreen 0 -screen-width $Width -screen-height $Height " + $Arguments) -PassThru

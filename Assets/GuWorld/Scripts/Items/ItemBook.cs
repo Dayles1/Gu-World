@@ -56,8 +56,12 @@ namespace GuWorld.Items
         public float Heal;
         /// <summary>For a Gu: the kind of Gu it is (GuBook).</summary>
         public string Gu;
-        /// <summary>The character on its cell (a stand-in for the design's icons).</summary>
+        /// <summary>Its icon (UI/Icons), shown in its own colour.</summary>
         public string Icon;
+        /// <summary>The bag's button for its use, where it is not the use's own word ("Выпить", "Нанести").</summary>
+        public string Verb;
+        /// <summary>Food any Gu eats besides its own: in a meal it stands in for one portion of the Gu's own food.</summary>
+        public bool AnyGu;
     }
 
     /// <summary>
@@ -76,6 +80,10 @@ namespace GuWorld.Items
         public const string Noodles = "noodles";
         public const string BambooWine = "green_bamboo_wine";
         public const string WolfFang = "wolf_fang";
+        public const string IntimateGrass = "intimate_grass";
+        public const string Salve = "herb_salve";
+        public const string MeatBuns = "meat_buns";
+        public const string WhiteGrains = "white_grains_liquid";
 
         /// <summary>A game day in minutes.</summary>
         const double Day = 24 * 60;
@@ -190,6 +198,7 @@ namespace GuWorld.Items
                 Use = ItemUse.Eat,
                 Heal = 15,
                 Icon = "jar",
+                Verb = "Выпить",
             });
             Add(new ItemKind
             {
@@ -203,6 +212,75 @@ namespace GuWorld.Items
                 Price = 2,
                 Use = ItemUse.None,
                 Icon = "wolf",
+            });
+            Add(new ItemKind
+            {
+                Id = IntimateGrass,
+                LoreRef = "res_intimate_grass",
+                Name = "Трава близости",
+                Kind = "Трава · подкормка для Гу",
+                About = "Бледно-зелёная трава, дешёвая подкормка: её съест любой Гу. В трапезе стебель заменяет одну " +
+                        "порцию его собственной еды — но не всю трапезу. Выручает, когда своего корма не хватает.",
+                Category = ItemCategory.Herb,
+                Stack = 50,
+                Weight = 0.02f,
+                // Cheap (lore: res_intimate_grass); five stalks for a stone is the game's own.
+                Price = 1,
+                Bundle = 5,
+                Keeps = 4 * Day,
+                Use = ItemUse.Feed,
+                AnyGu = true,
+                Icon = "grass",
+            });
+            Add(new ItemKind
+            {
+                Id = Salve,
+                Name = "Целебная мазь",
+                Kind = "Лекарство",
+                About = "Горшочек густой мази на горных травах. Втёртая в раны, снимает боль и затягивает порезы — " +
+                        "в деревне её держат охотники и стража.",
+                Category = ItemCategory.Herb,
+                Stack = 10,
+                Weight = 0.15f,
+                Price = 6,
+                Use = ItemUse.Eat,
+                Heal = 50,
+                Icon = "salve",
+                Verb = "Нанести",
+            });
+            Add(new ItemKind
+            {
+                Id = MeatBuns,
+                Name = "Паровые булочки с мясом",
+                Kind = "Еда",
+                About = "Пышные булочки из бамбуковой пароварки, с рубленой свининой и луком. Две — на камень; " +
+                        "в дорогу берут по нескольку.",
+                Category = ItemCategory.Food,
+                Stack = 10,
+                Weight = 0.25f,
+                Price = 1,
+                Bundle = 2,
+                Keeps = 2 * Day,
+                Use = ItemUse.Eat,
+                Heal = 25,
+                Icon = "bun",
+            });
+            Add(new ItemKind
+            {
+                Id = WhiteGrains,
+                LoreRef = "res_white_grains_liquid",
+                Name = "Вино «Белое зерно»",
+                Kind = "Еда · напиток",
+                About = "Острое вино деревни Бай, одно из трёх знаменитых вин горы Цинмао. В Гу Юэ его привозят нечасто — " +
+                        "и берут дороже своего бамбукового.",
+                Category = ItemCategory.Food,
+                Stack = 10,
+                Weight = 0.6f,
+                Price = 4,
+                Use = ItemUse.Eat,
+                Heal = 20,
+                Icon = "gourd",
+                Verb = "Выпить",
             });
         }
 

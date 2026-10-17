@@ -38,7 +38,8 @@ namespace GuWorld.Systems
     /// are the items' own (ItemBook): what a shop asks for a lot, and half of
     /// it — rounded down — for what it buys back. Each shop's stock is full
     /// again every game morning. The village has two: Baoshan's Gu goods by the
-    /// square, and auntie Hua's noodles and wine.
+    /// square (Gu, their food, a healing salve), and auntie Hua's noodles, buns
+    /// and wine.
     /// </summary>
     public class Trade
     {
@@ -49,11 +50,13 @@ namespace GuWorld.Systems
                 Id = "baoshan",
                 Keeper = "Гу Юэ Баошань",
                 Title = "Лавка Баошаня · Гу и корм для Гу",
-                Hello = "Корм для Гу, Гу для мастеров. Лепестки свежие, утренние — десяток за камень, как везде в деревне.",
+                Hello = "Корм для Гу, Гу для мастеров, мазь — для ран. Лепестки свежие, утренние — десяток за камень, как везде в деревне.",
                 Goods = new[]
                 {
                     new Goods { Item = ItemBook.Petal, Stock = 30 },
                     new Goods { Item = ItemBook.JadeRock, Stock = 20 },
+                    new Goods { Item = ItemBook.IntimateGrass, Stock = 20 },
+                    new Goods { Item = ItemBook.Salve, Stock = 5 },
                     new Goods { Item = ItemBook.MoonlightGu, Stock = 1 },
                     new Goods { Item = ItemBook.JadeSkinGu, Stock = 1 },
                 },
@@ -63,11 +66,13 @@ namespace GuWorld.Systems
                 Id = "hua",
                 Keeper = "Тётушка Хуа",
                 Title = "Лапшичная тётушки Хуа",
-                Hello = "Садись, садись. Лапша горячая, вино — из свежего бамбука. Мастерам Гу — за камни.",
+                Hello = "Садись, садись. Лапша горячая, булочки только с пара, вино — из свежего бамбука. Есть и острое байское. Мастерам Гу — за камни.",
                 Goods = new[]
                 {
                     new Goods { Item = ItemBook.Noodles, Stock = 20 },
+                    new Goods { Item = ItemBook.MeatBuns, Stock = 15 },
                     new Goods { Item = ItemBook.BambooWine, Stock = 10 },
+                    new Goods { Item = ItemBook.WhiteGrains, Stock = 4 },
                 },
             },
         };
@@ -157,19 +162,29 @@ namespace GuWorld.Systems
             }
 
             bag.Take(ItemBook.Stone, total);
+            var back = 0;
 
             foreach (var pair in lots)
             {
                 if (pair.Value > 0)
                 {
                     var kind = ItemBook.Find(pair.Key);
-                    bag.Add(pair.Key, pair.Value * kind.Bundle, now);
+                    var wanted = pair.Value * kind.Bundle;
+                    var got = bag.Add(pair.Key, wanted, now);
+                    // Each thing was checked to fit, but not all of them together: what did not go in is not paid for.
+                    var lotsGot = got / kind.Bundle;
+                    back += (pair.Value - lotsGot) * kind.Price;
                     sold.TryGetValue(shop.Id + "/" + pair.Key, out var n);
-                    sold[shop.Id + "/" + pair.Key] = n + pair.Value;
+                    sold[shop.Id + "/" + pair.Key] = n + lotsGot;
                 }
             }
 
-            paid = total;
+            if (back > 0)
+            {
+                bag.Add(ItemBook.Stone, back, now);
+            }
+
+            paid = total - back;
 
             return Deal.Done;
         }
@@ -183,6 +198,14 @@ namespace GuWorld.Systems
             var price = SellPrice(kind, count);
 
             if (price <= 0 || kind.Id == ItemBook.Stone)
+            {
+                return 0;
+            }
+
+            // The stones must fit (selling the whole pile frees its cell for them).
+            var room = bag.Room(ItemBook.Stone, now) + (count >= stack.count ? ItemBook.Find(ItemBook.Stone).Stack : 0);
+
+            if (room < price)
             {
                 return 0;
             }

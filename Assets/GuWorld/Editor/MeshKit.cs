@@ -4,14 +4,182 @@ using UnityEngine;
 namespace GuWorld.Editor
 {
     /// <summary>
+    /// The solid parts of what a kit builds, for a collider: plain triangles, their corners welded.
+    /// </summary>
+    public class SolidShell
+    {
+        /// <summary>Three a triangle.</summary>
+        public readonly List<Vector3> Points = new List<Vector3>();
+
+        public bool IsEmpty => Points.Count == 0;
+
+        public void Deform(System.Func<Vector3, Vector3> bend)
+        {
+            for (var i = 0; i < Points.Count; i++)
+            {
+                Points[i] = bend(Points[i]);
+            }
+        }
+
+        /// <summary>The shell as a mesh: corners within a millimetre of each other made one (null when empty).</summary>
+        public Mesh Build(string name)
+        {
+            if (IsEmpty)
+            {
+                return null;
+            }
+
+            var index = new Dictionary<Vector3Int, int>();
+            var vertices = new List<Vector3>();
+            var triangles = new List<int>();
+
+            for (var i = 0; i + 2 < Points.Count; i += 3)
+            {
+                var a = Weld(Points[i]);
+                var b = Weld(Points[i + 1]);
+                var c = Weld(Points[i + 2]);
+
+                if (a != b && b != c && c != a)
+                {
+                    triangles.Add(a);
+                    triangles.Add(b);
+                    triangles.Add(c);
+                }
+            }
+
+            int Weld(Vector3 p)
+            {
+                var key = new Vector3Int(Mathf.RoundToInt(p.x * 1000), Mathf.RoundToInt(p.y * 1000), Mathf.RoundToInt(p.z * 1000));
+
+                if (!index.TryGetValue(key, out var at))
+                {
+                    at = vertices.Count;
+                    index[key] = at;
+                    vertices.Add(p);
+                }
+
+                return at;
+            }
+
+            var mesh = new Mesh { name = name };
+
+            if (vertices.Count > 65535)
+            {
+                mesh.indexFormat = UnityEngine.Rendering.IndexFormat.UInt32;
+            }
+
+            mesh.SetVertices(vertices);
+            mesh.SetTriangles(triangles, 0);
+            mesh.RecalculateNormals();
+            mesh.RecalculateBounds();
+
+            return mesh;
+        }
+    }
+
+    /// <summary>
     /// Builds low-poly meshes out of simple parts — boxes, cylinders, cones,
     /// rough spheres and curved-eave roofs — each part with its material,
     /// into one mesh with a submesh per material. Faces are flat-shaded and
     /// always wound to face outward (Unity's front face: clockwise seen from
     /// the front, its normal (b − a) × (c − a)).
+    ///
+    /// With a SolidShell set, it also keeps the solid parts apart, for a collider that follows the
+    /// shape: every box, cylinder, quad, lump at least SolidThickness across its middle measure
+    /// (a wall, a step, a post, a roof's slope — not a lattice's bar or a tile's rib), unless
+    /// its material is one nothing bumps into (light, cloth, leaves: NotSolid).
     /// </summary>
     public class MeshKit
     {
+        /// <summary>Where the solid parts go besides (null: nowhere).</summary>
+        public SolidShell Solid;
+        /// <summary>A part thinner than this across its middle measure (m) is not solid.</summary>
+        public float SolidThickness = 0.1f;
+        /// <summary>Whether a material is something one cannot bump into.</summary>
+        public System.Func<Material, bool> NotSolid = DefaultNotSolid;
+
+        /// <summary>Light (glowing paper, lanterns), cloth, leaves and needles, water, strings of drying corn.</summary>
+        public static bool DefaultNotSolid(Material material)
+        {
+            if (material == null)
+            {
+                return true;
+            }
+
+            if (material.IsKeywordEnabled("_EMISSION"))
+            {
+                return true;
+            }
+
+            var name = material.name;
+
+            foreach (var word in new[] { "Leaves", "Needles", "Cloth", "Banner", "Water", "Greens", "Dried", "Paper", "Lantern", "Grass", "Flower" })
+            {
+                if (name.Contains(word))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        // The part being added (a box's six quads are one part): its triangles, and its middle measure.
+        int depth;
+        float pieceMeasure;
+        readonly List<Vector3> piece = new List<Vector3>();
+
+        /// <summary>The scale the kit's Transform puts on things (taken as even).</summary>
+        float Scale => ((Vector3)Transform.GetColumn(0)).magnitude;
+
+        void Begin(float measure)
+        {
+            if (depth++ == 0)
+            {
+                pieceMeasure = measure * Scale;
+            }
+        }
+
+        void End()
+        {
+            if (--depth == 0)
+            {
+                Flush();
+            }
+        }
+
+        static float Middle(float a, float b, float c) => Mathf.Max(Mathf.Min(a, b), Mathf.Min(Mathf.Max(a, b), c));
+
+        void Capture(Material material, Vector3 a, Vector3 b, Vector3 c)
+        {
+            if (Solid == null || NotSolid(material))
+            {
+                return;
+            }
+
+            piece.Add(a);
+            piece.Add(b);
+            piece.Add(c);
+
+            // A triangle on its own: its middle measure is its height over its longest side.
+            if (depth == 0)
+            {
+                var longest = Mathf.Max((b - a).magnitude, Mathf.Max((c - b).magnitude, (a - c).magnitude));
+                pieceMeasure = longest > 0 ? Vector3.Cross(b - a, c - a).magnitude / longest : 0;
+                Flush();
+            }
+        }
+
+        void Flush()
+        {
+            if (Solid != null && pieceMeasure >= SolidThickness)
+            {
+                Solid.Points.AddRange(piece);
+            }
+
+            piece.Clear();
+        }
+
         class Part
         {
             public readonly List<Vector3> vertices = new List<Vector3>();
@@ -56,6 +224,7 @@ namespace GuWorld.Editor
                 return;
             }
 
+            Capture(material, a, b, c);
             var part = For(material);
             var start = part.vertices.Count;
             part.vertices.Add(a);
@@ -87,8 +256,11 @@ namespace GuWorld.Editor
 
         public void Quad(Material material, Vector3 a, Vector3 b, Vector3 c, Vector3 d, Vector3 outward)
         {
+            // Flat: its middle measure is the shorter of its two sides.
+            Begin(Mathf.Min(((b - a).magnitude + (c - d).magnitude) / 2, ((d - a).magnitude + (c - b).magnitude) / 2));
             Triangle(material, a, b, c, outward);
             Triangle(material, a, c, d, outward);
+            End();
         }
 
         /// <summary>Nothing has been added yet.</summary>
@@ -115,6 +287,7 @@ namespace GuWorld.Editor
                 return;
             }
 
+            Capture(material, a, b, c);
             var part = For(material);
             var start = part.vertices.Count;
             part.vertices.Add(a);
@@ -134,13 +307,23 @@ namespace GuWorld.Editor
         /// <summary>A quad (corners in order round it) with its own texture coordinates, facing `outward` (up when not given).</summary>
         public void QuadUV(Material material, Vector3 a, Vector3 b, Vector3 c, Vector3 d, Vector2 ua, Vector2 ub, Vector2 uc, Vector2 ud, Vector3? outward = null)
         {
+            Begin(Mathf.Min(((b - a).magnitude + (c - d).magnitude) / 2, ((d - a).magnitude + (c - b).magnitude) / 2));
             TriangleUV(material, a, b, c, ua, ub, uc, outward);
             TriangleUV(material, a, c, d, ua, uc, ud, outward);
+            End();
         }
 
-        /// <summary>Everything another kit holds, added to this one (moved by this kit's Transform).</summary>
+        /// <summary>Everything another kit holds, added to this one (moved by this kit's Transform), its solid parts too.</summary>
         public void Append(MeshKit other)
         {
+            if (Solid != null && other.Solid != null)
+            {
+                foreach (var p in other.Solid.Points)
+                {
+                    Solid.Points.Add(Transform.MultiplyPoint3x4(p));
+                }
+            }
+
             foreach (var material in other.order)
             {
                 var from = other.parts[material];
@@ -180,6 +363,8 @@ namespace GuWorld.Editor
         /// <summary>Moves every point already added by `bend` (to make a building crooked: a lean, a sagging ridge).</summary>
         public void Deform(System.Func<Vector3, Vector3> bend)
         {
+            Solid?.Deform(bend);
+
             foreach (var part in parts.Values)
             {
                 for (var i = 0; i < part.vertices.Count; i++)
@@ -212,12 +397,14 @@ namespace GuWorld.Editor
             var h = size / 2;
             Vector3 P(float x, float y, float z) => centre + turn * new Vector3(x * h.x, y * h.y, z * h.z);
 
+            Begin(Middle(Mathf.Abs(size.x), Mathf.Abs(size.y), Mathf.Abs(size.z)));
             Quad(material, P(-1, -1, 1), P(1, -1, 1), P(1, 1, 1), P(-1, 1, 1), turn * Vector3.forward);
             Quad(material, P(-1, -1, -1), P(1, -1, -1), P(1, 1, -1), P(-1, 1, -1), turn * Vector3.back);
             Quad(material, P(1, -1, -1), P(1, -1, 1), P(1, 1, 1), P(1, 1, -1), turn * Vector3.right);
             Quad(material, P(-1, -1, -1), P(-1, -1, 1), P(-1, 1, 1), P(-1, 1, -1), turn * Vector3.left);
             Quad(material, P(-1, 1, -1), P(1, 1, -1), P(1, 1, 1), P(-1, 1, 1), Vector3.up);
             Quad(material, P(-1, -1, -1), P(1, -1, -1), P(1, -1, 1), P(-1, -1, 1), Vector3.down);
+            End();
         }
 
         /// <summary>A cylinder from `a` to `b` (radius at each end), with `sides` faces; capped.</summary>
@@ -226,6 +413,8 @@ namespace GuWorld.Editor
             var axis = (b - a).normalized;
             var side = Vector3.Cross(axis, Mathf.Abs(axis.y) > 0.9f ? Vector3.right : Vector3.up).normalized;
             var other = Vector3.Cross(axis, side);
+            // Round: its middle measure is its width (a rod's or a disc's alike).
+            Begin(2 * Mathf.Max(radiusA, radiusB));
             Vector3 Ring(Vector3 centre, float radius, int i)
             {
                 var angle = 2 * Mathf.PI * i / sides;
@@ -261,6 +450,8 @@ namespace GuWorld.Editor
                     }
                 }
             }
+
+            End();
         }
 
         /// <summary>A rough sphere (an icosahedron, once subdivided), squashed by `scale`.</summary>
@@ -268,6 +459,7 @@ namespace GuWorld.Editor
         {
             // Small ones need no roundness: 20 faces, not 80 (thousands of them lie about the villages).
             var small = Mathf.Max(scale.x, Mathf.Max(scale.y, scale.z)) < 0.45f;
+            Begin(2 * Middle(Mathf.Abs(scale.x), Mathf.Abs(scale.y), Mathf.Abs(scale.z)));
 
             foreach (var (a, b, c) in small ? Icosahedron() : Icosphere())
             {
@@ -278,6 +470,8 @@ namespace GuWorld.Editor
                 var pc = centre + Vector3.Scale(Bump(c), scale);
                 Triangle(material, pa, pb, pc, (pa + pb + pc) / 3 - centre);
             }
+
+            End();
         }
 
         static List<(Vector3, Vector3, Vector3)> icosphere;
@@ -307,6 +501,7 @@ namespace GuWorld.Editor
         public void Lump(Material material, Vector3 centre, Vector3 scale, int seed = 0)
         {
             var j = 0.85f + 0.3f * Mathf.Abs(Mathf.Sin(seed * 12.9898f));
+            Begin(2 * Middle(Mathf.Abs(scale.x), Mathf.Abs(scale.y), Mathf.Abs(scale.z)));
             var top = centre + Vector3.up * scale.y * j;
             var bottom = centre - Vector3.up * scale.y * 0.4f;
             var turn = Quaternion.Euler(0, seed * 37 % 90, 0);
@@ -325,6 +520,8 @@ namespace GuWorld.Editor
                 Triangle(material, a, top, b, (a + b + top) / 3 - centre);
                 Triangle(material, b, bottom, a, (a + b + bottom) / 3 - centre);
             }
+
+            End();
         }
 
         static List<(Vector3, Vector3, Vector3)> Icosphere()

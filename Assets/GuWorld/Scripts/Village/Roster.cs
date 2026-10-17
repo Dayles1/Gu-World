@@ -115,7 +115,8 @@ namespace GuWorld.Village
                         hour < 13 ? Activity.At(Doing.Wander, "square", 20) : Activity.At(Doing.Wander, "square", 40);
                 case Role.Student:
                     return hour < 6 || hour >= 21 ? Activity.At(Doing.Sleep) : hour < 7 ? Activity.At(Doing.Porch) :
-                        hour < 12 || (hour >= 13 && hour < 17) ? Activity.At(Doing.Wander, "academy yard", 8) :
+                        // Close round the yard's middle: the straw dummies stand 7 m out, and blades fly at them.
+                        hour < 12 || (hour >= 13 && hour < 17) ? Activity.At(Doing.Wander, "academy yard", 3.5f) :
                         hour < 13 ? Activity.At(Doing.Wander, "square", 20) : Activity.At(Doing.Wander, "square", 45);
                 case Role.Elder:
                     return hour < 5 || hour >= 20 ? Activity.At(Doing.Sleep) : hour < 11 || (hour >= 14 && hour < 18) ? Activity.At(Doing.Stand, Post) :

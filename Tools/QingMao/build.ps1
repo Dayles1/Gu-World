@@ -59,7 +59,12 @@ function Note([string]$line) {
     Write-Host $text
 }
 
-if (Get-Process -Name Unity -ErrorAction SilentlyContinue) {
+# Unity's editors and their shader compilers (Unity Hub's "unity.exe serve" and Unity's small helpers elsewhere are not editors: left alone).
+function Get-Editors([string[]]$Names = @("Unity")) {
+    Get-Process -Name $Names -ErrorAction SilentlyContinue | Where-Object { $_.Path -like "*\Editor\*" }
+}
+
+if (Get-Editors) {
     Note "NOT STARTED: Unity is already running (one heavy Unity at a time)."
     exit 2
 }
@@ -113,7 +118,7 @@ function Invoke-Unity([string[]]$StageArgs) {
                 }
         }
 
-        $held = (Get-Process -Name Unity, UnityShaderCompiler -ErrorAction SilentlyContinue | Measure-Object -Property PrivateMemorySize64 -Sum).Sum / 1MB
+        $held = (Get-Editors Unity, UnityShaderCompiler | Measure-Object -Property PrivateMemorySize64 -Sum).Sum / 1MB
         $free = (Get-CimInstance Win32_OperatingSystem).FreePhysicalMemory / 1KB
         if ($held -gt $peak) { $peak = $held }
 
@@ -123,15 +128,15 @@ function Invoke-Unity([string[]]$StageArgs) {
 
         if ($reason) {
             Note "STOPPING: $reason"
-            Note ("  unity processes: " + ((Get-Process -Name Unity -ErrorAction SilentlyContinue | ForEach-Object { "{0}:{1:0}MB" -f $_.Id, ($_.PrivateMemorySize64 / 1MB) }) -join " "))
-            Get-Process -Name Unity, UnityShaderCompiler -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue
+            Note ("  unity processes: " + ((Get-Editors | ForEach-Object { "{0}:{1:0}MB" -f $_.Id, ($_.PrivateMemorySize64 / 1MB) }) -join " "))
+            Get-Editors Unity, UnityShaderCompiler | Stop-Process -Force -ErrorAction SilentlyContinue
             break
         }
 
         if (((Get-Date) - $lastNote).TotalSeconds -ge 30) {
             $lastNote = Get-Date
             $step = if (Test-Path $progress) { (Get-Content $progress -Tail 1 -Encoding UTF8) } else { "" }
-            $each = (Get-Process -Name Unity -ErrorAction SilentlyContinue | ForEach-Object { "{0}:{1:0}" -f $_.Id, ($_.PrivateMemorySize64 / 1MB) }) -join " "
+            $each = (Get-Editors | ForEach-Object { "{0}:{1:0}" -f $_.Id, ($_.PrivateMemorySize64 / 1MB) }) -join " "
             Note "  unity processes: $each"
             Note ("  {0:0} s: Unity {1:0} MB (peak {2:0}), free {3:0} MB | {4}" -f ((Get-Date) - $started).TotalSeconds, $held, $peak, $free, $step)
         }

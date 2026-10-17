@@ -21,7 +21,7 @@ namespace GuWorld.UI
         const string FpsKey = "gw.showFps";
         const string HitboxKey = "gw.hitboxes";
 
-        /// <summary>The hitbox view (F4): every collider near the camera drawn as wire lines.</summary>
+        /// <summary>The hitbox view (F7 or F4): every collider near the camera drawn as wire lines.</summary>
         public static bool ShowHitboxes
         {
             get => PlayerPrefs.GetInt(HitboxKey, 0) == 1;
@@ -268,6 +268,15 @@ namespace GuWorld.UI
             }
 
             var level = Current;
+
+            // Without MSAA (the lower levels) the fine edges — rows of roof tiles, eaves — shimmer: FXAA, cheap, instead.
+            foreach (var camera in Camera.allCameras)
+            {
+                if (camera.TryGetComponent<UniversalAdditionalCameraData>(out var data))
+                {
+                    data.antialiasing = level.Msaa <= 1 ? AntialiasingMode.FastApproximateAntialiasing : AntialiasingMode.None;
+                }
+            }
 
             foreach (var light in Object.FindObjectsByType<Light>(FindObjectsSortMode.None))
             {

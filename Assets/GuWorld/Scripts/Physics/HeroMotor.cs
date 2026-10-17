@@ -32,9 +32,11 @@ namespace GuWorld.Physics
     /// Unity's CharacterController does the collision; the feel — speeds,
     /// acceleration, braking, coyote time, the jump buffer, sliding off
     /// slopes steeper than 50° — is the original's. Besides moving it can
-    /// stand, crouch or crawl (a shorter capsule) and climb onto a ledge (a
-    /// scripted move from the foot of the ledge onto its top). It never
-    /// leaves its location's bounds. Swimming is not ported yet: the proving
+    /// stand, crouch or crawl (a shorter capsule), climb onto a ledge (a
+    /// scripted move from the foot of the ledge onto its top) and climb up a
+    /// wall — a house's, a rock face, a tree's trunk — hand over hand, over its
+    /// top or out round the eaves onto a roof. It never leaves its location's
+    /// bounds. Swimming is not ported yet: the proving
     /// ground has no water.
     ///
     /// The transform's position is the point between the feet.
@@ -105,7 +107,11 @@ namespace GuWorld.Physics
         public float HorizontalSpeed => new Vector2(Velocity.x, Velocity.z).magnitude;
         /// <summary>0…1 through a climb, or null when not climbing.</summary>
         public float? ClimbProgress => climbing ? climbTime / climbDuration : null;
-        public bool Free => !climbing && Tree == null && !Sitting;
+        public bool Free => !climbing && Tree == null && !Sitting && !OnWall;
+
+        /// <summary>Holding onto a wall (a house's, a rock face, a trunk): the surface's normal where the hands are, out toward the body.</summary>
+        public bool OnWall { get; private set; }
+        public Vector3 WallNormal { get; private set; }
 
         /// <summary>The giant tree being climbed (null: none), where round its trunk and how high up the feet are.</summary>
         public ClimbTree Tree { get; private set; }
@@ -125,8 +131,8 @@ namespace GuWorld.Physics
         float lastSpeed;
 
         bool climbing;
-        Vector3 climbFrom;
-        Vector3 climbTo;
+        /// <summary>The scripted climb's path: up the face and over, or out round the eaves, up and in.</summary>
+        Vector3[] climbPath;
         float climbTime;
         float climbDuration;
 
@@ -161,6 +167,313 @@ namespace GuWorld.Physics
             climbing = false;
             Tree = null;
             Sitting = false;
+            OnWall = false;
+        }
+
+        // ── Walls ────────────────────────────────────────────────────
+
+        /// <summary>How far before the body a wall can be taken hold of, m (from the capsule's side).</summary>
+        const float WallReach = 0.45f;
+        /// <summary>Climbing speeds up, down and sideways, m/s.</summary>
+        const float WallUp = 1.25f;
+        const float WallDown = 1.8f;
+        const float WallSide = 1.3f;
+        /// <summary>The hands' and the hips' heights above the feet while climbing.</summary>
+        const float Hands = 1.25f;
+        const float Hips = 0.6f;
+        /// <summary>How far from the surface the body's middle is held.</summary>
+        static float Standoff => Radius + 0.06f;
+
+        /// <summary>A surface one can climb: too steep to stand on, not an overhang (a ceiling, an eave's underside); not a body.</summary>
+        bool Climbable(RaycastHit hit) =>
+            hit.collider != controller && hit.normal.y < Walkable && hit.normal.y > -0.35f && !hit.collider.isTrigger &&
+            hit.collider.GetComponentInParent<Combat.IZoned>() == null && !(hit.collider is CharacterController) &&
+            (hit.collider.attachedRigidbody == null || hit.collider.attachedRigidbody.isKinematic);
+
+        /// <summary>The nearest climbable surface along a ray (not the body itself).</summary>
+        bool WallAlong(Vector3 from, Vector3 direction, float distance, out RaycastHit wall)
+        {
+            wall = default;
+            var best = float.PositiveInfinity;
+
+            foreach (var hit in UnityEngine.Physics.RaycastAll(from, direction, distance, ~0, QueryTriggerInteraction.Ignore))
+            {
+                if (hit.collider == controller || hit.distance >= best)
+                {
+                    continue;
+                }
+
+                // Something nearer that is not climbable (a person, a ceiling) is in the way.
+                best = hit.distance;
+                wall = hit;
+            }
+
+            return best < float.PositiveInfinity && Climbable(wall);
+        }
+
+        /// <summary>Takes hold of a wall before the body (in the direction given): true when there is one within reach.</summary>
+        public bool GrabWall(float dirX, float dirZ)
+        {
+            if (climbing || Tree != null || Sitting || OnWall || Stance == Stance.Crawl || Velocity.y < -14)
+            {
+                return false;
+            }
+
+            var direction = new Vector3(dirX, 0, dirZ);
+
+            if (direction.sqrMagnitude < 1e-4f)
+            {
+                return false;
+            }
+
+            direction.Normalize();
+            var feet = transform.position;
+
+            // At the hands' height, or the hips' (a wall whose top is just above the head is climbed over at once).
+            if (!WallAlong(feet + Vector3.up * Hands, direction, Radius + WallReach, out var wall) &&
+                !WallAlong(feet + Vector3.up * Hips, direction, Radius + WallReach, out wall))
+            {
+                return false;
+            }
+
+            OnWall = true;
+            Stance = Stance.Stand;
+            ApplyCapsule();
+            Velocity = Vector3.zero;
+            Grounded = false;
+            HoldWall(wall, feet);
+
+            return true;
+        }
+
+        /// <summary>Lets go of the wall: pushed off it (a jump away), or simply dropping.</summary>
+        public void LeaveWall(bool jump)
+        {
+            if (!OnWall)
+            {
+                return;
+            }
+
+            OnWall = false;
+            var away = Flat(WallNormal);
+            Velocity = jump ? away * 4.2f + Vector3.up * 4.8f : away * 0.6f;
+
+            if (jump)
+            {
+                Facing = Mathf.Atan2(away.x, away.z);
+            }
+        }
+
+        /// <summary>
+        /// A step of climbing a wall: `up` (−1…1) up or down it, `side` (−1…1) along it (to the body's right),
+        /// a push away from it (`jump`), or letting go (`drop`). The hands follow the surface as it turns (round a
+        /// trunk, into a corner); at its top the body climbs over onto it, under eaves out round them onto the roof;
+        /// at its foot, on the ground again, it lets go.
+        /// </summary>
+        public void WallTick(float dt, float up, float side, bool jump, bool drop)
+        {
+            if (!OnWall)
+            {
+                return;
+            }
+
+            if (jump || drop)
+            {
+                LeaveWall(jump);
+
+                return;
+            }
+
+            var normal = Flat(WallNormal);
+            var right = Vector3.Cross(normal, Vector3.up).normalized;
+            var along = Vector3.ProjectOnPlane(Vector3.up, WallNormal).normalized;
+            var feet = transform.position;
+            ClimbPhase += (Mathf.Abs(up) + Mathf.Abs(side) * 0.7f) * dt * 1.3f;
+
+            // On the ground again, climbing down: off the wall, standing.
+            if (up < 0 && SurfaceBelow(feet + Vector3.up * 0.1f, 0.25f, out _, out var groundNormal) && groundNormal.y >= Walkable)
+            {
+                OnWall = false;
+                PlaceAt(feet);
+
+                return;
+            }
+
+            if (up > 0)
+            {
+                var head = feet + Vector3.up * (HeightOf(Stance.Stand) - 0.1f);
+
+                // Under an overhang (an eave): out round it onto what is above, or no higher.
+                if (UnityEngine.Physics.Raycast(head, Vector3.up, out var above, 0.35f, ~0, QueryTriggerInteraction.Ignore) && above.collider != controller)
+                {
+                    if (!TryOverEave(normal))
+                    {
+                        up = 0;
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+            }
+
+            var move = along * (up > 0 ? up * WallUp : up * WallDown) + right * side * WallSide;
+            var next = feet + move * dt;
+
+            // The surface again from there, straight ahead at the hands.
+            if (WallAlong(next + Vector3.up * Hands, -normal, Standoff + 0.7f, out var wall))
+            {
+                HoldWall(wall, next);
+
+                return;
+            }
+
+            // Nothing at the hands going up: the top — over it.
+            if (up > 0 && TryOverTop(normal))
+            {
+                return;
+            }
+
+            // A corner going sideways: round it if the wall goes on there, else stop.
+            if (side != 0 && WallAlong(next + Vector3.up * Hands + right * side * (Standoff + 0.3f), -right * side, Standoff + 0.6f, out wall))
+            {
+                HoldWall(wall, next);
+            }
+        }
+
+        /// <summary>
+        /// Holds the body against a surface: its middle just off it, facing it, the feet at `feet`'s height — unless the
+        /// body would be in something else there (a wall meeting this one in a corner, a beam, an eave): then it stays
+        /// where it is. Only from the hips up is looked at, so a plinth jutting out at the wall's foot does not stop it.
+        /// </summary>
+        void HoldWall(RaycastHit wall, Vector3 feet)
+        {
+            var normal = Flat(wall.normal);
+            var at = wall.point + normal * Standoff;
+            var target = new Vector3(at.x, feet.y, at.z);
+
+            if (Blocked(target, HeightOf(Stance.Stand), Hips) && !Blocked(transform.position, HeightOf(Stance.Stand), Hips))
+            {
+                Velocity = Vector3.zero;
+
+                return;
+            }
+
+            WallNormal = wall.normal;
+            controller.enabled = false;
+            transform.position = target;
+            controller.enabled = true;
+            Facing = Mathf.Atan2(-normal.x, -normal.z);
+            Velocity = Vector3.zero;
+            Grounded = false;
+            KeepInside();
+        }
+
+        /// <summary>At a wall's top: over onto it, if there is ground to stand on just beyond the edge within reach.</summary>
+        bool TryOverTop(Vector3 normal)
+        {
+            var feet = transform.position;
+
+            foreach (var forward in new[] { 0.45f, 0.8f })
+            {
+                var spot = feet - normal * (Standoff + forward);
+
+                if (!SurfaceBelow(spot + Vector3.up * (ClimbMax + 0.3f), ClimbMax + 0.3f - 0.3f, out var top, out var landing) || landing.y < Walkable)
+                {
+                    continue;
+                }
+
+                var to = new Vector3(spot.x, top, spot.z);
+
+                if (top - feet.y < 0.3f || Blocked(to, HeightOf(Stance.Crouch)))
+                {
+                    continue;
+                }
+
+                StartClimb(new[] { feet, new Vector3(feet.x, top + 0.05f, feet.z), to }, 0.45f + (top - feet.y) * 0.25f);
+
+                return true;
+            }
+
+            return false;
+        }
+
+        /// <summary>
+        /// Under eaves: out to their edge, up past it and in onto the roof just inside it — if the roof there can be
+        /// stood on and is within reach above the head.
+        /// </summary>
+        bool TryOverEave(Vector3 normal)
+        {
+            var feet = transform.position;
+            var headTop = feet.y + HeightOf(Stance.Stand);
+            const float Highest = 3.6f;
+            var roof = new System.Collections.Generic.List<(Vector3 at, Vector3 normal)>();
+            var edge = -1f;
+
+            // Outward from the wall: the roof overhead, until there is none (its edge).
+            for (var outward = 0.3f; outward <= 2.8f; outward += 0.25f)
+            {
+                var spot = feet + normal * outward;
+
+                if (SurfaceBelow(spot + Vector3.up * Highest, Highest - (headTop - feet.y) + 0.3f, out var top, out var landing))
+                {
+                    roof.Add((new Vector3(spot.x, top + 0.02f, spot.z), landing));
+
+                    continue;
+                }
+
+                edge = outward;
+
+                break;
+            }
+
+            if (edge < 0 || roof.Count == 0)
+            {
+                return false;
+            }
+
+            // The outermost spot of the roof one can stand on, with room there.
+            for (var i = roof.Count - 1; i >= 0; i--)
+            {
+                var (to, landing) = roof[i];
+
+                if (landing.y < Walkable || Blocked(to, HeightOf(Stance.Crouch)))
+                {
+                    continue;
+                }
+
+                var past = feet + normal * (edge + 0.25f);
+                StartClimb(new[] { feet, new Vector3(past.x, feet.y + 0.3f, past.z), new Vector3(past.x, to.y + 0.3f, past.z), to }, 0.9f + (to.y - feet.y) * 0.2f);
+
+                return true;
+            }
+
+            return false;
+        }
+
+        void StartClimb(Vector3[] path, float duration)
+        {
+            OnWall = false;
+            climbing = true;
+            climbPath = path;
+            climbTime = 0;
+            climbDuration = duration;
+            Velocity = Vector3.zero;
+            Stance = Stance.Stand;
+            ApplyCapsule();
+            var last = path[path.Length - 1] - path[0];
+
+            if (new Vector2(last.x, last.z).sqrMagnitude > 0.01f)
+            {
+                Facing = Mathf.Atan2(last.x, last.z);
+            }
+        }
+
+        static Vector3 Flat(Vector3 v)
+        {
+            v.y = 0;
+
+            return v.sqrMagnitude > 1e-6f ? v.normalized : Vector3.forward;
         }
 
         // ── Giant trees ───────────────────────────────────────────────
@@ -319,7 +632,7 @@ namespace GuWorld.Physics
         /// </summary>
         public bool TryClimb(float dirX, float dirZ)
         {
-            if (climbing || Stance == Stance.Crawl)
+            if (climbing || OnWall || Stance == Stance.Crawl)
             {
                 return false;
             }
@@ -367,15 +680,9 @@ namespace GuWorld.Physics
                     continue;
                 }
 
-                climbing = true;
-                climbFrom = feet;
-                climbTo = to;
-                climbTime = 0;
-                climbDuration = 0.4f + rise * 0.3f;
+                // Up the face first, then over the top.
+                StartClimb(new[] { feet, new Vector3(feet.x, to.y, feet.z), to }, 0.4f + rise * 0.3f);
                 Facing = Mathf.Atan2(dirX, dirZ);
-                Velocity = Vector3.zero;
-                Stance = Stance.Stand;
-                ApplyCapsule();
 
                 return true;
             }
@@ -392,7 +699,7 @@ namespace GuWorld.Physics
                 return;
             }
 
-            if (Sitting)
+            if (Sitting || OnWall)
             {
                 Velocity = Vector3.zero;
                 TurnRate = 0;
@@ -430,10 +737,13 @@ namespace GuWorld.Physics
                     Facing += turn * (1 - Mathf.Exp(-rate * dt));
                 }
 
-                // Running into a ledge in mid-air grabs it.
-                if (!Grounded && Velocity.y < 3 && (input.moveX != 0 || input.moveZ != 0))
+                // Running into a ledge in mid-air grabs it; into a wall, takes hold of it.
+                if (!Grounded && (input.moveX != 0 || input.moveZ != 0))
                 {
-                    TryClimb(input.moveX, input.moveZ);
+                    if (!(Velocity.y < 3 && TryClimb(input.moveX, input.moveZ)) && Velocity.y < 6 && sinceGrounded > 0.15f)
+                    {
+                        GrabWall(input.moveX, input.moveZ);
+                    }
                 }
             }
 
@@ -454,22 +764,25 @@ namespace GuWorld.Physics
             var progress = Mathf.Min(1, climbTime / climbDuration);
             static float Ease(float t) => t * t * (3 - 2 * t);
 
-            Vector3 position;
+            // Along the path, each stretch eased: the first (the climb up the face) takes most of the time.
+            var stretches = climbPath.Length - 1;
+            var first = stretches == 2 ? 0.65f : 1f / stretches;
+            int index;
+            float within;
 
-            // Up the face first, then over the top.
-            if (progress < 0.65f)
+            if (progress < first)
             {
-                var up = Ease(progress / 0.65f);
-                position = new Vector3(climbFrom.x, climbFrom.y + (climbTo.y - climbFrom.y) * up, climbFrom.z);
+                index = 0;
+                within = progress / first;
             }
             else
             {
-                var over = Ease((progress - 0.65f) / 0.35f);
-                position = new Vector3(
-                    climbFrom.x + (climbTo.x - climbFrom.x) * over,
-                    climbTo.y,
-                    climbFrom.z + (climbTo.z - climbFrom.z) * over);
+                var rest = (progress - first) / (1 - first) * (stretches - 1);
+                index = Mathf.Min(stretches - 1, 1 + Mathf.FloorToInt(rest));
+                within = progress >= 1 ? 1 : rest - (index - 1);
             }
+
+            var position = Vector3.Lerp(climbPath[index], climbPath[index + 1], Ease(within));
 
             controller.enabled = false;
             transform.position = position;
@@ -691,9 +1004,9 @@ namespace GuWorld.Physics
         }
 
         /// <summary>Whether a capsule of this height standing at `feet` would overlap something.</summary>
-        bool Blocked(Vector3 feet, float height)
+        bool Blocked(Vector3 feet, float height, float from = 0)
         {
-            var bottom = feet + Vector3.up * (Radius + 0.05f);
+            var bottom = feet + Vector3.up * (Mathf.Max(from, 0) + Radius + 0.05f);
             var top = feet + Vector3.up * (height - Radius);
 
             foreach (var hit in UnityEngine.Physics.OverlapCapsule(bottom, top, Radius * 0.95f, ~0, QueryTriggerInteraction.Ignore))
@@ -706,6 +1019,53 @@ namespace GuWorld.Physics
 
             return false;
         }
+
+        /// <summary>The body is in something solid (put there, or something was made round it).</summary>
+        public bool Stuck => controller != null && controller.enabled && Blocked(transform.position, Height);
+
+        static readonly RaycastHit[] spots = new RaycastHit[32];
+
+        /// <summary>
+        /// Where the body can stand at a point (x, z): the highest surface there one can stand on with room for the body
+        /// above it — a roof, a terrace, the ground — looked for from `above` metres up; if there is none, the same
+        /// a little way off, in rings round it. Null when nothing is found.
+        /// </summary>
+        public Vector3? SafeSpot(Vector3 at, float above = 120)
+        {
+            foreach (var ring in new[] { 0f, 1.5f, 3f, 5f, 8f })
+            {
+                for (var k = 0; k < (ring == 0 ? 1 : 8); k++)
+                {
+                    var angle = k * Mathf.PI / 4;
+                    var x = at.x + Mathf.Cos(angle) * ring;
+                    var z = at.z + Mathf.Sin(angle) * ring;
+                    var count = UnityEngine.Physics.RaycastNonAlloc(new Vector3(x, at.y + above, z), Vector3.down, spots, above * 2 + 400, ~0, QueryTriggerInteraction.Ignore);
+                    System.Array.Sort(spots, 0, count, HitsByDistance);
+
+                    for (var i = 0; i < count; i++)
+                    {
+                        var hit = spots[i];
+
+                        if (hit.collider == controller || hit.normal.y < Walkable)
+                        {
+                            continue;
+                        }
+
+                        var feet = hit.point + Vector3.up * 0.02f;
+
+                        if (!Blocked(feet, HeightOf(Stance.Stand)))
+                        {
+                            return feet;
+                        }
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        static readonly System.Collections.Generic.IComparer<RaycastHit> HitsByDistance =
+            System.Collections.Generic.Comparer<RaycastHit>.Create((a, b) => a.distance.CompareTo(b.distance));
 
         /// <summary>The first solid surface straight down from `from`, within `distance`.</summary>
         bool SurfaceBelow(Vector3 from, float distance, out float top, out Vector3 normal)

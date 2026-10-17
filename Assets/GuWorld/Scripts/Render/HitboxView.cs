@@ -17,19 +17,25 @@ namespace GuWorld.Render
         Hero,
         Trigger,
         Moving,
+        /// <summary>The ground itself (the terrain), round the watcher.</summary>
+        Ground,
     }
 
     /// <summary>
-    /// The hitbox view (F4, or the setting): every collider near the camera drawn as
+    /// The hitbox view (F7 or F4, or the setting): every collider near the camera drawn as
     /// wire lines in the colour of what it is — buildings orange, props yellow, trees
     /// green, branches light green, people cyan, the hero white, each part of a body
     /// in its own colour (as on the body page). Lines behind walls show faintly.
-    /// The terrain is left out: it is everywhere.
+    /// The terrain is drawn only close round the watcher, as a grid (it is everywhere).
     /// </summary>
     public class HitboxView : MonoBehaviour
     {
         /// <summary>Whether the view is on (the settings keep it).</summary>
         public static bool On;
+        /// <summary>Playing (not in a menu or the hero's making): only then is anything drawn.</summary>
+        public static bool InPlay = true;
+        /// <summary>Drawn and its legend shown: on, and playing.</summary>
+        public static bool Shown => On && InPlay;
         /// <summary>The streamed squares' borders drawn too (F3+G): loaded ones bright, the rest faint.</summary>
         public static bool ChunkBorders;
         /// <summary>How far round the watcher the borders are drawn, m.</summary>
@@ -45,14 +51,17 @@ namespace GuWorld.Render
             (HitboxKind.Hero, "Герой", Color.white),
             (HitboxKind.Trigger, "Области", new Color(0.75f, 0.45f, 1)),
             (HitboxKind.Moving, "Падающее", new Color(1, 0.3f, 0.3f)),
+            (HitboxKind.Ground, "Земля", new Color(0.62f, 0.5f, 0.34f)),
             (HitboxKind.Other, "Прочее", new Color(0.75f, 0.75f, 0.75f)),
         };
 
         public Transform Around;
-        public float Radius = 80;
+        /// <summary>How far round the watcher colliders are drawn, the nearest first (the far ones are cut off when there are too many lines).</summary>
+        public float Radius = 60;
         const int MaxVertices = 400000;
 
         readonly Collider[] found = new Collider[8192];
+        readonly float[] foundDistance = new float[8192];
         float nextRefresh;
         Vector3 lastCentre = new Vector3(float.NaN, 0, 0);
         /// <summary>The terrains' trees (their trunks are solid inside the terrain, where no overlap finds them): where each stands and its trunk.</summary>
@@ -62,7 +71,10 @@ namespace GuWorld.Render
         readonly List<Color> colours = new List<Color>();
         readonly List<int> indices = new List<int>();
         readonly Dictionary<Collider, Color> tints = new Dictionary<Collider, Color>();
-        readonly Dictionary<Mesh, (Vector3[] points, int[] triangles)> wires = new Dictionary<Mesh, (Vector3[], int[])>();
+        /// <summary>Each collider mesh's outline: its edges where faces meet at an angle (or end), two points an edge, in its own space; null when too big to draw.</summary>
+        readonly Dictionary<Mesh, Vector3[]> wires = new Dictionary<Mesh, Vector3[]>();
+        /// <summary>A mesh with more triangles than this is drawn as its bounds.</summary>
+        const int MaxWireTriangles = 40000;
         Mesh mesh;
         Material material;
         MeshRenderer drawn;
@@ -175,7 +187,7 @@ namespace GuWorld.Render
 
         void LateUpdate()
         {
-            var shown = On || ChunkBorders;
+            var shown = InPlay && (On || ChunkBorders);
 
             if (drawn != null)
             {
@@ -203,6 +215,14 @@ namespace GuWorld.Render
             colours.Clear();
             indices.Clear();
             var count = On ? UnityEngine.Physics.OverlapSphereNonAlloc(centre, Radius, found, ~0, QueryTriggerInteraction.Collide) : 0;
+
+            // The nearest first: when the lines run out, it is the far ones that go.
+            for (var i = 0; i < count; i++)
+            {
+                foundDistance[i] = found[i] != null ? (found[i].ClosestPointOnBounds(centre) - centre).sqrMagnitude : float.MaxValue;
+            }
+
+            System.Array.Sort(foundDistance, found, 0, count);
 
             for (var i = 0; i < count && vertices.Count < MaxVertices; i++)
             {
@@ -238,6 +258,7 @@ namespace GuWorld.Render
             if (On)
             {
                 TerrainTrees(centre);
+                GroundGrid(centre);
             }
 
             if (ChunkBorders)
@@ -304,6 +325,74 @@ namespace GuWorld.Render
                     Line(post, post + Vector3.up * 40, colour);
                 }
             }
+        }
+
+        /// <summary>How far round the watcher the ground's grid is drawn, and its spacing, m.</summary>
+        const float GroundReach = 14;
+        const float GroundCell = 1;
+
+        /// <summary>The terrain's surface round the watcher: a grid a metre a cell, lying on it.</summary>
+        void GroundGrid(Vector3 centre)
+        {
+            var colour = ColourOf(HitboxKind.Ground);
+            var cells = Mathf.RoundToInt(GroundReach * 2 / GroundCell);
+            var x0 = Mathf.Floor(centre.x - GroundReach);
+            var z0 = Mathf.Floor(centre.z - GroundReach);
+            var heights = new float[cells + 1, cells + 1];
+
+            for (var i = 0; i <= cells; i++)
+            {
+                for (var k = 0; k <= cells; k++)
+                {
+                    heights[i, k] = TerrainHeight(x0 + i * GroundCell, z0 + k * GroundCell);
+                }
+            }
+
+            for (var i = 0; i <= cells && vertices.Count < MaxVertices; i++)
+            {
+                for (var k = 0; k <= cells; k++)
+                {
+                    var a = new Vector3(x0 + i * GroundCell, heights[i, k] + 0.02f, z0 + k * GroundCell);
+
+                    if (float.IsNaN(a.y))
+                    {
+                        continue;
+                    }
+
+                    // Faint toward the edge of the grid.
+                    var fade = colour;
+                    fade.a = Mathf.Clamp01(1.2f - new Vector2(a.x - centre.x, a.z - centre.z).magnitude / GroundReach);
+
+                    if (i < cells && !float.IsNaN(heights[i + 1, k]))
+                    {
+                        Line(a, new Vector3(a.x + GroundCell, heights[i + 1, k] + 0.02f, a.z), fade);
+                    }
+
+                    if (k < cells && !float.IsNaN(heights[i, k + 1]))
+                    {
+                        Line(a, new Vector3(a.x, heights[i, k + 1] + 0.02f, a.z + GroundCell), fade);
+                    }
+                }
+            }
+        }
+
+        /// <summary>The finest terrain's height at a point (NaN where there is none).</summary>
+        static float TerrainHeight(float x, float z)
+        {
+            Terrain best = null;
+
+            foreach (var terrain in Terrain.activeTerrains)
+            {
+                var corner = terrain.GetPosition();
+                var size = terrain.terrainData.size;
+
+                if (x >= corner.x && x <= corner.x + size.x && z >= corner.z && z <= corner.z + size.z && (best == null || size.x < best.terrainData.size.x))
+                {
+                    best = terrain;
+                }
+            }
+
+            return best != null ? best.SampleHeight(new Vector3(x, 0, z)) + best.GetPosition().y : float.NaN;
         }
 
         /// <summary>The trunks of the terrains' trees near the watcher, as upright capsules in the trees' colour.</summary>
@@ -463,6 +552,58 @@ namespace GuWorld.Render
             return total;
         }
 
+        /// <summary>
+        /// A mesh's outline: the edges of its triangles where they meet at more than a slight angle, or where a face
+        /// ends — not the diagonals across flat faces (a wall reads as its rectangle, a roof as its rows). Corners
+        /// within a millimetre are one, so meshes whose faces each have their own corners (flat-shaded) outline too.
+        /// </summary>
+        static Vector3[] Outline(Mesh mesh)
+        {
+            var points = mesh.vertices;
+            var triangles = mesh.triangles;
+            var faces = new Dictionary<(Vector3Int, Vector3Int), (Vector3 normal, int count, Vector3 a, Vector3 b)>();
+
+            Vector3Int Key(Vector3 p) => new Vector3Int(Mathf.RoundToInt(p.x * 1000), Mathf.RoundToInt(p.y * 1000), Mathf.RoundToInt(p.z * 1000));
+
+            for (var i = 0; i + 2 < triangles.Length; i += 3)
+            {
+                var a = points[triangles[i]];
+                var b = points[triangles[i + 1]];
+                var c = points[triangles[i + 2]];
+                var normal = Vector3.Cross(b - a, c - a).normalized;
+
+                foreach (var (p, q) in new[] { (a, b), (b, c), (c, a) })
+                {
+                    var kp = Key(p);
+                    var kq = Key(q);
+                    var key = kp.x < kq.x || (kp.x == kq.x && (kp.y < kq.y || (kp.y == kq.y && kp.z < kq.z))) ? (kp, kq) : (kq, kp);
+
+                    if (faces.TryGetValue(key, out var seen))
+                    {
+                        // A sharp edge stays marked (count -1 for ever); a flat one counts its faces.
+                        faces[key] = seen.count < 0 || Mathf.Abs(Vector3.Dot(seen.normal, normal)) < 0.94f ? (seen.normal, -1, p, q) : (seen.normal, seen.count + 1, p, q);
+                    }
+                    else
+                    {
+                        faces[key] = (normal, 1, p, q);
+                    }
+                }
+            }
+
+            var edges = new List<Vector3>();
+
+            foreach (var (_, count, a, b) in faces.Values)
+            {
+                if (count != 2)
+                {
+                    edges.Add(a);
+                    edges.Add(b);
+                }
+            }
+
+            return edges.ToArray();
+        }
+
         void Wire(MeshCollider collider, Color colour)
         {
             var shared = collider.sharedMesh;
@@ -474,12 +615,12 @@ namespace GuWorld.Render
 
             if (!wires.TryGetValue(shared, out var wire))
             {
-                // A big mesh is drawn as its bounds; a small one edge by edge.
-                wire = shared.isReadable && Indices(shared) <= 6000 ? (shared.vertices, shared.triangles) : (null, null);
+                // A huge mesh (or one the game cannot read) is drawn as its bounds; the rest by their outlines.
+                wire = shared.isReadable && Indices(shared) <= MaxWireTriangles * 3 ? Outline(shared) : null;
                 wires[shared] = wire;
             }
 
-            if (wire.points == null)
+            if (wire == null)
             {
                 var b = shared.bounds;
                 Box(collider.transform, b.center, b.size, colour);
@@ -487,18 +628,11 @@ namespace GuWorld.Render
                 return;
             }
 
-            var points = wire.points;
-            var triangles = wire.triangles;
             var matrix = collider.transform.localToWorldMatrix;
 
-            for (var i = 0; i + 2 < triangles.Length; i += 3)
+            for (var i = 0; i + 1 < wire.Length && vertices.Count < MaxVertices; i += 2)
             {
-                var a = matrix.MultiplyPoint3x4(points[triangles[i]]);
-                var b = matrix.MultiplyPoint3x4(points[triangles[i + 1]]);
-                var c = matrix.MultiplyPoint3x4(points[triangles[i + 2]]);
-                Line(a, b, colour);
-                Line(b, c, colour);
-                Line(c, a, colour);
+                Line(matrix.MultiplyPoint3x4(wire[i]), matrix.MultiplyPoint3x4(wire[i + 1]), colour);
             }
         }
     }

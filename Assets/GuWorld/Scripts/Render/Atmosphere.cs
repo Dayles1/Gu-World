@@ -418,7 +418,7 @@ namespace GuWorld.Render
 
             if (WindowMaterial != null)
             {
-                WindowMaterial.SetColor("_EmissionColor", new Color(1, 0.72f, 0.4f) * 1.25f * lit);
+                WindowMaterial.SetColor("_EmissionColor", new Color(1, 0.72f, 0.4f) * 2.8f * lit);
             }
 
             foreach (var warm in WarmMaterials)

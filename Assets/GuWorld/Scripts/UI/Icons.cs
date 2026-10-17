@@ -55,7 +55,36 @@ namespace GuWorld.UI
             ["star"] = p => Polygon(p, Star(5, 0.85f, 0.38f)),
             ["chat"] = p => Union(Box(p, V(0, 0.15f), V(0.82f, 0.5f)), Polygon(p, new[] { V(-0.45f, -0.3f), V(-0.55f, -0.8f), V(0, -0.3f) })),
             ["wolf"] = Wolf,
+            ["fist"] = Fist,
+            ["salve"] = p => Union(Cut(Box(p, V(0, -0.22f), V(0.56f, 0.4f)) - 0.1f, Box(p, V(0, 0.2f), V(0.8f, 0.03f))),
+                Union(Box(p, V(0, 0.36f), V(0.62f, 0.12f)) - 0.06f, Box(p, V(0, 0.6f), V(0.16f, 0.1f)))),
+            ["bun"] = Bun,
+            ["grass"] = p => Union(Union(Segment(p, V(0, -0.82f), V(0.04f, 0.8f), 0.085f), Segment(p, V(-0.12f, -0.82f), V(-0.62f, 0.42f), 0.075f)),
+                Union(Segment(p, V(0.12f, -0.82f), V(0.66f, 0.3f), 0.075f), Box(p, V(0, -0.82f), V(0.3f, 0.06f)))),
+            ["gourd"] = p => Cut(Union(Union(Circle(p, V(0, -0.36f), 0.5f), Circle(p, V(0, 0.28f), 0.3f)), Box(p, V(0, 0.7f), V(0.09f, 0.14f))),
+                Box(p, V(0, 0.02f), V(0.4f, 0.035f))),
+            ["pin"] = p => Union(Circle(p, V(0, 0.3f), 0.55f), Polygon(p, new[] { V(-0.47f, 0.02f), V(0.47f, 0.02f), V(0, -0.92f) })),
         };
+
+        /// <summary>A thing's own colour, for its icon in a cell (a Gu's crystal blue, jade's green…); white for the menus' marks.</summary>
+        static readonly Dictionary<string, Color> tints = new Dictionary<string, Color>
+        {
+            ["moon"] = new Color(0.66f, 0.84f, 1f),
+            ["jade"] = new Color(0.52f, 0.88f, 0.62f),
+            ["stone"] = new Color(0.94f, 0.92f, 0.86f),
+            ["orchid"] = new Color(0.8f, 0.74f, 0.98f),
+            ["rock"] = new Color(0.46f, 0.76f, 0.56f),
+            ["bowl"] = new Color(0.96f, 0.8f, 0.56f),
+            ["jar"] = new Color(0.62f, 0.86f, 0.5f),
+            ["wolf"] = new Color(0.9f, 0.86f, 0.76f),
+            ["salve"] = new Color(0.96f, 0.72f, 0.46f),
+            ["bun"] = new Color(0.98f, 0.94f, 0.84f),
+            ["grass"] = new Color(0.7f, 0.92f, 0.62f),
+            ["gourd"] = new Color(0.95f, 0.6f, 0.48f),
+        };
+
+        /// <summary>The colour an icon is shown in where a thing is shown (white: the menus' own).</summary>
+        public static Color Tint(string name) => name != null && tints.TryGetValue(name, out var tint) ? tint : Color.white;
 
         /// <summary>The icon of a name (null for none or an unknown one).</summary>
         public static Sprite Get(string name)
@@ -97,6 +126,23 @@ namespace GuWorld.UI
 
         // ── The shapes ────────────────────────────────────────────────
 
+        /// <summary>A fist seen from the knuckles' side: four curled fingers, the thumb across them, the wrist below.</summary>
+        static float Fist(Vector2 p)
+        {
+            var fingers = Box(p, V(0.06f, 0.22f), V(0.5f, 0.3f)) - 0.14f;
+            // The gaps between the fingers, down to the thumb.
+            for (var i = 0; i < 3; i++)
+            {
+                var x = -0.24f + i * 0.27f;
+                fingers = Cut(fingers, Segment(p, V(x, 0.12f), V(x, 0.7f), 0.03f));
+            }
+
+            var thumb = Segment(p, V(-0.5f, -0.06f), V(0.18f, -0.1f), 0.13f);
+            var wrist = Box(p, V(-0.02f, -0.55f), V(0.34f, 0.28f));
+
+            return Union(Union(fingers, Cut(thumb, Segment(p, V(-0.5f, 0.1f), V(0.3f, 0.1f), 0.02f))), wrist);
+        }
+
         /// <summary>A primeval stone: a cut gem, its facets drawn as fine gaps.</summary>
         static float Stone(Vector2 p)
         {
@@ -105,6 +151,21 @@ namespace GuWorld.UI
                 Union(Segment(p, V(-0.2f, 0.3f), V(0, -0.82f), 0.035f), Segment(p, V(0.2f, 0.3f), V(0, -0.82f), 0.035f)));
 
             return Cut(gem, facets);
+        }
+
+        /// <summary>A steamed bun from the side: a low dome on a flat foot, its pleats gathered to a knot on top.</summary>
+        static float Bun(Vector2 p)
+        {
+            var dome = Max(Ellipse(p, V(0, -0.42f), V(0.86f, 0.98f)), -(p.y + 0.5f));
+            var knot = Circle(p, V(0, 0.6f), 0.12f);
+            var d = Union(dome, knot);
+
+            foreach (var x in new[] { -0.5f, -0.18f, 0.18f, 0.5f })
+            {
+                d = Cut(d, Segment(p, V(x * 0.25f, 0.42f), V(x, -0.18f), 0.03f));
+            }
+
+            return d;
         }
 
         /// <summary>A moon orchid: five petals round a hollow heart.</summary>

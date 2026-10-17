@@ -36,18 +36,34 @@ namespace GuWorld.Editor
                 return treePrototypes;
             }
 
+            // The trunks' colliders (the terrain's trees can only have upright capsules): as thick as the trunk is on
+            // average over its straight part, as high as that part goes — where the trunk bends or the crown begins, none.
             treePrototypes = new[]
             {
-                new TreePrototype { prefab = TreePrefab("Fir", FirTree, 0.35f, 7) },
-                new TreePrototype { prefab = TreePrefab("Red Pine", RedPineTree, 0.3f, 6) },
-                new TreePrototype { prefab = TreePrefab("Camphor", CamphorTree, 0.45f, 4) },
-                new TreePrototype { prefab = TreePrefab("Cypress", CypressTree, 0.3f, 5) },
+                new TreePrototype { prefab = TreePrefab("Fir", FirTree, 0.3f, 8) },
+                new TreePrototype { prefab = TreePrefab("Red Pine", RedPineTree, 0.37f, 3.8f) },
+                new TreePrototype { prefab = TreePrefab("Camphor", CamphorTree, 0.5f, 4.6f) },
+                new TreePrototype { prefab = TreePrefab("Cypress", CypressTree, 0.29f, 3.2f) },
                 new TreePrototype { prefab = TreePrefab("Spear Bamboo", BambooTree, 0.45f, 6) },
-                new TreePrototype { prefab = TreePrefab("Dead Tree", DeadTreeShape, 0.3f, 5) },
+                new TreePrototype { prefab = TreePrefab("Dead Tree", DeadTreeShape, 0.34f, 4) },
                 new TreePrototype { prefab = TreePrefab("Shrub", ShrubShape, 0, 0) },
             };
 
             return treePrototypes;
+        }
+
+        /// <summary>
+        /// The trees' prefabs made again where they are (their shapes, their trunks' colliders), without planting the
+        /// woods again: the terrains know them by their GUIDs, which stay (Keep).
+        /// <c>Unity -batchmode -quit -executeMethod GuWorld.Editor.QingMaoBuilder.RebuildTreePrefabs</c>
+        /// </summary>
+        public static void RebuildTreePrefabs()
+        {
+            BuildLog.Begin("Qing Mao: the trees' prefabs again");
+            treePrototypes = null;
+            var made = TreePrototypes();
+            AssetDatabase.SaveAssets();
+            BuildLog.Write($"trees: {made.Length} prefabs made again");
         }
 
         /// <summary>A tree as a prefab: its shape at three levels of detail (the builder is told which), and its trunk solid.</summary>
@@ -126,7 +142,7 @@ namespace GuWorld.Editor
         {
             var random = new System.Random(5);
             float R() => (float)random.NextDouble();
-            var points = new[] { Vector3.zero, new Vector3(0.4f, 3.5f, 0.1f), new Vector3(1.3f, 7, -0.2f), new Vector3(1.0f, 10.5f, 0.3f), new Vector3(1.6f, 13, 0.1f) };
+            var points = new[] { Vector3.zero, new Vector3(0.1f, 3.6f, 0.03f), new Vector3(1.2f, 7, -0.2f), new Vector3(1.0f, 10.5f, 0.3f), new Vector3(1.6f, 13, 0.1f) };
 
             for (var i = 0; i + 1 < points.Length; i++)
             {
@@ -247,7 +263,7 @@ namespace GuWorld.Editor
         /// <summary>A dead tree: grey, bare and crooked.</summary>
         static void DeadTreeShape(MeshKit kit, int level)
         {
-            var points = new[] { Vector3.zero, new Vector3(0.3f, 4, 0.2f), new Vector3(-0.2f, 8, 0.5f), new Vector3(0.4f, 11, 0.2f) };
+            var points = new[] { Vector3.zero, new Vector3(0.08f, 4, 0.05f), new Vector3(-0.2f, 8, 0.5f), new Vector3(0.4f, 11, 0.2f) };
 
             for (var i = 0; i + 1 < points.Length; i++)
             {
