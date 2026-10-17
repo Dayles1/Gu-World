@@ -18,8 +18,17 @@ namespace GuWorld.Render
     [RequireComponent(typeof(HeroMotor))]
     public class HeroView : MonoBehaviour
     {
-        /// <summary>Heights at fifteen, m: a tall boy and a tall girl.</summary>
-        public static float HeightOf(Gender gender) => gender == Gender.Female ? 1.68f : 1.78f;
+        /// <summary>
+        /// The figure's height setting for the hero, m. On the grown-ups' bodies: a tall boy and a tall girl
+        /// of fifteen. The teenagers' own bodies have shorter legs for their height, so the figure (fitted by
+        /// the hips) stands taller than its setting: these make them 1.70 and 1.60 m.
+        /// </summary>
+        public static float HeightOf(Gender gender) => TeenBodies
+            ? (gender == Gender.Female ? 1.523f : 1.658f)
+            : (gender == Gender.Female ? 1.68f : 1.78f);
+
+        /// <summary>The hero is drawn on a teenager's body (HumanBody.Parts' teen models are there).</summary>
+        public static bool TeenBodies;
 
         public HumanBody.Parts Parts;
         public ThirdPersonCamera Camera;

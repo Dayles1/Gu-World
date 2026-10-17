@@ -40,8 +40,8 @@ namespace GuWorld.UI
 
         void ChatPage()
         {
-            var panel = UiKit.Image("Chat", pageRoot, UiKit.Hex(0x0B0A0A, 0.72f), UiKit.Chamfer).rectTransform;
-            panel.Place(Vector2.zero, Vector2.zero, 24, 104, -820, -560);
+            var panel = UiKit.Image("Chat", pageRoot, UiKit.Hex(0x0B0A0A, 0.5f), UiKit.Chamfer).rectTransform;
+            panel.Place(Vector2.zero, Vector2.zero, 24, 104, -820, -440);
             var lines = UiKit.Rect("Lines", panel).Place(Vector2.zero, Vector2.one, 16, 64, 16, 10);
             lines.Stack<VerticalLayoutGroup>(2, null, TextAnchor.LowerLeft);
             var first = Mathf.Max(0, log.Count - ChatLines);

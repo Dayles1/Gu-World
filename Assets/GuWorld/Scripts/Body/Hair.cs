@@ -40,7 +40,11 @@ namespace GuWorld.Body
         /// hair is handled by the caller (it is already there, or Borrow brings it).
         /// </summary>
         /// <param name="strands">A hair material with a strand texture, for the curtain and the tail (null: the plain one).</param>
-        public static List<SkinnedMeshRenderer> Grow(SkinData body, HeadFrame frame, Look look, Material hair, Material stubble, Material strands = null)
+        /// <param name="allGrown">
+        /// No model's own hair to wear (a teenager's body: the grown-ups' cuts sit badly on its head): the parted cut
+        /// grown as a cap, the buns as a cap and a tail.
+        /// </param>
+        public static List<SkinnedMeshRenderer> Grow(SkinData body, HeadFrame frame, Look look, Material hair, Material stubble, Material strands = null, bool allGrown = false)
         {
             var grown = new List<SkinnedMeshRenderer>();
 
@@ -49,7 +53,7 @@ namespace GuWorld.Body
                 if (piece != null) grown.Add(piece);
             }
 
-            if (Capped(look.Hair))
+            if (Capped(look.Hair) || (allGrown && ModelHair(look.Hair) != null))
             {
                 Add(Shell.Cut(body, Scalp(body, frame, Fringe(look.Hair)), 0.005f * frame.Scale, hair, "Hair_cap"));
             }
@@ -59,7 +63,7 @@ namespace GuWorld.Body
                 Add(Curtain(body, frame, look.Hair, strands != null ? strands : hair));
             }
 
-            if (look.Hair == HairStyle.Ponytail)
+            if (look.Hair == HairStyle.Ponytail || (allGrown && look.Hair == HairStyle.Buns))
             {
                 Add(Ponytail(body, frame, strands != null ? strands : hair));
             }

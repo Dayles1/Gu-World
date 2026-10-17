@@ -101,15 +101,15 @@ namespace GuWorld.Creatures
             }
         }
 
-        /// <summary>A pack called up beside the hero (`count` wolves, 18–26 m off); how many came.</summary>
-        public int CallNear(int count)
+        /// <summary>A pack called up beside the hero (`count` wolves, 18–26 m off; toward a way, if given); how many came.</summary>
+        public int CallNear(int count, Vector3? toward = null)
         {
             if (hero == null)
             {
                 return 0;
             }
 
-            var angle = Random.value * Mathf.PI * 2;
+            var angle = toward.HasValue ? Mathf.Atan2(toward.Value.z, toward.Value.x) + (Random.value - 0.5f) * 0.6f : Random.value * Mathf.PI * 2;
             var at = hero.position + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * (18 + Random.value * 8);
             var den = new Den { At = at, Size = count, Pack = 1000 + dens.Count, Called = true };
             dens.Add(den);

@@ -275,6 +275,8 @@ namespace GuWorld
         bool absorbShot;
         /// <summary>`-chat "/tp g"`: the chat open with that typed in (its suggestions shown).</summary>
         string chatShot;
+        /// <summary>`-wolves 3`: a pack called up before the camera.</summary>
+        int wolvesShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
         int castFrames = 5;
         /// <summary>`-view x,y,z,yaw,pitch` (with -screenshot): the camera held there, looking that way (degrees).</summary>
@@ -529,6 +531,8 @@ namespace GuWorld
                 castAt = Has(args, "-cast");
                 aimShot = Has(args, "-aim");
                 absorbShot = Has(args, "-absorb");
+                var wolvesAt = System.Array.IndexOf(args, "-wolves");
+                wolvesShot = wolvesAt >= 0 && wolvesAt + 1 < args.Length && int.TryParse(args[wolvesAt + 1], out var n) ? n : 0;
                 var chatAt = System.Array.IndexOf(args, "-chat");
                 chatShot = chatAt >= 0 && chatAt + 1 < args.Length ? args[chatAt + 1] : null;
                 var castFramesAt = System.Array.IndexOf(args, "-cast");
@@ -678,9 +682,13 @@ namespace GuWorld
             {
                 male = HeroModel,
                 female = HeroModelFemale,
+                // Sixteen-year-olds' bodies (MakeHuman, Tools/Character): the hero's and the young villagers'.
+                teenMale = Resources.Load<GameObject>("Models/human-teen-male"),
+                teenFemale = Resources.Load<GameObject>("Models/human-teen-female"),
                 cloth = ClothMaterial,
                 faint = FaintMaterial,
             };
+            HeroView.TeenBodies = picture.Parts.teenMale != null && picture.Parts.teenFemale != null;
             picture.Camera = view;
             health = hero.AddComponent<Health>();
             cultivator = hero.AddComponent<Cultivator>();
@@ -1354,6 +1362,11 @@ namespace GuWorld
                 if (aimShot && screenshotFrame > 100 && cultivator.KindOn(0) != null)
                 {
                     ShowAim(cultivator.KindOn(0));
+                }
+
+                if (wolvesShot > 0 && screenshotFrame == 60)
+                {
+                    wolves.CallNear(wolvesShot, view.transform.forward);
                 }
 
                 if (chatShot != null && screenshotFrame == 110)

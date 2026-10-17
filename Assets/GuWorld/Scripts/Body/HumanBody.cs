@@ -99,9 +99,23 @@ namespace GuWorld.Body
             public Material cloth;
             /// <summary>See-through URP Lit, for stubble.</summary>
             public Material faint;
+            /// <summary>
+            /// The teenagers' bodies (MakeHuman, Tools/Character): slim sixteen-year-olds, for the hero and the
+            /// young (youth from TeenFrom up); the grown-ups' bodies are the models above.
+            /// </summary>
+            public GameObject teenMale;
+            public GameObject teenFemale;
 
             public GameObject Model(Gender gender) => gender == Gender.Female ? female : male;
+
+            /// <summary>The body a figure of an age is made from: a teenager's when there is one and the age is young.</summary>
+            public GameObject ModelFor(Gender gender, float youth) => IsTeen(gender, youth) ? (gender == Gender.Female ? teenFemale : teenMale) : Model(gender);
+
+            public bool IsTeen(Gender gender, float youth) => youth >= TeenFrom && (gender == Gender.Female ? teenFemale : teenMale) != null;
         }
+
+        /// <summary>From this youth up a figure is made from the teenager's body (the hero, children, students).</summary>
+        public const float TeenFrom = 0.8f;
 
         /// <summary>How a body is grown beyond its look: its age, its hair's colour, its clothes' dye.</summary>
         public struct Build
@@ -179,8 +193,8 @@ namespace GuWorld.Body
             Fit(Mannequin.Hips - Mannequin.HipJoint);
             Calibrate();
 
-            // A teenager: the head a little bigger for the body.
-            if (bones.TryGetValue("Head", out var headBone))
+            // A teenager on a grown-up's body: the head a little bigger for it (the teenager's own body has its own).
+            if (!parts.IsTeen(look.Gender, build.youth) && bones.TryGetValue("Head", out var headBone))
             {
                 headBone.localScale = Vector3.one * (1 + TeenHead * build.youth);
             }
@@ -256,6 +270,33 @@ namespace GuWorld.Body
             Hair.Borrow(skin, frame, HeadFrame.Measure(theirSkin, theirEyes, theirBrows), hair, material, name);
         }
 
+        /// <summary>The grown-ups' model that has a hairstyle of its own (this gender's first), or null.</summary>
+        static GameObject HairDonor(Parts parts, Gender gender, string hair)
+        {
+            if (hair == null)
+            {
+                return null;
+            }
+
+            foreach (var model in new[] { parts.Model(gender), parts.Model(gender == Gender.Male ? Gender.Female : Gender.Male) })
+            {
+                if (model == null)
+                {
+                    continue;
+                }
+
+                foreach (var renderer in model.GetComponentsInChildren<SkinnedMeshRenderer>(true))
+                {
+                    if (renderer.name == hair)
+                    {
+                        return model;
+                    }
+                }
+            }
+
+            return null;
+        }
+
         /// <summary>The mesh of the renderer of that name (the model's eyes, its brows), or null.</summary>
         static Mesh Find(SkinnedMeshRenderer[] renderers, string name)
         {
@@ -316,7 +357,9 @@ namespace GuWorld.Body
                 shelf = go.transform;
             }
 
-            var model = parts.Model(look.Gender);
+            var model = parts.ModelFor(look.Gender, build.youth);
+            // The teenager's body is young and slim as it is: not made younger, nor its muscles smoothed.
+            var teen = parts.IsTeen(look.Gender, build.youth);
             var keepHair = Hair.ModelHair(look.Hair);
             var instance = Object.Instantiate(model, shelf, false);
             instance.name = model.name;
@@ -417,15 +460,18 @@ namespace GuWorld.Body
                     skin = new SkinData(skinRenderer);
 
                     // Younger: the face and the build (every mesh of the model together).
-                    if (build.youth > 0.01f)
+                    if (build.youth > 0.01f && !teen)
                     {
                         Youth.Reshape(skin, HeadFrame.Measure(skin, Find(renderers, "Eyes"), Find(renderers, "Eyebrows")), look.Gender, renderers, build.youth);
                         skin = new SkinData(skinRenderer);
                     }
 
                     // No bodybuilder's muscles, young or old: the skin smoothed (the clothes are cut from it next).
-                    Muscles.Smooth(skinRenderer);
-                    skin = new SkinData(skinRenderer);
+                    if (!teen)
+                    {
+                        Muscles.Smooth(skinRenderer);
+                        skin = new SkinData(skinRenderer);
+                    }
 
                     // Kept for every look of this shape (the meshes reshaped here are this body's own copies).
                     shaped = new Mesh[renderers.Length];
@@ -456,14 +502,15 @@ namespace GuWorld.Body
                 var stubble = new Material(parts.faint) { name = "Stubble" };
                 Clothes.SetColour(stubble, new Color(hairColour.r * 0.7f, hairColour.g * 0.7f, hairColour.b * 0.7f, 0.5f));
 
-                // 2. The hair: the other model's own cut, when it is that one…
-                if (keepHair != null && !ownHairThere)
+                // 2. The hair: a model's own cut, when it is that one (the grown-ups' models have them; fitted to this head)…
+                var donor = HairDonor(parts, look.Gender, keepHair);
+
+                if (keepHair != null && !ownHairThere && donor != null && !teen)
                 {
-                    var other = parts.Model(look.Gender == Gender.Male ? Gender.Female : Gender.Male);
-                    BorrowHair(other, keepHair, skin, frame, hairTexture != null ? hairTexture : hair, hairColour);
+                    BorrowHair(donor, keepHair, skin, frame, hairTexture != null ? hairTexture : hair, hairColour);
                 }
 
-                // …or grown, with the beard. Hanging hair takes the model's strand texture.
+                // …or grown, with the beard. Hanging hair takes a model's strand texture (this one's, or the donor's).
                 Material strands = null;
 
                 foreach (var renderer in renderers)
@@ -471,14 +518,31 @@ namespace GuWorld.Body
                     if (renderer.name.StartsWith("Hair") && renderer.sharedMaterial != null)
                     {
                         strands = new Material(renderer.sharedMaterial) { name = "Hair strands" };
-                        Tint(strands, hairColour);
-                        Paint.Sharpen(strands);
 
                         break;
                     }
                 }
 
-                Hair.Grow(skin, frame, look, hair, stubble, strands);
+                if (strands == null && (donor ?? parts.Model(look.Gender)) is GameObject source)
+                {
+                    foreach (var renderer in source.GetComponentsInChildren<SkinnedMeshRenderer>(true))
+                    {
+                        if (renderer.name.StartsWith("Hair") && renderer.sharedMaterial != null)
+                        {
+                            strands = new Material(renderer.sharedMaterial) { name = "Hair strands" };
+
+                            break;
+                        }
+                    }
+                }
+
+                if (strands != null)
+                {
+                    Tint(strands, hairColour);
+                    Paint.Sharpen(strands);
+                }
+
+                Hair.Grow(skin, frame, look, hair, stubble, strands, teen);
                 step.Dispose();
 
                 // 3. The clothes, from the skin out.

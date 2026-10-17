@@ -1,0 +1,85 @@
+===== NEW: D:\Dev\Games\Gu World\Tools\Character\out\human-teen-male.glb
+objects after Blender's glTF import:
+  Armature (ARMATURE, parent=None)
+  Icosphere (MESH, parent=None)
+  Eyebrows (MESH, parent=Armature)
+  Eyes (MESH, parent=Armature)
+  SuperHero_Male (MESH, parent=Armature)
+armature object: Armature, 65 bones
+skinned meshes:
+  Eyebrows: mesh 'Eyebrows', 374 verts, 560 tris, materials ['MI_Hair_Eyebrows', 'MI_Hair_Eyelashes'], 65 vertex groups
+  Eyes: mesh 'Eyes', 552 verts, 1060 tris, materials ['MI_Eyes'], 65 vertex groups
+  SuperHero_Male: mesh 'SuperHero_Male', 14517 verts, 26756 tris, materials ['MI_Superhero_Male'], 65 vertex groups
+total triangles: 28376
+body height (meshes without hair): 1.7000 m, arm span 1.7247 m, lowest point z=-0.0000
+rest pose: upper arm -0.00 deg below horizontal, forearm -0.00 deg, thigh 90.00 deg below horizontal -> T-pose
+left side on +X (glTF): True; faces -Y (Blender) = +Z (glTF)
+hip joints above the sole (ball_leaf): 0.8777 m; ball_leaf above mesh bottom 0.0122 m
+height the game's Fit() gives it, in figure units (x HeroView.HeightOf/1.8 for metres): 1.8461
+glTF skin joints (65, in order): root, pelvis, spine_01, spine_02, spine_03, neck_01, Head, clavicle_l, upperarm_l, lowerarm_l, hand_l, index_01_l, index_02_l, index_03_l, index_04_leaf_l, middle_01_l, middle_02_l, middle_03_l, middle_04_leaf_l, pinky_01_l, pinky_02_l, pinky_03_l, pinky_04_leaf_l, ring_01_l, ring_02_l, ring_03_l, ring_04_leaf_l, thumb_01_l, thumb_02_l, thumb_03_l, thumb_04_leaf_l, clavicle_r, upperarm_r, lowerarm_r, hand_r, index_01_r, index_02_r, index_03_r, index_04_leaf_r, middle_01_r, middle_02_r, middle_03_r, middle_04_leaf_r, pinky_01_r, pinky_02_r, pinky_03_r, pinky_04_leaf_r, ring_01_r, ring_02_r, ring_03_r, ring_04_leaf_r, thumb_01_r, thumb_02_r, thumb_03_r, thumb_04_leaf_r, thigh_l, calf_l, foot_l, ball_l, ball_leaf_l, thigh_r, calf_r, foot_r, ball_r, ball_leaf_r
+glTF materials:
+  MI_Hair_Eyebrows: alphaMode MASK, doubleSided True, baseColor image/png 512x512
+  MI_Hair_Eyelashes: alphaMode MASK, doubleSided True, baseColor image/png 512x512
+  MI_Eyes: alphaMode OPAQUE, doubleSided True, baseColor image/jpeg 512x512
+  MI_Superhero_Male: alphaMode OPAQUE, doubleSided True, baseColor image/jpeg 2048x2048
+
+===== CURRENT: D:\Dev\Games\Gu World\Assets\GuWorld\Models\human-male.glb
+objects after Blender's glTF import:
+  Armature (ARMATURE, parent=None)
+  Icosphere (MESH, parent=None)
+  Eyebrows (MESH, parent=Armature)
+  Eyes (MESH, parent=Armature)
+  Hair_SimpleParted (MESH, parent=Armature)
+  SuperHero_Male (MESH, parent=Armature)
+armature object: Armature, 65 bones
+skinned meshes:
+  Eyebrows: mesh 'Face', 646 verts, 984 tris, materials ['MI_Hair_1'], 65 vertex groups
+  Eyes: mesh 'Face.001', 556 verts, 768 tris, materials ['MI_Eyes'], 65 vertex groups
+  SuperHero_Male: mesh 'Sphere.005_Retopology.004', 7281 verts, 12566 tris, materials ['MI_Superhero_Male'], 65 vertex groups
+  Hair_SimpleParted: mesh 'Plane.002', 757 verts, 1301 tris, materials ['MI_Hair_1.001'], 65 vertex groups
+total triangles: 15619
+body height (meshes without hair): 1.8196 m, arm span 1.8063 m, lowest point z=-0.0095
+rest pose: upper arm -0.00 deg below horizontal, forearm 0.00 deg, thigh 89.99 deg below horizontal -> T-pose
+left side on +X (glTF): True; faces -Y (Blender) = +Z (glTF)
+hip joints above the sole (ball_leaf): 0.9560 m; ball_leaf above mesh bottom 0.0247 m
+height the game's Fit() gives it, in figure units (x HeroView.HeightOf/1.8 for metres): 1.8024
+glTF skin joints (65, in order): root, pelvis, spine_01, spine_02, spine_03, neck_01, Head, clavicle_l, upperarm_l, lowerarm_l, hand_l, index_01_l, index_02_l, index_03_l, index_04_leaf_l, middle_01_l, middle_02_l, middle_03_l, middle_04_leaf_l, pinky_01_l, pinky_02_l, pinky_03_l, pinky_04_leaf_l, ring_01_l, ring_02_l, ring_03_l, ring_04_leaf_l, thumb_01_l, thumb_02_l, thumb_03_l, thumb_04_leaf_l, clavicle_r, upperarm_r, lowerarm_r, hand_r, index_01_r, index_02_r, index_03_r, index_04_leaf_r, middle_01_r, middle_02_r, middle_03_r, middle_04_leaf_r, pinky_01_r, pinky_02_r, pinky_03_r, pinky_04_leaf_r, ring_01_r, ring_02_r, ring_03_r, ring_04_leaf_r, thumb_01_r, thumb_02_r, thumb_03_r, thumb_04_leaf_r, thigh_l, calf_l, foot_l, ball_l, ball_leaf_l, thigh_r, calf_r, foot_r, ball_r, ball_leaf_r
+glTF materials:
+  MI_Hair_1: alphaMode OPAQUE, doubleSided True, baseColor image/jpeg 256x256, normal map
+  MI_Eyes: alphaMode OPAQUE, doubleSided True, baseColor image/jpeg 256x256, normal map
+  MI_Superhero_Male: alphaMode OPAQUE, doubleSided True, baseColor image/jpeg 1024x1024, normal map, metal/rough map
+  MI_Hair_1: alphaMode OPAQUE, doubleSided True, baseColor image/jpeg 512x512, normal map
+
+===== DIFFERENCES (new vs current)
+  joints: identical (65, same order)
+  mesh nodes: old ['Eyebrows', 'Eyes', 'Hair_SimpleParted', 'SuperHero_Male']  new ['Eyebrows', 'Eyes', 'SuperHero_Male']
+  materials: old ['MI_Eyes', 'MI_Hair_1', 'MI_Superhero_Male']  new ['MI_Eyes', 'MI_Hair_Eyebrows', 'MI_Hair_Eyelashes', 'MI_Superhero_Male']
+  triangles total: old 15619  new 28376
+  height_mesh_space: old 1.8196  new 1.7
+  hip_height_above_sole: old 0.956  new 0.8777
+  leg_length: old 0.8876  new 0.8236
+  upperarm_l_down_deg: old -0.0  new -0.0001
+  lowerarm_l_down_deg: old -0.0  new -0.0
+  left_side_x_sign: same (+X)
+  toes_point: same (+Z)
+  hand_l_index_to_pinky: old [-0.243, 0.014, -0.97]  new [-0.134, -0.0, -0.991]
+  hand_l_thumb_offset: old [0.093, -0.064, 0.07]  new [0.069, -0.042, 0.074]
+  middle_finger_l_dir: old [0.999, -0.038, -0.022]  new [1.0, 0.0, -0.0]
+  thigh_l_dir: old [-0.0, -0.429, -0.0]  new [-0.0, -0.408, -0.0]
+  max_rest_vs_bind_offset: old 0.0  new 0.0
+  Blender armature: same 65 bones with the same parents
+  armature object name: new 'Armature', current 'Armature'
+  mesh node 'Eyebrows': tris new 560 / current 984; materials new ['MI_Hair_Eyebrows', 'MI_Hair_Eyelashes'] / current ['MI_Hair_1']
+  mesh node 'Eyes': tris new 1060 / current 768; materials new ['MI_Eyes'] / current ['MI_Eyes']
+  mesh node 'Hair_SimpleParted': only in the current model (1301 tris, ['MI_Hair_1.001'])
+  mesh node 'SuperHero_Male': tris new 26756 / current 12566; materials new ['MI_Superhero_Male'] / current ['MI_Superhero_Male']
+  materials only in new: ['MI_Hair_Eyebrows', 'MI_Hair_Eyelashes']; only in current: ['MI_Hair_1', 'MI_Hair_1.001']
+  height: new 1.7000, current 1.8196
+  hip_above_sole: new 0.8777, current 0.9560
+  ball_leaf_above_mesh_bottom: new 0.0122, current 0.0247
+  head_top_above_Head_joint: new 0.1590, current 0.2103
+  figure_height_after_fit: new 1.8461, current 1.8024
+  upperarm_l_down_deg: new -0.0001, current -0.0001
+  thigh_l_down_deg: new 90.0000, current 89.9866
+  left_is_plus_x: new True, current True  (same)
+  faces: new -Y (Blender) = +Z (glTF), current -Y (Blender) = +Z (glTF)  (same)
