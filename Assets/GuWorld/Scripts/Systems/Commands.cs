@@ -30,6 +30,7 @@ namespace GuWorld.Systems
         int SpawnWolves(int count);
         /// <summary>A pack of a kind of wolf brought near the hero (a beast king with its pack); how many came.</summary>
         int SpawnPack(GuWorld.Creatures.WolfKind kind, int count);
+        int SpawnMasters(string clan, int rank, int count);
     }
 
     /// <summary>A command of the chat: its name (and others it answers to), how it is written, what it does.</summary>
@@ -584,6 +585,30 @@ namespace GuWorld.Systems
                     var came = host.SpawnPack(kind, count);
 
                     return came > 0 ? $"Пришло волков: {came} ({kind.Name})" : "!Здесь волкам негде встать";
+                },
+            });
+
+            Add(new Command
+            {
+                Name = "masters",
+                Aliases = new[] { "мастера", "гу-мастера" },
+                Usage = "/masters [bai|xiong|gu_yue] [ранг 1–3] [сколько]",
+                About = "Гу-мастера другого клана рядом — нападают сразу",
+                Suggest = (_, i) => i == 0 ? new[] { "bai", "xiong", "gu_yue" } : i == 1 ? new[] { "1", "2", "3" } : i == 2 ? new[] { "1", "2", "3" } : Enumerable.Empty<string>(),
+                Run = a =>
+                {
+                    var clan = a.Length > 0 ? a[0].ToLowerInvariant() : "bai";
+
+                    if (clan != "bai" && clan != "xiong" && clan != "gu_yue")
+                    {
+                        return "!Нет такого клана: bai, xiong или gu_yue";
+                    }
+
+                    var rank = a.Length > 1 ? Mathf.Clamp((int)Number(a[1]), 1, 3) : 1;
+                    var count = a.Length > 2 ? Mathf.Clamp((int)Number(a[2]), 1, 6) : 1;
+                    var came = host.SpawnMasters(clan, rank, count);
+
+                    return came > 0 ? $"Пришли Гу-мастера: {came} ({GuWorld.Creatures.MasterKinds.Of(clan, rank).Name})" : "!Здесь им негде встать";
                 },
             });
 

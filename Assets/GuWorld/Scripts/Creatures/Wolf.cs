@@ -38,7 +38,7 @@ namespace GuWorld.Creatures
     /// king's body a Gu may come.
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
-    public class Wolf : MonoBehaviour, IStrikable, IStaggerable
+    public class Wolf : MonoBehaviour, IStrikable, IStaggerable, IFoe
     {
         const float WanderSpeed = 1.6f;
         const float FleeSpeed = 7;
@@ -66,9 +66,9 @@ namespace GuWorld.Creatures
         public int Level { get; private set; } = 1;
         public float MaxHealth { get; private set; } = 60;
         public float Health { get; private set; } = 60;
-        public bool Dead => state == State.Dead;
+        public bool Dead => state == Mind.Dead;
         /// <summary>Hunting the hero now.</summary>
-        public bool Hunting => state == State.Chase;
+        public bool Hunting => state == Mind.Chase;
         /// <summary>The den it roams round, and the pack it belongs to.</summary>
         public Vector3 Den;
         public int Pack;
@@ -81,7 +81,12 @@ namespace GuWorld.Creatures
         /// <summary>How tall it stands, m (the HUD puts its name over it).</summary>
         public float Height => 1.15f * Kind.Scale;
 
-        enum State
+        public string Title => Kind.Name;
+        public string Rung => Kind.TierName;
+        public int Tier => Kind.Tier;
+        public string State => (Shielded ? "  ·  ГРОМОВОЙ ЩИТ" : "") + (Berserk ? "  ·  НЕИСТОВСТВО" : "") + (Maddened ? "  ·  ЯРОСТЬ СТАИ" : "");
+
+        enum Mind
         {
             Roam,
             Chase,
@@ -89,7 +94,7 @@ namespace GuWorld.Creatures
             Dead,
         }
 
-        State state;
+        Mind state;
         CharacterController controller;
         Transform hero;
         Health heroHealth;
@@ -118,7 +123,7 @@ namespace GuWorld.Creatures
         /// <summary>A blow throws it: away (and up) at this speed; it cannot bite for a moment. A king barely moves.</summary>
         public void Push(Vector3 velocity)
         {
-            if (state == State.Dead)
+            if (state == Mind.Dead)
             {
                 return;
             }
@@ -192,8 +197,17 @@ namespace GuWorld.Creatures
             return wolf;
         }
 
-        void OnEnable() => All.Add(this);
-        void OnDisable() => All.Remove(this);
+        void OnEnable()
+        {
+            All.Add(this);
+            Foes.All.Add(this);
+        }
+
+        void OnDisable()
+        {
+            All.Remove(this);
+            Foes.All.Remove(this);
+        }
 
         void OnDestroy()
         {
@@ -352,7 +366,7 @@ namespace GuWorld.Creatures
                 return;
             }
 
-            if (state == State.Dead)
+            if (state == Mind.Dead)
             {
                 Lie(dt);
 
@@ -366,7 +380,7 @@ namespace GuWorld.Creatures
             {
                 Hurt(hurtPerSecond * dt, new Strike { Direction = transform.forward, Point = transform.position + Vector3.up * Height * 0.6f });
 
-                if (state == State.Dead)
+                if (state == Mind.Dead)
                 {
                     return;
                 }
@@ -415,16 +429,16 @@ namespace GuWorld.Creatures
 
             if (Time.time < fearUntil)
             {
-                state = State.Flee;
+                state = Mind.Flee;
 
                 return;
             }
 
             if (Time.time < sleepUntil || Time.time < blindUntil)
             {
-                if (state == State.Chase)
+                if (state == Mind.Chase)
                 {
-                    state = State.Roam;
+                    state = Mind.Roam;
                     roamTo = transform.position;
                 }
 
@@ -435,9 +449,9 @@ namespace GuWorld.Creatures
             var notice = Kind.SeesHidden ? 1 : Notice;
             var sees = (Night ? SeesByNight : SeesByDay) * Kind.Sight * notice;
 
-            if (state == State.Chase && notice <= 0 && heroDistance > Reach * 2)
+            if (state == Mind.Chase && notice <= 0 && heroDistance > Reach * 2)
             {
-                state = State.Roam;
+                state = Mind.Roam;
                 roamTo = transform.position;
 
                 return;
@@ -445,7 +459,7 @@ namespace GuWorld.Creatures
 
             switch (state)
             {
-                case State.Roam:
+                case Mind.Roam:
                     if (!heroDown && heroDistance < sees)
                     {
                         Hunt();
@@ -453,11 +467,11 @@ namespace GuWorld.Creatures
 
                     break;
 
-                case State.Chase:
+                case Mind.Chase:
                     // Too far from the den, the hero gone or down: back to roaming.
                     if (heroDown || fromDen > GivesUp * Kind.Sight || heroDistance > GivesUp * 0.7f * Kind.Sight)
                     {
-                        state = State.Roam;
+                        state = Mind.Roam;
                         roamTo = Den;
                     }
                     else
@@ -472,10 +486,10 @@ namespace GuWorld.Creatures
 
                     break;
 
-                case State.Flee:
+                case Mind.Flee:
                     if (fromDen < 6)
                     {
-                        state = State.Roam;
+                        state = Mind.Roam;
                         // Rested a little, it may come again.
                         Health = Mathf.Min(MaxHealth, Health + MaxHealth * 0.25f);
                     }
@@ -546,9 +560,9 @@ namespace GuWorld.Creatures
                 {
                     other.howledUntil = Time.time + 8;
 
-                    if (other.state == State.Roam)
+                    if (other.state == Mind.Roam)
                     {
-                        other.state = State.Chase;
+                        other.state = Mind.Chase;
                     }
                 }
             }
@@ -577,18 +591,18 @@ namespace GuWorld.Creatures
         /// <summary>Turns on the hero, and the pack with it.</summary>
         void Hunt()
         {
-            if (state == State.Dead || state == State.Flee)
+            if (state == Mind.Dead || state == Mind.Flee)
             {
                 return;
             }
 
-            state = State.Chase;
+            state = Mind.Chase;
 
             foreach (var other in All)
             {
-                if (other != this && other.Pack == Pack && other.state == State.Roam && !other.Tamed && Time.time >= other.sleepUntil && Flat(other.transform.position - transform.position).magnitude < 60)
+                if (other != this && other.Pack == Pack && other.state == Mind.Roam && !other.Tamed && Time.time >= other.sleepUntil && Flat(other.transform.position - transform.position).magnitude < 60)
                 {
-                    other.state = State.Chase;
+                    other.state = Mind.Chase;
                 }
             }
         }
@@ -628,13 +642,13 @@ namespace GuWorld.Creatures
 
             switch (state)
             {
-                case State.Chase:
+                case Mind.Chase:
                     goal = DecoyActive && Flat(Decoy.position - transform.position).magnitude < 40 ? Decoy.position : hero.position;
                     // Close in, then hold at the bite's reach.
                     wanted = Flat(goal - transform.position).magnitude > Reach * 0.8f ? ChaseSpeed : 0;
                     break;
 
-                case State.Flee:
+                case Mind.Flee:
                     goal = Den;
                     wanted = FleeSpeed;
                     break;
@@ -748,7 +762,7 @@ namespace GuWorld.Creatures
             figure.localPosition = new Vector3(0, bob, lean * 0.25f) * Kind.Scale;
             figure.localRotation = Quaternion.Euler(lean * 10, 0, 0);
             head.localRotation = Quaternion.Euler(-10 + lean * 25 + Mathf.Sin(stride * 2) * 3 * pace, 0, 0);
-            tail.localRotation = Quaternion.Euler(state == State.Flee ? 40 : -10 * pace, Mathf.Sin(Time.time * (state == State.Chase ? 6 : 2)) * 14, 0);
+            tail.localRotation = Quaternion.Euler(state == Mind.Flee ? 40 : -10 * pace, Mathf.Sin(Time.time * (state == Mind.Chase ? 6 : 2)) * 14, 0);
         }
 
         bool DecoyActive => Decoy != null && Time.time < DecoyUntil;
@@ -761,7 +775,7 @@ namespace GuWorld.Creatures
         /// </summary>
         public void Afflict(Affliction kind, float seconds, float power)
         {
-            if (state == State.Dead || (seconds <= 0 && kind != Affliction.Tame))
+            if (state == Mind.Dead || (seconds <= 0 && kind != Affliction.Tame))
             {
                 return;
             }
@@ -795,7 +809,7 @@ namespace GuWorld.Creatures
                     break;
                 case Affliction.Fear:
                     fearUntil = Mathf.Max(fearUntil, until);
-                    state = State.Flee;
+                    state = Mind.Flee;
                     break;
                 case Affliction.Burn:
                     hurtPerSecond = Time.time < hurtUntil ? Mathf.Max(power, hurtPerSecond) : power;
@@ -803,7 +817,7 @@ namespace GuWorld.Creatures
                     break;
                 case Affliction.Tame:
                     Tamed = true;
-                    state = State.Roam;
+                    state = Mind.Roam;
                     break;
             }
         }
@@ -811,7 +825,7 @@ namespace GuWorld.Creatures
         /// <summary>Thrown off balance (its bite parried): it reels back and cannot bite for a while — a king for less.</summary>
         public void Stagger(float seconds, Vector3 away)
         {
-            if (state == State.Dead)
+            if (state == Mind.Dead)
             {
                 return;
             }
@@ -834,7 +848,7 @@ namespace GuWorld.Creatures
         /// </summary>
         public void TakeStrike(Strike strike, BodyPart? part)
         {
-            if (state == State.Dead)
+            if (state == Mind.Dead)
             {
                 return;
             }
@@ -844,7 +858,7 @@ namespace GuWorld.Creatures
             var harm = Wounds.Scale(power, toughness) * Mathf.Max(30, power * 0.3f) * (Shielded ? 0.4f : 1);
             Hurt(harm, strike);
 
-            if (state == State.Dead || harm < 0.5f)
+            if (state == Mind.Dead || harm < 0.5f)
             {
                 return;
             }
@@ -866,7 +880,7 @@ namespace GuWorld.Creatures
 
             if (Kind.Tier == 0 && Health < MaxHealth * 0.3f)
             {
-                state = State.Flee;
+                state = Mind.Flee;
             }
             else if (Time.time >= blindUntil)
             {
@@ -901,7 +915,7 @@ namespace GuWorld.Creatures
 
         void Die(Strike strike)
         {
-            state = State.Dead;
+            state = Mind.Dead;
             speed = 0;
             controller.enabled = false;
             deadFor = 0;

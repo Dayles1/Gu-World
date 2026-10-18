@@ -528,7 +528,29 @@ namespace GuWorld.Editor
                 Check(fist < 1 && kingHealth - king.Health > 60, $"a youth's fist hardly scratches a beast king ({fist:0.0}); a rank-three blow cuts it ({kingHealth - king.Health:0})");
             }
 
+            // Gu Masters of the other clans: their Gu are in the book; called up, they fight on sight; a moonblade wounds one,
+            // a blow far stronger kills them, and the stones in their pouch are the hero's.
+            Check(Creatures.MasterKinds.All.Length == 8 && Creatures.MasterKinds.Of("xiong", 3).Tier > 0 &&
+                  System.Array.TrueForAll(Creatures.MasterKinds.All, k => GuBook.Find(k.Far) != null && (k.Close == null || GuBook.Find(k.Close) != null) &&
+                                                                          (k.Shield == null || GuBook.Find(k.Shield) != null) && (k.Might == null || GuBook.Find(k.Might) != null)),
+                "eight kinds of Gu Masters, every Gu of theirs in the book");
+            var masters = game.SpawnMasters("bai", 1, 1);
+            var bai = Creatures.GuMaster.All.Find(m => !m.Dead);
+            Check(masters == 1 && bai != null && bai.Hostile && bai.GetComponentsInChildren<Combat.HitZone>().Length > 10 && Creatures.Foes.All.Contains(bai),
+                $"/masters calls up a Bai Gu Master, a body with parts to strike ({masters})");
+
+            if (bai != null)
+            {
+                var whole = bai.Health;
+                bai.TakeStrike(new Combat.Strike { Power = 100, Sharpness = 1, Direction = Vector3.forward, Point = bai.transform.position + Vector3.up }, Combat.BodyPart.Chest);
+                Check(bai.Health < whole - 5 && bai.Hunting, $"a moonblade wounds them, and they fight ({whole:0} → {bai.Health:0})");
+                var pouch = gu.Stones;
+                bai.TakeStrike(new Combat.Strike { Power = 3000, Sharpness = 1, Direction = Vector3.forward, Point = bai.transform.position + Vector3.up * 1.6f }, Combat.BodyPart.Head);
+                Check(bai.Dead && gu.Stones > pouch, $"a far stronger blow kills them, their stones are the hero's ({gu.Stones - pouch})");
+            }
+
             game.ClearWolves();
+            Check(Creatures.Foes.Living() == 0, "the proving ground's page sends every foe away");
 
             Check(Quests.Book.Length >= 9 && System.Array.Exists(Quests.Book, q => q.Event == "kill:wolf") && System.Array.Exists(Quests.Book, q => q.Gives != null),
                 $"the villagers have tasks past the academy's: wolves, a place, a delivery, a word ({Quests.Book.Length})");

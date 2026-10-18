@@ -687,6 +687,10 @@ namespace GuWorld
             wolves = WolfPacks.Create(body.transform, WolfDens());
             Wolf.Killed += OnWolfKilled;
             Wolf.Roared += OnWolfRoared;
+            // The other clans' Gu Masters at their posts round their villages, and those called up.
+            patrols = Patrols.Create(body.transform, picture.Parts, ClanLands());
+            GuMaster.Killed += OnMasterKilled;
+            GuMaster.Spoke += OnMasterSpoke;
 
             if (Sandbox)
             {
@@ -987,7 +991,7 @@ namespace GuWorld
             }
         }
 
-        /// <summary>Every wolf there is sent away (the proving ground's page).</summary>
+        /// <summary>Every wolf and Gu Master there is sent away (the proving ground's page).</summary>
         public void ClearWolves()
         {
             foreach (var wolf in Wolf.All.ToArray())
@@ -995,6 +999,14 @@ namespace GuWorld
                 if (wolf != null)
                 {
                     Destroy(wolf.gameObject);
+                }
+            }
+
+            foreach (var master in GuMaster.All.ToArray())
+            {
+                if (master != null)
+                {
+                    Destroy(master.gameObject);
                 }
             }
         }
@@ -2265,7 +2277,7 @@ namespace GuWorld
                 clock.Advance(Time.deltaTime);
                 using (HeroMarker.Auto()) cultivator.Tick(clock.Minutes);
                 // Sitting where no beast hunts the hero: meditation.
-                cultivator.Meditating = body.Sitting && !Wolf.All.Exists(w => w != null && w.Hunting && Vector3.Distance(w.transform.position, body.transform.position) < 40);
+                cultivator.Meditating = body.Sitting && !Foes.Hunting(body.transform.position, 40);
                 cultivator.Step(Time.deltaTime);
 
                 if (Sandbox)
@@ -2914,6 +2926,83 @@ namespace GuWorld
         public int SpawnPack(WolfKind kind, int count) =>
             wolves != null ? wolves.CallNear(kind.Tier > 0 ? WolfPacks.PackOf(kind, 1) : WolfPacks.PackOf(kind, Mathf.Max(1, count)), view.transform.forward) : 0;
 
+        Patrols patrols;
+
+        /// <summary>The Bai's and the Xiong's villages, whose Gu Masters keep posts round them (none on the proving ground).</summary>
+        IEnumerable<(Vector3 village, float radius, string clan)> ClanLands()
+        {
+            if (Location.id != QingMao.Id)
+            {
+                yield break;
+            }
+
+            foreach (var id in new[] { "bai", "xiong" })
+            {
+                var village = QingMao.Find(id);
+                var at = new Vector3(village.Centre.x, 0, village.Centre.y);
+                at.y = QingMao.GroundAt(at);
+
+                yield return (at, village.Radius, id);
+            }
+        }
+
+        public int SpawnMasters(string clan, int rank, int count)
+        {
+            if (patrols == null)
+            {
+                return 0;
+            }
+
+            var kinds = new MasterKind[Mathf.Clamp(count, 1, 6)];
+
+            for (var i = 0; i < kinds.Length; i++)
+            {
+                kinds[i] = MasterKinds.Of(clan, rank);
+            }
+
+            return patrols.CallNear(kinds, view.transform.forward);
+        }
+
+        /// <summary>A Gu Master says something aloud: heard within earshot.</summary>
+        void OnMasterSpoke(GuMaster master, string line)
+        {
+            if (body != null && Vector3.Distance(master.transform.position, body.transform.position) < 60)
+            {
+                menus.Notify($"{master.Title}: «{line}»");
+            }
+        }
+
+        /// <summary>A Gu Master killed: the stones in their pouch into the bag, and now and then one of their Gu.</summary>
+        void OnMasterKilled(GuMaster master)
+        {
+            var kind = master.Kind;
+            var stones = kind.Rank switch
+            {
+                1 => Random.Range(4, 11),
+                2 => Random.Range(18, 41),
+                _ => Random.Range(70, 151),
+            };
+            var kept = cultivator.Bag.Add(ItemBook.Stone, stones, clock.Minutes);
+            menus.Notify($"{master.Title} повержен — первобытных камней: {kept}");
+
+            foreach (var (id, chance) in new[] { (kind.Far, 0.3f), (kind.Shield, 0.15f), (kind.Close, 0.15f), (kind.Might, 0.1f) })
+            {
+                var found = GuBook.Find(id);
+
+                if (found != null && Random.value < chance && cultivator.Bag.Add(found.Item, 1, clock.Minutes) > 0)
+                {
+                    menus.Notify($"С тела снят Гу: {found.Name} — в сумке");
+                }
+            }
+
+            if (kind.Tier > 0)
+            {
+                menus.Banner($"{master.Title} повержен", master.Rung);
+            }
+
+            quests.Count("kill:master");
+        }
+
         /// <summary>A beast king does something the hero should know.</summary>
         void OnWolfRoared(Wolf wolf, string what)
         {
@@ -3373,6 +3462,8 @@ namespace GuWorld
             TreeBranch.Snapped -= OnSnap;
             Wolf.Killed -= OnWolfKilled;
             Wolf.Roared -= OnWolfRoared;
+            GuMaster.Killed -= OnMasterKilled;
+            GuMaster.Spoke -= OnMasterSpoke;
             GameSettings.Restore();
         }
 

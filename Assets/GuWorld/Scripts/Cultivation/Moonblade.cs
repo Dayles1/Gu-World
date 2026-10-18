@@ -16,7 +16,7 @@ namespace GuWorld.Cultivation
     /// heart, a hand — and the part decides the wound (Wounds); a blade that
     /// misses every part passes by. It never strikes its thrower.
     /// </summary>
-    public class Moonblade : MonoBehaviour
+    public class Moonblade : MonoBehaviour, IMissile
     {
         const float Speed = 30;
         /// <summary>How wide the cut is for walls and things (the blade's middle).</summary>
@@ -161,6 +161,11 @@ namespace GuWorld.Cultivation
 
         /// <summary>Whether it is still flying (not yet spent on a hit or at the end of its reach).</summary>
         public bool Flying => fading < 0;
+        public Vector3 Heading => direction;
+        public Collider Thrower => thrower;
+
+        void OnEnable() => Missiles.All.Add(this);
+        void OnDisable() => Missiles.All.Remove(this);
 
         /// <summary>Flies for `dt` seconds (the frame's; a check can drive it by hand).</summary>
         public void Step(float dt)

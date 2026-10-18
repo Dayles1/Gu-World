@@ -268,7 +268,7 @@ namespace GuWorld.Combat
                     continue;
                 }
 
-                if (owner.TryGetComponent<GuWorld.Creatures.Wolf>(out var wolf) && (wolf.Dead || wolf.Tamed))
+                if (owner is GuWorld.Creatures.IFoe foe && (foe.Dead || foe.Tamed))
                 {
                     continue;
                 }
@@ -478,9 +478,9 @@ namespace GuWorld.Combat
         /// <summary>A beast thrown back by a blow that can (the kick, the uppercut, the roundhouse).</summary>
         static void Knock(IStrikable target, Vector3 direction, Spec spec)
         {
-            if (spec.Knock > 0 && target is GuWorld.Creatures.Wolf wolf && !wolf.Dead)
+            if (spec.Knock > 0 && target is GuWorld.Creatures.IFoe foe && !foe.Dead)
             {
-                wolf.Push(Flat(direction) * spec.Knock + Vector3.up * spec.Knock * 0.35f);
+                foe.Push(Flat(direction) * spec.Knock + Vector3.up * spec.Knock * 0.35f);
             }
         }
 

@@ -76,7 +76,7 @@ namespace GuWorld.UI
                 Show(Page.Sandbox);
             }, 13);
 
-            Heading(modes, $"ВРАГИ · волков: {LivingWolves()}");
+            Heading(modes, $"ВРАГИ · живых: {LivingWolves()}");
             var g = GuWorld.Creatures.WolfKinds.Grey;
             var l = GuWorld.Creatures.WolfKinds.Lightning;
             UiKit.Choices(modes, new[] { "Серые ×3 (1–3)", "Молниевые ×3 (4–8)", "Убрать всех" }, -1, i =>
@@ -98,6 +98,23 @@ namespace GuWorld.UI
             UiKit.Choices(modes, new[] { "Отважный (12)", "Неистовый (20)", "Громовая корона (35)" }, -1, i =>
             {
                 Notify($"{kings[i].Name} идёт со стаей ({host.SpawnPack(kings[i], 1)})");
+                host.Resume();
+            }, 12);
+            // Gu Masters of the clans: a Bai with ice, a Xiong with the bear's strength, a Gu Yue with moonblades — a pair of
+            // youths of rank one, a master of rank two, an elder of rank three.
+            var masters = GuWorld.Creatures.MasterKinds.All;
+            string[] clans = { "bai", "xiong", "gu_yue" };
+            UiKit.Choices(modes, new[] { "Бай: лёд", "Сюн: медведь", "Гу Юэ: луна" }, -1, i =>
+            {
+                Notify($"Гу-мастера пришли: {host.SpawnMasters(clans[i], 1, 2)}");
+                host.Resume();
+            }, 12);
+            UiKit.Choices(modes, new[] { "Ранг 2", "Старейшина 3", "Отряд Бай+Сюн" }, -1, i =>
+            {
+                var came = i == 2
+                    ? host.SpawnMasters("bai", 1, 1) + host.SpawnMasters("xiong", 2, 1)
+                    : host.SpawnMasters(Random.value < 0.5f ? "bai" : "xiong", i == 0 ? 2 : 3, 1);
+                Notify($"Гу-мастера пришли: {came}");
                 host.Resume();
             }, 12);
 
@@ -268,14 +285,7 @@ namespace GuWorld.UI
 
         static int LivingWolves()
         {
-            var n = 0;
-
-            foreach (var wolf in GuWorld.Creatures.Wolf.All)
-            {
-                if (wolf != null && !wolf.Dead && !wolf.Tamed) n++;
-            }
-
-            return n;
+            return GuWorld.Creatures.Foes.Living();
         }
     }
 }

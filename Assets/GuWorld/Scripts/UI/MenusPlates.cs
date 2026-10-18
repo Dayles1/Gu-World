@@ -79,7 +79,7 @@ namespace GuWorld.UI
             }
 
             var used = 0;
-            Wolf boss = null;
+            IFoe boss = null;
             var bossDistance = float.PositiveInfinity;
             var playing = Current == Page.None;
 
@@ -88,18 +88,18 @@ namespace GuWorld.UI
                 var eye = plateCamera.transform.position;
                 var canvasRect = (RectTransform)hud;
 
-                foreach (var wolf in Wolf.All)
+                foreach (var wolf in Foes.All)
                 {
-                    if (wolf == null || wolf.Dead || used >= plates.Count)
+                    if (!(wolf is Object alive) || alive == null || wolf.Dead || used >= plates.Count)
                     {
                         continue;
                     }
 
                     var top = wolf.transform.position + Vector3.up * (wolf.Height + 0.45f);
                     var distance = Vector3.Distance(eye, top);
-                    var near = distance < 30 + 15 * wolf.Kind.Tier || wolf.Hunting || Time.time - wolf.StruckAt < 8;
+                    var near = distance < 30 + 15 * wolf.Tier || wolf.Hunting || Time.time - wolf.StruckAt < 8;
 
-                    if (wolf.Kind.Tier >= 2 && wolf.Hunting && distance < 90 && distance < bossDistance)
+                    if (wolf.Tier >= 2 && wolf.Hunting && distance < 90 && distance < bossDistance)
                     {
                         boss = wolf;
                         bossDistance = distance;
@@ -122,8 +122,8 @@ namespace GuWorld.UI
                     root.anchoredPosition = local + new Vector2(0, 10);
                     // Smaller far off, never too small to read.
                     root.localScale = Vector3.one * Mathf.Clamp(16 / Mathf.Max(1, distance), 0.95f, 1.2f);
-                    var colour = wolf.Tamed ? UiKit.EssenceLit : wolf.Berserk ? UiKit.Danger : TierColours[Mathf.Clamp(wolf.Kind.Tier, 0, 3)];
-                    name.text = $"{wolf.Kind.Name} <size=11>· ур. {wolf.Level}</size>" + (wolf.Tamed ? " <size=11>· ваш</size>" : "");
+                    var colour = wolf.Tamed ? UiKit.EssenceLit : wolf.Berserk ? UiKit.Danger : TierColours[Mathf.Clamp(wolf.Tier, 0, 3)];
+                    name.text = $"{wolf.Title} <size=11>· {(wolf is GuMaster ? wolf.Rung : $"ур. {wolf.Level}")}</size>" + (wolf.Tamed ? " <size=11>· ваш</size>" : "");
                     name.color = colour;
                     fill.anchorMax = new Vector2(Mathf.Clamp01(wolf.Health / wolf.MaxHealth), 1);
                     fillImage.color = wolf.Shielded ? UiKit.Hex(0x6FA8FF) : wolf.Tamed ? UiKit.Essence : UiKit.Danger;
@@ -142,12 +142,11 @@ namespace GuWorld.UI
 
             if (boss != null)
             {
-                bossName.text = $"{boss.Kind.Name}  <size=15><color=#A69A86>{boss.Kind.TierName} · уровень {boss.Level}</color></size>";
-                bossName.color = TierColours[Mathf.Clamp(boss.Kind.Tier, 0, 3)];
+                bossName.text = $"{boss.Title}  <size=15><color=#A69A86>{boss.Rung}{(boss is GuMaster ? "" : $" · уровень {boss.Level}")}</color></size>";
+                bossName.color = TierColours[Mathf.Clamp(boss.Tier, 0, 3)];
                 bossFill.anchorMax = new Vector2(Mathf.Clamp01(boss.Health / boss.MaxHealth), 1);
                 bossFillImage.color = boss.Shielded ? UiKit.Hex(0x6FA8FF) : boss.Berserk ? UiKit.Hex(0xE0533F) : UiKit.Danger;
-                bossState.text = $"{Mathf.CeilToInt(boss.Health)} / {Mathf.CeilToInt(boss.MaxHealth)}" +
-                                 (boss.Shielded ? "  ·  ГРОМОВОЙ ЩИТ" : "") + (boss.Berserk ? "  ·  НЕИСТОВСТВО" : "") + (boss.Maddened ? "  ·  ЯРОСТЬ СТАИ" : "");
+                bossState.text = $"{Mathf.CeilToInt(boss.Health)} / {Mathf.CeilToInt(boss.MaxHealth)}" + boss.State;
             }
         }
     }

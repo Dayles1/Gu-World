@@ -12,7 +12,7 @@ namespace GuWorld.Cultivation
     /// a Gu with a blast — bursts there. Past its reach it is half as strong; it fades at
     /// the end of its range. It never strikes its thrower.
     /// </summary>
-    public class GuBolt : MonoBehaviour
+    public class GuBolt : MonoBehaviour, IMissile
     {
         const float Speed = 32;
         const float SolidRadius = 0.2f;
@@ -35,6 +35,11 @@ namespace GuWorld.Cultivation
         public static GuBolt Last { get; private set; }
 
         public bool Flying => fading < 0;
+        public Vector3 Heading => direction;
+        public Collider Thrower => thrower;
+
+        void OnEnable() => Missiles.All.Add(this);
+        void OnDisable() => Missiles.All.Remove(this);
 
         public static GuBolt Throw(Vector3 from, Vector3 direction, GuKind kind, Collider thrower, float power)
         {

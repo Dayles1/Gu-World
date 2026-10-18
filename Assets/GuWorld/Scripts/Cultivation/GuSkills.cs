@@ -35,9 +35,9 @@ namespace GuWorld.Cultivation
         /// <summary>What a Gu's strike does to a beast besides wounding it (none to people and things).</summary>
         public static void Afflict(IStrikable target, GuKind kind)
         {
-            if (target is Wolf wolf && kind.Afflict != Affliction.None)
+            if (target is IFoe foe && kind.Afflict != Affliction.None)
             {
-                wolf.Afflict(kind.Afflict, kind.AfflictFor, kind.AfflictPower);
+                foe.Afflict(kind.Afflict, kind.AfflictFor, kind.AfflictPower);
             }
         }
 
@@ -128,22 +128,7 @@ namespace GuWorld.Cultivation
             return struck;
         }
 
-        /// <summary>The living, untamed beasts within a reach of a point.</summary>
-        public static IEnumerable<Wolf> Beasts(Vector3 at, float reach)
-        {
-            foreach (var wolf in Wolf.All.ToArray())
-            {
-                if (wolf != null && !wolf.Dead && !wolf.Tamed)
-                {
-                    var to = wolf.transform.position - at;
-                    to.y = 0;
-
-                    if (to.magnitude <= reach)
-                    {
-                        yield return wolf;
-                    }
-                }
-            }
-        }
+        /// <summary>The living foes not on the hero's side (beasts, Gu Masters) within a reach of a point.</summary>
+        public static IEnumerable<IFoe> Beasts(Vector3 at, float reach) => Foes.Near(at, reach);
     }
 }
