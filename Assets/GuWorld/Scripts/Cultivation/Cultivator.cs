@@ -766,7 +766,7 @@ namespace GuWorld.Cultivation
                 {
                     var at = BlastPoint(target ?? AimPoint(kind));
                     Turn(at);
-                    GuSkills.Blast(at, kind.Radius, power, kind, solid);
+                    GuSkills.Blast(at, kind.Radius, power * Battle.Scale(kind), kind, solid);
                     view?.Throw();
                     break;
                 }
@@ -774,7 +774,7 @@ namespace GuWorld.Cultivation
                 case SkillKind.Cleave:
                 {
                     var forward = Turn(target ?? AimPoint(kind));
-                    GuSkills.Blast(transform.position + Vector3.up * 1.1f, kind.Reach, power, kind, solid, null, forward);
+                    GuSkills.Blast(transform.position + Vector3.up * 1.1f, kind.Reach, power * Battle.Scale(kind), kind, solid, null, forward);
                     view?.Throw();
                     break;
                 }

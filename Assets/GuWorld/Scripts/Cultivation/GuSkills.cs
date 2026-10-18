@@ -37,7 +37,7 @@ namespace GuWorld.Cultivation
         {
             if (target is IFoe foe && kind.Afflict != Affliction.None)
             {
-                foe.Afflict(kind.Afflict, kind.AfflictFor, kind.AfflictPower);
+                foe.Afflict(kind.Afflict, kind.AfflictFor * (kind.Afflict == Affliction.Burn ? Battle.BurnScale : 1), kind.AfflictPower);
             }
         }
 

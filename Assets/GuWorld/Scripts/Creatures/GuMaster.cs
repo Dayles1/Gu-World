@@ -59,6 +59,8 @@ namespace GuWorld.Creatures
         public float MaxHealth { get; private set; }
         public bool Dead => mind == Mind.Dead;
         public bool Hunting => mind == Mind.Fight;
+        /// <summary>Warning the hero off their land (they attack if the hero stays).</summary>
+        public bool Warns => mind == Mind.Warn;
         public bool Tamed => false;
         public bool Shielded => Time.time < shieldUntil;
         public bool Berserk => false;
@@ -272,7 +274,7 @@ namespace GuWorld.Creatures
 
             var distance = Flat(hero.position - transform.position).magnitude;
             var heroDown = heroHealth != null && heroHealth.Down;
-            var sees = Sees * (Night ? 0.7f : 1) * Wolf.Notice;
+            var sees = Sees * (Night ? 0.7f : 1) * Wolf.Notice * Battle.Sight;
 
             if (Time.time < fearUntil)
             {
@@ -742,7 +744,7 @@ namespace GuWorld.Creatures
 
             if (blowIsGu && closeKind != null)
             {
-                GuSkills.Blast(transform.position + Vector3.up * 1.1f + transform.forward * 0.5f, closeKind.Reach, Kind.Power * 1.1f, closeKind, controller, null, transform.forward);
+                GuSkills.Blast(transform.position + Vector3.up * 1.1f + transform.forward * 0.5f, closeKind.Reach, Kind.Power * 1.1f * Battle.Scale(closeKind), closeKind, controller, null, transform.forward);
 
                 return;
             }

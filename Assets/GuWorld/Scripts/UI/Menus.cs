@@ -128,6 +128,8 @@ namespace GuWorld.UI
             Sandbox,
             /// <summary>The chat over the game (T, /): the world goes on.</summary>
             Chat,
+            /// <summary>Fusing Gu into new ones (U): every recipe, what it takes, what the hero has.</summary>
+            Fusion,
         }
 
         enum Tab
@@ -304,6 +306,7 @@ namespace GuWorld.UI
                 case Page.Codex: Codex(); break;
                 case Page.Body: BodyPage(); break;
                 case Page.Sandbox: SandboxPage(); break;
+                case Page.Fusion: FusionPage(); break;
             }
         }
 
@@ -324,6 +327,7 @@ namespace GuWorld.UI
                 case Page.Map:
                 case Page.Shop:
                 case Page.Body:
+                case Page.Fusion:
                     host.Resume();
                     return true;
                 default: return false;
@@ -572,6 +576,7 @@ namespace GuWorld.UI
             menu.Stack<VerticalLayoutGroup>(2, null, TextAnchor.UpperLeft);
             UiKit.Entry("Продолжить", null, menu, host.Resume, "play");
             UiKit.Entry("Апертура", null, menu, () => host.OpenPage(Page.Aperture), "ring");
+            UiKit.Entry("Слияние Гу", null, menu, () => host.OpenPage(Page.Fusion), "ring");
             UiKit.Entry("Сумка", null, menu, () => host.OpenPage(Page.Bag), "bag");
             UiKit.Entry("Карта", null, menu, () => host.OpenPage(Page.Map), "map");
             UiKit.Entry("Тело", null, menu, () => host.OpenPage(Page.Body), "body");
@@ -610,6 +615,7 @@ namespace GuWorld.UI
                 { "V", "поглотить первобытный камень (3 с)" },
                 { "E", "говорить · собрать (удерживать)" },
                 { "K · I · M · B", "апертура · сумка · карта · тело" },
+                { "U", "слияние Гу: рецепты, что есть и чего не хватает" },
                 { "X", "сесть · встать (сидя — медитация)" },
                 { "На стене", "W A S D — лезть · Пробел — оттолкнуться" },
                 { "Мышь", "камера, колесо — ближе / дальше" },

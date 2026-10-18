@@ -437,6 +437,115 @@ namespace GuWorld
             ("fists", "F — кулаки: ЛКМ — серия ударов, ПКМ — блок, Q и R — особые удары"),
         };
 
+        /// <summary>
+        /// Advice on what is happening now, given before the advice on the keys: each until the player has done what it
+        /// says — or, advice that only tells (`tells`), until it has been up a while.
+        /// </summary>
+        static readonly (string key, string text, bool tells)[] Moments =
+        {
+            ("dodge", "Враг охотится на вас! Alt — перекат: в его начале ничто вас не задевает", false),
+            ("parry", "Поднимите блок (ПКМ) в самый миг удара — парирование: удар отбит, враг шатается", false),
+            ("shielded", "Враг поднял щит — он забирает бо́льшую часть удара. Перекатом в сторону — и ждите, пока щит спадёт", true),
+            ("foreign", "Чужая земля: Гу-мастера клана предупредили вас. Уходите — или готовьтесь к бою", true),
+            ("hurt", "Вы тяжело ранены: отойдите от врагов — раны затягиваются со временем, лечащие Гу — быстрее", true),
+            ("tired", "Гу устал (100+): применить его можно, но через силу — и он может погибнуть. Дайте ему отдохнуть", true),
+            ("fusion", "Можно слить Гу в новый! U — слияние: все рецепты, что есть и чего не хватает", false),
+            ("meditate", "X — сесть: сидя, вдали от врагов, вы медитируете — эссенция уходит в стенки апертуры, и ступень растёт", false),
+            ("night", "Ночь: волки видят дальше, а люди — хуже. За стенами деревни ночью опаснее", true),
+        };
+
+        readonly Dictionary<string, float> momentShown = new Dictionary<string, float>();
+        int momentFrame = -1;
+        string moment;
+        float idleFor;
+        float fusionLookAt;
+        bool fusionReady;
+
+        /// <summary>Whether the moment for a piece of advice is now.</summary>
+        bool IsMoment(string key)
+        {
+            var at = body.transform.position;
+
+            switch (key)
+            {
+                case "dodge":
+                    return Foes.Hunting(at, 14);
+                case "parry":
+                    return melee.Ready && Foes.Hunting(at, 3.5f);
+                case "shielded":
+                    foreach (var foe in Foes.Near(at, 20))
+                    {
+                        if (foe.Hunting && foe.Shielded)
+                        {
+                            return true;
+                        }
+                    }
+
+                    return false;
+                case "foreign":
+                    return GuMaster.All.Exists(m => m != null && m.Warns && Vector3.Distance(m.transform.position, at) < 45);
+                case "hurt":
+                    return !health.Down && health.Current < Health.Max * 0.35f;
+                case "tired":
+                    return !Sandbox && cultivator.Gu.Exists(g => g.tired >= 100);
+                case "fusion":
+                    // Looked at once a second (every recipe against the bag).
+                    if (Time.unscaledTime >= fusionLookAt)
+                    {
+                        fusionLookAt = Time.unscaledTime + 1;
+                        fusionReady = !Sandbox && System.Array.Exists(GuBook.Recipes, r => cultivator.Lacks(r) == null);
+                    }
+
+                    return fusionReady;
+                case "meditate":
+                    return !Sandbox && idleFor > 8 && !body.Sitting && cultivator.Aperture.Essence > cultivator.Aperture.Cap * 0.4f && !Foes.Hunting(at, 40);
+                case "night":
+                    var hour = clock.MinuteOfDay / 60;
+
+                    return !Sandbox && Location.id == QingMao.Id && (hour < 5 || hour > 20.5f) &&
+                           !System.Array.Exists(QingMao.Settlements, s => Vector2.Distance(new Vector2(at.x, at.z), s.Centre) < s.Radius * 1.1f);
+                default:
+                    return false;
+            }
+        }
+
+        /// <summary>The advice of the moment, if any (worked out once a frame; advice that only tells is learnt once up a while).</summary>
+        string Moment()
+        {
+            if (momentFrame == Time.frameCount)
+            {
+                return moment;
+            }
+
+            momentFrame = Time.frameCount;
+            moment = null;
+            idleFor = body.HorizontalSpeed > 0.2f || body.Sitting ? 0 : idleFor + Time.unscaledDeltaTime;
+
+            foreach (var (key, text, tells) in Moments)
+            {
+                if (Knows(key) || !IsMoment(key))
+                {
+                    continue;
+                }
+
+                moment = text;
+
+                if (tells)
+                {
+                    momentShown[key] = (momentShown.TryGetValue(key, out var shown) ? shown : 0) + Time.unscaledDeltaTime;
+
+                    if (momentShown[key] > 9)
+                    {
+                        Learnt(key);
+                    }
+                }
+
+                break;
+            }
+
+            return moment;
+        }
+
         public string Hint
         {
             get
@@ -445,6 +554,11 @@ namespace GuWorld
                 if (screenshot != null || Time.timeSinceLevelLoad < 4)
                 {
                     return null;
+                }
+
+                if (Moment() is string now)
+                {
+                    return now;
                 }
 
                 foreach (var (key, text) in Advice)
@@ -503,7 +617,8 @@ namespace GuWorld
 
             return p.y > 3500 ? "задняя гора" : "склоны горы";
         }
-        public string TimeLine => $"{PhaseName(clock.Phase).ToUpperInvariant()} · ДЕНЬ {clock.Day} · {clock.Label} · {GuWorld.World.Weather.Name(weather.Kind)}";
+        public string TimeLine => $"{PhaseName(clock.Phase).ToUpperInvariant()} · ДЕНЬ {clock.Day} · {clock.Label} · {GuWorld.World.Weather.Name(weather.Kind)}" +
+                                  (Battle.Effects is string effects ? $" · <color=#8FD0BC>{effects}</color>" : "");
 
         void Awake()
         {
@@ -1262,6 +1377,11 @@ namespace GuWorld
                 Learnt("map");
             }
 
+            if (page == Menus.Page.Fusion)
+            {
+                Learnt("fusion");
+            }
+
             if (mode != Mode.Paused)
             {
                 Enter(Mode.Paused);
@@ -1866,6 +1986,7 @@ namespace GuWorld
                         case "map": OpenPage(Menus.Page.Map); break;
                         case "body": OpenPage(Menus.Page.Body); break;
                         case "sandbox": OpenPage(Menus.Page.Sandbox); break;
+                        case "fusion": OpenPage(Menus.Page.Fusion); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
                         case "hua": OpenShop(Trade.Shops[1]); break;
                     }
@@ -2092,6 +2213,10 @@ namespace GuWorld
             weather = forcedWeather.HasValue ? GuWorld.World.Weather.Of(forcedWeather.Value)
                 : mode == Mode.Title ? GuWorld.World.Weather.Fair
                 : GuWorld.World.Weather.At(clock.Minutes);
+            // What the weather and the hour do in a fight (fire in rain, the moon at night).
+            Battle.Rain = weather.Rain;
+            var hourNow = clock.MinuteOfDay / 60;
+            Battle.Night = hourNow < 5 || hourNow >= 20.5f;
 
             // Esc while playing (PlayerController frees the cursor) pauses.
             if (mode == Mode.Playing && screenshot == null && Cursor.lockState != CursorLockMode.Locked)
@@ -2216,6 +2341,7 @@ namespace GuWorld
                 else if (keyboard.iKey.wasPressedThisFrame) OpenPage(Menus.Page.Bag);
                 else if (keyboard.mKey.wasPressedThisFrame) OpenPage(Menus.Page.Map);
                 else if (keyboard.bKey.wasPressedThisFrame) OpenPage(Menus.Page.Body);
+                else if (keyboard.uKey.wasPressedThisFrame) OpenPage(Menus.Page.Fusion);
                 else if (Sandbox && keyboard.pKey.wasPressedThisFrame) OpenPage(Menus.Page.Sandbox);
             }
             else if (mode == Mode.Paused && keyboard != null && !wasPlaying && IsHeroPage(menus.Current))
@@ -2223,6 +2349,7 @@ namespace GuWorld
                 // On the hero's pages the same keys go between them, and the page's own key closes it.
                 var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag :
                     keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : keyboard.bKey.wasPressedThisFrame ? Menus.Page.Body :
+                    keyboard.uKey.wasPressedThisFrame ? Menus.Page.Fusion :
                     Sandbox && keyboard.pKey.wasPressedThisFrame ? Menus.Page.Sandbox : Menus.Page.None;
 
                 if (Sandbox && (keyboard.tabKey.wasPressedThisFrame || keyboard.kKey.wasPressedThisFrame || keyboard.iKey.wasPressedThisFrame))
@@ -2278,6 +2405,11 @@ namespace GuWorld
                 using (HeroMarker.Auto()) cultivator.Tick(clock.Minutes);
                 // Sitting where no beast hunts the hero: meditation.
                 cultivator.Meditating = body.Sitting && !Foes.Hunting(body.transform.position, 40);
+
+                if (cultivator.Meditating)
+                {
+                    Learnt("meditate");
+                }
                 cultivator.Step(Time.deltaTime);
 
                 if (Sandbox)
@@ -3103,6 +3235,7 @@ namespace GuWorld
         {
             GuGlow.Flash(point, 0.5f, new Color(1f, 0.95f, 0.75f), 0.22f);
             DamageNumbers.Word(point + Vector3.up * 0.3f, "парирование", DamageNumbers.Vital);
+            Learnt("parry");
             view.Shake(0.18f);
 
             if (mode == Mode.Playing)
@@ -3158,7 +3291,7 @@ namespace GuWorld
             quests.Count("kill:wolf");
         }
 
-        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body ||
+        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body || page == Menus.Page.Fusion ||
                                                    page == Menus.Page.Sandbox;
 
         /// <summary>

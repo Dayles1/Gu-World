@@ -185,6 +185,7 @@ namespace GuWorld.Creatures
                 {
                     Id = "wolf_lightning",
                     Name = "Молния",
+                    Line = "гром",
                     Rank = Mathf.Max(1, kind.Tier + 1),
                     Range = kind.BoltRange,
                     Reach = kind.BoltRange,
@@ -447,7 +448,7 @@ namespace GuWorld.Creatures
 
             // A hidden hero is seen only from closer, an unseen one not at all — and lost, once out of reach. A lightning eye sees through it all.
             var notice = Kind.SeesHidden ? 1 : Notice;
-            var sees = (Night ? SeesByNight : SeesByDay) * Kind.Sight * notice;
+            var sees = (Night ? SeesByNight : SeesByDay) * Kind.Sight * notice * Cultivation.Battle.Sight;
 
             if (state == Mind.Chase && notice <= 0 && heroDistance > Reach * 2)
             {

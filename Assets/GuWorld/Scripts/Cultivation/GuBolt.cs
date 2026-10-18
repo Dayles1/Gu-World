@@ -49,7 +49,7 @@ namespace GuWorld.Cultivation
             bolt.kind = kind;
             bolt.direction = direction.normalized;
             bolt.left = Mathf.Max(kind.Range, kind.Reach, 4);
-            bolt.power = power;
+            bolt.power = power * Battle.Scale(kind);
             bolt.thrower = thrower;
             // Its own shape (GuShapes): a spear, a star, a tongue of fire, a shard of ice — as its aim showed it.
             var shape = GuShapes.Size(kind);

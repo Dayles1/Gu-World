@@ -552,6 +552,15 @@ namespace GuWorld.Editor
             game.ClearWolves();
             Check(Creatures.Foes.Living() == 0, "the proving ground's page sends every foe away");
 
+            // The weather in a fight: rain dampens fire and feeds ice; the night feeds the moon.
+            var (rainWas, nightWas) = (Battle.Rain, Battle.Night);
+            Battle.Rain = 1;
+            Battle.Night = true;
+            Check(Battle.Scale(GuBook.Find("fire_pellet")) < 0.7f && Battle.Scale(GuBook.Find("icicle")) > 1.15f && Battle.Scale(GuBook.Find("moonlight")) > 1.15f &&
+                  Mathf.Approximately(Battle.Scale(GuBook.Find("bone_spear")), 1) && Battle.Effects != null,
+                $"in rain at night fire is weaker ({Battle.Scale(GuBook.Find("fire_pellet")):0.00}), ice and the moon stronger");
+            (Battle.Rain, Battle.Night) = (rainWas, nightWas);
+
             Check(Quests.Book.Length >= 9 && System.Array.Exists(Quests.Book, q => q.Event == "kill:wolf") && System.Array.Exists(Quests.Book, q => q.Gives != null),
                 $"the villagers have tasks past the academy's: wolves, a place, a delivery, a word ({Quests.Book.Length})");
             Teleport(body, new Vector3(0, 0, 12));

@@ -77,7 +77,7 @@ namespace GuWorld.Cultivation
             blade.direction = direction.normalized;
             blade.left = Mathf.Max(kind.Range, kind.Reach) * scale;
             blade.reach = (kind.Reach > 0 ? kind.Reach : blade.left) * scale;
-            blade.power = power > 0 ? power : kind.Power;
+            blade.power = (power > 0 ? power : kind.Power) * Battle.Scale(kind);
             blade.thrower = thrower;
 
             // Not the Moonlight Gu's own pale blue: a blade of its Gu's colour.

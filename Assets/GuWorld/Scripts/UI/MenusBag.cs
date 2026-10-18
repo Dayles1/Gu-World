@@ -46,12 +46,13 @@ namespace GuWorld.UI
             // The immortal's aperture has no bag or ring to look after: its own page instead.
             var pages = host.Sandbox
                 ? new System.Collections.Generic.List<(string, string, Page)> { ("Все Гу", "Tab", Page.Sandbox), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) }
-                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
+                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Слияние", "U", Page.Fusion), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
 
             foreach (var (label, key, target) in pages)
             {
                 var to = target;
-                UiKit.Button($"{UiKit.Spaced(label)}   <color=#A69A86>{key}</color>", tabs, () => host.OpenPage(to), target == page ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(52, -1, 1);
+                UiKit.Button(pages.Count > 4 ? $"{label.ToUpperInvariant()}  <color=#A69A86>{key}</color>" : $"{UiKit.Spaced(label)}   <color=#A69A86>{key}</color>", tabs, () => host.OpenPage(to),
+                    target == page ? ButtonKind.Tab : ButtonKind.Plain, pages.Count > 4 ? 15 : 16).Size(52, -1, 1);
             }
 
             var close = UiKit.Button("Закрыть · Esc", top, host.Resume, ButtonKind.Plain, 16);
