@@ -281,6 +281,8 @@ namespace GuWorld
         int rollFrames;
         /// <summary>`-wolves 3`: a pack called up before the camera.</summary>
         int wolvesShot;
+        /// <summary>`-near bear,boar,snake`: those beasts (or Gu Masters: bai_youth…) standing in a row a few metres before the hero, asleep, to be looked at.</summary>
+        string nearShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
         int castFrames = 5;
         /// <summary>`-blow kick 16`: that blow thrown so many frames before the picture; `-guard`: the guard up.</summary>
@@ -800,8 +802,8 @@ namespace GuWorld
 
             // The wolves of the forest round the village (their dens outside its walls), and the packs a command calls up.
             wolves = WolfPacks.Create(body.transform, WolfDens());
-            Wolf.Killed += OnWolfKilled;
-            Wolf.Roared += OnWolfRoared;
+            Beast.Killed += OnWolfKilled;
+            Beast.Roared += OnWolfRoared;
             // The other clans' Gu Masters at their posts round their villages, and those called up.
             patrols = Patrols.Create(body.transform, picture.Parts, ClanLands());
             GuMaster.Killed += OnMasterKilled;
@@ -858,6 +860,8 @@ namespace GuWorld
                 absorbShot = Has(args, "-absorb");
                 var wolvesAt = System.Array.IndexOf(args, "-wolves");
                 wolvesShot = wolvesAt >= 0 && wolvesAt + 1 < args.Length && int.TryParse(args[wolvesAt + 1], out var n) ? n : 0;
+                var nearAt = System.Array.IndexOf(args, "-near");
+                nearShot = nearAt >= 0 && nearAt + 1 < args.Length ? args[nearAt + 1] : null;
                 var chatAt = System.Array.IndexOf(args, "-chat");
                 chatShot = chatAt >= 0 && chatAt + 1 < args.Length ? args[chatAt + 1] : null;
                 // `-do "/gu 1;/rank 2"`: chat commands run once the world stands (a picture of what they make).
@@ -1109,7 +1113,7 @@ namespace GuWorld
         /// <summary>Every wolf and Gu Master there is sent away (the proving ground's page).</summary>
         public void ClearWolves()
         {
-            foreach (var wolf in Wolf.All.ToArray())
+            foreach (var wolf in Beast.All.ToArray())
             {
                 if (wolf != null)
                 {
@@ -2009,6 +2013,11 @@ namespace GuWorld
                 if (wolvesShot > 0 && screenshotFrame == 60)
                 {
                     wolves.CallNear(wolvesShot, view.transform.forward);
+                }
+
+                if (nearShot != null && screenshotFrame == 60)
+                {
+                    PlaceNear(nearShot.Split(','));
                 }
 
                 if (doShot != null && (screenshotFrame == 50 || screenshotFrame == 140))
@@ -3022,7 +3031,7 @@ namespace GuWorld
         WolfPacks wolves;
 
         /// <summary>The wolves' dens: in the forest round the hero's village, well outside its walls (none on the proving ground).</summary>
-        IEnumerable<(Vector3 at, WolfKind[] kinds)> WolfDens()
+        IEnumerable<(Vector3 at, BeastKind[] kinds)> WolfDens()
         {
             if (Location.id != QingMao.Id)
             {
@@ -3031,7 +3040,7 @@ namespace GuWorld
 
             var village = QingMao.Find("gu_yue");
 
-            (Vector3, WolfKind[]) Den(float degrees, float beyond, WolfKind[] kinds)
+            (Vector3, BeastKind[]) Den(float degrees, float beyond, BeastKind[] kinds)
             {
                 var angle = degrees * Mathf.Deg2Rad;
                 var at = new Vector3(village.Centre.x + Mathf.Cos(angle) * (village.Radius + beyond), 0, village.Centre.y + Mathf.Sin(angle) * (village.Radius + beyond));
@@ -3052,10 +3061,52 @@ namespace GuWorld
             yield return Den(230, 700, WolfPacks.PackOf(WolfKinds.Frenzy));
             yield return Den(320, 750, WolfPacks.PackOf(WolfKinds.Frenzy));
             yield return Den(275, 1200, WolfPacks.PackOf(WolfKinds.ThunderCrown));
+
+            // The other beasts: wild boars in the woods to the south and the west, their king deeper in; black bears toward
+            // the fore mountain; stone monkeys up on the rocks to the north; dark snakes in the undergrowth.
+            var boar = BeastKinds.Boar;
+            yield return Den(185, 330, new[] { boar, boar, boar });
+            yield return Den(130, 420, new[] { boar, boar });
+            yield return Den(200, 900, WolfPacks.PackOf(BeastKinds.BoarKing));
+            yield return Den(300, 520, new[] { BeastKinds.Bear });
+            yield return Den(320, 1000, new[] { BeastKinds.Bear, BeastKinds.Bear });
+            var monkey = BeastKinds.Monkey;
+            yield return Den(80, 380, new[] { monkey, monkey, monkey, monkey });
+            yield return Den(60, 850, WolfPacks.PackOf(BeastKinds.MonkeyKing));
+            yield return Den(240, 300, new[] { BeastKinds.Snake });
+            yield return Den(110, 290, new[] { BeastKinds.Snake, BeastKinds.Snake });
+        }
+
+        /// <summary>`-near`: beasts and Gu Masters in a row a few metres before the hero, facing them, asleep (to be looked at).</summary>
+        void PlaceNear(string[] ids)
+        {
+            var forward = view.transform.forward;
+            forward.y = 0;
+            forward = forward.sqrMagnitude > 0.01f ? forward.normalized : Vector3.forward;
+            var right = Vector3.Cross(Vector3.up, forward);
+            var hero = body.transform.position;
+
+            for (var i = 0; i < ids.Length; i++)
+            {
+                var at = hero + forward * 6 + right * ((i - (ids.Length - 1) / 2f) * 2.6f);
+                at.y = UnityEngine.Physics.Raycast(at + Vector3.up * 30, Vector3.down, out var hit, 80, ~0, QueryTriggerInteraction.Ignore) ? hit.point.y + 0.05f : at.y;
+
+                if (BeastKinds.Find(ids[i]) is BeastKind kind)
+                {
+                    var beast = Beast.Make(at, at, 900 + i, body.transform, 77 + i, kind);
+                    beast.Face(hero);
+                    beast.Afflict(Affliction.Sleep, 60, 1);
+                }
+                else if (MasterKinds.Find(ids[i]) is MasterKind master)
+                {
+                    var person = GuMaster.Make(at, master, body.transform, picture.Parts, 77 + i, false);
+                    person.Afflict(Affliction.Sleep, 60, 1);
+                }
+            }
         }
 
         /// <summary>A pack of a kind of wolf called up near the hero (a king comes with its pack); how many came.</summary>
-        public int SpawnPack(WolfKind kind, int count) =>
+        public int SpawnPack(BeastKind kind, int count) =>
             wolves != null ? wolves.CallNear(kind.Tier > 0 ? WolfPacks.PackOf(kind, 1) : WolfPacks.PackOf(kind, Mathf.Max(1, count)), view.transform.forward) : 0;
 
         Patrols patrols;
@@ -3136,7 +3187,7 @@ namespace GuWorld
         }
 
         /// <summary>A beast king does something the hero should know.</summary>
-        void OnWolfRoared(Wolf wolf, string what)
+        void OnWolfRoared(Beast wolf, string what)
         {
             if (body != null && Vector3.Distance(wolf.transform.position, body.transform.position) < 60)
             {
@@ -3267,12 +3318,23 @@ namespace GuWorld
         }
 
         /// <summary>A wolf killed: its fang into the bag, and the task counts it.</summary>
-        void OnWolfKilled(Wolf wolf)
+        void OnWolfKilled(Beast wolf)
         {
-            // Its fangs; and from a beast king's body, now and then, the Gu that lived in it.
+            // What its body leaves (fangs, meat, bone, a jade pearl); and from its body, now and then, the Gu that lived in it.
             var kind = wolf.Kind;
-            var kept = cultivator.Bag.Add(ItemBook.WolfFang, kind.Fangs, clock.Minutes);
-            menus.Notify(kept > 0 ? $"{kind.Name} (ур. {wolf.Level}) убит — клыков в сумке: {kept}" : $"{kind.Name} убит — клыки не поместились в сумку");
+            var taken = new List<string>();
+
+            foreach (var (item, count) in kind.Spoils)
+            {
+                var kept = cultivator.Bag.Add(item, count, clock.Minutes);
+
+                if (kept > 0)
+                {
+                    taken.Add($"{ItemBook.Find(item)?.Name.ToLowerInvariant()} ×{kept}");
+                }
+            }
+
+            menus.Notify(taken.Count > 0 ? $"{kind.Name} (ур. {wolf.Level}) повержен — в сумке: {string.Join(", ", taken)}" : $"{kind.Name} повержен — добыча не поместилась в сумку");
 
             foreach (var (gu, chance) in kind.Drops)
             {
@@ -3288,7 +3350,7 @@ namespace GuWorld
             {
                 menus.Banner($"{kind.Name} повержен", $"{kind.TierName} · уровень {wolf.Level}");
             }
-            quests.Count("kill:wolf");
+            quests.Count(kind.Shape == BeastShape.Wolf ? "kill:wolf" : "kill:" + kind.Id);
         }
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body || page == Menus.Page.Fusion ||
@@ -3593,8 +3655,8 @@ namespace GuWorld
             Wounds.Struck -= OnStrikeShown;
             TreeBranch.Creaking -= OnCreak;
             TreeBranch.Snapped -= OnSnap;
-            Wolf.Killed -= OnWolfKilled;
-            Wolf.Roared -= OnWolfRoared;
+            Beast.Killed -= OnWolfKilled;
+            Beast.Roared -= OnWolfRoared;
             GuMaster.Killed -= OnMasterKilled;
             GuMaster.Spoke -= OnMasterSpoke;
             GameSettings.Restore();

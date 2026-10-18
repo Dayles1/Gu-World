@@ -21,9 +21,9 @@ namespace GuWorld.Creatures
         {
             public Vector3 At;
             /// <summary>The wolves that live there, by kind (a king among its pack).</summary>
-            public WolfKind[] Kinds;
+            public BeastKind[] Kinds;
             public int Pack;
-            public readonly List<Wolf> Wolves = new List<Wolf>();
+            public readonly List<Beast> Wolves = new List<Beast>();
             public float BackAt;
             /// <summary>Called up by the command: not refilled, forgotten once its wolves are gone.</summary>
             public bool Called;
@@ -70,9 +70,9 @@ namespace GuWorld.Creatures
         }
 
         /// <summary>The packs of the dens given: where each den is and who lives there.</summary>
-        public static WolfPacks Create(Transform hero, IEnumerable<(Vector3 at, WolfKind[] kinds)> denPoints)
+        public static WolfPacks Create(Transform hero, IEnumerable<(Vector3 at, BeastKind[] kinds)> denPoints)
         {
-            var packs = new GameObject("Wolf Packs").AddComponent<WolfPacks>();
+            var packs = new GameObject("Beast Packs").AddComponent<WolfPacks>();
             packs.hero = hero;
 
             foreach (var (at, kinds) in denPoints)
@@ -83,21 +83,27 @@ namespace GuWorld.Creatures
             return packs;
         }
 
-        /// <summary>A pack of `count` of a kind, and — for a beast king — its escort of the kind below it.</summary>
-        public static WolfKind[] PackOf(WolfKind kind, int count = 1)
+        /// <summary>A pack of `count` of a kind, and — for a beast king — its escort of the kind below it (a boar king's sounder, a monkey king's troop).</summary>
+        public static BeastKind[] PackOf(BeastKind kind, int count = 1)
         {
-            var pack = new List<WolfKind>();
+            var pack = new List<BeastKind>();
 
             for (var i = 0; i < count; i++)
             {
                 pack.Add(kind);
             }
 
-            var escort = kind.Tier switch
+            var escort = kind.Shape switch
             {
-                1 => (WolfKinds.Lightning, 3),
-                2 => (WolfKinds.Lightning, 4),
-                3 => (WolfKinds.Bold, 2),
+                BeastShape.Boar when kind.Tier > 0 => (BeastKinds.Boar, 4),
+                BeastShape.Monkey when kind.Tier > 0 => (BeastKinds.Monkey, 5),
+                BeastShape.Wolf => kind.Tier switch
+                {
+                    1 => (WolfKinds.Lightning, 3),
+                    2 => (WolfKinds.Lightning, 4),
+                    3 => (WolfKinds.Bold, 2),
+                    _ => (null, 0),
+                },
                 _ => (null, 0),
             };
 
@@ -176,7 +182,7 @@ namespace GuWorld.Creatures
         public int CallNear(int count, Vector3? toward = null) => CallNear(PackOf(WolfKinds.Grey, count), toward);
 
         /// <summary>A pack of these wolves called up beside the hero (further off for the bigger ones); how many came.</summary>
-        public int CallNear(WolfKind[] kinds, Vector3? toward = null)
+        public int CallNear(BeastKind[] kinds, Vector3? toward = null)
         {
             if (hero == null || kinds.Length == 0)
             {
@@ -204,7 +210,7 @@ namespace GuWorld.Creatures
             return den.Wolves.Count;
         }
 
-        void Place(Den den, Vector3 at, WolfKind kind)
+        void Place(Den den, Vector3 at, BeastKind kind)
         {
             // On whatever is there: the ground, a rock (looked for from above).
             if (UnityEngine.Physics.Raycast(new Vector3(at.x, at.y + 60, at.z), Vector3.down, out var hit, 200, ~0, QueryTriggerInteraction.Ignore))
@@ -216,7 +222,7 @@ namespace GuWorld.Creatures
                 at.y = GuWorld.World.QingMao.GroundAt(at) + 0.05f;
             }
 
-            den.Wolves.Add(Wolf.Make(at, den.At, den.Pack, hero, seed++, kind));
+            den.Wolves.Add(Beast.Make(at, den.At, den.Pack, hero, seed++, kind));
         }
 
         static Vector3 Flat(Vector3 v) => new Vector3(v.x, 0, v.z);

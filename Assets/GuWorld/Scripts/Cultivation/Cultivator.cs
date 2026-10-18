@@ -531,7 +531,7 @@ namespace GuWorld.Cultivation
                 Aperture.Essence = Aperture.Cap;
             }
 
-            Wolf.Notice = Warded ? 0 : Mathf.Min(hide, Scent);
+            Beast.Notice = Warded ? 0 : Mathf.Min(hide, Scent);
             Rush(dt);
 
             if (wardGlow != null && !Warded)
@@ -986,8 +986,8 @@ namespace GuWorld.Cultivation
             var at = Ground(transform.position + transform.forward * 2.5f + Vector3.up);
             decoy = TrainingDummy.Make(at, transform.eulerAngles.y + 180, straw, wood);
             Destroy(decoy.gameObject, kind.Duration);
-            Wolf.Decoy = decoy.transform;
-            Wolf.DecoyUntil = Time.time + kind.Duration;
+            Beast.Decoy = decoy.transform;
+            Beast.DecoyUntil = Time.time + kind.Duration;
             Said?.Invoke($"{kind.SkillName}: звери кинутся на куклу — {kind.Duration:0} с");
         }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 namespace GuWorld.Creatures
 {
     /// <summary>
-    /// Whatever fights the hero — a beast (Wolf) or a Gu Master of another clan (GuMaster): what the HUD shows
+    /// Whatever fights the hero — a beast (Beast) or a Gu Master of another clan (GuMaster): what the HUD shows
     /// over its head, what a Gu can do to it besides wounding it, how a blow throws it.
     /// </summary>
     public interface IFoe

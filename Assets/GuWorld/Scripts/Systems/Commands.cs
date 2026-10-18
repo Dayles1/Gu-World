@@ -29,7 +29,7 @@ namespace GuWorld.Systems
         /// <summary>Wolves brought near the hero; how many came.</summary>
         int SpawnWolves(int count);
         /// <summary>A pack of a kind of wolf brought near the hero (a beast king with its pack); how many came.</summary>
-        int SpawnPack(GuWorld.Creatures.WolfKind kind, int count);
+        int SpawnPack(GuWorld.Creatures.BeastKind kind, int count);
         int SpawnMasters(string clan, int rank, int count);
     }
 
@@ -568,23 +568,23 @@ namespace GuWorld.Systems
             Add(new Command
             {
                 Name = "wolves",
-                Aliases = new[] { "волки", "wolf" },
-                Usage = "/wolves [сколько] [grey|lightning|bold|frenzy|thunder_crown]",
-                About = "волки рядом (короли зверей приходят со своей стаей)",
-                Suggest = (_, i) => i == 0 ? new[] { "1", "3", "5" } : i == 1 ? GuWorld.Creatures.WolfKinds.All.Select(k => k.Id) : Enumerable.Empty<string>(),
+                Aliases = new[] { "волки", "wolf", "beasts", "звери" },
+                Usage = "/wolves [сколько] [grey|lightning|bold|frenzy|thunder_crown|boar|boar_king|bear|monkey|monkey_king|snake]",
+                About = "звери рядом (короли зверей приходят со своей стаей)",
+                Suggest = (_, i) => i == 0 ? new[] { "1", "3", "5" } : i == 1 ? GuWorld.Creatures.BeastKinds.All.Select(k => k.Id) : Enumerable.Empty<string>(),
                 Run = a =>
                 {
                     var count = a.Length > 0 ? Mathf.Clamp((int)Number(a[0]), 1, 12) : 3;
-                    var kind = a.Length > 1 ? GuWorld.Creatures.WolfKinds.Find(a[1]) : GuWorld.Creatures.WolfKinds.Grey;
+                    var kind = a.Length > 1 ? GuWorld.Creatures.BeastKinds.Find(a[1]) : GuWorld.Creatures.WolfKinds.Grey;
 
                     if (kind == null)
                     {
-                        return "!Нет таких волков. Tab подскажет";
+                        return "!Нет таких зверей. Tab подскажет";
                     }
 
                     var came = host.SpawnPack(kind, count);
 
-                    return came > 0 ? $"Пришло волков: {came} ({kind.Name})" : "!Здесь волкам негде встать";
+                    return came > 0 ? $"Пришло зверей: {came} ({kind.Name})" : "!Здесь зверям негде встать";
                 },
             });
 

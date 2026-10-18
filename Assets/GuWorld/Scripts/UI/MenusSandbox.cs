@@ -100,6 +100,20 @@ namespace GuWorld.UI
                 Notify($"{kings[i].Name} идёт со стаей ({host.SpawnPack(kings[i], 1)})");
                 host.Resume();
             }, 12);
+            // The other beasts of the mountain: boars, a bear, stone monkeys, snakes — and the boars' and the monkeys' kings.
+            var beasts = new[] { GuWorld.Creatures.BeastKinds.Boar, GuWorld.Creatures.BeastKinds.Bear, GuWorld.Creatures.BeastKinds.Monkey, GuWorld.Creatures.BeastKinds.Snake };
+            int[] counts = { 3, 1, 3, 2 };
+            UiKit.Choices(modes, new[] { "Кабаны", "Медведь", "Обезьяны", "Змеи" }, -1, i =>
+            {
+                Notify($"{beasts[i].Name}: пришло {host.SpawnPack(beasts[i], counts[i])}");
+                host.Resume();
+            }, 12);
+            var beastKings = new[] { GuWorld.Creatures.BeastKinds.BoarKing, GuWorld.Creatures.BeastKinds.MonkeyKing };
+            UiKit.Choices(modes, new[] { "Король кабанов (12)", "Король обезьян (10)" }, -1, i =>
+            {
+                Notify($"{beastKings[i].Name} идёт со своими ({host.SpawnPack(beastKings[i], 1)})");
+                host.Resume();
+            }, 12);
             // Gu Masters of the clans: a Bai with ice, a Xiong with the bear's strength, a Gu Yue with moonblades — a pair of
             // youths of rank one, a master of rank two, an elder of rank three.
             var masters = GuWorld.Creatures.MasterKinds.All;

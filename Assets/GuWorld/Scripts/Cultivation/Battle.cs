@@ -3,7 +3,7 @@ namespace GuWorld.Cultivation
     /// <summary>
     /// The weather and the hour in a fight (the game sets them every moment): rain dampens fire — its blasts weaker, its
     /// burns shorter — and feeds water, ice and thunder; the night feeds the Gu of the moon and the stars. In rain beasts
-    /// and people see less far (the wolves' night sight is their own: Wolf).
+    /// and people see less far (the wolves' night sight is their own: Beast).
     /// </summary>
     public static class Battle
     {

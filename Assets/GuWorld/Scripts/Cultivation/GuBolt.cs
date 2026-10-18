@@ -150,7 +150,7 @@ namespace GuWorld.Cultivation
             // An enslaving Gu does not wound: it takes the beast's will.
             if (kind.Afflict == GuWorld.Creatures.Affliction.Tame)
             {
-                if (target is GuWorld.Creatures.Wolf wolf)
+                if (target is GuWorld.Creatures.Beast wolf)
                 {
                     GuSkills.Afflict(wolf, kind);
                 }

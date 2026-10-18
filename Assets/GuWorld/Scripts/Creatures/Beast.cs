@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace GuWorld.Creatures
 {
-    /// <summary>What a Gu can do to a beast besides wounding it (Wolf.Afflict).</summary>
+    /// <summary>What a Gu can do to a beast besides wounding it (Beast.Afflict).</summary>
     public enum Affliction
     {
         None,
@@ -38,7 +38,7 @@ namespace GuWorld.Creatures
     /// king's body a Gu may come.
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
-    public class Wolf : MonoBehaviour, IStrikable, IStaggerable, IFoe
+    public partial class Beast : MonoBehaviour, IStrikable, IStaggerable, IFoe
     {
         const float WanderSpeed = 1.6f;
         const float FleeSpeed = 7;
@@ -56,13 +56,13 @@ namespace GuWorld.Creatures
         public static float DecoyUntil;
 
         /// <summary>Every wolf there is now.</summary>
-        public static readonly List<Wolf> All = new List<Wolf>();
+        public static readonly List<Beast> All = new List<Beast>();
         /// <summary>A wolf killed (by the hero: tasks count them, its fangs and Gu are taken).</summary>
-        public static event Action<Wolf> Killed;
+        public static event Action<Beast> Killed;
         /// <summary>Something a beast king does that the hero should know (it howls, it goes berserk, it raises its shield).</summary>
-        public static event Action<Wolf, string> Roared;
+        public static event Action<Beast, string> Roared;
 
-        public WolfKind Kind { get; private set; } = WolfKinds.Grey;
+        public BeastKind Kind { get; private set; } = WolfKinds.Grey;
         public int Level { get; private set; } = 1;
         public float MaxHealth { get; private set; } = 60;
         public float Health { get; private set; } = 60;
@@ -79,7 +79,7 @@ namespace GuWorld.Creatures
         public bool Berserk => frenzied;
         public bool Maddened => Time.time < howledUntil;
         /// <summary>How tall it stands, m (the HUD puts its name over it).</summary>
-        public float Height => 1.15f * Kind.Scale;
+        public float Height => Kind.Tall * Kind.Scale;
 
         public string Title => Kind.Name;
         public string Rung => Kind.TierName;
@@ -113,6 +113,11 @@ namespace GuWorld.Creatures
         float slowUntil, slowBy, rootUntil, sleepUntil, blindUntil, fearUntil, hurtUntil, hurtPerSecond;
         // What its own Gu do (a king's): when it next spits lightning, howls, raises its shield, stamps; until when they last.
         float nextBolt, nextHowl, nextShield, nextStomp, shieldUntil, howledUntil;
+        // A boar's charge (how far into it, s; below 0 not charging), which way, whether it has struck; a monkey's stones.
+        float nextCharge, nextThrow;
+        float charging = -1;
+        Vector3 chargeWay;
+        Cultivation.GuKind stoneKind;
         bool frenzied;
         Cultivation.GuGlow shieldGlow;
         Cultivation.GuKind boltKind;
@@ -150,19 +155,19 @@ namespace GuWorld.Creatures
         static Material gold;
 
         /// <summary>A wolf at a point (on the ground there), of a pack with its den, after the hero — of a kind and a level (none: a grey wolf of a level by chance).</summary>
-        public static Wolf Make(Vector3 at, Vector3 den, int pack, Transform hero, int seed, WolfKind kind = null, int level = 0)
+        public static Beast Make(Vector3 at, Vector3 den, int pack, Transform hero, int seed, BeastKind kind = null, int level = 0)
         {
             kind ??= WolfKinds.Grey;
             var go = new GameObject(kind.Name);
             go.transform.position = at;
             var controller = go.AddComponent<CharacterController>();
-            controller.radius = 0.36f * kind.Scale;
-            controller.height = Mathf.Max(0.9f * kind.Scale, controller.radius * 2 + 0.01f);
-            controller.center = new Vector3(0, 0.47f * kind.Scale, 0);
+            controller.radius = kind.Girth * kind.Scale;
+            controller.height = Mathf.Max(kind.Tall * 0.8f * kind.Scale, controller.radius * 2 + 0.01f);
+            controller.center = new Vector3(0, controller.height / 2 + 0.02f, 0);
             controller.slopeLimit = 55;
             controller.stepOffset = Mathf.Min(0.4f * kind.Scale, controller.height * 0.4f);
             controller.skinWidth = 0.03f;
-            var wolf = go.AddComponent<Wolf>();
+            var wolf = go.AddComponent<Beast>();
             wolf.controller = controller;
             wolf.Den = den;
             wolf.Pack = pack;
@@ -178,6 +183,22 @@ namespace GuWorld.Creatures
             wolf.nextHowl = Time.time + 3;
             wolf.nextShield = Time.time + kind.ShieldEvery * 0.5f;
             wolf.nextStomp = Time.time + 3;
+            wolf.nextCharge = Time.time + 1.5f + (float)wolf.random.NextDouble() * 2;
+            wolf.nextThrow = Time.time + 1 + (float)wolf.random.NextDouble() * 2;
+
+            if (kind.ThrowEvery > 0)
+            {
+                wolf.stoneKind = new Cultivation.GuKind
+                {
+                    Id = "beast_stone",
+                    Name = "Камень",
+                    Rank = 1,
+                    Icon = "seed",
+                    Range = 26,
+                    Reach = 22,
+                    Colour = new Color(0.4f, 0.42f, 0.38f),
+                };
+            }
 
             if (kind.BoltEvery > 0)
             {
@@ -237,11 +258,11 @@ namespace GuWorld.Creatures
                 paints[Kind.Id] = colours;
             }
 
-            nose ??= Paint("Wolf Nose", new Color(0.06f, 0.05f, 0.05f));
+            nose ??= Paint("Beast Nose", new Color(0.06f, 0.05f, 0.05f));
 
             if (gold == null)
             {
-                gold = Paint("Wolf Gold", new Color(0.95f, 0.75f, 0.3f));
+                gold = Paint("Beast Gold", new Color(0.95f, 0.75f, 0.3f));
                 gold.EnableKeyword("_EMISSION");
                 gold.SetColor("_EmissionColor", new Color(0.6f, 0.4f, 0.1f));
             }
@@ -257,6 +278,15 @@ namespace GuWorld.Creatures
             figure = new GameObject("Figure").transform;
             figure.SetParent(transform, false);
             figure.localScale = Vector3.one * Kind.Scale;
+
+            // A boar, a bear, a monkey, a snake: their own bodies (BeastBodies).
+            if (Kind.Shape != BeastShape.Wolf)
+            {
+                BuildBody(fur, furDark, furLight);
+                Body.Anime.Apply(figure.gameObject);
+
+                return;
+            }
 
             // The body: a long barrel, a deeper chest before it, a darker saddle over the back.
             Part(PrimitiveType.Capsule, figure, new Vector3(0, 0.6f, -0.08f), new Vector3(90, 0, 0), new Vector3(0.4f, 0.55f, 0.38f), fur);
@@ -470,7 +500,8 @@ namespace GuWorld.Creatures
 
                 case Mind.Chase:
                     // Too far from the den, the hero gone or down: back to roaming.
-                    if (heroDown || fromDen > GivesUp * Kind.Sight || heroDistance > GivesUp * 0.7f * Kind.Sight)
+                    // A snake holds its grudge: it follows wherever the hero goes (but not across the mountain).
+                    if (heroDown || heroDistance > 160 || (!Kind.Relentless && (fromDen > GivesUp * Kind.Sight || heroDistance > GivesUp * 0.7f * Kind.Sight)))
                     {
                         state = Mind.Roam;
                         roamTo = Den;
@@ -502,6 +533,25 @@ namespace GuWorld.Creatures
         /// <summary>What a beast king's Gu do in a fight: lightning spat, a howl, a shield raised, a stamp of its forepaws.</summary>
         void Gifts(float heroDistance)
         {
+            // A boar lowers its head and rushes at the hero; a monkey hurls a stone.
+            if (Kind.ChargeEvery > 0 && charging < 0 && Time.time >= nextCharge && heroDistance > Reach * 2 && heroDistance < 16)
+            {
+                nextCharge = Time.time + Kind.ChargeEvery * (0.8f + 0.4f * (float)random.NextDouble()) * (frenzied ? 0.6f : 1);
+                charging = 0;
+                chargeWay = Flat(hero.position - transform.position).normalized;
+
+                if (Kind.Tier > 0)
+                {
+                    Roared?.Invoke(this, "бросается в таран");
+                }
+            }
+
+            if (Kind.ThrowEvery > 0 && Time.time >= nextThrow && heroDistance > Reach * 1.5f && heroDistance < 24)
+            {
+                nextThrow = Time.time + Kind.ThrowEvery * (0.8f + 0.4f * (float)random.NextDouble()) * (frenzied ? 0.6f : 1);
+                Hurl();
+            }
+
             if (Kind.BoltEvery > 0 && Time.time >= nextBolt && heroDistance > Reach * 1.5f && heroDistance < Kind.BoltRange)
             {
                 nextBolt = Time.time + Kind.BoltEvery * (0.8f + 0.4f * (float)random.NextDouble()) * (frenzied ? 0.6f : 1);
@@ -550,6 +600,43 @@ namespace GuWorld.Creatures
             Cultivation.GuBolt.Throw(mouth, (target - mouth).normalized, boltKind, controller, Kind.BoltPower * Fury);
         }
 
+        /// <summary>A stone hurled at the hero, where they will be when it gets there (a little off).</summary>
+        void Hurl()
+        {
+            if (hero == null || stoneKind == null)
+            {
+                return;
+            }
+
+            var hand = head.position + Vector3.up * 0.25f * Kind.Scale;
+            var target = hero.position + Vector3.up * (0.7f + 0.7f * (float)random.NextDouble());
+
+            if (hero.TryGetComponent<Physics.HeroMotor>(out var motor))
+            {
+                target += new Vector3(motor.Velocity.x, 0, motor.Velocity.z) * (Vector3.Distance(hand, target) / 32 * 0.6f);
+            }
+
+            var aim = Quaternion.Euler(((float)random.NextDouble() - 0.5f) * 4, ((float)random.NextDouble() - 0.5f) * 6, 0) * (target - hand).normalized;
+            lunge = 0;
+            Cultivation.GuBolt.Throw(hand, aim, stoneKind, controller, Kind.ThrowPower * Fury);
+        }
+
+        /// <summary>The charge strikes home: tusks into the legs and the belly, the hero knocked reeling.</summary>
+        void Gore()
+        {
+            var parts = new[] { BodyPart.ThighL, BodyPart.ThighR, BodyPart.Belly, BodyPart.Groin, BodyPart.ShinL, BodyPart.ShinR };
+            heroHealth?.TakeStrike(new Strike
+            {
+                Power = Kind.ChargePower * Fury,
+                Sharpness = 0.9f,
+                Point = hero.position + Vector3.up * 0.8f,
+                Direction = chargeWay,
+                Source = gameObject,
+            }, parts[random.Next(parts.Length)]);
+            heroHealth?.Shock(0.6f);
+            biteReady = Mathf.Max(biteReady, 1);
+        }
+
         /// <summary>A howl: the wolves of its pack about it go into a fury for a while.</summary>
         void Howl()
         {
@@ -569,7 +656,13 @@ namespace GuWorld.Creatures
             }
 
             Cultivation.GuGlow.Flash(transform.position + Vector3.up * Height * 0.6f, 4 * Kind.Scale, new Color(0.6f, 0.75f, 1f), 0.6f);
-            Roared?.Invoke(this, "воет — стая звереет");
+            Roared?.Invoke(this, Kind.Shape switch
+            {
+                BeastShape.Boar => "ревёт — стадо бросается в атаку",
+                BeastShape.Monkey => "кричит — стая звереет",
+                BeastShape.Bear => "ревёт",
+                _ => "воет — стая звереет",
+            });
         }
 
         /// <summary>A stamp of the forepaws: lightning through the ground about it, striking and shocking the hero if near.</summary>
@@ -622,10 +715,12 @@ namespace GuWorld.Creatures
             biteReady = Kind.BiteEvery * (frenzied ? 0.7f : 1) * (0.85f + 0.3f * (float)random.NextDouble());
             lunge = 0;
 
-            // Mostly the legs and arms, now and then higher — a big wolf reaches the body and the head.
-            var parts = Kind.Scale < 1.5f
-                ? new[] { BodyPart.ShinL, BodyPart.ShinR, BodyPart.ThighL, BodyPart.ThighR, BodyPart.ForearmL, BodyPart.ForearmR, BodyPart.HandR, BodyPart.Belly }
-                : new[] { BodyPart.Chest, BodyPart.Belly, BodyPart.ThighL, BodyPart.ThighR, BodyPart.UpperArmL, BodyPart.UpperArmR, BodyPart.Head };
+            // Mostly the legs and arms, now and then higher — a big beast (a bear's paw) reaches the body and the head; a snake only the legs.
+            var parts = Kind.Shape == BeastShape.Snake
+                ? new[] { BodyPart.ShinL, BodyPart.ShinR, BodyPart.FootL, BodyPart.FootR, BodyPart.ThighL }
+                : Kind.Scale < 1.5f && Kind.Shape != BeastShape.Bear
+                    ? new[] { BodyPart.ShinL, BodyPart.ShinR, BodyPart.ThighL, BodyPart.ThighR, BodyPart.ForearmL, BodyPart.ForearmR, BodyPart.HandR, BodyPart.Belly }
+                    : new[] { BodyPart.Chest, BodyPart.Belly, BodyPart.ThighL, BodyPart.ThighR, BodyPart.UpperArmL, BodyPart.UpperArmR, BodyPart.Head };
             var part = parts[random.Next(parts.Length)];
             var toHero = (hero.position - transform.position).normalized;
             heroHealth?.TakeStrike(new Strike { Power = Kind.Bite * Fury, Sharpness = 0.8f, Point = hero.position + Vector3.up * 0.5f, Direction = toHero, Source = gameObject }, part);
@@ -633,6 +728,11 @@ namespace GuWorld.Creatures
             if (Kind.Shock > 0)
             {
                 heroHealth?.Shock(Kind.Shock);
+            }
+
+            if (Kind.Venom > 0)
+            {
+                heroHealth?.Poison(Kind.VenomFor, Kind.Venom * Fury);
             }
         }
 
@@ -645,8 +745,31 @@ namespace GuWorld.Creatures
             {
                 case Mind.Chase:
                     goal = DecoyActive && Flat(Decoy.position - transform.position).magnitude < 40 ? Decoy.position : hero.position;
-                    // Close in, then hold at the bite's reach.
-                    wanted = Flat(goal - transform.position).magnitude > Reach * 0.8f ? ChaseSpeed : 0;
+                    var apart = Flat(goal - transform.position).magnitude;
+
+                    if (charging >= 0)
+                    {
+                        // Charging: headlong the way it set off, twice as fast.
+                        goal = transform.position + chargeWay * 10;
+                        wanted = ChaseSpeed * 2;
+                    }
+                    else if (Kind.Keep > 0 && !DecoyActive)
+                    {
+                        // A stone-thrower keeps its distance: closer than it likes, it backs off; within it, it stands and throws.
+                        wanted = apart > Kind.Keep + 3 ? ChaseSpeed : 0;
+
+                        if (apart < Kind.Keep - 3 && apart > Reach)
+                        {
+                            goal = transform.position - (goal - transform.position);
+                            wanted = ChaseSpeed * 0.7f;
+                        }
+                    }
+                    else
+                    {
+                        // Close in, then hold at the bite's reach.
+                        wanted = apart > Reach * 0.8f ? ChaseSpeed : 0;
+                    }
+
                     break;
 
                 case Mind.Flee:
@@ -686,10 +809,11 @@ namespace GuWorld.Creatures
                 wanted = far > 12 ? FleeSpeed : far > 2 ? WanderSpeed * 2.5f : 0;
             }
 
-            // Held fast or asleep it stands; slowed, it goes slower.
+            // Held fast or asleep it stands (a charge cut short); slowed, it goes slower.
             if (Time.time < rootUntil || Time.time < sleepUntil)
             {
                 wanted = 0;
+                charging = -1;
             }
             else if (Time.time < slowUntil)
             {
@@ -704,7 +828,23 @@ namespace GuWorld.Creatures
                 facing += Mathf.DeltaAngle(facing * Mathf.Rad2Deg, target * Mathf.Rad2Deg) * Mathf.Deg2Rad * (1 - Mathf.Exp(-8 * dt));
             }
 
-            speed = Mathf.MoveTowards(speed, wanted, dt * (wanted > speed ? 10 : 14));
+            speed = Mathf.MoveTowards(speed, wanted, dt * (charging >= 0 ? 30 : wanted > speed ? 10 : 14));
+
+            // The charge goes on until it strikes the hero or runs out.
+            if (charging >= 0)
+            {
+                charging += dt;
+
+                if (hero != null && state == Mind.Chase && Flat(hero.position - transform.position).magnitude < Reach * 1.15f)
+                {
+                    Gore();
+                    charging = -1;
+                }
+                else if (charging > 1.3f || state != Mind.Chase)
+                {
+                    charging = -1;
+                }
+            }
             verticalSpeed = controller.isGrounded ? -1 : verticalSpeed - Gravity * dt;
 
             // Thrown by a blow: up off its feet, and sliding back until the ground stops it.
@@ -735,7 +875,7 @@ namespace GuWorld.Creatures
             stride += dt * (2.2f + speed * 1.6f / Mathf.Sqrt(Kind.Scale));
             var swing = Mathf.Clamp01(speed / 1.5f) * (0.35f + 0.35f * pace);
 
-            for (var i = 0; i < 4; i++)
+            for (var i = 0; i < 4 && hips[i] != null; i++)
             {
                 // Front left with back right, front right with back left.
                 var phase = stride + (i == 0 || i == 3 ? 0 : Mathf.PI);
@@ -762,8 +902,14 @@ namespace GuWorld.Creatures
 
             figure.localPosition = new Vector3(0, bob, lean * 0.25f) * Kind.Scale;
             figure.localRotation = Quaternion.Euler(lean * 10, 0, 0);
-            head.localRotation = Quaternion.Euler(-10 + lean * 25 + Mathf.Sin(stride * 2) * 3 * pace, 0, 0);
-            tail.localRotation = Quaternion.Euler(state == Mind.Flee ? 40 : -10 * pace, Mathf.Sin(Time.time * (state == Mind.Chase ? 6 : 2)) * 14, 0);
+            head.localRotation = Quaternion.Euler(-10 + lean * 25 + Mathf.Sin(stride * 2) * 3 * pace + (charging >= 0 ? 18 : 0), 0, 0);
+
+            if (tail != null)
+            {
+                tail.localRotation = Quaternion.Euler(state == Mind.Flee ? 40 : -10 * pace, Mathf.Sin(Time.time * (state == Mind.Chase ? 6 : 2)) * 14, 0);
+            }
+
+            Slither(pace);
         }
 
         bool DecoyActive => Decoy != null && Time.time < DecoyUntil;
@@ -835,6 +981,18 @@ namespace GuWorld.Creatures
             rootUntil = Mathf.Max(rootUntil, Time.time + seconds);
             biteReady = Mathf.Max(biteReady, seconds + 0.3f);
             Push(away.normalized * 4 + Vector3.up * 1.5f);
+        }
+
+        /// <summary>Turned to face a point at once (a picture's beast, posed).</summary>
+        public void Face(Vector3 point)
+        {
+            var to = Flat(point - transform.position);
+
+            if (to.sqrMagnitude > 0.01f)
+            {
+                facing = Mathf.Atan2(to.x, to.z);
+                transform.rotation = Quaternion.Euler(0, facing * Mathf.Rad2Deg, 0);
+            }
         }
 
         /// <summary>Whether something holds it in place now (the checks look).</summary>
@@ -932,8 +1090,25 @@ namespace GuWorld.Creatures
                 transform.rotation = Quaternion.Euler(0, facing * Mathf.Rad2Deg, 0);
             }
 
-            figure.localRotation = Quaternion.Euler(0, 0, 90);
-            figure.localPosition = new Vector3(-0.35f, 0.18f, 0) * Kind.Scale;
+            // A snake lies belly up; the others on their side. A stone monkey turns to rock.
+            if (Kind.Shape == BeastShape.Snake)
+            {
+                figure.localRotation = Quaternion.Euler(0, 0, 180);
+                figure.localPosition = new Vector3(0, 0.22f, 0) * Kind.Scale;
+            }
+            else
+            {
+                figure.localRotation = Quaternion.Euler(0, 0, 90);
+                figure.localPosition = new Vector3(-Kind.Tall * 0.3f, Kind.Girth * 0.5f, 0) * Kind.Scale;
+            }
+
+            charging = -1;
+
+            if (Kind.Stone)
+            {
+                Petrify();
+            }
+
             Killed?.Invoke(this);
         }
 

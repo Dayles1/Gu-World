@@ -274,7 +274,7 @@ namespace GuWorld.Creatures
 
             var distance = Flat(hero.position - transform.position).magnitude;
             var heroDown = heroHealth != null && heroHealth.Down;
-            var sees = Sees * (Night ? 0.7f : 1) * Wolf.Notice * Battle.Sight;
+            var sees = Sees * (Night ? 0.7f : 1) * Beast.Notice * Battle.Sight;
 
             if (Time.time < fearUntil)
             {

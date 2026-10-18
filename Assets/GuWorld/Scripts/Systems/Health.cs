@@ -47,6 +47,33 @@ namespace GuWorld.Systems
             }
         }
 
+        /// <summary>Until when venom works in the blood (a snake's bite), and the harm it does each second.</summary>
+        public float PoisonedUntil { get; private set; }
+        float poisonPerSecond;
+
+        public bool Poisoned => Time.time < PoisonedUntil && !Down;
+
+        /// <summary>Venom in the blood: `perSecond` harm each second for `seconds` (a stronger venom takes over).</summary>
+        public void Poison(float seconds, float perSecond)
+        {
+            if (seconds <= 0 || perSecond <= 0 || Down || (TryGetComponent<Dodge>(out var dodge) && dodge.Untouched))
+            {
+                return;
+            }
+
+            poisonPerSecond = Poisoned ? Mathf.Max(poisonPerSecond, perSecond) : perSecond;
+            PoisonedUntil = Mathf.Max(PoisonedUntil, Time.time + seconds);
+        }
+
+        void Update()
+        {
+            // Venom gets past any skin: it is already inside.
+            if (Poisoned)
+            {
+                Strike(poisonPerSecond * Time.deltaTime);
+            }
+        }
+
         /// <summary>Harm got through: how much (after the skin), and whether it was the last.</summary>
         public event Action<float> Hurt;
         public event Action Fainted;
@@ -95,10 +122,15 @@ namespace GuWorld.Systems
             Current = Mathf.Min(Max, Current + (float)(MendPerHour * minutes / 60));
         }
 
+        /// <summary>Venom drawn out of the blood (a healing Gu does it).</summary>
+        public void Cure() => PoisonedUntil = 0;
+
+        /// <summary>Wounds closed by `amount` (a healing Gu): venom in the blood goes with them.</summary>
         public void Heal(float amount)
         {
             if (amount > 0)
             {
+                Cure();
                 Current = Mathf.Min(Max, Current + amount);
             }
         }

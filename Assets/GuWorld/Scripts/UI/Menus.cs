@@ -26,7 +26,7 @@ namespace GuWorld.UI
         void OpenSandbox();
         void LeaveSandbox();
         int SpawnWolves(int count);
-        int SpawnPack(GuWorld.Creatures.WolfKind kind, int count);
+        int SpawnPack(GuWorld.Creatures.BeastKind kind, int count);
         /// <summary>Gu Masters of a clan ("bai", "xiong", "gu_yue") and a rank called up near the hero, fighting on sight; how many came.</summary>
         int SpawnMasters(string clan, int rank, int count);
         void ClearWolves();

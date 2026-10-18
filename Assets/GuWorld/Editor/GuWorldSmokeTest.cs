@@ -426,6 +426,12 @@ namespace GuWorld.Editor
             Check(thrown && gu.First(spear.Id).tired >= 100 && Object.FindAnyObjectByType<GuBolt>() != null,
                 $"used tired, the spear flies and is spent ({gu.First(spear.Id)?.tired:0})");
 
+            // A snake's venom keeps working in the blood.
+            health.Poison(2, 10);
+            Check(health.Poisoned, "a snake's venom works in the blood");
+            health.Heal(1);
+            Check(!health.Poisoned, "a healing Gu draws the venom out");
+
             // A roll: nothing touches the hero at its start. A guard raised just in time: the blow is parried whole.
             var roll = gu.GetComponent<Combat.Dodge>();
             health.Set(Health.Max);
@@ -498,7 +504,7 @@ namespace GuWorld.Editor
 
             // Wolves: called up beside the hero; a moonblade cuts one, a second kills it, its fang is the hero's.
             var came = game.SpawnWolves(1);
-            var wolf = Creatures.Wolf.All.Find(w => !w.Dead);
+            var wolf = Creatures.Beast.All.Find(w => !w.Dead);
             Check(came == 1 && wolf != null && wolf.GetComponentsInChildren<MeshRenderer>().Length > 10, $"/wolves calls up a wolf beside the hero ({came})");
 
             if (wolf != null)
@@ -512,10 +518,10 @@ namespace GuWorld.Editor
             }
 
             // The kinds of wolves: a beast king comes with its pack, is far harder to wound, and a fist hardly scratches it.
-            Check(Creatures.WolfKinds.All.Length == 5 && Creatures.WolfKinds.ThunderCrown.Tier == 3 && Creatures.WolfKinds.Find("bold") == Creatures.WolfKinds.Bold,
+            Check(Creatures.WolfKinds.All.Length == 5 && Creatures.WolfKinds.ThunderCrown.Tier == 3 && Creatures.BeastKinds.Find("bold") == Creatures.WolfKinds.Bold,
                 "five kinds of wolves, up to the thunder crown wolf, a myriad beast king");
             var pack = game.SpawnPack(Creatures.WolfKinds.Bold, 1);
-            var king = Creatures.Wolf.All.Find(w => w.Kind == Creatures.WolfKinds.Bold);
+            var king = Creatures.Beast.All.Find(w => w.Kind == Creatures.WolfKinds.Bold);
             Check(pack == 4 && king != null && king.Level >= 12 && king.MaxHealth > 400, $"a bold lightning wolf comes with three lightning wolves ({pack}, level {king?.Level}, {king?.MaxHealth:0})");
 
             if (king != null)
@@ -527,6 +533,29 @@ namespace GuWorld.Editor
                 king.TakeStrike(new Combat.Strike { Power = 400, Sharpness = 1, Direction = Vector3.forward }, null);
                 Check(fist < 1 && kingHealth - king.Health > 60, $"a youth's fist hardly scratches a beast king ({fist:0.0}); a rank-three blow cuts it ({kingHealth - king.Health:0})");
             }
+
+            // The other beasts: a boar, a bear, a stone monkey, a snake — each its own body; a stone monkey leaves its jade
+            // pearl; a snake's venom keeps working in the blood.
+            Check(Creatures.BeastKinds.All.Length == 11 && Creatures.BeastKinds.Find("boar_king")?.Tier == 1 && Creatures.WolfPacks.PackOf(Creatures.BeastKinds.BoarKing).Length == 5,
+                "eleven kinds of beasts; the boar king comes with its sounder");
+
+            foreach (var kind in Creatures.BeastKinds.Others)
+            {
+                var called = game.SpawnPack(kind, 1);
+                var beast = Creatures.Beast.All.Find(b => b.Kind == kind && !b.Dead);
+                Check(called >= 1 && beast != null && beast.GetComponentsInChildren<MeshRenderer>().Length > 8, $"{kind.Id} comes with a body of its own ({beast?.GetComponentsInChildren<MeshRenderer>().Length})");
+            }
+
+            var monkeyKilled = Creatures.Beast.All.Find(b => b.Kind == Creatures.BeastKinds.Monkey && !b.Dead);
+
+            if (monkeyKilled != null)
+            {
+                var jade = gu.Bag.Count(ItemBook.JadeRock);
+                monkeyKilled.TakeStrike(new Combat.Strike { Power = 3000, Sharpness = 1, Direction = Vector3.forward }, null);
+                Check(monkeyKilled.Dead && gu.Bag.Count(ItemBook.JadeRock) > jade, "a stone monkey killed leaves its jade");
+            }
+
+            game.ClearWolves();
 
             // Gu Masters of the other clans: their Gu are in the book; called up, they fight on sight; a moonblade wounds one,
             // a blow far stronger kills them, and the stones in their pouch are the hero's.
