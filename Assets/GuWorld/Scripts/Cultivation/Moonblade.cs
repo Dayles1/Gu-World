@@ -37,6 +37,10 @@ namespace GuWorld.Cultivation
         static Material trailGlow;
         static Material haloGlow;
 
+        GuKind kind;
+        Color bright = Bright;
+        Color haloColour = HaloColour;
+        float size = 1;
         Vector3 direction;
         float left;
         float power;
@@ -58,24 +62,37 @@ namespace GuWorld.Cultivation
 
         /// <summary>
         /// Throws a moonblade from a point along a direction: `power` its strength (100 is a
-        /// rank-one Gu Master's), `roll` the crescent's tilt about its flight, degrees.
+        /// rank-one Gu Master's), `roll` the crescent's tilt about its flight, degrees; `scale`
+        /// how much bigger it is and the further it flies (a Little Light beside it). A moon
+        /// Gu of a higher rank throws a bigger blade of its own colour (its Amount, Colour).
         /// </summary>
-        public static Moonblade Throw(Vector3 from, Vector3 direction, GuKind kind, Collider thrower, float power = -1, float roll = 0)
+        public static Moonblade Throw(Vector3 from, Vector3 direction, GuKind kind, Collider thrower, float power = -1, float roll = 0, float scale = 1)
         {
             var go = new GameObject("Moonblade");
             go.transform.SetPositionAndRotation(from, Quaternion.LookRotation(direction, Vector3.up) * Quaternion.Euler(0, 0, roll));
             var blade = go.AddComponent<Moonblade>();
+            blade.kind = kind;
+            blade.size = Mathf.Max(0.3f, scale * (kind.Amount > 0 ? kind.Amount : 1));
+            go.transform.localScale = Vector3.one * blade.size;
             blade.direction = direction.normalized;
-            blade.left = Mathf.Max(kind.Range, kind.Reach);
-            blade.reach = kind.Reach > 0 ? kind.Reach : blade.left;
+            blade.left = Mathf.Max(kind.Range, kind.Reach) * scale;
+            blade.reach = (kind.Reach > 0 ? kind.Reach : blade.left) * scale;
             blade.power = power > 0 ? power : kind.Power;
             blade.thrower = thrower;
+
+            // Not the Moonlight Gu's own pale blue: a blade of its Gu's colour.
+            if (kind != GuBook.Moonlight)
+            {
+                var c = kind.Colour;
+                blade.bright = new Color(c.r * 2.2f, c.g * 2.2f, c.b * 2.4f, 1);
+                blade.haloColour = new Color(c.r * 0.8f, c.g * 0.8f, c.b, 0.55f);
+            }
             // The crescent itself, its face tipped up so it shows from behind and above.
             var shape = new GameObject("Crescent").transform;
             shape.SetParent(go.transform, false);
             shape.localRotation = Quaternion.Euler(-Tip, 0, 0);
             shape.gameObject.AddComponent<MeshFilter>().sharedMesh = Crescent();
-            blade.material = new Material(Glow());
+            blade.material = new Material(Glow()) { color = blade.bright };
             var renderer = shape.gameObject.AddComponent<MeshRenderer>();
             renderer.sharedMaterial = blade.material;
             renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
@@ -86,13 +103,13 @@ namespace GuWorld.Cultivation
             blade.halo.localPosition = new Vector3(0, 0, Outer * 0.7f);
             blade.halo.localScale = new Vector3(Outer * 2.6f, Outer * 1.3f, 1);
             blade.halo.gameObject.AddComponent<MeshFilter>().sharedMesh = Quad();
-            blade.haloMaterial = new Material(HaloGlow());
+            blade.haloMaterial = new Material(HaloGlow()) { color = blade.haloColour };
             var haloRenderer = blade.halo.gameObject.AddComponent<MeshRenderer>();
             haloRenderer.sharedMaterial = blade.haloMaterial;
             haloRenderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
             blade.shine = go.AddComponent<Light>();
             blade.shine.type = LightType.Point;
-            blade.shine.color = new Color(0.55f, 0.78f, 1);
+            blade.shine.color = kind == GuBook.Moonlight ? new Color(0.55f, 0.78f, 1) : kind.Colour;
             blade.shine.range = 7;
             blade.shine.intensity = 2.4f;
             blade.shine.shadows = LightShadows.None;
@@ -157,10 +174,10 @@ namespace GuWorld.Cultivation
             {
                 fading += dt / 0.2f;
                 var a = Mathf.Clamp01(1 - fading);
-                material.color = Bright * a;
-                haloMaterial.color = HaloColour * a;
+                material.color = bright * a;
+                haloMaterial.color = haloColour * a;
                 shine.intensity = 2.4f * a;
-                transform.localScale = Vector3.one * (1 + fading * 0.5f);
+                transform.localScale = Vector3.one * size * (1 + fading * 0.5f);
 
                 if (fading >= 1)
                 {
@@ -172,7 +189,7 @@ namespace GuWorld.Cultivation
                 return;
             }
 
-            var step = Mathf.Min(Speed * dt, left);
+            var step = Mathf.Min(Speed * Mathf.Sqrt(size) * dt, left);
 
             if (Hit(step, out var point, out var distance, out var zone, out var solid))
             {
@@ -194,6 +211,12 @@ namespace GuWorld.Cultivation
                 else if (solid != null && solid.GetComponentInParent<IStrikable>() is IStrikable target)
                 {
                     target.TakeStrike(strike, null);
+
+                    // Frost that slows, a wound that bleeds (the rank-three moons).
+                    if (kind != null)
+                    {
+                        GuSkills.Afflict(target, kind);
+                    }
                 }
 
                 Spend();
@@ -256,9 +279,9 @@ namespace GuWorld.Cultivation
 
             // The parts of bodies: the crescent's whole edge, a thin box across the flight.
             var met = new List<(HitZone, float)>();
-            var half = new Vector3(Mathf.Sin(Horns) * Outer, 0.06f, 0.05f);
+            var half = new Vector3(Mathf.Sin(Horns) * Outer * size, 0.06f * size, 0.05f);
 
-            foreach (var hit in UnityEngine.Physics.BoxCastAll(transform.position + direction * (Outer * 0.6f), half, direction, transform.rotation, step, ~0, QueryTriggerInteraction.Collide))
+            foreach (var hit in UnityEngine.Physics.BoxCastAll(transform.position + direction * (Outer * 0.6f * size), half, direction, transform.rotation, step, ~0, QueryTriggerInteraction.Collide))
             {
                 if (!hit.collider.isTrigger || Mine(hit.collider) || !hit.collider.TryGetComponent<HitZone>(out var part))
                 {
@@ -297,6 +320,12 @@ namespace GuWorld.Cultivation
         }
 
         /// <summary>A flat crescent, lying across the flight (+Z forward), its round edge leading, bright at the edge.</summary>
+        /// <summary>The crescent's shape (the aim's ghost of the blade is drawn with it).</summary>
+        public static Mesh CrescentMesh => Crescent();
+
+        /// <summary>How far the crescent's face is tipped toward the thrower, degrees.</summary>
+        public const float TipAngle = Tip;
+
         static Mesh Crescent()
         {
             if (crescent != null)

@@ -51,15 +51,7 @@ namespace GuWorld.Systems
                 Keeper = "Гу Юэ Баошань",
                 Title = "Лавка Баошаня · Гу и корм для Гу",
                 Hello = "Корм для Гу, Гу для мастеров, мазь — для ран. Лепестки свежие, утренние — десяток за камень, как везде в деревне.",
-                Goods = new[]
-                {
-                    new Goods { Item = ItemBook.Petal, Stock = 30 },
-                    new Goods { Item = ItemBook.JadeRock, Stock = 20 },
-                    new Goods { Item = ItemBook.IntimateGrass, Stock = 20 },
-                    new Goods { Item = ItemBook.Salve, Stock = 5 },
-                    new Goods { Item = ItemBook.MoonlightGu, Stock = 1 },
-                    new Goods { Item = ItemBook.JadeSkinGu, Stock = 1 },
-                },
+                Goods = BaoshanGoods(),
             },
             new Shop
             {
@@ -76,6 +68,36 @@ namespace GuWorld.Systems
                 },
             },
         };
+
+        /// <summary>
+        /// Baoshan's goods: the Gu's food, the salve, and every Gu of the catalogue that has a
+        /// price — the rank-one ones one a day, the dearer rank-two ones now and then.
+        /// </summary>
+        static Goods[] BaoshanGoods()
+        {
+            var goods = new List<Goods>
+            {
+                new Goods { Item = ItemBook.Petal, Stock = 30 },
+                new Goods { Item = ItemBook.JadeRock, Stock = 20 },
+                new Goods { Item = ItemBook.IntimateGrass, Stock = 20 },
+                new Goods { Item = ItemBook.RawMeat, Stock = 20 },
+                new Goods { Item = ItemBook.BeastBone, Stock = 15 },
+                new Goods { Item = ItemBook.IronSand, Stock = 20 },
+                new Goods { Item = ItemBook.SpringWater, Stock = 20 },
+                new Goods { Item = ItemBook.Charcoal, Stock = 20 },
+                new Goods { Item = ItemBook.Salve, Stock = 5 },
+            };
+
+            foreach (var gu in GuWorld.Cultivation.GuBook.All)
+            {
+                if (gu.Price > 0)
+                {
+                    goods.Add(new Goods { Item = gu.Item, Stock = 1 });
+                }
+            }
+
+            return goods.ToArray();
+        }
 
         /// <summary>The shop a villager keeps (null: none).</summary>
         public static Shop Of(string keeper) => System.Array.Find(Shops, s => s.Keeper == keeper);

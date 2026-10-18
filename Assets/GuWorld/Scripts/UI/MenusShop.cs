@@ -238,7 +238,8 @@ namespace GuWorld.UI
                 ItemUse.Eat when kind.Heal > 0 => $"+{kind.Heal:0} здоровья",
                 ItemUse.Feed when kind.AnyGu => "порция корма любому Гу",
                 ItemUse.Feed => "корм для Гу",
-                ItemUse.Refine => $"очистка за {GuBook.Find(kind.Gu)?.RefineCost:0}% эссенции",
+                ItemUse.Refine => $"очистка за {GuBook.Find(kind.Gu)?.RefineCost:0}% эссенции (мастеру его ранга)",
+                ItemUse.Activate => GuBook.Find(kind.Gu)?.SkillName,
                 _ => null,
             };
 

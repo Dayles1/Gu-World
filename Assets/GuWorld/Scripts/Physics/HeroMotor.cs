@@ -86,6 +86,8 @@ namespace GuWorld.Physics
         const float Edge = 1;
 
         public Vector3 Velocity;
+        /// <summary>How many times higher a jump goes (a Gu's wings: more).</summary>
+        public float JumpScale = 1;
         public bool Grounded { get; private set; }
         public Vector3 GroundNormal { get; private set; } = Vector3.up;
         /// <summary>Which way the body faces (radians around Y; 0 looks along +Z).</summary>
@@ -820,7 +822,7 @@ namespace GuWorld.Physics
 
             if (jumpBuffered > 0 && sinceGrounded <= CoyoteTime && Stance != Stance.Crawl)
             {
-                Velocity.y = JumpSpeed * (Stance == Stance.Crouch ? 0.75f : 1);
+                Velocity.y = JumpSpeed * Mathf.Sqrt(Mathf.Max(0.1f, JumpScale)) * (Stance == Stance.Crouch ? 0.75f : 1);
                 jumpBuffered = 0;
                 sinceGrounded = CoyoteTime + 1;
                 jumped = true;

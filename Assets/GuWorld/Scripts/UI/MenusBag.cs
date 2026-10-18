@@ -39,10 +39,16 @@ namespace GuWorld.UI
             var name = UiKit.Label(title, top, 34, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold);
             name.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 82, 0, -420, 0);
 
+            // Five tabs (the immortal's aperture adds its own) need more room.
             var tabs = UiKit.Rect("Tabs", top).Place(Vector2.zero, new Vector2(0, 1), 430, 12, -1100, 12);
             tabs.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleLeft).childForceExpandWidth = true;
 
-            foreach (var (label, key, target) in new[] { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) })
+            // The immortal's aperture has no bag or ring to look after: its own page instead.
+            var pages = host.Sandbox
+                ? new System.Collections.Generic.List<(string, string, Page)> { ("Все Гу", "Tab", Page.Sandbox), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) }
+                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
+
+            foreach (var (label, key, target) in pages)
             {
                 var to = target;
                 UiKit.Button($"{UiKit.Spaced(label)}   <color=#A69A86>{key}</color>", tabs, () => host.OpenPage(to), target == page ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(52, -1, 1);
@@ -222,6 +228,16 @@ namespace GuWorld.UI
             {
                 Stat(details, "Даёт", $"+{kind.Heal:0} здоровья");
             }
+            else if (GuBook.Find(kind.Gu) is GuKind gk)
+            {
+                Stat(details, "Навык", gk.SkillName);
+                UiKit.Label(SkillLine(gk), details, 14, UiKit.Muted).Size(40);
+
+                if (!gk.Passive)
+                {
+                    Stat(details, "Вам стоит", $"{host.Cultivator.CostOf(gk):0.#}% эссенции");
+                }
+            }
 
             var space = UiKit.Rect("Space", details);
             space.Size(-1).flexibleHeight = 1;
@@ -229,7 +245,7 @@ namespace GuWorld.UI
 
             if (kind.Use != ItemUse.None)
             {
-                UiKit.Button(UiKit.Spaced(ActionName(kind)), details, () =>
+                UiKit.Button(UiKit.Spaced(ActionName(kind, host.Cultivator)), details, () =>
                 {
                     // A stone is drawn in over three seconds in the world: back to it.
                     if (host.Cultivator.UseCell(cellIndex) && kind.Use == ItemUse.Absorb)
@@ -261,9 +277,10 @@ namespace GuWorld.UI
 
         }
 
-        static string ActionName(ItemKind kind) => kind.Use switch
+        static string ActionName(ItemKind kind, Cultivator gu) => kind.Use switch
         {
-            ItemUse.Refine => $"Очистить в апертуру · {GuBook.Find(kind.Gu)?.RefineCost:0}%",
+            ItemUse.Refine => $"Очистить в апертуру · {gu.RefineCostOf(GuBook.Find(kind.Gu)):0.#}%",
+            ItemUse.Activate => $"{kind.Verb ?? "Применить"} · {gu.CostOf(GuBook.Find(kind.Gu)):0.#}%",
             ItemUse.Absorb => "Поглотить · V",
             _ when kind.Verb != null => kind.Verb,
             ItemUse.Eat => "Съесть",

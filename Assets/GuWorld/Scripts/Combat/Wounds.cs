@@ -160,7 +160,18 @@ namespace GuWorld.Combat
         /// <summary>A blow landed and what it did (for the HUD's log): on whom, where, how much, whether it was the end.</summary>
         public static event Action<string, BodyPart?, float, bool> Landed;
 
-        public static void Report(string who, BodyPart? part, float harm, bool down) => Landed?.Invoke(who, part, harm, down);
+        public static void Report(string who, BodyPart? part, float harm, bool down, Vector3? at = null)
+        {
+            Landed?.Invoke(who, part, harm, down);
+
+            if (at.HasValue)
+            {
+                Struck?.Invoke(at.Value, who, part, harm, down);
+            }
+        }
+
+        /// <summary>A blow landed where it can be shown (its point): for the numbers that rise from it.</summary>
+        public static event Action<Vector3, string, BodyPart?, float, bool> Struck;
 
         /// <summary>A line for the log: "Голова −56 (уязвимое место)".</summary>
         public static string Line(string who, BodyPart? part, float harm, bool down)

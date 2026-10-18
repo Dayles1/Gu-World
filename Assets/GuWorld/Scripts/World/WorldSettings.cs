@@ -39,5 +39,14 @@ namespace GuWorld.World
             new Vector3(256, 120, 256),
             new Vector3(0, 0, 12),
             3.14159f);
+
+        /// <summary>The test polygon — an immortal's aperture (a blessed land): the proving ground's field grown to a square kilometre, for trying every Gu.</summary>
+        public static LocationSettings Polygon => FromMinMax(
+            "polygon",
+            "Благословенная земля · апертура бессмертного",
+            new Vector3(-500, -20, -500),
+            new Vector3(500, 160, 500),
+            new Vector3(0, 0, 12),
+            3.14159f);
     }
 }

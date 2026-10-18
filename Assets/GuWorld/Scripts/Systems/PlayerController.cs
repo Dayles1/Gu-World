@@ -42,6 +42,8 @@ namespace GuWorld.Systems
         public float SpeedScale = 1;
         /// <summary>No running (while drawing in a stone).</summary>
         public bool NoSprint;
+        /// <summary>The wheel brings the camera nearer or further (off on the immortal's aperture: there it picks the Gu).</summary>
+        public bool WheelZoom = true;
         /// <summary>The body turned the way the camera looks (while a skill is aimed; always from the eyes).</summary>
         public bool FaceView;
 
@@ -103,7 +105,7 @@ namespace GuWorld.Systems
                     var around = Key(keyboard.aKey.isPressed || keyboard.leftArrowKey.isPressed, keyboard.dKey.isPressed || keyboard.rightArrowKey.isPressed);
                     body.ClimbTick(Time.deltaTime, up, around, keyboard.spaceKey.wasPressedThisFrame);
                     var delta = mouse.delta.ReadValue();
-                    var scroll = mouse.scroll.ReadValue().y;
+                    var scroll = WheelZoom ? mouse.scroll.ReadValue().y : 0;
                     Camera.Look(delta.x, delta.y, -Mathf.Sign(scroll) * (scroll != 0 ? 1 : 0));
                 }
 
@@ -123,7 +125,7 @@ namespace GuWorld.Systems
                     body.WallTick(Time.deltaTime, up, side, keyboard.spaceKey.wasPressedThisFrame,
                         keyboard.cKey.wasPressedThisFrame || keyboard.leftCtrlKey.wasPressedThisFrame);
                     var delta = mouse.delta.ReadValue();
-                    var scroll = mouse.scroll.ReadValue().y;
+                    var scroll = WheelZoom ? mouse.scroll.ReadValue().y : 0;
                     Camera.Look(delta.x, delta.y, -Mathf.Sign(scroll) * (scroll != 0 ? 1 : 0));
                 }
                 else
@@ -155,7 +157,7 @@ namespace GuWorld.Systems
                 if (keyboard.zKey.wasPressedThisFrame) ToggleStance(Stance.Crawl);
 
                 var delta = mouse.delta.ReadValue();
-                var scroll = mouse.scroll.ReadValue().y;
+                var scroll = WheelZoom ? mouse.scroll.ReadValue().y : 0;
                 Camera.Look(delta.x, delta.y, -Mathf.Sign(scroll) * (scroll != 0 ? 1 : 0));
             }
 

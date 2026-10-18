@@ -20,7 +20,8 @@ namespace GuWorld.Creatures
         class Den
         {
             public Vector3 At;
-            public int Size;
+            /// <summary>The wolves that live there, by kind (a king among its pack).</summary>
+            public WolfKind[] Kinds;
             public int Pack;
             public readonly List<Wolf> Wolves = new List<Wolf>();
             public float BackAt;
@@ -68,17 +69,52 @@ namespace GuWorld.Creatures
             return best;
         }
 
-        public static WolfPacks Create(Transform hero, IEnumerable<Vector3> denPoints, int packSize = 3)
+        /// <summary>The packs of the dens given: where each den is and who lives there.</summary>
+        public static WolfPacks Create(Transform hero, IEnumerable<(Vector3 at, WolfKind[] kinds)> denPoints)
         {
             var packs = new GameObject("Wolf Packs").AddComponent<WolfPacks>();
             packs.hero = hero;
 
-            foreach (var at in denPoints)
+            foreach (var (at, kinds) in denPoints)
             {
-                packs.dens.Add(new Den { At = at, Size = packSize, Pack = packs.dens.Count + 1 });
+                packs.dens.Add(new Den { At = at, Kinds = kinds, Pack = packs.dens.Count + 1 });
             }
 
             return packs;
+        }
+
+        /// <summary>A pack of `count` of a kind, and — for a beast king — its escort of the kind below it.</summary>
+        public static WolfKind[] PackOf(WolfKind kind, int count = 1)
+        {
+            var pack = new List<WolfKind>();
+
+            for (var i = 0; i < count; i++)
+            {
+                pack.Add(kind);
+            }
+
+            var escort = kind.Tier switch
+            {
+                1 => (WolfKinds.Lightning, 3),
+                2 => (WolfKinds.Lightning, 4),
+                3 => (WolfKinds.Bold, 2),
+                _ => (null, 0),
+            };
+
+            for (var i = 0; i < escort.Item2; i++)
+            {
+                pack.Add(escort.Item1);
+            }
+
+            if (kind.Tier == 3)
+            {
+                for (var i = 0; i < 4; i++)
+                {
+                    pack.Add(WolfKinds.Lightning);
+                }
+            }
+
+            return pack.ToArray();
         }
 
         void Update()
@@ -122,10 +158,10 @@ namespace GuWorld.Creatures
 
                 if (living.Count == 0 && den.Wolves.Count == 0 && distance < ComeOut && Time.time >= den.BackAt)
                 {
-                    for (var k = 0; k < den.Size; k++)
+                    for (var k = 0; k < den.Kinds.Length; k++)
                     {
-                        var angle = k * Mathf.PI * 2 / den.Size;
-                        Place(den, den.At + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 3);
+                        var angle = k * Mathf.PI * 2 / den.Kinds.Length;
+                        Place(den, den.At + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * (3 + 1.5f * den.Kinds[k].Scale), den.Kinds[k]);
                     }
                 }
                 else if (living.Count == 0 && den.Wolves.Count > 0)
@@ -136,29 +172,39 @@ namespace GuWorld.Creatures
             }
         }
 
-        /// <summary>A pack called up beside the hero (`count` wolves, 18–26 m off; toward a way, if given); how many came.</summary>
-        public int CallNear(int count, Vector3? toward = null)
+        /// <summary>A pack called up beside the hero (`count` grey wolves, 18–26 m off; toward a way, if given); how many came.</summary>
+        public int CallNear(int count, Vector3? toward = null) => CallNear(PackOf(WolfKinds.Grey, count), toward);
+
+        /// <summary>A pack of these wolves called up beside the hero (further off for the bigger ones); how many came.</summary>
+        public int CallNear(WolfKind[] kinds, Vector3? toward = null)
         {
-            if (hero == null)
+            if (hero == null || kinds.Length == 0)
             {
                 return 0;
             }
 
+            var biggest = 1f;
+
+            foreach (var kind in kinds)
+            {
+                biggest = Mathf.Max(biggest, kind.Scale);
+            }
+
             var angle = toward.HasValue ? Mathf.Atan2(toward.Value.z, toward.Value.x) + (Random.value - 0.5f) * 0.6f : Random.value * Mathf.PI * 2;
-            var at = hero.position + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * (18 + Random.value * 8);
-            var den = new Den { At = at, Size = count, Pack = 1000 + dens.Count, Called = true };
+            var at = hero.position + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * (16 + 4 * biggest + Random.value * 8);
+            var den = new Den { At = at, Kinds = kinds, Pack = 1000 + dens.Count, Called = true };
             dens.Add(den);
 
-            for (var k = 0; k < count; k++)
+            for (var k = 0; k < kinds.Length; k++)
             {
-                var a = k * Mathf.PI * 2 / count;
-                Place(den, at + new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * 2.5f);
+                var a = k * Mathf.PI * 2 / kinds.Length;
+                Place(den, at + new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * (k == 0 ? 0 : 2.5f + kinds[0].Scale), kinds[k]);
             }
 
             return den.Wolves.Count;
         }
 
-        void Place(Den den, Vector3 at)
+        void Place(Den den, Vector3 at, WolfKind kind)
         {
             // On whatever is there: the ground, a rock (looked for from above).
             if (UnityEngine.Physics.Raycast(new Vector3(at.x, at.y + 60, at.z), Vector3.down, out var hit, 200, ~0, QueryTriggerInteraction.Ignore))
@@ -170,7 +216,7 @@ namespace GuWorld.Creatures
                 at.y = GuWorld.World.QingMao.GroundAt(at) + 0.05f;
             }
 
-            den.Wolves.Add(Wolf.Make(at, den.At, den.Pack, hero, seed++));
+            den.Wolves.Add(Wolf.Make(at, den.At, den.Pack, hero, seed++, kind));
         }
 
         static Vector3 Flat(Vector3 v) => new Vector3(v.x, 0, v.z);

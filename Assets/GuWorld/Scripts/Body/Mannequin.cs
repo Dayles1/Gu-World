@@ -64,6 +64,8 @@ namespace GuWorld.Body
             SpreadL, SpreadR, TurnOut, ArmL, ArmR, ArmOutL, ArmOutR, ElbowL, ElbowR,
             // How the hands close: 0 loosely curled, 1 a fist, below 0 open and straight.
             Grip,
+            // The whole body turned round about its own axis (a roundhouse spins it a full turn), radians.
+            Spin,
             Count,
         }
 
@@ -210,9 +212,12 @@ namespace GuWorld.Body
             squash *= Mathf.Exp(-8 * dt);
 
             TargetPose(dt, motion);
-            var rate = motion.swimming || motion.stance == Stance.Crawl ? 7 : 18;
+            // A blow is snapped into: the figure follows it closely (else it would lag behind a jab and never reach it).
+            var rate = motion.swimming || motion.stance == Stance.Crawl ? 7 : BlowPhase >= 0 ? 34 : 18;
             var ease = 1 - Mathf.Exp(-rate * dt);
             var slowEase = 1 - Mathf.Exp(-6 * dt);
+            // A full turn is no turn: the spin eases the short way round (a roundhouse ends where it began).
+            pose[(int)P.Spin] = target[(int)P.Spin] + Mathf.DeltaAngle(target[(int)P.Spin] * Mathf.Rad2Deg, pose[(int)P.Spin] * Mathf.Rad2Deg) * Mathf.Deg2Rad;
 
             for (var i = 0; i < pose.Length; i++)
             {
@@ -337,6 +342,25 @@ namespace GuWorld.Body
         /// <summary>Out and back: rising to 1 by `at`, held a moment, back to 0 by the end.</summary>
         static float OutAndBack(float t, float at) => t < at ? Smooth(t / at) : 1 - Smooth((t - at - 0.08f) / Mathf.Max(0.01f, 1 - at - 0.08f));
 
+        static float EaseOut(float t)
+        {
+            var x = 1 - Mathf.Clamp01(t);
+
+            return 1 - x * x * x;
+        }
+
+        /// <summary>
+        /// A blow's two movements through its time `t`: the wind-up (rising to 1 by `wound`, gone again by `lands`) and the
+        /// blow itself (nothing until `wound`, snapping out to 1 by `lands`, held until `held`, drawn back by the end).
+        /// </summary>
+        static (float wind, float strike) Phases(float t, float wound, float lands, float held)
+        {
+            var wind = t < wound ? Smooth(t / wound) : 1 - Smooth((t - wound) / Mathf.Max(0.01f, lands - wound));
+            var strike = t < wound ? 0 : t < lands ? EaseOut((t - wound) / Mathf.Max(0.01f, lands - wound)) : t < held ? 1 : 1 - Smooth((t - held) / Mathf.Max(0.01f, 1 - held));
+
+            return (wind, strike);
+        }
+
         /// <summary>
         /// The guard (the elbows in, the forearms up, the fists before the chin, the chin down), and a blow from it:
         /// a jab — the left fist straight out, the shoulders turning behind it; a cross — the right, the hips turning
@@ -383,86 +407,125 @@ namespace GuWorld.Body
 
             var t = Mathf.Clamp01(BlowPhase);
 
+            // Every blow is wound up, snapped out and drawn back; the head keeps to the mark whatever the shoulders do
+            // (what they turn, it turns back).
             switch (Blow)
             {
                 case Combat.Blow.Jab:
                 {
-                    var e = OutAndBack(t, 0.38f);
-                    this[P.ArmL] = Mathf.Lerp(-0.75f, -1.52f, e);
-                    this[P.ElbowL] = Mathf.Lerp(-2.1f, -0.08f, e);
-                    this[P.ArmOutL] = Mathf.Lerp(0.2f, -0.12f, e);
-                    this[P.Twist] -= 0.32f * e;
-                    this[P.HeadY] += 0.12f * e;
-                    this[P.Lean] += 0.05f * e;
+                    // The left fist straight out from the guard, the left foot stepping in, the shoulders turning behind it.
+                    var (wind, strike) = Phases(t, 0.2f, 0.42f, 0.55f);
+                    this[P.ArmL] = Mathf.Lerp(Mathf.Lerp(-0.75f, -0.55f, wind), -1.56f, strike);
+                    this[P.ElbowL] = Mathf.Lerp(Mathf.Lerp(-2.1f, -2.35f, wind), -0.04f, strike);
+                    this[P.ArmOutL] = Mathf.Lerp(0.2f, -0.12f, strike);
+                    Turn(0.1f * wind - 0.5f * strike, -0.15f * strike);
+                    this[P.Lean] += 0.14f * strike;
+                    this[P.FootZL] += 0.14f * strike;
+                    this[P.BodyY] -= 0.03f * strike;
                     break;
                 }
                 case Combat.Blow.Cross:
                 {
-                    var e = OutAndBack(t, 0.4f);
-                    this[P.ArmR] = Mathf.Lerp(-0.6f, -1.55f, e);
-                    this[P.ElbowR] = Mathf.Lerp(-2.25f, -0.06f, e);
-                    this[P.ArmOutR] = Mathf.Lerp(0.2f, -0.18f, e);
-                    this[P.Twist] += 0.5f * e;
-                    this[P.HipsYaw] += 0.22f * e;
-                    this[P.HeadY] -= 0.15f * e;
-                    this[P.Lean] += 0.1f * e;
+                    // The right fist across the body's line, the hips driving it, the back heel turning up.
+                    var (wind, strike) = Phases(t, 0.22f, 0.45f, 0.58f);
+                    this[P.ArmR] = Mathf.Lerp(Mathf.Lerp(-0.6f, -0.42f, wind), -1.58f, strike);
+                    this[P.ElbowR] = Mathf.Lerp(Mathf.Lerp(-2.25f, -2.45f, wind), -0.04f, strike);
+                    this[P.ArmOutR] = Mathf.Lerp(0.2f, -0.24f, strike);
+                    Turn(-0.22f * wind + 0.75f * strike, -0.1f * wind + 0.42f * strike);
+                    this[P.Lean] += 0.18f * strike;
+                    this[P.RollR] += 0.5f * strike;
+                    this[P.FootZR] += 0.06f * strike;
+                    this[P.BodyY] -= 0.04f * strike;
+                    break;
+                }
+                case Combat.Blow.Hook:
+                {
+                    // The left arm bent square at the shoulder's height, swung out wide, then round across the front.
+                    var (wind, strike) = Phases(t, 0.25f, 0.5f, 0.62f);
+                    var raise = Mathf.Max(wind, strike);
+                    this[P.ArmL] = Mathf.Lerp(-0.75f, -1.35f, raise);
+                    this[P.ArmOutL] = Mathf.Lerp(0.2f, Mathf.Lerp(1.0f, -0.5f, strike), raise);
+                    this[P.ElbowL] = Mathf.Lerp(-2.1f, -1.5f, raise);
+                    Turn(0.35f * wind - 0.85f * strike, 0.15f * wind - 0.4f * strike);
+                    this[P.Lean] += 0.1f * strike;
+                    this[P.Side] += 0.08f * strike;
+                    this[P.RollL] += 0.3f * strike;
+                    this[P.BodyY] -= 0.05f * raise;
                     break;
                 }
                 case Combat.Blow.Heavy:
                 {
-                    // Down into the knees, the right fist dropped back; then up through the hips, the fist driven up under the chin before it.
-                    var load = t < 0.3f ? Smooth(t / 0.3f) : 1 - Smooth((t - 0.3f) / 0.22f);
-                    var drive = OutAndBack(t, 0.52f);
-                    this[P.BodyY] -= 0.1f * load;
-                    this[P.ArmR] = Mathf.Lerp(Mathf.Lerp(-0.6f, 0.35f, load), -1.95f, drive);
-                    this[P.ElbowR] = Mathf.Lerp(Mathf.Lerp(-2.25f, -1.4f, load), -1.25f, drive);
-                    this[P.ArmOutR] = Mathf.Lerp(0.2f, 0.05f, drive);
-                    this[P.Twist] += 0.55f * drive - 0.3f * load;
-                    this[P.HipsYaw] += 0.25f * drive - 0.12f * load;
-                    this[P.Lean] += 0.12f * load - 0.08f * drive;
-                    this[P.HeadX] -= 0.08f * drive;
+                    // Down into the knees, the right fist dropped back by the hip; then up through the legs and the hips onto
+                    // the toes, the fist driven up under the chin before it — the head following it up.
+                    var (load, drive) = Phases(t, 0.32f, 0.55f, 0.66f);
+                    this[P.BodyY] -= 0.18f * load - 0.03f * drive;
+                    this[P.ArmR] = Mathf.Lerp(Mathf.Lerp(-0.6f, 0.35f, load), -1.7f, drive);
+                    this[P.ElbowR] = Mathf.Lerp(Mathf.Lerp(-2.25f, -1.3f, load), -1.5f, drive);
+                    this[P.ArmOutR] = Mathf.Lerp(Mathf.Lerp(0.2f, 0.35f, load), 0.02f, drive);
+                    Turn(-0.4f * load + 0.7f * drive, -0.18f * load + 0.32f * drive);
+                    this[P.Lean] += 0.22f * load - 0.14f * drive;
+                    this[P.HeadX] -= 0.2f * drive;
+                    this[P.RollR] += 0.45f * drive;
+                    this[P.RollL] += 0.25f * drive;
                     break;
                 }
                 case Combat.Blow.Spin:
                 {
-                    // The hips turn through, the right leg comes round high from the side, and back.
-                    var lift = t < 0.3f ? Smooth(t / 0.3f) : t < 0.65f ? 1 : 1 - Smooth((t - 0.65f) / 0.35f);
-                    var snap = t < 0.3f ? 0 : t < 0.5f ? Smooth((t - 0.3f) / 0.2f) : 1 - Smooth((t - 0.58f) / 0.22f);
+                    // A roundhouse: the whole body turns a full circle on the left foot, the right leg swung out high and wide
+                    // as it comes round, the arms flung out for the balance.
+                    var turn = Smooth((t - 0.06f) / 0.74f);
+                    var lift = t < 0.3f ? Smooth((t - 0.08f) / 0.22f) : t < 0.7f ? 1 : 1 - Smooth((t - 0.7f) / 0.3f);
+                    var snap = t < 0.35f ? 0 : t < 0.55f ? EaseOut((t - 0.35f) / 0.2f) : 1 - Smooth((t - 0.62f) / 0.2f);
+                    this[P.Spin] = Mathf.PI * 2 * turn;
                     this[P.Ik] = 0;
-                    this[P.BodyY] = -0.04f;
+                    this[P.BodyY] = -0.05f;
                     this[P.ThighL] = 0.05f;
-                    this[P.KneeL] = 0.18f;
-                    this[P.FootL] = -0.1f;
-                    this[P.HipsYaw] += 0.75f * lift;
-                    this[P.Twist] += 0.35f * lift;
-                    this[P.ThighR] = -0.9f * lift;
-                    this[P.SpreadR] = 1.15f * lift;
-                    this[P.KneeR] = 1.7f * lift * (1 - snap) + 0.12f * snap;
-                    this[P.Side] -= 0.3f * lift;
-                    this[P.Roll] -= 0.12f * lift;
-                    this[P.ArmOutL] += 0.5f * lift;
-                    this[P.ArmOutR] += 0.3f * lift;
+                    this[P.KneeL] = 0.22f;
+                    this[P.FootL] = -0.12f;
+                    this[P.ThighR] = -1.05f * lift;
+                    this[P.SpreadR] = 1.35f * lift;
+                    this[P.KneeR] = Mathf.Lerp(1.7f, 0.1f, snap) * lift;
+                    this[P.FootR] = 0.3f * snap;
+                    this[P.Side] -= 0.38f * lift;
+                    this[P.Roll] -= 0.16f * lift;
+                    this[P.ArmOutL] += 0.85f * lift;
+                    this[P.ArmOutR] += 0.6f * lift;
+                    this[P.ArmL] += 0.3f * lift;
+                    this[P.ArmR] += 0.3f * lift;
+                    this[P.ElbowL] += 1.2f * lift;
+                    this[P.ElbowR] += 1.2f * lift;
                     break;
                 }
                 default:
                 {
-                    var lift = t < 0.25f ? Smooth(t / 0.25f) : t < 0.7f ? 1 : 1 - Smooth((t - 0.7f) / 0.3f);
-                    var snap = t < 0.25f ? 0 : t < 0.45f ? Smooth((t - 0.25f) / 0.2f) : 1 - Smooth((t - 0.53f) / 0.2f);
+                    // The finishing kick: the right knee drawn up high (the chamber), the leg snapped straight out at the hips'
+                    // height, toes pointed, the body leaning back over the standing leg, the arms out for the balance.
+                    var chamber = t < 0.28f ? Smooth(t / 0.28f) : t < 0.7f ? 1 : 1 - Smooth((t - 0.7f) / 0.3f);
+                    var (_, extend) = Phases(t, 0.28f, 0.5f, 0.64f);
                     this[P.Ik] = 0;
                     this[P.BodyY] = -0.03f;
                     this[P.ThighL] = 0.06f;
-                    this[P.KneeL] = 0.14f;
+                    this[P.KneeL] = 0.18f;
                     this[P.FootL] = -0.08f;
-                    this[P.ThighR] = -1.45f * lift;
-                    this[P.KneeR] = 1.9f * lift * (1 - snap) + 0.08f * snap;
-                    this[P.FootR] = 0.25f * snap;
-                    this[P.Lean] -= 0.24f * lift;
-                    this[P.HeadX] += 0.12f * lift;
-                    this[P.ArmOutL] += 0.15f * lift;
-                    this[P.ArmL] += 0.25f * snap;
+                    this[P.ThighR] = -1.6f * chamber - 0.12f * extend;
+                    this[P.KneeR] = Mathf.Lerp(2.1f * chamber, 0.05f, extend);
+                    this[P.FootR] = 0.4f * extend;
+                    this[P.Lean] -= 0.32f * chamber;
+                    this[P.HeadX] += 0.18f * chamber;
+                    this[P.ArmOutL] += 0.4f * chamber;
+                    this[P.ArmOutR] += 0.25f * chamber;
+                    this[P.ArmL] += 0.35f * extend;
                     break;
                 }
             }
+        }
+
+        /// <summary>The shoulders (`twist`) and the hips (`hips`) turned into a blow; the head turned back to keep on the mark.</summary>
+        void Turn(float twist, float hips)
+        {
+            this[P.Twist] += twist;
+            this[P.HipsYaw] += hips;
+            this[P.HeadY] -= (twist + hips) * 0.85f;
         }
 
         void GaitPose(float dt, MotionState motion)
@@ -768,7 +831,7 @@ namespace GuWorld.Body
             var bodyX = Get(P.BodyX);
 
             Body.localPosition = new Vector3(-bodyX, Hips + bodyY, Get(P.BodyZ));
-            Body.localRotation = Xyz(Get(P.Pitch), 0, Get(P.Roll));
+            Body.localRotation = Quaternion.AngleAxis(-Get(P.Spin) * Mathf.Rad2Deg, Vector3.up) * Xyz(Get(P.Pitch), 0, Get(P.Roll));
             HipsJoint.localRotation = Xyz(0, Get(P.HipsYaw), Get(P.HipsRoll));
             // The back straightens above the tilting hips.
             Spine.localRotation = Xyz(Get(P.Lean), Get(P.Twist), Get(P.Side) - Get(P.HipsRoll) * 0.8f);

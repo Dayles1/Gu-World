@@ -653,7 +653,14 @@ namespace GuWorld.UI
             }
         }
 
-        public void OnPointerEnter(PointerEventData _) => over = click != null;
+        /// <summary>Told when the pointer comes over the cell (a page showing what is under it).</summary>
+        public Action Hovered;
+
+        public void OnPointerEnter(PointerEventData _)
+        {
+            over = click != null;
+            Hovered?.Invoke();
+        }
 
         public void OnPointerExit(PointerEventData _) => over = false;
 

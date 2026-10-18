@@ -43,13 +43,27 @@ namespace GuWorld.UI
             var rankText = UiKit.Label($"<b>Ранг {a.Rank}</b>\n{Aperture.Name(a.Stage)}", sealRow, 19);
             rankText.rectTransform.Place(Vector2.zero, Vector2.one, 98, 0, 0, 0);
             UiKit.Image("Rule", info, UiKit.Line).Size(2);
-            Stat(info, "Талант", $"класс {a.Grade}");
+            Stat(info, "Талант", a.Extreme ? "Десять Крайностей · 100%" : $"класс {a.Grade} · {a.Talent:0}%");
             Stat(info, "Жизнь", $"{Mathf.CeilToInt(host.Health.Current)} / {Health.Max:0}");
-            Stat(info, "Восстановление", $"{a.RecoveryPerHour:0}% в час");
+            Stat(info, "Море полнится", $"за {Talents.Span(Aperture.RefillHours(a.Talent))}");
+            Stat(info, "Плотность эссенции", $"×{a.Density:0.##}" + (a.Refined ? " (винный червь)" : ""));
+            Stat(info, "Сила · крепость", $"×{gu.FistPower:0.##} · ×{gu.ToughnessBoost:0.##}");
             Stat(info, "Первобытные камни", $"{gu.Stones}");
             Stat(info, "Гу в ячейках", $"{gu.Gu.Count} / {gu.Open}");
-            UiKit.Image("Rule", info, UiKit.Line).Size(2);
-            UiKit.Label("Талант задаёт, как высоко стоит море и как быстро оно наполняется. Камень вливает эссенцию сразу.", info, 15, UiKit.Muted).Size(80);
+
+            // From the peak of a rank: the breakthrough into the next, the whole sea spent on it.
+            if (a.Stage == Stage.Peak && a.Rank < 5)
+            {
+                UiKit.Button(a.CanBreakThrough ? UiKit.Spaced("Прорыв") : "Прорыв — нужно полное море", info, () =>
+                {
+                    host.Cultivator.BreakThrough();
+                    Show(Page.Aperture);
+                }, a.CanBreakThrough ? ButtonKind.Gold : ButtonKind.Plain, 16).Size(46);
+            }
+            else
+            {
+                UiKit.Label("Малую ступень поднимает реликтовый Гу своего ранга; с пика — прорыв полным морем.", info, 14, UiKit.Muted).Size(46);
+            }
 
             // The sea and the ring, in the middle.
             var centre = UiKit.Rect("Ring", body).Place(new Vector2(0, 0), new Vector2(0, 1), 380, 110, -(380 + 680), 0);
@@ -69,7 +83,7 @@ namespace GuWorld.UI
             UiKit.Label(UiKit.Spaced("Море эссенции"), words, 13, UiKit.Gold, TextAnchor.MiddleCenter, FontStyle.Bold).Size(22);
             UiKit.Label($"{a.Essence:0}%", words, 64, UiKit.Text, TextAnchor.MiddleCenter, FontStyle.Bold).Size(76);
             UiKit.Label($"{a.EssenceName} · ранг {a.Rank}", words, 16, UiKit.EssenceLit, TextAnchor.MiddleCenter).Size(24);
-            UiKit.Label($"предел {a.Cap:0}% · +{a.RecoveryPerHour:0}% в час", words, 14, UiKit.Muted, TextAnchor.MiddleCenter).Size(22);
+            UiKit.Label($"предел {a.Cap:0}% · +{a.RecoveryPerHour:0.#}% в час", words, 14, UiKit.Muted, TextAnchor.MiddleCenter).Size(22);
 
             for (var i = 0; i < Cultivator.Ring; i++)
             {
@@ -105,13 +119,13 @@ namespace GuWorld.UI
 
             // The chosen cell, and the feeding, on the right.
             var right = UiKit.Panel("Chosen", body);
-            right.rectTransform.Place(new Vector2(1, 0.42f), Vector2.one, -560, 8, 0, 0);
+            right.rectTransform.Place(new Vector2(1, 0.38f), Vector2.one, -560, 8, 0, 0);
             var details = UiKit.Rect("Column", right.transform).Fill();
-            details.Stack<VerticalLayoutGroup>(8, new RectOffset(28, 28, 24, 20));
+            details.Stack<VerticalLayoutGroup>(5, new RectOffset(28, 28, 20, 16));
             ChosenSlot(details, gu);
 
             var feeding = UiKit.Panel("Feeding", body);
-            feeding.rectTransform.Place(new Vector2(1, 0), new Vector2(1, 0.42f), -560, 0, 0, 8);
+            feeding.rectTransform.Place(new Vector2(1, 0), new Vector2(1, 0.38f), -560, 0, 0, 8);
             var list = UiKit.Rect("Column", feeding.transform).Fill();
             list.Stack<VerticalLayoutGroup>(6, new RectOffset(28, 28, 20, 20));
             UiKit.Caps("Кормление", list, 14).Size(24);
@@ -231,7 +245,7 @@ namespace GuWorld.UI
 
                     var index = cell;
                     var kind = GuBook.Find(stack.Kind.Gu);
-                    UiKit.Button($"{kind.Name} · {kind.RefineCost:0}% эссенции", details, () =>
+                    UiKit.Button($"{kind.Name} · {gu.RefineCostOf(kind):0.#}% эссенции", details, () =>
                     {
                         host.Cultivator.Refine(index);
                         Show(Page.Aperture);
@@ -251,14 +265,46 @@ namespace GuWorld.UI
             var food = ItemBook.Find(gk.Food);
             UiKit.Label(gk.Name, details, 26, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(36);
             UiKit.Caps($"Ранг {gk.Rank} · {gk.Kind}" + (owned.vital ? " · жизненный Гу" : ""), details, 13, Aperture.RankColour(gk.Rank)).Size(22);
-            UiKit.Label(ItemBook.Find(gk.Item)?.About ?? "", details, 16).Size(92);
+            UiKit.Label(ItemBook.Find(gk.Item)?.About ?? "", details, 14).Size(56);
             UiKit.Image("Rule", details, UiKit.Line).Size(2);
             Stat(details, "Навык", gk.SkillName);
-            UiKit.Label(SkillLine(gk), details, 15, UiKit.Muted).Size(40);
-            Stat(details, "Сытость", GuBook.Name(hunger));
-            var due = gu.MealIn(owned);
-            Stat(details, "Еда", due > 0 ? $"через {Span(due)}" : $"просрочена на {Span(-due)}");
-            Stat(details, "Пища", $"{food?.Name.ToLowerInvariant()} ×{gk.Meal} · в сумке {gu.Bag.Count(gk.Food)}");
+            UiKit.Label(SkillLine(gk), details, 14, UiKit.Muted).Size(40);
+
+            if (!gk.Passive)
+            {
+                Stat(details, "Вам стоит", gk.Held ? $"{gu.CostOf(gk):0.#}% · {gu.UpkeepOf(gk):0.##}% в секунду" : $"{gu.CostOf(gk):0.#}% эссенции");
+                Stat(details, "Усталость", owned.tired >= 100 ? $"{owned.tired:0} — через силу, шанс гибели {Cultivator.StrainChance(owned.tired) * 100:0}%" : $"{owned.tired:0} из 100");
+            }
+
+            if (food != null)
+            {
+                var due = gu.MealIn(owned);
+                Stat(details, "Сытость", $"{GuBook.Name(hunger)} · " + (due > 0 ? $"еда через {Span(due)}" : $"просрочена на {Span(-due)}"));
+                Stat(details, "Пища", $"{food.Name.ToLowerInvariant()} ×{gk.Meal} · в сумке {gu.Bag.Count(gk.Food)}");
+            }
+
+            // Fusions this Gu goes into: what they make, and what they still lack.
+            foreach (var recipe in GuBook.RecipesFor(gk.Id))
+            {
+                if (System.Array.IndexOf(recipe.Gu, gk.Id) < 0)
+                {
+                    continue;
+                }
+
+                var result = GuBook.Find(recipe.Result);
+                var lacks = gu.Lacks(recipe);
+                var r = recipe;
+                UiKit.Button($"Слить → {result.Name} (ранг {result.Rank}) · {gu.FuseCost(recipe):0.#}% · шанс {gu.FuseChance(recipe) * 100:0}%", details, () =>
+                {
+                    host.Cultivator.Fuse(r);
+                    Show(Page.Aperture);
+                }, lacks == null ? ButtonKind.Tab : ButtonKind.Plain, 13).Size(32);
+
+                if (lacks != null)
+                {
+                    UiKit.Label($"Не хватает: {lacks}", details, 12, UiKit.Muted).Size(16);
+                }
+            }
             var space = UiKit.Rect("Space", details);
             space.Size(-1).flexibleHeight = 1;
             var row = UiKit.Rect("Row", details);

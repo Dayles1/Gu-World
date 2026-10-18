@@ -207,16 +207,85 @@ namespace GuWorld.Editor
             var game = Object.FindAnyObjectByType<GuWorldGame>();
             var health = gu.GetComponent<Health>();
             var moon = gu.First(GuBook.Moonlight.Id);
-            Check(gu != null && gu.Aperture.Grade == Grade.C && Mathf.Approximately(gu.Aperture.Essence, 45) && moon != null && moon.vital &&
+            Check(gu != null && gu.Aperture.Grade == Grade.C && Mathf.Approximately(gu.Aperture.Essence, 50) && moon != null && moon.vital &&
                   gu.Bar[0] == "gu:moonlight" && gu.Stones == 10 && gu.Bag.Count(ItemBook.Petal) == 8,
-                $"a new game is the test Gu Master: C grade, a full sea of 45%, a vital Moonlight Gu on key 1, 10 stones, 8 petals ({gu?.Aperture.Grade}, {gu?.Aperture.Essence}, {gu?.Bar[0]}, {gu?.Stones}, {gu?.Bag.Count(ItemBook.Petal)})");
-            Check(gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 35) && Object.FindAnyObjectByType<Moonblade>() != null,
+                $"a new game is the test Gu Master: C grade, a full sea of 50%, a vital Moonlight Gu on key 1, 10 stones, 8 petals ({gu?.Aperture.Grade}, {gu?.Aperture.Essence}, {gu?.Bar[0]}, {gu?.Stones}, {gu?.Bag.Count(ItemBook.Petal)})");
+            Check(gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 40) && Object.FindAnyObjectByType<Moonblade>() != null,
                 $"a moonblade costs a tenth of the aperture and flies ({gu.Aperture.Essence})");
-            Check(!gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 35), "a second throw at once waits for the Gu to rest");
+            Check(!gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 40), "a second throw at once waits for the Gu to rest");
             var start = gu.Now;
             gu.Tick(start + 60);
-            Check(Mathf.Abs(gu.Aperture.Essence - 39) < 0.01f, $"an hour refills 4% at C grade ({gu.Aperture.Essence:0.00})");
-            Check(gu.AbsorbStone() && Mathf.Approximately(gu.Aperture.Essence, 45) && gu.Stones == 9, $"a stone tops the sea up to its cap ({gu.Aperture.Essence}, {gu.Stones} left)");
+            var hourly = 50 / Aperture.RefillHours(50);
+            Check(Mathf.Abs(gu.Aperture.Essence - (40 + hourly)) < 0.01f, $"an hour refills {hourly:0.0}% at a 50% talent ({gu.Aperture.Essence:0.00})");
+            Check(gu.AbsorbStone() && Mathf.Approximately(gu.Aperture.Essence, 50) && gu.Stones == 9, $"a stone tops the sea up to its cap ({gu.Aperture.Essence}, {gu.Stones} left)");
+
+            // Talent: the sea's height and how soon it fills — the better, the sooner (40%: a day, 80%: half a day, 99%: within the hour, 100%: minutes).
+            Check(Mathf.Abs(Aperture.RefillHours(40) - 24) < 0.01f && Mathf.Abs(Aperture.RefillHours(80) - 12) < 0.01f &&
+                  Aperture.RefillHours(99) < 1 && Aperture.RefillHours(100) < 0.2f && Aperture.RefillHours(30) > Aperture.RefillHours(50),
+                $"refilling: 30% {Aperture.RefillHours(30):0.0} h, 40% {Aperture.RefillHours(40):0.0} h, 80% {Aperture.RefillHours(80):0.0} h, 99% {Aperture.RefillHours(99) * 60:0} min, 100% {Aperture.RefillHours(100) * 60:0.0} min");
+            Check(Talents.Paths.Length == 5 && Talents.Paths[0].Talent == 99 && Talents.Paths[4].Talent == 30 && Talents.Paths[0].Grade == Grade.A &&
+                  Talents.Paths[2].Grade == Grade.B && Talents.Paths[3].Grade == Grade.C && Talents.Paths[4].Grade == Grade.D,
+                "five ways to begin: A 99%, A 88%, B 70%, C 50%, D 30%");
+            var extremes = 0;
+            var dice = new System.Random(7);
+
+            for (var i = 0; i < 1000; i++)
+            {
+                if (Talents.Roll(Talents.Paths[0], dice) >= 100) extremes++;
+            }
+
+            Check(extremes > 60 && extremes < 140 && Talents.Roll(Talents.Paths[1], dice) == 88, $"the easy way is born an extreme physique about one time in ten ({extremes} in 1000)");
+
+            // Ranks and small realms: each rank's essence four times denser, each small realm 1.5 times; a Gu's price divided by it.
+            Check(Mathf.Approximately(gu.CostOf(GuBook.Moonlight), 10) && Mathf.Abs(gu.CostOf(GuBook.Find("moonglow")) - 40) < 0.01f,
+                $"at rank one a rank-one Gu costs 10%, a rank-two one 40% ({gu.CostOf(GuBook.Find("moonglow"))})");
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Peak);
+            Check(Mathf.Abs(gu.CostOf(GuBook.Moonlight) - 2.963f) < 0.01f && Mathf.Abs(gu.CostOf(GuBook.Find("moonglow")) - 11.85f) < 0.01f,
+                $"at the peak of rank one: 2.96% and 11.85% ({gu.CostOf(GuBook.Moonlight):0.00}, {gu.CostOf(GuBook.Find("moonglow")):0.00})");
+            gu.SetRealm(2, GuWorld.Cultivation.Stage.Initial);
+            Check(Mathf.Abs(gu.CostOf(GuBook.Moonlight) - 2.5f) < 0.01f && Mathf.Abs(gu.CostOf(GuBook.Find("moonglow")) - 10) < 0.01f && gu.Open == 7,
+                $"at rank two: 2.5% and 10%, seven cells open ({gu.CostOf(GuBook.Moonlight)}, {gu.Open})");
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Initial);
+            Check(GuBook.Count >= 52, $"the catalogue holds the first two Gu and at least fifty more ({GuBook.Count})");
+            var ranks = new int[6];
+            var unmade = new List<string>();
+
+            foreach (var kind in GuBook.All)
+            {
+                ranks[kind.Rank]++;
+
+                if (ItemBook.Find(kind.Item)?.Gu != kind.Id || !(kind.OneUse || kind.Passive || kind.Food != null) || kind.Name == null || (kind.About ?? ItemBook.Find(kind.Item)?.About) == null)
+                {
+                    unmade.Add(kind.Id);
+                }
+            }
+
+            Check(unmade.Count == 0, $"every Gu has its item, its food (unless used once or working by itself), a name and words ({string.Join(", ", unmade)})");
+
+            Check(ranks[1] > 0 && ranks[2] > 0 && ranks[3] > 0 && ranks[4] > 0 && ranks[5] > 0, $"Gu of every rank one to five ({string.Join(" ", ranks)})");
+
+            var wrong = new List<string>();
+
+            foreach (var recipe in GuBook.Recipes)
+            {
+                var top = 0;
+
+                foreach (var id in recipe.Gu)
+                {
+                    top = Mathf.Max(top, GuBook.Find(id)?.Rank ?? 99);
+                }
+
+                if (GuBook.Find(recipe.Result) == null || GuBook.Find(recipe.Result).Rank > top + 1)
+                {
+                    wrong.Add(recipe.Result);
+                }
+            }
+
+            Check(wrong.Count == 0, $"no fusion makes a Gu more than a rank above what goes in ({string.Join(", ", wrong)})");
+
+            // Tiredness: a Gu tires as it is used; tired out, it still answers, but forcing it may kill it.
+            Check(Cultivator.StrainChance(99) == 0 && Mathf.Approximately(Cultivator.StrainChance(100), 0.12f) && Mathf.Approximately(Cultivator.StrainChance(1000), 0.8f),
+                "a rested Gu is safe; past 100 forcing it risks one in eight, rising to four in five");
             gu.Aperture.Essence = 5;
             Check(!gu.Use(0) && Mathf.Approximately(gu.Aperture.Essence, 5), "without the essence the Gu cannot be used");
 
@@ -256,7 +325,7 @@ namespace GuWorld.Editor
             Check(bag[0].count == 6 && bag[1].count == 10, "the older petals are used first");
             var lost = bag.Spoil(5 * 24 * 60 + 1);
             Check(lost != null && lost[ItemBook.Petal] == 6 && bag.Count(ItemBook.Petal) == 10, "after five days the old petals have wilted");
-            Check(bag.Room(ItemBook.Stone, 0) <= (int)((Bag.Capacity - bag.Weight) / 0.02f) + 1, "the bag's weight limits what fits");
+            Check(bag.Room(ItemBook.JadeRock, 0) <= (int)((Bag.Capacity - bag.Weight) / 0.2f) + 1, "the bag's weight limits what fits (stones weigh nothing)");
 
             // A fall from ten metres hurts; health mends with time.
             health.Set(Health.Max);
@@ -291,14 +360,71 @@ namespace GuWorld.Editor
             health.TakeHarm(50);
             Check(Mathf.Approximately(health.Current, Health.Max) && Mathf.Abs(gu.Aperture.Essence - 37) < 0.01f, $"the skin stops a blow for essence ({health.Current}, {gu.Aperture.Essence:0.00})");
             gu.Tick(gu.Now + 10);
-            Check(Mathf.Abs(gu.Aperture.Essence - (37 - 2.5f + 10 * 4 / 60f)) < 0.01f, $"held, it costs its upkeep ({gu.Aperture.Essence:0.00})");
+            gu.Step(10);
+            Check(Mathf.Abs(gu.Aperture.Essence - (37 - 2.5f + 10 * hourly / 60f)) < 0.01f && gu.First(GuBook.JadeSkin.Id).tired > 15,
+                $"held, it costs its upkeep each second and tires ({gu.Aperture.Essence:0.00}, tired {gu.First(GuBook.JadeSkin.Id).tired:0})");
 
             // The Gu Master saved and loaded is the same.
             var saved = gu.Save();
             var petals = gu.Bag.Count(ItemBook.Petal);
             gu.Load(saved, gu.Now);
-            Check(gu.Gu.Count == 2 && gu.Bag.Count(ItemBook.Petal) == petals && gu.Bar[0] == "gu:moonlight" && gu.SkinOn && gu.First(GuBook.Moonlight.Id).vital,
-                $"saved and loaded, the Gu Master is the same ({gu.Gu.Count} Gu, {gu.Bag.Count(ItemBook.Petal)} petals)");
+            Check(gu.Gu.Count == 2 && gu.Bag.Count(ItemBook.Petal) == petals && gu.Bar[0] == "gu:moonlight" && gu.SkinOn && gu.First(GuBook.Moonlight.Id).vital &&
+                  Mathf.Approximately(gu.Aperture.Talent, 50),
+                $"saved and loaded, the Gu Master is the same ({gu.Gu.Count} Gu, {gu.Bag.Count(ItemBook.Petal)} petals, talent {gu.Aperture.Talent})");
+            gu.UseGu(GuBook.JadeSkin.Id);
+            Check(!gu.SkinOn, "the skin put down");
+
+            // Fusion (two rank-one boars make one rank-one boar — ranks never add up), a sure hand in the ring making it certain.
+            gu.Bag.Add("gu_black_boar", 1, gu.Now);
+            gu.Bag.Add("gu_white_boar", 1, gu.Now);
+            gu.Bag.Add(ItemBook.RawMeat, 5, gu.Now);
+            var boars = System.Array.Find(GuBook.Recipes, r => r.Result == "black_and_white_boar");
+            gu.Gu.Add(new OwnedGu { kind = "undefeated_hundred_battles", slot = 4, fedAt = gu.Now });
+            gu.Tick(gu.Now);
+            gu.Aperture.Essence = 50;
+            Check(gu.Lacks(boars) == null && gu.FuseChance(boars) == 1 && gu.Fuse(boars) && gu.Bag.Count("gu_black_and_white_boar") == 1 &&
+                  gu.Bag.Count("gu_black_boar") == 0 && gu.Bag.Count(ItemBook.RawMeat) == 0 && Mathf.Approximately(gu.Aperture.Essence, 30),
+                $"black and white boar fused into one rank-one Gu for 20% ({gu.Aperture.Essence})");
+            gu.Gu.RemoveAll(g => g.kind == "undefeated_hundred_battles");
+
+            // Used once from the bag: a boar's strength for good (once per kind), a relic's small realm.
+            int CellOf(string id)
+            {
+                for (var i = 0; i < Bag.Cells; i++)
+                {
+                    if (gu.Bag[i]?.id == id) return i;
+                }
+
+                return -1;
+            }
+
+            Check(gu.Activate(CellOf("gu_black_and_white_boar")) && Mathf.Approximately(gu.Strength, 0.55f) && gu.FistPower > 1.5f,
+                $"the boar's strength stays for good (×{gu.FistPower:0.00})");
+            gu.Bag.Add("gu_black_and_white_boar", 1, gu.Now);
+            Check(!gu.Activate(CellOf("gu_black_and_white_boar")) && Mathf.Approximately(gu.Strength, 0.55f), "a second boar of the same kind adds nothing");
+            gu.Bag.Add("gu_green_copper_relic", 1, gu.Now);
+            gu.Aperture.Essence = 50;
+            Check(gu.Activate(CellOf("gu_green_copper_relic")) && gu.Aperture.Stage == GuWorld.Cultivation.Stage.Middle, $"a green copper relic lifts rank one a small realm ({gu.Aperture.Stage})");
+
+            // From the peak, a full sea breaks through into the next rank.
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Peak);
+            gu.Aperture.Essence = 20;
+            Check(!gu.BreakThrough() && gu.Aperture.Rank == 1, "short of a full sea there is no breakthrough");
+            gu.Aperture.Essence = gu.Aperture.Cap;
+            Check(gu.BreakThrough() && gu.Aperture.Rank == 2 && gu.Aperture.Stage == GuWorld.Cultivation.Stage.Initial && gu.Open == 7 && gu.Aperture.Essence == 0,
+                $"a full sea breaks through to rank two, seven cells open ({gu.Aperture.Rank}, {gu.Open})");
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Initial);
+            gu.Aperture.Essence = gu.Aperture.Cap;
+
+            // A forced Gu: tired past 100 it still answers (it is not blocked) — unless it dies of it.
+            var spear = GuBook.Find("bone_spear");
+            gu.Bag.Add(spear.Item, 1, gu.Now);
+            Check(gu.Refine(CellOf(spear.Item)) && gu.First(spear.Id) != null, "a bone spear refined");
+            gu.Aperture.Essence = gu.Aperture.Cap;
+            gu.First(spear.Id).tired = 90;
+            var thrown = gu.UseGu(spear.Id);
+            Check(thrown && gu.First(spear.Id).tired >= 100 && Object.FindAnyObjectByType<GuBolt>() != null,
+                $"used tired, the spear flies and is spent ({gu.First(spear.Id)?.tired:0})");
 
             // The academy's first task: taken from the teacher, done, handed back for stones.
             var quests = game.Quests;
@@ -351,10 +477,29 @@ namespace GuWorld.Editor
                 var fangs = gu.Bag.Count(ItemBook.WolfFang);
                 var cut = new Combat.Strike { Power = 100, Sharpness = 1, Direction = Vector3.forward };
                 wolf.TakeStrike(cut, null);
-                Check(!wolf.Dead && wolf.Health < Creatures.Wolf.MaxHealth - 20, $"a moonblade cuts a wolf deep ({wolf.Health:0} of {Creatures.Wolf.MaxHealth})");
+                Check(!wolf.Dead && wolf.Health < wolf.MaxHealth - 20 && wolf.Kind == Creatures.WolfKinds.Grey, $"a moonblade cuts a grey wolf deep ({wolf.Health:0} of {wolf.MaxHealth:0}, level {wolf.Level})");
                 wolf.TakeStrike(cut, null);
                 Check(wolf.Dead && gu.Bag.Count(ItemBook.WolfFang) == fangs + 1, "a second kills it, and its fang is the hero's");
             }
+
+            // The kinds of wolves: a beast king comes with its pack, is far harder to wound, and a fist hardly scratches it.
+            Check(Creatures.WolfKinds.All.Length == 5 && Creatures.WolfKinds.ThunderCrown.Tier == 3 && Creatures.WolfKinds.Find("bold") == Creatures.WolfKinds.Bold,
+                "five kinds of wolves, up to the thunder crown wolf, a myriad beast king");
+            var pack = game.SpawnPack(Creatures.WolfKinds.Bold, 1);
+            var king = Creatures.Wolf.All.Find(w => w.Kind == Creatures.WolfKinds.Bold);
+            Check(pack == 4 && king != null && king.Level >= 12 && king.MaxHealth > 400, $"a bold lightning wolf comes with three lightning wolves ({pack}, level {king?.Level}, {king?.MaxHealth:0})");
+
+            if (king != null)
+            {
+                var kingHealth = king.Health;
+                king.TakeStrike(new Combat.Strike { Power = 40, Sharpness = 1, Direction = Vector3.forward }, null);
+                var fist = kingHealth - king.Health;
+                kingHealth = king.Health;
+                king.TakeStrike(new Combat.Strike { Power = 400, Sharpness = 1, Direction = Vector3.forward }, null);
+                Check(fist < 1 && kingHealth - king.Health > 60, $"a youth's fist hardly scratches a beast king ({fist:0.0}); a rank-three blow cuts it ({kingHealth - king.Health:0})");
+            }
+
+            game.ClearWolves();
 
             Check(Quests.Book.Length >= 9 && System.Array.Exists(Quests.Book, q => q.Event == "kill:wolf") && System.Array.Exists(Quests.Book, q => q.Gives != null),
                 $"the villagers have tasks past the academy's: wolves, a place, a delivery, a word ({Quests.Book.Length})");

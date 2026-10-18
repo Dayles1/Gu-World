@@ -276,6 +276,8 @@ namespace GuWorld
         bool absorbShot;
         /// <summary>`-chat "/tp g"`: the chat open with that typed in (its suggestions shown).</summary>
         string chatShot;
+        string doShot;
+        string aimGu;
         /// <summary>`-wolves 3`: a pack called up before the camera.</summary>
         int wolvesShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
@@ -312,6 +314,8 @@ namespace GuWorld
             get => creatorZoomTo > 0.5f;
             set => creatorZoomTo = value ? 1 : 0;
         }
+        /// <summary>The way (difficulty, talent) chosen for the game being begun; -1: not yet (the making asks first).</summary>
+        public int ChosenPath { get; set; } = -1;
         public ThirdPersonCamera View => view;
         public Cultivator Cultivator => cultivator;
         public Melee Fists => melee;
@@ -502,6 +506,17 @@ namespace GuWorld
 
         void Awake()
         {
+            // `-sandbox` started on the mountain: straight to the proving ground's scene (this one does nothing more).
+            if (System.Array.IndexOf(System.Environment.GetCommandLineArgs(), "-sandbox") >= 0 && !SandboxNext &&
+                UnityEngine.SceneManagement.SceneManager.GetActiveScene().path != SandboxScene)
+            {
+                redirecting = true;
+                SandboxNext = true;
+                UnityEngine.SceneManagement.SceneManager.LoadScene(SandboxScene);
+
+                return;
+            }
+
             // Unity objects have their own null: `??` would not see a missing one.
             if (GroundMaterial == null) GroundMaterial = Lit("Ground", 0x8c9478);
             if (BlockMaterial == null) BlockMaterial = Lit("Block", 0xb9b4aa);
@@ -523,6 +538,15 @@ namespace GuWorld
             }
 
             var args = System.Environment.GetCommandLineArgs();
+            // The proving ground (from the main menu, or `-sandbox`): its own square kilometre, nothing saved.
+            Sandbox = SandboxNext || Has(args, "-sandbox");
+            SandboxNext = false;
+
+            if (Sandbox)
+            {
+                Location = LocationSettings.Polygon;
+            }
+
             var at = System.Array.IndexOf(args, "-screenshot");
 
             if (at >= 0 && at + 1 < args.Length)
@@ -542,7 +566,7 @@ namespace GuWorld
                 Application.runInBackground = true;
             }
 
-            var restored = screenshot != null ? SaveGame.NewGame(Location) : SaveGame.Load(Location);
+            var restored = screenshot != null || Sandbox ? SaveGame.NewGame(Location) : SaveGame.Load(Location);
             clock = restored.clock;
             saved = restored.look.IsChosen;
 
@@ -551,7 +575,7 @@ namespace GuWorld
                 Debug.LogWarning($"GU World: {problem}");
             }
 
-            look = restored.look.IsChosen ? restored.look : Look.Default(Gender.Male);
+            look = restored.look.IsChosen ? restored.look : Sandbox && carriedLook != null ? carriedLook : Look.Default(Gender.Male);
 
             if (screenshot != null)
             {
@@ -648,6 +672,7 @@ namespace GuWorld
             health.Fainted += OnFainted;
             TrainingDummy.Struck += OnStruck;
             Wounds.Landed += OnWound;
+            Wounds.Struck += OnStrikeShown;
             hitboxes = HitboxView.Create(view.transform);
             HitboxView.On = GameSettings.ShowHitboxes;
             insects = Insects.Create();
@@ -658,8 +683,14 @@ namespace GuWorld
             DrawMap(layout);
 
             // The wolves of the forest round the village (their dens outside its walls), and the packs a command calls up.
-            wolves = WolfPacks.Create(body.transform, WolfDens(), 3);
+            wolves = WolfPacks.Create(body.transform, WolfDens());
             Wolf.Killed += OnWolfKilled;
+            Wolf.Roared += OnWolfRoared;
+
+            if (Sandbox)
+            {
+                StartSandbox();
+            }
 
             if (restored.problems.Count > 0)
             {
@@ -699,12 +730,17 @@ namespace GuWorld
                 player.AutoWalk = Has(args, "-run") ? 2 : Has(args, "-walk") ? 1 : 0;
                 talkAt = Has(args, "-talk");
                 castAt = Has(args, "-cast");
-                aimShot = Has(args, "-aim");
+                aimShot = Has(args, "-aim") || Has(args, "-aimgu");
+                var aimGuAt = System.Array.IndexOf(args, "-aimgu");
+                aimGu = aimGuAt >= 0 && aimGuAt + 1 < args.Length ? args[aimGuAt + 1] : null;
                 absorbShot = Has(args, "-absorb");
                 var wolvesAt = System.Array.IndexOf(args, "-wolves");
                 wolvesShot = wolvesAt >= 0 && wolvesAt + 1 < args.Length && int.TryParse(args[wolvesAt + 1], out var n) ? n : 0;
                 var chatAt = System.Array.IndexOf(args, "-chat");
                 chatShot = chatAt >= 0 && chatAt + 1 < args.Length ? args[chatAt + 1] : null;
+                // `-do "/gu 1;/rank 2"`: chat commands run once the world stands (a picture of what they make).
+                var doAt = System.Array.IndexOf(args, "-do");
+                doShot = doAt >= 0 && doAt + 1 < args.Length ? args[doAt + 1] : null;
                 var castFramesAt = System.Array.IndexOf(args, "-cast");
                 castFrames = castFramesAt >= 0 && castFramesAt + 1 < args.Length && int.TryParse(args[castFramesAt + 1], out var cf) ? cf : 5;
                 HitboxView.On = (HitboxView.On || Has(args, "-hitboxes")) && !Has(args, "-nohitboxes");
@@ -814,12 +850,163 @@ namespace GuWorld
             }
             else
             {
-                Enter(Mode.Title);
+                Enter(Sandbox ? Mode.Playing : Mode.Title);
                 menus.FadeIn();
             }
         }
 
         static bool Has(string[] args, string flag) => System.Array.IndexOf(args, flag) >= 0;
+
+        // ── The proving ground ────────────────────────────────────────
+
+        /// <summary>Set by the main menu just before the proving ground's scene is loaded (its game reads it as it starts).</summary>
+        static bool SandboxNext;
+        /// <summary>This scene's game is only passing the start on to the proving ground's.</summary>
+        bool redirecting;
+        /// <summary>The hero's look, taken along to the proving ground.</summary>
+        static Look carriedLook;
+        const string SandboxScene = "Assets/GuWorld/Scenes/TestGrounds.unity";
+
+        /// <summary>
+        /// The proving ground, as an immortal's aperture (lore: sys_immortal_aperture,
+        /// sys_blessed_lands_and_grotto_heavens): the blessed land of a fallen Gu Immortal, a
+        /// small world of a square kilometre walled in by the aperture's edge, its essence so
+        /// dense that primeval stones never run out. Its page (P) sets the modes (immortal, an
+        /// endless sea, untiring and sated Gu) and holds every Gu there is; straw dummies stand
+        /// at 5–40 m like a range, and wolves are called up at will. Nothing there is saved; a
+        /// death only puts the hero back on their feet.
+        /// </summary>
+        public bool Sandbox { get; private set; }
+
+        public void OpenSandbox()
+        {
+            SandboxNext = true;
+            carriedLook = look;
+            Time.timeScale = 1;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(SandboxScene);
+        }
+
+        /// <summary>Back from the proving ground to the mountain's main menu.</summary>
+        public void LeaveSandbox()
+        {
+            Time.timeScale = 1;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        }
+
+        void StartSandbox()
+        {
+            cultivator.Begin(-1, 99);
+            // Everything to try at once: no death, a sea that never runs dry, Gu that never go hungry (they still tire).
+            cultivator.AllCells = true;
+            cultivator.EndlessEssence = true;
+            cultivator.Sated = true;
+            health.Immortal = true;
+            player.WheelZoom = false;
+            TopUpStones();
+
+            for (var i = 0; i < SandboxCells; i++)
+            {
+                PutInSlot(i, GuBook.Find(SandboxStart[i]));
+            }
+
+            // A range: dummies along the way the hero looks, 5 to 40 metres off, and a few more to the side.
+            var straw = Lit("Straw", 0xc9b07a);
+            var wood = Lit("Post", 0x5a4330);
+            var spawn = Location.spawn;
+            var ahead = new Vector3(Mathf.Sin(Location.spawnYaw), 0, Mathf.Cos(Location.spawnYaw));
+            var side = Vector3.Cross(Vector3.up, ahead);
+
+            foreach (var metres in new[] { 5f, 10f, 15f, 20f, 30f, 40f })
+            {
+                var at = spawn + ahead * metres - side * 7;
+                TrainingDummy.Make(OnGround(at), Location.spawnYaw * Mathf.Rad2Deg + 180, straw, wood);
+            }
+
+            for (var i = 0; i < 4; i++)
+            {
+                var at = spawn + ahead * 8 + side * (6 + i * 2.5f);
+                TrainingDummy.Make(OnGround(at), Location.spawnYaw * Mathf.Rad2Deg + 180, straw, wood);
+            }
+
+            ApertureLook();
+            menus.Banner("Благословенная земля", "1–8 — выбрать Гу · ЛКМ — применить · Tab — все Гу");
+            menus.Notify("1–8 — выбрать Гу (его прицел виден сразу) · ЛКМ — применить · Tab — все Гу");
+            menus.Notify("Манекены слева — дальномер 5–40 м, справа — группа");
+        }
+
+        /// <summary>
+        /// The blessed land's look: jade-green ground (its grid kept, to measure by) and, at the
+        /// square kilometre's edge, the aperture's wall — a pale glow rising out of sight.
+        /// </summary>
+        void ApertureLook()
+        {
+            var ground = new Color(0.46f, 0.62f, 0.5f);
+            GroundMaterial.color = ground;
+
+            if (GroundMaterial.HasProperty("_BaseColor"))
+            {
+                GroundMaterial.SetColor("_BaseColor", ground);
+            }
+
+            var b = Location.bounds;
+            var wall = GuSkills.Glow(new Color(0.42f, 0.78f, 0.7f) * 0.3f);
+            var height = 260f;
+
+            void Wall(Vector3 centre, Vector3 size)
+            {
+                var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+                go.name = "Aperture Wall";
+                Destroy(go.GetComponent<Collider>());
+                go.transform.position = centre;
+                go.transform.localScale = size;
+                var renderer = go.GetComponent<MeshRenderer>();
+                renderer.sharedMaterial = wall;
+                renderer.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+                renderer.receiveShadows = false;
+            }
+
+            var y = b.min.y + height / 2;
+            Wall(new Vector3(b.center.x, y, b.max.z), new Vector3(b.size.x, height, 0.5f));
+            Wall(new Vector3(b.center.x, y, b.min.z), new Vector3(b.size.x, height, 0.5f));
+            Wall(new Vector3(b.max.x, y, b.center.z), new Vector3(0.5f, height, b.size.z));
+            Wall(new Vector3(b.min.x, y, b.center.z), new Vector3(0.5f, height, b.size.z));
+        }
+
+        /// <summary>The proving ground's stones never run out.</summary>
+        void TopUpStones()
+        {
+            const int Endless = 999;
+            var stones = cultivator.Stones;
+
+            if (stones < Endless)
+            {
+                cultivator.Bag.Add(ItemBook.Stone, Endless - stones, clock.Minutes);
+            }
+        }
+
+        /// <summary>Every wolf there is sent away (the proving ground's page).</summary>
+        public void ClearWolves()
+        {
+            foreach (var wolf in Wolf.All.ToArray())
+            {
+                if (wolf != null)
+                {
+                    Destroy(wolf.gameObject);
+                }
+            }
+        }
+
+        /// <summary>The hour set at once (the proving ground's page).</summary>
+        public void SetHour(float hour) => Commands.Run($"/time set {hour.ToString(System.Globalization.CultureInfo.InvariantCulture)}");
+
+        /// <summary>Back at the start of the proving ground, on one's feet.</summary>
+        public void BackToStart()
+        {
+            body.PlaceAt(Location.spawn);
+            body.Facing = Location.spawnYaw;
+            view.Yaw = Location.spawnYaw;
+            health.Set(Health.Max);
+        }
 
         /// <summary>A name after a "·" or a word: its first letter small, the proper names in it as they are ("деревня Гу Юэ").</summary>
         static string LowerFirst(string name) => string.IsNullOrEmpty(name) ? name : char.ToLowerInvariant(name[0]) + name.Substring(1);
@@ -1018,6 +1205,14 @@ namespace GuWorld
         public void Play()
         {
             var made = mode == Mode.Create;
+
+            // A new hero: born with the talent of the way chosen (an extreme physique by its chance).
+            if (made)
+            {
+                var path = Mathf.Clamp(ChosenPath < 0 ? 1 : ChosenPath, 0, Talents.Paths.Length - 1);
+                cultivator.Begin(path, Talents.Roll(Talents.Paths[path], new System.Random()));
+            }
+
             Enter(Mode.Playing);
 
             if (made)
@@ -1103,6 +1298,9 @@ namespace GuWorld
         /// </summary>
         void Begin(bool sameHero)
         {
+            // After a death the same way goes on, with the talent one was born with.
+            var path = cultivator.Path;
+            var talent = cultivator.Aperture.Talent;
             SaveGame.Delete();
             saved = false;
             clock = WorldClock.NewGame();
@@ -1123,6 +1321,7 @@ namespace GuWorld
 
             if (sameHero)
             {
+                cultivator.Begin(path, talent);
                 Wear(look);
                 saved = true;
                 Enter(Mode.Playing);
@@ -1132,6 +1331,7 @@ namespace GuWorld
             }
 
             Wear(Look.Default(look.Gender));
+            ChosenPath = -1;
             Enter(Mode.Create);
         }
 
@@ -1139,6 +1339,13 @@ namespace GuWorld
 
         public void BackToTitle()
         {
+            if (Sandbox)
+            {
+                LeaveSandbox();
+
+                return;
+            }
+
             if (mode == Mode.Playing || mode == Mode.Paused)
             {
                 Save();
@@ -1348,6 +1555,20 @@ namespace GuWorld
                 return;
             }
 
+            // On the proving ground a death costs nothing: back on one's feet at the start.
+            if (Sandbox)
+            {
+                dying = true;
+                menus.Banner("Вы погибли", "Апертура бессмертного не отпускает: вы снова на ногах");
+                menus.FadeThrough(() =>
+                {
+                    dying = false;
+                    BackToStart();
+                });
+
+                return;
+            }
+
             dying = true;
             StopAiming();
             cultivator.CancelAbsorbing(null);
@@ -1373,6 +1594,7 @@ namespace GuWorld
 
         void OnStruck(TrainingDummy dummy, BodyPart? part, float damage, bool broke)
         {
+            DamageNumbers.Show(dummy.transform.position + Vector3.up * 1.5f, damage, broke || (part.HasValue && Wounds.Of(part.Value).Critical) ? DamageNumbers.Vital : DamageNumbers.Dealt, broke);
             quests.Count("hit_dummy");
             menus.Notify(broke ? "Чучело разрублено!" : $"{Wounds.Line("Чучело", part, damage, false)} (осталось {Mathf.Max(0, dummy.Health):0})");
         }
@@ -1561,6 +1783,22 @@ namespace GuWorld
 
         void Update()
         {
+            if (redirecting)
+            {
+                return;
+            }
+
+            // A hit's moment of stillness over (unless something else has stopped time since: a page, the pause).
+            if (hitStopUntil > 0 && Time.unscaledTime >= hitStopUntil)
+            {
+                hitStopUntil = 0;
+
+                if (Mathf.Approximately(Time.timeScale, HitStopScale))
+                {
+                    Time.timeScale = 1;
+                }
+            }
+
             if (screenshot != null)
             {
                 screenshotFrame++;
@@ -1609,20 +1847,45 @@ namespace GuWorld
                         case "bag": OpenPage(Menus.Page.Bag); break;
                         case "aperture": OpenPage(Menus.Page.Aperture); break;
                         case "map": OpenPage(Menus.Page.Map); break;
-                    case "body": OpenPage(Menus.Page.Body); break;
+                        case "body": OpenPage(Menus.Page.Body); break;
+                        case "sandbox": OpenPage(Menus.Page.Sandbox); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
                         case "hua": OpenShop(Trade.Shops[1]); break;
                     }
                 }
 
-                if (aimShot && screenshotFrame > 100 && cultivator.KindOn(0) != null)
+                // `-aim`: the first key's Gu aimed (`-aimgu <id>`: that Gu's) over the picture.
+                var aimed = aimGu != null ? GuBook.Find(aimGu) : cultivator.KindOn(0);
+
+                if (aimShot && screenshotFrame > 100 && aimed != null)
                 {
-                    ShowAim(cultivator.KindOn(0));
+                    // On the immortal's aperture the Gu is put in hand (its aim shows of itself).
+                    if (Sandbox && screenshotFrame == 101)
+                    {
+                        PutInSlot(SandboxSlot, aimed);
+                    }
+
+                    ShowAim(aimed);
                 }
 
                 if (wolvesShot > 0 && screenshotFrame == 60)
                 {
                     wolves.CallNear(wolvesShot, view.transform.forward);
+                }
+
+                if (doShot != null && (screenshotFrame == 50 || screenshotFrame == 140))
+                {
+                    // Twice: a command marked "!" waits for the second turn (a Gu used once it is refined and the world has moved).
+                    foreach (var line in doShot.Split(';'))
+                    {
+                        var command = line.Trim();
+                        var later = command.StartsWith("!");
+
+                        if (command.Length > 1 && (screenshotFrame == 50) != later)
+                        {
+                            Debug.Log($"-do {command}: {Commands.Run(command.TrimStart('!'))}");
+                        }
+                    }
                 }
 
                 if (chatShot != null && screenshotFrame == 110)
@@ -1648,6 +1911,12 @@ namespace GuWorld
                 if (blowShot.HasValue && screenshotFrame == 150 + benchFrames - blowFrames)
                 {
                     melee.Launch(blowShot.Value);
+                }
+
+                if (blowShot.HasValue && screenshotFrame >= 150 + benchFrames - blowFrames)
+                {
+                    testLog.AppendLine($"frame {screenshotFrame}: blow {melee.Current} phase {melee.Phase:0.00} rig {picture.Figure?.Rig.BlowPhase:0.00} " +
+                                       $"guard {picture.Figure?.Rig.Guard:0.00} free {body.Free} dt {Time.deltaTime:0.000} scale {Time.timeScale}");
                 }
 
                 if (guardShot && screenshotFrame > 100)
@@ -1877,7 +2146,7 @@ namespace GuWorld
                 if (Time.unscaledTime >= questTargetAt)
                 {
                     questTargetAt = Time.unscaledTime + 0.25f;
-                    QuestTarget = FindQuestTarget();
+                    QuestTarget = Sandbox ? null : FindQuestTarget();
                 }
 
                 if (cultivator.Absorbing)
@@ -1917,16 +2186,26 @@ namespace GuWorld
                     menus.ZoomMinimap(1);
                 }
 
-                if (keyboard.kKey.wasPressedThisFrame) OpenPage(Menus.Page.Aperture);
+                // On the immortal's aperture Tab (and the bag's and aperture's keys) open all the Gu.
+                if (Sandbox && (keyboard.tabKey.wasPressedThisFrame || keyboard.pKey.wasPressedThisFrame ||
+                                keyboard.kKey.wasPressedThisFrame || keyboard.iKey.wasPressedThisFrame)) OpenPage(Menus.Page.Sandbox);
+                else if (keyboard.kKey.wasPressedThisFrame) OpenPage(Menus.Page.Aperture);
                 else if (keyboard.iKey.wasPressedThisFrame) OpenPage(Menus.Page.Bag);
                 else if (keyboard.mKey.wasPressedThisFrame) OpenPage(Menus.Page.Map);
                 else if (keyboard.bKey.wasPressedThisFrame) OpenPage(Menus.Page.Body);
+                else if (Sandbox && keyboard.pKey.wasPressedThisFrame) OpenPage(Menus.Page.Sandbox);
             }
             else if (mode == Mode.Paused && keyboard != null && !wasPlaying && IsHeroPage(menus.Current))
             {
                 // On the hero's pages the same keys go between them, and the page's own key closes it.
                 var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag :
-                    keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : keyboard.bKey.wasPressedThisFrame ? Menus.Page.Body : Menus.Page.None;
+                    keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : keyboard.bKey.wasPressedThisFrame ? Menus.Page.Body :
+                    Sandbox && keyboard.pKey.wasPressedThisFrame ? Menus.Page.Sandbox : Menus.Page.None;
+
+                if (Sandbox && (keyboard.tabKey.wasPressedThisFrame || keyboard.kKey.wasPressedThisFrame || keyboard.iKey.wasPressedThisFrame))
+                {
+                    to = Menus.Page.Sandbox;
+                }
 
                 if (to != Menus.Page.None)
                 {
@@ -1964,14 +2243,22 @@ namespace GuWorld
                 cultivator.UpdateAbsorbing(Time.deltaTime);
             }
 
-            player.SpeedScale = cultivator.Absorbing ? 0.45f : 1;
+            // Gu on the body: running faster, jumping higher — and held fast inside a ward.
+            player.SpeedScale = cultivator.Warded ? 0 : (cultivator.Absorbing ? 0.45f : 1) * cultivator.SpeedBoost * (health.Shocked ? 0.45f : 1);
             player.NoSprint = cultivator.Absorbing;
+            body.JumpScale = cultivator.Warded ? 0.1f : cultivator.JumpBoost;
 
             if (mode == Mode.Playing || mode == Mode.Talking || mode == Mode.Chat)
             {
                 var before = clock.Minutes;
                 clock.Advance(Time.deltaTime);
                 using (HeroMarker.Auto()) cultivator.Tick(clock.Minutes);
+                cultivator.Step(Time.deltaTime);
+
+                if (Sandbox)
+                {
+                    TopUpStones();
+                }
                 health.Mend(clock.Minutes - before);
                 sinceSave += Time.deltaTime;
 
@@ -2020,13 +2307,22 @@ namespace GuWorld
             }
 
             var click = mouse != null && mouse.leftButton.wasPressedThisFrame;
-            melee.Strength = 1 + 0.6f * (cultivator.Aperture.Rank - 1);
+            melee.Strength = (1 + 0.6f * (cultivator.Aperture.Rank - 1)) * cultivator.FistPower;
+            // A blow turns to what lies the way the camera looks.
+            melee.AimForward = view.transform.forward;
 
             // F: the fists ready, or put away.
             if (keyboard.fKey.wasPressedThisFrame)
             {
                 melee.Ready = !melee.Ready;
                 menus.Notify(melee.Ready ? "Кулаки наготове" : "Кулаки опущены");
+            }
+
+            if (Sandbox)
+            {
+                SandboxSkills(keyboard, mouse, click);
+
+                return;
             }
 
             if (aiming < 0)
@@ -2073,7 +2369,7 @@ namespace GuWorld
                     }
 
                     // Fighting: the hero faces where the crosshair is.
-                    player.FaceView = melee.Busy;
+                    player.FaceView = melee.Busy && melee.Target == null;
 
                     return;
                 }
@@ -2106,6 +2402,128 @@ namespace GuWorld
             }
         }
 
+        // ── The immortal's aperture: eight Gu at hand ─────────────────
+
+        /// <summary>The aperture's eight cells at hand (Gu kinds; null: empty), and the one chosen.</summary>
+        public string[] SandboxBar { get; } = new string[SandboxCells];
+        public int SandboxSlot { get; set; }
+        public const int SandboxCells = 8;
+
+        /// <summary>What is at hand when one comes in: one of each sort, to try at once.</summary>
+        static readonly string[] SandboxStart =
+        {
+            "moonlight", "bone_spear", "exploding_egg", "ice_blade", "bronze_skin", "eating_wind", "nine_leaf_grass", "fire_dragon",
+        };
+
+        /// <summary>
+        /// A Gu put in a cell at hand (null: emptied). A Gu that can be refined goes into the aperture's
+        /// ring with it — fed, rested — and leaves it when no cell holds it any more; one used once
+        /// stays only at hand (it is never spent here).
+        /// </summary>
+        public void PutInSlot(int slot, GuKind kind)
+        {
+            if (slot < 0 || slot >= SandboxCells)
+            {
+                return;
+            }
+
+            var old = SandboxBar[slot];
+            SandboxBar[slot] = kind?.Id;
+
+            if (old != null && old != kind?.Id && System.Array.IndexOf(SandboxBar, old) < 0)
+            {
+                cultivator.Release(cultivator.First(old));
+            }
+
+            if (kind != null && !kind.OneUse)
+            {
+                cultivator.Grant(kind, -1, true);
+            }
+        }
+
+        /// <summary>
+        /// The keys on the immortal's aperture, as simple as can be: 1–8 or the wheel pick a cell,
+        /// the left button uses its Gu where the crosshair points (the right button held shows where
+        /// it will go). The fists (F) fight as anywhere.
+        /// </summary>
+        void SandboxSkills(Keyboard keyboard, Mouse mouse, bool click)
+        {
+            var digits = new[] { keyboard.digit1Key, keyboard.digit2Key, keyboard.digit3Key, keyboard.digit4Key,
+                keyboard.digit5Key, keyboard.digit6Key, keyboard.digit7Key, keyboard.digit8Key };
+
+            for (var i = 0; i < digits.Length; i++)
+            {
+                if (digits[i].wasPressedThisFrame)
+                {
+                    SandboxSlot = i;
+                }
+            }
+
+            var wheel = mouse != null ? mouse.scroll.ReadValue().y : 0;
+
+            if (wheel != 0)
+            {
+                SandboxSlot = (SandboxSlot + (wheel < 0 ? 1 : -1) + SandboxCells) % SandboxCells;
+            }
+
+            if (melee.Ready)
+            {
+                StopAiming();
+
+                if (click)
+                {
+                    melee.Press();
+                }
+
+                if (keyboard.qKey.wasPressedThisFrame && !keyboard.f3Key.isPressed) Special(Blow.Heavy, "Мощный удар");
+                if (keyboard.rKey.wasPressedThisFrame) Special(Blow.Spin, "Удар с разворота");
+                melee.Guarding = mouse != null && mouse.rightButton.isPressed && body.Free;
+                player.FaceView = melee.Busy && melee.Target == null;
+
+                return;
+            }
+
+            melee.Guarding = false;
+            var kind = GuBook.Find(SandboxBar[SandboxSlot]);
+
+            // The chosen Gu's aim is always there: what it will do, where.
+            if (kind != null && !kind.OneUse && !kind.Passive)
+            {
+                ShowAim(kind);
+            }
+            else
+            {
+                StopAiming();
+            }
+
+            if (!click)
+            {
+                return;
+            }
+
+            if (kind == null)
+            {
+                menus.Notify($"Ячейка {SandboxSlot + 1} пуста — Tab: выбрать Гу");
+
+                return;
+            }
+
+            if (kind.OneUse)
+            {
+                cultivator.ActivateKind(kind);
+
+                return;
+            }
+
+            // A Gu that died of being forced comes back to the ring at once here.
+            if (cultivator.First(kind.Id) == null)
+            {
+                cultivator.Grant(kind, -1, true);
+            }
+
+            cultivator.UseGu(kind.Id);
+        }
+
         /// <summary>A special blow (Q, R) thrown — or why not, when it still rests.</summary>
         void Special(Blow blow, string name)
         {
@@ -2115,22 +2533,81 @@ namespace GuWorld
             }
         }
 
+        /// <summary>
+        /// A skill being aimed, shown as what it will do (SkillAim): a missile's very course and the missile flying it,
+        /// a blast's arc and the ground it covers, a sweep's arc, a rush's or a blink's way and where it ends, a leap's
+        /// arc, a skill on oneself round the hero — worked out as the skill itself works it out.
+        /// </summary>
         void ShowAim(GuWorld.Cultivation.GuKind kind)
         {
             aim ??= SkillAim.Create(body.transform);
-            var thrown = kind.Skill == GuWorld.Cultivation.SkillKind.Moonblade;
-            player.FaceView = thrown;
+            var usable = cultivator.Usable(kind);
+            var feet = body.transform.position;
+            var target = cultivator.AimPoint(kind);
+            var thrown = kind.Skill is SkillKind.Moonblade or SkillKind.Bolt or SkillKind.Tame;
+            player.FaceView = kind.Aimed || kind.Skill is SkillKind.Cleave or SkillKind.Dash or SkillKind.Flight;
             view.Aiming = thrown;
-            var usable = cultivator.CooldownLeft(kind.Id) <= 0 && (cultivator.Aperture.CanSpend(kind.Cost) || (kind.Skill == GuWorld.Cultivation.SkillKind.JadeSkin && cultivator.SkinOn));
+            var size = GuShapes.Size(kind, cultivator.MoonScale);
 
-            if (thrown)
+            switch (kind.Skill)
             {
-                var target = cultivator.AimPoint(kind);
-                aim.ShowPath(body.transform.position, cultivator.HandFor(target), target, Moonblade.Width, kind.Reach, kind.Range, usable);
-            }
-            else
-            {
-                aim.ShowRing(body.transform.position, 1.1f, usable);
+                case SkillKind.Moonblade:
+                case SkillKind.Bolt:
+                case SkillKind.Tame:
+                {
+                    var shot = cultivator.PlanShot(kind, target);
+                    var reach = (kind.Reach > 0 ? kind.Reach : shot.Length) * (kind.Skill == SkillKind.Moonblade ? cultivator.MoonScale : 1);
+                    aim.ShowShot(shot.From, shot.Direction, shot.Length, reach, kind, size, cultivator.NextRoll, usable, shot.Hits, shot.Normal);
+                    break;
+                }
+
+                case SkillKind.Burst:
+                    aim.ShowBlast(cultivator.HandFor(target), cultivator.BlastPoint(target), kind.Radius, kind, size, usable);
+                    break;
+
+                case SkillKind.Cleave:
+                    aim.ShowSweep(feet, target - feet, kind.Reach, 60, kind, usable);
+                    break;
+
+                case SkillKind.Dash:
+                    aim.ShowDash(feet, cultivator.DashEnd(kind, target), kind, usable);
+                    break;
+
+                case SkillKind.Blink:
+                    aim.ShowBlink(feet, cultivator.BlinkPoint(kind, target), kind, usable);
+                    break;
+
+                case SkillKind.Decoy:
+                {
+                    var forward = target - feet;
+                    forward.y = 0;
+                    aim.ShowFigureAt(feet + (forward.sqrMagnitude > 0.01f ? forward.normalized : body.transform.forward) * 2.5f, kind, usable);
+                    break;
+                }
+
+                case SkillKind.Flight:
+                    aim.ShowLeap(feet, cultivator.FlightStart(kind), 25, kind, usable);
+                    break;
+
+                case SkillKind.JadeSkin:
+                case SkillKind.Skin:
+                case SkillKind.Ward:
+                case SkillKind.Hide:
+                    aim.ShowSelf(feet, 1, kind, usable, SkillAim.Self.Shell);
+                    break;
+
+                case SkillKind.Howl:
+                case SkillKind.Flash:
+                    aim.ShowSelf(feet, kind.Radius, kind, usable, SkillAim.Self.Reach);
+                    break;
+
+                case SkillKind.Sense:
+                    aim.ShowSelf(feet, Mathf.Min(kind.Range, 30), kind, usable, SkillAim.Self.Reach);
+                    break;
+
+                default:
+                    aim.ShowSelf(feet, 1, kind, usable, SkillAim.Self.Body);
+                    break;
             }
         }
 
@@ -2370,7 +2847,7 @@ namespace GuWorld
         WolfPacks wolves;
 
         /// <summary>The wolves' dens: in the forest round the hero's village, well outside its walls (none on the proving ground).</summary>
-        IEnumerable<Vector3> WolfDens()
+        IEnumerable<(Vector3 at, WolfKind[] kinds)> WolfDens()
         {
             if (Location.id != QingMao.Id)
             {
@@ -2379,12 +2856,39 @@ namespace GuWorld
 
             var village = QingMao.Find("gu_yue");
 
-            foreach (var degrees in new[] { 205f, 250f, 295f, 160f, 25f })
+            (Vector3, WolfKind[]) Den(float degrees, float beyond, WolfKind[] kinds)
             {
                 var angle = degrees * Mathf.Deg2Rad;
-                var at = new Vector3(village.Centre.x + Mathf.Cos(angle) * (village.Radius + 210), 0, village.Centre.y + Mathf.Sin(angle) * (village.Radius + 210));
+                var at = new Vector3(village.Centre.x + Mathf.Cos(angle) * (village.Radius + beyond), 0, village.Centre.y + Mathf.Sin(angle) * (village.Radius + beyond));
                 at.y = QingMao.GroundAt(at);
-                yield return at;
+
+                return (at, kinds);
+            }
+
+            // Round the village: grey wolves, the lightning wolves' outriders, one bold lightning wolf with its pack.
+            var g = WolfKinds.Grey;
+            var l = WolfKinds.Lightning;
+            yield return Den(205, 210, new[] { g, g, g });
+            yield return Den(160, 210, new[] { g, g, g, g });
+            yield return Den(250, 210, new[] { g, g, l });
+            yield return Den(295, 230, new[] { l, l, l });
+            yield return Den(25, 260, WolfPacks.PackOf(WolfKinds.Bold));
+            // Deeper in the forest: a frenzy lightning wolf's pack; and far up, the wolf tide's den with its thunder crown wolf.
+            yield return Den(230, 700, WolfPacks.PackOf(WolfKinds.Frenzy));
+            yield return Den(320, 750, WolfPacks.PackOf(WolfKinds.Frenzy));
+            yield return Den(275, 1200, WolfPacks.PackOf(WolfKinds.ThunderCrown));
+        }
+
+        /// <summary>A pack of a kind of wolf called up near the hero (a king comes with its pack); how many came.</summary>
+        public int SpawnPack(WolfKind kind, int count) =>
+            wolves != null ? wolves.CallNear(kind.Tier > 0 ? WolfPacks.PackOf(kind, 1) : WolfPacks.PackOf(kind, Mathf.Max(1, count)), view.transform.forward) : 0;
+
+        /// <summary>A beast king does something the hero should know.</summary>
+        void OnWolfRoared(Wolf wolf, string what)
+        {
+            if (body != null && Vector3.Distance(wolf.transform.position, body.transform.position) < 60)
+            {
+                menus.Notify($"{wolf.Kind.Name} {what}");
             }
         }
 
@@ -2460,18 +2964,67 @@ namespace GuWorld
         /// <summary>A fist or a foot landed: the camera jolts a little (more on something solid that does not give).</summary>
         void OnFistLanded(Collider what, Vector3 point)
         {
-            view.Shake(what.GetComponent<HitZone>() != null || what.GetComponentInParent<IStrikable>() != null ? 0.06f : 0.03f);
+            // On a body: a spark, the camera jolted, and the world held still for a blink (longer for a finishing blow).
+            var onBody = what.GetComponent<HitZone>() != null || what.GetComponentInParent<IStrikable>() != null;
+            var heavy = melee.Current is Blow.Kick or Blow.Heavy or Blow.Spin;
+            view.Shake(onBody ? (heavy ? 0.22f : 0.12f) : 0.04f);
+            GuGlow.Flash(point, onBody ? (heavy ? 0.45f : 0.3f) : 0.16f, new Color(1f, 0.85f, 0.6f), 0.16f);
+
+            if (onBody && mode == Mode.Playing)
+            {
+                HitStop(heavy ? 0.09f : 0.05f);
+            }
+        }
+
+        const float HitStopScale = 0.05f;
+        float hitStopUntil;
+
+        /// <summary>The world held almost still for a moment (a blow's weight).</summary>
+        void HitStop(float seconds)
+        {
+            if (Time.timeScale < 0.99f && !Mathf.Approximately(Time.timeScale, HitStopScale))
+            {
+                return;
+            }
+
+            Time.timeScale = HitStopScale;
+            hitStopUntil = Time.unscaledTime + seconds;
+        }
+
+        /// <summary>A blow landed where it can be seen: its number rises from the wound.</summary>
+        void OnStrikeShown(Vector3 at, string who, BodyPart? part, float harm, bool down)
+        {
+            var vital = part.HasValue && Wounds.Of(part.Value).Critical;
+            DamageNumbers.Show(at, harm, who == "Вы" ? DamageNumbers.Taken : vital || down ? DamageNumbers.Vital : DamageNumbers.Dealt, vital || down);
         }
 
         /// <summary>A wolf killed: its fang into the bag, and the task counts it.</summary>
         void OnWolfKilled(Wolf wolf)
         {
-            var kept = cultivator.Bag.Add(ItemBook.WolfFang, 1, clock.Minutes);
-            menus.Notify(kept > 0 ? "Волк убит — волчий клык в сумке" : "Волк убит — клык не поместился в сумку");
+            // Its fangs; and from a beast king's body, now and then, the Gu that lived in it.
+            var kind = wolf.Kind;
+            var kept = cultivator.Bag.Add(ItemBook.WolfFang, kind.Fangs, clock.Minutes);
+            menus.Notify(kept > 0 ? $"{kind.Name} (ур. {wolf.Level}) убит — клыков в сумке: {kept}" : $"{kind.Name} убит — клыки не поместились в сумку");
+
+            foreach (var (gu, chance) in kind.Drops)
+            {
+                var found = GuBook.Find(gu);
+
+                if (found != null && Random.value < chance && cultivator.Bag.Add(found.Item, 1, clock.Minutes) > 0)
+                {
+                    menus.Notify($"Из тела зверя вышел Гу: {found.Name} — в сумке");
+                }
+            }
+
+            if (kind.Tier > 0)
+            {
+                menus.Banner($"{kind.Name} повержен", $"{kind.TierName} · уровень {wolf.Level}");
+            }
             quests.Count("kill:wolf");
         }
 
-        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body;
+        static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body ||
+                                                   page == Menus.Page.Sandbox;
 
         /// <summary>
         /// What the hero can do where they stand: talk to the one before them (E), or gather
@@ -2622,6 +3175,11 @@ namespace GuWorld
 
         void LateUpdate()
         {
+            if (redirecting)
+            {
+                return;
+            }
+
             if (orbitView is Vector3 orbit && body != null)
             {
                 var around = body.Facing + orbit.x * Mathf.Deg2Rad;
@@ -2764,9 +3322,11 @@ namespace GuWorld
             Time.timeScale = 1;
             TrainingDummy.Struck -= OnStruck;
             Wounds.Landed -= OnWound;
+            Wounds.Struck -= OnStrikeShown;
             TreeBranch.Creaking -= OnCreak;
             TreeBranch.Snapped -= OnSnap;
             Wolf.Killed -= OnWolfKilled;
+            Wolf.Roared -= OnWolfRoared;
             GameSettings.Restore();
         }
 
@@ -2790,7 +3350,7 @@ namespace GuWorld
         void Save()
         {
             // Nothing to save before the hero is made, or while checking by eye.
-            if (clock == null || body == null || screenshot != null || mode == Mode.Create)
+            if (clock == null || body == null || screenshot != null || mode == Mode.Create || Sandbox)
             {
                 return;
             }
@@ -2823,6 +3383,11 @@ namespace GuWorld
 
         void OnGUI()
         {
+            if (redirecting)
+            {
+                return;
+            }
+
             if (!debug)
             {
                 return;
@@ -2839,7 +3404,7 @@ namespace GuWorld
                 $"погода: {GuWorld.World.Weather.Name(weather.Kind)}{(forcedWeather.HasValue ? " (вручную)" : "")}\n" +
                 $"эссенция {cultivator.Aperture.Essence:0.0}% / {cultivator.Aperture.Cap:0}% · класс {cultivator.Aperture.Grade}\n" +
                 $"жизнь {health.Current:0} · камней {cultivator.Stones} · вес {cultivator.Bag.Weight:0.0}\n" +
-                "R — погода · G — класс таланта · Y — +50 камней · F3+Q — все клавиши",
+                "R — погода · G — талант · Y — +50 камней · F3+Q — все клавиши",
                 skin.Small);
             GUILayout.EndArea();
         }

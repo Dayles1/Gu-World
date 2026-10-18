@@ -5,8 +5,9 @@ using UnityEngine;
 namespace GuWorld.Combat
 {
     /// <summary>
-    /// The hero's own blows: a jab with the left fist, a cross with the right, a front kick with the right foot (the chain);
-    /// and the special ones — a heavy uppercut (Q), a roundhouse kick that sweeps an arc (R).
+    /// The hero's own blows: the chain — a jab with the left fist, a cross with the right, a hook with the left, and
+    /// a front kick to finish (it throws a beast back); and the special ones — a heavy uppercut (Q) that lifts, a
+    /// roundhouse (R) that turns the whole body round and sweeps everything about it.
     /// </summary>
     public enum Blow
     {
@@ -15,20 +16,22 @@ namespace GuWorld.Combat
         Kick,
         Heavy,
         Spin,
+        Hook,
     }
 
     /// <summary>
-    /// Fighting with the body alone, once the fists are ready (their slot, F): the left mouse button a chain of
-    /// blows — jab, cross, kick — each
-    /// following on if the button comes again before the last is over, the chain starting again after a
-    /// pause. A blow lands at its moment: whatever stands within the fist's or the foot's reach before the
-    /// hero (at the hips for a kick, the chest for a fist) is struck — a body by its parts (HitZones), as the
-    /// moonblade wounds; a wolf, a branch, a dummy as a whole (IStrikable). The fists are a youth's: they hurt
-    /// common folk and wolves, and do nothing to a Gu Master far above the hero. Stronger with every rank.
+    /// Fighting with the body alone, once the fists are ready (F): the left mouse button a chain of blows — jab,
+    /// cross, hook, kick — each following on if the button comes again before the last is over, the chain starting
+    /// again after a pause. Every blow is wound up, thrown and drawn back (the figure's poses: Mannequin), and
+    /// carries the body a step into it; it turns toward the nearest thing to hit before the hero (within a few
+    /// metres and the way the camera looks), so a blow meant for a wolf finds it. It lands at its moment: whatever
+    /// stands within the fist's or the foot's reach is struck — a body by its parts (HitZones), a wolf, a branch, a
+    /// dummy as a whole (IStrikable); a hook and the roundhouse sweep an arc. The kick and the uppercut throw a beast
+    /// back. The fists are a youth's: they hurt common folk and wolves, and do nothing to a Gu Master far above the
+    /// hero. Stronger with every rank, and with strength Gu.
     ///
-    /// The right button held, the fists come up to guard the head: a blow from in front lands on the
-    /// forearms, weakened (Health). Q throws a heavy uppercut, R a roundhouse kick that strikes everything in
-    /// an arc before the hero; each rests a moment before it can be thrown again.
+    /// The right button held, the fists come up to guard the head: a blow from in front lands on the forearms,
+    /// weakened (Health). Q and R rest a moment before they can be thrown again.
     /// </summary>
     [RequireComponent(typeof(HeroMotor))]
     public class Melee : MonoBehaviour
@@ -39,16 +42,22 @@ namespace GuWorld.Combat
             public float Time, LandsAt;
             /// <summary>Its strength (Wounds: 100 a rank-one moonblade), its reach before the body (m, for a figure of 1.8 m) and the height it lands at.</summary>
             public float Power, Reach, Height;
+            /// <summary>How far the body goes into it, m; how wide it sweeps either side (degrees, 0: straight); how hard it throws a beast back, m/s.</summary>
+            public float Lunge, Arc, Knock;
         }
 
         public static Spec Of(Blow blow) => blow switch
         {
-            Blow.Jab => new Spec { Time = 0.34f, LandsAt = 0.38f, Power = 40, Reach = 0.95f, Height = 1.45f },
-            Blow.Cross => new Spec { Time = 0.42f, LandsAt = 0.4f, Power = 50, Reach = 1.0f, Height = 1.4f },
-            Blow.Heavy => new Spec { Time = 0.66f, LandsAt = 0.52f, Power = 88, Reach = 1.0f, Height = 1.5f },
-            Blow.Spin => new Spec { Time = 0.8f, LandsAt = 0.5f, Power = 70, Reach = 1.45f, Height = 1.1f },
-            _ => new Spec { Time = 0.58f, LandsAt = 0.45f, Power = 64, Reach = 1.25f, Height = 0.95f },
+            Blow.Jab => new Spec { Time = 0.36f, LandsAt = 0.42f, Power = 40, Reach = 1.0f, Height = 1.45f, Lunge = 0.3f },
+            Blow.Cross => new Spec { Time = 0.42f, LandsAt = 0.45f, Power = 52, Reach = 1.05f, Height = 1.4f, Lunge = 0.4f },
+            Blow.Hook => new Spec { Time = 0.46f, LandsAt = 0.5f, Power = 60, Reach = 1.05f, Height = 1.42f, Lunge = 0.25f, Arc = 70 },
+            Blow.Heavy => new Spec { Time = 0.7f, LandsAt = 0.55f, Power = 105, Reach = 1.05f, Height = 1.45f, Lunge = 0.55f, Knock = 6 },
+            Blow.Spin => new Spec { Time = 0.8f, LandsAt = 0.55f, Power = 82, Reach = 1.6f, Height = 1.1f, Lunge = 0.2f, Arc = 180, Knock = 7 },
+            _ => new Spec { Time = 0.62f, LandsAt = 0.5f, Power = 78, Reach = 1.35f, Height = 0.95f, Lunge = 0.45f, Knock = 8 },
         };
+
+        /// <summary>The chain the left button throws, in order (the kick ends it).</summary>
+        public static readonly Blow[] Chain = { Blow.Jab, Blow.Cross, Blow.Hook, Blow.Kick };
 
         /// <summary>How long a special blow rests before it can be thrown again, s (the chain's blows do not).</summary>
         public static float RestOf(Blow blow) => blow switch
@@ -61,33 +70,52 @@ namespace GuWorld.Combat
         /// <summary>A special blow (Q, R) rather than one of the chain's.</summary>
         public static bool IsSpecial(Blow blow) => blow == Blow.Heavy || blow == Blow.Spin;
 
-        /// <summary>How wide the roundhouse sweeps, either side of straight ahead (degrees).</summary>
-        const float SpinArc = 80;
+        /// <summary>The blow's name, as the HUD tells it.</summary>
+        public static string Name(Blow blow) => blow switch
+        {
+            Blow.Jab => "Джеб",
+            Blow.Cross => "Кросс",
+            Blow.Hook => "Хук",
+            Blow.Kick => "Пинок",
+            Blow.Heavy => "Апперкот",
+            _ => "Разворот",
+        };
 
         /// <summary>A pause this long after a blow, and the chain starts again from the jab.</summary>
-        const float ChainBreak = 0.55f;
+        const float ChainBreak = 0.6f;
         /// <summary>How wide round the line of the blow it finds what it hits, m.</summary>
-        const float Width = 0.28f;
+        const float Width = 0.3f;
         /// <summary>A blow that meets nothing at its own height looks this low too (for a grown-up), m: a wolf's back.</summary>
         const float LowHeight = 0.6f;
+        /// <summary>How far a blow looks for something to turn to, m, and how far round from where the camera looks (degrees).</summary>
+        const float LockReach = 4.5f;
+        const float LockArc = 75;
+        /// <summary>The share of a blow, before it lands, in which the body goes into it.</summary>
+        const float LungeSpan = 0.3f;
 
         static readonly RaycastHit[] casts = new RaycastHit[32];
 
         /// <summary>The blow under way (null: none), and how far through it, 0…1.</summary>
         public Blow? Current { get; private set; }
         public float Phase { get; private set; }
+        /// <summary>Where the chain is: the next of its blows (0…3).</summary>
+        public int ChainStep => next;
         /// <summary>Guarding the head with the forearms (the right button held).</summary>
         public bool Guarding { get; set; }
-        /// <summary>Busy with a blow, or guarding: the body faces where the camera looks.</summary>
+        /// <summary>Busy with a blow, or guarding: the body faces where the camera looks (or the thing it turned to).</summary>
         public bool Busy => Current.HasValue || Guarding;
-        /// <summary>The fists ready (their slot chosen): the mouse fights with them, the stance is a fighter's.</summary>
+        /// <summary>The fists ready (F): the mouse fights with them, the stance is a fighter's.</summary>
         public bool Ready;
-        /// <summary>The blows' strength scaled by this (the rank's).</summary>
+        /// <summary>The blows' strength scaled by this (the rank's, strength Gu's).</summary>
         public float Strength = 1;
         /// <summary>The figure's size against a grown-up's 1.8 m (the reach and the heights shrink with it).</summary>
         public float Scale = 1;
+        /// <summary>Where the camera looks, on the ground: a blow turns to what lies that way.</summary>
+        public Vector3 AimForward = Vector3.forward;
+        /// <summary>The thing the blow under way turned to (null: none — it goes where the camera looks).</summary>
+        public Transform Target { get; private set; }
 
-        /// <summary>A blow landed on something (what it was, where): for the HUD's word and the camera's jolt.</summary>
+        /// <summary>A blow landed on something (what it was, where): for the HUD, the camera's jolt, the spark.</summary>
         public event System.Action<Collider, Vector3> Hit;
         /// <summary>A blow began (the figure swings into it).</summary>
         public event System.Action<Blow> Swung;
@@ -96,11 +124,13 @@ namespace GuWorld.Combat
         public float SinceBlow => Current.HasValue ? 0 : sinceLast;
 
         HeroMotor body;
+        CharacterController solid;
         int next;
         bool queued;
         bool landed;
         float sinceLast = 99;
-        readonly float[] restUntil = new float[5];
+        float lunged;
+        readonly float[] restUntil = new float[6];
 
         /// <summary>How long before a special blow can be thrown again, s (0: now).</summary>
         public float RestLeft(Blow blow) => Mathf.Max(0, restUntil[(int)blow] - Time.time);
@@ -122,6 +152,7 @@ namespace GuWorld.Combat
         void Awake()
         {
             body = GetComponent<HeroMotor>();
+            solid = GetComponent<CharacterController>();
         }
 
         /// <summary>The button: a blow now, or the next one in the chain once this one has landed.</summary>
@@ -144,7 +175,7 @@ namespace GuWorld.Combat
                 next = 0;
             }
 
-            Begin((Blow)next);
+            Begin(Chain[next]);
         }
 
         /// <summary>A blow of one's choosing at once (a check's: -blow).</summary>
@@ -160,6 +191,7 @@ namespace GuWorld.Combat
         public void Stop()
         {
             Current = null;
+            Target = null;
             queued = false;
             Guarding = false;
         }
@@ -170,9 +202,68 @@ namespace GuWorld.Combat
             Phase = 0;
             landed = false;
             queued = false;
-            // The chain goes on from a chain's blow; after a special one it starts again.
-            next = IsSpecial(blow) ? 0 : ((int)blow + 1) % 3;
+            lunged = 0;
+            // The chain goes on from a chain's blow; after a special one, or the kick, it starts again.
+            var at = System.Array.IndexOf(Chain, blow);
+            next = at < 0 ? 0 : (at + 1) % Chain.Length;
+            Target = FindTarget();
             Swung?.Invoke(blow);
+        }
+
+        /// <summary>The nearest thing to hit before the hero — within reach and the way the camera looks — or null.</summary>
+        Transform FindTarget()
+        {
+            var forward = Flat(AimForward);
+            var limit = Mathf.Cos(LockArc * Mathf.Deg2Rad);
+            Transform best = null;
+            var bestScore = float.PositiveInfinity;
+
+            foreach (var collider in UnityEngine.Physics.OverlapSphere(transform.position + Vector3.up, LockReach * Scale, ~0, QueryTriggerInteraction.Collide))
+            {
+                if (Mine(collider))
+                {
+                    continue;
+                }
+
+                var thing = collider.TryGetComponent<HitZone>(out var zone) ? zone.Owner : collider.isTrigger ? null : collider.GetComponentInParent<IStrikable>();
+
+                if (!(thing is Component owner) || owner.transform == transform)
+                {
+                    continue;
+                }
+
+                if (owner.TryGetComponent<GuWorld.Creatures.Wolf>(out var wolf) && (wolf.Dead || wolf.Tamed))
+                {
+                    continue;
+                }
+
+                var to = owner.transform.position - transform.position;
+                to.y = 0;
+                var distance = to.magnitude;
+
+                if (distance < 0.05f)
+                {
+                    continue;
+                }
+
+                var facing = Vector3.Dot(to / distance, forward);
+
+                if (facing < limit)
+                {
+                    continue;
+                }
+
+                // Near and straight ahead first.
+                var score = distance + (1 - facing) * 4;
+
+                if (score < bestScore)
+                {
+                    bestScore = score;
+                    best = owner.transform;
+                }
+            }
+
+            return best;
         }
 
         void Update()
@@ -197,7 +288,10 @@ namespace GuWorld.Combat
             }
 
             var spec = Of(Current.Value);
+            var before = Phase;
             Phase += dt / spec.Time;
+            Face();
+            Lunge(spec, before);
 
             if (!landed && Phase >= spec.LandsAt)
             {
@@ -206,9 +300,9 @@ namespace GuWorld.Combat
             }
 
             // The next blow follows on once this one is most of the way back.
-            if (queued && Phase >= 0.7f)
+            if (queued && Phase >= 0.72f)
             {
-                Begin((Blow)next);
+                Begin(Chain[next]);
 
                 return;
             }
@@ -216,19 +310,68 @@ namespace GuWorld.Combat
             if (Phase >= 1)
             {
                 Current = null;
+                Target = null;
                 sinceLast = 0;
+            }
+        }
+
+        /// <summary>Turned toward the thing the blow is meant for.</summary>
+        void Face()
+        {
+            if (Target == null)
+            {
+                return;
+            }
+
+            var to = Target.position - transform.position;
+            to.y = 0;
+
+            if (to.sqrMagnitude < 0.01f)
+            {
+                return;
+            }
+
+            var wanted = Mathf.Atan2(to.x, to.z);
+            body.Facing = Mathf.LerpAngle(body.Facing * Mathf.Rad2Deg, wanted * Mathf.Rad2Deg, 1 - Mathf.Exp(-25 * Time.deltaTime)) * Mathf.Deg2Rad;
+            transform.rotation = Quaternion.Euler(0, body.Facing * Mathf.Rad2Deg, 0);
+        }
+
+        /// <summary>The body carried into the blow as it is thrown — up to its reach of the thing it is meant for, not into it.</summary>
+        void Lunge(Spec spec, float before)
+        {
+            var start = spec.LandsAt - LungeSpan;
+            var share = Mathf.Clamp01((Phase - start) / LungeSpan) - Mathf.Clamp01((before - start) / LungeSpan);
+
+            if (share <= 0 || spec.Lunge <= 0 || solid == null || !solid.enabled)
+            {
+                return;
+            }
+
+            var step = spec.Lunge * Scale * share;
+
+            if (Target != null)
+            {
+                var to = Target.position - transform.position;
+                to.y = 0;
+                step = Mathf.Min(step, Mathf.Max(0, to.magnitude - spec.Reach * Scale * 0.75f));
+            }
+
+            if (step > 0.001f)
+            {
+                solid.Move(transform.forward * step);
+                lunged += step;
             }
         }
 
         bool Mine(Collider collider) => collider.transform == transform || collider.transform.IsChildOf(transform);
 
-        /// <summary>The roundhouse's moment: everything within its reach and its arc struck, each body once, where it is most open.</summary>
+        /// <summary>A sweeping blow's moment (the hook, the roundhouse): everything within its reach and its arc struck, each body once, where it is most open.</summary>
         void Sweep(Spec spec)
         {
             var forward = transform.forward;
             var centre = transform.position + Vector3.up * spec.Height * Scale;
             var reach = spec.Reach * Scale;
-            var limit = Mathf.Cos(SpinArc * Mathf.Deg2Rad);
+            var limit = Mathf.Cos(spec.Arc * Mathf.Deg2Rad);
             var bodies = new Dictionary<IStrikable, (HitZone zone, float distance)>();
             var things = new Dictionary<IStrikable, Collider>();
 
@@ -237,7 +380,7 @@ namespace GuWorld.Combat
                 var to = point - transform.position;
                 to.y = 0;
 
-                return to.sqrMagnitude < 1e-4f || Vector3.Dot(to.normalized, forward) >= limit;
+                return spec.Arc >= 180 || to.sqrMagnitude < 1e-4f || Vector3.Dot(to.normalized, forward) >= limit;
             }
 
             foreach (var collider in UnityEngine.Physics.OverlapSphere(centre, reach, ~0, QueryTriggerInteraction.Collide))
@@ -256,7 +399,7 @@ namespace GuWorld.Combat
 
                 if (collider.isTrigger)
                 {
-                    // A body's part: the most vital one the foot reaches, for each body.
+                    // A body's part: the most vital one the blow reaches, for each body.
                     if (collider.TryGetComponent<HitZone>(out var zone) && zone.Owner != null)
                     {
                         var distance = (point - centre).magnitude;
@@ -291,7 +434,17 @@ namespace GuWorld.Combat
                 strike.Point = pair.Value.ClosestPoint(centre);
                 strike.Direction = Flat(strike.Point - transform.position);
                 pair.Key.TakeStrike(strike, null);
+                Knock(pair.Key, strike.Direction, spec);
                 Hit?.Invoke(pair.Value, strike.Point);
+            }
+        }
+
+        /// <summary>A beast thrown back by a blow that can (the kick, the uppercut, the roundhouse).</summary>
+        static void Knock(IStrikable target, Vector3 direction, Spec spec)
+        {
+            if (spec.Knock > 0 && target is GuWorld.Creatures.Wolf wolf && !wolf.Dead)
+            {
+                wolf.Push(Flat(direction) * spec.Knock + Vector3.up * spec.Knock * 0.35f);
             }
         }
 
@@ -302,10 +455,10 @@ namespace GuWorld.Combat
             return v.sqrMagnitude > 1e-6f ? v.normalized : Vector3.forward;
         }
 
-        /// <summary>The blow's moment: the nearest thing along its line, within reach, struck (the roundhouse: all in its arc).</summary>
+        /// <summary>The blow's moment: the nearest thing along its line, within reach, struck (a sweeping blow: all in its arc).</summary>
         void Land(Blow blow, Spec spec)
         {
-            if (blow == Blow.Spin)
+            if (spec.Arc > 0)
             {
                 Sweep(spec);
 
@@ -320,7 +473,7 @@ namespace GuWorld.Combat
 
             // The parts of bodies (triggers), and solid things — a wolf, a branch, a wall that stops the fist.
             var met = new List<(HitZone, float)>();
-            Collider solid = null;
+            Collider solidHit = null;
             var solidAt = float.PositiveInfinity;
             var solidPoint = Vector3.zero;
 
@@ -354,14 +507,14 @@ namespace GuWorld.Combat
                 if (hit.distance < solidAt)
                 {
                     solidAt = hit.distance;
-                    solid = hit.collider;
+                    solidHit = hit.collider;
                     solidPoint = hit.distance <= 0 && hit.point == Vector3.zero ? from + forward * 0.3f : hit.point;
                 }
             }
 
             // Nothing to strike at the blow's own height (air, or a wall): a low body before the hero — a wolf — is struck
             // instead, the fist going down to it, unless the wall is nearer.
-            if (met.Count == 0 && (solid == null || solid.GetComponentInParent<IStrikable>() == null))
+            if (met.Count == 0 && (solidHit == null || solidHit.GetComponentInParent<IStrikable>() == null))
             {
                 var low = transform.position + Vector3.up * LowHeight * Scale - forward * 0.15f;
                 count = UnityEngine.Physics.SphereCastNonAlloc(low, Width * Scale, forward, casts, reach + 0.15f, ~0, QueryTriggerInteraction.Ignore);
@@ -374,7 +527,7 @@ namespace GuWorld.Combat
                         hit.collider.GetComponentInParent<IStrikable>() != null)
                     {
                         solidAt = hit.distance;
-                        solid = hit.collider;
+                        solidHit = hit.collider;
                         solidPoint = hit.distance <= 0 && hit.point == Vector3.zero ? low + forward * 0.3f : hit.point;
                     }
                 }
@@ -406,16 +559,17 @@ namespace GuWorld.Combat
                 chosen.Owner?.TakeStrike(strike, chosen.Part);
                 Hit?.Invoke(chosen.Shape, strike.Point);
             }
-            else if (solid != null)
+            else if (solidHit != null)
             {
                 strike.Point = solidPoint;
 
-                if (solid.GetComponentInParent<IStrikable>() is IStrikable target)
+                if (solidHit.GetComponentInParent<IStrikable>() is IStrikable target)
                 {
                     target.TakeStrike(strike, null);
+                    Knock(target, forward, spec);
                 }
 
-                Hit?.Invoke(solid, solidPoint);
+                Hit?.Invoke(solidHit, solidPoint);
             }
         }
 

@@ -44,6 +44,9 @@ namespace GuWorld.Render
         float throwing = -1;
         const float ThrowTime = 0.32f;
 
+        /// <summary>Streaks of light behind the fists and the feet as they strike (made with the figure).</summary>
+        TrailRenderer fistL, fistR, footL, footR;
+
         /// <summary>Starts the right hand's cut (the figure eases into it and out again).</summary>
         public void Throw() => throwing = 0;
 
@@ -98,6 +101,7 @@ namespace GuWorld.Render
             figure?.Destroy();
             figure = new PersonFigure(transform, Parts, look, HumanBody.Build.ForHero(look), HeightOf(look));
             HitZones.Build(figure.Rig, GetComponent<IStrikable>());
+            MakeTrails();
             ShowBody();
             Pose(0.5f);
         }
@@ -154,6 +158,8 @@ namespace GuWorld.Render
                 figure.Rig.Guard = Mathf.MoveTowards(figure.Rig.Guard, guard, dt * (guard > figure.Rig.Guard ? 8 : 2.5f));
             }
 
+            Streak();
+
             // The figure is drawn smaller than the physics' metres: its speeds are its own.
             var scale = Scale;
 
@@ -176,6 +182,64 @@ namespace GuWorld.Render
                 ground = body.Grounded && !body.Sitting ? GroundAt : null,
             }, body.LandingSpeed);
             body.LandingSpeed = 0;
+        }
+
+        /// <summary>The streaks behind the fists (the forearms' ends) and the feet (the toes), on the figure's joints.</summary>
+        void MakeTrails()
+        {
+            var rig = figure.Rig;
+            fistL = Trail(rig.ElbowL, new Vector3(0, -0.27f, 0));
+            fistR = Trail(rig.ElbowR, new Vector3(0, -0.27f, 0));
+            footL = Trail(rig.AnkleL, new Vector3(0, -0.05f, 0.12f));
+            footR = Trail(rig.AnkleR, new Vector3(0, -0.05f, 0.12f));
+        }
+
+        static Material streak;
+
+        static TrailRenderer Trail(Transform joint, Vector3 at)
+        {
+            var go = new GameObject("Blow Trail");
+            go.transform.SetParent(joint, false);
+            go.transform.localPosition = at;
+            var trail = go.AddComponent<TrailRenderer>();
+            trail.time = 0.16f;
+            trail.minVertexDistance = 0.04f;
+            trail.widthCurve = new AnimationCurve(new Keyframe(0, 0.11f), new Keyframe(1, 0));
+            trail.colorGradient = new Gradient
+            {
+                colorKeys = new[] { new GradientColorKey(new Color(1f, 0.95f, 0.8f), 0), new GradientColorKey(new Color(1f, 0.7f, 0.4f), 1) },
+                alphaKeys = new[] { new GradientAlphaKey(0.75f, 0), new GradientAlphaKey(0, 1) },
+            };
+            streak ??= GuWorld.Cultivation.GuSkills.Glow(new Color(1f, 0.9f, 0.75f) * 1.1f);
+            trail.sharedMaterial = streak;
+            trail.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+            trail.receiveShadows = false;
+            trail.emitting = false;
+
+            return trail;
+        }
+
+        /// <summary>The limb a blow is thrown with streaks while it goes out (from the end of the wind-up to just after it lands).</summary>
+        void Streak()
+        {
+            if (fistL == null)
+            {
+                return;
+            }
+
+            var blow = melee != null ? melee.Current : null;
+            var active = false;
+
+            if (blow.HasValue)
+            {
+                var spec = Melee.Of(blow.Value);
+                active = melee.Phase > spec.LandsAt - 0.26f && melee.Phase < spec.LandsAt + 0.12f;
+            }
+
+            fistL.emitting = active && blow is Blow.Jab or Blow.Hook;
+            fistR.emitting = active && blow is Blow.Cross or Blow.Heavy;
+            footR.emitting = active && blow is Blow.Kick or Blow.Spin;
+            footL.emitting = false;
         }
 
         /// <summary>The height of whatever is under a point near the feet (not the hero), in the figure's units.</summary>

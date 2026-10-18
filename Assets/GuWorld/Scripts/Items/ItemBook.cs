@@ -23,6 +23,8 @@ namespace GuWorld.Items
         Eat,
         /// <summary>Food for Gu: feeds the Gu that eat it.</summary>
         Feed,
+        /// <summary>A Gu used once and spent (a relic, a boar's strength): used straight from the bag.</summary>
+        Activate,
     }
 
     /// <summary>A kind of thing one can carry.</summary>
@@ -84,6 +86,11 @@ namespace GuWorld.Items
         public const string Salve = "herb_salve";
         public const string MeatBuns = "meat_buns";
         public const string WhiteGrains = "white_grains_liquid";
+        public const string RawMeat = "raw_meat";
+        public const string BeastBone = "beast_bone";
+        public const string IronSand = "iron_sand";
+        public const string SpringWater = "spring_water";
+        public const string Charcoal = "charcoal";
 
         /// <summary>A game day in minutes.</summary>
         const double Day = 24 * 60;
@@ -282,6 +289,105 @@ namespace GuWorld.Items
                 Icon = "gourd",
                 Verb = "Выпить",
             });
+
+            // Food for the Gu of the catalogue (what each eats is the game's own, after its element).
+            Add(new ItemKind
+            {
+                Id = RawMeat,
+                Name = "Сырое мясо",
+                Kind = "Материал · корм для Гу",
+                About = "Кусок свежего мяса. Им кормят Гу силы и звериные Гу. Долго не лежит.",
+                Category = ItemCategory.Material,
+                Stack = 40,
+                Weight = 0.3f,
+                Price = 1,
+                Bundle = 2,
+                Keeps = 3 * Day,
+                Use = ItemUse.Feed,
+                Icon = "meat",
+            });
+            Add(new ItemKind
+            {
+                Id = BeastBone,
+                Name = "Звериная кость",
+                Kind = "Материал · корм для Гу",
+                About = "Крепкая кость горного зверя — пища костяных Гу.",
+                Category = ItemCategory.Material,
+                Stack = 40,
+                Weight = 0.2f,
+                Price = 1,
+                Bundle = 3,
+                Use = ItemUse.Feed,
+                Icon = "bone",
+            });
+            Add(new ItemKind
+            {
+                Id = IronSand,
+                Name = "Железный песок",
+                Kind = "Материал · корм для Гу",
+                About = "Тёмный тяжёлый песок с ручья. Его едят металлические, звёздные и кожаные Гу.",
+                Category = ItemCategory.Material,
+                Stack = 100,
+                Weight = 0.05f,
+                Price = 1,
+                Bundle = 5,
+                Use = ItemUse.Feed,
+                Icon = "sand",
+            });
+            Add(new ItemKind
+            {
+                Id = SpringWater,
+                Name = "Родниковая вода",
+                Kind = "Материал · корм для Гу",
+                About = "Холодная вода из горного родника, в маленькой тыкве. Пьют водяные, ледяные и травяные Гу.",
+                Category = ItemCategory.Material,
+                Stack = 50,
+                Weight = 0.1f,
+                Price = 1,
+                Bundle = 5,
+                Use = ItemUse.Feed,
+                Icon = "drop",
+            });
+            Add(new ItemKind
+            {
+                Id = Charcoal,
+                Name = "Древесный уголь",
+                Kind = "Материал · корм для Гу",
+                About = "Чёрный уголь из печей. Огненные и громовые Гу едят его жар.",
+                Category = ItemCategory.Material,
+                Stack = 100,
+                Weight = 0.05f,
+                Price = 1,
+                Bundle = 5,
+                Use = ItemUse.Feed,
+                Icon = "coal",
+            });
+
+            // Every other Gu of the catalogue, as a thing in the bag.
+            foreach (var gu in GuWorld.Cultivation.GuBook.All)
+            {
+                if (all.ContainsKey(gu.Item))
+                {
+                    continue;
+                }
+
+                Add(new ItemKind
+                {
+                    Id = gu.Item,
+                    LoreRef = gu.LoreRef,
+                    Name = gu.Name,
+                    Kind = $"Гу · {gu.Kind}",
+                    About = gu.About,
+                    Category = ItemCategory.Gu,
+                    Rank = gu.Rank,
+                    Weight = 0.1f,
+                    Price = gu.Price,
+                    Use = gu.OneUse ? ItemUse.Activate : ItemUse.Refine,
+                    Gu = gu.Id,
+                    Icon = gu.Icon,
+                    Verb = gu.OneUse ? "Применить" : null,
+                });
+            }
         }
 
         static void Add(ItemKind kind) => all[kind.Id] = kind;

@@ -30,6 +30,22 @@ namespace GuWorld.Systems
         public const float HarmPerSpeed = 7;
 
         public float Current = Max;
+        /// <summary>The proving ground's mode: harm is taken and shown, but the hero never falls.</summary>
+        public bool Immortal;
+
+        /// <summary>Until when (Time.time) a lightning bite's shock slows the hero.</summary>
+        public float ShockedUntil { get; private set; }
+
+        public bool Shocked => Time.time < ShockedUntil;
+
+        /// <summary>Lightning through the body: slowed for `seconds`.</summary>
+        public void Shock(float seconds)
+        {
+            if (seconds > 0 && !Down)
+            {
+                ShockedUntil = Mathf.Max(ShockedUntil, Time.time + seconds);
+            }
+        }
 
         /// <summary>Harm got through: how much (after the skin), and whether it was the last.</summary>
         public event Action<float> Hurt;
@@ -61,7 +77,8 @@ namespace GuWorld.Systems
 
         void OnLanded(float speed)
         {
-            if (speed > SafeLanding)
+            // Wings (a Gu's): the ground is met softly.
+            if (speed > SafeLanding && (gu == null || !gu.SoftFall))
             {
                 TakeHarm((speed - SafeLanding) * HarmPerSpeed);
             }
@@ -86,8 +103,8 @@ namespace GuWorld.Systems
             }
         }
 
-        /// <summary>How hard the hero's body is to wound: a youth's at rank one, harder with every rank.</summary>
-        public float Toughness => 80 * (gu != null ? 1 + 0.8f * (gu.Aperture.Rank - 1) : 1);
+        /// <summary>How hard the hero's body is to wound: a youth's at rank one, harder with every rank and with bones a Gu remade.</summary>
+        public float Toughness => 80 * (gu != null ? (1 + 0.8f * (gu.Aperture.Rank - 1)) * gu.ToughnessBoost : 1);
 
         readonly System.Random random = new System.Random();
 
@@ -117,7 +134,7 @@ namespace GuWorld.Systems
             }
 
             var through = TakeHarm(harm);
-            Wounds.Report("Вы", part, through, Down);
+            Wounds.Report("Вы", part, through, Down, strike.Point);
         }
 
         /// <summary>Harm from outside: the jade skin takes what it can first. Returns what got through.</summary>
@@ -136,7 +153,8 @@ namespace GuWorld.Systems
                 return 0;
             }
 
-            Current = Mathf.Max(0, Current - harm);
+            // Immortal (the proving ground): the harm shows, but never past the last point of health.
+            Current = Mathf.Max(Immortal ? 1 : 0, Current - harm);
             Hurt?.Invoke(harm);
 
             if (Current <= 0)

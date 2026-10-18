@@ -18,6 +18,22 @@ namespace GuWorld.UI
         string SaveSummary { get; }
         Look Look { get; }
         bool CreatorFace { get; set; }
+        /// <summary>The way (difficulty, talent) chosen for the new game; -1: not yet chosen (asked before the hero is made).</summary>
+        int ChosenPath { get; set; }
+
+        /// <summary>Whether this is the proving ground; going to it (from the main menu) and back; what its page does.</summary>
+        bool Sandbox { get; }
+        void OpenSandbox();
+        void LeaveSandbox();
+        int SpawnWolves(int count);
+        int SpawnPack(GuWorld.Creatures.WolfKind kind, int count);
+        void ClearWolves();
+        void SetHour(float hour);
+        void BackToStart();
+        /// <summary>The immortal's aperture's eight cells at hand (Gu kinds), the chosen one, and a Gu put in one.</summary>
+        string[] SandboxBar { get; }
+        int SandboxSlot { get; set; }
+        void PutInSlot(int slot, GuKind kind);
         Render.ThirdPersonCamera View { get; }
 
         void Continue();
@@ -106,6 +122,8 @@ namespace GuWorld.UI
             Codex,
             /// <summary>The body: where blows wound and how much.</summary>
             Body,
+            /// <summary>The proving ground's modes and its arsenal of every Gu (P, only there).</summary>
+            Sandbox,
             /// <summary>The chat over the game (T, /): the world goes on.</summary>
             Chat,
         }
@@ -144,6 +162,7 @@ namespace GuWorld.UI
         Page confirmBack;
         Page settingsBack;
         string codexChosen;
+        int codexRank = 1;
 
         public Page Current { get; private set; } = (Page)(-1);
 
@@ -282,6 +301,7 @@ namespace GuWorld.UI
                 case Page.Shop: ShopPage(); break;
                 case Page.Codex: Codex(); break;
                 case Page.Body: BodyPage(); break;
+                case Page.Sandbox: SandboxPage(); break;
             }
         }
 
@@ -381,6 +401,7 @@ namespace GuWorld.UI
                 }
             }, "play");
             UiKit.Entry("Энциклопедия Гу", null, menu, () => Show(Page.Codex), "book");
+            UiKit.Entry("Апертура бессмертного", "полигон: все Гу, режимы, манекены и волки — без сохранения", menu, () => FadeThrough(host.OpenSandbox), "ring");
             UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Title), "gear");
             UiKit.Entry("Об игре", null, menu, () => Show(Page.About), "info");
             UiKit.Entry("Выход", null, menu, host.Quit, "exit");
@@ -405,6 +426,14 @@ namespace GuWorld.UI
 
         void Creator()
         {
+            // A new game asks the way first.
+            if (host.ChosenPath < 0)
+            {
+                TalentChoice();
+
+                return;
+            }
+
             var look = host.Look;
             var panel = UiKit.Panel("Panel", pageRoot, UiKit.Hex(0x0E0C0B, 0.97f));
             panel.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 0, -600, 0);
@@ -413,6 +442,8 @@ namespace GuWorld.UI
 
             UiKit.Label("СОЗДАНИЕ ГЕРОЯ", column, 36, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold).Size(46);
             UiKit.Label("Пятнадцать лет, клан Гу Юэ. Волосы чёрные, как у всех в клане.", column, 16, UiKit.Muted).Size(24);
+            var way = Talents.Paths[Mathf.Clamp(host.ChosenPath, 0, Talents.Paths.Length - 1)];
+            UiKit.Label($"Путь: <b>{way.Name}</b> · талант {way.Grade} · {way.Talent:0}%", column, 16, UiKit.Gold).Size(24);
 
             Heading(column, "ИМЯ");
             var nameRow = UiKit.Rect("Name", column);
@@ -488,7 +519,12 @@ namespace GuWorld.UI
             var buttons = UiKit.Rect("Buttons", column);
             buttons.Stack<HorizontalLayoutGroup>(10).childForceExpandWidth = true;
             buttons.Size(56);
-            UiKit.Button("Назад", buttons, () => FadeThrough(host.BackToTitle)).Size(56, -1, 1);
+            UiKit.Button("Назад", buttons, () =>
+            {
+                // Back to the choice of the way.
+                host.ChosenPath = -1;
+                Show(Page.Creator);
+            }).Size(56, -1, 1);
             UiKit.Button(UiKit.Spaced("Начать путь"), buttons, () => FadeThrough(host.StartPlaying), ButtonKind.Gold, 21).Size(56, -1, 2);
 
             var hint = UiKit.Label("Потяните мышью, чтобы повернуть героя · колесо — ближе / дальше", pageRoot, 18, UiKit.Muted, TextAnchor.LowerCenter).Shadowed();
@@ -537,8 +573,14 @@ namespace GuWorld.UI
             UiKit.Entry("Сумка", null, menu, () => host.OpenPage(Page.Bag), "bag");
             UiKit.Entry("Карта", null, menu, () => host.OpenPage(Page.Map), "map");
             UiKit.Entry("Тело", null, menu, () => host.OpenPage(Page.Body), "body");
+
+            if (host.Sandbox)
+            {
+                UiKit.Entry("Апертура · режимы и все Гу", null, menu, () => host.OpenPage(Page.Sandbox), "ring");
+            }
+
             UiKit.Entry("Настройки", null, menu, () => OpenSettings(Page.Pause), "gear");
-            UiKit.Entry("Главное меню", null, menu, () => FadeThrough(host.BackToTitle), "home");
+            UiKit.Entry(host.Sandbox ? "Покинуть апертуру" : "Главное меню", null, menu, () => FadeThrough(host.BackToTitle), "home");
             UiKit.Entry("Выйти из игры", null, menu, host.Quit, "exit");
 
             // The controls, on a card at the right.
@@ -780,12 +822,35 @@ namespace GuWorld.UI
             var title = UiKit.Label("ЭНЦИКЛОПЕДИЯ ГУ", header, 34, UiKit.Gold, TextAnchor.MiddleLeft, FontStyle.Bold);
             title.rectTransform.Place(Vector2.zero, Vector2.one, 86, 0, 0, 0);
 
-            var list = UiKit.Rect("List", card.transform).Place(Vector2.zero, new Vector2(0, 1), 40, 100, -380, 130);
-            list.Stack<VerticalLayoutGroup>(8);
+            // The ranks' tabs, then that rank's Gu in two columns.
+            var tabs = UiKit.Rect("Ranks", card.transform).Place(Vector2.zero, new Vector2(0, 1), 40, 0, -660, 124);
+            tabs.Stack<HorizontalLayoutGroup>(6).childForceExpandWidth = true;
+            tabs.Place(new Vector2(0, 1), new Vector2(0, 1), 40, -170, -660, 124);
+
+            for (var rank = 1; rank <= 5; rank++)
+            {
+                var r = rank;
+                UiKit.Button($"Ранг {Aperture.RankNumeral(rank)}", tabs, () =>
+                {
+                    codexRank = r;
+                    codexChosen = null;
+                    Show(Page.Codex);
+                }, rank == codexRank ? ButtonKind.Tab : ButtonKind.Plain, 16).Size(42, -1, 1);
+            }
+
+            var list = UiKit.Rect("List", card.transform).Place(Vector2.zero, new Vector2(0, 1), 40, 100, -660, 184);
+            var grid = list.gameObject.AddComponent<GridLayoutGroup>();
+            grid.cellSize = new Vector2(306, 32);
+            grid.spacing = new Vector2(8, 4);
             GuKind chosen = null;
 
             foreach (var kind in GuBook.All)
             {
+                if (kind.Rank != codexRank)
+                {
+                    continue;
+                }
+
                 chosen ??= kind;
 
                 if (kind.Id == codexChosen)
@@ -796,48 +861,134 @@ namespace GuWorld.UI
 
             foreach (var kind in GuBook.All)
             {
+                if (kind.Rank != codexRank)
+                {
+                    continue;
+                }
+
                 var k = kind;
-                UiKit.Button($"{kind.Name} · ранг {kind.Rank}", list, () =>
+                UiKit.Button(kind.Name, list, () =>
                 {
                     codexChosen = k.Id;
                     Show(Page.Codex);
-                }, kind == chosen ? ButtonKind.Tab : ButtonKind.Plain, 18).Size(52);
+                }, kind == chosen ? ButtonKind.Tab : ButtonKind.Plain, 14);
             }
 
-            var details = UiKit.Rect("Details", card.transform).Place(Vector2.zero, Vector2.one, 420, 100, 40, 130);
-            details.Stack<VerticalLayoutGroup>(10);
+            var details = UiKit.Rect("Details", card.transform).Place(Vector2.zero, Vector2.one, 700, 100, 40, 130);
+            details.Stack<VerticalLayoutGroup>(8);
 
             if (chosen != null)
             {
                 var item = ItemBook.Find(chosen.Item);
                 var food = ItemBook.Find(chosen.Food);
-                UiKit.Label(chosen.Name, details, 30, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(40);
-                UiKit.Caps($"Ранг {chosen.Rank} · {chosen.Kind}", details, 15, Aperture.RankColour(chosen.Rank)).Size(24);
-                UiKit.Label(item?.About ?? "", details, 19).Size(84);
+                UiKit.Label(chosen.Name, details, 28, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Size(40);
+                UiKit.Caps($"Ранг {chosen.Rank} · {chosen.Kind} · {chosen.Line}", details, 14, Aperture.RankColour(chosen.Rank)).Size(24);
+                UiKit.Label(item?.About ?? chosen.About ?? "", details, 17).Size(76);
                 UiKit.Image("Rule", details, UiKit.Line).Size(2);
-                UiKit.Label($"<b>Навык:</b> {chosen.SkillName} — {SkillLine(chosen)}", details, 18).Size(30);
-                UiKit.Label($"<b>Пища:</b> {food?.Name.ToLowerInvariant()} ×{chosen.Meal} {MealLine(chosen.MealEvery)}", details, 18).Size(30);
-                UiKit.Label($"<b>Очищение в апертуру:</b> {chosen.RefineCost:0}% эссенции разом", details, 18).Size(30);
-                UiKit.Label($"<b>Цена в лавке:</b> {(item != null && item.Price > 0 ? ItemBook.Stones(item.Price) : "не продаётся")}", details, 18).Size(30);
-                UiKit.Label($"Запись лор-базы: {chosen.LoreRef}", details, 14, UiKit.Muted).Size(22);
+                UiKit.Label($"<b>Навык:</b> {chosen.SkillName} — {SkillLine(chosen)}", details, 16).Size(48);
+                UiKit.Label(food != null ? $"<b>Пища:</b> {food.Name.ToLowerInvariant()} ×{chosen.Meal} {MealLine(chosen.MealEvery)}" : "<b>Пища:</b> не ест", details, 16).Size(26);
+
+                if (!chosen.OneUse)
+                {
+                    UiKit.Label($"<b>Очищение в апертуру:</b> {chosen.RefineCost:0}% эссенции разом (мастеру ранга {chosen.Rank}) · <b>усталость</b> {chosen.Tire:0} за раз", details, 16).Size(26);
+                }
+
+                UiKit.Label($"<b>Цена:</b> как сказано — мастеру ранга {chosen.Rank} в начальной стадии; мастеру рангом ниже — вчетверо дороже, рангом выше — вчетверо дешевле, каждая малая ступень — в полтора раза дешевле", details, 14, UiKit.Muted).Size(40);
+                UiKit.Label($"<b>В лавке:</b> {(item != null && item.Price > 0 ? ItemBook.Stones(item.Price) : "не продаётся")}", details, 16).Size(26);
+
+                foreach (var recipe in GuBook.RecipesFor(chosen.Id))
+                {
+                    UiKit.Label(RecipeLine(recipe), details, 15, UiKit.EssenceLit).Size(40);
+                }
+
+                UiKit.Label($"Запись лор-базы: {chosen.LoreRef}", details, 13, UiKit.Muted).Size(20);
             }
+
+            var count = UiKit.Label($"Всего Гу: {GuBook.Count}", card.transform, 15, UiKit.Muted);
+            count.rectTransform.Place(new Vector2(0, 0), new Vector2(0, 0), 40, 40, -400, -80);
 
             var buttons = UiKit.Rect("Buttons", card.transform).Place(new Vector2(1, 0), new Vector2(1, 0), -280, 36, 40, -88);
             buttons.Stack<HorizontalLayoutGroup>(10, null, TextAnchor.MiddleRight).childForceExpandWidth = true;
             UiKit.Button("Назад", buttons, () => Show(Page.Title)).Size(52);
         }
 
-        /// <summary>A Gu's skill in a line: what it costs and does.</summary>
-        static string SkillLine(GuKind kind) => kind.Skill switch
+        /// <summary>A Gu's skill in a line: what it costs and does (the price a master of its own rank pays).</summary>
+        static string SkillLine(GuKind k) => k.Skill switch
         {
-            SkillKind.Moonblade => $"{kind.Cost:0}% эссенции за бросок, режет на {kind.Reach:0} м и гаснет через {kind.Range:0} м, отдых {kind.Cooldown:0.0} с",
-            SkillKind.JadeSkin => $"поднять — {kind.Cost:0}% эссенции, держать — {kind.Upkeep * 60:0}% в час, удары тоже берут эссенцию",
+            SkillKind.Moonblade => $"{k.Cost:0.#}% за бросок, режет на {k.Reach:0} м, гаснет через {k.Range:0} м, сила {k.Power:0}{Afflicts(k)}",
+            SkillKind.JadeSkin => $"поднять — {k.Cost:0.#}%, держать — {k.Upkeep:0.##}% в секунду; держит любой удар, каждый тоже берёт эссенцию",
+            SkillKind.Skin => $"поднять — {k.Cost:0.#}%, держать — {k.Upkeep:0.##}% в секунду; гасит {k.Amount * 100:0}% удара",
+            SkillKind.Bolt => $"{k.Cost:0.#}% за выстрел, бьёт на {k.Reach:0} м, сила {k.Power:0}" + (k.Radius > 0 ? $", взрыв {k.Radius:0.#} м" : "") + Afflicts(k),
+            SkillKind.Burst => $"{k.Cost:0.#}% — взрыв {k.Radius:0.#} м там, куда смотрите (до {k.Range:0} м), сила {k.Power:0}{Afflicts(k)}",
+            SkillKind.Cleave => $"{k.Cost:0.#}% — взмах на {k.Reach:0.#} м перед вами, сила {k.Power:0}{Afflicts(k)}",
+            SkillKind.Might => $"{k.Cost:0.#}% — кулаки ×{k.Amount:0.#} на {k.Duration:0} с",
+            SkillKind.Haste => $"{k.Cost:0.#}% — бег ×{k.Amount:0.#} на {k.Duration:0} с",
+            SkillKind.Leap => $"{k.Cost:0.#}% — прыжок ×{k.Amount:0.#}, падение без вреда, {k.Duration:0} с",
+            SkillKind.Flight => $"{k.Cost:0.#}% — взлёт вверх и вперёд, мягкое падение {k.Duration:0} с",
+            SkillKind.Dash => $"{k.Cost:0.#}% — рывок вперёд на {k.Amount:0} м",
+            SkillKind.Blink => $"{k.Cost:0.#}% — мгновенно туда, куда смотрите, до {k.Range:0} м",
+            SkillKind.Heal => $"{k.Cost:0.#}% — +{k.Amount:0} здоровья разом",
+            SkillKind.Mend => $"поднять — {k.Cost:0.#}%, держать — {k.Upkeep:0.##}% в секунду; +{k.Amount:0.#} здоровья в секунду",
+            SkillKind.Hide => $"поднять — {k.Cost:0.#}%, держать — {k.Upkeep:0.##}% в секунду; " +
+                              (k.Amount <= 0 ? "звери вас не видят" : $"звери видят вас лишь с {k.Amount * 100:0}% расстояния"),
+            SkillKind.Sense => $"поднять — {k.Cost:0.#}%, держать — {k.Upkeep:0.##}% в секунду; слышит зверей в {k.Range:0} м",
+            SkillKind.Ward => $"{k.Cost:0.#}% — сфера на {k.Duration:0} с: ничто не пройдёт, но и вы не сдвинетесь",
+            SkillKind.Howl => $"{k.Cost:0.#}% — звери в {k.Radius:0} м бегут {k.Duration:0} с",
+            SkillKind.Flash => $"{k.Cost:0.#}% — звери в {k.Radius:0} м слепнут на {k.Duration:0} с",
+            SkillKind.Decoy => $"{k.Cost:0.#}% — соломенная кукла, на которую кинутся звери, {k.Duration:0} с",
+            SkillKind.Tame => $"{k.Cost:0.#}% — выстрел: волк, в которого попали, идёт за вами",
+            SkillKind.Berserk => $"{k.Cost:0.#}% — вся сила ×{k.Amount:0.#} на {k.Duration:0} с",
+            SkillKind.Relic => $"один раз, из сумки: +малая ступень мастеру ранга {k.Rank}",
+            SkillKind.Strength => $"один раз, из сумки: сила навсегда +{k.Amount * 100:0}%",
+            SkillKind.Bones => $"один раз, из сумки: тело навсегда крепче на {k.Amount * 100:0}%",
+            SkillKind.Desperate => "один раз, из сумки: море разом полно, но малая ступень теряется",
+            SkillKind.Refine => $"сам, пока в апертуре: эссенция ранга {k.Rank} чище на ступень — все Гу дешевле в полтора раза",
+            SkillKind.Amplify => $"сам, пока в апертуре: лунный клинок ×{k.Amount:0.#} больше и дальше",
+            SkillKind.Scent => $"сам, пока в апертуре: звери чуют вас лишь с {k.Amount * 100:0}% расстояния",
+            SkillKind.Surety => "сам, пока в апертуре: слияния Гу не срываются",
             _ => "—",
         };
+
+        /// <summary>What a strike does besides wounding, as the end of a skill's line.</summary>
+        static string Afflicts(GuKind k) => k.Afflict switch
+        {
+            GuWorld.Creatures.Affliction.Burn => $", жжёт {k.AfflictPower:0}/с ещё {k.AfflictFor:0} с",
+            GuWorld.Creatures.Affliction.Slow => $", замедляет на {k.AfflictPower * 100:0}% на {k.AfflictFor:0} с",
+            GuWorld.Creatures.Affliction.Root => $", держит на месте {k.AfflictFor:0.#} с",
+            GuWorld.Creatures.Affliction.Sleep => $", усыпляет на {k.AfflictFor:0} с",
+            GuWorld.Creatures.Affliction.Blind => $", ослепляет на {k.AfflictFor:0} с",
+            GuWorld.Creatures.Affliction.Fear => $", пугает на {k.AfflictFor:0} с",
+            _ => "",
+        };
+
+        /// <summary>A fusion in a line: what goes in, what comes out, its essence and chance.</summary>
+        static string RecipeLine(Recipe recipe)
+        {
+            var parts = new List<string>();
+
+            foreach (var id in recipe.Gu)
+            {
+                parts.Add(GuBook.Find(id)?.Name ?? id);
+            }
+
+            foreach (var (item, count) in recipe.Materials)
+            {
+                parts.Add($"{ItemBook.Find(item)?.Name.ToLowerInvariant()} ×{count}");
+            }
+
+            var result = GuBook.Find(recipe.Result);
+
+            return $"Слияние: {string.Join(" + ", parts)} → {result?.Name} (ранг {result?.Rank}) · {recipe.Cost:0}% · шанс {recipe.Chance * 100:0}%";
+        }
 
         /// <summary>How often a Gu eats, in words.</summary>
         static string MealLine(double minutes)
         {
+            if (minutes <= 0)
+            {
+                return "";
+            }
+
             var hours = minutes / 60;
 
             return hours >= 24 ? $"раз в {Days((int)Math.Round(hours / 24))}" : hours == 12 ? "дважды в день" : $"каждые {hours:0} ч";

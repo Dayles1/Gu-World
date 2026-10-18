@@ -127,7 +127,7 @@ namespace GuWorld.Village
             var harm = Wounds.Harm(part ?? BodyPart.Chest, strike, MaxHealth, Spec.Toughness, random);
             Health = Mathf.Max(0, Health - harm);
             var down = Health <= 0;
-            Wounds.Report(Spec.Name, part, harm, down);
+            Wounds.Report(Spec.Name, part, harm, down, strike.Point);
 
             if (harm < 0.5f)
             {

@@ -28,6 +28,8 @@ namespace GuWorld.Systems
         void Kill();
         /// <summary>Wolves brought near the hero; how many came.</summary>
         int SpawnWolves(int count);
+        /// <summary>A pack of a kind of wolf brought near the hero (a beast king with its pack); how many came.</summary>
+        int SpawnPack(GuWorld.Creatures.WolfKind kind, int count);
     }
 
     /// <summary>A command of the chat: its name (and others it answers to), how it is written, what it does.</summary>
@@ -428,6 +430,128 @@ namespace GuWorld.Systems
 
             Add(new Command
             {
+                Name = "rank",
+                Aliases = new[] { "ранг" },
+                Usage = "/rank <1–5> [стадия 1–4]",
+                About = "ранг и малая ступень (для проверки)",
+                Suggest = (_, i) => i == 0 ? new[] { "1", "2", "3", "4", "5" } : i == 1 ? new[] { "1", "2", "3", "4" } : Enumerable.Empty<string>(),
+                Run = a =>
+                {
+                    if (a.Length == 0)
+                    {
+                        var ap = host.Cultivator.Aperture;
+
+                        return $"Ранг {ap.Rank}, {GuWorld.Cultivation.Aperture.Name(ap.Stage)}, плотность ×{ap.Density:0.##}";
+                    }
+
+                    var stage = a.Length > 1 ? Mathf.Clamp((int)Number(a[1]), 1, 4) - 1 : 0;
+                    host.Cultivator.SetRealm((int)Number(a[0]), (GuWorld.Cultivation.Stage)stage);
+
+                    return $"Ранг {host.Cultivator.Aperture.Rank}, {GuWorld.Cultivation.Aperture.Name(host.Cultivator.Aperture.Stage)}";
+                },
+            });
+
+            Add(new Command
+            {
+                Name = "talent",
+                Aliases = new[] { "талант" },
+                Usage = "/talent <20–100>",
+                About = "талант, % апертуры (для проверки)",
+                Suggest = (_, i) => i == 0 ? new[] { "100", "99", "88", "70", "50", "30" } : Enumerable.Empty<string>(),
+                Run = a =>
+                {
+                    if (a.Length > 0)
+                    {
+                        host.Cultivator.SetTalent(Number(a[0]));
+                    }
+
+                    var ap = host.Cultivator.Aperture;
+
+                    return $"Талант: {ap.TalentName} · море полнится за {GuWorld.Cultivation.Talents.Span(GuWorld.Cultivation.Aperture.RefillHours(ap.Talent))}";
+                },
+            });
+
+            Add(new Command
+            {
+                Name = "gu",
+                Aliases = new[] { "гу" },
+                Usage = "/gu <гу|ранг 1–5|all>",
+                About = "положить в сумку Гу — один, все одного ранга, или все",
+                Suggest = (_, i) => i == 0 ? new[] { "1", "2", "3", "4", "5", "all" }.Concat(GuWorld.Cultivation.GuBook.All.Select(k => k.Id)) : Enumerable.Empty<string>(),
+                Run = a =>
+                {
+                    if (a.Length == 0)
+                    {
+                        return $"!/gu <гу|ранг|all> — всего Гу: {GuWorld.Cultivation.GuBook.Count}";
+                    }
+
+                    var one = GuWorld.Cultivation.GuBook.Find(a[0]) ??
+                              GuWorld.Cultivation.GuBook.All.FirstOrDefault(k => k.Name.IndexOf(a[0], StringComparison.OrdinalIgnoreCase) >= 0);
+                    var rank = int.TryParse(a[0], out var r) ? r : 0;
+                    var kinds = one != null ? new[] { one } : GuWorld.Cultivation.GuBook.All.Where(k => a[0] == "all" || k.Rank == rank).ToArray();
+
+                    if (kinds.Length == 0)
+                    {
+                        return "!Нет такого Гу. Tab подскажет";
+                    }
+
+                    var given = 0;
+
+                    foreach (var kind in kinds)
+                    {
+                        given += host.Cultivator.Bag.Add(kind.Item, 1, host.Clock.Minutes);
+                    }
+
+                    return given > 0 ? $"В сумке Гу: {given}" + (given < kinds.Length ? $" из {kinds.Length} (сумка полна)" : "") : "!Сумка полна";
+                },
+            });
+
+            Add(new Command
+            {
+                Name = "use",
+                Aliases = new[] { "гу-клавиша" },
+                Usage = "/use <1–4> · /use <гу> · /use refine",
+                About = "применить Гу с клавиши или по имени; refine — очистить все Гу из сумки в апертуру",
+                Suggest = (_, i) => i == 0 ? new[] { "1", "2", "3", "4", "refine" } : Enumerable.Empty<string>(),
+                Run = a =>
+                {
+                    if (a.Length == 0)
+                    {
+                        return "!/use <1–4|гу|refine>";
+                    }
+
+                    var gu = host.Cultivator;
+
+                    if (a[0] == "refine")
+                    {
+                        var n = 0;
+
+                        for (var cell = 0; cell < GuWorld.Items.Bag.Cells; cell++)
+                        {
+                            if (gu.Bag[cell]?.Kind?.Use == ItemUse.Refine)
+                            {
+                                gu.Aperture.Essence = gu.Aperture.Cap;
+
+                                if (gu.Refine(cell)) n++;
+                            }
+                        }
+
+                        return $"Очищено Гу: {n}";
+                    }
+
+                    if (int.TryParse(a[0], out var key))
+                    {
+                        return gu.Use(key - 1) ? $"Клавиша {key}: применено" : $"!Клавиша {key}: не вышло";
+                    }
+
+                    var kind = GuWorld.Cultivation.GuBook.Find(a[0]);
+
+                    return kind != null && gu.UseGu(kind.Id) ? $"{kind.Name}: применено" : "!Не вышло";
+                },
+            });
+
+            Add(new Command
+            {
                 Name = "kill",
                 Aliases = new[] { "убить" },
                 Usage = "/kill",
@@ -444,14 +568,22 @@ namespace GuWorld.Systems
             {
                 Name = "wolves",
                 Aliases = new[] { "волки", "wolf" },
-                Usage = "/wolves [сколько]",
-                About = "волки рядом",
-                Suggest = (_, i) => i == 0 ? new[] { "1", "3", "5" } : Enumerable.Empty<string>(),
+                Usage = "/wolves [сколько] [grey|lightning|bold|frenzy|thunder_crown]",
+                About = "волки рядом (короли зверей приходят со своей стаей)",
+                Suggest = (_, i) => i == 0 ? new[] { "1", "3", "5" } : i == 1 ? GuWorld.Creatures.WolfKinds.All.Select(k => k.Id) : Enumerable.Empty<string>(),
                 Run = a =>
                 {
-                    var came = host.SpawnWolves(a.Length > 0 ? Mathf.Clamp((int)Number(a[0]), 1, 12) : 3);
+                    var count = a.Length > 0 ? Mathf.Clamp((int)Number(a[0]), 1, 12) : 3;
+                    var kind = a.Length > 1 ? GuWorld.Creatures.WolfKinds.Find(a[1]) : GuWorld.Creatures.WolfKinds.Grey;
 
-                    return came > 0 ? $"Волков рядом: {came}" : "!Здесь волкам негде встать";
+                    if (kind == null)
+                    {
+                        return "!Нет таких волков. Tab подскажет";
+                    }
+
+                    var came = host.SpawnPack(kind, count);
+
+                    return came > 0 ? $"Пришло волков: {came} ({kind.Name})" : "!Здесь волкам негде встать";
                 },
             });
 

@@ -48,11 +48,22 @@ namespace GuWorld.UI
         Text questTitle;
         Text questGoal;
         Text questProgress;
-        readonly Cell[] barCells = new Cell[Cultivator.BarSize];
+        /// <summary>The Gu's cards (keys 1–4; on the immortal's aperture the eight cells at hand, 1–8).</summary>
+        GuSlot[] slots = new GuSlot[0];
+        /// <summary>The Gu at hand (or the fists' blows), in words, over the bar.</summary>
+        Text handLine;
         Cell stoneCell;
-        Cell fistCell;
-        Text fistLine;
+        /// <summary>The fists' card, the dots of their chain, and the special blows' cells (Q, R).</summary>
+        GuSlot fistSlot;
+        Image[] chainDots;
+        Cell heavyCell;
+        Cell spinCell;
         Text skinLine;
+        /// <summary>The sea of essence over the bar: how full, and what the chosen Gu would take of it.</summary>
+        RectTransform essenceFill;
+        RectTransform essenceCost;
+        Image essenceCostImage;
+        Text essenceLabel;
         RectTransform crosshair;
         RectTransform absorbing;
         Image absorbFill;
@@ -114,19 +125,24 @@ namespace GuWorld.UI
             promptFill.Place(Vector2.zero, new Vector2(0, 1), 1, 1, 1, 1);
             promptBar.gameObject.SetActive(false);
 
-            // The hero's pages, at the bottom right.
-            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -690, 26, 28, -64);
-            keys.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleRight).childForceExpandWidth = false;
+            // The hero's pages, in a column at the bottom right (clear of the bar).
+            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -160, 26, 28, -280);
+            keys.Stack<VerticalLayoutGroup>(5, null, TextAnchor.LowerRight).childForceExpandHeight = false;
 
-            foreach (var (key, name) in new[] { ("K", "Апертура"), ("I", "Сумка"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") })
+            var hints = host.Sandbox
+                ? new[] { ("Tab", "Все Гу"), ("M", "Карта"), ("T", "Чат"), ("Esc", "Меню") }
+                : new[] { ("K", "Апертура"), ("I", "Сумка"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") };
+
+            foreach (var (key, name) in hints)
             {
                 var plate = UiKit.Panel(name, keys, UiKit.Hex(0x0E0D0C, 0.78f));
-                plate.Size(38, name.Length > 5 ? 116 : 92, 0);
+                plate.Size(34, 132, 0);
                 var text = UiKit.Label($"<color=#F0D08A><b>{key}</b></color>  {name}", plate.transform, 15, UiKit.Text, TextAnchor.MiddleCenter);
                 text.rectTransform.Fill();
             }
 
             BuildGuide();
+            BuildPlates();
         }
 
         static void Radial(Image image)
@@ -203,49 +219,95 @@ namespace GuWorld.UI
             questProgress.Size(-1, 70, 0);
         }
 
+        /// <summary>
+        /// The bar at the foot of the screen: the fists' card (F) with their special blows beside it (Q, R) and the dots
+        /// of their chain; the Gu's cards (1–4, or the immortal's aperture's eight); the stone (V); and over the cards
+        /// the sea of essence as a bar, with what the chosen Gu would take of it marked.
+        /// </summary>
         void BuildBar()
         {
-            const float size = 70;
             const float gap = 8;
-            // The Gu's keys, then — set apart — the stone's.
-            const float apart = 34;
-            var width = (Cultivator.BarSize + 1) * size + (Cultivator.BarSize - 1) * gap + apart;
-            var bar = UiKit.Rect("Bar", hud).Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -width / 2, 26, -width / 2, -(26 + size));
-            var caption = UiKit.Caps("Гу", bar, 12, UiKit.Muted);
-            caption.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 0, 2, -200, -22);
+            // The fists' card and the Gu's, set apart; the stone's after them.
+            const float apart = 26;
+            const float mini = 46;
+            var keys = host.Sandbox ? GuWorldGame.SandboxCells : Cultivator.BarSize;
+            var span = keys * GuSlot.Width + (keys - 1) * gap;
+            var width = mini + 6 + GuSlot.Width + apart + span + (host.Sandbox ? 0 : apart + 70);
+            var bar = UiKit.Rect("Bar", hud).Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -width / 2, 22, -width / 2, -(22 + GuSlot.Height));
+            var x = 0f;
 
-            for (var i = 0; i < Cultivator.BarSize; i++)
+            // Q and R, stacked.
+            heavyCell = MiniCell(bar, "Q", "bolt", x + mini / 2, GuSlot.Height / 2 - mini / 2 - 3);
+            spinCell = MiniCell(bar, "R", "wing", x + mini / 2, -GuSlot.Height / 2 + mini / 2 + 3);
+            x += mini + 6;
+
+            fistSlot = GuSlot.Build(bar, "F");
+            Put(fistSlot.Root, x + GuSlot.Width / 2);
+            chainDots = new Image[GuWorld.Combat.Melee.Chain.Length];
+
+            for (var i = 0; i < chainDots.Length; i++)
             {
-                var cell = UiKit.Cell(bar, size);
-                cell.Back.rectTransform.anchorMin = cell.Back.rectTransform.anchorMax = new Vector2(0, 0.5f);
-                cell.Back.rectTransform.anchoredPosition = new Vector2(size / 2 + i * (size + gap), 0);
-                cell.Key.text = $"{i + 1}";
-                barCells[i] = cell;
+                chainDots[i] = UiKit.Image("Chain", fistSlot.Root, UiKit.Muted, UiKit.Disc);
+                chainDots[i].rectTransform.At(new Vector2(0.5f, 0), new Vector2((i - (chainDots.Length - 1) * 0.5f) * 13, 9), new Vector2(7, 7));
             }
 
-            // The fists, set apart to the left of the Gu: F readies them.
-            fistCell = UiKit.Cell(bar, size);
-            fistCell.Back.rectTransform.anchorMin = fistCell.Back.rectTransform.anchorMax = new Vector2(0, 0.5f);
-            fistCell.Back.rectTransform.anchoredPosition = new Vector2(-apart - size / 2, 0);
-            fistCell.Key.text = "F";
-            fistCell.SetIcon("fist");
-            var fistCaption = UiKit.Caps("Кулаки", bar, 12, UiKit.Muted);
-            fistCaption.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), -apart - size - 20, 2, apart - 20, -22);
-            fistLine = UiKit.Label("", hud, 15, UiKit.GoldLit, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
-            fistLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -420, 128, -420, -150);
+            x += GuSlot.Width + apart;
+            var slotsFrom = x;
+            slots = new GuSlot[keys];
 
-            stoneCell = UiKit.Cell(bar, size);
+            for (var i = 0; i < keys; i++)
+            {
+                slots[i] = GuSlot.Build(bar, $"{i + 1}");
+                Put(slots[i].Root, x + GuSlot.Width / 2);
+                x += GuSlot.Width + gap;
+            }
+
+            stoneCell = UiKit.Cell(bar, 70);
+            stoneCell.gameObject.SetActive(!host.Sandbox);
             stoneCell.Back.rectTransform.anchorMin = stoneCell.Back.rectTransform.anchorMax = new Vector2(1, 0.5f);
-            stoneCell.Back.rectTransform.anchoredPosition = new Vector2(-size / 2, 0);
+            stoneCell.Back.rectTransform.anchoredPosition = new Vector2(-35, 0);
             stoneCell.Key.text = "V";
             stoneCell.SetIcon("stone");
             stoneCell.SetRim(UiKit.GoldDeep);
-            var stoneCaption = UiKit.Caps("Камень", bar, 12, UiKit.Muted);
-            stoneCaption.alignment = TextAnchor.MiddleRight;
-            stoneCaption.rectTransform.Place(new Vector2(1, 1), new Vector2(1, 1), -200, 2, 0, -22);
 
+            // The sea of essence, over the Gu's cards.
+            var sea = UiKit.Rect("Essence", bar).Place(new Vector2(0, 1), new Vector2(0, 1), slotsFrom, 8, -(slotsFrom + span), -20);
+            UiKit.Image("Back", sea, UiKit.Hex(0x000000, 0.55f)).rectTransform.Fill();
+            var fill = UiKit.Image("Fill", sea, UiKit.Essence);
+            fill.rectTransform.Place(Vector2.zero, new Vector2(0, 1));
+            essenceFill = fill.rectTransform;
+            essenceCostImage = UiKit.Image("Cost", sea, new Color(1, 1, 1, 0.55f));
+            essenceCost = essenceCostImage.rectTransform;
+            essenceCost.Place(Vector2.zero, new Vector2(0, 1));
+            essenceLabel = UiKit.Label("", sea, 12, UiKit.EssenceLit, TextAnchor.MiddleLeft, FontStyle.Bold).Shadowed();
+            essenceLabel.rectTransform.Place(new Vector2(0, 1), Vector2.one, 0, 2, 0, -18);
+
+            handLine = UiKit.Label("", hud, 16, UiKit.Text, TextAnchor.MiddleCenter).Shadowed();
+            handLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -760, 174, -760, -226);
             skinLine = UiKit.Label("", hud, 15, UiKit.EssenceLit, TextAnchor.MiddleCenter, FontStyle.Bold).Shadowed();
-            skinLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -300, 100, -300, -124);
+            skinLine.rectTransform.Place(new Vector2(0.5f, 0), new Vector2(0.5f, 0), -700, 228, -700, -252);
+        }
+
+        /// <summary>A card's middle `x` along the bar (from its left), in its height's middle.</summary>
+        static void Put(RectTransform card, float x)
+        {
+            card.anchorMin = card.anchorMax = new Vector2(0, 0.5f);
+            card.pivot = new Vector2(0.5f, 0.5f);
+            card.anchoredPosition = new Vector2(x, 0);
+        }
+
+        /// <summary>A small cell for a special blow: its key, and a shade while it rests.</summary>
+        static Cell MiniCell(Transform bar, string key, string icon, float x, float y)
+        {
+            var cell = UiKit.Cell(bar, 46);
+            cell.Back.rectTransform.anchorMin = cell.Back.rectTransform.anchorMax = new Vector2(0, 0.5f);
+            cell.Back.rectTransform.anchoredPosition = new Vector2(x, y);
+            cell.Key.text = key;
+            cell.Key.color = UiKit.GoldLit;
+            cell.SetIcon(icon);
+            cell.SetRim(UiKit.GoldDeep);
+
+            return cell;
         }
 
         /// <summary>The crosshair, and the ring that fills while a stone is drawn in.</summary>
@@ -376,6 +438,7 @@ namespace GuWorld.UI
             UpdateQuest();
             UpdateGuide();
             UpdateBar(gu);
+            UpdatePlates();
             UpdateLog();
         }
 
@@ -475,6 +538,14 @@ namespace GuWorld.UI
 
         void UpdateQuest()
         {
+            // The immortal's aperture (the proving ground) has no tasks.
+            if (host.Sandbox)
+            {
+                questCard.gameObject.SetActive(false);
+
+                return;
+            }
+
             var quests = host.Quests;
             var current = quests.Current;
 
@@ -501,34 +572,64 @@ namespace GuWorld.UI
 
         void UpdateBar(Cultivator gu)
         {
-            for (var i = 0; i < barCells.Length; i++)
+            var fists = host.Fists;
+            GuKind chosen = null;
+
+            if (host.Sandbox)
             {
-                ShowEntry(barCells[i], gu, gu.Bar[i], true);
+                chosen = UpdateHand(gu);
+            }
+            else
+            {
+                for (var i = 0; i < slots.Length; i++)
+                {
+                    var kind = gu.KindOn(i);
+                    ShowSlot(slots[i], gu, kind, false);
+                }
+
+                handLine.text = "";
             }
 
-            // The fists: lit while ready, the special blows' letters in the corner (dim while they rest), what the keys do above.
-            var fists = host.Fists;
-
+            // The fists: lit while ready; their chain's dots (the next blow bright); the special blows resting.
             if (fists != null)
             {
-                var resting = Mathf.Max(fists.RestLeft(GuWorld.Combat.Blow.Heavy) / GuWorld.Combat.Melee.RestOf(GuWorld.Combat.Blow.Heavy),
-                    fists.RestLeft(GuWorld.Combat.Blow.Spin) / GuWorld.Combat.Melee.RestOf(GuWorld.Combat.Blow.Spin));
-                fistCell.SetRim(fists.Ready ? UiKit.GoldLit : UiKit.GoldDeep);
-                fistCell.Mark.color = fists.Ready ? UiKit.GoldLit : UiKit.Muted;
-                fistCell.Corner.text = fists.Ready ? "Q R" : "";
-                fistCell.Corner.color = resting > 0 ? UiKit.Muted : UiKit.GoldLit;
-                fistCell.SetRest(fists.Ready ? resting : 0);
-                fistLine.text = fists.Ready
-                    ? $"ЛКМ — серия   ·   ПКМ — блок   ·   Q — мощный удар{Rest(fists, GuWorld.Combat.Blow.Heavy)}   ·   R — с разворота{Rest(fists, GuWorld.Combat.Blow.Spin)}"
-                    : "";
+                var ready = fists.Ready;
+                var blow = fists.Current;
+                fistSlot.Show(FistKind, 0, 0, -1, true, false, ready, blow.HasValue ? GuWorld.Combat.Melee.Name(blow.Value) : ready ? "Кулаки" : "Кулаки · F");
+
+                for (var i = 0; i < chainDots.Length; i++)
+                {
+                    var lit = ready && (fists.SinceBlow < 0.6f || blow.HasValue) && i < fists.ChainStep;
+                    chainDots[i].color = !ready ? UiKit.Hex(0x2A2622) : lit ? UiKit.GoldLit : i == fists.ChainStep ? UiKit.Gold : UiKit.Muted;
+                }
+
+                Special(heavyCell, fists, GuWorld.Combat.Blow.Heavy);
+                Special(spinCell, fists, GuWorld.Combat.Blow.Spin);
+
+                if (ready)
+                {
+                    handLine.text = $"<b>Кулаки</b>  ·  ЛКМ — серия: джеб → кросс → хук → пинок  ·  ПКМ — блок  ·  " +
+                                    $"<b>Q</b> апперкот{Rest(fists, GuWorld.Combat.Blow.Heavy)}  ·  <b>R</b> разворот{Rest(fists, GuWorld.Combat.Blow.Spin)}  ·  F — убрать";
+                }
             }
+
+            // The sea: how full, and the chosen Gu's price marked at its end (red when the sea does not hold it).
+            var a = gu.Aperture;
+            var full = Mathf.Clamp01(a.Essence / 100);
+            essenceFill.anchorMax = new Vector2(full, 1);
+            var price = chosen != null && !chosen.Passive && !gu.EndlessEssence ? Mathf.Min(gu.CostOf(chosen), 100) / 100 : 0;
+            essenceCost.anchorMin = new Vector2(Mathf.Max(0, full - price), 0);
+            essenceCost.anchorMax = new Vector2(full, 1);
+            essenceCostImage.color = price <= full ? new Color(1, 1, 1, 0.5f) : new Color(UiKit.Danger.r, UiKit.Danger.g, UiKit.Danger.b, 0.8f);
+            essenceLabel.text = gu.EndlessEssence ? $"ЭССЕНЦИЯ {a.Essence:0}% · БЕСКОНЕЧНА" : $"ЭССЕНЦИЯ {a.Essence:0}% / {a.Cap:0}%" +
+                                (chosen != null && !chosen.Passive ? $"   ·   {GuSlot.Short(chosen.Name)}: {gu.CostOf(chosen):0.#}%" : "");
 
             var stones = gu.Stones;
             stoneCell.Count.text = $"{stones}";
             stoneCell.Mark.color = stones > 0 ? (gu.Absorbing ? UiKit.EssenceLit : Icons.Tint("stone")) : UiKit.Muted;
             stoneCell.SetRim(gu.Absorbing ? UiKit.EssenceLit : UiKit.GoldDeep);
             stoneCell.SetRest(gu.Absorbing ? 1 - gu.AbsorbProgress : 0);
-            skinLine.text = gu.SkinOn ? UiKit.Spaced("Нефритовая кожа") : "";
+            skinLine.text = HeldLine(gu);
 
             // The crosshair only while playing (not in a conversation); the ring while a stone is drawn in.
             crosshair.gameObject.SetActive(Current == Page.None);
@@ -539,6 +640,108 @@ namespace GuWorld.UI
                 absorbFill.fillAmount = gu.AbsorbProgress;
                 absorbLine.text = $"Поглощение камня · {(1 - gu.AbsorbProgress) * Cultivator.AbsorbTime:0.0} с";
             }
+        }
+
+        /// <summary>The fists' card's look (a Gu-like kind only for its mark and its colour).</summary>
+        static readonly GuKind FistKind = new GuKind { Id = "fists", Name = "Кулаки", Icon = "fist", Rank = 1, Skill = SkillKind.None };
+
+        /// <summary>A special blow's cell: lit while the fists are ready, shaded while it rests.</summary>
+        static void Special(Cell cell, GuWorld.Combat.Melee fists, GuWorld.Combat.Blow blow)
+        {
+            var rest = fists.RestLeft(blow) / GuWorld.Combat.Melee.RestOf(blow);
+            cell.SetRest(fists.Ready ? rest : 0);
+            cell.Mark.color = !fists.Ready ? UiKit.Hex(0x4A4238) : rest > 0 ? UiKit.Muted : UiKit.GoldLit;
+            cell.SetRim(fists.Ready && rest <= 0 ? UiKit.Gold : UiKit.Hex(0x2A2622));
+        }
+
+        /// <summary>A Gu on a card, live: its rest, its tiredness, its price for this master now.</summary>
+        static void ShowSlot(GuSlot slot, Cultivator gu, GuKind kind, bool chosen, string empty = "—")
+        {
+            if (kind == null)
+            {
+                slot.Empty(empty, chosen);
+
+                return;
+            }
+
+            var owned = gu.First(kind.Id);
+            var rest = owned != null && kind.Cooldown > 0 ? gu.CooldownLeft(kind.Id) / kind.Cooldown : 0;
+            var held = owned != null && gu.IsHeld(kind.Id);
+            var price = kind.Passive ? -1 : gu.EndlessEssence ? 0 : gu.CostOf(kind);
+            var affordable = kind.Passive || held || gu.EndlessEssence || gu.Aperture.CanSpend(gu.CostOf(kind));
+            slot.Show(kind, rest, owned?.tired ?? 0, price, affordable, held, chosen, GuSlot.Short(kind.Name));
+        }
+
+        /// <summary>
+        /// The immortal's aperture's eight cells at hand, the chosen one raised — and over them, in words, what the chosen
+        /// one is, does and costs. Returns the chosen Gu (null: an empty cell).
+        /// </summary>
+        GuKind UpdateHand(Cultivator gu)
+        {
+            var bar = host.SandboxBar;
+
+            for (var i = 0; i < slots.Length; i++)
+            {
+                ShowSlot(slots[i], gu, GuBook.Find(bar[i]), i == host.SandboxSlot, "пусто · Tab");
+            }
+
+            var hand = GuBook.Find(bar[Mathf.Clamp(host.SandboxSlot, 0, bar.Length - 1)]);
+
+            if (hand == null)
+            {
+                handLine.text = $"Ячейка {host.SandboxSlot + 1} пуста — <b>Tab</b>: выбрать Гу";
+            }
+            else
+            {
+                var owned = gu.First(hand.Id);
+                var tired = owned?.tired ?? 0;
+                var state = hand.Passive ? "работает сам" : owned != null && gu.IsHeld(hand.Id) ? "поднят — ЛКМ снять" :
+                    tired >= 100 ? $"<color=#E0736B>устал: через силу — шанс гибели {Cultivator.StrainChance(tired) * 100:0}%</color>" :
+                    "ЛКМ — применить";
+                handLine.text = $"<b>{hand.Name}</b> <color=#{ColorUtility.ToHtmlStringRGB(Aperture.RankColour(hand.Rank))}>{Aperture.RankNumeral(hand.Rank)}</color>  ·  " +
+                                $"{hand.SkillName}  ·  {state}\n<size=13><color=#A69A86>{SkillLine(hand)}</color></size>";
+            }
+
+            return hand;
+        }
+
+        /// <summary>What the hero's Gu keep up now: held Gu, timed effects, the beasts a sense hears.</summary>
+        static string HeldLine(Cultivator gu)
+        {
+            var parts = new System.Collections.Generic.List<string>();
+
+            foreach (var id in gu.Held)
+            {
+                var kind = GuBook.Find(id);
+
+                if (kind != null)
+                {
+                    parts.Add(kind.SkillName);
+                }
+            }
+
+            foreach (var (skill, name) in new[]
+                     {
+                         (SkillKind.Might, "сила"), (SkillKind.Haste, "скорость"), (SkillKind.Leap, "крылья"), (SkillKind.Flight, "полёт"),
+                         (SkillKind.Berserk, "ярость"), (SkillKind.Ward, "завеса"),
+                     })
+            {
+                var left = gu.BuffLeft(skill);
+
+                if (left > 0)
+                {
+                    parts.Add($"{name} {left:0} с");
+                }
+            }
+
+            var (count, nearest) = gu.Sensed();
+
+            if (nearest >= 0)
+            {
+                parts.Add(count > 0 ? $"зверей рядом: {count}, ближний в {nearest:0} м" : "зверей не слышно");
+            }
+
+            return parts.Count > 0 ? UiKit.Spaced(string.Join(" · ", parts)) : "";
         }
 
         /// <summary>" (1.2 с)" while a special blow rests, else nothing.</summary>
@@ -584,17 +787,23 @@ namespace GuWorld.UI
                 }
 
                 var hunger = gu.HungerOf(owned);
+                var up = gu.IsHeld(kind.Id);
                 cell.Dot.enabled = hunger >= Hunger.Hungry;
                 cell.Dot.color = hunger >= Hunger.Starving ? UiKit.Danger : UiKit.Hunger;
-                cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : kind.Skill == SkillKind.JadeSkin && gu.SkinOn ? UiKit.EssenceLit : Icons.Tint(kind.Icon);
-                cell.SetRim(kind.Skill == SkillKind.JadeSkin && gu.SkinOn ? UiKit.GoldLit : rim);
+                cell.Mark.color = hunger >= Hunger.Starving ? UiKit.Muted : up ? UiKit.EssenceLit : Icons.Tint(kind.Icon);
+                // Spent (tired past its strength): the rim burns red — using it now is forcing it.
+                cell.SetRim(owned.tired >= 100 ? UiKit.Danger : up ? UiKit.GoldLit : rim);
 
-                if (live && kind.Cooldown > 0)
+                // The shade over the cell: how tired it is (or, rested, its own short rest).
+                if (live)
                 {
-                    cell.SetRest(gu.CooldownLeft(kind.Id) / kind.Cooldown);
+                    var rest = kind.Cooldown > 0 ? gu.CooldownLeft(kind.Id) / kind.Cooldown : 0;
+                    cell.SetRest(Mathf.Max(rest, Mathf.Clamp01(owned.tired / 100)));
+                    cell.Count.text = owned.tired >= 1 ? $"{owned.tired:0}" : "";
+                    cell.Count.color = owned.tired >= 100 ? UiKit.Danger : owned.tired >= 60 ? UiKit.Hunger : UiKit.Muted;
                 }
 
-                if (kind.Skill == SkillKind.Moonblade && !gu.Aperture.CanSpend(kind.Cost))
+                if (!up && !gu.Aperture.CanSpend(gu.CostOf(kind)))
                 {
                     cell.Mark.color = UiKit.Danger;
                 }
