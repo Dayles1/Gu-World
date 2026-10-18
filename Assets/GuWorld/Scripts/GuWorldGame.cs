@@ -322,6 +322,148 @@ namespace GuWorld
         public Shop Shop => shop;
         public LocalMap Map => map;
         public LocalMap NearMap => nearMap;
+
+        /// <summary>Where the task in hand leads (worked out a few times a second: QuestTargets).</summary>
+        public (Vector3 at, string what)? QuestTarget { get; private set; }
+        float questTargetAt;
+
+        /// <summary>
+        /// Where the task in hand leads: back to its giver when it is done (or to the next task's giver when there is none);
+        /// else to what it asks — the dummies, the nearest bed of the herb, the shop that sells the thing, the nearest
+        /// wolves, the place, the person to talk to or to bring the thing to. Feeding a Gu leads nowhere (the aperture, K).
+        /// </summary>
+        (Vector3 at, string what)? FindQuestTarget()
+        {
+            var current = quests.Current;
+
+            if (current == null)
+            {
+                return quests.Next is QuestKind next ? Person(next.Giver) : null;
+            }
+
+            if (quests.Ready)
+            {
+                return Person(current.Giver);
+            }
+
+            var task = current.Event ?? "";
+            var hero = body.transform.position;
+
+            if (task == "hit_dummy")
+            {
+                return dummiesAt is Vector3 dummies ? (dummies, "чучела во дворе академии") : null;
+            }
+
+            if (task.StartsWith("gather:"))
+            {
+                var item = task.Substring(7);
+                HerbBed nearest = null;
+
+                foreach (var bed in HerbBed.All)
+                {
+                    // A bed ready to pick first; the nearest of those.
+                    if (bed != null && bed.Item == item && (nearest == null || (bed.Ready && !nearest.Ready) ||
+                        (bed.Ready == nearest.Ready && (bed.transform.position - hero).sqrMagnitude < (nearest.transform.position - hero).sqrMagnitude)))
+                    {
+                        nearest = bed;
+                    }
+                }
+
+                return nearest != null ? (nearest.transform.position, nearest.Ready ? "грядка" : "грядка (ещё не созрела)") : null;
+            }
+
+            if (task.StartsWith("buy:"))
+            {
+                var item = task.Substring(4);
+                var shop = System.Array.Find(Trade.Shops, s => System.Array.Exists(s.Goods, g => g.Item == item));
+
+                return shop != null ? Person(shop.Keeper) : null;
+            }
+
+            if (task.StartsWith("kill:"))
+            {
+                return wolves != null && wolves.Nearest(hero) is Vector3 wolf ? (wolf, "волки") : null;
+            }
+
+            if (task.StartsWith("visit:"))
+            {
+                return Places.TryGetValue(task.Substring(6), out var place) ? (place, current.Goal) : null;
+            }
+
+            if (task.StartsWith("talk:"))
+            {
+                return Person(task.Substring(5));
+            }
+
+            if (task.StartsWith("deliver:") && task.IndexOf('@') > 0)
+            {
+                return Person(task.Substring(task.IndexOf('@') + 1));
+            }
+
+            return null;
+        }
+
+        /// <summary>Where a villager of the hero's village is now, and their name (asleep, said so).</summary>
+        (Vector3 at, string what)? Person(string name)
+        {
+            if (villagers == null)
+            {
+                return null;
+            }
+
+            foreach (var person in villagers.People)
+            {
+                if (person != null && person.Spec.Name == name)
+                {
+                    return (person.transform.position, person.Asleep ? $"{name} (спит)" : name);
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>The advice on the keys, in order: each until the player has done it once (kept between games).</summary>
+        static readonly (string key, string text)[] Advice =
+        {
+            ("talk", "Идите к золотому ромбу и нажмите E рядом с человеком — поговорить и взять поручение"),
+            ("cast", "Зажмите 1 — прицел Гу, отпустите — лунный клинок полетит туда, куда смотрит прицел"),
+            ("absorb", "V — поглотить первобытный камень: за 3 секунды эссенция в апертуре пополнится"),
+            ("map", "M — карта: щёлкните по ней, чтобы поставить метку, — она появится и на миникарте"),
+            ("fists", "F — кулаки: ЛКМ — серия ударов, ПКМ — блок, Q и R — особые удары"),
+        };
+
+        public string Hint
+        {
+            get
+            {
+                // Not over the first moments, nor in a picture for checking.
+                if (screenshot != null || Time.timeSinceLevelLoad < 4)
+                {
+                    return null;
+                }
+
+                foreach (var (key, text) in Advice)
+                {
+                    if (!Knows(key))
+                    {
+                        return text;
+                    }
+                }
+
+                return null;
+            }
+        }
+
+        static bool Knows(string key) => PlayerPrefs.GetInt("advice." + key, 0) == 1;
+
+        /// <summary>The player has done what a piece of advice says: it is not given again.</summary>
+        static void Learnt(string key)
+        {
+            if (!Knows(key))
+            {
+                PlayerPrefs.SetInt("advice." + key, 1);
+            }
+        }
         public Vector3 HeroAt => body.transform.position;
         public float HeroFacing => body.Facing;
         public double Now => clock.Minutes;
@@ -903,6 +1045,11 @@ namespace GuWorld
         /// <summary>One of the hero's pages (bag, aperture, map): the world waits while it is open.</summary>
         public void OpenPage(Menus.Page page)
         {
+            if (page == Menus.Page.Map)
+            {
+                Learnt("map");
+            }
+
             if (mode != Mode.Paused)
             {
                 Enter(Mode.Paused);
@@ -1000,6 +1147,9 @@ namespace GuWorld
             Enter(Mode.Title);
         }
 
+        /// <summary>Where the straw dummies stand (the middle one), for the task that sends the hero to them.</summary>
+        Vector3? dummiesAt;
+
         /// <summary>Straw dummies to try skills on: in the academy's yard, or (on the proving ground) before the spawn.</summary>
         void PlaceDummies(VillageLayout layout)
         {
@@ -1009,6 +1159,8 @@ namespace GuWorld
             if (layout != null && layout.TryPlace("academy yard", out var yard))
             {
                 var turn = Quaternion.Euler(0, yard.yaw, 0);
+
+                dummiesAt = OnGround(yard.at + turn * new Vector3(0, 0, 7), 3);
 
                 for (var i = -1; i <= 1; i++)
                 {
@@ -1200,6 +1352,7 @@ namespace GuWorld
             StopAiming();
             cultivator.CancelAbsorbing(null);
             menus.Notify("Вы погибли");
+            menus.Banner("Вы погибли", "Путь начинается заново — с первого утра");
             menus.FadeThrough(() =>
             {
                 dying = false;
@@ -1255,6 +1408,8 @@ namespace GuWorld
         /// <summary>Begins a conversation with a villager: they stop and turn; their greeting and the questions show.</summary>
         void StartTalk(Villager who)
         {
+            Learnt("talk");
+
             talkingTo = who;
             who.BeginTalk(body.transform.position);
             quests.Count("talk:" + who.Spec.Name);
@@ -1323,6 +1478,7 @@ namespace GuWorld
                 ("Возьмусь", () =>
                 {
                     quests.Take(quest);
+                    menus.Banner("Новое задание", quest.Title);
 
                     if (quest.Gives != null)
                     {
@@ -1355,6 +1511,7 @@ namespace GuWorld
 
             var got = cultivator.Bag.Add(ItemBook.Stone, quest.RewardStones, clock.Minutes);
             menus.Notify($"Задание «{quest.Title}» сдано: получено {ItemBook.Stones(got)}");
+            menus.Banner("Задание выполнено", $"{quest.Title} · +{ItemBook.Stones(got)}");
             Say(quest.Thanks);
         }
 
@@ -1716,6 +1873,22 @@ namespace GuWorld
             if (mode == Mode.Playing)
             {
                 Unstick();
+
+                if (Time.unscaledTime >= questTargetAt)
+                {
+                    questTargetAt = Time.unscaledTime + 0.25f;
+                    QuestTarget = FindQuestTarget();
+                }
+
+                if (cultivator.Absorbing)
+                {
+                    Learnt("absorb");
+                }
+
+                if (melee.Ready)
+                {
+                    Learnt("fists");
+                }
             }
 
             // The Gu Master's keys: the Gu (held: aimed; let go: used), the stone, the view, the hero's pages.
@@ -1927,7 +2100,10 @@ namespace GuWorld
             // Let go (or the left button while it is held): used, where the crosshair points.
             var key = aiming;
             StopAiming();
-            cultivator.Use(key);
+            if (cultivator.Use(key))
+            {
+                Learnt("cast");
+            }
         }
 
         /// <summary>A special blow (Q, R) thrown — or why not, when it still rests.</summary>

@@ -33,6 +33,41 @@ namespace GuWorld.Creatures
         float nextLook;
         int seed = 1;
 
+        /// <summary>Where wolves are to be found from a point: the nearest living wolf, or else the nearest den (null: none).</summary>
+        public Vector3? Nearest(Vector3 from)
+        {
+            Vector3? best = null;
+            var bestDistance = float.PositiveInfinity;
+
+            foreach (var den in dens)
+            {
+                foreach (var wolf in den.Wolves)
+                {
+                    if (wolf != null && (wolf.transform.position - from).sqrMagnitude < bestDistance)
+                    {
+                        bestDistance = (wolf.transform.position - from).sqrMagnitude;
+                        best = wolf.transform.position;
+                    }
+                }
+            }
+
+            if (best.HasValue)
+            {
+                return best;
+            }
+
+            foreach (var den in dens)
+            {
+                if (!den.Called && (den.At - from).sqrMagnitude < bestDistance)
+                {
+                    bestDistance = (den.At - from).sqrMagnitude;
+                    best = den.At;
+                }
+            }
+
+            return best;
+        }
+
         public static WolfPacks Create(Transform hero, IEnumerable<Vector3> denPoints, int packSize = 3)
         {
             var packs = new GameObject("Wolf Packs").AddComponent<WolfPacks>();

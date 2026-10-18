@@ -36,6 +36,10 @@ namespace GuWorld.UI
         void OpenPage(Menus.Page page);
         /// <summary>Puts the hero at a point at once (y NaN: on the ground there).</summary>
         void Teleport(Vector3 at);
+        /// <summary>Where the task in hand leads (its giver, its place, the nearest of what it asks for) and who or what is there; null: nowhere to show.</summary>
+        (Vector3 at, string what)? QuestTarget { get; }
+        /// <summary>A line of advice on the keys, until the player has done what it says once (null: none now).</summary>
+        string Hint { get; }
         /// <summary>The chat's commands (null where there are none), and closing the chat.</summary>
         GuWorld.Systems.Commands Commands { get; }
         void CloseChat();

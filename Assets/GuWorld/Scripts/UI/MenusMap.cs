@@ -49,6 +49,8 @@ namespace GuWorld.UI
         RawImage mapDetailImage;
         RectTransform mapHero;
         RectTransform mapPinMark;
+        RectTransform mapQuestMark;
+        Text mapQuestLabel;
         RectTransform mapPinPanel;
         Text mapPinLine;
         Text mapPinDetail;
@@ -124,6 +126,16 @@ namespace GuWorld.UI
                     label.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(240, 24));
                     mapMarks.Add((mark, dot.rectTransform, label));
                 }
+
+                // Where the task leads.
+                mapQuestMark = UiKit.Image("Quest", mapContent, UiKit.GoldLit, UiKit.Diamond).rectTransform;
+                mapQuestMark.At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(18, 18));
+                UiKit.Image("Heart", mapQuestMark, UiKit.Seal, UiKit.Diamond).rectTransform.Fill(5);
+                mapQuestLabel = UiKit.Label("", mapQuestMark, 14, UiKit.GoldLit, TextAnchor.LowerCenter, FontStyle.Bold).Shadowed();
+                mapQuestLabel.rectTransform.anchorMin = mapQuestLabel.rectTransform.anchorMax = new Vector2(0.5f, 1);
+                mapQuestLabel.rectTransform.pivot = new Vector2(0.5f, 0);
+                mapQuestLabel.rectTransform.anchoredPosition = new Vector2(0, 2);
+                mapQuestLabel.rectTransform.sizeDelta = new Vector2(260, 20);
 
                 // The mark: a pin, its point on the spot.
                 mapPinMark = UiKit.Icon("pin", mapContent, 34, UiKit.Seal).rectTransform;
@@ -490,6 +502,19 @@ namespace GuWorld.UI
                 if (fits)
                 {
                     taken.Add(box);
+                }
+            }
+
+            if (mapQuestMark != null)
+            {
+                var quest = host.QuestTarget;
+                mapQuestMark.gameObject.SetActive(quest.HasValue);
+
+                if (quest.HasValue)
+                {
+                    mapQuestMark.anchoredPosition = OnMap(map.ToMap(quest.Value.at));
+                    mapQuestLabel.text = "Задание: " + quest.Value.what;
+                    mapQuestMark.SetAsLastSibling();
                 }
             }
 

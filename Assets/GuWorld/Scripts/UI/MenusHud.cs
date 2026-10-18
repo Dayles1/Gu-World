@@ -118,13 +118,15 @@ namespace GuWorld.UI
             var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -690, 26, 28, -64);
             keys.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleRight).childForceExpandWidth = false;
 
-            foreach (var (key, name) in new[] { ("K", "Апертура"), ("I", "Сумка"), ("M", "Карта"), ("F5", "Вид"), ("Esc", "Меню") })
+            foreach (var (key, name) in new[] { ("K", "Апертура"), ("I", "Сумка"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") })
             {
                 var plate = UiKit.Panel(name, keys, UiKit.Hex(0x0E0D0C, 0.78f));
-                plate.Size(38, key.Length > 1 ? 118 : 112, 0);
+                plate.Size(38, name.Length > 5 ? 116 : 92, 0);
                 var text = UiKit.Label($"<color=#F0D08A><b>{key}</b></color>  {name}", plate.transform, 15, UiKit.Text, TextAnchor.MiddleCenter);
                 text.rectTransform.Fill();
             }
+
+            BuildGuide();
         }
 
         static void Radial(Image image)
@@ -163,6 +165,10 @@ namespace GuWorld.UI
             minimapPin = UiKit.Icon("pin", mask.transform, 22, UiKit.Seal).rectTransform;
             minimapPin.pivot = new Vector2(0.5f, 0.04f);
             UiKit.Image("Hole", minimapPin, UiKit.OnGold, UiKit.Disc).rectTransform.At(new Vector2(0.5f, 0.5f), new Vector2(0, 3), new Vector2(6, 6));
+            // Where the task leads (MenusGuide): a gold diamond, at the edge toward it when farther.
+            minimapQuest = UiKit.Image("Quest", mask.transform, UiKit.GoldLit, UiKit.Diamond).rectTransform;
+            minimapQuest.sizeDelta = new Vector2(14, 14);
+            UiKit.Image("Heart", minimapQuest, UiKit.Seal, UiKit.Diamond).rectTransform.Fill(4);
             minimapArrow = UiKit.Image("Hero", mask.transform, UiKit.GoldLit, UiKit.Arrow).rectTransform;
             minimapArrow.sizeDelta = new Vector2(20, 20);
             var north = UiKit.Mark("С", hud, 18, UiKit.GoldLit).Shadowed();
@@ -173,7 +179,7 @@ namespace GuWorld.UI
 
         void BuildQuest()
         {
-            questCard = UiKit.Rect("Quest", hud).Place(new Vector2(1, 1), new Vector2(1, 1), -420, -480, 36, 330);
+            questCard = UiKit.Rect("Quest", hud).Place(new Vector2(1, 1), new Vector2(1, 1), -420, -504, 36, 330);
             var back = UiKit.Image("Back", questCard, UiKit.Hex(0x0E0D0C, 0.62f), UiKit.Chamfer);
             back.rectTransform.Fill();
             var bar = UiKit.Image("Bar", questCard, UiKit.Gold);
@@ -185,8 +191,16 @@ namespace GuWorld.UI
             questTitle.Size(28);
             questGoal = UiKit.Label("", column, 15, UiKit.Muted).Shadowed();
             questGoal.Size(40);
-            questProgress = UiKit.Label("", column, 16, UiKit.GoldLit, TextAnchor.MiddleRight, FontStyle.Bold).Shadowed();
-            questProgress.Size(22);
+            // Who or what, how far and which way (MenusGuide); how far along, on the right of the same line.
+            var line = UiKit.Rect("Where", column);
+            line.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleLeft).childForceExpandWidth = false;
+            line.Size(22);
+            UiKit.Image("Mark", line, UiKit.GoldLit, UiKit.Diamond).Size(12, 12, 0);
+            questWhere = UiKit.Label("", line, 15, UiKit.Text).Shadowed();
+            questWhere.Size(-1, -1, 1);
+            questWhere.horizontalOverflow = HorizontalWrapMode.Overflow;
+            questProgress = UiKit.Label("", line, 16, UiKit.GoldLit, TextAnchor.MiddleRight, FontStyle.Bold).Shadowed();
+            questProgress.Size(-1, 70, 0);
         }
 
         void BuildBar()
@@ -360,6 +374,7 @@ namespace GuWorld.UI
 
             UpdateMinimap();
             UpdateQuest();
+            UpdateGuide();
             UpdateBar(gu);
             UpdateLog();
         }
@@ -396,6 +411,16 @@ namespace GuWorld.UI
             minimapArrow.localEulerAngles = new Vector3(0, 0, -host.HeroFacing * Mathf.Rad2Deg);
             coordsLine.text = $"{at.x:0}, {at.z:0}";
             minimapPin.gameObject.SetActive(MapPin.HasValue);
+            var quest = host.QuestTarget;
+            minimapQuest.gameObject.SetActive(quest.HasValue);
+
+            if (quest.HasValue)
+            {
+                var toQuest = (map.ToMap(quest.Value.at) - centre) / span * MinimapSize;
+                var rim = MinimapSize * 0.5f - 9;
+                var round = Mathf.Abs(toQuest.x) + Mathf.Abs(toQuest.y);
+                minimapQuest.anchoredPosition = round > rim ? toQuest * (rim / round) : toQuest;
+            }
 
             if (MapPin.HasValue)
             {
