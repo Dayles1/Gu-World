@@ -46,6 +46,8 @@ namespace GuWorld.Cultivation
         public int rank = 1;
         public string stage = "initial";
         public float essence;
+        /// <summary>How far toward the next small realm (meditation).</summary>
+        public float progress;
         public OwnedGu[] owned;
         public ItemStack[] bag;
         /// <summary>The action bar: "gu:&lt;kind&gt;" or "item:&lt;id&gt;" per key, empty where nothing is set.</summary>
@@ -212,6 +214,7 @@ namespace GuWorld.Cultivation
                 Rank = saved.rank,
                 Stage = Enum.TryParse<Stage>(saved.stage, true, out var stage) ? stage : Stage.Initial,
                 Essence = saved.essence,
+                Progress = saved.progress,
             };
             Aperture.Repair();
             Path = saved.path;
@@ -331,6 +334,7 @@ namespace GuWorld.Cultivation
                 rank = Aperture.Rank,
                 stage = Aperture.Stage.ToString().ToLowerInvariant(),
                 essence = Aperture.Essence,
+                progress = Aperture.Progress,
                 owned = owned,
                 bag = Bag.Save(),
                 bar = (string[])Bar.Clone(),
@@ -519,6 +523,8 @@ namespace GuWorld.Cultivation
                     }
                 }
             }
+
+            Meditate(dt);
 
             if (EndlessEssence)
             {
@@ -1623,6 +1629,68 @@ namespace GuWorld.Cultivation
             readyAt.Clear();
         }
 
+        // ── Meditation ────────────────────────────────────────────────
+
+        /// <summary>Sitting in peace (no beast hunting near): the hero meditates (set by the game each moment).</summary>
+        public bool Meditating;
+
+        /// <summary>How much of the aperture's essence flows into its walls each second of meditation, %.</summary>
+        public const float PourRate = 2.5f;
+
+        /// <summary>
+        /// Meditation (lore: a Gu Master cultivates by nourishing the aperture's walls with primeval essence): the sea
+        /// is poured into the walls and wears them toward the next small realm; when it is worn through, the realm is
+        /// reached. At the peak only a breakthrough leads on. A dry sea draws in a stone by itself, if there is one.
+        /// </summary>
+        void Meditate(float dt)
+        {
+            if (!Meditating)
+            {
+                return;
+            }
+
+            var peak = Aperture.Stage == Stage.Peak;
+
+            if (peak && Aperture.Progress >= 1)
+            {
+                return;
+            }
+
+            var pour = Mathf.Min(Aperture.Essence, PourRate * dt);
+
+            if (pour <= 0)
+            {
+                if (Stones > 0 && !Absorbing && !EndlessEssence)
+                {
+                    StartAbsorbing();
+                }
+
+                return;
+            }
+
+            Aperture.Essence -= pour;
+            Aperture.Progress = Mathf.Min(1, Aperture.Progress + pour / Aperture.StageCost);
+
+            if (Aperture.Progress < 1)
+            {
+                return;
+            }
+
+            if (peak)
+            {
+                Said?.Invoke("Стенки апертуры истончены до предела — нужен прорыв: полное море, апертура (K)");
+
+                return;
+            }
+
+            Aperture.Advance();
+            Aperture.Progress = 0;
+            Passives();
+            GuGlow.Flash(transform.position + Vector3.up, 2, Aperture.RankColour(Aperture.Rank), 1);
+            Said?.Invoke($"Медитация принесла плоды: {Aperture.Name(Aperture.Stage)} ранга {Aperture.Rank}");
+            Did?.Invoke("stage", (int)Aperture.Stage);
+        }
+
         // ── Cultivation ───────────────────────────────────────────────
 
         /// <summary>From the peak into the next rank: the whole sea spent on the aperture's wall.</summary>
@@ -1638,6 +1706,7 @@ namespace GuWorld.Cultivation
             }
 
             Aperture.BreakThrough();
+            Aperture.Progress = 0;
             Passives();
             Said?.Invoke($"Прорыв! Ранг {Aperture.Rank}, {Aperture.Name(Aperture.Stage)}: эссенция — {Aperture.EssenceName}" +
                          (Open > OpenSlots(Aperture.Rank - 1) ? $", открылись новые ячейки ({Open})" : ""));

@@ -278,6 +278,7 @@ namespace GuWorld
         string chatShot;
         string doShot;
         string aimGu;
+        int rollFrames;
         /// <summary>`-wolves 3`: a pack called up before the camera.</summary>
         int wolvesShot;
         /// <summary>`-cast 12`: how many frames before the picture the blade is thrown.</summary>
@@ -731,6 +732,8 @@ namespace GuWorld
                 talkAt = Has(args, "-talk");
                 castAt = Has(args, "-cast");
                 aimShot = Has(args, "-aim") || Has(args, "-aimgu");
+                var rollAt = System.Array.IndexOf(args, "-roll");
+                rollFrames = rollAt >= 0 && rollAt + 1 < args.Length && int.TryParse(args[rollAt + 1], out var rf) ? rf : 0;
                 var aimGuAt = System.Array.IndexOf(args, "-aimgu");
                 aimGu = aimGuAt >= 0 && aimGuAt + 1 < args.Length ? args[aimGuAt + 1] : null;
                 absorbShot = Has(args, "-absorb");
@@ -1091,6 +1094,8 @@ namespace GuWorld
             body.Bounds = Location.bounds;
             melee = hero.AddComponent<Melee>();
             melee.Hit += OnFistLanded;
+            melee.Parried += OnParried;
+            dodge = hero.AddComponent<Dodge>();
             player = hero.AddComponent<PlayerController>();
             player.Camera = view;
             player.Spawn = new Vector3(pose.x, pose.y, pose.z);
@@ -1913,6 +1918,12 @@ namespace GuWorld
                     melee.Launch(blowShot.Value);
                 }
 
+                // `-roll frames`: a roll forward that many frames before the picture.
+                if (rollFrames > 0 && screenshotFrame == 150 + benchFrames - rollFrames)
+                {
+                    dodge.Roll(body.transform.forward);
+                }
+
                 if (blowShot.HasValue && screenshotFrame >= 150 + benchFrames - blowFrames)
                 {
                     testLog.AppendLine($"frame {screenshotFrame}: blow {melee.Current} phase {melee.Phase:0.00} rig {picture.Figure?.Rig.BlowPhase:0.00} " +
@@ -2234,7 +2245,7 @@ namespace GuWorld
             // Drawing in a stone: walking slowly is all one can do; a jump, a run or a climb breaks it off.
             if (cultivator.Absorbing && (mode == Mode.Playing || mode == Mode.Talking))
             {
-                if (!body.Free || body.Velocity.y > 1.5f || body.Velocity.y < -5 || (keyboard != null && screenshot == null &&
+                if ((!body.Free && !body.Sitting) || body.Velocity.y > 1.5f || body.Velocity.y < -5 || (keyboard != null && screenshot == null &&
                     (keyboard.spaceKey.wasPressedThisFrame || (PlayerController.Sprinting(keyboard) && body.HorizontalSpeed > 0.5f))))
                 {
                     cultivator.CancelAbsorbing("Поглощение прервано");
@@ -2253,6 +2264,8 @@ namespace GuWorld
                 var before = clock.Minutes;
                 clock.Advance(Time.deltaTime);
                 using (HeroMarker.Auto()) cultivator.Tick(clock.Minutes);
+                // Sitting where no beast hunts the hero: meditation.
+                cultivator.Meditating = body.Sitting && !Wolf.All.Exists(w => w != null && w.Hunting && Vector3.Distance(w.transform.position, body.transform.position) < 40);
                 cultivator.Step(Time.deltaTime);
 
                 if (Sandbox)
@@ -2310,6 +2323,24 @@ namespace GuWorld
             melee.Strength = (1 + 0.6f * (cultivator.Aperture.Rank - 1)) * cultivator.FistPower;
             // A blow turns to what lies the way the camera looks.
             melee.AimForward = view.transform.forward;
+
+            // Alt (or the mouse's back button): a roll the way the hero moves — backward, standing still.
+            if (keyboard.leftAltKey.wasPressedThisFrame || (mouse != null && mouse.backButton.wasPressedThisFrame))
+            {
+                var forward = view.transform.forward;
+                forward.y = 0;
+                forward = forward.sqrMagnitude > 0.01f ? forward.normalized : body.transform.forward;
+                var right = Vector3.Cross(Vector3.up, forward);
+                var way = forward * ((keyboard.wKey.isPressed ? 1 : 0) - (keyboard.sKey.isPressed ? 1 : 0)) +
+                          right * ((keyboard.dKey.isPressed ? 1 : 0) - (keyboard.aKey.isPressed ? 1 : 0));
+
+                if (dodge.Roll(way))
+                {
+                    melee.Stop();
+                    StopAiming();
+                    Learnt("dodge");
+                }
+            }
 
             // F: the fists ready, or put away.
             if (keyboard.fKey.wasPressedThisFrame)
@@ -2973,6 +3004,21 @@ namespace GuWorld
             if (onBody && mode == Mode.Playing)
             {
                 HitStop(heavy ? 0.09f : 0.05f);
+            }
+        }
+
+        Dodge dodge;
+
+        /// <summary>A blow parried: a bright spark, the word, the world held still a little longer than for a hit.</summary>
+        void OnParried(Vector3 point, GameObject source)
+        {
+            GuGlow.Flash(point, 0.5f, new Color(1f, 0.95f, 0.75f), 0.22f);
+            DamageNumbers.Word(point + Vector3.up * 0.3f, "парирование", DamageNumbers.Vital);
+            view.Shake(0.18f);
+
+            if (mode == Mode.Playing)
+            {
+                HitStop(0.12f);
             }
         }
 

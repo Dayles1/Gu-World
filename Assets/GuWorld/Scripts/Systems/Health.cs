@@ -41,7 +41,7 @@ namespace GuWorld.Systems
         /// <summary>Lightning through the body: slowed for `seconds`.</summary>
         public void Shock(float seconds)
         {
-            if (seconds > 0 && !Down)
+            if (seconds > 0 && !Down && !(TryGetComponent<Dodge>(out var dodge) && dodge.Untouched))
             {
                 ShockedUntil = Mathf.Max(ShockedUntil, Time.time + seconds);
             }
@@ -114,6 +114,23 @@ namespace GuWorld.Systems
 
         public void TakeStrike(Strike strike, BodyPart? part)
         {
+            // Rolling out of the way: it passes through.
+            if (TryGetComponent<Dodge>(out var dodge) && dodge.Untouched)
+            {
+                dodge.Evaded();
+                Render.DamageNumbers.Word(strike.Point, "уклонение", Render.DamageNumbers.Dealt);
+
+                return;
+            }
+
+            // The guard raised just as the blow comes: it is turned aside whole, and the one who struck is thrown off balance.
+            if (TryGetComponent<Melee>(out var parrying) && parrying.Parrying && parrying.Meets(strike.Direction))
+            {
+                parrying.Parry(strike);
+
+                return;
+            }
+
             // Guarding the head: a blow from in front at the upper body lands on a forearm, weakened — but the arms still
             // take some of it (a guard is not a wall); a bite at the legs comes in under it.
             var guarded = TryGetComponent<Melee>(out var melee) && melee.Meets(strike.Direction) &&

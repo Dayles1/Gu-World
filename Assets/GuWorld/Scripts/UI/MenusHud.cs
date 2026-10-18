@@ -608,7 +608,7 @@ namespace GuWorld.UI
 
                 if (ready)
                 {
-                    handLine.text = $"<b>Кулаки</b>  ·  ЛКМ — серия: джеб → кросс → хук → пинок  ·  ПКМ — блок  ·  " +
+                    handLine.text = $"<b>Кулаки</b>  ·  ЛКМ — серия: джеб → кросс → хук → пинок  ·  ПКМ — блок (в миг удара — парирование)  ·  Alt — перекат  ·  " +
                                     $"<b>Q</b> апперкот{Rest(fists, GuWorld.Combat.Blow.Heavy)}  ·  <b>R</b> разворот{Rest(fists, GuWorld.Combat.Blow.Spin)}  ·  F — убрать";
                 }
             }
@@ -732,6 +732,11 @@ namespace GuWorld.UI
                 {
                     parts.Add($"{name} {left:0} с");
                 }
+            }
+
+            if (gu.Meditating)
+            {
+                parts.Add($"медитация · {Aperture.Name(gu.Aperture.Stage)} {gu.Aperture.Progress * 100:0}%");
             }
 
             var (count, nearest) = gu.Sensed();

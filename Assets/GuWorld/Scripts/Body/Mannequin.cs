@@ -66,6 +66,8 @@ namespace GuWorld.Body
             Grip,
             // The whole body turned round about its own axis (a roundhouse spins it a full turn), radians.
             Spin,
+            // The whole body turned head over heels (a roll), radians.
+            Flip,
             Count,
         }
 
@@ -93,6 +95,10 @@ namespace GuWorld.Body
 
         /// <summary>How far through a throw with the right hand (a moonblade's cut), 0…1; below 0 none.</summary>
         public float Throw = -1;
+
+        /// <summary>How far through a roll (a dodge), 0…1; below 0 none — and whether it goes backward (head over heels the other way).</summary>
+        public float RollPhase = -1;
+        public bool RollBack;
 
         /// <summary>A blow of the body's own (a fist, a foot) and how far through it, 0…1; below 0 none.</summary>
         public Combat.Blow Blow;
@@ -213,11 +219,12 @@ namespace GuWorld.Body
 
             TargetPose(dt, motion);
             // A blow is snapped into: the figure follows it closely (else it would lag behind a jab and never reach it).
-            var rate = motion.swimming || motion.stance == Stance.Crawl ? 7 : BlowPhase >= 0 ? 34 : 18;
+            var rate = motion.swimming || motion.stance == Stance.Crawl ? 7 : BlowPhase >= 0 || RollPhase >= 0 ? 34 : 18;
             var ease = 1 - Mathf.Exp(-rate * dt);
             var slowEase = 1 - Mathf.Exp(-6 * dt);
             // A full turn is no turn: the spin eases the short way round (a roundhouse ends where it began).
             pose[(int)P.Spin] = target[(int)P.Spin] + Mathf.DeltaAngle(target[(int)P.Spin] * Mathf.Rad2Deg, pose[(int)P.Spin] * Mathf.Rad2Deg) * Mathf.Deg2Rad;
+            pose[(int)P.Flip] = target[(int)P.Flip] + Mathf.DeltaAngle(target[(int)P.Flip] * Mathf.Rad2Deg, pose[(int)P.Flip] * Mathf.Rad2Deg) * Mathf.Deg2Rad;
 
             for (var i = 0; i < pose.Length; i++)
             {
@@ -333,6 +340,26 @@ namespace GuWorld.Body
             if ((Guard > 0.01f || BlowPhase >= 0) && free)
             {
                 FightPose();
+            }
+
+            // A roll: tucked tight — knees to the chest, arms round them, chin down — the whole body turning head over heels.
+            if (RollPhase >= 0 && free)
+            {
+                var t = Mathf.Clamp01(RollPhase);
+                var tuck = Mathf.Sin(Mathf.PI * Mathf.Min(1, t * 1.15f));
+                this[P.Ik] = 1 - tuck;
+                this[P.BodyY] -= 0.42f * tuck;
+                this[P.ThighL] = this[P.ThighR] = -1.7f * tuck;
+                this[P.KneeL] = this[P.KneeR] = 2.3f * tuck;
+                this[P.FootL] = this[P.FootR] = -0.4f * tuck;
+                this[P.Lean] += 0.8f * tuck;
+                this[P.ArmL] = Mathf.Lerp(this[P.ArmL], -1.1f, tuck);
+                this[P.ArmR] = Mathf.Lerp(this[P.ArmR], -1.1f, tuck);
+                this[P.ElbowL] = Mathf.Lerp(this[P.ElbowL], -1.9f, tuck);
+                this[P.ElbowR] = Mathf.Lerp(this[P.ElbowR], -1.9f, tuck);
+                this[P.HeadX] += 0.5f * tuck;
+                var turn = 1 - (1 - t) * (1 - t);
+                this[P.Flip] = (RollBack ? -1 : 1) * Mathf.PI * 2 * turn;
             }
 
             // Keep the eyes level whatever the back does.
@@ -831,7 +858,8 @@ namespace GuWorld.Body
             var bodyX = Get(P.BodyX);
 
             Body.localPosition = new Vector3(-bodyX, Hips + bodyY, Get(P.BodyZ));
-            Body.localRotation = Quaternion.AngleAxis(-Get(P.Spin) * Mathf.Rad2Deg, Vector3.up) * Xyz(Get(P.Pitch), 0, Get(P.Roll));
+            Body.localRotation = Quaternion.AngleAxis(-Get(P.Spin) * Mathf.Rad2Deg, Vector3.up) * Quaternion.AngleAxis(Get(P.Flip) * Mathf.Rad2Deg, Vector3.right) *
+                                 Xyz(Get(P.Pitch), 0, Get(P.Roll));
             HipsJoint.localRotation = Xyz(0, Get(P.HipsYaw), Get(P.HipsRoll));
             // The back straightens above the tilting hips.
             Spine.localRotation = Xyz(Get(P.Lean), Get(P.Twist), Get(P.Side) - Get(P.HipsRoll) * 0.8f);

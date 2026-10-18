@@ -92,7 +92,10 @@ namespace GuWorld.Render
             body = GetComponent<HeroMotor>();
             controller = GetComponent<CharacterController>();
             melee = GetComponent<Melee>();
+            dodge = GetComponent<Dodge>();
         }
+
+        Dodge dodge;
 
         /// <summary>Builds the hero's body for a look (again, when the look changes).</summary>
         public void Wear(Look look)
@@ -159,6 +162,13 @@ namespace GuWorld.Render
             }
 
             Streak();
+
+            // A roll: head over heels, backward when the hero rolls back from where they face.
+            if (dodge != null)
+            {
+                figure.Rig.RollPhase = dodge.Phase;
+                figure.Rig.RollBack = dodge.Backward;
+            }
 
             // The figure is drawn smaller than the physics' metres: its speeds are its own.
             var scale = Scale;

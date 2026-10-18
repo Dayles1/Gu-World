@@ -426,6 +426,35 @@ namespace GuWorld.Editor
             Check(thrown && gu.First(spear.Id).tired >= 100 && Object.FindAnyObjectByType<GuBolt>() != null,
                 $"used tired, the spear flies and is spent ({gu.First(spear.Id)?.tired:0})");
 
+            // A roll: nothing touches the hero at its start. A guard raised just in time: the blow is parried whole.
+            var roll = gu.GetComponent<Combat.Dodge>();
+            health.Set(Health.Max);
+            var rolled = roll.Roll(body.transform.forward);
+            health.TakeStrike(new Combat.Strike { Power = 200, Sharpness = 1, Point = body.transform.position + Vector3.up, Direction = -body.transform.forward }, Combat.BodyPart.Chest);
+            Check(rolled && roll.Untouched && Mathf.Approximately(health.Current, Health.Max), $"a roll lets a blow pass through ({rolled}, {health.Current:0})");
+            var fists = gu.GetComponent<Combat.Melee>();
+            fists.Guarding = false;
+            fists.Guarding = true;
+            Check(fists.Parrying, "the guard just raised parries");
+            fists.Guarding = false;
+
+            // Meditation: sitting, the sea is poured into the aperture's walls; worn through, the small realm rises.
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Initial);
+            gu.Aperture.Progress = 0;
+            gu.Aperture.Essence = gu.Aperture.Cap;
+            var endless = gu.EndlessEssence;
+            gu.EndlessEssence = false;
+            gu.Meditating = true;
+            gu.Step(1);
+            Check(gu.Aperture.Progress > 0 && gu.Aperture.Essence < gu.Aperture.Cap - 2, $"meditating pours essence into the walls ({gu.Aperture.Progress:0.000}, {gu.Aperture.Essence:0.0})");
+            gu.Aperture.Progress = 0.9999f;
+            gu.Aperture.Essence = gu.Aperture.Cap;
+            gu.Step(1);
+            Check(gu.Aperture.Stage == GuWorld.Cultivation.Stage.Middle && gu.Aperture.Progress < 0.01f, $"worn through, the small realm rises ({gu.Aperture.Stage})");
+            gu.Meditating = false;
+            gu.EndlessEssence = endless;
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Initial);
+
             // The academy's first task: taken from the teacher, done, handed back for stones.
             var quests = game.Quests;
             var first = quests.NextFrom(Quests.Teacher);

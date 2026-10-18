@@ -38,7 +38,7 @@ namespace GuWorld.Creatures
     /// king's body a Gu may come.
     /// </summary>
     [RequireComponent(typeof(CharacterController))]
-    public class Wolf : MonoBehaviour, IStrikable
+    public class Wolf : MonoBehaviour, IStrikable, IStaggerable
     {
         const float WanderSpeed = 1.6f;
         const float FleeSpeed = 7;
@@ -806,6 +806,20 @@ namespace GuWorld.Creatures
                     state = State.Roam;
                     break;
             }
+        }
+
+        /// <summary>Thrown off balance (its bite parried): it reels back and cannot bite for a while — a king for less.</summary>
+        public void Stagger(float seconds, Vector3 away)
+        {
+            if (state == State.Dead)
+            {
+                return;
+            }
+
+            seconds /= Mathf.Max(1, Kind.Tier);
+            rootUntil = Mathf.Max(rootUntil, Time.time + seconds);
+            biteReady = Mathf.Max(biteReady, seconds + 0.3f);
+            Push(away.normalized * 4 + Vector3.up * 1.5f);
         }
 
         /// <summary>Whether something holds it in place now (the checks look).</summary>

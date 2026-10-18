@@ -24,6 +24,21 @@ namespace GuWorld.Render
         public static readonly Color Vital = new Color(1f, 0.78f, 0.3f);
         public static readonly Color Taken = new Color(1f, 0.38f, 0.32f);
 
+        /// <summary>A word where something happened ("уклонение", "парирование").</summary>
+        public static void Word(Vector3 at, string word, Color colour)
+        {
+            Show(at, 1, colour, true);
+            var last = Last;
+
+            if (last != null)
+            {
+                last.text.text = word;
+                last.text.fontSize = 52;
+            }
+        }
+
+        static DamageNumbers Last;
+
         /// <summary>A number at a point: `big` for a vital part or a finishing blow.</summary>
         public static void Show(Vector3 at, float amount, Color colour, bool big = false)
         {
@@ -51,6 +66,7 @@ namespace GuWorld.Render
             number.size = big ? 1.5f : 1;
             number.drift = new Vector3(Random.Range(-0.3f, 0.3f), 1.3f, 0);
             number.Step(0);
+            Last = number;
         }
 
         void LateUpdate() => Step(Time.unscaledDeltaTime);

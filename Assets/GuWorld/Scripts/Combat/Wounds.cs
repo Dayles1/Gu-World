@@ -28,6 +28,12 @@ namespace GuWorld.Combat
         FootR,
     }
 
+    /// <summary>Something that can be thrown off balance (a parried blow): it reels away for some seconds.</summary>
+    public interface IStaggerable
+    {
+        void Stagger(float seconds, Vector3 away);
+    }
+
     /// <summary>A blow as it lands: how strong it is, how keen, where and which way, and who struck.</summary>
     public struct Strike
     {

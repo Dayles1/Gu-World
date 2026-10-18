@@ -47,6 +47,7 @@ namespace GuWorld.UI
             Stat(info, "Жизнь", $"{Mathf.CeilToInt(host.Health.Current)} / {Health.Max:0}");
             Stat(info, "Море полнится", $"за {Talents.Span(Aperture.RefillHours(a.Talent))}");
             Stat(info, "Плотность эссенции", $"×{a.Density:0.##}" + (a.Refined ? " (винный червь)" : ""));
+            Stat(info, "К след. ступени", $"{a.Progress * 100:0}% · {a.StageCost:0}% эссенции");
             Stat(info, "Сила · крепость", $"×{gu.FistPower:0.##} · ×{gu.ToughnessBoost:0.##}");
             Stat(info, "Первобытные камни", $"{gu.Stones}");
             Stat(info, "Гу в ячейках", $"{gu.Gu.Count} / {gu.Open}");
@@ -62,7 +63,7 @@ namespace GuWorld.UI
             }
             else
             {
-                UiKit.Label("Малую ступень поднимает реликтовый Гу своего ранга; с пика — прорыв полным морем.", info, 14, UiKit.Muted).Size(46);
+                UiKit.Label("Ступень растёт в медитации (сидя, X) или от реликтового Гу; с пика — прорыв полным морем.", info, 14, UiKit.Muted).Size(46);
             }
 
             // The sea and the ring, in the middle.

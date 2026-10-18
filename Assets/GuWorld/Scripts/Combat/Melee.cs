@@ -101,7 +101,43 @@ namespace GuWorld.Combat
         /// <summary>Where the chain is: the next of its blows (0…3).</summary>
         public int ChainStep => next;
         /// <summary>Guarding the head with the forearms (the right button held).</summary>
-        public bool Guarding { get; set; }
+        public bool Guarding
+        {
+            get => guarding;
+            set
+            {
+                if (value && !guarding)
+                {
+                    guardSince = Time.time;
+                }
+
+                guarding = value;
+            }
+        }
+
+        bool guarding;
+        float guardSince = -100;
+
+        /// <summary>How soon after the guard comes up a blow is parried (turned aside whole), s.</summary>
+        public const float ParryWindow = 0.3f;
+
+        /// <summary>The guard just raised: a blow from in front now is parried.</summary>
+        public bool Parrying => guarding && Time.time - guardSince < ParryWindow;
+
+        /// <summary>A blow parried (where, and who struck it): for the spark, the word and the moment's stillness.</summary>
+        public event System.Action<Vector3, GameObject> Parried;
+
+        /// <summary>A blow turned aside whole: the one who struck it reels (a beast king less), and the next blow is ready at once.</summary>
+        public void Parry(Strike strike)
+        {
+            if (strike.Source != null && strike.Source.GetComponentInParent<IStaggerable>() is IStaggerable staggered)
+            {
+                staggered.Stagger(1.4f, Flat(strike.Source.transform.position - transform.position));
+            }
+
+            sinceLast = ChainBreak;
+            Parried?.Invoke(strike.Point, strike.Source);
+        }
         /// <summary>Busy with a blow, or guarding: the body faces where the camera looks (or the thing it turned to).</summary>
         public bool Busy => Current.HasValue || Guarding;
         /// <summary>The fists ready (F): the mouse fights with them, the stance is a fighter's.</summary>

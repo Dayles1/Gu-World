@@ -50,6 +50,14 @@ namespace GuWorld.Cultivation
         public Stage Stage = Stage.Initial;
         /// <summary>The essence in the sea now, % of the aperture.</summary>
         public float Essence;
+        /// <summary>How far toward the next small realm the aperture's walls have been worn by essence poured into them (0…1).</summary>
+        public float Progress;
+
+        /// <summary>
+        /// How much essence (in shares of the aperture, %) must be poured into the walls to rise one small realm: more with
+        /// every realm and every rank. With better talent the sea holds more and refills sooner, so it is poured faster.
+        /// </summary>
+        public float StageCost => 250 * (1 + 0.35f * (int)Stage) * (1 + 0.5f * (Rank - 1));
 
         /// <summary>How much of the aperture one primeval stone fills, %.</summary>
         public const float StoneWorth = 12;
@@ -257,6 +265,7 @@ namespace GuWorld.Cultivation
             Talent = float.IsFinite(Talent) ? Mathf.Clamp(Talent, 20, 100) : 50;
             if (!System.Enum.IsDefined(typeof(Stage), Stage)) Stage = Stage.Initial;
             Rank = Mathf.Clamp(Rank, 1, 5);
+            Progress = float.IsFinite(Progress) ? Mathf.Clamp01(Progress) : 0;
             Essence = float.IsFinite(Essence) ? Mathf.Clamp(Essence, 0, Cap) : Cap;
         }
     }
