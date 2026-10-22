@@ -17,6 +17,9 @@ namespace GuWorld.Combat
         public const float Untouchable = 0.34f;
         public const float Rest = 0.75f;
 
+        /// <summary>How long the rest after a roll is against Rest (an agile body rests less).</summary>
+        public float RestScale = 1;
+
         HeroMotor body;
         CharacterController solid;
         Vector3 way;
@@ -66,7 +69,7 @@ namespace GuWorld.Combat
             }
 
             at = 0;
-            readyAt = UnityEngine.Time.time + Time + Rest;
+            readyAt = UnityEngine.Time.time + Time + Rest * Mathf.Max(0.2f, RestScale);
 
             return true;
         }

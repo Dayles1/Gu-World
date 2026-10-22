@@ -626,10 +626,10 @@ namespace GuWorld.Editor
             // Meshes only drawn (not any collider's shape) need no copy in memory in the game, besides the one on the
             // graphics card (on this machine the same memory): marked so, once the squares are cut (their stand-ins
             // are made of them). Colliders' meshes stay readable.
-            var solid = new HashSet<Mesh>(Object.FindObjectsByType<MeshCollider>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(c => c.sharedMesh).Where(m => m != null));
-            var drawn = Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(f => f.sharedMesh).Where(m => m != null).Distinct().ToList();
+            var solid = new HashSet<Mesh>(Object.FindObjectsByType<MeshCollider>(FindObjectsInactive.Include).Select(c => c.sharedMesh).Where(m => m != null));
+            var drawn = Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include).Select(f => f.sharedMesh).Where(m => m != null).Distinct().ToList();
             var streamer = CutIntoChunks(streamed);
-            drawn.AddRange(Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include, FindObjectsSortMode.None).Select(f => f.sharedMesh).Where(m => m != null));
+            drawn.AddRange(Object.FindObjectsByType<MeshFilter>(FindObjectsInactive.Include).Select(f => f.sharedMesh).Where(m => m != null));
             var drawnOnly = 0;
 
             foreach (var mesh in drawn.Where(m => m != null).Distinct())

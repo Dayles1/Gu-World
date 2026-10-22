@@ -16,7 +16,6 @@ namespace GuWorld.Systems
         public string GiverTitle;
         /// <summary>What to do, in a line (the HUD's goal).</summary>
         public string Goal;
-        /// <summary>What counts: an event's key ("hit_dummy", "gather:moon_orchid_petal", "feed:moonlight", "buy:…").</summary>
         /// <summary>
         /// What counts toward it: "hit_dummy", "gather:&lt;item&gt;", "buy:&lt;item&gt;", "feed:&lt;gu&gt;",
         /// "kill:wolf", "visit:&lt;place&gt;" (Commands' places), "talk:&lt;name&gt;", "deliver:&lt;item&gt;@&lt;name&gt;".

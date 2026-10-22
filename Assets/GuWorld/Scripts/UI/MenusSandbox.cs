@@ -109,9 +109,17 @@ namespace GuWorld.UI
                 host.Resume();
             }, 12);
             var beastKings = new[] { GuWorld.Creatures.BeastKinds.BoarKing, GuWorld.Creatures.BeastKinds.MonkeyKing };
-            UiKit.Choices(modes, new[] { "Король кабанов (12)", "Король обезьян (10)" }, -1, i =>
+            UiKit.Choices(modes, new[] { "Король кабанов (12)", "Король обезьян (10)", "Волчий прилив", "Великий прилив" }, -1, i =>
             {
-                Notify($"{beastKings[i].Name} идёт со своими ({host.SpawnPack(beastKings[i], 1)})");
+                if (i >= 2)
+                {
+                    host.StartTide(i == 3);
+                }
+                else
+                {
+                    Notify($"{beastKings[i].Name} идёт со своими ({host.SpawnPack(beastKings[i], 1)})");
+                }
+
                 host.Resume();
             }, 12);
             // Gu Masters of the clans: a Bai with ice, a Xiong with the bear's strength, a Gu Yue with moonblades — a pair of
@@ -139,7 +147,7 @@ namespace GuWorld.UI
             row.Size(42);
             UiKit.Button("Вылечить · отдых Гу", row, () =>
             {
-                host.Health.Set(GuWorld.Systems.Health.Max);
+                host.Health.Set(host.Health.Max);
                 host.Cultivator.RestAll();
                 host.Cultivator.Aperture.Essence = host.Cultivator.Aperture.Cap;
                 Notify("Здоровье, эссенция и Гу — в порядке");

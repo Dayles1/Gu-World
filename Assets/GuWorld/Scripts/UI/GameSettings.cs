@@ -28,6 +28,20 @@ namespace GuWorld.UI
             set => PlayerPrefs.SetInt(HitboxKey, value ? 1 : 0);
         }
 
+        /// <summary>
+        /// The admin mode: the admin panel (F10) and the chat's cheating commands work only with it on. Off in a new
+        /// install; kept between games.
+        /// </summary>
+        public static bool AdminMode
+        {
+            get => PlayerPrefs.GetInt("gw.admin", 0) == 1;
+            set
+            {
+                PlayerPrefs.SetInt("gw.admin", value ? 1 : 0);
+                PlayerPrefs.Save();
+            }
+        }
+
         /// <summary>A frames-per-second counter in the top left corner.</summary>
         public static bool ShowFps
         {
@@ -278,7 +292,7 @@ namespace GuWorld.UI
                 }
             }
 
-            foreach (var light in Object.FindObjectsByType<Light>(FindObjectsSortMode.None))
+            foreach (var light in Object.FindObjectsByType<Light>())
             {
                 if (light.type == LightType.Directional && light.shadows != LightShadows.None)
                 {
@@ -315,7 +329,7 @@ namespace GuWorld.UI
             }
 
             // Bloom (the lanterns' and the moonblade's glow) only from the medium level up.
-            foreach (var volume in Object.FindObjectsByType<Volume>(FindObjectsSortMode.None))
+            foreach (var volume in Object.FindObjectsByType<Volume>())
             {
                 if (volume.sharedProfile != null && volume.sharedProfile.TryGet<Bloom>(out var bloom))
                 {

@@ -112,7 +112,11 @@ namespace GuWorld.UI
             // The task's card: who or what, how far, which way.
             if (questWhere != null)
             {
-                if (target.HasValue)
+                if (host.Event is var (_, _, where, _))
+                {
+                    questWhere.text = where;
+                }
+                else if (target.HasValue)
                 {
                     var (at, what) = target.Value;
                     var offset = new Vector2(at.x - hero.x, at.z - hero.z);

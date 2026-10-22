@@ -57,7 +57,38 @@ namespace GuWorld.Cultivation
         /// How much essence (in shares of the aperture, %) must be poured into the walls to rise one small realm: more with
         /// every realm and every rank. With better talent the sea holds more and refills sooner, so it is poured faster.
         /// </summary>
-        public float StageCost => 250 * (1 + 0.35f * (int)Stage) * (1 + 0.5f * (Rank - 1));
+        public float StageCost => 500 * (1 + 0.35f * (int)Stage) * (1 + 0.5f * (Rank - 1));
+
+        /// <summary>
+        /// At the peak, with the walls worn through, meditation goes on tempering the aperture for the breakthrough (0…1): it
+        /// takes half a small realm's essence, and it adds up to two in a hundred to the chance. A failed try loses half of it.
+        /// </summary>
+        public float Readiness;
+        /// <summary>Failed breakthroughs since the last rank: each teaches a little (a fifth of a point, up to two points).</summary>
+        public int Failures;
+
+        /// <summary>
+        /// The chance of breaking through from this rank's peak, before anything else helps: one in fifty from rank one,
+        /// a little less from each rank above — most Gu Masters never break through at all.
+        /// </summary>
+        public static float BaseChance(int rank) => rank switch
+        {
+            1 => 0.02f,
+            2 => 0.016f,
+            3 => 0.013f,
+            _ => 0.01f,
+        };
+
+        /// <summary>How much the talent weighs on the breakthrough: ×0.6 for 30% … ×1.4 for 99%, ×2 for an extreme physique.</summary>
+        public float TalentFactor => Extreme ? 2 : Mathf.Lerp(0.6f, 1.4f, Mathf.Clamp01((Talent - 30) / 69));
+
+        /// <summary>What tempering and the failed tries add to the chance.</summary>
+        public float TemperingBonus => 0.02f * Mathf.Clamp01(Readiness);
+        public float InsightBonus => Mathf.Min(0.02f, 0.002f * Mathf.Max(0, Failures));
+
+        /// <summary>The whole chance of a breakthrough now, with `more` from elsewhere (the body's spirit).</summary>
+        public float BreakChance(float more = 0) =>
+            Mathf.Clamp01(BaseChance(Rank) * TalentFactor + TemperingBonus + InsightBonus + Mathf.Max(0, more));
 
         /// <summary>How much of the aperture one primeval stone fills, %.</summary>
         public const float StoneWorth = 12;
@@ -75,8 +106,10 @@ namespace GuWorld.Cultivation
 
         /// <summary>
         /// Game hours the sea takes to fill from empty to its cap by itself. Up to 80% the time
-        /// halves as the talent doubles (40%: a day, 80%: half a day); past 80 it shrinks with
-        /// what is left to a hundred, so 99% is a flood and an extreme physique hardly ever runs dry.
+        /// halves as the talent doubles; past 80 it shrinks with what is left to a hundred, so 99%
+        /// is a flood and an extreme physique hardly ever runs dry. On top of that the time is cut
+        /// by a tenth for a D talent of 30% up to three tenths for an A talent of 80% and above
+        /// (RefillCut): 30% ≈ 29 h, 50% ≈ 16 h, 70% ≈ 10 h, 88% ≈ 4.6 h, 99% ≈ 24 min.
         /// </summary>
         public static float RefillHours(float talent)
         {
@@ -88,8 +121,11 @@ namespace GuWorld.Cultivation
                 hours *= (1 - t + 0.002f) / 0.202f;
             }
 
-            return hours;
+            return hours * (1 - RefillCut(talent));
         }
+
+        /// <summary>How much shorter the refilling is than the base reckoning: 10% for the poorest talent, 30% for the talented (A, 80% and up).</summary>
+        public static float RefillCut(float talent) => 0.1f + 0.2f * Mathf.Clamp01((talent - 30) / 50);
 
         /// <summary>Natural refilling, % of the aperture per game hour.</summary>
         public float RecoveryPerHour => Cap / RefillHours(Talent) * RecoveryBonus;
@@ -200,22 +236,38 @@ namespace GuWorld.Cultivation
         }
 
         /// <summary>
-        /// From the peak into the next rank's initial stage, the whole sea spent breaking the
-        /// aperture's wall (lore: sys_aperture_wall); false below the peak, short of a full sea
-        /// or at rank five.
+        /// A try at the next rank (lore: sys_aperture_wall): from the peak, with the walls worn through and a full sea,
+        /// the whole sea is thrown against the aperture's wall. False below the peak, before the walls are worn through,
+        /// short of a full sea, or at rank five.
         /// </summary>
-        public bool CanBreakThrough => Stage == Stage.Peak && Rank < 5 && Essence >= Cap - 0.5f;
+        public bool CanBreakThrough => Stage == Stage.Peak && Rank < 5 && Progress >= 1 && Essence >= Cap - 0.5f;
 
-        public bool BreakThrough()
+        /// <summary>
+        /// The try made with a roll (0…1): under the chance, into the next rank's initial stage; over it, the sea is spent for
+        /// nothing, half the tempering lost, and the failure is a lesson. Either way the sea is empty after.
+        /// </summary>
+        public bool BreakThrough(float roll, float more = 0)
         {
             if (!CanBreakThrough)
             {
                 return false;
             }
 
+            Essence = 0;
+
+            if (roll >= BreakChance(more))
+            {
+                Readiness *= 0.5f;
+                Failures++;
+
+                return false;
+            }
+
             Rank++;
             Stage = Stage.Initial;
-            Essence = 0;
+            Progress = 0;
+            Readiness = 0;
+            Failures = 0;
 
             return true;
         }
@@ -266,6 +318,8 @@ namespace GuWorld.Cultivation
             if (!System.Enum.IsDefined(typeof(Stage), Stage)) Stage = Stage.Initial;
             Rank = Mathf.Clamp(Rank, 1, 5);
             Progress = float.IsFinite(Progress) ? Mathf.Clamp01(Progress) : 0;
+            Readiness = float.IsFinite(Readiness) ? Mathf.Clamp01(Readiness) : 0;
+            Failures = Mathf.Clamp(Failures, 0, 1000);
             Essence = float.IsFinite(Essence) ? Mathf.Clamp(Essence, 0, Cap) : Cap;
         }
     }

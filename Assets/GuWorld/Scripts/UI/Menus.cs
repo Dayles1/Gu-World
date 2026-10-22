@@ -27,6 +27,10 @@ namespace GuWorld.UI
         void LeaveSandbox();
         int SpawnWolves(int count);
         int SpawnPack(GuWorld.Creatures.BeastKind kind, int count);
+        /// <summary>Something going on that the task's card shows instead of the task (a wolf tide): its title, goal, where, how far along.</summary>
+        (string title, string goal, string where, string progress)? Event { get; }
+        /// <summary>A wolf tide begun now (a great one: the thunder crown wolf at its end).</summary>
+        void StartTide(bool great);
         /// <summary>Gu Masters of a clan ("bai", "xiong", "gu_yue") and a rank called up near the hero, fighting on sight; how many came.</summary>
         int SpawnMasters(string clan, int rank, int count);
         void ClearWolves();
@@ -70,6 +74,10 @@ namespace GuWorld.UI
         /// <summary>The hero's own fists (their slot on the bar).</summary>
         GuWorld.Combat.Melee Fists { get; }
         Health Health { get; }
+        /// <summary>The body's training (the status window).</summary>
+        Physique Physique { get; }
+        /// <summary>Whether the admin mode is on (the admin panel, the chat's cheats).</summary>
+        bool Admin { get; set; }
         Quests Quests { get; }
         /// <summary>The shop the hero is at (null: none), and a deal there.</summary>
         Shop Shop { get; }
@@ -130,6 +138,10 @@ namespace GuWorld.UI
             Chat,
             /// <summary>Fusing Gu into new ones (U): every recipe, what it takes, what the hero has.</summary>
             Fusion,
+            /// <summary>The status window (O): the body's traits, health, stamina, the sea.</summary>
+            Status,
+            /// <summary>The admin panel (F10): cheats for testing, with the admin mode on.</summary>
+            Admin,
         }
 
         enum Tab
@@ -307,6 +319,8 @@ namespace GuWorld.UI
                 case Page.Body: BodyPage(); break;
                 case Page.Sandbox: SandboxPage(); break;
                 case Page.Fusion: FusionPage(); break;
+                case Page.Status: StatusPage(); break;
+                case Page.Admin: AdminPage(); break;
             }
         }
 
@@ -328,6 +342,8 @@ namespace GuWorld.UI
                 case Page.Shop:
                 case Page.Body:
                 case Page.Fusion:
+                case Page.Status:
+                case Page.Admin:
                     host.Resume();
                     return true;
                 default: return false;

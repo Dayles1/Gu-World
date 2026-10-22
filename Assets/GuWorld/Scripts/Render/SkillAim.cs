@@ -30,7 +30,7 @@ namespace GuWorld.Render
         struct Station
         {
             public Vector3 at, side, up;
-            public float along, across;
+            public float along;
             public Color colour;
         }
 
@@ -525,8 +525,8 @@ namespace GuWorld.Render
                 {
                     var normal = (s.side * (p.x + q.x) + s.up * (p.y + q.y)).normalized;
                     var uvFlow = f == 0 ? flow : 0;
-                    Vertex(s.at + s.side * (p.x * half.x) + s.up * (p.y * half.y), normal, s.colour, new Vector4(s.along, (s.across + p.x * half.x) / band, uvFlow));
-                    Vertex(s.at + s.side * (q.x * half.x) + s.up * (q.y * half.y), normal, s.colour, new Vector4(s.along, (s.across + q.x * half.x) / band, uvFlow));
+                    Vertex(s.at + s.side * (p.x * half.x) + s.up * (p.y * half.y), normal, s.colour, new Vector4(s.along, p.x * half.x / band, uvFlow));
+                    Vertex(s.at + s.side * (q.x * half.x) + s.up * (q.y * half.y), normal, s.colour, new Vector4(s.along, q.x * half.x / band, uvFlow));
                 }
 
                 for (var i = 0; i + 1 < stations.Count; i++)

@@ -30,6 +30,12 @@ namespace GuWorld.Items
         public const int Cells = 40;
         public const int Across = 8;
         public const float Capacity = 60;
+
+        /// <summary>What the body's strength adds to the weight it carries (Physique), kg.</summary>
+        public float Extra;
+
+        /// <summary>The weight the bag can hold now: its own and what strength adds.</summary>
+        public float Limit => Capacity + Mathf.Max(0, Extra);
         /// <summary>Spoiling things within this many game minutes of each other pile together.</summary>
         const double SameAge = 60;
 
@@ -83,7 +89,7 @@ namespace GuWorld.Items
             }
 
             // Primeval stones are the money: they never weigh the bag past carrying (only room for their pile counts).
-            var byWeight = kind.Weight > 0 && id != ItemBook.Stone ? Mathf.FloorToInt((Capacity - Weight) / kind.Weight + 1e-4f) : int.MaxValue;
+            var byWeight = kind.Weight > 0 && id != ItemBook.Stone ? Mathf.FloorToInt((Limit - Weight) / kind.Weight + 1e-4f) : int.MaxValue;
             var spoils = kind.Keeps > 0 ? now + kind.Keeps : 0;
             var byRoom = 0;
 

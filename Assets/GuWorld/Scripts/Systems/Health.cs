@@ -10,8 +10,8 @@ namespace GuWorld.Systems
     /// The hero's health (the design's life bar). It mends by itself with time,
     /// faster with food; a hard landing hurts — a fall from a few metres up and
     /// more — unless the jade skin is up to take the blow (lore: gu_jade_skin_gu,
-    /// a hard fall cushioned). At nothing the hero faints (GuWorldGame wakes them
-    /// in the village).
+    /// a hard fall cushioned). At nothing the hero dies, and the path begins again
+    /// from the first morning (GuWorldGame.OnFainted).
     ///
     /// The numbers — a hundred points, how fast it mends, how hard a landing
     /// must be to hurt — are the game's own, to be tuned.
@@ -21,15 +21,19 @@ namespace GuWorld.Systems
     /// </summary>
     public class Health : MonoBehaviour, IStrikable, IZoned
     {
-        public const float Max = 100;
+        /// <summary>A youth's health; the body's vitality raises it (Max).</summary>
+        public const float Base = 100;
+
+        /// <summary>The most health the body holds now: the base, more with vitality (Physique).</summary>
+        public float Max => Base * (physique != null ? physique.HealthFactor : 1);
         /// <summary>Mending by itself, points per game hour.</summary>
         public const float MendPerHour = 25;
-        /// <summary>Landing faster than this (m/s) hurts: about a three-metre drop.</summary>
-        public const float SafeLanding = 13;
-        /// <summary>Points lost for each m/s of landing past the safe speed.</summary>
-        public const float HarmPerSpeed = 7;
+        /// <summary>Landing faster than this (m/s) hurts: about a four-and-a-half-metre drop.</summary>
+        public const float SafeLanding = 15;
+        /// <summary>Points lost for each m/s of landing past the safe speed: a 10 m fall ≈ 30, 20 m ≈ 66, 30 m ≈ 95.</summary>
+        public const float HarmPerSpeed = 4;
 
-        public float Current = Max;
+        public float Current = Base;
         /// <summary>The proving ground's mode: harm is taken and shown, but the hero never falls.</summary>
         public bool Immortal;
 
@@ -80,6 +84,7 @@ namespace GuWorld.Systems
 
         HeroMotor body;
         Cultivator gu;
+        Physique physique;
 
         public bool Down => Current <= 0;
 
@@ -87,6 +92,7 @@ namespace GuWorld.Systems
         {
             body = GetComponent<HeroMotor>();
             gu = GetComponent<Cultivator>();
+            physique = GetComponent<Physique>();
 
             if (body != null)
             {
@@ -105,9 +111,12 @@ namespace GuWorld.Systems
         void OnLanded(float speed)
         {
             // Wings (a Gu's): the ground is met softly.
-            if (speed > SafeLanding && (gu == null || !gu.SoftFall))
+            // An agile body lands a little softer.
+            var safe = SafeLanding + (physique != null ? physique.SafeLandingBonus : 0);
+
+            if (speed > safe && (gu == null || !gu.SoftFall))
             {
-                TakeHarm((speed - SafeLanding) * HarmPerSpeed);
+                TakeHarm((speed - safe) * HarmPerSpeed);
             }
         }
 
@@ -119,7 +128,7 @@ namespace GuWorld.Systems
                 return;
             }
 
-            Current = Mathf.Min(Max, Current + (float)(MendPerHour * minutes / 60));
+            Current = Mathf.Min(Max, Current + (float)(MendPerHour * minutes / 60) * (physique != null ? physique.MendFactor : 1));
         }
 
         /// <summary>Venom drawn out of the blood (a healing Gu does it).</summary>
@@ -175,7 +184,8 @@ namespace GuWorld.Systems
                 part = random.Next(2) == 0 ? BodyPart.ForearmL : BodyPart.ForearmR;
             }
 
-            var harm = Wounds.Harm(part ?? BodyPart.Chest, strike, Max, Toughness, random);
+            // Wounds measured against a youth's health: a body with more (vitality) takes the same wounds and lasts longer.
+            var harm = Wounds.Harm(part ?? BodyPart.Chest, strike, Base, Toughness, random);
 
             if (guarded)
             {

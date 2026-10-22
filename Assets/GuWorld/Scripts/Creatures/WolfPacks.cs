@@ -136,7 +136,8 @@ namespace GuWorld.Creatures
             for (var i = dens.Count - 1; i >= 0; i--)
             {
                 var den = dens[i];
-                den.Wolves.RemoveAll(w => w == null);
+                // A tamed one is the hero's now: no longer the den's to call back.
+                den.Wolves.RemoveAll(w => w == null || w.Tamed);
                 var distance = Flat(at - den.At).magnitude;
                 var living = den.Wolves.FindAll(w => !w.Dead);
 
@@ -182,11 +183,14 @@ namespace GuWorld.Creatures
         public int CallNear(int count, Vector3? toward = null) => CallNear(PackOf(WolfKinds.Grey, count), toward);
 
         /// <summary>A pack of these wolves called up beside the hero (further off for the bigger ones); how many came.</summary>
-        public int CallNear(BeastKind[] kinds, Vector3? toward = null)
+        public int CallNear(BeastKind[] kinds, Vector3? toward = null) => CallUp(kinds, toward).Count;
+
+        /// <summary>A pack of these beasts called up beside the hero (toward a way, if given): the beasts that came.</summary>
+        public List<Beast> CallUp(BeastKind[] kinds, Vector3? toward = null)
         {
             if (hero == null || kinds.Length == 0)
             {
-                return 0;
+                return new List<Beast>();
             }
 
             var biggest = 1f;
@@ -207,7 +211,7 @@ namespace GuWorld.Creatures
                 Place(den, at + new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * (k == 0 ? 0 : 2.5f + kinds[0].Scale), kinds[k]);
             }
 
-            return den.Wolves.Count;
+            return new List<Beast>(den.Wolves);
         }
 
         void Place(Den den, Vector3 at, BeastKind kind)

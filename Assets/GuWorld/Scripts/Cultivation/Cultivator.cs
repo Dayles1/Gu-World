@@ -23,8 +23,8 @@ namespace GuWorld.Cultivation
         public bool vital;
         /// <summary>How hungry it was when the player was last told.</summary>
         [NonSerialized] public Hunger told;
-        /// <summary>How tired it is (0…100, past 100: driven by force), and when it was last used (Time.time).</summary>
-        [NonSerialized] public float tired;
+        /// <summary>How tired it is (0…100, past 100: driven by force; saved), and when it was last used (Time.time).</summary>
+        public float tired;
         [NonSerialized] public float usedAt = -100;
         /// <summary>Whether the player was told it is spent.</summary>
         [NonSerialized] public bool toldTired;
@@ -46,8 +46,10 @@ namespace GuWorld.Cultivation
         public int rank = 1;
         public string stage = "initial";
         public float essence;
-        /// <summary>How far toward the next small realm (meditation).</summary>
+        /// <summary>How far toward the next small realm (meditation); the tempering at the peak; the failed breakthroughs.</summary>
         public float progress;
+        public float readiness;
+        public int failures;
         public OwnedGu[] owned;
         public ItemStack[] bag;
         /// <summary>The action bar: "gu:&lt;kind&gt;" or "item:&lt;id&gt;" per key, empty where nothing is set.</summary>
@@ -148,6 +150,9 @@ namespace GuWorld.Cultivation
 
         // The proving ground's modes (all off in the game itself).
 
+        /// <summary>How much a use tires a Gu (1: as written; a master's trained spirit tires them less).</summary>
+        public float TireScale = 1;
+
         /// <summary>The sea never runs dry: every Gu can be paid for, whatever its rank.</summary>
         public bool EndlessEssence;
         /// <summary>Gu never tire (and so never die of being forced).</summary>
@@ -158,7 +163,7 @@ namespace GuWorld.Cultivation
         public bool AllCells;
 
         /// <summary>Essence paid for something (free with the endless sea); false when there is not enough.</summary>
-        bool Pay(float cost) => EndlessEssence || Aperture.Spend(cost);
+        public bool Pay(float cost) => EndlessEssence || Aperture.Spend(cost);
 
         /// <summary>The Gu in a cell of the ring (null: none).</summary>
         public OwnedGu At(int slot) => Gu.Find(g => g.slot == slot);
@@ -215,6 +220,8 @@ namespace GuWorld.Cultivation
                 Stage = Enum.TryParse<Stage>(saved.stage, true, out var stage) ? stage : Stage.Initial,
                 Essence = saved.essence,
                 Progress = saved.progress,
+                Readiness = saved.readiness,
+                Failures = saved.failures,
             };
             Aperture.Repair();
             Path = saved.path;
@@ -232,7 +239,7 @@ namespace GuWorld.Cultivation
             {
                 foreach (var gu in saved.owned)
                 {
-                    if (gu == null || GuBook.Find(gu.kind) == null || gu.slot < 0 || gu.slot >= Open || At(gu.slot) != null)
+                    if (gu == null || GuBook.Find(gu.kind) == null || gu.slot < 0 || At(gu.slot) != null)
                     {
                         continue;
                     }
@@ -243,8 +250,11 @@ namespace GuWorld.Cultivation
                         slot = gu.slot,
                         fedAt = double.IsFinite(gu.fedAt) && gu.fedAt <= now ? gu.fedAt : now,
                         vital = gu.vital && !Gu.Exists(o => o.vital),
+                        tired = float.IsFinite(gu.tired) ? Mathf.Clamp(gu.tired, 0, 300) : 0,
                     });
                 }
+
+                FitRing();
             }
             else
             {
@@ -313,6 +323,48 @@ namespace GuWorld.Cultivation
                 : $"Талант: {Aperture.TalentName}");
         }
 
+        /// <summary>
+        /// The Gu whose cells are no longer open (the rank fell: the Do-or-Die Gu, an old save) moved into free open cells —
+        /// or, with none free, taken out of the aperture back into the bag (never lost); the vital Gu keeps a cell first.
+        /// </summary>
+        void FitRing()
+        {
+            var outside = Gu.FindAll(g => g.slot >= Open);
+            outside.Sort((a, b) => b.vital.CompareTo(a.vital));
+
+            foreach (var gu in outside)
+            {
+                var free = -1;
+
+                for (var i = 0; i < Open && free < 0; i++)
+                {
+                    if (At(i) == null)
+                    {
+                        free = i;
+                    }
+                }
+
+                if (free >= 0)
+                {
+                    gu.slot = free;
+
+                    continue;
+                }
+
+                var kind = gu.Kind;
+                Release(gu);
+
+                if (kind != null && Bag.Add(kind.Item, 1, Now) > 0)
+                {
+                    Said?.Invoke($"{kind.Name}: для него нет открытой ячейки — он вернулся в сумку");
+                }
+                else if (kind != null)
+                {
+                    Said?.Invoke($"{kind.Name}: нет ни ячейки, ни места в сумке — он улетел");
+                }
+            }
+        }
+
         /// <summary>Whether a key's entry names a Gu that exists (only Gu go on the keys).</summary>
         static bool Valid(string entry) => entry != null && entry.StartsWith("gu:") && GuBook.Find(entry.Substring(3)) != null;
 
@@ -322,7 +374,7 @@ namespace GuWorld.Cultivation
 
             for (var i = 0; i < Gu.Count; i++)
             {
-                owned[i] = new OwnedGu { kind = Gu[i].kind, slot = Gu[i].slot, fedAt = Gu[i].fedAt, vital = Gu[i].vital };
+                owned[i] = new OwnedGu { kind = Gu[i].kind, slot = Gu[i].slot, fedAt = Gu[i].fedAt, vital = Gu[i].vital, tired = Gu[i].tired };
             }
 
             return new CultivationSave
@@ -335,6 +387,8 @@ namespace GuWorld.Cultivation
                 stage = Aperture.Stage.ToString().ToLowerInvariant(),
                 essence = Aperture.Essence,
                 progress = Aperture.Progress,
+                readiness = Aperture.Readiness,
+                failures = Aperture.Failures,
                 owned = owned,
                 bag = Bag.Save(),
                 bar = (string[])Bar.Clone(),
@@ -489,7 +543,7 @@ namespace GuWorld.Cultivation
                 }
 
                 gu.usedAt = Time.time;
-                gu.tired = Untiring ? 0 : gu.tired + kind.Tire / 10 * dt;
+                gu.tired = Untiring ? 0 : gu.tired + kind.Tire / 10 * dt * TireScale;
                 WarnTired(gu);
 
                 // Held past its strength, it is forced every moment it stays up.
@@ -582,7 +636,7 @@ namespace GuWorld.Cultivation
             if (gu.vital)
             {
                 Aperture.Essence = 0;
-                health?.Strike(Health.Max * 0.5f);
+                health?.Strike(health.Max * 0.5f);
                 Said?.Invoke($"{why}. Это был жизненный Гу — удар отозвался в апертуре");
             }
             else
@@ -732,7 +786,7 @@ namespace GuWorld.Cultivation
                 return false;
             }
 
-            gu.tired = Untiring ? 0 : gu.tired + (kind.Held ? kind.Tire * 0.5f : kind.Tire);
+            gu.tired = Untiring ? 0 : gu.tired + (kind.Held ? kind.Tire * 0.5f : kind.Tire) * TireScale;
             WarnTired(gu);
             Do(kind, target);
             Did?.Invoke(kind.Skill == SkillKind.Moonblade ? "moonblade" : "gu:" + kind.Id, 1);
@@ -1228,7 +1282,7 @@ namespace GuWorld.Cultivation
                     return StartAbsorbing();
 
                 case ItemUse.Eat:
-                    if (health != null && health.Current >= Health.Max - 0.5f)
+                    if (health != null && health.Current >= health.Max - 0.5f)
                     {
                         Said?.Invoke("Вы и так полны сил");
 
@@ -1329,8 +1383,19 @@ namespace GuWorld.Cultivation
                 return false;
             }
 
+            if (kind.Rank > Aperture.Rank + 1 && !EndlessEssence)
+            {
+                Said?.Invoke($"{kind.Name} ранга {kind.Rank} не подчинится мастеру ранга {Aperture.Rank}");
+
+                return false;
+            }
+
             switch (kind.Skill)
             {
+                case SkillKind.Bones when health != null && health.Current <= health.Max * 0.15f + 1:
+                    Said?.Invoke($"{kind.Name} перестраивает кости — это больно. Сначала подлечитесь (нужно больше {health.Max * 0.15f + 1:0} здоровья)");
+
+                    return false;
                 case SkillKind.Relic when kind.Rank != Aperture.Rank:
                     Said?.Invoke($"{kind.Name} поднимает только мастеров ранга {kind.Rank}");
 
@@ -1375,7 +1440,7 @@ namespace GuWorld.Cultivation
                     once.Add(kind.Id);
                     Toughening += kind.Amount;
                     Said?.Invoke($"{kind.SkillName}: тело навсегда крепче на {kind.Amount * 100:0}% — это было больно");
-                    health?.Strike(Health.Max * 0.15f);
+                    health?.Strike(health.Max * 0.15f);
                     break;
                 case SkillKind.Desperate:
                     if (Aperture.Stage == Stage.Initial)
@@ -1390,6 +1455,8 @@ namespace GuWorld.Cultivation
 
                     Aperture.Essence = Aperture.Cap;
                     Said?.Invoke($"{kind.SkillName}: море полно — но вы упали до {Aperture.Name(Aperture.Stage)} ранга {Aperture.Rank}");
+                    // A lower rank opens fewer cells: the Gu in the closed ones find room, or go back into the bag.
+                    FitRing();
                     break;
             }
 
@@ -1650,13 +1717,15 @@ namespace GuWorld.Cultivation
             }
 
             var peak = Aperture.Stage == Stage.Peak;
+            var tempering = peak && Aperture.Progress >= 1;
 
-            if (peak && Aperture.Progress >= 1)
+            // Tempered as far as it goes: nothing more to pour.
+            if (tempering && (Aperture.Readiness >= 1 || Aperture.Rank >= 5))
             {
                 return;
             }
 
-            var pour = Mathf.Min(Aperture.Essence, PourRate * dt);
+            var pour = Mathf.Min(Aperture.Essence, PourRate * MeditationScale * dt);
 
             if (pour <= 0)
             {
@@ -1669,6 +1738,20 @@ namespace GuWorld.Cultivation
             }
 
             Aperture.Essence -= pour;
+
+            // At the peak, the walls worn through: the essence tempers the aperture for the breakthrough.
+            if (tempering)
+            {
+                Aperture.Readiness = Mathf.Min(1, Aperture.Readiness + pour / (Aperture.StageCost * 0.5f));
+
+                if (Aperture.Readiness >= 1)
+                {
+                    Said?.Invoke("Апертура закалена до предела — шанс прорыва больше не растёт от медитации");
+                }
+
+                return;
+            }
+
             Aperture.Progress = Mathf.Min(1, Aperture.Progress + pour / Aperture.StageCost);
 
             if (Aperture.Progress < 1)
@@ -1678,7 +1761,9 @@ namespace GuWorld.Cultivation
 
             if (peak)
             {
-                Said?.Invoke("Стенки апертуры истончены до предела — нужен прорыв: полное море, апертура (K)");
+                Said?.Invoke(Aperture.Rank >= 5
+                    ? "Стенки апертуры истончены до предела — выше пятого ранга пути пока нет"
+                    : "Стенки апертуры истончены до предела — можно пытаться прорваться (полное море, апертура K); медитация дальше закаляет апертуру");
 
                 return;
             }
@@ -1693,20 +1778,47 @@ namespace GuWorld.Cultivation
 
         // ── Cultivation ───────────────────────────────────────────────
 
-        /// <summary>From the peak into the next rank: the whole sea spent on the aperture's wall.</summary>
-        public bool BreakThrough()
+        /// <summary>What helps a breakthrough besides talent, tempering and insight: the body's spirit (Physique), as a chance.</summary>
+        public float BreakBonus;
+
+        /// <summary>How fast meditation pours the sea into the walls (1: as written; the body's spirit raises it).</summary>
+        public float MeditationScale = 1;
+
+        /// <summary>The chance of breaking through now.</summary>
+        public float BreakChance => Aperture.BreakChance(BreakBonus);
+
+        /// <summary>
+        /// A try at the next rank: from the peak with the walls worn through, the whole sea thrown at the aperture's wall.
+        /// It seldom holds (one or two in a hundred, more with talent and preparation); failed, the sea is spent for nothing.
+        /// </summary>
+        public bool BreakThrough() => BreakThrough((float)random.NextDouble());
+
+        /// <summary>The try with a roll given (the checks: 0 always holds, 1 never).</summary>
+        public bool BreakThrough(float roll)
         {
             if (!Aperture.CanBreakThrough)
             {
                 Said?.Invoke(Aperture.Stage != Stage.Peak ? "Прорыв возможен только с пиковой стадии"
                     : Aperture.Rank >= 5 ? "Выше пятого ранга пути пока нет"
+                    : Aperture.Progress < 1 ? "Стенки апертуры ещё не истончены — медитируйте (X), пока ступень не дойдёт до 100%"
                     : "Для прорыва море должно быть полным");
 
                 return false;
             }
 
-            Aperture.BreakThrough();
-            Aperture.Progress = 0;
+            var chance = BreakChance;
+
+            if (!Aperture.BreakThrough(roll, BreakBonus))
+            {
+                health?.Strike(health.Max * 0.05f);
+                GuGlow.Flash(transform.position + Vector3.up, 1.5f, new Color(0.6f, 0.2f, 0.2f), 0.6f);
+                Said?.Invoke($"Прорыв не удался (шанс был {chance * 100:0.#}%): море сгорело о стенку апертуры. " +
+                             $"Опыт неудачи: +{Mathf.Min(2, 0.2f * Aperture.Failures):0.#}% к следующей попытке");
+                Did?.Invoke("breakthrough-failed", Aperture.Rank);
+
+                return false;
+            }
+
             Passives();
             Said?.Invoke($"Прорыв! Ранг {Aperture.Rank}, {Aperture.Name(Aperture.Stage)}: эссенция — {Aperture.EssenceName}" +
                          (Open > OpenSlots(Aperture.Rank - 1) ? $", открылись новые ячейки ({Open})" : ""));
@@ -1721,6 +1833,7 @@ namespace GuWorld.Cultivation
         {
             Aperture.Rank = Mathf.Clamp(rank, 1, 5);
             Aperture.Stage = stage;
+            FitRing();
             Passives();
             Said?.Invoke($"Ранг {Aperture.Rank}, {Aperture.Name(Aperture.Stage)}");
         }

@@ -64,7 +64,7 @@ namespace GuWorld.Render
         {
             // The tone curve: neutral, not ACES — ACES pressed the shade and the middle tones down into black (the mood is
             // the grade's and the light's, not lost detail). The scene's own profile (built with ACES) is set so here.
-            foreach (var volume in FindObjectsByType<UnityEngine.Rendering.Volume>(FindObjectsSortMode.None))
+            foreach (var volume in FindObjectsByType<UnityEngine.Rendering.Volume>())
             {
                 if (volume.isGlobal && volume.sharedProfile != null && volume.profile.TryGet<UnityEngine.Rendering.Universal.Tonemapping>(out var tone))
                 {

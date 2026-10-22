@@ -43,6 +43,36 @@ namespace GuWorld.State
         public GuWorld.Systems.QuestSave quests = new GuWorld.Systems.QuestSave();
         /// <summary>The game minute each moon orchid bed is in flower again, in the beds' order.</summary>
         public double[] beds = new double[0];
+        /// <summary>The rest of the world the hero has changed: the wild Gu caught, the shops' stock, the wolf tides, the tamed beasts.</summary>
+        public WorldSave world = new WorldSave();
+        /// <summary>The body's training (strength, agility, endurance, vitality, spirit) and its stamina.</summary>
+        public GuWorld.Systems.PhysiqueSave physique = new GuWorld.Systems.PhysiqueSave();
+    }
+
+    /// <summary>What of the world is kept besides the hero (a save from before it: all as new).</summary>
+    [Serializable]
+    public class WorldSave
+    {
+        /// <summary>The game minute each wild Gu's spot has a Gu again, in the spots' order.</summary>
+        public double[] wild = new double[0];
+        /// <summary>The day whose night's wolf tide has come already, and the day it was foretold (-1: none).</summary>
+        public int tide_day = -1;
+        public int tide_told = -1;
+        /// <summary>The day the shops' stock was counted on, and what was sold of it ("shop/item" and lots).</summary>
+        public long trade_day = long.MinValue;
+        public string[] sold_keys = new string[0];
+        public int[] sold_counts = new int[0];
+        /// <summary>The beasts the hero has tamed.</summary>
+        public PetSave[] pets = new PetSave[0];
+    }
+
+    /// <summary>A tamed beast as saved: its kind, level and health.</summary>
+    [Serializable]
+    public class PetSave
+    {
+        public string kind;
+        public int level;
+        public float health;
     }
 
     /// <summary>A game got back from a save — repaired where it had to be.</summary>
@@ -59,6 +89,9 @@ namespace GuWorld.State
         public float health = -1;
         public GuWorld.Systems.QuestSave quests;
         public double[] beds;
+        /// <summary>The world as the hero left it (null: as new); the body's training (null: untrained).</summary>
+        public WorldSave world;
+        public GuWorld.Systems.PhysiqueSave physique;
         /// <summary>No save at all: a new game.</summary>
         public bool fresh;
         /// <summary>Why parts of the save were replaced; empty when it was sound.</summary>
@@ -153,6 +186,8 @@ namespace GuWorld.State
 
             game.clock = WorldClock.FromSaved(saved.world_minutes, out var repaired);
             game.beds = saved.beds;
+            game.world = saved.world;
+            game.physique = saved.physique;
 
             if (repaired)
             {

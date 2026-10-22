@@ -112,8 +112,8 @@ namespace GuWorld.Editor
 
         static int WalkAll()
         {
-            var body = Object.FindFirstObjectByType<HeroMotor>();
-            var plan = Object.FindFirstObjectByType<WorldPlan>();
+            var body = Object.FindAnyObjectByType<HeroMotor>();
+            var plan = Object.FindAnyObjectByType<WorldPlan>();
 
             if (body == null || plan == null)
             {
@@ -123,7 +123,7 @@ namespace GuWorld.Editor
             }
 
             // The player's controller would tick the body too: the walk drives it alone.
-            foreach (var controller in Object.FindObjectsByType<Systems.PlayerController>(FindObjectsSortMode.None))
+            foreach (var controller in Object.FindObjectsByType<Systems.PlayerController>())
             {
                 controller.enabled = false;
             }

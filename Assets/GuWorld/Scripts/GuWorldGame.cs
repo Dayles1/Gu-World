@@ -90,6 +90,7 @@ namespace GuWorld
         readonly System.Collections.Generic.List<Villagers> crowds = new System.Collections.Generic.List<Villagers>();
         Cultivator cultivator;
         Health health;
+        Physique physique;
         Melee melee;
         readonly Quests quests = new Quests();
         readonly Trade trade = new Trade();
@@ -166,16 +167,16 @@ namespace GuWorld
                         foreach (var t in Terrain.activeTerrains) t.detailObjectDistance = 0;
                         break;
                     case "shadows":
-                        foreach (var l in FindObjectsByType<Light>(FindObjectsSortMode.None)) l.shadows = LightShadows.None;
+                        foreach (var l in FindObjectsByType<Light>()) l.shadows = LightShadows.None;
                         break;
                     case "msaa":
                         if (UnityEngine.Rendering.GraphicsSettings.currentRenderPipeline is UnityEngine.Rendering.Universal.UniversalRenderPipelineAsset urp) urp.msaaSampleCount = 1;
                         break;
                     case "post":
-                        foreach (var v in FindObjectsByType<UnityEngine.Rendering.Volume>(FindObjectsSortMode.None)) v.enabled = false;
+                        foreach (var v in FindObjectsByType<UnityEngine.Rendering.Volume>()) v.enabled = false;
                         break;
                     case "people":
-                        foreach (var v in FindObjectsByType<Villagers>(FindObjectsSortMode.None)) v.gameObject.SetActive(false);
+                        foreach (var v in FindObjectsByType<Villagers>()) v.gameObject.SetActive(false);
                         break;
                     case "terrain":
                         foreach (var t in Terrain.activeTerrains) t.drawHeightmap = false;
@@ -202,7 +203,7 @@ namespace GuWorld
         /// <summary>What the world holds for the timed run's report: renderers (all, seen) by the top object they are under, colliders.</summary>
         static string Census()
         {
-            var all = FindObjectsByType<Renderer>(FindObjectsSortMode.None);
+            var all = FindObjectsByType<Renderer>();
             var seen = new System.Collections.Generic.Dictionary<string, int>();
             var shown = 0;
 
@@ -221,8 +222,8 @@ namespace GuWorld
                 seen[top] = (seen.TryGetValue(top, out var n) ? n : 0) + 1;
             }
 
-            var colliders = FindObjectsByType<Collider>(FindObjectsSortMode.None);
-            var bodies = FindObjectsByType<Rigidbody>(FindObjectsSortMode.None).Length;
+            var colliders = FindObjectsByType<Collider>();
+            var bodies = FindObjectsByType<Rigidbody>().Length;
 
             return $"renderers {all.Length}, seen {shown} (" + string.Join(", ", seen.OrderByDescending(p => p.Value).Take(14).Select(p => $"{p.Key} {p.Value}")) + ")" +
                    $"; colliders {colliders.Length} ({colliders.Count(c => c.enabled && c.gameObject.activeInHierarchy)} on), bodies {bodies}";
@@ -324,6 +325,14 @@ namespace GuWorld
         public Melee Fists => melee;
         public HumanBody.Parts Parts => picture.Parts;
         public Health Health => health;
+        public Physique Physique => physique;
+
+        /// <summary>The admin mode: on by the settings (the admin panel's switch), and always on the proving ground and in a check run.</summary>
+        public bool Admin
+        {
+            get => screenshot != null || Sandbox || GameSettings.AdminMode;
+            set => GameSettings.AdminMode = value;
+        }
         public Quests Quests => quests;
         public Trade Trade => trade;
         public Shop Shop => shop;
@@ -437,6 +446,7 @@ namespace GuWorld
             ("absorb", "V — поглотить первобытный камень: за 3 секунды эссенция в апертуре пополнится"),
             ("map", "M — карта: щёлкните по ней, чтобы поставить метку, — она появится и на миникарте"),
             ("fists", "F — кулаки: ЛКМ — серия ударов, ПКМ — блок, Q и R — особые удары"),
+            ("status", "O — статус: сила, ловкость, выносливость, живучесть и дух растут от дела"),
         };
 
         /// <summary>
@@ -454,6 +464,7 @@ namespace GuWorld
             ("fusion", "Можно слить Гу в новый! U — слияние: все рецепты, что есть и чего не хватает", false),
             ("meditate", "X — сесть: сидя, вдали от врагов, вы медитируете — эссенция уходит в стенки апертуры, и ступень растёт", false),
             ("night", "Ночь: волки видят дальше, а люди — хуже. За стенами деревни ночью опаснее", true),
+            ("wild", "Рядом дикий Гу — светящаяся точка над травой. Подойдите и удерживайте E, чтобы поймать его", false),
         };
 
         readonly Dictionary<string, float> momentShown = new Dictionary<string, float>();
@@ -487,7 +498,7 @@ namespace GuWorld
                 case "foreign":
                     return GuMaster.All.Exists(m => m != null && m.Warns && Vector3.Distance(m.transform.position, at) < 45);
                 case "hurt":
-                    return !health.Down && health.Current < Health.Max * 0.35f;
+                    return !health.Down && health.Current < health.Max * 0.35f;
                 case "tired":
                     return !Sandbox && cultivator.Gu.Exists(g => g.tired >= 100);
                 case "fusion":
@@ -501,6 +512,8 @@ namespace GuWorld
                     return fusionReady;
                 case "meditate":
                     return !Sandbox && idleFor > 8 && !body.Sitting && cultivator.Aperture.Essence > cultivator.Aperture.Cap * 0.4f && !Foes.Hunting(at, 40);
+                case "wild":
+                    return !Sandbox && WildGu.All.Exists(w => w.Ready && Vector3.Distance(w.transform.position, at) < 14);
                 case "night":
                     var hour = clock.MinuteOfDay / 60;
 
@@ -710,7 +723,7 @@ namespace GuWorld
 
             // A village with a plan has its people: the hero's own clan's village first.
             VillageLayout layout = null;
-            var layouts = FindObjectsByType<VillageLayout>(FindObjectsSortMode.None);
+            var layouts = FindObjectsByType<VillageLayout>();
 
             foreach (var candidate in layouts)
             {
@@ -781,13 +794,21 @@ namespace GuWorld
             sky.FogEnd = FogEnd;
 
             cultivator.Load(restored.cultivation, clock.Minutes);
-            health.Set(restored.health < 0 ? Health.Max : restored.health);
+            physique.Load(restored.physique);
+            // Below 0: an older save; 0: one written as the hero fell (no longer done) — whole again either way.
+            health.Set(restored.health <= 0 ? float.PositiveInfinity : restored.health);
             quests.Load(restored.quests);
+            trade.Load(restored.world);
             menus = Menus.Create(this);
             cultivator.Said += menus.Notify;
             cultivator.Did += quests.Count;
             quests.Said += menus.Notify;
             health.Fainted += OnFainted;
+            // The body trains by what the hero does: wounds survived, Gu driven, rolls that dodged, each level told.
+            physique.Raised += OnTraitRaised;
+            health.Hurt += harm => physique.Train(Trait.Vitality, harm * 0.5f);
+            cultivator.Did += OnCultivated;
+            dodge.Dodged += () => physique.Train(Trait.Agility, 4);
             TrainingDummy.Struck += OnStruck;
             Wounds.Landed += OnWound;
             Wounds.Struck += OnStrikeShown;
@@ -798,6 +819,7 @@ namespace GuWorld
             TreeBranch.Snapped += OnSnap;
             PlaceDummies(layout);
             PlaceBeds(layout, restored.beds);
+            PlaceWildGu(restored.world?.wild);
             DrawMap(layout);
 
             // The wolves of the forest round the village (their dens outside its walls), and the packs a command calls up.
@@ -808,6 +830,13 @@ namespace GuWorld
             patrols = Patrols.Create(body.transform, picture.Parts, ClanLands());
             GuMaster.Killed += OnMasterKilled;
             GuMaster.Spoke += OnMasterSpoke;
+            // The wolf tide: on its nights at the village, or called on the proving ground.
+            tide = WolfTide.Make(wolves, body.transform);
+            tide.WaveCame += OnTideWave;
+            tide.Ended += OnTideEnded;
+            tideDay = restored.world?.tide_day ?? -1;
+            tideToldDay = restored.world?.tide_told ?? -1;
+            BringPets(restored.world?.pets);
 
             if (Sandbox)
             {
@@ -1139,7 +1168,7 @@ namespace GuWorld
             body.PlaceAt(Location.spawn);
             body.Facing = Location.spawnYaw;
             view.Yaw = Location.spawnYaw;
-            health.Set(Health.Max);
+            health.Set(health.Max);
         }
 
         /// <summary>A name after a "·" or a word: its first letter small, the proper names in it as they are ("деревня Гу Юэ").</summary>
@@ -1246,6 +1275,7 @@ namespace GuWorld
             HeroView.TeenBodies = picture.Parts.teenMale != null && picture.Parts.teenFemale != null;
             picture.Camera = view;
             health = hero.AddComponent<Health>();
+            physique = hero.AddComponent<Physique>();
             cultivator = hero.AddComponent<Cultivator>();
             cultivator.Camera = view;
             hero.SetActive(true);
@@ -1386,6 +1416,11 @@ namespace GuWorld
                 Learnt("fusion");
             }
 
+            if (page == Menus.Page.Status)
+            {
+                Learnt("status");
+            }
+
             if (mode != Mode.Paused)
             {
                 Enter(Mode.Paused);
@@ -1450,7 +1485,8 @@ namespace GuWorld
             player.SpawnYaw = start.yaw;
             player.Respawn();
             cultivator.Load(null, clock.Minutes);
-            health.Set(Health.Max);
+            physique.Renew();
+            health.Set(health.Max);
             quests.Load(null);
 
             foreach (var bed in HerbBed.All)
@@ -1458,6 +1494,17 @@ namespace GuWorld
                 bed.ReadyAt = 0;
             }
 
+            foreach (var wild in WildGu.All)
+            {
+                wild.ReadyAt = 0;
+            }
+
+            tide?.Stop();
+            tideDay = -1;
+            tideToldDay = -1;
+            trade.Load(null);
+            // The beasts (tamed ones too) and the Gu Masters gone: the dens and the posts call theirs up again when the hero comes near.
+            ClearWolves();
             creatorAngle = 0;
 
             if (sameHero)
@@ -1687,7 +1734,6 @@ namespace GuWorld
             }
         }
 
-        /// <summary>Fainted: the world goes dark, and the hero wakes in the village some hours later, weak.</summary>
         /// <summary>Dead: the world goes dark, and the path begins again from the first morning, the same hero.</summary>
         void OnFainted()
         {
@@ -1802,7 +1848,7 @@ namespace GuWorld
             // A thing to deliver to this one (a task's): handed over.
             var task = quests.Current;
 
-            if (task != null && !quests.Ready && task.Event.StartsWith("deliver:") && task.Event.EndsWith("@" + name))
+            if (task?.Event != null && !quests.Ready && task.Event.StartsWith("deliver:") && task.Event.EndsWith("@" + name))
             {
                 var item = task.Event.Substring(8, task.Event.IndexOf('@') - 8);
 
@@ -1991,6 +2037,8 @@ namespace GuWorld
                         case "body": OpenPage(Menus.Page.Body); break;
                         case "sandbox": OpenPage(Menus.Page.Sandbox); break;
                         case "fusion": OpenPage(Menus.Page.Fusion); break;
+                        case "status": OpenPage(Menus.Page.Status); break;
+                        case "admin": OpenPage(Menus.Page.Admin); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
                         case "hua": OpenShop(Trade.Shops[1]); break;
                     }
@@ -2277,6 +2325,12 @@ namespace GuWorld
             }
 
             HerbBed.Now = clock.Minutes;
+            WildGu.Now = clock.Minutes;
+
+            if (mode == Mode.Playing)
+            {
+                TideNights();
+            }
 
             if (mode == Mode.Playing && (nearPainting != null || Time.frameCount % 30 == 0))
             {
@@ -2351,6 +2405,8 @@ namespace GuWorld
                 else if (keyboard.mKey.wasPressedThisFrame) OpenPage(Menus.Page.Map);
                 else if (keyboard.bKey.wasPressedThisFrame) OpenPage(Menus.Page.Body);
                 else if (keyboard.uKey.wasPressedThisFrame) OpenPage(Menus.Page.Fusion);
+                else if (keyboard.oKey.wasPressedThisFrame) OpenPage(Menus.Page.Status);
+                else if (keyboard.f10Key.wasPressedThisFrame) OpenPage(Menus.Page.Admin);
                 else if (Sandbox && keyboard.pKey.wasPressedThisFrame) OpenPage(Menus.Page.Sandbox);
             }
             else if (mode == Mode.Paused && keyboard != null && !wasPlaying && IsHeroPage(menus.Current))
@@ -2358,7 +2414,8 @@ namespace GuWorld
                 // On the hero's pages the same keys go between them, and the page's own key closes it.
                 var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag :
                     keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : keyboard.bKey.wasPressedThisFrame ? Menus.Page.Body :
-                    keyboard.uKey.wasPressedThisFrame ? Menus.Page.Fusion :
+                    keyboard.uKey.wasPressedThisFrame ? Menus.Page.Fusion : keyboard.oKey.wasPressedThisFrame ? Menus.Page.Status :
+                    keyboard.f10Key.wasPressedThisFrame ? Menus.Page.Admin :
                     Sandbox && keyboard.pKey.wasPressedThisFrame ? Menus.Page.Sandbox : Menus.Page.None;
 
                 if (Sandbox && (keyboard.tabKey.wasPressedThisFrame || keyboard.kKey.wasPressedThisFrame || keyboard.iKey.wasPressedThisFrame))
@@ -2373,12 +2430,13 @@ namespace GuWorld
                 }
             }
 
-            if (debug && keyboard != null && !keyboard.f3Key.isPressed && keyboard.gKey.wasPressedThisFrame)
+            // The debug panel's cheats only with the admin mode on.
+            if (debug && Admin && keyboard != null && !keyboard.f3Key.isPressed && keyboard.gKey.wasPressedThisFrame)
             {
                 cultivator.NextGrade();
             }
 
-            if (debug && keyboard != null && keyboard.yKey.wasPressedThisFrame)
+            if (debug && Admin && keyboard != null && keyboard.yKey.wasPressedThisFrame)
             {
                 cultivator.Bag.Add(ItemBook.Stone, 50, clock.Minutes);
                 menus.Notify("Отладка: +50 первобытных камней");
@@ -2403,8 +2461,9 @@ namespace GuWorld
             }
 
             // Gu on the body: running faster, jumping higher — and held fast inside a ward.
-            player.SpeedScale = cultivator.Warded ? 0 : (cultivator.Absorbing ? 0.45f : 1) * cultivator.SpeedBoost * (health.Shocked ? 0.45f : 1);
-            player.NoSprint = cultivator.Absorbing;
+            player.SpeedScale = cultivator.Warded ? 0 : (cultivator.Absorbing ? 0.45f : 1) * cultivator.SpeedBoost * (health.Shocked ? 0.45f : 1) * physique.SpeedFactor;
+            // A spent body cannot sprint until a quarter of its stamina is back.
+            player.NoSprint = cultivator.Absorbing || physique.Spent;
             body.JumpScale = cultivator.Warded ? 0.1f : cultivator.JumpBoost;
 
             if (mode == Mode.Playing || mode == Mode.Talking || mode == Mode.Chat)
@@ -2420,6 +2479,7 @@ namespace GuWorld
                     Learnt("meditate");
                 }
                 cultivator.Step(Time.deltaTime);
+                Exert(Time.deltaTime, keyboard);
 
                 if (Sandbox)
                 {
@@ -2430,7 +2490,7 @@ namespace GuWorld
 
                 if (sinceSave >= AutosaveEvery)
                 {
-                    Save();
+                    Save(true);
                 }
             }
 
@@ -2473,7 +2533,7 @@ namespace GuWorld
             }
 
             var click = mouse != null && mouse.leftButton.wasPressedThisFrame;
-            melee.Strength = (1 + 0.6f * (cultivator.Aperture.Rank - 1)) * cultivator.FistPower;
+            melee.Strength = (1 + 0.6f * (cultivator.Aperture.Rank - 1)) * cultivator.FistPower * physique.StrengthFactor;
             // A blow turns to what lies the way the camera looks.
             melee.AimForward = view.transform.forward;
 
@@ -2487,8 +2547,14 @@ namespace GuWorld
                 var way = forward * ((keyboard.wKey.isPressed ? 1 : 0) - (keyboard.sKey.isPressed ? 1 : 0)) +
                           right * ((keyboard.dKey.isPressed ? 1 : 0) - (keyboard.aKey.isPressed ? 1 : 0));
 
-                if (dodge.Roll(way))
+                if (physique.Spent || physique.Stamina < RollCost)
                 {
+                    menus.Notify("Нет сил на перекат — переведите дух");
+                }
+                else if (dodge.Roll(way))
+                {
+                    physique.Spend(RollCost);
+                    physique.Train(Trait.Agility, 2);
                     melee.Stop();
                     StopAiming();
                     Learnt("dodge");
@@ -2527,7 +2593,7 @@ namespace GuWorld
                     {
                         if (click)
                         {
-                            melee.Press();
+                            Punch();
                         }
 
                         if (keyboard.qKey.wasPressedThisFrame && !keyboard.f3Key.isPressed)
@@ -2656,7 +2722,7 @@ namespace GuWorld
 
                 if (click)
                 {
-                    melee.Press();
+                    Punch();
                 }
 
                 if (keyboard.qKey.wasPressedThisFrame && !keyboard.f3Key.isPressed) Special(Blow.Heavy, "Мощный удар");
@@ -2708,12 +2774,109 @@ namespace GuWorld
             cultivator.UseGu(kind.Id);
         }
 
-        /// <summary>A special blow (Q, R) thrown — or why not, when it still rests.</summary>
+        /// <summary>A blow of the chain (the left button): a little stamina each; a spent body cannot throw one.</summary>
+        void Punch()
+        {
+            if (physique.Spent)
+            {
+                menus.Notify("Нет сил бить — переведите дух");
+
+                return;
+            }
+
+            physique.Drain(3);
+            melee.Press();
+        }
+
+        /// <summary>A special blow (Q, R) thrown — or why not: it still rests, or the body has not the stamina for it.</summary>
         void Special(Blow blow, string name)
         {
-            if (!melee.Special(blow) && melee.RestLeft(blow) > 0)
+            if (melee.RestLeft(blow) <= 0 && (physique.Spent || physique.Stamina < SpecialCost))
+            {
+                menus.Notify($"{name}: нет сил — переведите дух");
+
+                return;
+            }
+
+            if (melee.Special(blow))
+            {
+                physique.Spend(SpecialCost);
+            }
+            else if (melee.RestLeft(blow) > 0)
             {
                 menus.Notify($"{name} — ещё {melee.RestLeft(blow):0.0} с");
+            }
+        }
+
+        /// <summary>What a roll and a special blow take of the stamina.</summary>
+        const float RollCost = 18;
+        const float SpecialCost = 12;
+
+        /// <summary>
+        /// The body's effort this moment, and its training: a sprint and a climb drain stamina (and train agility and
+        /// strength), a heavy bag carried trains strength, meditation trains spirit. What the traits give is set on the
+        /// hero's parts each moment: the climb's pace, the bag's limit, the roll's rest, meditation, the breakthrough, the Gu's tiring.
+        /// </summary>
+        void Exert(float dt, Keyboard keyboard)
+        {
+            physique.Step(dt);
+            var held = mode == Mode.Playing && keyboard != null && screenshot == null;
+            var sprinting = held && PlayerController.Sprinting(keyboard) && !player.NoSprint && body.Free && body.Grounded && body.HorizontalSpeed > 5.5f;
+
+            if (sprinting)
+            {
+                physique.Drain(9 * dt);
+                physique.Train(Trait.Agility, 0.35f * dt);
+            }
+
+            var climbing = held && (body.OnWall || body.Tree != null) &&
+                           (keyboard.wKey.isPressed || keyboard.sKey.isPressed || keyboard.aKey.isPressed || keyboard.dKey.isPressed);
+
+            if (climbing)
+            {
+                physique.Drain(6 * dt);
+                physique.Train(Trait.Strength, 0.35f * dt);
+            }
+
+            if (body.HorizontalSpeed > 0.5f && cultivator.Bag.Weight > cultivator.Bag.Limit * 0.7f)
+            {
+                physique.Train(Trait.Strength, 0.12f * dt);
+            }
+
+            if (cultivator.Meditating)
+            {
+                physique.Train(Trait.Spirit, 0.5f * dt);
+            }
+
+            body.ClimbScale = (1 + 0.01f * (physique.Level(Trait.Strength) - Physique.StartLevel)) * (physique.Spent ? 0.45f : 1);
+            cultivator.Bag.Extra = physique.BagBonus;
+            cultivator.MeditationScale = physique.MeditationFactor;
+            cultivator.BreakBonus = physique.BreakBonus;
+            cultivator.TireScale = physique.TireFactor;
+            dodge.RestScale = physique.RollRestFactor;
+        }
+
+        /// <summary>A trait of the body rose: told the way a "system" tells it.</summary>
+        void OnTraitRaised(Trait trait, int level)
+        {
+            menus.Notify($"[Система] {Physique.Name(trait)} повышена: {level}");
+
+            if (level % 5 == 0)
+            {
+                menus.Banner($"{Physique.Name(trait)}: {level}", physique.Gives(trait));
+            }
+        }
+
+        /// <summary>The Gu driven train the spirit; a try at the next rank trains it the most.</summary>
+        void OnCultivated(string what, int n)
+        {
+            if (what == "moonblade" || what.StartsWith("gu:"))
+            {
+                physique.Train(Trait.Spirit, 1);
+            }
+            else if (what.StartsWith("breakthrough"))
+            {
+                physique.Train(Trait.Spirit, 20);
             }
         }
 
@@ -2827,7 +2990,7 @@ namespace GuWorld
         {
             var task = quests.Current;
 
-            if (task == null || quests.Ready || !task.Event.StartsWith("visit:") || !Places.TryGetValue(task.Event.Substring(6), out var place))
+            if (task?.Event == null || quests.Ready || !task.Event.StartsWith("visit:") || !Places.TryGetValue(task.Event.Substring(6), out var place))
             {
                 return;
             }
@@ -2870,7 +3033,7 @@ namespace GuWorld
                 if (keyboard.qKey.wasPressedThisFrame)
                 {
                     f3Combo = true;
-                    menus.Notify("F3 — отладка · F3+B — хитбоксы · F3+G — границы участков · F7 — режим хитбоксов · F1 — скрыть интерфейс · F2 — снимок экрана · F5 — вид · T — чат · / — команда");
+                    menus.Notify("F3 — отладка · F3+B — хитбоксы · F3+G — границы участков · F7 — режим хитбоксов · F1 — скрыть интерфейс · F2 — снимок экрана · F5 — вид · F10 — админ-панель · O — статус · T — чат · / — команда");
                 }
             }
 
@@ -2949,7 +3112,7 @@ namespace GuWorld
                 }
 
                 // The hero's own village's squares, gates, stalls…
-                foreach (var layout in FindObjectsByType<VillageLayout>(FindObjectsSortMode.None))
+                foreach (var layout in FindObjectsByType<VillageLayout>())
                 {
                     if (layout.Settlement != "gu_yue")
                     {
@@ -3024,7 +3187,7 @@ namespace GuWorld
             }
         }
 
-        public void Kill() => health.Strike(Health.Max * 10);
+        public void Kill() => health.Strike(health.Max * 10);
 
         public int SpawnWolves(int count) => wolves != null ? wolves.CallNear(count) : 0;
 
@@ -3110,6 +3273,84 @@ namespace GuWorld
             wolves != null ? wolves.CallNear(kind.Tier > 0 ? WolfPacks.PackOf(kind, 1) : WolfPacks.PackOf(kind, Mathf.Max(1, count)), view.transform.forward) : 0;
 
         Patrols patrols;
+        WolfTide tide;
+        /// <summary>The day whose night's tide has come already (each seventh day's), and the day it was foretold.</summary>
+        int tideDay = -1;
+        int tideToldDay = -1;
+
+        /// <summary>Every seventh day the elders foretell a wolf tide; at nightfall it comes, if the hero is at the village.</summary>
+        void TideNights()
+        {
+            if (Sandbox || Location.id != QingMao.Id || tide == null || tide.Active || clock.Day < 7 || clock.Day % 7 != 0)
+            {
+                return;
+            }
+
+            var hour = clock.MinuteOfDay / 60;
+
+            if (hour >= 8 && hour < 21 && tideToldDay != clock.Day)
+            {
+                tideToldDay = clock.Day;
+                menus.Banner("Старейшины предупреждают", "Этой ночью — волчий прилив. Будьте у деревни к девяти вечера");
+            }
+
+            var village = QingMao.Find("gu_yue");
+
+            if (hour >= 21 && tideDay != clock.Day && Vector2.Distance(new Vector2(body.transform.position.x, body.transform.position.z), village.Centre) < village.Radius + 500)
+            {
+                tideDay = clock.Day;
+                tide.Begin();
+            }
+        }
+
+        public void StartTide(bool great) => tide?.Begin(great);
+
+        /// <summary>The tide ended at once, its wolves left where they are (the checks).</summary>
+        public void StopTide() => tide?.Stop();
+
+        public (string title, string goal, string where, string progress)? Event =>
+            tide != null && tide.Active
+                ? (tide.Great ? "Великий волчий прилив" : "Волчий прилив", $"Волна {tide.Wave} из {tide.Waves} — отбейтесь", $"волки идут {FromSide(tide.From)}", $"{tide.Left}")
+                : ((string, string, string, string)?)null;
+
+        /// <summary>Which side something comes from, in words ("с севера").</summary>
+        static string FromSide(Vector3 from)
+        {
+            var angle = Mathf.Atan2(from.x, from.z) * Mathf.Rad2Deg;
+            var sector = Mathf.RoundToInt(((angle % 360) + 360) % 360 / 45) % 8;
+
+            return sector switch
+            {
+                0 => "с севера",
+                1 => "с северо-востока",
+                2 => "с востока",
+                3 => "с юго-востока",
+                4 => "с юга",
+                5 => "с юго-запада",
+                6 => "с запада",
+                _ => "с северо-запада",
+            };
+        }
+
+        void OnTideWave(int wave)
+        {
+            menus.Banner(wave == 1 ? (tide.Great ? "Великий волчий прилив!" : "Волчий прилив!") : $"Волна {wave} из {tide.Waves}", $"Волки идут {FromSide(tide.From)}");
+        }
+
+        void OnTideEnded(bool held)
+        {
+            if (!held)
+            {
+                menus.Banner("Прилив схлынул", health.Down ? "Волки отступили, пока вы лежали без сил" : "Вы ушли — волки отступили от деревни без вас");
+
+                return;
+            }
+
+            var stones = tide.Great ? 400 : 120;
+            var kept = cultivator.Bag.Add(ItemBook.Stone, stones, clock.Minutes);
+            menus.Banner("Волчий прилив отбит", $"Клан благодарит: первобытных камней — {kept}");
+            quests.Count("tide");
+        }
 
         /// <summary>The Bai's and the Xiong's villages, whose Gu Masters keep posts round them (none on the proving ground).</summary>
         IEnumerable<(Vector3 village, float radius, string clan)> ClanLands()
@@ -3277,6 +3518,11 @@ namespace GuWorld
             {
                 HitStop(heavy ? 0.09f : 0.05f);
             }
+
+            if (onBody)
+            {
+                physique.Train(Trait.Strength, heavy ? 5 : 3);
+            }
         }
 
         Dodge dodge;
@@ -3287,6 +3533,7 @@ namespace GuWorld
             GuGlow.Flash(point, 0.5f, new Color(1f, 0.95f, 0.75f), 0.22f);
             DamageNumbers.Word(point + Vector3.up * 0.3f, "парирование", DamageNumbers.Vital);
             Learnt("parry");
+            physique.Train(Trait.Agility, 6);
             view.Shake(0.18f);
 
             if (mode == Mode.Playing)
@@ -3354,7 +3601,7 @@ namespace GuWorld
         }
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body || page == Menus.Page.Fusion ||
-                                                   page == Menus.Page.Sandbox;
+                                                   page == Menus.Page.Sandbox || page == Menus.Page.Status || page == Menus.Page.Admin;
 
         /// <summary>
         /// What the hero can do where they stand: talk to the one before them (E), or gather
@@ -3436,6 +3683,58 @@ namespace GuWorld
                 return;
             }
 
+            // A wild Gu within reach: E held to catch it.
+            WildGu wild = null;
+
+            foreach (var candidate in WildGu.All)
+            {
+                if (candidate.Ready && Vector3.Distance(candidate.Where, at + Vector3.up) < 2.6f &&
+                    (wild == null || Vector3.Distance(candidate.Where, at) < Vector3.Distance(wild.Where, at)))
+                {
+                    wild = candidate;
+                }
+            }
+
+            if (wild != null)
+            {
+                gathering = null;
+
+                if (wild != catching || keyboard == null || !keyboard.eKey.isPressed)
+                {
+                    catching = wild;
+                    catchHeld = 0;
+                }
+
+                if (keyboard != null && keyboard.eKey.isPressed)
+                {
+                    catchHeld += Time.deltaTime;
+                }
+
+                var chance = wild.ChanceFor(cultivator.Aperture.Rank);
+                var price = wild.CostFor(cultivator.Aperture);
+
+                if (price > cultivator.Aperture.Cap && !cultivator.EndlessEssence)
+                {
+                    catchHeld = 0;
+                    menus.SetPrompt($"{wild.Kind.Name} (ранг {wild.Kind.Rank}) — не по силам: нужно {price:0}% эссенции разом, а ваше море держит {cultivator.Aperture.Cap:0}%. " +
+                                    $"Нужен ранг {wild.Kind.Rank - 1} или выше");
+
+                    return;
+                }
+
+                menus.SetPrompt($"[E]  Поймать дикого Гу · {wild.Kind.Name} (ранг {wild.Kind.Rank}) · {price:0.#}% эссенции · шанс {chance * 100:0}%",
+                    catchHeld > 0 ? catchHeld / WildGu.CatchTime : -1);
+
+                if (catchHeld >= WildGu.CatchTime)
+                {
+                    Catch(wild);
+                    catchHeld = 0;
+                }
+
+                return;
+            }
+
+            catching = null;
             HerbBed bed = null;
 
             foreach (var candidate in HerbBed.All)
@@ -3481,6 +3780,101 @@ namespace GuWorld
             {
                 Gather(bed);
                 gatherHeld = 0;
+            }
+        }
+
+        WildGu catching;
+        float catchHeld;
+
+        /// <summary>A try at a wild Gu: the essence spent at once; caught, it goes into the bag; either way its spot is empty a while.</summary>
+        void Catch(WildGu wild)
+        {
+            var cost = wild.CostFor(cultivator.Aperture);
+
+            if (cultivator.Bag.Room(wild.Kind.Item, clock.Minutes) < 1)
+            {
+                menus.Notify($"Сумка полна — освободите место, прежде чем ловить {wild.Kind.Name}");
+
+                return;
+            }
+
+            if (!cultivator.Pay(cost))
+            {
+                menus.Notify($"Чтобы поймать {wild.Kind.Name}, нужно {cost:0.#}% эссенции разом");
+
+                return;
+            }
+
+            Learnt("wild");
+            wild.Gone();
+
+            if (Random.value >= wild.ChanceFor(cultivator.Aperture.Rank))
+            {
+                menus.Notify($"{wild.Kind.Name} вырвался и улетел");
+
+                return;
+            }
+
+            cultivator.Bag.Add(wild.Kind.Item, 1, clock.Minutes);
+            GuGlow.Flash(wild.Where, 0.8f, wild.Kind.Colour, 0.5f);
+            menus.Notify($"Пойман дикий Гу: {wild.Kind.Name} — в сумке; очистите его в апертуру (K)");
+            quests.Count("catch:" + wild.Kind.Id);
+        }
+
+        /// <summary>The wild Gu that live where: the common ones of rank one in the woods round the village, rank two deeper in, rank three far off.</summary>
+        public static readonly string[][] WildKinds =
+        {
+            new[] { "little_light", "jade_skin", "liquor_worm", "white_boar", "black_boar", "flower_boar", "star_dart", "stealth_rock", "life_breath_grass", "earth_ear_grass", "jin_strength", "beast_skin", "ghost_fire", "bone_spear" },
+            new[] { "icicle", "water_drill", "eating_wind", "white_jade", "black_mane", "carapace", "star_arrow", "plasma", "thunder_potato", "spiral_bone_spear" },
+            new[] { "fire_pellet", "ice_crystal", "golden_shield", "frost_breath" },
+        };
+
+        /// <summary>
+        /// Wild Gu over the mountain round the hero's village (none on the proving ground): in rings ever further out —
+        /// rank one near, rank two past seven hundred metres, rank three far off — never inside a settlement.
+        /// </summary>
+        void PlaceWildGu(double[] saved)
+        {
+            if (Location.id != QingMao.Id)
+            {
+                return;
+            }
+
+            var index = 0;
+
+            var village = QingMao.Find("gu_yue");
+            var random = new System.Random(20261018);
+            (int count, float from, float to)[] rings = { (28, 260, 700), (16, 700, 1500), (6, 1500, 2600) };
+
+            for (var ring = 0; ring < rings.Length; ring++)
+            {
+                var kinds = System.Array.FindAll(WildKinds[ring], id => GuBook.Find(id) != null);
+                var placed = 0;
+
+                for (var tries = 0; placed < rings[ring].count && tries < rings[ring].count * 6; tries++)
+                {
+                    var angle = (float)random.NextDouble() * Mathf.PI * 2;
+                    var distance = Mathf.Lerp(rings[ring].from, rings[ring].to, (float)random.NextDouble());
+                    var flat = village.Centre + new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)) * distance;
+
+                    if (System.Array.Exists(QingMao.Settlements, s => Vector2.Distance(flat, s.Centre) < s.Radius + 40))
+                    {
+                        continue;
+                    }
+
+                    var at = new Vector3(flat.x, 0, flat.y);
+                    at.y = QingMao.GroundAt(at);
+                    var wild = WildGu.Make(at, GuBook.Find(kinds[random.Next(kinds.Length)]), placed + ring * 100);
+
+                    // An emptied spot stays empty as long as it was going to (but never longer than a settling takes).
+                    if (saved != null && index < saved.Length && double.IsFinite(saved[index]) && saved[index] <= clock.Minutes + WildGu.SettlesMinutes)
+                    {
+                        wild.ReadyAt = saved[index];
+                    }
+
+                    index++;
+                    placed++;
+                }
             }
         }
 
@@ -3595,14 +3989,14 @@ namespace GuWorld
 
         bool studioLit;
 
+        /// <summary>The sun's shadows before the hero's making lit it its own way.</summary>
+        LightShadows sunShadows = LightShadows.Soft;
+
         /// <summary>
         /// Making the hero: a portrait's light — the sun swung round to shine on them from before them, a little from the
         /// left and above, warm and without the houses' shadows; the moon a cool fill from the other side. Back to the
         /// sky's own the moment the making is over.
         /// </summary>
-        /// <summary>The sun's shadows before the hero's making lit it its own way.</summary>
-        LightShadows sunShadows = LightShadows.Soft;
-
         void StudioLight()
         {
             var lit = mode == Mode.Create && sky != null && sky.Sun != null && body != null;
@@ -3659,6 +4053,12 @@ namespace GuWorld
             Beast.Roared -= OnWolfRoared;
             GuMaster.Killed -= OnMasterKilled;
             GuMaster.Spoke -= OnMasterSpoke;
+
+            if (tide != null)
+            {
+                tide.WaveCame -= OnTideWave;
+                tide.Ended -= OnTideEnded;
+            }
             GameSettings.Restore();
         }
 
@@ -3679,10 +4079,12 @@ namespace GuWorld
             }
         }
 
-        void Save()
+        /// <summary>Writes the game (`quiet`: the autosave, told only if it failed).</summary>
+        void Save(bool quiet = false)
         {
-            // Nothing to save before the hero is made, or while checking by eye.
-            if (clock == null || body == null || screenshot != null || mode == Mode.Create || Sandbox)
+            // Nothing to save before the hero is made, or while checking by eye — nor as the hero falls: a death begins the
+            // path again, and a hero saved with no health left would lie there forever.
+            if (clock == null || body == null || screenshot != null || mode == Mode.Create || Sandbox || dying || health == null || health.Down)
             {
                 return;
             }
@@ -3698,10 +4100,63 @@ namespace GuWorld
                 health = health.Current,
                 quests = quests.Save(),
                 beds = HerbBed.All.ConvertAll(b => b.ReadyAt).ToArray(),
+                world = WorldState(),
+                physique = physique.Save(),
             });
 
             saved |= ok;
-            menus.Notify(ok ? "Сохранено" : "Не удалось сохранить — попробуем снова");
+
+            if (!ok || !quiet)
+            {
+                menus.Notify(ok ? "Сохранено" : "Не удалось сохранить — попробуем снова");
+            }
+        }
+
+        /// <summary>The world as the hero has changed it, for the save.</summary>
+        WorldSave WorldState()
+        {
+            var world = new WorldSave
+            {
+                wild = WildGu.All.ConvertAll(w => w.ReadyAt).ToArray(),
+                tide_day = tideDay,
+                tide_told = tideToldDay,
+            };
+
+            trade.Save(world);
+            var pets = new List<PetSave>();
+
+            foreach (var beast in Beast.All)
+            {
+                if (beast != null && beast.Tamed && !beast.Dead)
+                {
+                    pets.Add(new PetSave { kind = beast.Kind.Id, level = beast.Level, health = beast.Health });
+                }
+            }
+
+            world.pets = pets.ToArray();
+
+            return world;
+        }
+
+        /// <summary>The beasts the hero had tamed, back at their side.</summary>
+        void BringPets(PetSave[] pets)
+        {
+            if (pets == null || Sandbox)
+            {
+                return;
+            }
+
+            for (var i = 0; i < pets.Length; i++)
+            {
+                if (pets[i] == null || BeastKinds.Find(pets[i].kind) is not BeastKind kind)
+                {
+                    continue;
+                }
+
+                var angle = i * 1.3f;
+                var at = OnGround(body.transform.position + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * (2.5f + i), 30);
+                Beast.MakeTamed(at, body.transform, kind, pets[i].level, pets[i].health);
+            }
         }
 
         static string PhaseName(DayPhase phase) => phase switch

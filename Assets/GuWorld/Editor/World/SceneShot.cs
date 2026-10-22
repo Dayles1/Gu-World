@@ -37,7 +37,7 @@ namespace GuWorld.Editor
                 BuildLog.Mark("scene open");
                 var camera = Camera.main ?? new GameObject("Shot Camera").AddComponent<Camera>();
                 camera.farClipPlane = 12000;
-                var sun = Object.FindObjectsByType<Light>(FindObjectsSortMode.None).FirstOrDefault(l => l.type == LightType.Directional);
+                var sun = Object.FindObjectsByType<Light>().FirstOrDefault(l => l.type == LightType.Directional);
 
                 if (sun != null)
                 {
@@ -52,7 +52,7 @@ namespace GuWorld.Editor
 
                 if (args.Contains("-nopost"))
                 {
-                    foreach (var volume in Object.FindObjectsByType<UnityEngine.Rendering.Volume>(FindObjectsSortMode.None))
+                    foreach (var volume in Object.FindObjectsByType<UnityEngine.Rendering.Volume>())
                     {
                         volume.enabled = false;
                     }

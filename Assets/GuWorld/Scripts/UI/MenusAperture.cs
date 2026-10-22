@@ -44,26 +44,38 @@ namespace GuWorld.UI
             rankText.rectTransform.Place(Vector2.zero, Vector2.one, 98, 0, 0, 0);
             UiKit.Image("Rule", info, UiKit.Line).Size(2);
             Stat(info, "Талант", a.Extreme ? "Десять Крайностей · 100%" : $"класс {a.Grade} · {a.Talent:0}%");
-            Stat(info, "Жизнь", $"{Mathf.CeilToInt(host.Health.Current)} / {Health.Max:0}");
+            Stat(info, "Жизнь", $"{Mathf.CeilToInt(host.Health.Current)} / {host.Health.Max:0}");
             Stat(info, "Море полнится", $"за {Talents.Span(Aperture.RefillHours(a.Talent))}");
             Stat(info, "Плотность эссенции", $"×{a.Density:0.##}" + (a.Refined ? " (винный червь)" : ""));
             Stat(info, "К след. ступени", $"{a.Progress * 100:0}% · {a.StageCost:0}% эссенции");
+
+            if (a.Stage == Stage.Peak && a.Rank < 5 && a.Progress >= 1)
+            {
+                Stat(info, "Закалка апертуры", $"{a.Readiness * 100:0}%");
+                Stat(info, "Шанс прорыва", $"{gu.BreakChance * 100:0.##}%");
+            }
             Stat(info, "Сила · крепость", $"×{gu.FistPower:0.##} · ×{gu.ToughnessBoost:0.##}");
             Stat(info, "Первобытные камни", $"{gu.Stones}");
             Stat(info, "Гу в ячейках", $"{gu.Gu.Count} / {gu.Open}");
 
-            // From the peak of a rank: the breakthrough into the next, the whole sea spent on it.
-            if (a.Stage == Stage.Peak && a.Rank < 5)
+            // From the peak of a rank, the walls worn through: a try at the next, the whole sea spent on it.
+            if (a.Stage == Stage.Peak && a.Rank < 5 && a.Progress >= 1)
             {
-                UiKit.Button(a.CanBreakThrough ? UiKit.Spaced("Прорыв") : "Прорыв — нужно полное море", info, () =>
+                UiKit.Button(a.CanBreakThrough ? $"Прорыв · шанс {gu.BreakChance * 100:0.#}%" : "Прорыв — нужно полное море", info, () =>
                 {
                     host.Cultivator.BreakThrough();
                     Show(Page.Aperture);
                 }, a.CanBreakThrough ? ButtonKind.Gold : ButtonKind.Plain, 16).Size(46);
+                UiKit.Label($"Ранг {a.Rank}: {Aperture.BaseChance(a.Rank) * 100:0.#}% × талант {a.TalentFactor:0.##} + закалка {a.TemperingBonus * 100:0.#}% + " +
+                            $"опыт неудач {a.InsightBonus * 100:0.#}% + дух {gu.BreakBonus * 100:0.#}%. Провал сжигает всё море.", info, 13, UiKit.Muted).Size(54);
+            }
+            else if (a.Stage == Stage.Peak && a.Rank < 5)
+            {
+                UiKit.Label("Пик ранга: медитируйте (X), пока стенки апертуры не истончатся до 100%, — тогда можно пытаться прорваться.", info, 14, UiKit.Muted).Size(46);
             }
             else
             {
-                UiKit.Label("Ступень растёт в медитации (сидя, X) или от реликтового Гу; с пика — прорыв полным морем.", info, 14, UiKit.Muted).Size(46);
+                UiKit.Label("Ступень растёт в медитации (сидя, X) или от реликтового Гу; с пика — прорыв полным морем, и удаётся он редко.", info, 14, UiKit.Muted).Size(46);
             }
 
             // The sea and the ring, in the middle.

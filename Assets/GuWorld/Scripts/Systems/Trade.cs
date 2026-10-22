@@ -37,7 +37,7 @@ namespace GuWorld.Systems
     /// Buying and selling for primeval stones (the design's shop page). Prices
     /// are the items' own (ItemBook): what a shop asks for a lot, and half of
     /// it — rounded down — for what it buys back. Each shop's stock is full
-    /// again every game morning. The village has two: Baoshan's Gu goods by the
+    /// again every midnight. The village has two: Baoshan's Gu goods by the
     /// square (Gu, their food, a healing salve), and auntie Hua's noodles, buns
     /// and wine.
     /// </summary>
@@ -118,6 +118,42 @@ namespace GuWorld.Systems
             return Mathf.Max(0, goods.Stock - n);
         }
 
+        /// <summary>What was sold today, for the save (the day, and lots by "shop/item").</summary>
+        public void Save(State.WorldSave into)
+        {
+            into.trade_day = day;
+            into.sold_keys = new List<string>(sold.Keys).ToArray();
+            into.sold_counts = new int[into.sold_keys.Length];
+
+            for (var i = 0; i < into.sold_keys.Length; i++)
+            {
+                into.sold_counts[i] = sold[into.sold_keys[i]];
+            }
+        }
+
+        /// <summary>What was sold, from a save (null: the shops full).</summary>
+        public void Load(State.WorldSave from)
+        {
+            sold.Clear();
+            day = long.MinValue;
+
+            if (from?.sold_keys == null || from.sold_counts == null)
+            {
+                return;
+            }
+
+            day = from.trade_day;
+
+            for (var i = 0; i < from.sold_keys.Length && i < from.sold_counts.Length; i++)
+            {
+                if (from.sold_keys[i] != null && from.sold_counts[i] > 0)
+                {
+                    sold[from.sold_keys[i]] = from.sold_counts[i];
+                }
+            }
+        }
+
+        /// <summary>Each shop's stock is full again at midnight.</summary>
         void Restock(double now)
         {
             var today = (long)System.Math.Floor(now / (24 * 60));

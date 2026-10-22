@@ -138,8 +138,15 @@ namespace GuWorld.Creatures
             biteReady = Mathf.Max(biteReady, 0.8f);
         }
 
-        /// <summary>Enslaved by a Gu: it follows the hero and never bites them.</summary>
+        /// <summary>Enslaved by a Gu: it follows the hero, never bites them, and goes for what fights them.</summary>
         public bool Tamed { get; private set; }
+
+        /// <summary>A tamed beast's prey: a foe near the hero it goes for (null: none, it keeps by the hero).</summary>
+        IFoe prey;
+        float nextPreyLook;
+
+        /// <summary>How far from the hero a tamed beast goes after a foe, m.</summary>
+        const float GuardsWithin = 22;
 
         // The figure's moving parts.
         Transform figure;
@@ -155,6 +162,17 @@ namespace GuWorld.Creatures
         static Material gold;
 
         /// <summary>A wolf at a point (on the ground there), of a pack with its den, after the hero — of a kind and a level (none: a grey wolf of a level by chance).</summary>
+        /// <summary>A beast the hero had tamed, back from a save at their side (its kind, level and wounds as they were).</summary>
+        public static Beast MakeTamed(Vector3 at, Transform hero, BeastKind kind, int level, float health)
+        {
+            var beast = Make(at, at, 0, hero, UnityEngine.Random.Range(1, 1 << 20), kind, level);
+            beast.Tamed = true;
+            beast.state = Mind.Roam;
+            beast.Health = Mathf.Clamp(float.IsFinite(health) ? health : beast.MaxHealth, 1, beast.MaxHealth);
+
+            return beast;
+        }
+
         public static Beast Make(Vector3 at, Vector3 den, int pack, Transform hero, int seed, BeastKind kind = null, int level = 0)
         {
             kind ??= WolfKinds.Grey;
@@ -452,9 +470,11 @@ namespace GuWorld.Creatures
             var heroDown = heroHealth != null && heroHealth.Down;
             var fromDen = Flat(transform.position - Den).magnitude;
 
-            // Tamed, it keeps by the hero; afraid, it runs; asleep, held or blinded, it cannot go after anyone.
+            // Tamed, it keeps by the hero and goes for what fights them; afraid, it runs; asleep, held or blinded, it cannot go after anyone.
             if (Tamed)
             {
+                Guard();
+
                 return;
             }
 
@@ -682,6 +702,74 @@ namespace GuWorld.Creatures
             Roared?.Invoke(this, "бьёт лапами — молния по земле");
         }
 
+        /// <summary>
+        /// A tamed beast at the hero's side: it picks the nearest foe close by that hunts the hero (or that was just struck),
+        /// and bites it when in reach; with none, or once its prey is far from the hero, it comes back to their side.
+        /// </summary>
+        void Guard()
+        {
+            if (hero == null || Time.time < sleepUntil || Time.time < blindUntil || Time.time < fearUntil)
+            {
+                prey = null;
+
+                return;
+            }
+
+            if (prey != null && (!(prey is UnityEngine.Object alive) || alive == null || prey.Dead || prey.Tamed ||
+                                 Flat(prey.transform.position - hero.position).magnitude > GuardsWithin * 1.5f))
+            {
+                prey = null;
+            }
+
+            if (prey == null && Time.time >= nextPreyLook)
+            {
+                nextPreyLook = Time.time + 0.5f;
+                var best = float.PositiveInfinity;
+
+                foreach (var foe in Foes.Near(hero.position, GuardsWithin))
+                {
+                    if (ReferenceEquals(foe, this) || !(foe.Hunting || Time.time - foe.StruckAt < 6))
+                    {
+                        continue;
+                    }
+
+                    var distance = Flat(foe.transform.position - transform.position).magnitude;
+
+                    if (distance < best)
+                    {
+                        best = distance;
+                        prey = foe;
+                    }
+                }
+            }
+
+            if (prey != null && biteReady <= 0 && Flat(prey.transform.position - transform.position).magnitude < Reach + 0.3f * prey.Height)
+            {
+                BitePrey();
+            }
+        }
+
+        /// <summary>A tamed beast's bite on its prey (a beast, a Gu Master).</summary>
+        void BitePrey()
+        {
+            biteReady = Kind.BiteEvery * (0.85f + 0.3f * (float)random.NextDouble());
+            lunge = 0;
+
+            if (!(prey is IStrikable target))
+            {
+                return;
+            }
+
+            target.TakeStrike(new Strike
+            {
+                Power = Kind.Bite * Fury,
+                Sharpness = 0.8f,
+                Point = prey.transform.position + Vector3.up * Mathf.Min(1, prey.Height * 0.4f),
+                Direction = Flat(prey.transform.position - transform.position).normalized,
+                Source = gameObject,
+            }, null);
+        }
+
         /// <summary>Turns on the hero, and the pack with it.</summary>
         void Hunt()
         {
@@ -803,10 +891,19 @@ namespace GuWorld.Creatures
 
             if (Tamed && hero != null)
             {
-                // At the hero's side, a little behind.
-                goal = hero.position - hero.forward * 2 * Kind.Scale + hero.right * 1.5f * Kind.Scale;
-                var far = Flat(goal - transform.position).magnitude;
-                wanted = far > 12 ? FleeSpeed : far > 2 ? WanderSpeed * 2.5f : 0;
+                if (prey is UnityEngine.Object alive && alive != null)
+                {
+                    // After its prey, holding at the bite's reach.
+                    goal = prey.transform.position;
+                    wanted = Flat(goal - transform.position).magnitude > Reach * 0.8f ? ChaseSpeed : 0;
+                }
+                else
+                {
+                    // At the hero's side, a little behind.
+                    goal = hero.position - hero.forward * 2 * Kind.Scale + hero.right * 1.5f * Kind.Scale;
+                    var far = Flat(goal - transform.position).magnitude;
+                    wanted = far > 12 ? FleeSpeed : far > 2 ? WanderSpeed * 2.5f : 0;
+                }
             }
 
             // Held fast or asleep it stands (a charge cut short); slowed, it goes slower.
@@ -983,6 +1080,9 @@ namespace GuWorld.Creatures
             Push(away.normalized * 4 + Vector3.up * 1.5f);
         }
 
+        /// <summary>Set on the hero at once, its pack with it (a wolf tide's wave).</summary>
+        public void Rouse() => Hunt();
+
         /// <summary>Turned to face a point at once (a picture's beast, posed).</summary>
         public void Face(Vector3 point)
         {
@@ -1007,7 +1107,8 @@ namespace GuWorld.Creatures
         /// </summary>
         public void TakeStrike(Strike strike, BodyPart? part)
         {
-            if (state == Mind.Dead)
+            // Dead; or tamed and struck by the hero's own blow or Gu (it is on their side: it takes no harm from them).
+            if (state == Mind.Dead || (Tamed && hero != null && strike.Source == hero.gameObject))
             {
                 return;
             }

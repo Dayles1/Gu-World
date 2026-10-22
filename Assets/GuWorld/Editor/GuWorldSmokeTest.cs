@@ -219,8 +219,9 @@ namespace GuWorld.Editor
             Check(Mathf.Abs(gu.Aperture.Essence - (40 + hourly)) < 0.01f, $"an hour refills {hourly:0.0}% at a 50% talent ({gu.Aperture.Essence:0.00})");
             Check(gu.AbsorbStone() && Mathf.Approximately(gu.Aperture.Essence, 50) && gu.Stones == 9, $"a stone tops the sea up to its cap ({gu.Aperture.Essence}, {gu.Stones} left)");
 
-            // Talent: the sea's height and how soon it fills — the better, the sooner (40%: a day, 80%: half a day, 99%: within the hour, 100%: minutes).
-            Check(Mathf.Abs(Aperture.RefillHours(40) - 24) < 0.01f && Mathf.Abs(Aperture.RefillHours(80) - 12) < 0.01f &&
+            // Talent: the sea's height and how soon it fills — the better, the sooner (40%: ~20 h, 80%: ~8 h, 99%: within the hour, 100%: minutes),
+            // the base reckoning (40%: a day, 80%: half a day) cut by 10–30%.
+            Check(Mathf.Abs(Aperture.RefillHours(40) - 24 * (1 - Aperture.RefillCut(40))) < 0.01f && Mathf.Abs(Aperture.RefillHours(80) - 12 * 0.7f) < 0.01f &&
                   Aperture.RefillHours(99) < 1 && Aperture.RefillHours(100) < 0.2f && Aperture.RefillHours(30) > Aperture.RefillHours(50),
                 $"refilling: 30% {Aperture.RefillHours(30):0.0} h, 40% {Aperture.RefillHours(40):0.0} h, 80% {Aperture.RefillHours(80):0.0} h, 99% {Aperture.RefillHours(99) * 60:0} min, 100% {Aperture.RefillHours(100) * 60:0.0} min");
             Check(Talents.Paths.Length == 5 && Talents.Paths[0].Talent == 99 && Talents.Paths[4].Talent == 30 && Talents.Paths[0].Grade == Grade.A &&
@@ -302,7 +303,7 @@ namespace GuWorld.Editor
             gu.StartAbsorbing();
             health.Strike(1);
             Check(!gu.Absorbing && gu.Stones == stonesBefore - 1, "a blow breaks it off, the stone kept");
-            health.Set(Health.Max);
+            health.Set(health.Max);
             gu.Aperture.Essence = 5;
 
             // Hunger (lore: two petals a meal, twice a day): hungry after a meal's time, fed from the bag, too weak to answer if starved.
@@ -328,10 +329,10 @@ namespace GuWorld.Editor
             Check(bag.Room(ItemBook.JadeRock, 0) <= (int)((Bag.Capacity - bag.Weight) / 0.2f) + 1, "the bag's weight limits what fits (stones weigh nothing)");
 
             // A fall from ten metres hurts; health mends with time.
-            health.Set(Health.Max);
+            health.Set(health.Max);
             Teleport(body, body.transform.position + Vector3.up * 10);
             Run(body, 2, Vector2.zero);
-            Check(body.Grounded && health.Current < Health.Max - 30 && health.Current > 0, $"a ten-metre fall hurts ({health.Current:0})");
+            Check(body.Grounded && health.Current < health.Max - 20 && health.Current > 0, $"a ten-metre fall hurts ({health.Current:0})");
             var hurt = health.Current;
             health.Mend(60);
             Check(Mathf.Abs(health.Current - (hurt + Health.MendPerHour)) < 0.01f, $"an hour mends {Health.MendPerHour:0} ({health.Current:0})");
@@ -356,9 +357,9 @@ namespace GuWorld.Editor
                   System.Array.IndexOf(gu.Bar, "gu:jade_skin") >= 0, $"refining it takes 40% and puts it in the ring and on the bar ({gu.Aperture.Essence})");
             gu.Aperture.Essence = 45;
             Check(gu.UseGu(GuBook.JadeSkin.Id) && gu.SkinOn && Mathf.Approximately(gu.Aperture.Essence, 43), "the jade skin rises for 2%");
-            health.Set(Health.Max);
+            health.Set(health.Max);
             health.TakeHarm(50);
-            Check(Mathf.Approximately(health.Current, Health.Max) && Mathf.Abs(gu.Aperture.Essence - 37) < 0.01f, $"the skin stops a blow for essence ({health.Current}, {gu.Aperture.Essence:0.00})");
+            Check(Mathf.Approximately(health.Current, health.Max) && Mathf.Abs(gu.Aperture.Essence - 37) < 0.01f, $"the skin stops a blow for essence ({health.Current}, {gu.Aperture.Essence:0.00})");
             gu.Tick(gu.Now + 10);
             gu.Step(10);
             Check(Mathf.Abs(gu.Aperture.Essence - (37 - 2.5f + 10 * hourly / 60f)) < 0.01f && gu.First(GuBook.JadeSkin.Id).tired > 15,
@@ -406,13 +407,22 @@ namespace GuWorld.Editor
             gu.Aperture.Essence = 50;
             Check(gu.Activate(CellOf("gu_green_copper_relic")) && gu.Aperture.Stage == GuWorld.Cultivation.Stage.Middle, $"a green copper relic lifts rank one a small realm ({gu.Aperture.Stage})");
 
-            // From the peak, a full sea breaks through into the next rank.
+            // From the peak, the walls worn through, a full sea tries the next rank: seldom does it hold.
             gu.SetRealm(1, GuWorld.Cultivation.Stage.Peak);
-            gu.Aperture.Essence = 20;
-            Check(!gu.BreakThrough() && gu.Aperture.Rank == 1, "short of a full sea there is no breakthrough");
+            gu.Aperture.Progress = 0.5f;
             gu.Aperture.Essence = gu.Aperture.Cap;
-            Check(gu.BreakThrough() && gu.Aperture.Rank == 2 && gu.Aperture.Stage == GuWorld.Cultivation.Stage.Initial && gu.Open == 7 && gu.Aperture.Essence == 0,
-                $"a full sea breaks through to rank two, seven cells open ({gu.Aperture.Rank}, {gu.Open})");
+            Check(!gu.BreakThrough(0) && gu.Aperture.Rank == 1, "before the walls are worn through there is no breakthrough");
+            gu.Aperture.Progress = 1;
+            gu.Aperture.Essence = 20;
+            Check(!gu.BreakThrough(0) && gu.Aperture.Rank == 1, "short of a full sea there is no breakthrough");
+            gu.Aperture.Essence = gu.Aperture.Cap;
+            Check(gu.BreakChance > 0.005f && gu.BreakChance < 0.06f, $"the chance is small: {gu.BreakChance * 100:0.##}%");
+            Check(!gu.BreakThrough(0.99f) && gu.Aperture.Rank == 1 && gu.Aperture.Essence == 0 && gu.Aperture.Failures == 1,
+                "a failed try burns the sea and teaches a little");
+            gu.Aperture.Essence = gu.Aperture.Cap;
+            Check(gu.BreakThrough(0) && gu.Aperture.Rank == 2 && gu.Aperture.Stage == GuWorld.Cultivation.Stage.Initial && gu.Open == 7 && gu.Aperture.Essence == 0 &&
+                  gu.Aperture.Failures == 0,
+                $"a try that holds: rank two, seven cells open ({gu.Aperture.Rank}, {gu.Open})");
             gu.SetRealm(1, GuWorld.Cultivation.Stage.Initial);
             gu.Aperture.Essence = gu.Aperture.Cap;
 
@@ -426,6 +436,15 @@ namespace GuWorld.Editor
             Check(thrown && gu.First(spear.Id).tired >= 100 && Object.FindAnyObjectByType<GuBolt>() != null,
                 $"used tired, the spear flies and is spent ({gu.First(spear.Id)?.tired:0})");
 
+            // Wild Gu live over the mountain: the common ones near, easy to catch for a master of their rank; a rank above, harder.
+            var wildOne = World.WildGu.Make(body.transform.position + Vector3.forward * 3, GuBook.Find(GuWorldGame.WildKinds[0][0]), 1);
+            var wildThree = World.WildGu.Make(body.transform.position + Vector3.forward * 5, GuBook.Find(GuWorldGame.WildKinds[2][0]), 2);
+            Check(System.Array.TrueForAll(GuWorldGame.WildKinds, ids => System.Array.TrueForAll(ids, id => GuBook.Find(id) != null)) &&
+                  wildOne.ChanceFor(1) > 0.8f && wildThree.ChanceFor(1) < 0.5f && wildThree.CostFor(gu.Aperture) > wildOne.CostFor(gu.Aperture),
+                $"every wild Gu is in the book; a rank-three one is hard to catch at rank one ({wildThree.ChanceFor(1):0.00})");
+            Object.Destroy(wildOne.gameObject);
+            Object.Destroy(wildThree.gameObject);
+
             // A snake's venom keeps working in the blood.
             health.Poison(2, 10);
             Check(health.Poisoned, "a snake's venom works in the blood");
@@ -434,10 +453,10 @@ namespace GuWorld.Editor
 
             // A roll: nothing touches the hero at its start. A guard raised just in time: the blow is parried whole.
             var roll = gu.GetComponent<Combat.Dodge>();
-            health.Set(Health.Max);
+            health.Set(health.Max);
             var rolled = roll.Roll(body.transform.forward);
             health.TakeStrike(new Combat.Strike { Power = 200, Sharpness = 1, Point = body.transform.position + Vector3.up, Direction = -body.transform.forward }, Combat.BodyPart.Chest);
-            Check(rolled && roll.Untouched && Mathf.Approximately(health.Current, Health.Max), $"a roll lets a blow pass through ({rolled}, {health.Current:0})");
+            Check(rolled && roll.Untouched && Mathf.Approximately(health.Current, health.Max), $"a roll lets a blow pass through ({rolled}, {health.Current:0})");
             var fists = gu.GetComponent<Combat.Melee>();
             fists.Guarding = false;
             fists.Guarding = true;
@@ -485,7 +504,14 @@ namespace GuWorld.Editor
 
             Check(game.Map != null && game.Map.Texture != null, "the location has a map");
 
-            // The chat's commands: the hour, a thing given, a jump across the ground; what is suggested as one types.
+            // The chat's cheats wait for the admin mode; with it on: the hour, a thing given, a jump across the ground; what is
+            // suggested as one types. (The player's own setting is given back at the end.)
+            adminWas = GuWorld.UI.GameSettings.AdminMode;
+            GuWorld.UI.GameSettings.AdminMode = false;
+            var refused = game.Commands.Run("/give primeval_stone 5");
+            Check(refused.StartsWith("!") && game.Commands.Run("/where") != null && !game.Commands.Run("/where").StartsWith("!"),
+                $"without the admin mode a cheat is refused, a look is not ({refused})");
+            GuWorld.UI.GameSettings.AdminMode = true;
             var said = game.Commands.Run("/time set 22");
             var hour = game.Clock.MinuteOfDay / 60;
             Check(hour > 21.9 && hour < 22.1, $"/time set 22 sets the hour ({hour:0.00}: {said})");
@@ -557,6 +583,15 @@ namespace GuWorld.Editor
 
             game.ClearWolves();
 
+            // The wolf tide: its first wave comes at once, and the task's card shows it.
+            game.StartTide(false);
+            var tideCard = game.Event;
+            Check(tideCard.HasValue && tideCard.Value.title == "Волчий прилив" && Creatures.Beast.All.FindAll(b => !b.Dead).Count >= 6,
+                $"a wolf tide's first wave comes ({tideCard?.goal}, {tideCard?.progress})");
+            game.StopTide();
+            game.ClearWolves();
+            Check(!game.Event.HasValue, "the tide stopped, the card is the task's again");
+
             // Gu Masters of the other clans: their Gu are in the book; called up, they fight on sight; a moonblade wounds one,
             // a blow far stronger kills them, and the stones in their pouch are the hero's.
             Check(Creatures.MasterKinds.All.Length == 8 && Creatures.MasterKinds.Of("xiong", 3).Tier > 0 &&
@@ -580,6 +615,70 @@ namespace GuWorld.Editor
 
             game.ClearWolves();
             Check(Creatures.Foes.Living() == 0, "the proving ground's page sends every foe away");
+
+            // The sea refills sooner: a tenth for the poorest talent, three tenths for the talented.
+            Check(Mathf.Abs(Aperture.RefillCut(30) - 0.1f) < 0.001f && Mathf.Abs(Aperture.RefillCut(88) - 0.3f) < 0.001f &&
+                  Mathf.Abs(Aperture.RefillHours(40) - 24 * (1 - Aperture.RefillCut(40))) < 0.01f,
+                $"the sea refills 10–30% sooner (88%: {Aperture.RefillHours(88):0.0} h, 30%: {Aperture.RefillHours(30):0.0} h)");
+
+            // A softer landing: a ten-metre fall hurts about a third of the health, a four-metre one not at all.
+            Check(Health.SafeLanding >= 15 && (Mathf.Sqrt(2 * 25 * 10) - Health.SafeLanding) * Health.HarmPerSpeed < 35,
+                "a fall hurts less (10 m ≈ 30)");
+
+            // A tamed beast is the hero's: their own blows pass it by, and it bites a foe that hunts them.
+            game.SpawnPack(Creatures.WolfKinds.Grey, 2);
+            var tamePack = Creatures.Beast.All.FindAll(b => !b.Dead);
+
+            if (tamePack.Count >= 2)
+            {
+                var pet = tamePack[0];
+                var foe = tamePack[1];
+                pet.Afflict(Creatures.Affliction.Tame, 1, 1);
+                var petHealth = pet.Health;
+                pet.TakeStrike(new Combat.Strike { Power = 500, Sharpness = 1, Direction = Vector3.forward, Point = pet.transform.position, Source = body.gameObject }, null);
+                Check(pet.Tamed && pet.Health >= petHealth, "the hero's own blow passes their tamed beast by");
+                Check(!System.Linq.Enumerable.Contains(Creatures.Foes.Near(pet.transform.position, 5), pet) &&
+                      System.Linq.Enumerable.Contains(Creatures.Foes.Near(foe.transform.position, 5), foe),
+                    "a tamed beast is no longer counted a foe, its packmate still is");
+            }
+
+            game.ClearWolves();
+
+            // The body trains by doing: a trait rises past ten, and gives what it says; stamina is spent and comes back.
+            var physique = Object.FindAnyObjectByType<Physique>();
+            physique.Renew();
+            var healthBefore = health.Max;
+            physique.Train(Trait.Vitality, Physique.Need(10) + Physique.Need(11) + 1);
+            physique.Train(Trait.Strength, Physique.Need(10) + 1);
+            Check(physique.Level(Trait.Vitality) == 12 && health.Max > healthBefore && physique.Level(Trait.Strength) == 11,
+                $"training raises a trait, vitality the health ({physique.Level(Trait.Vitality)}, {healthBefore:0} → {health.Max:0})");
+            Check(physique.Spend(30) && physique.Stamina < physique.MaxStamina - 29 && !physique.Spend(physique.MaxStamina * 2),
+                $"stamina is spent, and an effort past it is refused ({physique.Stamina:0} / {physique.MaxStamina:0})");
+            physique.Drain(1000);
+            Check(physique.Spent, "drained to nothing, the body is spent");
+
+            for (var i = 0; i < 60; i++)
+            {
+                physique.Step(0.1f);
+            }
+
+            Check(!physique.Spent && physique.Stamina > physique.MaxStamina * 0.25f, $"rested, the stamina comes back ({physique.Stamina:0})");
+            physique.Renew();
+
+            // A rank lost (the Do-or-Die Gu, set by hand) never loses a Gu: those in closed cells find room, or go to the bag.
+            gu.SetRealm(3, GuWorld.Cultivation.Stage.Initial);
+
+            foreach (var id in new[] { "jade_skin", "bone_spear", "icicle", "star_dart", "eating_wind", "carapace", "white_jade" })
+            {
+                gu.Grant(GuBook.Find(id), -1, true);
+            }
+
+            int GuHeld() => gu.Gu.Count + System.Linq.Enumerable.Sum(GuBook.All, k => gu.Bag.Count(k.Item));
+            var heldBefore = GuHeld();
+            gu.SetRealm(1, GuWorld.Cultivation.Stage.Initial);
+            var after = GuHeld();
+            Check(gu.Gu.TrueForAll(g => g.slot < Cultivator.OpenSlots(1)) && after == heldBefore,
+                $"a rank lost keeps every Gu: in the open cells or in the bag ({heldBefore} → {after}, {gu.Gu.Count} in the ring)");
 
             // The weather in a fight: rain dampens fire and feeds ice; the night feeds the moon.
             var (rainWas, nightWas) = (Battle.Rain, Battle.Night);
@@ -784,11 +883,20 @@ namespace GuWorld.Editor
 
         static string Backup => SaveGame.FilePath + ".smoke-backup";
 
+        /// <summary>The player's own admin mode, given back at the end (null: not touched).</summary>
+        static bool? adminWas;
+
         static void Finish(string problem)
         {
             if (EditorApplication.isPlaying)
             {
                 EditorApplication.ExitPlaymode();
+            }
+
+            if (adminWas.HasValue)
+            {
+                GuWorld.UI.GameSettings.AdminMode = adminWas.Value;
+                adminWas = null;
             }
 
             SaveGame.Delete();

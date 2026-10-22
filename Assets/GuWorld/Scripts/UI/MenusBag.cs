@@ -40,13 +40,13 @@ namespace GuWorld.UI
             name.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 82, 0, -420, 0);
 
             // Five tabs (the immortal's aperture adds its own) need more room.
-            var tabs = UiKit.Rect("Tabs", top).Place(Vector2.zero, new Vector2(0, 1), 430, 12, -1100, 12);
+            var tabs = UiKit.Rect("Tabs", top).Place(Vector2.zero, new Vector2(0, 1), 430, 12, -1380, 12);
             tabs.Stack<HorizontalLayoutGroup>(8, null, TextAnchor.MiddleLeft).childForceExpandWidth = true;
 
             // The immortal's aperture has no bag or ring to look after: its own page instead.
             var pages = host.Sandbox
-                ? new System.Collections.Generic.List<(string, string, Page)> { ("Все Гу", "Tab", Page.Sandbox), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) }
-                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Слияние", "U", Page.Fusion), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
+                ? new System.Collections.Generic.List<(string, string, Page)> { ("Все Гу", "Tab", Page.Sandbox), ("Статус", "O", Page.Status), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) }
+                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Статус", "O", Page.Status), ("Слияние", "U", Page.Fusion), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
 
             foreach (var (label, key, target) in pages)
             {
@@ -143,10 +143,10 @@ namespace GuWorld.UI
             var a = gu.Aperture;
             UiKit.Caps($"Ранг {a.Rank} · {Aperture.Name(a.Stage)}", info, 14, Aperture.RankColour(a.Rank)).Size(22);
             UiKit.Image("Rule", info, UiKit.Line).Size(2);
-            Stat(info, "Жизнь", $"{Mathf.CeilToInt(host.Health.Current)} / {Health.Max:0}");
+            Stat(info, "Жизнь", $"{Mathf.CeilToInt(host.Health.Current)} / {host.Health.Max:0}");
             Stat(info, "Эссенция", $"{a.Essence:0} / {a.Cap:0}%");
             Stat(info, "Первобытные камни", $"{gu.Stones}");
-            Stat(info, "Вес", $"{bag.Weight:0.0} / {Bag.Capacity:0}");
+            Stat(info, "Вес", $"{bag.Weight:0.0} / {bag.Limit:0}");
             UiKit.Image("Rule", info, UiKit.Line).Size(2);
             UiKit.Label("Камни поглощаются клавишей V (3 с). Гу ставятся на клавиши 1–4 в апертуре (K).", info, 16, UiKit.Muted).Size(64);
             UiKit.Label("Гу в сумке лежат в сосуде и не голодают — пока вы не очистите их в апертуру.", info, 16, UiKit.Muted).Size(64);
@@ -180,7 +180,7 @@ namespace GuWorld.UI
 
             var foot = UiKit.Rect("Foot", centre).Place(new Vector2(0, 1), Vector2.one, 0, -(64 + 5 * BagCell + 4 * BagGap + 70), 0, 64 + 5 * BagCell + 4 * BagGap + 16);
             foot.Stack<HorizontalLayoutGroup>(12, null, TextAnchor.MiddleLeft).childForceExpandWidth = false;
-            UiKit.Label($"{UiKit.Spaced("Вес")}   <b>{bag.Weight:0.0} / {Bag.Capacity:0}</b>", foot, 17, UiKit.Muted).Size(54, 420, 1);
+            UiKit.Label($"{UiKit.Spaced("Вес")}   <b>{bag.Weight:0.0} / {bag.Limit:0}</b>", foot, 17, UiKit.Muted).Size(54, 420, 1);
             UiKit.Button(UiKit.Spaced("Упорядочить"), foot, () =>
             {
                 host.Cultivator.Bag.Sort();

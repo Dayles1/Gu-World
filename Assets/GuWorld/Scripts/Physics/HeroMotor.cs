@@ -88,6 +88,8 @@ namespace GuWorld.Physics
         public Vector3 Velocity;
         /// <summary>How many times higher a jump goes (a Gu's wings: more).</summary>
         public float JumpScale = 1;
+        /// <summary>How fast the hands and feet climb (a wall, a trunk): strength makes it faster, a spent body slower.</summary>
+        public float ClimbScale = 1;
         public bool Grounded { get; private set; }
         public Vector3 GroundNormal { get; private set; } = Vector3.up;
         /// <summary>Which way the body faces (radians around Y; 0 looks along +Z).</summary>
@@ -319,7 +321,7 @@ namespace GuWorld.Physics
                 }
             }
 
-            var move = along * (up > 0 ? up * WallUp : up * WallDown) + right * side * WallSide;
+            var move = (along * (up > 0 ? up * WallUp : up * WallDown) + right * side * WallSide) * Mathf.Max(0.1f, ClimbScale);
             var next = feet + move * dt;
 
             // The surface again from there, straight ahead at the hands.
@@ -534,8 +536,8 @@ namespace GuWorld.Physics
             }
 
             var radius = Tree.RadiusAt(TreeHeight);
-            TreeHeight = Mathf.Clamp(TreeHeight + up * 1.4f * dt, 0, Tree.ClimbHeight);
-            TreeAngle += around * 1.2f / Mathf.Max(0.5f, radius) * dt;
+            TreeHeight = Mathf.Clamp(TreeHeight + up * 1.4f * Mathf.Max(0.1f, ClimbScale) * dt, 0, Tree.ClimbHeight);
+            TreeAngle += around * 1.2f * Mathf.Max(0.1f, ClimbScale) / Mathf.Max(0.5f, radius) * dt;
             ClimbPhase += (Mathf.Abs(up) + Mathf.Abs(around) * 0.7f) * dt * 1.3f;
 
             if (TreeHeight <= 0.01f && up < 0)

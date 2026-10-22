@@ -34,6 +34,9 @@ namespace GuWorld.UI
         Text essenceLine;
         RectTransform lifeFill;
         Text lifeLine;
+        RectTransform staminaFill;
+        Image staminaBack;
+        Image staminaImage;
         Text placeLine;
         Text timeLine;
         Text stonesLine;
@@ -101,6 +104,12 @@ namespace GuWorld.UI
             lifeFill.Place(Vector2.zero, Vector2.one, 2, 2, 2, 2);
             lifeLine = UiKit.Label("", hud, 15, UiKit.Text, TextAnchor.MiddleLeft).Shadowed();
             lifeLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 512, -126, -720, 106);
+            // Stamina: a thin bar under the life bar.
+            staminaBack = UiKit.Image("Stamina", hud, UiKit.Hex(0x14110D, 0.9f));
+            staminaBack.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 192, -132, -500, 127);
+            staminaImage = UiKit.Image("Fill", staminaBack.transform, UiKit.GoldLit);
+            staminaFill = staminaImage.rectTransform;
+            staminaFill.Place(Vector2.zero, Vector2.one, 1, 1, 1, 1);
             placeLine = UiKit.Label("", hud, 16, UiKit.Text).Shadowed();
             placeLine.rectTransform.Place(new Vector2(0, 1), new Vector2(0, 1), 192, -156, -900, 134);
             timeLine = UiKit.Label("", hud, 15, UiKit.Muted).Shadowed();
@@ -126,12 +135,12 @@ namespace GuWorld.UI
             promptBar.gameObject.SetActive(false);
 
             // The hero's pages, in a column at the bottom right (clear of the bar).
-            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -160, 26, 28, -280);
+            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -160, 26, 28, -320);
             keys.Stack<VerticalLayoutGroup>(5, null, TextAnchor.LowerRight).childForceExpandHeight = false;
 
             var hints = host.Sandbox
                 ? new[] { ("Tab", "Все Гу"), ("M", "Карта"), ("T", "Чат"), ("Esc", "Меню") }
-                : new[] { ("K", "Апертура"), ("I", "Сумка"), ("U", "Слияние"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") };
+                : new[] { ("K", "Апертура"), ("I", "Сумка"), ("O", "Статус"), ("U", "Слияние"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") };
 
             foreach (var (key, name) in hints)
             {
@@ -202,7 +211,8 @@ namespace GuWorld.UI
             bar.rectTransform.Place(Vector2.zero, new Vector2(0, 1), 0, 10, -3, 10);
             var column = UiKit.Rect("Column", questCard).Fill();
             column.Stack<VerticalLayoutGroup>(3, new RectOffset(18, 16, 12, 10));
-            UiKit.Caps("Задание", column, 13).Size(20);
+            questCaps = UiKit.Caps("Задание", column, 13);
+            questCaps.Size(20);
             questTitle = UiKit.Label("", column, 19, UiKit.Text, TextAnchor.MiddleLeft, FontStyle.Bold).Shadowed();
             questTitle.Size(28);
             questGoal = UiKit.Label("", column, 15, UiKit.Muted).Shadowed();
@@ -428,8 +438,12 @@ namespace GuWorld.UI
             essenceLine.text = UiKit.Spaced("Эссенция") + $"  {a.Essence:0}%";
 
             var health = host.Health;
-            lifeFill.anchorMax = new Vector2(Mathf.Clamp01(health.Current / Health.Max), 1);
-            lifeLine.text = $"{Mathf.CeilToInt(health.Current)} / {Health.Max:0}";
+            lifeFill.anchorMax = new Vector2(Mathf.Clamp01(health.Current / health.Max), 1);
+            lifeLine.text = $"{Mathf.CeilToInt(health.Current)} / {health.Max:0}";
+            var body = host.Physique;
+            staminaFill.anchorMax = new Vector2(Mathf.Clamp01(body.Stamina / body.MaxStamina), 1);
+            // Spent: the bar goes red until a quarter is back.
+            staminaImage.color = body.Spent ? UiKit.Danger : UiKit.GoldLit;
             placeLine.text = host.PlaceName;
             timeLine.text = host.TimeLine;
             stonesLine.text = $"{gu.Stones}";
@@ -536,8 +550,26 @@ namespace GuWorld.UI
             }
         }
 
+        Text questCaps;
+
         void UpdateQuest()
         {
+            // Something going on (a wolf tide) takes the card over, on the proving ground too.
+            if (host.Event is var (title, goal, _, progress))
+            {
+                questCard.gameObject.SetActive(true);
+                questCaps.text = UiKit.Spaced("Событие");
+                questCaps.color = UiKit.Danger;
+                questTitle.text = title;
+                questGoal.text = goal;
+                questProgress.text = progress;
+
+                return;
+            }
+
+            questCaps.text = UiKit.Spaced("Задание");
+            questCaps.color = UiKit.Muted;
+
             // The immortal's aperture (the proving ground) has no tasks.
             if (host.Sandbox)
             {

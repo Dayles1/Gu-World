@@ -31,6 +31,9 @@ namespace GuWorld.Systems
         /// <summary>A pack of a kind of wolf brought near the hero (a beast king with its pack); how many came.</summary>
         int SpawnPack(GuWorld.Creatures.BeastKind kind, int count);
         int SpawnMasters(string clan, int rank, int count);
+        void StartTide(bool great);
+        /// <summary>Whether the admin mode is on: the commands that change the game (cheats) work only then.</summary>
+        bool Admin { get; }
     }
 
     /// <summary>A command of the chat: its name (and others it answers to), how it is written, what it does.</summary>
@@ -60,6 +63,12 @@ namespace GuWorld.Systems
 
         public IReadOnlyList<Command> All => all;
 
+        /// <summary>The commands that change the game (they need the admin mode); the rest only look or set the view.</summary>
+        static readonly HashSet<string> Cheats = new HashSet<string>
+        {
+            "time", "tp", "weather", "give", "heal", "essence", "rank", "talent", "gu", "kill", "wolves", "tide", "masters",
+        };
+
         public Commands(ICommandHost host)
         {
             this.host = host;
@@ -83,6 +92,12 @@ namespace GuWorld.Systems
             if (command == null)
             {
                 return $"!Нет такой команды: /{words[0]}. Список — /help";
+            }
+
+            // A cheat (anything that changes the game, not only looks at it) waits for the admin mode.
+            if (!host.Admin && (Cheats.Contains(command.Name) || (command.Name == "quest" && words.Length > 1)))
+            {
+                return $"!/{command.Name} — команда режима администратора. Включите его в админ-панели (F10)";
             }
 
             try
@@ -275,6 +290,12 @@ namespace GuWorld.Systems
 
                     if (a[0] == "add" && a.Length > 1)
                     {
+                        // Time only goes forward (back, the Gu would have eaten meals not yet given).
+                        if (!(Number(a[1]) > 0))
+                        {
+                            return "!Время идёт только вперёд: /time add <часы больше нуля>";
+                        }
+
                         clock.Skip(Number(a[1]));
 
                         return $"Прошло {Number(a[1]):0.#} ч: день {clock.Day}, {clock.Label}";
@@ -407,9 +428,9 @@ namespace GuWorld.Systems
                 Suggest = (_, i) => i == 0 ? new[] { "100" } : Enumerable.Empty<string>(),
                 Run = a =>
                 {
-                    host.Health.Heal(a.Length > 0 ? Number(a[0]) : Health.Max);
+                    host.Health.Heal(a.Length > 0 ? Number(a[0]) : host.Health.Max);
 
-                    return $"Жизнь: {host.Health.Current:0} / {Health.Max:0}";
+                    return $"Жизнь: {host.Health.Current:0} / {host.Health.Max:0}";
                 },
             });
 
@@ -585,6 +606,21 @@ namespace GuWorld.Systems
                     var came = host.SpawnPack(kind, count);
 
                     return came > 0 ? $"Пришло зверей: {came} ({kind.Name})" : "!Здесь зверям негде встать";
+                },
+            });
+
+            Add(new Command
+            {
+                Name = "tide",
+                Aliases = new[] { "прилив" },
+                Usage = "/tide [great]",
+                About = "волчий прилив: волны волков с королями зверей (great — с Волком Громовой Короны)",
+                Suggest = (_, i) => i == 0 ? new[] { "great" } : Enumerable.Empty<string>(),
+                Run = a =>
+                {
+                    host.StartTide(a.Length > 0 && a[0].ToLowerInvariant() == "great");
+
+                    return "Волчий прилив начался";
                 },
             });
 
