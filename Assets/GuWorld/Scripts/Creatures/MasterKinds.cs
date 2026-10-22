@@ -118,7 +118,46 @@ namespace GuWorld.Creatures
             Robe = Robe.Green,
         };
 
-        public static readonly MasterKind[] All = { BaiYouth, BaiWater, BaiElder, XiongYouth, XiongBear, XiongElder, GuYueYouth, GuYueMoon };
+        /// <summary>
+        /// The demonic path's rogues (lore: Gu Masters who answer to no clan and take what they want): a wanderer with ghost
+        /// fire, a practised one with stronger fire and a beetle's strength, and a leader with a blood moon and a hand blade.
+        /// </summary>
+        public static readonly MasterKind DemonWanderer = new MasterKind
+        {
+            Id = "demon_wanderer", Name = "бродяга демонического пути", Clan = Clans.Demonic, Rank = 1,
+            Far = "ghost_fire", Shield = "bronze_skin",
+            Health = 140, Toughness = 95, Power = 95, Fist = 60, FarEvery = 2.6f, Keep = 8, Run = 4.6f, Dodge = 0.4f, ShieldTakes = 0.45f,
+            Robe = Robe.Grey,
+        };
+
+        public static readonly MasterKind DemonCultivator = new MasterKind
+        {
+            Id = "demon_cultivator", Name = "демонический Гу-мастер", Clan = Clans.Demonic, Rank = 2,
+            Far = "ghost_fire_2", Close = "ice_blade", Shield = "black_mane", Might = "brute_beetle",
+            Health = 280, Toughness = 150, Power = 175, Fist = 110, FarEvery = 2.2f, Keep = 7, Run = 4.9f, Dodge = 0.5f, ShieldTakes = 0.6f,
+            Robe = Robe.Dark,
+        };
+
+        public static readonly MasterKind DemonLeader = new MasterKind
+        {
+            Id = "demon_leader", Name = "главарь демонического пути", Clan = Clans.Demonic, Rank = 3, Tier = 2,
+            Far = "blood_moon", Close = "hand_blade", Shield = "steel_mane", Might = "yellow_camel_beetle",
+            Health = 650, Toughness = 240, Power = 310, Fist = 200, FarEvery = 1.9f, Keep = 8, Run = 5.2f, Dodge = 0.55f, ShieldFor = 7, ShieldTakes = 0.65f,
+            Robe = Robe.Dark,
+        };
+
+        public static readonly MasterKind[] All =
+        {
+            BaiYouth, BaiWater, BaiElder, XiongYouth, XiongBear, XiongElder, GuYueYouth, GuYueMoon, DemonWanderer, DemonCultivator, DemonLeader,
+        };
+
+        /// <summary>A demonic rogue by rank (1…3).</summary>
+        public static MasterKind Demon(int rank) => Mathf.Clamp(rank, 1, 3) switch
+        {
+            1 => DemonWanderer,
+            2 => DemonCultivator,
+            _ => DemonLeader,
+        };
 
         public static MasterKind Find(string id) => System.Array.Find(All, k => k.Id == id);
 
@@ -130,10 +169,14 @@ namespace GuWorld.Creatures
             ("xiong", _) => XiongElder,
             ("gu_yue", 1) => GuYueYouth,
             ("gu_yue", _) => GuYueMoon,
+            (Clans.Demonic, var r) => Demon(r),
             (_, 1) => BaiYouth,
             (_, 2) => BaiWater,
             _ => BaiElder,
         };
+
+        /// <summary>The surnames the demonic path's rogues go by.</summary>
+        static readonly string[] Rogues = { "Ма", "Ду", "Се", "Ло", "Гун", "Цзян", "Хэй", "Шэ" };
 
         static readonly string[] Given =
         {
@@ -147,6 +190,8 @@ namespace GuWorld.Creatures
             {
                 "xiong" => "Сюн",
                 "gu_yue" => "Гу Юэ",
+                // A rogue's own name: no clan stands behind it.
+                Clans.Demonic => Rogues[random.Next(Rogues.Length)],
                 _ => "Бай",
             };
 
@@ -158,6 +203,7 @@ namespace GuWorld.Creatures
         {
             "xiong" => "клан Сюн",
             "gu_yue" => "клан Гу Юэ",
+            Clans.Demonic => "демонический путь",
             _ => "клан Бай",
         };
     }

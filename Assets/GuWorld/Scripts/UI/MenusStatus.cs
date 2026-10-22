@@ -24,7 +24,7 @@ namespace GuWorld.UI
 
             // The window, in the middle.
             var window = UiKit.Image("Window", body, SystemDeep, UiKit.Chamfer);
-            window.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(1180, 760));
+            window.rectTransform.At(new Vector2(0.5f, 0.5f), Vector2.zero, new Vector2(1180, 820));
             UiKit.Frame(window.rectTransform, SystemBlue);
             var inside = UiKit.Rect("Inside", window.transform).Fill(28);
             inside.Stack<VerticalLayoutGroup>(10, new RectOffset(18, 18, 10, 10));
@@ -58,8 +58,21 @@ namespace GuWorld.UI
                 TraitRow(inside, p, trait);
             }
 
+            UiKit.Image("Rule", inside, new Color(SystemBlue.r, SystemBlue.g, SystemBlue.b, 0.5f)).Size(2);
+            var clans = UiKit.Rect("Clans", inside);
+            clans.Size(30);
+            clans.Stack<HorizontalLayoutGroup>(30, null, TextAnchor.MiddleCenter).childForceExpandWidth = false;
+
+            foreach (var clan in GuWorld.Creatures.Clans.Rivals)
+            {
+                var h = GuWorld.Creatures.Clans.Hostility(clan);
+                var colour = h >= GuWorld.Creatures.Clans.War ? "#C2413A" : h >= GuWorld.Creatures.Clans.OnSight ? "#E0A13A" : "#A69A86";
+                UiKit.Label($"<b>{GuWorld.Creatures.MasterKinds.ClanName(clan)}:</b> <color={colour}>{GuWorld.Creatures.Clans.Standing(clan)} · {h:0}</color>",
+                    clans, 17, UiKit.Text, TextAnchor.MiddleCenter).Size(30, 340, 0);
+            }
+
             UiKit.Label("Характеристики растут от дела: каждая следующая единица требует больше. Пустая выносливость — ни бега, ни переката, ни удара.",
-                inside, 14, UiKit.Muted, TextAnchor.MiddleCenter).Size(30);
+                inside, 14, UiKit.Muted, TextAnchor.MiddleCenter).Size(26);
         }
 
         /// <summary>A bar with its name and numbers (the status window).</summary>

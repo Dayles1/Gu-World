@@ -329,7 +329,12 @@ namespace GuWorld.Creatures
 
                         if (heroDown)
                         {
-                            Say(Kind.Clan == "xiong" ? "Лежи и не вставай, гуюэвец." : "Знай своё место.");
+                            Say(Kind.Clan switch
+                            {
+                                "xiong" => "Лежи и не вставай, гуюэвец.",
+                                Clans.Demonic => "Твои камни теперь мои.",
+                                _ => "Знай своё место.",
+                            });
                         }
                     }
 
@@ -346,6 +351,9 @@ namespace GuWorld.Creatures
                     break;
             }
         }
+
+        /// <summary>At the hero at once, with a war cry (a war party, a rogue sent).</summary>
+        public void Attack() => Fight(WarCry());
 
         void Fight(string cry)
         {
@@ -374,6 +382,12 @@ namespace GuWorld.Creatures
         {
             "xiong" => random.Next(2) == 0 ? "Сам напросился!" : "Сила медведя — посмотрим, что ты против неё!",
             "gu_yue" => "К бою!",
+            Clans.Demonic => random.Next(3) switch
+            {
+                0 => "Камни и Гу — сюда, щенок, и, может, уйдёшь живым!",
+                1 => "Клановые ученики сами приходят ко мне в руки.",
+                _ => "Здесь нет твоих старейшин. Здесь есть только я.",
+            },
             _ => random.Next(2) == 0 ? "Не понял слов — поймёшь льдом!" : "Клан Бай не прощает чужаков.",
         };
 

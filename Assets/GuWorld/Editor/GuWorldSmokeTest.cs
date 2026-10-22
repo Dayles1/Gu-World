@@ -341,10 +341,27 @@ namespace GuWorld.Editor
             var baoshan = Trade.Of("Гу Юэ Баошань");
             gu.Bag.Add(ItemBook.Stone, 200, gu.Now);
             var stones = gu.Stones;
-            var deal = game.Trade.Buy(baoshan, new System.Collections.Generic.Dictionary<string, int> { [ItemBook.JadeSkinGu] = 1, [ItemBook.Petal] = 1, [ItemBook.JadeRock] = 1 }, gu.Bag, gu.Now, out var paid);
-            Check(deal == Deal.Done && paid == 95 && gu.Stones == stones - 95 && gu.Bag.Count(ItemBook.JadeSkinGu) == 1 && gu.Bag.Count(ItemBook.JadeRock) == 1,
-                $"Baoshan sells a Jade Skin Gu, ten petals and a jade rock for 95 stones ({deal}, {paid})");
-            Check(game.Trade.Buy(baoshan, new System.Collections.Generic.Dictionary<string, int> { [ItemBook.JadeSkinGu] = 1 }, gu.Bag, gu.Now, out _) == Deal.NoStock, "his one Jade Skin Gu is sold for today");
+            // Baoshan has only some of his Gu out each day, at a price a little up or down: a day with the Jade Skin Gu out.
+            var jadeGoods = System.Array.Find(baoshan.Goods, g => g.Item == ItemBook.JadeSkinGu);
+            var shopDay = 0.0;
+
+            for (var d = 0; d < 60 && !Trade.OutToday(baoshan, jadeGoods, d * 1440.0 + 600); d++)
+            {
+                shopDay = (d + 1) * 1440.0 + 600;
+            }
+
+            var noMerit = 0;
+            var price = Trade.PriceOf(baoshan, ItemBook.JadeSkinGu, shopDay, 0) + Trade.PriceOf(baoshan, ItemBook.Petal, shopDay, 0) + Trade.PriceOf(baoshan, ItemBook.JadeRock, shopDay, 0);
+            var deal = game.Trade.Buy(baoshan, new System.Collections.Generic.Dictionary<string, int> { [ItemBook.JadeSkinGu] = 1, [ItemBook.Petal] = 1, [ItemBook.JadeRock] = 1 }, gu.Bag, shopDay, out var paid, ref noMerit);
+            Check(deal == Deal.Done && paid == price && price > 70 && price < 120 && gu.Stones == stones - price && gu.Bag.Count(ItemBook.JadeSkinGu) == 1 && gu.Bag.Count(ItemBook.JadeRock) == 1,
+                $"Baoshan sells a Jade Skin Gu, ten petals and a jade rock for the day's price ({deal}, {paid} of {price})");
+            Check(game.Trade.Buy(baoshan, new System.Collections.Generic.Dictionary<string, int> { [ItemBook.JadeSkinGu] = 1 }, gu.Bag, shopDay, out _, ref noMerit) == Deal.NoStock, "his one Jade Skin Gu is sold for today");
+            var gusOut = System.Array.FindAll(baoshan.Goods, g => ItemBook.Find(g.Item)?.Category == ItemCategory.Gu && Trade.OutToday(baoshan, g, shopDay)).Length;
+            Check(gusOut == baoshan.GuADay, $"he has {baoshan.GuADay} of his Gu out a day ({gusOut})");
+            var treasury = Trade.Shops[2];
+            var merit = 5;
+            Check(treasury.ForMerit && game.Trade.Buy(treasury, new System.Collections.Generic.Dictionary<string, int> { [treasury.Goods[0].Item] = 1 }, gu.Bag, shopDay, out _, ref merit) == Deal.NoMoney && merit == 5,
+                $"the clan's treasury sells for merit, and five is not enough ({treasury.Goods.Length} goods)");
             var cell = -1;
 
             for (var i = 0; i < Bag.Cells; i++)
@@ -594,10 +611,10 @@ namespace GuWorld.Editor
 
             // Gu Masters of the other clans: their Gu are in the book; called up, they fight on sight; a moonblade wounds one,
             // a blow far stronger kills them, and the stones in their pouch are the hero's.
-            Check(Creatures.MasterKinds.All.Length == 8 && Creatures.MasterKinds.Of("xiong", 3).Tier > 0 &&
+            Check(Creatures.MasterKinds.All.Length == 11 && Creatures.MasterKinds.Of("xiong", 3).Tier > 0 &&
                   System.Array.TrueForAll(Creatures.MasterKinds.All, k => GuBook.Find(k.Far) != null && (k.Close == null || GuBook.Find(k.Close) != null) &&
                                                                           (k.Shield == null || GuBook.Find(k.Shield) != null) && (k.Might == null || GuBook.Find(k.Might) != null)),
-                "eight kinds of Gu Masters, every Gu of theirs in the book");
+                "eleven kinds of Gu Masters (with the demonic rogues), every Gu of theirs in the book");
             var masters = game.SpawnMasters("bai", 1, 1);
             var bai = Creatures.GuMaster.All.Find(m => !m.Dead);
             Check(masters == 1 && bai != null && bai.Hostile && bai.GetComponentsInChildren<Combat.HitZone>().Length > 10 && Creatures.Foes.All.Contains(bai),
@@ -615,6 +632,39 @@ namespace GuWorld.Editor
 
             game.ClearWolves();
             Check(Creatures.Foes.Living() == 0, "the proving ground's page sends every foe away");
+
+            // Side tasks beside the academy's: taken from a villager, counted, handed in for stones and merit; the clan's missions of a day.
+            var sideQuests = new Quests();
+            var snakes = sideQuests.SidesFrom("Гу Юэ Мэйлин", 1, 1).Find(q => q.Id == "side_snakes");
+            Check(snakes != null && sideQuests.Take(snakes) && sideQuests.Sides.Count == 1, "a villager gives a side task");
+            sideQuests.Count("kill:snake", 2);
+            Check(sideQuests.IsReady(snakes) && sideQuests.HandInSide(snakes, "Гу Юэ Мэйлин") && sideQuests.Merit == snakes.RewardMerit && sideQuests.IsDone("side_snakes"),
+                $"counted and handed in, it pays merit ({sideQuests.Merit})");
+            var missions = SideQuests.Missions(5);
+            Check(missions.Length == 3 && missions[0].Id != missions[1].Id && Quests.Find(missions[2].Id)?.Title == missions[2].Title && SideQuests.Missions(5)[1].Id == missions[1].Id,
+                $"three clan missions a day, the same all day ({string.Join(", ", System.Array.ConvertAll(missions, m => m.Title))})");
+            Check(Quests.Matches("catch:*", "catch:jade_skin") && !Quests.Matches("catch:*", "kill:wolf"), "a task's event can be a pattern (any wild Gu)");
+            sideQuests.Take(missions[0]);
+            var questSave = sideQuests.Save();
+            var reloaded = new Quests();
+            reloaded.Load(questSave);
+            Check(reloaded.Sides.Count == 1 && reloaded.Sides[0].Id == missions[0].Id && reloaded.Merit == sideQuests.Merit && reloaded.IsDone("side_snakes"),
+                "side tasks, missions and merit survive a save");
+
+            // The rival clans: wary at first; killing theirs makes them attack on sight, then send war parties; the days cool it.
+            Creatures.Clans.Load(null);
+            Check(!Creatures.Clans.AttacksOnSight("bai") && Creatures.Clans.AttacksOnSight(Creatures.Clans.Demonic),
+                "at first the Bai warn before they fight; the demonic rogues never do");
+            Creatures.Clans.Anger("bai", 60);
+            Check(Creatures.Clans.AttacksOnSight("bai") && Creatures.Clans.SendsWarParties("bai") && Creatures.Clans.Standing("bai") == "война",
+                $"angered, the Bai go to war ({Creatures.Clans.Hostility("bai"):0})");
+            Creatures.Clans.Cool(24 * 60 * 40);
+            Check(Mathf.Abs(Creatures.Clans.Hostility("bai") - Creatures.Clans.Start("bai")) < 0.5f, "the days cool it back to where it began");
+            game.SpawnMasters(Creatures.Clans.Demonic, 2, 1);
+            var rogue = Creatures.GuMaster.All.Find(m => !m.Dead && m.Kind.Clan == Creatures.Clans.Demonic);
+            Check(rogue != null && rogue.Hostile && rogue.Rung.Contains("демонический"), $"a demonic rogue comes hostile ({rogue?.Title})");
+            game.ClearWolves();
+            Creatures.Clans.Load(null);
 
             // The sea refills sooner: a tenth for the poorest talent, three tenths for the talented.
             Check(Mathf.Abs(Aperture.RefillCut(30) - 0.1f) < 0.001f && Mathf.Abs(Aperture.RefillCut(88) - 0.3f) < 0.001f &&

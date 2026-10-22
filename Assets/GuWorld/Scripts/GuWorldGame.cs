@@ -350,14 +350,31 @@ namespace GuWorld
         /// </summary>
         (Vector3 at, string what)? FindQuestTarget()
         {
-            var current = quests.Current;
-
-            if (current == null)
+            if (quests.Current is QuestKind current)
             {
-                return quests.Next is QuestKind next ? Person(next.Giver) : null;
+                return TargetOf(current, quests.Ready);
             }
 
-            if (quests.Ready)
+            if (quests.Next is QuestKind next)
+            {
+                return Person(next.Giver);
+            }
+
+            foreach (var side in quests.Sides)
+            {
+                if (TargetOf(side, quests.IsReady(side)) is (Vector3, string) target)
+                {
+                    return target;
+                }
+            }
+
+            return null;
+        }
+
+        /// <summary>Where one task leads: its giver when it is done, else what it asks for.</summary>
+        (Vector3 at, string what)? TargetOf(QuestKind current, bool ready)
+        {
+            if (ready)
             {
                 return Person(current.Giver);
             }
@@ -398,7 +415,22 @@ namespace GuWorld
 
             if (task.StartsWith("kill:"))
             {
-                return wolves != null && wolves.Nearest(hero) is Vector3 wolf ? (wolf, "волки") : null;
+                return wolves != null && wolves.Nearest(hero) is Vector3 wolf ? (wolf, task == "kill:wolf" ? "волки" : "звери") : null;
+            }
+
+            if (task.StartsWith("catch:"))
+            {
+                WildGu nearest = null;
+
+                foreach (var wild in WildGu.All)
+                {
+                    if (wild.Ready && (nearest == null || (wild.Where - hero).sqrMagnitude < (nearest.Where - hero).sqrMagnitude))
+                    {
+                        nearest = wild;
+                    }
+                }
+
+                return nearest != null ? (nearest.Where, "дикий Гу") : null;
             }
 
             if (task.StartsWith("visit:"))
@@ -447,6 +479,7 @@ namespace GuWorld
             ("map", "M — карта: щёлкните по ней, чтобы поставить метку, — она появится и на миникарте"),
             ("fists", "F — кулаки: ЛКМ — серия ударов, ПКМ — блок, Q и R — особые удары"),
             ("status", "O — статус: сила, ловкость, выносливость, живучесть и дух растут от дела"),
+            ("journal", "J — журнал: задания, побочные поручения жителей, вклад в клан и сокровищница"),
         };
 
         /// <summary>
@@ -830,6 +863,11 @@ namespace GuWorld
             patrols = Patrols.Create(body.transform, picture.Parts, ClanLands());
             GuMaster.Killed += OnMasterKilled;
             GuMaster.Spoke += OnMasterSpoke;
+            // How the rival clans stand toward the hero, and who comes hunting them out on the mountain.
+            Clans.Load(restored.world?.clans);
+            Clans.Changed += OnClanChanged;
+            raids = Raids.Create(body.transform, picture.Parts, () => mode == Mode.Playing && !Sandbox && Location.id == QingMao.Id);
+            raids.Came += (who, what) => menus.Banner(who, what);
             // The wolf tide: on its nights at the village, or called on the proving ground.
             tide = WolfTide.Make(wolves, body.transform);
             tide.WaveCame += OnTideWave;
@@ -1421,6 +1459,11 @@ namespace GuWorld
                 Learnt("status");
             }
 
+            if (page == Menus.Page.Journal)
+            {
+                Learnt("journal");
+            }
+
             if (mode != Mode.Paused)
             {
                 Enter(Mode.Paused);
@@ -1431,16 +1474,22 @@ namespace GuWorld
 
         public Deal Buy(System.Collections.Generic.IDictionary<string, int> lots)
         {
-            var deal = trade.Buy(shop, lots, cultivator.Bag, clock.Minutes, out var paid);
+            var merit = quests.Merit;
+            var deal = trade.Buy(shop, lots, cultivator.Bag, clock.Minutes, out var paid, ref merit, shop.ForMerit ? 0 : quests.Discount);
 
             if (deal != Deal.Done)
             {
-                menus.Notify(Trade.Explain(deal));
+                menus.Notify(shop.ForMerit && deal == Deal.NoMoney ? "Не хватает вклада: его дают поручения клана" : Trade.Explain(deal));
 
                 return deal;
             }
 
-            menus.Notify($"Куплено за {ItemBook.Stones(paid)}");
+            if (shop.ForMerit)
+            {
+                quests.SpendMerit(quests.Merit - merit);
+            }
+
+            menus.Notify(shop.ForMerit ? $"Получено из сокровищницы за {paid} вклада" : $"Куплено за {ItemBook.Stones(paid)}");
 
             foreach (var pair in lots)
             {
@@ -1503,6 +1552,8 @@ namespace GuWorld
             tideDay = -1;
             tideToldDay = -1;
             trade.Load(null);
+            Clans.Load(null);
+            raids?.Clear();
             // The beasts (tamed ones too) and the Gu Masters gone: the dens and the posts call theirs up again when the hero comes near.
             ClearWolves();
             creatorAngle = 0;
@@ -1838,27 +1889,42 @@ namespace GuWorld
 
             var choices = new System.Collections.Generic.List<(string, System.Action)>();
             var name = who.Spec.Name;
-            var theirs = Trade.Of(name);
 
-            if (theirs != null)
+            foreach (var theirs in Trade.Shops)
             {
-                choices.Add(("Показать товар", () => OpenShop(theirs)));
+                if (theirs.Keeper == name)
+                {
+                    var shopOf = theirs;
+                    choices.Add((shopOf.ForMerit ? $"Сокровищница клана (вклад: {quests.Merit})" : "Показать товар", () => OpenShop(shopOf)));
+                }
             }
 
-            // A thing to deliver to this one (a task's): handed over.
-            var task = quests.Current;
+            // Things to hand over to this one (the main task's or a side task's): as many as are wanted and are in the bag.
+            var taken = new System.Collections.Generic.List<QuestKind>(quests.Sides);
 
-            if (task?.Event != null && !quests.Ready && task.Event.StartsWith("deliver:") && task.Event.EndsWith("@" + name))
+            if (quests.Current != null)
             {
-                var item = task.Event.Substring(8, task.Event.IndexOf('@') - 8);
+                taken.Insert(0, quests.Current);
+            }
 
-                if (cultivator.Bag.Has(item, 1))
+            foreach (var task in taken)
+            {
+                if (task.Event == null || quests.IsReady(task) || !task.Event.StartsWith("deliver:") || !task.Event.EndsWith("@" + name))
                 {
-                    choices.Add(($"Отдать: {ItemBook.Find(item)?.Name.ToLowerInvariant()}", () =>
+                    continue;
+                }
+
+                var item = task.Event.Substring(8, task.Event.IndexOf('@') - 8);
+                var give = Mathf.Min(cultivator.Bag.Count(item), task.Target - quests.ProgressOf(task));
+
+                if (give > 0)
+                {
+                    var deliver = task;
+                    choices.Add(($"Отдать: {ItemBook.Find(item)?.Name.ToLowerInvariant()} ×{give}", () =>
                     {
-                        cultivator.Bag.Take(item, 1);
-                        quests.Count(task.Event);
-                        Say("Вот спасибо! Передай мою благодарность тому, кто прислал.");
+                        cultivator.Bag.Take(item, give);
+                        quests.Count(deliver.Event, give);
+                        Say(quests.IsReady(deliver) ? "Вот спасибо! Всё, что нужно." : "Спасибо — но этого пока мало. Принеси ещё.");
                     }));
                 }
             }
@@ -1872,11 +1938,74 @@ namespace GuWorld
                 choices.Add(("Есть ли для меня поручение?", () => Offer(who, next)));
             }
 
+            foreach (var side in quests.Sides)
+            {
+                if (side.Giver == name && quests.IsReady(side))
+                {
+                    var done = side;
+                    choices.Add(($"Сдать: {side.Title}", () => HandInSide(who, done)));
+                }
+            }
+
+            var offered = quests.SidesFrom(name, cultivator.Aperture.Rank, clock.Day);
+
+            if (offered.Count > 0)
+            {
+                choices.Add((name == SideQuests.Steward ? "Поручения клана на сегодня" : "Нужна ли тебе помощь?", () => OfferSides(who, offered)));
+            }
+
             choices.Add(("Кто вы?", () => Say(Talk.About(who))));
             choices.Add(("Что нового?", () => Say(Talk.News(who, clock.Day))));
             choices.Add(("Расскажите о деревне", () => Say(Talk.Village(who, asked++))));
             choices.Add(("До свидания", () => menus.ShowDialogue(who.Spec.Name, who.Spec.Title, Talk.Farewell(who, look.Gender), new (string, System.Action)[] { ("Уйти", EndTalk) })));
             menus.ShowDialogue(who.Spec.Name, who.Spec.Title, text, choices);
+        }
+
+        /// <summary>The side tasks (or the clan's missions) a villager has: which to hear about, with what each pays.</summary>
+        void OfferSides(Villager who, System.Collections.Generic.List<QuestKind> offered)
+        {
+            var choices = new System.Collections.Generic.List<(string, System.Action)>();
+
+            foreach (var quest in offered)
+            {
+                var one = quest;
+                choices.Add(($"{quest.Title.Replace("Поручение клана: ", "")} · {ItemBook.Stones(quest.RewardStones)}" + (quest.RewardMerit > 0 ? $", вклад {quest.RewardMerit}" : ""),
+                    () => Offer(who, one)));
+            }
+
+            choices.Add(("Не сейчас", () => Say("Как знаешь.")));
+            var full = quests.Sides.Count >= Quests.MaxSides;
+            menus.ShowDialogue(who.Spec.Name, who.Spec.Title,
+                (who.Spec.Name == SideQuests.Steward ? "Вот что клан поручает сегодня. Завтра будут другие." : "Есть одно дело, если не торопишься.") +
+                (full ? $" Только у тебя уже {Quests.MaxSides} поручения — сначала сдай одно." : ""), choices);
+        }
+
+        /// <summary>A side task handed in: the giver's thanks, the stones, the merit, the thing it pays.</summary>
+        void HandInSide(Villager who, QuestKind quest)
+        {
+            if (cultivator.Bag.Room(ItemBook.Stone, clock.Minutes) < quest.RewardStones)
+            {
+                menus.Notify("В сумке нет места для награды — освободите ячейку и приходите снова");
+
+                return;
+            }
+
+            if (!quests.HandInSide(quest, who.Spec.Name))
+            {
+                return;
+            }
+
+            var got = cultivator.Bag.Add(ItemBook.Stone, quest.RewardStones, clock.Minutes);
+            var line = $"+{ItemBook.Stones(got)}" + (quest.RewardMerit > 0 ? $" · вклад +{quest.RewardMerit}" : "");
+
+            if (quest.RewardItem != null && quest.RewardItemCount > 0)
+            {
+                var items = cultivator.Bag.Add(quest.RewardItem, quest.RewardItemCount, clock.Minutes);
+                line += $" · {ItemBook.Find(quest.RewardItem)?.Name.ToLowerInvariant()} ×{items}";
+            }
+
+            menus.Banner("Поручение выполнено", $"{quest.Title} · {line}");
+            Say(quest.Thanks);
         }
 
         /// <summary>A task offered: what it asks, and taking it or not.</summary>
@@ -1886,8 +2015,14 @@ namespace GuWorld
             {
                 ("Возьмусь", () =>
                 {
-                    quests.Take(quest);
-                    menus.Banner("Новое задание", quest.Title);
+                    if (!quests.Take(quest))
+                    {
+                        Say(quest.Side ? $"У тебя и так {Quests.MaxSides} поручения. Сдай одно — тогда приходи." : "Сначала закончи то, что начал.");
+
+                        return;
+                    }
+
+                    menus.Banner(quest.Side ? "Новое поручение" : "Новое задание", quest.Title);
 
                     if (quest.Gives != null)
                     {
@@ -1919,7 +2054,7 @@ namespace GuWorld
             }
 
             var got = cultivator.Bag.Add(ItemBook.Stone, quest.RewardStones, clock.Minutes);
-            menus.Notify($"Задание «{quest.Title}» сдано: получено {ItemBook.Stones(got)}");
+            menus.Notify($"Задание «{quest.Title}» сдано: получено {ItemBook.Stones(got)}" + (quest.RewardMerit > 0 ? $", вклад +{quest.RewardMerit}" : ""));
             menus.Banner("Задание выполнено", $"{quest.Title} · +{ItemBook.Stones(got)}");
             Say(quest.Thanks);
         }
@@ -2039,8 +2174,10 @@ namespace GuWorld
                         case "fusion": OpenPage(Menus.Page.Fusion); break;
                         case "status": OpenPage(Menus.Page.Status); break;
                         case "admin": OpenPage(Menus.Page.Admin); break;
+                        case "journal": OpenPage(Menus.Page.Journal); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
                         case "hua": OpenShop(Trade.Shops[1]); break;
+                        case "treasury": OpenShop(Trade.Shops[2]); break;
                     }
                 }
 
@@ -2406,6 +2543,7 @@ namespace GuWorld
                 else if (keyboard.bKey.wasPressedThisFrame) OpenPage(Menus.Page.Body);
                 else if (keyboard.uKey.wasPressedThisFrame) OpenPage(Menus.Page.Fusion);
                 else if (keyboard.oKey.wasPressedThisFrame) OpenPage(Menus.Page.Status);
+                else if (keyboard.jKey.wasPressedThisFrame) OpenPage(Menus.Page.Journal);
                 else if (keyboard.f10Key.wasPressedThisFrame) OpenPage(Menus.Page.Admin);
                 else if (Sandbox && keyboard.pKey.wasPressedThisFrame) OpenPage(Menus.Page.Sandbox);
             }
@@ -2415,7 +2553,7 @@ namespace GuWorld
                 var to = keyboard.kKey.wasPressedThisFrame ? Menus.Page.Aperture : keyboard.iKey.wasPressedThisFrame ? Menus.Page.Bag :
                     keyboard.mKey.wasPressedThisFrame ? Menus.Page.Map : keyboard.bKey.wasPressedThisFrame ? Menus.Page.Body :
                     keyboard.uKey.wasPressedThisFrame ? Menus.Page.Fusion : keyboard.oKey.wasPressedThisFrame ? Menus.Page.Status :
-                    keyboard.f10Key.wasPressedThisFrame ? Menus.Page.Admin :
+                    keyboard.f10Key.wasPressedThisFrame ? Menus.Page.Admin : keyboard.jKey.wasPressedThisFrame ? Menus.Page.Journal :
                     Sandbox && keyboard.pKey.wasPressedThisFrame ? Menus.Page.Sandbox : Menus.Page.None;
 
                 if (Sandbox && (keyboard.tabKey.wasPressedThisFrame || keyboard.kKey.wasPressedThisFrame || keyboard.iKey.wasPressedThisFrame))
@@ -2486,6 +2624,7 @@ namespace GuWorld
                     TopUpStones();
                 }
                 health.Mend(clock.Minutes - before);
+                Clans.Cool(clock.Minutes - before);
                 sinceSave += Time.deltaTime;
 
                 if (sinceSave >= AutosaveEvery)
@@ -3273,6 +3412,7 @@ namespace GuWorld
             wolves != null ? wolves.CallNear(kind.Tier > 0 ? WolfPacks.PackOf(kind, 1) : WolfPacks.PackOf(kind, Mathf.Max(1, count)), view.transform.forward) : 0;
 
         Patrols patrols;
+        Raids raids;
         WolfTide tide;
         /// <summary>The day whose night's tide has come already (each seventh day's), and the day it was foretold.</summary>
         int tideDay = -1;
@@ -3387,6 +3527,21 @@ namespace GuWorld
             return patrols.CallNear(kinds, view.transform.forward);
         }
 
+        /// <summary>A rival clan's standing changed past a threshold: told, with what it means.</summary>
+        void OnClanChanged(string clan, string standing, bool rose)
+        {
+            var name = MasterKinds.ClanName(clan);
+            var title = char.ToUpperInvariant(name[0]) + name.Substring(1);
+            var meaning = standing switch
+            {
+                "война" => "Их военные отряды выходят в леса Гу Юэ охотиться на вас",
+                "вражда" => rose ? "Их дозоры нападают без предупреждения" : "Отряды больше не ищут вас, но дозоры нападут без слов",
+                "неприязнь" => rose ? "Вас запомнили: на их земле пощады не будет" : "Дозоры снова предупреждают, прежде чем напасть",
+                _ => "Они готовы забыть старое",
+            };
+            menus.Banner($"{title}: {standing}", meaning);
+        }
+
         /// <summary>A Gu Master says something aloud: heard within earshot.</summary>
         void OnMasterSpoke(GuMaster master, string line)
         {
@@ -3422,6 +3577,19 @@ namespace GuWorld
             if (kind.Tier > 0)
             {
                 menus.Banner($"{master.Title} повержен", master.Rung);
+            }
+
+            // A rival clan remembers its dead; a demonic rogue's head is the village's gain.
+            if (Clans.IsRival(kind.Clan))
+            {
+                Clans.Anger(kind.Clan, kind.Tier > 0 ? 25 : 12);
+            }
+            else if (kind.Clan == Clans.Demonic)
+            {
+                var bounty = kind.Rank * kind.Rank * 10;
+                var paid = cultivator.Bag.Add(ItemBook.Stone, bounty, clock.Minutes);
+                menus.Notify($"Награда клана за демонического практика: первобытных камней — {paid}");
+                quests.Count("kill:demonic");
             }
 
             quests.Count("kill:master");
@@ -3601,7 +3769,7 @@ namespace GuWorld
         }
 
         static bool IsHeroPage(Menus.Page page) => page == Menus.Page.Bag || page == Menus.Page.Aperture || page == Menus.Page.Map || page == Menus.Page.Body || page == Menus.Page.Fusion ||
-                                                   page == Menus.Page.Sandbox || page == Menus.Page.Status || page == Menus.Page.Admin;
+                                                   page == Menus.Page.Sandbox || page == Menus.Page.Status || page == Menus.Page.Admin || page == Menus.Page.Journal;
 
         /// <summary>
         /// What the hero can do where they stand: talk to the one before them (E), or gather
@@ -4053,6 +4221,7 @@ namespace GuWorld
             Beast.Roared -= OnWolfRoared;
             GuMaster.Killed -= OnMasterKilled;
             GuMaster.Spoke -= OnMasterSpoke;
+            Clans.Changed -= OnClanChanged;
 
             if (tide != null)
             {
@@ -4120,6 +4289,7 @@ namespace GuWorld
                 wild = WildGu.All.ConvertAll(w => w.ReadyAt).ToArray(),
                 tide_day = tideDay,
                 tide_told = tideToldDay,
+                clans = Clans.Save(),
             };
 
             trade.Save(world);

@@ -142,6 +142,8 @@ namespace GuWorld.UI
             Status,
             /// <summary>The admin panel (F10): cheats for testing, with the admin mode on.</summary>
             Admin,
+            /// <summary>The journal (J): the tasks taken, the merit with the clan, how the clans stand.</summary>
+            Journal,
         }
 
         enum Tab
@@ -321,6 +323,7 @@ namespace GuWorld.UI
                 case Page.Fusion: FusionPage(); break;
                 case Page.Status: StatusPage(); break;
                 case Page.Admin: AdminPage(); break;
+                case Page.Journal: JournalPage(); break;
             }
         }
 
@@ -344,6 +347,7 @@ namespace GuWorld.UI
                 case Page.Fusion:
                 case Page.Status:
                 case Page.Admin:
+                case Page.Journal:
                     host.Resume();
                     return true;
                 default: return false;

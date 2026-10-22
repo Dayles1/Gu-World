@@ -46,7 +46,7 @@ namespace GuWorld.UI
             // The immortal's aperture has no bag or ring to look after: its own page instead.
             var pages = host.Sandbox
                 ? new System.Collections.Generic.List<(string, string, Page)> { ("Все Гу", "Tab", Page.Sandbox), ("Статус", "O", Page.Status), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) }
-                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Статус", "O", Page.Status), ("Слияние", "U", Page.Fusion), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
+                : new System.Collections.Generic.List<(string, string, Page)> { ("Сумка", "I", Page.Bag), ("Апертура", "K", Page.Aperture), ("Статус", "O", Page.Status), ("Журнал", "J", Page.Journal), ("Слияние", "U", Page.Fusion), ("Карта", "M", Page.Map), ("Тело", "B", Page.Body) };
 
             foreach (var (label, key, target) in pages)
             {

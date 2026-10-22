@@ -135,12 +135,12 @@ namespace GuWorld.UI
             promptBar.gameObject.SetActive(false);
 
             // The hero's pages, in a column at the bottom right (clear of the bar).
-            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -160, 26, 28, -320);
+            var keys = UiKit.Rect("Keys", hud).Place(new Vector2(1, 0), new Vector2(1, 0), -160, 26, 28, -360);
             keys.Stack<VerticalLayoutGroup>(5, null, TextAnchor.LowerRight).childForceExpandHeight = false;
 
             var hints = host.Sandbox
                 ? new[] { ("Tab", "Все Гу"), ("M", "Карта"), ("T", "Чат"), ("Esc", "Меню") }
-                : new[] { ("K", "Апертура"), ("I", "Сумка"), ("O", "Статус"), ("U", "Слияние"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") };
+                : new[] { ("K", "Апертура"), ("I", "Сумка"), ("O", "Статус"), ("J", "Журнал"), ("U", "Слияние"), ("M", "Карта"), ("B", "Тело"), ("T", "Чат"), ("Esc", "Меню") };
 
             foreach (var (key, name) in hints)
             {
@@ -592,13 +592,23 @@ namespace GuWorld.UI
             }
 
             var next = quests.Next;
-            questCard.gameObject.SetActive(next != null);
+            var side = quests.Sides.Count > 0 ? quests.Sides[0] : null;
+            questCard.gameObject.SetActive(next != null || side != null);
 
             if (next != null)
             {
                 questTitle.text = "Новое поручение";
                 questGoal.text = $"Вас ждёт {next.GiverTitle ?? ""} {next.Giver}".Replace("  ", " ");
                 questProgress.text = "";
+            }
+            else if (side != null)
+            {
+                // No task of the academy's in hand: the first side task, and how many more there are.
+                var ready = quests.IsReady(side);
+                questCaps.text = UiKit.Spaced(quests.Sides.Count > 1 ? $"Поручение · ещё {quests.Sides.Count - 1} (J)" : "Поручение");
+                questTitle.text = side.Title;
+                questGoal.text = ready ? $"Вернитесь к: {side.Giver}" : side.Goal;
+                questProgress.text = ready ? "готово" : $"{quests.ProgressOf(side)} / {side.Target}";
             }
         }
 

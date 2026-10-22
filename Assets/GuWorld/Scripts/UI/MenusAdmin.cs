@@ -197,6 +197,9 @@ namespace GuWorld.UI
             Buttons(world, "ВОЛЧИЙ ПРИЛИВ", ("Прилив", Run("/tide")), ("Великий прилив", Run("/tide great")));
             Buttons(world, "ГУ-МАСТЕРА БАЙ", ("Ранг I", Run("/masters bai 1 2")), ("Ранг II", Run("/masters bai 2 1")), ("Ранг III", Run("/masters bai 3 1")));
             Buttons(world, "ГУ-МАСТЕРА СЮН", ("Ранг I", Run("/masters xiong 1 2")), ("Ранг II", Run("/masters xiong 2 1")), ("Ранг III", Run("/masters xiong 3 1")));
+            Buttons(world, $"КЛАНЫ · Бай {GuWorld.Creatures.Clans.Hostility("bai"):0} · Сюн {GuWorld.Creatures.Clans.Hostility("xiong"):0}",
+                ("Бай +25", () => GuWorld.Creatures.Clans.Anger("bai", 25)), ("Сюн +25", () => GuWorld.Creatures.Clans.Anger("xiong", 25)),
+                ("Мир", () => GuWorld.Creatures.Clans.Load(null)), ("Разбойники", Run("/masters demonic 2 2")));
             Buttons(world, "ОТЛАДКА",
                 ("Убрать всех врагов", host.ClearWolves),
                 ("Хитбоксы", Run("/hitboxes")),

@@ -29,6 +29,16 @@ namespace GuWorld.Systems
         /// <summary>What the giver says handing it out, and taking it back.</summary>
         public string Offer;
         public string Thanks;
+
+        /// <summary>A side task (taken beside the academy's), a clan mission of a day; the task that must be done before it; the rank it asks.</summary>
+        public bool Side;
+        public bool Mission;
+        public string After;
+        public int MinRank;
+        /// <summary>What it pays besides stones: merit with the clan, and a thing (how many).</summary>
+        public int RewardMerit;
+        public string RewardItem;
+        public int RewardItemCount;
     }
 
     /// <summary>Tasks as saved: the one taken, how far along, and the ones done.</summary>
@@ -38,6 +48,11 @@ namespace GuWorld.Systems
         public string current;
         public int progress;
         public string[] done = new string[0];
+        /// <summary>The side tasks taken and how far along each; the merit with the clan (now, and ever earned).</summary>
+        public string[] sides = new string[0];
+        public int[] side_progress = new int[0];
+        public int merit;
+        public int merit_earned;
     }
 
     /// <summary>
@@ -186,21 +201,43 @@ namespace GuWorld.Systems
         };
 
         readonly HashSet<string> done = new HashSet<string>();
+        /// <summary>The side tasks taken (up to MaxSides), and how far along each is.</summary>
+        readonly List<QuestKind> sides = new List<QuestKind>();
+        readonly Dictionary<string, int> sideProgress = new Dictionary<string, int>();
+
+        /// <summary>How many side tasks the hero can have at once.</summary>
+        public const int MaxSides = 3;
 
         public QuestKind Current { get; private set; }
         public int Progress { get; private set; }
         /// <summary>Done: back to the giver for the reward.</summary>
         public bool Ready => Current != null && Progress >= Current.Target;
 
+        /// <summary>The side tasks taken.</summary>
+        public IReadOnlyList<QuestKind> Sides => sides;
+
+        /// <summary>The hero's merit with the clan (вклад): earned by tasks and missions, spent in the clan's treasury; and all ever earned.</summary>
+        public int Merit { get; private set; }
+        public int MeritEarned { get; private set; }
+
         /// <summary>A task finished or moved on — something to tell the player.</summary>
         public event Action<string> Said;
 
-        public static QuestKind Find(string id) => Array.Find(Book, q => q.Id == id);
+        /// <summary>A task of any kind by its id: the academy's, a side task, a mission.</summary>
+        public static QuestKind Find(string id) => Array.Find(Book, q => q.Id == id) ?? SideQuests.Find(id);
 
         /// <summary>The next task waiting for the hero (none while one is taken, or when all are done).</summary>
         public QuestKind Next => Current != null ? null : Array.Find(Book, q => !done.Contains(q.Id));
 
         public bool IsDone(string id) => done.Contains(id);
+
+        /// <summary>How far along a task taken is (the main one or a side one).</summary>
+        public int ProgressOf(QuestKind quest) =>
+            quest == null ? 0 : quest == Current ? Progress : sideProgress.TryGetValue(quest.Id, out var n) ? n : 0;
+
+        public bool IsReady(QuestKind quest) => quest != null && ProgressOf(quest) >= quest.Target;
+
+        public bool IsTaken(QuestKind quest) => quest != null && (Current?.Id == quest.Id || sides.Exists(s => s.Id == quest.Id));
 
         /// <summary>The next task a giver has for the hero (none while another is taken, or when theirs are all done).</summary>
         public QuestKind NextFrom(string giver)
@@ -221,31 +258,98 @@ namespace GuWorld.Systems
             return null;
         }
 
-        public void Take(QuestKind quest)
+        /// <summary>
+        /// The side tasks a giver has for the hero now: not done, not taken, the task before them done, the hero's rank
+        /// high enough — and, from the clan's steward, the missions of the day.
+        /// </summary>
+        public List<QuestKind> SidesFrom(string giver, int rank, int day)
         {
-            if (quest == null || Current != null || done.Contains(quest.Id))
+            var offered = new List<QuestKind>();
+            var pool = giver == SideQuests.Steward ? SideQuests.Missions(day) : SideQuests.Book;
+
+            foreach (var quest in pool)
             {
-                return;
+                if (quest.Giver == giver && !done.Contains(quest.Id) && !IsTaken(quest) && rank >= quest.MinRank &&
+                    (quest.After == null || done.Contains(quest.After)))
+                {
+                    offered.Add(quest);
+                }
+            }
+
+            return offered;
+        }
+
+        /// <summary>Takes a task: the academy's in hand, a side one beside it (while there is room for it).</summary>
+        public bool Take(QuestKind quest)
+        {
+            if (quest == null || done.Contains(quest.Id) || IsTaken(quest))
+            {
+                return false;
+            }
+
+            if (quest.Side)
+            {
+                if (sides.Count >= MaxSides)
+                {
+                    Said?.Invoke($"Побочных поручений уже {MaxSides} — сначала сдайте одно");
+
+                    return false;
+                }
+
+                sides.Add(quest);
+                sideProgress[quest.Id] = 0;
+                Said?.Invoke($"Новое побочное поручение: {quest.Title}");
+
+                return true;
+            }
+
+            if (Current != null)
+            {
+                return false;
             }
 
             Current = quest;
             Progress = 0;
             Said?.Invoke($"Новое задание: {quest.Title}");
+
+            return true;
         }
 
-        /// <summary>Counts something done towards the task taken.</summary>
+        /// <summary>Whether a task's event takes a key: the same, or a pattern ending in "*" that it begins with ("catch:*").</summary>
+        public static bool Matches(string pattern, string key) =>
+            pattern != null && key != null && (pattern == key || (pattern.EndsWith("*") && key.StartsWith(pattern.Substring(0, pattern.Length - 1))));
+
+        /// <summary>Counts something done towards every task taken that it is for.</summary>
         public void Count(string key, int n = 1)
         {
-            if (Current == null || Ready || Current.Event != key || n <= 0)
+            if (n <= 0)
             {
                 return;
             }
 
-            Progress = Mathf.Min(Current.Target, Progress + n);
-
-            if (Ready)
+            if (Current != null && !Ready && Matches(Current.Event, key))
             {
-                Said?.Invoke($"Задание выполнено: {Current.Title}. Вернитесь к: {Current.Giver}");
+                Progress = Mathf.Min(Current.Target, Progress + n);
+
+                if (Ready)
+                {
+                    Said?.Invoke($"Задание выполнено: {Current.Title}. Вернитесь к: {Current.Giver}");
+                }
+            }
+
+            foreach (var side in sides)
+            {
+                if (IsReady(side) || !Matches(side.Event, key))
+                {
+                    continue;
+                }
+
+                sideProgress[side.Id] = Mathf.Min(side.Target, ProgressOf(side) + n);
+
+                if (IsReady(side))
+                {
+                    Said?.Invoke($"Поручение выполнено: {side.Title}. Вернитесь к: {side.Giver}");
+                }
             }
         }
 
@@ -261,23 +365,97 @@ namespace GuWorld.Systems
             done.Add(quest.Id);
             Current = null;
             Progress = 0;
+            AddMerit(quest.RewardMerit);
 
             return quest;
         }
 
-        public QuestSave Save() => new QuestSave
+        /// <summary>Hands a finished side task back to its giver: true when it was (its merit is the hero's).</summary>
+        public bool HandInSide(QuestKind quest, string giver)
         {
-            current = Current?.Id,
-            progress = Progress,
-            done = new List<string>(done).ToArray(),
+            if (quest == null || quest.Giver != giver || !IsReady(quest) || !sides.Exists(s => s.Id == quest.Id))
+            {
+                return false;
+            }
+
+            sides.RemoveAll(s => s.Id == quest.Id);
+            sideProgress.Remove(quest.Id);
+            done.Add(quest.Id);
+            AddMerit(quest.RewardMerit);
+
+            return true;
+        }
+
+        /// <summary>A side task given up (not the academy's): nothing is paid, it can be taken again.</summary>
+        public void Drop(QuestKind quest)
+        {
+            if (quest != null && sides.RemoveAll(s => s.Id == quest.Id) > 0)
+            {
+                sideProgress.Remove(quest.Id);
+                Said?.Invoke($"Поручение оставлено: {quest.Title}");
+            }
+        }
+
+        public void AddMerit(int n)
+        {
+            if (n > 0)
+            {
+                Merit += n;
+                MeritEarned += n;
+            }
+        }
+
+        /// <summary>Merit spent (the treasury); false (and none spent) when there is not enough.</summary>
+        public bool SpendMerit(int n)
+        {
+            if (n < 0 || Merit < n)
+            {
+                return false;
+            }
+
+            Merit -= n;
+
+            return true;
+        }
+
+        /// <summary>The hero's standing with the clan by the merit ever earned: a word, and the shops' discount it brings.</summary>
+        public string Standing => MeritEarned switch
+        {
+            < 20 => "никто",
+            < 60 => "замечен",
+            < 150 => "уважаем",
+            < 300 => "ценим кланом",
+            _ => "гордость клана",
         };
+
+        public float Discount => Mathf.Min(0.15f, MeritEarned / 2000f);
+
+        public QuestSave Save()
+        {
+            var save = new QuestSave
+            {
+                current = Current?.Id,
+                progress = Progress,
+                done = new List<string>(done).ToArray(),
+                sides = sides.ConvertAll(s => s.Id).ToArray(),
+                merit = Merit,
+                merit_earned = MeritEarned,
+            };
+            save.side_progress = Array.ConvertAll(save.sides, id => sideProgress.TryGetValue(id, out var n) ? n : 0);
+
+            return save;
+        }
 
         /// <summary>Tasks from a save (unknown ones dropped, the progress kept within the target).</summary>
         public void Load(QuestSave saved)
         {
             done.Clear();
+            sides.Clear();
+            sideProgress.Clear();
             Current = null;
             Progress = 0;
+            Merit = 0;
+            MeritEarned = 0;
 
             if (saved == null)
             {
@@ -286,6 +464,7 @@ namespace GuWorld.Systems
 
             foreach (var id in saved.done ?? new string[0])
             {
+                // A mission's id is kept as it is (it is found by its day and index).
                 if (Find(id) != null)
                 {
                     done.Add(id);
@@ -294,11 +473,25 @@ namespace GuWorld.Systems
 
             var current = Find(saved.current);
 
-            if (current != null && !done.Contains(current.Id))
+            if (current != null && !current.Side && !done.Contains(current.Id))
             {
                 Current = current;
                 Progress = Mathf.Clamp(saved.progress, 0, current.Target);
             }
+
+            for (var i = 0; saved.sides != null && i < saved.sides.Length && sides.Count < MaxSides; i++)
+            {
+                var side = Find(saved.sides[i]);
+
+                if (side != null && side.Side && !done.Contains(side.Id) && !IsTaken(side))
+                {
+                    sides.Add(side);
+                    sideProgress[side.Id] = Mathf.Clamp(saved.side_progress != null && i < saved.side_progress.Length ? saved.side_progress[i] : 0, 0, side.Target);
+                }
+            }
+
+            Merit = Mathf.Max(0, saved.merit);
+            MeritEarned = Mathf.Max(Merit, saved.merit_earned);
         }
     }
 }

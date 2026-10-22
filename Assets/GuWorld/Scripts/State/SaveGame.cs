@@ -64,6 +64,8 @@ namespace GuWorld.State
         public int[] sold_counts = new int[0];
         /// <summary>The beasts the hero has tamed.</summary>
         public PetSave[] pets = new PetSave[0];
+        /// <summary>The rival clans' hostility, in the order of Clans.Rivals (empty: as at the start).</summary>
+        public float[] clans = new float[0];
     }
 
     /// <summary>A tamed beast as saved: its kind, level and health.</summary>

@@ -104,7 +104,8 @@ namespace GuWorld.Creatures
                     for (var k = 0; k < post.Kinds.Length; k++)
                     {
                         var angle = k * Mathf.PI * 2 / post.Kinds.Length;
-                        var master = Place(post, post.At + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 3, post.Kinds[k], false);
+                        // A clan grown hostile enough attacks on sight, without a warning first.
+                        var master = Place(post, post.At + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * 3, post.Kinds[k], Clans.AttacksOnSight(post.Kinds[k].Clan));
                         master.Land = post.Land;
                         master.LandRadius = post.LandRadius;
                     }
