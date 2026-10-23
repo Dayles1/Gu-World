@@ -268,37 +268,105 @@ namespace GuWorld.Editor
         }
 
         /// <summary>
-        /// Whether a cell of the ground (its middle) is cut away for a tunnel's mouth: on the tunnel's way, where the natural
-        /// ground stands above the floor but not yet well over the vault — the hillside the mouth goes into.
+        /// Whether a cell of the mountain's ground (given by its middle) is cut away for a tunnel: any part of it over the
+        /// tunnel's way, its ground above the floor somewhere and not everywhere well over the vault — else the tile's ground
+        /// would show inside. The cut is ragged (whole cells of 4.9 m, turned to the tunnel): the rock mound over the tunnel
+        /// and the aprons before its mouths (BuildTunnel) reach past it on every side.
         /// </summary>
-        static bool TunnelMouth(Vector2 p)
+        static bool TunnelMouth(Vector2 middle)
         {
             foreach (var tunnel in tunnels)
             {
                 var along = tunnel.Along;
-                var t = Vector2.Dot(p - tunnel.A, along) / tunnel.Length;
+                var d = Vector2.Dot(middle - tunnel.A, along);
+                var s = Vector2.Dot(middle - tunnel.A, new Vector2(-along.y, along.x));
+                // How far the cell reaches from its middle along the tunnel (and as far across it: the cell is square).
+                var reach = Cell / 2 * (Mathf.Abs(along.x) + Mathf.Abs(along.y));
 
-                if (t < -0.02f || t > 1.02f)
+                if (Mathf.Abs(s) > tunnel.Half + 0.3f + reach || d < -reach - 0.3f || d > tunnel.Length + reach + 0.3f)
                 {
                     continue;
                 }
 
-                var side = Mathf.Abs(Vector2.Dot(p - tunnel.A, new Vector2(-along.y, along.x)));
+                // The ground at the cell's corners (the tile draws it straight between them) over the floor beside each.
+                var low = float.PositiveInfinity;
+                var high = float.NegativeInfinity;
 
-                if (side > tunnel.Half - 0.5f)
+                for (var k = 0; k < 4; k++)
                 {
-                    continue;
+                    var c = middle + new Vector2((k & 1) == 0 ? -Cell / 2 : Cell / 2, (k & 2) == 0 ? -Cell / 2 : Cell / 2);
+                    var over = Natural(c.x, c.y) - tunnel.FloorAt(Mathf.Clamp01(Vector2.Dot(c - tunnel.A, along) / tunnel.Length));
+                    low = Mathf.Min(low, over);
+                    high = Mathf.Max(high, over);
                 }
 
-                var over = Natural(p.x, p.y) - tunnel.FloorAt(Mathf.Clamp01(t));
-
-                if (over > 0.2f && over < tunnel.Height + 5)
+                if (high > 0.2f && low < tunnel.Height + 1.5f)
                 {
                     return true;
                 }
             }
 
             return false;
+        }
+
+        /// <summary>
+        /// Cuts the tunnels into the mountain's tiles again, where they pass: the "landmarks" stage owns them, so a tunnel
+        /// built anew needs no new terrain (the "terrain" stage cuts the same, through TunnelMouth).
+        /// </summary>
+        static void RecutTunnels()
+        {
+            foreach (var (name, corner) in BaseTileNames())
+            {
+                var data = AssetDatabase.LoadAssetAtPath<TerrainData>($"{Generated}/Terrain/{name}.asset");
+
+                if (data == null || !InArea(new Rect(corner, Vector2.one * TileSize)))
+                {
+                    continue;
+                }
+
+                var changed = false;
+
+                foreach (var tunnel in tunnels)
+                {
+                    var low = Vector2.Min(tunnel.A, tunnel.B) - Vector2.one * 30 - corner;
+                    var high = Vector2.Max(tunnel.A, tunnel.B) + Vector2.one * 30 - corner;
+                    var i0 = Mathf.Max(0, Mathf.FloorToInt(low.x / Cell));
+                    var j0 = Mathf.Max(0, Mathf.FloorToInt(low.y / Cell));
+                    var i1 = Mathf.Min(BaseResolution - 2, Mathf.CeilToInt(high.x / Cell));
+                    var j1 = Mathf.Min(BaseResolution - 2, Mathf.CeilToInt(high.y / Cell));
+
+                    if (i1 < i0 || j1 < j0)
+                    {
+                        continue;
+                    }
+
+                    // Solid where the ground stands (as BuildBaseTile has it: the villages' own tiles lie over holes).
+                    var holes = new bool[j1 - j0 + 1, i1 - i0 + 1];
+                    var cut = 0;
+
+                    for (var j = j0; j <= j1; j++)
+                    {
+                        for (var i = i0; i <= i1; i++)
+                        {
+                            var middle = new Vector2(corner.x + (i + 0.5f) * Cell, corner.y + (j + 0.5f) * Cell);
+                            var mouth = TunnelMouth(middle);
+                            holes[j - j0, i - i0] = !mouth && !plans.Any(plan => plan.Area.Contains(middle));
+                            cut += mouth ? 1 : 0;
+                        }
+                    }
+
+                    data.SetHoles(i0, j0, holes);
+                    changed = true;
+                    BuildLog.Write($"landmarks: {tunnel.Id} cut {cut} cells of {name}");
+                }
+
+                if (changed)
+                {
+                    EditorUtility.SetDirty(data);
+                }
+            }
+
+            AssetDatabase.SaveAssets();
         }
 
         /// <summary>The trails to the landmarks near the village (laid with the others).</summary>
@@ -738,8 +806,11 @@ namespace GuWorld.Editor
 
         /// <summary>
         /// A tunnel: a vaulted passage of dressed stone along its way (its floor flat across, rising evenly from mouth to
-        /// mouth), its inside seen from within and an outer shell of rough rock seen where the ground is cut away over the
-        /// mouths; rock arches round each mouth; a lantern every 30 m and a warm light at each end.
+        /// mouth), its inside seen from within; over it a mound of rough rock 27 m wide that hugs the ground just under it
+        /// (seen where the ground is cut away for the tunnel, and standing out of the hillside where the ridge is low), a
+        /// face of the same rock round each opening and a rocky apron before it — together they cover the ragged cut in the
+        /// mountain's tiles (TunnelMouth), so no gap shows anywhere; rock arches round each mouth; a lantern every 30 m and
+        /// a warm light at each end.
         /// </summary>
         static void BuildTunnel(Transform root, Tunnel tunnel)
         {
@@ -764,6 +835,7 @@ namespace GuWorld.Editor
 
             var inside = new MeshKit();
             var shell = new MeshKit();
+            var mound = new MeshKit();
             var floor = Mat("Tunnel Floor", 0x3e3a34, 0.06f, false, StoneTexture(), 0.5f);
             var steps = Mathf.CeilToInt(tunnel.Length / 4);
             Vector3 At(float t, Vector2 s, float grow = 1)
@@ -789,13 +861,8 @@ namespace GuWorld.Editor
                     var a1 = At(t1, section[k]);
                     var b1 = At(t1, section[k + 1]);
                     var face = (a0 + b0 + a1 + b1) / 4;
-                    // Inside: facing in, to the middle; the shell a metre out, facing out.
+                    // Inside: facing in, to the middle.
                     inside.Quad(Stone, a0, b0, b1, a1, mid - face);
-                    var sa0 = At(t0, section[k], 1.18f);
-                    var sb0 = At(t0, section[k + 1], 1.18f);
-                    var sa1 = At(t1, section[k], 1.18f);
-                    var sb1 = At(t1, section[k + 1], 1.18f);
-                    shell.Quad(Rock2(), sa0, sb0, sb1, sa1, (sa0 + sb0 + sa1 + sb1) / 4 - mid);
                 }
 
                 // A lantern on the left wall every 30 m.
@@ -817,8 +884,10 @@ namespace GuWorld.Editor
                 }
             }
 
+            BuildMound(mound, tunnel, section, floor);
             Place(go, "Inside", Save(inside, $"Tunnel {tunnel.Id}"), origin, 0);
             Place(go, "Shell", Save(shell, $"Tunnel {tunnel.Id} Shell"), origin, 0, false);
+            Place(go, "Mound", Save(mound, $"Tunnel {tunnel.Id} Mound"), origin, 0);
 
             // A warm light just inside each mouth.
             foreach (var t in new[] { 0.06f, 0.94f })
@@ -834,6 +903,105 @@ namespace GuWorld.Editor
             }
 
             go.gameObject.AddComponent<GuWorld.Render.HitboxTag>().Kind = GuWorld.Render.HitboxKind.Building;
+        }
+
+        /// <summary>
+        /// The rock over a tunnel and round its openings (BuildTunnel): the mound along it, a face round each opening (the
+        /// vault's outline to the mound's), an apron before each mouth — paved across the way, rock beside it, easing from
+        /// the floor down to the ground 9 m out. Solid: where the ground is cut away one walks on them.
+        /// </summary>
+        static void BuildMound(MeshKit kit, Tunnel tunnel, List<Vector2> section, Material paving)
+        {
+            var origin = new Vector3(tunnel.A.x, tunnel.FloorA, tunnel.A.y);
+            var along = tunnel.Along;
+            var across = new Vector2(-along.y, along.x);
+            var w = tunnel.Half;
+            var h = tunnel.Height;
+            var rock = Rock2();
+            // The mound's cross-section, point for point with the vault's (section): across, and over the floor. Its feet
+            // (no height) sink a metre under the ground; the rest is never lower than just under the ground, so the tile's
+            // ground hides it where it stands and it fills the cut where it does not.
+            var shape = new[]
+            {
+                new Vector2(-(w + 9), float.NaN), new Vector2(-(w + 5.5f), h * 0.45f), new Vector2(-(w + 2.5f), h * 0.85f),
+                new Vector2(-w * 0.75f, h + 1.2f), new Vector2(-w * 0.45f, h + 1.7f), new Vector2(0, h + 2),
+                new Vector2(w * 0.45f, h + 1.7f), new Vector2(w * 0.75f, h + 1.2f), new Vector2(w + 2.5f, h * 0.85f),
+                new Vector2(w + 5.5f, h * 0.45f), new Vector2(w + 9, float.NaN),
+            };
+            Vector2 Plan(float d, float s) => tunnel.A + along * d + across * s;
+            float FloorAt(float d) => tunnel.FloorAt(Mathf.Clamp01(d / tunnel.Length));
+            Vector3 Local(Vector2 p, float y) => new Vector3(p.x, y, p.y) - origin;
+            Vector3[] Slice(float d)
+            {
+                var points = new Vector3[shape.Length];
+
+                for (var k = 0; k < shape.Length; k++)
+                {
+                    var p = Plan(d, shape[k].x);
+                    var ground = Ground(p);
+                    points[k] = Local(p, float.IsNaN(shape[k].y) ? ground - 1.2f : Mathf.Max(FloorAt(d) + shape[k].y, ground - 0.25f));
+                }
+
+                return points;
+            }
+
+            // The mound, a slice every 2 m.
+            var steps = Mathf.CeilToInt(tunnel.Length / 2);
+            var last = Slice(0);
+            var first = last;
+
+            for (var i = 1; i <= steps; i++)
+            {
+                var d = tunnel.Length * i / steps;
+                var next = Slice(d);
+                // Facing away from a point deep under the way.
+                var under = Local(Plan(d - tunnel.Length / steps / 2, 0), FloorAt(d) - 10);
+
+                for (var k = 0; k + 1 < shape.Length; k++)
+                {
+                    kit.Quad(rock, last[k], last[k + 1], next[k + 1], next[k], (last[k] + last[k + 1] + next[k] + next[k + 1]) / 4 - under);
+                }
+
+                last = next;
+            }
+
+            // Each opening: its face and its apron.
+            foreach (var (d, outline, outward) in new[] { (0f, first, -along), (tunnel.Length, last, along) })
+            {
+                var floor = FloorAt(d);
+                var end = Plan(d, 0);
+
+                for (var k = 0; k + 1 < section.Count; k++)
+                {
+                    var a = Local(Plan(d, section[k].x), floor + section[k].y);
+                    var b = Local(Plan(d, section[k + 1].x), floor + section[k + 1].y);
+                    kit.Quad(rock, a, outline[k], outline[k + 1], b, new Vector3(outward.x, 0, outward.y));
+                }
+
+                const float apron = 9;
+                const int rows = 6;
+                var columns = Mathf.CeilToInt(2 * (w + 9) / 1.5f);
+                Vector3 Apron(float o, float s)
+                {
+                    var p = end + outward * o + across * s;
+                    var ease = Mathf.Max(SmoothStep(w + 0.5f, w + 3, Mathf.Abs(s)), SmoothStep(0, apron, o));
+
+                    return Local(p, Mathf.Lerp(floor + 0.02f, Ground(p) - 0.15f, ease));
+                }
+
+                for (var r = 0; r < rows; r++)
+                {
+                    var o0 = apron * r / rows;
+                    var o1 = apron * (r + 1) / rows;
+
+                    for (var c = 0; c < columns; c++)
+                    {
+                        var s0 = Mathf.Lerp(-(w + 9), w + 9, (float)c / columns);
+                        var s1 = Mathf.Lerp(-(w + 9), w + 9, (float)(c + 1) / columns);
+                        kit.Quad(Mathf.Abs(s0 + s1) / 2 < w + 1 ? paving : rock, Apron(o0, s0), Apron(o0, s1), Apron(o1, s1), Apron(o1, s0), Vector3.up);
+                    }
+                }
+            }
         }
     }
 }

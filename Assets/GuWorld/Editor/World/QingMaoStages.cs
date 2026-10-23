@@ -250,6 +250,7 @@ namespace GuWorld.Editor
                 case "landmarks":
                 {
                     Prepare();
+                    RecutTunnels();
                     LoadGround();
                     var part = new PlanPart();
                     BuildLandmarks(part);
