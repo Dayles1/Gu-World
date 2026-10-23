@@ -68,6 +68,9 @@ namespace GuWorld.Body
             Spin,
             // The whole body turned head over heels (a roll), radians.
             Flip,
+            // The chest apart from the lower back (the upper spine): bent forward, turned about the spine; and the wrists
+            // (positive: the hand bent forward, toward the palm), so the hands are not stiff on the forearms.
+            ChestLean, ChestTwist, WristL, WristR,
             Count,
         }
 
@@ -81,13 +84,16 @@ namespace GuWorld.Body
             rest[(int)P.ArmOutR] = 0.08f;
             rest[(int)P.ElbowL] = -0.12f;
             rest[(int)P.ElbowR] = -0.12f;
+            // Hanging hands bend a little toward the palms.
+            rest[(int)P.WristL] = 0.12f;
+            rest[(int)P.WristR] = 0.12f;
 
             return rest;
         }
 
         public readonly Transform Root;
-        public readonly Transform Body, HipsJoint, Spine, Neck, Head;
-        public readonly Transform ShoulderL, ShoulderR, ElbowL, ElbowR;
+        public readonly Transform Body, HipsJoint, Spine, Chest, Neck, Head;
+        public readonly Transform ShoulderL, ShoulderR, ElbowL, ElbowR, WristL, WristR;
         public readonly Transform HipL, HipR, KneeL, KneeR, AnkleL, AnkleR;
 
         /// <summary>How bent the back is besides (an old person's stoop), radians.</summary>
@@ -137,13 +143,17 @@ namespace GuWorld.Body
             Body = Joint("Joint Body", root, 0, Hips);
             HipsJoint = Joint("Joint Hips", Body, 0, 0);
             Spine = Joint("Joint Spine", HipsJoint, 0, 0.06f);
-            Neck = Joint("Joint Neck", Spine, 0, 0.5f);
+            // The upper back: the chest, the neck and the shoulders turn on it, against the lower back.
+            Chest = Joint("Joint Chest", Spine, 0, 0.24f);
+            Neck = Joint("Joint Neck", Chest, 0, 0.26f);
             Head = Joint("Joint Head", Neck, 0, 0.08f);
             // Side 1 is the figure's left: +X on the web, -X here.
-            ShoulderL = Joint("Joint Shoulder L", Spine, 0.215f, 0.43f);
-            ShoulderR = Joint("Joint Shoulder R", Spine, -0.215f, 0.43f);
+            ShoulderL = Joint("Joint Shoulder L", Chest, 0.215f, 0.19f);
+            ShoulderR = Joint("Joint Shoulder R", Chest, -0.215f, 0.19f);
             ElbowL = Joint("Joint Elbow L", ShoulderL, 0, -0.28f);
             ElbowR = Joint("Joint Elbow R", ShoulderR, 0, -0.28f);
+            WristL = Joint("Joint Wrist L", ElbowL, 0, -0.25f);
+            WristR = Joint("Joint Wrist R", ElbowR, 0, -0.25f);
             HipL = Joint("Joint Hip L", HipsJoint, LegSpread, -HipJoint);
             HipR = Joint("Joint Hip R", HipsJoint, -LegSpread, -HipJoint);
             KneeL = Joint("Joint Knee L", HipL, 0, -Thigh);
@@ -311,6 +321,7 @@ namespace GuWorld.Body
                 this[P.Twist] -= 0.15f * a;
                 this[P.HeadY] += 0.15f * a;
                 this[P.Grip] = Mathf.Lerp(this[P.Grip], -0.35f, a);
+                this[P.WristR] = Mathf.Lerp(this[P.WristR], -0.45f, a);
             }
 
             // A throw: wound up (as the aim holds it), the right arm cuts across in front from right to left, open-handed,
@@ -333,7 +344,10 @@ namespace GuWorld.Body
                 this[P.HipsYaw] += hips;
                 this[P.HeadY] -= (turn + hips) * 0.8f;
                 this[P.Lean] += 0.08f * cut;
+                this[P.ChestTwist] += turn * 0.5f;
                 this[P.Grip] = -0.4f;
+                // The wrist snaps through the cut, the palm leading.
+                this[P.WristR] = Mathf.Lerp(-0.5f, 0.35f, cut);
             }
 
             // Fighting: the fists up before the face, and a blow thrown from there.
@@ -362,8 +376,9 @@ namespace GuWorld.Body
                 this[P.Flip] = (RollBack ? -1 : 1) * Mathf.PI * 2 * turn;
             }
 
-            // Keep the eyes level whatever the back does.
-            this[P.HeadX] -= this[P.Lean] * 0.7f;
+            // Keep the eyes level whatever the back does, and on the way ahead whatever the shoulders do.
+            this[P.HeadX] -= this[P.Lean] * 0.7f + this[P.ChestLean] * 0.8f;
+            this[P.HeadY] -= this[P.ChestTwist] * 0.85f;
         }
 
         /// <summary>Out and back: rising to 1 by `at`, held a moment, back to 0 by the end.</summary>
@@ -599,7 +614,8 @@ namespace GuWorld.Body
 
                 var swing = (phase - duty) / (1 - duty);
                 var shape = Mathf.Pow(swing, Mathf.Lerp(1, 0.65f, run));
-                var lift = Mathf.Sin(Mathf.PI * shape) * (0.09f + 0.14f * run) * (crouch ? 0.7f : 1) + 0.045f * (1 - Smooth(swing / 0.25f));
+                // Running, the knee comes up high and the heel kicks up behind.
+            var lift = Mathf.Sin(Mathf.PI * shape) * (0.09f + 0.22f * run) * (crouch ? 0.7f : 1) + 0.045f * (1 - Smooth(swing / 0.25f));
 
                 return (-half + 2 * half * Smooth(swing), lift, Mathf.Lerp(0.38f, -0.22f, Smooth(swing / 0.55f)));
             }
@@ -623,24 +639,32 @@ namespace GuWorld.Body
             var runBounce = 0.5f + 0.5f * Mathf.Cos((stepPhase - duty * 0.5f) * Mathf.PI * 4);
             var bounce = Mathf.Lerp(walkBounce, runBounce, run);
             this[P.BodyY] = (crouch ? -0.36f : 0) - moving * (0.015f + 0.04f * run) * bounce - run * 0.05f;
-            this[P.Lean] = (crouch ? 0.38f : 0) + moving * 0.03f + run * 0.16f;
+            this[P.Lean] = (crouch ? 0.3f : 0) + moving * 0.03f + run * 0.12f;
+            // The chest over it: a runner leans from the ankles and carries the chest forward, a walker upright.
+            this[P.ChestLean] = (crouch ? 0.1f : 0) + run * 0.09f * moving;
             this[P.Lean] += Mathf.Clamp(motion.acceleration * 0.02f, -0.12f, 0.18f) * moving;
-            // Only a hint of leaning into a turn.
-            this[P.Roll] = Mathf.Clamp(-motion.turnRate * speed * 0.006f, -0.07f, 0.07f);
+            // Leaning into a turn, more the faster it is taken.
+            this[P.Roll] = Mathf.Clamp(-motion.turnRate * speed * 0.009f, -0.13f, 0.13f);
             this[P.Side] = this[P.Roll] * 0.3f;
 
             var swingL = zL / half;
             var swingR = zR / half;
-            var armSwing = (0.35f + 0.5f * run) * moving * (crouch ? 0.5f : 1);
-            this[P.ArmL] = -swingR * armSwing - (crouch ? 0.3f : 0);
-            this[P.ArmR] = -swingL * armSwing - (crouch ? 0.3f : 0);
-            this[P.ElbowL] = this[P.ElbowR] = -0.15f - moving * 0.2f - run * 1.0f - (crouch ? 0.5f : 0);
+            // The arms swing from the shoulders against the legs — wider running, pumping at a right angle.
+            var armSwing = (0.42f + 0.55f * run) * moving * (crouch ? 0.5f : 1);
+            this[P.ArmL] = -swingR * armSwing - (crouch ? 0.3f : 0) - run * 0.12f * moving;
+            this[P.ArmR] = -swingL * armSwing - (crouch ? 0.3f : 0) - run * 0.12f * moving;
+            this[P.ElbowL] = this[P.ElbowR] = -0.15f - moving * 0.2f - run * 1.15f - (crouch ? 0.5f : 0);
             // An arm bends more as it swings forward, and straightens going back.
-            this[P.ElbowL] -= Mathf.Max(0, swingR) * (0.18f + 0.35f * run) * moving;
-            this[P.ElbowR] -= Mathf.Max(0, swingL) * (0.18f + 0.35f * run) * moving;
-            this[P.ArmOutL] = this[P.ArmOutR] = 0.08f + run * 0.06f;
-            this[P.Twist] = swingL * (0.08f + 0.06f * run) * moving;
-            this[P.HipsYaw] = -swingL * 0.08f * moving;
+            this[P.ElbowL] -= Mathf.Max(0, swingR) * (0.22f + 0.35f * run) * moving;
+            this[P.ElbowR] -= Mathf.Max(0, swingL) * (0.22f + 0.35f * run) * moving;
+            this[P.ArmOutL] = this[P.ArmOutR] = 0.08f + run * 0.08f;
+            // The wrists trail the swing a little, the hands loose walking and firm running.
+            this[P.WristL] = 0.12f + 0.12f * swingR * (1 - run) * moving - 0.1f * run * moving;
+            this[P.WristR] = 0.12f + 0.12f * swingL * (1 - run) * moving - 0.1f * run * moving;
+            // The pelvis turns with the leg going forward, the chest the other way with the arms; the lower back between.
+            this[P.HipsYaw] = -swingL * (0.11f + 0.04f * run) * moving;
+            this[P.Twist] = swingL * 0.04f * moving;
+            this[P.ChestTwist] = swingL * (0.12f + 0.1f * run) * moving;
             // The hip over the swinging leg drops a little each step.
             this[P.HipsRoll] = Mathf.Sin(stepPhase * Mathf.PI * 2) * (0.045f - 0.02f * run) * moving * (crouch ? 0.5f : 1);
 
@@ -665,9 +689,14 @@ namespace GuWorld.Body
             this[P.ArmR] -= 0.05f * idle;
             this[P.ElbowL] -= 0.1f * idle;
             this[P.ElbowR] -= 0.1f * idle;
-            this[P.Lean] += breath * 0.012f * idle;
+            // Breathing: the chest rises and opens, the shoulders with it.
+            this[P.ChestLean] -= breath * 0.025f * idle;
+            this[P.Lean] += breath * 0.006f * idle;
             this[P.ArmOutL] += breath * 0.015f * idle;
             this[P.ArmOutR] += breath * 0.015f * idle;
+            // Now and then a hand moves: the fingers flexed, a wrist turned.
+            this[P.WristL] += Mathf.Sin(time * 0.43f) * 0.08f * idle;
+            this[P.WristR] += Mathf.Sin(time * 0.37f + 1.3f) * 0.08f * idle;
             this[P.HeadX] += Mathf.Sin(time * 0.6f) * 0.03f * idle;
             this[P.HeadY] += Mathf.Sin(time * 0.21f) * Mathf.Max(0, Mathf.Sin(time * 0.13f)) * 0.3f * idle;
             this[P.BodyY] -= squash;
@@ -694,6 +723,8 @@ namespace GuWorld.Body
             this[P.ArmOutL] = this[P.ArmOutR] = 0.45f + 0.15f * up + 0.55f * down;
             this[P.ElbowL] = this[P.ElbowR] = -0.6f + 0.25f * down;
             this[P.Lean] = 0.1f - 0.06f * down;
+            this[P.ChestLean] = -0.06f * up + 0.05f * down;
+            this[P.WristL] = this[P.WristR] = -0.15f * down;
             this[P.Roll] = Mathf.Clamp(-motion.turnRate * motion.speed * 0.004f, -0.05f, 0.05f);
             this[P.HeadX] = -up * 0.12f + down * 0.15f;
         }
@@ -760,7 +791,9 @@ namespace GuWorld.Body
             this[P.KneeR] = 0.8f * legs;
             this[P.FootL] = -(this[P.ThighL] + this[P.KneeL]) * 0.8f;
             this[P.FootR] = -(this[P.ThighR] + this[P.KneeR]) * 0.8f;
-            this[P.Lean] = 0.35f * Mathf.Sin(Mathf.PI * progress);
+            this[P.Lean] = 0.25f * Mathf.Sin(Mathf.PI * progress);
+            this[P.ChestLean] = 0.12f * Mathf.Sin(Mathf.PI * progress);
+            this[P.WristL] = this[P.WristR] = 0.5f;
             this[P.HeadX] = -0.4f * (1 - progress);
         }
 
@@ -861,8 +894,9 @@ namespace GuWorld.Body
             Body.localRotation = Quaternion.AngleAxis(-Get(P.Spin) * Mathf.Rad2Deg, Vector3.up) * Quaternion.AngleAxis(Get(P.Flip) * Mathf.Rad2Deg, Vector3.right) *
                                  Xyz(Get(P.Pitch), 0, Get(P.Roll));
             HipsJoint.localRotation = Xyz(0, Get(P.HipsYaw), Get(P.HipsRoll));
-            // The back straightens above the tilting hips.
+            // The back straightens above the tilting hips; the chest on it bends and turns on its own.
             Spine.localRotation = Xyz(Get(P.Lean), Get(P.Twist), Get(P.Side) - Get(P.HipsRoll) * 0.8f);
+            Chest.localRotation = Xyz(Get(P.ChestLean), Get(P.ChestTwist), 0);
             Head.localRotation = Yxz(Get(P.HeadX), Get(P.HeadY), 0);
 
             float thighL = Get(P.ThighL), thighR = Get(P.ThighR);
@@ -899,6 +933,8 @@ namespace GuWorld.Body
             ShoulderR.localRotation = Xyz(Get(P.ArmR), 0, -Get(P.ArmOutR));
             ElbowL.localRotation = Xyz(Get(P.ElbowL), 0, 0);
             ElbowR.localRotation = Xyz(Get(P.ElbowR), 0, 0);
+            WristL.localRotation = Xyz(-Get(P.WristL), 0, 0);
+            WristR.localRotation = Xyz(-Get(P.WristR), 0, 0);
         }
     }
 }

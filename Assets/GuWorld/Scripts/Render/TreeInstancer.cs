@@ -21,9 +21,9 @@ namespace GuWorld.Render
         /// <summary>How far trees are drawn, m (0: none).</summary>
         public static float Distance = 800;
         /// <summary>Within these the full tree and the middle one are drawn (beyond, the plainest).</summary>
-        public static float FullUpTo = 70;
-        public static float MiddleUpTo = 260;
-        public static float ShadowsUpTo = 70;
+        public static float FullUpTo = 120;
+        public static float MiddleUpTo = 420;
+        public static float ShadowsUpTo = 110;
 
         class Kind
         {
@@ -123,7 +123,8 @@ namespace GuWorld.Render
                     }
 
                     list.Add(Matrix4x4.TRS(at, Quaternion.Euler(0, tree.rotation * Mathf.Rad2Deg, 0), new Vector3(tree.widthScale, tree.heightScale, tree.widthScale)));
-                    cell.Bounds.Encapsulate(new Bounds(at + Vector3.up * 10 * tree.heightScale, new Vector3(12, 20 * tree.heightScale, 12)));
+                    // The tree's own size (trunk and crown grow with it): tall ones are seen over the hill before their foot is.
+                    cell.Bounds.Encapsulate(new Bounds(at + Vector3.up * 10 * tree.heightScale, new Vector3(12 * tree.widthScale, 20 * tree.heightScale, 12 * tree.widthScale)));
                 }
 
                 terrain.treeDistance = 0;

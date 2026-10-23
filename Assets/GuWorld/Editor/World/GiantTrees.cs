@@ -43,7 +43,8 @@ namespace GuWorld.Editor
         {
             var random = new System.Random(900 + index * 31);
             float R() => (float)random.NextDouble();
-            var d = new GiantDesign { Name = $"Giant Tree {index}", Height = 38 + R() * 14, BaseRadius = 1.5f + R() * 0.9f };
+            // A hundred metres and more (the wild trees round them are now 40–85 m): the oldest trees on the mountain.
+            var d = new GiantDesign { Name = $"Giant Tree {index}", Height = 96 + R() * 24, BaseRadius = 3.2f + R() * 1.4f };
             d.TopRadius = d.BaseRadius * 0.38f;
             d.ClimbHeight = d.Height * 0.72f;
 
@@ -83,16 +84,17 @@ namespace GuWorld.Editor
             {
                 var a = i * 2.4f;
                 var r = i == 0 ? 0 : 3 + R() * 3;
-                trunk.Blob(i % 2 == 0 ? GiantLeaves : GiantLeavesDeep, new Vector3(Mathf.Sin(a) * r, d.Height - 3 + R() * 3, Mathf.Cos(a) * r), new Vector3(4.5f, 3.2f, 4.5f) * (0.8f + R() * 0.5f), index * 10 + i);
+                trunk.Blob(i % 2 == 0 ? GiantLeaves : GiantLeavesDeep, new Vector3(Mathf.Sin(a) * r, d.Height - 7 + R() * 6, Mathf.Cos(a) * r), new Vector3(10f, 7f, 10f) * (0.8f + R() * 0.5f), index * 10 + i);
             }
 
             d.Trunk = Save(trunk, $"{d.Name} Trunk");
 
             // The limbs, spiralling up.
-            var count = 9 + random.Next(6);
+            // Limbs all the way up the climb: more of them on a taller trunk.
+            var count = 18 + random.Next(8);
             var far = new MeshKit();
             far.Cylinder(GiantBark, Vector3.down, new Vector3(0, d.Height, 0), d.BaseRadius * 1.1f, 0.3f, 6);
-            far.Blob(GiantLeavesDeep, new Vector3(0, d.Height - 2, 0), new Vector3(7, 4, 7), index);
+            far.Blob(GiantLeavesDeep, new Vector3(0, d.Height - 6, 0), new Vector3(16, 9, 16), index);
 
             for (var i = 0; i < count; i++)
             {
@@ -168,7 +170,7 @@ namespace GuWorld.Editor
 
             bool Fits(Vector2 p)
             {
-                if (giantSpots.Any(g => Vector2.Distance(g.at, p) < 26))
+                if (giantSpots.Any(g => Vector2.Distance(g.at, p) < 34) || NearLandmark(p, 24))
                 {
                     return false;
                 }

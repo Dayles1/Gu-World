@@ -253,7 +253,8 @@ namespace GuWorld.Editor
                         }
                     }
 
-                    holes[j, i] = solid;
+                    // A tunnel's mouth goes into the hillside: the ground cut away there.
+                    holes[j, i] = solid && !TunnelMouth(middle);
                 }
             }
 

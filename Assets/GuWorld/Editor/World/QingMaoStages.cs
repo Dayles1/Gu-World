@@ -36,7 +36,7 @@ namespace GuWorld.Editor
     public static partial class QingMaoBuilder
     {
         /// <summary>The stages, in order.</summary>
-        public static readonly string[] Stages = { "terrain", "fine", "village-gu_yue", "village-xiong", "village-bai", "water", "trails", "hamlets", "giants", "assemble" };
+        public static readonly string[] Stages = { "terrain", "fine", "village-gu_yue", "village-xiong", "village-bai", "water", "trails", "hamlets", "giants", "landmarks", "assemble" };
 
         /// <summary>What each stage uses that other stages make (run one again, and these are made again too).</summary>
         static readonly Dictionary<string, string[]> Uses = new Dictionary<string, string[]>
@@ -44,6 +44,7 @@ namespace GuWorld.Editor
             ["trails"] = new[] { "terrain", "fine" },
             ["hamlets"] = new[] { "terrain" },
             ["giants"] = new[] { "terrain", "fine" },
+            ["landmarks"] = new[] { "terrain", "fine" },
             ["assemble"] = Stages.Take(Stages.Length - 1).ToArray(),
         };
 
@@ -246,6 +247,16 @@ namespace GuWorld.Editor
                     PlantGiants();
                     SavePart("Giant Trees");
                     break;
+                case "landmarks":
+                {
+                    Prepare();
+                    LoadGround();
+                    var part = new PlanPart();
+                    BuildLandmarks(part);
+                    SavePart("Landmarks");
+                    SavePlanPart(stage, part);
+                    break;
+                }
                 case "assemble":
                     Assemble();
                     break;
@@ -316,6 +327,9 @@ namespace GuWorld.Editor
             }
 
             EditorUtility.DisplayProgressBar("Qing Mao", "Finding the trails…", 0.08f);
+            // The landmarks first: some trails lead to them, and the ground keeps its trees off them.
+            ChooseLandmarks(made);
+            BuildLog.Mark($"prepare: {landmarks.Count} landmarks, {tunnels.Count} tunnels");
             LayAllTrails(made, Natural);
             BuildLog.Mark($"prepare: {trails.Count} trails");
             ChooseGiantSpots(made);
@@ -361,6 +375,7 @@ namespace GuWorld.Editor
                 "trails" => File.Exists(PartPath("Trails")),
                 "hamlets" => File.Exists(PartPath("Hamlets")),
                 "giants" => File.Exists(PartPath("Giant Trees")),
+                "landmarks" => File.Exists(PartPath("Landmarks")),
                 "assemble" => File.Exists(ScenePath),
                 _ => true,
             };
@@ -600,7 +615,7 @@ namespace GuWorld.Editor
 
             var streamed = new List<GameObject>();
 
-            foreach (var part in new[] { "Water", "Trails", "Village gu_yue", "Village xiong", "Village bai", "Hamlets", "Giant Trees" })
+            foreach (var part in new[] { "Water", "Trails", "Village gu_yue", "Village xiong", "Village bai", "Hamlets", "Giant Trees", "Landmarks" })
             {
                 var prefab = AssetDatabase.LoadAssetAtPath<GameObject>(PartPath(part));
 
@@ -658,7 +673,7 @@ namespace GuWorld.Editor
 
             var whole = new PlanPart();
 
-            foreach (var stage in Stages.Where(s => s.StartsWith("village-") || s == "hamlets"))
+            foreach (var stage in Stages.Where(s => s.StartsWith("village-") || s == "hamlets" || s == "landmarks"))
             {
                 var part = LoadPlanPart(stage);
                 whole.Buildings.AddRange(part.Buildings);

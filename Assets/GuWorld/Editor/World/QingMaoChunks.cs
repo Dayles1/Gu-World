@@ -175,6 +175,13 @@ namespace GuWorld.Editor
                 var mesh = filter.sharedMesh;
                 var materials = renderer.sharedMaterials;
 
+                // Only meshes it can read, and not the artist's models (imported .glb: hundreds of thousands of triangles,
+                // and combining them crashed the editor) — a landmark of theirs is not drawn from far squares.
+                if (!mesh.isReadable || AssetDatabase.GetAssetPath(mesh).EndsWith(".glb", System.StringComparison.OrdinalIgnoreCase))
+                {
+                    return;
+                }
+
                 for (var s = 0; s < mesh.subMeshCount && s < materials.Length; s++)
                 {
                     if (materials[s] == null)

@@ -15,7 +15,13 @@ namespace GuWorld.Editor
     /// </summary>
     public static partial class QingMaoBuilder
     {
-        const int Fir = 0, RedPine = 1, Camphor = 2, Cypress = 3, BambooClump = 4, DeadTree = 5, Shrub = 6;
+        const int Fir = 0, RedPine = 1, Camphor = 2, Cypress = 3, BambooClump = 4, DeadTree = 5, Shrub = 6, Boulder = 7, Crag = 8, Slab = 9;
+
+        /// <summary>
+        /// How much taller than its shape the wild trees grow (the user's wish: four to five times, the old ones to a
+        /// hundred metres): firs of 17 m stand 65–85 m, camphors 40–50 m; one in twenty-five is an old giant.
+        /// </summary>
+        const float TallFrom = 3.8f, TallTo = 5f, AncientFrom = 6f, AncientTo = 6.8f;
 
         static TreePrototype[] treePrototypes;
         static DetailPrototype[] detailPrototypes;
@@ -47,6 +53,10 @@ namespace GuWorld.Editor
                 new TreePrototype { prefab = TreePrefab("Spear Bamboo", BambooTree, 0.45f, 6) },
                 new TreePrototype { prefab = TreePrefab("Dead Tree", DeadTreeShape, 0.34f, 4) },
                 new TreePrototype { prefab = TreePrefab("Shrub", ShrubShape, 0, 0) },
+                // Rocks: boulders, crags and slabs lie about the woods and the steep ground (drawn and made solid as the trees are).
+                new TreePrototype { prefab = TreePrefab("Boulder", BoulderShape, 0.9f, 1.4f) },
+                new TreePrototype { prefab = TreePrefab("Crag", CragShape, 1.1f, 3.2f) },
+                new TreePrototype { prefab = TreePrefab("Slab", SlabShape, 1.2f, 0.9f) },
             };
 
             return treePrototypes;
@@ -287,6 +297,44 @@ namespace GuWorld.Editor
         }
 
         /// <summary>A shrub: a few low lumps of leaves.</summary>
+        static Material Boulders => Mat("Boulder", 0x45463f, 0.08f, false, RubbleTexture(), 0.35f);
+        static Material MossyBoulders => Mat("Mossy Boulder", 0x3a4234, 0.06f, false, RubbleTexture(), 0.35f);
+
+        /// <summary>A boulder a metre and a half high: one rough stone, mossy on top.</summary>
+        static void BoulderShape(MeshKit kit, int level)
+        {
+            kit.Blob(Boulders, new Vector3(0, 0.55f, 0), new Vector3(1.2f, 0.95f, 1.0f), 3);
+
+            if (level == 0)
+            {
+                kit.Blob(MossyBoulders, new Vector3(0.15f, 1.15f, 0.05f), new Vector3(0.8f, 0.35f, 0.7f), 4);
+                kit.Blob(Boulders, new Vector3(-0.9f, 0.25f, 0.6f), new Vector3(0.45f, 0.35f, 0.4f), 5);
+            }
+        }
+
+        /// <summary>A crag: two or three stones stacked into a rough pillar some four metres high.</summary>
+        static void CragShape(MeshKit kit, int level)
+        {
+            kit.Blob(Boulders, new Vector3(0, 1.1f, 0), new Vector3(1.4f, 1.4f, 1.2f), 6);
+            kit.Blob(Boulders, new Vector3(0.2f, 2.6f, -0.1f), new Vector3(1.0f, 1.0f, 0.95f), 7);
+
+            if (level < 2)
+            {
+                kit.Blob(MossyBoulders, new Vector3(0.1f, 3.5f, 0), new Vector3(0.7f, 0.5f, 0.65f), 8);
+            }
+        }
+
+        /// <summary>A slab of rock half sunk in the ground, flat on top (a seat, a step).</summary>
+        static void SlabShape(MeshKit kit, int level)
+        {
+            kit.Blob(Boulders, new Vector3(0, 0.25f, 0), new Vector3(1.8f, 0.6f, 1.3f), 9);
+
+            if (level == 0)
+            {
+                kit.Blob(MossyBoulders, new Vector3(-0.4f, 0.65f, 0.2f), new Vector3(0.9f, 0.18f, 0.7f), 10);
+            }
+        }
+
         static void ShrubShape(MeshKit kit, int level)
         {
             var lumps = level == 0 ? 4 : 1;
@@ -298,6 +346,20 @@ namespace GuWorld.Editor
                 kit.Blob(i % 2 == 0 ? Leaves : DarkLeaves, at, new Vector3(1.1f, 0.85f, 1.1f) * (level == 0 ? 1 : 1.4f), i);
             }
         }
+
+        /// <summary>
+        /// How tall a wild tree of a kind grows against its shape: the trees four to five times (one in twenty-five an
+        /// old giant, six to seven), the bamboo a little over twice (spear bamboo is tall, not a tower), the dead trees
+        /// three and a half, the shrubs one and a half. `r` and `old` are rolls (0…1).
+        /// </summary>
+        static float WildScale(int kind, float r, float old) => kind switch
+        {
+            Shrub => 1.2f + 0.8f * r,
+            BambooClump => 1.9f + 0.7f * r,
+            DeadTree => 3f + 1.2f * r,
+            _ when old < 0.04f => Mathf.Lerp(AncientFrom, AncientTo, r),
+            _ => Mathf.Lerp(TallFrom, TallTo, r),
+        };
 
         static void AddTree(List<TreeInstance> trees, System.Random random, Vector2 corner, float size, Vector2 p, int kind, float scale)
         {
@@ -351,16 +413,22 @@ namespace GuWorld.Editor
                 return true;
             }
 
-            // Room round the giant trees.
+            // Room round the giant trees, and the landmarks and the tunnels' mouths.
             foreach (var (at, _) in giantSpots)
             {
-                if ((at - p).sqrMagnitude < 81)
+                if ((at - p).sqrMagnitude < 196)
                 {
                     return true;
                 }
             }
 
-            return TrailNear(p, 2.6f + clearance);
+            if (NearLandmark(p, 6 + clearance))
+            {
+                return true;
+            }
+
+            // A trunk is now metres thick: its foot kept well clear of the trails.
+            return TrailNear(p, 4.5f + clearance);
         }
 
         /// <summary>The woods of a mountain tile: a jittered grid, firs and pines high, camphor and cypress low, bamboo in the grove, a lone tree in the open now and then.</summary>
@@ -370,8 +438,9 @@ namespace GuWorld.Editor
             var trees = new List<TreeInstance>();
             var random = new System.Random(Mathf.RoundToInt(corner.x * 7 + corner.y * 13));
             float R() => (float)random.NextDouble();
-            // A tree every 18 m or so in the woods (at 12 m the mountain held a million, more than the graphics can draw).
-            const float spacing = 18;
+            // A tree every 24 m or so in the woods: they stand 4–5 times taller than they did, their crowns meet over the
+            // floor (at 12 m the mountain held a million, more than the graphics can draw).
+            const float spacing = 24;
 
             for (var z = corner.y; z < corner.y + TileSize; z += spacing)
             {
@@ -389,8 +458,19 @@ namespace GuWorld.Editor
                         continue;
                     }
 
-                    if (data.GetSteepness(u, v) > 40 || Clear(p, plans, 1))
+                    var steepness = data.GetSteepness(u, v);
+
+                    if (steepness > 52 || Clear(p, plans, 1))
                     {
+                        continue;
+                    }
+
+                    // Steep ground: rocks, not trees; now and then a boulder in the woods too.
+                    if (steepness > 40 || (steepness > 26 && R() < 0.3f) || R() < 0.035f)
+                    {
+                        var rock = steepness > 34 && R() < 0.5f ? Crag : R() < 0.6f ? Boulder : Slab;
+                        AddTree(trees, random, corner, TileSize, p, rock, 0.9f + 2.2f * R() * R());
+
                         continue;
                     }
 
@@ -403,14 +483,14 @@ namespace GuWorld.Editor
                     else if (R() < high * 0.85f) kind = R() < 0.65f ? Fir : RedPine;
                     else kind = R() < 0.55f ? Camphor : R() < 0.5f ? Cypress : RedPine;
 
-                    AddTree(trees, random, corner, TileSize, p, kind, kind == Shrub ? 0.8f + 0.6f * R() : 0.8f + 0.55f * R());
+                    AddTree(trees, random, corner, TileSize, p, kind, WildScale(kind, R(), R()));
 
                     // The spear bamboo grows thick.
                     if (kind == BambooClump)
                     {
                         for (var k = 0; k < 3; k++)
                         {
-                            AddTree(trees, random, corner, TileSize, p + new Vector2(R() - 0.5f, R() - 0.5f) * 8, BambooClump, 0.8f + 0.4f * R());
+                            AddTree(trees, random, corner, TileSize, p + new Vector2(R() - 0.5f, R() - 0.5f) * 8, BambooClump, WildScale(BambooClump, R(), 1));
                         }
                     }
                 }
@@ -439,7 +519,8 @@ namespace GuWorld.Editor
                     var height = data.GetInterpolatedHeight(u, v);
                     var grove = Vector2.Distance(p, QingMao.Grove) < QingMao.GroveRadius;
 
-                    if (!plan.Wild(p) || data.GetSteepness(u, v) > 38 || TrailNear(p, 3) || giantSpots.Any(g => (g.at - p).sqrMagnitude < 81) || Vector2.Distance(p, QingMao.Pool) < QingMao.PoolRadius + 10)
+                    if (!plan.Wild(p) || data.GetSteepness(u, v) > 38 || TrailNear(p, 4.5f) || giantSpots.Any(g => (g.at - p).sqrMagnitude < 196) || Vector2.Distance(p, QingMao.Pool) < QingMao.PoolRadius + 10 ||
+                        NearLandmark(p, 6))
                     {
                         continue;
                     }
@@ -455,7 +536,8 @@ namespace GuWorld.Editor
                     }
 
                     var kind = grove ? BambooClump : R() < 0.15f ? Shrub : R() < 0.5f ? Camphor : R() < 0.5f ? Cypress : Fir;
-                    AddTree(trees, random, corner, size, p, kind, 0.8f + 0.5f * R());
+                    // Among the houses a little lower (2–3 times their shape): crowns of 80 m would hang over the roofs.
+                    AddTree(trees, random, corner, size, p, kind, WildScale(kind, R(), 1) * 0.6f);
                 }
             }
 
@@ -603,7 +685,7 @@ namespace GuWorld.Editor
                         continue;
                     }
 
-                    if (Vector2.Distance(p, QingMao.Pool) < QingMao.PoolRadius + 4)
+                    if (Vector2.Distance(p, QingMao.Pool) < QingMao.PoolRadius + 4 || NearLandmark(p, 1))
                     {
                         continue;
                     }

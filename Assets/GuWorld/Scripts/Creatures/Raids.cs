@@ -32,6 +32,11 @@ namespace GuWorld.Creatures
         /// <summary>Someone has come (who, a line for the banner).</summary>
         public event Action<string, string> Came;
 
+        /// <summary>The demonic path's camp out in the wilds (null: none): its rogues are there whenever the hero comes near.</summary>
+        public Vector3? Camp;
+        readonly List<GuMaster> campers = new List<GuMaster>();
+        float campBackAt;
+
         /// <summary>The raids round the hero; `allowed`: whether anyone may come now (the game running, not the proving ground).</summary>
         public static Raids Create(Transform hero, HumanBody.Parts parts, Func<bool> allowed)
         {
@@ -53,6 +58,7 @@ namespace GuWorld.Creatures
 
             nextLook = Time.time + LookEvery * (0.75f + 0.5f * (float)random.NextDouble());
             raiders.RemoveAll(r => r == null);
+            Guard();
 
             foreach (var raider in raiders.ToArray())
             {
@@ -152,6 +158,71 @@ namespace GuWorld.Creatures
             }
         }
 
+        /// <summary>
+        /// The camp's rogues: three of them (a leader among them now and then) round the fire while the hero is within
+        /// 160 m; gone, unseen, when the hero is far; all killed, the camp is empty for ten minutes.
+        /// </summary>
+        void Guard()
+        {
+            if (Camp is not Vector3 camp)
+            {
+                return;
+            }
+
+            campers.RemoveAll(c => c == null);
+            var far = Flat(hero.position - camp).magnitude;
+
+            if (far > 260)
+            {
+                foreach (var camper in campers)
+                {
+                    if (!camper.Dead)
+                    {
+                        Destroy(camper.gameObject);
+                    }
+                }
+
+                campers.Clear();
+
+                return;
+            }
+
+            if (campers.Exists(c => !c.Dead))
+            {
+                return;
+            }
+
+            if (campers.Count > 0)
+            {
+                // All of them killed: the camp stands empty a while.
+                campBackAt = Time.time + 600;
+                campers.Clear();
+
+                return;
+            }
+
+            if (far > 160 || Time.time < campBackAt || (allowed != null && !allowed()))
+            {
+                return;
+            }
+
+            var kinds = new[] { MasterKinds.Demon(random.NextDouble() < 0.3 ? 3 : 2), MasterKinds.Demon(2), MasterKinds.Demon(1) };
+
+            for (var i = 0; i < kinds.Length; i++)
+            {
+                var a = i * Mathf.PI * 2 / kinds.Length + 0.4f;
+                var at = camp + new Vector3(Mathf.Cos(a), 0, Mathf.Sin(a)) * 4.5f;
+
+                if (UnityEngine.Physics.Raycast(at + Vector3.up * 40, Vector3.down, out var hit, 100, ~0, QueryTriggerInteraction.Ignore))
+                {
+                    at = hit.point + Vector3.up * 0.05f;
+                }
+
+                var rogue = GuMaster.Make(at, kinds[i], hero, parts, seed++ * 7919, true);
+                campers.Add(rogue);
+            }
+        }
+
         /// <summary>Everyone sent so far gone at once (a new game).</summary>
         public void Clear()
         {
@@ -164,6 +235,17 @@ namespace GuWorld.Creatures
             }
 
             raiders.Clear();
+
+            foreach (var camper in campers)
+            {
+                if (camper != null)
+                {
+                    Destroy(camper.gameObject);
+                }
+            }
+
+            campers.Clear();
+            campBackAt = 0;
             restUntil = Time.time + 60;
         }
 

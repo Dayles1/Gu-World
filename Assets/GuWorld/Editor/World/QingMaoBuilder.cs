@@ -113,6 +113,8 @@ namespace GuWorld.Editor
 
                 LayTrail($"Дорога у подножия ({QingMao.Find(a).Name} — {QingMao.Find(b).Name})", Hamlet(a), Hamlet(b), 1.0f, a, b);
             }
+
+            LayLandmarkTrails((id, name) => Gate(Clan.GuYue, name));
         }
 
         // ── Water ─────────────────────────────────────────────────────

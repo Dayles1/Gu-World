@@ -867,6 +867,7 @@ namespace GuWorld
             Clans.Load(restored.world?.clans);
             Clans.Changed += OnClanChanged;
             raids = Raids.Create(body.transform, picture.Parts, () => mode == Mode.Playing && !Sandbox && Location.id == QingMao.Id);
+            raids.Camp = Location.id == QingMao.Id && !Sandbox ? WorldPlan.Landmark("demon_camp") : null;
             raids.Came += (who, what) => menus.Banner(who, what);
             // The wolf tide: on its nights at the village, or called on the proving ground.
             tide = WolfTide.Make(wolves, body.transform);
@@ -3250,6 +3251,18 @@ namespace GuWorld
                     }
                 }
 
+                // The landmarks (the Moon Pavilion, the stone forest, the tunnels' mouths…): onto the ground there — or, in a tunnel, its floor.
+                if (WorldPlan.Current != null)
+                {
+                    foreach (var mark in WorldPlan.Current.Marks)
+                    {
+                        if (!string.IsNullOrEmpty(mark.Id))
+                        {
+                            places.TryAdd(mark.Id, mark.Id.StartsWith("tunnel") ? mark.At + Vector3.up : new Vector3(mark.At.x, float.NaN, mark.At.z));
+                        }
+                    }
+                }
+
                 // The hero's own village's squares, gates, stalls…
                 foreach (var layout in FindObjectsByType<VillageLayout>())
                 {
@@ -4008,11 +4021,10 @@ namespace GuWorld
                 return;
             }
 
-            var index = 0;
-
             var village = QingMao.Find("gu_yue");
             var random = new System.Random(20261018);
             (int count, float from, float to)[] rings = { (28, 260, 700), (16, 700, 1500), (6, 1500, 2600) };
+            var index = 0;
 
             for (var ring = 0; ring < rings.Length; ring++)
             {
@@ -4042,6 +4054,28 @@ namespace GuWorld
 
                     index++;
                     placed++;
+                }
+            }
+
+            // The stone forest (lore: the jade skin Gu is caught in a stone forest): its own Gu among the pillars.
+            if (WorldPlan.Landmark("stone_forest") is Vector3 forest)
+            {
+                var kinds = System.Array.FindAll(new[] { "jade_skin", "stealth_rock", "white_jade", "carapace", "jade_skin", "stealth_rock" }, id => GuBook.Find(id) != null);
+
+                for (var i = 0; i < 9 && kinds.Length > 0; i++)
+                {
+                    var angle = (float)random.NextDouble() * Mathf.PI * 2;
+                    var distance = 15 + (float)random.NextDouble() * 60;
+                    var at = forest + new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * distance;
+                    at.y = QingMao.GroundAt(at);
+                    var wild = WildGu.Make(at, GuBook.Find(kinds[i % kinds.Length]), 500 + i);
+
+                    if (saved != null && index < saved.Length && double.IsFinite(saved[index]) && saved[index] <= clock.Minutes + WildGu.SettlesMinutes)
+                    {
+                        wild.ReadyAt = saved[index];
+                    }
+
+                    index++;
                 }
             }
         }

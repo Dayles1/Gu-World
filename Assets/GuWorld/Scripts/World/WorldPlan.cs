@@ -23,6 +23,8 @@ namespace GuWorld.World
         [Serializable]
         public struct Mark
         {
+            /// <summary>A name to go to it by (the chat's /tp), where it has one (a landmark's).</summary>
+            public string Id;
             public string Label;
             public Vector3 At;
             public bool Major;
@@ -47,6 +49,28 @@ namespace GuWorld.World
         public Mark[] Marks = new Mark[0];
 
         public static WorldPlan Current { get; private set; }
+
+        /// <summary>Where a named place of the plan is (a landmark, a tunnel's mouth), or null.</summary>
+        public static Vector3? Landmark(string id)
+        {
+            // Asked for before the plan's own Awake (the game sets itself up in its Awake too): found in the scene.
+            var plan = Current != null ? Current : FindAnyObjectByType<WorldPlan>();
+
+            if (plan == null || id == null)
+            {
+                return null;
+            }
+
+            foreach (var mark in plan.Marks)
+            {
+                if (mark.Id == id)
+                {
+                    return mark.At;
+                }
+            }
+
+            return null;
+        }
 
         void Awake() => Current = this;
 

@@ -27,19 +27,20 @@ namespace GuWorld.Body
         static readonly Dictionary<string, (string joint, float share)> Drivers = new Dictionary<string, (string, float)>
         {
             ["pelvis"] = ("hips", 1),
-            ["spine_01"] = ("spine", 0.35f),
-            ["spine_02"] = ("spine", 0.7f),
-            ["spine_03"] = ("spine", 1),
+            // The lower back takes the spine's turn over its two vertebrae; the chest's vertebra takes the chest's (on top).
+            ["spine_01"] = ("spine", 0.5f),
+            ["spine_02"] = ("spine", 1),
+            ["spine_03"] = ("chest", 1),
             ["neck_01"] = ("head", 0.45f),
             ["Head"] = ("head", 1),
             ["clavicle_l"] = ("shoulderL", 0.2f),
             ["upperarm_l"] = ("shoulderL", 1),
             ["lowerarm_l"] = ("elbowL", 1),
-            ["hand_l"] = ("elbowL", 1),
+            ["hand_l"] = ("wristL", 1),
             ["clavicle_r"] = ("shoulderR", 0.2f),
             ["upperarm_r"] = ("shoulderR", 1),
             ["lowerarm_r"] = ("elbowR", 1),
-            ["hand_r"] = ("elbowR", 1),
+            ["hand_r"] = ("wristR", 1),
             ["thigh_l"] = ("hipL", 1),
             ["calf_l"] = ("kneeL", 1),
             ["foot_l"] = ("ankleL", 1),
@@ -207,9 +208,10 @@ namespace GuWorld.Body
 
             var joints = new Dictionary<string, Transform>
             {
-                ["hips"] = rig.HipsJoint, ["spine"] = rig.Spine, ["head"] = rig.Head,
+                ["hips"] = rig.HipsJoint, ["spine"] = rig.Spine, ["chest"] = rig.Chest, ["head"] = rig.Head,
                 ["shoulderL"] = rig.ShoulderL, ["shoulderR"] = rig.ShoulderR,
                 ["elbowL"] = rig.ElbowL, ["elbowR"] = rig.ElbowR,
+                ["wristL"] = rig.WristL, ["wristR"] = rig.WristR,
                 ["hipL"] = rig.HipL, ["hipR"] = rig.HipR,
                 ["kneeL"] = rig.KneeL, ["kneeR"] = rig.KneeR,
                 ["ankleL"] = rig.AnkleL, ["ankleR"] = rig.AnkleR,
