@@ -39,7 +39,72 @@ namespace GuWorld.Editor
             var head = Find("pavilion");
             var big = Place.Clan == Clan.GuYue;
 
-            if (head != null)
+            // The artist's great buildings, each on its pad, its front down the slope (the market row's up, to the square).
+            foreach (var pair in padBuildings)
+            {
+                var pad = Find(pair.Key);
+                var (model, scale, kind, label, turn) = pair.Value;
+                var size = QingMaoBuilder.VillageGlb[model].Size * scale;
+                Buildings.Add(new Building { Kind = kind, Centre = pad.Centre, Size = size, Yaw = pad.Yaw + turn, Floor = pad.Level, Name = label, Lit = true, Model = model, Scale = scale, Pad = true });
+                Take(pad.Centre, pad.Half, pad.Yaw);
+                var front = Quaternion.Euler(0, pad.Yaw + turn, 0) * Vector3.forward;
+                // Before its front, looking at it (as the pavilion's place always was).
+                Places.Add((pair.Key, pad.Centre + new Vector2(front.x, front.z) * (size.y / 2 + 2.5f), pad.Yaw + turn + 180));
+            }
+
+            if (Glb)
+            {
+                foreach (var pair in padBuildings)
+                {
+                    var pad = Find(pair.Key);
+                    var turn = Quaternion.Euler(0, pad.Yaw, 0);
+                    Vector2 Front(float x, float z)
+                    {
+                        var v = turn * new Vector3(x, 0, z);
+                        return pad.Centre + new Vector2(v.x, v.z);
+                    }
+
+                    var size = QingMaoBuilder.VillageGlb[pair.Value.model].Size * pair.Value.scale;
+                    var edge = size.y / 2 + 0.6f;
+
+                    if (pair.Key == "tavern great" || pair.Key == "teahouse")
+                    {
+                        Decor("prop_bench_wood", Front(-3, edge + 1.5f), pad.Yaw + 180, 1, true, true);
+                        Decor("prop_bench_wood", Front(3, edge + 1.5f), pad.Yaw + 180, 1, true, true);
+                    }
+
+                    if (pair.Key != "vault" && pair.Key != "market")
+                    {
+                        Decor("prop_lotus_vat", Front(-6.5f, edge), pad.Yaw, 1, true, true);
+                        Decor("prop_lotus_vat", Front(6.5f, edge), pad.Yaw, 1, true, true);
+                        Decor("prop_bonsai_pine", Front(-8.5f, edge), pad.Yaw, 1, false, true);
+                        Decor("prop_bonsai_pine", Front(8.5f, edge), pad.Yaw, 1, false, true);
+                    }
+                }
+
+                var academyYard = Find("academy yard");
+
+                if (academyYard != null)
+                {
+                    var turn = Quaternion.Euler(0, academyYard.Yaw, 0);
+                    Vector2 In(float x, float z)
+                    {
+                        var v = turn * new Vector3(x, 0, z);
+                        return academyYard.Centre + new Vector2(v.x, v.z);
+                    }
+
+                    for (var i = -1; i <= 1; i++)
+                    {
+                        Decor("prop_weapon_rack", In(i * 5.5f, -academyYard.Half.y + 1), academyYard.Yaw + 180, 1, true, true);
+                    }
+
+                    Decor("prop_go_table", In(academyYard.Half.x - 3, academyYard.Half.y - 3), academyYard.Yaw, 1, true, true);
+                    Decor("prop_moon_gate", In(0, academyYard.Half.y + 0.5f), academyYard.Yaw, 1, true, true);
+                    Decor("prop_go_table", In(-academyYard.Half.x + 3, academyYard.Half.y - 3), academyYard.Yaw, 1, true, true);
+                }
+            }
+
+            if (head != null && !Glb)
             {
                 Buildings.Add(new Building { Kind = big ? BuildingKind.Pavilion : BuildingKind.Hall, Centre = head.Centre, Size = head.Half * 2, Yaw = head.Yaw, Floor = head.Level, Name = big ? "Павильон клана" : "Зал клана", Lit = true });
                 Take(head.Centre, head.Half, head.Yaw);
@@ -50,7 +115,7 @@ namespace GuWorld.Editor
             {
                 var p = Find(pad);
 
-                if (p == null)
+                if (p == null || padBuildings.ContainsKey(pad))
                 {
                     continue;
                 }
@@ -86,7 +151,29 @@ namespace GuWorld.Editor
                 }
 
                 var well = On(Square.Half.x * 0.7f, -Square.Half.y * 0.45f);
-                Props.Add(new Prop { Kind = "well", At = Flat(well), Yaw = Square.Yaw });
+
+                if (Glb)
+                {
+                    Decor("prop_village_well", well, Square.Yaw, 1, true, true);
+
+                    // Behind each stall its goods; the clan's stele and its ding at the square's top, under the hall's stair.
+                    for (var i = 0; i < 3; i++)
+                    {
+                        Decor("prop_market_goods", On((i - 1) * Square.Half.x * 0.55f, Square.Half.y * 0.55f + 2.2f), Square.Yaw + 180, 0.8f, true, true);
+                    }
+
+                    Decor("prop_clan_stele", On(-9, -Square.Half.y + 3.2f), Square.Yaw + 180, 1, true, true);
+                    Decor("prop_bronze_ding", On(9, -Square.Half.y + 3), Square.Yaw, 1, true, true);
+
+                    foreach (var x in new[] { -0.45f, 0.45f })
+                    {
+                        Decor("prop_bench_stone", On(Square.Half.x * x, 0), Square.Yaw + 90, 1, true, true);
+                    }
+                }
+                else
+                {
+                    Props.Add(new Prop { Kind = "well", At = Flat(well), Yaw = Square.Yaw });
+                }
                 Places.Add(("well", well + Along * 1.8f, YawFacing(-Along)));
 
                 var tree = On(-Square.Half.x * 0.72f, -Square.Half.y * 0.4f);
@@ -108,12 +195,120 @@ namespace GuWorld.Editor
 
         static Vector3 Flat(Vector2 p) => new Vector3(p.x, float.NaN, p.y);
 
+        /// <summary>
+        /// One of the artist's props (VillageModels.cs) where its footprint is free — on open ground, or on a paved
+        /// place or pad when `paved` (only not where something stands already); its ground taken. Whether it went in.
+        /// </summary>
+        bool Decor(string model, Vector2 at, float yaw, float scale = 1, bool solid = true, bool paved = false)
+        {
+            var half = QingMaoBuilder.VillageGlb[model].Size * scale / 2;
+            var free = true;
+
+            if (paved)
+            {
+                Inside(at, half, yaw, 0.1f, cell => free &= !taken[cell] && kind[cell] != KWild && kind[cell] != KStair && rampOf[cell] < 0);
+            }
+            else
+            {
+                var cell = CellOf(at);
+                free = cell >= 0 && rampOf[cell] < 0 && Free(at, half, yaw, 0.1f);
+            }
+
+            if (!free)
+            {
+                return false;
+            }
+
+            ModelProps.Add((model, at, yaw, scale, solid));
+            Inside(at, half, yaw, 0, cell => taken[cell] = true);
+
+            return true;
+        }
+
+        /// <summary>A trade the village wants near a spot (built from the artist's models): what, where, how far from there it may stand.</summary>
+        class Wish
+        {
+            public BuildingKind Kind;
+            public string Name;
+            public string Model;
+            public float Scale;
+            public Vector2 Target;
+            public float Radius;
+            public bool Done;
+        }
+
+        readonly List<Wish> wishes = new List<Wish>();
+
+        /// <summary>The trades of a village built from models, each wanted near its spot (as AssignTrades has them for the procedural one).</summary>
+        void WishTrades()
+        {
+            Vector2 Gate(string name) => Gates.FirstOrDefault(g => g.Name == name)?.At ?? Centre;
+            void Want(BuildingKind kind, string name, string model, float scale, Vector2 target, float radius = 55) =>
+                wishes.Add(new Wish { Kind = kind, Name = name, Model = model, Scale = scale, Target = target, Radius = radius });
+
+            // In the middle, by the main way and the square: the trades people walk to.
+            Want(BuildingKind.Tavern, "Харчевня", "prop_eatery", 0.85f, World(RadiusAlong * 0.12f, -RadiusUp * 0.3f));
+            Want(BuildingKind.Teahouse, "Чайная", "prop_teahouse", 0.85f, World(-RadiusAlong * 0.14f, -RadiusUp * 0.22f));
+            Want(BuildingKind.Herbalist, "Лавка травника", "prop_herbalist", 0.9f, World(RadiusAlong * 0.2f, RadiusUp * 0.08f));
+            Want(BuildingKind.Shop, "Лавка", "prop_shop", 0.9f, World(-RadiusAlong * 0.12f, -RadiusUp * 0.36f));
+            Want(BuildingKind.Shop, "Лавка", "prop_shop", 0.9f, World(RadiusAlong * 0.12f, -RadiusUp * 0.45f));
+            Want(BuildingKind.Shop, "Лавка", "prop_shop", 0.9f, World(RadiusAlong * 0.28f, -RadiusUp * 0.1f));
+            // The second ring: taverns and an inn among the good houses.
+            Want(BuildingKind.Tavern, "Таверна «Бамбуковое вино»", "prop_tavern", 0.85f, World(RadiusAlong * 0.4f, -RadiusUp * 0.25f));
+            Want(BuildingKind.Tavern, "Таверна «Мутное вино»", "prop_tavern", 0.85f, World(-RadiusAlong * 0.38f, -RadiusUp * 0.42f));
+            Want(BuildingKind.Inn, "Постоялый двор", "prop_inn", 0.85f, Gate("gate west"), 70);
+            // The edge: the rough trades, the stores, the Gu farm by its spring.
+            Want(BuildingKind.Smithy, "Кузница", "prop_smithy", 0.9f, Gate("gate east"), 70);
+            Want(BuildingKind.Gambling, "Игорный дом", "prop_gambling_tent", 0.8f, World(RadiusAlong * 0.62f, -RadiusUp * 0.35f), 70);
+            Want(BuildingKind.Granary, "Амбар клана", "prop_granary", 0.9f, World(RadiusAlong * 0.6f, RadiusUp * 0.5f), 70);
+            Want(BuildingKind.Granary, "Амбар", "prop_granary", 0.9f, World(-RadiusAlong * 0.62f, RadiusUp * 0.45f), 70);
+            Want(BuildingKind.GuFarm, "Питомник Гу", "prop_gu_nursery", 0.85f, QingMao.Spring, 90);
+        }
+
+        static readonly string[] SmallShops = { "prop_shop_small_a", "prop_shop_small_b", "prop_shop_small_c" };
+
+        /// <summary>
+        /// What stands on a lane's next lot when the village is built from models: a wanted trade whose spot is near,
+        /// else a small shop now and then near the middle, a poor house at the edge, a family's bamboo house elsewhere.
+        /// The lot's size is the model's.
+        /// </summary>
+        (string model, float scale, BuildingKind kind, Wish wish) LotModel(Vector2 p, bool edge)
+        {
+            var wish = wishes.Where(w => !w.Done && Vector2.Distance(w.Target, p) < w.Radius).OrderBy(w => Vector2.Distance(w.Target, p)).FirstOrDefault();
+
+            if (wish != null)
+            {
+                return (wish.Model, wish.Scale, wish.Kind, wish);
+            }
+
+            // Rings round the middle (an oval as the village is): the public middle, the good houses, the poor edge.
+            var local = Local(p);
+            var ring = new Vector2(local.x / RadiusAlong, local.y / RadiusUp).magnitude;
+
+            if (edge || ring > 0.7f)
+            {
+                return ("prop_poor_house", 0.85f + R() * 0.15f, BuildingKind.Poor, null);
+            }
+
+            if (ring < 0.36f)
+            {
+                return R() < 0.45f ? (SmallShops[random.Next(SmallShops.Length)], 1, BuildingKind.Shop, null) : ("guyue_bamboo_house", 0.8f + R() * 0.06f, BuildingKind.Family, null);
+            }
+
+            return R() < 0.06f ? (SmallShops[random.Next(SmallShops.Length)], 1, BuildingKind.Shop, null) : ("guyue_bamboo_house", 0.72f + R() * 0.1f, BuildingKind.Family, null);
+        }
+
         /// <summary>The houses: shoulder to shoulder along every lane, a little askew, each as deep as the terrace lets it be.</summary>
         void PlaceHouses()
         {
             var big = Place.Clan == Clan.GuYue;
             var lanes = Streets.Where(s => !s.Stair).OrderByDescending(s => s.Main).ToList();
             var seed = 1000;
+
+            if (Glb)
+            {
+                WishTrades();
+            }
 
             foreach (var lane in lanes)
             {
@@ -131,6 +326,14 @@ namespace GuWorld.Editor
                         var uphill = Warp(p + normal * 4) > Warp(p - normal * 4);
                         var inside = InsideDistance(p);
                         var edge = inside < 34;
+
+                        if (Glb)
+                        {
+                            s += GlbLot(lane, s, side, uphill, edge, ref seed, ref sinceAlley);
+
+                            continue;
+                        }
+
                         var width = edge ? 3.6f + R() * 3 : 4.3f + R() * 4.6f;
 
                         if (Place.Clan != Clan.GuYue)
@@ -180,7 +383,111 @@ namespace GuWorld.Editor
                 }
             }
 
+            if (Glb)
+            {
+                // Bamboo in the free corners of the outer ring.
+                for (var tries = 0; tries < 600; tries++)
+                {
+                    var local = new Vector2((R() * 2 - 1) * RadiusAlong, (R() * 2 - 1) * RadiusUp);
+
+                    if (new Vector2(local.x / RadiusAlong, local.y / RadiusUp).magnitude > 0.55f && InsideDistance(World(local.x, local.y)) > 6)
+                    {
+                        Decor("prop_bamboo_grove", World(local.x, local.y), R() * 360, 0.8f + R() * 0.3f, false);
+                    }
+                }
+            }
+
             AssignTrades();
+        }
+
+        /// <summary>
+        /// One lot along a lane in a village built from models (PlaceHouses): the model's own size, set back from the
+        /// lane, its front to it — on the uphill side into the terrace, on the downhill side now and then a house out
+        /// over the terrace below on stilts; a smaller house where the bigger one has no room. Returns how far along the
+        /// lane to go on.
+        /// </summary>
+        float GlbLot(Street lane, float s, int side, bool uphill, bool edge, ref int seed, ref int sinceAlley)
+        {
+            var p = PointAt(lane.Points, s, out _);
+            var first = LotModel(p, edge);
+            // Every model stands level on its own terrace (no house out on stilts over the one below).
+            var stilts = false;
+            var tries = new List<(string model, float scale, BuildingKind kind, Wish wish)> { first };
+
+            if (first.kind != BuildingKind.Poor)
+            {
+                tries.Add(("prop_poor_house", 0.85f, BuildingKind.Poor, null));
+            }
+
+            tries.Add((SmallShops[random.Next(SmallShops.Length)], 1, edge ? BuildingKind.Poor : BuildingKind.Shop, null));
+
+            foreach (var (model, scale, kind, wish) in tries)
+            {
+                var size = QingMaoBuilder.VillageGlb[model].Size * scale;
+                var mid = PointAt(lane.Points, s + size.x / 2, out var midTangent);
+                var n = new Vector2(-midTangent.y, midTangent.x) * side;
+                var setback = lane.Half + 0.25f + R() * (edge ? 0.5f : 1.1f);
+                var placed = false;
+                var room = 0f;
+
+                if (uphill)
+                {
+                    room = Room(mid + n * setback, n, true);
+
+                    if (room - 0.3f >= size.y)
+                    {
+                        placed = TryHouse(mid + n * (setback + size.y / 2), size, YawFacing(-n) + (R() - 0.5f) * 6, lane, edge, ref seed, kind, false, model, scale);
+                    }
+                }
+                else if (stilts && wish == null && size.y < 8.6f)
+                {
+                    placed = TryHouse(mid + n * (lane.Half + 0.3f + size.y / 2), size, YawFacing(-n) + (R() - 0.5f) * 4, lane, edge, ref seed, kind, true, model, scale);
+                }
+
+                if (!placed)
+                {
+                    continue;
+                }
+
+                if (kind == BuildingKind.Poor && R() < 0.45f)
+                {
+                    var thing = new[] { "prop_firewood_stack", "prop_drying_rack", "prop_barrels", "prop_bamboo_fence", "prop_wooden_ladder" }[random.Next(5)];
+                    var thingScale = thing == "prop_barrels" ? 0.55f : 1;
+                    var thingSize = QingMaoBuilder.VillageGlb[thing].Size * thingScale;
+                    var beside = mid + midTangent * (size.x / 2 + thingSize.x / 2 + 0.5f) * (R() < 0.5f ? 1 : -1) + n * (setback + size.y / 2);
+                    Decor(thing, beside, YawFacing(-n), thingScale, true);
+                }
+
+                if (wish != null)
+                {
+                    wish.Done = true;
+                    Buildings[Buildings.Count - 1].Name = wish.Name;
+                    Buildings[Buildings.Count - 1].Lit = true;
+                }
+
+                // A poor house behind now and then, reached by the alley beside it.
+                var back = QingMaoBuilder.VillageGlb["prop_poor_house"].Size * 0.8f;
+
+                if (uphill && room - size.y > back.y + 1.4f && R() < 0.4f)
+                {
+                    TryHouse(mid + n * (setback + size.y + 0.9f + back.y / 2) + midTangent * (R() - 0.5f) * 1.5f, back,
+                        YawFacing(-n) + (R() - 0.5f) * 12, lane, true, ref seed, BuildingKind.Poor, false, "prop_poor_house", 0.8f);
+                }
+
+                sinceAlley++;
+                var gap = edge ? 0.3f + R() * 0.5f : 0.4f + R() * 1.2f;
+
+                // Now and then an alley between the houses.
+                if (sinceAlley > 2 + random.Next(4))
+                {
+                    gap = 1.8f + R() * 0.8f;
+                    sinceAlley = 0;
+                }
+
+                return size.x + gap;
+            }
+
+            return 1.5f;
         }
 
         /// <summary>How far one can build from a lane's edge into its side before the terrace ends or something is in the way.</summary>
@@ -207,7 +514,7 @@ namespace GuWorld.Editor
             return 26;
         }
 
-        bool TryHouse(Vector2 centre, Vector2 size, float yaw, Street lane, bool edge, ref int seed, BuildingKind? kind_ = null, bool overhang = false)
+        bool TryHouse(Vector2 centre, Vector2 size, float yaw, Street lane, bool edge, ref int seed, BuildingKind? kind_ = null, bool overhang = false, string model = null, float scale = 1)
         {
             var half = size / 2;
 
@@ -235,12 +542,12 @@ namespace GuWorld.Editor
 
             var laneLevel = Terraced(Warp(lane.Points[lane.Points.Count / 2]), 0.07f);
 
-            if (!overhang && high - low > 2.8f)
+            if (!overhang && high - low > (model != null ? 0.35f : 2.8f))
             {
                 return false;
             }
 
-            var floor = overhang ? frontGround + 0.15f : high + 0.12f;
+            var floor = overhang ? frontGround + 0.15f : high + (model != null ? 0.03f : 0.12f);
             var building = new Building
             {
                 Kind = kind_ ?? (edge ? (R() < 0.45f ? BuildingKind.Poor : R() < 0.25f ? BuildingKind.Shed : BuildingKind.Family) : (R() < 0.08f ? BuildingKind.Shed : BuildingKind.Family)),
@@ -252,10 +559,12 @@ namespace GuWorld.Editor
                 DropBack = Mathf.Max(0, floor - backGround),
                 Seed = seed++,
                 Lit = R() < 0.55f,
+                Model = model,
+                Scale = scale,
             };
 
             // A shed is small whatever room there was.
-            if (building.Kind == BuildingKind.Shed)
+            if (building.Kind == BuildingKind.Shed && model == null)
             {
                 building.Size = new Vector2(Mathf.Min(size.x, 2.6f + R() * 1.6f), Mathf.Min(size.y, 2.4f + R() * 1.4f));
             }
@@ -312,8 +621,30 @@ namespace GuWorld.Editor
 
             Vector2 Gate(string name) => Gates.FirstOrDefault(g => g.Name == name)?.At ?? Centre;
 
+            if (Glb)
+            {
+                // Built from models, the trades stand on their own lots already; one that found no lot near its spot
+                // takes the nearest family house's, its model as large as that lot allows.
+                foreach (var wish in wishes.Where(w => !w.Done))
+                {
+                    var size = QingMaoBuilder.VillageGlb[wish.Model].Size;
+                    var b = Nearest(wish.Target, 0, BuildingKind.Family);
+
+                    if (b == null)
+                    {
+                        continue;
+                    }
+
+                    var scale = Mathf.Min(wish.Scale, Mathf.Min(b.Size.x / size.x, b.Size.y / size.y));
+                    Make(b, wish.Kind, wish.Name);
+                    b.Model = wish.Model;
+                    b.Scale = scale;
+                    b.Size = size * scale;
+                    BuildLog.Write($"plan of {Place.Id}: {wish.Name} found no lot near its spot, took a house's (scale {scale:0.00})");
+                }
+            }
             // Round the square: shops, a tavern, a teahouse, facing it.
-            if (Square != null)
+            else if (Square != null)
             {
                 var near = houses.Where(b => Vector2.Distance(b.Centre, Square.Centre) < Square.Half.magnitude + 16).OrderBy(b => Vector2.Distance(b.Centre, Square.Centre)).ToList();
 
@@ -323,31 +654,35 @@ namespace GuWorld.Editor
                 }
             }
 
-            Make(Nearest(Gate("gate south"), 40), BuildingKind.Inn, "Постоялый двор");
-            Make(Nearest(Gate("gate east"), 30), BuildingKind.Smithy, "Кузница");
+            // The procedural village's trades: houses near their spots turned over to them.
+            if (!Glb)
+            {
+                Make(Nearest(Gate("gate south"), 40), BuildingKind.Inn, "Постоялый двор");
+                Make(Nearest(Gate("gate east"), 30), BuildingKind.Smithy, "Кузница");
 
-            if (big)
-            {
-                Make(Nearest(World(RadiusAlong * 0.45f, -RadiusUp * 0.3f), 36), BuildingKind.Tavern, "Таверна «Бамбуковое вино»");
-                Make(Nearest(World(-RadiusAlong * 0.4f, -RadiusUp * 0.45f), 36), BuildingKind.Tavern, "Таверна «Мутное вино»");
-                Make(Nearest(World(-RadiusAlong * 0.25f, RadiusUp * 0.15f), 25), BuildingKind.Herbalist, "Лавка травника");
-                Make(Nearest(World(RadiusAlong * 0.25f, -RadiusUp * 0.05f), 40), BuildingKind.Gambling, "Игорный дом");
-                Make(Nearest(World(RadiusAlong * 0.55f, RadiusUp * 0.55f), 30), BuildingKind.Granary, "Амбар клана");
-                Make(Nearest(QingMao.Spring, 30), BuildingKind.GuFarm, "Питомник Гу");
-                Make(Nearest(World(-RadiusAlong * 0.6f, RadiusUp * 0.4f), 30), BuildingKind.Granary, "Амбар");
-            }
-            else
-            {
-                Make(Nearest(World(RadiusAlong * 0.3f, 0), 30), BuildingKind.Tavern, Place.Clan == Clan.Bai ? "Таверна «Белое вино»" : "Таверна «Медвежья желчь»");
-                Make(Nearest(World(-RadiusAlong * 0.4f, RadiusUp * 0.4f), 25), BuildingKind.Granary, "Амбар");
-            }
-
-            // Shops along the main streets near the middle.
-            foreach (var b in houses.ToList())
-            {
-                if (Vector2.Distance(b.Centre, Centre) < RadiusAlong * 0.45f && R() < 0.22f)
+                if (big)
                 {
-                    Make(b, BuildingKind.Shop, null);
+                    Make(Nearest(World(RadiusAlong * 0.45f, -RadiusUp * 0.3f), 36), BuildingKind.Tavern, "Таверна «Бамбуковое вино»");
+                    Make(Nearest(World(-RadiusAlong * 0.4f, -RadiusUp * 0.45f), 36), BuildingKind.Tavern, "Таверна «Мутное вино»");
+                    Make(Nearest(World(-RadiusAlong * 0.25f, RadiusUp * 0.15f), 25), BuildingKind.Herbalist, "Лавка травника");
+                    Make(Nearest(World(RadiusAlong * 0.25f, -RadiusUp * 0.05f), 40), BuildingKind.Gambling, "Игорный дом");
+                    Make(Nearest(World(RadiusAlong * 0.55f, RadiusUp * 0.55f), 30), BuildingKind.Granary, "Амбар клана");
+                    Make(Nearest(QingMao.Spring, 30), BuildingKind.GuFarm, "Питомник Гу");
+                    Make(Nearest(World(-RadiusAlong * 0.6f, RadiusUp * 0.4f), 30), BuildingKind.Granary, "Амбар");
+                }
+                else
+                {
+                    Make(Nearest(World(RadiusAlong * 0.3f, 0), 30), BuildingKind.Tavern, Place.Clan == Clan.Bai ? "Таверна «Белое вино»" : "Таверна «Медвежья желчь»");
+                    Make(Nearest(World(-RadiusAlong * 0.4f, RadiusUp * 0.4f), 25), BuildingKind.Granary, "Амбар");
+                }
+
+                // Shops along the main streets near the middle.
+                foreach (var b in houses.ToList())
+                {
+                    if (Vector2.Distance(b.Centre, Centre) < RadiusAlong * 0.45f && R() < 0.22f)
+                    {
+                        Make(b, BuildingKind.Shop, null);
+                    }
                 }
             }
 
@@ -596,7 +931,10 @@ namespace GuWorld.Editor
             {
                 var inward = -gate.Out;
                 var side = new Vector2(-inward.y, inward.x);
-                Props.Add(new Prop { Kind = "weapon rack", At = Flat(gate.At + inward * 6 + side * 4), Yaw = YawFacing(-side) });
+                if (!Glb || !Decor("prop_weapon_rack", gate.At + inward * 9 + side * 6, YawFacing(-side), 1, true, true))
+                {
+                    Props.Add(new Prop { Kind = "weapon rack", At = Flat(gate.At + inward * 6 + side * 4), Yaw = YawFacing(-side) });
+                }
                 Props.Add(new Prop { Kind = "spears", At = Flat(gate.At + inward * 5 - side * 4.2f), Yaw = YawFacing(side) });
                 Props.Add(new Prop { Kind = "brazier", At = Flat(gate.At + inward * 7 - side * 3), Yaw = 0 });
             }

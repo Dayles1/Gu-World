@@ -13,7 +13,8 @@ namespace GuWorld.UI
     {
         const string SensitivityKey = "gw.sensitivity";
         const string InvertKey = "gw.invertY";
-        const string QualityKey = "gw.quality";
+        // "gw.graphics" since six levels (2026-10-23): the old key's 0…3 would now mean other levels.
+        const string QualityKey = "gw.graphics";
         const string FullscreenKey = "gw.fullscreen";
         const string VSyncKey = "gw.vsync";
         const string FovKey = "gw.fov";
@@ -63,7 +64,7 @@ namespace GuWorld.UI
         }
 
         /// <summary>
-        /// The graphics level, 0 low … 3 ultra: how sharp the picture is drawn (render
+        /// The graphics level, 0 minimum … 5 cinematic: how sharp the picture is drawn (render
         /// scale), how smooth its edges (MSAA), how far and how finely the shadows reach,
         /// how far grass, trees and fine detail are drawn, how many insects fly and how
         /// far people are seen. (The project's quality levels cannot do it: a Windows
@@ -72,7 +73,7 @@ namespace GuWorld.UI
         public static int Quality
         {
             // Kept once read: every villager asks for the level each frame.
-            get => quality >= 0 ? quality : quality = Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 1), 0, Levels.Length - 1);
+            get => quality >= 0 ? quality : quality = Mathf.Clamp(PlayerPrefs.GetInt(QualityKey, 2), 0, Levels.Length - 1);
             set
             {
                 quality = Mathf.Clamp(value, 0, Levels.Length - 1);
@@ -119,10 +120,14 @@ namespace GuWorld.UI
         public static readonly Level[] Levels =
         {
             // Below 1 the picture is drawn smaller and enlarged by FSR (sharp enough, far cheaper on a laptop's graphics).
-            new Level { Name = "Низкое", Scale = 0.7f, Msaa = 1, Shadows = 30, Cascades = 1, LodBias = 0.6f, TerrainError = 8, GrassDistance = 35, GrassDensity = 0.3f, TreeDetail = 120, TreeDistance = 300, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false, SoftShadows = false, SoftQuality = 1, ShadowResolution = 1024, Ambient = false, GroundDetail = 150 },
+            // The least: for 90 fps on a laptop — half-size picture enlarged, no shadows, no grass, the near models only up close.
+            new Level { Name = "Минимум", Scale = 0.5f, Msaa = 1, Shadows = 0, Cascades = 1, LodBias = 0.2f, TerrainError = 12, GrassDistance = 0, GrassDensity = 0, TreeDetail = 60, TreeDistance = 180, Insects = 0, PeopleSight = 60, PeoplePose = 25, Distance = 0.4f, Bloom = false, SoftShadows = false, SoftQuality = 1, ShadowResolution = 512, Ambient = false, GroundDetail = 80 },
+            new Level { Name = "Низкое", Scale = 0.7f, Msaa = 1, Shadows = 30, Cascades = 1, LodBias = 0.45f, TerrainError = 8, GrassDistance = 35, GrassDensity = 0.3f, TreeDetail = 120, TreeDistance = 300, Insects = 0.3f, PeopleSight = 90, PeoplePose = 40, Distance = 0.55f, Bloom = false, SoftShadows = false, SoftQuality = 1, ShadowResolution = 1024, Ambient = false, GroundDetail = 150 },
             new Level { Name = "Среднее", Scale = 0.8f, Msaa = 1, Shadows = 45, Cascades = 2, LodBias = 0.9f, TerrainError = 5, GrassDistance = 55, GrassDensity = 0.5f, TreeDetail = 200, TreeDistance = 500, Insects = 0.6f, PeopleSight = 130, PeoplePose = 60, Distance = 0.75f, Bloom = true, SoftShadows = true, SoftQuality = 1, ShadowResolution = 2048, Ambient = false, GroundDetail = 250 },
             new Level { Name = "Высокое", Scale = 1, Msaa = 2, Shadows = 70, Cascades = 3, LodBias = 1.2f, TerrainError = 3, GrassDistance = 80, GrassDensity = 0.75f, TreeDetail = 320, TreeDistance = 800, Insects = 1, PeopleSight = 170, PeoplePose = 75, Distance = 1, Bloom = true, SoftShadows = true, SoftQuality = 2, ShadowResolution = 2048, Ambient = true, GroundDetail = 450 },
             new Level { Name = "Ультра", Scale = 1, Msaa = 4, Shadows = 120, Cascades = 4, LodBias = 1.8f, TerrainError = 1.5f, GrassDistance = 120, GrassDensity = 1, TreeDetail = 480, TreeDistance = 1400, Insects = 1.5f, PeopleSight = 230, PeoplePose = 110, Distance = 1.25f, Bloom = true, SoftShadows = true, SoftQuality = 3, ShadowResolution = 4096, Ambient = true, GroundDetail = 900 },
+            // The most: the picture drawn at 1.5× and shrunk, every model in full far off, long fine shadows — for looking, not for playing.
+            new Level { Name = "Кино", Scale = 1.5f, Msaa = 8, Shadows = 250, Cascades = 4, LodBias = 4, TerrainError = 1, GrassDistance = 200, GrassDensity = 1.3f, TreeDetail = 900, TreeDistance = 2600, Insects = 2, PeopleSight = 320, PeoplePose = 180, Distance = 1.6f, Bloom = true, SoftShadows = true, SoftQuality = 3, ShadowResolution = 4096, Ambient = true, GroundDetail = 1600 },
         };
 
         /// <summary>The level in effect.</summary>

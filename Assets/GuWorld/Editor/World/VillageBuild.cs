@@ -158,6 +158,21 @@ namespace GuWorld.Editor
                 }
             }
 
+            // The stairs up the fronts of the great buildings' pads (the artist's models, VillageModels.cs).
+            foreach (var (model, centre, yaw, foot, scale) in plan.ModelStairs)
+            {
+                PlaceVillageModel(houses, model, "Stairs", centre, yaw, foot, scale);
+            }
+
+            // The artist's props: lanterns, wells, racks, goods, vats, firewood (small: in full only near, gone sooner).
+            var decor = new GameObject("Decor").transform;
+            decor.SetParent(root, false);
+
+            foreach (var (model, at, yaw, scale, solid) in plan.ModelProps)
+            {
+                PlaceVillageModel(decor, model, model, at, yaw, Ground(at), scale, solid, 0.04f, 0.01f);
+            }
+
             // The terraces' retaining walls: dry stone, a coping of flat stones on top.
             foreach (var wall in plan.Walls)
             {
@@ -296,6 +311,18 @@ namespace GuWorld.Editor
         /// <summary>A building on its plot: its shape (a great one's own, or the nearest design), its footing or stilts, steps up to its door.</summary>
         static void PlaceBuilding(Transform parent, VillagePlan.Building b, Clan clan, Func<Vector2, float> ground, Blocks under, Blocks steps, int index)
         {
+            // The artist's model where the plan chose one (VillageModels.cs): no procedural design, no room inside;
+            // on a pad it stands level, on a lot it gets the footing or stilts the ground under it asks for.
+            if (b.Model != null && PlaceVillageModel(parent, b.Model, string.IsNullOrEmpty(b.Name) ? $"{b.Kind} {index}" : b.Name, b.Centre, b.Yaw, b.Floor, b.Scale) != null)
+            {
+                if (!b.Pad)
+                {
+                    PlaceFooting(b, b.Size, clan, ground, under, steps);
+                }
+
+                return;
+            }
+
             (Mesh, Material[]) near;
             (Mesh, Material[])? far = null;
             var size = b.Size;
@@ -403,6 +430,12 @@ namespace GuWorld.Editor
                 return;
             }
 
+            PlaceFooting(b, size, clan, ground, under, steps);
+        }
+
+        /// <summary>Under a house: a stone footing where the ground is close, stilts where it falls away, steps up to its door.</summary>
+        static void PlaceFooting(VillagePlan.Building b, Vector2 size, Clan clan, Func<Vector2, float> ground, Blocks under, Blocks steps)
+        {
             // Under it: a stone footing where the ground is close, stilts where it falls away.
             var turn = Quaternion.Euler(0, b.Yaw, 0);
             var half = size / 2;
@@ -589,6 +622,13 @@ namespace GuWorld.Editor
         {
             var walls = new GameObject("Wall").transform;
             walls.SetParent(root, false);
+
+            // Gu Yue's wall from the artist's fort models (VillageModels.cs), where they are.
+            if (clan == Clan.GuYue && BuildFortWall(walls, plan, ground, stones))
+            {
+                return;
+            }
+
             var points = plan.Boundary;
             var perimeter = new List<(Vector2 at, float distance)>();
             var total = 0f;

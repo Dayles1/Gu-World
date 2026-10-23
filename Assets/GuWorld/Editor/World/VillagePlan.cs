@@ -90,6 +90,11 @@ namespace GuWorld.Editor
             public int Seed;
             public string Name;
             public bool Lit;
+            /// <summary>The artist's model standing here (VillageModels.cs) and its scale; none: a procedural design.</summary>
+            public string Model;
+            public float Scale = 1;
+            /// <summary>On a level pad of its own (no footing or stilts under it).</summary>
+            public bool Pad;
         }
 
         public class Prop
@@ -124,6 +129,10 @@ namespace GuWorld.Editor
         public readonly List<Vector2> Boundary = new List<Vector2>();
         public readonly List<Street> Streets = new List<Street>();
         public readonly List<Pad> Pads = new List<Pad>();
+        /// <summary>Stairs from the artist's models down the fronts of the great buildings' pads: model, its middle, turn, its foot's level, scale.</summary>
+        public readonly List<(string model, Vector2 centre, float yaw, float foot, float scale)> ModelStairs = new List<(string, Vector2, float, float, float)>();
+        /// <summary>The ground under each of those stairs: kept below its treads (foot, the way up, run, foot's and top's levels).</summary>
+        readonly List<(Vector2 foot, Vector2 up, float run, float low, float high)> ramps = new List<(Vector2, Vector2, float, float, float)>();
         public Pad Square;
         public readonly List<Wall> Walls = new List<Wall>();
         public readonly List<Building> Buildings = new List<Building>();
@@ -146,6 +155,7 @@ namespace GuWorld.Editor
         byte[] kind;
         float[] stairNear;
         short[] padOf;
+        short[] rampOf;
         bool[] taken;
 
         float R() => (float)random.NextDouble();
@@ -161,7 +171,8 @@ namespace GuWorld.Editor
             Centre = place.Centre;
             Down = MountainShape.DownhillAt(place.Centre);
             Along = new Vector2(-Down.y, Down.x);
-            Step = place.Clan == Clan.Bai ? 2.4f : place.Clan == Clan.Xiong ? 2.6f : 3.1f;
+            // Gu Yue built from models: terraces a medium stair high (4.3 m, prop_stairs_medium), wide and level.
+            Step = place.Clan == Clan.Bai ? 2.4f : place.Clan == Clan.Xiong ? 2.6f : Glb ? 4.3f : 3.1f;
             // Gu Yue runs down its slope (its lights "a band down the mountainside", ch. 1); the others lie along theirs.
             RadiusAlong = place.Radius * (place.Clan == Clan.GuYue ? 1.0f : 1.25f);
             RadiusUp = place.Radius * (place.Clan == Clan.GuYue ? 1.2f : 0.9f);
@@ -255,13 +266,14 @@ namespace GuWorld.Editor
 
         /// <summary>The ground's lie with a wander in it: where the terraces' edges run (they follow it).</summary>
         public float Warp(Vector2 p) =>
-            SmoothAt(p) + MountainShape.Fbm(p.x * 0.011f + 17, p.y * 0.011f + 3, 3) * 1.5f + MountainShape.Fbm(p.x * 0.0045f + 5, p.y * 0.0045f + 29, 2) * 2.6f;
+            SmoothAt(p) + (MountainShape.Fbm(p.x * 0.011f + 17, p.y * 0.011f + 3, 3) * 1.5f + MountainShape.Fbm(p.x * 0.0045f + 5, p.y * 0.0045f + 29, 2) * 2.6f) * (Glb ? 0.35f : 1);
 
         /// <summary>How soft a terrace's rise is here: a stone wall (small) or a grassy bank (large), as a share of its width.</summary>
         float Softness(Vector2 p)
         {
             var inside = InsideDistance(p);
-            var bank = Mathf.Max(0, MountainShape.Fbm(p.x * 0.009f + 61, p.y * 0.009f + 13, 2)) * 0.9f;
+            // Built from models, every rise inside is a stone wall (the terraces level to their edges).
+            var bank = Glb ? 0 : Mathf.Max(0, MountainShape.Fbm(p.x * 0.009f + 61, p.y * 0.009f + 13, 2)) * 0.9f;
 
             return Mathf.Clamp(0.07f + bank + (1 - Smooth01(0, 40, inside)) * 0.35f, 0.07f, 0.6f);
         }
@@ -323,6 +335,15 @@ namespace GuWorld.Editor
                 if (pad >= 0)
                 {
                     t = stair < 2.2f ? Mathf.Lerp(t, Pads[pad].Level, Smooth01(0, 4, PadInside(Pads[pad], p))) : Pads[pad].Level;
+                }
+
+                // Under a model's stair: never above its treads (the terraces it crosses would show through them).
+                var ramp = rampOf[cell];
+
+                if (ramp >= 0)
+                {
+                    var r = ramps[ramp];
+                    t = Mathf.Min(t, Mathf.Lerp(r.low, r.high, Mathf.Clamp01(Vector2.Dot(p - r.foot, r.up) / r.run)) - 0.06f);
                 }
             }
 
@@ -388,6 +409,7 @@ namespace GuWorld.Editor
             kind = new byte[count];
             stairNear = Enumerable.Repeat(99f, count).ToArray();
             padOf = Enumerable.Repeat((short)-1, count).ToArray();
+            rampOf = Enumerable.Repeat((short)-1, count).ToArray();
             taken = new bool[count];
 
             for (var j = 0; j < Resolution; j++)
@@ -511,6 +533,13 @@ namespace GuWorld.Editor
             });
         }
 
+        /// <summary>The great buildings standing on pads of their own: the pad's name → the model, its scale, kind and name.</summary>
+        readonly Dictionary<string, (string model, float scale, BuildingKind kind, string label, float turn)> padBuildings =
+            new Dictionary<string, (string, float, BuildingKind, string, float)>();
+
+        /// <summary>Whether the village is built from the artist's models (Gu Yue, 2026-10-23; the others keep their procedural houses for now).</summary>
+        bool Glb => Place.Clan == Clan.GuYue;
+
         void ChooseSquareAndPads()
         {
             var faceDown = YawFacing(Down);
@@ -521,6 +550,13 @@ namespace GuWorld.Editor
             AddPad("square", square, big ? new Vector2(24, 15) : new Vector2(15, 11), faceDown, true);
             Square = Pads[Pads.Count - 1];
             Places.Add(("square", square, faceDown));
+
+            if (Glb)
+            {
+                LayOutCentre(faceDown);
+
+                return;
+            }
 
             // Above it, the clan's pavilion (or hall) on its own raised terrace, looking down over the square.
             var head = World(0, big ? 21 : 15);
@@ -533,6 +569,199 @@ namespace GuWorld.Editor
                 // The academy's yard before it.
                 AddPad("academy yard", World(-50, -4), new Vector2(15, 7), faceDown, false);
                 AddPad("hostel", World(-78, -14), new Vector2(9, 6), faceDown, false);
+            }
+        }
+
+        /// <summary>The artist's props to stand in the village (VillageModels.cs): model, where, turn, scale, solid.</summary>
+        public readonly List<(string model, Vector2 at, float yaw, float scale, bool solid)> ModelProps = new List<(string, Vector2, float, float, bool)>();
+
+        /// <summary>
+        /// The middle of a village built from models, laid out as a clan's seat is: one straight paved way (10 m) from
+        /// the lower gate up the slope to the clan's great hall, a stair of the artist's wherever it climbs a terrace,
+        /// lanterns along it; on it the square (the market row along the way below it, the great tavern and the
+        /// octagonal teahouse at its sides); the hall above with the ancestors' hall and the elders' beside it and the
+        /// vault behind; the academy's grounds (its yard, hostel, refectory) to one side; the guest court by the gate.
+        /// The public places in the middle, the good houses round them, the poor at the edge (LotModel).
+        /// </summary>
+        void LayOutCentre(float faceDown)
+        {
+            void ModelPad(string name, string model, float scale, float along, float up, BuildingKind kind, string label, Vector2? facing = null)
+            {
+                var size = QingMaoBuilder.VillageGlb[model].Size * scale;
+                var yaw = facing is Vector2 f ? YawFacing(f) : faceDown;
+                AddPad(name, World(along, up), size / 2 + Vector2.one * 1.2f, yaw, true);
+                padBuildings[name] = (model, scale, kind, label, 0);
+            }
+
+            ModelPad("pavilion", "prop_clan_main_hall", 0.75f, 0, 40, BuildingKind.Pavilion, "Павильон клана");
+            ModelPad("shrine", "prop_ancestral_hall", 1, 58, 40, BuildingKind.Ancestral, "Зал предков");
+            ModelPad("council", "prop_council_hall", 1, -58, 42, BuildingKind.Hall, "Зал совета старейшин");
+            ModelPad("vault", "prop_gu_vault", 0.8f, 0, 118, BuildingKind.Hall, "Хранилище клана");
+            ModelPad("tavern great", "prop_tavern_great", 0.6f, -47, -8, BuildingKind.Tavern, "Таверна у площади", Along);
+            ModelPad("teahouse", "prop_teahouse_octagon", 0.75f, 43, -8, BuildingKind.Teahouse, "Чайный дом «Восемь ветров»", -Along);
+            ModelPad("market", "prop_market_row", 0.7f, 21, -58, BuildingKind.Shop, "Торговый ряд", -Along);
+            ModelPad("academy", "prop_academy_great", 0.7f, -100, 2, BuildingKind.Academy, "Академия");
+            // The academy's yard before it.
+            AddPad("academy yard", World(-100, -36), new Vector2(16, 7), faceDown, false);
+            ModelPad("hostel", "prop_dorm_great", 0.7f, -100, -60, BuildingKind.Hostel, "Общежитие академии");
+            ModelPad("refectory", "prop_refectory", 0.7f, -158, 2, BuildingKind.Hall, "Трапезная академии", Along);
+            PadStairs();
+
+            // The main way: from the hall's stair down the middle of the slope to the boundary (its end becomes the lower gate).
+            var hallFront = 40 - (QingMaoBuilder.VillageGlb["prop_clan_main_hall"].Size.y * 0.75f / 2 + 1.2f);
+            var bottom = hallFront;
+
+            while (bottom > -RadiusUp * 1.5f && InsideDistance(World(0, bottom)) > 7)
+            {
+                bottom -= 1;
+            }
+
+            var avenue = new Street { Name = "Главная дорога", Points = Resample(new List<Vector2> { World(0, hallFront), World(0, bottom) }, 1.4f), Half = 5, Main = true };
+            Streets.Add(avenue);
+
+            foreach (var p in avenue.Points)
+            {
+                Around(p, avenue.Half, (cell, d) =>
+                {
+                    if (kind[cell] != KWild)
+                    {
+                        kind[cell] = KPaved;
+                    }
+                });
+            }
+
+            // A stair wherever the way drops a terrace (not where the hall's or a pad's own stair is already).
+            var level = LevelAt(World(0, hallFront - 0.5f));
+            var y = hallFront - 0.5f;
+
+            while (y > bottom + 2)
+            {
+                var next = LevelAt(World(0, y - 0.5f));
+                var cell = CellOf(World(0, y - 0.5f));
+
+                if (level - next > 0.25f && cell >= 0 && rampOf[cell] < 0)
+                {
+                    // The drop's whole height: down to where the ground levels out again.
+                    var top = y;
+                    var low = next;
+                    y -= 0.5f;
+
+                    while (y > bottom + 2)
+                    {
+                        var further = LevelAt(World(0, y - 0.5f));
+
+                        if (further > low - 0.05f)
+                        {
+                            break;
+                        }
+
+                        low = further;
+                        y -= 0.5f;
+                    }
+
+                    var drop = level - low;
+
+                    if (drop < 0.35f)
+                    {
+                        level = LevelAt(World(0, y));
+                        continue;
+                    }
+
+                    var model = drop >= 5.5f ? "prop_stairs_grand" : drop >= 1.6f ? "prop_stairs_medium" : "prop_steps_small";
+                    var scale = Mathf.Clamp(drop / QingMaoBuilder.VillageGlb[model].Height, 0.5f, 1.6f);
+                    var size = QingMaoBuilder.VillageGlb[model].Size * scale;
+                    var yaw = YawFacing(Down);
+                    // As many stairs side by side as fill the way's width (a wide way gets a double stair, no bare slope beside it).
+                    var count = Mathf.Max(1, Mathf.FloorToInt(avenue.Half * 2 / size.x + 0.2f));
+
+                    for (var k = 0; k < count; k++)
+                    {
+                        var x = (k - (count - 1) / 2f) * size.x;
+                        var centre = World(x, top - size.y / 2);
+                        ModelStairs.Add((model, centre, yaw, level - QingMaoBuilder.VillageGlb[model].Height * scale, scale));
+                        var index = (short)ramps.Count;
+                        ramps.Add((World(x, top - size.y), -Down, size.y, level - QingMaoBuilder.VillageGlb[model].Height * scale, level));
+                        Inside(centre, size / 2 + new Vector2(0.4f, 0), yaw, 0, c => rampOf[c] = index);
+                    }
+                    level = LevelAt(World(0, y));
+                    continue;
+                }
+
+                level = next;
+                y -= 0.5f;
+            }
+
+            // Lanterns along both sides of the way, every 16 m, off the stairs and the pads.
+            for (var up = hallFront - 6; up > bottom + 6; up -= 16)
+            {
+                foreach (var side in new[] { -1, 1 })
+                {
+                    var at = World(side * (avenue.Half + 1.4f), up);
+                    var cell = CellOf(at);
+
+                    if (cell >= 0 && rampOf[cell] < 0 && padOf[cell] < 0 && InsideDistance(at) > 4)
+                    {
+                        ModelProps.Add(("prop_moon_lantern_post", at, YawFacing(-Along * side), 1, true));
+                        Take(at, new Vector2(0.9f, 0.9f), 0, KPaved);
+                    }
+                }
+            }
+        }
+
+        /// <summary>The level the ground will have here, as far as the pads go (theirs where one is, the terrace's elsewhere).</summary>
+        float LevelAt(Vector2 p)
+        {
+            var cell = CellOf(p);
+
+            return cell >= 0 && padOf[cell] >= 0 ? Pads[padOf[cell]].Level : Terraced(Warp(p), 0.07f);
+        }
+
+        /// <summary>
+        /// A stair of the artist's down the front of each great building's pad that stands above the ground before it:
+        /// the grand one for a rise of 5.5 m and more, the middle one from 1.6 m, a few steps below that — each scaled to
+        /// the rise exactly, its top at the pad's edge, its foot where the ground meets it (found again as the run
+        /// grows). No house stands on it, and the ground under it is kept below its treads.
+        /// </summary>
+        void PadStairs()
+        {
+            foreach (var pair in padBuildings)
+            {
+                var pad = Pads.First(p => p.Name == pair.Key);
+                var yaw = pad.Yaw + pair.Value.turn;
+                var forward = Quaternion.Euler(0, yaw, 0) * Vector3.forward;
+                var f = new Vector2(forward.x, forward.z);
+                var edge = pad.Centre + f * pad.Half.y;
+                var foot = LevelAt(edge + f * 3);
+                string model = null;
+                var scale = 1f;
+
+                for (var i = 0; i < 4; i++)
+                {
+                    var rise = pad.Level - foot;
+                    model = rise >= 5.5f ? "prop_stairs_grand" : rise >= 1.6f ? "prop_stairs_medium" : rise >= 0.5f ? "prop_steps_small" : null;
+
+                    if (model == null)
+                    {
+                        break;
+                    }
+
+                    scale = Mathf.Clamp(rise / QingMaoBuilder.VillageGlb[model].Height, 0.5f, 1.6f);
+                    foot = LevelAt(edge + f * (QingMaoBuilder.VillageGlb[model].Size.y * scale + 1));
+                }
+
+                if (model == null)
+                {
+                    continue;
+                }
+
+                var size = QingMaoBuilder.VillageGlb[model].Size * scale;
+                var low = pad.Level - QingMaoBuilder.VillageGlb[model].Height * scale;
+                var centre = edge + f * (size.y / 2);
+                ModelStairs.Add((model, centre, yaw, low, scale));
+                var index = (short)ramps.Count;
+                ramps.Add((edge + f * size.y, -f, size.y, low, pad.Level));
+                Inside(centre, size / 2 + new Vector2(0.4f, 0), yaw, 0, cell => rampOf[cell] = index);
+                Take(centre, size / 2, yaw, KPaved);
             }
         }
 
@@ -1021,7 +1250,7 @@ namespace GuWorld.Editor
                 {
                     var cell = CellOf(p);
                     // Only where the rise is a wall (not a bank), not at a stair, not inside a pad.
-                    var isWall = Softness(p) < 0.16f && cell >= 0 && stairNear[cell] > 1.5f && padOf[cell] < 0;
+                    var isWall = Softness(p) < 0.16f && cell >= 0 && stairNear[cell] > 1.5f && padOf[cell] < 0 && rampOf[cell] < 0;
 
                     if (!isWall)
                     {
@@ -1060,7 +1289,7 @@ namespace GuWorld.Editor
                         var high = Mathf.Max(outside, pad.Level);
                         var cell = CellOf(p);
 
-                        if (high - low < 0.7f || (cell >= 0 && stairNear[cell] < 1.6f) || InsideDistance(p) < 2)
+                        if (high - low < 0.7f || (cell >= 0 && (stairNear[cell] < 1.6f || rampOf[cell] >= 0)) || InsideDistance(p) < 2)
                         {
                             if (wall.Points.Count >= 2) Walls.Add(wall);
                             wall = new Wall();
