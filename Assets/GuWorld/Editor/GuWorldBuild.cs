@@ -40,6 +40,9 @@ namespace GuWorld.Editor
                 return;
             }
 
+            // The builder's catalog (F9), made again from the models there are now.
+            BuildCatalogMaker.Make();
+
             // Colliders' shapes baked at build time (the mountain's drawn-only meshes are not readable in the game).
             PlayerSettings.bakeCollisionMeshes = true;
             // The GPU's time per frame, for the timed runs (-bench).

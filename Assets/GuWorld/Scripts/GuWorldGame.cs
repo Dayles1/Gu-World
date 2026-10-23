@@ -1282,6 +1282,14 @@ namespace GuWorld
             sky.View = camera;
             // Bloom and tone mapping, where the location has a volume for them.
             camera.GetUniversalAdditionalCameraData().renderPostProcessing = true;
+
+            // The builder (F9): it makes the kept work again once the mountain is there, and flies this camera while open.
+            if (GetComponent<WorldBuilder>() == null)
+            {
+                gameObject.AddComponent<WorldBuilder>();
+            }
+
+            GetComponent<WorldBuilder>().Rig = view;
         }
 
         void BuildHero(Pose pose)
@@ -2175,6 +2183,19 @@ namespace GuWorld
                         case "fusion": OpenPage(Menus.Page.Fusion); break;
                         case "status": OpenPage(Menus.Page.Status); break;
                         case "admin": OpenPage(Menus.Page.Admin); break;
+                        case "builder":
+                            if (WorldBuilder.Current != null && WorldBuilder.Current.Ready)
+                            {
+                                // `-builddemo`: a few things put down, stretched and raised before the picture (never saved).
+                                if (System.Array.IndexOf(System.Environment.GetCommandLineArgs(), "-builddemo") >= 0)
+                                {
+                                    WorldBuilder.Current.Demo(view.transform.position + view.transform.forward * 40);
+                                }
+
+                                OpenPage(Menus.Page.Builder);
+                            }
+
+                            break;
                         case "journal": OpenPage(Menus.Page.Journal); break;
                         case "shop": OpenShop(Trade.Shops[0]); break;
                         case "hua": OpenShop(Trade.Shops[1]); break;
@@ -2546,7 +2567,14 @@ namespace GuWorld
                 else if (keyboard.oKey.wasPressedThisFrame) OpenPage(Menus.Page.Status);
                 else if (keyboard.jKey.wasPressedThisFrame) OpenPage(Menus.Page.Journal);
                 else if (keyboard.f10Key.wasPressedThisFrame) OpenPage(Menus.Page.Admin);
+                else if (keyboard.f9Key.wasPressedThisFrame && WorldBuilder.Current != null && WorldBuilder.Current.Ready) OpenPage(Menus.Page.Builder);
                 else if (Sandbox && keyboard.pKey.wasPressedThisFrame) OpenPage(Menus.Page.Sandbox);
+            }
+            else if (mode == Mode.Paused && keyboard != null && !wasPlaying && menus.Current == Menus.Page.Builder && keyboard.f9Key.wasPressedThisFrame)
+            {
+                // F9 again: out of the builder (it keeps what was done).
+                WorldBuilder.Current?.End();
+                Resume();
             }
             else if (mode == Mode.Paused && keyboard != null && !wasPlaying && IsHeroPage(menus.Current))
             {

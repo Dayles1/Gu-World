@@ -138,6 +138,8 @@ namespace GuWorld.UI
             Chat,
             /// <summary>Fusing Gu into new ones (U): every recipe, what it takes, what the hero has.</summary>
             Fusion,
+            /// <summary>The builder (F9): the world edited — models put down, moved, removed, the ground shaped (WorldBuilder).</summary>
+            Builder,
             /// <summary>The status window (O): the body's traits, health, stamina, the sea.</summary>
             Status,
             /// <summary>The admin panel (F10): cheats for testing, with the admin mode on.</summary>
@@ -288,6 +290,12 @@ namespace GuWorld.UI
         /// <summary>Shows a page (rebuilt from scratch: the pages are small).</summary>
         public void Show(Page page)
         {
+            // Leaving the builder: what was done is kept, the camera given back.
+            if (Current == Page.Builder && page != Page.Builder && GuWorld.World.WorldBuilder.Current != null)
+            {
+                GuWorld.World.WorldBuilder.Current.End();
+            }
+
             Current = page;
             hud.gameObject.SetActive(!hudHidden && (page == Page.None || page == Page.Dialogue || page == Page.Chat));
 
@@ -324,6 +332,7 @@ namespace GuWorld.UI
                 case Page.Status: StatusPage(); break;
                 case Page.Admin: AdminPage(); break;
                 case Page.Journal: JournalPage(); break;
+                case Page.Builder: BuilderPage(); break;
             }
         }
 
@@ -338,6 +347,19 @@ namespace GuWorld.UI
                 case Page.Confirm: Show(confirmBack); return true;
                 case Page.Creator: FadeThrough(host.BackToTitle); return true;
                 case Page.Pause: host.Resume(); return true;
+                case Page.Builder:
+                    // One step back first (a line begun, a thing chosen, a tool), then out.
+                    if (GuWorld.World.WorldBuilder.Current != null && GuWorld.World.WorldBuilder.Current.Cancel())
+                    {
+                        Show(Page.Builder);
+
+                        return true;
+                    }
+
+                    GuWorld.World.WorldBuilder.Current?.End();
+                    host.Resume();
+
+                    return true;
                 case Page.Dialogue: host.EndTalk(); return true;
                 case Page.Aperture:
                 case Page.Bag:

@@ -1,0 +1,663 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9a9034ea62c6294bb367cadecf3633d, type: 3}
+  m_Name: BuildCatalog
+  m_EditorClassIdentifier: GuWorld::GuWorld.World.BuildCatalog
+  Entries:
+  - Id: prop_granary
+    Label: "\u0410\u043C\u0431\u0430\u0440"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 2994692321051846058, guid: 54b58e964ea57954a9337ea8f6f5e0b7, type: 3}
+    Size: {x: 10.6360655, y: 9.980085}
+    Height: 7.6550465
+    Middle: {x: 0.006193638, y: 0.7374134}
+    Stretch: 0
+    Repeat: 0
+  - Id: guyue_bamboo_house
+    Label: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u044B\u0439 \u0434\u043E\u043C"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 2097002540026160847, guid: ae821fbe85800d74d84e865846186662, type: 3}
+    Size: {x: 13.3104515, y: 10.533369}
+    Height: 13.787237
+    Middle: {x: -0.8238702, y: 0.18331385}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_poor_house
+    Label: "\u0411\u0435\u0434\u043D\u044B\u0439 \u0434\u043E\u043C"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 6011557877795724434, guid: a3e161fc362cce345bdeff9364ff91c2, type: 3}
+    Size: {x: 7.7, y: 7.764062}
+    Height: 4.5656815
+    Middle: {x: -0.05000019, y: 0.51796985}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_gambling_tent
+    Label: "\u0418\u0433\u043E\u0440\u043D\u044B\u0439 \u0448\u0430\u0442\u0451\u0440"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 1612674834829262188, guid: dd953ed44b3d28647906af5b2aff2513, type: 3}
+    Size: {x: 14.075525, y: 13.897157}
+    Height: 7.231152
+    Middle: {x: 0, y: -0.08454847}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_smithy
+    Label: "\u041A\u0443\u0437\u043D\u0438\u0446\u0430"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 4308780418854183927, guid: 3e349d41e7ef97e4ca6028a938c02967, type: 3}
+    Size: {x: 10.852, y: 9.236926}
+    Height: 7.58
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_shop
+    Label: "\u041B\u0430\u0432\u043A\u0430"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 7163748479226542505, guid: 459d9c61d629a43429d793f1ca92d72e, type: 3}
+    Size: {x: 7.6342864, y: 9.8687725}
+    Height: 7.8750463
+    Middle: {x: 0, y: 0.57204676}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_herbalist
+    Label: "\u041B\u0430\u0432\u043A\u0430 \u0442\u0440\u0430\u0432\u043D\u0438\u043A\u0430"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 6037272229343607807, guid: 19dc3e142c1532d4aba170150ca4ac45, type: 3}
+    Size: {x: 8.641113, y: 10.220811}
+    Height: 6.6250463
+    Middle: {x: 0, y: 0.95777655}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_shop_small_a
+    Label: "\u041B\u0430\u0432\u043E\u0447\u043A\u0430 \u0410"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 7423503340833019224, guid: 9d959132f5811b748909baa103a67546, type: 3}
+    Size: {x: 5.4377794, y: 6.26}
+    Height: 5.1350465
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_shop_small_b
+    Label: "\u041B\u0430\u0432\u043E\u0447\u043A\u0430 \u0411"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 4861058487473797387, guid: 37841eaad4788144da590a606199e041, type: 3}
+    Size: {x: 5.4411125, y: 6.765821}
+    Height: 5.1350465
+    Middle: {x: 0, y: 0.25291038}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_shop_small_c
+    Label: "\u041B\u0430\u0432\u043E\u0447\u043A\u0430 \u0412"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 4793244927890950698, guid: 6c8c817245d1b6140b41a85893995b9d, type: 3}
+    Size: {x: 5.2628965, y: 5.836506}
+    Height: 4.415682
+    Middle: {x: 0.08144832, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_gu_nursery
+    Label: "\u041F\u0438\u0442\u043E\u043C\u043D\u0438\u043A \u0413\u0443"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 5781452421313735919, guid: 48435aa7daaf5ab488e0c41e2a443f6c, type: 3}
+    Size: {x: 14.023991, y: 11.336594}
+    Height: 8.028533
+    Middle: {x: -0.010443687, y: 0.17653322}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_inn
+    Label: "\u041F\u043E\u0441\u0442\u043E\u044F\u043B\u044B\u0439 \u0434\u0432\u043E\u0440"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 1969139037682357231, guid: 26cacf8c2116a0f42b3df210b794038b, type: 3}
+    Size: {x: 16.536903, y: 11.716818}
+    Height: 9.818031
+    Middle: {x: -1.1547594, y: -0.008608341}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_tavern
+    Label: "\u0422\u0430\u0432\u0435\u0440\u043D\u0430"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 6805068855415474967, guid: 4bec25cec4b5b3e4c8d7293ed0d5a9c6, type: 3}
+    Size: {x: 12.237309, y: 12.409367}
+    Height: 9.551529
+    Middle: {x: -0.0037837029, y: 0.4453163}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_eatery
+    Label: "\u0425\u0430\u0440\u0447\u0435\u0432\u043D\u044F"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 3290623794232483065, guid: 273378ba842b44f45b3efe21a2afd868, type: 3}
+    Size: {x: 13.634286, y: 11.124678}
+    Height: 8.43
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_teahouse
+    Label: "\u0427\u0430\u0439\u043D\u0430\u044F"
+    Section: "\u0414\u043E\u043C\u0430"
+    Prefab: {fileID: 6700940661977973763, guid: 51d38291773d5e3459bd13abcf2cc678, type: 3}
+    Size: {x: 11.31271, y: 12.430075}
+    Height: 11.0981655
+    Middle: {x: -0.0053129196, y: 0.56001997}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_academy_great
+    Label: "\u0410\u043A\u0430\u0434\u0435\u043C\u0438\u044F"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 1196689035679684068, guid: 62ce31a26c4e1e04c81237c9b94753cf, type: 3}
+    Size: {x: 57.594376, y: 66.77696}
+    Height: 21.801384
+    Middle: {x: 0, y: -2.3287392}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_tavern_great
+    Label: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u0442\u0430\u0432\u0435\u0440\u043D\u0430"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 219837271715479890, guid: 55417b779ddef85458dd775bf56ead64, type: 3}
+    Size: {x: 44.222923, y: 42.92352}
+    Height: 22.690598
+    Middle: {x: -0.011459351, y: -9.96176}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_teahouse_octagon
+    Label: "\u0412\u043E\u0441\u044C\u043C\u0438\u0433\u0440\u0430\u043D\u043D\u044B\u0439 \u0447\u0430\u0439\u043D\u044B\u0439 \u0434\u043E\u043C"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 7682852900014617447, guid: 65c3902874ee0b2499a45aa296c5bc35, type: 3}
+    Size: {x: 19.785501, y: 21.899815}
+    Height: 18.8978
+    Middle: {x: 0.0026950836, y: 1.0486364}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_clan_main_hall
+    Label: "\u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u0437\u0430\u043B \u043A\u043B\u0430\u043D\u0430"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 1109867870729586895, guid: 93d5b7328493fe64fbf96c6a8b5b9648, type: 3}
+    Size: {x: 83.000946, y: 42.65}
+    Height: 27.956358
+    Middle: {x: 0.011199951, y: 6.175001}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_inn_courtyard
+    Label: "\u0413\u043E\u0441\u0442\u0438\u043D\u044B\u0439 \u0434\u0432\u043E\u0440"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 2024503815374418061, guid: b526c1d91f447a843b8311886e42e79a, type: 3}
+    Size: {x: 37.37796, y: 35.895714}
+    Height: 16.582619
+    Middle: {x: -0.030794144, y: -0.76457405}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_ancestral_hall
+    Label: "\u0417\u0430\u043B \u043F\u0440\u0435\u0434\u043A\u043E\u0432"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 8998564840068652221, guid: ab2e3cf111c80b541a40cde4fae0dccf, type: 3}
+    Size: {x: 13.633898, y: 13.6746025}
+    Height: 12.4217205
+    Middle: {x: -0.005489826, y: 1.1485481}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_council_hall
+    Label: "\u0417\u0430\u043B \u0441\u043E\u0432\u0435\u0442\u0430"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 6607574028224543207, guid: faa372c19b195004f9d250ef141ce474, type: 3}
+    Size: {x: 15.88856, y: 12.035435}
+    Height: 9.086452
+    Middle: {x: 0, y: 0.48771715}
+    Stretch: 0
+    Repeat: 0
+  - Id: guyue_pavilion_LOD0
+    Label: "\u041B\u0443\u043D\u043D\u044B\u0439 \u043F\u0430\u0432\u0438\u043B\u044C\u043E\u043D"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 715184150836191953, guid: ab397a30409c5514bb12df5ad77655ba, type: 3}
+    Size: {x: 24.3, y: 26.15}
+    Height: 36.46447
+    Middle: {x: 0, y: 2.4250002}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_academy
+    Label: "\u041C\u0430\u043B\u0430\u044F \u0430\u043A\u0430\u0434\u0435\u043C\u0438\u044F"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 4736452633731763417, guid: 9465ba9e4eb1a364baf0c82c3923ae39, type: 3}
+    Size: {x: 19.912169, y: 18.429031}
+    Height: 9.188534
+    Middle: {x: 0.0026454926, y: 3.2654834}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_academy_dorm
+    Label: "\u041C\u0430\u043B\u043E\u0435 \u043E\u0431\u0449\u0435\u0436\u0438\u0442\u0438\u0435"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 4157285714093948845, guid: 94775701fb800724680fc3424809bd65, type: 3}
+    Size: {x: 17.622623, y: 9.76}
+    Height: 9.02331
+    Middle: {x: -0.09198952, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_dorm_great
+    Label: "\u041E\u0431\u0449\u0435\u0436\u0438\u0442\u0438\u0435"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 9057820741637745719, guid: 8ca6724926e9f4841919833910f1fdc4, type: 3}
+    Size: {x: 68.645386, y: 17.527983}
+    Height: 21.26875
+    Middle: {x: -0.0008659363, y: 0.9365592}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_market_row
+    Label: "\u0422\u043E\u0440\u0433\u043E\u0432\u044B\u0439 \u0440\u044F\u0434"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 3067145811238654702, guid: 086fec2e27b12de4b9d343f9e4a723ad, type: 3}
+    Size: {x: 54.601288, y: 12.654863}
+    Height: 13.726118
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_refectory
+    Label: "\u0422\u0440\u0430\u043F\u0435\u0437\u043D\u0430\u044F"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 1348072737770763743, guid: dac1a3296110d804fbe9cd40bde00b48, type: 3}
+    Size: {x: 42.238647, y: 30.137798}
+    Height: 15.888081
+    Middle: {x: 0, y: -5.6611004}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_gu_vault
+    Label: "\u0425\u0440\u0430\u043D\u0438\u043B\u0438\u0449\u0435 \u0413\u0443"
+    Section: "\u041A\u043B\u0430\u043D"
+    Prefab: {fileID: 8779920660573217114, guid: bd00644b9de6f3e4ab7d0d5de3dede9b, type: 3}
+    Size: {x: 33.11597, y: 120.6015}
+    Height: 3.223606
+    Middle: {x: -1.2513199, y: -57.180748}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_bamboo_fence
+    Label: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u044B\u0439 \u0437\u0430\u0431\u043E\u0440"
+    Section: "\u041A\u0440\u0435\u043F\u043E\u0441\u0442\u044C"
+    Prefab: {fileID: 2997405601872524077, guid: bde1b59f6cb9966458ad4bcadd20e517, type: 3}
+    Size: {x: 7.25, y: 0.7519642}
+    Height: 1.99
+    Middle: {x: -1.2849998, y: 0}
+    Stretch: 0
+    Repeat: 1
+  - Id: fort_battle_gate
+    Label: "\u0411\u043E\u0435\u0432\u044B\u0435 \u0432\u043E\u0440\u043E\u0442\u0430"
+    Section: "\u041A\u0440\u0435\u043F\u043E\u0441\u0442\u044C"
+    Prefab: {fileID: 1437136114403737009, guid: 4a99c3fd02a38804b8cfdfb14f6f5cf5, type: 3}
+    Size: {x: 15.092234, y: 14.485761}
+    Height: 17.741974
+    Middle: {x: -0.39611626, y: -1.2428803}
+    Stretch: 0
+    Repeat: 0
+  - Id: fort_wall_segment
+    Label: "\u0421\u0442\u0435\u043D\u0430 \u043A\u0440\u0435\u043F\u043E\u0441\u0442\u0438"
+    Section: "\u041A\u0440\u0435\u043F\u043E\u0441\u0442\u044C"
+    Prefab: {fileID: 1246477114142142777, guid: f10e13b4c05159e4da2fe91982cc5cef, type: 3}
+    Size: {x: 7.24, y: 8.782214}
+    Height: 9.950361
+    Middle: {x: 0, y: 0.8488319}
+    Stretch: 0
+    Repeat: 1
+  - Id: fort_watchtower
+    Label: "\u0421\u0442\u043E\u0440\u043E\u0436\u0435\u0432\u0430\u044F \u0431\u0430\u0448\u043D\u044F"
+    Section: "\u041A\u0440\u0435\u043F\u043E\u0441\u0442\u044C"
+    Prefab: {fileID: 5781809425621186870, guid: 51f01c4596900dd40bb9eb5d38a094fb, type: 3}
+    Size: {x: 9.323311, y: 9.30055}
+    Height: 17.39481
+    Middle: {x: -0.0037837029, y: 1.115511}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_stairs_grand
+    Label: "\u0411\u043E\u043B\u044C\u0448\u0430\u044F \u043B\u0435\u0441\u0442\u043D\u0438\u0446\u0430"
+    Section: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u044B \u0438 \u0442\u0440\u043E\u043F\u044B"
+    Prefab: {fileID: 2095028832039632850, guid: 464c6e99c94cd3442b832eab7c61129e, type: 3}
+    Size: {x: 8.08, y: 23.32}
+    Height: 9.02
+    Middle: {x: 0, y: -1.46}
+    Stretch: 1
+    Repeat: 0
+  - Id: prop_stairs_medium
+    Label: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u0430"
+    Section: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u044B \u0438 \u0442\u0440\u043E\u043F\u044B"
+    Prefab: {fileID: 5920030423420903369, guid: 3a7e6f9fb3a216e4c832f29c6e8dcf78, type: 3}
+    Size: {x: 5.38, y: 7.77}
+    Height: 4.326
+    Middle: {x: 0, y: -0.08500004}
+    Stretch: 1
+    Repeat: 0
+  - Id: prop_paving_tiles
+    Label: "\u041C\u043E\u0449\u0435\u043D\u0438\u0435"
+    Section: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u044B \u0438 \u0442\u0440\u043E\u043F\u044B"
+    Prefab: {fileID: 6746273965980269400, guid: 223e0b900e3705847be07d797ee87402, type: 3}
+    Size: {x: 10.84, y: 3.44}
+    Height: 0.15279865
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 1
+  - Id: prop_wooden_ladder
+    Label: "\u041F\u0440\u0438\u0441\u0442\u0430\u0432\u043D\u0430\u044F \u043B\u0435\u0441\u0442\u043D\u0438\u0446\u0430"
+    Section: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u044B \u0438 \u0442\u0440\u043E\u043F\u044B"
+    Prefab: {fileID: 137765144332391479, guid: 399f089cf9f5ab747b2b7e0b8b247660, type: 3}
+    Size: {x: 0.59, y: 0.94619775}
+    Height: 3.309892
+    Middle: {x: 0, y: -0.3930989}
+    Stretch: 1
+    Repeat: 0
+  - Id: prop_steps_small
+    Label: "\u0421\u0442\u0443\u043F\u0435\u043D\u0438"
+    Section: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u044B \u0438 \u0442\u0440\u043E\u043F\u044B"
+    Prefab: {fileID: 5776276068393158768, guid: 927f5c8ed5fa6ba47bf43da4b013a3c7, type: 3}
+    Size: {x: 2.5, y: 2.94}
+    Height: 0.6999999
+    Middle: {x: 0, y: 0.14999998}
+    Stretch: 1
+    Repeat: 0
+  - Id: prop_paths
+    Label: "\u0422\u0440\u043E\u043F\u0438\u043D\u043A\u0430 \u0438\u0437 \u043A\u0430\u043C\u043D\u0435\u0439"
+    Section: "\u041B\u0435\u0441\u0442\u043D\u0438\u0446\u044B \u0438 \u0442\u0440\u043E\u043F\u044B"
+    Prefab: {fileID: 5767029528752563383, guid: eed6683bcb06e79498f7b74c63b9b194, type: 3}
+    Size: {x: 26.807413, y: 6.7375984}
+    Height: 1.19267
+    Middle: {x: -0.29629326, y: -0.7687993}
+    Stretch: 0
+    Repeat: 1
+  - Id: prop_bonsai_pine
+    Label: "\u0411\u043E\u043D\u0441\u0430\u0439"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 469949114074371636, guid: 7e595d943ac411945b8356140daf39ea, type: 3}
+    Size: {x: 1.0524504, y: 0.5280551}
+    Height: 1.3472276
+    Middle: {x: -0.0031977892, y: -0.0076042116}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_barrels
+    Label: "\u0411\u043E\u0447\u043A\u0438"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 7214051593650650187, guid: c7727d8dc2865ca4fa6aef6a52538c19, type: 3}
+    Size: {x: 4.902447, y: 5.1171875}
+    Height: 1.4284117
+    Middle: {x: 0.0150568485, y: -0.29140615}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_bronze_ding
+    Label: "\u0411\u0440\u043E\u043D\u0437\u043E\u0432\u044B\u0439 \u0434\u0438\u043D"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 500519758578153613, guid: c7c89f3a159d6f445bcd62be9034ee2c, type: 3}
+    Size: {x: 3.1001253, y: 3.1000001}
+    Height: 3.0390956
+    Middle: {x: -0.00006246567, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_bench_wood
+    Label: "\u0414\u0435\u0440\u0435\u0432\u044F\u043D\u043D\u0430\u044F \u0441\u043A\u0430\u043C\u044C\u044F"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 2812018415645677781, guid: e34a6bfea30476e4982aa8adfe4f9b2a, type: 3}
+    Size: {x: 1.9, y: 0.72}
+    Height: 1.01
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_firewood_stack
+    Label: "\u0414\u0440\u043E\u0432\u0430"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 1284020963020814632, guid: 4a7daa5039666f841bcb410e71721bf7, type: 3}
+    Size: {x: 4.0267696, y: 2.056872}
+    Height: 1.6229199
+    Middle: {x: -0.5133848, y: 0.5250659}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_bench_stone
+    Label: "\u041A\u0430\u043C\u0435\u043D\u043D\u0430\u044F \u0441\u043A\u0430\u043C\u044C\u044F"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 8520744202262989357, guid: 7d2e0f896b19d9847be7db6fb443a8e5, type: 3}
+    Size: {x: 3.41, y: 1.3073536}
+    Height: 0.625
+    Middle: {x: -0.755, y: 0.19632325}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_village_well
+    Label: "\u041A\u043E\u043B\u043E\u0434\u0435\u0446"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 4824354586063934764, guid: e7e389f7464e4604f949cbba4fe5c273, type: 3}
+    Size: {x: 3.6730096, y: 2.8}
+    Height: 3.6063523
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_moon_gate
+    Label: "\u041B\u0443\u043D\u043D\u044B\u0435 \u0432\u043E\u0440\u043E\u0442\u0430"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 6591987466431461993, guid: e78a4be26a652ca4bb8d822f889239e4, type: 3}
+    Size: {x: 7.7990384, y: 1.95}
+    Height: 4.6604404
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_clan_stele
+    Label: "\u0421\u0442\u0435\u043B\u0430 \u043A\u043B\u0430\u043D\u0430"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 2506657575971161569, guid: 67ce7d697aecd3f4393d35fe0bffbeaf, type: 3}
+    Size: {x: 3.8, y: 5.3196898}
+    Height: 5.8761377
+    Middle: {x: 0, y: 0.45984483}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_weapon_rack
+    Label: "\u0421\u0442\u043E\u0439\u043A\u0430 \u0441 \u043E\u0440\u0443\u0436\u0438\u0435\u043C"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 9078270748107092243, guid: 106d78ab56b2c0640b76e35b82eaea11, type: 3}
+    Size: {x: 2.6556373, y: 0.75}
+    Height: 2.74
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_go_table
+    Label: "\u0421\u0442\u043E\u043B \u0434\u043B\u044F \u0433\u043E"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 7187939800517931277, guid: 2e866e5ae56a07f4d9403c1259ecc74a, type: 3}
+    Size: {x: 1.9059293, y: 1.9059293}
+    Height: 0.8899913
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_drying_rack
+    Label: "\u0421\u0443\u0448\u0438\u043B\u043A\u0430"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 6666891200860251716, guid: 601ed7dd8bd875b4894862f18461d3e1, type: 3}
+    Size: {x: 3.45, y: 1.624713}
+    Height: 2.245
+    Middle: {x: -0.27499998, y: 0.38308603}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_market_goods
+    Label: "\u0422\u043E\u0432\u0430\u0440\u044B"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 2984847906224516315, guid: 10b11eb12376e1142b909a3ba2f419bf, type: 3}
+    Size: {x: 3.7251344, y: 1.9619228}
+    Height: 1.2816403
+    Middle: {x: 0.09732866, y: 0.043708622}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_moon_lantern_post
+    Label: "\u0424\u043E\u043D\u0430\u0440\u044C"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 3883024771550120033, guid: bff4cec0785af3d45b9c090ae73f2d72, type: 3}
+    Size: {x: 2.3888, y: 1.3509996}
+    Height: 5.013649
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_lotus_vat
+    Label: "\u0427\u0430\u0448\u0430 \u0441 \u043B\u043E\u0442\u043E\u0441\u0430\u043C\u0438"
+    Section: "\u0414\u0435\u043A\u043E\u0440"
+    Prefab: {fileID: 294235073908278235, guid: ee7acd3140dc06f4e8a913364f444d08, type: 3}
+    Size: {x: 1.4380162, y: 1.4380423}
+    Height: 1.3925477
+    Middle: {x: 0.000013053417, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_bamboo_grove
+    Label: "\u0411\u0430\u043C\u0431\u0443\u043A\u043E\u0432\u0430\u044F \u0440\u043E\u0449\u0430"
+    Section: "\u0414\u0435\u0440\u0435\u0432\u044C\u044F"
+    Prefab: {fileID: 5396169706048737227, guid: c7e1d01f3c10d2640aa488ce8ea220ac, type: 3}
+    Size: {x: 5.9867783, y: 6.2434635}
+    Height: 9.148432
+    Middle: {x: 0.059208155, y: 0.0010137558}
+    Stretch: 0
+    Repeat: 0
+  - Id: tree_ancient_100m
+    Label: "\u0414\u0440\u0435\u0432\u043D\u0435\u0435 \u0434\u0435\u0440\u0435\u0432\u043E (100 \u043C)"
+    Section: "\u0414\u0435\u0440\u0435\u0432\u044C\u044F"
+    Prefab: {fileID: 6600123706248870335, guid: 85a36dd1a9dffe14ba3b220a2ee908f2, type: 3}
+    Size: {x: 104.201614, y: 95.46338}
+    Height: 108.77469
+    Middle: {x: 1.0752983, y: -0.15074158}
+    Stretch: 0
+    Repeat: 0
+  - Id: tree_camphor_70m
+    Label: "\u041A\u0430\u043C\u0444\u043E\u0440\u0430 (70 \u043C)"
+    Section: "\u0414\u0435\u0440\u0435\u0432\u044C\u044F"
+    Prefab: {fileID: 4309674220741342425, guid: f0324ee673d740f478104a5cc8b29d39, type: 3}
+    Size: {x: 59.286255, y: 64.42549}
+    Height: 74.907364
+    Middle: {x: 0.653862, y: 1.6987495}
+    Stretch: 0
+    Repeat: 0
+  - Id: tree_plum_8m
+    Label: "\u0421\u043B\u0438\u0432\u0430 (8 \u043C)"
+    Section: "\u0414\u0435\u0440\u0435\u0432\u044C\u044F"
+    Prefab: {fileID: 4090046961075861479, guid: e7e85574590b70643bd0181fe6544c4b, type: 3}
+    Size: {x: 9.907227, y: 10.864857}
+    Height: 9.279873
+    Middle: {x: -0.03763151, y: 0.18804264}
+    Stretch: 0
+    Repeat: 0
+  - Id: tree_pine_40m
+    Label: "\u0421\u043E\u0441\u043D\u0430 (40 \u043C)"
+    Section: "\u0414\u0435\u0440\u0435\u0432\u044C\u044F"
+    Prefab: {fileID: 3787747821853455425, guid: 4368ce9c84c56e94186331a8e7854a32, type: 3}
+    Size: {x: 30.464958, y: 28.986744}
+    Height: 40.6
+    Middle: {x: -1.1780281, y: 0.61125946}
+    Stretch: 0
+    Repeat: 0
+  - Id: tree_deadwood_25m
+    Label: "\u0421\u0443\u0445\u043E\u0435 \u0434\u0435\u0440\u0435\u0432\u043E (25 \u043C)"
+    Section: "\u0414\u0435\u0440\u0435\u0432\u044C\u044F"
+    Prefab: {fileID: 3597788099550734812, guid: 97e3aba832bd8404a951650b729698bb, type: 3}
+    Size: {x: 16.618683, y: 18.561392}
+    Height: 27.075367
+    Middle: {x: 0.17314243, y: 1.4090729}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_ancestral_altar
+    Label: "\u0410\u043B\u0442\u0430\u0440\u044C \u043F\u0440\u0435\u0434\u043A\u043E\u0432"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 3921036712559277491, guid: c898901400e8daf4ba574e8ef877ad4e, type: 3}
+    Size: {x: 2.5331478, y: 1.6614754}
+    Height: 2.7066314
+    Middle: {x: 0, y: 0.4007377}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_medicine_cabinet
+    Label: "\u0410\u043F\u0442\u0435\u0447\u043D\u044B\u0439 \u0448\u043A\u0430\u0444"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 3484222969555939989, guid: 7f8fa440abefcb84d97257f05c96568b, type: 3}
+    Size: {x: 1.43, y: 0.6758448}
+    Height: 2.461
+    Middle: {x: 0, y: 0.007922381}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_canopy_bed
+    Label: "\u041A\u0440\u043E\u0432\u0430\u0442\u044C \u0441 \u0431\u0430\u043B\u0434\u0430\u0445\u0438\u043D\u043E\u043C"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 2440649988648108250, guid: 899c30a0a0fcace4387d8999494bb30f, type: 3}
+    Size: {x: 2.52, y: 2.5539286}
+    Height: 2.325
+    Middle: {x: 0, y: 0.31696433}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_luohan_bed
+    Label: "\u041A\u0443\u0448\u0435\u0442\u043A\u0430"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 7279895157440807622, guid: 1283927d132916c42b5b188e8b410a17, type: 3}
+    Size: {x: 2.15, y: 1}
+    Height: 1.0947489
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_writing_desk
+    Label: "\u041F\u0438\u0441\u044C\u043C\u0435\u043D\u043D\u044B\u0439 \u0441\u0442\u043E\u043B"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 5779442178347414739, guid: 9e98f3d93afd34a4da02277051cd8fe9, type: 3}
+    Size: {x: 1.6365739, y: 1.5200077}
+    Height: 1.4800202
+    Middle: {x: 0, y: 0.40000385}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_gu_jar_shelf
+    Label: "\u041F\u043E\u043B\u043A\u0430 \u0441 \u043A\u0443\u0432\u0448\u0438\u043D\u0430\u043C\u0438 \u0413\u0443"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 4069476875055319377, guid: 2f933a1a9b101624ab29e24883cec838, type: 3}
+    Size: {x: 2.7, y: 0.83}
+    Height: 2.8216572
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_curio_shelf
+    Label: "\u041F\u043E\u043B\u043A\u0430 \u0441 \u0440\u0435\u0434\u043A\u043E\u0441\u0442\u044F\u043C\u0438"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 2666063832748373101, guid: 3c1e8731a60a1884c8af05c56b9b42e9, type: 3}
+    Size: {x: 1.81, y: 0.49}
+    Height: 2.5700002
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_folding_screen
+    Label: "\u0428\u0438\u0440\u043C\u0430"
+    Section: "\u0412\u043D\u0443\u0442\u0440\u0438"
+    Prefab: {fileID: 970337141225018471, guid: ca4f5678b3e45ab44878a815cb1a935c, type: 3}
+    Size: {x: 3.1772656, y: 0.52636933}
+    Height: 2.02
+    Middle: {x: 0, y: 0.17489678}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_liquor_worm
+    Label: "\u0412\u0438\u043D\u043D\u044B\u0439 \u0427\u0435\u0440\u0432\u044C"
+    Section: "\u0413\u0443"
+    Prefab: {fileID: 6425885417411042092, guid: 60d738d97a9aafc43ae39063bedb4c36, type: 3}
+    Size: {x: 0.12841049, y: 0.12875639}
+    Height: 0.034770094
+    Middle: {x: 0.00017295033, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_white_jade_gu
+    Label: "\u0413\u0443 \u0411\u0435\u043B\u043E\u0433\u043E \u041D\u0435\u0444\u0440\u0438\u0442\u0430"
+    Section: "\u0413\u0443"
+    Prefab: {fileID: 294635796931489611, guid: 2140c398991ee134e958d64e6db65544, type: 3}
+    Size: {x: 0.11066026, y: 0.09020884}
+    Height: 0.046937503
+    Middle: {x: 0, y: 0.00010441989}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_moonlight_gu
+    Label: "\u0413\u0443 \u041B\u0443\u043D\u043D\u043E\u0433\u043E \u0421\u0432\u0435\u0442\u0430"
+    Section: "\u0413\u0443"
+    Prefab: {fileID: 6654263398260160913, guid: c8f826dd28e8f3e448224c2df5a98dab, type: 3}
+    Size: {x: 0.114728205, y: 0.11220001}
+    Height: 0.11376171
+    Middle: {x: 0, y: 0}
+    Stretch: 0
+    Repeat: 0
+  - Id: prop_spring_autumn_cicada
+    Label: "\u041D\u0435\u0444\u0440\u0438\u0442\u043E\u0432\u0430\u044F \u0446\u0438\u043A\u0430\u0434\u0430"
+    Section: "\u0413\u0443"
+    Prefab: {fileID: 4945814048374204272, guid: 534487c2ddb264d479e5946d3a007b94, type: 3}
+    Size: {x: 0.108, y: 0.14593296}
+    Height: 0.06419595
+    Middle: {x: 0, y: -0.002569899}
+    Stretch: 0
+    Repeat: 0

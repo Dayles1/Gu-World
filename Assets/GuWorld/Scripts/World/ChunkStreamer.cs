@@ -41,6 +41,29 @@ namespace GuWorld.World
 
         public static ChunkStreamer Current { get; private set; }
 
+        /// <summary>A square's things came into the world (the builder moves or takes away what was changed there).</summary>
+        public static event Action<GameObject> SquareArrived;
+
+        /// <summary>The squares in the world now.</summary>
+        public IEnumerable<GameObject> Instances
+        {
+            get
+            {
+                if (slots == null)
+                {
+                    yield break;
+                }
+
+                foreach (var slot in slots)
+                {
+                    if (slot.Instance != null)
+                    {
+                        yield return slot.Instance;
+                    }
+                }
+            }
+        }
+
         /// <summary>How many squares are in the world now, and loading.</summary>
         public int Loaded { get; private set; }
         public int Loading { get; private set; }
@@ -216,6 +239,7 @@ namespace GuWorld.World
         {
             slots[i].State = State.Here;
             Loaded++;
+            SquareArrived?.Invoke(slots[i].Instance);
 
             if (Chunks[i].Proxy != null)
             {
