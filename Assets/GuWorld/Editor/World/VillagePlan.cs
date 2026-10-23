@@ -188,6 +188,13 @@ namespace GuWorld.Editor
             ContourStreets();
             Phase("contour streets");
             StairStreets();
+
+            // The main way climbs by its own stairs: no other stair may cross it (their treads lay over the artist's).
+            if (avenue != null)
+            {
+                Streets.RemoveAll(street => street.Stair && street.Points.Any(p => Mathf.Abs(Vector2.Dot(p - avenue.Points[0], Along)) < avenue.Half + 2.5f && InsideDistance(p) > 0));
+            }
+
             Phase("stairs");
             StampStreets();
             Phase("streets stamped");
@@ -343,7 +350,9 @@ namespace GuWorld.Editor
                 if (ramp >= 0)
                 {
                     var r = ramps[ramp];
-                    t = Mathf.Min(t, Mathf.Lerp(r.low, r.high, Mathf.Clamp01(Vector2.Dot(p - r.foot, r.up) / r.run)) - 0.06f);
+                    // Half a metre under the line of the nosings: the treads' inner corners lie below it, and the tile's
+                    // ground between its heights (0.6 m apart) must not come up through them.
+                    t = Mathf.Min(t, Mathf.Lerp(r.low, r.high, Mathf.Clamp01(Vector2.Dot(p - r.foot, r.up) / r.run)) - 0.5f);
                 }
             }
 
@@ -572,6 +581,9 @@ namespace GuWorld.Editor
             }
         }
 
+        /// <summary>The main way of a village built from models (LayOutCentre), straight down its middle.</summary>
+        Street avenue;
+
         /// <summary>The artist's props to stand in the village (VillageModels.cs): model, where, turn, scale, solid.</summary>
         public readonly List<(string model, Vector2 at, float yaw, float scale, bool solid)> ModelProps = new List<(string, Vector2, float, float, bool)>();
 
@@ -616,7 +628,7 @@ namespace GuWorld.Editor
                 bottom -= 1;
             }
 
-            var avenue = new Street { Name = "Главная дорога", Points = Resample(new List<Vector2> { World(0, hallFront), World(0, bottom) }, 1.4f), Half = 5, Main = true };
+            avenue = new Street { Name = "Главная дорога", Points = Resample(new List<Vector2> { World(0, hallFront), World(0, bottom) }, 1.4f), Half = 5, Main = true };
             Streets.Add(avenue);
 
             foreach (var p in avenue.Points)
@@ -681,7 +693,7 @@ namespace GuWorld.Editor
                         ModelStairs.Add((model, centre, yaw, level - QingMaoBuilder.VillageGlb[model].Height * scale, scale));
                         var index = (short)ramps.Count;
                         ramps.Add((World(x, top - size.y), -Down, size.y, level - QingMaoBuilder.VillageGlb[model].Height * scale, level));
-                        Inside(centre, size / 2 + new Vector2(0.4f, 0), yaw, 0, c => rampOf[c] = index);
+                        Inside(centre, size / 2 + new Vector2(0.15f, 0), yaw, 0, c => rampOf[c] = index);
                     }
                     level = LevelAt(World(0, y));
                     continue;
