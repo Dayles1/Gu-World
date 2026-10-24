@@ -173,6 +173,29 @@ namespace GuWorld.Editor
                 PlaceVillageModel(decor, model, model, at, yaw, Ground(at), scale, solid, 0.04f, 0.01f);
             }
 
+            // The level village's lights at night: its lantern posts, braziers and stone lanterns, the nearest the square first (lights are dear).
+            if (plan.LevelGround)
+            {
+                var lights = plan.ModelProps.Where(m => m.model == "prop_moon_lantern_post").Select(m => (at: m.at, height: 3.6f, warm: false))
+                    .Concat(plan.Props.Where(p => p.Kind == "brazier" || p.Kind == "stone lantern").Select(p => (at: new Vector2(p.At.x, p.At.z), height: p.Kind == "brazier" ? 1.6f : 1.4f, warm: p.Kind == "brazier")))
+                    .OrderBy(l => Vector2.Distance(l.at, plan.Square.Centre)).Take(44);
+
+                foreach (var (at, height, warm) in lights)
+                {
+                    var lamp = new GameObject("Lamp").AddComponent<Light>();
+                    lamp.transform.SetParent(root, false);
+                    lamp.transform.position = new Vector3(at.x, Ground(at) + height, at.y);
+                    lamp.type = LightType.Point;
+                    lamp.range = 13;
+                    lamp.color = warm ? new Color(1, 0.62f, 0.32f) : new Color(1, 0.8f, 0.55f);
+                    lamp.intensity = 0;
+                    lamp.shadows = LightShadows.None;
+                    lamp.gameObject.AddComponent<NightLamp>();
+                    nightLamps.Add(lamp);
+                    lamps++;
+                }
+            }
+
             // The terraces' retaining walls: dry stone, a coping of flat stones on top.
             foreach (var wall in plan.Walls)
             {
@@ -221,7 +244,7 @@ namespace GuWorld.Editor
                 DrawProp(things.At(at, prop.Yaw, prop.Scale), prop.Kind, prop.Seed);
 
                 // The lamps on the main ways and round the square light the lanes at night (a few: lights are dear).
-                if ((prop.Kind == "lamp" || prop.Kind == "brazier" || prop.Kind == "stone lantern") && lamps < (clan == Clan.GuYue ? 40 : 12) && Vector2.Distance(new Vector2(at.x, at.z), plan.Square.Centre) < (clan == Clan.GuYue ? 120 : 70))
+                if (!plan.LevelGround && (prop.Kind == "lamp" || prop.Kind == "brazier" || prop.Kind == "stone lantern") && lamps < (clan == Clan.GuYue ? 40 : 12) && Vector2.Distance(new Vector2(at.x, at.z), plan.Square.Centre) < (clan == Clan.GuYue ? 120 : 70))
                 {
                     var lamp = new GameObject("Lamp").AddComponent<Light>();
                     lamp.transform.SetParent(root, false);
@@ -623,8 +646,8 @@ namespace GuWorld.Editor
             var walls = new GameObject("Wall").transform;
             walls.SetParent(root, false);
 
-            // Gu Yue's wall from the artist's fort models (VillageModels.cs), where they are.
-            if (clan == Clan.GuYue && BuildFortWall(walls, plan, ground, stones))
+            // Gu Yue's wall from the artist's fort models (VillageModels.cs), where they are: on its rectangle round the level ground.
+            if (clan == Clan.GuYue && (plan.LevelGround ? BuildFortRect(walls, plan) : BuildFortWall(walls, plan, ground, stones)))
             {
                 return;
             }

@@ -112,6 +112,8 @@ namespace GuWorld.Editor
             /// <summary>Out of the village, unit length.</summary>
             public Vector2 Out;
             public string Name;
+            /// <summary>How far out from the gate its road reaches the mountain (the trails begin there), m.</summary>
+            public float Reach = 8;
         }
 
         public readonly Settlement Place;
@@ -177,9 +179,25 @@ namespace GuWorld.Editor
             RadiusAlong = place.Radius * (place.Clan == Clan.GuYue ? 1.0f : 1.25f);
             RadiusUp = place.Radius * (place.Clan == Clan.GuYue ? 1.2f : 0.9f);
 
+            // Gu Yue (2026-10-24): one level ground in a rectangle (VillagePlanFlat.cs); its far reaches from the middle.
+            if (Glb)
+            {
+                RadiusAlong = FlatEast;
+                RadiusUp = FlatNorth;
+            }
+
             void Phase(string what) => BuildLog.Mark($"plan of {place.Id}: {what}");
             Smooth();
             Level0 = SmoothAt(Centre);
+
+            if (Glb)
+            {
+                LayOutFlat();
+                Debug.Log($"GU World: {place.Name}: level at {Level0:0.0} m, {Streets.Count} streets, {Buildings.Count} buildings, {ModelProps.Count} models, {Props.Count} things, {Gates.Count} gates");
+
+                return;
+            }
+
             MakeBoundary();
             Rasters();
             Phase("rasters");
@@ -312,6 +330,11 @@ namespace GuWorld.Editor
 
         public float Height(float x, float z, float naturalHeight)
         {
+            if (Glb)
+            {
+                return FlatHeight(new Vector2(x, z), naturalHeight);
+            }
+
             var p = new Vector2(x, z);
             var inside = InsideDistance(p);
 
@@ -528,7 +551,7 @@ namespace GuWorld.Editor
 
         void AddPad(string name, Vector2 centre, Vector2 half, float yaw, bool paved)
         {
-            var pad = new Pad { Name = name, Centre = centre, Half = half, Yaw = yaw, Level = Terraced(Warp(centre), 0.07f), Paved = paved };
+            var pad = new Pad { Name = name, Centre = centre, Half = half, Yaw = yaw, Level = Glb ? Level0 : Terraced(Warp(centre), 0.07f), Paved = paved };
             var index = (short)Pads.Count;
             Pads.Add(pad);
             Inside(centre, half, yaw, 0, cell =>
@@ -546,7 +569,7 @@ namespace GuWorld.Editor
         readonly Dictionary<string, (string model, float scale, BuildingKind kind, string label, float turn)> padBuildings =
             new Dictionary<string, (string, float, BuildingKind, string, float)>();
 
-        /// <summary>Whether the village is built from the artist's models (Gu Yue, 2026-10-23; the others keep their procedural houses for now).</summary>
+        /// <summary>Whether the village is built from the artist's models (Gu Yue, 2026-10-23; the others keep their procedural houses for now) — on one level ground since 2026-10-24 (VillagePlanFlat.cs).</summary>
         bool Glb => Place.Clan == Clan.GuYue;
 
         void ChooseSquareAndPads()
@@ -1325,6 +1348,13 @@ namespace GuWorld.Editor
 
         public void Paint(float x, float z, float height, float steep, float[] weights)
         {
+            if (Glb)
+            {
+                PaintFlat(x, z, steep, weights);
+
+                return;
+            }
+
             var p = new Vector2(x, z);
             var inside = InsideDistance(p);
 
@@ -1380,6 +1410,11 @@ namespace GuWorld.Editor
 
         public float Grass(float x, float z)
         {
+            if (Glb)
+            {
+                return GrassFlat(x, z);
+            }
+
             var p = new Vector2(x, z);
 
             switch (KindAt(p))
@@ -1402,6 +1437,6 @@ namespace GuWorld.Editor
             }
         }
 
-        public bool Wild(Vector2 p) => InsideDistance(p) < -14 && !Gates.Any(g => Vector2.Distance(g.At, p) < 16);
+        public bool Wild(Vector2 p) => Glb ? WildFlat(p) : InsideDistance(p) < -14 && !Gates.Any(g => Vector2.Distance(g.At, p) < 16);
     }
 }

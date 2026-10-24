@@ -49,6 +49,8 @@ namespace GuWorld.Editor
         };
 
         static string[] except = new string[0];
+        /// <summary>`-villages a,b`: the fine stage makes only these villages' ground (the others' left as they are).</summary>
+        static string[] onlyVillages;
         static bool testRun;
         static Rect? only;
 
@@ -83,6 +85,7 @@ namespace GuWorld.Editor
             var list = Arg("-stages")?.Split(',').Select(s => s.Trim()).Where(s => s.Length > 0).ToArray();
             // `-except a,b`: the stages not done, but not these (the guard runs the scene in a Unity of its own).
             except = Arg("-except")?.Split(',').Select(s => s.Trim()).ToArray() ?? new string[0];
+            onlyVillages = Arg("-villages")?.Split(',').Select(s => s.Trim()).ToArray();
             Rect? area = null;
 
             if (Arg("-area") is string text)
@@ -528,7 +531,7 @@ namespace GuWorld.Editor
 
         static void BuildFineStage(bool force)
         {
-            foreach (var plan in plans.Where(p => InArea(p.Area)))
+            foreach (var plan in plans.Where(p => InArea(p.Area) && (onlyVillages == null || onlyVillages.Contains(p.Place.Id))))
             {
                 var name = $"Village {plan.Place.Id}";
 

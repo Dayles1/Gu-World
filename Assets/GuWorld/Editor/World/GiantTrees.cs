@@ -177,7 +177,7 @@ namespace GuWorld.Editor
 
                 foreach (var plan in plans)
                 {
-                    if (plan.InsideDistance(p) > -22)
+                    if (plan.InsideDistance(p) > -plan.Margin)
                     {
                         return false;
                     }

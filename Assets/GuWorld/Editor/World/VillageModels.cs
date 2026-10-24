@@ -108,7 +108,11 @@ namespace GuWorld.Editor
         /// its origin at `floor`, scaled evenly. Near up close, Far beyond (no shadow), nothing past that (`nearSize`, `farSize`: the screen's share where each ends); solid by Near's
         /// shape (light enough to collide with). Returns the holder, or null when the model is missing.
         /// </summary>
-        static GameObject PlaceVillageModel(Transform parent, string name, string label, Vector2 centre, float yaw, float floor, float scale, bool solid = true, float nearSize = 0.1f, float farSize = 0.006f)
+        static GameObject PlaceVillageModel(Transform parent, string name, string label, Vector2 centre, float yaw, float floor, float scale, bool solid = true, float nearSize = 0.1f, float farSize = 0.006f) =>
+            PlaceVillageModel(parent, name, label, centre, yaw, floor, Vector3.one * scale, solid, nearSize, farSize);
+
+        /// <summary>As above, scaled unevenly (a length of wall stretched along to fill its gap exactly).</summary>
+        static GameObject PlaceVillageModel(Transform parent, string name, string label, Vector2 centre, float yaw, float floor, Vector3 scale, bool solid = true, float nearSize = 0.1f, float farSize = 0.006f)
         {
             var asset = AssetDatabase.LoadAssetAtPath<GameObject>(VillageModelPath(name));
 
@@ -118,11 +122,11 @@ namespace GuWorld.Editor
             }
 
             var turn = Quaternion.Euler(0, yaw, 0);
-            var middle = turn * new Vector3(model.Middle.x, 0, model.Middle.y) * scale;
+            var middle = turn * Vector3.Scale(new Vector3(model.Middle.x, 0, model.Middle.y), scale);
             var holder = new GameObject(label);
             holder.transform.SetParent(parent, false);
             holder.transform.SetPositionAndRotation(new Vector3(centre.x - middle.x, floor, centre.y - middle.z), turn);
-            holder.transform.localScale = Vector3.one * scale;
+            holder.transform.localScale = scale;
             var instance = (GameObject)PrefabUtility.InstantiatePrefab(asset, holder.scene);
             instance.transform.SetParent(holder.transform, false);
             PrefabUtility.UnpackPrefabInstance(instance, PrefabUnpackMode.Completely, InteractionMode.AutomatedAction);
@@ -201,11 +205,114 @@ namespace GuWorld.Editor
         }
 
         /// <summary>A model placed by its own origin (not its footprint's middle) at a point: the walls' lengths stand on their line.</summary>
-        static GameObject PlaceVillageModelAt(Transform parent, string name, string label, Vector2 origin, float yaw, float floor, float scale)
+        static GameObject PlaceVillageModelAt(Transform parent, string name, string label, Vector2 origin, float yaw, float floor, float scale) =>
+            PlaceVillageModelAt(parent, name, label, origin, yaw, floor, Vector3.one * scale);
+
+        static GameObject PlaceVillageModelAt(Transform parent, string name, string label, Vector2 origin, float yaw, float floor, Vector3 scale)
         {
-            var middle = Quaternion.Euler(0, yaw, 0) * new Vector3(VillageGlb[name].Middle.x, 0, VillageGlb[name].Middle.y) * scale;
+            var middle = Quaternion.Euler(0, yaw, 0) * Vector3.Scale(new Vector3(VillageGlb[name].Middle.x, 0, VillageGlb[name].Middle.y), scale);
 
             return PlaceVillageModel(parent, name, label, origin + new Vector2(middle.x, middle.z), yaw, floor, scale);
+        }
+
+        /// <summary>
+        /// The wall round the level village (VillagePlanFlat.cs), on its rectangle: a watchtower on each corner (its
+        /// footprint's middle on the corner) and every ~70 m along the sides, the battle gates (doors left out), and
+        /// between them lengths of wall, as many as fill each gap, each stretched a little along so that they meet end to
+        /// end exactly (no overlap to flicker, no gap to see through), their ends tucked 0.2 m into the towers and gates.
+        /// All on the level ground: no footing.
+        /// </summary>
+        static bool BuildFortRect(Transform walls, VillagePlan plan)
+        {
+            if (!HasVillageModel("fort_wall_segment") || !HasVillageModel("fort_battle_gate") || !HasVillageModel("fort_watchtower"))
+            {
+                return false;
+            }
+
+            const float wallScale = 0.75f;
+            const float gateScale = 0.8f;
+            var segment = VillageGlb["fort_wall_segment"].Size.x * wallScale;
+            var towerHalf = VillageGlb["fort_watchtower"].Size.x * wallScale / 2;
+            var gateHalf = VillageGlb["fort_battle_gate"].Size.x * gateScale / 2;
+            var level = plan.Level0;
+            var corners = plan.Boundary;
+            var lengths = 0;
+            var towers = 0;
+
+            for (var c = 0; c < corners.Count; c++)
+            {
+                var a = corners[c];
+                var b = corners[(c + 1) % corners.Count];
+                var length = Vector2.Distance(a, b);
+                var tangent = (b - a) / length;
+                var outward = new Vector2(tangent.y, -tangent.x);
+
+                if (plan.InsideDistance(a + tangent * (length / 2) + outward) > 0)
+                {
+                    outward = -outward;
+                }
+
+                var yaw = Mathf.Atan2(outward.x, outward.y) * Mathf.Rad2Deg;
+                var used = new List<(float from, float to)> { (-towerHalf, towerHalf), (length - towerHalf, length + towerHalf) };
+                PlaceVillageModel(walls, "fort_watchtower", "Corner Tower", a, yaw, level, wallScale);
+                towers++;
+
+                foreach (var gate in plan.Gates)
+                {
+                    var along = Vector2.Dot(gate.At - a, tangent);
+
+                    if (Mathf.Abs(Vector2.Dot(gate.At - a, outward)) < 1 && along > 0 && along < length)
+                    {
+                        used.Add((along - gateHalf, along + gateHalf));
+                    }
+                }
+
+                var between = Mathf.Max(1, Mathf.RoundToInt(length / 70));
+
+                for (var k = 1; k < between; k++)
+                {
+                    var along = length * k / between;
+
+                    if (used.All(t => along + towerHalf + 8 < t.from || along - towerHalf - 8 > t.to))
+                    {
+                        used.Add((along - towerHalf, along + towerHalf));
+                        PlaceVillageModelAt(walls, "fort_watchtower", "Tower", a + tangent * along, yaw, level, wallScale);
+                        towers++;
+                    }
+                }
+
+                used.Sort((x, y) => x.from.CompareTo(y.from));
+
+                for (var i = 0; i + 1 < used.Count; i++)
+                {
+                    var from = used[i].to - 0.2f;
+                    var to = used[i + 1].from + 0.2f;
+
+                    if (to - from < 1)
+                    {
+                        continue;
+                    }
+
+                    var count = Mathf.Max(1, Mathf.RoundToInt((to - from) / segment));
+                    var width = (to - from) / count;
+                    var stretch = new Vector3(width / VillageGlb["fort_wall_segment"].Size.x, wallScale, wallScale);
+
+                    for (var k = 0; k < count; k++)
+                    {
+                        PlaceVillageModelAt(walls, "fort_wall_segment", "Wall", a + tangent * (from + (k + 0.5f) * width), yaw, level, stretch);
+                        lengths++;
+                    }
+                }
+            }
+
+            foreach (var gate in plan.Gates)
+            {
+                PlaceVillageModelAt(walls, "fort_battle_gate", gate.Name, gate.At, Mathf.Atan2(gate.Out.x, gate.Out.y) * Mathf.Rad2Deg, level, gateScale);
+            }
+
+            BuildLog.Write($"wall of {plan.Place.Id}: {lengths} lengths of the fort's wall, {towers} towers, {plan.Gates.Count} gates, on the level at {level:0.0} m");
+
+            return true;
         }
 
         /// <summary>
